@@ -1,0 +1,8 @@
+{
+  "attempt": "ordinary sandbox PDS CreateProcess",
+  "winerror": 623,
+  "status": "NO_PDS_PROCESS_CREATED",
+  "message": "System DLL relocation prevented process creation",
+  "preserved_logs": "logs/pds-flow",
+  "retry": "one separately approved non-admin external invocation only; no reinstall/DLL/environment change"
+}

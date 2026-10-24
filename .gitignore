@@ -105,6 +105,36 @@
 !/work/system/2026-10-24-timed-coremark-m1/unit_boundary.py
 !/work/system/2026-10-24-timed-coremark-m1/wave_review.py
 
+!/reports/verification/2026-10-24-fpga-implementability-m0.md
+!/work/fpga/
+/work/fpga/*
+!/work/fpga/2026-10-24-implementability-m0/
+/work/fpga/2026-10-24-implementability-m0/*
+!/work/fpga/2026-10-24-implementability-m0/APPROVAL.json
+!/work/fpga/2026-10-24-implementability-m0/COMMANDS.md
+!/work/fpga/2026-10-24-implementability-m0/RESULTS.json
+!/work/fpga/2026-10-24-implementability-m0/SOURCE_DIFF.patch
+!/work/fpga/2026-10-24-implementability-m0/audit_results.py
+!/work/fpga/2026-10-24-implementability-m0/audit-parser-correction.json
+!/work/fpga/2026-10-24-implementability-m0/compile-plan.json
+!/work/fpga/2026-10-24-implementability-m0/equivalence.json
+!/work/fpga/2026-10-24-implementability-m0/pds_external_once.py
+!/work/fpga/2026-10-24-implementability-m0/postflight.json
+!/work/fpga/2026-10-24-implementability-m0/stage.py
+!/work/fpga/2026-10-24-implementability-m0/startup-error.json
+!/work/fpga/2026-10-24-implementability-m0/source/
+/work/fpga/2026-10-24-implementability-m0/source/*
+!/work/fpga/2026-10-24-implementability-m0/source/memory_model.sv
+!/work/fpga/2026-10-24-implementability-m0/verification/
+/work/fpga/2026-10-24-implementability-m0/verification/*
+!/work/fpga/2026-10-24-implementability-m0/verification/memory_observe_decl.svh
+!/work/fpga/2026-10-24-implementability-m0/verification/memory_observe_bank.svh
+!/work/fpga/2026-10-24-implementability-m0/verification/memory_protocol_checks.svh
+!/work/fpga/2026-10-24-implementability-m0/pds/
+/work/fpga/2026-10-24-implementability-m0/pds/*
+!/work/fpga/2026-10-24-implementability-m0/pds/build.tcl
+!/work/fpga/2026-10-24-implementability-m0/pds/clock_27mhz.fdc
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

@@ -1,0 +1,20 @@
+{
+  "date_beijing": "2026-10-24",
+  "decision": "D129",
+  "source": "User explicit 同意 after exact M0 request",
+  "scope_file": "D:\\A_FPGA_Comp\\deliveries\\mainline-fpga-implementability-scope-2026-10-24-v1\\IMPLEMENTATION_SCOPE.md",
+  "scope_sha": "40A1B5B1E77C5F0EB035EE920543387D4FD5C91863B080CC89D9F6287204212E",
+  "approved": [
+    "own production-memory view",
+    "minimal source/engineering integration",
+    "necessary bounded simulation",
+    "PDS CLI compile/synthesis/map/pnr/timing"
+  ],
+  "forbidden": [
+    "bitstream",
+    "hardware/server/JTAG/Flash",
+    "CPU or B RTL changes",
+    "SCBV/power/thermal",
+    "new tools/license configuration"
+  ]
+}

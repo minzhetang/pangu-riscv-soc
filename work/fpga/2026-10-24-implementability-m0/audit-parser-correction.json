@@ -1,0 +1,9 @@
+{
+  "stage": "read-only post-processing, before result output",
+  "original_assertion": "VM LUT input assumed I2; bank6 uses another input",
+  "resolution": "enumerate actual I0-I5 pins; 128 data uses each have exactly two consumers",
+  "other_preexecution_review": "output names corrected to existing registers.hex/ram.hex",
+  "RTL_changed": false,
+  "DUT_or_PDS_rerun": false,
+  "expected_values_changed": false
+}

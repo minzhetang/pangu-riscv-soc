@@ -2,7 +2,7 @@
 
 面向盘古100Pro+（MES2L676-100HP）、目标器件PG2L100H-6IFBG676的比赛项目。包含五级流水线CPU、同步存储适配、UART TX/GPIO包装及裸机C验证。
 
-状态快照：**2026-10-24，F136有限软件基线**。源码可审查不代表完整RV32I兼容、FPGA可实现性或作品全部要求已通过。
+状态快照：**2026-10-24，F136有限软件基线＋F141逻辑SoC的PDS可实现性预检**。不代表完整RV32I兼容、板级时序、FPGA运行或作品全部要求已通过。
 
 仓库已建立：`main`跟踪`origin/main`，首次53项基线提交为`cac9f87aedef4879a3dc2893dc16f32fed8c849b`。首次推送前已核空引用，仓库名称及Private标记由负责人在已登录官网确认。Git成功没有改变下面的软件/硬件验收边界。
 
@@ -17,7 +17,7 @@
 |CoreMark短运行|2K总数据、两个种子、各1迭代，CRC/全状态/有序副作用/计时与后置UART通过|
 |计算区原始时钟数|性能种子2,103,648；验证种子2,263,000；不是主机运行秒数|
 |正式CoreMark成绩|**未取得**。不足10秒的原提示保留；27MHz仅为软件频率设定|
-|PDS实际映射/资源/Fmax|**未验证**，不能用官方功能模型替代|
+|PDS逻辑实现预检|F141实际综合/映射/PnR通过，最终1806 LUT/1555 FF/14 DRM36；27MHz内部setup/hold最差24.425/0.115ns。外部IO未约束、7条constant-probe警告未关闭，非板级Fmax/运行验收|
 |当前系统上板、片上波形|**未验证**；over_temp原因未闭环，硬件操作保持停止|
 
 本轮CPU、队员包装/TX/GPIO及官方算法未改。性能组检查器曾漏计启动BSS清零，初版FAIL保留；CoreMark最终结论以`check-result-v2.json`为准。有限结果不能证明CPU整体正确，也没有已测创新或提速收益。
@@ -31,6 +31,7 @@
 - 同目录`tests/`、Python检查文件：计时单元、系统监视和独立判定；仅白名单内文件入仓。
 - 同目录`runs/*/check-result*.json`及少量报告：选定的软件验收证据；波形和大型原始日志留在本地。
 - [本阶段验证报告](reports/verification/2026-10-24-timed-coremark-m1.md)、[前一系统报告](reports/verification/2026-10-24-soc-txgpio-m1-system.md)。报告中的本地绝对路径不代表该资源已随仓库分发。
+- [F141生产视图与PDS预检](reports/verification/2026-10-24-fpga-implementability-m0.md)：`work/fpga/2026-10-24-implementability-m0`保留独立副本、验证宏侧文件、脚本、完整命令及选定结果；旧F136绑定仍为历史软件基线。初始化/模型/工具数据库和原始日志不入仓。未生成位流，过温STOP不变。
 - [1735增量分层审收](reports/progress/2026-10-24-increment-1735-mainline-alignment.md)、[给队员的集中反馈](deliveries/mainline-increment-1735-response-2026-10-24-v1/TEAMMATE_REPLY.md)。新收件不扩大PDS或硬件授权，原系统有限验收保持。
 - [首次提交范围](docs/repository/FIRST_COMMIT_SCOPE.md)、[逐文件SHA-256清单](docs/repository/first-commit-files.json)、[外部依赖与复现边界](docs/repository/EXTERNAL_DEPENDENCIES.md)。
 

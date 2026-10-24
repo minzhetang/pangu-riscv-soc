@@ -1,0 +1,52 @@
+--- source-before/memory_model.sv
++++ source/memory_model.sv
+@@ -27,7 +27,9 @@
+     reg if_valid_q=0;reg [1:0] region_q=0;
+     wire [31:0] rom_if[0:7],rom_data[0:7],ram_data[0:7];
+     // Verification-only read-only views. NOT a functional shadow RAM.
+-    wire [31:0] rom[0:8191],ram[0:8191];
++`ifdef M0_VERIFY
++    `include "memory_observe_decl.svh"
++`endif
+     genvar b,h,w;
+     generate for(b=0;b<8;b=b+1) begin:bank
+         wire [17:0] ri[0:1],rd[0:1],rq[0:1];
+@@ -190,30 +192,25 @@
+         assign rom_if[b]={ri[1][16:9],ri[1][7:0],ri[0][16:9],ri[0][7:0]};
+         assign rom_data[b]={rd[1][16:9],rd[1][7:0],rd[0][16:9],rd[0][7:0]};
+         assign ram_data[b]={rq[1][16:9],rq[1][7:0],rq[0][16:9],rq[0][7:0]};
+-        // synthesis translate_off
+-        for(w=0;w<1024;w=w+1) begin:observe
+-            assign rom[b*1024+w]=ROM_BITS[(b*1024+w)*32+:32];
+-            assign ram[b*1024+w]={
+-                halfword[1].ram_block.mem[w*2+1][7:0],halfword[1].ram_block.mem[w*2][7:0],
+-                halfword[0].ram_block.mem[w*2+1][7:0],halfword[0].ram_block.mem[w*2][7:0]};
+-        end
+-        // synthesis translate_on
++`ifdef M0_VERIFY
++        `include "memory_observe_bank.svh"
++`endif
+     end endgenerate
+     // Region and bank travel WITH the one-edge memory response.
+     always @(posedge clk) begin
+         if_bank_q<=pc[14:12];if_valid_q<=if_en;
+         region_q<=data_ram?2'd2:(data_rom?2'd1:2'd0);
+         data_bank_q<=data_ram?local_addr[14:12]:addr[14:12];
+-        // synthesis translate_off
+-        if(rst_n && wren && ((^{addr,wdata,wstrb})===1'bx || !data_ram || wstrb==0))
+-            $fatal(1,"MEMORY_PROTOCOL store outside RAM/zero-mask/unknown");
+-        if(rst_n && !wren && wstrb!==0) $fatal(1,"MEMORY_PROTOCOL idle strobe");
+-        // synthesis translate_on
++`ifdef M0_VERIFY
++        `include "memory_protocol_checks.svh"
++`endif
+     end
+     assign inst=if_valid_q?rom_if[if_bank_q]:32'd0;
+     assign rdata=region_q==2?ram_data[data_bank_q]:(region_q==1?rom_data[data_bank_q]:32'd0);
++`ifdef M0_VERIFY
+     initial begin
+         if(LATENCY!=1) $fatal(1,"only fixed one-edge memory supported");
+     end
++`endif
+ endmodule
+ 
