@@ -12,6 +12,7 @@
 |---|---|
 |CPU执行裸机C及同步存储|有限软件系统通过，存储32K ROM/32K RAM使用官方primitive功能模型|
 |UART/GPIO|原程序N16/N234回归无退化，真实CPU读写及公开串行输出通过；B整包仍有局部验证/元数据整改|
+|1735队员增量审收|73文件完整审阅/解析、6个新本机编译与仿真有限通过；持续捕获、账本时刻/失败传播及最终包索引仍有条件，不等系统或硬件新验收|
 |物理时钟计数|64位自由运行、组合只读、高低高读取；计时单元增强296检查及真实C通过|
 |CoreMark短运行|2K总数据、两个种子、各1迭代，CRC/全状态/有序副作用/计时与后置UART通过|
 |计算区原始时钟数|性能种子2,103,648；验证种子2,263,000；不是主机运行秒数|
@@ -30,6 +31,7 @@
 - 同目录`tests/`、Python检查文件：计时单元、系统监视和独立判定；仅白名单内文件入仓。
 - 同目录`runs/*/check-result*.json`及少量报告：选定的软件验收证据；波形和大型原始日志留在本地。
 - [本阶段验证报告](reports/verification/2026-10-24-timed-coremark-m1.md)、[前一系统报告](reports/verification/2026-10-24-soc-txgpio-m1-system.md)。报告中的本地绝对路径不代表该资源已随仓库分发。
+- [1735增量分层审收](reports/progress/2026-10-24-increment-1735-mainline-alignment.md)、[给队员的集中反馈](deliveries/mainline-increment-1735-response-2026-10-24-v1/TEAMMATE_REPLY.md)。新收件不扩大PDS或硬件授权，原系统有限验收保持。
 - [首次提交范围](docs/repository/FIRST_COMMIT_SCOPE.md)、[逐文件SHA-256清单](docs/repository/first-commit-files.json)、[外部依赖与复现边界](docs/repository/EXTERNAL_DEPENDENCIES.md)。
 
 ## 复现边界

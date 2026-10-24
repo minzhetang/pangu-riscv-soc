@@ -18,6 +18,14 @@
 /reports/verification/*
 !/reports/verification/2026-10-24-soc-txgpio-m1-system.md
 !/reports/verification/2026-10-24-timed-coremark-m1.md
+!/reports/progress/
+/reports/progress/*
+!/reports/progress/2026-10-24-increment-1735-mainline-alignment.md
+!/deliveries/
+/deliveries/*
+!/deliveries/mainline-increment-1735-response-2026-10-24-v1/
+/deliveries/mainline-increment-1735-response-2026-10-24-v1/*
+!/deliveries/mainline-increment-1735-response-2026-10-24-v1/TEAMMATE_REPLY.md
 !/work/
 /work/*
 !/work/system/
