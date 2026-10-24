@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "process": {
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-N",
+      "-M-",
+      "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile\\unit-v2.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\unit-v2",
+    "returncode": 0,
+    "timed_out": false,
+    "cap": false,
+    "cleanup": null,
+    "elapsed_seconds": 0.062,
+    "timeout_seconds": 20,
+    "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-unit-v2\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-unit-v2\\stderr.log"
+  },
+  "stdout": "VCD info: dumpfile wave.vcd opened for output.\nTIMER_UNIT_V2_PASS checks=296 carry_retries=1\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\tests\\tb_timer_unit_v2.sv:65: $finish called at 770000 (1ps)\n"
+}

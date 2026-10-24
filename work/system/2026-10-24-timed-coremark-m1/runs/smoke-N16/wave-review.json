@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "stable_post_edge_checks": 1300,
+  "timer_address_samples": 48,
+  "distinct_visible_cycles": 1055,
+  "visible_cycle_min": 1,
+  "visible_cycle_max": 1979,
+  "VCD_sha": "FD57FFD94598C6A6056076F0B13203A8180197360907D7FDF65F833FEB861F73",
+  "scope": "sampled VCD windows only; CPU LOAD consumes pre-edge value separately checked in trace",
+  "full_algorithm_wave": false,
+  "retirement_PC": false
+}

@@ -1,0 +1,3 @@
+# Keep frozen source bytes and SHA-256 unchanged across Windows Git settings.
+# This does not disable normal text diffs; it disables EOL normalization only.
+* -text

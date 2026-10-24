@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "protected_originals": 37,
+  "stage_frozen_files": 174,
+  "old_system_protected": 3358,
+  "source_SHA": [
+    {
+      "file": "cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "file": "alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "file": "control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "file": "regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "file": "memory_model.sv",
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    },
+    {
+      "file": "local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "file": "uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "file": "gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    }
+  ],
+  "new_DUT_runs": 0
+}

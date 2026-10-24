@@ -1,0 +1,393 @@
+{
+  "version": 1,
+  "date": "2026-10-24",
+  "status": "PROPOSED_NOT_STAGED_OR_COMMITTED",
+  "remote_user_provided": "https://github.com/minzhetang/pangu-riscv-soc",
+  "remote_verified": false,
+  "source_baseline": "F136 finite timed software; no synthesis/hardware acceptance",
+  "file_count": 53,
+  "bytes_excluding_manifest": 194970,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "category": "repository",
+      "state": "本轮新准备；尚未暂存/提交/推送",
+      "bytes": 165,
+      "sha256": "186D7C84B5013FA0463CFA1C9759B3433E61E9C888909C07D616C1805BEC766C"
+    },
+    {
+      "path": ".gitignore",
+      "category": "repository",
+      "state": "本轮新准备；尚未暂存/提交/推送",
+      "bytes": 5500,
+      "sha256": "3A63112690DACB72236C68E346A302E974397C1C8AB8851FC8A4D37A0409CAE8"
+    },
+    {
+      "path": "README.md",
+      "category": "repository",
+      "state": "本轮新准备；尚未暂存/提交/推送",
+      "bytes": 4937,
+      "sha256": "6557F7C6B8AE36875FD54311F2621DD2D8F8AC0CD8DA40145D24B3C433124548"
+    },
+    {
+      "path": "docs/repository/EXTERNAL_DEPENDENCIES.md",
+      "category": "repository",
+      "state": "本轮新准备；尚未暂存/提交/推送",
+      "bytes": 1906,
+      "sha256": "AF8E4156063E6277472EF1DC1D764126F16EE5EE568090F5851847EA7D5543DE"
+    },
+    {
+      "path": "docs/repository/FIRST_COMMIT_SCOPE.md",
+      "category": "repository",
+      "state": "本轮新准备；尚未暂存/提交/推送",
+      "bytes": 9051,
+      "sha256": "5419E25E8E3A97F6D01DFF1CE06952D7827F963C80B288B19A15A10F1F1C33A8"
+    },
+    {
+      "path": "docs/repository/first-commit-files.json",
+      "category": "repository",
+      "state": "本轮新准备；尚未暂存/提交/推送",
+      "bytes": null,
+      "sha256": null,
+      "note": "self manifest has no recursive self hash"
+    },
+    {
+      "path": "docs/repository/verify_first_commit.py",
+      "category": "repository",
+      "state": "本轮新准备；尚未暂存/提交/推送",
+      "bytes": 14825,
+      "sha256": "789349B89D9A8DF19246D309B5EF881748DADA5A56595C69F3A90664F910FCF5"
+    },
+    {
+      "path": "reports/verification/2026-10-24-soc-txgpio-m1-system.md",
+      "category": "report",
+      "state": "有限软件验收报告；本地引用不代表文件已随仓分发",
+      "bytes": 5874,
+      "sha256": "5AD2AE9C5FFBC4F79B2361DC273666D24D9D477BE9C742970414F25DB9CE1DDD"
+    },
+    {
+      "path": "reports/verification/2026-10-24-timed-coremark-m1.md",
+      "category": "report",
+      "state": "有限软件验收报告；本地引用不代表文件已随仓分发",
+      "bytes": 9943,
+      "sha256": "9018DEA64B458444434817B7B1E43C832D4B81B476FF9675FF401010B568350C"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/analyze_windows.py",
+      "category": "workflow",
+      "state": "原阶段工具；依赖本地历史/模型，未完成干净克隆移植",
+      "bytes": 3402,
+      "sha256": "FA46C4C565DF550EA9B087BDB3E72671A8939F4AA72C7B3B43F955F99C40006C"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/check_timed_v2.py",
+      "category": "workflow",
+      "state": "原阶段工具；依赖本地历史/模型，未完成干净克隆移植",
+      "bytes": 12099,
+      "sha256": "33940ECAC918B21126B4D681BC335B522BAD691FD7758CA0DE4C2CCC6135ACF1"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/checker-negative-result-v2.json",
+      "category": "evidence",
+      "state": "F136选定有限证据；本次未重跑",
+      "bytes": 3118,
+      "sha256": "521765FACD7419FF9A018708453C53B825AAFB7B6958F3184134DE1195D81B96"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/checker_negative_tests_v2.py",
+      "category": "workflow",
+      "state": "原阶段工具；依赖本地历史/模型，未完成干净克隆移植",
+      "bytes": 3253,
+      "sha256": "0CDD3ACE4E746D62C7D13F5511EE3FABB109295A65C45F0472BA5F8E4FF9C0DF"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/cpu_program_reference.py",
+      "category": "workflow",
+      "state": "原阶段工具；依赖本地历史/模型，未完成干净克隆移植",
+      "bytes": 7127,
+      "sha256": "DCCA487CEE7D8FB941665658B946747EB4933E407C7EA492259D53847B666BBA"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/firmware/link.ld",
+      "category": "firmware",
+      "state": "F136关联输入；原件不改",
+      "bytes": 949,
+      "sha256": "2616CB1A27B60FCBA98C0D5E73267A8E5CAA39FB05AA46A2D6E34B6C99914A6E"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/firmware/start.S",
+      "category": "firmware",
+      "state": "F136关联输入；原件不改",
+      "bytes": 675,
+      "sha256": "50D3AD9F9D591DE5007665FF074B21E94812548A9B0972416954E569F6FC9DDC"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/firmware/timer.h",
+      "category": "firmware",
+      "state": "F136关联输入；原件不改",
+      "bytes": 518,
+      "sha256": "61F1F30134CBD034ACD2887344F44293AE5B82251B1FD6CC5B79A2DC4B8BEADC"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/firmware/timer_smoke.c",
+      "category": "firmware",
+      "state": "F136关联输入；原件不改",
+      "bytes": 773,
+      "sha256": "0E2555ABBCBDF602D0E52D92E0FDBAD35E8AED3E1080F3F11332B18E46E8F83E"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/manual-plan.json",
+      "category": "expectations",
+      "state": "执行前冻结计划；不是新测试结果",
+      "bytes": 1435,
+      "sha256": "A2F3AB40532B513A75F00D52E5635E5FF27F4443A211266DFFD054F7BC18BE03"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/peripheral_checker.py",
+      "category": "workflow",
+      "state": "原阶段工具；依赖本地历史/模型，未完成干净克隆移植",
+      "bytes": 6001,
+      "sha256": "E5BB96110DDF7B6BBD761D6A1922E83758DC71746B1813C3D851BD1DEC57677D"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/port/core_portme.c",
+      "category": "platform",
+      "state": "F136短运行平台适配；非正式成绩",
+      "bytes": 3292,
+      "sha256": "B7E095F4EF41CCA50D3EDC1E6FB6D0B773C504CF2796496C790E89E403F6F621"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/port/core_portme.h",
+      "category": "platform",
+      "state": "F136短运行平台适配；非正式成绩",
+      "bytes": 1156,
+      "sha256": "24119A04D7C23C0BDA6F31FCE68869D75A00B1B0611D9C46C155F64891542586"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/postflight.json",
+      "category": "evidence",
+      "state": "F136选定有限证据；本次未重跑",
+      "bytes": 1195,
+      "sha256": "B86515EF31F0094D2AB43BF62960FE7EABF90775F52CED6251C590174259FC36"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/quality-window-analysis.json",
+      "category": "evidence",
+      "state": "F136选定有限证据；本次未重跑",
+      "bytes": 4493,
+      "sha256": "D3EEC6D4E442C9954D1789AD5ABD88CB6C259287FEAB2A53B79F17B7812E713C"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/run_stage.py",
+      "category": "workflow",
+      "state": "原阶段工具；依赖本地历史/模型，未完成干净克隆移植",
+      "bytes": 10906,
+      "sha256": "A08083086A7532ADD99EE4B9BF9F5F684A965CC6A9F902A1ADF0C74AA6003BEE"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/runs/baseline-N16/check-result.json",
+      "category": "evidence",
+      "state": "F136有限PASS；非硬件",
+      "bytes": 1035,
+      "sha256": "BA0372988CDB202E50CF646A0B3E0A6E9ED0366863039F1085E00DB195D263BD"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/runs/baseline-N234/check-result.json",
+      "category": "evidence",
+      "state": "F136有限PASS；非硬件",
+      "bytes": 1043,
+      "sha256": "146F554F9D7E72F50C68FA643A16A307544BD2021AAD31758C6F2C4E9B7371F4"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/runs/performance-N16/check-result-v2.json",
+      "category": "evidence",
+      "state": "F136最终检查器v2有限PASS；非正式成绩",
+      "bytes": 3083,
+      "sha256": "1142A5E144140D78E26AA7B4F66D598970FDA5F950B28087236EAEA47B45DEDE"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/runs/performance-N16/check-result.json",
+      "category": "historical-failure",
+      "state": "旧检查器漏BSS阶段0导致FAIL；保留，不覆盖v2当前结论",
+      "bytes": 3201,
+      "sha256": "CF0BA9134F4ACBED00B95852CAA768E59B9CEFAD43AF6417CE16701AA19F0718"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/runs/performance-N16/ram-output.txt",
+      "category": "evidence",
+      "state": "实际RAM报告；不足10秒与Errors detected原样保留",
+      "bytes": 662,
+      "sha256": "7CFAD89D76DE3D8E0459487A1352DAFB7E7BD5A90D60909940F54A54A825D3D2"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/runs/performance-N16/wave-review.json",
+      "category": "evidence",
+      "state": "原VCD窗口检查结果；VCD本体不入仓/非ILA",
+      "bytes": 434,
+      "sha256": "07F0C9777C564B97634AD465EA78C240028CD6C1D59163D188C586DD83B0037F"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/runs/smoke-N16/check-result.json",
+      "category": "evidence",
+      "state": "F136有限PASS；非硬件",
+      "bytes": 2544,
+      "sha256": "5288F0259F2AD221218DE7CEBE07C3A0312478743652DEC68E424F71066BDD9E"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/runs/smoke-N16/wave-review.json",
+      "category": "evidence",
+      "state": "原VCD窗口检查结果；VCD本体不入仓/非ILA",
+      "bytes": 431,
+      "sha256": "7379E99E943E1D481DBF77B1896BA215BF663856C7B3E36B96E03F47C7884D80"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/runs/validation-N16/check-result-v2.json",
+      "category": "evidence",
+      "state": "F136最终检查器v2有限PASS；非正式成绩",
+      "bytes": 3083,
+      "sha256": "E765BB6B50C6C692706252F28386D94170D537B342AEBB2B9D138BF1374C9756"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/runs/validation-N16/ram-output.txt",
+      "category": "evidence",
+      "state": "实际RAM报告；不足10秒与Errors detected原样保留",
+      "bytes": 661,
+      "sha256": "D30594959A0504DB76566A7BF5F2D8C7A69EA67154C6D53987145E8A116F9A1C"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/runs/validation-N16/wave-review.json",
+      "category": "evidence",
+      "state": "原VCD窗口检查结果；VCD本体不入仓/非ILA",
+      "bytes": 434,
+      "sha256": "A8F4C8E1BB2DFE908AEF04FBCBD08197A655AA0D27B30875A3DAA18009D158F0"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/source/alu.v",
+      "category": "rtl",
+      "state": "F136有限软件基线；非PDS/FPGA验收；B整包条件保持",
+      "bytes": 1021,
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/source/control.v",
+      "category": "rtl",
+      "state": "F136有限软件基线；非PDS/FPGA验收；B整包条件保持",
+      "bytes": 2988,
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/source/cpu.v",
+      "category": "rtl",
+      "state": "F136有限软件基线；非PDS/FPGA验收；B整包条件保持",
+      "bytes": 17416,
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/source/cycle_counter64.sv",
+      "category": "rtl",
+      "state": "F136有限软件基线；非PDS/FPGA验收；B整包条件保持",
+      "bytes": 395,
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/source/gpio_core.v",
+      "category": "rtl",
+      "state": "F136有限软件基线；非PDS/FPGA验收；B整包条件保持",
+      "bytes": 2087,
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/source/local_regif_txgpio_m1.v",
+      "category": "rtl",
+      "state": "F136有限软件基线；非PDS/FPGA验收；B整包条件保持",
+      "bytes": 3732,
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/source/memory_model.sv",
+      "category": "rtl",
+      "state": "F136有限软件基线；非PDS/FPGA验收；B整包条件保持",
+      "bytes": 10554,
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/source/regfile.v",
+      "category": "rtl",
+      "state": "F136有限软件基线；非PDS/FPGA验收；B整包条件保持",
+      "bytes": 666,
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/source/soc_data_adapter.sv",
+      "category": "rtl",
+      "state": "F136有限软件基线；非PDS/FPGA验收；B整包条件保持",
+      "bytes": 1526,
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/source/soc_top.sv",
+      "category": "rtl",
+      "state": "F136有限软件基线；非PDS/FPGA验收；B整包条件保持",
+      "bytes": 1872,
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/source/uart_tx.v",
+      "category": "rtl",
+      "state": "F136有限软件基线；非PDS/FPGA验收；B整包条件保持",
+      "bytes": 5195,
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/tests/tb_timed_system.sv",
+      "category": "tests",
+      "state": "F136测试源；unit初版保留，v2为增强版",
+      "bytes": 5295,
+      "sha256": "FBC5577A8C80BC87974D381E1068B0C60395CDCE7C5ABBD95D6FB656CB5E052F"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/tests/tb_timer_unit.sv",
+      "category": "tests",
+      "state": "F136测试源；unit初版保留，v2为增强版",
+      "bytes": 3286,
+      "sha256": "54FE4285034BF7A414928914F3EA58A6E0FEE6958D81388C07BDAB1C82637ADE"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/tests/tb_timer_unit_v2.sv",
+      "category": "tests",
+      "state": "F136测试源；unit初版保留，v2为增强版",
+      "bytes": 4129,
+      "sha256": "DC5210CE673722A1A361B9B4476755583E99979BB33CF2C7A00751B1A4E4443F"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/unit-v2-result.json",
+      "category": "evidence",
+      "state": "F136选定有限证据；本次未重跑",
+      "bytes": 1043,
+      "sha256": "617680B28B6791A63C223328E283761904F9AC41AD87047085DEC55970551ACA"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/unit_boundary.py",
+      "category": "workflow",
+      "state": "原阶段工具；依赖本地历史/模型，未完成干净克隆移植",
+      "bytes": 1913,
+      "sha256": "40F45989B6C28F39E4D16B3BBC83CFB46512D7B5CB0763AE960FF0C2A29C5BD2"
+    },
+    {
+      "path": "work/system/2026-10-24-timed-coremark-m1/wave_review.py",
+      "category": "workflow",
+      "state": "原阶段工具；依赖本地历史/模型，未完成干净克隆移植",
+      "bytes": 2648,
+      "sha256": "3920802CC2D7D6879960E6CA76103DFC58EB90B79ECCB2CCB08098F6CB158ED6"
+    }
+  ],
+  "excluded": [
+    "authorizations/credentials/machine identifiers",
+    "tools and installers",
+    "Pango proprietary implementations",
+    "CoreMark upstream files external",
+    "board/problem/photos/old deliveries",
+    "local agent memory/history",
+    "large or generated artifacts"
+  ]
+}

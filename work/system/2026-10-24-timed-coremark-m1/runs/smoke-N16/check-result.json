@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "metrics": {
+    "physical": 1979,
+    "advances": 989,
+    "stall": 94,
+    "flush": 132,
+    "tail": 32
+  },
+  "trace_counts": {
+    "EX": 612,
+    "WB": 373,
+    "READ": 124,
+    "STORE": 68
+  },
+  "streams": {
+    "EX": {
+      "count": 612,
+      "sha256": "2086E703B425F3CD388C70C6F7FEB29AEC515057531AACA6E48DAB9CDA9DD30D"
+    },
+    "WB": {
+      "count": 373,
+      "sha256": "716917322D81F85D9BEF669B4A6C06D6D8BA86A3FE5CFA6840272776E120DE10"
+    },
+    "MEM": {
+      "count": 192,
+      "sha256": "62DBE7BDFCD99CCBCC7C391A9EC3A1C15841CE01837819EB16608FF1FDF48959"
+    }
+  },
+  "timer_reads": [
+    {
+      "pc": 128,
+      "address": 536871172,
+      "cycle": 262,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 132,
+      "address": 536871168,
+      "cycle": 264,
+      "expected": 263,
+      "actual": 263
+    },
+    {
+      "pc": 136,
+      "address": 536871172,
+      "cycle": 266,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 176,
+      "address": 536871172,
+      "cycle": 288,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 180,
+      "address": 536871168,
+      "cycle": 290,
+      "expected": 289,
+      "actual": 289
+    },
+    {
+      "pc": 184,
+      "address": 536871172,
+      "cycle": 292,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 216,
+      "address": 536871172,
+      "cycle": 310,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 220,
+      "address": 536871168,
+      "cycle": 312,
+      "expected": 311,
+      "actual": 311
+    },
+    {
+      "pc": 224,
+      "address": 536871172,
+      "cycle": 314,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 292,
+      "address": 536871172,
+      "cycle": 722,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 296,
+      "address": 536871168,
+      "cycle": 724,
+      "expected": 723,
+      "actual": 723
+    },
+    {
+      "pc": 300,
+      "address": 536871172,
+      "cycle": 726,
+      "expected": 0,
+      "actual": 0
+    }
+  ],
+  "GPIO_actual": [],
+  "UART_frames": 6,
+  "detail": {
+    "stamps": [
+      263,
+      289,
+      311,
+      723
+    ],
+    "deltas": [
+      26,
+      412
+    ]
+  },
+  "limitations": [
+    "finite inputs; no true retirement PC or unified WB-STORE commit",
+    "short simulation not valid CoreMark score",
+    "no hardware evidence"
+  ]
+}

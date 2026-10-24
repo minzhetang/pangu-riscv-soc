@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "metrics": {
+    "physical": 4179,
+    "advances": 2089,
+    "stall": 303,
+    "flush": 319,
+    "tail": 32
+  },
+  "trace_counts": {
+    "EX": 1129,
+    "WB": 724,
+    "READ": 334,
+    "STORE": 51
+  },
+  "streams": {
+    "EX": {
+      "count": 1129,
+      "sha256": "55A90AB666930B0D60517A23CF4C28BA6CE8C8AF1767F1ECC507841711BC8A1B"
+    },
+    "WB": {
+      "count": 724,
+      "sha256": "32054E2D7B9AB57FEC28FBB228D37AAF98A7E0A9AECE41EA98FD85349EC15DE8"
+    },
+    "MEM": {
+      "count": 385,
+      "sha256": "3E9F565C3C38B580ECA88665DC4612E111B26682E776EB057E1D5CA113BEEBD0"
+    }
+  },
+  "timer_reads": [],
+  "GPIO_actual": [
+    [
+      411,
+      90
+    ],
+    [
+      421,
+      90
+    ],
+    [
+      429,
+      165
+    ]
+  ],
+  "UART_frames": 12,
+  "detail": {},
+  "limitations": [
+    "finite inputs; no true retirement PC or unified WB-STORE commit",
+    "short simulation not valid CoreMark score",
+    "no hardware evidence"
+  ]
+}
