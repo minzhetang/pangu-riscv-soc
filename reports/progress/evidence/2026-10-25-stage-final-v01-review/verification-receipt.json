@@ -1,0 +1,105 @@
+{
+  "reading_counts": {
+    "FULL_PARSE": 51,
+    "FULL_READ": 12,
+    "FULL_DELTA_PLUS_PRIOR_READ": 6,
+    "PRIOR_FULL_READ_REUSED": 1
+  },
+  "protected_received": 70,
+  "protected_native_inputs": 11,
+  "protected_mainline_sources": 26,
+  "compiler_processes": 7,
+  "new_DUT": 7,
+  "normal_native_finish": 7,
+  "compile_warnings_errors": 0,
+  "processes": [
+    {
+      "id": "wrap16",
+      "duration_s": 0.156,
+      "stderr_bytes": 0,
+      "stdout_bytes": 0
+    },
+    {
+      "id": "wrap234",
+      "duration_s": 0.062,
+      "stderr_bytes": 0,
+      "stdout_bytes": 0
+    },
+    {
+      "id": "rx8",
+      "duration_s": 0.063,
+      "stderr_bytes": 0,
+      "stdout_bytes": 0
+    },
+    {
+      "id": "rx16",
+      "duration_s": 0.078,
+      "stderr_bytes": 0,
+      "stdout_bytes": 0
+    },
+    {
+      "id": "rx234",
+      "duration_s": 0.047,
+      "stderr_bytes": 0,
+      "stdout_bytes": 0
+    },
+    {
+      "id": "rxneg",
+      "duration_s": 0.047,
+      "stderr_bytes": 0,
+      "stdout_bytes": 0
+    },
+    {
+      "id": "txcap",
+      "duration_s": 0.047,
+      "stderr_bytes": 0,
+      "stdout_bytes": 0
+    },
+    {
+      "id": "wrap16",
+      "duration_s": 0.063,
+      "stderr_bytes": 0,
+      "stdout_bytes": 4511
+    },
+    {
+      "id": "wrap234",
+      "duration_s": 0.093,
+      "stderr_bytes": 0,
+      "stdout_bytes": 2335
+    },
+    {
+      "id": "rx8",
+      "duration_s": 0.079,
+      "stderr_bytes": 0,
+      "stdout_bytes": 50562
+    },
+    {
+      "id": "rx16",
+      "duration_s": 0.093,
+      "stderr_bytes": 0,
+      "stdout_bytes": 60399
+    },
+    {
+      "id": "rx234",
+      "duration_s": 0.719,
+      "stderr_bytes": 0,
+      "stdout_bytes": 37776
+    },
+    {
+      "id": "rxneg",
+      "duration_s": 0.031,
+      "stderr_bytes": 0,
+      "stdout_bytes": 878
+    },
+    {
+      "id": "txcap",
+      "duration_s": 0.032,
+      "stderr_bytes": 0,
+      "stdout_bytes": 759
+    }
+  ],
+  "core_or_received_source_modified": false,
+  "CPU_CoreMark_PDS_runs": 0,
+  "hardware": "STOPPED",
+  "ZIP_required": false
+}

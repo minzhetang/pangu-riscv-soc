@@ -1,0 +1,164 @@
+[
+  {
+    "path": "DEPENDENCIES.json",
+    "hunks": 1,
+    "exact_reconstruction": false,
+    "old_context_errors": []
+  },
+  {
+    "path": "HISTORY_ALIASES.json",
+    "hunks": 1,
+    "exact_reconstruction": false,
+    "old_context_errors": []
+  },
+  {
+    "path": "MODULE_STATUS.json",
+    "hunks": 1,
+    "exact_reconstruction": false,
+    "old_context_errors": []
+  },
+  {
+    "path": "OPEN_ITEMS.md",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "SOURCE_INDEX.json",
+    "hunks": 1,
+    "exact_reconstruction": false,
+    "old_context_errors": []
+  },
+  {
+    "path": "START_HERE.md",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "coverage_map.json",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "delivery.json",
+    "hunks": 1,
+    "exact_reconstruction": false,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/peripherals/rx/CHANGELOG.md",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/peripherals/rx/STATUS.md",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/peripherals/rx/docs/RX-LEDGER-1.3.4.md",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/peripherals/rx/scripts/run_rx.py",
+    "hunks": 2,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/peripherals/rx/tb/rx_public_capture.sv",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/peripherals/rx/tb/tb_uart_rx.sv",
+    "hunks": 7,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/peripherals/rx/tb/tb_uart_rx_neg.sv",
+    "hunks": 2,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/peripherals/rx/tests/rx-plan-1.3.4.json",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/peripherals/rx/tests/rx-plan-1.3.4.sha256",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/regif/txgpio-m1/README.md",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/regif/txgpio-m1/docs/RUNBOOK.md",
+    "hunks": 2,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/regif/txgpio-m1/docs/W01-W10.md",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py",
+    "hunks": 2,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/regif/txgpio-m1/scripts/regif_entry_selfcheck.py",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/regif/txgpio-m1/scripts/run_regif_m1.py",
+    "hunks": 5,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv",
+    "hunks": 5,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv",
+    "hunks": 2,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.4.json",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  },
+  {
+    "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.4.sha256",
+    "hunks": 1,
+    "exact_reconstruction": true,
+    "old_context_errors": []
+  }
+]

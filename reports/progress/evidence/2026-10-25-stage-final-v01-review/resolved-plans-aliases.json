@@ -1,0 +1,141 @@
+{
+  "plan_artifacts": [
+    {
+      "plan": "rx-plan-1.3.4.json",
+      "label": "rtl",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-20261023-1345\\work\\peripherals\\rx\\src\\uart_rx.v",
+      "SHA256": "BDCD02CA8CBA1CAE9D8A774D336B30B43E9457834856234BD7C2BA8AE1719F34"
+    },
+    {
+      "plan": "rx-plan-1.3.4.json",
+      "label": "tb",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-final-20261027-v01\\work\\peripherals\\rx\\tb\\tb_uart_rx.sv",
+      "SHA256": "17C45CF4FC7510100B2D1BC881A1A5037DCF3B987893BE7344EEF46779F93F8D"
+    },
+    {
+      "plan": "rx-plan-1.3.4.json",
+      "label": "negative_tb",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-final-20261027-v01\\work\\peripherals\\rx\\tb\\tb_uart_rx_neg.sv",
+      "SHA256": "0CA0D6A519354AF1F1AE610677DFC7D9CCA01286408DC9AB882ED78AEF9407B6"
+    },
+    {
+      "plan": "rx-plan-1.3.4.json",
+      "label": "watchdog_tb",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-20261023-1345\\work\\peripherals\\rx\\tb\\tb_uart_rx_watchdog.sv",
+      "SHA256": "0F9C2159F2FFD76F0D84A34C39721648AAFF7528B7B1604E48C6D16D299E2BD9"
+    },
+    {
+      "plan": "rx-plan-1.3.4.json",
+      "label": "illegal_tb",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-20261023-1345\\work\\peripherals\\rx\\tb\\tb_uart_rx_illegal.sv",
+      "SHA256": "5FF8F379FB5DAED06A07B51B2E902182CA806AB7D7CADCDDE3C3C5BCE10DC191"
+    },
+    {
+      "plan": "rx-plan-1.3.4.json",
+      "label": "ledger_check",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\increment-20261023-1930\\work\\peripherals\\rx\\tb\\rx_ledger_check.svh",
+      "SHA256": "C8FFFF1A2554236C7935F1863CB0BF870CD8739CC69A3EAF3287C26E1A967868"
+    },
+    {
+      "plan": "rx-plan-1.3.4.json",
+      "label": "capture",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-final-20261027-v01\\work\\peripherals\\rx\\tb\\rx_public_capture.sv",
+      "SHA256": "ADBD4EBC7A549DB48B704C11F740E9FD66DBBA185E1D795596C95BE2DF84EA5D"
+    },
+    {
+      "plan": "w01-w10-plan-1.0.4.json",
+      "label": "tx_rtl",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-20261023-1345\\work\\peripherals\\src\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "plan": "w01-w10-plan-1.0.4.json",
+      "label": "gpio_rtl",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-20261023-1345\\work\\peripherals\\gpio\\src\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "plan": "w01-w10-plan-1.0.4.json",
+      "label": "wrapper",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\increment-20261024-0030\\work\\regif\\txgpio-m1\\src\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "plan": "w01-w10-plan-1.0.4.json",
+      "label": "tb",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-final-20261027-v01\\work\\regif\\txgpio-m1\\tb\\tb_local_regif_txgpio_m1.sv",
+      "SHA256": "7F0C1060ED9524B18965575CC3BE8DA1AE76D899521916F2D701976AEFAD793B"
+    },
+    {
+      "plan": "w01-w10-plan-1.0.4.json",
+      "label": "tx_public_monitor",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-final-20261027-v01\\work\\regif\\txgpio-m1\\tb\\regif_tx_public_monitor.sv",
+      "SHA256": "A638BCE59220A81AD9CDE9C335E18786BBC91C9C742644898DF1F4E28A9ED784"
+    },
+    {
+      "plan": "w01-w10-plan-1.0.4.json",
+      "label": "capture_negative_tb",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-final-20261027-v01\\work\\regif\\txgpio-m1\\tb\\tb_regif_tx_capture_neg.sv",
+      "SHA256": "8D3E47D1185483CC864406BE91484EBC44ADD191D42D997282A84430A51888ED"
+    }
+  ],
+  "aliases": [
+    {
+      "old": "regif-m1-20261024-002716 results",
+      "current": "work/B-RETURN/increment-20261024-0030/work/regif/txgpio-m1/results.json",
+      "status": "HISTORICAL_ORIGINAL",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\increment-20261024-0030\\work\\regif\\txgpio-m1\\results.json",
+      "actual_SHA256": "257B9E96F4E51D23DF04324AE447CE3E697C2FA945FA9F8AD8AF79D2E5111A92"
+    },
+    {
+      "old": "regif-m1-20261024-172242 results",
+      "current": "work/B-RETURN/increment-20261024-1735/work/regif/txgpio-m1/results.json",
+      "status": "HISTORICAL",
+      "actual": "D:\\A_FPGA_Comp\\deliveries\\increment-review-20261024-1735-v01\\extracted\\work\\regif\\txgpio-m1\\results.json",
+      "actual_SHA256": "70D8DD295F63F91093FFF45A5181AD223D8594F5C370683DA5DE8EEB126B719E"
+    },
+    {
+      "old": "regif-m1-20261024-231958 results",
+      "current": "work/B-RETURN/increment-20261024-2335/work/regif/txgpio-m1/results.json",
+      "status": "SUPERSEDED_BY_FINAL_190737",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\increment-20261024-2335\\work\\regif\\txgpio-m1\\results.json",
+      "actual_SHA256": "1A78E15AB8E89D27B30CEB0FA0FF319C0935F289875AF5BA8265F6D2CD7AA2C5"
+    },
+    {
+      "old": "rx-20261024-173355 results",
+      "current": "work/B-RETURN/increment-20261024-1735/work/peripherals/rx/results.json",
+      "status": "HISTORICAL",
+      "actual": "D:\\A_FPGA_Comp\\deliveries\\increment-review-20261024-1735-v01\\extracted\\work\\peripherals\\rx\\results.json",
+      "actual_SHA256": "A2E755F851F02634EB8B0520A21CB89956B1BFE826E0465BCA0C393963271905"
+    },
+    {
+      "old": "rx-20261024-232514 results",
+      "current": "work/B-RETURN/increment-20261024-2335/work/peripherals/rx/results.json",
+      "status": "SUPERSEDED_BY_FINAL_191037",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\increment-20261024-2335\\work\\peripherals\\rx\\results.json",
+      "actual_SHA256": "5ABFC1F0274EA61859312D748F22B604C41788FB34FB10EF6A75EEE44F9B78E2"
+    },
+    {
+      "old": "w01-w10-plan-1.0.3",
+      "current": "work/B-RETURN/increment-20261024-2335/work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.json",
+      "status": "HISTORICAL",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\increment-20261024-2335\\work\\regif\\txgpio-m1\\tests\\w01-w10-plan-1.0.3.json",
+      "actual_SHA256": "A94948CE5D4818CE801B74698D242C70745E504C0FF2479A4BFCD2CC1875F4B4"
+    },
+    {
+      "old": "rx-plan-1.3.3",
+      "current": "work/B-RETURN/increment-20261024-2335/work/peripherals/rx/tests/rx-plan-1.3.3.json",
+      "status": "HISTORICAL",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\increment-20261024-2335\\work\\peripherals\\rx\\tests\\rx-plan-1.3.3.json",
+      "actual_SHA256": "0769CC08B87DEC92CDE2B7169667FF66DE310B0F8C7F876A550A5F5FA6FA928A"
+    },
+    {
+      "old": "0030 same-SHA result mirror",
+      "current": "work/B-RETURN/increment-20261024-0030/work/regif/txgpio-m1/results.json",
+      "status": "SAME_SHA_MIRROR_NOT_NEW_RUN",
+      "actual": "D:\\A_FPGA_Comp\\队员成果接收\\increment-20261024-0030\\work\\regif\\txgpio-m1\\results.json",
+      "actual_SHA256": "257B9E96F4E51D23DF04324AE447CE3E697C2FA945FA9F8AD8AF79D2E5111A92"
+    }
+  ],
+  "W06_RESULTS_SHA256": "EA54D33B031971F2431A2979638A481A12AC4C1393319C0918430EACA227CBA6"
+}

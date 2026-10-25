@@ -1,0 +1,133 @@
+{
+  "events": [
+    {
+      "kind": "START",
+      "edge": 7,
+      "accept_edge": 6,
+      "full_frame_end": 2346,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "COMPLETE",
+      "edge": 2347,
+      "accept_edge": 6,
+      "full_frame_end": 2346,
+      "delta_from_true_end": 1
+    },
+    {
+      "kind": "START",
+      "edge": 2350,
+      "accept_edge": 2349,
+      "full_frame_end": 4689,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "COMPLETE",
+      "edge": 4690,
+      "accept_edge": 2349,
+      "full_frame_end": 4689,
+      "delta_from_true_end": 1
+    },
+    {
+      "kind": "START",
+      "edge": 4693,
+      "accept_edge": 4692,
+      "full_frame_end": 7032,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "COMPLETE",
+      "edge": 7033,
+      "accept_edge": 4692,
+      "full_frame_end": 7032,
+      "delta_from_true_end": 1
+    },
+    {
+      "kind": "START",
+      "edge": 7041,
+      "accept_edge": 7040,
+      "full_frame_end": 9380,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "CANCEL",
+      "edge": 7043,
+      "accept_edge": 7040,
+      "full_frame_end": 9380,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "START",
+      "edge": 7049,
+      "accept_edge": 7048,
+      "full_frame_end": 9388,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "COMPLETE",
+      "edge": 9389,
+      "accept_edge": 7048,
+      "full_frame_end": 9388,
+      "delta_from_true_end": 1
+    },
+    {
+      "kind": "START",
+      "edge": 9399,
+      "accept_edge": 9398,
+      "full_frame_end": 11738,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "CANCEL",
+      "edge": 10335,
+      "accept_edge": 9398,
+      "full_frame_end": 11738,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "START",
+      "edge": 10341,
+      "accept_edge": 10340,
+      "full_frame_end": 12680,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "COMPLETE",
+      "edge": 12681,
+      "accept_edge": 10340,
+      "full_frame_end": 12680,
+      "delta_from_true_end": 1
+    },
+    {
+      "kind": "START",
+      "edge": 12691,
+      "accept_edge": 12690,
+      "full_frame_end": 15030,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "CANCEL",
+      "edge": 14799,
+      "accept_edge": 12690,
+      "full_frame_end": 15030,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "START",
+      "edge": 14805,
+      "accept_edge": 14804,
+      "full_frame_end": 17144,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "COMPLETE",
+      "edge": 17145,
+      "accept_edge": 14804,
+      "full_frame_end": 17144,
+      "delta_from_true_end": 1
+    }
+  ],
+  "complete_delta": 1,
+  "early_completion": false,
+  "exact_original_E_plus_10N": false
+}

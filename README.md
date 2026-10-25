@@ -12,7 +12,7 @@
 |---|---|
 |CPU执行裸机C及同步存储|有限软件系统通过，存储32K ROM/32K RAM使用官方primitive功能模型|
 |UART/GPIO|原程序N16/N234回归无退化，真实CPU读写及公开串行输出通过；B整包仍有局部验证/元数据整改|
-|2335队员增量审收|F148共79文件完整核查；5配置新本机有限功能通过，W06 A补证关闭、GPIO1.0.2有限接收。RX共享账本/快照、TX完整帧口径、少数关联和最终索引仍V1–V4有条件，不等系统/硬件新验收|
+|最终阶段v01审收|F149共70文件完整分类覆盖，7新编译/7运行；共享RX逐笔顺序、指定关联变异和末半stop复位控制关闭，有限功能保留。事件快照、TX绝对沿号和活动元数据仍有条件；不升级系统或硬件验收|
 |物理时钟计数|64位自由运行、组合只读、高低高读取；计时单元增强296检查及真实C通过|
 |CoreMark短运行|2K总数据、两个种子、各1迭代，CRC/全状态/有序副作用/计时与后置UART通过|
 |计算区原始时钟数|性能种子2,103,648；验证种子2,263,000；不是主机运行秒数|
@@ -44,6 +44,7 @@ F146仅在独立副本修改cpu/soc取指选择，队员包装/TX/GPIO及官方�
 - [F145控制流只读量化](reports/verification/2026-10-25-control-flow-quality-m0.md)：work/analysis同名目录包含原迹解析/逐PC统计、来源SHA、最小候选范围；没有新CPU验证、实现或优化收益，下一RTL/TB/模型/PDS阶段须另获批准。
 - [F146取指候选与质量代价](reports/verification/2026-10-25-resolved-target-fetch-m1.md)：同名work/fpga目录含准确两源diff、逐例结果、两检查器历史失败/同输出修正、完整命令和新原始证据。候选暂缓合入，F143仍稳定；完整日志/波形/模型本地保留，不声称干净克隆一键复现。
 - [F147告警只读调查](reports/verification/2026-10-25-prefetch-warning-m0.md)：完整图/建模边界、共有粗略假阳性、官方帮助检索与内部图不可达范围分列；不以自写解析器代替官方消息解释，不提升候选或恢复硬件。
+- [F149最终阶段v01审收](reports/progress/2026-10-25-stage-final-v01-review.md)、[队员R1–R3集中反馈](deliveries/mainline-stage-final-response-2026-10-25-v1/TEAMMATE_REPLY.md)：新DUT/原波形分列，已证项关闭，只收敛验证/元数据差额；原核心和硬件STOP保持。
 - [F148/2335完整审收与八问](reports/progress/2026-10-25-increment-2335-mainline-alignment.md)、[集中队员回复](deliveries/mainline-increment-2335-response-2026-10-25-v1/TEAMMATE_REPLY.md)：原/新波形、失败和有限关闭分列，原核心保持，B仅验证差额/最终封包；10/27窗口及硬件STOP不变。
 - [1735增量分层审收](reports/progress/2026-10-24-increment-1735-mainline-alignment.md)、[给队员的集中反馈](deliveries/mainline-increment-1735-response-2026-10-24-v1/TEAMMATE_REPLY.md)。新收件不扩大PDS或硬件授权，原系统有限验收保持。
 - [首次提交范围](docs/repository/FIRST_COMMIT_SCOPE.md)、[逐文件SHA-256清单](docs/repository/first-commit-files.json)、[外部依赖与复现边界](docs/repository/EXTERNAL_DEPENDENCIES.md)。

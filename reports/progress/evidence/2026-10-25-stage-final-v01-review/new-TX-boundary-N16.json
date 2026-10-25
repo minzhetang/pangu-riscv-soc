@@ -1,0 +1,133 @@
+{
+  "events": [
+    {
+      "kind": "START",
+      "edge": 38,
+      "accept_edge": 37,
+      "full_frame_end": 197,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "COMPLETE",
+      "edge": 198,
+      "accept_edge": 37,
+      "full_frame_end": 197,
+      "delta_from_true_end": 1
+    },
+    {
+      "kind": "START",
+      "edge": 203,
+      "accept_edge": 202,
+      "full_frame_end": 362,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "COMPLETE",
+      "edge": 363,
+      "accept_edge": 202,
+      "full_frame_end": 362,
+      "delta_from_true_end": 1
+    },
+    {
+      "kind": "START",
+      "edge": 366,
+      "accept_edge": 365,
+      "full_frame_end": 525,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "COMPLETE",
+      "edge": 526,
+      "accept_edge": 365,
+      "full_frame_end": 525,
+      "delta_from_true_end": 1
+    },
+    {
+      "kind": "START",
+      "edge": 547,
+      "accept_edge": 546,
+      "full_frame_end": 706,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "CANCEL",
+      "edge": 549,
+      "accept_edge": 546,
+      "full_frame_end": 706,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "START",
+      "edge": 555,
+      "accept_edge": 554,
+      "full_frame_end": 714,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "COMPLETE",
+      "edge": 715,
+      "accept_edge": 554,
+      "full_frame_end": 714,
+      "delta_from_true_end": 1
+    },
+    {
+      "kind": "START",
+      "edge": 725,
+      "accept_edge": 724,
+      "full_frame_end": 884,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "CANCEL",
+      "edge": 789,
+      "accept_edge": 724,
+      "full_frame_end": 884,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "START",
+      "edge": 795,
+      "accept_edge": 794,
+      "full_frame_end": 954,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "COMPLETE",
+      "edge": 955,
+      "accept_edge": 794,
+      "full_frame_end": 954,
+      "delta_from_true_end": 1
+    },
+    {
+      "kind": "START",
+      "edge": 965,
+      "accept_edge": 964,
+      "full_frame_end": 1124,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "CANCEL",
+      "edge": 1111,
+      "accept_edge": 964,
+      "full_frame_end": 1124,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "START",
+      "edge": 1117,
+      "accept_edge": 1116,
+      "full_frame_end": 1276,
+      "delta_from_true_end": null
+    },
+    {
+      "kind": "COMPLETE",
+      "edge": 1277,
+      "accept_edge": 1116,
+      "full_frame_end": 1276,
+      "delta_from_true_end": 1
+    }
+  ],
+  "complete_delta": 1,
+  "early_completion": false,
+  "exact_original_E_plus_10N": false
+}

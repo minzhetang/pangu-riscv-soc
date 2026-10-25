@@ -1,0 +1,1811 @@
+{
+  "files": [
+    {
+      "path": "CHANGED_FILES.json",
+      "bytes": 20383,
+      "SHA256": "9B1591762212F4B4DED0CD148197AF8855A6817A04805BE72205F9040B4720A5",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 406
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all paths/version/SHA/old values resolved"
+        }
+      ]
+    },
+    {
+      "path": "coverage_map.json",
+      "bytes": 3433,
+      "SHA256": "94D26F43D426439BF4B6AFCFA455B5A1F70A36112764C9535F906D538DCA46EA",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 57
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "delivery.json",
+      "bytes": 3350,
+      "SHA256": "DE210DD5DC02AA11155EDC0642485FDF5FB804A3814F1F0C0EBFA1B1D1DF573C",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 62
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "bytes": 5424,
+      "SHA256": "B8D35F89A9BC59009B9353C042E8468D6E8B273B67CB0133726E7640EC97DCC0",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 77
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all paths/version/SHA/old values resolved"
+        }
+      ]
+    },
+    {
+      "path": "DIFF.patch",
+      "bytes": 102733,
+      "SHA256": "514DB321A9B9D788FBA882710C57411E89578A49A7DE9708076ACFE6613B72CB",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "files": 27,
+            "hunks": 46,
+            "exact_reconstruction": false
+          }
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "files": 27,
+            "hunks": 46,
+            "exact_reconstruction": false
+          }
+        }
+      ]
+    },
+    {
+      "path": "HISTORY_ALIASES.json",
+      "bytes": 1660,
+      "SHA256": "7188F5DEB071B6F9BAC922D779A99CF6197FF1662B1E2264252D6D17AF736130",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 26
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "MODULE_STATUS.json",
+      "bytes": 3430,
+      "SHA256": "CF3B2437C22B6D15F60468F7FB1E533C70777711120B50A6ED088511D331CBE3",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 68
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "OPEN_ITEMS.md",
+      "bytes": 777,
+      "SHA256": "4F1C16A0C6AB279FA8F45ACB30E528D545A4C653041D22243D679877BBC1ED46",
+      "status": "FULL_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_READ",
+          "detail": "current text fully displayed and reviewed"
+        }
+      ]
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "bytes": 8011,
+      "SHA256": "0C2970D74D4EA19C3A291A9F095666777C3243B687E817AD69C3BAA2A52EDFA8",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all paths/version/SHA/old values resolved"
+        }
+      ]
+    },
+    {
+      "path": "SOURCE_INDEX.json",
+      "bytes": 7246,
+      "SHA256": "AADC422059E52F9DFE42FDBC33A6892A2EAB141B08E045FFDBADD1D6B3477A2D",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 115
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all paths/version/SHA/old values resolved"
+        }
+      ]
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 1740,
+      "SHA256": "D3F2CDA21ACFFC784B2ADD173F4AEC175B2F72496B60FDF139F01E1392A7C03F",
+      "status": "FULL_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_READ",
+          "detail": "current text fully displayed and reviewed"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/CHANGELOG.md",
+      "bytes": 8726,
+      "SHA256": "875DDF51336A8E6665EBDF53EB5DDADB2CE2501588D82C693ABB3D57A548423C",
+      "status": "FULL_DELTA_PLUS_PRIOR_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_DELTA_PLUS_PRIOR_READ",
+          "detail": {
+            "base_SHA256": "16A136153E14D3F35CCBF73F3BF74B8AE9CBE846AC1E2684B0D417690BBC9E93",
+            "all_current_hunks_read": true,
+            "exact_hunk_reconstruction": true,
+            "unchanged_text_review_reused": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/docs/RX-LEDGER-1.3.4.md",
+      "bytes": 676,
+      "SHA256": "B1301D5AC876EBFAD0E55568FC1F1D951A7AED26B8185A0C5B8634C92A0B7CF0",
+      "status": "FULL_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_READ",
+          "detail": "current text fully displayed and reviewed"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/compile_illegal.log",
+      "bytes": 795,
+      "SHA256": "81D8EDEA8C39009BAA838F96B76276A147A96287F11BB2A00EAEFFFDC24AF80B",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/compile_N16.log",
+      "bytes": 860,
+      "SHA256": "3F4F619DE8593439E46A7355295DA29E28297DE5BF82726453A72527819A594E",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/compile_N234.log",
+      "bytes": 863,
+      "SHA256": "26DDBAA2A79666DD257994D740EE4A163B990D1BADA66BCABD62A43EB992069D",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/compile_N8.log",
+      "bytes": 857,
+      "SHA256": "3E15D50FC94B179D91ABB73E34D2C969DA41577C2626E47B97AC695B4FB0109C",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/compile_neg.log",
+      "bytes": 847,
+      "SHA256": "9A13B90A741C39E51E57B1DD3CB7F5B6D174DE7445268A1B25AE74EC7CE898F8",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/compile_watchdog.log",
+      "bytes": 821,
+      "SHA256": "6B463A01AE4D8D528476C80268988913FB47628362D2ACD24A2E9288F251DE88",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/plan_check.log",
+      "bytes": 1832,
+      "SHA256": "882B81ACDB19A4E489BD43DC335A2F4D0D80838A0D3364F36298DC5E28253212",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/run_illegal.log",
+      "bytes": 785,
+      "SHA256": "FC8C3653419244586AB119209A34AF728EA9E02C16E5DEDBA2E4F1A3FEE01193",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/run_manifest.json",
+      "bytes": 5263,
+      "SHA256": "3BEDB3BAFF5848412CCF0FF3BCEDFBCD92E7D44CCA88010C5F2BB67A8F203244",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 122
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/run_N16.log",
+      "bytes": 55442,
+      "SHA256": "F23FAB00ECFBDCFD38132A372BC82F0180D4F1D74D1D0BA4656496FBD760EB21",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/run_N234.log",
+      "bytes": 34907,
+      "SHA256": "365A66327BB794FE60196D93BFF9B7D879C7187B4A76A0199CAF5AFDEE7AB72F",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/run_N8.log",
+      "bytes": 46554,
+      "SHA256": "48658BCF07B1A7C36A79BECB363525F8C53181DCC584432DF5DF8B93963D3955",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/run_neg.log",
+      "bytes": 1390,
+      "SHA256": "40C4F214581E81FED32BC40CD7A96B9BF1F01D385F1955A750223F53A3B0F56B",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/run_watchdog.log",
+      "bytes": 811,
+      "SHA256": "29A1C5DA977BABEDD45989B8E21C3E66067718F2FC73F7D10FE040D384381BD2",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/schema_validate.log",
+      "bytes": 1173,
+      "SHA256": "5705B029089DDF36FB9E5B575F8A3EDA21614E2C7BBAA2566906BF7A6D9A4C8F",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/tool_iverilog.log",
+      "bytes": 4092,
+      "SHA256": "34B094B8E1F677822FA74B8D8CF92E4AA34B76E6E7BFDBBC04C45C78099CBD6F",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/tool_python.log",
+      "bytes": 696,
+      "SHA256": "D1682858B7D651D347EEFC338ED12C2E105CD3308896C982FC098E418D1BC987",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261025-191037/tool_vvp.log",
+      "bytes": 1478,
+      "SHA256": "E2E49FC118B64751815EE73C9A4276848CAAF8D9C080B9716DA2360904F464C5",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-status-selfcheck-20261025-191053/summary.json",
+      "bytes": 975,
+      "SHA256": "884ED8AC2667B56E6BDAFD276D93F386467F76B26BA77EC4C1635533FDFAF297",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 28
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/results.json",
+      "bytes": 60154,
+      "SHA256": "E364A6F590A305CAF4EC062A3D68FE41E0CBA877D26E579FCCBEBA93736D28B3",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 750
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/scripts/run_rx.py",
+      "bytes": 28865,
+      "SHA256": "281D780893775852A128CB52C2C6C7B9847AD7FE076E7DDD443E245E2BD872EA",
+      "status": "FULL_DELTA_PLUS_PRIOR_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_DELTA_PLUS_PRIOR_READ",
+          "detail": {
+            "base_SHA256": "767C9D7D9E76357C76F3C441D0EEB93CC801F58000EDEE82E2E3E2F7451AC534",
+            "all_current_hunks_read": true,
+            "exact_hunk_reconstruction": true,
+            "unchanged_text_review_reused": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/scripts/rx_status_selfcheck.py",
+      "bytes": 2390,
+      "SHA256": "6038732EC5C7CF4947606F20445B00ACE9F91152E5538FE68150F91F565056C8",
+      "status": "FULL_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_READ",
+          "detail": "current text fully displayed and reviewed"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/STATUS.md",
+      "bytes": 8997,
+      "SHA256": "BE94D94377033485996126813AE05F95A2C4FFBD9B0F8F53E6B4F9DFA596C93B",
+      "status": "FULL_DELTA_PLUS_PRIOR_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_DELTA_PLUS_PRIOR_READ",
+          "detail": {
+            "base_SHA256": "2DFBB14070A432DA33B21E983DE1FEF62CFA6E97F7A1293A2EF9ACDDFBB16261",
+            "all_current_hunks_read": true,
+            "exact_hunk_reconstruction": true,
+            "unchanged_text_review_reused": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/tb/rx_public_capture.sv",
+      "bytes": 2405,
+      "SHA256": "ADBD4EBC7A549DB48B704C11F740E9FD66DBBA185E1D795596C95BE2DF84EA5D",
+      "status": "FULL_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_READ",
+          "detail": "current text fully displayed and reviewed"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/tb/tb_uart_rx.sv",
+      "bytes": 51705,
+      "SHA256": "17C45CF4FC7510100B2D1BC881A1A5037DCF3B987893BE7344EEF46779F93F8D",
+      "status": "FULL_DELTA_PLUS_PRIOR_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_DELTA_PLUS_PRIOR_READ",
+          "detail": {
+            "base_SHA256": "A0A7F9DCECDFCB92F5798F2BA481AF7569CC328C51F55E25D8730AEA12E41FC5",
+            "all_current_hunks_read": true,
+            "exact_hunk_reconstruction": true,
+            "unchanged_text_review_reused": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/tb/tb_uart_rx_neg.sv",
+      "bytes": 14533,
+      "SHA256": "0CA0D6A519354AF1F1AE610677DFC7D9CCA01286408DC9AB882ED78AEF9407B6",
+      "status": "FULL_DELTA_PLUS_PRIOR_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_DELTA_PLUS_PRIOR_READ",
+          "detail": {
+            "base_SHA256": "282B2F1B495F141F620E255E58D2E70EB01B3884A9B7C1EAB5F58A01958ADE80",
+            "all_current_hunks_read": true,
+            "exact_hunk_reconstruction": true,
+            "unchanged_text_review_reused": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/tests/rx-plan-1.3.4.json",
+      "bytes": 22135,
+      "SHA256": "0C07DA028BACA04C9C41CD96862DA7C59AB1B294861F2C15A84D682B90B4FACD",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 333
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/tests/rx-plan-1.3.4.sha256",
+      "bytes": 112,
+      "SHA256": "CE7152EC7000EA1AE8148192460728B8D3853837298D9F7D8D1A2B15C63FB4A8",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "frozen plan SHA matches"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/waves/rx-20261025-191037/uart_rx_N16.vcd",
+      "bytes": 1023649,
+      "SHA256": "48588E9CD1D78E90BB17DB2BD48A140EA68A1E9FEDD7AB0A3053A8D8C447D873",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_timestamps": true,
+            "checks": 93088,
+            "artifact": "rx-wave-N16.json"
+          }
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/waves/rx-20261025-191037/uart_rx_N234.vcd",
+      "bytes": 11243577,
+      "SHA256": "9638108A358D60F5D88BFF25A4441A278733CA0189F09DABD6F0205BE4BFF9B2",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_timestamps": true,
+            "checks": 889328,
+            "artifact": "rx-wave-N234.json"
+          }
+        }
+      ]
+    },
+    {
+      "path": "work/peripherals/rx/waves/rx-20261025-191037/uart_rx_N8.vcd",
+      "bytes": 456733,
+      "SHA256": "C001DBE97C688AC611AF816134B66D0232383910115F3E55A2D368361801CA16",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_timestamps": true,
+            "checks": 42504,
+            "artifact": "rx-wave-N8.json"
+          }
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/docs/RUNBOOK.md",
+      "bytes": 2698,
+      "SHA256": "37469E4DE61D8B2018446BA1E7794664406EE9BB837A55B020F24924A41E6C2A",
+      "status": "FULL_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_READ",
+          "detail": "current text fully displayed and reviewed"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/docs/W01-W10.md",
+      "bytes": 3581,
+      "SHA256": "2A97E3207BED6774866690987732ED98D8CED29A63D4F6884A3C01DE64B4B15F",
+      "status": "FULL_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_READ",
+          "detail": "current text fully displayed and reviewed"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-capture-20261025-190535/compile_capture.log",
+      "bytes": 838,
+      "SHA256": "2DD80ECE48B7FF6DA827F189996C7C0A309E6EFA820E5297F6DC63C6C1B4196C",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-capture-20261025-190535/run_capture.log",
+      "bytes": 1412,
+      "SHA256": "D3355A5CF5D17B1F3B0556C9FBBF6C8C700137B12F8044FEEE47689715F0AD7B",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-capture-20261025-190535/summary.json",
+      "bytes": 550,
+      "SHA256": "3D2650D86DEB00435F2D956C4C0088CEE9C06F6C75A64767DF87AAC185E257AA",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 15
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-entry-selfcheck-20261025-190752/summary.json",
+      "bytes": 6567,
+      "SHA256": "921B094F8E1DD42D656CD1F9E404984D9C10A019940BC2C3C7893545261F13FA",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 119
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261025-190737/compile_N16.log",
+      "bytes": 982,
+      "SHA256": "39D5F3D8C4E0EC82F5F9F8E0A38EB3F5E74DCBB84C718E2F2630E11E78440EB3",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261025-190737/compile_N234.log",
+      "bytes": 984,
+      "SHA256": "CE124E26F30575797B8B7EB4E1A342142C2633D8566C7AF69D894429A66D5397",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261025-190737/plan_check.log",
+      "bytes": 1375,
+      "SHA256": "091DD1E9C46DE4204C217056DDB732CAD45171D3A85AC2D5042696C55A350C2F",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261025-190737/run_N16.log",
+      "bytes": 5181,
+      "SHA256": "D475C0EA49FA1B12018FE6C721BFA85AE4E5698BE2D06AD4C7005C01AFE7239A",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261025-190737/run_N234.log",
+      "bytes": 3007,
+      "SHA256": "C9BC540B256C4C1AE5CE4E6B6D0EF7607AE24C0444376FB1CE10BA10F158D281",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261025-190737/tool_iverilog.log",
+      "bytes": 4093,
+      "SHA256": "9AD73C52F0D8E5F18BA87D0E40AB5D2081AA4E9CE5A428271E5B18B2A56C6199",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261025-190737/tool_python.log",
+      "bytes": 697,
+      "SHA256": "7BCEAFAABB51B3A2BB09D7B3069DAC43EF9533C339D3E838C31F6221C515FD17",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261025-190737/tool_vvp.log",
+      "bytes": 1479,
+      "SHA256": "F76CF9172A119B437B81B485D0802B41BE85953430BDB836B1D76BE4312E8522",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "all lines/records read, semantic correlation pending"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/README.md",
+      "bytes": 2579,
+      "SHA256": "AF32BC6E1E2F2F3AF42B5FECA67895CBBE459F764C08ADBA7A90D5331D7FD2E2",
+      "status": "FULL_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_READ",
+          "detail": "current text fully displayed and reviewed"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/results.json",
+      "bytes": 19302,
+      "SHA256": "29023F6D78885D8E95471D218B654CB41B6E329194B5066DDAFBCBC70CC57A63",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 297
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py",
+      "bytes": 3249,
+      "SHA256": "23223D580AC2C37F05D6A9521B0E0506BE850B3AFEB106659477CE44D608B9EB",
+      "status": "FULL_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_READ",
+          "detail": "current text fully displayed and reviewed"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/scripts/regif_entry_selfcheck.py",
+      "bytes": 7599,
+      "SHA256": "11F4E27EC033992626E8EC806320F82BC10D4134FC51E3429D1240FDDDAB36CA",
+      "status": "FULL_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_READ",
+          "detail": "current text fully displayed and reviewed"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/scripts/run_regif_m1.py",
+      "bytes": 20404,
+      "SHA256": "F601C9EBB7007DE11D9002503E550E5B0C3CDFF72206D27C12E04142EFC1D63F",
+      "status": "FULL_DELTA_PLUS_PRIOR_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_DELTA_PLUS_PRIOR_READ",
+          "detail": {
+            "base_SHA256": "FDC63EDAF79147B0539CA85B133166CCD5A138F6B516DE0A95F54C891427336D",
+            "all_current_hunks_read": true,
+            "exact_hunk_reconstruction": true,
+            "unchanged_text_review_reused": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv",
+      "bytes": 3205,
+      "SHA256": "A638BCE59220A81AD9CDE9C335E18786BBC91C9C742644898DF1F4E28A9ED784",
+      "status": "FULL_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_READ",
+          "detail": "current text fully displayed and reviewed"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/tb/tb_local_regif_txgpio_m1.sv",
+      "bytes": 23194,
+      "SHA256": "7F0C1060ED9524B18965575CC3BE8DA1AE76D899521916F2D701976AEFAD793B",
+      "status": "PRIOR_FULL_READ_REUSED",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "PRIOR_FULL_READ_REUSED",
+          "detail": "unchanged exact SHA from F148 full reading"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv",
+      "bytes": 4634,
+      "SHA256": "8D3E47D1185483CC864406BE91484EBC44ADD191D42D997282A84430A51888ED",
+      "status": "FULL_READ",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_READ",
+          "detail": "current text fully displayed and reviewed"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.4.json",
+      "bytes": 15535,
+      "SHA256": "A9F09C89F65B85538F77D6B9ECF3EA01C12177EA6B94A2F0255861BD04F1F4D1",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_fields": true,
+            "leaves": 447
+          }
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.4.sha256",
+      "bytes": 118,
+      "SHA256": "A397B7CAC997D904846E158A85AFF73D08CB8C1E82A6A188B264071A983A53B6",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": "frozen plan SHA matches"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/waves/regif-m1-20261025-190737/regif_m1_N16.vcd",
+      "bytes": 131109,
+      "SHA256": "957B8966FFA52E6924C71296426B97ECEE45EEDC3FA2C1474DA870651002BDC5",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_timestamps": true,
+            "checks": 18022,
+            "artifact": "wrapper-wave-N16.json"
+          }
+        }
+      ]
+    },
+    {
+      "path": "work/regif/txgpio-m1/waves/regif-m1-20261025-190737/regif_m1_N234.vcd",
+      "bytes": 1930509,
+      "SHA256": "EECB326DB09DFAA005AE4B5BC0755070F96282B403AFD0E04967742A9F8B5A91",
+      "status": "FULL_PARSE",
+      "actions": [
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "HASH_ONLY",
+          "detail": "inventory"
+        },
+        {
+          "kind": "FULL_PARSE",
+          "detail": {
+            "all_timestamps": true,
+            "checks": 240081,
+            "artifact": "wrapper-wave-N234.json"
+          }
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "FULL_PARSE": 51,
+    "FULL_READ": 12,
+    "FULL_DELTA_PLUS_PRIOR_READ": 6,
+    "PRIOR_FULL_READ_REUSED": 1
+  },
+  "hash_only": 0,
+  "unread": 0
+}

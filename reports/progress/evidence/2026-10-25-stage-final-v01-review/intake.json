@@ -1,0 +1,22 @@
+{
+  "files": 70,
+  "bytes": 15438166,
+  "manifest": 69,
+  "manifest_SHA256": "0C2970D74D4EA19C3A291A9F095666777C3243B687E817AD69C3BAA2A52EDFA8",
+  "changed": 67,
+  "changed_SHA_mismatches": [
+    {
+      "path": "SOURCE_INDEX.json",
+      "old": "D:\\A_FPGA_Comp\\队员成果接收\\increment-20261024-2335\\SOURCE_INDEX.json",
+      "new": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-final-20261027-v01\\SOURCE_INDEX.json",
+      "SHA256": "AADC422059E52F9DFE42FDBC33A6892A2EAB141B08E045FFDBADD1D6B3477A2D",
+      "declared_SHA256": "71757D0B6DF706FA7B78BF846C6CCBFE3A3C1D53E125ADAA5FAD2738882B08D9",
+      "new_SHA_match": false
+    }
+  ],
+  "old_values": 23,
+  "source_index": 28,
+  "dependencies": 10,
+  "ZIP_present": false,
+  "new_DUT": 0
+}

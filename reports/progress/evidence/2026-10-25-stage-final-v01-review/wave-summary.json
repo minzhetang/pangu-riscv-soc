@@ -1,0 +1,105 @@
+[
+  {
+    "kind": "wrapper",
+    "N": 16,
+    "status": "PASS",
+    "checks": 18022,
+    "requests": 26,
+    "all_request_fields_and_edge_match": true
+  },
+  {
+    "kind": "wrapper",
+    "N": 234,
+    "status": "PASS",
+    "checks": 240081,
+    "requests": 10,
+    "all_request_fields_and_edge_match": true
+  },
+  {
+    "kind": "RX",
+    "N": 8,
+    "status": "PASS",
+    "checks": 42504,
+    "events": 92,
+    "ordered_type_data_match": true,
+    "ledger_field_errors": {
+      "pre_valid": 41,
+      "post_valid": 8
+    },
+    "edge_offsets": {
+      "ACCEPT": {
+        "0": 41
+      },
+      "CONSUME": {
+        "0": 41
+      },
+      "DROP": {
+        "0": 5
+      },
+      "ACCEPT-REPLACE": {
+        "0": 2
+      },
+      "RESET-CANCEL": {
+        "0": 3
+      }
+    }
+  },
+  {
+    "kind": "RX",
+    "N": 16,
+    "status": "PASS",
+    "checks": 93088,
+    "events": 110,
+    "ordered_type_data_match": true,
+    "ledger_field_errors": {
+      "pre_valid": 50,
+      "post_valid": 16
+    },
+    "edge_offsets": {
+      "ACCEPT": {
+        "0": 50
+      },
+      "CONSUME": {
+        "0": 50
+      },
+      "DROP": {
+        "0": 5
+      },
+      "ACCEPT-REPLACE": {
+        "0": 2
+      },
+      "RESET-CANCEL": {
+        "0": 3
+      }
+    }
+  },
+  {
+    "kind": "RX",
+    "N": 234,
+    "status": "PASS",
+    "checks": 889328,
+    "events": 68,
+    "ordered_type_data_match": true,
+    "ledger_field_errors": {
+      "pre_valid": 29,
+      "post_valid": 2
+    },
+    "edge_offsets": {
+      "ACCEPT": {
+        "0": 29
+      },
+      "CONSUME": {
+        "0": 29
+      },
+      "DROP": {
+        "0": 5
+      },
+      "ACCEPT-REPLACE": {
+        "0": 2
+      },
+      "RESET-CANCEL": {
+        "0": 3
+      }
+    }
+  }
+]

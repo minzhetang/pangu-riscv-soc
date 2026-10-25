@@ -1,0 +1,77 @@
+{
+  "rows": [
+    {
+      "N": 16,
+      "name": "correct_actual_log",
+      "expected": "PASS",
+      "errors": []
+    },
+    {
+      "N": 16,
+      "name": "second_edge_plus1",
+      "expected": "REJECT",
+      "errors": [
+        "request edge timeline=[9, 27, 29, 30, 37, 202, 203, 365, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 546, 554, 724, 794, 964, 1116] expected=[9, 26, 29, 30, 37, 202, 203, 365, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 546, 554, 724, 794, 964, 1116]",
+        "GPIO log seq/edge/data=[(1, 26, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')] expected request-aligned=[(1, 27, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')]"
+      ]
+    },
+    {
+      "N": 16,
+      "name": "flip_busy",
+      "expected": "REJECT",
+      "errors": [
+        "request seq=2 busy=1 expected=0"
+      ]
+    },
+    {
+      "N": 16,
+      "name": "complete_edge_999999",
+      "expected": "REJECT",
+      "errors": [
+        "TX COMPLETE edge=999999 has no START at edge-10N"
+      ]
+    },
+    {
+      "N": 16,
+      "name": "gpio_seq_edge",
+      "expected": "REJECT",
+      "errors": [
+        "GPIO log seq/edge/data=[(99, 999999, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')] expected request-aligned=[(1, 26, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')]"
+      ]
+    },
+    {
+      "N": 234,
+      "name": "correct_actual_log",
+      "expected": "PASS",
+      "errors": []
+    },
+    {
+      "N": 234,
+      "name": "second_edge_plus1",
+      "expected": "REJECT",
+      "errors": [
+        "request edge timeline=[6, 2350, 2350, 4692, 7040, 7048, 9398, 10340, 12690, 14804] expected=[6, 2349, 2350, 4692, 7040, 7048, 9398, 10340, 12690, 14804]",
+        "request edges not strictly increasing/unique"
+      ]
+    },
+    {
+      "N": 234,
+      "name": "flip_busy",
+      "expected": "REJECT",
+      "errors": [
+        "request seq=2 busy=1 expected=0"
+      ]
+    },
+    {
+      "N": 234,
+      "name": "complete_edge_999999",
+      "expected": "REJECT",
+      "errors": [
+        "TX COMPLETE edge=999999 has no START at edge-10N"
+      ]
+    }
+  ],
+  "status": "PASS_LIMITED_CONTROLS",
+  "incoming_entrypoints_executed": false,
+  "new_DUT": 0
+}

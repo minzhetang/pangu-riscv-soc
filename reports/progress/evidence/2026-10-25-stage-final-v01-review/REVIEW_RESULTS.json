@@ -1,0 +1,319 @@
+{
+  "date_beijing": "2026-10-25",
+  "fact": "F149",
+  "decisions": [
+    "D145",
+    "D146"
+  ],
+  "decision": "CONDITIONAL_ACCEPTANCE",
+  "intake": {
+    "files": 70,
+    "bytes": 15438166,
+    "manifest": 69,
+    "manifest_SHA256": "0C2970D74D4EA19C3A291A9F095666777C3243B687E817AD69C3BAA2A52EDFA8",
+    "changed": 67,
+    "changed_SHA_mismatches": [
+      {
+        "path": "SOURCE_INDEX.json",
+        "old": "D:\\A_FPGA_Comp\\队员成果接收\\increment-20261024-2335\\SOURCE_INDEX.json",
+        "new": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-final-20261027-v01\\SOURCE_INDEX.json",
+        "SHA256": "AADC422059E52F9DFE42FDBC33A6892A2EAB141B08E045FFDBADD1D6B3477A2D",
+        "declared_SHA256": "71757D0B6DF706FA7B78BF846C6CCBFE3A3C1D53E125ADAA5FAD2738882B08D9",
+        "new_SHA_match": false
+      }
+    ],
+    "old_values": 23,
+    "source_index": 28,
+    "dependencies": 10,
+    "ZIP_present": false,
+    "new_DUT": 0
+  },
+  "reading": {
+    "counts": {
+      "FULL_PARSE": 51,
+      "FULL_READ": 12,
+      "FULL_DELTA_PLUS_PRIOR_READ": 6,
+      "PRIOR_FULL_READ_REUSED": 1
+    },
+    "hash_only": 0,
+    "unread": 0
+  },
+  "native": {
+    "compilers": 7,
+    "new_DUT": 7,
+    "rows": [
+      {
+        "id": "wrap16",
+        "N": 16,
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+            "-N",
+            "-M-",
+            "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\build\\wrap16.vvp",
+            "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-stage-final-v01/build/wrap16.vcd"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01",
+          "returncode": 0,
+          "hex": "0x00000000",
+          "timed_out": false,
+          "timeout_s": 30,
+          "duration_s": 0.063,
+          "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-wrap16\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-wrap16\\stderr.log",
+          "log_truncated": false,
+          "cleanup": "NOT_NEEDED"
+        },
+        "normal_finish": true,
+        "function": "PASS_LIMITED",
+        "checks": 18022,
+        "TX_pin_function": "PASS",
+        "TX_complete_no_longer_early": true,
+        "TX_complete_global_edge": "FAIL_PLUS_ONE_CLOCK"
+      },
+      {
+        "id": "wrap234",
+        "N": 234,
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+            "-N",
+            "-M-",
+            "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\build\\wrap234.vvp",
+            "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-stage-final-v01/build/wrap234.vcd"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01",
+          "returncode": 0,
+          "hex": "0x00000000",
+          "timed_out": false,
+          "timeout_s": 30,
+          "duration_s": 0.093,
+          "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-wrap234\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-wrap234\\stderr.log",
+          "log_truncated": false,
+          "cleanup": "NOT_NEEDED"
+        },
+        "normal_finish": true,
+        "function": "PASS_LIMITED",
+        "checks": 240081,
+        "TX_pin_function": "PASS",
+        "TX_complete_no_longer_early": true,
+        "TX_complete_global_edge": "FAIL_PLUS_ONE_CLOCK"
+      },
+      {
+        "id": "rx8",
+        "N": 8,
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+            "-N",
+            "-M-",
+            "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\build\\rx8.vvp",
+            "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-stage-final-v01/build/rx8.vcd"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01",
+          "returncode": 0,
+          "hex": "0x00000000",
+          "timed_out": false,
+          "timeout_s": 30,
+          "duration_s": 0.079,
+          "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-rx8\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-rx8\\stderr.log",
+          "log_truncated": false,
+          "cleanup": "NOT_NEEDED"
+        },
+        "normal_finish": true,
+        "function": "PASS_LIMITED",
+        "checks": 42504,
+        "shared_one_to_one_type_data_edge": "PASS",
+        "events": 92,
+        "snapshot": "FAIL",
+        "snapshot_field_errors": {
+          "pre_valid": 41,
+          "post_valid": 8
+        }
+      },
+      {
+        "id": "rx16",
+        "N": 16,
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+            "-N",
+            "-M-",
+            "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\build\\rx16.vvp",
+            "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-stage-final-v01/build/rx16.vcd"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01",
+          "returncode": 0,
+          "hex": "0x00000000",
+          "timed_out": false,
+          "timeout_s": 30,
+          "duration_s": 0.093,
+          "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-rx16\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-rx16\\stderr.log",
+          "log_truncated": false,
+          "cleanup": "NOT_NEEDED"
+        },
+        "normal_finish": true,
+        "function": "PASS_LIMITED",
+        "checks": 93088,
+        "shared_one_to_one_type_data_edge": "PASS",
+        "events": 110,
+        "snapshot": "FAIL",
+        "snapshot_field_errors": {
+          "pre_valid": 50,
+          "post_valid": 16
+        }
+      },
+      {
+        "id": "rx234",
+        "N": 234,
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+            "-N",
+            "-M-",
+            "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\build\\rx234.vvp",
+            "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-stage-final-v01/build/rx234.vcd"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01",
+          "returncode": 0,
+          "hex": "0x00000000",
+          "timed_out": false,
+          "timeout_s": 30,
+          "duration_s": 0.719,
+          "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-rx234\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-rx234\\stderr.log",
+          "log_truncated": false,
+          "cleanup": "NOT_NEEDED"
+        },
+        "normal_finish": true,
+        "function": "PASS_LIMITED",
+        "checks": 889328,
+        "shared_one_to_one_type_data_edge": "PASS",
+        "events": 68,
+        "snapshot": "FAIL",
+        "snapshot_field_errors": {
+          "pre_valid": 29,
+          "post_valid": 2
+        }
+      },
+      {
+        "id": "rxneg",
+        "N": 16,
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+            "-N",
+            "-M-",
+            "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\build\\rxneg.vvp",
+            "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-stage-final-v01/build/rxneg.vcd"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01",
+          "returncode": 0,
+          "hex": "0x00000000",
+          "timed_out": false,
+          "timeout_s": 30,
+          "duration_s": 0.031,
+          "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-rxneg\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-rxneg\\stderr.log",
+          "log_truncated": false,
+          "cleanup": "NOT_NEEDED"
+        },
+        "normal_finish": true,
+        "function": "PASS_SCOPED_NEGATIVE_CONTROLS",
+        "markers": [
+          "NEG_CONTROL_PASS",
+          "NEG_CHECKER_PASS",
+          "NEG_EXTRA_VALID_DETECTED",
+          "NEG_EXTRA_VALID_CONTROL_PASS",
+          "NEG_MISSING_DETECTED",
+          "NEG_ORDER_DETECTED",
+          "NEG_WRONG_BYTE_DETECTED",
+          "NEG_TWO_EVENT_CONTROL_PASS",
+          "NEG_CAPTURE_SAME_EDGE_CONTROL_PASS",
+          "NEG_CAPTURE_DROP_CONTROL_PASS",
+          "NEG_CAPTURE_DROP_MISSING_DETECTED",
+          "NEG_CAPTURE_DROP_WRONG_BYTE_DETECTED",
+          "NEG_CAPTURE_CANCEL_CONTROL_PASS",
+          "NEG_CAPTURE_CANCEL_MISSING_DETECTED",
+          "NEG_CAPTURE_CANCEL_EXTRA_DETECTED"
+        ]
+      },
+      {
+        "id": "txcap",
+        "N": 16,
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+            "-N",
+            "-M-",
+            "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\build\\txcap.vvp",
+            "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-stage-final-v01/build/txcap.vcd"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01",
+          "returncode": 0,
+          "hex": "0x00000000",
+          "timed_out": false,
+          "timeout_s": 30,
+          "duration_s": 0.032,
+          "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-txcap\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v01\\logs\\run-txcap\\stderr.log",
+          "log_truncated": false,
+          "cleanup": "NOT_NEEDED"
+        },
+        "normal_finish": true,
+        "function": "PASS_SCOPED_NEGATIVE_CONTROLS",
+        "markers": [
+          "REGIF_CAP_GOOD_PASS",
+          "REGIF_CAP_BAD_STOP_DETECTED",
+          "REGIF_CAP_EXTRA_DETECTED",
+          "REGIF_CAP_MISSING_DETECTED",
+          "REGIF_CAP_LAST_HALF_STOP_CANCEL",
+          "REGIF_CAP_CONTROL_PASS",
+          "REGIF_CAP_SELFCHECK_PASS"
+        ]
+      }
+    ],
+    "CPU_CoreMark_PDS_runs": 0,
+    "hardware": "STOPPED"
+  },
+  "closure": {
+    "V1_shared_order": "CLOSED_NEW_DUT_3_CONFIGS",
+    "V1_consume_and_5e": "CLOSED_LIMITED",
+    "V1_other_snapshot": "OPEN_R1",
+    "V2_no_early_complete_and_late_stop_cancel": "CLOSED_LIMITED",
+    "V2_original_event_edge": "OPEN_R2_PLUS_ONE_CLOCK",
+    "V3_requested_mutations": "CLOSED_SCOPED_CONTROLS_WITH_V2_ABSOLUTE_EDGE_LIMIT",
+    "V4_integrity": "MAIN_MANIFEST_AND_DEPENDENCIES_PASS_METADATA_OPEN_R3",
+    "W06": "CLOSED_PRIOR_A_SUPPLEMENT_NO_RERUN",
+    "GPIO": "ACCEPTED_LIMITED_PRIOR_NO_RERUN"
+  },
+  "layers": {
+    "material": "70 present; remaining metadata contradictions",
+    "B_local": "PASS_LOCAL claimed; finite original wave function supported, snapshot/edge fail",
+    "mainline": "7 rebuilt/7 run; 5 public function finite PASS, strict snapshot/edge FAIL",
+    "interface": "unchanged original approvals; RX CORE only",
+    "system": "no new CPU/CoreMark/PDS; F143 stable F146 held F147 warning open",
+    "hardware": "STOPPED_NOT_VALIDATED"
+  },
+  "return_window": "2026-10-27T18:00:00+08:00",
+  "B_hours_user_reported": {
+    "new": 6.0,
+    "low": 4.5,
+    "high": 7.5,
+    "remaining": 0.25,
+    "verified": false
+  },
+  "external_message_sent": false,
+  "reply": "D:\\A_FPGA_Comp\\deliveries\\mainline-stage-final-response-2026-10-25-v1\\TEAMMATE_REPLY.md",
+  "CORE_changes": false
+}
