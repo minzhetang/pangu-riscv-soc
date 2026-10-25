@@ -1,0 +1,13 @@
+{
+  "date_beijing": "2026-10-25",
+  "decision": "D131",
+  "user_reply": "同意继续",
+  "scope": "A-BOARD-TOP-M1: independent board top/reset/pins/UART/short software validation/PDS timing only",
+  "forbidden": [
+    "CPU/B functional changes",
+    "bitstream",
+    "hardware/server/JTAG/Flash",
+    "SCBV/power/thermal",
+    "install/GUI/license/environment changes"
+  ]
+}

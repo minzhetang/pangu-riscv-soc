@@ -1,0 +1,22 @@
+{
+  "firmware_initial_compile": {
+    "status": "FAIL_NEW_C_NOT_CPU",
+    "path": "logs/firmware-gcc/stderr.log",
+    "reason": "GCC15.2 -Werror truncating 17-byte string into16-byte array",
+    "fix": "new private hexchars[] reserves terminator, same indexed16 values",
+    "before": "firmware/board_smoke-before-compiler-fix.c",
+    "new_artifact": "build/board-v2/program.bin"
+  },
+  "waveform_parser": {
+    "initial": "empty state before first #0 group",
+    "fix": "ignore group before any values, then require known ports",
+    "DUT_rerun": false
+  },
+  "synthesis_parser": {
+    "initial": "port whitespace Q (...) was not accepted by parameter parser",
+    "fix": "accept emitted whitespace before parenthesis, unchanged expected chain",
+    "PDS_rerun": false
+  },
+  "prior_tool_errors": "F141 ordinary Icarus0xC/PDS Win623 retained, not re-probed this stage",
+  "no_original_or_expected_RTL_modified": true
+}

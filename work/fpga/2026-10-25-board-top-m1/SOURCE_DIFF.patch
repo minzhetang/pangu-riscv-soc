@@ -1,0 +1,187 @@
+--- /dev/null
++++ source/board_top.sv
+@@ -0,0 +1,17 @@
++`timescale 1ns/1ps
++// MES2L676-100HP: KEY0 reset, KEY1..4 GPIO low nibble, eight LEDs, TX only.
++// CPU, peripheral cores/wrapper, address map and memory protocol unchanged.
++module board_top(input wire clk, input wire [4:0] key_n,
++                 output wire uart_tx, output wire [7:0] led);
++    wire sys_rst_n;
++    wire [7:0] gpio_keys = {4'b0000, ~key_n[4:1]};
++    wire stopped, write_error;
++    wire [1:0] stop_kind;
++    wire [31:0] stop_pc;
++    board_reset_sync reset_sync(.clk(clk), .key0_n(key_n[0]),
++                                .sys_rst_n(sys_rst_n));
++    soc_top #(.CLKS_PER_BIT(234)) soc(
++        .clk(clk), .rst_n(sys_rst_n), .gpio_in_async(gpio_keys),
++        .uart_tx(uart_tx), .gpio_out(led), .stopped(stopped),
++        .stop_kind(stop_kind), .stop_pc(stop_pc), .write_error(write_error));
++endmodule
+--- /dev/null
++++ source/board_reset_sync.sv
+@@ -0,0 +1,12 @@
++`timescale 1ns/1ps
++// KEY0: asynchronous assertion, three rising edges to synchronous release.
++// No debouncing, minimum pulse guarantee or physical MTBF claim.
++module board_reset_sync(input wire clk, input wire key0_n,
++                        output wire sys_rst_n);
++    reg [2:0] release_ff = 3'b000;
++    always @(posedge clk or negedge key0_n) begin
++        if (!key0_n) release_ff <= 3'b000;
++        else release_ff <= {release_ff[1:0], 1'b1};
++    end
++    assign sys_rst_n = release_ff[2];
++endmodule
+--- /dev/null
++++ firmware/board_smoke.c
+@@ -0,0 +1,32 @@
++#include <stdint.h>
++#define REG32(off) (*(volatile uint32_t *)(uintptr_t)(0x20000000u+(off)))
++#define TXDATA REG32(0x00)
++#define STATUS REG32(0x08)
++#define GPIO_OUT REG32(0x0c)
++#define GPIO_IN REG32(0x10)
++volatile uint32_t boot_cookie=0x13579bdfu;
++volatile uint32_t boot_bss[4];
++volatile uint32_t results[8];
++volatile uint32_t signature;
++static const uint8_t hexchars[]="0123456789ABCDEF";
++static void put(uint32_t v) {
++    while ((STATUS & 1u)==0) { }
++    TXDATA=v;
++}
++int main(void) {
++    uint32_t error=0;
++    results[0]=boot_cookie;
++    results[1]=boot_bss[0]|boot_bss[1]|boot_bss[2]|boot_bss[3];
++    results[2]=GPIO_IN;
++    GPIO_OUT=0x5a; results[3]=GPIO_OUT;
++    GPIO_OUT=0x5a; results[4]=GPIO_OUT;
++    GPIO_OUT=0xa5; results[5]=GPIO_OUT;
++    if (results[0]!=0x13579bdfu || results[1]!=0 || (results[2]&~15u)!=0)
++        error|=1;
++    if (results[3]!=0x5a || results[4]!=0x5a || results[5]!=0xa5) error|=2;
++    put('B'); put(hexchars[results[2]&15u]); put('\r'); put('\n'); put('A'); put('A');
++    while ((STATUS & 1u)==0) { }
++    results[6]=error; results[7]=6;
++    signature=error?(0xbad00000u|error):0x424d3031u;
++    return (int)error;
++}
+--- /dev/null
++++ tests/tb_reset.sv
+@@ -0,0 +1,28 @@
++`timescale 1ns/1ps
++module tb_reset;
++    reg clk=0,key0_n=1;
++    wire sys_rst_n;
++    integer checks=0;
++    board_reset_sync dut(.*);
++    task ck(input reg okay);
++        begin checks=checks+1; if (!okay) $fatal(1,"RESET_CHECK_FAIL %0d",checks); end
++    endtask
++    task tick(input reg expected);
++        begin #5;clk=1;#1;ck(sys_rst_n===expected);#4;clk=0;end
++    endtask
++    initial begin
++        $dumpfile("wave.vcd");$dumpvars(0,tb_reset);
++        #1;ck(sys_rst_n===0); // cold configuration, button never pressed
++        tick(0);tick(0);tick(1);
++        #2;key0_n=0;#1;ck(sys_rst_n===0); // assertion between clock edges
++        #2;key0_n=1;#10;ck(sys_rst_n===0); // no clock means no release
++        tick(0);tick(0);tick(1);
++        #2;key0_n=0;#1;ck(sys_rst_n===0);
++        key0_n=1;tick(0); // release bounce interrupted after one clock
++        #2;key0_n=0;#1;ck(sys_rst_n===0);
++        key0_n=1;tick(0);tick(0);tick(1);
++        tick(1);tick(1);
++        $display("RESET_PASS checks=%0d",checks);$finish;
++    end
++    initial begin #1000;$fatal(1,"RESET_TIMEOUT");end
++endmodule
+--- /dev/null
++++ tests/tb_board_system.sv
+@@ -0,0 +1,83 @@
++`timescale 1ns/1ps
++module tb_board_system;
++    localparam integer N=234,PHASE_ADDR=0;
++    integer key_pattern=5;reg [4:0] key_n=0;
++    reg clk=0;wire rst_n=board_dut.sys_rst_n;
++    wire [7:0] gpio_in_async={4'b0,~key_n[4:1]};
++    wire uart_tx,stopped,write_error;wire [7:0] gpio_out;wire [1:0] stop_kind;wire [31:0] stop_pc;
++    integer cycle=0,tail=0,limit=10000000,events_fd,bus_fd,rf_fd,ram_fd,i;
++    integer advances=0,stall=0,flush=0,wave_until=1024;reg dumping=1;
++    reg [31:0] pre_addr,pre_wdata,pre_io_data,pre_phase=0;
++    reg [3:0] pre_strobe;reg pre_write,pre_io_error,pre_tx,pre_gpio_accept;
++    reg [7:0] pre_gpio_out,pre_gpio_async;reg [63:0] pre_ticks;
++    GTP_GRS GRS_INST(.GRS_N(1'b1));board_top board_dut(.clk(clk),.key_n(key_n),.uart_tx(uart_tx),.led(gpio_out));
++    assign stopped=board_dut.soc.stopped;
++    assign write_error=board_dut.soc.write_error;
++    assign stop_kind=board_dut.soc.stop_kind;
++    assign stop_pc=board_dut.soc.stop_pc;
++    wire gpio_actual_accept=board_dut.soc.peripherals.u_gpio.gpio_wr_en;
++    wire [31:0] monitor_pc=board_dut.soc.pc,monitor_address=board_dut.soc.address,monitor_read=board_dut.soc.rdata;
++    wire [63:0] monitor_ticks=board_dut.soc.timer_ticks;
++    wire monitor_advance=board_dut.soc.cpu_core.pipeline_advance,monitor_phase=board_dut.soc.cpu_core.memory_phase;
++    // 37.037 ns period at 1 ps precision, nominal 27 MHz.
++    always begin #18.518;clk=1;#18.519;clk=0;end
++    initial begin
++        if(!$value$plusargs("MAX_CYCLES=%d",limit))limit=10000000;
++        if(N!=16&&N!=234)$fatal(1,"UNAPPROVED_N");
++        if(limit<1||limit>10000000)$fatal(1,"BUDGET_BOUNDS");
++        events_fd=$fopen("trace.log","w");bus_fd=$fopen("bus.log","w");
++        if(!events_fd||!bus_fd)$fatal(1,"TRACE_OPEN");
++        $dumpfile("wave.vcd");$dumpvars(1,tb_board_system);$dumpvars(1,board_dut);
++        if(!$value$plusargs("K=%d",key_pattern))key_pattern=5;
++        if(key_pattern!=5&&key_pattern!=12)$fatal(1,"UNFROZEN_KEYS");
++        key_n[4:1]=~key_pattern[3:0];key_n[0]=0;
++        repeat(4)@(negedge clk);key_n[0]=1;
++    end
++    always @(posedge clk)if(rst_n)begin
++        cycle=cycle+1;if(cycle>limit)$fatal(1,"SYSTEM_TIMEOUT");
++        pre_addr=board_dut.soc.address;pre_wdata=board_dut.soc.wdata;pre_io_data=board_dut.soc.rdata;
++        pre_write=board_dut.soc.wren;pre_strobe=board_dut.soc.wstrb;pre_io_error=board_dut.soc.io_error;
++        pre_ticks=board_dut.soc.timer_ticks;
++        pre_tx=uart_tx;pre_gpio_out=gpio_out;pre_gpio_async=gpio_in_async;pre_gpio_accept=gpio_actual_accept;
++        if(pre_ticks!==(64'(cycle)-1))$fatal(1,"COUNTER_PRE_EDGE");
++        if((^{board_dut.soc.cpu_core.pipeline_advance,board_dut.soc.wren,board_dut.soc.io_sel,board_dut.soc.io_error,uart_tx,gpio_out,stopped,write_error})===1'bx)
++            $fatal(1,"UNKNOWN_SYSTEM_CONTROL");
++        if(write_error)$fatal(1,"SYSTEM_WRITE_REJECTED");
++        if(board_dut.soc.ram_we&&board_dut.soc.io_sel)$fatal(1,"RAM_IO_OVERLAP");
++        if(PHASE_ADDR!=0&&pre_write&&pre_addr==PHASE_ADDR)begin
++            pre_phase=pre_wdata;wave_until=cycle+256;
++        end
++        if(board_dut.soc.cpu_core.pipeline_advance)begin
++            advances=advances+1;if(board_dut.soc.cpu_core.stall_if)stall=stall+1;if(board_dut.soc.cpu_core.flush_if)flush=flush+1;
++            if(board_dut.soc.cpu_core.id_valid&&!board_dut.soc.cpu_core.eei_hold)$fdisplay(events_fd,"EX|%0d|%08x",cycle,board_dut.soc.cpu_core.id_pc);
++            if(board_dut.soc.cpu_core.ex_valid&&board_dut.soc.cpu_core.ex_mem_to_reg)
++                $fdisplay(events_fd,"READ|%0d|%08x|%08x|%08x|%08x",cycle,board_dut.soc.cpu_core.ex_pc,board_dut.soc.address,board_dut.soc.rdata,board_dut.soc.cpu_core.mem_load_data);
++            if(!board_dut.soc.cpu_core.stall_if&&!board_dut.soc.cpu_core.flush_if&&!board_dut.soc.cpu_core.eei_hold&&
++                (board_dut.soc.pc>=32'h8000||board_dut.soc.inst!==board_dut.soc.storage.rom[board_dut.soc.pc>>2]))$fatal(1,"FETCH_MISMATCH");
++        end
++        if(board_dut.soc.cpu_core.rf.we&&board_dut.soc.cpu_core.mem_rd!=0)$fdisplay(events_fd,"WB|%0d|%0d|%08x",cycle,board_dut.soc.cpu_core.mem_rd,board_dut.soc.cpu_core.wb_write_data);
++        if(board_dut.soc.wren)begin
++            if(board_dut.soc.cpu_core.pipeline_advance||!board_dut.soc.cpu_core.ex_valid)$fatal(1,"STORE_PHASE");
++            $fdisplay(events_fd,"STORE|%0d|%08x|%08x|%08x|%01x",cycle,board_dut.soc.cpu_core.ex_pc,board_dut.soc.address,board_dut.soc.wdata,board_dut.soc.wstrb);
++        end
++        if(stopped&&(board_dut.soc.wren||(board_dut.soc.cpu_core.rf.we&&board_dut.soc.cpu_core.mem_rd!=0)))$fatal(1,"STOP_SIDE_EFFECT");
++        #1;if(board_dut.soc.timer_ticks!==64'(cycle))$fatal(1,"COUNTER_POST_EDGE");
++        // Sparse bus: every IO address or actual low serial level is retained.
++        // Omitted serial samples are high; omitted bus requests cannot select IO.
++        if(pre_addr[31:8]==24'h200000||pre_addr[31:3]==29'h04000020||!pre_tx||!uart_tx||cycle<=16||stopped)
++            $fdisplay(bus_fd,"EDGE|%0d|%02x|%08x|%0d|%08x|%01x|%08x|%0d|%0d|%02x|%0d|%02x|%0d|%0d|%016x|%016x",
++                cycle,pre_gpio_async,pre_addr,pre_write,pre_wdata,pre_strobe,pre_io_data,pre_io_error,
++                pre_tx,pre_gpio_out,uart_tx,gpio_out,pre_gpio_accept,stopped,pre_ticks,board_dut.soc.timer_ticks);
++    end
++    always @(negedge clk)if(rst_n&&stopped)begin
++        tail=tail+1;if(tail==32)begin
++            rf_fd=$fopen("registers.hex","w");ram_fd=$fopen("ram.hex","w");
++            if(!rf_fd||!ram_fd)$fatal(1,"OUTPUT_OPEN");
++            for(i=0;i<32;i=i+1)$fdisplay(rf_fd,"%08x",board_dut.soc.cpu_core.rf.regs[i]);
++            for(i=0;i<32768;i=i+1)$fdisplay(ram_fd,"%02x",(board_dut.soc.storage.ram[i>>2]>>((i%4)*8))&255);
++            $fclose(rf_fd);$fclose(ram_fd);$fclose(events_fd);$fclose(bus_fd);
++            $display("METRICS|physical=%0d|advances=%0d|stall=%0d|flush=%0d|tail=%0d",cycle,advances,stall,flush,tail);
++            $display("STOP|%0d|%08x",stop_kind,stop_pc);$display("SYSTEM_ENDED_NOT_FUNCTIONAL_PASS");$finish;
++        end
++    end
++endmodule

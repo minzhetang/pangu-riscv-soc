@@ -1,0 +1,30 @@
+{
+  "pins": {
+    "clk": "D18",
+    "uart_tx": "C24",
+    "key_n[0]": "C22",
+    "key_n[1]": "C23",
+    "key_n[2]": "B22",
+    "key_n[3]": "A22",
+    "key_n[4]": "B20",
+    "led[0]": "A20",
+    "led[1]": "C18",
+    "led[2]": "C19",
+    "led[3]": "E18",
+    "led[4]": "A17",
+    "led[5]": "A18",
+    "led[6]": "C17",
+    "led[7]": "B17"
+  },
+  "source": "T1 PDF23/43-44/50-51 plus original key_led/uart FDC",
+  "gpio": "KEY1..4 pressed=1 in low nibble, high nibble 0",
+  "reset": "KEY0 async assert, three-edge synchronous release; no debounce",
+  "baud": {
+    "clock_hz": 27000000,
+    "clks_per_bit": 234,
+    "nominal_baud": 115384.61538461539,
+    "error_percent": 0.1602564102564097
+  },
+  "no_input_or_output_delay_invented": true,
+  "no_false_paths": true
+}

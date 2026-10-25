@@ -1,0 +1,136 @@
+{
+  "status": "C_BUILD_ONLY_NOT_DUT",
+  "program_bin": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2\\program.bin",
+  "bytes": 612,
+  "symbols": {
+    "_start": 0,
+    "main": 112,
+    "hexchars": 588,
+    "__data_load": 608,
+    "__data_start": 65536,
+    "boot_cookie": 65536,
+    "__bss_start": 65540,
+    "__data_end": 65540,
+    "results": 65540,
+    "boot_bss": 65572,
+    "signature": 65588,
+    "__bss_end": 65592,
+    "__global_pointer$": 67584,
+    "__stack_bottom": 90112,
+    "__stack_top": 98304
+  },
+  "bin_sha": "FA008E4E3E83E6973AE54BB845AB9E534EB53F62519E27E0ECC2A0C560B4F0D0",
+  "ELF_sha": "D5E45294DA76D06CFB604312E41297332918531039DB27631062575DEBB8034D",
+  "commands": [
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+        "-march=rv32i",
+        "-mabi=ilp32",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-common",
+        "-fno-pie",
+        "-fno-stack-protector",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-mno-relax",
+        "-msmall-data-limit=0",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-nostdlib",
+        "-nostartfiles",
+        "-Wl,--no-relax",
+        "-Wl,--build-id=none",
+        "-Wl,-T,D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\firmware\\link.ld",
+        "-Wl,-Map,D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2\\program.map",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2\\program.elf",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\firmware\\start.S",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\firmware\\board_smoke.c",
+        "-lgcc"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "cap": false,
+      "elapsed_seconds": 0.406,
+      "timeout_seconds": 60,
+      "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-gcc\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-gcc\\stderr.log"
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2\\program.elf",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2\\program.bin"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "cap": false,
+      "elapsed_seconds": 0.171,
+      "timeout_seconds": 60,
+      "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-objcopy\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-objcopy\\stderr.log"
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+        "-n",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2\\program.elf"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "cap": false,
+      "elapsed_seconds": 0.172,
+      "timeout_seconds": 60,
+      "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-nm\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-nm\\stderr.log"
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+        "-d",
+        "-M",
+        "no-aliases",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2\\program.elf"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "cap": false,
+      "elapsed_seconds": 0.188,
+      "timeout_seconds": 60,
+      "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-objdump\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-objdump\\stderr.log"
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+        "-h",
+        "-A",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2\\program.elf"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "cap": false,
+      "elapsed_seconds": 0.172,
+      "timeout_seconds": 60,
+      "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-readelf\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-readelf\\stderr.log"
+    }
+  ],
+  "ISA": "rv32i2p1"
+}

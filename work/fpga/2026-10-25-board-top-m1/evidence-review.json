@@ -1,0 +1,149 @@
+{
+  "references": [
+    {
+      "path": "D:\\A_FPGA_Comp\\盘古100Pro+开发板（MES2L676-100HP）配套资料\\教程1_硬件实验指导手册_盘古676系列100Pro开发板.pdf",
+      "sha256": "F2FB07625A0A31705D7E8477308F7BCB1AA5272B6B0754CFBF9DACA20EBEC114",
+      "actual_pages_visually_checked": [
+        23,
+        43,
+        44,
+        50,
+        51
+      ],
+      "scope": "T1 key circuit/pin pages visual; T2 selected text only, not used as pin authority"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\盘古100Pro+开发板（MES2L676-100HP）配套资料\\教程2_通用实验指导手册_盘古676系列100Pro开发板.pdf",
+      "sha256": "B77732EBA3C720A5759DA6D8E71C1408B8BEE621C29145D890C7F08FDFC3321D",
+      "actual_pages_visually_checked": [],
+      "scope": "T1 key circuit/pin pages visual; T2 selected text only, not used as pin authority"
+    }
+  ],
+  "archive_receipt": [
+    {
+      "archive": "D:\\A_FPGA_Comp\\盘古100Pro+开发板（MES2L676-100HP）配套资料\\2_Demo\\2_7_key_led_test.rar",
+      "sha256": "5BFE2D18021E87767ABF8C6AFC57EFA888B51A3F40B0882A1116CE7E3F7B62C6",
+      "all_entries": 48,
+      "selected_files": [
+        "2_7_key_led_test\\2_7_key_led_test\\key_led_test.pds",
+        "2_7_key_led_test\\2_7_key_led_test\\source\\key_led_test.fdc",
+        "2_7_key_led_test\\2_7_key_led_test\\source\\key_led_test.v",
+        "2_7_key_led_test\\2_7_key_led_test\\source\\tb_key_led_test.v"
+      ],
+      "nested": [],
+      "status": "read selected text; no execution"
+    },
+    {
+      "archive": "D:\\A_FPGA_Comp\\盘古100Pro+开发板（MES2L676-100HP）配套资料\\2_Demo\\2_8_uart_test.rar",
+      "sha256": "9A2FFB9D0AA30D51E07076E3794DB623C6979AD01BD3B4888CD8926DDCE9A1BE",
+      "all_entries": 51,
+      "selected_files": [
+        "2_8_uart_test\\2_8_uart_test\\source\\uart_data_gen.v",
+        "2_8_uart_test\\2_8_uart_test\\source\\uart_rx.v",
+        "2_8_uart_test\\2_8_uart_test\\source\\uart_top.v",
+        "2_8_uart_test\\2_8_uart_test\\source\\uart_tx.v",
+        "2_8_uart_test\\2_8_uart_test\\uart_test.fdc",
+        "2_8_uart_test\\2_8_uart_test\\uart_test.pds"
+      ],
+      "nested": [],
+      "status": "read selected text; no execution"
+    }
+  ],
+  "selected_files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\demos\\2_7_key_led_test\\2_7_key_led_test\\2_7_key_led_test\\key_led_test.pds",
+      "sha256": "A6FDC7C17DC5C43EA3EBACEB2C25C6F23CD1DDFAFFD9E656E526EA1DB68D0AAA",
+      "lines": 255,
+      "read": "complete text, not executed",
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\demos\\2_7_key_led_test\\2_7_key_led_test\\2_7_key_led_test\\source\\key_led_test.fdc",
+      "sha256": "9017DEBEBE3DC3EA7DC076572B36324F901DA40EAD062F42EF40DBF18BCE76AC",
+      "lines": 77,
+      "read": "complete text, not executed",
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\demos\\2_7_key_led_test\\2_7_key_led_test\\2_7_key_led_test\\source\\key_led_test.v",
+      "sha256": "41D18A66BA9A8F5EC0F5D1969A65ED1AA7B49D58002F8D747B905D08AB213D16",
+      "lines": 48,
+      "read": "complete text, not executed",
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\demos\\2_7_key_led_test\\2_7_key_led_test\\2_7_key_led_test\\source\\tb_key_led_test.v",
+      "sha256": "F3B407169D451C4E0B9FF65A6DC1E1168C7B5B1598635108C2745C4DD2892258",
+      "lines": 53,
+      "read": "complete text, not executed",
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\demos\\2_8_uart_test\\2_8_uart_test\\2_8_uart_test\\source\\uart_data_gen.v",
+      "sha256": "2A46A7335281E3798EA513A9DBC6B0AFE94CE6820965C32D031994B8979DCF63",
+      "lines": 125,
+      "read": "complete text, not executed",
+      "encoding": "gb18030"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\demos\\2_8_uart_test\\2_8_uart_test\\2_8_uart_test\\source\\uart_rx.v",
+      "sha256": "B126C993E568C8FBC3953B848513B7FF9A0F347356FF585D32AED5E00741F1DF",
+      "lines": 182,
+      "read": "complete text, not executed",
+      "encoding": "gb18030"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\demos\\2_8_uart_test\\2_8_uart_test\\2_8_uart_test\\source\\uart_top.v",
+      "sha256": "EA1F7E06A432BDD31C23D20BBFF15AFAE6170D378A3ADE549F7CF7ED6E64E7E8",
+      "lines": 97,
+      "read": "complete text, not executed",
+      "encoding": "gb18030"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\demos\\2_8_uart_test\\2_8_uart_test\\2_8_uart_test\\source\\uart_tx.v",
+      "sha256": "4586EBC2E63C0F3819BFD44802BF0606B7C27582A64383A7CE44DA20C38B984F",
+      "lines": 181,
+      "read": "complete text, not executed",
+      "encoding": "gb18030"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\demos\\2_8_uart_test\\2_8_uart_test\\2_8_uart_test\\uart_test.fdc",
+      "sha256": "A0E8F461BA0D38E9B944724689CC7C0B9E421EBF8ABBCDC25ED908BFD522884C",
+      "lines": 73,
+      "read": "complete text, not executed",
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\demos\\2_8_uart_test\\2_8_uart_test\\2_8_uart_test\\uart_test.pds",
+      "sha256": "02D4042730CEBAC6B71BE239D99E6F526C911E7E5905DCD1CB3CA898E832904A",
+      "lines": 266,
+      "read": "complete text, not executed",
+      "encoding": "utf-8-sig"
+    }
+  ],
+  "source_chain_format": "archive full path -> selected inner file, PDF actual page listed separately",
+  "archive_scope": "all directories checked, selected 4/6 text files read; no nested archive entries in these two packages; unrelated build databases not parsed",
+  "visual_images": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\T1-p23.png",
+      "sha256": "D10F48CC6025783615995E4049AFD0B06F588A526F73C261298A3B46DDB497A3"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\T1-p43.png",
+      "sha256": "A16DFC96BFD29E6FFBB3CB8C29E664AD809562451B1A54B2AAFF215B1BBCD3E2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\T1-p44.png",
+      "sha256": "09A450AE1E70AF6E5064E6F9421B22781A1CB99E1A919B41025384E24C4F08B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\T1-p50.png",
+      "sha256": "872E8B88709D2EC35B2EF229E6431C0696CA4DD61EB2F1468739363CC6CF97A0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\T1-p51.png",
+      "sha256": "3F06439D8431E27D5FED796E13545EF4D28F22A8C04D72B33D84090F5A6FF9B8"
+    }
+  ],
+  "distinction": "official demo BPS_NUM=234 overrides internal defaults434; its counter semantics not assumed equal to B core exact234 cycles"
+}

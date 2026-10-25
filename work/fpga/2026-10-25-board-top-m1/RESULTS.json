@@ -1,0 +1,749 @@
+{
+  "date_beijing": "2026-10-25",
+  "stage": "A-BOARD-TOP-M1",
+  "status": "FINITE_SOFTWARE_BOARD_ADAPTATION_PASS_WITH_LIMITS",
+  "decision": "D131/D132",
+  "facts": "F142",
+  "approval": {
+    "date_beijing": "2026-10-25",
+    "decision": "D131",
+    "user_reply": "同意继续",
+    "scope": "A-BOARD-TOP-M1: independent board top/reset/pins/UART/short software validation/PDS timing only",
+    "forbidden": [
+      "CPU/B functional changes",
+      "bitstream",
+      "hardware/server/JTAG/Flash",
+      "SCBV/power/thermal",
+      "install/GUI/license/environment changes"
+    ]
+  },
+  "pin_plan": {
+    "pins": {
+      "clk": "D18",
+      "uart_tx": "C24",
+      "key_n[0]": "C22",
+      "key_n[1]": "C23",
+      "key_n[2]": "B22",
+      "key_n[3]": "A22",
+      "key_n[4]": "B20",
+      "led[0]": "A20",
+      "led[1]": "C18",
+      "led[2]": "C19",
+      "led[3]": "E18",
+      "led[4]": "A17",
+      "led[5]": "A18",
+      "led[6]": "C17",
+      "led[7]": "B17"
+    },
+    "source": "T1 PDF23/43-44/50-51 plus original key_led/uart FDC",
+    "gpio": "KEY1..4 pressed=1 in low nibble, high nibble 0",
+    "reset": "KEY0 async assert, three-edge synchronous release; no debounce",
+    "baud": {
+      "clock_hz": 27000000,
+      "clks_per_bit": 234,
+      "nominal_baud": 115384.61538461539,
+      "error_percent": 0.1602564102564097
+    },
+    "no_input_or_output_delay_invented": true,
+    "no_false_paths": true
+  },
+  "firmware": {
+    "bytes": 612,
+    "bin_sha": "FA008E4E3E83E6973AE54BB845AB9E534EB53F62519E27E0ECC2A0C560B4F0D0",
+    "ELF_sha": "D5E45294DA76D06CFB604312E41297332918531039DB27631062575DEBB8034D",
+    "ISA": "rv32i2p1"
+  },
+  "compile": [
+    {
+      "id": "reset",
+      "status": "PASS",
+      "rc": 0,
+      "wall_seconds": 0.125,
+      "sha256": "F351C7B0D2D9598C46108869C3E648E600324B499D1229C3C6E3CD027286AA9B"
+    },
+    {
+      "id": "board",
+      "status": "PASS",
+      "rc": 0,
+      "wall_seconds": 51.438,
+      "sha256": "C85416658B2155473CA7935986C33E9D249A60FE763404A47C9A01D8B495E5F1"
+    }
+  ],
+  "simulation": {
+    "status": "PASS",
+    "rows": [
+      {
+        "id": "reset",
+        "status": "PASS",
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+            "-N",
+            "-M-",
+            "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\compile\\reset.vvp"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\runs\\reset",
+          "returncode": 0,
+          "returncode_hex": "0x00000000",
+          "timed_out": false,
+          "cap": false,
+          "elapsed_seconds": 0.109,
+          "timeout_seconds": 45,
+          "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\run-reset\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\run-reset\\stderr.log"
+        }
+      },
+      {
+        "id": "board5-N234",
+        "status": "PASS",
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+            "-N",
+            "-M-",
+            "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\compile\\board.vvp",
+            "+MAX_CYCLES=100000",
+            "+K=5"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\runs\\board5-N234",
+          "returncode": 0,
+          "returncode_hex": "0x00000000",
+          "timed_out": false,
+          "cap": false,
+          "elapsed_seconds": 1.719,
+          "timeout_seconds": 45,
+          "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\run-board5-N234\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\run-board5-N234\\stderr.log"
+        },
+        "check": {
+          "status": "PASS",
+          "errors": [],
+          "metrics": {
+            "physical": 14567,
+            "advances": 7283,
+            "stall": 1181,
+            "flush": 1192,
+            "tail": 32
+          },
+          "trace_counts": {
+            "EX": 3699,
+            "WB": 2452,
+            "READ": 1194,
+            "STORE": 32
+          },
+          "streams": {
+            "EX": {
+              "count": 3699,
+              "sha256": "F7E6E48F60D7B9B2ACFB36B0875CEC7B967DDC066B10E873F31C418866122CEA"
+            },
+            "WB": {
+              "count": 2452,
+              "sha256": "8D062AA84F9BBBA2D91E4C7F9B17CE0BC80A1AD51D7A1AB06974F78E368A86F3"
+            },
+            "MEM": {
+              "count": 1226,
+              "sha256": "D6657B1952EC593E49CF4256F05EE37CC214B50D0543E70A1B8F349F420CC42B"
+            }
+          },
+          "timer_reads": [],
+          "GPIO_actual": [
+            [
+              267,
+              90
+            ],
+            [
+              277,
+              90
+            ],
+            [
+              287,
+              165
+            ]
+          ],
+          "UART_frames": 6,
+          "detail": {
+            "key_pattern": 5
+          },
+          "limitations": [
+            "finite inputs; no true retirement PC or unified WB-STORE commit",
+            "short simulation not valid CoreMark score",
+            "no hardware evidence"
+          ]
+        }
+      },
+      {
+        "id": "board12-N234",
+        "status": "PASS",
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+            "-N",
+            "-M-",
+            "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\compile\\board.vvp",
+            "+MAX_CYCLES=100000",
+            "+K=12"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\runs\\board12-N234",
+          "returncode": 0,
+          "returncode_hex": "0x00000000",
+          "timed_out": false,
+          "cap": false,
+          "elapsed_seconds": 1.829,
+          "timeout_seconds": 45,
+          "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\run-board12-N234\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\run-board12-N234\\stderr.log"
+        },
+        "check": {
+          "status": "PASS",
+          "errors": [],
+          "metrics": {
+            "physical": 14567,
+            "advances": 7283,
+            "stall": 1181,
+            "flush": 1192,
+            "tail": 32
+          },
+          "trace_counts": {
+            "EX": 3699,
+            "WB": 2452,
+            "READ": 1194,
+            "STORE": 32
+          },
+          "streams": {
+            "EX": {
+              "count": 3699,
+              "sha256": "F7E6E48F60D7B9B2ACFB36B0875CEC7B967DDC066B10E873F31C418866122CEA"
+            },
+            "WB": {
+              "count": 2452,
+              "sha256": "08E638F95A64C8E4CE79712EC8B75DF75BF9DE11DAFDB68D883C688330971F34"
+            },
+            "MEM": {
+              "count": 1226,
+              "sha256": "327E9820F036C2CA47E682140B0BBCA7172190EB5094F9964968588FD1311809"
+            }
+          },
+          "timer_reads": [],
+          "GPIO_actual": [
+            [
+              267,
+              90
+            ],
+            [
+              277,
+              90
+            ],
+            [
+              287,
+              165
+            ]
+          ],
+          "UART_frames": 6,
+          "detail": {
+            "key_pattern": 12
+          },
+          "limitations": [
+            "finite inputs; no true retirement PC or unified WB-STORE commit",
+            "short simulation not valid CoreMark score",
+            "no hardware evidence"
+          ]
+        }
+      }
+    ],
+    "new_DUT_runs": 3,
+    "protected": 438
+  },
+  "model_only": {
+    "cases": 16,
+    "new_DUT_runs": 0
+  },
+  "checker_negative": {
+    "status": "PASS",
+    "rows": [
+      {
+        "case": "control",
+        "status": "CONTROL_PASS",
+        "detail": []
+      },
+      {
+        "case": "wrong_WB",
+        "status": "EXPECTED_REJECTION",
+        "detail": [
+          {
+            "kind": "ordered WB",
+            "index": 0,
+            "actual": [
+              "2",
+              "00018001"
+            ],
+            "expected": [
+              "2",
+              "00018000"
+            ]
+          }
+        ]
+      },
+      {
+        "case": "duplicate_WB",
+        "status": "EXPECTED_REJECTION",
+        "detail": "extra WB event"
+      },
+      {
+        "case": "missing_GPIO_STORE",
+        "status": "EXPECTED_REJECTION",
+        "detail": "missing MEM event"
+      },
+      {
+        "case": "UART_pin_error",
+        "status": "EXPECTED_REJECTION",
+        "detail": [
+          {
+            "kind": "UART post-edge",
+            "actual": "1",
+            "expected": "0"
+          },
+          {
+            "kind": "UART pre-edge",
+            "actual": "0",
+            "expected": "1"
+          }
+        ]
+      },
+      {
+        "case": "GPIO_mapping_error",
+        "status": "EXPECTED_REJECTION",
+        "detail": [
+          {
+            "kind": "GPIO frozen input",
+            "actual": "4",
+            "expected": "5"
+          }
+        ]
+      },
+      {
+        "case": "x0_error",
+        "status": "EXPECTED_REJECTION",
+        "detail": [
+          {
+            "kind": "all RF",
+            "actual": "[1, 104, 98304, 67584, 0, 324508639, 0, 0, 0, 0, 0, 53, 536870912, 536870920, 65540, 1112354865, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+            "expected": "[0, 104, 98304, 67584, 0, 324508639, 0, 0, 0, 0, 0, 53, 536870912, 536870920, 65540, 1112354865, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+          }
+        ]
+      },
+      {
+        "case": "RAM_signature_error",
+        "status": "EXPECTED_REJECTION",
+        "detail": [
+          {
+            "kind": "all32K RAM",
+            "actual": "b'\\xdf\\x9bW\\x13\\xdf\\x9bW\\x13\\x00\\x00\\x00\\x00\\x05\\x00\\x00\\x00Z\\x00\\x00\\x00Z\\x00\\x00\\x00\\xa5\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x06\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0000MB\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\x",
+            "expected": "b'\\xdf\\x9bW\\x13\\xdf\\x9bW\\x13\\x00\\x00\\x00\\x00\\x05\\x00\\x00\\x00Z\\x00\\x00\\x00Z\\x00\\x00\\x00\\xa5\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x06\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0010MB\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\x"
+          }
+        ]
+      },
+      {
+        "case": "process_failure",
+        "status": "EXPECTED_REJECTION",
+        "detail": ""
+      }
+    ],
+    "control": 1,
+    "negative": 8,
+    "new_DUT_runs": 0,
+    "original_evidence_unchanged": true,
+    "protected": 438
+  },
+  "wave_audit": {
+    "status": "PASS",
+    "rows": [
+      {
+        "id": "reset",
+        "status": "PASS",
+        "wave_sha256": "F1D53D53F1C2BFBC740AAE5920C914661D984913E38FB1701922428DF38694FB",
+        "bytes": 1442,
+        "complete_timestamp_groups": 46,
+        "checked_conditions": 46,
+        "last_ps": 142000,
+        "reset_three_edge_model": true
+      },
+      {
+        "id": "board5-N234",
+        "status": "PASS",
+        "wave_sha256": "BD95BC424BFA40ED5930416C4682330482AB519FD424A23FC9BFFA08B706464C",
+        "bytes": 1805329,
+        "complete_timestamp_groups": 29258,
+        "checked_conditions": 87650,
+        "last_ps": 539777238,
+        "reset_three_edge_model": true,
+        "active_cycles": 14567,
+        "clock_period_ps": 37037,
+        "UART_frames": [
+          [
+            369,
+            66
+          ],
+          [
+            2727,
+            53
+          ],
+          [
+            5085,
+            13
+          ],
+          [
+            7443,
+            10
+          ],
+          [
+            9801,
+            65
+          ],
+          [
+            12159,
+            65
+          ]
+        ],
+        "accepted_GPIO_writes": [
+          [
+            267,
+            90
+          ],
+          [
+            277,
+            90
+          ],
+          [
+            287,
+            165
+          ]
+        ],
+        "final_LED": 165
+      },
+      {
+        "id": "board12-N234",
+        "status": "PASS",
+        "wave_sha256": "741D41DDE83E0C4BF964FF1AC39297D18DD056AA886D63A7F1BCB233925C1176",
+        "bytes": 1805356,
+        "complete_timestamp_groups": 29258,
+        "checked_conditions": 87650,
+        "last_ps": 539777238,
+        "reset_three_edge_model": true,
+        "active_cycles": 14567,
+        "clock_period_ps": 37037,
+        "UART_frames": [
+          [
+            369,
+            66
+          ],
+          [
+            2727,
+            67
+          ],
+          [
+            5085,
+            13
+          ],
+          [
+            7443,
+            10
+          ],
+          [
+            9801,
+            65
+          ],
+          [
+            12159,
+            65
+          ]
+        ],
+        "accepted_GPIO_writes": [
+          [
+            267,
+            90
+          ],
+          [
+            277,
+            90
+          ],
+          [
+            287,
+            165
+          ]
+        ],
+        "final_LED": 165
+      }
+    ],
+    "new_DUT_runs": 0,
+    "limitation": "logical waveform and explicit requests only, not physical metastability/MTBF/analog timing; no arbitrary warm restart",
+    "protected": 438
+  },
+  "pds": {
+    "status": "FINITE_BOARD_SOFTWARE_IMPLEMENTATION_PASS_WITH_LIMITS",
+    "stages": {
+      "compile": true,
+      "synthesis": true,
+      "mapping": true,
+      "pnr": true,
+      "timing": true
+    },
+    "tool": "PDS2022.2-SP6.4 build146967",
+    "device": "PG2L100H",
+    "speed": "-6",
+    "package": "FBG676",
+    "process": {
+      "argv": [
+        "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\pds_shell.exe",
+        "-file",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\build.tcl"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "cap": false,
+      "elapsed_seconds": 74.422,
+      "timeout_seconds": 1200,
+      "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\pds-flow-once\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\pds-flow-once\\stderr.log"
+    },
+    "pin_constraints": {
+      "status": "PASS",
+      "count": 15,
+      "ccr_errors": 0,
+      "ccr_warnings": 0,
+      "ccr_commands": 94,
+      "pins": {
+        "clk": {
+          "direction": "input",
+          "loc": "D18",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "key_n[0]": {
+          "direction": "input",
+          "loc": "C22",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "key_n[1]": {
+          "direction": "input",
+          "loc": "C23",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "key_n[2]": {
+          "direction": "input",
+          "loc": "B22",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "key_n[3]": {
+          "direction": "input",
+          "loc": "A22",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "key_n[4]": {
+          "direction": "input",
+          "loc": "B20",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "led[0]": {
+          "direction": "output",
+          "loc": "A20",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "led[1]": {
+          "direction": "output",
+          "loc": "C18",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "led[2]": {
+          "direction": "output",
+          "loc": "C19",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "led[3]": {
+          "direction": "output",
+          "loc": "E18",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "led[4]": {
+          "direction": "output",
+          "loc": "A17",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "led[5]": {
+          "direction": "output",
+          "loc": "A18",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "led[6]": {
+          "direction": "output",
+          "loc": "C17",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "led[7]": {
+          "direction": "output",
+          "loc": "B17",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        },
+        "uart_tx": {
+          "direction": "output",
+          "loc": "C24",
+          "bank": "BANKL3",
+          "VCCIO": "3.3",
+          "standard": "LVCMOS33"
+        }
+      }
+    },
+    "resources": {
+      "LUT": 1805,
+      "FF": 1519,
+      "DRM36": 14,
+      "DRM18_gates": 28,
+      "IO": 15,
+      "APM": 0,
+      "latches": 0
+    },
+    "memory": {
+      "INIT_pieces_1792_equal_F141": true,
+      "entire_init_table_sha_equal": true,
+      "RF_INIT_zero_FFs": 992,
+      "limitation": "synthesis INIT equivalence and mapped identities only; no binary config decode/readback/post-layout simulation"
+    },
+    "reset": {
+      "retained_FFs": 3,
+      "INIT_zero": true,
+      "three_stage_chain": true,
+      "low_GPIO_synchronizer_FFs": 8,
+      "high_GPIO_constant_zero": true,
+      "limitation": "no debounce, minimum pulse/MTBF/physical CDC guarantee or arbitrary warm restart proof"
+    },
+    "timing": {
+      "setup_slow": {
+        "slack_ns": 23.279,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 4685
+      },
+      "hold_slow": {
+        "slack_ns": 0.185,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 4685
+      },
+      "recovery_slow": {
+        "slack_ns": 33.991,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 344
+      },
+      "removal_slow": {
+        "slack_ns": 0.751,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 344
+      },
+      "setup_fast": {
+        "slack_ns": 28.647,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 4685
+      },
+      "hold_fast": {
+        "slack_ns": 0.129,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 4685
+      },
+      "recovery_fast": {
+        "slack_ns": 35.065,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 344
+      },
+      "removal_fast": {
+        "slack_ns": 0.518,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 344
+      }
+    },
+    "estimated_internal_MHz": 72.685,
+    "estimate_limitation": "one pinned design/image/tool estimate, not measured frequency, qualified board Fmax or speedup",
+    "asynchronous_inputs_without_delay": [
+      "key_n[0]",
+      "key_n[1]",
+      "key_n[2]",
+      "key_n[3]",
+      "key_n[4]"
+    ],
+    "outputs_without_delay": [
+      "led[0]",
+      "led[1]",
+      "led[2]",
+      "led[3]",
+      "led[4]",
+      "led[5]",
+      "led[6]",
+      "led[7]",
+      "uart_tx"
+    ],
+    "warning_counts": {
+      "W: Verilog-2008": 2,
+      "W: Sdm-2000": 32,
+      "W: Loop was found during constant probe.": 7,
+      "W: Public-4008": 14,
+      "W: Removed bmsWIDEDFFCPE inst soc/cpu_core/id_alu_ctrl[4": 1,
+      "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/sync_meta[7": 4,
+      "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/gpio_in_sync[7": 4,
+      "W: Timing-4087": 18,
+      "W: Timing-4086": 10
+    },
+    "constant_probe_count": 7,
+    "constant_probe_diagnosis": "same seven sdm2adm constant-probe warnings as F141; no named net provided, root cause remains open, not classified as harmless or physical loop",
+    "license_checkout": "SUCCESS_FOR_THIS_RUN",
+    "license_warning_days_remaining": 9,
+    "all_previous_11_sources_unchanged": true,
+    "protected_files": 438,
+    "no_bitstream": true,
+    "hardware": "STOPPED"
+  },
+  "limitations": [
+    "3 finite new DUT runs, no complete ISA or whole-CPU claim",
+    "no true retirement PC/unified WB-STORE ordering",
+    "fixed memory/init environment; no arbitrary warm restart, debounce or MTBF proof",
+    "7 constant-probe warnings unresolved, no invented timing exceptions",
+    "no bitstream, hardware or ILA; over_temp STOP",
+    "CoreMark physical mapping image != new board-top CoreMark DUT run or formal score",
+    "B whole package remains conditional per F139, no new B delivery or communication"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "case": "control",
+      "status": "CONTROL_PASS",
+      "detail": []
+    },
+    {
+      "case": "wrong_WB",
+      "status": "EXPECTED_REJECTION",
+      "detail": [
+        {
+          "kind": "ordered WB",
+          "index": 0,
+          "actual": [
+            "2",
+            "00018001"
+          ],
+          "expected": [
+            "2",
+            "00018000"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "duplicate_WB",
+      "status": "EXPECTED_REJECTION",
+      "detail": "extra WB event"
+    },
+    {
+      "case": "missing_GPIO_STORE",
+      "status": "EXPECTED_REJECTION",
+      "detail": "missing MEM event"
+    },
+    {
+      "case": "UART_pin_error",
+      "status": "EXPECTED_REJECTION",
+      "detail": [
+        {
+          "kind": "UART post-edge",
+          "actual": "1",
+          "expected": "0"
+        },
+        {
+          "kind": "UART pre-edge",
+          "actual": "0",
+          "expected": "1"
+        }
+      ]
+    },
+    {
+      "case": "GPIO_mapping_error",
+      "status": "EXPECTED_REJECTION",
+      "detail": [
+        {
+          "kind": "GPIO frozen input",
+          "actual": "4",
+          "expected": "5"
+        }
+      ]
+    },
+    {
+      "case": "x0_error",
+      "status": "EXPECTED_REJECTION",
+      "detail": [
+        {
+          "kind": "all RF",
+          "actual": "[1, 104, 98304, 67584, 0, 324508639, 0, 0, 0, 0, 0, 53, 536870912, 536870920, 65540, 1112354865, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+          "expected": "[0, 104, 98304, 67584, 0, 324508639, 0, 0, 0, 0, 0, 53, 536870912, 536870920, 65540, 1112354865, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+        }
+      ]
+    },
+    {
+      "case": "RAM_signature_error",
+      "status": "EXPECTED_REJECTION",
+      "detail": [
+        {
+          "kind": "all32K RAM",
+          "actual": "b'\\xdf\\x9bW\\x13\\xdf\\x9bW\\x13\\x00\\x00\\x00\\x00\\x05\\x00\\x00\\x00Z\\x00\\x00\\x00Z\\x00\\x00\\x00\\xa5\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x06\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0000MB\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\x",
+          "expected": "b'\\xdf\\x9bW\\x13\\xdf\\x9bW\\x13\\x00\\x00\\x00\\x00\\x05\\x00\\x00\\x00Z\\x00\\x00\\x00Z\\x00\\x00\\x00\\xa5\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x06\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0010MB\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\x"
+        }
+      ]
+    },
+    {
+      "case": "process_failure",
+      "status": "EXPECTED_REJECTION",
+      "detail": ""
+    }
+  ],
+  "control": 1,
+  "negative": 8,
+  "new_DUT_runs": 0,
+  "original_evidence_unchanged": true,
+  "protected": 438
+}
