@@ -25,6 +25,7 @@
 |已决目标取指候选|F146原763+67定向+2CoreMark严格通过；同O2镜像计算2103648→1804804、2263000→1937952，少14.2060%/14.3636%。+108LUT/+33FF，27MHz内部STA通过但估频72.6850→60.5583MHz；constant-probe7→8未定位，候选不升稳定基线，无位流/硬件|
 |告警只读收窄|F147两最终VM完整解析，INIT/实际绑常量与状态边界建图0残余；粗略共同伪反馈不是PDS根因。0新编译/DUT/PDS，告警保持未闭；精简官方两问已备未发|
 |正式计量就绪检查|F150只读核68输入/四旧原流：迭代参数写死1、检查器为短测、长跑日志/周期预算不适配；下一双2迭代校准具体范围待批。0新编译/DUT/PDS，不是正式成绩|
+|双种子各2迭代校准|F151新2DUT严格有限通过，raw4207378/4526490、finalCRC72be/fe8c、完整662/661UART；只新端口迭代接线/验证预算，13RTL不改，先验参考与每笔副作用/全态核同。仍不足10秒、非正式或实机验收|
 |当前系统上板、片上波形|**未验证**；over_temp原因未闭环，硬件操作保持停止|
 
 F146仅在独立副本修改cpu/soc取指选择，队员包装/TX/GPIO及官方算法不改。历史F136性能检查器曾漏计启动BSS，初版FAIL保留、以其`check-result-v2.json`为准；F143新`check-result.json`继承正确v2语义，不过滤启动零写。有限结果不能证明CPU整体正确，F146仅新增有限程序/同频条件下有实测支持的计算收益，不证明创新首创或最高频率吞吐改善。
@@ -45,6 +46,7 @@ F146仅在独立副本修改cpu/soc取指选择，队员包装/TX/GPIO及官方�
 - [F145控制流只读量化](reports/verification/2026-10-25-control-flow-quality-m0.md)：work/analysis同名目录包含原迹解析/逐PC统计、来源SHA、最小候选范围；没有新CPU验证、实现或优化收益，下一RTL/TB/模型/PDS阶段须另获批准。
 - [F146取指候选与质量代价](reports/verification/2026-10-25-resolved-target-fetch-m1.md)：同名work/fpga目录含准确两源diff、逐例结果、两检查器历史失败/同输出修正、完整命令和新原始证据。候选暂缓合入，F143仍稳定；完整日志/波形/模型本地保留，不声称干净克隆一键复现。
 - [F147告警只读调查](reports/verification/2026-10-25-prefetch-warning-m0.md)：完整图/建模边界、共有粗略假阳性、官方帮助检索与内部图不可达范围分列；不以自写解析器代替官方消息解释，不提升候选或恢复硬件。
+- [F151双迭代真实校准](reports/verification/2026-10-25-coremark-iter2-m1.md)：新参数初始化、先验参考、2个实际DUT/计时/全状态/有序副作用及完整串行证据，旧源/失败保留；F143稳定/F146暂缓，下一长测资源方案未自动实施。
 - [F150正式测量就绪](reports/verification/2026-10-25-coremark-measurement-readiness-m0.md)：旧实际ELF/轨迹和资源预算审计，保持稳定F143；下一有限双迭代scope未批，原B反馈已由用户报告转交，等待新答复。
 - [F149最终阶段v01审收](reports/progress/2026-10-25-stage-final-v01-review.md)、[队员R1–R3集中反馈](deliveries/mainline-stage-final-response-2026-10-25-v1/TEAMMATE_REPLY.md)：新DUT/原波形分列，已证项关闭，只收敛验证/元数据差额；原核心和硬件STOP保持。
 - [F148/2335完整审收与八问](reports/progress/2026-10-25-increment-2335-mainline-alignment.md)、[集中队员回复](deliveries/mainline-increment-2335-response-2026-10-25-v1/TEAMMATE_REPLY.md)：原/新波形、失败和有限关闭分列，原核心保持，B仅验证差额/最终封包；10/27窗口及硬件STOP不变。

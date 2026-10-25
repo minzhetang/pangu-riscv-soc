@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "id": "performance-N234",
+      "C1": 2103648,
+      "C2": 4207378,
+      "second_iteration_increment": 2103730,
+      "delta_from_two_times_C1": 82,
+      "old_full_physical": 3784487,
+      "new_full_physical": 5888943,
+      "old_UART_bytes": 662,
+      "new_UART_bytes": 662,
+      "new_nominal_compute_seconds": 0.1558288148148148,
+      "new_DUT_host_seconds": 320.39,
+      "old_files": {
+        "trace.log": 53254975,
+        "bus.log": 110281625,
+        "wave.vcd": 345615
+      },
+      "new_files": {
+        "trace.log": 84091326,
+        "bus.log": 110243503,
+        "wave.vcd": 348994
+      },
+      "fit_is_only_two_points": true,
+      "not_a_speedup_claim": true
+    },
+    {
+      "id": "validation-N234",
+      "C1": 2263000,
+      "C2": 4526490,
+      "second_iteration_increment": 2263490,
+      "delta_from_two_times_C1": 490,
+      "old_full_physical": 3941007,
+      "new_full_physical": 6205395,
+      "old_UART_bytes": 661,
+      "new_UART_bytes": 661,
+      "new_nominal_compute_seconds": 0.16764777777777778,
+      "new_DUT_host_seconds": 357.453,
+      "old_files": {
+        "trace.log": 55167878,
+        "bus.log": 110131283,
+        "wave.vcd": 349015
+      },
+      "new_files": {
+        "trace.log": 87958340,
+        "bus.log": 110178225,
+        "wave.vcd": 352454
+      },
+      "fit_is_only_two_points": true,
+      "not_a_speedup_claim": true
+    }
+  ],
+  "stable": "F143/O2",
+  "candidate_F146_enabled": false,
+  "method": "actual raw compute difference, actual file sizes/host duration and same code-image one-byte iteration input change",
+  "formal_score": false,
+  "limitations": [
+    "two iteration points do not prove all later costs are affine",
+    "nominal27MHz is not a hardware frequency measurement",
+    "DUT host seconds are resource cost, not FPGA speed",
+    "WB/MEM separate, no retirementPC",
+    "no new PDS/bitstream/FPGA/ILA"
+  ]
+}

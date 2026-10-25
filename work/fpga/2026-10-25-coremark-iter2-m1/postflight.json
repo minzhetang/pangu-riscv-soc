@@ -1,0 +1,12 @@
+{
+  "status": "PASS_INPUTS_UNCHANGED",
+  "old_originals": 130,
+  "pre_DUT_frozen": 80,
+  "source13_unchanged": true,
+  "official6_unchanged": true,
+  "new_DUT": 2,
+  "report_SHA256": "8CB485FEB765F934F1470D8C9208586CBF0408AD633689B6FF42B5CA9046E89E",
+  "formal_score": false,
+  "hardware": "STOPPED",
+  "candidate_promoted": false
+}

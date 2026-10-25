@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "metrics": {
+    "physical": 6205395,
+    "advances": 3102697,
+    "stall": 174246,
+    "flush": 461228,
+    "tail": 32
+  },
+  "trace_counts": {
+    "EX": 2005976,
+    "WB": 1364865,
+    "READ": 246042,
+    "STORE": 34675
+  },
+  "streams": {
+    "EX": {
+      "count": 2005976,
+      "sha256": "5F05AB0D9E52ACFA8CBCD31ADAF36A7B08A53D5E16EE4AB89C41251350184D18"
+    },
+    "WB": {
+      "count": 1364865,
+      "sha256": "E08A0F702F96721514F609B15FB80FB8BCFC8E0BCAE74F87752680B6802BD5F6"
+    },
+    "MEM": {
+      "count": 280717,
+      "sha256": "F3D14A0882661D3012751D4FD0213D2B96C2761B11361661BF7FFF862B60F997"
+    }
+  },
+  "timer_reads": [
+    {
+      "pc": 13232,
+      "address": 536871172,
+      "cycle": 18784,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 13236,
+      "address": 536871168,
+      "cycle": 18786,
+      "expected": 18785,
+      "actual": 18785
+    },
+    {
+      "pc": 13240,
+      "address": 536871172,
+      "cycle": 18788,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 13280,
+      "address": 536871172,
+      "cycle": 18810,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 13284,
+      "address": 536871168,
+      "cycle": 18812,
+      "expected": 18811,
+      "actual": 18811
+    },
+    {
+      "pc": 13288,
+      "address": 536871172,
+      "cycle": 18814,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 12940,
+      "address": 536871172,
+      "cycle": 62368,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 12944,
+      "address": 536871168,
+      "cycle": 62370,
+      "expected": 62369,
+      "actual": 62369
+    },
+    {
+      "pc": 12948,
+      "address": 536871172,
+      "cycle": 62372,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 12992,
+      "address": 536871172,
+      "cycle": 4588858,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 12996,
+      "address": 536871168,
+      "cycle": 4588860,
+      "expected": 4588859,
+      "actual": 4588859
+    },
+    {
+      "pc": 13000,
+      "address": 536871172,
+      "cycle": 4588862,
+      "expected": 0,
+      "actual": 0
+    }
+  ],
+  "GPIO_actual": [],
+  "UART_frames": 661,
+  "detail": {
+    "stamps": [
+      18785,
+      18811,
+      62369,
+      4588859
+    ],
+    "empty_window": 26,
+    "raw_ticks": 4526490,
+    "frequency_setting_hz": 27000000,
+    "simulated_seconds_at_setting": 0.16764777777777778,
+    "formal_score_valid": false,
+    "phases": [
+      [
+        6259,
+        0
+      ],
+      [
+        62383,
+        1
+      ],
+      [
+        4588877,
+        2
+      ],
+      [
+        4647967,
+        3
+      ],
+      [
+        6205313,
+        4
+      ]
+    ],
+    "report_bytes": 661
+  },
+  "limitations": [
+    "finite inputs; no true retirement PC or unified WB-STORE commit",
+    "short simulation not valid CoreMark score",
+    "no hardware evidence"
+  ],
+  "frozen_comparison": {
+    "status": "PASS",
+    "errors": [],
+    "oracle_SHA256": "F7485A648DCF56778674384EE5795B73C6D8E5F261A7CBAFEC71C9EC3224B13F",
+    "actual_iterations": 2,
+    "crcfinal": "fe8c"
+  }
+}

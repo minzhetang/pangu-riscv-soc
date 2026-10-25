@@ -1,0 +1,19 @@
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 4207378
+Total time (secs): 0
+ERROR! Must execute for at least 10 secs for a valid result!
+Iterations       : 2
+Compiler version : GCC 15.2.0
+Compiler flags   : RV32I/ILP32 -O2; full flags in build request
+Memory location  : STATIC RAM; timed simulation, NO VALID SCORE
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x72be
+Errors detected
+Raw start hi/lo : 00000000 0000f20f
+Raw end hi/lo   : 00000000 00412521
+Raw delta hi/lo : 00000000 00403312
+Timer Hz set    : 27000000; SIM ONLY, NO VALID SCORE

@@ -1,0 +1,13 @@
+{
+  "date_beijing": "2026-10-25",
+  "decision": "D149",
+  "user_reply": "同意，继续",
+  "scope": "D:\\A_FPGA_Comp\\work\\analysis\\2026-10-25-coremark-measurement-readiness-m0\\NEXT_IMPLEMENTATION_SCOPE.md",
+  "scope_SHA256": "5009E546B0A8CDC194EBC7011A05EF4B2F4C99C216453844E7D0F4E6B1F45C4F",
+  "stage": "A-COREMARK-ITER2-M1",
+  "iterations": 2,
+  "CPU_RTL_changes": false,
+  "new_DUT_maximum": 2,
+  "formal_score": false,
+  "hardware": "STOPPED"
+}

@@ -1,0 +1,15 @@
+{
+  "pre_DUT": true,
+  "files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\audit_uart.py",
+      "SHA256": "4EDD0DF128B8446214F3DF21FF2A137F2AC2BCF73D1C34321C5135E8C4DDB2E5"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\audit_wave.py",
+      "SHA256": "7AEC9A1E3A2D7450904FA1C594D2A2900A273C8FE105F4C77439CD7A07EBFA9C"
+    }
+  ],
+  "UART_change": "only frozen report path; independent pin/time/centre decoder unchanged",
+  "VCD_change": "none"
+}

@@ -1,0 +1,11 @@
+--- models-before/cpu_program_reference.py
++++ models/cpu_program_reference.py
+@@ -20,7 +20,7 @@
+         assert 0x10000<=address and address+size<=0x18000,('unmapped read',hx(address))
+         return int.from_bytes(self.ram[address-0x10000:address-0x10000+size],'little')
+     def step(self):
+-        assert not self.stopped and self.steps<2000000 and self.pc%4==0 and 0<=self.pc<32768
++        assert not self.stopped and self.steps<5000000 and self.pc%4==0 and 0<=self.pc<32768
+         pc=self.pc;word=self.ordinary_read(pc,4)
+         if word==0x00100073:self.stopped=True;return
+         op=word&127;rd=(word>>7)&31;f3=(word>>12)&7;r1=(word>>15)&31;r2=(word>>20)&31;f7=word>>25
