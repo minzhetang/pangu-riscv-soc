@@ -1,0 +1,659 @@
+{
+  "date_beijing": "2026-10-25",
+  "fact": "F146",
+  "decision": "D139/D140",
+  "stage": "COMPLETE_WITH_OPEN_FINDING",
+  "outcome": "FINITE_FUNCTION_PERFORMANCE_PASS_INTERNAL_STA_PASS_NEW_CONSTANT_PROBE_WARNING_OPEN",
+  "stable_baseline": "F143 O2 unchanged",
+  "candidate_promoted": false,
+  "source": [
+    {
+      "file": "alu.v",
+      "before_SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "after_SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "changed": false
+    },
+    {
+      "file": "board_reset_sync.sv",
+      "before_SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152",
+      "after_SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152",
+      "changed": false
+    },
+    {
+      "file": "board_top.sv",
+      "before_SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478",
+      "after_SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478",
+      "changed": false
+    },
+    {
+      "file": "control.v",
+      "before_SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "after_SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "changed": false
+    },
+    {
+      "file": "cpu.v",
+      "before_SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D",
+      "after_SHA256": "0409B47DB67B285E4ACF622D6D2646C3E560ED0349401CB2F2D9DCC2A92F8B7C",
+      "changed": true
+    },
+    {
+      "file": "cycle_counter64.sv",
+      "before_SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+      "after_SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+      "changed": false
+    },
+    {
+      "file": "gpio_core.v",
+      "before_SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+      "after_SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+      "changed": false
+    },
+    {
+      "file": "local_regif_txgpio_m1.v",
+      "before_SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "after_SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "changed": false
+    },
+    {
+      "file": "memory_model.sv",
+      "before_SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27",
+      "after_SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27",
+      "changed": false
+    },
+    {
+      "file": "regfile.v",
+      "before_SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "after_SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "changed": false
+    },
+    {
+      "file": "soc_data_adapter.sv",
+      "before_SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+      "after_SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+      "changed": false
+    },
+    {
+      "file": "soc_top.sv",
+      "before_SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A",
+      "after_SHA256": "7ADB743660527720FD05EE18EDDE2A4E15854D30A67F9537A1EE163104CB80CF",
+      "changed": true
+    },
+    {
+      "file": "uart_tx.v",
+      "before_SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "after_SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "changed": false
+    }
+  ],
+  "initial_compiles": 16,
+  "core_compiles": 2,
+  "new_DUT_processes": {
+    "directed": 67,
+    "default_regression": 763,
+    "coremark": 2,
+    "total": 832
+  },
+  "directed_status": "PASS",
+  "default_regression_status": "PASS",
+  "coremark_status": "PASS",
+  "quality": {
+    "status": "PASS_ANALYSIS_ONLY",
+    "all_seeds_benefit": true,
+    "rows": [
+      {
+        "id": "performance-N234",
+        "status": "PASS_FINITE_COMPARABLE_BENEFIT",
+        "O2_before_ticks": 2103648,
+        "O2_candidate_ticks": 1804804,
+        "ticks_saved": 298844,
+        "time_reduction": 0.1420598883463393,
+        "speedup": 1.1655825230883796,
+        "compute_benefit": true,
+        "unchanged_image_SHA256": "B4CEEC1B250A5151C1D02F018FC45B3D22CDC049E12E26EFC2A0562D23740E60",
+        "program_bytes": 15912,
+        "same_workload_EX_sequence": true,
+        "window_EX_PC_SHA256": "9811CB3A3C21A5E3F61D1E0B5BAB26641FC5694E239DFE09D34F9F2D577E1563",
+        "window_EX": 732266,
+        "window_load_use": 20714,
+        "window_redirects": 149422,
+        "window_hits": 149422,
+        "physical_window_parts": {
+          "EX": 1464532,
+          "load_use": 41428,
+          "redirects": 298844
+        },
+        "boundary_residual": 0,
+        "old_window_counts": {
+          "READ": 55008,
+          "WB": 504541,
+          "EX": 732266,
+          "STORE": 14345
+        },
+        "new_window_counts": {
+          "READ": 55008,
+          "WB": 504541,
+          "EX": 732266,
+          "STORE": 14345
+        },
+        "empty_window_before": 26,
+        "empty_window_after": 26,
+        "empty_subtracted": false,
+        "formatting_ticks_before": 59088,
+        "formatting_ticks_after": 52746,
+        "UART_phase_ticks_before": 1559702,
+        "UART_phase_ticks_after": 1559704,
+        "UART_bytes_before": 662,
+        "UART_bytes_after": 662,
+        "minimum_SP": 97824,
+        "observed_stack_depth": 480,
+        "whole_metrics_before": {
+          "physical": 3784487,
+          "advances": 1892243,
+          "stall": 152691,
+          "flush": 285711,
+          "tail": 32
+        },
+        "whole_metrics_after": {
+          "physical": 3470777,
+          "advances": 1735388,
+          "stall": 178509,
+          "flush": 311458,
+          "tail": 32
+        },
+        "formal_score": false,
+        "caveat": "finite simulation tick benefit at same nominal clock; no hardware/Fmax/energy or novelty claim; host runtime and UART polling are separate"
+      },
+      {
+        "id": "validation-N234",
+        "status": "PASS_FINITE_COMPARABLE_BENEFIT",
+        "O2_before_ticks": 2263000,
+        "O2_candidate_ticks": 1937952,
+        "ticks_saved": 325048,
+        "time_reduction": 0.143635881573133,
+        "speedup": 1.1677275804560692,
+        "compute_benefit": true,
+        "unchanged_image_SHA256": "26B4F9C2900141EC2EF3A19F4C75C831ED62A1F6E02B34C441501B0FF4E84429",
+        "program_bytes": 15920,
+        "same_workload_EX_sequence": true,
+        "window_EX_PC_SHA256": "48CFE33F898067004BD4F8378FD1CB37253AC5FE6ACDB8C6046AE3836FCBF295",
+        "window_EX": 785232,
+        "window_load_use": 21220,
+        "window_redirects": 162524,
+        "window_hits": 162524,
+        "physical_window_parts": {
+          "EX": 1570464,
+          "load_use": 42440,
+          "redirects": 325048
+        },
+        "boundary_residual": 0,
+        "old_window_counts": {
+          "READ": 55434,
+          "WB": 538668,
+          "EX": 785232,
+          "STORE": 14240
+        },
+        "new_window_counts": {
+          "READ": 55434,
+          "WB": 538668,
+          "EX": 785232,
+          "STORE": 14240
+        },
+        "empty_window_before": 26,
+        "empty_window_after": 26,
+        "empty_subtracted": false,
+        "formatting_ticks_before": 58210,
+        "formatting_ticks_after": 51986,
+        "UART_phase_ticks_before": 1557346,
+        "UART_phase_ticks_after": 1557348,
+        "UART_bytes_before": 661,
+        "UART_bytes_after": 661,
+        "minimum_SP": 97824,
+        "observed_stack_depth": 480,
+        "whole_metrics_before": {
+          "physical": 3941007,
+          "advances": 1970503,
+          "stall": 153013,
+          "flush": 298540,
+          "tail": 32
+        },
+        "whole_metrics_after": {
+          "physical": 3601153,
+          "advances": 1800576,
+          "stall": 178792,
+          "flush": 324266,
+          "tail": 32
+        },
+        "formal_score": false,
+        "caveat": "finite simulation tick benefit at same nominal clock; no hardware/Fmax/energy or novelty claim; host runtime and UART polling are separate"
+      }
+    ],
+    "new_DUT_runs": 0,
+    "new_reference_replays": 0,
+    "protected": 3912
+  },
+  "PDS": {
+    "status": "CANDIDATE_INTERNAL_27MHZ_PASS_WITH_LIMITS",
+    "stages": {
+      "compile": true,
+      "synthesis": true,
+      "mapping": true,
+      "pnr": true,
+      "timing": true
+    },
+    "process": {
+      "argv": [
+        "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\pds_shell.exe",
+        "-file",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\build.tcl"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "cap": false,
+      "trace_cap": false,
+      "cleanup": null,
+      "elapsed_seconds": 72.031,
+      "timeout_seconds": 1200,
+      "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\pds-once\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\pds-once\\stderr.log"
+    },
+    "resources": {
+      "LUT": 1913,
+      "FF": 1552,
+      "DRM18": 28,
+      "DRM36": 14,
+      "IO": 15,
+      "latches": 0
+    },
+    "old_resources": {
+      "LUT": 1805,
+      "FF": 1519,
+      "DRM36": 14,
+      "DRM18_gates": 28,
+      "IO": 15,
+      "APM": 0,
+      "latches": 0
+    },
+    "timing": {
+      "setup_slow": {
+        "slack_ns": 20.524,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 4890
+      },
+      "hold_slow": {
+        "slack_ns": 0.177,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 4890
+      },
+      "recovery_slow": {
+        "slack_ns": 33.618,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 382
+      },
+      "removal_slow": {
+        "slack_ns": 0.81,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 382
+      },
+      "setup_fast": {
+        "slack_ns": 26.964,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 4890
+      },
+      "hold_fast": {
+        "slack_ns": 0.116,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 4890
+      },
+      "recovery_fast": {
+        "slack_ns": 34.794,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 382
+      },
+      "removal_fast": {
+        "slack_ns": 0.562,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 382
+      }
+    },
+    "old_timing": {
+      "setup_slow": {
+        "slack_ns": 23.279,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 4685
+      },
+      "hold_slow": {
+        "slack_ns": 0.185,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 4685
+      },
+      "recovery_slow": {
+        "slack_ns": 33.991,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 344
+      },
+      "removal_slow": {
+        "slack_ns": 0.751,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 344
+      },
+      "setup_fast": {
+        "slack_ns": 28.647,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 4685
+      },
+      "hold_fast": {
+        "slack_ns": 0.129,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 4685
+      },
+      "recovery_fast": {
+        "slack_ns": 35.065,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 344
+      },
+      "removal_fast": {
+        "slack_ns": 0.518,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "endpoints": 344
+      }
+    },
+    "pins": {
+      "clk": {
+        "direction": "input",
+        "loc": "D18",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "key_n[0]": {
+        "direction": "input",
+        "loc": "C22",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "key_n[1]": {
+        "direction": "input",
+        "loc": "C23",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "key_n[2]": {
+        "direction": "input",
+        "loc": "B22",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "key_n[3]": {
+        "direction": "input",
+        "loc": "A22",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "key_n[4]": {
+        "direction": "input",
+        "loc": "B20",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "led[0]": {
+        "direction": "output",
+        "loc": "A20",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "led[1]": {
+        "direction": "output",
+        "loc": "C18",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "led[2]": {
+        "direction": "output",
+        "loc": "C19",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "led[3]": {
+        "direction": "output",
+        "loc": "E18",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "led[4]": {
+        "direction": "output",
+        "loc": "A17",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "led[5]": {
+        "direction": "output",
+        "loc": "A18",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "led[6]": {
+        "direction": "output",
+        "loc": "C17",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "led[7]": {
+        "direction": "output",
+        "loc": "B17",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      },
+      "uart_tx": {
+        "direction": "output",
+        "loc": "C24",
+        "bank": "BANKL3",
+        "VCCIO": "3.3",
+        "standard": "LVCMOS33"
+      }
+    },
+    "INIT_pieces_matched": 1792,
+    "DRM18_synth_and_PNR": 28,
+    "shared_identical_ROM_halves": [
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        1
+      ]
+    ],
+    "RF_zero_init_FFs": 992,
+    "warning_counts": {
+      "W: Verilog-2008": 2,
+      "W: Sdm-2000": 32,
+      "W: Loop was found during constant probe.": 8,
+      "W: Public-4008": 14,
+      "W: Removed bmsWIDEDFFCPE inst soc/cpu_core/id_alu_ctrl[4": 1,
+      "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/sync_meta[7": 4,
+      "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/gpio_in_sync[7": 4,
+      "W: Timing-4087": 18,
+      "W: Timing-4086": 10
+    },
+    "constant_probe_count": 8,
+    "constant_probe_root_cause": "OPEN",
+    "inputs_without_external_delay": [
+      "key_n[0]",
+      "key_n[1]",
+      "key_n[2]",
+      "key_n[3]",
+      "key_n[4]"
+    ],
+    "outputs_without_external_delay": [
+      "led[0]",
+      "led[1]",
+      "led[2]",
+      "led[3]",
+      "led[4]",
+      "led[5]",
+      "led[6]",
+      "led[7]",
+      "uart_tx"
+    ],
+    "license_checkout": "SUCCESS_THIS_RUN",
+    "license_days_remaining": 9,
+    "tool": "PDS2022.2-SP6.4 build146967",
+    "device": "PG2L100H-6IFBG676",
+    "constraints_SHA256": {
+      "clock_27mhz.fdc": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F",
+      "board_pins.fdc": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1"
+    },
+    "no_bitstream": true,
+    "hardware": "STOPPED",
+    "protected": 3912,
+    "limitations": [
+      "internal STA only, no measured Fmax or IO/CDC closure",
+      "7 constant-probe warnings previously open, do not infer harmless",
+      "synthesis INIT/PNR identities checked, not config readback or post-layout simulation"
+    ]
+  },
+  "cost": {
+    "status": "PASS_READ_ONLY",
+    "new_feature_zero_INIT_FFs": 33,
+    "feature_names": [
+      "\\fetch_redirect_pc[0]",
+      "\\fetch_redirect_pc[1]",
+      "\\fetch_redirect_pc[2]",
+      "\\fetch_redirect_pc[3]",
+      "\\fetch_redirect_pc[4]",
+      "\\fetch_redirect_pc[5]",
+      "\\fetch_redirect_pc[6]",
+      "\\fetch_redirect_pc[7]",
+      "\\fetch_redirect_pc[8]",
+      "\\fetch_redirect_pc[9]",
+      "\\fetch_redirect_pc[10]",
+      "\\fetch_redirect_pc[11]",
+      "\\fetch_redirect_pc[12]",
+      "\\fetch_redirect_pc[13]",
+      "\\fetch_redirect_pc[14]",
+      "\\fetch_redirect_pc[15]",
+      "\\fetch_redirect_pc[16]",
+      "\\fetch_redirect_pc[17]",
+      "\\fetch_redirect_pc[18]",
+      "\\fetch_redirect_pc[19]",
+      "\\fetch_redirect_pc[20]",
+      "\\fetch_redirect_pc[21]",
+      "\\fetch_redirect_pc[22]",
+      "\\fetch_redirect_pc[23]",
+      "\\fetch_redirect_pc[24]",
+      "\\fetch_redirect_pc[25]",
+      "\\fetch_redirect_pc[26]",
+      "\\fetch_redirect_pc[27]",
+      "\\fetch_redirect_pc[28]",
+      "\\fetch_redirect_pc[29]",
+      "\\fetch_redirect_pc[30]",
+      "\\fetch_redirect_pc[31]",
+      "fetch_redirect_valid"
+    ],
+    "estimated_MHz": 60.5583,
+    "old_estimated_MHz": 72.685,
+    "estimate_is_not_measured_board_Fmax": true,
+    "resources_delta": {
+      "LUT": 108,
+      "FF": 33,
+      "DRM36": 0
+    },
+    "all_old_unconstrained_IO_preserved": true,
+    "constant_probe_count": 8,
+    "no_PDS_rerun": true
+  },
+  "checker_v1_failure_preserved": {
+    "reason": "v1 compared serialized hex-file SHA, while vvp formatted 32-bit expressions as 8 hex digits and Python used 2; both are same byte values",
+    "actual_text_bytes": 327680,
+    "expected_text_bytes": 131072,
+    "parsed_RAM_bytes": 32768,
+    "parsed_equal": true,
+    "RTL_changed": false,
+    "TB_changed": false,
+    "expectations_changed": false,
+    "failed_v1_preserved": true,
+    "new_DUT_runs_for_recheck": 0,
+    "old_checker_sha256": "FC5510B28270A95A8B41DAC606B673D1B0E9961CE4B18402281AD7738D55A4EB",
+    "new_checker_sha256": "5325F8B1CD5009B4D22DF184BA0D326D71D8EC0F4123F6660B3157DA8E1F64C0"
+  },
+  "PDS_parser_v1_failure_preserved": true,
+  "no_extra_DUT_for_checker_fix": true,
+  "no_extra_PDS_for_parser_fix": true,
+  "default_unspecified_counters": {
+    "status": "PASS_HISTORICAL_COUNTS_ONLY",
+    "cases": 763,
+    "independent_explicit_expectations": {
+      "stall": 746,
+      "flush": 743
+    },
+    "NOT_SPECIFIED": {
+      "stall": 17,
+      "flush": 20
+    },
+    "historical_counts_all_equal": true,
+    "new_DUT_runs": 0
+  },
+  "native_VCD_audits": {
+    "directed": 67,
+    "core_unique": 2,
+    "default763_VCDs_preserved_but_not_fully_reparsed": true
+  },
+  "UART_bytes": [
+    662,
+    661
+  ],
+  "original_protection": 3912,
+  "core_frozen_entries": 43,
+  "GCC_runs": 0,
+  "PDS_runs": 1,
+  "no_bitstream": true,
+  "hardware": "STOPPED",
+  "formal_score": false,
+  "limitations": [
+    "finite functional/performance evidence, not full ISA/official score/FPGA/ILA",
+    "EX not retirement, WB/MEM separately ordered",
+    "mapped internal timing only; 14 external IO without delay and CDC remain open",
+    "tool estimated maximum clock decreased; not measured Fmax",
+    "8 constant-probe warnings vs old7; root cause not closed, candidate not promoted"
+  ]
+}

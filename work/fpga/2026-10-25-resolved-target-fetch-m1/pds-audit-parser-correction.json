@@ -1,0 +1,1931 @@
+{
+  "reason": "Original audit assumed flattened storage/ prefix; synthesis kept local bank/ and soc/storage/ aliases. Exact two halfword consumers still required.",
+  "old_failure": "AssertionError(4, ri, 0)",
+  "old_script_SHA256": "94ACF6BC9D38B41D35855E9C32E51AA9B771A9F85C50AE060E0BB7BD33FAE45B",
+  "new_script_SHA256": "BCF9479AF896D521900F2E66A7C5F2F9F89768AA3F88288A743303C3C376026F",
+  "nets_checked": 128,
+  "rows": [
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 0,
+      "names": [
+        "\\bank[4].ri[0] [0]",
+        "\\storage/bank[4].ri[0] [0]",
+        "\\soc/storage/bank[4].ri[0] [0]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 1,
+      "names": [
+        "\\bank[4].ri[0] [1]",
+        "\\storage/bank[4].ri[0] [1]",
+        "\\soc/storage/bank[4].ri[0] [1]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 2,
+      "names": [
+        "\\bank[4].ri[0] [2]",
+        "\\storage/bank[4].ri[0] [2]",
+        "\\soc/storage/bank[4].ri[0] [2]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 3,
+      "names": [
+        "\\bank[4].ri[0] [3]",
+        "\\storage/bank[4].ri[0] [3]",
+        "\\soc/storage/bank[4].ri[0] [3]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 4,
+      "names": [
+        "\\bank[4].ri[0] [4]",
+        "\\storage/bank[4].ri[0] [4]",
+        "\\soc/storage/bank[4].ri[0] [4]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 5,
+      "names": [
+        "\\bank[4].ri[0] [5]",
+        "\\storage/bank[4].ri[0] [5]",
+        "\\soc/storage/bank[4].ri[0] [5]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 6,
+      "names": [
+        "\\bank[4].ri[0] [6]",
+        "\\storage/bank[4].ri[0] [6]",
+        "\\soc/storage/bank[4].ri[0] [6]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 7,
+      "names": [
+        "\\bank[4].ri[0] [7]",
+        "\\storage/bank[4].ri[0] [7]",
+        "\\soc/storage/bank[4].ri[0] [7]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 9,
+      "names": [
+        "\\bank[4].ri[0] [9]",
+        "\\storage/bank[4].ri[0] [9]",
+        "\\soc/storage/bank[4].ri[0] [9]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 10,
+      "names": [
+        "\\bank[4].ri[0] [10]",
+        "\\storage/bank[4].ri[0] [10]",
+        "\\soc/storage/bank[4].ri[0] [10]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 11,
+      "names": [
+        "\\bank[4].ri[0] [11]",
+        "\\storage/bank[4].ri[0] [11]",
+        "\\soc/storage/bank[4].ri[0] [11]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 12,
+      "names": [
+        "\\bank[4].ri[0] [12]",
+        "\\storage/bank[4].ri[0] [12]",
+        "\\soc/storage/bank[4].ri[0] [12]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 13,
+      "names": [
+        "\\bank[4].ri[0] [13]",
+        "\\storage/bank[4].ri[0] [13]",
+        "\\soc/storage/bank[4].ri[0] [13]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 14,
+      "names": [
+        "\\bank[4].ri[0] [14]",
+        "\\storage/bank[4].ri[0] [14]",
+        "\\soc/storage/bank[4].ri[0] [14]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 15,
+      "names": [
+        "\\bank[4].ri[0] [15]",
+        "\\storage/bank[4].ri[0] [15]",
+        "\\soc/storage/bank[4].ri[0] [15]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "ri",
+      "bit": 16,
+      "names": [
+        "\\bank[4].ri[0] [16]",
+        "\\storage/bank[4].ri[0] [16]",
+        "\\soc/storage/bank[4].ri[0] [16]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 0,
+      "names": [
+        "\\bank[4].rd[0] [0]",
+        "\\storage/bank[4].rd[0] [0]",
+        "\\soc/storage/bank[4].rd[0] [0]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 1,
+      "names": [
+        "\\bank[4].rd[0] [1]",
+        "\\storage/bank[4].rd[0] [1]",
+        "\\soc/storage/bank[4].rd[0] [1]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 2,
+      "names": [
+        "\\bank[4].rd[0] [2]",
+        "\\storage/bank[4].rd[0] [2]",
+        "\\soc/storage/bank[4].rd[0] [2]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 3,
+      "names": [
+        "\\bank[4].rd[0] [3]",
+        "\\storage/bank[4].rd[0] [3]",
+        "\\soc/storage/bank[4].rd[0] [3]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 4,
+      "names": [
+        "\\bank[4].rd[0] [4]",
+        "\\storage/bank[4].rd[0] [4]",
+        "\\soc/storage/bank[4].rd[0] [4]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 5,
+      "names": [
+        "\\bank[4].rd[0] [5]",
+        "\\storage/bank[4].rd[0] [5]",
+        "\\soc/storage/bank[4].rd[0] [5]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 6,
+      "names": [
+        "\\bank[4].rd[0] [6]",
+        "\\storage/bank[4].rd[0] [6]",
+        "\\soc/storage/bank[4].rd[0] [6]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 7,
+      "names": [
+        "\\bank[4].rd[0] [7]",
+        "\\storage/bank[4].rd[0] [7]",
+        "\\soc/storage/bank[4].rd[0] [7]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 9,
+      "names": [
+        "\\bank[4].rd[0] [9]",
+        "\\storage/bank[4].rd[0] [9]",
+        "\\soc/storage/bank[4].rd[0] [9]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 10,
+      "names": [
+        "\\bank[4].rd[0] [10]",
+        "\\storage/bank[4].rd[0] [10]",
+        "\\soc/storage/bank[4].rd[0] [10]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 11,
+      "names": [
+        "\\bank[4].rd[0] [11]",
+        "\\storage/bank[4].rd[0] [11]",
+        "\\soc/storage/bank[4].rd[0] [11]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 12,
+      "names": [
+        "\\bank[4].rd[0] [12]",
+        "\\storage/bank[4].rd[0] [12]",
+        "\\soc/storage/bank[4].rd[0] [12]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 13,
+      "names": [
+        "\\bank[4].rd[0] [13]",
+        "\\storage/bank[4].rd[0] [13]",
+        "\\soc/storage/bank[4].rd[0] [13]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 14,
+      "names": [
+        "\\bank[4].rd[0] [14]",
+        "\\storage/bank[4].rd[0] [14]",
+        "\\soc/storage/bank[4].rd[0] [14]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 15,
+      "names": [
+        "\\bank[4].rd[0] [15]",
+        "\\storage/bank[4].rd[0] [15]",
+        "\\soc/storage/bank[4].rd[0] [15]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 4,
+      "port": "rd",
+      "bit": 16,
+      "names": [
+        "\\bank[4].rd[0] [16]",
+        "\\storage/bank[4].rd[0] [16]",
+        "\\soc/storage/bank[4].rd[0] [16]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 0,
+      "names": [
+        "\\bank[5].ri[0] [0]",
+        "\\storage/bank[5].ri[0] [0]",
+        "\\soc/storage/bank[5].ri[0] [0]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 1,
+      "names": [
+        "\\bank[5].ri[0] [1]",
+        "\\storage/bank[5].ri[0] [1]",
+        "\\soc/storage/bank[5].ri[0] [1]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 2,
+      "names": [
+        "\\bank[5].ri[0] [2]",
+        "\\storage/bank[5].ri[0] [2]",
+        "\\soc/storage/bank[5].ri[0] [2]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 3,
+      "names": [
+        "\\bank[5].ri[0] [3]",
+        "\\storage/bank[5].ri[0] [3]",
+        "\\soc/storage/bank[5].ri[0] [3]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 4,
+      "names": [
+        "\\bank[5].ri[0] [4]",
+        "\\storage/bank[5].ri[0] [4]",
+        "\\soc/storage/bank[5].ri[0] [4]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 5,
+      "names": [
+        "\\bank[5].ri[0] [5]",
+        "\\storage/bank[5].ri[0] [5]",
+        "\\soc/storage/bank[5].ri[0] [5]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 6,
+      "names": [
+        "\\bank[5].ri[0] [6]",
+        "\\storage/bank[5].ri[0] [6]",
+        "\\soc/storage/bank[5].ri[0] [6]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 7,
+      "names": [
+        "\\bank[5].ri[0] [7]",
+        "\\storage/bank[5].ri[0] [7]",
+        "\\soc/storage/bank[5].ri[0] [7]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 9,
+      "names": [
+        "\\bank[5].ri[0] [9]",
+        "\\storage/bank[5].ri[0] [9]",
+        "\\soc/storage/bank[5].ri[0] [9]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 10,
+      "names": [
+        "\\bank[5].ri[0] [10]",
+        "\\storage/bank[5].ri[0] [10]",
+        "\\soc/storage/bank[5].ri[0] [10]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 11,
+      "names": [
+        "\\bank[5].ri[0] [11]",
+        "\\storage/bank[5].ri[0] [11]",
+        "\\soc/storage/bank[5].ri[0] [11]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 12,
+      "names": [
+        "\\bank[5].ri[0] [12]",
+        "\\storage/bank[5].ri[0] [12]",
+        "\\soc/storage/bank[5].ri[0] [12]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 13,
+      "names": [
+        "\\bank[5].ri[0] [13]",
+        "\\storage/bank[5].ri[0] [13]",
+        "\\soc/storage/bank[5].ri[0] [13]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 14,
+      "names": [
+        "\\bank[5].ri[0] [14]",
+        "\\storage/bank[5].ri[0] [14]",
+        "\\soc/storage/bank[5].ri[0] [14]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 15,
+      "names": [
+        "\\bank[5].ri[0] [15]",
+        "\\storage/bank[5].ri[0] [15]",
+        "\\soc/storage/bank[5].ri[0] [15]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "ri",
+      "bit": 16,
+      "names": [
+        "\\bank[5].ri[0] [16]",
+        "\\storage/bank[5].ri[0] [16]",
+        "\\soc/storage/bank[5].ri[0] [16]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 0,
+      "names": [
+        "\\bank[5].rd[0] [0]",
+        "\\storage/bank[5].rd[0] [0]",
+        "\\soc/storage/bank[5].rd[0] [0]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 1,
+      "names": [
+        "\\bank[5].rd[0] [1]",
+        "\\storage/bank[5].rd[0] [1]",
+        "\\soc/storage/bank[5].rd[0] [1]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 2,
+      "names": [
+        "\\bank[5].rd[0] [2]",
+        "\\storage/bank[5].rd[0] [2]",
+        "\\soc/storage/bank[5].rd[0] [2]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 3,
+      "names": [
+        "\\bank[5].rd[0] [3]",
+        "\\storage/bank[5].rd[0] [3]",
+        "\\soc/storage/bank[5].rd[0] [3]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 4,
+      "names": [
+        "\\bank[5].rd[0] [4]",
+        "\\storage/bank[5].rd[0] [4]",
+        "\\soc/storage/bank[5].rd[0] [4]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 5,
+      "names": [
+        "\\bank[5].rd[0] [5]",
+        "\\storage/bank[5].rd[0] [5]",
+        "\\soc/storage/bank[5].rd[0] [5]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 6,
+      "names": [
+        "\\bank[5].rd[0] [6]",
+        "\\storage/bank[5].rd[0] [6]",
+        "\\soc/storage/bank[5].rd[0] [6]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 7,
+      "names": [
+        "\\bank[5].rd[0] [7]",
+        "\\storage/bank[5].rd[0] [7]",
+        "\\soc/storage/bank[5].rd[0] [7]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 9,
+      "names": [
+        "\\bank[5].rd[0] [9]",
+        "\\storage/bank[5].rd[0] [9]",
+        "\\soc/storage/bank[5].rd[0] [9]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 10,
+      "names": [
+        "\\bank[5].rd[0] [10]",
+        "\\storage/bank[5].rd[0] [10]",
+        "\\soc/storage/bank[5].rd[0] [10]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 11,
+      "names": [
+        "\\bank[5].rd[0] [11]",
+        "\\storage/bank[5].rd[0] [11]",
+        "\\soc/storage/bank[5].rd[0] [11]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 12,
+      "names": [
+        "\\bank[5].rd[0] [12]",
+        "\\storage/bank[5].rd[0] [12]",
+        "\\soc/storage/bank[5].rd[0] [12]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 13,
+      "names": [
+        "\\bank[5].rd[0] [13]",
+        "\\storage/bank[5].rd[0] [13]",
+        "\\soc/storage/bank[5].rd[0] [13]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 14,
+      "names": [
+        "\\bank[5].rd[0] [14]",
+        "\\storage/bank[5].rd[0] [14]",
+        "\\soc/storage/bank[5].rd[0] [14]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 15,
+      "names": [
+        "\\bank[5].rd[0] [15]",
+        "\\storage/bank[5].rd[0] [15]",
+        "\\soc/storage/bank[5].rd[0] [15]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 5,
+      "port": "rd",
+      "bit": 16,
+      "names": [
+        "\\bank[5].rd[0] [16]",
+        "\\storage/bank[5].rd[0] [16]",
+        "\\soc/storage/bank[5].rd[0] [16]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 0,
+      "names": [
+        "\\bank[6].ri[0] [0]",
+        "\\storage/bank[6].ri[0] [0]",
+        "\\soc/storage/bank[6].ri[0] [0]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 1,
+      "names": [
+        "\\bank[6].ri[0] [1]",
+        "\\storage/bank[6].ri[0] [1]",
+        "\\soc/storage/bank[6].ri[0] [1]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 2,
+      "names": [
+        "\\bank[6].ri[0] [2]",
+        "\\storage/bank[6].ri[0] [2]",
+        "\\soc/storage/bank[6].ri[0] [2]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 3,
+      "names": [
+        "\\bank[6].ri[0] [3]",
+        "\\storage/bank[6].ri[0] [3]",
+        "\\soc/storage/bank[6].ri[0] [3]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 4,
+      "names": [
+        "\\bank[6].ri[0] [4]",
+        "\\storage/bank[6].ri[0] [4]",
+        "\\soc/storage/bank[6].ri[0] [4]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 5,
+      "names": [
+        "\\bank[6].ri[0] [5]",
+        "\\storage/bank[6].ri[0] [5]",
+        "\\soc/storage/bank[6].ri[0] [5]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 6,
+      "names": [
+        "\\bank[6].ri[0] [6]",
+        "\\storage/bank[6].ri[0] [6]",
+        "\\soc/storage/bank[6].ri[0] [6]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 7,
+      "names": [
+        "\\bank[6].ri[0] [7]",
+        "\\storage/bank[6].ri[0] [7]",
+        "\\soc/storage/bank[6].ri[0] [7]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 9,
+      "names": [
+        "\\bank[6].ri[0] [9]",
+        "\\storage/bank[6].ri[0] [9]",
+        "\\soc/storage/bank[6].ri[0] [9]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 10,
+      "names": [
+        "\\bank[6].ri[0] [10]",
+        "\\storage/bank[6].ri[0] [10]",
+        "\\soc/storage/bank[6].ri[0] [10]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 11,
+      "names": [
+        "\\bank[6].ri[0] [11]",
+        "\\storage/bank[6].ri[0] [11]",
+        "\\soc/storage/bank[6].ri[0] [11]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 12,
+      "names": [
+        "\\bank[6].ri[0] [12]",
+        "\\storage/bank[6].ri[0] [12]",
+        "\\soc/storage/bank[6].ri[0] [12]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 13,
+      "names": [
+        "\\bank[6].ri[0] [13]",
+        "\\storage/bank[6].ri[0] [13]",
+        "\\soc/storage/bank[6].ri[0] [13]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 14,
+      "names": [
+        "\\bank[6].ri[0] [14]",
+        "\\storage/bank[6].ri[0] [14]",
+        "\\soc/storage/bank[6].ri[0] [14]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 15,
+      "names": [
+        "\\bank[6].ri[0] [15]",
+        "\\storage/bank[6].ri[0] [15]",
+        "\\soc/storage/bank[6].ri[0] [15]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "ri",
+      "bit": 16,
+      "names": [
+        "\\bank[6].ri[0] [16]",
+        "\\storage/bank[6].ri[0] [16]",
+        "\\soc/storage/bank[6].ri[0] [16]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 0,
+      "names": [
+        "\\bank[6].rd[0] [0]",
+        "\\storage/bank[6].rd[0] [0]",
+        "\\soc/storage/bank[6].rd[0] [0]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 1,
+      "names": [
+        "\\bank[6].rd[0] [1]",
+        "\\storage/bank[6].rd[0] [1]",
+        "\\soc/storage/bank[6].rd[0] [1]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 2,
+      "names": [
+        "\\bank[6].rd[0] [2]",
+        "\\storage/bank[6].rd[0] [2]",
+        "\\soc/storage/bank[6].rd[0] [2]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 3,
+      "names": [
+        "\\bank[6].rd[0] [3]",
+        "\\storage/bank[6].rd[0] [3]",
+        "\\soc/storage/bank[6].rd[0] [3]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 4,
+      "names": [
+        "\\bank[6].rd[0] [4]",
+        "\\storage/bank[6].rd[0] [4]",
+        "\\soc/storage/bank[6].rd[0] [4]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 5,
+      "names": [
+        "\\bank[6].rd[0] [5]",
+        "\\storage/bank[6].rd[0] [5]",
+        "\\soc/storage/bank[6].rd[0] [5]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 6,
+      "names": [
+        "\\bank[6].rd[0] [6]",
+        "\\storage/bank[6].rd[0] [6]",
+        "\\soc/storage/bank[6].rd[0] [6]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 7,
+      "names": [
+        "\\bank[6].rd[0] [7]",
+        "\\storage/bank[6].rd[0] [7]",
+        "\\soc/storage/bank[6].rd[0] [7]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 9,
+      "names": [
+        "\\bank[6].rd[0] [9]",
+        "\\storage/bank[6].rd[0] [9]",
+        "\\soc/storage/bank[6].rd[0] [9]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 10,
+      "names": [
+        "\\bank[6].rd[0] [10]",
+        "\\storage/bank[6].rd[0] [10]",
+        "\\soc/storage/bank[6].rd[0] [10]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 11,
+      "names": [
+        "\\bank[6].rd[0] [11]",
+        "\\storage/bank[6].rd[0] [11]",
+        "\\soc/storage/bank[6].rd[0] [11]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 12,
+      "names": [
+        "\\bank[6].rd[0] [12]",
+        "\\storage/bank[6].rd[0] [12]",
+        "\\soc/storage/bank[6].rd[0] [12]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 13,
+      "names": [
+        "\\bank[6].rd[0] [13]",
+        "\\storage/bank[6].rd[0] [13]",
+        "\\soc/storage/bank[6].rd[0] [13]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 14,
+      "names": [
+        "\\bank[6].rd[0] [14]",
+        "\\storage/bank[6].rd[0] [14]",
+        "\\soc/storage/bank[6].rd[0] [14]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 15,
+      "names": [
+        "\\bank[6].rd[0] [15]",
+        "\\storage/bank[6].rd[0] [15]",
+        "\\soc/storage/bank[6].rd[0] [15]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 6,
+      "port": "rd",
+      "bit": 16,
+      "names": [
+        "\\bank[6].rd[0] [16]",
+        "\\storage/bank[6].rd[0] [16]",
+        "\\soc/storage/bank[6].rd[0] [16]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 0,
+      "names": [
+        "\\bank[7].ri[0] [0]",
+        "\\storage/bank[7].ri[0] [0]",
+        "\\soc/storage/bank[7].ri[0] [0]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 1,
+      "names": [
+        "\\bank[7].ri[0] [1]",
+        "\\storage/bank[7].ri[0] [1]",
+        "\\soc/storage/bank[7].ri[0] [1]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 2,
+      "names": [
+        "\\bank[7].ri[0] [2]",
+        "\\storage/bank[7].ri[0] [2]",
+        "\\soc/storage/bank[7].ri[0] [2]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 3,
+      "names": [
+        "\\bank[7].ri[0] [3]",
+        "\\storage/bank[7].ri[0] [3]",
+        "\\soc/storage/bank[7].ri[0] [3]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 4,
+      "names": [
+        "\\bank[7].ri[0] [4]",
+        "\\storage/bank[7].ri[0] [4]",
+        "\\soc/storage/bank[7].ri[0] [4]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 5,
+      "names": [
+        "\\bank[7].ri[0] [5]",
+        "\\storage/bank[7].ri[0] [5]",
+        "\\soc/storage/bank[7].ri[0] [5]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 6,
+      "names": [
+        "\\bank[7].ri[0] [6]",
+        "\\storage/bank[7].ri[0] [6]",
+        "\\soc/storage/bank[7].ri[0] [6]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 7,
+      "names": [
+        "\\bank[7].ri[0] [7]",
+        "\\storage/bank[7].ri[0] [7]",
+        "\\soc/storage/bank[7].ri[0] [7]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 9,
+      "names": [
+        "\\bank[7].ri[0] [9]",
+        "\\storage/bank[7].ri[0] [9]",
+        "\\soc/storage/bank[7].ri[0] [9]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 10,
+      "names": [
+        "\\bank[7].ri[0] [10]",
+        "\\storage/bank[7].ri[0] [10]",
+        "\\soc/storage/bank[7].ri[0] [10]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 11,
+      "names": [
+        "\\bank[7].ri[0] [11]",
+        "\\storage/bank[7].ri[0] [11]",
+        "\\soc/storage/bank[7].ri[0] [11]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 12,
+      "names": [
+        "\\bank[7].ri[0] [12]",
+        "\\storage/bank[7].ri[0] [12]",
+        "\\soc/storage/bank[7].ri[0] [12]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 13,
+      "names": [
+        "\\bank[7].ri[0] [13]",
+        "\\storage/bank[7].ri[0] [13]",
+        "\\soc/storage/bank[7].ri[0] [13]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 14,
+      "names": [
+        "\\bank[7].ri[0] [14]",
+        "\\storage/bank[7].ri[0] [14]",
+        "\\soc/storage/bank[7].ri[0] [14]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 15,
+      "names": [
+        "\\bank[7].ri[0] [15]",
+        "\\storage/bank[7].ri[0] [15]",
+        "\\soc/storage/bank[7].ri[0] [15]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "ri",
+      "bit": 16,
+      "names": [
+        "\\bank[7].ri[0] [16]",
+        "\\storage/bank[7].ri[0] [16]",
+        "\\soc/storage/bank[7].ri[0] [16]"
+      ],
+      "uses": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 0,
+      "names": [
+        "\\bank[7].rd[0] [0]",
+        "\\storage/bank[7].rd[0] [0]",
+        "\\soc/storage/bank[7].rd[0] [0]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 1,
+      "names": [
+        "\\bank[7].rd[0] [1]",
+        "\\storage/bank[7].rd[0] [1]",
+        "\\soc/storage/bank[7].rd[0] [1]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 2,
+      "names": [
+        "\\bank[7].rd[0] [2]",
+        "\\storage/bank[7].rd[0] [2]",
+        "\\soc/storage/bank[7].rd[0] [2]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 3,
+      "names": [
+        "\\bank[7].rd[0] [3]",
+        "\\storage/bank[7].rd[0] [3]",
+        "\\soc/storage/bank[7].rd[0] [3]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 4,
+      "names": [
+        "\\bank[7].rd[0] [4]",
+        "\\storage/bank[7].rd[0] [4]",
+        "\\soc/storage/bank[7].rd[0] [4]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 5,
+      "names": [
+        "\\bank[7].rd[0] [5]",
+        "\\storage/bank[7].rd[0] [5]",
+        "\\soc/storage/bank[7].rd[0] [5]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 6,
+      "names": [
+        "\\bank[7].rd[0] [6]",
+        "\\storage/bank[7].rd[0] [6]",
+        "\\soc/storage/bank[7].rd[0] [6]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 7,
+      "names": [
+        "\\bank[7].rd[0] [7]",
+        "\\storage/bank[7].rd[0] [7]",
+        "\\soc/storage/bank[7].rd[0] [7]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 9,
+      "names": [
+        "\\bank[7].rd[0] [9]",
+        "\\storage/bank[7].rd[0] [9]",
+        "\\soc/storage/bank[7].rd[0] [9]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 10,
+      "names": [
+        "\\bank[7].rd[0] [10]",
+        "\\storage/bank[7].rd[0] [10]",
+        "\\soc/storage/bank[7].rd[0] [10]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 11,
+      "names": [
+        "\\bank[7].rd[0] [11]",
+        "\\storage/bank[7].rd[0] [11]",
+        "\\soc/storage/bank[7].rd[0] [11]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 12,
+      "names": [
+        "\\bank[7].rd[0] [12]",
+        "\\storage/bank[7].rd[0] [12]",
+        "\\soc/storage/bank[7].rd[0] [12]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 13,
+      "names": [
+        "\\bank[7].rd[0] [13]",
+        "\\storage/bank[7].rd[0] [13]",
+        "\\soc/storage/bank[7].rd[0] [13]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 14,
+      "names": [
+        "\\bank[7].rd[0] [14]",
+        "\\storage/bank[7].rd[0] [14]",
+        "\\soc/storage/bank[7].rd[0] [14]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 15,
+      "names": [
+        "\\bank[7].rd[0] [15]",
+        "\\storage/bank[7].rd[0] [15]",
+        "\\soc/storage/bank[7].rd[0] [15]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "bank": 7,
+      "port": "rd",
+      "bit": 16,
+      "names": [
+        "\\bank[7].rd[0] [16]",
+        "\\storage/bank[7].rd[0] [16]",
+        "\\soc/storage/bank[7].rd[0] [16]"
+      ],
+      "uses": [
+        0,
+        0,
+        2
+      ]
+    }
+  ],
+  "new_PDS_runs": 0,
+  "RTL_changes": 0
+}

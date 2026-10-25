@@ -1,0 +1,346 @@
+{
+  "maximum": 16,
+  "timeout_seconds": 120,
+  "fail_fast": true,
+  "only_compile": true,
+  "targets": [
+    {
+      "id": "regression-base",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-base.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-base.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-lbu",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-lbu.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lbu_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-lbu.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-lb",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-lb.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lb_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-lb.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-lhu",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-lhu.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lhu_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-lhu.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-lh",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-lh.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lh_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-lh.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-sb",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-sb.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_sb_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-sb.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-sh",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-sh.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_sh_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-sh.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-fence",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-fence.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_fence_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-fence.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-eei",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-eei.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_eei_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-eei.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-zero",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-zero.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_zero_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-zero.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-r4",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-r4.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_r4_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-r4.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-rcmp",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-rcmp.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_rcmp_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-rcmp.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-addsub",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-addsub.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_addsub_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-addsub.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "regression-rshift",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_selfcheck_v1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-rshift.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_rshift_selfcheck_v1.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\regression-rshift.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "directed-0",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_redirect",
+        "-Ptb_redirect.PF=0",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\tb_redirect.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+      "phase": "initial"
+    },
+    {
+      "id": "directed-1",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_redirect",
+        "-Ptb_redirect.PF=1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\tb_redirect.sv"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+      "phase": "initial"
+    }
+  ]
+}

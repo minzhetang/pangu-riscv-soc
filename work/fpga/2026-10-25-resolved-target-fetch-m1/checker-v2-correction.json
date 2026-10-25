@@ -1,0 +1,14 @@
+{
+  "reason": "v1 compared serialized hex-file SHA, while vvp formatted 32-bit expressions as 8 hex digits and Python used 2; both are same byte values",
+  "actual_text_bytes": 327680,
+  "expected_text_bytes": 131072,
+  "parsed_RAM_bytes": 32768,
+  "parsed_equal": true,
+  "RTL_changed": false,
+  "TB_changed": false,
+  "expectations_changed": false,
+  "failed_v1_preserved": true,
+  "new_DUT_runs_for_recheck": 0,
+  "old_checker_sha256": "FC5510B28270A95A8B41DAC606B673D1B0E9961CE4B18402281AD7738D55A4EB",
+  "new_checker_sha256": "5325F8B1CD5009B4D22DF184BA0D326D71D8EC0F4123F6660B3157DA8E1F64C0"
+}

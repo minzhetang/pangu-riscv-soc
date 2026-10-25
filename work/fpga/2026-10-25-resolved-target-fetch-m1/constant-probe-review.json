@@ -1,0 +1,59 @@
+{
+  "status": "OPEN_NEW_WARNING_HOLD",
+  "old_and_new": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\flow.log",
+      "sha256": "A1142756F7D002F9C18458EBE0B145385010F0E9DC22C05B7822C0DC1DE0EC50",
+      "constant_probe_count": 7,
+      "line_numbers": [
+        278,
+        279,
+        283,
+        284,
+        285,
+        286,
+        287
+      ],
+      "named_net_in_warning": false,
+      "stage": "sdm2adm",
+      "other_loop_lines": []
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\flow.log",
+      "sha256": "AE3C37A85A746B57BE89703B627CFDCB2D01EED3490D4ADA0B3DB35E31717FF5",
+      "constant_probe_count": 8,
+      "line_numbers": [
+        279,
+        280,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289
+      ],
+      "named_net_in_warning": false,
+      "stage": "sdm2adm",
+      "other_loop_lines": []
+    }
+  ],
+  "reports_read": [
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\flow.log",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\run.log",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\compile\\run.log",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\constraint_check\\constraint_check.ccr",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\device_map\\run.log",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\place_route\\run.log",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\report_timing\\board_top.rtr",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\report_timing\\run.log",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\synthesize\\add_sub_carrychain.log",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\synthesize\\run.log",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\compile\\parse_design\\run.log"
+  ],
+  "skipped_large": [],
+  "other_named_loop_results": [],
+  "own_source_observation": "redirect_request depends on registered EX/forwarding state; hit drives registered PC/IFID, ROM response is one-edge. This does not prove all mapped combinational SCCs absent.",
+  "conclusion": "8 vs 7, one additional unnamed constant-probe warning; not classified as harmless or proven physical loop; keep F143 stable baseline",
+  "new_PDS_runs": 0,
+  "hardware": "STOPPED"
+}

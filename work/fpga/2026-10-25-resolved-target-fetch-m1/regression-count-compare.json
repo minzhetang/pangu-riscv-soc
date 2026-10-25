@@ -1,0 +1,14 @@
+{
+  "status": "PASS_HISTORICAL_COUNTS_ONLY",
+  "cases": 763,
+  "independent_explicit_expectations": {
+    "stall": 746,
+    "flush": 743
+  },
+  "NOT_SPECIFIED": {
+    "stall": 17,
+    "flush": 20
+  },
+  "historical_counts_all_equal": true,
+  "new_DUT_runs": 0
+}

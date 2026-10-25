@@ -1,0 +1,4929 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "beq-taken-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\beq-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\beq-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\beq-taken-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.11,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-beq-taken-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-beq-taken-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB",
+          "WB": "4AF022B1759AFDBE77AC0F08B4E4D0970203550C98DA22F75BAE297ED70854F7",
+          "MEM": "401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 32,
+            "next_cycle": 20,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": true
+    },
+    {
+      "id": "beq-taken-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\beq-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\beq-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\beq-taken-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.109,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-beq-taken-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-beq-taken-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB",
+          "WB": "4AF022B1759AFDBE77AC0F08B4E4D0970203550C98DA22F75BAE297ED70854F7",
+          "MEM": "401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 32,
+            "next_cycle": 18,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "beq-not-taken-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\beq-not-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\beq-not-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\beq-not-taken-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.093,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-beq-not-taken-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-beq-not-taken-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "66A902312849760CE433731738DDC2DD81EB39FD045898EEB88EA9204380DBC0",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "beq-not-taken-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\beq-not-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\beq-not-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\beq-not-taken-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-beq-not-taken-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-beq-not-taken-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "66A902312849760CE433731738DDC2DD81EB39FD045898EEB88EA9204380DBC0",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bne-taken-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bne-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bne-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bne-taken-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bne-taken-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bne-taken-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB",
+          "WB": "9935E78BA13724A456D75434E8FE178D01BDEE46BA49C7FA893E274156A041FF",
+          "MEM": "401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 32,
+            "next_cycle": 20,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bne-taken-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bne-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bne-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bne-taken-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bne-taken-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bne-taken-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB",
+          "WB": "9935E78BA13724A456D75434E8FE178D01BDEE46BA49C7FA893E274156A041FF",
+          "MEM": "401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 32,
+            "next_cycle": 18,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bne-not-taken-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bne-not-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bne-not-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bne-not-taken-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bne-not-taken-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bne-not-taken-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "2E1EAB85232CD5C78AF6589E8AFD740C784899DECF292399D272CD52B5AB46CE",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bne-not-taken-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bne-not-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bne-not-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bne-not-taken-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.093,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bne-not-taken-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bne-not-taken-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "2E1EAB85232CD5C78AF6589E8AFD740C784899DECF292399D272CD52B5AB46CE",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "blt-taken-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\blt-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\blt-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\blt-taken-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-blt-taken-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-blt-taken-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB",
+          "WB": "22EC059965CBC9E710F8BDE3F5AD2F257684C92EEBAFAD184194D962B06DD9BE",
+          "MEM": "401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 32,
+            "next_cycle": 20,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "blt-taken-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\blt-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\blt-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\blt-taken-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-blt-taken-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-blt-taken-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB",
+          "WB": "22EC059965CBC9E710F8BDE3F5AD2F257684C92EEBAFAD184194D962B06DD9BE",
+          "MEM": "401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 32,
+            "next_cycle": 18,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "blt-not-taken-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\blt-not-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\blt-not-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\blt-not-taken-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-blt-not-taken-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-blt-not-taken-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "0674387B06CF1BCCE970FEB784739A53709F2A61B626DA8E1D56233B9E4EAA08",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "blt-not-taken-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\blt-not-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\blt-not-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\blt-not-taken-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-blt-not-taken-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-blt-not-taken-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "0674387B06CF1BCCE970FEB784739A53709F2A61B626DA8E1D56233B9E4EAA08",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bge-taken-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bge-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bge-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bge-taken-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.093,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bge-taken-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bge-taken-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB",
+          "WB": "7A4F34EE5F400939FF5AA761965B56B86FA2C08F476FF0AF2BE37F856B424E2E",
+          "MEM": "401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 32,
+            "next_cycle": 20,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bge-taken-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bge-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bge-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bge-taken-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bge-taken-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bge-taken-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB",
+          "WB": "7A4F34EE5F400939FF5AA761965B56B86FA2C08F476FF0AF2BE37F856B424E2E",
+          "MEM": "401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 32,
+            "next_cycle": 18,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bge-not-taken-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bge-not-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bge-not-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bge-not-taken-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bge-not-taken-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bge-not-taken-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "85072B2F3A53A96F8C0BB7E384478D8C5C6903AB850180D2B7F6E799A86A896C",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bge-not-taken-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bge-not-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bge-not-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bge-not-taken-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bge-not-taken-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bge-not-taken-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "85072B2F3A53A96F8C0BB7E384478D8C5C6903AB850180D2B7F6E799A86A896C",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bltu-taken-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bltu-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bltu-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bltu-taken-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bltu-taken-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bltu-taken-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB",
+          "WB": "7A4F34EE5F400939FF5AA761965B56B86FA2C08F476FF0AF2BE37F856B424E2E",
+          "MEM": "401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 32,
+            "next_cycle": 20,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bltu-taken-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bltu-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bltu-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bltu-taken-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.093,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bltu-taken-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bltu-taken-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB",
+          "WB": "7A4F34EE5F400939FF5AA761965B56B86FA2C08F476FF0AF2BE37F856B424E2E",
+          "MEM": "401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 32,
+            "next_cycle": 18,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bltu-not-taken-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bltu-not-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bltu-not-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bltu-not-taken-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bltu-not-taken-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bltu-not-taken-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "85072B2F3A53A96F8C0BB7E384478D8C5C6903AB850180D2B7F6E799A86A896C",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bltu-not-taken-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bltu-not-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bltu-not-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bltu-not-taken-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bltu-not-taken-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bltu-not-taken-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "85072B2F3A53A96F8C0BB7E384478D8C5C6903AB850180D2B7F6E799A86A896C",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bgeu-taken-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bgeu-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bgeu-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bgeu-taken-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bgeu-taken-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bgeu-taken-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB",
+          "WB": "22EC059965CBC9E710F8BDE3F5AD2F257684C92EEBAFAD184194D962B06DD9BE",
+          "MEM": "401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 32,
+            "next_cycle": 20,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bgeu-taken-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bgeu-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bgeu-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bgeu-taken-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bgeu-taken-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bgeu-taken-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB",
+          "WB": "22EC059965CBC9E710F8BDE3F5AD2F257684C92EEBAFAD184194D962B06DD9BE",
+          "MEM": "401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 32,
+            "next_cycle": 18,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bgeu-not-taken-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bgeu-not-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bgeu-not-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bgeu-not-taken-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bgeu-not-taken-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bgeu-not-taken-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "0674387B06CF1BCCE970FEB784739A53709F2A61B626DA8E1D56233B9E4EAA08",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "bgeu-not-taken-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bgeu-not-taken\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\bgeu-not-taken\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\bgeu-not-taken-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bgeu-not-taken-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-bgeu-not-taken-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "0674387B06CF1BCCE970FEB784739A53709F2A61B626DA8E1D56233B9E4EAA08",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "finite-backward-loop-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\finite-backward-loop\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\finite-backward-loop\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\finite-backward-loop-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-finite-backward-loop-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-finite-backward-loop-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 51,
+          "advances": 25,
+          "stall": 0,
+          "flush": 2,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 2,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 14,
+          "WB": 10,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "6D2E48B7B2CEC61D53DEE68275B4397634DA969C20F6332ECD03474E6D97FC4C",
+          "WB": "24A0ECBBD08493247FD3CBDED8E2F6636FDA8A9E14BFB604EB26BCC642D15B74",
+          "MEM": "941D3A60858E6ABEF66164ED8F95CEA81E22D8736A1D31913FDA0FEBE725F41D"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 2,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 24,
+            "cycle": 18,
+            "target": 16,
+            "next_cycle": 24,
+            "gap": 6,
+            "hit": false
+          },
+          {
+            "pc": 24,
+            "cycle": 28,
+            "target": 16,
+            "next_cycle": 34,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "finite-backward-loop-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\finite-backward-loop\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\finite-backward-loop\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\finite-backward-loop-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-finite-backward-loop-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-finite-backward-loop-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 47,
+          "advances": 23,
+          "stall": 0,
+          "flush": 2,
+          "tail": 8,
+          "requests": 2,
+          "hits": 2,
+          "applies": 2,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 14,
+          "WB": 10,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "6D2E48B7B2CEC61D53DEE68275B4397634DA969C20F6332ECD03474E6D97FC4C",
+          "WB": "24A0ECBBD08493247FD3CBDED8E2F6636FDA8A9E14BFB604EB26BCC642D15B74",
+          "MEM": "941D3A60858E6ABEF66164ED8F95CEA81E22D8736A1D31913FDA0FEBE725F41D"
+        },
+        "fetch": {
+          "requests": 2,
+          "hits": 2,
+          "applies": 2,
+          "cancels": 0,
+          "rows": 8
+        },
+        "intervals": [
+          {
+            "pc": 24,
+            "cycle": 18,
+            "target": 16,
+            "next_cycle": 22,
+            "gap": 4,
+            "hit": true
+          },
+          {
+            "pc": 24,
+            "cycle": 26,
+            "target": 16,
+            "next_cycle": 30,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "taken-PC-plus4-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\taken-PC-plus4\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\taken-PC-plus4\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\taken-PC-plus4-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-taken-PC-plus4-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-taken-PC-plus4-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 29,
+          "advances": 14,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 5,
+          "WB": 3,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "C4BC5C50FF32CB557AB1A3625AEAECE9BB8057D4C5FF12359910C26C39A738CC",
+          "WB": "3DE3DDE8552A72B39FF262B94A1941054C48763D524459633352076E87D71DF4",
+          "MEM": "2ACC1CD5690345B4D6E33F9E57CE22DA2BB06384A5ED9B7FA90096344D3C6ADC"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 8,
+            "cycle": 10,
+            "target": 12,
+            "next_cycle": 16,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "taken-PC-plus4-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\taken-PC-plus4\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\taken-PC-plus4\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\taken-PC-plus4-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-taken-PC-plus4-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-taken-PC-plus4-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 27,
+          "advances": 13,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 5,
+          "WB": 3,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "C4BC5C50FF32CB557AB1A3625AEAECE9BB8057D4C5FF12359910C26C39A738CC",
+          "WB": "3DE3DDE8552A72B39FF262B94A1941054C48763D524459633352076E87D71DF4",
+          "MEM": "2ACC1CD5690345B4D6E33F9E57CE22DA2BB06384A5ED9B7FA90096344D3C6ADC"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 8,
+            "cycle": 10,
+            "target": 12,
+            "next_cycle": 14,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "jal-link-first-target-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\jal-link-first-target\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\jal-link-first-target\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\jal-link-first-target-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-jal-link-first-target-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-jal-link-first-target-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 29,
+          "advances": 14,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 5,
+          "WB": 4,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "E96413AED00069806B5052EAFF2EF24F4489F3350E2D8DD2E67BA72E983620A0",
+          "WB": "5E65EF5069A98F305608E0023D2226D4D4DE821AC2571B7B55391ED960CB695F",
+          "MEM": "681B3C0A8ECCC4B11C6BBAB152447A979718E8C731C74F5C03A7DB7F752A4B9C"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 8,
+            "cycle": 10,
+            "target": 64,
+            "next_cycle": 16,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "jal-link-first-target-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\jal-link-first-target\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\jal-link-first-target\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\jal-link-first-target-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-jal-link-first-target-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-jal-link-first-target-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 27,
+          "advances": 13,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 5,
+          "WB": 4,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "E96413AED00069806B5052EAFF2EF24F4489F3350E2D8DD2E67BA72E983620A0",
+          "WB": "5E65EF5069A98F305608E0023D2226D4D4DE821AC2571B7B55391ED960CB695F",
+          "MEM": "681B3C0A8ECCC4B11C6BBAB152447A979718E8C731C74F5C03A7DB7F752A4B9C"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 8,
+            "cycle": 10,
+            "target": 64,
+            "next_cycle": 14,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "jalr-rd-equals-rs1-lowbit-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\jalr-rd-equals-rs1-lowbit\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\jalr-rd-equals-rs1-lowbit\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\jalr-rd-equals-rs1-lowbit-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.079,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-jalr-rd-equals-rs1-lowbit-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-jalr-rd-equals-rs1-lowbit-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "3A71AF5C9B6CD42C633216D290050D08C4F1C5FA8F99D0B5E6B62B6622F849D3",
+          "WB": "7BDF27D53BE5ABE72F6D6E9242FEF6E5DE7707D21DA205DC567EEA446EFA7695",
+          "MEM": "FA089329FB931004332B4F55C5B849C0C69C612E4A4D77330B0C38B534651F81"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 12,
+            "cycle": 12,
+            "target": 64,
+            "next_cycle": 18,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "jalr-rd-equals-rs1-lowbit-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\jalr-rd-equals-rs1-lowbit\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\jalr-rd-equals-rs1-lowbit\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\jalr-rd-equals-rs1-lowbit-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-jalr-rd-equals-rs1-lowbit-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-jalr-rd-equals-rs1-lowbit-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 29,
+          "advances": 14,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "3A71AF5C9B6CD42C633216D290050D08C4F1C5FA8F99D0B5E6B62B6622F849D3",
+          "WB": "7BDF27D53BE5ABE72F6D6E9242FEF6E5DE7707D21DA205DC567EEA446EFA7695",
+          "MEM": "FA089329FB931004332B4F55C5B849C0C69C612E4A4D77330B0C38B534651F81"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 12,
+            "cycle": 12,
+            "target": 64,
+            "next_cycle": 16,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "load-jalr-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-jalr\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-jalr\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\load-jalr-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-jalr-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-jalr-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 1,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 5,
+          "MEM": 2
+        },
+        "ordered_SHA256": {
+          "EX": "3A71AF5C9B6CD42C633216D290050D08C4F1C5FA8F99D0B5E6B62B6622F849D3",
+          "WB": "6EF14ADFC17EFF11E3B5D1E9E6DF02DF98B53ED33FFFE46B4678143F080771FC",
+          "MEM": "C9216885ECD19508190EF3EFF9176C76535A4EE8BF31C70E8BB5BBE666C0E4AB"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 12,
+            "cycle": 14,
+            "target": 64,
+            "next_cycle": 20,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "load-jalr-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-jalr\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-jalr\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\load-jalr-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-jalr-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-jalr-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 1,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 5,
+          "MEM": 2
+        },
+        "ordered_SHA256": {
+          "EX": "3A71AF5C9B6CD42C633216D290050D08C4F1C5FA8F99D0B5E6B62B6622F849D3",
+          "WB": "6EF14ADFC17EFF11E3B5D1E9E6DF02DF98B53ED33FFFE46B4678143F080771FC",
+          "MEM": "C9216885ECD19508190EF3EFF9176C76535A4EE8BF31C70E8BB5BBE666C0E4AB"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 12,
+            "cycle": 14,
+            "target": 64,
+            "next_cycle": 18,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "load-branch-both-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-branch-both\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-branch-both\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\load-branch-both-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-branch-both-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-branch-both-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 1,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 4,
+          "MEM": 2
+        },
+        "ordered_SHA256": {
+          "EX": "FA7CD9904AD28F53F9D396A1E1D73891FF25771EAAF92851254F81854C730187",
+          "WB": "98795E1076A08188F0C5B80C36826539FD659E3A26E7DCDB1E5D12BA761EDF20",
+          "MEM": "4260037C469A648F784D489A5AA110BF4D8D3A4AD2EC77AA202AB5B98A93DA58"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 12,
+            "cycle": 14,
+            "target": 28,
+            "next_cycle": 20,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "load-branch-both-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-branch-both\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-branch-both\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\load-branch-both-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.079,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-branch-both-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-branch-both-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 1,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 4,
+          "MEM": 2
+        },
+        "ordered_SHA256": {
+          "EX": "FA7CD9904AD28F53F9D396A1E1D73891FF25771EAAF92851254F81854C730187",
+          "WB": "98795E1076A08188F0C5B80C36826539FD659E3A26E7DCDB1E5D12BA761EDF20",
+          "MEM": "4260037C469A648F784D489A5AA110BF4D8D3A4AD2EC77AA202AB5B98A93DA58"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 12,
+            "cycle": 14,
+            "target": 28,
+            "next_cycle": 18,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "load-branch-rs1-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-branch-rs1\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-branch-rs1\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\load-branch-rs1-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-branch-rs1-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-branch-rs1-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 1,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 4,
+          "MEM": 2
+        },
+        "ordered_SHA256": {
+          "EX": "FA7CD9904AD28F53F9D396A1E1D73891FF25771EAAF92851254F81854C730187",
+          "WB": "98795E1076A08188F0C5B80C36826539FD659E3A26E7DCDB1E5D12BA761EDF20",
+          "MEM": "4260037C469A648F784D489A5AA110BF4D8D3A4AD2EC77AA202AB5B98A93DA58"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 12,
+            "cycle": 14,
+            "target": 28,
+            "next_cycle": 20,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "load-branch-rs1-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-branch-rs1\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-branch-rs1\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\load-branch-rs1-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-branch-rs1-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-branch-rs1-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 1,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 4,
+          "MEM": 2
+        },
+        "ordered_SHA256": {
+          "EX": "FA7CD9904AD28F53F9D396A1E1D73891FF25771EAAF92851254F81854C730187",
+          "WB": "98795E1076A08188F0C5B80C36826539FD659E3A26E7DCDB1E5D12BA761EDF20",
+          "MEM": "4260037C469A648F784D489A5AA110BF4D8D3A4AD2EC77AA202AB5B98A93DA58"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 12,
+            "cycle": 14,
+            "target": 28,
+            "next_cycle": 18,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "load-branch-rs2-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-branch-rs2\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-branch-rs2\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\load-branch-rs2-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-branch-rs2-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-branch-rs2-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 1,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 4,
+          "MEM": 2
+        },
+        "ordered_SHA256": {
+          "EX": "797310F2771A36CE29EF9F9B1DD93E2D886F837DFA8950BD9E7167956F62A992",
+          "WB": "1E802F89D7CE54F8CA0C4D56C116F8041D57E4508A88A50E4722984C5C34D85E",
+          "MEM": "1C8DC81E05720BAD8792BD4C9814063B8E4B1573D871F951C7DCE6950DAC4FBC"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "load-branch-rs2-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-branch-rs2\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-branch-rs2\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\load-branch-rs2-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-branch-rs2-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-branch-rs2-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 1,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 4,
+          "MEM": 2
+        },
+        "ordered_SHA256": {
+          "EX": "797310F2771A36CE29EF9F9B1DD93E2D886F837DFA8950BD9E7167956F62A992",
+          "WB": "1E802F89D7CE54F8CA0C4D56C116F8041D57E4508A88A50E4722984C5C34D85E",
+          "MEM": "1C8DC81E05720BAD8792BD4C9814063B8E4B1573D871F951C7DCE6950DAC4FBC"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "WB-ID-source-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\WB-ID-source\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\WB-ID-source\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\WB-ID-source-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.079,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-WB-ID-source-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-WB-ID-source-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 37,
+          "advances": 18,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 9,
+          "WB": 6,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "5C97CC69E2E1D51614EE93C8EF9B7F5B7345B6C258959836EAFC61042DD5AEBB",
+          "WB": "A461FA149A2050FECB55F9BCB2D70DC8A617C916641380D1C426F5A1E0C4BDC1",
+          "MEM": "6C5AE366C70D2F09F182F2FA4A8927560AA142B291B55690149C17DCF6D94011"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "WB-ID-source-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\WB-ID-source\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\WB-ID-source\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\WB-ID-source-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-WB-ID-source-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-WB-ID-source-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 9,
+          "WB": 6,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "5C97CC69E2E1D51614EE93C8EF9B7F5B7345B6C258959836EAFC61042DD5AEBB",
+          "WB": "A461FA149A2050FECB55F9BCB2D70DC8A617C916641380D1C426F5A1E0C4BDC1",
+          "MEM": "6C5AE366C70D2F09F182F2FA4A8927560AA142B291B55690149C17DCF6D94011"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "newest-producer-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\newest-producer\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\newest-producer\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\newest-producer-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-newest-producer-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-newest-producer-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "C5993D88950BB814A878E21B2ED3E66A76E284A3C57E6D1C3776AF3C7C4FC3D5",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "newest-producer-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\newest-producer\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\newest-producer\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\newest-producer-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-newest-producer-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-newest-producer-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "C5993D88950BB814A878E21B2ED3E66A76E284A3C57E6D1C3776AF3C7C4FC3D5",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "EX-rs1-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\EX-rs1\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\EX-rs1\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\EX-rs1-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-EX-rs1-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-EX-rs1-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "7EEC4AB22B4A6DAFEB445DCAA62EBD897201D7384F261D65D4A6CB8C2B4E66B7",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "EX-rs1-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\EX-rs1\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\EX-rs1\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\EX-rs1-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-EX-rs1-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-EX-rs1-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "7EEC4AB22B4A6DAFEB445DCAA62EBD897201D7384F261D65D4A6CB8C2B4E66B7",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "WB-rs2-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\WB-rs2\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\WB-rs2\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\WB-rs2-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-WB-rs2-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-WB-rs2-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "970B974946555A43DD366C711B66A0BF78B64072AB6C3EDA2B15883B3FE1A6A0",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "WB-rs2-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\WB-rs2\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\WB-rs2\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\WB-rs2-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-WB-rs2-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-WB-rs2-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "44DB0BE303291E3AE59291A1C6E6C9FDCFE211652851CF0B000C033758989FF9",
+          "WB": "970B974946555A43DD366C711B66A0BF78B64072AB6C3EDA2B15883B3FE1A6A0",
+          "MEM": "B85301D110329415E842BA5B426ADA2AEACB46D32AFCBDC700537B05BF57F7C6"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "WB-ID-rs2-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\WB-ID-rs2\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\WB-ID-rs2\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\WB-ID-rs2-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-WB-ID-rs2-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-WB-ID-rs2-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 37,
+          "advances": 18,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 9,
+          "WB": 6,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "5C97CC69E2E1D51614EE93C8EF9B7F5B7345B6C258959836EAFC61042DD5AEBB",
+          "WB": "01ED10B7D3A7BAB7774702B4B882759831C1F4926D8842F1D650702837AA7060",
+          "MEM": "6C5AE366C70D2F09F182F2FA4A8927560AA142B291B55690149C17DCF6D94011"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "WB-ID-rs2-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\WB-ID-rs2\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\WB-ID-rs2\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\WB-ID-rs2-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-WB-ID-rs2-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-WB-ID-rs2-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 9,
+          "WB": 6,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "5C97CC69E2E1D51614EE93C8EF9B7F5B7345B6C258959836EAFC61042DD5AEBB",
+          "WB": "01ED10B7D3A7BAB7774702B4B882759831C1F4926D8842F1D650702837AA7060",
+          "MEM": "6C5AE366C70D2F09F182F2FA4A8927560AA142B291B55690149C17DCF6D94011"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "older-store-target-load-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\older-store-target-load\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\older-store-target-load\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\older-store-target-load-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-older-store-target-load-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-older-store-target-load-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 37,
+          "advances": 18,
+          "stall": 1,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 3
+        },
+        "ordered_SHA256": {
+          "EX": "186955E73E58AEFA3F2B0FEF2A2CCE8DAA7A5C093C8A39E614BB1FB54A834762",
+          "WB": "967FD1190BFA72E86479F6CFD2C3A168D50F6954EE6CC259BFD2CF7A78FE67E3",
+          "MEM": "C342F005B8EA8B4DF41AE67D10E414AA111E8503FA898CF27C389203B629BE51"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 64,
+            "next_cycle": 20,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "older-store-target-load-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\older-store-target-load\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\older-store-target-load\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\older-store-target-load-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-older-store-target-load-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-older-store-target-load-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 35,
+          "advances": 17,
+          "stall": 1,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 5,
+          "MEM": 3
+        },
+        "ordered_SHA256": {
+          "EX": "186955E73E58AEFA3F2B0FEF2A2CCE8DAA7A5C093C8A39E614BB1FB54A834762",
+          "WB": "967FD1190BFA72E86479F6CFD2C3A168D50F6954EE6CC259BFD2CF7A78FE67E3",
+          "MEM": "C342F005B8EA8B4DF41AE67D10E414AA111E8503FA898CF27C389203B629BE51"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 16,
+            "cycle": 14,
+            "target": 64,
+            "next_cycle": 18,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "consecutive-jump-return-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\consecutive-jump-return\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\consecutive-jump-return\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\consecutive-jump-return-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-consecutive-jump-return-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-consecutive-jump-return-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 47,
+          "advances": 23,
+          "stall": 0,
+          "flush": 4,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 4,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 4,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "4B9FC6AA57BC727B1D7F4A50ACD7CB1B6A470B10BCA645F2C1B956154A05CDD2",
+          "WB": "AA1B9544FB443456CE3CDD93460FAEF8B757F3BE52165A1277713BB47AC5CF2E",
+          "MEM": "4FDF8B197EAB6752E92C87A4A4EBD9758FCC9136DA0825AE785AF3A77AA08DFB"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 4,
+          "cancels": 0,
+          "rows": 8
+        },
+        "intervals": [
+          {
+            "pc": 8,
+            "cycle": 10,
+            "target": 64,
+            "next_cycle": 16,
+            "gap": 6,
+            "hit": false
+          },
+          {
+            "pc": 64,
+            "cycle": 16,
+            "target": 72,
+            "next_cycle": 22,
+            "gap": 6,
+            "hit": false
+          },
+          {
+            "pc": 72,
+            "cycle": 22,
+            "target": 12,
+            "next_cycle": 28,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "consecutive-jump-return-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\consecutive-jump-return\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\consecutive-jump-return\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\consecutive-jump-return-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.093,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-consecutive-jump-return-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-consecutive-jump-return-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 39,
+          "advances": 19,
+          "stall": 0,
+          "flush": 4,
+          "tail": 8,
+          "requests": 4,
+          "hits": 4,
+          "applies": 4,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 8,
+          "WB": 4,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "4B9FC6AA57BC727B1D7F4A50ACD7CB1B6A470B10BCA645F2C1B956154A05CDD2",
+          "WB": "AA1B9544FB443456CE3CDD93460FAEF8B757F3BE52165A1277713BB47AC5CF2E",
+          "MEM": "4FDF8B197EAB6752E92C87A4A4EBD9758FCC9136DA0825AE785AF3A77AA08DFB"
+        },
+        "fetch": {
+          "requests": 4,
+          "hits": 4,
+          "applies": 4,
+          "cancels": 0,
+          "rows": 16
+        },
+        "intervals": [
+          {
+            "pc": 8,
+            "cycle": 10,
+            "target": 64,
+            "next_cycle": 14,
+            "gap": 4,
+            "hit": true
+          },
+          {
+            "pc": 64,
+            "cycle": 14,
+            "target": 72,
+            "next_cycle": 18,
+            "gap": 4,
+            "hit": true
+          },
+          {
+            "pc": 72,
+            "cycle": 18,
+            "target": 12,
+            "next_cycle": 22,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "load-x0-wrong-path-stops-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-x0-wrong-path-stops\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-x0-wrong-path-stops\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\load-x0-wrong-path-stops-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-x0-wrong-path-stops-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-x0-wrong-path-stops-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 3,
+          "MEM": 2
+        },
+        "ordered_SHA256": {
+          "EX": "3A71AF5C9B6CD42C633216D290050D08C4F1C5FA8F99D0B5E6B62B6622F849D3",
+          "WB": "14A0E05DEE346279E83C827EF7DAE7C371A41DB62EA7973EFFCC549B78B60885",
+          "MEM": "C0B1388F5D81DD7006FA4CBEE4EAAC418B84750AD400BBB92174D429EC6A1506"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 12,
+            "cycle": 12,
+            "target": 64,
+            "next_cycle": 18,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "load-x0-wrong-path-stops-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-x0-wrong-path-stops\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\load-x0-wrong-path-stops\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\load-x0-wrong-path-stops-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-x0-wrong-path-stops-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-load-x0-wrong-path-stops-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 29,
+          "advances": 14,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 3,
+          "MEM": 2
+        },
+        "ordered_SHA256": {
+          "EX": "3A71AF5C9B6CD42C633216D290050D08C4F1C5FA8F99D0B5E6B62B6622F849D3",
+          "WB": "14A0E05DEE346279E83C827EF7DAE7C371A41DB62EA7973EFFCC549B78B60885",
+          "MEM": "C0B1388F5D81DD7006FA4CBEE4EAAC418B84750AD400BBB92174D429EC6A1506"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 12,
+            "cycle": 12,
+            "target": 64,
+            "next_cycle": 16,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "cross-bank-target-legitimate-NOP-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\cross-bank-target-legitimate-NOP\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\cross-bank-target-legitimate-NOP\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\cross-bank-target-legitimate-NOP-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.093,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-cross-bank-target-legitimate-NOP-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-cross-bank-target-legitimate-NOP-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 3,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "F2B721FC881EB98D5AB431ECA4CB01AB1A7EE8D69197547408048E0D641EDFDC",
+          "WB": "9DB9BB1570052D32894EE70FA6066ABA6DA145311A9C0AE9ED600FE86EFA5358",
+          "MEM": "B111B3B6DA365238DE5BA1537D14223C4CA2725CCA23DF852AE5B8150D91579A"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [
+          {
+            "pc": 12,
+            "cycle": 12,
+            "target": 4096,
+            "next_cycle": 18,
+            "gap": 6,
+            "hit": false
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "cross-bank-target-legitimate-NOP-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\cross-bank-target-legitimate-NOP\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\cross-bank-target-legitimate-NOP\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\cross-bank-target-legitimate-NOP-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-cross-bank-target-legitimate-NOP-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-cross-bank-target-legitimate-NOP-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 29,
+          "advances": 14,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 3,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "F2B721FC881EB98D5AB431ECA4CB01AB1A7EE8D69197547408048E0D641EDFDC",
+          "WB": "9DB9BB1570052D32894EE70FA6066ABA6DA145311A9C0AE9ED600FE86EFA5358",
+          "MEM": "B111B3B6DA365238DE5BA1537D14223C4CA2725CCA23DF852AE5B8150D91579A"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [
+          {
+            "pc": 12,
+            "cycle": 12,
+            "target": 4096,
+            "next_cycle": 16,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "unmapped-target-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\unmapped-target\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\unmapped-target\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\unmapped-target-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.093,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-unmapped-target-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-unmapped-target-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "797310F2771A36CE29EF9F9B1DD93E2D886F837DFA8950BD9E7167956F62A992",
+          "WB": "3F20F405DD1A0BA3282CEF08625096101C1C53DAA917840507BA76A6F9734C12",
+          "MEM": "68AE4B5C0E1F3448B2A0DEF61A8A7B9E56AB7B9D27E952B536AC9B548354D117"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "unmapped-target-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\unmapped-target\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\unmapped-target\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\unmapped-target-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-unmapped-target-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-unmapped-target-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 33,
+          "advances": 16,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 7,
+          "WB": 5,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "797310F2771A36CE29EF9F9B1DD93E2D886F837DFA8950BD9E7167956F62A992",
+          "WB": "3F20F405DD1A0BA3282CEF08625096101C1C53DAA917840507BA76A6F9734C12",
+          "MEM": "68AE4B5C0E1F3448B2A0DEF61A8A7B9E56AB7B9D27E952B536AC9B548354D117"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "misaligned-target-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\misaligned-target\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\misaligned-target\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\misaligned-target-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-misaligned-target-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-misaligned-target-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 4,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "821A445C2F5C08C05FF737B7FC3FC1F20EC6D86647810AC9AB2D5F474AD9876F",
+          "WB": "0DBFC4A39A1CDFF83E378064A10C716AE44A1DA7D45FEE221D38ACE170D68DFB",
+          "MEM": "68AE4B5C0E1F3448B2A0DEF61A8A7B9E56AB7B9D27E952B536AC9B548354D117"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "misaligned-target-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\misaligned-target\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\misaligned-target\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\misaligned-target-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.093,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-misaligned-target-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-misaligned-target-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 4,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "821A445C2F5C08C05FF737B7FC3FC1F20EC6D86647810AC9AB2D5F474AD9876F",
+          "WB": "0DBFC4A39A1CDFF83E378064A10C716AE44A1DA7D45FEE221D38ACE170D68DFB",
+          "MEM": "68AE4B5C0E1F3448B2A0DEF61A8A7B9E56AB7B9D27E952B536AC9B548354D117"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "mapped-zero-target-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\mapped-zero-target\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\mapped-zero-target\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\mapped-zero-target-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-mapped-zero-target-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-mapped-zero-target-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 4,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "821A445C2F5C08C05FF737B7FC3FC1F20EC6D86647810AC9AB2D5F474AD9876F",
+          "WB": "C77F7392E748960980C8E90FD0843A667F8858BDAEAC5A1A44A2FBA4404E5941",
+          "MEM": "68AE4B5C0E1F3448B2A0DEF61A8A7B9E56AB7B9D27E952B536AC9B548354D117"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "mapped-zero-target-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\mapped-zero-target\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\mapped-zero-target\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\mapped-zero-target-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.093,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-mapped-zero-target-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-mapped-zero-target-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 31,
+          "advances": 15,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 6,
+          "WB": 4,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "821A445C2F5C08C05FF737B7FC3FC1F20EC6D86647810AC9AB2D5F474AD9876F",
+          "WB": "C77F7392E748960980C8E90FD0843A667F8858BDAEAC5A1A44A2FBA4404E5941",
+          "MEM": "68AE4B5C0E1F3448B2A0DEF61A8A7B9E56AB7B9D27E952B536AC9B548354D117"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "target-ECALL-drain-PF0",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\target-ECALL-drain\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\target-ECALL-drain\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\target-ECALL-drain-PF0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.094,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-target-ECALL-drain-PF0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-target-ECALL-drain-PF0\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 29,
+          "advances": 14,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 5,
+          "WB": 3,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "C4BC5C50FF32CB557AB1A3625AEAECE9BB8057D4C5FF12359910C26C39A738CC",
+          "WB": "22399992D2E4E4829E5E562DF9BC4937146156E8284D1B054DB3466DF658B4E0",
+          "MEM": "68AE4B5C0E1F3448B2A0DEF61A8A7B9E56AB7B9D27E952B536AC9B548354D117"
+        },
+        "fetch": {
+          "requests": 0,
+          "hits": 0,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 2
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "target-ECALL-drain-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\target-ECALL-drain\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\target-ECALL-drain\\dmem.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\target-ECALL-drain-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-target-ECALL-drain-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-target-ECALL-drain-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 27,
+          "advances": 13,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0
+        },
+        "counts": {
+          "EX": 5,
+          "WB": 3,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "C4BC5C50FF32CB557AB1A3625AEAECE9BB8057D4C5FF12359910C26C39A738CC",
+          "WB": "22399992D2E4E4829E5E562DF9BC4937146156E8284D1B054DB3466DF658B4E0",
+          "MEM": "68AE4B5C0E1F3448B2A0DEF61A8A7B9E56AB7B9D27E952B536AC9B548354D117"
+        },
+        "fetch": {
+          "requests": 1,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 0,
+          "rows": 4
+        },
+        "intervals": [],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    },
+    {
+      "id": "reset-between-request-apply-PF1",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\directed-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\reset-between-request-apply\\imem.hex",
+          "+DATA=D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\cases\\reset-between-request-apply\\dmem.hex",
+          "+MAX_CYCLES=4000",
+          "+RESET_PENDING"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\reset-between-request-apply-PF1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.093,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-reset-between-request-apply-PF1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-reset-between-request-apply-PF1\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 27,
+          "advances": 13,
+          "stall": 0,
+          "flush": 1,
+          "tail": 8,
+          "requests": 2,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 1
+        },
+        "counts": {
+          "EX": 5,
+          "WB": 3,
+          "MEM": 1
+        },
+        "ordered_SHA256": {
+          "EX": "58BB98C9A26CC6FA35E4FAC96C42D86C8AAFF43490B683EFF5FAACD0925741B8",
+          "WB": "3DE3DDE8552A72B39FF262B94A1941054C48763D524459633352076E87D71DF4",
+          "MEM": "EEDA29898788F3734563638B3C2557D955D6B72DCDCC8B1A7FF3C46C9F50AFFD"
+        },
+        "fetch": {
+          "requests": 2,
+          "hits": 1,
+          "applies": 1,
+          "cancels": 1,
+          "rows": 7
+        },
+        "intervals": [
+          {
+            "pc": 0,
+            "cycle": 6,
+            "target": 32,
+            "next_cycle": 10,
+            "gap": 4,
+            "hit": true
+          }
+        ],
+        "full_registers_checked": 32,
+        "full_RAM_bytes": 32768,
+        "limitations": [
+          "one-edge verification memory, actual primitive is later CoreMark stage",
+          "no true retirement or unified WB-MEM commit",
+          "finite cases; not entire ISA or hardware"
+        ]
+      },
+      "rechecked_without_new_DUT": false
+    }
+  ],
+  "total_new_DUT_runs": 67,
+  "new_DUT_runs_in_this_resume": 66,
+  "rechecks_without_new_DUT": 1,
+  "protected": 3912
+}

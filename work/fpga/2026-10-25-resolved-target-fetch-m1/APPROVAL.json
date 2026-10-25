@@ -1,0 +1,9 @@
+{
+  "date_beijing": "2026-10-25",
+  "decision": "D139",
+  "user_reply": "批准 继续推进！",
+  "scope_SHA256": "F92AF829DD3327B75913137CCDA5725BA0A617E3FF454644DDA39633A589106A",
+  "base_git": "f28794776cf559d910d168954bd0209ae5e9233a",
+  "scope": "independent CPU/SoC parameterized resolved-target fetch, bounded verification; PDS after benefit only",
+  "hardware": "STOPPED"
+}

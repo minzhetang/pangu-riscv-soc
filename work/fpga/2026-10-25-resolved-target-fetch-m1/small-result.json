@@ -1,0 +1,7 @@
+{
+  "status": "STOPPED",
+  "case": "beq-taken-PF0",
+  "error": "AssertionError({'status': 'FAIL', 'errors': [{'kind': 'all RAM', 'actual': '8CCF53D30B15CD9C77AA60513107FE7B68F4F0A772B80BB08ED3D3F739502E60', 'expected': '58AB404B6ABFBAFBDE221123065DE504C835E28C58C18645560DC71A90085E26'}], 'metrics': {'physical': 33, 'advances': 16, 'stall': 0, 'flush': 1, 'tail': 8, 'requests': 0, 'hits': 0, 'applies': 1, 'cancels': 0}, 'counts': {'EX': 7, 'WB': 5, 'MEM': 1}, 'ordered_SHA256': {'EX': 'D7FEBA2817B6D6C38AA5A8FC32C733C5AA40347C9AEC54B503BAAA077AEF1DDB', 'WB': '4AF022B1759AFDBE77AC0F08B4E4D0970203550C98DA22F75BAE297ED70854F7', 'MEM': '401DA513FDAC0E859BC9BF1FE9FB1D1FA53B5AA7C1BB4AD457B95D983F724D59'}, 'fetch': {'requests': 0, 'hits': 0, 'applies': 1, 'cancels': 0, 'rows': 2}, 'intervals': [{'pc': 16, 'cycle': 14, 'target': 32, 'next_cycle': 20, 'gap': 6, 'hit': False}], 'full_registers_checked': 32, 'full_RAM_bytes': 32768, 'limitations': ['one-edge verification memory, actual primitive is later CoreMark stage', 'no true retirement or unified WB-MEM commit', 'finite cases; not entire ISA or hardware']})",
+  "completed": [],
+  "protected": 3912
+}

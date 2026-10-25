@@ -1,0 +1,546 @@
+{
+  "status": "PASS",
+  "new_DUT_runs": 2,
+  "rows": [
+    {
+      "id": "performance-N234",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\performance-N234.vvp",
+          "+MAX_CYCLES=6000000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\performance-N234",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 201.156,
+        "timeout_seconds": 360,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-performance-N234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-performance-N234\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 3470777,
+          "advances": 1735388,
+          "stall": 178509,
+          "flush": 311458,
+          "tail": 32
+        },
+        "trace_counts": {
+          "EX": 1245402,
+          "WB": 843842,
+          "READ": 216125,
+          "STORE": 20529
+        },
+        "streams": {
+          "EX": {
+            "count": 1245402,
+            "sha256": "1D3833F191F29F044CAA1B72D722AEC600632FCFC68D9F79B0D17092092F84DA"
+          },
+          "WB": {
+            "count": 843842,
+            "sha256": "F75E263BDB97D8F209D27D8D25E50D6816D9B3D27C23557B569123FFA9526D66"
+          },
+          "MEM": {
+            "count": 236654,
+            "sha256": "511F42EB764B24C89AE15C4CE69405D93FD154A5CECBD3809D476551E5728B37"
+          }
+        },
+        "timer_reads": [
+          {
+            "pc": 13232,
+            "address": 536871172,
+            "cycle": 15658,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 13236,
+            "address": 536871168,
+            "cycle": 15660,
+            "expected": 15659,
+            "actual": 15659
+          },
+          {
+            "pc": 13240,
+            "address": 536871172,
+            "cycle": 15662,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 13280,
+            "address": 536871172,
+            "cycle": 15684,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 13284,
+            "address": 536871168,
+            "cycle": 15686,
+            "expected": 15685,
+            "actual": 15685
+          },
+          {
+            "pc": 13288,
+            "address": 536871172,
+            "cycle": 15688,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12940,
+            "address": 536871172,
+            "cycle": 53444,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12944,
+            "address": 536871168,
+            "cycle": 53446,
+            "expected": 53445,
+            "actual": 53445
+          },
+          {
+            "pc": 12948,
+            "address": 536871172,
+            "cycle": 53448,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12992,
+            "address": 536871172,
+            "cycle": 1858248,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12996,
+            "address": 536871168,
+            "cycle": 1858250,
+            "expected": 1858249,
+            "actual": 1858249
+          },
+          {
+            "pc": 13000,
+            "address": 536871172,
+            "cycle": 1858252,
+            "expected": 0,
+            "actual": 0
+          }
+        ],
+        "GPIO_actual": [],
+        "UART_frames": 662,
+        "detail": {
+          "stamps": [
+            15659,
+            15685,
+            53445,
+            1858249
+          ],
+          "empty_window": 26,
+          "raw_ticks": 1804804,
+          "frequency_setting_hz": 27000000,
+          "simulated_seconds_at_setting": 0.0668445925925926,
+          "formal_score_valid": false,
+          "phases": [
+            [
+              5197,
+              0
+            ],
+            [
+              53459,
+              1
+            ],
+            [
+              1858267,
+              2
+            ],
+            [
+              1910995,
+              3
+            ],
+            [
+              3470699,
+              4
+            ]
+          ],
+          "report_bytes": 662
+        },
+        "prefetch_audit": {
+          "requests": 311458,
+          "hits": 311458,
+          "applies": 311458,
+          "cancels": 0,
+          "rows": 1245832,
+          "successor_EX_gaps": {
+            "4": 311457
+          },
+          "examples": {
+            "0000003c": {
+              "cycle": 38,
+              "target_cycle": 42,
+              "target": "00000028",
+              "gap": 4
+            },
+            "00000028": {
+              "cycle": 122,
+              "target_cycle": 126,
+              "target": "00000040",
+              "gap": 4
+            },
+            "0000005c": {
+              "cycle": 140,
+              "target_cycle": 144,
+              "target": "00000050",
+              "gap": 4
+            },
+            "00000050": {
+              "cycle": 15604,
+              "target_cycle": 15608,
+              "target": "00000060",
+              "gap": 4
+            },
+            "00000064": {
+              "cycle": 15610,
+              "target_cycle": 15614,
+              "target": "00000a70",
+              "gap": 4
+            },
+            "00000aac": {
+              "cycle": 15644,
+              "target_cycle": 15648,
+              "target": "000033a0",
+              "gap": 4
+            },
+            "00003400": {
+              "cycle": 15700,
+              "target_cycle": 15704,
+              "target": "00000ab0",
+              "gap": 4
+            },
+            "00000ab8": {
+              "cycle": 15708,
+              "target_cycle": 15712,
+              "target": "00002378",
+              "gap": 4
+            },
+            "00002394": {
+              "cycle": 15728,
+              "target_cycle": 15732,
+              "target": "000023a4",
+              "gap": 4
+            },
+            "000023ac": {
+              "cycle": 15736,
+              "target_cycle": 15740,
+              "target": "00000abc",
+              "gap": 4
+            },
+            "00000ac8": {
+              "cycle": 15746,
+              "target_cycle": 15750,
+              "target": "00002378",
+              "gap": 4
+            },
+            "000023b8": {
+              "cycle": 15774,
+              "target_cycle": 15778,
+              "target": "00000acc",
+              "gap": 4
+            }
+          },
+          "all_redirects_correlated": 311458
+        },
+        "limitations": [
+          "finite inputs; no true retirement PC or unified WB-STORE commit",
+          "short simulation not valid CoreMark score",
+          "no hardware evidence"
+        ]
+      }
+    },
+    {
+      "id": "validation-N234",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\compile\\validation-N234.vvp",
+          "+MAX_CYCLES=6000000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\runs\\validation-N234",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "trace_cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 213.171,
+        "timeout_seconds": 360,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-validation-N234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\run-validation-N234\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 3601153,
+          "advances": 1800576,
+          "stall": 178792,
+          "flush": 324266,
+          "tail": 32
+        },
+        "trace_counts": {
+          "EX": 1297499,
+          "WB": 877437,
+          "READ": 216353,
+          "STORE": 20433
+        },
+        "streams": {
+          "EX": {
+            "count": 1297499,
+            "sha256": "6329DF3D37DC8D82197FA5B1D3C3D5DE7710F7CDAEF6BCE2A7515C434A095A8B"
+          },
+          "WB": {
+            "count": 877437,
+            "sha256": "0747FE5894CC22918CDA8A80D77E583538024B41555CB856C072284EDF7B0E10"
+          },
+          "MEM": {
+            "count": 236786,
+            "sha256": "A3FDF4F4E374EBB5D0B6594499ED7DC7632F06D6633CF2967BB94E12151B7539"
+          }
+        },
+        "timer_reads": [
+          {
+            "pc": 13232,
+            "address": 536871172,
+            "cycle": 15670,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 13236,
+            "address": 536871168,
+            "cycle": 15672,
+            "expected": 15671,
+            "actual": 15671
+          },
+          {
+            "pc": 13240,
+            "address": 536871172,
+            "cycle": 15674,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 13280,
+            "address": 536871172,
+            "cycle": 15696,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 13284,
+            "address": 536871168,
+            "cycle": 15698,
+            "expected": 15697,
+            "actual": 15697
+          },
+          {
+            "pc": 13288,
+            "address": 536871172,
+            "cycle": 15700,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12940,
+            "address": 536871172,
+            "cycle": 53788,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12944,
+            "address": 536871168,
+            "cycle": 53790,
+            "expected": 53789,
+            "actual": 53789
+          },
+          {
+            "pc": 12948,
+            "address": 536871172,
+            "cycle": 53792,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12992,
+            "address": 536871172,
+            "cycle": 1991740,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12996,
+            "address": 536871168,
+            "cycle": 1991742,
+            "expected": 1991741,
+            "actual": 1991741
+          },
+          {
+            "pc": 13000,
+            "address": 536871172,
+            "cycle": 1991744,
+            "expected": 0,
+            "actual": 0
+          }
+        ],
+        "GPIO_actual": [],
+        "UART_frames": 661,
+        "detail": {
+          "stamps": [
+            15671,
+            15697,
+            53789,
+            1991741
+          ],
+          "empty_window": 26,
+          "raw_ticks": 1937952,
+          "frequency_setting_hz": 27000000,
+          "simulated_seconds_at_setting": 0.071776,
+          "formal_score_valid": false,
+          "phases": [
+            [
+              5229,
+              0
+            ],
+            [
+              53803,
+              1
+            ],
+            [
+              1991759,
+              2
+            ],
+            [
+              2043727,
+              3
+            ],
+            [
+              3601075,
+              4
+            ]
+          ],
+          "report_bytes": 661
+        },
+        "prefetch_audit": {
+          "requests": 324266,
+          "hits": 324266,
+          "applies": 324266,
+          "cancels": 0,
+          "rows": 1297064,
+          "successor_EX_gaps": {
+            "4": 324265
+          },
+          "examples": {
+            "0000003c": {
+              "cycle": 38,
+              "target_cycle": 42,
+              "target": "00000028",
+              "gap": 4
+            },
+            "00000028": {
+              "cycle": 154,
+              "target_cycle": 158,
+              "target": "00000040",
+              "gap": 4
+            },
+            "0000005c": {
+              "cycle": 172,
+              "target_cycle": 176,
+              "target": "00000050",
+              "gap": 4
+            },
+            "00000050": {
+              "cycle": 15616,
+              "target_cycle": 15620,
+              "target": "00000060",
+              "gap": 4
+            },
+            "00000064": {
+              "cycle": 15622,
+              "target_cycle": 15626,
+              "target": "00000a70",
+              "gap": 4
+            },
+            "00000aac": {
+              "cycle": 15656,
+              "target_cycle": 15660,
+              "target": "000033a0",
+              "gap": 4
+            },
+            "00003400": {
+              "cycle": 15712,
+              "target_cycle": 15716,
+              "target": "00000ab0",
+              "gap": 4
+            },
+            "00000ab8": {
+              "cycle": 15720,
+              "target_cycle": 15724,
+              "target": "00002378",
+              "gap": 4
+            },
+            "00002394": {
+              "cycle": 15740,
+              "target_cycle": 15744,
+              "target": "000023a4",
+              "gap": 4
+            },
+            "000023ac": {
+              "cycle": 15748,
+              "target_cycle": 15752,
+              "target": "00000abc",
+              "gap": 4
+            },
+            "00000ac8": {
+              "cycle": 15758,
+              "target_cycle": 15762,
+              "target": "00002378",
+              "gap": 4
+            },
+            "000023b8": {
+              "cycle": 15786,
+              "target_cycle": 15790,
+              "target": "00000acc",
+              "gap": 4
+            }
+          },
+          "all_redirects_correlated": 324266
+        },
+        "limitations": [
+          "finite inputs; no true retirement PC or unified WB-STORE commit",
+          "short simulation not valid CoreMark score",
+          "no hardware evidence"
+        ]
+      }
+    }
+  ]
+}

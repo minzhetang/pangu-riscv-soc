@@ -1,0 +1,197 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "id": "performance-N234",
+      "status": "PASS_NATIVE_VCD_ONLY",
+      "samples_checked": 180,
+      "applies_checked": 179,
+      "request_classes": [
+        "B0",
+        "B1",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "JAL",
+        "JALR"
+      ],
+      "reset_checks": 13,
+      "reset_epochs": 0,
+      "VCD_SHA256": "4AFB3B658EB2937B1961B27F84E529B8935A3D614D50AF332C371FED2C6FAF36",
+      "bytes": 685604,
+      "explicit_off_groups": 14,
+      "examples": [
+        {
+          "kind": "SAMPLE",
+          "cycle": 37,
+          "pc": "0000003c",
+          "target": "00000028",
+          "time_ps": 1612109,
+          "epoch": 0
+        },
+        {
+          "kind": "APPLY",
+          "cycle": 38,
+          "pc": "0000003c",
+          "target": "00000028",
+          "hit": 1,
+          "time_ps": 1649146,
+          "epoch": 0
+        },
+        {
+          "kind": "SAMPLE",
+          "cycle": 53,
+          "pc": "0000003c",
+          "target": "00000028",
+          "time_ps": 2204701,
+          "epoch": 0
+        },
+        {
+          "kind": "APPLY",
+          "cycle": 54,
+          "pc": "0000003c",
+          "target": "00000028",
+          "hit": 1,
+          "time_ps": 2241738,
+          "epoch": 0
+        },
+        {
+          "kind": "SAMPLE",
+          "cycle": 69,
+          "pc": "0000003c",
+          "target": "00000028",
+          "time_ps": 2797293,
+          "epoch": 0
+        },
+        {
+          "kind": "APPLY",
+          "cycle": 70,
+          "pc": "0000003c",
+          "target": "00000028",
+          "hit": 1,
+          "time_ps": 2834330,
+          "epoch": 0
+        },
+        {
+          "kind": "SAMPLE",
+          "cycle": 85,
+          "pc": "0000003c",
+          "target": "00000028",
+          "time_ps": 3389885,
+          "epoch": 0
+        },
+        {
+          "kind": "APPLY",
+          "cycle": 86,
+          "pc": "0000003c",
+          "target": "00000028",
+          "hit": 1,
+          "time_ps": 3426922,
+          "epoch": 0
+        }
+      ],
+      "core_windowed": true,
+      "full_algorithm_wave": false,
+      "hardware_ILA": false,
+      "new_DUT_runs": 0
+    },
+    {
+      "id": "validation-N234",
+      "status": "PASS_NATIVE_VCD_ONLY",
+      "samples_checked": 179,
+      "applies_checked": 178,
+      "request_classes": [
+        "B0",
+        "B1",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "JAL",
+        "JALR"
+      ],
+      "reset_checks": 13,
+      "reset_epochs": 0,
+      "VCD_SHA256": "76FA77F567D431D637755E52EDC9719A664C73252124522009A54E16D50C78BB",
+      "bytes": 690482,
+      "explicit_off_groups": 15,
+      "examples": [
+        {
+          "kind": "SAMPLE",
+          "cycle": 37,
+          "pc": "0000003c",
+          "target": "00000028",
+          "time_ps": 1612109,
+          "epoch": 0
+        },
+        {
+          "kind": "APPLY",
+          "cycle": 38,
+          "pc": "0000003c",
+          "target": "00000028",
+          "hit": 1,
+          "time_ps": 1649146,
+          "epoch": 0
+        },
+        {
+          "kind": "SAMPLE",
+          "cycle": 53,
+          "pc": "0000003c",
+          "target": "00000028",
+          "time_ps": 2204701,
+          "epoch": 0
+        },
+        {
+          "kind": "APPLY",
+          "cycle": 54,
+          "pc": "0000003c",
+          "target": "00000028",
+          "hit": 1,
+          "time_ps": 2241738,
+          "epoch": 0
+        },
+        {
+          "kind": "SAMPLE",
+          "cycle": 69,
+          "pc": "0000003c",
+          "target": "00000028",
+          "time_ps": 2797293,
+          "epoch": 0
+        },
+        {
+          "kind": "APPLY",
+          "cycle": 70,
+          "pc": "0000003c",
+          "target": "00000028",
+          "hit": 1,
+          "time_ps": 2834330,
+          "epoch": 0
+        },
+        {
+          "kind": "SAMPLE",
+          "cycle": 85,
+          "pc": "0000003c",
+          "target": "00000028",
+          "time_ps": 3389885,
+          "epoch": 0
+        },
+        {
+          "kind": "APPLY",
+          "cycle": 86,
+          "pc": "0000003c",
+          "target": "00000028",
+          "hit": 1,
+          "time_ps": 3426922,
+          "epoch": 0
+        }
+      ],
+      "core_windowed": true,
+      "full_algorithm_wave": false,
+      "hardware_ILA": false,
+      "new_DUT_runs": 0
+    }
+  ],
+  "new_DUT_runs": 0,
+  "protected": 3912
+}

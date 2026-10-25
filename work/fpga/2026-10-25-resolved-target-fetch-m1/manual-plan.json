@@ -1,0 +1,1934 @@
+{
+  "date_beijing": "2026-10-25",
+  "before_DUT": true,
+  "cases": [
+    {
+      "id": "beq-taken",
+      "manual_registers": {
+        "10": 34
+      },
+      "manual_memory": {
+        "0": 34
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00100093"
+        },
+        {
+          "pc": 12,
+          "word": "00100113"
+        },
+        {
+          "pc": 16,
+          "word": "00208863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "beq-not-taken",
+      "manual_registers": {
+        "10": 17
+      },
+      "manual_memory": {
+        "0": 17
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00100093"
+        },
+        {
+          "pc": 12,
+          "word": "00200113"
+        },
+        {
+          "pc": 16,
+          "word": "00208863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "bne-taken",
+      "manual_registers": {
+        "10": 34
+      },
+      "manual_memory": {
+        "0": 34
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00100093"
+        },
+        {
+          "pc": 12,
+          "word": "00200113"
+        },
+        {
+          "pc": 16,
+          "word": "00209863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "bne-not-taken",
+      "manual_registers": {
+        "10": 17
+      },
+      "manual_memory": {
+        "0": 17
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00100093"
+        },
+        {
+          "pc": 12,
+          "word": "00100113"
+        },
+        {
+          "pc": 16,
+          "word": "00209863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "blt-taken",
+      "manual_registers": {
+        "10": 34
+      },
+      "manual_memory": {
+        "0": 34
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "fff00093"
+        },
+        {
+          "pc": 12,
+          "word": "00000113"
+        },
+        {
+          "pc": 16,
+          "word": "0020c863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "blt-not-taken",
+      "manual_registers": {
+        "10": 17
+      },
+      "manual_memory": {
+        "0": 17
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00000093"
+        },
+        {
+          "pc": 12,
+          "word": "fff00113"
+        },
+        {
+          "pc": 16,
+          "word": "0020c863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "bge-taken",
+      "manual_registers": {
+        "10": 34
+      },
+      "manual_memory": {
+        "0": 34
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00000093"
+        },
+        {
+          "pc": 12,
+          "word": "fff00113"
+        },
+        {
+          "pc": 16,
+          "word": "0020d863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "bge-not-taken",
+      "manual_registers": {
+        "10": 17
+      },
+      "manual_memory": {
+        "0": 17
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "fff00093"
+        },
+        {
+          "pc": 12,
+          "word": "00000113"
+        },
+        {
+          "pc": 16,
+          "word": "0020d863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "bltu-taken",
+      "manual_registers": {
+        "10": 34
+      },
+      "manual_memory": {
+        "0": 34
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00000093"
+        },
+        {
+          "pc": 12,
+          "word": "fff00113"
+        },
+        {
+          "pc": 16,
+          "word": "0020e863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "bltu-not-taken",
+      "manual_registers": {
+        "10": 17
+      },
+      "manual_memory": {
+        "0": 17
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "fff00093"
+        },
+        {
+          "pc": 12,
+          "word": "00000113"
+        },
+        {
+          "pc": 16,
+          "word": "0020e863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "bgeu-taken",
+      "manual_registers": {
+        "10": 34
+      },
+      "manual_memory": {
+        "0": 34
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "fff00093"
+        },
+        {
+          "pc": 12,
+          "word": "00000113"
+        },
+        {
+          "pc": 16,
+          "word": "0020f863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "bgeu-not-taken",
+      "manual_registers": {
+        "10": 17
+      },
+      "manual_memory": {
+        "0": 17
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00000093"
+        },
+        {
+          "pc": 12,
+          "word": "fff00113"
+        },
+        {
+          "pc": 16,
+          "word": "0020f863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "finite-backward-loop",
+      "manual_registers": {
+        "1": 0,
+        "10": 3
+      },
+      "manual_memory": {
+        "0": 3
+      },
+      "expected_flush": 2,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 32,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00300093"
+        },
+        {
+          "pc": 12,
+          "word": "00000513"
+        },
+        {
+          "pc": 16,
+          "word": "00150513"
+        },
+        {
+          "pc": 20,
+          "word": "fff08093"
+        },
+        {
+          "pc": 24,
+          "word": "fe009ce3"
+        },
+        {
+          "pc": 28,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 32,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "taken-PC-plus4",
+      "manual_registers": {
+        "10": 7
+      },
+      "manual_memory": {
+        "0": 7
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 20,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00005263"
+        },
+        {
+          "pc": 12,
+          "word": "00700513"
+        },
+        {
+          "pc": 16,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 20,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "jal-link-first-target",
+      "manual_registers": {
+        "1": 12,
+        "10": 13
+      },
+      "manual_memory": {
+        "0": 13
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 72,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "038000ef"
+        },
+        {
+          "pc": 12,
+          "word": "000a2023"
+        },
+        {
+          "pc": 64,
+          "word": "00108513"
+        },
+        {
+          "pc": 68,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 72,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "jalr-rd-equals-rs1-lowbit",
+      "manual_registers": {
+        "5": 16,
+        "10": 18
+      },
+      "manual_memory": {
+        "0": 18
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 72,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "04100293"
+        },
+        {
+          "pc": 12,
+          "word": "000282e7"
+        },
+        {
+          "pc": 16,
+          "word": "000a2023"
+        },
+        {
+          "pc": 64,
+          "word": "00228513"
+        },
+        {
+          "pc": 68,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 72,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "load-jalr",
+      "manual_registers": {
+        "1": 16,
+        "10": 16
+      },
+      "manual_memory": {
+        "4": 16
+      },
+      "expected_flush": 1,
+      "expected_stall": 1,
+      "initial_data": {
+        "0": 64
+      },
+      "stop_kind": 2,
+      "stop_pc": 72,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "000a2283"
+        },
+        {
+          "pc": 12,
+          "word": "000280e7"
+        },
+        {
+          "pc": 16,
+          "word": "000a2223"
+        },
+        {
+          "pc": 64,
+          "word": "001a2223"
+        },
+        {
+          "pc": 68,
+          "word": "00008513"
+        },
+        {
+          "pc": 72,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "load-branch-both",
+      "manual_registers": {
+        "10": 34
+      },
+      "manual_memory": {
+        "4": 34
+      },
+      "expected_flush": 1,
+      "expected_stall": 1,
+      "initial_data": {
+        "0": 42
+      },
+      "stop_kind": 2,
+      "stop_pc": 36,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "000a2283"
+        },
+        {
+          "pc": 12,
+          "word": "00528863"
+        },
+        {
+          "pc": 16,
+          "word": "01100513"
+        },
+        {
+          "pc": 20,
+          "word": "00aa2223"
+        },
+        {
+          "pc": 24,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 28,
+          "word": "02200513"
+        },
+        {
+          "pc": 32,
+          "word": "00aa2223"
+        },
+        {
+          "pc": 36,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "load-branch-rs1",
+      "manual_registers": {
+        "10": 34
+      },
+      "manual_memory": {
+        "4": 34
+      },
+      "expected_flush": 1,
+      "expected_stall": 1,
+      "initial_data": {
+        "0": 42
+      },
+      "stop_kind": 2,
+      "stop_pc": 36,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "000a2283"
+        },
+        {
+          "pc": 12,
+          "word": "00029863"
+        },
+        {
+          "pc": 16,
+          "word": "01100513"
+        },
+        {
+          "pc": 20,
+          "word": "00aa2223"
+        },
+        {
+          "pc": 24,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 28,
+          "word": "02200513"
+        },
+        {
+          "pc": 32,
+          "word": "00aa2223"
+        },
+        {
+          "pc": 36,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "load-branch-rs2",
+      "manual_registers": {
+        "10": 17
+      },
+      "manual_memory": {
+        "4": 17
+      },
+      "expected_flush": 1,
+      "expected_stall": 1,
+      "initial_data": {
+        "0": 1
+      },
+      "stop_kind": 2,
+      "stop_pc": 36,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "000a2283"
+        },
+        {
+          "pc": 12,
+          "word": "00505863"
+        },
+        {
+          "pc": 16,
+          "word": "01100513"
+        },
+        {
+          "pc": 20,
+          "word": "00aa2223"
+        },
+        {
+          "pc": 24,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 28,
+          "word": "02200513"
+        },
+        {
+          "pc": 32,
+          "word": "00aa2223"
+        },
+        {
+          "pc": 36,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "WB-ID-source",
+      "manual_registers": {
+        "5": 4294967295,
+        "10": 17
+      },
+      "manual_memory": {
+        "0": 17
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 44,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "fff00293"
+        },
+        {
+          "pc": 12,
+          "word": "00100313"
+        },
+        {
+          "pc": 16,
+          "word": "00200393"
+        },
+        {
+          "pc": 20,
+          "word": "0002d863"
+        },
+        {
+          "pc": 24,
+          "word": "01100513"
+        },
+        {
+          "pc": 28,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 32,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 36,
+          "word": "02200513"
+        },
+        {
+          "pc": 40,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 44,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "newest-producer",
+      "manual_registers": {
+        "5": 4294967295,
+        "10": 17
+      },
+      "manual_memory": {
+        "0": 17
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00100293"
+        },
+        {
+          "pc": 12,
+          "word": "fff00293"
+        },
+        {
+          "pc": 16,
+          "word": "0002d863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "EX-rs1",
+      "manual_registers": {
+        "10": 17
+      },
+      "manual_memory": {
+        "0": 17
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00000113"
+        },
+        {
+          "pc": 12,
+          "word": "fff00093"
+        },
+        {
+          "pc": 16,
+          "word": "0020d863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "WB-rs2",
+      "manual_registers": {
+        "10": 17
+      },
+      "manual_memory": {
+        "0": 17
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 40,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00100113"
+        },
+        {
+          "pc": 12,
+          "word": "00000093"
+        },
+        {
+          "pc": 16,
+          "word": "0020d863"
+        },
+        {
+          "pc": 20,
+          "word": "01100513"
+        },
+        {
+          "pc": 24,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 28,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 32,
+          "word": "02200513"
+        },
+        {
+          "pc": 36,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 40,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "WB-ID-rs2",
+      "manual_registers": {
+        "10": 17
+      },
+      "manual_memory": {
+        "0": 17
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 44,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00100113"
+        },
+        {
+          "pc": 12,
+          "word": "00100313"
+        },
+        {
+          "pc": 16,
+          "word": "00200393"
+        },
+        {
+          "pc": 20,
+          "word": "00205863"
+        },
+        {
+          "pc": 24,
+          "word": "01100513"
+        },
+        {
+          "pc": 28,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 32,
+          "word": "00c0006f"
+        },
+        {
+          "pc": 36,
+          "word": "02200513"
+        },
+        {
+          "pc": 40,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 44,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "older-store-target-load",
+      "manual_registers": {
+        "11": 51,
+        "12": 52
+      },
+      "manual_memory": {
+        "0": 51,
+        "4": 52
+      },
+      "expected_flush": 1,
+      "expected_stall": 1,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 76,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "03300513"
+        },
+        {
+          "pc": 12,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 16,
+          "word": "0300006f"
+        },
+        {
+          "pc": 20,
+          "word": "000a2023"
+        },
+        {
+          "pc": 64,
+          "word": "000a2583"
+        },
+        {
+          "pc": 68,
+          "word": "00158613"
+        },
+        {
+          "pc": 72,
+          "word": "00ca2223"
+        },
+        {
+          "pc": 76,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "consecutive-jump-return",
+      "manual_registers": {
+        "1": 12,
+        "10": 14
+      },
+      "manual_memory": {
+        "0": 14
+      },
+      "expected_flush": 4,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 76,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "038000ef"
+        },
+        {
+          "pc": 12,
+          "word": "00208513"
+        },
+        {
+          "pc": 16,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 20,
+          "word": "0380006f"
+        },
+        {
+          "pc": 64,
+          "word": "0080006f"
+        },
+        {
+          "pc": 68,
+          "word": "000a2023"
+        },
+        {
+          "pc": 72,
+          "word": "00008067"
+        },
+        {
+          "pc": 76,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "load-x0-wrong-path-stops",
+      "manual_registers": {
+        "0": 0,
+        "10": 34
+      },
+      "manual_memory": {
+        "4": 34
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {
+        "0": 4294967295
+      },
+      "stop_kind": 2,
+      "stop_pc": 72,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "000a2003"
+        },
+        {
+          "pc": 12,
+          "word": "02005a63"
+        },
+        {
+          "pc": 16,
+          "word": "000a2223"
+        },
+        {
+          "pc": 20,
+          "word": "00000073"
+        },
+        {
+          "pc": 24,
+          "word": "00100073"
+        },
+        {
+          "pc": 64,
+          "word": "02200513"
+        },
+        {
+          "pc": 68,
+          "word": "00aa2223"
+        },
+        {
+          "pc": 72,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "cross-bank-target-legitimate-NOP",
+      "manual_registers": {
+        "10": 5,
+        "0": 0
+      },
+      "manual_memory": {
+        "0": 5
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 4104,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00500513"
+        },
+        {
+          "pc": 12,
+          "word": "7f50006f"
+        },
+        {
+          "pc": 16,
+          "word": "000a2023"
+        },
+        {
+          "pc": 4096,
+          "word": "00000013"
+        },
+        {
+          "pc": 4100,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 4104,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "unmapped-target",
+      "manual_registers": {
+        "5": 4
+      },
+      "manual_memory": {
+        "0": 4
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 3,
+      "stop_pc": 32768,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00400293"
+        },
+        {
+          "pc": 12,
+          "word": "005a2023"
+        },
+        {
+          "pc": 16,
+          "word": "00008337"
+        },
+        {
+          "pc": 20,
+          "word": "00030313"
+        },
+        {
+          "pc": 24,
+          "word": "00030067"
+        },
+        {
+          "pc": 28,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "misaligned-target",
+      "manual_registers": {
+        "5": 4
+      },
+      "manual_memory": {
+        "0": 4
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 3,
+      "stop_pc": 258,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00400293"
+        },
+        {
+          "pc": 12,
+          "word": "005a2023"
+        },
+        {
+          "pc": 16,
+          "word": "10200313"
+        },
+        {
+          "pc": 20,
+          "word": "00030067"
+        },
+        {
+          "pc": 24,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "mapped-zero-target",
+      "manual_registers": {
+        "5": 4
+      },
+      "manual_memory": {
+        "0": 4
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 3,
+      "stop_pc": 256,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00400293"
+        },
+        {
+          "pc": 12,
+          "word": "005a2023"
+        },
+        {
+          "pc": 16,
+          "word": "10000313"
+        },
+        {
+          "pc": 20,
+          "word": "00030067"
+        },
+        {
+          "pc": 24,
+          "word": "00100073"
+        }
+      ]
+    },
+    {
+      "id": "target-ECALL-drain",
+      "manual_registers": {
+        "5": 4
+      },
+      "manual_memory": {
+        "0": 4
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 1,
+      "stop_pc": 64,
+      "reset_pending": false,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "00010a37"
+        },
+        {
+          "pc": 4,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 8,
+          "word": "00400293"
+        },
+        {
+          "pc": 12,
+          "word": "005a2023"
+        },
+        {
+          "pc": 16,
+          "word": "0300006f"
+        },
+        {
+          "pc": 20,
+          "word": "000a2023"
+        },
+        {
+          "pc": 64,
+          "word": "00000073"
+        }
+      ]
+    },
+    {
+      "id": "reset-between-request-apply",
+      "manual_registers": {
+        "10": 7
+      },
+      "manual_memory": {
+        "0": 7
+      },
+      "expected_flush": 1,
+      "expected_stall": 0,
+      "initial_data": {},
+      "stop_kind": 2,
+      "stop_pc": 48,
+      "reset_pending": true,
+      "instructions": [
+        {
+          "pc": 0,
+          "word": "0200006f"
+        },
+        {
+          "pc": 4,
+          "word": "00000073"
+        },
+        {
+          "pc": 32,
+          "word": "00010a37"
+        },
+        {
+          "pc": 36,
+          "word": "000a0a13"
+        },
+        {
+          "pc": 40,
+          "word": "00700513"
+        },
+        {
+          "pc": 44,
+          "word": "00aa2023"
+        },
+        {
+          "pc": 48,
+          "word": "00100073"
+        }
+      ]
+    }
+  ],
+  "programs": 34,
+  "new_small_runs": 67,
+  "stop": "first design failure stops, no RTL/expectation expansion",
+  "timing": "1ns/1ps, small10ns clock, fixed one-edge memory",
+  "formal_score": false
+}

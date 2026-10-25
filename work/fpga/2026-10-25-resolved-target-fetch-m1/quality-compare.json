@@ -1,0 +1,135 @@
+{
+  "status": "PASS_ANALYSIS_ONLY",
+  "all_seeds_benefit": true,
+  "rows": [
+    {
+      "id": "performance-N234",
+      "status": "PASS_FINITE_COMPARABLE_BENEFIT",
+      "O2_before_ticks": 2103648,
+      "O2_candidate_ticks": 1804804,
+      "ticks_saved": 298844,
+      "time_reduction": 0.1420598883463393,
+      "speedup": 1.1655825230883796,
+      "compute_benefit": true,
+      "unchanged_image_SHA256": "B4CEEC1B250A5151C1D02F018FC45B3D22CDC049E12E26EFC2A0562D23740E60",
+      "program_bytes": 15912,
+      "same_workload_EX_sequence": true,
+      "window_EX_PC_SHA256": "9811CB3A3C21A5E3F61D1E0B5BAB26641FC5694E239DFE09D34F9F2D577E1563",
+      "window_EX": 732266,
+      "window_load_use": 20714,
+      "window_redirects": 149422,
+      "window_hits": 149422,
+      "physical_window_parts": {
+        "EX": 1464532,
+        "load_use": 41428,
+        "redirects": 298844
+      },
+      "boundary_residual": 0,
+      "old_window_counts": {
+        "READ": 55008,
+        "WB": 504541,
+        "EX": 732266,
+        "STORE": 14345
+      },
+      "new_window_counts": {
+        "READ": 55008,
+        "WB": 504541,
+        "EX": 732266,
+        "STORE": 14345
+      },
+      "empty_window_before": 26,
+      "empty_window_after": 26,
+      "empty_subtracted": false,
+      "formatting_ticks_before": 59088,
+      "formatting_ticks_after": 52746,
+      "UART_phase_ticks_before": 1559702,
+      "UART_phase_ticks_after": 1559704,
+      "UART_bytes_before": 662,
+      "UART_bytes_after": 662,
+      "minimum_SP": 97824,
+      "observed_stack_depth": 480,
+      "whole_metrics_before": {
+        "physical": 3784487,
+        "advances": 1892243,
+        "stall": 152691,
+        "flush": 285711,
+        "tail": 32
+      },
+      "whole_metrics_after": {
+        "physical": 3470777,
+        "advances": 1735388,
+        "stall": 178509,
+        "flush": 311458,
+        "tail": 32
+      },
+      "formal_score": false,
+      "caveat": "finite simulation tick benefit at same nominal clock; no hardware/Fmax/energy or novelty claim; host runtime and UART polling are separate"
+    },
+    {
+      "id": "validation-N234",
+      "status": "PASS_FINITE_COMPARABLE_BENEFIT",
+      "O2_before_ticks": 2263000,
+      "O2_candidate_ticks": 1937952,
+      "ticks_saved": 325048,
+      "time_reduction": 0.143635881573133,
+      "speedup": 1.1677275804560692,
+      "compute_benefit": true,
+      "unchanged_image_SHA256": "26B4F9C2900141EC2EF3A19F4C75C831ED62A1F6E02B34C441501B0FF4E84429",
+      "program_bytes": 15920,
+      "same_workload_EX_sequence": true,
+      "window_EX_PC_SHA256": "48CFE33F898067004BD4F8378FD1CB37253AC5FE6ACDB8C6046AE3836FCBF295",
+      "window_EX": 785232,
+      "window_load_use": 21220,
+      "window_redirects": 162524,
+      "window_hits": 162524,
+      "physical_window_parts": {
+        "EX": 1570464,
+        "load_use": 42440,
+        "redirects": 325048
+      },
+      "boundary_residual": 0,
+      "old_window_counts": {
+        "READ": 55434,
+        "WB": 538668,
+        "EX": 785232,
+        "STORE": 14240
+      },
+      "new_window_counts": {
+        "READ": 55434,
+        "WB": 538668,
+        "EX": 785232,
+        "STORE": 14240
+      },
+      "empty_window_before": 26,
+      "empty_window_after": 26,
+      "empty_subtracted": false,
+      "formatting_ticks_before": 58210,
+      "formatting_ticks_after": 51986,
+      "UART_phase_ticks_before": 1557346,
+      "UART_phase_ticks_after": 1557348,
+      "UART_bytes_before": 661,
+      "UART_bytes_after": 661,
+      "minimum_SP": 97824,
+      "observed_stack_depth": 480,
+      "whole_metrics_before": {
+        "physical": 3941007,
+        "advances": 1970503,
+        "stall": 153013,
+        "flush": 298540,
+        "tail": 32
+      },
+      "whole_metrics_after": {
+        "physical": 3601153,
+        "advances": 1800576,
+        "stall": 178792,
+        "flush": 324266,
+        "tail": 32
+      },
+      "formal_score": false,
+      "caveat": "finite simulation tick benefit at same nominal clock; no hardware/Fmax/energy or novelty claim; host runtime and UART polling are separate"
+    }
+  ],
+  "new_DUT_runs": 0,
+  "new_reference_replays": 0,
+  "protected": 3912
+}

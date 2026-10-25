@@ -1,0 +1,11 @@
+--- source-before/soc_top.sv
++++ source/soc_top.sv
+@@ -10,7 +10,7 @@
+     wire [63:0] timer_ticks;
+     wire [3:0] wstrb,ram_strobe,io_strobe;wire [7:0] io_addr;
+     cycle_counter64 timer(.clk(clk),.rst_n(rst_n),.ticks(timer_ticks));
+-    cpu #(.SYNC_MEMORY(1)) cpu_core(.clk(clk),.rst_n(rst_n),.pc(pc),.inst(inst),
++    cpu #(.SYNC_MEMORY(1),.RESOLVED_TARGET_FETCH(1)) cpu_core(.clk(clk),.rst_n(rst_n),.pc(pc),.inst(inst),
+         .mem_addr(address),.mem_wdata(wdata),.mem_wren(wren),.mem_wstrb(wstrb),.mem_rdata(rdata),
+         .eei_stop_valid(stopped),.eei_stop_kind(stop_kind),.eei_stop_pc(stop_pc));
+     memory_model #(.LATENCY(1),.CASE(0)) storage(.clk(clk),.rst_n(rst_n),.pc(pc),.inst(inst),

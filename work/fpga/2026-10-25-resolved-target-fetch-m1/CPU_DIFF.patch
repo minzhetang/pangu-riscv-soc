@@ -1,0 +1,88 @@
+--- source-before/cpu.v
++++ source/cpu.v
+@@ -4,7 +4,8 @@
+ // 冒险处理: 数据冒险 (load-use 停顿 + 转发) + 控制冒险 (分支冲刷)
+ // =================================================================
+ module cpu #(
+-    parameter integer SYNC_MEMORY = 0
++    parameter integer SYNC_MEMORY = 0,
++    parameter integer RESOLVED_TARGET_FETCH = 0
+ ) (
+     input wire        clk,
+     input wire        rst_n,
+@@ -52,6 +53,10 @@
+     reg        mem_reg_write, mem_mem_to_reg;
+ 
+     wire stall_if, flush_if, flush_id;
++    wire [31:0] redirect_target;
++    wire redirect_request, redirect_fetch_hit;
++    reg fetch_redirect_valid;
++    reg [31:0] fetch_redirect_pc;
+     // A-EEI-STOP-0.1: validity is independent of word and side effects.
+     reg if_valid, id_valid, ex_valid, mem_valid;
+     reg [1:0] id_system_kind;
+@@ -71,7 +76,7 @@
+             if (eei_hold) begin
+                 if_valid<=0; id_valid<=0; id_system_kind<=0;
+             end else begin
+-                if (flush_if) if_valid<=0;
++                if (flush_if) if_valid<=redirect_fetch_hit;
+                 else if (!stall_if) if_valid<=1;
+                 if (flush_id || stall_if) begin id_valid<=0; id_system_kind<=0; end
+                 else begin
+@@ -108,7 +113,7 @@
+     // IF 阶段
+     // ----------------------------------------------
+     reg [31:0] pc_reg;
+-    assign pc = pc_reg;
++
+     wire [31:0] pc_plus4 = pc_reg + 4;
+     wire [31:0] pc_next;
+ 
+@@ -117,8 +122,31 @@
+     wire [31:0] branch_target;
+     wire [31:0] jump_target;
+ 
++    // Opt-in resolved-target fetch for the fixed one-edge synchronous ROM.
++    // Request on the memory-sampling phase; consume only its matched response.
++    assign redirect_target = id_jump ? jump_target : branch_target;
++    assign redirect_request = (SYNC_MEMORY != 0) && (RESOLVED_TARGET_FETCH != 0)
++        && rst_n && id_valid && !eei_hold && (branch_taken || id_jump)
++        && (redirect_target[1:0] == 2'b00);
++    assign pc = redirect_request ? redirect_target : pc_reg;
++    always @(posedge clk or negedge rst_n) begin
++        if (!rst_n) begin
++            fetch_redirect_valid <= 1'b0;
++            fetch_redirect_pc <= 32'd0;
++        end else if (!pipeline_advance) begin
++            fetch_redirect_valid <= redirect_request;
++            fetch_redirect_pc <= pc;
++        end else begin
++            fetch_redirect_valid <= 1'b0;
++        end
++    end
++    // Unmapped/zero returns conservatively retain the previous redirect path.
++    // This is not an ISA decoder or a new exception mechanism.
++    assign redirect_fetch_hit = redirect_request && fetch_redirect_valid
++        && (fetch_redirect_pc == redirect_target) && (inst != 32'd0);
++
+     // 缺省下一跳 PC
+-    assign pc_next = (flush_if) ? (id_jump ? jump_target : branch_target) : 
++    assign pc_next = (flush_if) ? (redirect_fetch_hit ? (fetch_redirect_pc + 32'd4) : redirect_target) : 
+                      (stall_if) ? pc_reg : pc_plus4;
+ 
+     // PC 寄存器更新
+@@ -132,9 +160,12 @@
+         if (!rst_n) begin
+             if_pc   <= 32'd0;
+             if_inst <= 32'd0;
+-        end else if (pipeline_advance && (flush_if || eei_hold)) begin
++        end else if (pipeline_advance && eei_hold) begin
+             if_pc   <= 32'd0;
+             if_inst <= 32'd0;
++        end else if (pipeline_advance && flush_if) begin
++            if_pc   <= redirect_fetch_hit ? fetch_redirect_pc : 32'd0;
++            if_inst <= redirect_fetch_hit ? inst : 32'd0;
+         end else if (pipeline_advance && !stall_if) begin
+             if_pc   <= pc_reg;
+             if_inst <= inst;

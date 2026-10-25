@@ -1,0 +1,320 @@
+{
+  "status": "CANDIDATE_INTERNAL_27MHZ_PASS_WITH_LIMITS",
+  "stages": {
+    "compile": true,
+    "synthesis": true,
+    "mapping": true,
+    "pnr": true,
+    "timing": true
+  },
+  "process": {
+    "argv": [
+      "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\pds_shell.exe",
+      "-file",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\build.tcl"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds",
+    "returncode": 0,
+    "returncode_hex": "0x00000000",
+    "timed_out": false,
+    "cap": false,
+    "trace_cap": false,
+    "cleanup": null,
+    "elapsed_seconds": 72.031,
+    "timeout_seconds": 1200,
+    "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\pds-once\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\logs\\pds-once\\stderr.log"
+  },
+  "resources": {
+    "LUT": 1913,
+    "FF": 1552,
+    "DRM18": 28,
+    "DRM36": 14,
+    "IO": 15,
+    "latches": 0
+  },
+  "old_resources": {
+    "LUT": 1805,
+    "FF": 1519,
+    "DRM36": 14,
+    "DRM18_gates": 28,
+    "IO": 15,
+    "APM": 0,
+    "latches": 0
+  },
+  "timing": {
+    "setup_slow": {
+      "slack_ns": 20.524,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 4890
+    },
+    "hold_slow": {
+      "slack_ns": 0.177,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 4890
+    },
+    "recovery_slow": {
+      "slack_ns": 33.618,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 382
+    },
+    "removal_slow": {
+      "slack_ns": 0.81,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 382
+    },
+    "setup_fast": {
+      "slack_ns": 26.964,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 4890
+    },
+    "hold_fast": {
+      "slack_ns": 0.116,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 4890
+    },
+    "recovery_fast": {
+      "slack_ns": 34.794,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 382
+    },
+    "removal_fast": {
+      "slack_ns": 0.562,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 382
+    }
+  },
+  "old_timing": {
+    "setup_slow": {
+      "slack_ns": 23.279,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 4685
+    },
+    "hold_slow": {
+      "slack_ns": 0.185,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 4685
+    },
+    "recovery_slow": {
+      "slack_ns": 33.991,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 344
+    },
+    "removal_slow": {
+      "slack_ns": 0.751,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 344
+    },
+    "setup_fast": {
+      "slack_ns": 28.647,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 4685
+    },
+    "hold_fast": {
+      "slack_ns": 0.129,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 4685
+    },
+    "recovery_fast": {
+      "slack_ns": 35.065,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 344
+    },
+    "removal_fast": {
+      "slack_ns": 0.518,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0,
+      "endpoints": 344
+    }
+  },
+  "pins": {
+    "clk": {
+      "direction": "input",
+      "loc": "D18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[0]": {
+      "direction": "input",
+      "loc": "C22",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[1]": {
+      "direction": "input",
+      "loc": "C23",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[2]": {
+      "direction": "input",
+      "loc": "B22",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[3]": {
+      "direction": "input",
+      "loc": "A22",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[4]": {
+      "direction": "input",
+      "loc": "B20",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[0]": {
+      "direction": "output",
+      "loc": "A20",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[1]": {
+      "direction": "output",
+      "loc": "C18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[2]": {
+      "direction": "output",
+      "loc": "C19",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[3]": {
+      "direction": "output",
+      "loc": "E18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[4]": {
+      "direction": "output",
+      "loc": "A17",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[5]": {
+      "direction": "output",
+      "loc": "A18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[6]": {
+      "direction": "output",
+      "loc": "C17",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[7]": {
+      "direction": "output",
+      "loc": "B17",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "uart_tx": {
+      "direction": "output",
+      "loc": "C24",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    }
+  },
+  "INIT_pieces_matched": 1792,
+  "DRM18_synth_and_PNR": 28,
+  "shared_identical_ROM_halves": [
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      7,
+      1
+    ]
+  ],
+  "RF_zero_init_FFs": 992,
+  "warning_counts": {
+    "W: Verilog-2008": 2,
+    "W: Sdm-2000": 32,
+    "W: Loop was found during constant probe.": 8,
+    "W: Public-4008": 14,
+    "W: Removed bmsWIDEDFFCPE inst soc/cpu_core/id_alu_ctrl[4": 1,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/sync_meta[7": 4,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/gpio_in_sync[7": 4,
+    "W: Timing-4087": 18,
+    "W: Timing-4086": 10
+  },
+  "constant_probe_count": 8,
+  "constant_probe_root_cause": "OPEN",
+  "inputs_without_external_delay": [
+    "key_n[0]",
+    "key_n[1]",
+    "key_n[2]",
+    "key_n[3]",
+    "key_n[4]"
+  ],
+  "outputs_without_external_delay": [
+    "led[0]",
+    "led[1]",
+    "led[2]",
+    "led[3]",
+    "led[4]",
+    "led[5]",
+    "led[6]",
+    "led[7]",
+    "uart_tx"
+  ],
+  "license_checkout": "SUCCESS_THIS_RUN",
+  "license_days_remaining": 9,
+  "tool": "PDS2022.2-SP6.4 build146967",
+  "device": "PG2L100H-6IFBG676",
+  "constraints_SHA256": {
+    "clock_27mhz.fdc": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F",
+    "board_pins.fdc": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1"
+  },
+  "no_bitstream": true,
+  "hardware": "STOPPED",
+  "protected": 3912,
+  "limitations": [
+    "internal STA only, no measured Fmax or IO/CDC closure",
+    "7 constant-probe warnings previously open, do not infer harmless",
+    "synthesis INIT/PNR identities checked, not config readback or post-layout simulation"
+  ]
+}

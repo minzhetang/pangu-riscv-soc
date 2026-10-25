@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "positive": 1,
+  "negative": 4,
+  "rows": [
+    {
+      "id": "two_digit_control",
+      "status": "PASS_CONTROL",
+      "detail": [],
+      "new_DUT_runs": 0
+    },
+    {
+      "id": "wrong_RAM_byte",
+      "status": "EXPECTED_REJECTION",
+      "detail": [
+        {
+          "kind": "all RAM bytes",
+          "actual": "b'#\\x00\\x00\\x00\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\",
+          "expected": "b'\"\\x00\\x00\\x00\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\xa5\\"
+        }
+      ],
+      "new_DUT_runs": 0
+    },
+    {
+      "id": "duplicate_WB",
+      "status": "EXPECTED_REJECTION",
+      "detail": [
+        {
+          "kind": "ordered WB",
+          "actual": "[['20', '00010000'], ['20', '00010000'], ['20', '00010000'], ['1', '00000001'], ['2', '00000001'], ['10', '00000022']]",
+          "expected": "[['20', '00010000'], ['20', '00010000'], ['1', '00000001'], ['2', '00000001'], ['10', '00000022']]"
+        }
+      ],
+      "new_DUT_runs": 0
+    },
+    {
+      "id": "wrong_IFID_tag",
+      "status": "EXPECTED_REJECTION",
+      "detail": "AssertionError()",
+      "new_DUT_runs": 0
+    },
+    {
+      "id": "missing_reset_cancel",
+      "status": "EXPECTED_REJECTION",
+      "detail": "AssertionError()",
+      "new_DUT_runs": 0
+    }
+  ],
+  "new_DUT_runs": 0,
+  "protected": 3912
+}
