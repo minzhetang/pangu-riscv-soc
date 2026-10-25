@@ -1,0 +1,12 @@
+{
+  "date_beijing": "2026-10-25",
+  "decision": "D133",
+  "user_reply": "同意继续",
+  "scope": "A-BOARD-COREMARK-M1: two finite N234 board-top runs, unchanged RTL/images/algorithm",
+  "forbidden": [
+    "RTL/ISA/algorithm changes",
+    "PDS/bitstream/hardware/server/JTAG/Flash",
+    "new tools/environment/license changes",
+    "formal score or speedup claim"
+  ]
+}

@@ -1,0 +1,45 @@
+--- D:\A_FPGA_Comp\work\system\2026-10-24-timed-coremark-m1\check_timed_v2.py
++++ D:\A_FPGA_Comp\work\fpga\2026-10-25-board-coremark-m1\check_coremark.py
+@@ -1,19 +1,21 @@
+-"""Independent physical-time oracle + streaming, no-dedup architecture check."""
+ from pathlib import Path
+ import json,re,sys,hashlib
+ sys.dont_write_bytecode=True
+-import run_stage as s
++H=Path(__file__).resolve().parent
++sys.path.insert(0,str(H/'models'))
++import stage_coremark as s
+ from cpu_program_reference import Reference
+ from peripheral_checker import ContractModel,decode_frames
+-H=Path(__file__).resolve().parent
+ def data_row(line):
+     a=line.strip().split('|');assert len(a)==17 and a[0]=='EDGE'
+     assert not any(re.search('[xz]',v,re.I) for v in a[1:]),'unknown public/timer data'
+     decimal={1,4,8,9,11,13,14}
+     return [int(v,10 if i in decimal else 16) for i,v in enumerate(a[1:],1)]
++
+ def counter_pre(c,address):
+     assert c>=1
+     return ((c-1)>>(32 if address==0x20000104 else 0))&0xffffffff
++
+ def check(tid):
+     d=H/'runs'/tid;name,ns=tid.split('-N');n=int(ns);errors=[]
+     def eq(label,a,b):
+@@ -27,9 +29,9 @@
+             c,gin,addr,write,data,mask,rd,err,pre_tx,pre_gpio,post_tx,post_gpio,accept,stop,pre_t,post_t=data_row(line)
+             assert prev<c<=metrics['physical'];prev=c;max_bus=c
+             while len(samples)<c:
+-                cycle=len(samples);out=model.step(cycle,1,0 if cycle<16 else 0x3c if cycle<4096 else 0xc3)
++                cycle=len(samples);out=model.step(cycle,1,0)
+                 eq('omitted UART sample must be high',out['tx_post'],1);samples.append(1)
+-            eq('GPIO frozen input',gin,0 if c<16 else 0x3c if c<4096 else 0xc3)
++            eq('GPIO frozen input',gin,0)
+             eq('pre tick physical clock',pre_t,c-1);eq('post tick physical clock',post_t,c)
+             eq('UART pre-edge',pre_tx,samples[-1]);eq('GPIO pre-edge',pre_gpio,model.gpio_out)
+             out=model.step(c,1,gin,addr,bool(write),data,mask)
+@@ -158,5 +160,3 @@
+         streams={k:dict(count=len(x),sha256=x.digest.hexdigest().upper()) for k,x in [('EX',ref.EX),('WB',ref.WB),('MEM',ref.MEM)]},
+         timer_reads=timer_reads,GPIO_actual= gpio,UART_frames=len(frames),detail=detail,
+         limitations=['finite inputs; no true retirement PC or unified WB-STORE commit','short simulation not valid CoreMark score','no hardware evidence'])
+-if __name__=='__main__':
+-    result=check(sys.argv[1]);s.save(H/'runs'/sys.argv[1]/'check-result-v2.json',result);print(json.dumps(result))

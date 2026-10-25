@@ -1,0 +1,52 @@
+{
+  "cases": {
+    "performance-N234": {
+      "image": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\build\\performance\\program.bin",
+      "bytes": 15912,
+      "bin_sha256": "B4CEEC1B250A5151C1D02F018FC45B3D22CDC049E12E26EFC2A0562D23740E60",
+      "ELF_sha256": "BD38A6A4CD131A099954215504464A8AFDF130F89D1F9815C91EBEEEAD9BDB95",
+      "INIT_sha256": "E81FD2B446C2446C2D32DB0D45C9BEDA54D0A6A5B670064F021125E8C7E22E1A",
+      "phase_address": 67584,
+      "expected_raw_ticks": 2103648,
+      "expected_stamps": [
+        18773,
+        18799,
+        61967,
+        2165615
+      ],
+      "expected_UART_bytes": 662,
+      "expected_report_sha256": "7CFAD89D76DE3D8E0459487A1352DAFB7E7BD5A90D60909940F54A54A825D3D2",
+      "old_run": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16",
+      "raw_tick_equality": "prior baseline comparison after independent timer/architecture checking",
+      "gpio_keys": 0,
+      "n": 234
+    },
+    "validation-N234": {
+      "image": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\build\\validation\\program.bin",
+      "bytes": 15920,
+      "bin_sha256": "26B4F9C2900141EC2EF3A19F4C75C831ED62A1F6E02B34C441501B0FF4E84429",
+      "ELF_sha256": "E2BEC75900D330237FC80F1BF798DF87EF0372B1D527BAAFED806317E75626FE",
+      "INIT_sha256": "8713B82EFB4C0D7A26F7D2F532863E6365B119F1B84E2AA870A254CE1E673054",
+      "phase_address": 67592,
+      "expected_raw_ticks": 2263000,
+      "expected_stamps": [
+        18785,
+        18811,
+        62369,
+        2325369
+      ],
+      "expected_UART_bytes": 661,
+      "expected_report_sha256": "D30594959A0504DB76566A7BF5F2D8C7A69EA67154C6D53987145E8A116F9A1C",
+      "old_run": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\validation-N16",
+      "raw_tick_equality": "prior baseline comparison after independent timer/architecture checking",
+      "gpio_keys": 0,
+      "n": 234
+    }
+  },
+  "max_physical_cycles": 6000000,
+  "run_seconds": 360,
+  "compile_seconds": 120,
+  "file_cap_bytes": 268435456,
+  "waveform": "native window VCD + continuous independent public UART transition text, no full-run native VCD claim",
+  "formal_score": false
+}
