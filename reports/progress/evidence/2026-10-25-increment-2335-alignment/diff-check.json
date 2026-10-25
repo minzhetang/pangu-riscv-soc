@@ -1,0 +1,263 @@
+{
+  "files": [
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/CHECK_PACKAGE_OPEN.md",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 3,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/DEPENDENCIES.json",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 19,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/HISTORY_ALIASES.json",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 41,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/MAINLINE_ASKS.md",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 27,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/MECHANISM_COMMANDS.md",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 48,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/META_CORRECTIONS.md",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 13,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/MODULE_STATUS.json",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 45,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/README.md",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 52,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/REMAINING_NET_HOURS.json",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 28,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/REVIEW_RESPONSE.md",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 22,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/SOURCE_INDEX.json",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 146,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/SOURCE_INDEX.md",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 27,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/delivery.json",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 75,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/history/regif-results-231958.json",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 468,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/B-RETURN/increment-20261024-2335/history/rx-results-232514.json",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 1131,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/peripherals/docs/RUNNER-P0-20261024.md",
+      "hunks": 1,
+      "old_lines": 52,
+      "new_lines": 52,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/peripherals/rx/CHANGELOG.md",
+      "hunks": 1,
+      "old_lines": 111,
+      "new_lines": 127,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/peripherals/rx/STATUS.md",
+      "hunks": 1,
+      "old_lines": 100,
+      "new_lines": 100,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/peripherals/rx/docs/RX-LEDGER-1.3.3.md",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 33,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/peripherals/rx/scripts/run_rx.py",
+      "hunks": 7,
+      "old_lines": 654,
+      "new_lines": 663,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/peripherals/rx/scripts/rx_status_selfcheck.py",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 44,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/peripherals/rx/tb/rx_public_capture.sv",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 74,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/peripherals/rx/tb/tb_uart_rx.sv",
+      "hunks": 7,
+      "old_lines": 1266,
+      "new_lines": 1313,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/peripherals/rx/tb/tb_uart_rx_neg.sv",
+      "hunks": 1,
+      "old_lines": 483,
+      "new_lines": 434,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/peripherals/rx/tests/rx-plan-1.3.3.json",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 478,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/peripherals/rx/tests/rx-plan-1.3.3.sha256",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 1,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/regif/txgpio-m1/README.md",
+      "hunks": 2,
+      "old_lines": 32,
+      "new_lines": 34,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/regif/txgpio-m1/docs/RUNBOOK.md",
+      "hunks": 4,
+      "old_lines": 68,
+      "new_lines": 70,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/regif/txgpio-m1/docs/W01-W10.md",
+      "hunks": 3,
+      "old_lines": 45,
+      "new_lines": 46,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 64,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/regif/txgpio-m1/scripts/regif_entry_selfcheck.py",
+      "hunks": 1,
+      "old_lines": 119,
+      "new_lines": 130,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/regif/txgpio-m1/scripts/run_regif_m1.py",
+      "hunks": 7,
+      "old_lines": 314,
+      "new_lines": 383,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 88,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/regif/txgpio-m1/tb/tb_local_regif_txgpio_m1.sv",
+      "hunks": 7,
+      "old_lines": 602,
+      "new_lines": 568,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 100,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.json",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 560,
+      "exact_line_reconstruction": true
+    },
+    {
+      "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.sha256",
+      "hunks": 1,
+      "old_lines": 0,
+      "new_lines": 1,
+      "exact_line_reconstruction": true
+    }
+  ]
+}

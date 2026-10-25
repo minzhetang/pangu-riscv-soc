@@ -1,0 +1,120 @@
+[
+  {
+    "kind": "wrapper",
+    "N": 16,
+    "status": "PASS",
+    "checks": 18022,
+    "requests": 26,
+    "all_request_fields_and_edge_match": true
+  },
+  {
+    "kind": "wrapper",
+    "N": 234,
+    "status": "PASS",
+    "checks": 240081,
+    "requests": 10,
+    "all_request_fields_and_edge_match": true
+  },
+  {
+    "kind": "RX",
+    "N": 8,
+    "status": "PASS",
+    "checks": 42188,
+    "events": 92,
+    "ordered_type_data_match": true,
+    "ledger_field_errors": {
+      "pre_ready": 31,
+      "post_valid": 39,
+      "pre_valid": 8,
+      "pre_clear": 3,
+      "pre_ov": 3,
+      "post_fe": 1,
+      "post_clear": 1
+    },
+    "edge_offsets": {
+      "ACCEPT": {
+        "0": 41
+      },
+      "CONSUME": {
+        "0": 41
+      },
+      "DROP": {
+        "0": 5
+      },
+      "ACCEPT-REPLACE": {
+        "0": 2
+      },
+      "RESET-CANCEL": {
+        "0": 3
+      }
+    }
+  },
+  {
+    "kind": "RX",
+    "N": 16,
+    "status": "PASS",
+    "checks": 92732,
+    "events": 110,
+    "ordered_type_data_match": true,
+    "ledger_field_errors": {
+      "pre_ready": 32,
+      "post_valid": 48,
+      "pre_valid": 16,
+      "pre_clear": 3,
+      "pre_ov": 3,
+      "post_fe": 1,
+      "post_clear": 1
+    },
+    "edge_offsets": {
+      "ACCEPT": {
+        "0": 50
+      },
+      "CONSUME": {
+        "0": 50
+      },
+      "DROP": {
+        "0": 5
+      },
+      "ACCEPT-REPLACE": {
+        "0": 2
+      },
+      "RESET-CANCEL": {
+        "0": 3
+      }
+    }
+  },
+  {
+    "kind": "RX",
+    "N": 234,
+    "status": "PASS",
+    "checks": 889084,
+    "events": 68,
+    "ordered_type_data_match": true,
+    "ledger_field_errors": {
+      "pre_ready": 25,
+      "post_valid": 27,
+      "pre_valid": 2,
+      "pre_clear": 3,
+      "pre_ov": 3,
+      "post_fe": 1,
+      "post_clear": 1
+    },
+    "edge_offsets": {
+      "ACCEPT": {
+        "0": 29
+      },
+      "CONSUME": {
+        "0": 29
+      },
+      "DROP": {
+        "0": 5
+      },
+      "ACCEPT-REPLACE": {
+        "0": 2
+      },
+      "RESET-CANCEL": {
+        "0": 3
+      }
+    }
+  }
+]

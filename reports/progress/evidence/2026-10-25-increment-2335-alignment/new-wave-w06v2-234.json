@@ -1,0 +1,28 @@
+{
+  "N": 234,
+  "status": "PASS",
+  "checks": 137797,
+  "errors": [],
+  "actual_GPIO_accepts": [],
+  "actual_TX_accepts": [
+    [
+      3,
+      90
+    ],
+    [
+      2812,
+      60
+    ],
+    [
+      5155,
+      90
+    ],
+    [
+      7496,
+      60
+    ]
+  ],
+  "rejected_requests": 2,
+  "cancelled": [],
+  "scope": "original received VCD review, zero NEW DUT runs"
+}

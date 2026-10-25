@@ -1,0 +1,250 @@
+{
+  "RX_shared_order": {
+    "N": 16,
+    "expected_and_actual": [
+      {
+        "seq": 92,
+        "expected": [
+          1,
+          178
+        ],
+        "actual": [
+          2,
+          178
+        ],
+        "time_ps": 94955000
+      },
+      {
+        "seq": 93,
+        "expected": [
+          2,
+          178
+        ],
+        "actual": [
+          1,
+          178
+        ],
+        "time_ps": 94965000
+      },
+      {
+        "seq": 96,
+        "expected": [
+          1,
+          161
+        ],
+        "actual": [
+          2,
+          161
+        ],
+        "time_ps": 98175000
+      },
+      {
+        "seq": 97,
+        "expected": [
+          2,
+          161
+        ],
+        "actual": [
+          1,
+          161
+        ],
+        "time_ps": 98185000
+      }
+    ],
+    "note": "Actual newly rebuilt RX formal run, observation-only final array dump. Core/inline event oracle passed; this is a shared-capture verification failure."
+  },
+  "RX_snapshots": [
+    {
+      "log": {
+        "seq": 0,
+        "edge": 170,
+        "type": 1,
+        "data": 0,
+        "pre_valid": 0,
+        "pre_ready": 0,
+        "pre_clear": 0,
+        "pre_ov": 0,
+        "pre_fe": 0,
+        "post_valid": 1,
+        "post_ready": 0,
+        "post_clear": 0,
+        "post_ov": 0,
+        "post_fe": 0,
+        "label": "ACCEPT"
+      },
+      "oracle": {
+        "type": 1,
+        "data": 0,
+        "time_ps": 1695000
+      },
+      "actual": {
+        "edge": 170,
+        "before": {
+          "rx_valid": 0,
+          "rx_ready": 0,
+          "clear_errors": 0,
+          "overrun": 0,
+          "frame_error": 0
+        },
+        "after": {
+          "rx_valid": 1,
+          "rx_ready": 0,
+          "clear_errors": 0,
+          "overrun": 0,
+          "frame_error": 0
+        }
+      },
+      "edge_offset": 0,
+      "mismatches": []
+    },
+    {
+      "log": {
+        "seq": 1,
+        "edge": 176,
+        "type": 2,
+        "data": 0,
+        "pre_valid": 1,
+        "pre_ready": 0,
+        "pre_clear": 0,
+        "pre_ov": 0,
+        "pre_fe": 0,
+        "post_valid": 1,
+        "post_ready": 1,
+        "post_clear": 0,
+        "post_ov": 0,
+        "post_fe": 0,
+        "label": "CONSUME"
+      },
+      "oracle": {
+        "type": 2,
+        "data": 0,
+        "time_ps": 1755000
+      },
+      "actual": {
+        "edge": 176,
+        "before": {
+          "rx_valid": 1,
+          "rx_ready": 1,
+          "clear_errors": 0,
+          "overrun": 0,
+          "frame_error": 0
+        },
+        "after": {
+          "rx_valid": 0,
+          "rx_ready": 1,
+          "clear_errors": 0,
+          "overrun": 0,
+          "frame_error": 0
+        }
+      },
+      "edge_offset": 0,
+      "mismatches": [
+        {
+          "field": "pre_ready",
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "field": "post_valid",
+          "expected": 0,
+          "actual": 1
+        }
+      ]
+    }
+  ],
+  "RX_5e": {
+    "log": {
+      "seq": 79,
+      "edge": 8081,
+      "type": 3,
+      "data": 68,
+      "pre_valid": 1,
+      "pre_ready": 0,
+      "pre_clear": 1,
+      "pre_ov": 1,
+      "pre_fe": 1,
+      "post_valid": 1,
+      "post_ready": 0,
+      "post_clear": 0,
+      "post_ov": 1,
+      "post_fe": 0,
+      "label": "DROP"
+    },
+    "oracle": {
+      "type": 3,
+      "data": 68,
+      "time_ps": 80805000
+    },
+    "actual": {
+      "edge": 8081,
+      "before": {
+        "rx_valid": 1,
+        "rx_ready": 0,
+        "clear_errors": 1,
+        "overrun": 1,
+        "frame_error": 1
+      },
+      "after": {
+        "rx_valid": 1,
+        "rx_ready": 0,
+        "clear_errors": 1,
+        "overrun": 1,
+        "frame_error": 0
+      }
+    },
+    "edge_offset": 0,
+    "mismatches": [
+      {
+        "field": "post_clear",
+        "expected": 1,
+        "actual": 0
+      }
+    ]
+  },
+  "wrapper_mutation_controls": [
+    {
+      "case": "first-address",
+      "rejected": true,
+      "errors": [
+        "request seq=1 fields=('fc', '5a', '1111', '1', '0', 'reject') expected=('00', '5a', '1111', '1', '0', 'reject')"
+      ]
+    },
+    {
+      "case": "first-edge",
+      "rejected": true,
+      "errors": [
+        "first request edge=8 expected=9"
+      ]
+    },
+    {
+      "case": "nonfirst-edge-monotonic-false-time",
+      "rejected": false,
+      "errors": []
+    },
+    {
+      "case": "busy-field-flipped",
+      "rejected": false,
+      "errors": []
+    },
+    {
+      "case": "complete-frame-wrong-edge",
+      "rejected": false,
+      "errors": []
+    },
+    {
+      "case": "GPIO-wrong-seq-edge",
+      "rejected": false,
+      "errors": []
+    }
+  ],
+  "TX_monitor_boundary": [
+    {
+      "N": 16,
+      "early_clocks": 7
+    },
+    {
+      "N": 234,
+      "early_clocks": 116
+    }
+  ]
+}

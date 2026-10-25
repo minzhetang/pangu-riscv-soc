@@ -1,0 +1,399 @@
+{
+  "files": [
+    {
+      "path": "CHANGED_FILES.json",
+      "bytes": 22307,
+      "sha256": "43C79C0E875949F075577ED063DF72DEF1880F8184D26409D7FEDC37701579BE"
+    },
+    {
+      "path": "CHECK_PACKAGE_OPEN.md",
+      "bytes": 405,
+      "sha256": "447AD5BE47BF59E9AAFF5B2D3DE8EEC17C1BAEB548B6BC48E7343BDF66224E26"
+    },
+    {
+      "path": "delivery.json",
+      "bytes": 3749,
+      "sha256": "A42690538063C2AAF62A41B76BC265C959C62CA28AFFB603106D0D698753A58A"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "bytes": 1464,
+      "sha256": "4CAD51B33E8877C1AA825615C101B99D9CA8FF4F9789727BB4934F278057D52F"
+    },
+    {
+      "path": "DIFF.patch",
+      "bytes": 215236,
+      "sha256": "AFE8C87F7D2B4CB2C9FF1ECAF158D9328DBA8DCA8CBC0AF70567D04B5D97B2DF"
+    },
+    {
+      "path": "HISTORY_ALIASES.json",
+      "bytes": 1424,
+      "sha256": "B1E19228AF49E4D6BC6159EDAC74130087F3D19A93A5E4CE77F5973478FA75B5"
+    },
+    {
+      "path": "MAINLINE_ASKS.md",
+      "bytes": 1911,
+      "sha256": "A26795E190650B1BB8D4904DB1562C9859DF58EB498ADB49DD3A0A60BA949A13"
+    },
+    {
+      "path": "MECHANISM_COMMANDS.md",
+      "bytes": 1969,
+      "sha256": "CDCC54451B77F0B8E0BF389B6728290D88596CB6DA5DCD60872BAA90F94454FB"
+    },
+    {
+      "path": "META_CORRECTIONS.md",
+      "bytes": 948,
+      "sha256": "7FC69D54C149F071C0A514A591A24994DA068571114446D83E19F076046DC205"
+    },
+    {
+      "path": "MODULE_STATUS.json",
+      "bytes": 2496,
+      "sha256": "09EAE631EC2BB6F1F046F70491673F19A063333AC965AB219190E851A47DDC4A"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4310,
+      "sha256": "1A07BC1FA1BB2C8BFF61711AADDF159BA3FE7FF65406D586D5FD675D6E03DC70"
+    },
+    {
+      "path": "REMAINING_NET_HOURS.json",
+      "bytes": 1399,
+      "sha256": "25ACF863034FE741F8449E3D04CA0BFECCE401EEB3E070CD56F6D9E2D39FBBCB"
+    },
+    {
+      "path": "REVIEW_RESPONSE.md",
+      "bytes": 2668,
+      "sha256": "9A8F364D7E358437A64A20B27C86FAC47B870A492BDE2C2D408D0EDDEB41E203"
+    },
+    {
+      "path": "SHA256SUMS-INCREMENT.txt",
+      "bytes": 8860,
+      "sha256": "F6D9D9709DA7E60EFA30A83C1D8985D17445AFB0CFD446AB542C53DCB0B9539C"
+    },
+    {
+      "path": "SOURCE_INDEX.json",
+      "bytes": 5921,
+      "sha256": "7AC92A9261C8F09EBA60D06D0A1C0706A9CC92DFD48D75FD3B63AB155E87F770"
+    },
+    {
+      "path": "SOURCE_INDEX.md",
+      "bytes": 3978,
+      "sha256": "C4BAF7E5BA4913ED3C2F384134D458B7ABF69E50848D5D98C327614631F64B2B"
+    },
+    {
+      "path": "history/regif-results-231958.json",
+      "bytes": 19172,
+      "sha256": "1A78E15AB8E89D27B30CEB0FA0FF319C0935F289875AF5BA8265F6D2CD7AA2C5"
+    },
+    {
+      "path": "history/rx-results-232514.json",
+      "bytes": 60063,
+      "sha256": "5ABFC1F0274EA61859312D748F22B604C41788FB34FB10EF6A75EEE44F9B78E2"
+    },
+    {
+      "path": "work/peripherals/docs/RUNNER-P0-20261024.md",
+      "bytes": 3036,
+      "sha256": "6C835A9D1ED590F9B7DBCA9EC1354EF036F65467EA8BF22256663DEE0976BFAF"
+    },
+    {
+      "path": "work/peripherals/rx/CHANGELOG.md",
+      "bytes": 8539,
+      "sha256": "16A136153E14D3F35CCBF73F3BF74B8AE9CBE846AC1E2684B0D417690BBC9E93"
+    },
+    {
+      "path": "work/peripherals/rx/results.json",
+      "bytes": 60063,
+      "sha256": "5ABFC1F0274EA61859312D748F22B604C41788FB34FB10EF6A75EEE44F9B78E2"
+    },
+    {
+      "path": "work/peripherals/rx/STATUS.md",
+      "bytes": 8990,
+      "sha256": "2DFBB14070A432DA33B21E983DE1FEF62CFA6E97F7A1293A2EF9ACDDFBB16261"
+    },
+    {
+      "path": "work/peripherals/rx/docs/RX-LEDGER-1.3.3.md",
+      "bytes": 2023,
+      "sha256": "79B01FCBA9F852E608794B309CF28790BDA3C95333BF7AAF781B9F9917EA101E"
+    },
+    {
+      "path": "work/peripherals/rx/scripts/run_rx.py",
+      "bytes": 28865,
+      "sha256": "767C9D7D9E76357C76F3C441D0EEB93CC801F58000EDEE82E2E3E2F7451AC534"
+    },
+    {
+      "path": "work/peripherals/rx/scripts/rx_status_selfcheck.py",
+      "bytes": 2390,
+      "sha256": "6038732EC5C7CF4947606F20445B00ACE9F91152E5538FE68150F91F565056C8"
+    },
+    {
+      "path": "work/peripherals/rx/tb/rx_public_capture.sv",
+      "bytes": 2235,
+      "sha256": "A1AA98D69293D4B106233BC669FD6D0F40F65EEDC89698B30C9E65547BA9BC15"
+    },
+    {
+      "path": "work/peripherals/rx/tb/tb_uart_rx.sv",
+      "bytes": 49904,
+      "sha256": "A0A7F9DCECDFCB92F5798F2BA481AF7569CC328C51F55E25D8730AEA12E41FC5"
+    },
+    {
+      "path": "work/peripherals/rx/tb/tb_uart_rx_neg.sv",
+      "bytes": 14430,
+      "sha256": "282B2F1B495F141F620E255E58D2E70EB01B3884A9B7C1EAB5F58A01958ADE80"
+    },
+    {
+      "path": "work/peripherals/rx/tests/rx-plan-1.3.3.json",
+      "bytes": 21387,
+      "sha256": "0769CC08B87DEC92CDE2B7169667FF66DE310B0F8C7F876A550A5F5FA6FA928A"
+    },
+    {
+      "path": "work/peripherals/rx/tests/rx-plan-1.3.3.sha256",
+      "bytes": 112,
+      "sha256": "FCBBE13748AC8850A41AA5A732243B864A11BA2F9D1E5EB24F8173048D7CDDC9"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/compile_illegal.log",
+      "bytes": 795,
+      "sha256": "10BD924BE05108F46939AA2D7615CC1161B4752ACC63283664ADCDCAF7764877"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/compile_N16.log",
+      "bytes": 860,
+      "sha256": "2F4767624F09F7C13A7BC6B954C2F2542FF488E081FA4E3442EFBB6C91FDE3A0"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/compile_N234.log",
+      "bytes": 863,
+      "sha256": "B84A68D45A09B60DDD33D98052B19B01AEEE08CB5390C2E618EDFCDDD68EC1C8"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/compile_N8.log",
+      "bytes": 857,
+      "sha256": "9367553DC1AEA5917AD38C56673DE9A5956F11233C9DAD195D273DE9714DFBE6"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/compile_neg.log",
+      "bytes": 847,
+      "sha256": "455223FC5C8981C3423B70856603677E665C195F0FE6C2FD7316183D6B9A042E"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/compile_watchdog.log",
+      "bytes": 821,
+      "sha256": "223842CD1FD80D1FF257FA8B5CE871F3B1D86598E762EF035E377505E95A7D56"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/plan_check.log",
+      "bytes": 1832,
+      "sha256": "FD0BB9CE675EC6F563D6A88CF3F68BBCF510265C25FD4DB0EC241B35DE27904E"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/run_illegal.log",
+      "bytes": 785,
+      "sha256": "330F652F38377A11CDB7EFE6F60D37746B2155280EA1336374CB56C127CC86F1"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/run_manifest.json",
+      "bytes": 5261,
+      "sha256": "7E0D25B0E68855B6BD65F77E7B13AB92904ED73898F1838824527EDA75AF1B33"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/run_N16.log",
+      "bytes": 55440,
+      "sha256": "E788587A04950FEA155DE987D88E82ADCB9C5B8B754510C778C360663F4DCD65"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/run_N234.log",
+      "bytes": 34905,
+      "sha256": "068EA76939F9DF92D5283895E1CC0E01F5A1B8067FC46A73FEB0AF2D411B4858"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/run_N8.log",
+      "bytes": 46552,
+      "sha256": "D0702BD42D18FE7419E5B931A80315C013A31CA84EC936999CB52BB828374444"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/run_neg.log",
+      "bytes": 1390,
+      "sha256": "853048829196D259390790F755FC5ED0BB5B2E99285625669859F3C2CD765E56"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/run_watchdog.log",
+      "bytes": 811,
+      "sha256": "4DEAB0D361373D5B64461E4BFBEB80A2146AEB1BE50C2FF359F2FE443B21E52C"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/schema_validate.log",
+      "bytes": 1174,
+      "sha256": "6D0FE2A3EB96E88A23020294B130ADF271BD1A19588D739B90E236A69830A193"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/tool_iverilog.log",
+      "bytes": 4092,
+      "sha256": "D1D8A57BBCB39B8C278A137BD93B18FD374D55D7BE58049C607B03E9F34A222B"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/tool_python.log",
+      "bytes": 694,
+      "sha256": "2185A1E44D5F4B181ED2843D1299D213F1F804C58D92D34D86BB55BE0864D455"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-20261024-232514/tool_vvp.log",
+      "bytes": 1478,
+      "sha256": "E2E49FC118B64751815EE73C9A4276848CAAF8D9C080B9716DA2360904F464C5"
+    },
+    {
+      "path": "work/peripherals/rx/logs/rx-status-selfcheck-20261024-232527/summary.json",
+      "bytes": 975,
+      "sha256": "D825F8E8E23956A2344741068246B504C0C9AE8FAF5381E9DEBBC8FAF611A816"
+    },
+    {
+      "path": "work/peripherals/rx/waves/rx-20261024-232514/uart_rx_N16.vcd",
+      "bytes": 822316,
+      "sha256": "061533BE7ABE4503A49D741D2E1DCE0DBC15108624D4C411E11660769BEE9D2A"
+    },
+    {
+      "path": "work/peripherals/rx/waves/rx-20261024-232514/uart_rx_N234.vcd",
+      "bytes": 8931739,
+      "sha256": "B5CADDE7B3CA33E248D11321201530CFBFE82DB3E1CA10D522E969AC4CB0FE73"
+    },
+    {
+      "path": "work/peripherals/rx/waves/rx-20261024-232514/uart_rx_N8.vcd",
+      "bytes": 371833,
+      "sha256": "7096DF4670BB38838379D90EDD6C6817243F37A65C8C5E4B118F732B2C6284C1"
+    },
+    {
+      "path": "work/regif/txgpio-m1/README.md",
+      "bytes": 2579,
+      "sha256": "B9047902CAC752FB411377F4E4829E1723D20121CD8370D1A0F518973A896229"
+    },
+    {
+      "path": "work/regif/txgpio-m1/results.json",
+      "bytes": 19172,
+      "sha256": "1A78E15AB8E89D27B30CEB0FA0FF319C0935F289875AF5BA8265F6D2CD7AA2C5"
+    },
+    {
+      "path": "work/regif/txgpio-m1/docs/RUNBOOK.md",
+      "bytes": 2698,
+      "sha256": "E270F886DC720407C83C95A6944A87F95EC81C36E794E74A448329D964B39133"
+    },
+    {
+      "path": "work/regif/txgpio-m1/docs/SHA256SUMS.txt",
+      "bytes": 10739,
+      "sha256": "DD94CFB3EE6AD5C6741F76D940FD3E439F7B1619158F0A479544A9FCC25FC3B3"
+    },
+    {
+      "path": "work/regif/txgpio-m1/docs/W01-W10.md",
+      "bytes": 3489,
+      "sha256": "DD085D3F6F847ED7FEA8E10D6E447A066C806AF492B73BD88B66342D770E171C"
+    },
+    {
+      "path": "work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py",
+      "bytes": 3084,
+      "sha256": "049E81979DEDEFD2BAEAAE44D44C7581874C0EEFB8EC19ADB0609C8BED8D93C5"
+    },
+    {
+      "path": "work/regif/txgpio-m1/scripts/regif_entry_selfcheck.py",
+      "bytes": 6234,
+      "sha256": "4F5D93875382EA5616EA38DE5980DB4085076D7A2608E06996952625E32251D5"
+    },
+    {
+      "path": "work/regif/txgpio-m1/scripts/run_regif_m1.py",
+      "bytes": 19240,
+      "sha256": "FDC63EDAF79147B0539CA85B133166CCD5A138F6B516DE0A95F54C891427336D"
+    },
+    {
+      "path": "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv",
+      "bytes": 2972,
+      "sha256": "C8CFFA9F6949D0B9BD33555B87EBD3AADD733AE389EB8FB549CA02BDF261E471"
+    },
+    {
+      "path": "work/regif/txgpio-m1/tb/tb_local_regif_txgpio_m1.sv",
+      "bytes": 23194,
+      "sha256": "7F0C1060ED9524B18965575CC3BE8DA1AE76D899521916F2D701976AEFAD793B"
+    },
+    {
+      "path": "work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv",
+      "bytes": 3496,
+      "sha256": "B31DC2F28657DACDC53443717201161B55A19FFBECC5E99B850A03AA4BAF458E"
+    },
+    {
+      "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.json",
+      "bytes": 14202,
+      "sha256": "A94948CE5D4818CE801B74698D242C70745E504C0FF2479A4BFCD2CC1875F4B4"
+    },
+    {
+      "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.sha256",
+      "bytes": 118,
+      "sha256": "8772CA4ECB16414E6D2EA007E4597E5E5D5C2840981F54A29B378D3C3EC7015D"
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-capture-20261024-231843/compile_capture.log",
+      "bytes": 838,
+      "sha256": "03CD8F3611337371ECF6DF05BDB2290A6C533E16A141656F5D98A14662E65EA8"
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-capture-20261024-231843/run_capture.log",
+      "bytes": 1277,
+      "sha256": "4A52C7BE38D31E5926CFDF4A0E75B5B02FEF3479B9323B9480F84B568CDA1FDB"
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-capture-20261024-231843/summary.json",
+      "bytes": 511,
+      "sha256": "61557D1447E53D0217DEC295983BBD2AB081DA0A7BEF3C1972C1B92DBFC37FC2"
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-entry-selfcheck-20261024-232004/summary.json",
+      "bytes": 4138,
+      "sha256": "446C0788BC1ECFB2806D4FE85AEB3AD941D5E10921FFC3D6936BF9992C84E751"
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261024-231958/compile_N16.log",
+      "bytes": 982,
+      "sha256": "58A080B6FCE36C757B28A37C27D39359F53D553F0909CD61CDB4DE55DC380FE8"
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261024-231958/compile_N234.log",
+      "bytes": 984,
+      "sha256": "6AA8A384CE4125D87E64001E4C432059A198862EFC24BE756A696DF0323D61E2"
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261024-231958/plan_check.log",
+      "bytes": 1375,
+      "sha256": "ECAF313EC7D8082B548A3A1C3E144F8163CE61325257E47C69ED2ABA05D34FC5"
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261024-231958/run_N16.log",
+      "bytes": 5181,
+      "sha256": "F0A40F4BF9F947557EB45688127BB590C210A7BBE184E2AF7F5BD8AB44A14F40"
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261024-231958/run_N234.log",
+      "bytes": 3007,
+      "sha256": "137E30A7D771B83DDED7A6EC6237BC2CDACE441B3B4A8A885001E9E94C3B3515"
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261024-231958/tool_iverilog.log",
+      "bytes": 4093,
+      "sha256": "9AD73C52F0D8E5F18BA87D0E40AB5D2081AA4E9CE5A428271E5B18B2A56C6199"
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261024-231958/tool_python.log",
+      "bytes": 697,
+      "sha256": "8C7C09DBA13DACD37B1BC7A97FD85F5E08A501BCA2CA2E9C94801E2059DCA5FE"
+    },
+    {
+      "path": "work/regif/txgpio-m1/logs/regif-m1-20261024-231958/tool_vvp.log",
+      "bytes": 1479,
+      "sha256": "F76CF9172A119B437B81B485D0802B41BE85953430BDB836B1D76BE4312E8522"
+    },
+    {
+      "path": "work/regif/txgpio-m1/waves/regif-m1-20261024-231958/regif_m1_N16.vcd",
+      "bytes": 130401,
+      "sha256": "4D89ADD43EA373270BD2041B8ED45DECE91FD09ADC09B231772C20B5B71512E2"
+    },
+    {
+      "path": "work/regif/txgpio-m1/waves/regif-m1-20261024-231958/regif_m1_N234.vcd",
+      "bytes": 1918491,
+      "sha256": "D1001FF6AE02831FE7972DA34E9B2674B352944C35CF2EE3A8B97A865E9C55B8"
+    }
+  ]
+}

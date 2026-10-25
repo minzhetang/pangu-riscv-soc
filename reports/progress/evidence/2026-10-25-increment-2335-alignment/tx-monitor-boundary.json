@@ -1,0 +1,306 @@
+[
+  {
+    "N": 16,
+    "events": [
+      {
+        "kind": "START",
+        "edge": 38,
+        "accept_seq": 5,
+        "accept_edge": 37,
+        "data": null
+      },
+      {
+        "kind": "COMPLETE",
+        "edge": 190,
+        "accept_seq": 5,
+        "accept_edge": 37,
+        "data": 90,
+        "full_frame_end": 197,
+        "early_by_clocks": 7
+      },
+      {
+        "kind": "START",
+        "edge": 203,
+        "accept_seq": 6,
+        "accept_edge": 202,
+        "data": null
+      },
+      {
+        "kind": "COMPLETE",
+        "edge": 355,
+        "accept_seq": 6,
+        "accept_edge": 202,
+        "data": 165,
+        "full_frame_end": 362,
+        "early_by_clocks": 7
+      },
+      {
+        "kind": "START",
+        "edge": 366,
+        "accept_seq": 8,
+        "accept_edge": 365,
+        "data": null
+      },
+      {
+        "kind": "COMPLETE",
+        "edge": 518,
+        "accept_seq": 8,
+        "accept_edge": 365,
+        "data": 165,
+        "full_frame_end": 525,
+        "early_by_clocks": 7
+      },
+      {
+        "kind": "START",
+        "edge": 547,
+        "accept_seq": 21,
+        "accept_edge": 546,
+        "data": null
+      },
+      {
+        "kind": "CANCEL",
+        "edge": 549,
+        "accept_seq": 21,
+        "accept_edge": 546,
+        "data": null
+      },
+      {
+        "kind": "START",
+        "edge": 555,
+        "accept_seq": 22,
+        "accept_edge": 554,
+        "data": null
+      },
+      {
+        "kind": "COMPLETE",
+        "edge": 707,
+        "accept_seq": 22,
+        "accept_edge": 554,
+        "data": 106,
+        "full_frame_end": 714,
+        "early_by_clocks": 7
+      },
+      {
+        "kind": "START",
+        "edge": 725,
+        "accept_seq": 23,
+        "accept_edge": 724,
+        "data": null
+      },
+      {
+        "kind": "CANCEL",
+        "edge": 789,
+        "accept_seq": 23,
+        "accept_edge": 724,
+        "data": null
+      },
+      {
+        "kind": "START",
+        "edge": 795,
+        "accept_seq": 24,
+        "accept_edge": 794,
+        "data": null
+      },
+      {
+        "kind": "COMPLETE",
+        "edge": 947,
+        "accept_seq": 24,
+        "accept_edge": 794,
+        "data": 106,
+        "full_frame_end": 954,
+        "early_by_clocks": 7
+      },
+      {
+        "kind": "START",
+        "edge": 965,
+        "accept_seq": 25,
+        "accept_edge": 964,
+        "data": null
+      },
+      {
+        "kind": "CANCEL",
+        "edge": 1111,
+        "accept_seq": 25,
+        "accept_edge": 964,
+        "data": null
+      },
+      {
+        "kind": "START",
+        "edge": 1117,
+        "accept_seq": 26,
+        "accept_edge": 1116,
+        "data": null
+      },
+      {
+        "kind": "COMPLETE",
+        "edge": 1269,
+        "accept_seq": 26,
+        "accept_edge": 1116,
+        "data": 106,
+        "full_frame_end": 1276,
+        "early_by_clocks": 7
+      }
+    ],
+    "completion_early_by": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "interpretation": "Actual marker is stop-center+1; not full10N end. Existing complete frames have valid full pin waveform, but last-half-stop reset not tested in this batch; failure there remains a static risk, not an executed DUT failure."
+  },
+  {
+    "N": 234,
+    "events": [
+      {
+        "kind": "START",
+        "edge": 7,
+        "accept_seq": 1,
+        "accept_edge": 6,
+        "data": null
+      },
+      {
+        "kind": "COMPLETE",
+        "edge": 2230,
+        "accept_seq": 1,
+        "accept_edge": 6,
+        "data": 90,
+        "full_frame_end": 2346,
+        "early_by_clocks": 116
+      },
+      {
+        "kind": "START",
+        "edge": 2350,
+        "accept_seq": 2,
+        "accept_edge": 2349,
+        "data": null
+      },
+      {
+        "kind": "COMPLETE",
+        "edge": 4573,
+        "accept_seq": 2,
+        "accept_edge": 2349,
+        "data": 165,
+        "full_frame_end": 4689,
+        "early_by_clocks": 116
+      },
+      {
+        "kind": "START",
+        "edge": 4693,
+        "accept_seq": 4,
+        "accept_edge": 4692,
+        "data": null
+      },
+      {
+        "kind": "COMPLETE",
+        "edge": 6916,
+        "accept_seq": 4,
+        "accept_edge": 4692,
+        "data": 165,
+        "full_frame_end": 7032,
+        "early_by_clocks": 116
+      },
+      {
+        "kind": "START",
+        "edge": 7041,
+        "accept_seq": 5,
+        "accept_edge": 7040,
+        "data": null
+      },
+      {
+        "kind": "CANCEL",
+        "edge": 7043,
+        "accept_seq": 5,
+        "accept_edge": 7040,
+        "data": null
+      },
+      {
+        "kind": "START",
+        "edge": 7049,
+        "accept_seq": 6,
+        "accept_edge": 7048,
+        "data": null
+      },
+      {
+        "kind": "COMPLETE",
+        "edge": 9272,
+        "accept_seq": 6,
+        "accept_edge": 7048,
+        "data": 106,
+        "full_frame_end": 9388,
+        "early_by_clocks": 116
+      },
+      {
+        "kind": "START",
+        "edge": 9399,
+        "accept_seq": 7,
+        "accept_edge": 9398,
+        "data": null
+      },
+      {
+        "kind": "CANCEL",
+        "edge": 10335,
+        "accept_seq": 7,
+        "accept_edge": 9398,
+        "data": null
+      },
+      {
+        "kind": "START",
+        "edge": 10341,
+        "accept_seq": 8,
+        "accept_edge": 10340,
+        "data": null
+      },
+      {
+        "kind": "COMPLETE",
+        "edge": 12564,
+        "accept_seq": 8,
+        "accept_edge": 10340,
+        "data": 106,
+        "full_frame_end": 12680,
+        "early_by_clocks": 116
+      },
+      {
+        "kind": "START",
+        "edge": 12691,
+        "accept_seq": 9,
+        "accept_edge": 12690,
+        "data": null
+      },
+      {
+        "kind": "CANCEL",
+        "edge": 14799,
+        "accept_seq": 9,
+        "accept_edge": 12690,
+        "data": null
+      },
+      {
+        "kind": "START",
+        "edge": 14805,
+        "accept_seq": 10,
+        "accept_edge": 14804,
+        "data": null
+      },
+      {
+        "kind": "COMPLETE",
+        "edge": 17028,
+        "accept_seq": 10,
+        "accept_edge": 14804,
+        "data": 106,
+        "full_frame_end": 17144,
+        "early_by_clocks": 116
+      }
+    ],
+    "completion_early_by": [
+      116,
+      116,
+      116,
+      116,
+      116,
+      116
+    ],
+    "interpretation": "Actual marker is stop-center+1; not full10N end. Existing complete frames have valid full pin waveform, but last-half-stop reset not tested in this batch; failure there remains a static risk, not an executed DUT failure."
+  }
+]

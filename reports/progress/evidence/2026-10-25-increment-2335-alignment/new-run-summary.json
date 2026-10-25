@@ -1,0 +1,546 @@
+{
+  "new_DUT_runs": 11,
+  "successful_compiled_targets": 11,
+  "compiler_processes": 12,
+  "own_argument_order_failure_preserved": true,
+  "own_W06_time0_initialization_failure_and_v2_preserved": true,
+  "extra_observer_no_signal_writes": true,
+  "rows": [
+    {
+      "id": "wrap16",
+      "N": 16,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\wrap16.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/wrap16.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.063,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-wrap16\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-wrap16\\stderr.log"
+      },
+      "normal_finish": true,
+      "status": "PASS_LIMITED_FUNCTION",
+      "checks": 18022
+    },
+    {
+      "id": "wrap234",
+      "N": 234,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\wrap234.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/wrap234.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.109,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-wrap234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-wrap234\\stderr.log"
+      },
+      "normal_finish": true,
+      "status": "PASS_LIMITED_FUNCTION",
+      "checks": 240081
+    },
+    {
+      "id": "rx8",
+      "N": 8,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\rx8.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/rx8.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.062,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-rx8\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-rx8\\stderr.log"
+      },
+      "normal_finish": true,
+      "status": "PASS_LIMITED_FUNCTION",
+      "checks": 42188,
+      "inline_ledger": "PASS_IN_ORDER",
+      "shared_capture_order": "FAIL_VALIDATION_CAPTURE_NOT_RX_CORE",
+      "shared_capture_mismatches": 4,
+      "first_shared_capture_mismatches": [
+        {
+          "seq": 74,
+          "expected": [
+            1,
+            178
+          ],
+          "actual": [
+            2,
+            178
+          ],
+          "time_ps": 40815000
+        },
+        {
+          "seq": 75,
+          "expected": [
+            2,
+            178
+          ],
+          "actual": [
+            1,
+            178
+          ],
+          "time_ps": 40825000
+        },
+        {
+          "seq": 78,
+          "expected": [
+            1,
+            161
+          ],
+          "actual": [
+            2,
+            161
+          ],
+          "time_ps": 42435000
+        },
+        {
+          "seq": 79,
+          "expected": [
+            2,
+            161
+          ],
+          "actual": [
+            1,
+            161
+          ],
+          "time_ps": 42445000
+        }
+      ]
+    },
+    {
+      "id": "rx16",
+      "N": 16,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\rx16.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/rx16.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.094,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-rx16\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-rx16\\stderr.log"
+      },
+      "normal_finish": true,
+      "status": "PASS_LIMITED_FUNCTION",
+      "checks": 92732,
+      "inline_ledger": "PASS_IN_ORDER",
+      "shared_capture_order": "FAIL_VALIDATION_CAPTURE_NOT_RX_CORE",
+      "shared_capture_mismatches": 4,
+      "first_shared_capture_mismatches": [
+        {
+          "seq": 92,
+          "expected": [
+            1,
+            178
+          ],
+          "actual": [
+            2,
+            178
+          ],
+          "time_ps": 94955000
+        },
+        {
+          "seq": 93,
+          "expected": [
+            2,
+            178
+          ],
+          "actual": [
+            1,
+            178
+          ],
+          "time_ps": 94965000
+        },
+        {
+          "seq": 96,
+          "expected": [
+            1,
+            161
+          ],
+          "actual": [
+            2,
+            161
+          ],
+          "time_ps": 98175000
+        },
+        {
+          "seq": 97,
+          "expected": [
+            2,
+            161
+          ],
+          "actual": [
+            1,
+            161
+          ],
+          "time_ps": 98185000
+        }
+      ]
+    },
+    {
+      "id": "rx234",
+      "N": 234,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\rx234.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/rx234.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.656,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-rx234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-rx234\\stderr.log"
+      },
+      "normal_finish": true,
+      "status": "PASS_LIMITED_FUNCTION",
+      "checks": 889084,
+      "inline_ledger": "PASS_IN_ORDER",
+      "shared_capture_order": "FAIL_VALIDATION_CAPTURE_NOT_RX_CORE",
+      "shared_capture_mismatches": 4,
+      "first_shared_capture_mismatches": [
+        {
+          "seq": 50,
+          "expected": [
+            1,
+            178
+          ],
+          "actual": [
+            2,
+            178
+          ],
+          "time_ps": 857085000
+        },
+        {
+          "seq": 51,
+          "expected": [
+            2,
+            178
+          ],
+          "actual": [
+            1,
+            178
+          ],
+          "time_ps": 857095000
+        },
+        {
+          "seq": 54,
+          "expected": [
+            1,
+            161
+          ],
+          "actual": [
+            2,
+            161
+          ],
+          "time_ps": 903905000
+        },
+        {
+          "seq": 55,
+          "expected": [
+            2,
+            161
+          ],
+          "actual": [
+            1,
+            161
+          ],
+          "time_ps": 903915000
+        }
+      ]
+    },
+    {
+      "id": "rxneg",
+      "N": 16,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\rxneg.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/rxneg.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.047,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-rxneg\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-rxneg\\stderr.log"
+      },
+      "normal_finish": true,
+      "status": "PASS_SCOPED_NEGATIVE_CONTROLS"
+    },
+    {
+      "id": "txcapture",
+      "N": 16,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\txcapture.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/txcapture.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.047,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-txcapture\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-txcapture\\stderr.log"
+      },
+      "normal_finish": true,
+      "status": "PASS_SCOPED_NEGATIVE_CONTROLS"
+    },
+    {
+      "id": "w06-16",
+      "N": 16,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\w06-16.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/w06-16.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.031,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-w06-16\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-w06-16\\stderr.log"
+      },
+      "normal_finish": true,
+      "status": "FAIL_OWN_TB_TIME0_INITIALIZATION_PRESERVED",
+      "checks": 9613,
+      "actual_TX_accepts": [
+        [
+          3,
+          90
+        ],
+        [
+          196,
+          60
+        ],
+        [
+          359,
+          90
+        ],
+        [
+          520,
+          60
+        ]
+      ],
+      "rejects": 2,
+      "GPIO_accepts": 0
+    },
+    {
+      "id": "w06-234",
+      "N": 234,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\w06-234.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/w06-234.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.062,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-w06-234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-w06-234\\stderr.log"
+      },
+      "normal_finish": true,
+      "status": "FAIL_OWN_TB_TIME0_INITIALIZATION_PRESERVED",
+      "checks": 137797,
+      "actual_TX_accepts": [
+        [
+          3,
+          90
+        ],
+        [
+          2812,
+          60
+        ],
+        [
+          5155,
+          90
+        ],
+        [
+          7496,
+          60
+        ]
+      ],
+      "rejects": 2,
+      "GPIO_accepts": 0
+    },
+    {
+      "id": "w06v2-16",
+      "N": 16,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\w06v2-16.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/w06v2-16.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.046,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-w06v2-16\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-w06v2-16\\stderr.log"
+      },
+      "normal_finish": true,
+      "status": "PASS_W06_ORIGINAL_CONTRACT_BOUNDARY",
+      "checks": 9613,
+      "actual_TX_accepts": [
+        [
+          3,
+          90
+        ],
+        [
+          196,
+          60
+        ],
+        [
+          359,
+          90
+        ],
+        [
+          520,
+          60
+        ]
+      ],
+      "rejects": 2,
+      "GPIO_accepts": 0
+    },
+    {
+      "id": "w06v2-234",
+      "N": 234,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\w06v2-234.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/w06v2-234.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.063,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-w06v2-234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-w06v2-234\\stderr.log"
+      },
+      "normal_finish": true,
+      "status": "PASS_W06_ORIGINAL_CONTRACT_BOUNDARY",
+      "checks": 137797,
+      "actual_TX_accepts": [
+        [
+          3,
+          90
+        ],
+        [
+          2812,
+          60
+        ],
+        [
+          5155,
+          90
+        ],
+        [
+          7496,
+          60
+        ]
+      ],
+      "rejects": 2,
+      "GPIO_accepts": 0
+    }
+  ],
+  "hardware": false,
+  "CPU_CoreMark_runs": 0
+}

@@ -1,0 +1,47 @@
+{
+  "status": "READBACK_AND_ORIGINAL_PROTECTION_PASS",
+  "incoming_files_unchanged": 79,
+  "inherited_dependencies_unchanged": 14,
+  "native_input_originals_and_copies_unchanged": 11,
+  "stable_candidate_source_group_unchanged": 26,
+  "handoff_payloads_SHA_match": 10,
+  "report_SHA256": "323C306AAA8077D03271B84559F267D65F48250E3B9B6A12F392BF41F8143B67",
+  "reply_SHA256": "2354555E5B9CA305DBE1D5D9BFAB3E84EBEED59E574D2C2C1B9CB51EF494F41A",
+  "memory_readback": {
+    "CURRENT.md": {
+      "SHA256": "136BDE5DE0A9E91F568CA766B43B748AB926760AFE488B44335FE849401EA9D3",
+      "lines": 14
+    },
+    "INDEX.md": {
+      "SHA256": "58C4BBCBEAECDA0CDC43D762E62958073046B758BE0F79825D51A28495A6C211",
+      "lines": 69
+    },
+    "FACTS.md": {
+      "SHA256": "F8FB7100C020E3FF612F3D8FBC90CAF8B204F0D935B39A54C6C19E2899E623B1",
+      "lines": 1612
+    },
+    "DECISIONS.md": {
+      "SHA256": "35C71512B815D1437D5D3B3F6B474774D91B42795C86FD3051586175C52940C2",
+      "lines": 1256
+    },
+    "TODO.md": {
+      "SHA256": "AE589F2FEB10DEB4F467F42573398CE22ACC880C15A1B427E2DF6FCB4554213A",
+      "lines": 535
+    },
+    "COLLABORATION.md": {
+      "SHA256": "395FCFCC4B7B4A430B35AC328A5B29E381AE534EDC423B2C74FAE58FE9D657A2",
+      "lines": 425
+    }
+  },
+  "decision": "CONDITIONAL_ACCEPTANCE",
+  "native_runs": 11,
+  "own_failed_time0_runs_preserved": 2,
+  "own_compile_failure_preserved": true,
+  "core_or_received_TB_changed": false,
+  "CPU_CoreMark_PDS_runs": 0,
+  "stable": "F143",
+  "candidate": "F146_HELD",
+  "hardware": "STOPPED",
+  "external_message_sent": false,
+  "return_window": "2026-10-27T18:00:00+08:00"
+}

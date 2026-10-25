@@ -1,0 +1,208 @@
+{
+  "marker_controls": [
+    {
+      "case": "control-N16",
+      "actual": "PASS"
+    },
+    {
+      "case": "remove-W01",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W01",
+      "actual": "REJECT"
+    },
+    {
+      "case": "remove-W02",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W02",
+      "actual": "REJECT"
+    },
+    {
+      "case": "remove-W03",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W03",
+      "actual": "REJECT"
+    },
+    {
+      "case": "remove-W04",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W04",
+      "actual": "REJECT"
+    },
+    {
+      "case": "remove-W05",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W05",
+      "actual": "REJECT"
+    },
+    {
+      "case": "remove-W06",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W06",
+      "actual": "REJECT"
+    },
+    {
+      "case": "remove-W07",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W07",
+      "actual": "REJECT"
+    },
+    {
+      "case": "remove-W08",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W08",
+      "actual": "REJECT"
+    },
+    {
+      "case": "remove-W09",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W09",
+      "actual": "REJECT"
+    },
+    {
+      "case": "remove-W10",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W10",
+      "actual": "REJECT"
+    },
+    {
+      "case": "control-N234",
+      "actual": "PASS"
+    },
+    {
+      "case": "remove-W05-N234",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W05-N234",
+      "actual": "REJECT"
+    },
+    {
+      "case": "remove-W06-N234",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W06-N234",
+      "actual": "REJECT"
+    },
+    {
+      "case": "remove-W09-N234",
+      "actual": "REJECT"
+    },
+    {
+      "case": "duplicate-W09-N234",
+      "actual": "REJECT"
+    }
+  ],
+  "wrapper_limit_counterexamples": [
+    {
+      "case": "first-address",
+      "rejected": true,
+      "errors": [
+        "request seq=1 fields=('fc', '5a', '1111', '1', '0', 'reject') expected=('00', '5a', '1111', '1', '0', 'reject')"
+      ]
+    },
+    {
+      "case": "first-edge",
+      "rejected": true,
+      "errors": [
+        "first request edge=8 expected=9"
+      ]
+    },
+    {
+      "case": "nonfirst-edge-monotonic-false-time",
+      "rejected": false,
+      "errors": []
+    },
+    {
+      "case": "busy-field-flipped",
+      "rejected": false,
+      "errors": []
+    },
+    {
+      "case": "complete-frame-wrong-edge",
+      "rejected": false,
+      "errors": []
+    },
+    {
+      "case": "GPIO-wrong-seq-edge",
+      "rejected": false,
+      "errors": []
+    }
+  ],
+  "RX_failure_propagation": [
+    {
+      "case": "control",
+      "config": "PASS",
+      "case_status": "PASS"
+    },
+    {
+      "case": "nonzero",
+      "config": "FAIL",
+      "case_status": "FAIL"
+    },
+    {
+      "case": "truncated",
+      "config": "FAIL",
+      "case_status": "FAIL"
+    },
+    {
+      "case": "globalfail",
+      "config": "FAIL",
+      "case_status": "FAIL"
+    }
+  ],
+  "RX_membership_counterexample": {
+    "inline": [
+      [
+        1,
+        161
+      ],
+      [
+        1,
+        161
+      ],
+      [
+        1,
+        178
+      ]
+    ],
+    "shared": [
+      [
+        1,
+        161
+      ],
+      [
+        1,
+        178
+      ],
+      [
+        1,
+        178
+      ]
+    ],
+    "membership_crosscheck_pass": true,
+    "true_multiset_equal": false
+  },
+  "incoming_entrypoints_executed": false,
+  "new_DUT_runs": 0
+}

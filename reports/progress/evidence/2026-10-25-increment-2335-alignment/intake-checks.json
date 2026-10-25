@@ -1,0 +1,13 @@
+{
+  "status": "DIRECTORY_HASHES_PASS_NOT_FUNCTIONAL_ACCEPTANCE",
+  "files": 79,
+  "bytes": 13031245,
+  "manifest_entries": 78,
+  "changes": 76,
+  "old_SHA_matches": 15,
+  "source_index": 23,
+  "manifest_SHA": "F6D9D9709DA7E60EFA30A83C1D8985D17445AFB0CFD446AB542C53DCB0B9539C",
+  "ZIP_SHA": "90C45380DEFBE503484443276AA0D23CC8C5BDB635F6829960CD55F4F8181441",
+  "ZIP_SHA_independently_verified": false,
+  "new_DUT_runs": 0
+}

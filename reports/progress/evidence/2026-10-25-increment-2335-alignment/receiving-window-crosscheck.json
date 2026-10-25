@@ -1,0 +1,73 @@
+{
+  "JSONs": [
+    {
+      "path": "D:\\A_FPGA_Comp\\deliveries\\increment-review-20261024-2335-v01\\POSTFLIGHT.json",
+      "SHA256": "C0DD49ED82F7D5EE9E6D147FDF4443032A38B991226156F6B2CD440535988D77",
+      "top_keys": [
+        "date_beijing",
+        "received_files_checked",
+        "originals_unchanged",
+        "new_compiles",
+        "new_DUT_runs",
+        "received_scripts_executed",
+        "public_memory_modified",
+        "git_write_or_push",
+        "reading_rows",
+        "teammate_questions_required",
+        "requires_teammate_reply",
+        "prompt_sha256"
+      ]
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\deliveries\\increment-review-20261024-2335-v01\\READ_ONLY_CHECKS.json",
+      "SHA256": "4E01D1AB6F827AE5CCB308AA9A88775EDE05F1FAECA91A7604A61623D30A46BA",
+      "top_keys": [
+        "scope",
+        "incoming_files",
+        "bytes",
+        "reparse_points",
+        "manifest",
+        "changed_files",
+        "source_index",
+        "rx_run_id",
+        "rx_teammate_result_counts",
+        "wrapper_run_id",
+        "wrapper_teammate_result_counts",
+        "new_compiles",
+        "new_DUT_runs",
+        "received_scripts_executed",
+        "public_memory_modified"
+      ]
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\deliveries\\increment-review-20261024-2335-v01\\RECEIVED_FILES.json",
+      "SHA256": "598D8015CC98A28B246BF61EACCB82049A2A471AEE47463459BE2A2348CAD905",
+      "top_keys": [
+        "date_beijing",
+        "root",
+        "files"
+      ]
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\deliveries\\increment-review-20261024-2335-v01\\SUPPLEMENT_CHECKS_20261025.json",
+      "SHA256": "92B355C0F1FF864841FD7355EE61E153CE270EDC91DBAF34348223706AE53F90",
+      "top_keys": [
+        "date_beijing",
+        "scope",
+        "teammate_zip_sha256_claim",
+        "zip_independently_verified",
+        "manifest_sha256",
+        "matches_teammate_manifest_claim",
+        "received_files_checked",
+        "received_files_unchanged",
+        "new_DUT_runs",
+        "public_memory_modified",
+        "updated_prompt_sha256"
+      ]
+    }
+  ],
+  "actual_manifest_SHA": "F6D9D9709DA7E60EFA30A83C1D8985D17445AFB0CFD446AB542C53DCB0B9539C",
+  "actual_files": 79,
+  "independent_mainline_intake": "intake-checks.json",
+  "original_window_records_unchanged": true
+}

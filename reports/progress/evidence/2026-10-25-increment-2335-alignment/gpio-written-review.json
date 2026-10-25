@@ -1,0 +1,24 @@
+{
+  "core_SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+  "validation_inputs": [
+    {
+      "path": "D:\\A_FPGA_Comp\\队员成果接收\\receiving-window-supplement-20261022-2214\\work\\peripherals\\gpio\\tests\\gpio-plan.json",
+      "SHA256": "BACF07BE0FD179B532B1BF51AD17EE1910DC6B10E0174C6ED887C6C5D4EB47BE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\队员成果接收\\receiving-window-supplement-20261022-2214\\work\\peripherals\\gpio\\tb\\tb_gpio.sv",
+      "SHA256": "D1C65938EDFB1B4519452503AB32A52F3F9128475078D2B509FFB4747942CF43"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\队员成果接收\\receiving-window-supplement-20261022-2214\\work\\peripherals\\gpio\\tb\\tb_gpio_neg.sv",
+      "SHA256": "9479C016F5F91BFF40AF3C13AD32DA3F10EF8038FB2964ABA196C3D80E247038"
+    }
+  ],
+  "prior_primary_receipt": "D:\\A_FPGA_Comp\\work\\peripherals\\2026-10-23-tx-gpio-reproduction\\review-result.json",
+  "F123_core_matrix": "W1/W8/W16 plus negative verified previously, not rerun",
+  "current_wrapper_gpio": "N16 six write accepts and two-stage checks independently reproduced now; no core change",
+  "function_decision": "可接收_有限功能",
+  "legacy_entry_decision": "Historical F123 cleanup failure retained; shared-runner remedies do not prove every old entry migrated; do not claim old immutable entry repaired",
+  "new_GPIO_core_standalone_DUT_runs": 0,
+  "hardware": "STOPPED"
+}
