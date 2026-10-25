@@ -1,0 +1,1108 @@
+{
+  "source": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\memory_model.sv",
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cpu.v",
+      "SHA256": "0409B47DB67B285E4ACF622D6D2646C3E560ED0349401CB2F2D9DCC2A92F8B7C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\memory_model.sv",
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\soc_top.sv",
+      "SHA256": "7ADB743660527720FD05EE18EDDE2A4E15854D30A67F9537A1EE163104CB80CF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    }
+  ],
+  "pds_inventory": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\board_pins.fdc",
+      "bytes": 4863,
+      "SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\build.pds",
+      "bytes": 9649,
+      "SHA256": "A6DE273A76B3ABF22F3100538BDB14983D0AB4415E88725BF69131E8E0FDFCA8",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\build.tcl",
+      "bytes": 1032,
+      "SHA256": "BD20DDD858C625294ADA6FAF51E6E1032E7ADB3E5A7EE94E40076307F9B17E51",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\clock_27mhz.fdc",
+      "bytes": 101,
+      "SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\compile\\board_top.cmr",
+      "bytes": 2550,
+      "SHA256": "0EC2C10CAC938248468A0CA37547FFBFDD4C65514EF41B904AD04C0C0C68DDA0",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\compile\\board_top_comp.adf",
+      "bytes": 339480,
+      "SHA256": "9DDDF382B462B5AF95EA94C5253E1738B8514EC7B7C9748E64BC8F27C2702B1B",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\compile\\cmr.db",
+      "bytes": 35224,
+      "SHA256": "01E2EA9F0B0CADB62FBFDA64FAEB2DD18D9F4741E03402F1E1B7DEC3529BD601",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\compile\\error_info.txt",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\compile\\formal.pvf",
+      "bytes": 1907,
+      "SHA256": "2E371D852FF4A3A2193632C4F42EC6A497E89101DFF53493C103FE4521DA0598",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\compile\\include_relation.txt",
+      "bytes": 26,
+      "SHA256": "E0419347DC8B702AD892593F7095099217F5DE2062F5D46C3DE740909CBC5960",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\compile\\parse_design\\run.log",
+      "bytes": 1460,
+      "SHA256": "ABE09FF1893726E286B25975C95E519334B4FFDF700804BA7E324448BE618B88",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\compile\\parse_design\\screen.pds",
+      "bytes": 2966,
+      "SHA256": "6F7C8F00B8329FBFF0AC64DB110EAD18DD9DE6EDEA132560FA197AEAE23F8932",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\compile\\parse_design\\screen.tcl",
+      "bytes": 1158,
+      "SHA256": "8CC2556AE713B562F29333549E81F1CB29F8DECD37B4D09DEA63A659392760A5",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\compile\\run.log",
+      "bytes": 26668,
+      "SHA256": "E7FFD99EBB5C60301A473B5991E8DCFB46EFEEC642868F10EC136385214D8F0B",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\constraint_check\\constraint_check.ccr",
+      "bytes": 962,
+      "SHA256": "D43F48AF5E25F0AD56870E785C103766F7FFCEDBF25BAECAE818430C67E4EE98",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\device_map\\board_top.dmr",
+      "bytes": 30855,
+      "SHA256": "4A9B9E51095280264E38BB9C8AA5E59F0AE363427D100AFCF904B5FA82771AD1",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\device_map\\board_top.pcf",
+      "bytes": 1276,
+      "SHA256": "22278E28479F8467C120ED005D39C9F2FF6D059143D3E5090BC8E27610B29B88",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\device_map\\board_top_dmr.prt",
+      "bytes": 14052,
+      "SHA256": "EBEADF2038419D1BA18C7C11A361290E81ABE4CAF83140166D2B4623946E393A",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\device_map\\board_top_map.adf",
+      "bytes": 439165,
+      "SHA256": "ACB36D5BE0A82A94D9864286C22D1DB947B6D97309ED554113178CD286F88C85",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\device_map\\dmr.db",
+      "bytes": 119972,
+      "SHA256": "3C6F5533F2C62DF6A077CFF784A61A957EA74665AC8A7128B781D550267AE41D",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\device_map\\formal.pvf",
+      "bytes": 317,
+      "SHA256": "E63C18BA3D0A395BDF894BD51157DD27BAF3426FBBED1309C4D8AD4E21FECCD8",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\device_map\\run.log",
+      "bytes": 4355,
+      "SHA256": "63D8B7AF23C35FD682CB7931C6B61D35AE243B895DD872ED55C1D8D36B513D1C",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\flow.log",
+      "bytes": 72784,
+      "SHA256": "A1142756F7D002F9C18458EBE0B145385010F0E9DC22C05B7822C0DC1DE0EC50",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\impl.tcl",
+      "bytes": 1616,
+      "SHA256": "FFEBAB6A8A861DE00276DF18FD7E75F878922F81B2E3CD2EB4343B4C8D23E477",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\multiseed_summary.csv",
+      "bytes": 1665,
+      "SHA256": "8E0C56FF29E5A9F476C266B1EBB88C5DC049C57F926AC4EDFA7046C8921D6D84",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\place_route\\board_top.prr",
+      "bytes": 20260,
+      "SHA256": "6BECD7D25A60E782959518ABDDD22B2D08C4DBFA9E91F4D1B8552A9DC26CC36D",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\place_route\\board_top_plc.adf",
+      "bytes": 501901,
+      "SHA256": "74389D21E2923441C7076F8EA278A9C86AD4F7A907C22C1872BF280553711AB3",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\place_route\\board_top_pnr.adf",
+      "bytes": 2129923,
+      "SHA256": "CB70485D78D9F0BFC5F26A5CC61BB19B4919AFC326F7C77CAD648BC1532FEB38",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\place_route\\board_top_pnr.netlist",
+      "bytes": 471317,
+      "SHA256": "5732652E48A4AA51B00DBF98A90953FACFAED7F8A2101E3D81826464F993E06E",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\place_route\\board_top_prr.prt",
+      "bytes": 14234,
+      "SHA256": "C9AB7C345195283BAFB4E7CCE6A5096A6A3FA0B85CACB867906C4961EAF86340",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\place_route\\board_top_timing_summary_after_hold_fix.txt",
+      "bytes": 6303,
+      "SHA256": "AA0592E72EA7555BEACA62562E3D3DBCBD7D89EA7C95439858BCA6607725002C",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\place_route\\clock_utilization.txt",
+      "bytes": 7110,
+      "SHA256": "4B883F953999900246D9BD449BBC91B963A0BBCC770AA225793BA166811D0E81",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\place_route\\layers.txt",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\place_route\\prr.db",
+      "bytes": 125831,
+      "SHA256": "6659A95D60EA331EB08C2FFF1B0E11145E6F4E2A62FD753C7917332761185D84",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\place_route\\run.log",
+      "bytes": 24132,
+      "SHA256": "F5240A6EEC6BA83BAEA29A386147884693D772E6F2BB1DA9F4D9252A0BD8715D",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\report_timing\\board_top.rtr",
+      "bytes": 197163,
+      "SHA256": "15BD53B72929F42C4D8294C19BE50C992BFF21B4D03E2692229472A54847D1E3",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\report_timing\\board_top_rtp.adf",
+      "bytes": 5384,
+      "SHA256": "8E777F1A478C5AD230FE84F445A1C564B898C8BDEFF852898C7CCB8DE1734178",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\report_timing\\rtr.db",
+      "bytes": 1466603,
+      "SHA256": "696D5E528C0475212E1082A7C3F4E7D069819868F3B0AB29572012BE1FEB47FC",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\report_timing\\run.log",
+      "bytes": 2215,
+      "SHA256": "7F2A9AC138BA214B980403C96CE13D8344452CAF4E24597D1E7BD64CCD5E1CB8",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\run.log",
+      "bytes": 77037,
+      "SHA256": "AB6A7AD0F881FFA874D8CDB43AD969A6EA754BDB9E62D731BB27402DAF9D22F0",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\alu.v",
+      "bytes": 1021,
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\board_reset_sync.sv",
+      "bytes": 504,
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\board_top.sv",
+      "bytes": 817,
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\control.v",
+      "bytes": 2988,
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\cpu.v",
+      "bytes": 17416,
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\cycle_counter64.sv",
+      "bytes": 395,
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\gpio_core.v",
+      "bytes": 2087,
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\init_tables.svh",
+      "bytes": 132364,
+      "SHA256": "E81FD2B446C2446C2D32DB0D45C9BEDA54D0A6A5B670064F021125E8C7E22E1A",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\local_regif_txgpio_m1.v",
+      "bytes": 3732,
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\memory_model.sv",
+      "bytes": 142233,
+      "SHA256": "7DB1F8A1049D447D7C8A459FFEDC60680E25AD30B7A2368229B171EB69F07BAE",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\regfile.v",
+      "bytes": 666,
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\soc_data_adapter.sv",
+      "bytes": 1526,
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\soc_top.sv",
+      "bytes": 1872,
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\uart_tx.v",
+      "bytes": 5195,
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\synthesize\\add_sub_carrychain.log",
+      "bytes": 2577,
+      "SHA256": "1AAEFC53F04B635FFA6B6FEF3ECB75DF1028951305D272A0452C527024EC07D9",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\synthesize\\board_top.snr",
+      "bytes": 100739,
+      "SHA256": "8F2F743513AD61F0DE7B7E0DE5F70DECA515AED670727CE403513037A503AEC1",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\synthesize\\board_top_controlsets.txt",
+      "bytes": 6045,
+      "SHA256": "218B315A1A44AED58E6D1BBD9DD538D15F895198A9815CE8256D1FE7F886D630",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\synthesize\\board_top_syn.adf",
+      "bytes": 556391,
+      "SHA256": "EF22FD61A23B0F3ACB6BD5F1F48D2704B4E02ACF465DC62B48DD668212D53D31",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\synthesize\\board_top_syn.vm",
+      "bytes": 2133084,
+      "SHA256": "BBE2782F0731F0AB4409DE59AE322CCC524982ACAEF3AA79C19ED85AD8AE2D19",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\synthesize\\formal.pvf",
+      "bytes": 3517,
+      "SHA256": "24CEBDFB6F60442F8FFA89C4EA4A9D177CFF9D9987F8E60E10DD954B920EB83A",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\synthesize\\run.log",
+      "bytes": 12513,
+      "SHA256": "E54FCB7DD646F8B8DC9025E172479479DDB0448D2BDCF182AC34290FF9310277",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\synthesize\\snr.db",
+      "bytes": 592591,
+      "SHA256": "478EEAE9396813CFB9C44BF6E4170CAE74F2E05A131B29738FA5EDBC4A295014",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\board_pins.fdc",
+      "bytes": 4863,
+      "SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\build.pds",
+      "bytes": 9649,
+      "SHA256": "FDC6002677AF2929E335D2FD76BE56F372387D5ADFBE50B599A74B789DB9EE58",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\build.tcl",
+      "bytes": 1032,
+      "SHA256": "BD20DDD858C625294ADA6FAF51E6E1032E7ADB3E5A7EE94E40076307F9B17E51",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\clock_27mhz.fdc",
+      "bytes": 101,
+      "SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\compile\\board_top.cmr",
+      "bytes": 2802,
+      "SHA256": "4B18FE878488C65815383649359B33128C74FCAD82E40B75099C4A223A737091",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\compile\\board_top_comp.adf",
+      "bytes": 348947,
+      "SHA256": "950FF528A4EF07F5DFD2B6565180FC74327C74B93A890CE95792AF7E94B8AE5C",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\compile\\cmr.db",
+      "bytes": 36981,
+      "SHA256": "985E73E0BD877E6CE0D20C81D20E8585DB3FA73FE7275E4FA16DF8B7E746A861",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\compile\\error_info.txt",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\compile\\formal.pvf",
+      "bytes": 1907,
+      "SHA256": "7899951AD4E68DCB7F7F53E53390BDC1A34E200AFEB7A3A6939F9EAEB3ADBF5B",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\compile\\include_relation.txt",
+      "bytes": 26,
+      "SHA256": "E0419347DC8B702AD892593F7095099217F5DE2062F5D46C3DE740909CBC5960",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\compile\\parse_design\\run.log",
+      "bytes": 1628,
+      "SHA256": "4D092366FECB106E57731A8B4D88AAAA4B31714F5CCBF660DE5D9139CFB52C14",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\compile\\parse_design\\screen.pds",
+      "bytes": 2966,
+      "SHA256": "738AB0051F2F997F7E1D48C5D0047BB1AAAFED2BB54DA7688E1839E0333E1AD1",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\compile\\parse_design\\screen.tcl",
+      "bytes": 1326,
+      "SHA256": "668E3CA2DCD7CBF76E6970C3CDBC194DEBF584517FB80F73DC172FB8805C9AB4",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\compile\\run.log",
+      "bytes": 28815,
+      "SHA256": "CD99F373367890464FCAD261F138C97A540C2F7062EE6374D40EC561EFFCA5A0",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\constraint_check\\constraint_check.ccr",
+      "bytes": 986,
+      "SHA256": "632253CC4DED6A11C7CBC9C15C9D0CB6197C4E94519DE07D6452CCC09F563E32",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\device_map\\board_top.dmr",
+      "bytes": 30320,
+      "SHA256": "5B7C9D414C63EC321E22539B5676056C983D8A66BF709BC8D623C612520B5BEC",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\device_map\\board_top.pcf",
+      "bytes": 1276,
+      "SHA256": "4F4DC13585D76A949DCF1C7FA904FFC4F36BEDEBE11F9D0BF87AA06B96EC9685",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\device_map\\board_top_dmr.prt",
+      "bytes": 14052,
+      "SHA256": "EBEADF2038419D1BA18C7C11A361290E81ABE4CAF83140166D2B4623946E393A",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\device_map\\board_top_map.adf",
+      "bytes": 454671,
+      "SHA256": "22CE111047FD789BFCC8064856649A1885283D1812FF88C877F2C071A110E689",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\device_map\\dmr.db",
+      "bytes": 120237,
+      "SHA256": "327B3BA5B64DEBF330960F403257ED1AF46BB981A69F23D9AD1F1EC7121938E7",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\device_map\\formal.pvf",
+      "bytes": 317,
+      "SHA256": "B3E1D74E5F9864F3452D70849E8A774AE9603811EA0D3FBA0EB6EA810093B9B8",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\device_map\\run.log",
+      "bytes": 4504,
+      "SHA256": "0B4BA3131D961238D5DE74A92430C1DB2B8C1375F61B30F5A549048BCC0C2981",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\flow.log",
+      "bytes": 75171,
+      "SHA256": "AE3C37A85A746B57BE89703B627CFDCB2D01EED3490D4ADA0B3DB35E31717FF5",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\impl.tcl",
+      "bytes": 1796,
+      "SHA256": "FFBF902CB5103C8E95627F44082B1A22201E86FF954E69D0A5E4E06CA0DE110F",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\multiseed_summary.csv",
+      "bytes": 1665,
+      "SHA256": "1BA15A2A45802F5D5FC1DDF2893D82BA07F5FC5EFCF0492E66F8CDFA8FF7E344",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\place_route\\board_top.prr",
+      "bytes": 20416,
+      "SHA256": "7CA4B8A4ED915E753213E915DADCA4DDAAA77256008D2F5CD5080D2119F0060D",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\place_route\\board_top_plc.adf",
+      "bytes": 526544,
+      "SHA256": "1CBDA7CE0BF12CA026A6AB27668812F916F5393C9A7D8F9BC182084C4611776C",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\place_route\\board_top_pnr.adf",
+      "bytes": 2227343,
+      "SHA256": "4400F4908AE5A7C9F2FD7E8E2D73C66E1A008DB0BAC564F88A5891F556CDDB8F",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\place_route\\board_top_pnr.netlist",
+      "bytes": 490506,
+      "SHA256": "C0BD9356D7C043FFD4A0575B8444909CD2D84A866AE5B0124F51C3DF9C53F87B",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\place_route\\board_top_prr.prt",
+      "bytes": 14234,
+      "SHA256": "C9AB7C345195283BAFB4E7CCE6A5096A6A3FA0B85CACB867906C4961EAF86340",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\place_route\\board_top_timing_summary_after_hold_fix.txt",
+      "bytes": 6303,
+      "SHA256": "FD7D28E1D6D15509B2021E2CC1CCE42F4712F4AF3BA9645FE96AD030BDA1F450",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\place_route\\clock_utilization.txt",
+      "bytes": 7110,
+      "SHA256": "C726AFCB8EF223BEA169C71BC4FCECAA41907B1D623930558C595C050902228B",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\place_route\\layers.txt",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\place_route\\prr.db",
+      "bytes": 125831,
+      "SHA256": "E15B70B4F9A754E2F59D042B521D044C265D83EF911868720CED764B3CABDD7A",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\place_route\\run.log",
+      "bytes": 24161,
+      "SHA256": "99BF9C72E08ACD4DED0A5ADE35C7B72D363F130B4F3DC25232146355D4E9573A",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\report_timing\\board_top.rtr",
+      "bytes": 211033,
+      "SHA256": "C5DAC57E04F64B8528C0AEDB432A1EE3C67D155DFF4E0D173BC7BCEA85BCF83A",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\report_timing\\board_top_rtp.adf",
+      "bytes": 6165,
+      "SHA256": "551BC0648637026ADD709522EDE42E3C9AFCF0BCF737CAF44C460605E1CD4BF7",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\report_timing\\rtr.db",
+      "bytes": 1542691,
+      "SHA256": "A53CF0131561475719D011032A76340F8310D9FC46F810CB7424CE7D7CD5C5C0",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\report_timing\\run.log",
+      "bytes": 2215,
+      "SHA256": "29AD6B944699D1F67B560B481B78E859790B07C75E300BA36246A52C8E88358A",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\run.log",
+      "bytes": 79784,
+      "SHA256": "9DE2DC38A4DFB6555D855E7868B14569B4AAEEACB265BF2F9E44E0D25A4A2DB7",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\alu.v",
+      "bytes": 1021,
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\board_reset_sync.sv",
+      "bytes": 504,
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\board_top.sv",
+      "bytes": 817,
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\control.v",
+      "bytes": 2988,
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\cpu.v",
+      "bytes": 18982,
+      "SHA256": "0409B47DB67B285E4ACF622D6D2646C3E560ED0349401CB2F2D9DCC2A92F8B7C",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\cycle_counter64.sv",
+      "bytes": 395,
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\gpio_core.v",
+      "bytes": 2087,
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\init_tables.svh",
+      "bytes": 132364,
+      "SHA256": "E81FD2B446C2446C2D32DB0D45C9BEDA54D0A6A5B670064F021125E8C7E22E1A",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\local_regif_txgpio_m1.v",
+      "bytes": 3732,
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\memory_model.sv",
+      "bytes": 142233,
+      "SHA256": "7DB1F8A1049D447D7C8A459FFEDC60680E25AD30B7A2368229B171EB69F07BAE",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\regfile.v",
+      "bytes": 666,
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\soc_data_adapter.sv",
+      "bytes": 1526,
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\soc_top.sv",
+      "bytes": 1925,
+      "SHA256": "7ADB743660527720FD05EE18EDDE2A4E15854D30A67F9537A1EE163104CB80CF",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\source\\uart_tx.v",
+      "bytes": 5195,
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\synthesize\\add_sub_carrychain.log",
+      "bytes": 2801,
+      "SHA256": "5B8174ABFF1102ADEF137C90311C987F8FEE2067B98091321A65EEFB0BE7D214",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\synthesize\\board_top.snr",
+      "bytes": 106241,
+      "SHA256": "D040C02E2C6C6EC32EB8505BEC82813AA95F535513A28963FC6041CAED5D6DAC",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\synthesize\\board_top_controlsets.txt",
+      "bytes": 6177,
+      "SHA256": "E49A8ECC1B752240DC9F7A9FA2184665840601D0066F725D7312D4EB43E81D3D",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\synthesize\\board_top_syn.adf",
+      "bytes": 564998,
+      "SHA256": "9142DE84FF84C7C200B24927937EFE2CA3CDAD061204F8C055D3BA2FEEDDDDBC",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\synthesize\\board_top_syn.vm",
+      "bytes": 2191347,
+      "SHA256": "805F095F7E41779097D89E6B7309830BDC1B8B527C73C26ECF52A6E7DFB51F23",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\synthesize\\formal.pvf",
+      "bytes": 3517,
+      "SHA256": "D2C0F5FDDDCEBE1ACB208DBD995DAE30741A83556C86F802679AD316B179571F",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\synthesize\\run.log",
+      "bytes": 12514,
+      "SHA256": "9420ED2FA57A99E8035460D3D95E91476279AD3E683A3F4E3A745BA3E92A0F5F",
+      "classification": "text/source or tool report",
+      "contents_not_executed": true
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\synthesize\\snr.db",
+      "bytes": 617348,
+      "SHA256": "F7CB36768FE4A77ACE840A0974B3F89BE655E9932DDB1C4889D9B19410ADF3F2",
+      "classification": "opaque tool database; not decoded",
+      "contents_not_executed": true
+    }
+  ],
+  "warning_blocks": [
+    {
+      "label": "old",
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\flow.log",
+      "SHA256": "A1142756F7D002F9C18458EBE0B145385010F0E9DC22C05B7822C0DC1DE0EC50",
+      "first_line": 277,
+      "last_line": 295,
+      "warning_count": 7,
+      "stage_lines": [
+        "Start sdm2adm.",
+        "W: Loop was found during constant probe.",
+        "W: Loop was found during constant probe.",
+        "I: Constant propagation done on N29 (bmsWIDEMUX).",
+        "I: Constant propagation done on N45 (bmsWIDEMUX).",
+        "I: Constant propagation done on N408332 (bmsWIDEMUX).",
+        "W: Loop was found during constant probe.",
+        "W: Loop was found during constant probe.",
+        "W: Loop was found during constant probe.",
+        "W: Loop was found during constant probe.",
+        "W: Loop was found during constant probe.",
+        "I: Constant propagation done on N18 (bmsWIDEMUX).",
+        "I: Constant propagation done on N23 (bmsWIDEMUX).",
+        "I: Constant propagation done on N5 (bmsWIDEMUX).",
+        "I: Constant propagation done on N20 (bmsWIDEMUX).",
+        "I: Constant propagation done on N25 (bmsWIDEMUX).",
+        "I: Constant propagation done on N29 (bmsWIDEMUX).",
+        "I: Constant propagation done on N48 (bmsWIDEMUX).",
+        "Executing : sdm2adm successfully. Time elapsed: 0.059s wall, 0.062s user + 0.000s system = 0.062s CPU (106.0%)"
+      ]
+    },
+    {
+      "label": "new",
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\flow.log",
+      "SHA256": "AE3C37A85A746B57BE89703B627CFDCB2D01EED3490D4ADA0B3DB35E31717FF5",
+      "first_line": 278,
+      "last_line": 297,
+      "warning_count": 8,
+      "stage_lines": [
+        "Start sdm2adm.",
+        "W: Loop was found during constant probe.",
+        "W: Loop was found during constant probe.",
+        "I: Constant propagation done on N29 (bmsWIDEMUX).",
+        "I: Constant propagation done on N45 (bmsWIDEMUX).",
+        "I: Constant propagation done on N408332 (bmsWIDEMUX).",
+        "W: Loop was found during constant probe.",
+        "W: Loop was found during constant probe.",
+        "W: Loop was found during constant probe.",
+        "W: Loop was found during constant probe.",
+        "W: Loop was found during constant probe.",
+        "W: Loop was found during constant probe.",
+        "I: Constant propagation done on N5 (bmsWIDEMUX).",
+        "I: Constant propagation done on N20 (bmsWIDEMUX).",
+        "I: Constant propagation done on N25 (bmsWIDEMUX).",
+        "I: Constant propagation done on N29 (bmsWIDEMUX).",
+        "I: Constant propagation done on N48 (bmsWIDEMUX).",
+        "I: Constant propagation done on N18 (bmsWIDEMUX).",
+        "I: Constant propagation done on N23 (bmsWIDEMUX).",
+        "Executing : sdm2adm successfully. Time elapsed: 0.058s wall, 0.016s user + 0.047s system = 0.062s CPU (107.8%)"
+      ]
+    }
+  ],
+  "help": [
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\helpDoc_pango.qch",
+      "SHA256": "CA2D9A07DB35D49FBF9BB582200845E6F32430798FADE1B40506BFAB7640E577",
+      "text_entries_read": 18,
+      "unreadable": [],
+      "exact_warning_pages": [],
+      "general_loop_pages": [
+        "Pango_Design_Suite_User_Guide.htm"
+      ],
+      "interpretation": "Generic Loops/CL179/CL181 material is not an official interpretation of the different sdm2adm warning"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\syn\\lib\\html\\synerrmsg.qch",
+      "SHA256": "9E0FD09FAE37E46F981ABCD00F4EA129FCE0CAEA8B01BDCDF813F4BF5432AE0C",
+      "text_entries_read": 1392,
+      "unreadable": [],
+      "exact_warning_pages": [],
+      "general_loop_pages": [
+        "html/errormessages/ch15_CG209.60.56.html",
+        "html/errormessages/ch20_CL168.65.04.html",
+        "html/errormessages/ch20_CL168.65.05.html",
+        "html/errormessages/ch20_CL168.65.06.html",
+        "html/errormessages/ch20_CL168.65.07.html",
+        "html/errormessages/ch20_CL168.65.08.html",
+        "html/errormessages/ch32_FX103.72.04.html",
+        "html/errormessages/ch4_BN100.51.20.html",
+        "html/errormessages/ch4_BN100.51.21.html",
+        "html/errormessages/ch4_BN100.51.35.html",
+        "html/errormessages/ch4_BN100.51.41.html",
+        "html/errormessages/ch4_BN100.51.42.html"
+      ],
+      "interpretation": "Generic Loops/CL179/CL181 material is not an official interpretation of the different sdm2adm warning"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\syn\\lib\\html\\fpgahelp.qch",
+      "SHA256": "0609F0DB048930C99B03DE4033473E6CFF502D9F94BFC35A52117C988ACE07B4",
+      "text_entries_read": 1765,
+      "unreadable": [],
+      "exact_warning_pages": [],
+      "general_loop_pages": [
+        "html/fpga_hdlref/ch10-vhdl.46.23.html",
+        "html/fpga_hdlref/ch10-vhdl.46.37.html",
+        "html/fpga_hdlref/ch10-vhdl.46.54.html",
+        "html/fpga_hdlref/ch8-verilog.44.37.html",
+        "html/fpga_hdlref/ch8-verilog.44.48.html",
+        "html/fpga_hdlref/ch8-verilog.44.60.html",
+        "html/fpga_ug/ch16_gated_clocks.19.09.html",
+        "html/tcl/template/c_print.txt",
+        "html/tcl/template/find.txt"
+      ],
+      "interpretation": "Generic Loops/CL179/CL181 material is not an official interpretation of the different sdm2adm warning"
+    }
+  ],
+  "web_search": {
+    "official_domain": "pangomicro.com",
+    "queries": [
+      "\"Loop was found during constant probe\"",
+      "PDS \"组合环\""
+    ],
+    "result": "No search results; not evidence of absent errata",
+    "downloaded": false
+  },
+  "uncovered": [
+    "Opaque .db/.adf intermediate graphs cannot be attributed by current read-only text exports",
+    "PNR export lists instances/pins/nets but no pin-to-net mapping",
+    "No tool execution or complete PDF/help-image content search this phase",
+    "No official interpretation of the exact warning obtained"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "date_beijing": "2026-10-25",
+  "decision": "D141",
+  "authorization": "User continued after F146 recommendation: read-only warning analysis",
+  "base_git": "c92bb98b12deaad52aa0dcc7e16bb747204b6f4f",
+  "changes_allowed": "new analysis/report/memory only",
+  "compiler_runs": 0,
+  "DUT_runs": 0,
+  "PDS_runs": 0,
+  "hardware": "STOPPED",
+  "candidate_promoted": false
+}

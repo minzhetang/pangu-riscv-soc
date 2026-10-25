@@ -1,0 +1,86 @@
+{
+  "status": "CONFIRMED_SHARED_COARSE_FALSE_POSITIVE",
+  "cases": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\synthesize\\board_top_syn.vm",
+      "SHA256": "BBE2782F0731F0AB4409DE59AE322CCC524982ACAEF3AA79C19ED85AD8AE2D19",
+      "module": "cpu",
+      "instance": "N473[15]",
+      "primitive": "GTP_LUT6D",
+      "Z_connection": "mem_load_half[15]",
+      "Z5_connection": [
+        "mem_load_data",
+        "[",
+        "31",
+        "]"
+      ],
+      "I4_connection": [
+        "_N1903"
+      ],
+      "I5_actual": "1'b1",
+      "Z_line": [
+        30360
+      ],
+      "INIT": [
+        "64'b1110010011100100111001001110010011110000111111111111000000000000"
+      ],
+      "unconstrained_input_sensitivity": [
+        "I0",
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "actual_tied_input_sensitivity": [
+        "I0",
+        "I1",
+        "I2"
+      ],
+      "independent_mux_equation_checks": 32,
+      "conclusion": "The graph feedback through I4 to Z disappears with actual I5=1; a shared coarse-analysis false positive, not proof of origin of any PDS warning",
+      "new_DUT_runs": 0
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\synthesize\\board_top_syn.vm",
+      "SHA256": "805F095F7E41779097D89E6B7309830BDC1B8B527C73C26ECF52A6E7DFB51F23",
+      "module": "cpu",
+      "instance": "N502[15]",
+      "primitive": "GTP_LUT6D",
+      "Z_connection": "mem_load_half[15]",
+      "Z5_connection": [
+        "mem_load_data",
+        "[",
+        "31",
+        "]"
+      ],
+      "I4_connection": [
+        "_N1633"
+      ],
+      "I5_actual": "1'b1",
+      "Z_line": [
+        31489
+      ],
+      "INIT": [
+        "64'b1110010011100100111001001110010011110000111111111111000000000000"
+      ],
+      "unconstrained_input_sensitivity": [
+        "I0",
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "actual_tied_input_sensitivity": [
+        "I0",
+        "I1",
+        "I2"
+      ],
+      "independent_mux_equation_checks": 32,
+      "conclusion": "The graph feedback through I4 to Z disappears with actual I5=1; a shared coarse-analysis false positive, not proof of origin of any PDS warning",
+      "new_DUT_runs": 0
+    }
+  ],
+  "new_DUT_runs": 0
+}

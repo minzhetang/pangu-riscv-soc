@@ -1,0 +1,921 @@
+{
+  "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-resolved-target-fetch-m1\\pds\\synthesize\\board_top_syn.vm",
+  "SHA256": "805F095F7E41779097D89E6B7309830BDC1B8B527C73C26ECF52A6E7DFB51F23",
+  "modules": 13,
+  "parsed_instances": 3977,
+  "hierarchy_instances": 12,
+  "flattened_primitives": 3965,
+  "port_bits_parsed": 24503,
+  "types": {
+    "GTP_GRS": 1,
+    "GTP_LUT1": 5,
+    "GTP_INBUF": 6,
+    "GTP_OUTBUF": 9,
+    "GTP_INV": 4,
+    "GTP_DFF_C": 78,
+    "GTP_LUT6D": 156,
+    "GTP_LUT6": 1079,
+    "GTP_LUT4": 19,
+    "GTP_LUT5": 279,
+    "GTP_LUT3": 47,
+    "GTP_LUT6CARRY": 332,
+    "GTP_LUT2": 4,
+    "GTP_MUX2LUT7": 316,
+    "GTP_MUX2LUT8": 128,
+    "GTP_DFF_PE": 3,
+    "GTP_DFF_CE": 469,
+    "GTP_DFF_E": 992,
+    "GTP_DFF_P": 1,
+    "GTP_DRM18K_E1": 28,
+    "GTP_DFF": 7,
+    "GTP_DFF_R": 2
+  },
+  "sequential_cells": 1580,
+  "combinational_cells": 2385,
+  "graph": {
+    "nodes": 4939,
+    "edges": 13392,
+    "visited": 4911,
+    "acyclic": false,
+    "residual_nodes": [
+      "soc/cpu_core/mem_load_half[15]",
+      "soc/cpu_core/_N1633",
+      "soc/cpu_core/N501[7]",
+      "soc/cpu_core/mem_load_data[31]",
+      "soc/cpu_core/mem_load_data[7]",
+      "soc/cpu_core/mem_load_data[9]",
+      "soc/cpu_core/mem_load_data[13]",
+      "soc/cpu_core/mem_load_data[15]",
+      "soc/cpu_core/mem_load_data[8]",
+      "soc/cpu_core/mem_load_data[10]",
+      "soc/cpu_core/mem_load_data[11]",
+      "soc/cpu_core/mem_load_data[14]",
+      "soc/cpu_core/mem_load_data[12]",
+      "soc/cpu_core/mem_load_data[18]",
+      "soc/cpu_core/mem_load_data[21]",
+      "soc/cpu_core/mem_load_data[17]",
+      "soc/cpu_core/mem_load_data[19]",
+      "soc/cpu_core/mem_load_data[26]",
+      "soc/cpu_core/mem_load_data[25]",
+      "soc/cpu_core/mem_load_data[30]",
+      "soc/cpu_core/mem_load_data[24]",
+      "soc/cpu_core/mem_load_data[23]",
+      "soc/cpu_core/mem_load_data[20]",
+      "soc/cpu_core/mem_load_data[22]",
+      "soc/cpu_core/mem_load_data[16]",
+      "soc/cpu_core/mem_load_data[28]",
+      "soc/cpu_core/mem_load_data[27]",
+      "soc/cpu_core/mem_load_data[29]"
+    ]
+  },
+  "with_async_FF_control_arcs": {
+    "nodes": 4977,
+    "edges": 13945,
+    "visited": 4949,
+    "acyclic": false,
+    "residual_nodes": [
+      "soc/cpu_core/mem_load_half[15]",
+      "soc/cpu_core/_N1633",
+      "soc/cpu_core/N501[7]",
+      "soc/cpu_core/mem_load_data[31]",
+      "soc/cpu_core/mem_load_data[7]",
+      "soc/cpu_core/mem_load_data[9]",
+      "soc/cpu_core/mem_load_data[13]",
+      "soc/cpu_core/mem_load_data[15]",
+      "soc/cpu_core/mem_load_data[8]",
+      "soc/cpu_core/mem_load_data[10]",
+      "soc/cpu_core/mem_load_data[11]",
+      "soc/cpu_core/mem_load_data[14]",
+      "soc/cpu_core/mem_load_data[12]",
+      "soc/cpu_core/mem_load_data[18]",
+      "soc/cpu_core/mem_load_data[21]",
+      "soc/cpu_core/mem_load_data[17]",
+      "soc/cpu_core/mem_load_data[19]",
+      "soc/cpu_core/mem_load_data[26]",
+      "soc/cpu_core/mem_load_data[25]",
+      "soc/cpu_core/mem_load_data[30]",
+      "soc/cpu_core/mem_load_data[24]",
+      "soc/cpu_core/mem_load_data[23]",
+      "soc/cpu_core/mem_load_data[20]",
+      "soc/cpu_core/mem_load_data[22]",
+      "soc/cpu_core/mem_load_data[16]",
+      "soc/cpu_core/mem_load_data[28]",
+      "soc/cpu_core/mem_load_data[27]",
+      "soc/cpu_core/mem_load_data[29]"
+    ]
+  },
+  "library": {
+    "GTP_GRS": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v",
+      "SHA256": "DAE720BCC467DDB4FF99F2753368934E2649B87F6AC63B8A0D7219699BAC1DEC",
+      "ports": {
+        "GRS_N": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_LUT1": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_LUT1.v",
+      "SHA256": "BE4EB4F5B90AF66E61745172E89615D95AEC9846158E2052F1222F26ED67DF9B",
+      "ports": {
+        "Z": {
+          "direction": "output",
+          "width": 1
+        },
+        "I0": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_INBUF": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_INBUF.v",
+      "SHA256": "90A5EF2B2DE82C59AD0958312EFE48A77DF7C29B0D129E2F0DE491E77844E4A5",
+      "ports": {
+        "O": {
+          "direction": "output",
+          "width": 1
+        },
+        "I": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_OUTBUF": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_OUTBUF.v",
+      "SHA256": "5B789E8C770188F52E907BE8804F44825FC316A9BD35D5180280233C0BDA5035",
+      "ports": {
+        "O": {
+          "direction": "output",
+          "width": 1
+        },
+        "I": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_INV": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_INV.v",
+      "SHA256": "04DAD07F24D2FAC3038AFB32F899FEAF3DE930349B44FAD5F002B8C7152745AB",
+      "ports": {
+        "Z": {
+          "direction": "output",
+          "width": 1
+        },
+        "I": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_DFF_C": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DFF_C.v",
+      "SHA256": "BADE4B4E7C4D9077007B62494554AD34503996A6D6B014A895189476EAABBC16",
+      "ports": {
+        "Q": {
+          "direction": "output",
+          "width": 1
+        },
+        "D": {
+          "direction": "input",
+          "width": 1
+        },
+        "CLK": {
+          "direction": "input",
+          "width": 1
+        },
+        "C": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_LUT6D": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_LUT6D.v",
+      "SHA256": "98170B772B3A38A9B2B1BA114BDC4C179ED0F9F17AC0E9784EDA8A3E69B2D646",
+      "ports": {
+        "Z": {
+          "direction": "output",
+          "width": 1
+        },
+        "Z5": {
+          "direction": "output",
+          "width": 1
+        },
+        "I0": {
+          "direction": "input",
+          "width": 1
+        },
+        "I1": {
+          "direction": "input",
+          "width": 1
+        },
+        "I2": {
+          "direction": "input",
+          "width": 1
+        },
+        "I3": {
+          "direction": "input",
+          "width": 1
+        },
+        "I4": {
+          "direction": "input",
+          "width": 1
+        },
+        "I5": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_LUT6": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_LUT6.v",
+      "SHA256": "B228940718ADC4A60E1A280CCF394A62E1F5A8900A641B9943DE4A244D5A3A17",
+      "ports": {
+        "Z": {
+          "direction": "output",
+          "width": 1
+        },
+        "I0": {
+          "direction": "input",
+          "width": 1
+        },
+        "I1": {
+          "direction": "input",
+          "width": 1
+        },
+        "I2": {
+          "direction": "input",
+          "width": 1
+        },
+        "I3": {
+          "direction": "input",
+          "width": 1
+        },
+        "I4": {
+          "direction": "input",
+          "width": 1
+        },
+        "I5": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_LUT4": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_LUT4.v",
+      "SHA256": "F7ED2C8232DA3FA9D11638676FC7394A98DA9ADCF71D69FA6E6081FCA62CDDB7",
+      "ports": {
+        "Z": {
+          "direction": "output",
+          "width": 1
+        },
+        "I0": {
+          "direction": "input",
+          "width": 1
+        },
+        "I1": {
+          "direction": "input",
+          "width": 1
+        },
+        "I2": {
+          "direction": "input",
+          "width": 1
+        },
+        "I3": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_LUT5": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_LUT5.v",
+      "SHA256": "7835A0CF88A3249B36615EA127EB3B32B18F4E118CE0EFB70907720A140BEAF9",
+      "ports": {
+        "Z": {
+          "direction": "output",
+          "width": 1
+        },
+        "I0": {
+          "direction": "input",
+          "width": 1
+        },
+        "I1": {
+          "direction": "input",
+          "width": 1
+        },
+        "I2": {
+          "direction": "input",
+          "width": 1
+        },
+        "I3": {
+          "direction": "input",
+          "width": 1
+        },
+        "I4": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_LUT3": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_LUT3.v",
+      "SHA256": "95DED581F36C0C545239E93A0DE43F8CA657FDA7ACCB6786A9A3990FBBC2A4D6",
+      "ports": {
+        "Z": {
+          "direction": "output",
+          "width": 1
+        },
+        "I0": {
+          "direction": "input",
+          "width": 1
+        },
+        "I1": {
+          "direction": "input",
+          "width": 1
+        },
+        "I2": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_LUT6CARRY": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_LUT6CARRY.v",
+      "SHA256": "2415DC72612F8EA1CA619BB23586835C143A61FE70D9477362920A41B776E4FC",
+      "ports": {
+        "COUT": {
+          "direction": "output",
+          "width": 1
+        },
+        "Z": {
+          "direction": "output",
+          "width": 1
+        },
+        "CIN": {
+          "direction": "input",
+          "width": 1
+        },
+        "I0": {
+          "direction": "input",
+          "width": 1
+        },
+        "I1": {
+          "direction": "input",
+          "width": 1
+        },
+        "I2": {
+          "direction": "input",
+          "width": 1
+        },
+        "I3": {
+          "direction": "input",
+          "width": 1
+        },
+        "I4": {
+          "direction": "input",
+          "width": 1
+        },
+        "I5": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_LUT2": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_LUT2.v",
+      "SHA256": "A5133F378FC5C3E4A3583838108BABAA2D7D63E4BB6DE0200AFA4F3A34CEFB83",
+      "ports": {
+        "Z": {
+          "direction": "output",
+          "width": 1
+        },
+        "I0": {
+          "direction": "input",
+          "width": 1
+        },
+        "I1": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_MUX2LUT7": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_MUX2LUT7.v",
+      "SHA256": "ABEE5FC4D750A93447881A0EB2E35A52E6674F5FA92302FB2D1FCE9D61340649",
+      "ports": {
+        "Z": {
+          "direction": "output",
+          "width": 1
+        },
+        "I0": {
+          "direction": "input",
+          "width": 1
+        },
+        "I1": {
+          "direction": "input",
+          "width": 1
+        },
+        "S": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_MUX2LUT8": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_MUX2LUT8.v",
+      "SHA256": "95AD73E6675FCBCA6BBE52A261595035BA1F8C79068C4C77A0789E2263F1A27F",
+      "ports": {
+        "Z": {
+          "direction": "output",
+          "width": 1
+        },
+        "I0": {
+          "direction": "input",
+          "width": 1
+        },
+        "I1": {
+          "direction": "input",
+          "width": 1
+        },
+        "S": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_DFF_PE": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DFF_PE.v",
+      "SHA256": "0ABAE6B79B328FC13E93D25A8041A930101F2F741F7E9B2670F7727883636F22",
+      "ports": {
+        "Q": {
+          "direction": "output",
+          "width": 1
+        },
+        "D": {
+          "direction": "input",
+          "width": 1
+        },
+        "CLK": {
+          "direction": "input",
+          "width": 1
+        },
+        "P": {
+          "direction": "input",
+          "width": 1
+        },
+        "CE": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_DFF_CE": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DFF_CE.v",
+      "SHA256": "0BB065EDEBB4359A06146A2075EF0FE32B4466B7A12E674239552D9921A1A201",
+      "ports": {
+        "Q": {
+          "direction": "output",
+          "width": 1
+        },
+        "D": {
+          "direction": "input",
+          "width": 1
+        },
+        "CLK": {
+          "direction": "input",
+          "width": 1
+        },
+        "C": {
+          "direction": "input",
+          "width": 1
+        },
+        "CE": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_DFF_E": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DFF_E.v",
+      "SHA256": "805B03DDCBD599F6AC3D5A597CACCF95D81D3746A171F1DD7CC515011F771C01",
+      "ports": {
+        "Q": {
+          "direction": "output",
+          "width": 1
+        },
+        "D": {
+          "direction": "input",
+          "width": 1
+        },
+        "CLK": {
+          "direction": "input",
+          "width": 1
+        },
+        "CE": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_DFF_P": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DFF_P.v",
+      "SHA256": "733F506A01562932612FA5DB9F3052456998F49BF39EDD268BD93A42933B7AD0",
+      "ports": {
+        "Q": {
+          "direction": "output",
+          "width": 1
+        },
+        "D": {
+          "direction": "input",
+          "width": 1
+        },
+        "CLK": {
+          "direction": "input",
+          "width": 1
+        },
+        "P": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_DRM18K_E1": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+      "SHA256": "73A4DC428A369FE4FF6F6995BB9D79B58C0963E5812E6E9BFBAAF85DC237AB60",
+      "ports": {
+        "DOA": {
+          "direction": "output",
+          "width": 18
+        },
+        "DOB": {
+          "direction": "output",
+          "width": 18
+        },
+        "DIA": {
+          "direction": "input",
+          "width": 18
+        },
+        "DIB": {
+          "direction": "input",
+          "width": 18
+        },
+        "ADDRA": {
+          "direction": "input",
+          "width": 14
+        },
+        "ADDRB": {
+          "direction": "input",
+          "width": 14
+        },
+        "ADDRA_HOLD": {
+          "direction": "input",
+          "width": 1
+        },
+        "ADDRB_HOLD": {
+          "direction": "input",
+          "width": 1
+        },
+        "BWEA": {
+          "direction": "input",
+          "width": 4
+        },
+        "BWEB": {
+          "direction": "input",
+          "width": 2
+        },
+        "CLKA": {
+          "direction": "input",
+          "width": 1
+        },
+        "CLKB": {
+          "direction": "input",
+          "width": 1
+        },
+        "CEA": {
+          "direction": "input",
+          "width": 1
+        },
+        "CEB": {
+          "direction": "input",
+          "width": 1
+        },
+        "WEA": {
+          "direction": "input",
+          "width": 1
+        },
+        "WEB": {
+          "direction": "input",
+          "width": 1
+        },
+        "ORCEA": {
+          "direction": "input",
+          "width": 1
+        },
+        "ORCEB": {
+          "direction": "input",
+          "width": 1
+        },
+        "RSTA": {
+          "direction": "input",
+          "width": 1
+        },
+        "RSTB": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_DFF": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DFF.v",
+      "SHA256": "EBCBA637217C1E2F4F6A49430533C8345F76038DCCD4ED7F83A9C057B8F02C33",
+      "ports": {
+        "Q": {
+          "direction": "output",
+          "width": 1
+        },
+        "D": {
+          "direction": "input",
+          "width": 1
+        },
+        "CLK": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    },
+    "GTP_DFF_R": {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DFF_R.v",
+      "SHA256": "56D45C89A90BD96FE680C81BFD0E09C25D2E421FD3F47787E3CC26D1FBF97F96",
+      "ports": {
+        "Q": {
+          "direction": "output",
+          "width": 1
+        },
+        "D": {
+          "direction": "input",
+          "width": 1
+        },
+        "CLK": {
+          "direction": "input",
+          "width": 1
+        },
+        "R": {
+          "direction": "input",
+          "width": 1
+        }
+      }
+    }
+  },
+  "feature_primitives": [
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[0]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[0]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[1]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[1]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[2]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[2]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[3]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[3]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[4]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[4]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[5]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[5]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[6]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[6]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[7]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[7]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[8]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[8]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[9]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[9]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[10]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[10]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[11]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[11]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[12]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[12]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[13]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[13]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[14]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[14]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[15]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[15]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[16]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[16]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[17]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[17]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[18]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[18]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[19]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[19]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[20]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[20]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[21]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[21]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[22]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[22]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[23]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[23]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[24]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[24]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[25]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[25]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[26]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[26]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[27]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[27]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[28]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[28]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[29]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[29]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[30]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[30]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_pc[31]",
+      "type": "GTP_DFF_CE",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_pc[31]"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_valid_vname",
+      "type": "GTP_DFF_C",
+      "outputs": [
+        "soc/cpu_core/fetch_redirect_valid"
+      ]
+    },
+    {
+      "path": "soc/cpu_core/fetch_redirect_valid_575",
+      "type": "GTP_LUT6",
+      "outputs": [
+        "soc/cpu_core/_N12291"
+      ]
+    }
+  ],
+  "limitations": [
+    "Post-synthesis only, not inaccessible sdm2adm constant-probe internal graph",
+    "All FF/data/enable/clock and synchronous DRM paths are state boundaries; implicit global GRS not a full reset/CDC proof",
+    "LUT/mux all-inputs-to-all-outputs overapproximation; positive cycles would require Boolean/arc-specific review",
+    "No post-route connectivity proof; exported PNR lists omit pin-to-net bindings"
+  ],
+  "all_statements_parsed": true,
+  "unsupported_syntax_skipped": 0
+}

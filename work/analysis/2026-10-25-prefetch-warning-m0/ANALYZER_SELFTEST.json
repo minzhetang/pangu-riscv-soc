@@ -1,0 +1,22 @@
+{
+  "parser": {
+    "status": "PASS",
+    "synthetic_graph_positive_negative": 4,
+    "expression_alias_concat": 1,
+    "escaped_identifier": 1,
+    "new_DUT_runs": 0
+  },
+  "Boolean": {
+    "status": "PASS",
+    "direct_index_or_boolean_product_checks": 1150,
+    "sensitivity_checks": 6,
+    "new_DUT_runs": 0
+  },
+  "first_strict_parser_halt": "GTP_INBUF whitelist missing; official header inspected and INBUF/OUTBUF explicitly supported before accepted graph results",
+  "false_positive_preserved": [
+    "2026-10-25-board-top-m1-graph.json",
+    "2026-10-25-resolved-target-fetch-m1-graph.json",
+    "2026-10-25-resolved-target-fetch-m1-graph-precise.json"
+  ],
+  "DUT_runs": 0
+}
