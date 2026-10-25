@@ -1,0 +1,15 @@
+{
+  "items": [
+    {
+      "id": "N1",
+      "path": "work/peripherals/rx/results.json",
+      "location": "tests[id=COM-01].expected",
+      "actual": "Plan SHA matches tests/rx-plan-1.3.4.sha256; RTL/TB/negative/watchdog/illegal/ledger-check hashes match the plan.",
+      "correct_active_plan": "rx-plan-1.3.5",
+      "actual_plan_SHA256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "classification": "STALE_PROSE_NONBLOCKING",
+      "reason": "Actual expected_sha256, plan gate log, run_manifest and freshly recompiled mainline inputs all resolve 1.3.5; do not rewrite original run history or force B to rerun DUT",
+      "owner": "A import annotation"
+    }
+  ]
+}

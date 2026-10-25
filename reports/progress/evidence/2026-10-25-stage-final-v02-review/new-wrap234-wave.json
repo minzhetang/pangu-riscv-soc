@@ -1,0 +1,70 @@
+{
+  "N": 234,
+  "status": "PASS",
+  "checks": 240081,
+  "errors": [],
+  "actual_GPIO_accepts": [],
+  "actual_TX_accepts": [
+    [
+      3,
+      90
+    ],
+    [
+      2346,
+      165
+    ],
+    [
+      4689,
+      165
+    ],
+    [
+      7034,
+      150
+    ],
+    [
+      7038,
+      106
+    ],
+    [
+      9385,
+      150
+    ],
+    [
+      10323,
+      106
+    ],
+    [
+      12670,
+      150
+    ],
+    [
+      14780,
+      106
+    ]
+  ],
+  "rejected_requests": 1,
+  "cancelled": [
+    {
+      "t": 70415000,
+      "accept": [
+        7034,
+        150
+      ]
+    },
+    {
+      "t": 103335000,
+      "accept": [
+        9385,
+        150
+      ]
+    },
+    {
+      "t": 147975000,
+      "accept": [
+        12670,
+        150
+      ]
+    }
+  ],
+  "scope": "original received VCD review, zero NEW DUT runs"
+}

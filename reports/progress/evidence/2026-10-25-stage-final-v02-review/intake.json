@@ -1,0 +1,13 @@
+{
+  "files": 70,
+  "bytes": 15472523,
+  "manifest": 69,
+  "manifest_SHA256": "55995427F25973C8030D0ABB1F071471E2B8596CD5DF7B84C081606783D25D70",
+  "changed": 67,
+  "changed_SHA_mismatches": [],
+  "old_values": 23,
+  "source_index": 28,
+  "dependencies": 10,
+  "ZIP_present": false,
+  "new_DUT": 0
+}

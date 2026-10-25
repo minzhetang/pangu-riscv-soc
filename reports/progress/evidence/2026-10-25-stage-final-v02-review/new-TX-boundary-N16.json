@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "events": [
+    {
+      "kind": "START",
+      "event_edge": 37,
+      "observed_edge": 38,
+      "data": null,
+      "accept_edge": 37
+    },
+    {
+      "kind": "COMPLETE",
+      "event_edge": 197,
+      "observed_edge": 198,
+      "data": 90,
+      "accept_edge": 37
+    },
+    {
+      "kind": "START",
+      "event_edge": 202,
+      "observed_edge": 203,
+      "data": null,
+      "accept_edge": 202
+    },
+    {
+      "kind": "COMPLETE",
+      "event_edge": 362,
+      "observed_edge": 363,
+      "data": 165,
+      "accept_edge": 202
+    },
+    {
+      "kind": "START",
+      "event_edge": 365,
+      "observed_edge": 366,
+      "data": null,
+      "accept_edge": 365
+    },
+    {
+      "kind": "COMPLETE",
+      "event_edge": 525,
+      "observed_edge": 526,
+      "data": 165,
+      "accept_edge": 365
+    },
+    {
+      "kind": "START",
+      "event_edge": 546,
+      "observed_edge": 547,
+      "data": null,
+      "accept_edge": 546
+    },
+    {
+      "kind": "CANCEL",
+      "event_edge": 548,
+      "observed_edge": 549,
+      "data": null,
+      "accept_edge": 546
+    },
+    {
+      "kind": "START",
+      "event_edge": 554,
+      "observed_edge": 555,
+      "data": null,
+      "accept_edge": 554
+    },
+    {
+      "kind": "COMPLETE",
+      "event_edge": 714,
+      "observed_edge": 715,
+      "data": 106,
+      "accept_edge": 554
+    },
+    {
+      "kind": "START",
+      "event_edge": 724,
+      "observed_edge": 725,
+      "data": null,
+      "accept_edge": 724
+    },
+    {
+      "kind": "CANCEL",
+      "event_edge": 788,
+      "observed_edge": 789,
+      "data": null,
+      "accept_edge": 724
+    },
+    {
+      "kind": "START",
+      "event_edge": 794,
+      "observed_edge": 795,
+      "data": null,
+      "accept_edge": 794
+    },
+    {
+      "kind": "COMPLETE",
+      "event_edge": 954,
+      "observed_edge": 955,
+      "data": 106,
+      "accept_edge": 794
+    },
+    {
+      "kind": "START",
+      "event_edge": 964,
+      "observed_edge": 965,
+      "data": null,
+      "accept_edge": 964
+    },
+    {
+      "kind": "CANCEL",
+      "event_edge": 1110,
+      "observed_edge": 1111,
+      "data": null,
+      "accept_edge": 964
+    },
+    {
+      "kind": "START",
+      "event_edge": 1116,
+      "observed_edge": 1117,
+      "data": null,
+      "accept_edge": 1116
+    },
+    {
+      "kind": "COMPLETE",
+      "event_edge": 1276,
+      "observed_edge": 1277,
+      "data": 106,
+      "accept_edge": 1116
+    }
+  ],
+  "first_start": 37,
+  "first_complete": 197,
+  "counts": {
+    "start": 9,
+    "complete": 6,
+    "cancel": 3,
+    "bad_stop": 0
+  },
+  "exact_all_START_accept": true,
+  "exact_all_COMPLETE_E_plus_10N": true,
+  "observed_plus1": true
+}

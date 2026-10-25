@@ -1,0 +1,142 @@
+[
+  {
+    "phase": "compile",
+    "id": "wrap16",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.062,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": null
+  },
+  {
+    "phase": "compile",
+    "id": "wrap234",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.047,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": null
+  },
+  {
+    "phase": "compile",
+    "id": "rx8",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.063,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": null
+  },
+  {
+    "phase": "compile",
+    "id": "rx16",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.046,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": null
+  },
+  {
+    "phase": "compile",
+    "id": "rx234",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.063,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": null
+  },
+  {
+    "phase": "compile",
+    "id": "rxneg",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.047,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": null
+  },
+  {
+    "phase": "compile",
+    "id": "txcap",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.047,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": null
+  },
+  {
+    "phase": "run",
+    "id": "wrap16",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.031,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": 12796000
+  },
+  {
+    "phase": "run",
+    "id": "wrap234",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.109,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": 171476000
+  },
+  {
+    "phase": "run",
+    "id": "rx8",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.079,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": 50126000
+  },
+  {
+    "phase": "run",
+    "id": "rx16",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.093,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": 112866000
+  },
+  {
+    "phase": "run",
+    "id": "rx234",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.703,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": 1109346000
+  },
+  {
+    "phase": "run",
+    "id": "rxneg",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.032,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": 2346000
+  },
+  {
+    "phase": "run",
+    "id": "txcap",
+    "rc": 0,
+    "timed_out": false,
+    "host_seconds": 0.031,
+    "stderr_bytes": 0,
+    "warning_lines": [],
+    "finish_time_ps": 6556000
+  }
+]

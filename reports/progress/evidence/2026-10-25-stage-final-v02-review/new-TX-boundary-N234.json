@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "events": [
+    {
+      "kind": "START",
+      "event_edge": 6,
+      "observed_edge": 7,
+      "data": null,
+      "accept_edge": 6
+    },
+    {
+      "kind": "COMPLETE",
+      "event_edge": 2346,
+      "observed_edge": 2347,
+      "data": 90,
+      "accept_edge": 6
+    },
+    {
+      "kind": "START",
+      "event_edge": 2349,
+      "observed_edge": 2350,
+      "data": null,
+      "accept_edge": 2349
+    },
+    {
+      "kind": "COMPLETE",
+      "event_edge": 4689,
+      "observed_edge": 4690,
+      "data": 165,
+      "accept_edge": 2349
+    },
+    {
+      "kind": "START",
+      "event_edge": 4692,
+      "observed_edge": 4693,
+      "data": null,
+      "accept_edge": 4692
+    },
+    {
+      "kind": "COMPLETE",
+      "event_edge": 7032,
+      "observed_edge": 7033,
+      "data": 165,
+      "accept_edge": 4692
+    },
+    {
+      "kind": "START",
+      "event_edge": 7040,
+      "observed_edge": 7041,
+      "data": null,
+      "accept_edge": 7040
+    },
+    {
+      "kind": "CANCEL",
+      "event_edge": 7042,
+      "observed_edge": 7043,
+      "data": null,
+      "accept_edge": 7040
+    },
+    {
+      "kind": "START",
+      "event_edge": 7048,
+      "observed_edge": 7049,
+      "data": null,
+      "accept_edge": 7048
+    },
+    {
+      "kind": "COMPLETE",
+      "event_edge": 9388,
+      "observed_edge": 9389,
+      "data": 106,
+      "accept_edge": 7048
+    },
+    {
+      "kind": "START",
+      "event_edge": 9398,
+      "observed_edge": 9399,
+      "data": null,
+      "accept_edge": 9398
+    },
+    {
+      "kind": "CANCEL",
+      "event_edge": 10334,
+      "observed_edge": 10335,
+      "data": null,
+      "accept_edge": 9398
+    },
+    {
+      "kind": "START",
+      "event_edge": 10340,
+      "observed_edge": 10341,
+      "data": null,
+      "accept_edge": 10340
+    },
+    {
+      "kind": "COMPLETE",
+      "event_edge": 12680,
+      "observed_edge": 12681,
+      "data": 106,
+      "accept_edge": 10340
+    },
+    {
+      "kind": "START",
+      "event_edge": 12690,
+      "observed_edge": 12691,
+      "data": null,
+      "accept_edge": 12690
+    },
+    {
+      "kind": "CANCEL",
+      "event_edge": 14798,
+      "observed_edge": 14799,
+      "data": null,
+      "accept_edge": 12690
+    },
+    {
+      "kind": "START",
+      "event_edge": 14804,
+      "observed_edge": 14805,
+      "data": null,
+      "accept_edge": 14804
+    },
+    {
+      "kind": "COMPLETE",
+      "event_edge": 17144,
+      "observed_edge": 17145,
+      "data": 106,
+      "accept_edge": 14804
+    }
+  ],
+  "first_start": 6,
+  "first_complete": 2346,
+  "counts": {
+    "start": 9,
+    "complete": 6,
+    "cancel": 3,
+    "bad_stop": 0
+  },
+  "exact_all_START_accept": true,
+  "exact_all_COMPLETE_E_plus_10N": true,
+  "observed_plus1": true
+}

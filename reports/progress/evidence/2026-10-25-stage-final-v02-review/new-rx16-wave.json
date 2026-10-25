@@ -1,0 +1,1521 @@
+{
+  "path": "work/peripheral-review/2026-10-25-stage-final-v02/build/rx16.vcd",
+  "clks_per_bit": 16,
+  "scope": "independent public-port original waveform audit, not a new DUT run",
+  "status": "PASS",
+  "port_checks": 93152,
+  "mismatch_count": 0,
+  "first_errors": [],
+  "last_time_ps": 112866000,
+  "active_edges": 11221,
+  "starts": 71,
+  "publishes": 52,
+  "consumes": 50,
+  "overflow_events": 5,
+  "bad_stop_events": 9,
+  "false_starts": 2,
+  "valid_rises": 50,
+  "reset_assertions": 22,
+  "cancelled": [
+    {
+      "time_ps": 98626000,
+      "d": 9789,
+      "edges_after_d": 29,
+      "section": "DATA"
+    },
+    {
+      "time_ps": 100436000,
+      "d": 9992,
+      "edges_after_d": 1,
+      "section": "START"
+    },
+    {
+      "time_ps": 103656000,
+      "d": 10167,
+      "edges_after_d": 142,
+      "section": "STOP"
+    }
+  ],
+  "clear_same_new_frame_error": 2,
+  "clear_same_new_overrun": 1,
+  "raw_falling_phases": [
+    0.1,
+    0.3,
+    0.6,
+    0.9
+  ],
+  "events": [
+    {
+      "edge": 3,
+      "time_ps": 55000,
+      "kind": "armed"
+    },
+    {
+      "edge": 7,
+      "time_ps": 125000,
+      "kind": "armed"
+    },
+    {
+      "edge": 12,
+      "time_ps": 175000,
+      "kind": "start"
+    },
+    {
+      "edge": 164,
+      "time_ps": 1695000,
+      "kind": "publish",
+      "d": 12,
+      "data": 0,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 170,
+      "time_ps": 1755000,
+      "kind": "consume",
+      "data": 0
+    },
+    {
+      "edge": 174,
+      "time_ps": 1795000,
+      "kind": "start"
+    },
+    {
+      "edge": 326,
+      "time_ps": 3315000,
+      "kind": "publish",
+      "d": 174,
+      "data": 255,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 332,
+      "time_ps": 3375000,
+      "kind": "consume",
+      "data": 255
+    },
+    {
+      "edge": 336,
+      "time_ps": 3415000,
+      "kind": "start"
+    },
+    {
+      "edge": 488,
+      "time_ps": 4935000,
+      "kind": "publish",
+      "d": 336,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 494,
+      "time_ps": 4995000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 498,
+      "time_ps": 5035000,
+      "kind": "start"
+    },
+    {
+      "edge": 650,
+      "time_ps": 6555000,
+      "kind": "publish",
+      "d": 498,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 656,
+      "time_ps": 6615000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 660,
+      "time_ps": 6655000,
+      "kind": "start"
+    },
+    {
+      "edge": 812,
+      "time_ps": 8175000,
+      "kind": "publish",
+      "d": 660,
+      "data": 1,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 818,
+      "time_ps": 8235000,
+      "kind": "consume",
+      "data": 1
+    },
+    {
+      "edge": 822,
+      "time_ps": 8275000,
+      "kind": "start"
+    },
+    {
+      "edge": 974,
+      "time_ps": 9795000,
+      "kind": "publish",
+      "d": 822,
+      "data": 128,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 980,
+      "time_ps": 9855000,
+      "kind": "consume",
+      "data": 128
+    },
+    {
+      "edge": 984,
+      "time_ps": 9895000,
+      "kind": "start"
+    },
+    {
+      "edge": 1136,
+      "time_ps": 11415000,
+      "kind": "publish",
+      "d": 984,
+      "data": 126,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 1142,
+      "time_ps": 11475000,
+      "kind": "consume",
+      "data": 126
+    },
+    {
+      "edge": 1145,
+      "time_ps": 11535000,
+      "kind": "armed"
+    },
+    {
+      "edge": 1150,
+      "time_ps": 11585000,
+      "kind": "start"
+    },
+    {
+      "edge": 1302,
+      "time_ps": 13105000,
+      "kind": "publish",
+      "d": 1150,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 1308,
+      "time_ps": 13165000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 1312,
+      "time_ps": 13205000,
+      "kind": "start"
+    },
+    {
+      "edge": 1464,
+      "time_ps": 14725000,
+      "kind": "publish",
+      "d": 1312,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 1470,
+      "time_ps": 14785000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 1474,
+      "time_ps": 14825000,
+      "kind": "start"
+    },
+    {
+      "edge": 1626,
+      "time_ps": 16345000,
+      "kind": "publish",
+      "d": 1474,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 1632,
+      "time_ps": 16405000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 1636,
+      "time_ps": 16445000,
+      "kind": "start"
+    },
+    {
+      "edge": 1788,
+      "time_ps": 17965000,
+      "kind": "publish",
+      "d": 1636,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 1794,
+      "time_ps": 18025000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 1798,
+      "time_ps": 18065000,
+      "kind": "start"
+    },
+    {
+      "edge": 1950,
+      "time_ps": 19585000,
+      "kind": "publish",
+      "d": 1798,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 1957,
+      "time_ps": 19655000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 1961,
+      "time_ps": 19695000,
+      "kind": "start"
+    },
+    {
+      "edge": 2113,
+      "time_ps": 21215000,
+      "kind": "publish",
+      "d": 1961,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 2120,
+      "time_ps": 21285000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 2124,
+      "time_ps": 21325000,
+      "kind": "start"
+    },
+    {
+      "edge": 2276,
+      "time_ps": 22845000,
+      "kind": "publish",
+      "d": 2124,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 2283,
+      "time_ps": 22915000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 2287,
+      "time_ps": 22955000,
+      "kind": "start"
+    },
+    {
+      "edge": 2439,
+      "time_ps": 24475000,
+      "kind": "publish",
+      "d": 2287,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 2446,
+      "time_ps": 24545000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 2449,
+      "time_ps": 24605000,
+      "kind": "armed"
+    },
+    {
+      "edge": 2454,
+      "time_ps": 24655000,
+      "kind": "start"
+    },
+    {
+      "edge": 2606,
+      "time_ps": 26175000,
+      "kind": "publish",
+      "d": 2454,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 2607,
+      "time_ps": 26185000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 2614,
+      "time_ps": 26255000,
+      "kind": "start"
+    },
+    {
+      "edge": 2766,
+      "time_ps": 27775000,
+      "kind": "publish",
+      "d": 2614,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 2767,
+      "time_ps": 27785000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 2774,
+      "time_ps": 27855000,
+      "kind": "start"
+    },
+    {
+      "edge": 2926,
+      "time_ps": 29375000,
+      "kind": "publish",
+      "d": 2774,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 2927,
+      "time_ps": 29385000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 2934,
+      "time_ps": 29455000,
+      "kind": "start"
+    },
+    {
+      "edge": 3086,
+      "time_ps": 30975000,
+      "kind": "publish",
+      "d": 2934,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 3087,
+      "time_ps": 30985000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 3094,
+      "time_ps": 31055000,
+      "kind": "start"
+    },
+    {
+      "edge": 3246,
+      "time_ps": 32575000,
+      "kind": "publish",
+      "d": 3094,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 3247,
+      "time_ps": 32585000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 3254,
+      "time_ps": 32655000,
+      "kind": "start"
+    },
+    {
+      "edge": 3406,
+      "time_ps": 34175000,
+      "kind": "publish",
+      "d": 3254,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 3407,
+      "time_ps": 34185000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 3414,
+      "time_ps": 34255000,
+      "kind": "start"
+    },
+    {
+      "edge": 3566,
+      "time_ps": 35775000,
+      "kind": "publish",
+      "d": 3414,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 3567,
+      "time_ps": 35785000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 3574,
+      "time_ps": 35855000,
+      "kind": "start"
+    },
+    {
+      "edge": 3726,
+      "time_ps": 37375000,
+      "kind": "publish",
+      "d": 3574,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 3727,
+      "time_ps": 37385000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 3734,
+      "time_ps": 37455000,
+      "kind": "start"
+    },
+    {
+      "edge": 3886,
+      "time_ps": 38975000,
+      "kind": "publish",
+      "d": 3734,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 3887,
+      "time_ps": 38985000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 3894,
+      "time_ps": 39055000,
+      "kind": "start"
+    },
+    {
+      "edge": 4046,
+      "time_ps": 40575000,
+      "kind": "publish",
+      "d": 3894,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 4047,
+      "time_ps": 40585000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 4054,
+      "time_ps": 40655000,
+      "kind": "start"
+    },
+    {
+      "edge": 4206,
+      "time_ps": 42175000,
+      "kind": "publish",
+      "d": 4054,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 4207,
+      "time_ps": 42185000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 4214,
+      "time_ps": 42255000,
+      "kind": "start"
+    },
+    {
+      "edge": 4366,
+      "time_ps": 43775000,
+      "kind": "publish",
+      "d": 4214,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 4367,
+      "time_ps": 43785000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 4374,
+      "time_ps": 43855000,
+      "kind": "start"
+    },
+    {
+      "edge": 4526,
+      "time_ps": 45375000,
+      "kind": "publish",
+      "d": 4374,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 4527,
+      "time_ps": 45385000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 4534,
+      "time_ps": 45455000,
+      "kind": "start"
+    },
+    {
+      "edge": 4686,
+      "time_ps": 46975000,
+      "kind": "publish",
+      "d": 4534,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 4687,
+      "time_ps": 46985000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 4694,
+      "time_ps": 47055000,
+      "kind": "start"
+    },
+    {
+      "edge": 4846,
+      "time_ps": 48575000,
+      "kind": "publish",
+      "d": 4694,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 4847,
+      "time_ps": 48585000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 4854,
+      "time_ps": 48655000,
+      "kind": "start"
+    },
+    {
+      "edge": 5006,
+      "time_ps": 50175000,
+      "kind": "publish",
+      "d": 4854,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 5007,
+      "time_ps": 50185000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 5014,
+      "time_ps": 50285000,
+      "kind": "armed"
+    },
+    {
+      "edge": 5019,
+      "time_ps": 50335000,
+      "kind": "start"
+    },
+    {
+      "edge": 5027,
+      "time_ps": 50415000,
+      "kind": "false_start",
+      "d": 5019
+    },
+    {
+      "edge": 5059,
+      "time_ps": 50735000,
+      "kind": "start"
+    },
+    {
+      "edge": 5067,
+      "time_ps": 50815000,
+      "kind": "false_start",
+      "d": 5059
+    },
+    {
+      "edge": 5100,
+      "time_ps": 51145000,
+      "kind": "start"
+    },
+    {
+      "edge": 5252,
+      "time_ps": 52665000,
+      "kind": "publish",
+      "d": 5100,
+      "data": 90,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 5258,
+      "time_ps": 52725000,
+      "kind": "consume",
+      "data": 90
+    },
+    {
+      "edge": 5261,
+      "time_ps": 52785000,
+      "kind": "armed"
+    },
+    {
+      "edge": 5266,
+      "time_ps": 52835000,
+      "kind": "start"
+    },
+    {
+      "edge": 5418,
+      "time_ps": 54355000,
+      "kind": "publish",
+      "d": 5266,
+      "data": 60,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 5427,
+      "time_ps": 54445000,
+      "kind": "start"
+    },
+    {
+      "edge": 5579,
+      "time_ps": 55965000,
+      "kind": "bad_stop",
+      "d": 5427,
+      "data": 165,
+      "ready": 0,
+      "old_valid": 1,
+      "clear": 0
+    },
+    {
+      "edge": 5587,
+      "time_ps": 56045000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 5589,
+      "time_ps": 56065000,
+      "kind": "start"
+    },
+    {
+      "edge": 5741,
+      "time_ps": 57585000,
+      "kind": "overflow",
+      "d": 5589,
+      "data": 195,
+      "kept": 60,
+      "clear": 0,
+      "old_fe": false
+    },
+    {
+      "edge": 5748,
+      "time_ps": 57655000,
+      "kind": "consume",
+      "data": 60
+    },
+    {
+      "edge": 5752,
+      "time_ps": 57695000,
+      "kind": "start"
+    },
+    {
+      "edge": 5904,
+      "time_ps": 59215000,
+      "kind": "publish",
+      "d": 5752,
+      "data": 195,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 5910,
+      "time_ps": 59275000,
+      "kind": "consume",
+      "data": 195
+    },
+    {
+      "edge": 5913,
+      "time_ps": 59335000,
+      "kind": "armed"
+    },
+    {
+      "edge": 5918,
+      "time_ps": 59385000,
+      "kind": "start"
+    },
+    {
+      "edge": 6070,
+      "time_ps": 60905000,
+      "kind": "publish",
+      "d": 5918,
+      "data": 105,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 6079,
+      "time_ps": 60995000,
+      "kind": "start"
+    },
+    {
+      "edge": 6231,
+      "time_ps": 62515000,
+      "kind": "consume",
+      "data": 105
+    },
+    {
+      "edge": 6231,
+      "time_ps": 62515000,
+      "kind": "bad_stop",
+      "d": 6079,
+      "data": 150,
+      "ready": 1,
+      "old_valid": 1,
+      "clear": 0
+    },
+    {
+      "edge": 6239,
+      "time_ps": 62595000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 6241,
+      "time_ps": 62615000,
+      "kind": "start"
+    },
+    {
+      "edge": 6393,
+      "time_ps": 64135000,
+      "kind": "publish",
+      "d": 6241,
+      "data": 150,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 6399,
+      "time_ps": 64195000,
+      "kind": "consume",
+      "data": 150
+    },
+    {
+      "edge": 6402,
+      "time_ps": 64255000,
+      "kind": "armed"
+    },
+    {
+      "edge": 6407,
+      "time_ps": 64305000,
+      "kind": "start"
+    },
+    {
+      "edge": 6559,
+      "time_ps": 65825000,
+      "kind": "bad_stop",
+      "d": 6407,
+      "data": 90,
+      "ready": 0,
+      "old_valid": 0,
+      "clear": 0
+    },
+    {
+      "edge": 6599,
+      "time_ps": 66225000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 6601,
+      "time_ps": 66245000,
+      "kind": "start"
+    },
+    {
+      "edge": 6753,
+      "time_ps": 67765000,
+      "kind": "publish",
+      "d": 6601,
+      "data": 150,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 6759,
+      "time_ps": 67825000,
+      "kind": "consume",
+      "data": 150
+    },
+    {
+      "edge": 6762,
+      "time_ps": 67885000,
+      "kind": "armed"
+    },
+    {
+      "edge": 6767,
+      "time_ps": 67935000,
+      "kind": "start"
+    },
+    {
+      "edge": 6919,
+      "time_ps": 69455000,
+      "kind": "publish",
+      "d": 6767,
+      "data": 17,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 6928,
+      "time_ps": 69545000,
+      "kind": "start"
+    },
+    {
+      "edge": 7080,
+      "time_ps": 71065000,
+      "kind": "bad_stop",
+      "d": 6928,
+      "data": 34,
+      "ready": 0,
+      "old_valid": 1,
+      "clear": 0
+    },
+    {
+      "edge": 7088,
+      "time_ps": 71145000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 7089,
+      "time_ps": 71155000,
+      "kind": "start"
+    },
+    {
+      "edge": 7241,
+      "time_ps": 72675000,
+      "kind": "overflow",
+      "d": 7089,
+      "data": 51,
+      "kept": 17,
+      "clear": 0,
+      "old_fe": true
+    },
+    {
+      "edge": 7250,
+      "time_ps": 72765000,
+      "kind": "start"
+    },
+    {
+      "edge": 7402,
+      "time_ps": 74285000,
+      "kind": "bad_stop",
+      "d": 7250,
+      "data": 68,
+      "ready": 0,
+      "old_valid": 1,
+      "clear": 1
+    },
+    {
+      "edge": 7411,
+      "time_ps": 74405000,
+      "kind": "armed"
+    },
+    {
+      "edge": 7416,
+      "time_ps": 74455000,
+      "kind": "start"
+    },
+    {
+      "edge": 7568,
+      "time_ps": 75975000,
+      "kind": "publish",
+      "d": 7416,
+      "data": 17,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 7577,
+      "time_ps": 76065000,
+      "kind": "start"
+    },
+    {
+      "edge": 7729,
+      "time_ps": 77585000,
+      "kind": "bad_stop",
+      "d": 7577,
+      "data": 34,
+      "ready": 0,
+      "old_valid": 1,
+      "clear": 0
+    },
+    {
+      "edge": 7737,
+      "time_ps": 77665000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 7738,
+      "time_ps": 77675000,
+      "kind": "start"
+    },
+    {
+      "edge": 7890,
+      "time_ps": 79195000,
+      "kind": "overflow",
+      "d": 7738,
+      "data": 51,
+      "kept": 17,
+      "clear": 0,
+      "old_fe": true
+    },
+    {
+      "edge": 7899,
+      "time_ps": 79285000,
+      "kind": "start"
+    },
+    {
+      "edge": 8051,
+      "time_ps": 80805000,
+      "kind": "overflow",
+      "d": 7899,
+      "data": 68,
+      "kept": 17,
+      "clear": 1,
+      "old_fe": true
+    },
+    {
+      "edge": 8058,
+      "time_ps": 80875000,
+      "kind": "consume",
+      "data": 17
+    },
+    {
+      "edge": 8061,
+      "time_ps": 80935000,
+      "kind": "armed"
+    },
+    {
+      "edge": 8066,
+      "time_ps": 80985000,
+      "kind": "start"
+    },
+    {
+      "edge": 8218,
+      "time_ps": 82505000,
+      "kind": "bad_stop",
+      "d": 8066,
+      "data": 90,
+      "ready": 0,
+      "old_valid": 0,
+      "clear": 0
+    },
+    {
+      "edge": 8290,
+      "time_ps": 83225000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 8291,
+      "time_ps": 83235000,
+      "kind": "start"
+    },
+    {
+      "edge": 8443,
+      "time_ps": 84755000,
+      "kind": "publish",
+      "d": 8291,
+      "data": 165,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 8449,
+      "time_ps": 84815000,
+      "kind": "consume",
+      "data": 165
+    },
+    {
+      "edge": 8452,
+      "time_ps": 84875000,
+      "kind": "armed"
+    },
+    {
+      "edge": 8457,
+      "time_ps": 84925000,
+      "kind": "start"
+    },
+    {
+      "edge": 8609,
+      "time_ps": 86445000,
+      "kind": "publish",
+      "d": 8457,
+      "data": 90,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 8639,
+      "time_ps": 86745000,
+      "kind": "consume",
+      "data": 90
+    },
+    {
+      "edge": 8646,
+      "time_ps": 86845000,
+      "kind": "armed"
+    },
+    {
+      "edge": 8651,
+      "time_ps": 86895000,
+      "kind": "start"
+    },
+    {
+      "edge": 8803,
+      "time_ps": 88415000,
+      "kind": "publish",
+      "d": 8651,
+      "data": 161,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 8812,
+      "time_ps": 88505000,
+      "kind": "start"
+    },
+    {
+      "edge": 8964,
+      "time_ps": 90025000,
+      "kind": "overflow",
+      "d": 8812,
+      "data": 178,
+      "kept": 161,
+      "clear": 0,
+      "old_fe": 0
+    },
+    {
+      "edge": 8971,
+      "time_ps": 90095000,
+      "kind": "consume",
+      "data": 161
+    },
+    {
+      "edge": 8975,
+      "time_ps": 90135000,
+      "kind": "start"
+    },
+    {
+      "edge": 9127,
+      "time_ps": 91655000,
+      "kind": "publish",
+      "d": 8975,
+      "data": 161,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 9133,
+      "time_ps": 91715000,
+      "kind": "consume",
+      "data": 161
+    },
+    {
+      "edge": 9136,
+      "time_ps": 91775000,
+      "kind": "armed"
+    },
+    {
+      "edge": 9141,
+      "time_ps": 91825000,
+      "kind": "start"
+    },
+    {
+      "edge": 9293,
+      "time_ps": 93345000,
+      "kind": "publish",
+      "d": 9141,
+      "data": 161,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 9302,
+      "time_ps": 93435000,
+      "kind": "start"
+    },
+    {
+      "edge": 9454,
+      "time_ps": 94955000,
+      "kind": "consume",
+      "data": 161
+    },
+    {
+      "edge": 9454,
+      "time_ps": 94955000,
+      "kind": "publish",
+      "d": 9302,
+      "data": 178,
+      "replaces": true,
+      "old_valid": 1,
+      "ready": 1
+    },
+    {
+      "edge": 9455,
+      "time_ps": 94965000,
+      "kind": "consume",
+      "data": 178
+    },
+    {
+      "edge": 9463,
+      "time_ps": 95045000,
+      "kind": "start"
+    },
+    {
+      "edge": 9615,
+      "time_ps": 96565000,
+      "kind": "publish",
+      "d": 9463,
+      "data": 161,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 9624,
+      "time_ps": 96655000,
+      "kind": "start"
+    },
+    {
+      "edge": 9776,
+      "time_ps": 98175000,
+      "kind": "consume",
+      "data": 161
+    },
+    {
+      "edge": 9776,
+      "time_ps": 98175000,
+      "kind": "publish",
+      "d": 9624,
+      "data": 161,
+      "replaces": true,
+      "old_valid": 1,
+      "ready": 1
+    },
+    {
+      "edge": 9777,
+      "time_ps": 98185000,
+      "kind": "consume",
+      "data": 161
+    },
+    {
+      "edge": 9784,
+      "time_ps": 98285000,
+      "kind": "armed"
+    },
+    {
+      "edge": 9789,
+      "time_ps": 98335000,
+      "kind": "start"
+    },
+    {
+      "edge": 9821,
+      "time_ps": 98685000,
+      "kind": "armed"
+    },
+    {
+      "edge": 9826,
+      "time_ps": 98735000,
+      "kind": "start"
+    },
+    {
+      "edge": 9978,
+      "time_ps": 100255000,
+      "kind": "publish",
+      "d": 9826,
+      "data": 195,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 9984,
+      "time_ps": 100315000,
+      "kind": "consume",
+      "data": 195
+    },
+    {
+      "edge": 9987,
+      "time_ps": 100375000,
+      "kind": "armed"
+    },
+    {
+      "edge": 9992,
+      "time_ps": 100425000,
+      "kind": "start"
+    },
+    {
+      "edge": 9996,
+      "time_ps": 100495000,
+      "kind": "armed"
+    },
+    {
+      "edge": 10001,
+      "time_ps": 100545000,
+      "kind": "start"
+    },
+    {
+      "edge": 10153,
+      "time_ps": 102065000,
+      "kind": "publish",
+      "d": 10001,
+      "data": 195,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 10159,
+      "time_ps": 102125000,
+      "kind": "consume",
+      "data": 195
+    },
+    {
+      "edge": 10162,
+      "time_ps": 102185000,
+      "kind": "armed"
+    },
+    {
+      "edge": 10167,
+      "time_ps": 102235000,
+      "kind": "start"
+    },
+    {
+      "edge": 10312,
+      "time_ps": 103715000,
+      "kind": "armed"
+    },
+    {
+      "edge": 10317,
+      "time_ps": 103765000,
+      "kind": "start"
+    },
+    {
+      "edge": 10469,
+      "time_ps": 105285000,
+      "kind": "publish",
+      "d": 10317,
+      "data": 195,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 10475,
+      "time_ps": 105345000,
+      "kind": "consume",
+      "data": 195
+    },
+    {
+      "edge": 10542,
+      "time_ps": 106045000,
+      "kind": "armed"
+    },
+    {
+      "edge": 10575,
+      "time_ps": 106375000,
+      "kind": "start"
+    },
+    {
+      "edge": 10727,
+      "time_ps": 107895000,
+      "kind": "publish",
+      "d": 10575,
+      "data": 150,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 10733,
+      "time_ps": 107955000,
+      "kind": "consume",
+      "data": 150
+    },
+    {
+      "edge": 10736,
+      "time_ps": 108015000,
+      "kind": "armed"
+    },
+    {
+      "edge": 10741,
+      "time_ps": 108065000,
+      "kind": "start"
+    },
+    {
+      "edge": 10893,
+      "time_ps": 109585000,
+      "kind": "publish",
+      "d": 10741,
+      "data": 17,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 10902,
+      "time_ps": 109675000,
+      "kind": "start"
+    },
+    {
+      "edge": 11054,
+      "time_ps": 111195000,
+      "kind": "bad_stop",
+      "d": 10902,
+      "data": 34,
+      "ready": 0,
+      "old_valid": 1,
+      "clear": 0
+    },
+    {
+      "edge": 11062,
+      "time_ps": 111275000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 11063,
+      "time_ps": 111285000,
+      "kind": "start"
+    },
+    {
+      "edge": 11215,
+      "time_ps": 112805000,
+      "kind": "bad_stop",
+      "d": 11063,
+      "data": 51,
+      "ready": 0,
+      "old_valid": 1,
+      "clear": 1
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "name": "correct",
+      "expected": "PASS",
+      "actual": "PASS"
+    },
+    {
+      "name": "native_nonzero",
+      "expected": "FAIL",
+      "actual": "FAIL"
+    },
+    {
+      "name": "truncated",
+      "expected": "FAIL",
+      "actual": "FAIL"
+    },
+    {
+      "name": "global_fail",
+      "expected": "FAIL",
+      "actual": "FAIL"
+    },
+    {
+      "name": "case_PASS",
+      "expected": "PASS",
+      "actual": "PASS"
+    },
+    {
+      "name": "case_FAIL",
+      "expected": "FAIL",
+      "actual": "FAIL"
+    }
+  ],
+  "new_DUT": 0,
+  "entrypoints_executed": false
+}

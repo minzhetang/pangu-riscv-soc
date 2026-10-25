@@ -1,0 +1,32 @@
+{
+  "status": "PASS_LIMITED_REPRODUCTION",
+  "native_process_summary": "native-process-summary.json",
+  "per_configuration": "new-runs.json",
+  "real_wave_artifacts": [
+    "new-wrap16-wave.json",
+    "new-wrap234-wave.json",
+    "new-rx8-wave.json",
+    "new-rx16-wave.json",
+    "new-rx234-wave.json"
+  ],
+  "RX_timelines": [
+    "new-rx8-timeline.json",
+    "new-rx16-timeline.json",
+    "new-rx234-timeline.json"
+  ],
+  "TX_boundaries": [
+    "new-TX-boundary-N16.json",
+    "new-TX-boundary-N234.json"
+  ],
+  "raw_work": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-stage-final-v02",
+  "incoming_stage_read_only": true,
+  "model_sources": [
+    "work/system/2026-10-24-soc-txgpio-m1/peripheral_checker.py",
+    "deliveries/stage-return-review-2026-10-23-v01/scripts/audit_rx_wave.py"
+  ],
+  "W06_rerun": false,
+  "GPIO_full_matrix_rerun": false,
+  "new_DUT": 7,
+  "new_system_DUT": 0,
+  "hardware": false
+}

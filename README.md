@@ -11,8 +11,8 @@
 |事项|当前证据|
 |---|---|
 |CPU执行裸机C及同步存储|有限软件系统通过，存储32K ROM/32K RAM使用官方primitive功能模型|
-|UART/GPIO|原程序N16/N234回归无退化，真实CPU读写及公开串行输出通过；B整包仍有局部验证/元数据整改|
-|最终阶段v01审收|F149共70文件完整分类覆盖，7新编译/7运行；共享RX逐笔顺序、指定关联变异和末半stop复位控制关闭，有限功能保留。事件快照、TX绝对沿号和活动元数据仍有条件；不升级系统或硬件验收|
+|UART/GPIO|原程序N16/N234回归无退化，真实CPU读写及公开串行输出通过；B v02原R1–R3由F152独立复验关闭，有限软件交付可接收；RX未系统集成|
+|最终阶段v01审收（历史，后续见F152）|F149共70文件完整分类覆盖，7新编译/7运行；共享RX逐笔顺序、指定关联变异和末半stop复位控制关闭，有限功能保留。事件快照、TX绝对沿号和活动元数据仍有条件；不升级系统或硬件验收|
 |物理时钟计数|64位自由运行、组合只读、高低高读取；计时单元增强296检查及真实C通过|
 |CoreMark短运行|2K总数据、两个种子、各1迭代，CRC/全状态/有序副作用/计时与后置UART通过|
 |计算区原始时钟数|性能种子2,103,648；验证种子2,263,000；不是主机运行秒数|
@@ -26,6 +26,7 @@
 |告警只读收窄|F147两最终VM完整解析，INIT/实际绑常量与状态边界建图0残余；粗略共同伪反馈不是PDS根因。0新编译/DUT/PDS，告警保持未闭；精简官方两问已备未发|
 |正式计量就绪检查|F150只读核68输入/四旧原流：迭代参数写死1、检查器为短测、长跑日志/周期预算不适配；下一双2迭代校准具体范围待批。0新编译/DUT/PDS，不是正式成绩|
 |双种子各2迭代校准|F151新2DUT严格有限通过，raw4207378/4526490、finalCRC72be/fe8c、完整662/661UART；只新端口迭代接线/验证预算，13RTL不改，先验参考与每笔副作用/全态核同。仍不足10秒、非正式或实机验收|
+|B最终阶段v02接收|F152外层80文件/7新编译7DUT，RX270事件/2700快照0差异、TX12完整事件E+10N准确、27diff精确重建；N1旧版本文案非阻塞另注。v02当前B交付、核心同SHA，RX未接SoC，非新系统/硬件验收|
 |当前系统上板、片上波形|**未验证**；over_temp原因未闭环，硬件操作保持停止|
 
 F146仅在独立副本修改cpu/soc取指选择，队员包装/TX/GPIO及官方算法不改。历史F136性能检查器曾漏计启动BSS，初版FAIL保留、以其`check-result-v2.json`为准；F143新`check-result.json`继承正确v2语义，不过滤启动零写。有限结果不能证明CPU整体正确，F146仅新增有限程序/同频条件下有实测支持的计算收益，不证明创新首创或最高频率吞吐改善。
@@ -48,6 +49,7 @@ F146仅在独立副本修改cpu/soc取指选择，队员包装/TX/GPIO及官方�
 - [F147告警只读调查](reports/verification/2026-10-25-prefetch-warning-m0.md)：完整图/建模边界、共有粗略假阳性、官方帮助检索与内部图不可达范围分列；不以自写解析器代替官方消息解释，不提升候选或恢复硬件。
 - [F151双迭代真实校准](reports/verification/2026-10-25-coremark-iter2-m1.md)：新参数初始化、先验参考、2个实际DUT/计时/全状态/有序副作用及完整串行证据，旧源/失败保留；F143稳定/F146暂缓，下一长测资源方案未自动实施。
 - [F150正式测量就绪](reports/verification/2026-10-25-coremark-measurement-readiness-m0.md)：旧实际ELF/轨迹和资源预算审计，保持稳定F143；下一有限双迭代scope未批，原B反馈已由用户报告转交，等待新答复。
+- [F152最终v02接收与差额关闭](reports/progress/2026-10-25-stage-final-v02-review.md)、[给B的回执与五问答复](deliveries/mainline-stage-final-v02-response-2026-10-25-v1/TEAMMATE_REPLY.md)：逐文件覆盖/原5波形与7新DUT分开，N1注记保留；B只冻结和具体复验支持，无必须新开发或重封包，旧根OPEN_PREEXISTING与硬件STOP保持。
 - [F149最终阶段v01审收](reports/progress/2026-10-25-stage-final-v01-review.md)、[队员R1–R3集中反馈](deliveries/mainline-stage-final-response-2026-10-25-v1/TEAMMATE_REPLY.md)：新DUT/原波形分列，已证项关闭，只收敛验证/元数据差额；原核心和硬件STOP保持。
 - [F148/2335完整审收与八问](reports/progress/2026-10-25-increment-2335-mainline-alignment.md)、[集中队员回复](deliveries/mainline-increment-2335-response-2026-10-25-v1/TEAMMATE_REPLY.md)：原/新波形、失败和有限关闭分列，原核心保持，B仅验证差额/最终封包；10/27窗口及硬件STOP不变。
 - [1735增量分层审收](reports/progress/2026-10-24-increment-1735-mainline-alignment.md)、[给队员的集中反馈](deliveries/mainline-increment-1735-response-2026-10-24-v1/TEAMMATE_REPLY.md)。新收件不扩大PDS或硬件授权，原系统有限验收保持。

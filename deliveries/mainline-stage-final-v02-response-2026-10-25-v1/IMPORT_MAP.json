@@ -1,0 +1,58 @@
+{
+  "active_delivery": "stage-return-final-20261027-v02",
+  "received_stage": "D:\\A_FPGA_Comp\\队员成果接收\\handoff-mainline-v02-20261025\\artifacts\\stage-return-final-20261027-v02",
+  "mode": "PINNED_READ_ONLY_DELIVERY_NOT_OVERWRITE",
+  "current_systems": [
+    {
+      "module": "stage-return-20261023-1345/tx-core",
+      "baseline": "F143",
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "unchanged": true
+    },
+    {
+      "module": "stage-return-20261023-1345/tx-core",
+      "baseline": "F151",
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "unchanged": true
+    },
+    {
+      "module": "stage-return-20261023-1345/gpio-core",
+      "baseline": "F143",
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+      "unchanged": true
+    },
+    {
+      "module": "stage-return-20261023-1345/gpio-core",
+      "baseline": "F151",
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+      "unchanged": true
+    },
+    {
+      "module": "increment-20261024-0030/wrapper",
+      "baseline": "F143",
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "unchanged": true
+    },
+    {
+      "module": "increment-20261024-0030/wrapper",
+      "baseline": "F151",
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "unchanged": true
+    }
+  ],
+  "RX": {
+    "path": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-20261023-1345\\work\\peripherals\\rx\\src\\uart_rx.v",
+    "SHA256": "BDCD02CA8CBA1CAE9D8A774D336B30B43E9457834856234BD7C2BA8AE1719F34",
+    "module_tests": "PASS_LIMITED_MAINLINE_REPRO",
+    "system_integration": "NOT_DONE",
+    "REGIF": "NOT_AUTHORIZED"
+  },
+  "previous_stage": "PRESERVED_HISTORY",
+  "hardware": "STOPPED"
+}

@@ -1,0 +1,1051 @@
+{
+  "path": "work/peripheral-review/2026-10-25-stage-final-v02/build/rx234.vcd",
+  "clks_per_bit": 234,
+  "scope": "independent public-port original waveform audit, not a new DUT run",
+  "status": "PASS",
+  "port_checks": 889336,
+  "mismatch_count": 0,
+  "first_errors": [],
+  "last_time_ps": 1109346000,
+  "active_edges": 110872,
+  "starts": 48,
+  "publishes": 31,
+  "consumes": 29,
+  "overflow_events": 5,
+  "bad_stop_events": 9,
+  "false_starts": 0,
+  "valid_rises": 29,
+  "reset_assertions": 21,
+  "cancelled": [
+    {
+      "time_ps": 909806000,
+      "d": 90474,
+      "edges_after_d": 465,
+      "section": "DATA"
+    },
+    {
+      "time_ps": 933416000,
+      "d": 93293,
+      "edges_after_d": 1,
+      "section": "START"
+    },
+    {
+      "time_ps": 978056000,
+      "d": 95648,
+      "edges_after_d": 2104,
+      "section": "STOP"
+    }
+  ],
+  "clear_same_new_frame_error": 2,
+  "clear_same_new_overrun": 1,
+  "raw_falling_phases": [
+    0.1,
+    0.6
+  ],
+  "events": [
+    {
+      "edge": 3,
+      "time_ps": 55000,
+      "kind": "armed"
+    },
+    {
+      "edge": 7,
+      "time_ps": 125000,
+      "kind": "armed"
+    },
+    {
+      "edge": 12,
+      "time_ps": 175000,
+      "kind": "start"
+    },
+    {
+      "edge": 2235,
+      "time_ps": 22405000,
+      "kind": "publish",
+      "d": 12,
+      "data": 0,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 2350,
+      "time_ps": 23555000,
+      "kind": "consume",
+      "data": 0
+    },
+    {
+      "edge": 2354,
+      "time_ps": 23595000,
+      "kind": "start"
+    },
+    {
+      "edge": 4577,
+      "time_ps": 45825000,
+      "kind": "publish",
+      "d": 2354,
+      "data": 255,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 4692,
+      "time_ps": 46975000,
+      "kind": "consume",
+      "data": 255
+    },
+    {
+      "edge": 4696,
+      "time_ps": 47015000,
+      "kind": "start"
+    },
+    {
+      "edge": 6919,
+      "time_ps": 69245000,
+      "kind": "publish",
+      "d": 4696,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 7034,
+      "time_ps": 70395000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 7038,
+      "time_ps": 70435000,
+      "kind": "start"
+    },
+    {
+      "edge": 9261,
+      "time_ps": 92665000,
+      "kind": "publish",
+      "d": 7038,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 9376,
+      "time_ps": 93815000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 9380,
+      "time_ps": 93855000,
+      "kind": "start"
+    },
+    {
+      "edge": 11603,
+      "time_ps": 116085000,
+      "kind": "publish",
+      "d": 9380,
+      "data": 1,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 11718,
+      "time_ps": 117235000,
+      "kind": "consume",
+      "data": 1
+    },
+    {
+      "edge": 11722,
+      "time_ps": 117275000,
+      "kind": "start"
+    },
+    {
+      "edge": 13945,
+      "time_ps": 139505000,
+      "kind": "publish",
+      "d": 11722,
+      "data": 128,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 14060,
+      "time_ps": 140655000,
+      "kind": "consume",
+      "data": 128
+    },
+    {
+      "edge": 14064,
+      "time_ps": 140695000,
+      "kind": "start"
+    },
+    {
+      "edge": 16287,
+      "time_ps": 162925000,
+      "kind": "publish",
+      "d": 14064,
+      "data": 126,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 16402,
+      "time_ps": 164075000,
+      "kind": "consume",
+      "data": 126
+    },
+    {
+      "edge": 16405,
+      "time_ps": 164135000,
+      "kind": "armed"
+    },
+    {
+      "edge": 16410,
+      "time_ps": 164185000,
+      "kind": "start"
+    },
+    {
+      "edge": 18633,
+      "time_ps": 186415000,
+      "kind": "publish",
+      "d": 16410,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 18748,
+      "time_ps": 187565000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 18752,
+      "time_ps": 187605000,
+      "kind": "start"
+    },
+    {
+      "edge": 20975,
+      "time_ps": 209835000,
+      "kind": "publish",
+      "d": 18752,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 21090,
+      "time_ps": 210985000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 21093,
+      "time_ps": 211045000,
+      "kind": "armed"
+    },
+    {
+      "edge": 21098,
+      "time_ps": 211095000,
+      "kind": "start"
+    },
+    {
+      "edge": 23321,
+      "time_ps": 233325000,
+      "kind": "publish",
+      "d": 21098,
+      "data": 85,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 23322,
+      "time_ps": 233335000,
+      "kind": "consume",
+      "data": 85
+    },
+    {
+      "edge": 23438,
+      "time_ps": 234495000,
+      "kind": "start"
+    },
+    {
+      "edge": 25661,
+      "time_ps": 256725000,
+      "kind": "publish",
+      "d": 23438,
+      "data": 170,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 1
+    },
+    {
+      "edge": 25662,
+      "time_ps": 256735000,
+      "kind": "consume",
+      "data": 170
+    },
+    {
+      "edge": 25778,
+      "time_ps": 257925000,
+      "kind": "armed"
+    },
+    {
+      "edge": 25783,
+      "time_ps": 257975000,
+      "kind": "start"
+    },
+    {
+      "edge": 28006,
+      "time_ps": 280205000,
+      "kind": "publish",
+      "d": 25783,
+      "data": 60,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 28124,
+      "time_ps": 281385000,
+      "kind": "start"
+    },
+    {
+      "edge": 30347,
+      "time_ps": 303615000,
+      "kind": "bad_stop",
+      "d": 28124,
+      "data": 165,
+      "ready": 0,
+      "old_valid": 1,
+      "clear": 0
+    },
+    {
+      "edge": 30464,
+      "time_ps": 304785000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 30466,
+      "time_ps": 304805000,
+      "kind": "start"
+    },
+    {
+      "edge": 32689,
+      "time_ps": 327035000,
+      "kind": "overflow",
+      "d": 30466,
+      "data": 195,
+      "kept": 60,
+      "clear": 0,
+      "old_fe": false
+    },
+    {
+      "edge": 32805,
+      "time_ps": 328195000,
+      "kind": "consume",
+      "data": 60
+    },
+    {
+      "edge": 32809,
+      "time_ps": 328235000,
+      "kind": "start"
+    },
+    {
+      "edge": 35032,
+      "time_ps": 350465000,
+      "kind": "publish",
+      "d": 32809,
+      "data": 195,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 35147,
+      "time_ps": 351615000,
+      "kind": "consume",
+      "data": 195
+    },
+    {
+      "edge": 35150,
+      "time_ps": 351675000,
+      "kind": "armed"
+    },
+    {
+      "edge": 35155,
+      "time_ps": 351725000,
+      "kind": "start"
+    },
+    {
+      "edge": 37378,
+      "time_ps": 373955000,
+      "kind": "publish",
+      "d": 35155,
+      "data": 105,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 37496,
+      "time_ps": 375135000,
+      "kind": "start"
+    },
+    {
+      "edge": 39719,
+      "time_ps": 397365000,
+      "kind": "consume",
+      "data": 105
+    },
+    {
+      "edge": 39719,
+      "time_ps": 397365000,
+      "kind": "bad_stop",
+      "d": 37496,
+      "data": 150,
+      "ready": 1,
+      "old_valid": 1,
+      "clear": 0
+    },
+    {
+      "edge": 39836,
+      "time_ps": 398535000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 39838,
+      "time_ps": 398555000,
+      "kind": "start"
+    },
+    {
+      "edge": 42061,
+      "time_ps": 420785000,
+      "kind": "publish",
+      "d": 39838,
+      "data": 150,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 42176,
+      "time_ps": 421935000,
+      "kind": "consume",
+      "data": 150
+    },
+    {
+      "edge": 42179,
+      "time_ps": 421995000,
+      "kind": "armed"
+    },
+    {
+      "edge": 42184,
+      "time_ps": 422045000,
+      "kind": "start"
+    },
+    {
+      "edge": 44407,
+      "time_ps": 444275000,
+      "kind": "bad_stop",
+      "d": 42184,
+      "data": 90,
+      "ready": 0,
+      "old_valid": 0,
+      "clear": 0
+    },
+    {
+      "edge": 44992,
+      "time_ps": 450125000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 44994,
+      "time_ps": 450145000,
+      "kind": "start"
+    },
+    {
+      "edge": 47217,
+      "time_ps": 472375000,
+      "kind": "publish",
+      "d": 44994,
+      "data": 150,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 47332,
+      "time_ps": 473525000,
+      "kind": "consume",
+      "data": 150
+    },
+    {
+      "edge": 47335,
+      "time_ps": 473585000,
+      "kind": "armed"
+    },
+    {
+      "edge": 47340,
+      "time_ps": 473635000,
+      "kind": "start"
+    },
+    {
+      "edge": 49563,
+      "time_ps": 495865000,
+      "kind": "publish",
+      "d": 47340,
+      "data": 17,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 49681,
+      "time_ps": 497045000,
+      "kind": "start"
+    },
+    {
+      "edge": 51904,
+      "time_ps": 519275000,
+      "kind": "bad_stop",
+      "d": 49681,
+      "data": 34,
+      "ready": 0,
+      "old_valid": 1,
+      "clear": 0
+    },
+    {
+      "edge": 52021,
+      "time_ps": 520445000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 52022,
+      "time_ps": 520455000,
+      "kind": "start"
+    },
+    {
+      "edge": 54245,
+      "time_ps": 542685000,
+      "kind": "overflow",
+      "d": 52022,
+      "data": 51,
+      "kept": 17,
+      "clear": 0,
+      "old_fe": true
+    },
+    {
+      "edge": 54363,
+      "time_ps": 543865000,
+      "kind": "start"
+    },
+    {
+      "edge": 56586,
+      "time_ps": 566095000,
+      "kind": "bad_stop",
+      "d": 54363,
+      "data": 68,
+      "ready": 0,
+      "old_valid": 1,
+      "clear": 1
+    },
+    {
+      "edge": 56704,
+      "time_ps": 567305000,
+      "kind": "armed"
+    },
+    {
+      "edge": 56709,
+      "time_ps": 567355000,
+      "kind": "start"
+    },
+    {
+      "edge": 58932,
+      "time_ps": 589585000,
+      "kind": "publish",
+      "d": 56709,
+      "data": 17,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 59050,
+      "time_ps": 590765000,
+      "kind": "start"
+    },
+    {
+      "edge": 61273,
+      "time_ps": 612995000,
+      "kind": "bad_stop",
+      "d": 59050,
+      "data": 34,
+      "ready": 0,
+      "old_valid": 1,
+      "clear": 0
+    },
+    {
+      "edge": 61390,
+      "time_ps": 614165000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 61391,
+      "time_ps": 614175000,
+      "kind": "start"
+    },
+    {
+      "edge": 63614,
+      "time_ps": 636405000,
+      "kind": "overflow",
+      "d": 61391,
+      "data": 51,
+      "kept": 17,
+      "clear": 0,
+      "old_fe": true
+    },
+    {
+      "edge": 63732,
+      "time_ps": 637585000,
+      "kind": "start"
+    },
+    {
+      "edge": 65955,
+      "time_ps": 659815000,
+      "kind": "overflow",
+      "d": 63732,
+      "data": 68,
+      "kept": 17,
+      "clear": 1,
+      "old_fe": true
+    },
+    {
+      "edge": 66071,
+      "time_ps": 660975000,
+      "kind": "consume",
+      "data": 17
+    },
+    {
+      "edge": 66074,
+      "time_ps": 661035000,
+      "kind": "armed"
+    },
+    {
+      "edge": 66079,
+      "time_ps": 661085000,
+      "kind": "start"
+    },
+    {
+      "edge": 68302,
+      "time_ps": 683315000,
+      "kind": "bad_stop",
+      "d": 66079,
+      "data": 90,
+      "ready": 0,
+      "old_valid": 0,
+      "clear": 0
+    },
+    {
+      "edge": 69355,
+      "time_ps": 693845000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 69356,
+      "time_ps": 693855000,
+      "kind": "start"
+    },
+    {
+      "edge": 71579,
+      "time_ps": 716085000,
+      "kind": "publish",
+      "d": 69356,
+      "data": 165,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 71694,
+      "time_ps": 717235000,
+      "kind": "consume",
+      "data": 165
+    },
+    {
+      "edge": 71697,
+      "time_ps": 717295000,
+      "kind": "armed"
+    },
+    {
+      "edge": 71702,
+      "time_ps": 717345000,
+      "kind": "start"
+    },
+    {
+      "edge": 73925,
+      "time_ps": 739575000,
+      "kind": "publish",
+      "d": 71702,
+      "data": 90,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 74064,
+      "time_ps": 740965000,
+      "kind": "consume",
+      "data": 90
+    },
+    {
+      "edge": 74071,
+      "time_ps": 741065000,
+      "kind": "armed"
+    },
+    {
+      "edge": 74076,
+      "time_ps": 741115000,
+      "kind": "start"
+    },
+    {
+      "edge": 76299,
+      "time_ps": 763345000,
+      "kind": "publish",
+      "d": 74076,
+      "data": 161,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 76417,
+      "time_ps": 764525000,
+      "kind": "start"
+    },
+    {
+      "edge": 78640,
+      "time_ps": 786755000,
+      "kind": "overflow",
+      "d": 76417,
+      "data": 178,
+      "kept": 161,
+      "clear": 0,
+      "old_fe": 0
+    },
+    {
+      "edge": 78756,
+      "time_ps": 787915000,
+      "kind": "consume",
+      "data": 161
+    },
+    {
+      "edge": 78760,
+      "time_ps": 787955000,
+      "kind": "start"
+    },
+    {
+      "edge": 80983,
+      "time_ps": 810185000,
+      "kind": "publish",
+      "d": 78760,
+      "data": 161,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 81098,
+      "time_ps": 811335000,
+      "kind": "consume",
+      "data": 161
+    },
+    {
+      "edge": 81101,
+      "time_ps": 811395000,
+      "kind": "armed"
+    },
+    {
+      "edge": 81106,
+      "time_ps": 811445000,
+      "kind": "start"
+    },
+    {
+      "edge": 83329,
+      "time_ps": 833675000,
+      "kind": "publish",
+      "d": 81106,
+      "data": 161,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 83447,
+      "time_ps": 834855000,
+      "kind": "start"
+    },
+    {
+      "edge": 85670,
+      "time_ps": 857085000,
+      "kind": "consume",
+      "data": 161
+    },
+    {
+      "edge": 85670,
+      "time_ps": 857085000,
+      "kind": "publish",
+      "d": 83447,
+      "data": 178,
+      "replaces": true,
+      "old_valid": 1,
+      "ready": 1
+    },
+    {
+      "edge": 85671,
+      "time_ps": 857095000,
+      "kind": "consume",
+      "data": 178
+    },
+    {
+      "edge": 85788,
+      "time_ps": 858265000,
+      "kind": "start"
+    },
+    {
+      "edge": 88011,
+      "time_ps": 880495000,
+      "kind": "publish",
+      "d": 85788,
+      "data": 161,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 88129,
+      "time_ps": 881675000,
+      "kind": "start"
+    },
+    {
+      "edge": 90352,
+      "time_ps": 903905000,
+      "kind": "consume",
+      "data": 161
+    },
+    {
+      "edge": 90352,
+      "time_ps": 903905000,
+      "kind": "publish",
+      "d": 88129,
+      "data": 161,
+      "replaces": true,
+      "old_valid": 1,
+      "ready": 1
+    },
+    {
+      "edge": 90353,
+      "time_ps": 903915000,
+      "kind": "consume",
+      "data": 161
+    },
+    {
+      "edge": 90469,
+      "time_ps": 905105000,
+      "kind": "armed"
+    },
+    {
+      "edge": 90474,
+      "time_ps": 905155000,
+      "kind": "start"
+    },
+    {
+      "edge": 90942,
+      "time_ps": 909865000,
+      "kind": "armed"
+    },
+    {
+      "edge": 90947,
+      "time_ps": 909915000,
+      "kind": "start"
+    },
+    {
+      "edge": 93170,
+      "time_ps": 932145000,
+      "kind": "publish",
+      "d": 90947,
+      "data": 195,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 93285,
+      "time_ps": 933295000,
+      "kind": "consume",
+      "data": 195
+    },
+    {
+      "edge": 93288,
+      "time_ps": 933355000,
+      "kind": "armed"
+    },
+    {
+      "edge": 93293,
+      "time_ps": 933405000,
+      "kind": "start"
+    },
+    {
+      "edge": 93297,
+      "time_ps": 933475000,
+      "kind": "armed"
+    },
+    {
+      "edge": 93302,
+      "time_ps": 933525000,
+      "kind": "start"
+    },
+    {
+      "edge": 95525,
+      "time_ps": 955755000,
+      "kind": "publish",
+      "d": 93302,
+      "data": 195,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 95640,
+      "time_ps": 956905000,
+      "kind": "consume",
+      "data": 195
+    },
+    {
+      "edge": 95643,
+      "time_ps": 956965000,
+      "kind": "armed"
+    },
+    {
+      "edge": 95648,
+      "time_ps": 957015000,
+      "kind": "start"
+    },
+    {
+      "edge": 97755,
+      "time_ps": 978115000,
+      "kind": "armed"
+    },
+    {
+      "edge": 97760,
+      "time_ps": 978165000,
+      "kind": "start"
+    },
+    {
+      "edge": 99983,
+      "time_ps": 1000395000,
+      "kind": "publish",
+      "d": 97760,
+      "data": 195,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 100098,
+      "time_ps": 1001545000,
+      "kind": "consume",
+      "data": 195
+    },
+    {
+      "edge": 101037,
+      "time_ps": 1010965000,
+      "kind": "armed"
+    },
+    {
+      "edge": 101506,
+      "time_ps": 1015655000,
+      "kind": "start"
+    },
+    {
+      "edge": 103729,
+      "time_ps": 1037885000,
+      "kind": "publish",
+      "d": 101506,
+      "data": 150,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 103844,
+      "time_ps": 1039035000,
+      "kind": "consume",
+      "data": 150
+    },
+    {
+      "edge": 103847,
+      "time_ps": 1039095000,
+      "kind": "armed"
+    },
+    {
+      "edge": 103852,
+      "time_ps": 1039145000,
+      "kind": "start"
+    },
+    {
+      "edge": 106075,
+      "time_ps": 1061375000,
+      "kind": "publish",
+      "d": 103852,
+      "data": 17,
+      "replaces": false,
+      "old_valid": 0,
+      "ready": 0
+    },
+    {
+      "edge": 106193,
+      "time_ps": 1062555000,
+      "kind": "start"
+    },
+    {
+      "edge": 108416,
+      "time_ps": 1084785000,
+      "kind": "bad_stop",
+      "d": 106193,
+      "data": 34,
+      "ready": 0,
+      "old_valid": 1,
+      "clear": 0
+    },
+    {
+      "edge": 108533,
+      "time_ps": 1085955000,
+      "kind": "rearmed"
+    },
+    {
+      "edge": 108534,
+      "time_ps": 1085965000,
+      "kind": "start"
+    },
+    {
+      "edge": 110757,
+      "time_ps": 1108195000,
+      "kind": "bad_stop",
+      "d": 108534,
+      "data": 51,
+      "ready": 0,
+      "old_valid": 1,
+      "clear": 1
+    }
+  ]
+}
