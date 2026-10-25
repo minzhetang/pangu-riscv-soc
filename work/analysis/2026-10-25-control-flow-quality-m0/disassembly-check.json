@@ -1,0 +1,21 @@
+{
+  "status": "PASS_READ_ONLY",
+  "rows": [
+    {
+      "program": "performance",
+      "status": "PASS",
+      "instruction_words": 3454,
+      "function_labels": 46,
+      "by_pc_entries": 223,
+      "new_DUT_runs": 0
+    },
+    {
+      "program": "validation",
+      "status": "PASS",
+      "instruction_words": 3454,
+      "function_labels": 46,
+      "by_pc_entries": 223,
+      "new_DUT_runs": 0
+    }
+  ]
+}

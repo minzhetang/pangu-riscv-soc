@@ -2,7 +2,7 @@
 
 面向盘古100Pro+（MES2L676-100HP）、目标器件PG2L100H-6IFBG676的比赛项目。包含五级流水线CPU、同步存储适配、UART TX/GPIO包装及裸机C验证。
 
-状态快照：**2026-10-25，F144完成O2→O3质量对照并拒绝O3；有效运行基线仍为F143/O2，F141/F142实现证据保持**。不代表正式CoreMark成绩、完整RV32I兼容、全部外部/CDC时序、FPGA运行或作品全部要求已通过。
+状态快照：**2026-10-25，F145完成既有O2控制流只读量化；有效运行基线仍为F143/O2，F144拒绝O3，F141/F142实现证据保持**。下一已决目标取指候选尚未实施，不代表正式CoreMark成绩、完整RV32I兼容、全部外部/CDC时序、FPGA运行或作品全部要求已通过。
 
 仓库已建立：`main`跟踪`origin/main`，首次53项基线提交为`cac9f87aedef4879a3dc2893dc16f32fed8c849b`。首次推送前已核空引用，仓库名称及Private标记由负责人在已登录官网确认。Git成功没有改变下面的软件/硬件验收边界。
 
@@ -21,6 +21,7 @@
 |板级顶层适配|F142新增15个真实IO约束、KEY0三沿复位、四键/八LED和234拍UART；复位与两个短C新运行/全状态/公开波形通过。实际PnR1805 LUT/1519 FF/14DRM，27MHz内部最差setup23.279ns/hold0.129ns；异步/外部时序和7告警仍有边界，无位流/实机|
 |新板级top上的CoreMark|F143保持13源/两旧镜像，在N234下2个新DUT有限通过；计算窗口逐笔事件/时刻及终态同F136，raw ticks仍2103648/2263000，完整662/661字节UART；计算无退化也无提速。本轮0GCC/0PDS/0硬件|
 |O2→O3单变量质量实验|F144两新镜像/两新DUT严格功能短测通过，但计算ticks2106278/2267352，比O2慢0.1250%/0.1923%；镜像均增3080B。拒绝O3、保留O2；0PDS/0硬件，不将全程序结束稍早或编译选项当计算收益/架构创新|
+|控制流只读质量评估|F145从旧真实轨迹核对149422/162524次计算区重定向，后继EX间隔6拍；已决目标提前送同步ROM、标签匹配少一槽仅为候选。0新DUT/构建/参考重放，理论空间不是实测收益|
 |当前系统上板、片上波形|**未验证**；over_temp原因未闭环，硬件操作保持停止|
 
 本轮CPU、队员包装/TX/GPIO及官方算法未改。历史F136性能检查器曾漏计启动BSS，初版FAIL保留、以其`check-result-v2.json`为准；F143新`check-result.json`继承正确v2语义，不过滤启动零写。有限结果不能证明CPU整体正确，也没有已测创新或提速收益。
@@ -38,6 +39,7 @@
 - [F142板级软件适配报告](reports/verification/2026-10-25-board-top-m1.md)：`work/fpga/2026-10-25-board-top-m1`包含独立新增top/reset、短C、TB/检查器、引脚/时钟工程和分层结果；既有11源功能不改。其当时新top未跑CoreMark状态由下条F143限定取代，原报告不改；模型16键、负测及波形解析不计新DUT。
 - [F143板级CoreMark复验](reports/verification/2026-10-25-board-coremark-m1.md)：同名work/fpga目录保留新TB/运行器/检查器、精确镜像与13源收据、完整UART变化记录和窗口原生VCD、质量对照及分层结果。连续串口记录不冒充全算法原生波形或片上ILA，旧成果和硬件STOP保持。
 - [F144编译优化反例与取舍](reports/verification/2026-10-25-compile-quality-m1.md)：同名work/fpga目录保留统一O3/真实描述diff、冻结预期、完整命令、严格终态/事件/串口与波形结果、容量/栈/计算和输出分列。O3只为已验证后拒绝的候选，不是新默认基线；原O2未重跑或覆盖。
+- [F145控制流只读量化](reports/verification/2026-10-25-control-flow-quality-m0.md)：work/analysis同名目录包含原迹解析/逐PC统计、来源SHA、最小候选范围；没有新CPU验证、实现或优化收益，下一RTL/TB/模型/PDS阶段须另获批准。
 - [1735增量分层审收](reports/progress/2026-10-24-increment-1735-mainline-alignment.md)、[给队员的集中反馈](deliveries/mainline-increment-1735-response-2026-10-24-v1/TEAMMATE_REPLY.md)。新收件不扩大PDS或硬件授权，原系统有限验收保持。
 - [首次提交范围](docs/repository/FIRST_COMMIT_SCOPE.md)、[逐文件SHA-256清单](docs/repository/first-commit-files.json)、[外部依赖与复现边界](docs/repository/EXTERNAL_DEPENDENCIES.md)。
 

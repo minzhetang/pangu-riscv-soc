@@ -224,6 +224,22 @@
 /work/fpga/2026-10-25-compile-quality-m1/port/*
 !/work/fpga/2026-10-25-compile-quality-m1/port/core_portme.h
 
+!/reports/verification/2026-10-25-control-flow-quality-m0.md
+!/work/analysis/
+/work/analysis/*
+!/work/analysis/2026-10-25-control-flow-quality-m0/
+/work/analysis/2026-10-25-control-flow-quality-m0/*
+!/work/analysis/2026-10-25-control-flow-quality-m0/IMPLEMENTATION_SCOPE.md
+!/work/analysis/2026-10-25-control-flow-quality-m0/analyze.py
+!/work/analysis/2026-10-25-control-flow-quality-m0/INPUTS.json
+!/work/analysis/2026-10-25-control-flow-quality-m0/SUMMARY.json
+!/work/analysis/2026-10-25-control-flow-quality-m0/performance-by-pc.json
+!/work/analysis/2026-10-25-control-flow-quality-m0/validation-by-pc.json
+!/work/analysis/2026-10-25-control-flow-quality-m0/postflight.json
+!/work/analysis/2026-10-25-control-flow-quality-m0/NEXT_IMPLEMENTATION_SCOPE.md
+!/work/analysis/2026-10-25-control-flow-quality-m0/disassembly-check.json
+!/work/analysis/2026-10-25-control-flow-quality-m0/COMMANDS.md
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

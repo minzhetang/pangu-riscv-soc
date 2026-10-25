@@ -1,0 +1,980 @@
+{
+  "date_beijing": "2026-10-25",
+  "decision": "D137",
+  "status": "PASS_READ_ONLY_ANALYSIS_NOT_NEW_DUT",
+  "parser": {
+    "status": "PASS_PARSER_ONLY",
+    "synthetic_positive": 5,
+    "synthetic_negative_rejected": 3,
+    "new_DUT_runs": 0
+  },
+  "rows": [
+    {
+      "program": "performance",
+      "status": "PASS_EXISTING_TRACE_ANALYSIS",
+      "source_run": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234",
+      "new_DUT_runs": 0,
+      "model_replays": 0,
+      "window": [
+        61967,
+        2165615
+      ],
+      "raw_ticks": 2103648,
+      "trace_SHA256": "F29BDA82EFF96A09DDD93ABD2C2B4970AD6C369B506712C2F7A899781ED5007B",
+      "bin_SHA256": "B4CEEC1B250A5151C1D02F018FC45B3D22CDC049E12E26EFC2A0562D23740E60",
+      "compute_window_event_SHA256": "C9632771A168FB5EC2CE23894973B40F0C5512295BABA75795049DD85F949269",
+      "total_EX": 1168111,
+      "whole_program_flush_from_control_decode": 285711,
+      "whole_program_flush_verified": 285711,
+      "window_EX": 732266,
+      "window_load_use_from_successor_gaps": 20714,
+      "control_counts": {
+        "BNE": 95326,
+        "controls": 224594,
+        "redirects": 149422,
+        "BRANCH_redirects": 122930,
+        "conditional_not_taken": 75172,
+        "backward_branch_not_taken": 11768,
+        "PC_plus4_targets": 0,
+        "JALR_RETURN": 11214,
+        "JALR_redirects": 22432,
+        "conditional_taken": 122930,
+        "JALR_LINK": 11214,
+        "BEQ": 94501,
+        "forward_branch_not_taken": 63404,
+        "BGE": 2230,
+        "BLT": 573,
+        "JAL_X0": 4060,
+        "JAL_redirects": 4060,
+        "backward_branch_taken": 86377,
+        "forward_branch_taken": 36553,
+        "BLTU": 2172,
+        "BGEU": 3300,
+        "JALR_OTHER": 4
+      },
+      "control_successor_gaps": {
+        "BNE:2": 10834,
+        "JALR_RETURN:6": 11214,
+        "JALR_LINK:6": 11214,
+        "BEQ:2": 61597,
+        "BGE:2": 1190,
+        "BLT:2": 193,
+        "JAL_X0:6": 4060,
+        "BNE:6": 84492,
+        "BGE:6": 1040,
+        "BEQ:6": 32904,
+        "BLT:6": 380,
+        "BLTU:6": 1326,
+        "BGEU:2": 512,
+        "BGEU:6": 2788,
+        "BLTU:2": 846,
+        "JALR_OTHER:6": 4
+      },
+      "normal_successor_gaps": {
+        "2": 486958,
+        "4": 20714
+      },
+      "existing_redirect_ticks": 597688,
+      "existing_redirect_fraction": 0.2841197766926786,
+      "conditional_hypothesis": {
+        "description": "one fewer logical bubble for already-resolved redirects in two-clock mode, every event eligible, all else equal",
+        "ideal_ticks_saved": 298844,
+        "ideal_time_reduction": 0.1420598883463393,
+        "ideal_speedup": 1.1655825230883796,
+        "measured": false,
+        "guaranteed": false
+      },
+      "direct_JAL_only_hypothesis": {
+        "ideal_ticks_saved": 8120,
+        "ideal_time_reduction": 0.0038599613623572005,
+        "measured": false
+      },
+      "top_control_functions": [
+        {
+          "function": "__mulsi3",
+          "total": 154292,
+          "by_kind": {
+            "BEQ": 72448,
+            "BNE": 72448,
+            "JALR_RETURN": 9396
+          }
+        },
+        {
+          "function": "core_state_transition",
+          "total": 22464,
+          "by_kind": {
+            "BEQ": 13264,
+            "BLTU": 1296,
+            "BGEU": 2984,
+            "JAL_X0": 2152,
+            "JALR_RETURN": 1024,
+            "BNE": 1744
+          }
+        },
+        {
+          "function": "core_bench_list",
+          "total": 19377,
+          "by_kind": {
+            "BGE": 107,
+            "BLT": 206,
+            "BEQ": 6179,
+            "JAL_X0": 788,
+            "BNE": 11978,
+            "JALR_LINK": 117,
+            "JALR_RETURN": 2
+          }
+        },
+        {
+          "function": "matrix_mul_matrix_bitextract",
+          "total": 9436,
+          "by_kind": {
+            "BEQ": 364,
+            "JALR_LINK": 5832,
+            "BNE": 2916,
+            "JAL_X0": 320,
+            "JALR_RETURN": 4
+          }
+        },
+        {
+          "function": "matrix_mul_matrix",
+          "total": 6520,
+          "by_kind": {
+            "BEQ": 364,
+            "JALR_LINK": 2916,
+            "BNE": 2916,
+            "JAL_X0": 320,
+            "JALR_RETURN": 4
+          }
+        },
+        {
+          "function": "matrix_test",
+          "total": 4448,
+          "by_kind": {
+            "BEQ": 472,
+            "BNE": 972,
+            "JAL_X0": 272,
+            "JALR_LINK": 352,
+            "BGE": 1296,
+            "BLTU": 772,
+            "BGEU": 308,
+            "JALR_RETURN": 4
+          }
+        },
+        {
+          "function": "core_list_mergesort",
+          "total": 3406,
+          "by_kind": {
+            "BEQ": 840,
+            "BGE": 827,
+            "BNE": 869,
+            "JALR_LINK": 319,
+            "BLT": 367,
+            "JAL_X0": 181,
+            "JALR_RETURN": 3
+          }
+        },
+        {
+          "function": "core_bench_state",
+          "total": 2396,
+          "by_kind": {
+            "BNE": 1088,
+            "BEQ": 108,
+            "JALR_LINK": 1088,
+            "BGEU": 8,
+            "BLTU": 100,
+            "JALR_RETURN": 4
+          }
+        },
+        {
+          "function": "matrix_mul_vect",
+          "total": 692,
+          "by_kind": {
+            "BEQ": 4,
+            "JALR_LINK": 324,
+            "BNE": 360,
+            "JALR_RETURN": 4
+          }
+        },
+        {
+          "function": "calc_func",
+          "total": 567,
+          "by_kind": {
+            "BEQ": 248,
+            "BNE": 32,
+            "JAL_X0": 27,
+            "JALR_LINK": 36,
+            "JALR_RETURN": 220,
+            "BLTU": 4
+          }
+        },
+        {
+          "function": "cmp_idx",
+          "total": 418,
+          "by_kind": {
+            "BEQ": 209,
+            "JALR_RETURN": 209
+          }
+        },
+        {
+          "function": "cmp_complex",
+          "total": 330,
+          "by_kind": {
+            "JALR_LINK": 220,
+            "JALR_RETURN": 110
+          }
+        }
+      ],
+      "examples": {
+        "BNE:not_taken": {
+          "cycle": 61972,
+          "pc": "00003298",
+          "next_cycle": 61974,
+          "next_pc": "0000329c",
+          "gap": 2,
+          "function": "start_time",
+          "encoding": "fed71ae3",
+          "kind": "BNE",
+          "family": "BRANCH",
+          "taken": false,
+          "target": 12940,
+          "offset": -12,
+          "direction": "backward",
+          "PC_plus4_target": false
+        },
+        "JALR_RETURN:taken": {
+          "cycle": 61982,
+          "pc": "000032ac",
+          "next_cycle": 61988,
+          "next_pc": "00000c5c",
+          "gap": 6,
+          "function": "start_time",
+          "encoding": "00008067",
+          "kind": "JALR_RETURN",
+          "family": "JALR",
+          "taken": true,
+          "target": 3164,
+          "offset": 0,
+          "direction": "indirect",
+          "PC_plus4_target": false
+        },
+        "JALR_LINK:taken": {
+          "cycle": 61992,
+          "pc": "00000c64",
+          "next_cycle": 61998,
+          "next_pc": "000009d8",
+          "gap": 6,
+          "function": "main",
+          "encoding": "d78080e7",
+          "kind": "JALR_LINK",
+          "family": "JALR",
+          "taken": true,
+          "target": 2520,
+          "offset": -648,
+          "direction": "indirect",
+          "PC_plus4_target": false
+        },
+        "BEQ:not_taken": {
+          "cycle": 62010,
+          "pc": "000009f0",
+          "next_cycle": 62012,
+          "next_pc": "000009f4",
+          "gap": 2,
+          "function": "iterate",
+          "encoding": "06090663",
+          "kind": "BEQ",
+          "family": "BRANCH",
+          "taken": false,
+          "target": 2652,
+          "offset": 108,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "BGE:not_taken": {
+          "cycle": 62048,
+          "pc": "00000550",
+          "next_cycle": 62050,
+          "next_pc": "00000554",
+          "gap": 2,
+          "function": "core_bench_list",
+          "encoding": "2ac05c63",
+          "kind": "BGE",
+          "family": "BRANCH",
+          "taken": false,
+          "target": 2056,
+          "offset": 696,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "BLT:not_taken": {
+          "cycle": 62050,
+          "pc": "00000554",
+          "next_cycle": 62052,
+          "next_pc": "00000558",
+          "gap": 2,
+          "function": "core_bench_list",
+          "encoding": "2c05c263",
+          "kind": "BLT",
+          "family": "BRANCH",
+          "taken": false,
+          "target": 2072,
+          "offset": 708,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "JAL_X0:taken": {
+          "cycle": 62068,
+          "pc": "00000578",
+          "next_cycle": 62074,
+          "next_pc": "00000584",
+          "gap": 6,
+          "function": "core_bench_list",
+          "encoding": "00c0006f",
+          "kind": "JAL_X0",
+          "family": "JAL",
+          "taken": true,
+          "target": 1412,
+          "offset": 12,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "BNE:taken": {
+          "cycle": 62082,
+          "pc": "0000058c",
+          "next_cycle": 62088,
+          "next_pc": "0000057c",
+          "gap": 6,
+          "function": "core_bench_list",
+          "encoding": "fed818e3",
+          "kind": "BNE",
+          "family": "BRANCH",
+          "taken": true,
+          "target": 1404,
+          "offset": -16,
+          "direction": "backward",
+          "PC_plus4_target": false
+        },
+        "BGE:taken": {
+          "cycle": 62588,
+          "pc": "00000618",
+          "next_cycle": 62594,
+          "next_pc": "00000574",
+          "gap": 6,
+          "function": "core_bench_list",
+          "encoding": "f406dee3",
+          "kind": "BGE",
+          "family": "BRANCH",
+          "taken": true,
+          "target": 1396,
+          "offset": -164,
+          "direction": "backward",
+          "PC_plus4_target": false
+        },
+        "BEQ:taken": {
+          "cycle": 63606,
+          "pc": "000005c0",
+          "next_cycle": 63612,
+          "next_pc": "000005d0",
+          "gap": 6,
+          "function": "core_bench_list",
+          "encoding": "00068863",
+          "kind": "BEQ",
+          "family": "BRANCH",
+          "taken": true,
+          "target": 1488,
+          "offset": 16,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "BLT:taken": {
+          "cycle": 172602,
+          "pc": "00000424",
+          "next_cycle": 172608,
+          "next_pc": "00000404",
+          "gap": 6,
+          "function": "core_list_mergesort",
+          "encoding": "fe8040e3",
+          "kind": "BLT",
+          "family": "BRANCH",
+          "taken": true,
+          "target": 1028,
+          "offset": -32,
+          "direction": "backward",
+          "PC_plus4_target": false
+        },
+        "BLTU:taken": {
+          "cycle": 338488,
+          "pc": "00001b84",
+          "next_cycle": 338494,
+          "next_pc": "00001b58",
+          "gap": 6,
+          "function": "matrix_test",
+          "encoding": "fc85eae3",
+          "kind": "BLTU",
+          "family": "BRANCH",
+          "taken": true,
+          "target": 7000,
+          "offset": -44,
+          "direction": "backward",
+          "PC_plus4_target": false
+        },
+        "BGEU:not_taken": {
+          "cycle": 338576,
+          "pc": "00001b54",
+          "next_cycle": 338578,
+          "next_pc": "00001b58",
+          "gap": 2,
+          "function": "matrix_test",
+          "encoding": "0285fa63",
+          "kind": "BGEU",
+          "family": "BRANCH",
+          "taken": false,
+          "target": 7048,
+          "offset": 52,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "BGEU:taken": {
+          "cycle": 338716,
+          "pc": "00001b54",
+          "next_cycle": 338722,
+          "next_pc": "00001b88",
+          "gap": 6,
+          "function": "matrix_test",
+          "encoding": "0285fa63",
+          "kind": "BGEU",
+          "family": "BRANCH",
+          "taken": true,
+          "target": 7048,
+          "offset": 52,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "BLTU:not_taken": {
+          "cycle": 340950,
+          "pc": "00001b90",
+          "next_cycle": 340952,
+          "next_pc": "00001b94",
+          "gap": 2,
+          "function": "matrix_test",
+          "encoding": "fa88e0e3",
+          "kind": "BLTU",
+          "family": "BRANCH",
+          "taken": false,
+          "target": 6960,
+          "offset": -96,
+          "direction": "backward",
+          "PC_plus4_target": false
+        },
+        "JALR_OTHER:taken": {
+          "cycle": 561922,
+          "pc": "00001d94",
+          "next_cycle": 561928,
+          "next_pc": "00002b54",
+          "gap": 6,
+          "function": "core_bench_matrix",
+          "encoding": "dc430067",
+          "kind": "JALR_OTHER",
+          "family": "JALR",
+          "taken": true,
+          "target": 11092,
+          "offset": -572,
+          "direction": "indirect",
+          "PC_plus4_target": false
+        }
+      },
+      "limitations": [
+        "EX observation is not retirement",
+        "branch condition itself reused prior validated functional evidence, not re-executed",
+        "PC+4 target uses known baseline gap only; new candidate must not inherit that rule",
+        "timing estimate is static hypothesis; no new implementation/performance/timing proof"
+      ]
+    },
+    {
+      "program": "validation",
+      "status": "PASS_EXISTING_TRACE_ANALYSIS",
+      "source_run": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234",
+      "new_DUT_runs": 0,
+      "model_replays": 0,
+      "window": [
+        62369,
+        2325369
+      ],
+      "raw_ticks": 2263000,
+      "trace_SHA256": "A01D7E4FEFE607AD443F554334440B862BAA026BD0AEDEC6D6887EDE8301C3AB",
+      "bin_SHA256": "26B4F9C2900141EC2EF3A19F4C75C831ED62A1F6E02B34C441501B0FF4E84429",
+      "compute_window_event_SHA256": "632C6D6368F014C746A17B6FD66E3C3F9F5F22E923B773AE8762355ABEF80186",
+      "total_EX": 1220391,
+      "whole_program_flush_from_control_decode": 298540,
+      "whole_program_flush_verified": 298540,
+      "window_EX": 785232,
+      "window_load_use_from_successor_gaps": 21220,
+      "control_counts": {
+        "BNE": 105282,
+        "controls": 243524,
+        "redirects": 162524,
+        "BRANCH_redirects": 136130,
+        "conditional_not_taken": 81000,
+        "backward_branch_not_taken": 12151,
+        "PC_plus4_targets": 0,
+        "JALR_RETURN": 11200,
+        "JALR_redirects": 22404,
+        "conditional_taken": 136130,
+        "JALR_LINK": 11200,
+        "BEQ": 103653,
+        "forward_branch_not_taken": 68849,
+        "BGE": 2228,
+        "BLT": 569,
+        "JAL_X0": 3990,
+        "JAL_redirects": 3990,
+        "backward_branch_taken": 95907,
+        "forward_branch_taken": 40223,
+        "BLTU": 2152,
+        "BGEU": 3246,
+        "JALR_OTHER": 4
+      },
+      "control_successor_gaps": {
+        "BNE:2": 10886,
+        "JALR_RETURN:6": 11200,
+        "JALR_LINK:6": 11200,
+        "BEQ:2": 67088,
+        "BGE:2": 1535,
+        "BLT:2": 193,
+        "JAL_X0:6": 3990,
+        "BNE:6": 94396,
+        "BGE:6": 693,
+        "BEQ:6": 36565,
+        "BLTU:6": 1316,
+        "BLTU:2": 836,
+        "BGEU:6": 2784,
+        "BGEU:2": 462,
+        "JALR_OTHER:6": 4,
+        "BLT:6": 376
+      },
+      "normal_successor_gaps": {
+        "2": 520488,
+        "4": 21220
+      },
+      "existing_redirect_ticks": 650096,
+      "existing_redirect_fraction": 0.287271763146266,
+      "conditional_hypothesis": {
+        "description": "one fewer logical bubble for already-resolved redirects in two-clock mode, every event eligible, all else equal",
+        "ideal_ticks_saved": 325048,
+        "ideal_time_reduction": 0.143635881573133,
+        "ideal_speedup": 1.1677275804560692,
+        "measured": false,
+        "guaranteed": false
+      },
+      "direct_JAL_only_hypothesis": {
+        "ideal_ticks_saved": 7980,
+        "ideal_time_reduction": 0.0035262925320371187,
+        "measured": false
+      },
+      "top_control_functions": [
+        {
+          "function": "__mulsi3",
+          "total": 173148,
+          "by_kind": {
+            "BEQ": 81876,
+            "BNE": 81876,
+            "JALR_RETURN": 9396
+          }
+        },
+        {
+          "function": "core_state_transition",
+          "total": 22292,
+          "by_kind": {
+            "BEQ": 13170,
+            "BLTU": 1300,
+            "BGEU": 2958,
+            "JAL_X0": 2074,
+            "JALR_RETURN": 1004,
+            "BNE": 1786
+          }
+        },
+        {
+          "function": "core_bench_list",
+          "total": 19754,
+          "by_kind": {
+            "BGE": 107,
+            "BLT": 206,
+            "BEQ": 6363,
+            "JAL_X0": 794,
+            "BNE": 12165,
+            "JALR_LINK": 117,
+            "JALR_RETURN": 2
+          }
+        },
+        {
+          "function": "matrix_mul_matrix_bitextract",
+          "total": 9436,
+          "by_kind": {
+            "BEQ": 364,
+            "JALR_LINK": 5832,
+            "BNE": 2916,
+            "JAL_X0": 320,
+            "JALR_RETURN": 4
+          }
+        },
+        {
+          "function": "matrix_mul_matrix",
+          "total": 6520,
+          "by_kind": {
+            "BEQ": 364,
+            "JALR_LINK": 2916,
+            "BNE": 2916,
+            "JAL_X0": 320,
+            "JALR_RETURN": 4
+          }
+        },
+        {
+          "function": "matrix_test",
+          "total": 4448,
+          "by_kind": {
+            "BEQ": 148,
+            "BNE": 1296,
+            "JAL_X0": 272,
+            "JALR_LINK": 352,
+            "BGE": 1296,
+            "BGEU": 280,
+            "BLTU": 800,
+            "JALR_RETURN": 4
+          }
+        },
+        {
+          "function": "core_list_mergesort",
+          "total": 3404,
+          "by_kind": {
+            "BEQ": 847,
+            "BGE": 825,
+            "BNE": 864,
+            "JALR_LINK": 319,
+            "BLT": 363,
+            "JAL_X0": 183,
+            "JALR_RETURN": 3
+          }
+        },
+        {
+          "function": "core_bench_state",
+          "total": 2252,
+          "by_kind": {
+            "BNE": 1068,
+            "BEQ": 56,
+            "JALR_LINK": 1068,
+            "BGEU": 8,
+            "BLTU": 48,
+            "JALR_RETURN": 4
+          }
+        },
+        {
+          "function": "matrix_mul_vect",
+          "total": 692,
+          "by_kind": {
+            "BEQ": 4,
+            "JALR_LINK": 324,
+            "BNE": 360,
+            "JALR_RETURN": 4
+          }
+        },
+        {
+          "function": "calc_func",
+          "total": 579,
+          "by_kind": {
+            "BEQ": 254,
+            "BNE": 32,
+            "JAL_X0": 27,
+            "JALR_LINK": 36,
+            "JALR_RETURN": 226,
+            "BLTU": 4
+          }
+        },
+        {
+          "function": "cmp_idx",
+          "total": 412,
+          "by_kind": {
+            "BEQ": 206,
+            "JALR_RETURN": 206
+          }
+        },
+        {
+          "function": "cmp_complex",
+          "total": 339,
+          "by_kind": {
+            "JALR_LINK": 226,
+            "JALR_RETURN": 113
+          }
+        }
+      ],
+      "examples": {
+        "BNE:not_taken": {
+          "cycle": 62374,
+          "pc": "00003298",
+          "next_cycle": 62376,
+          "next_pc": "0000329c",
+          "gap": 2,
+          "function": "start_time",
+          "encoding": "fed71ae3",
+          "kind": "BNE",
+          "family": "BRANCH",
+          "taken": false,
+          "target": 12940,
+          "offset": -12,
+          "direction": "backward",
+          "PC_plus4_target": false
+        },
+        "JALR_RETURN:taken": {
+          "cycle": 62384,
+          "pc": "000032ac",
+          "next_cycle": 62390,
+          "next_pc": "00000c5c",
+          "gap": 6,
+          "function": "start_time",
+          "encoding": "00008067",
+          "kind": "JALR_RETURN",
+          "family": "JALR",
+          "taken": true,
+          "target": 3164,
+          "offset": 0,
+          "direction": "indirect",
+          "PC_plus4_target": false
+        },
+        "JALR_LINK:taken": {
+          "cycle": 62394,
+          "pc": "00000c64",
+          "next_cycle": 62400,
+          "next_pc": "000009d8",
+          "gap": 6,
+          "function": "main",
+          "encoding": "d78080e7",
+          "kind": "JALR_LINK",
+          "family": "JALR",
+          "taken": true,
+          "target": 2520,
+          "offset": -648,
+          "direction": "indirect",
+          "PC_plus4_target": false
+        },
+        "BEQ:not_taken": {
+          "cycle": 62412,
+          "pc": "000009f0",
+          "next_cycle": 62414,
+          "next_pc": "000009f4",
+          "gap": 2,
+          "function": "iterate",
+          "encoding": "06090663",
+          "kind": "BEQ",
+          "family": "BRANCH",
+          "taken": false,
+          "target": 2652,
+          "offset": 108,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "BGE:not_taken": {
+          "cycle": 62450,
+          "pc": "00000550",
+          "next_cycle": 62452,
+          "next_pc": "00000554",
+          "gap": 2,
+          "function": "core_bench_list",
+          "encoding": "2ac05c63",
+          "kind": "BGE",
+          "family": "BRANCH",
+          "taken": false,
+          "target": 2056,
+          "offset": 696,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "BLT:not_taken": {
+          "cycle": 62452,
+          "pc": "00000554",
+          "next_cycle": 62454,
+          "next_pc": "00000558",
+          "gap": 2,
+          "function": "core_bench_list",
+          "encoding": "2c05c263",
+          "kind": "BLT",
+          "family": "BRANCH",
+          "taken": false,
+          "target": 2072,
+          "offset": 708,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "JAL_X0:taken": {
+          "cycle": 62470,
+          "pc": "00000578",
+          "next_cycle": 62476,
+          "next_pc": "00000584",
+          "gap": 6,
+          "function": "core_bench_list",
+          "encoding": "00c0006f",
+          "kind": "JAL_X0",
+          "family": "JAL",
+          "taken": true,
+          "target": 1412,
+          "offset": 12,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "BNE:taken": {
+          "cycle": 62484,
+          "pc": "0000058c",
+          "next_cycle": 62490,
+          "next_pc": "0000057c",
+          "gap": 6,
+          "function": "core_bench_list",
+          "encoding": "fed818e3",
+          "kind": "BNE",
+          "family": "BRANCH",
+          "taken": true,
+          "target": 1404,
+          "offset": -16,
+          "direction": "backward",
+          "PC_plus4_target": false
+        },
+        "BGE:taken": {
+          "cycle": 62990,
+          "pc": "00000618",
+          "next_cycle": 62996,
+          "next_pc": "00000574",
+          "gap": 6,
+          "function": "core_bench_list",
+          "encoding": "f406dee3",
+          "kind": "BGE",
+          "family": "BRANCH",
+          "taken": true,
+          "target": 1396,
+          "offset": -164,
+          "direction": "backward",
+          "PC_plus4_target": false
+        },
+        "BEQ:taken": {
+          "cycle": 64008,
+          "pc": "000005c0",
+          "next_cycle": 64014,
+          "next_pc": "000005d0",
+          "gap": 6,
+          "function": "core_bench_list",
+          "encoding": "00068863",
+          "kind": "BEQ",
+          "family": "BRANCH",
+          "taken": true,
+          "target": 1488,
+          "offset": 16,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "BLTU:taken": {
+          "cycle": 173818,
+          "pc": "000001b8",
+          "next_cycle": 173824,
+          "next_pc": "000001c0",
+          "gap": 6,
+          "function": "calc_func",
+          "encoding": "00c6e463",
+          "kind": "BLTU",
+          "family": "BRANCH",
+          "taken": true,
+          "target": 448,
+          "offset": 8,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "BLTU:not_taken": {
+          "cycle": 174054,
+          "pc": "00001f04",
+          "next_cycle": 174056,
+          "next_pc": "00001f08",
+          "gap": 2,
+          "function": "core_state_transition",
+          "encoding": "02f86c63",
+          "kind": "BLTU",
+          "family": "BRANCH",
+          "taken": false,
+          "target": 7996,
+          "offset": 56,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "BGEU:taken": {
+          "cycle": 174092,
+          "pc": "0000212c",
+          "next_cycle": 174098,
+          "next_pc": "00001f9c",
+          "gap": 6,
+          "function": "core_state_transition",
+          "encoding": "e6d8f8e3",
+          "kind": "BGEU",
+          "family": "BRANCH",
+          "taken": true,
+          "target": 8092,
+          "offset": -400,
+          "direction": "backward",
+          "PC_plus4_target": false
+        },
+        "BGEU:not_taken": {
+          "cycle": 174158,
+          "pc": "00001f7c",
+          "next_cycle": 174160,
+          "next_pc": "00001f80",
+          "gap": 2,
+          "function": "core_state_transition",
+          "encoding": "02e6f263",
+          "kind": "BGEU",
+          "family": "BRANCH",
+          "taken": false,
+          "target": 8096,
+          "offset": 36,
+          "direction": "forward",
+          "PC_plus4_target": false
+        },
+        "JALR_OTHER:taken": {
+          "cycle": 662958,
+          "pc": "00001d94",
+          "next_cycle": 662964,
+          "next_pc": "00002b54",
+          "gap": 6,
+          "function": "core_bench_matrix",
+          "encoding": "dc430067",
+          "kind": "JALR_OTHER",
+          "family": "JALR",
+          "taken": true,
+          "target": 11092,
+          "offset": -572,
+          "direction": "indirect",
+          "PC_plus4_target": false
+        },
+        "BLT:taken": {
+          "cycle": 1090720,
+          "pc": "00000424",
+          "next_cycle": 1090726,
+          "next_pc": "00000404",
+          "gap": 6,
+          "function": "core_list_mergesort",
+          "encoding": "fe8040e3",
+          "kind": "BLT",
+          "family": "BRANCH",
+          "taken": true,
+          "target": 1028,
+          "offset": -32,
+          "direction": "backward",
+          "PC_plus4_target": false
+        }
+      },
+      "limitations": [
+        "EX observation is not retirement",
+        "branch condition itself reused prior validated functional evidence, not re-executed",
+        "PC+4 target uses known baseline gap only; new candidate must not inherit that rule",
+        "timing estimate is static hypothesis; no new implementation/performance/timing proof"
+      ]
+    }
+  ],
+  "RTL_changes": 0,
+  "TB_changes": 0,
+  "new_builds": 0,
+  "new_DUT_runs": 0,
+  "new_reference_replays": 0,
+  "PDS_runs": 0,
+  "hardware": "STOPPED"
+}

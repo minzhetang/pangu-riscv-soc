@@ -1,0 +1,140 @@
+{
+  "base_git": "03850aa073afe2ff22001a17f9151e95067ce2a6",
+  "files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification\\memory_protocol_checks.svh",
+      "bytes": 317,
+      "sha256": "7435B9EA41198C02BA25CDB2F44427952F7B5EA8CD80800424091F157E644E49"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\build\\performance\\program.bin",
+      "bytes": 15912,
+      "sha256": "B4CEEC1B250A5151C1D02F018FC45B3D22CDC049E12E26EFC2A0562D23740E60"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\build\\validation\\program.bin",
+      "bytes": 15920,
+      "sha256": "26B4F9C2900141EC2EF3A19F4C75C831ED62A1F6E02B34C441501B0FF4E84429"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\quality-compare.json",
+      "bytes": 3802,
+      "sha256": "EA413959E22BDACC9A12CBAD1862C281245E4878A69ACEDE4C58E1942090FDD0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\check-result.json",
+      "bytes": 3088,
+      "sha256": "41069A454D56B0F0655D5E0A29491A6D633F05CB9C5F903B5F53E776AC5F232D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\stdout.log",
+      "bytes": 299,
+      "sha256": "064E5C1330C8742C2D43BC1020773EC76B9A72B8A3D5C77CF0CEAF7F60B9C47B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\trace.log",
+      "bytes": 53254975,
+      "sha256": "F29BDA82EFF96A09DDD93ABD2C2B4970AD6C369B506712C2F7A899781ED5007B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\check-result.json",
+      "bytes": 3088,
+      "sha256": "3E044018F2ADB7D1F17270D9DA3957AD3E2624481B17CC41F3C953C96354A4D1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\stdout.log",
+      "bytes": 299,
+      "sha256": "CE547E21995D99E5C6E413E46DA7903D694167D78F9759D7967070913A218BC6"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\trace.log",
+      "bytes": 55167878,
+      "sha256": "A01D7E4FEFE607AD443F554334440B862BAA026BD0AEDEC6D6887EDE8301C3AB"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\alu.v",
+      "bytes": 1021,
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\board_reset_sync.sv",
+      "bytes": 504,
+      "sha256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\board_top.sv",
+      "bytes": 817,
+      "sha256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\control.v",
+      "bytes": 2988,
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\cpu.v",
+      "bytes": 17416,
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\cycle_counter64.sv",
+      "bytes": 395,
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\gpio_core.v",
+      "bytes": 2087,
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\local_regif_txgpio_m1.v",
+      "bytes": 3732,
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\memory_model.sv",
+      "bytes": 10236,
+      "sha256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\regfile.v",
+      "bytes": 666,
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\soc_data_adapter.sv",
+      "bytes": 1526,
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\soc_top.sv",
+      "bytes": 1872,
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\uart_tx.v",
+      "bytes": 5195,
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build-result.json",
+      "bytes": 25454,
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-objdump\\stdout.log",
+      "bytes": 167238,
+      "sha256": "A924D7DE91C5F422C28CBD062356FC754A48DB1566B5153AA551841B3521D999"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-objdump\\stdout.log",
+      "bytes": 167229,
+      "sha256": "F429E719A3B0F8FD69D63E05D90334498F6E85962F183C877E97C62F697754BF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\quality-window-analysis.json",
+      "bytes": 4493,
+      "sha256": "D3EEC6D4E442C9954D1789AD5ABD88CB6C259287FEAB2A53B79F17B7812E713C"
+    }
+  ]
+}
