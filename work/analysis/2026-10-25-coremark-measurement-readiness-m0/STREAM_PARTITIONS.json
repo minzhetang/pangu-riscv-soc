@@ -1,0 +1,73 @@
+{
+  "rows": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\trace.log",
+      "SHA256": "F29BDA82EFF96A09DDD93ABD2C2B4970AD6C369B506712C2F7A899781ED5007B",
+      "bytes": 53254975,
+      "lines": 2171228,
+      "counts": {
+        "outside:EX": 435845,
+        "outside:WB": 287740,
+        "outside:READ": 135299,
+        "outside:STORE": 6184,
+        "compute:EX": 732266,
+        "compute:READ": 55008,
+        "compute:WB": 504541,
+        "compute:STORE": 14345
+      },
+      "bytes_by_region": {
+        "outside": 23009398,
+        "compute": 30245577
+      }
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\bus.log",
+      "SHA256": "4A1FD1559E15966AC068BEE55A76BAB4A7BC2C31D2183353F9326BC1916EFA98",
+      "bytes": 110281625,
+      "lines": 1125326,
+      "counts": {
+        "outside:EDGE": 1125078,
+        "compute:EDGE": 248
+      },
+      "bytes_by_region": {
+        "outside": 110257457,
+        "compute": 24168
+      }
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\trace.log",
+      "SHA256": "A01D7E4FEFE607AD443F554334440B862BAA026BD0AEDEC6D6887EDE8301C3AB",
+      "bytes": 55167878,
+      "lines": 2257410,
+      "counts": {
+        "outside:EX": 435159,
+        "outside:WB": 287344,
+        "outside:READ": 135140,
+        "outside:STORE": 6193,
+        "compute:EX": 785232,
+        "compute:READ": 55434,
+        "compute:WB": 538668,
+        "compute:STORE": 14240
+      },
+      "bytes_by_region": {
+        "outside": 22977367,
+        "compute": 32190511
+      }
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\bus.log",
+      "SHA256": "06D53F3F0A77FADC604A25E4C5B88D53B52467E3403989F3002FC35795A9C0CE",
+      "bytes": 110131283,
+      "lines": 1123792,
+      "counts": {
+        "outside:EDGE": 1123480,
+        "compute:EDGE": 312
+      },
+      "bytes_by_region": {
+        "outside": 110100853,
+        "compute": 30430
+      }
+    }
+  ],
+  "source": "F143 original byte streams read once; no DUT/reference replay"
+}

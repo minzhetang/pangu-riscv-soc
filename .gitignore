@@ -402,6 +402,21 @@
 /work/peripheral-review/2026-10-25-stage-final-v01/tests/*
 !/work/peripheral-review/2026-10-25-stage-final-v01/tests/review_rx_dump.sv
 
+!/reports/verification/2026-10-25-coremark-measurement-readiness-m0.md
+!/work/analysis/2026-10-25-coremark-measurement-readiness-m0/
+/work/analysis/2026-10-25-coremark-measurement-readiness-m0/*
+!/work/analysis/2026-10-25-coremark-measurement-readiness-m0/audit.py
+!/work/analysis/2026-10-25-coremark-measurement-readiness-m0/SUMMARY.json
+!/work/analysis/2026-10-25-coremark-measurement-readiness-m0/INPUTS.json
+!/work/analysis/2026-10-25-coremark-measurement-readiness-m0/STREAM_PARTITIONS.json
+!/work/analysis/2026-10-25-coremark-measurement-readiness-m0/CODE_ANCHORS.json
+!/work/analysis/2026-10-25-coremark-measurement-readiness-m0/CALCULATOR_SELFTEST.json
+!/work/analysis/2026-10-25-coremark-measurement-readiness-m0/NEXT_IMPLEMENTATION_SCOPE.md
+!/work/analysis/2026-10-25-coremark-measurement-readiness-m0/SCOPE_STATUS.json
+!/work/analysis/2026-10-25-coremark-measurement-readiness-m0/COMMANDS.md
+!/work/analysis/2026-10-25-coremark-measurement-readiness-m0/postflight.json
+!/work/analysis/2026-10-25-coremark-measurement-readiness-m0/postflight-final.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

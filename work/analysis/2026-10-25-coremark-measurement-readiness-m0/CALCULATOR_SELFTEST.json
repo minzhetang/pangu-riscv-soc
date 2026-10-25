@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "ticks": 26999999,
+      "integer_seconds": 0,
+      "raw_threshold_accepts": false,
+      "host_arithmetic_only": true
+    },
+    {
+      "ticks": 27000000,
+      "integer_seconds": 1,
+      "raw_threshold_accepts": false,
+      "host_arithmetic_only": true
+    },
+    {
+      "ticks": 269999999,
+      "integer_seconds": 9,
+      "raw_threshold_accepts": false,
+      "host_arithmetic_only": true
+    },
+    {
+      "ticks": 270000000,
+      "integer_seconds": 10,
+      "raw_threshold_accepts": true,
+      "host_arithmetic_only": true
+    },
+    {
+      "ticks": 296999999,
+      "integer_seconds": 10,
+      "raw_threshold_accepts": true,
+      "host_arithmetic_only": true
+    }
+  ],
+  "new_DUT": 0
+}

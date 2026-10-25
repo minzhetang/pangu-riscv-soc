@@ -1,0 +1,9 @@
+{
+  "status": "READ_ONLY_INPUTS_UNCHANGED",
+  "inputs": 68,
+  "native_compiler_DUT_PDS_GCC_runs": 0,
+  "algorithm_or_port_or_RTL_TB_changes": false,
+  "hardware": "STOPPED",
+  "stable": "F143",
+  "candidate_promoted": false
+}

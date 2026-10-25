@@ -1,0 +1,77 @@
+[
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port\\core_portme.c",
+    "line": 9,
+    "text": "volatile ee_s32 seed3_volatile=0x66, seed4_volatile=1, seed5_volatile=0;"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port\\core_portme.c",
+    "line": 49,
+    "text": "    if(end_ticks<start_ticks||elapsed_ticks>UINT32_MAX)timer_error=1;"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port\\core_portme.c",
+    "line": 52,
+    "text": "secs_ret time_in_secs(CORE_TICKS ticks) { return ticks/27000000u; }"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port\\core_portme.c",
+    "line": 62,
+    "text": "    ee_printf(\"Timer Hz set    : 27000000; SIM ONLY, NO VALID SCORE\\n\");"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port\\core_portme.c",
+    "line": 63,
+    "text": "    timing_phase=3;"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port\\core_portme.h",
+    "line": 5,
+    "text": "#define HAS_FLOAT 0"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port\\core_portme.h",
+    "line": 23,
+    "text": "typedef ee_u32 CORE_TICKS;"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port\\core_portme.h",
+    "line": 24,
+    "text": "#define SEED_METHOD SEED_VOLATILE"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_main.c",
+    "line": 57,
+    "text": "    ee_u32        iterations = res->iterations;"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_main.c",
+    "line": 69,
+    "text": "        if (i == 0)"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_main.c",
+    "line": 242,
+    "text": "    if (results[0].iterations == 0)"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_main.c",
+    "line": 376,
+    "text": "            \"ERROR! Must execute for at least 10 secs for a valid result!\\n\");"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_main.c",
+    "line": 400,
+    "text": "        ee_printf(\"[%d]crcfinal      : 0x%04x\\n\", i, results[i].crc);"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\timer.h",
+    "line": 5,
+    "text": "static inline uint64_t counter_read(void) {"
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\timer.h",
+    "line": 7,
+    "text": "    do { a=MMIO32(0x20000104u);lo=MMIO32(0x20000100u);b=MMIO32(0x20000104u); } while(a!=b);"
+  }
+]

@@ -1,0 +1,190 @@
+{
+  "date_beijing": "2026-10-25",
+  "stage": "A-COREMARK-MEASUREMENT-READINESS-M0",
+  "decision": "NOT_READY_FOR_FORMAL_LONG_RUN_RECOMMEND_TWO_ITERATION_CALIBRATION",
+  "rules": {
+    "commit": "1f483d5b8316753a742cbf5590caf5bd0a4e4777",
+    "source_urls": [
+      "https://github.com/eembc/coremark/blob/1f483d5b8316753a742cbf5590caf5bd0a4e4777/README.md",
+      "https://github.com/eembc/coremark/blob/1f483d5b8316753a742cbf5590caf5bd0a4e4777/barebones_porting.md"
+    ],
+    "actually_opened": true,
+    "minimum_seconds": 10,
+    "required_seed_sets": [
+      "0,0,0x66",
+      "0x3415,0x3415,0x66"
+    ],
+    "data_bytes": 2000,
+    "profile_seeds_only_for_PGO": true,
+    "iteration_and_port_changes_allowed": true,
+    "upstream_six_unchanged": true
+  },
+  "frequency_nominal": 27000000,
+  "minimum_compute_ticks": 270000000,
+  "current_bounds": {
+    "physical_cycles": 6000000,
+    "host_seconds_per_case": 360,
+    "each_log_bytes": 268435456
+  },
+  "MAX_CORE_TICKS_seconds": 159.07286277777777,
+  "rows": [
+    {
+      "seed": "performance",
+      "elf_seed4_initial": 1,
+      "raw_ticks": 2103648,
+      "nominal_seconds": 0.07791288888888889,
+      "start": 61967,
+      "end": 2165615,
+      "physical": 3784487,
+      "old_DUT_host_seconds": 201.875,
+      "within_window_counts": {
+        "EX": 732266,
+        "READ": 55008,
+        "WB": 504541,
+        "STORE": 14345
+      },
+      "iteration_floor_from_single_run": 129,
+      "forecasts": [
+        {
+          "iterations": 2,
+          "linear_compute_ticks": 4207296,
+          "linear_seconds_at_nominal": 0.15582577777777779,
+          "estimated_physical": 5888135,
+          "estimated_DUT_host_seconds": 314.089400525091,
+          "artifact_bytes": {
+            "trace.log": 83500552,
+            "bus.log": 110305793
+          },
+          "not_a_measurement": true,
+          "per_iteration_state_variation_not_calibrated": true
+        },
+        {
+          "iterations": 129,
+          "linear_compute_ticks": 271370592,
+          "linear_seconds_at_nominal": 10.050762666666667,
+          "estimated_physical": 273051431,
+          "estimated_DUT_host_seconds": 14565.318267211645,
+          "artifact_bytes": {
+            "trace.log": 3924688831,
+            "bus.log": 113375129
+          },
+          "not_a_measurement": true,
+          "per_iteration_state_variation_not_calibrated": true
+        },
+        {
+          "iterations": 160,
+          "linear_compute_ticks": 336583680,
+          "linear_seconds_at_nominal": 12.466062222222222,
+          "estimated_physical": 338264519,
+          "estimated_DUT_host_seconds": 18043.964683489467,
+          "artifact_bytes": {
+            "trace.log": 4862301718,
+            "bus.log": 114124337
+          },
+          "not_a_measurement": true,
+          "per_iteration_state_variation_not_calibrated": true
+        }
+      ]
+    },
+    {
+      "seed": "validation",
+      "elf_seed4_initial": 1,
+      "raw_ticks": 2263000,
+      "nominal_seconds": 0.08381481481481481,
+      "start": 62369,
+      "end": 2325369,
+      "physical": 3941007,
+      "old_DUT_host_seconds": 209.235,
+      "within_window_counts": {
+        "EX": 785232,
+        "READ": 55434,
+        "WB": 538668,
+        "STORE": 14240
+      },
+      "iteration_floor_from_single_run": 120,
+      "forecasts": [
+        {
+          "iterations": 2,
+          "linear_compute_ticks": 4526000,
+          "linear_seconds_at_nominal": 0.16762962962962963,
+          "estimated_physical": 6204007,
+          "estimated_DUT_host_seconds": 329.381654141949,
+          "artifact_bytes": {
+            "trace.log": 87358389,
+            "bus.log": 110161713
+          },
+          "not_a_measurement": true,
+          "per_iteration_state_variation_not_calibrated": true
+        },
+        {
+          "iterations": 120,
+          "linear_compute_ticks": 271560000,
+          "linear_seconds_at_nominal": 10.057777777777778,
+          "estimated_physical": 273238007,
+          "estimated_DUT_host_seconds": 14506.686842891932,
+          "artifact_bytes": {
+            "trace.log": 3885838687,
+            "bus.log": 113752453
+          },
+          "not_a_measurement": true,
+          "per_iteration_state_variation_not_calibrated": true
+        },
+        {
+          "iterations": 160,
+          "linear_compute_ticks": 362080000,
+          "linear_seconds_at_nominal": 13.410370370370371,
+          "estimated_physical": 363758007,
+          "estimated_DUT_host_seconds": 19312.553008569892,
+          "artifact_bytes": {
+            "trace.log": 5173459127,
+            "bus.log": 114969653
+          },
+          "not_a_measurement": true,
+          "per_iteration_state_variation_not_calibrated": true
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "status": "VERIFIED_STATIC_AND_OLD_ELF",
+      "finding": "seed4 is literal1 in SEED_VOLATILE path; changing only -DITERATIONS does not parameterize this port"
+    },
+    {
+      "id": "M2",
+      "status": "VERIFIED_STATIC",
+      "finding": "time_in_secs integer division supported by HAS_FLOAT0 path but report is coarse; retain raw ticks and do exact rational host calculation separately, not a formal score"
+    },
+    {
+      "id": "M3",
+      "status": "VERIFIED_LIMIT",
+      "finding": "64bit physical counter read, but CORE_TICKS32 and explicit UINT32_MAX delta guard limit accepted interval to <159.08s at nominal27MHz; >=10s fits, wrap path not newly proven"
+    },
+    {
+      "id": "M4",
+      "status": "VERIFIED_VALIDATION_COUPLING",
+      "finding": "checker requires short-warning presence, exact single run/start-stop, phase and 1iteration manual plan; cannot label longer program passed without new pre-frozen oracle/iterations/finalCRC and error policy"
+    },
+    {
+      "id": "M5",
+      "status": "VERIFIED_BUDGET_CONFLICT",
+      "finding": "6M total clocks/360s/256MiB each logs cannot be reused unchanged for >=270M compute clocks; projections conditional, no long run executed"
+    },
+    {
+      "id": "M6",
+      "status": "HARDWARE_STOP_RETAINED",
+      "finding": "27MHz nominal constraint/config is not external time calibration; software duration cannot replace FPGA run, formal measurement or ILA"
+    }
+  ],
+  "compile_DUT_GCC_PDS_runs": 0,
+  "hardware": "STOPPED",
+  "stable": "F143_O2",
+  "candidate": "F146_HELD",
+  "limitations": [
+    "linear forecasts are neither verified next-iteration behavior nor host runtime commitments",
+    "original EX/WB/MEM classes remain split, no actual retirementPC/unified commit",
+    "no formal score or hardware-frequency calibration",
+    "B receipt is user-reported sent; no teammate ACK inferred"
+  ]
+}

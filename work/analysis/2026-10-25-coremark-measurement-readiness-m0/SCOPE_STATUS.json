@@ -1,0 +1,12 @@
+{
+  "stage": "A-COREMARK-ITER2-M1",
+  "version": "1.0.0",
+  "status": "PENDING_SCOPE_APPROVAL",
+  "CPU_RTL_changes": false,
+  "port_or_TB_changes_this_turn": false,
+  "new_compiler_DUT_runs": 0,
+  "proposed_new_DUT": 2,
+  "proposed_external_compiles": 2,
+  "scope_SHA256": "5009E546B0A8CDC194EBC7011A05EF4B2F4C99C216453844E7D0F4E6B1F45C4F",
+  "hardware": "STOPPED"
+}
