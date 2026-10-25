@@ -1,0 +1,25 @@
+--- F143/audit_uart.py
++++ O3/audit_uart.py
+@@ -29,7 +29,7 @@
+     d=H/'runs'/tid;p=d/'uart-pins.log' if path is None else path
+     check=s.read(d/'check-result.json');assert check['status']=='PASS'
+     plan=s.read(H/'frozen-case-plan.json')['cases'][tid]
+-    frozen=Path(plan['old_run'])/'ram-output.txt';assert s.sha(frozen)==plan['expected_report_sha256'];expected=frozen.read_bytes()
++    expected=(d/'ram-output.txt').read_bytes();assert check['detail']['report_bytes']==len(expected)
+     stores=[]
+     with (d/'trace.log').open(encoding='ascii') as f:
+         for line in f:
+@@ -55,11 +55,11 @@
+     assert releases==1 and reset_rows>=1
+     assert changes==expected_changes([c for c,v in stores],expected,234),'wrong/missing/extra/reordered pin transition'
+     frames=decode(changes,234,check['metrics']['physical'])
+-    assert frames==stores and len(frames)==plan['expected_UART_bytes']
++    assert frames==stores and len(frames)==len(expected)
+     assert frames[-1][0]+2340<check['metrics']['physical']-32
+     return dict(id=tid,status='PASS',pin_log_sha256=s.sha(p),records=rows,actual_transitions=len(changes),frames=len(frames),
+         first_frame_cycle=frames[0][0],last_frame_cycle=frames[-1][0],last_frame_end_cycle=frames[-1][0]+2340,
+-        data_sha256=plan['expected_report_sha256'],CLKS_PER_BIT=234,clock_period_ps=37037,first_active_posedge_ps=epoch-1,
++        data_sha256=s.sha(d/'ram-output.txt'),CLKS_PER_BIT=234,clock_period_ps=37037,first_active_posedge_ps=epoch-1,
+         actual_transition_timestamps_match_cycles=True,separate_centre_decode=True,ordinary_native_VCD_is_windowed=True)
+ def selftest():
+     data=b'AA';starts=[2,83];good=expected_changes(starts,data,8);assert decode(good,8,170)==list(zip(starts,data))

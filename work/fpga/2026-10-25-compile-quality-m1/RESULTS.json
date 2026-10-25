@@ -1,0 +1,991 @@
+{
+  "date_beijing": "2026-10-25",
+  "decision": "D135/D136",
+  "fact": "F144",
+  "stage": "COMPLETE_STOP",
+  "outcome": "O3_FUNCTIONAL_SHORT_TEST_PASS_BUT_REJECTED_FOR_COMPUTE_REGRESSION_AND_CODE_GROWTH",
+  "selected_baseline": "F143 O2 board top (F142 PDS remains applicable)",
+  "candidate_default": false,
+  "rule_review": {
+    "commit": "1f483d5b8316753a742cbf5590caf5bd0a4e4777",
+    "url": "https://github.com/eembc/coremark/blob/1f483d5b8316753a742cbf5590caf5bd0a4e4777/README.md#run-rules",
+    "local_README_SHA256": "5581FB67DC1609CBD1865F150DBCB1050D96C602987792456850EB96EB0DD08C",
+    "sources": [
+      {
+        "name": "coremark.h",
+        "sha256": "42642B9A06C7ED2B3BD9EDA971B7C3868C4F5D27BF7EF6C4BBA11291A0C2598A"
+      },
+      {
+        "name": "core_list_join.c",
+        "sha256": "CA00E4E010ECE47D7F040CB92AA50A95345A00D3171B59D088F6B243BE06CE7B"
+      },
+      {
+        "name": "core_main.c",
+        "sha256": "17884C93C5B94378EB0FF02B4DF3725756CF2ADDB9B8CBCAA6200A4649FF5CA7"
+      },
+      {
+        "name": "core_matrix.c",
+        "sha256": "ECDFF717B5A5C4907D221A606760E25499899CBF617582C05D40DB71C91351E4"
+      },
+      {
+        "name": "core_state.c",
+        "sha256": "F4B84BB0A3452C45A4DAA664AB502BFDCCBD31CB57D93E9AC490C60937717A4E"
+      },
+      {
+        "name": "core_util.c",
+        "sha256": "A3FBFCB9BB943B638624B8ECE01C5836DD56A96D7BCDE2697B248D077447327F"
+      }
+    ],
+    "rules": [
+      "build options may change",
+      "all sources share flags",
+      "no algorithm/header changes",
+      "two standardized seeds and 2000 bytes",
+      "reporting requires at least 10 seconds"
+    ],
+    "short_test_not_formal": true,
+    "old_MD5_manifest_header_comment_issue_preserved": true,
+    "web_API_unavailable_not_a_download_failure": true
+  },
+  "compile": {
+    "status": "PASS",
+    "rows": [
+      {
+        "id": "performance-N234",
+        "status": "PASS",
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+            "-B",
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "-g2012",
+            "-Wall",
+            "-DM0_VERIFY",
+            "-I",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source",
+            "-I",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification",
+            "-s",
+            "tb_board_coremark",
+            "-Ptb_board_coremark.PHASE_ADDR=67584",
+            "-o",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\compile\\performance-N234.vvp",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\alu.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\control.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\cpu.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\gpio_core.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\local_regif_txgpio_m1.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\regfile.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\uart_tx.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\board_reset_sync.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\board_top.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\cycle_counter64.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\memory_model.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\soc_data_adapter.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\performance-N234\\source\\soc_top.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\tests\\tb_board_coremark.sv",
+            "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+            "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1",
+          "returncode": 0,
+          "returncode_hex": "0x00000000",
+          "timed_out": false,
+          "cap": false,
+          "elapsed_seconds": 43.313,
+          "timeout_seconds": 120,
+          "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\logs\\compile-performance-N234\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\logs\\compile-performance-N234\\stderr.log"
+        },
+        "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\compile\\performance-N234.vvp",
+        "sha256": "2451AEB705AF58F77DB9FE0D7304FBA7D0591264BC4F70F6C349F31A7E32947E"
+      },
+      {
+        "id": "validation-N234",
+        "status": "PASS",
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+            "-B",
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "-g2012",
+            "-Wall",
+            "-DM0_VERIFY",
+            "-I",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source",
+            "-I",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification",
+            "-s",
+            "tb_board_coremark",
+            "-Ptb_board_coremark.PHASE_ADDR=67592",
+            "-o",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\compile\\validation-N234.vvp",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\alu.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\control.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\cpu.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\gpio_core.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\local_regif_txgpio_m1.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\regfile.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\uart_tx.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\board_reset_sync.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\board_top.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\cycle_counter64.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\memory_model.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\soc_data_adapter.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\cases\\validation-N234\\source\\soc_top.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\tests\\tb_board_coremark.sv",
+            "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+            "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1",
+          "returncode": 0,
+          "returncode_hex": "0x00000000",
+          "timed_out": false,
+          "cap": false,
+          "elapsed_seconds": 43.515,
+          "timeout_seconds": 120,
+          "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\logs\\compile-validation-N234\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\logs\\compile-validation-N234\\stderr.log"
+        },
+        "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\compile\\validation-N234.vvp",
+        "sha256": "9BB55F4DFA943BD6A31CEDC41BD3625403DDE8D168766F395D7A9AE5EE142C08"
+      }
+    ],
+    "protected": 726
+  },
+  "simulation": {
+    "status": "PASS",
+    "new_DUT_runs": 2,
+    "rows": [
+      {
+        "id": "performance-N234",
+        "status": "PASS",
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+            "-N",
+            "-M-",
+            "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\compile\\performance-N234.vvp",
+            "+MAX_CYCLES=6000000"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\runs\\performance-N234",
+          "returncode": 0,
+          "returncode_hex": "0x00000000",
+          "timed_out": false,
+          "cap": false,
+          "elapsed_seconds": 201.015,
+          "timeout_seconds": 360,
+          "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\logs\\run-performance-N234\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\logs\\run-performance-N234\\stderr.log"
+        },
+        "check": {
+          "status": "PASS",
+          "errors": [],
+          "metrics": {
+            "physical": 3780627,
+            "advances": 1890313,
+            "stall": 152642,
+            "flush": 283667,
+            "tail": 32
+          },
+          "trace_counts": {
+            "EX": 1170318,
+            "WB": 796509,
+            "READ": 190535,
+            "STORE": 20356
+          },
+          "streams": {
+            "EX": {
+              "count": 1170318,
+              "sha256": "2B49FAEC332993B305C28CBAE8E710ADECB672AAF1654822C44202A84D63D5AD"
+            },
+            "WB": {
+              "count": 796509,
+              "sha256": "DCD1FC0F8F3ECC05C6FCBF04EF70424384EBA0EAC1BF2DDAA60DD4B6A3C59C14"
+            },
+            "MEM": {
+              "count": 210891,
+              "sha256": "FE687FA8526B0BFAE82AA5B086747C01443011E6115EA467FA324584AA13FCCD"
+            }
+          },
+          "timer_reads": [
+            {
+              "pc": 16348,
+              "address": 536871172,
+              "cycle": 18774,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16352,
+              "address": 536871168,
+              "cycle": 18776,
+              "expected": 18775,
+              "actual": 18775
+            },
+            {
+              "pc": 16356,
+              "address": 536871172,
+              "cycle": 18778,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16396,
+              "address": 536871172,
+              "cycle": 18800,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16400,
+              "address": 536871168,
+              "cycle": 18802,
+              "expected": 18801,
+              "actual": 18801
+            },
+            {
+              "pc": 16404,
+              "address": 536871172,
+              "cycle": 18804,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16056,
+              "address": 536871172,
+              "cycle": 55548,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16060,
+              "address": 536871168,
+              "cycle": 55550,
+              "expected": 55549,
+              "actual": 55549
+            },
+            {
+              "pc": 16064,
+              "address": 536871172,
+              "cycle": 55552,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16108,
+              "address": 536871172,
+              "cycle": 2161826,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16112,
+              "address": 536871168,
+              "cycle": 2161828,
+              "expected": 2161827,
+              "actual": 2161827
+            },
+            {
+              "pc": 16116,
+              "address": 536871172,
+              "cycle": 2161830,
+              "expected": 0,
+              "actual": 0
+            }
+          ],
+          "GPIO_actual": [],
+          "UART_frames": 662,
+          "detail": {
+            "stamps": [
+              18775,
+              18801,
+              55549,
+              2161827
+            ],
+            "empty_window": 26,
+            "raw_ticks": 2106278,
+            "frequency_setting_hz": 27000000,
+            "simulated_seconds_at_setting": 0.0780102962962963,
+            "formal_score_valid": false,
+            "phases": [
+              [
+                6223,
+                0
+              ],
+              [
+                55563,
+                1
+              ],
+              [
+                2161845,
+                2
+              ],
+              [
+                2220841,
+                3
+              ],
+              [
+                3780543,
+                4
+              ]
+            ],
+            "report_bytes": 662
+          },
+          "limitations": [
+            "finite inputs; no true retirement PC or unified WB-STORE commit",
+            "short simulation not valid CoreMark score",
+            "no hardware evidence"
+          ]
+        }
+      },
+      {
+        "id": "validation-N234",
+        "status": "PASS",
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+            "-N",
+            "-M-",
+            "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\compile\\validation-N234.vvp",
+            "+MAX_CYCLES=6000000"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\runs\\validation-N234",
+          "returncode": 0,
+          "returncode_hex": "0x00000000",
+          "timed_out": false,
+          "cap": false,
+          "elapsed_seconds": 209.125,
+          "timeout_seconds": 360,
+          "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\logs\\run-validation-N234\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\logs\\run-validation-N234\\stderr.log"
+        },
+        "check": {
+          "status": "PASS",
+          "errors": [],
+          "metrics": {
+            "physical": 3938809,
+            "advances": 1969404,
+            "stall": 152957,
+            "flush": 296606,
+            "tail": 32
+          },
+          "trace_counts": {
+            "EX": 1223216,
+            "WB": 830548,
+            "READ": 190800,
+            "STORE": 20257
+          },
+          "streams": {
+            "EX": {
+              "count": 1223216,
+              "sha256": "2D67359F8DA81BB7A00A94C7452C0361A3E1F33AEF0BCFBE54639258DC6D554B"
+            },
+            "WB": {
+              "count": 830548,
+              "sha256": "BFD6C278A2FD5972E2688F30E69D16E73FEB1F8BD52D9719B06ADCD96180F04F"
+            },
+            "MEM": {
+              "count": 211057,
+              "sha256": "612A472ED8B095993E7CE9F9DB799180853FE172305BD81CE47E1090B5557C62"
+            }
+          },
+          "timer_reads": [
+            {
+              "pc": 16348,
+              "address": 536871172,
+              "cycle": 18786,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16352,
+              "address": 536871168,
+              "cycle": 18788,
+              "expected": 18787,
+              "actual": 18787
+            },
+            {
+              "pc": 16356,
+              "address": 536871172,
+              "cycle": 18790,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16396,
+              "address": 536871172,
+              "cycle": 18812,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16400,
+              "address": 536871168,
+              "cycle": 18814,
+              "expected": 18813,
+              "actual": 18813
+            },
+            {
+              "pc": 16404,
+              "address": 536871172,
+              "cycle": 18816,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16056,
+              "address": 536871172,
+              "cycle": 55842,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16060,
+              "address": 536871168,
+              "cycle": 55844,
+              "expected": 55843,
+              "actual": 55843
+            },
+            {
+              "pc": 16064,
+              "address": 536871172,
+              "cycle": 55846,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16108,
+              "address": 536871172,
+              "cycle": 2323194,
+              "expected": 0,
+              "actual": 0
+            },
+            {
+              "pc": 16112,
+              "address": 536871168,
+              "cycle": 2323196,
+              "expected": 2323195,
+              "actual": 2323195
+            },
+            {
+              "pc": 16116,
+              "address": 536871172,
+              "cycle": 2323198,
+              "expected": 0,
+              "actual": 0
+            }
+          ],
+          "GPIO_actual": [],
+          "UART_frames": 661,
+          "detail": {
+            "stamps": [
+              18787,
+              18813,
+              55843,
+              2323195
+            ],
+            "empty_window": 26,
+            "raw_ticks": 2267352,
+            "frequency_setting_hz": 27000000,
+            "simulated_seconds_at_setting": 0.083976,
+            "formal_score_valid": false,
+            "phases": [
+              [
+                6259,
+                0
+              ],
+              [
+                55857,
+                1
+              ],
+              [
+                2323213,
+                2
+              ],
+              [
+                2381379,
+                3
+              ],
+              [
+                3938725,
+                4
+              ]
+            ],
+            "report_bytes": 661
+          },
+          "limitations": [
+            "finite inputs; no true retirement PC or unified WB-STORE commit",
+            "short simulation not valid CoreMark score",
+            "no hardware evidence"
+          ]
+        }
+      }
+    ],
+    "protected": 726,
+    "formal_score": false
+  },
+  "quality": {
+    "status": "PASS_ANALYSIS_NOT_HARDWARE",
+    "rows": [
+      {
+        "id": "performance-N234",
+        "status": "PASS_SHORT_COMPARABLE_EXPERIMENT",
+        "O2_ticks": 2103648,
+        "O3_ticks": 2106278,
+        "tick_reduction": -0.001250209160467911,
+        "speedup": 0.9987513519108114,
+        "compute_benefit": false,
+        "O2_bytes": 15912,
+        "O3_bytes": 18992,
+        "bytes_delta": 3080,
+        "O2_empty_window": 26,
+        "O3_empty_window": 26,
+        "empty_cost_subtracted": false,
+        "formatting_ticks_O2": 59088,
+        "formatting_ticks_O3": 59014,
+        "UART_phase_ticks_O2": 1559702,
+        "UART_phase_ticks_O3": 1559702,
+        "UART_bytes_O2": 662,
+        "UART_bytes_O3": 662,
+        "stack_min_SP": 97904,
+        "observed_stack_depth": 400,
+        "reserved_stack": 8192,
+        "remaining_to_stack_bottom": 7792,
+        "SP_WB_checked": 344,
+        "total_metrics": {
+          "physical": 3780627,
+          "advances": 1890313,
+          "stall": 152642,
+          "flush": 283667,
+          "tail": 32
+        },
+        "window_EX_groups": {
+          "BRANCH": 197853,
+          "STORE": 14168,
+          "ALU_I": 354443,
+          "JALR": 21544,
+          "AUIPC": 10774,
+          "LOAD": 55264,
+          "JAL": 3556,
+          "ALU_R": 77169,
+          "LUI": 1703
+        },
+        "top_function_EX_observations": [
+          [
+            "__mulsi3",
+            432424
+          ],
+          [
+            "matrix_test",
+            104048
+          ],
+          [
+            "core_bench_list",
+            76163
+          ],
+          [
+            "core_state_transition",
+            67192
+          ],
+          [
+            "crc16",
+            18626
+          ],
+          [
+            "crcu32",
+            16896
+          ],
+          [
+            "core_bench_state",
+            13532
+          ],
+          [
+            "crcu16",
+            4140
+          ],
+          [
+            "cmp_complex",
+            3329
+          ],
+          [
+            "core_bench_matrix",
+            68
+          ],
+          [
+            "iterate",
+            38
+          ],
+          [
+            "stop_time",
+            7
+          ]
+        ],
+        "window_architectural_nops": 0,
+        "caveats": [
+          "finite seeds/one iteration, not official score or hardware",
+          "SP minimum is observed finite execution, not static worst-case proof",
+          "EX is not true retirement; WB/MEM separately ordered",
+          "changed image addresses/layout mean old full RF/RAM/PC equality is not a valid expectation",
+          "no UART speed change; report metadata/timestamps may differ",
+          "compiler optimization is not architecture innovation"
+        ]
+      },
+      {
+        "id": "validation-N234",
+        "status": "PASS_SHORT_COMPARABLE_EXPERIMENT",
+        "O2_ticks": 2263000,
+        "O3_ticks": 2267352,
+        "tick_reduction": -0.0019231109147149802,
+        "speedup": 0.998080580342179,
+        "compute_benefit": false,
+        "O2_bytes": 15920,
+        "O3_bytes": 19000,
+        "bytes_delta": 3080,
+        "O2_empty_window": 26,
+        "O3_empty_window": 26,
+        "empty_cost_subtracted": false,
+        "formatting_ticks_O2": 58210,
+        "formatting_ticks_O3": 58184,
+        "UART_phase_ticks_O2": 1557346,
+        "UART_phase_ticks_O3": 1557346,
+        "UART_bytes_O2": 661,
+        "UART_bytes_O3": 661,
+        "stack_min_SP": 97904,
+        "observed_stack_depth": 400,
+        "reserved_stack": 8192,
+        "remaining_to_stack_bottom": 7792,
+        "SP_WB_checked": 350,
+        "total_metrics": {
+          "physical": 3938809,
+          "advances": 1969404,
+          "stall": 152957,
+          "flush": 296606,
+          "tail": 32
+        },
+        "window_EX_groups": {
+          "BRANCH": 216884,
+          "STORE": 14060,
+          "ALU_I": 382930,
+          "JALR": 21510,
+          "AUIPC": 10757,
+          "LOAD": 55687,
+          "JAL": 3803,
+          "ALU_R": 82761,
+          "LUI": 1703
+        },
+        "top_function_EX_observations": [
+          [
+            "__mulsi3",
+            485282
+          ],
+          [
+            "matrix_test",
+            104716
+          ],
+          [
+            "core_bench_list",
+            77068
+          ],
+          [
+            "core_state_transition",
+            66876
+          ],
+          [
+            "crc16",
+            18626
+          ],
+          [
+            "crcu32",
+            16896
+          ],
+          [
+            "core_bench_state",
+            12976
+          ],
+          [
+            "crcu16",
+            4140
+          ],
+          [
+            "cmp_complex",
+            3391
+          ],
+          [
+            "core_bench_matrix",
+            68
+          ],
+          [
+            "iterate",
+            38
+          ],
+          [
+            "stop_time",
+            7
+          ]
+        ],
+        "window_architectural_nops": 0,
+        "caveats": [
+          "finite seeds/one iteration, not official score or hardware",
+          "SP minimum is observed finite execution, not static worst-case proof",
+          "EX is not true retirement; WB/MEM separately ordered",
+          "changed image addresses/layout mean old full RF/RAM/PC equality is not a valid expectation",
+          "no UART speed change; report metadata/timestamps may differ",
+          "compiler optimization is not architecture innovation"
+        ]
+      }
+    ],
+    "all_seeds_benefit": false,
+    "decision": "STOP_O3_KEEP_O2_NO_PDS",
+    "new_DUT_runs": 0,
+    "protected": 726
+  },
+  "uart": {
+    "status": "PASS",
+    "rows": [
+      {
+        "id": "performance-N234",
+        "status": "PASS",
+        "pin_log_sha256": "31D362078AD77EFA3FA8F6233C022314143CF49A00C690F62E0515D380716A32",
+        "records": 3836,
+        "actual_transitions": 3834,
+        "frames": 662,
+        "first_frame_cycle": 2220877,
+        "last_frame_cycle": 3778193,
+        "last_frame_end_cycle": 3780533,
+        "data_sha256": "E6D44A99436FA3A2DACFFE251D3BE1A1930152D1BA9F6E3581D1F8C250C740CB",
+        "CLKS_PER_BIT": 234,
+        "clock_period_ps": 37037,
+        "first_active_posedge_ps": 277777,
+        "actual_transition_timestamps_match_cycles": true,
+        "separate_centre_decode": true,
+        "ordinary_native_VCD_is_windowed": true
+      },
+      {
+        "id": "validation-N234",
+        "status": "PASS",
+        "pin_log_sha256": "43DABC23A86CEB9403233AD37B30E7939508B56C9D64A9F113367D523CF5D0EE",
+        "records": 3826,
+        "actual_transitions": 3824,
+        "frames": 661,
+        "first_frame_cycle": 2381415,
+        "last_frame_cycle": 3936375,
+        "last_frame_end_cycle": 3938715,
+        "data_sha256": "EACC5742CF8F1B30255EA237EBEC6A17D02774FD7F85187069DE77CEC88D5E22",
+        "CLKS_PER_BIT": 234,
+        "clock_period_ps": 37037,
+        "first_active_posedge_ps": 277777,
+        "actual_transition_timestamps_match_cycles": true,
+        "separate_centre_decode": true,
+        "ordinary_native_VCD_is_windowed": true
+      }
+    ],
+    "actual_log_negative": [
+      {
+        "id": "missing_change",
+        "status": "EXPECTED_REJECTION",
+        "detail": ""
+      },
+      {
+        "id": "wrong_bit",
+        "status": "EXPECTED_REJECTION",
+        "detail": ""
+      },
+      {
+        "id": "wrong_timestamp",
+        "status": "EXPECTED_REJECTION",
+        "detail": "actual timestamps must agree with physical-cycle log"
+      },
+      {
+        "id": "duplicate_change",
+        "status": "EXPECTED_REJECTION",
+        "detail": ""
+      }
+    ],
+    "decoder_selftest": {
+      "status": "PASS",
+      "synthetic_only": true,
+      "new_DUT_runs": 0,
+      "control": 1,
+      "negative": [
+        "missing_frame",
+        "extra_repeated_frame",
+        "wrong_byte",
+        "order_bytes"
+      ]
+    },
+    "new_DUT_runs": 0,
+    "scope": "entire actual output pin transition timeline + frozen bytes; not hardware/ILA",
+    "protected": 726
+  },
+  "wave": {
+    "status": "PASS",
+    "rows": [
+      {
+        "id": "performance-N234",
+        "status": "PASS",
+        "VCD_sha256": "50DEE5465C91EF441AAD44FF6055B4BD001026CF20D98C963D699960B58E0CC1",
+        "bytes": 346158,
+        "stable_post_checks": 2710,
+        "distinct_visible_cycles": 2185,
+        "intervals": [
+          [
+            1,
+            1024
+          ],
+          [
+            6223,
+            6479
+          ],
+          [
+            18769,
+            18780
+          ],
+          [
+            18795,
+            18806
+          ],
+          [
+            55543,
+            55554
+          ],
+          [
+            55563,
+            55819
+          ],
+          [
+            2161821,
+            2161832
+          ],
+          [
+            2161845,
+            2162101
+          ],
+          [
+            2220841,
+            2221097
+          ],
+          [
+            3780543,
+            3780627
+          ]
+        ],
+        "explicit_off_timestamp_groups": 9,
+        "timer_LOAD_pre_capture_cycles": [
+          18774,
+          18776,
+          18778,
+          18800,
+          18802,
+          18804,
+          55548,
+          55550,
+          55552,
+          2161826,
+          2161828,
+          2161830
+        ],
+        "settled_timer_address_samples": 46,
+        "first_active_posedge_ps": 277777,
+        "last_timestamp_ps": 140023341458,
+        "scope": "native VCD windows; captured pre-edge variables + independent physical-time/post-edge checks",
+        "full_algorithm_wave": false,
+        "hardware_ILA": false,
+        "retirement_PC": false
+      },
+      {
+        "id": "validation-N234",
+        "status": "PASS",
+        "VCD_sha256": "AEBEC85FA7D835E90358CE97781A68D386AB0B31984A3F9C31E959B33CCB2BDE",
+        "bytes": 349535,
+        "stable_post_checks": 2740,
+        "distinct_visible_cycles": 2185,
+        "intervals": [
+          [
+            1,
+            1024
+          ],
+          [
+            6259,
+            6515
+          ],
+          [
+            18781,
+            18792
+          ],
+          [
+            18807,
+            18818
+          ],
+          [
+            55837,
+            55848
+          ],
+          [
+            55857,
+            56113
+          ],
+          [
+            2323189,
+            2323200
+          ],
+          [
+            2323213,
+            2323469
+          ],
+          [
+            2381379,
+            2381635
+          ],
+          [
+            3938725,
+            3938809
+          ]
+        ],
+        "explicit_off_timestamp_groups": 9,
+        "timer_LOAD_pre_capture_cycles": [
+          18786,
+          18788,
+          18790,
+          18812,
+          18814,
+          18816,
+          55842,
+          55844,
+          55846,
+          2323194,
+          2323196,
+          2323198
+        ],
+        "settled_timer_address_samples": 46,
+        "first_active_posedge_ps": 277777,
+        "last_timestamp_ps": 145881928192,
+        "scope": "native VCD windows; captured pre-edge variables + independent physical-time/post-edge checks",
+        "full_algorithm_wave": false,
+        "hardware_ILA": false,
+        "retirement_PC": false
+      }
+    ],
+    "new_DUT_runs": 0,
+    "protected": 726
+  },
+  "protected": 726,
+  "RTL_changes": 0,
+  "GCC_images": 2,
+  "new_DUT_runs": 2,
+  "old_DUT_reruns": 0,
+  "PDS_runs": 0,
+  "hardware": "STOPPED",
+  "formal_score": false,
+  "cost_stage_script_status": "NOT_EXECUTED; condition failed; no PDS project generated or license queried",
+  "tool_versions": "same frozen xPack GCC15.2.0-1 and Icarus/vvp13.0 binaries; no reinstall or PATH change",
+  "limitations": [
+    "finite seeds/data/initial state; no entire ISA guarantee",
+    "EX not retirement, WB/MEM separately ordered",
+    "VCD windows not full algorithm waveform or ILA",
+    "no new frequency/resource measurement for rejected O3",
+    "no innovation or efficiency benefit claim from O3"
+  ]
+}
