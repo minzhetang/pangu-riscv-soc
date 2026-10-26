@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "correct_archive": "PASS",
+  "oversized_index_rejected_before_read": true,
+  "new_DUT": 0
+}

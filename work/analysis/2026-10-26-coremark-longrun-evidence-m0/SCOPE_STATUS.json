@@ -1,0 +1,11 @@
+{
+  "status": "PENDING_SCOPE_APPROVAL_NOT_IMPLEMENTED",
+  "id": "A-COREMARK-STREAM-EVIDENCE-M1",
+  "scope_SHA256": "5CC3DADD4280BF5A742F1A0C065F4B329322D511B9C09B95709BCE31C272BCED",
+  "required_new_compile": 1,
+  "required_new_DUT": 1,
+  "iterations": 2,
+  "long_run_authorized": false,
+  "CPU_RTL_change": false,
+  "hardware": false
+}

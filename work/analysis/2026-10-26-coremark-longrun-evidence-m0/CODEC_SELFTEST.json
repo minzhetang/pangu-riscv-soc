@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "id": "duplicate_records_and_CRLF_preserved",
+      "status": "PASS"
+    },
+    {
+      "id": "missing_index_block",
+      "status": "EXPECTED_REJECT",
+      "error_type": "AssertionError"
+    },
+    {
+      "id": "duplicated_index_block",
+      "status": "EXPECTED_REJECT",
+      "error_type": "AssertionError"
+    },
+    {
+      "id": "out_of_order_index",
+      "status": "EXPECTED_REJECT",
+      "error_type": "AssertionError"
+    },
+    {
+      "id": "wrong_line_start",
+      "status": "EXPECTED_REJECT",
+      "error_type": "AssertionError"
+    },
+    {
+      "id": "wrong_whole_SHA",
+      "status": "EXPECTED_REJECT",
+      "error_type": "AssertionError"
+    },
+    {
+      "id": "path_traversal",
+      "status": "EXPECTED_REJECT",
+      "error_type": "AssertionError"
+    },
+    {
+      "id": "corrupted_compressed_bytes",
+      "status": "EXPECTED_REJECT",
+      "error_type": "AssertionError"
+    },
+    {
+      "id": "truncated_gzip_with_updated_envelope",
+      "status": "EXPECTED_REJECT",
+      "error_type": "AssertionError"
+    },
+    {
+      "id": "decompression_cap",
+      "status": "EXPECTED_REJECT",
+      "error_type": "AssertionError"
+    },
+    {
+      "id": "external_frozen_index_SHA",
+      "status": "EXPECTED_REJECT"
+    }
+  ],
+  "new_DUT": 0
+}

@@ -27,6 +27,7 @@
 |正式计量就绪检查|F150只读核68输入/四旧原流：迭代参数写死1、检查器为短测、长跑日志/周期预算不适配；下一双2迭代校准具体范围待批。0新编译/DUT/PDS，不是正式成绩|
 |双种子各2迭代校准|F151新2DUT严格有限通过，raw4207378/4526490、finalCRC72be/fe8c、完整662/661UART；只新端口迭代接线/验证预算，13RTL不改，先验参考与每笔副作用/全态核同。仍不足10秒、非正式或实机验收|
 |B最终阶段v02接收|F152外层80文件/7新编译7DUT，RX270事件/2700快照0差异、TX12完整事件E+10N准确、27diff精确重建；N1旧版本文案非阻塞另注。v02当前B交付、核心同SHA，RX未接SoC，非新系统/硬件验收|
+|长测证据/资源M0|F153仅主机处理四旧流，392.5MB→64.6MB逐字节还原、原输入39项不改；发现旧samples列表270M拍引用下限2.16GB。0新DUT/CPU/PDS，下一分段记录与流式检查的具体scope待批准，非长测就绪|
 |当前系统上板、片上波形|**未验证**；over_temp原因未闭环，硬件操作保持停止|
 
 F146仅在独立副本修改cpu/soc取指选择，队员包装/TX/GPIO及官方算法不改。历史F136性能检查器曾漏计启动BSS，初版FAIL保留、以其`check-result-v2.json`为准；F143新`check-result.json`继承正确v2语义，不过滤启动零写。有限结果不能证明CPU整体正确，F146仅新增有限程序/同频条件下有实测支持的计算收益，不证明创新首创或最高频率吞吐改善。
@@ -49,6 +50,7 @@ F146仅在独立副本修改cpu/soc取指选择，队员包装/TX/GPIO及官方�
 - [F147告警只读调查](reports/verification/2026-10-25-prefetch-warning-m0.md)：完整图/建模边界、共有粗略假阳性、官方帮助检索与内部图不可达范围分列；不以自写解析器代替官方消息解释，不提升候选或恢复硬件。
 - [F151双迭代真实校准](reports/verification/2026-10-25-coremark-iter2-m1.md)：新参数初始化、先验参考、2个实际DUT/计时/全状态/有序副作用及完整串行证据，旧源/失败保留；F143稳定/F146暂缓，下一长测资源方案未自动实施。
 - [F150正式测量就绪](reports/verification/2026-10-25-coremark-measurement-readiness-m0.md)：旧实际ELF/轨迹和资源预算审计，保持稳定F143；下一有限双迭代scope未批，原B反馈已由用户报告转交，等待新答复。
+- [F153长测资源与有界归档原型](reports/verification/2026-10-26-coremark-longrun-evidence-m0.md)：work/analysis同名目录含原型/实际四流结果/正负控和下一PENDING范围；未改DUT采集器或功能检查器，不当>=10秒验证/FPGA成绩。
 - [F152最终v02接收与差额关闭](reports/progress/2026-10-25-stage-final-v02-review.md)、[给B的回执与五问答复](deliveries/mainline-stage-final-v02-response-2026-10-25-v1/TEAMMATE_REPLY.md)：逐文件覆盖/原5波形与7新DUT分开，N1注记保留；B只冻结和具体复验支持，无必须新开发或重封包，旧根OPEN_PREEXISTING与硬件STOP保持。
 - [F149最终阶段v01审收](reports/progress/2026-10-25-stage-final-v01-review.md)、[队员R1–R3集中反馈](deliveries/mainline-stage-final-response-2026-10-25-v1/TEAMMATE_REPLY.md)：新DUT/原波形分列，已证项关闭，只收敛验证/元数据差额；原核心和硬件STOP保持。
 - [F148/2335完整审收与八问](reports/progress/2026-10-25-increment-2335-mainline-alignment.md)、[集中队员回复](deliveries/mainline-increment-2335-response-2026-10-25-v1/TEAMMATE_REPLY.md)：原/新波形、失败和有限关闭分列，原核心保持，B仅验证差额/最终封包；10/27窗口及硬件STOP不变。

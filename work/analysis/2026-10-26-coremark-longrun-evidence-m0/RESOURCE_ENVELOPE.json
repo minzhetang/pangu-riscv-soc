@@ -1,0 +1,43 @@
+{
+  "rows": [
+    {
+      "seed": "performance",
+      "C1": 2103648,
+      "C2": 4207378,
+      "second_increment": 2103730,
+      "two_point_min_iteration_estimate": 129,
+      "candidate_iterations": 160,
+      "conditional_compute160": 336596718,
+      "conditional_nominal_seconds160": 12.466545111111111,
+      "conditional_physical160": 338278283,
+      "conditional_DUT_host_hours160": 5.112263359503187,
+      "actual_F151_reference_host_seconds": 5.625,
+      "not_a_run_or_sufficiency_proof": true,
+      "conditional_raw_trace_bytes160": 4956234784,
+      "conditional_packed_trace_bytes160": 1106915236
+    },
+    {
+      "seed": "validation",
+      "C1": 2263000,
+      "C2": 4526490,
+      "second_increment": 2263490,
+      "two_point_min_iteration_estimate": 120,
+      "candidate_iterations": 160,
+      "conditional_compute160": 362157910,
+      "conditional_nominal_seconds160": 13.413255925925926,
+      "conditional_physical160": 363836815,
+      "conditional_DUT_host_hours160": 5.821751387846785,
+      "actual_F151_reference_host_seconds": 5.875,
+      "not_a_run_or_sufficiency_proof": true,
+      "conditional_raw_trace_bytes160": 5268851336,
+      "conditional_packed_trace_bytes160": 1180545440
+    }
+  ],
+  "raw_run_sum_cap_proposed": 17179869184,
+  "archive_run_cap_proposed": 2147483648,
+  "prototype_input_cap": 536870912,
+  "blocks_measured": 96,
+  "record_count": 9378498,
+  "two_seed_DUT_hours_only_conditional": 10.934014747349972,
+  "assumption": "Two iteration points and observed short-log compression ratio; not a guarantee, long-DUT result or committed wallclock schedule"
+}

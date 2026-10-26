@@ -1,0 +1,177 @@
+{
+  "date_beijing": "2026-10-26",
+  "stage": "A-COREMARK-LONGRUN-EVIDENCE-M0",
+  "status": "HOST_ARCHIVE_PROTOTYPE_PASS_NO_NEW_DUT",
+  "measured_archives": [
+    {
+      "seed": "performance",
+      "stream": "trace.log",
+      "bytes": 84091326,
+      "records": 3477732,
+      "counts": {
+        "EX": 1900604,
+        "WB": 1296943,
+        "READ": 245317,
+        "STORE": 34868
+      },
+      "max_line_bytes": 50,
+      "blocks": 21,
+      "packed_bytes": 18780783,
+      "index_bytes": 8369,
+      "ratio": 0.22333793380782221,
+      "encode_host_seconds": 1.797,
+      "verify_host_seconds": 2.047,
+      "byte_for_byte": true,
+      "input_SHA256": "35CA119FAD5DBF326AF495389BF811BD02489395E273FC1A2D29CA7FB1AEE774",
+      "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA",
+      "not_DUT": true,
+      "raw_source_retained": true
+    },
+    {
+      "seed": "performance",
+      "stream": "bus.log",
+      "bytes": 110243503,
+      "records": 1124937,
+      "counts": {
+        "EDGE": 1124937
+      },
+      "max_line_bytes": 98,
+      "blocks": 27,
+      "packed_bytes": 13038289,
+      "index_bytes": 10621,
+      "ratio": 0.1182680942204821,
+      "encode_host_seconds": 1.234,
+      "verify_host_seconds": 0.86,
+      "byte_for_byte": true,
+      "input_SHA256": "67A237D16314B8F9CFED3903E68DB6D5817C32B14DA15B744899BFFB0753024C",
+      "index_SHA256": "2740C88449E42DF11033C9B4CA32D751C8830975F9E015E27327AF0FFFDF4011",
+      "not_DUT": true,
+      "raw_source_retained": true
+    },
+    {
+      "seed": "validation",
+      "stream": "trace.log",
+      "bytes": 87958340,
+      "records": 3651558,
+      "counts": {
+        "EX": 2005976,
+        "WB": 1364865,
+        "READ": 246042,
+        "STORE": 34675
+      },
+      "max_line_bytes": 50,
+      "blocks": 21,
+      "packed_bytes": 19708056,
+      "index_bytes": 8374,
+      "ratio": 0.22406125445296035,
+      "encode_host_seconds": 1.828,
+      "verify_host_seconds": 2.172,
+      "byte_for_byte": true,
+      "input_SHA256": "57D68E7E0CFB1CB01AC8D2F1D6D497A99025E97AD006CDC9C928231AB21F080A",
+      "index_SHA256": "AF2CA50BA2580EBE0969F68CECBFAFFD775FC5864FA0309E7B8FA0A27333950B",
+      "not_DUT": true,
+      "raw_source_retained": true
+    },
+    {
+      "seed": "validation",
+      "stream": "bus.log",
+      "bytes": 110178225,
+      "records": 1124271,
+      "counts": {
+        "EDGE": 1124271
+      },
+      "max_line_bytes": 98,
+      "blocks": 27,
+      "packed_bytes": 13032169,
+      "index_bytes": 10621,
+      "ratio": 0.11828261891131392,
+      "encode_host_seconds": 1.203,
+      "verify_host_seconds": 0.86,
+      "byte_for_byte": true,
+      "input_SHA256": "94C099769297EE6EEAF8EDF21DD81BCD8C7BF91EDAB07DBE4C010EE65EFBAB71",
+      "index_SHA256": "CCF5CAD927E28BB9B630E25DA20EBF394D849D6365BF99C27A3990FEEA5BDB1A",
+      "not_DUT": true,
+      "raw_source_retained": true
+    }
+  ],
+  "forecasts": [
+    {
+      "seed": "performance",
+      "C1": 2103648,
+      "C2": 4207378,
+      "second_increment": 2103730,
+      "two_point_min_iteration_estimate": 129,
+      "candidate_iterations": 160,
+      "conditional_compute160": 336596718,
+      "conditional_nominal_seconds160": 12.466545111111111,
+      "conditional_physical160": 338278283,
+      "conditional_DUT_host_hours160": 5.112263359503187,
+      "actual_F151_reference_host_seconds": 5.625,
+      "not_a_run_or_sufficiency_proof": true
+    },
+    {
+      "seed": "validation",
+      "C1": 2263000,
+      "C2": 4526490,
+      "second_increment": 2263490,
+      "two_point_min_iteration_estimate": 120,
+      "candidate_iterations": 160,
+      "conditional_compute160": 362157910,
+      "conditional_nominal_seconds160": 13.413255925925926,
+      "conditional_physical160": 363836815,
+      "conditional_DUT_host_hours160": 5.821751387846785,
+      "actual_F151_reference_host_seconds": 5.875,
+      "not_a_run_or_sufficiency_proof": true
+    }
+  ],
+  "total_raw_bytes": 392471394,
+  "total_packed_bytes": 64559297,
+  "actual_peak_working_set_bytes": 61992960,
+  "host_seconds": 12.75,
+  "list_growth": {
+    "pointer_bytes": 8,
+    "nominal_minimum_cycles": 270000000,
+    "pointer_storage_floor_bytes": 2160000064,
+    "includes_neither_capacity_overallocation_nor_other_state": true
+  },
+  "current_checker_anchors": [
+    {
+      "line": 26,
+      "text": "    model=ContractModel(n);samples=[1];read_at={};bus={};gpio=[];prev=0;max_bus=0"
+    },
+    {
+      "line": 33,
+      "text": "                eq('omitted UART sample must be high',out['tx_post'],1);samples.append(1)"
+    },
+    {
+      "line": 46,
+      "text": "            samples.append(post_tx)"
+    },
+    {
+      "line": 50,
+      "text": "    frames=decode_frames(samples,n);eq('all public starts vs independently accepted events',frames,model.accepts)"
+    },
+    {
+      "line": 85,
+      "text": "        def __init__(self,kind):self.f=(d/'trace.log').open(encoding='ascii');self.kind=kind;self.count=0;self.digest=hashlib.sha256()"
+    },
+    {
+      "line": 157,
+      "text": "            simulated_seconds_at_setting=delta/27000000,formal_score_valid=False,phases=phases,report_bytes=length)"
+    }
+  ],
+  "original_inputs": 39,
+  "current_DUT_collector": "UNCHANGED_NOT_ROTATING",
+  "current_functional_checker": "UNCHANGED_NOT_BLOCK_STREAM_ADAPTED",
+  "compiler_DUT_ISA_replay_PDS_runs": 0,
+  "hardware": "STOPPED",
+  "formal_score": false,
+  "B": "v02 accepted limited; no new task or presumed reply delivery",
+  "limitations": [
+    "Archive ratio measured on four already accepted short-run logs only",
+    "Compression does not speed up the FPGA or prove an optimization",
+    "No live spool deletion/rotation or long-DUT readiness was exercised",
+    "No checkpoint-resume of the CPU or hidden-state injection",
+    "270M list memory is arithmetic lower bound, not allocated or run"
+  ]
+}

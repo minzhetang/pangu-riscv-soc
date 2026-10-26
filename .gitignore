@@ -507,6 +507,21 @@
 !/reports/progress/evidence/2026-10-25-stage-final-v02-review/final_waves.py
 !/reports/progress/evidence/2026-10-25-stage-final-v02-review/verify_new.py
 
+!/reports/verification/2026-10-26-coremark-longrun-evidence-m0.md
+!/work/analysis/2026-10-26-coremark-longrun-evidence-m0/
+/work/analysis/2026-10-26-coremark-longrun-evidence-m0/*
+!/work/analysis/2026-10-26-coremark-longrun-evidence-m0/block_codec.py
+!/work/analysis/2026-10-26-coremark-longrun-evidence-m0/run_audit.py
+!/work/analysis/2026-10-26-coremark-longrun-evidence-m0/INPUTS.json
+!/work/analysis/2026-10-26-coremark-longrun-evidence-m0/SUMMARY.json
+!/work/analysis/2026-10-26-coremark-longrun-evidence-m0/RESOURCE_ENVELOPE.json
+!/work/analysis/2026-10-26-coremark-longrun-evidence-m0/CODEC_SELFTEST.json
+!/work/analysis/2026-10-26-coremark-longrun-evidence-m0/INDEX_BOUND_CHECK.json
+!/work/analysis/2026-10-26-coremark-longrun-evidence-m0/NEXT_IMPLEMENTATION_SCOPE.md
+!/work/analysis/2026-10-26-coremark-longrun-evidence-m0/SCOPE_STATUS.json
+!/work/analysis/2026-10-26-coremark-longrun-evidence-m0/COMMANDS.md
+!/work/analysis/2026-10-26-coremark-longrun-evidence-m0/postflight.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC
