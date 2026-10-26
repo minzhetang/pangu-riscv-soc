@@ -1,0 +1,17 @@
+{
+  "task": "B-VERIFY-OFFLINE-M0",
+  "contract": "1.0.0",
+  "status": "TO_BE_FILLED_BY_B",
+  "received_beijing": null,
+  "package_manifest_SHA256": null,
+  "contract_SHA256": null,
+  "interface_SHA256": null,
+  "acceptance_plan_SHA256": null,
+  "python_version": null,
+  "actual_start_beijing": null,
+  "available_net_hours": null,
+  "target_return_beijing": null,
+  "conflicts_with_old_window": null,
+  "scope_exceptions": [],
+  "note": "Receipt unknown until B actually responds; do not invent values"
+}

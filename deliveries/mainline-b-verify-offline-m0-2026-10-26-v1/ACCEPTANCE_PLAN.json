@@ -1,0 +1,161 @@
+{
+  "version": "1.0.0",
+  "fixed_before_B_implementation": true,
+  "required": [
+    {
+      "id": "P01",
+      "purpose": "Seven manual seeds with frozen outcomes",
+      "expected": "SEED_PLAN"
+    },
+    {
+      "id": "P02",
+      "purpose": "Four actual accepted streams, pointwise replay; record totals exact",
+      "expected": "MATCH"
+    },
+    {
+      "id": "F01",
+      "purpose": "Remove a middle record",
+      "expected": "MISMATCH"
+    },
+    {
+      "id": "F02",
+      "purpose": "Add one record",
+      "expected": "MISMATCH"
+    },
+    {
+      "id": "F03",
+      "purpose": "Unexpected duplicate vs one expected occurrence",
+      "expected": "MISMATCH"
+    },
+    {
+      "id": "F04",
+      "purpose": "Legal expected duplicate/value repeats preserved",
+      "expected": "MATCH"
+    },
+    {
+      "id": "F05",
+      "purpose": "Swap two distinct records",
+      "expected": "MISMATCH"
+    },
+    {
+      "id": "F06",
+      "purpose": "Mutate one field/data or cycle",
+      "expected": "MISMATCH"
+    },
+    {
+      "id": "F07",
+      "purpose": "X/Z, bad field width or decimal range",
+      "expected": "INVALID_INPUT"
+    },
+    {
+      "id": "F08",
+      "purpose": "Partial last record without newline",
+      "expected": "INVALID_INPUT"
+    },
+    {
+      "id": "F09",
+      "purpose": "Missing/false snapshot complete receipt",
+      "expected": "INCOMPLETE"
+    },
+    {
+      "id": "F10",
+      "purpose": "Corrupt/missing/truncated compressed payload",
+      "expected": "INVALID_INPUT"
+    },
+    {
+      "id": "F11",
+      "purpose": "Missing/duplicate/reordered index block or broken full SHA",
+      "expected": "INVALID_INPUT"
+    },
+    {
+      "id": "F12",
+      "purpose": "Unsafe relative path/link/reparse point",
+      "expected": "INVALID_INPUT"
+    },
+    {
+      "id": "F13",
+      "purpose": "Overlong line",
+      "expected": "INVALID_INPUT"
+    },
+    {
+      "id": "F14",
+      "purpose": "Input byte/record budget exceeded",
+      "expected": "LIMIT"
+    },
+    {
+      "id": "F15",
+      "purpose": "Deadline exceeded",
+      "expected": "TIMEOUT"
+    },
+    {
+      "id": "F16",
+      "purpose": "Output directory already exists: do not overwrite",
+      "expected": "TOOL_ERROR"
+    },
+    {
+      "id": "F17",
+      "purpose": "Nonzero worker rc or truncated functional evidence cannot become MATCH",
+      "expected": "REJECT_NOT_MATCH"
+    },
+    {
+      "id": "F18",
+      "purpose": "Printed PASS without full records/valid result cannot override failure",
+      "expected": "REJECT_NOT_MATCH"
+    },
+    {
+      "id": "F19",
+      "purpose": "Python -O/-OO never enters frozen assertion-based codec",
+      "expected": "INVALID_INPUT"
+    },
+    {
+      "id": "D01",
+      "purpose": "First difference ordinal/kind/expected/actual and bounded neighbors",
+      "expected": "EXACT_MANUAL_EXPECTATION"
+    },
+    {
+      "id": "R01",
+      "purpose": "Move input+return folders, Chinese and spaces, fresh cwd, no history directories",
+      "expected": "MATCH_REPRODUCIBLE"
+    },
+    {
+      "id": "S01",
+      "purpose": "Deterministic actual consumed EDGE streams >=1/16/128MiB per stream; <=6M records",
+      "expected": "MATCH_BOUNDED"
+    },
+    {
+      "id": "S02",
+      "purpose": "Cycle >2^31 and >2^32 real decimal fields; not claiming >4GB disk I/O",
+      "expected": "MATCH"
+    }
+  ],
+  "limits": {
+    "max_input_bytes_each": 536870912,
+    "max_records_each": 6000000,
+    "max_line_bytes": 512,
+    "max_differences": 16,
+    "max_diagnostic_neighbors_each_side": 2,
+    "max_result_bytes": 1048576,
+    "max_log_bytes_each": 4194304,
+    "worker_peak_working_set_bytes": 268435456,
+    "case_timeout_seconds": 180,
+    "cleanup_seconds": 8,
+    "total_case_seconds": 188,
+    "total_suite_seconds": 1800,
+    "return_directory_bytes": 134217728
+  },
+  "result_layers": [
+    "input_material",
+    "B_local_tool",
+    "A_reproduction",
+    "ABI_compatibility",
+    "A_system_integration",
+    "hardware"
+  ],
+  "not_tested_here": [
+    "B new CLI",
+    "B fault generator",
+    "B stress and moved-return-tool matrix"
+  ],
+  "A_private_independent_cases_retained": true,
+  "do_not_change_expectations_to_pass": true
+}

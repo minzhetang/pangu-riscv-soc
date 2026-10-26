@@ -1,0 +1,179 @@
+{
+  "status": "A_BOOTSTRAP_PASS",
+  "package": {
+    "status": "PACKAGE_INTEGRITY_PASS",
+    "files": 133,
+    "manifest": 132,
+    "manifest_SHA256": "61E828470ED4EE9353D429E2A974BA0B19898134E545CCC0B2737A63EDBE1630",
+    "B_implementation_tested": false
+  },
+  "rows": [
+    {
+      "id": "S00-duplicates-kept",
+      "expected": "MATCH",
+      "actual": "MATCH",
+      "expected_first": null,
+      "actual_first": null,
+      "passed": true,
+      "detail": {
+        "status": "MATCH",
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8,
+        "mismatch_count": 0,
+        "differences": [],
+        "fully_consumed": true,
+        "CPU_function_proven": false,
+        "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0"
+      }
+    },
+    {
+      "id": "S01-wrong-field",
+      "expected": "MISMATCH",
+      "actual": "MISMATCH",
+      "expected_first": 5,
+      "actual_first": 5,
+      "passed": true,
+      "detail": {
+        "status": "MISMATCH",
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8,
+        "mismatch_count": 1,
+        "differences": [
+          {
+            "ordinal": 5,
+            "kind": "FIELD",
+            "expected": [
+              "WB",
+              6,
+              1,
+              1
+            ],
+            "actual": [
+              "WB",
+              6,
+              1,
+              2
+            ]
+          }
+        ],
+        "fully_consumed": true,
+        "CPU_function_proven": false,
+        "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0"
+      }
+    },
+    {
+      "id": "S02-missing-tail",
+      "expected": "MISMATCH",
+      "actual": "MISMATCH",
+      "expected_first": 8,
+      "actual_first": 8,
+      "passed": true,
+      "detail": {
+        "status": "MISMATCH",
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 7,
+        "mismatch_count": 1,
+        "differences": [
+          {
+            "ordinal": 8,
+            "kind": "MISSING",
+            "expected": [
+              "WB",
+              10,
+              2,
+              1
+            ],
+            "actual": null
+          }
+        ],
+        "fully_consumed": true,
+        "CPU_function_proven": false,
+        "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0"
+      }
+    },
+    {
+      "id": "S03-unknown-data",
+      "expected": "INVALID_INPUT",
+      "actual": "INVALID_INPUT",
+      "expected_first": null,
+      "actual_first": null,
+      "passed": true,
+      "detail": {
+        "message": "hex width/XZ/character"
+      }
+    },
+    {
+      "id": "S04-empty-explicit",
+      "expected": "MATCH",
+      "actual": "MATCH",
+      "expected_first": null,
+      "actual_first": null,
+      "passed": true,
+      "detail": {
+        "status": "MATCH",
+        "checked": 0,
+        "expected_records": 0,
+        "actual_records": 0,
+        "mismatch_count": 0,
+        "differences": [],
+        "fully_consumed": true,
+        "CPU_function_proven": false,
+        "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0"
+      }
+    },
+    {
+      "id": "S05-empty-forbidden",
+      "expected": "INCOMPLETE",
+      "actual": "INCOMPLETE",
+      "expected_first": null,
+      "actual_first": null,
+      "passed": true,
+      "detail": {
+        "message": "empty stream not allowed"
+      }
+    },
+    {
+      "id": "S06-bus-format",
+      "expected": "MATCH",
+      "actual": "MATCH",
+      "expected_first": null,
+      "actual_first": null,
+      "passed": true,
+      "detail": {
+        "status": "MATCH",
+        "checked": 2,
+        "expected_records": 2,
+        "actual_records": 2,
+        "mismatch_count": 0,
+        "differences": [],
+        "fully_consumed": true,
+        "CPU_function_proven": false,
+        "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0"
+      }
+    },
+    {
+      "id": "A_REAL_RECORD_REPLAY",
+      "actual": "MATCH",
+      "passed": true,
+      "detail": {
+        "status": "MATCH",
+        "checked": 3477732,
+        "expected_records": 3477732,
+        "actual_records": 3477732,
+        "mismatch_count": 0,
+        "differences": [],
+        "fully_consumed": true,
+        "CPU_function_proven": false,
+        "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0"
+      },
+      "host_seconds": 15.36,
+      "same_accepted_observation_read_twice": true,
+      "new_DUT": false
+    }
+  ],
+  "B_suite_executed": false,
+  "new_DUT": 0
+}

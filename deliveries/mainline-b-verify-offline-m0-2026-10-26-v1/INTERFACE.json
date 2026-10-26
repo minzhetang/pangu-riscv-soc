@@ -1,0 +1,45 @@
+{
+  "id": "B-VERIFY-OFFLINE-ABI",
+  "version": "1.0.0",
+  "encoding": "UTF-8 metadata; ASCII record bodies; explicit LF/CRLF",
+  "entry": "python -B RUN.py --case-file CASE.json --input-root INPUT_ROOT --out NEW_OUTDIR",
+  "case_input_fields": [
+    "id",
+    "expected",
+    "actual",
+    "allow_empty",
+    "limits"
+  ],
+  "test_expected_status_must_not_drive_RUN_outcome": true,
+  "read_api": "frozen.offline_api.records(root,spec,deadline=...)",
+  "compare_api": "frozen.offline_api.compare(expected_iter,actual_iter,allow_empty=...,deadline=...)",
+  "record_equality": "Every typed field INCLUDING physical cycle, PC, values, mask; no filter/dedup/hash shortcut",
+  "archive_format": "LOSSLESS-EVIDENCE-BLOCKS-1 from unchanged F153 block_codec.py",
+  "native_exitcodes": {
+    "MATCH": 0,
+    "MISMATCH": 2,
+    "INVALID_INPUT": 3,
+    "INCOMPLETE": 4,
+    "LIMIT": 5,
+    "TIMEOUT": 6,
+    "TOOL_ERROR": 7
+  },
+  "limits": {
+    "max_input_bytes_each": 536870912,
+    "max_records_each": 6000000,
+    "max_line_bytes": 512,
+    "max_differences": 16,
+    "max_diagnostic_neighbors_each_side": 2,
+    "max_result_bytes": 1048576,
+    "max_log_bytes_each": 4194304,
+    "worker_peak_working_set_bytes": 268435456,
+    "case_timeout_seconds": 180,
+    "cleanup_seconds": 8,
+    "total_case_seconds": 188,
+    "total_suite_seconds": 1800,
+    "return_directory_bytes": 134217728
+  },
+  "completion": "spec.complete must be literal true, then both iterators fully exhaust and all archive index/payload/total integrity checks complete before MATCH",
+  "A_mainline_M1": "PENDING_NOT_INCLUDED",
+  "CPU_semantic_judgment": false
+}

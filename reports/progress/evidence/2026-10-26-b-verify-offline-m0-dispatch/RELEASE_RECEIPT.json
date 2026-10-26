@@ -1,0 +1,171 @@
+{
+  "status": "A_DISPATCH_QUALIFIED_NOT_B_SUITE",
+  "task": "B-VERIFY-OFFLINE-M0",
+  "date_beijing": "2026-10-26",
+  "package_project_relative": "deliveries/mainline-b-verify-offline-m0-2026-10-26-v1",
+  "files": 133,
+  "manifest_entries": 132,
+  "total_bytes": 64664150,
+  "manifest_SHA256": "61E828470ED4EE9353D429E2A974BA0B19898134E545CCC0B2737A63EDBE1630",
+  "contract_SHA256": "1704CD7974A3C654E006201CC639F0AF2A5888FC4E3F2FFF780A88F61405113C",
+  "interface_SHA256": "BEDB4492AB288103773E850BD135ABFD21F9B55E138BC6DDA43B30504204C8C5",
+  "acceptance_plan_SHA256": "80A9B2A26A741A8165DA4EDC577AA5D454F1D18875AB82E5DB857B0D61D1B431",
+  "processes": [
+    {
+      "id": "verify-original",
+      "argv": [
+        "<EXISTING_PYTHON>",
+        "-B",
+        "<PROJECT>\\deliveries\\mainline-b-verify-offline-m0-2026-10-26-v1\\VERIFY_PACKAGE.py"
+      ],
+      "cwd": "<PROJECT>/work/analysis/2026-10-26-b-verify-offline-preparation",
+      "native_rc": 0,
+      "host_seconds": 0.204,
+      "termination": "PROCESS_EXIT",
+      "stdout": "work\\analysis\\2026-10-26-b-verify-offline-preparation\\verify-original.stdout.log",
+      "stderr": "work\\analysis\\2026-10-26-b-verify-offline-preparation\\verify-original.stderr.log",
+      "stdout_bytes": 190,
+      "stderr_bytes": 0
+    },
+    {
+      "id": "smoke-original",
+      "argv": [
+        "<EXISTING_PYTHON>",
+        "-B",
+        "<PROJECT>\\deliveries\\mainline-b-verify-offline-m0-2026-10-26-v1\\SMOKE_CHECK.py",
+        "--out",
+        "<PROJECT>\\work\\analysis\\2026-10-26-b-verify-offline-preparation\\bootstrap-original",
+        "--include-real"
+      ],
+      "cwd": "<PROJECT>/work/analysis/2026-10-26-b-verify-offline-preparation",
+      "native_rc": 0,
+      "host_seconds": 15.578,
+      "termination": "PROCESS_EXIT",
+      "stdout": "work\\analysis\\2026-10-26-b-verify-offline-preparation\\smoke-original.stdout.log",
+      "stderr": "work\\analysis\\2026-10-26-b-verify-offline-preparation\\smoke-original.stderr.log",
+      "stdout_bytes": 85,
+      "stderr_bytes": 0
+    },
+    {
+      "id": "verify-moved",
+      "argv": [
+        "<EXISTING_PYTHON>",
+        "-B",
+        "<PROJECT>\\work\\analysis\\2026-10-26-b-verify-offline-preparation\\移植检查 空目录\\task\\VERIFY_PACKAGE.py"
+      ],
+      "cwd": "<PROJECT>/work/analysis/2026-10-26-b-verify-offline-preparation",
+      "native_rc": 0,
+      "host_seconds": 0.188,
+      "termination": "PROCESS_EXIT",
+      "stdout": "work\\analysis\\2026-10-26-b-verify-offline-preparation\\verify-moved.stdout.log",
+      "stderr": "work\\analysis\\2026-10-26-b-verify-offline-preparation\\verify-moved.stderr.log",
+      "stdout_bytes": 190,
+      "stderr_bytes": 0
+    },
+    {
+      "id": "smoke-moved",
+      "argv": [
+        "<EXISTING_PYTHON>",
+        "-B",
+        "<PROJECT>\\work\\analysis\\2026-10-26-b-verify-offline-preparation\\移植检查 空目录\\task\\SMOKE_CHECK.py",
+        "--out",
+        "<PROJECT>\\work\\analysis\\2026-10-26-b-verify-offline-preparation\\bootstrap-moved"
+      ],
+      "cwd": "<PROJECT>/work/analysis/2026-10-26-b-verify-offline-preparation",
+      "native_rc": 0,
+      "host_seconds": 0.219,
+      "termination": "PROCESS_EXIT",
+      "stdout": "work\\analysis\\2026-10-26-b-verify-offline-preparation\\smoke-moved.stdout.log",
+      "stderr": "work\\analysis\\2026-10-26-b-verify-offline-preparation\\smoke-moved.stderr.log",
+      "stdout_bytes": 85,
+      "stderr_bytes": 0
+    }
+  ],
+  "manual_seeds_original": 7,
+  "manual_seeds_moved": 7,
+  "real_accepted_replay_records": 3477732,
+  "accepted_replay_is_independent_ISA": false,
+  "B_implementation_or_full_suite_executed": false,
+  "package_sent": false,
+  "B_receipt": "UNKNOWN",
+  "A_M1": "PENDING_UNCHANGED",
+  "new_DUT": 0,
+  "compiler_or_ISA_replay_or_PDS": 0,
+  "hardware": "STOPPED",
+  "protected": [
+    {
+      "path": "work/analysis/2026-10-26-coremark-longrun-evidence-m0/block_codec.py",
+      "SHA256_before": "EE2C41B6C2CF39CCFDD99FA64D8B333A2D1532FFD24AEDF8B3210C94108FDB80",
+      "SHA256_after": "EE2C41B6C2CF39CCFDD99FA64D8B333A2D1532FFD24AEDF8B3210C94108FDB80",
+      "unchanged": true
+    },
+    {
+      "path": "work/analysis/2026-10-26-coremark-longrun-evidence-m0/SUMMARY.json",
+      "SHA256_before": "D169E5B418A25490483C2933C0EF263B9944DA2C63A89188241C8B266A5CA192",
+      "SHA256_after": "D169E5B418A25490483C2933C0EF263B9944DA2C63A89188241C8B266A5CA192",
+      "unchanged": true
+    },
+    {
+      "path": "work/analysis/2026-10-26-coremark-longrun-evidence-m0/NEXT_IMPLEMENTATION_SCOPE.md",
+      "SHA256_before": "5CC3DADD4280BF5A742F1A0C065F4B329322D511B9C09B95709BCE31C272BCED",
+      "SHA256_after": "5CC3DADD4280BF5A742F1A0C065F4B329322D511B9C09B95709BCE31C272BCED",
+      "unchanged": true
+    },
+    {
+      "path": "work/analysis/2026-10-26-coremark-longrun-evidence-m0/SCOPE_STATUS.json",
+      "SHA256_before": "53CA031658FCF5FE5DA147329F52DBFBA3F68B9A6CE4D0C2737889A1571E943F",
+      "SHA256_after": "53CA031658FCF5FE5DA147329F52DBFBA3F68B9A6CE4D0C2737889A1571E943F",
+      "unchanged": true
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/check_coremark.py",
+      "SHA256_before": "C0B6DD8CEA1638C3EC92C06DF5FC242CCCE12F52E774200276B451F5CC40794E",
+      "SHA256_after": "C0B6DD8CEA1638C3EC92C06DF5FC242CCCE12F52E774200276B451F5CC40794E",
+      "unchanged": true
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/stage_coremark.py",
+      "SHA256_before": "7C15CA62E3E091023C381C706FAE65DBB5975931244DBD1BFE90D4CC8F5E4CA6",
+      "SHA256_after": "7C15CA62E3E091023C381C706FAE65DBB5975931244DBD1BFE90D4CC8F5E4CA6",
+      "unchanged": true
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/models/cpu_program_reference.py",
+      "SHA256_before": "1A6F6D4E5865F18E8D002175A8237234EFE1A56D7F7AF4378DDBC824EA663A3B",
+      "SHA256_after": "1A6F6D4E5865F18E8D002175A8237234EFE1A56D7F7AF4378DDBC824EA663A3B",
+      "unchanged": true
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/oracles/performance/expected.json",
+      "SHA256_before": "8CE8574ACBB5CD185C6283913DE50EA4885CE2131B4A7975251804F15D4794AB",
+      "SHA256_after": "8CE8574ACBB5CD185C6283913DE50EA4885CE2131B4A7975251804F15D4794AB",
+      "unchanged": true
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/oracles/validation/expected.json",
+      "SHA256_before": "F7485A648DCF56778674384EE5795B73C6D8E5F261A7CBAFEC71C9EC3224B13F",
+      "SHA256_after": "F7485A648DCF56778674384EE5795B73C6D8E5F261A7CBAFEC71C9EC3224B13F",
+      "unchanged": true
+    },
+    {
+      "path": "reports/progress/2026-10-25-stage-final-v02-review.md",
+      "SHA256_before": "CFA9726C46C9DE3E64DB3DAD67929F1DB7FF6CCE8026785DA7B77E9C9332500E",
+      "SHA256_after": "CFA9726C46C9DE3E64DB3DAD67929F1DB7FF6CCE8026785DA7B77E9C9332500E",
+      "unchanged": true
+    },
+    {
+      "path": "reports/progress/evidence/2026-10-26-b-v02-freeze-ack/RESULT.json",
+      "SHA256_before": "6EAC7335F1E09D312A650AC431E4863E17C5CFC37189BEDE77CCAE6C3F6D5DBB",
+      "SHA256_after": "6EAC7335F1E09D312A650AC431E4863E17C5CFC37189BEDE77CCAE6C3F6D5DBB",
+      "unchanged": true
+    },
+    {
+      "path": "队员成果接收/frozen-v02-20261026/DEPENDENCIES/work/B-RETURN/increment-20261024-1735/work/peripherals/scripts/runner_common.py",
+      "SHA256_before": "3141C6A78CAD4B1FF03FA53FF949AA9FF422D573E2D7F96CC73729298D1F144A",
+      "SHA256_after": "3141C6A78CAD4B1FF03FA53FF949AA9FF422D573E2D7F96CC73729298D1F144A",
+      "unchanged": true
+    }
+  ],
+  "python_version": "3.12.14",
+  "commands_note": "Placeholders remove local user-profile path; exact native argv retained in local work preparation process receipts."
+}

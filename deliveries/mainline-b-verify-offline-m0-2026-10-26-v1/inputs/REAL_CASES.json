@@ -1,0 +1,96 @@
+{
+  "kind": "FROZEN_ACCEPTED_OBSERVATION_REPLAY",
+  "cases": [
+    {
+      "id": "R-performance-trace",
+      "records": 3477732,
+      "raw_bytes": 84091326,
+      "record_counts": {
+        "EX": 1900604,
+        "WB": 1296943,
+        "READ": 245317,
+        "STORE": 34868
+      },
+      "source_kind": "ACCEPTED_DUT_OBSERVATION_REPLAY_NOT_INDEPENDENT_ISA_REFERENCE",
+      "source_fact": "F151",
+      "complete_receipt_source": "F151 checked native rc0/normal stop/full state, reused not rerun",
+      "input": {
+        "storage": "archive",
+        "stream": "trace",
+        "path": "inputs/archives/performance-trace",
+        "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA",
+        "complete": true
+      },
+      "expected_status": "MATCH",
+      "golden_use": "Read golden stream and independent iterable copy; inject faults only in new output/generator, never edit golden",
+      "raw_SHA256": "35CA119FAD5DBF326AF495389BF811BD02489395E273FC1A2D29CA7FB1AEE774"
+    },
+    {
+      "id": "R-performance-bus",
+      "records": 1124937,
+      "raw_bytes": 110243503,
+      "record_counts": {
+        "EDGE": 1124937
+      },
+      "source_kind": "ACCEPTED_DUT_OBSERVATION_REPLAY_NOT_INDEPENDENT_ISA_REFERENCE",
+      "source_fact": "F151",
+      "complete_receipt_source": "F151 checked native rc0/normal stop/full state, reused not rerun",
+      "input": {
+        "storage": "archive",
+        "stream": "bus",
+        "path": "inputs/archives/performance-bus",
+        "index_SHA256": "2740C88449E42DF11033C9B4CA32D751C8830975F9E015E27327AF0FFFDF4011",
+        "complete": true
+      },
+      "expected_status": "MATCH",
+      "golden_use": "Read golden stream and independent iterable copy; inject faults only in new output/generator, never edit golden",
+      "raw_SHA256": "67A237D16314B8F9CFED3903E68DB6D5817C32B14DA15B744899BFFB0753024C"
+    },
+    {
+      "id": "R-validation-trace",
+      "records": 3651558,
+      "raw_bytes": 87958340,
+      "record_counts": {
+        "EX": 2005976,
+        "WB": 1364865,
+        "READ": 246042,
+        "STORE": 34675
+      },
+      "source_kind": "ACCEPTED_DUT_OBSERVATION_REPLAY_NOT_INDEPENDENT_ISA_REFERENCE",
+      "source_fact": "F151",
+      "complete_receipt_source": "F151 checked native rc0/normal stop/full state, reused not rerun",
+      "input": {
+        "storage": "archive",
+        "stream": "trace",
+        "path": "inputs/archives/validation-trace",
+        "index_SHA256": "AF2CA50BA2580EBE0969F68CECBFAFFD775FC5864FA0309E7B8FA0A27333950B",
+        "complete": true
+      },
+      "expected_status": "MATCH",
+      "golden_use": "Read golden stream and independent iterable copy; inject faults only in new output/generator, never edit golden",
+      "raw_SHA256": "57D68E7E0CFB1CB01AC8D2F1D6D497A99025E97AD006CDC9C928231AB21F080A"
+    },
+    {
+      "id": "R-validation-bus",
+      "records": 1124271,
+      "raw_bytes": 110178225,
+      "record_counts": {
+        "EDGE": 1124271
+      },
+      "source_kind": "ACCEPTED_DUT_OBSERVATION_REPLAY_NOT_INDEPENDENT_ISA_REFERENCE",
+      "source_fact": "F151",
+      "complete_receipt_source": "F151 checked native rc0/normal stop/full state, reused not rerun",
+      "input": {
+        "storage": "archive",
+        "stream": "bus",
+        "path": "inputs/archives/validation-bus",
+        "index_SHA256": "CCF5CAD927E28BB9B630E25DA20EBF394D849D6365BF99C27A3990FEEA5BDB1A",
+        "complete": true
+      },
+      "expected_status": "MATCH",
+      "golden_use": "Read golden stream and independent iterable copy; inject faults only in new output/generator, never edit golden",
+      "raw_SHA256": "94C099769297EE6EEAF8EDF21DD81BCD8C7BF91EDAB07DBE4C010EE65EFBAB71"
+    }
+  ],
+  "does_not_supply_independent_full_ISA_expected_streams": true
+}

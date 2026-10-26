@@ -1,0 +1,16 @@
+{
+  "id": "mainline-b-verify-offline-m0-2026-10-26-v1",
+  "task": "B-VERIFY-OFFLINE-M0",
+  "contract_version": "1.0.0",
+  "ABI": "1.0.0",
+  "status": "APPROVED_TO_START_ON_VERIFIED_RECEIPT",
+  "prepared_not_sent": true,
+  "B_receipt": "UNKNOWN",
+  "A_M1": "PENDING_UNCHANGED",
+  "contract_SHA256": "1704CD7974A3C654E006201CC639F0AF2A5888FC4E3F2FFF780A88F61405113C",
+  "interface_SHA256": "BEDB4492AB288103773E850BD135ABFD21F9B55E138BC6DDA43B30504204C8C5",
+  "acceptance_plan_SHA256": "80A9B2A26A741A8165DA4EDC577AA5D454F1D18875AB82E5DB857B0D61D1B431",
+  "mainline_RTL_changed": false,
+  "new_DUT": 0,
+  "private_acceptance_included": false
+}

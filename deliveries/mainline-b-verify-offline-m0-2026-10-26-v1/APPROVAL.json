@@ -1,0 +1,21 @@
+{
+  "task": "B-VERIFY-OFFLINE-M0",
+  "version": "1.0.0",
+  "date_beijing": "2026-10-26",
+  "decision": "D155",
+  "user_request": "按你说的来，整理任务派发包和说明吧",
+  "status": "APPROVED_TO_START_ON_VERIFIED_RECEIPT",
+  "package_prepared_not_sent": true,
+  "B_receipt": "UNKNOWN",
+  "allowed": "New B-owned offline CLI, diagnostics, independent fault/stress/reproduction suite under frozen ABI; ordinary existing Python only",
+  "not_allowed": [
+    "CPU/ISA model/frozen expectations changes",
+    "DUT/TB/online collectors/spool deletion",
+    "native simulator/build/PDS/hardware",
+    "new installations/system environment",
+    "edit old returns or shared project memory"
+  ],
+  "A_M1": "PENDING_UNCHANGED",
+  "old_return_window": "2026-10-27T18:00:00+08:00 unchanged; NOT a new-task commitment",
+  "new_task_target": "About one working day after usable receipt and B confirmation; no promised absolute due date"
+}

@@ -1,0 +1,241 @@
+{
+  "format": "LOSSLESS-EVIDENCE-BLOCKS-1",
+  "block_cap": 4194304,
+  "line_cap": 512,
+  "bytes": 84091326,
+  "lines": 3477732,
+  "SHA256": "35CA119FAD5DBF326AF495389BF811BD02489395E273FC1A2D29CA7FB1AEE774",
+  "chunks": [
+    {
+      "index": 0,
+      "file": "block-000000.gz",
+      "bytes": 4194283,
+      "packed_bytes": 1030358,
+      "lines": 174975,
+      "first_line": 1,
+      "last_line": 174975,
+      "raw_SHA256": "FF4413F0E605E7042E3202C79A0E5B360A96120BD7DB7FC1C47F68E83EA40ADC",
+      "packed_SHA256": "7B762A79AF9F1A86B35EC5A202FCC46270F7710287505397CE9BF75AC4D7638F"
+    },
+    {
+      "index": 1,
+      "file": "block-000001.gz",
+      "bytes": 4194302,
+      "packed_bytes": 1086660,
+      "lines": 193447,
+      "first_line": 174976,
+      "last_line": 368422,
+      "raw_SHA256": "95BFAA2579EA058FAA3A88B32202C7B7F436162BA461A1030782F145BDE6993F",
+      "packed_SHA256": "E381B39ED23D525F454792E469F404ACB99923368F3037291AF376ECDD4779D1"
+    },
+    {
+      "index": 2,
+      "file": "block-000002.gz",
+      "bytes": 4194293,
+      "packed_bytes": 1088396,
+      "lines": 193937,
+      "first_line": 368423,
+      "last_line": 562359,
+      "raw_SHA256": "1CFFA530661152EF01B8735FCFA00AE36294B4426BBF3E2900471208CC4B3C82",
+      "packed_SHA256": "8D5BBFA74CFA1999376E41665470DFFB9AAA947EDA72CA8E72105F2440C715CD"
+    },
+    {
+      "index": 3,
+      "file": "block-000003.gz",
+      "bytes": 4194291,
+      "packed_bytes": 1058732,
+      "lines": 186076,
+      "first_line": 562360,
+      "last_line": 748435,
+      "raw_SHA256": "CCC0B3391A8707CEA01D4702C96F1E85E90D04F7E106348596FFB042F33C4A65",
+      "packed_SHA256": "C371259179DACD7CE899A50587FB9E44B0CA54DBD94598673F1C866022B58C62"
+    },
+    {
+      "index": 4,
+      "file": "block-000004.gz",
+      "bytes": 4194282,
+      "packed_bytes": 1081493,
+      "lines": 173685,
+      "first_line": 748436,
+      "last_line": 922120,
+      "raw_SHA256": "21C4E422438D1A7A2C3AE6AA0428176EA60C0EDCE6F27E28BCAF058E0FA12F4F",
+      "packed_SHA256": "6C726ABBCEF5830FD2DD5C4E5B16EC4546155320F366F12C12ACC885778ED505"
+    },
+    {
+      "index": 5,
+      "file": "block-000005.gz",
+      "bytes": 4194291,
+      "packed_bytes": 1059598,
+      "lines": 183827,
+      "first_line": 922121,
+      "last_line": 1105947,
+      "raw_SHA256": "75675BDD49299346547DC647922FC9761D4C30DAE1F7CA791262F54C5A458844",
+      "packed_SHA256": "FF54C271EF76E619C27061F03487A3DFF79F8EA2669BA5289AD321F98E6F6A44"
+    },
+    {
+      "index": 6,
+      "file": "block-000006.gz",
+      "bytes": 4194273,
+      "packed_bytes": 1053977,
+      "lines": 172297,
+      "first_line": 1105948,
+      "last_line": 1278244,
+      "raw_SHA256": "40580C0B38371D9706F768A0103CBA16A1CB803D0D2DB750F8A455BFA0357384",
+      "packed_SHA256": "A2DAD9E4E4C029A29A9FD10AB5D4D47E762D1C7BA7045D8317C851782FADA873"
+    },
+    {
+      "index": 7,
+      "file": "block-000007.gz",
+      "bytes": 4194288,
+      "packed_bytes": 973524,
+      "lines": 157068,
+      "first_line": 1278245,
+      "last_line": 1435312,
+      "raw_SHA256": "781264EF5899672AF030F2E5C28D1EC6C6868D9C1B648CE52549E0E09C2385E0",
+      "packed_SHA256": "6C5D99CB98F6C6BB00F0ECEDEC79EB4922599BB67C18864F9C1BF4904CF0344D"
+    },
+    {
+      "index": 8,
+      "file": "block-000008.gz",
+      "bytes": 4194294,
+      "packed_bytes": 1049394,
+      "lines": 185165,
+      "first_line": 1435313,
+      "last_line": 1620477,
+      "raw_SHA256": "09AAC219D2BCAC353EFF927CA3ECBD39D20A7ED30A5224E1DC48007D2E9F12F3",
+      "packed_SHA256": "D93A2B881EC461E8E2D32B98A192C4C6E13E724DC2489992EA8B88B716131282"
+    },
+    {
+      "index": 9,
+      "file": "block-000009.gz",
+      "bytes": 4194291,
+      "packed_bytes": 1053198,
+      "lines": 184498,
+      "first_line": 1620478,
+      "last_line": 1804975,
+      "raw_SHA256": "46543CF9928522EA6292B20661A9ED8D5313457F65A6C1EBBAD45E7693EA0B2C",
+      "packed_SHA256": "3DA42533814A9411A47AD5C814C34C68DCCF1C605D79DCA05FB260DFE59BBF40"
+    },
+    {
+      "index": 10,
+      "file": "block-000010.gz",
+      "bytes": 4194292,
+      "packed_bytes": 1052836,
+      "lines": 184451,
+      "first_line": 1804976,
+      "last_line": 1989426,
+      "raw_SHA256": "081DB4DB06A85EEF6CD32D26B530CC574CA3FAFE5EBB974E42972742FF53BD0F",
+      "packed_SHA256": "AFEF811AB84DD2797A72403D638A3E0F3A9DC8D0249E3CF84262B25CC2F6CC1D"
+    },
+    {
+      "index": 11,
+      "file": "block-000011.gz",
+      "bytes": 4194294,
+      "packed_bytes": 1064532,
+      "lines": 179448,
+      "first_line": 1989427,
+      "last_line": 2168874,
+      "raw_SHA256": "773EC838BD954B91E43CBF178036F1CB80136B86BED908F41771A12AD382F8F7",
+      "packed_SHA256": "D8B44EE51E06370D3019B3075F669EDE449E6A75218B01A4F2A9AF0F9FBED722"
+    },
+    {
+      "index": 12,
+      "file": "block-000012.gz",
+      "bytes": 4194294,
+      "packed_bytes": 1076848,
+      "lines": 178069,
+      "first_line": 2168875,
+      "last_line": 2346943,
+      "raw_SHA256": "8F2F9D252CDD7DE6A5E9A30EEE7FF1686F4FBBD614F82AADF50ECDB283180D55",
+      "packed_SHA256": "4E9EF5BBCD75AB24201B862174483348C38EEEB473C39C0C4A69BBBF055BE591"
+    },
+    {
+      "index": 13,
+      "file": "block-000013.gz",
+      "bytes": 4194286,
+      "packed_bytes": 1062275,
+      "lines": 180893,
+      "first_line": 2346944,
+      "last_line": 2527836,
+      "raw_SHA256": "2AF461D724B4F516060333A5C5B4D9DC6719FE129DB819D509BBD033A16FD2F6",
+      "packed_SHA256": "007ACBD8DC0A50252345C4DF72FA83787E591A9DF99C69A1556ACB7823C040E0"
+    },
+    {
+      "index": 14,
+      "file": "block-000014.gz",
+      "bytes": 4194287,
+      "packed_bytes": 1014383,
+      "lines": 160613,
+      "first_line": 2527837,
+      "last_line": 2688449,
+      "raw_SHA256": "B48553258DC1E6A0743BC27CA1274B027B20B0EFF3427A76BC421F8EE54E38C0",
+      "packed_SHA256": "C3FD47B497A5ECEB8C82A82C51F2B4056B3928CF99E0F4D52087E3A6E8BF0ED1"
+    },
+    {
+      "index": 15,
+      "file": "block-000015.gz",
+      "bytes": 4194301,
+      "packed_bytes": 599727,
+      "lines": 156561,
+      "first_line": 2688450,
+      "last_line": 2845010,
+      "raw_SHA256": "6C02FE47827B293CD7E1148A9370106C50DFD858A56C89C3D87400E5629A0FC5",
+      "packed_SHA256": "317C65361F40C589F7EDC997E26633B3B5A36D48F8D96D5CEF210E88FDBDF28B"
+    },
+    {
+      "index": 16,
+      "file": "block-000016.gz",
+      "bytes": 4194299,
+      "packed_bytes": 586375,
+      "lines": 156268,
+      "first_line": 2845011,
+      "last_line": 3001278,
+      "raw_SHA256": "C051270BC1CD0BC08943A7EF8694277AAACDFD477F9B003EF7D8E4DE5505E50E",
+      "packed_SHA256": "A4C3C9CDE8EC81F7E62C9A3164C36FA96ED0642C355B1F86CD11018A20810925"
+    },
+    {
+      "index": 17,
+      "file": "block-000017.gz",
+      "bytes": 4194296,
+      "packed_bytes": 586790,
+      "lines": 156268,
+      "first_line": 3001279,
+      "last_line": 3157546,
+      "raw_SHA256": "92186205FF6AA288644A5E4008E6B6DE28A44BF69EC199AD70D3EE12727E82C3",
+      "packed_SHA256": "4BD32FF5742ABB3F132D154ACEF97157E3EF4C356EC4F77C8EE79889498846B0"
+    },
+    {
+      "index": 18,
+      "file": "block-000018.gz",
+      "bytes": 4194301,
+      "packed_bytes": 586299,
+      "lines": 156267,
+      "first_line": 3157547,
+      "last_line": 3313813,
+      "raw_SHA256": "5D90D9DA6E07C025187574C9E76725ECA1CDA6CC4DAC8196CC5C411A1D20B06C",
+      "packed_SHA256": "812A13A36868076521A37657C3FB7B1634DCCF0FCEE40FA68286684391E18775"
+    },
+    {
+      "index": 19,
+      "file": "block-000019.gz",
+      "bytes": 4194272,
+      "packed_bytes": 586252,
+      "lines": 156267,
+      "first_line": 3313814,
+      "last_line": 3470080,
+      "raw_SHA256": "968FDF1891B3249F2C17717619C50BEFFC4B711C225AAC893B5954FF397E8570",
+      "packed_SHA256": "D61D8703A338E6B41897C4A6E8E3237E7FE6FAB403F7B833115FF22CA47E2F63"
+    },
+    {
+      "index": 20,
+      "file": "block-000020.gz",
+      "bytes": 205516,
+      "packed_bytes": 29136,
+      "lines": 7652,
+      "first_line": 3470081,
+      "last_line": 3477732,
+      "raw_SHA256": "189C21AC9836975A1C5905443688D7AFD75A46EBB46D99D0A900A7341A323E39",
+      "packed_SHA256": "0AEE9FD0CABADE3051B620D1E56121AD534B35716C337A68C48F932A545CFC96"
+    }
+  ]
+}

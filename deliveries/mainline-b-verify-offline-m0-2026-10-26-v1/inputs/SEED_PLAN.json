@@ -1,0 +1,140 @@
+{
+  "version": "1.0.0",
+  "kind": "A_MANUAL_ADAPTER_SEEDS_NOT_B_FULL_SUITE",
+  "cases": [
+    {
+      "id": "S00-duplicates-kept",
+      "expected": {
+        "storage": "raw",
+        "stream": "trace",
+        "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+        "complete": true
+      },
+      "actual": {
+        "storage": "raw",
+        "stream": "trace",
+        "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+        "complete": true
+      },
+      "allow_empty": false,
+      "expected_status": "MATCH",
+      "first_mismatch_ordinal": null,
+      "oracle": "MANUAL_FROZEN_BEFORE_A_ENTRY_CHECK; format samples, not a CPU instruction execution"
+    },
+    {
+      "id": "S01-wrong-field",
+      "expected": {
+        "storage": "raw",
+        "stream": "trace",
+        "path": "inputs/seeds/S01-wrong-field/expected.log",
+        "complete": true
+      },
+      "actual": {
+        "storage": "raw",
+        "stream": "trace",
+        "path": "inputs/seeds/S01-wrong-field/actual.log",
+        "complete": true
+      },
+      "allow_empty": false,
+      "expected_status": "MISMATCH",
+      "first_mismatch_ordinal": 5,
+      "oracle": "MANUAL_FROZEN_BEFORE_A_ENTRY_CHECK; format samples, not a CPU instruction execution"
+    },
+    {
+      "id": "S02-missing-tail",
+      "expected": {
+        "storage": "raw",
+        "stream": "trace",
+        "path": "inputs/seeds/S02-missing-tail/expected.log",
+        "complete": true
+      },
+      "actual": {
+        "storage": "raw",
+        "stream": "trace",
+        "path": "inputs/seeds/S02-missing-tail/actual.log",
+        "complete": true
+      },
+      "allow_empty": false,
+      "expected_status": "MISMATCH",
+      "first_mismatch_ordinal": 8,
+      "oracle": "MANUAL_FROZEN_BEFORE_A_ENTRY_CHECK; format samples, not a CPU instruction execution"
+    },
+    {
+      "id": "S03-unknown-data",
+      "expected": {
+        "storage": "raw",
+        "stream": "trace",
+        "path": "inputs/seeds/S03-unknown-data/expected.log",
+        "complete": true
+      },
+      "actual": {
+        "storage": "raw",
+        "stream": "trace",
+        "path": "inputs/seeds/S03-unknown-data/actual.log",
+        "complete": true
+      },
+      "allow_empty": false,
+      "expected_status": "INVALID_INPUT",
+      "first_mismatch_ordinal": null,
+      "oracle": "MANUAL_FROZEN_BEFORE_A_ENTRY_CHECK; format samples, not a CPU instruction execution"
+    },
+    {
+      "id": "S04-empty-explicit",
+      "expected": {
+        "storage": "raw",
+        "stream": "trace",
+        "path": "inputs/seeds/S04-empty-explicit/expected.log",
+        "complete": true
+      },
+      "actual": {
+        "storage": "raw",
+        "stream": "trace",
+        "path": "inputs/seeds/S04-empty-explicit/actual.log",
+        "complete": true
+      },
+      "allow_empty": true,
+      "expected_status": "MATCH",
+      "first_mismatch_ordinal": null,
+      "oracle": "MANUAL_FROZEN_BEFORE_A_ENTRY_CHECK; format samples, not a CPU instruction execution"
+    },
+    {
+      "id": "S05-empty-forbidden",
+      "expected": {
+        "storage": "raw",
+        "stream": "trace",
+        "path": "inputs/seeds/S05-empty-forbidden/expected.log",
+        "complete": true
+      },
+      "actual": {
+        "storage": "raw",
+        "stream": "trace",
+        "path": "inputs/seeds/S05-empty-forbidden/actual.log",
+        "complete": true
+      },
+      "allow_empty": false,
+      "expected_status": "INCOMPLETE",
+      "first_mismatch_ordinal": null,
+      "oracle": "MANUAL_FROZEN_BEFORE_A_ENTRY_CHECK; format samples, not a CPU instruction execution"
+    },
+    {
+      "id": "S06-bus-format",
+      "expected": {
+        "storage": "raw",
+        "stream": "bus",
+        "path": "inputs/seeds/S06-bus-format/expected.log",
+        "complete": true
+      },
+      "actual": {
+        "storage": "raw",
+        "stream": "bus",
+        "path": "inputs/seeds/S06-bus-format/actual.log",
+        "complete": true
+      },
+      "allow_empty": false,
+      "expected_status": "MATCH",
+      "first_mismatch_ordinal": null,
+      "oracle": "MANUAL_FROZEN_BEFORE_A_ENTRY_CHECK; format samples, not a CPU instruction execution"
+    }
+  ],
+  "all_new_DUT": 0
+}

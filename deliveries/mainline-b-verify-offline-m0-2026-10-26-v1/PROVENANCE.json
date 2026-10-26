@@ -1,0 +1,36 @@
+{
+  "task": "B-VERIFY-OFFLINE-M0",
+  "source_git": "4f0f41bdcf998acef3d7b3e9c0aa5b414f53b307",
+  "codec_source_project_relative": "work/analysis/2026-10-26-coremark-longrun-evidence-m0/block_codec.py",
+  "codec_source_SHA256": "EE2C41B6C2CF39CCFDD99FA64D8B333A2D1532FFD24AEDF8B3210C94108FDB80",
+  "adapter": "New A-owned offline preparation adapter: existing per-record equality/EOF principle extracted into standalone typed observation stream API; not byte-identical live CPU checker or its replacement",
+  "live_checker_source_SHA256": "C0B6DD8CEA1638C3EC92C06DF5FC242CCCE12F52E774200276B451F5CC40794E",
+  "actual_observations": [
+    {
+      "source_project_relative": "work/fpga/2026-10-25-coremark-iter2-m1/runs/performance-N234/trace.log",
+      "raw_SHA256": "35CA119FAD5DBF326AF495389BF811BD02489395E273FC1A2D29CA7FB1AEE774",
+      "archive_source": "F153",
+      "archive_index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA"
+    },
+    {
+      "source_project_relative": "work/fpga/2026-10-25-coremark-iter2-m1/runs/performance-N234/bus.log",
+      "raw_SHA256": "67A237D16314B8F9CFED3903E68DB6D5817C32B14DA15B744899BFFB0753024C",
+      "archive_source": "F153",
+      "archive_index_SHA256": "2740C88449E42DF11033C9B4CA32D751C8830975F9E015E27327AF0FFFDF4011"
+    },
+    {
+      "source_project_relative": "work/fpga/2026-10-25-coremark-iter2-m1/runs/validation-N234/trace.log",
+      "raw_SHA256": "57D68E7E0CFB1CB01AC8D2F1D6D497A99025E97AD006CDC9C928231AB21F080A",
+      "archive_source": "F153",
+      "archive_index_SHA256": "AF2CA50BA2580EBE0969F68CECBFAFFD775FC5864FA0309E7B8FA0A27333950B"
+    },
+    {
+      "source_project_relative": "work/fpga/2026-10-25-coremark-iter2-m1/runs/validation-N234/bus.log",
+      "raw_SHA256": "94C099769297EE6EEAF8EDF21DD81BCD8C7BF91EDAB07DBE4C010EE65EFBAB71",
+      "archive_source": "F153",
+      "archive_index_SHA256": "CCF5CAD927E28BB9B630E25DA20EBF394D849D6365BF99C27A3990FEEA5BDB1A"
+    }
+  ],
+  "no_independent_full_ISA_expected_stream_export": true,
+  "official_vendor_models_tools_licenses_included": false
+}
