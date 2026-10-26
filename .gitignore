@@ -522,6 +522,11 @@
 !/work/analysis/2026-10-26-coremark-longrun-evidence-m0/COMMANDS.md
 !/work/analysis/2026-10-26-coremark-longrun-evidence-m0/postflight.json
 
+!/reports/progress/2026-10-26-b-v02-freeze-ack.md
+!/reports/progress/evidence/2026-10-26-b-v02-freeze-ack/
+/reports/progress/evidence/2026-10-26-b-v02-freeze-ack/*
+!/reports/progress/evidence/2026-10-26-b-v02-freeze-ack/RESULT.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

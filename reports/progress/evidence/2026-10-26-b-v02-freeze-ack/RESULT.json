@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-26",
+  "status": "FREEZE_IDENTITY_VERIFIED_NO_TESTS",
+  "user_report": "B acknowledged F152/D151; supports only original bounded repro",
+  "files": 97,
+  "manifest": 96,
+  "manifest_SHA256": "C0F7D0834605C3F952279F8B4CA171209EC0B79225C618E769432D04EEA4C786",
+  "mirror_same_as_F152": 70,
+  "dependencies_same_as_existing": 17,
+  "mainline_response_same": 4,
+  "index_counts": {
+    "v02_files": 69,
+    "logs": 31,
+    "vcds": 5,
+    "plans": 4,
+    "dependencies": 17,
+    "mainline_acceptance": 4
+  },
+  "declared_freeze_timestamp": "2026-10-26T14:30:00+08:00",
+  "timestamp_independently_observed": false,
+  "new_version": false,
+  "new_DUT": 0,
+  "new_build": 0,
+  "hardware": "STOPPED",
+  "next_scope": "A-COREMARK-STREAM-EVIDENCE-M1 remains PENDING"
+}
