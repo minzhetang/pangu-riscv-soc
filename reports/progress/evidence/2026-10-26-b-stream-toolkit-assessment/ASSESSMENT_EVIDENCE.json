@@ -1,0 +1,241 @@
+{
+  "date": "2026-10-26",
+  "purpose": "ASSESSMENT_ONLY_NOT_DISPATCHED",
+  "inputs": [
+    {
+      "path": "work/analysis/2026-10-26-coremark-longrun-evidence-m0/block_codec.py",
+      "SHA256": "EE2C41B6C2CF39CCFDD99FA64D8B333A2D1532FFD24AEDF8B3210C94108FDB80",
+      "bytes": 4765
+    },
+    {
+      "path": "work/analysis/2026-10-26-coremark-longrun-evidence-m0/SUMMARY.json",
+      "SHA256": "D169E5B418A25490483C2933C0EF263B9944DA2C63A89188241C8B266A5CA192",
+      "bytes": 6036
+    },
+    {
+      "path": "work/analysis/2026-10-26-coremark-longrun-evidence-m0/NEXT_IMPLEMENTATION_SCOPE.md",
+      "SHA256": "5CC3DADD4280BF5A742F1A0C065F4B329322D511B9C09B95709BCE31C272BCED",
+      "bytes": 4687
+    },
+    {
+      "path": "work/analysis/2026-10-26-coremark-longrun-evidence-m0/SCOPE_STATUS.json",
+      "SHA256": "53CA031658FCF5FE5DA147329F52DBFBA3F68B9A6CE4D0C2737889A1571E943F",
+      "bytes": 348
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/check_coremark.py",
+      "SHA256": "C0B6DD8CEA1638C3EC92C06DF5FC242CCCE12F52E774200276B451F5CC40794E",
+      "bytes": 12443
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/stage_coremark.py",
+      "SHA256": "7C15CA62E3E091023C381C706FAE65DBB5975931244DBD1BFE90D4CC8F5E4CA6",
+      "bytes": 12843
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/models/cpu_program_reference.py",
+      "SHA256": "1A6F6D4E5865F18E8D002175A8237234EFE1A56D7F7AF4378DDBC824EA663A3B",
+      "bytes": 7251
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/oracles/performance/expected.json",
+      "SHA256": "8CE8574ACBB5CD185C6283913DE50EA4885CE2131B4A7975251804F15D4794AB",
+      "bytes": 9354489
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/oracles/validation/expected.json",
+      "SHA256": "F7485A648DCF56778674384EE5795B73C6D8E5F261A7CBAFEC71C9EC3224B13F",
+      "bytes": 9340360
+    },
+    {
+      "path": "reports/progress/2026-10-25-stage-final-v02-review.md",
+      "SHA256": "CFA9726C46C9DE3E64DB3DAD67929F1DB7FF6CCE8026785DA7B77E9C9332500E",
+      "bytes": 6965
+    },
+    {
+      "path": "reports/progress/evidence/2026-10-26-b-v02-freeze-ack/RESULT.json",
+      "SHA256": "6EAC7335F1E09D312A650AC431E4863E17C5CFC37189BEDE77CCAE6C3F6D5DBB",
+      "bytes": 805
+    },
+    {
+      "path": "队员成果接收/frozen-v02-20261026/DEPENDENCIES/work/B-RETURN/increment-20261024-1735/work/peripherals/scripts/runner_common.py",
+      "SHA256": "3141C6A78CAD4B1FF03FA53FF949AA9FF422D573E2D7F96CC73729298D1F144A",
+      "bytes": 17075
+    }
+  ],
+  "anchors": [
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/check_coremark.py",
+      "line": 26,
+      "text": "    model=ContractModel(n);samples=[1];read_at={};bus={};gpio=[];prev=0;max_bus=0"
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/check_coremark.py",
+      "line": 33,
+      "text": "                eq('omitted UART sample must be high',out['tx_post'],1);samples.append(1)"
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/check_coremark.py",
+      "line": 46,
+      "text": "            samples.append(post_tx)"
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/check_coremark.py",
+      "line": 84,
+      "text": "    class Stream:"
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/check_coremark.py",
+      "line": 86,
+      "text": "        def append(self,expected):"
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/check_coremark.py",
+      "line": 94,
+      "text": "        def finish(self):"
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/check_coremark.py",
+      "line": 100,
+      "text": "    ref.EX=Stream('EX');ref.WB=Stream('WB');ref.MEM=Stream('MEM')"
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/models/cpu_program_reference.py",
+      "line": 31,
+      "text": "        self.EX.append(hx(pc));self.steps+=1"
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/models/cpu_program_reference.py",
+      "line": 67,
+      "text": "                self.MEM.append(['READ',hx(pc),hx(address),hx(raw),hx(value)])"
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/models/cpu_program_reference.py",
+      "line": 76,
+      "text": "                self.MEM.append(['STORE',hx(pc),hx(address),hx(data),f'{mask:x}'])"
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/models/cpu_program_reference.py",
+      "line": 88,
+      "text": "        if value is not None and rd:self.regs[rd]=value&MASK;self.WB.append([str(rd),hx(value)])"
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/stage_coremark.py",
+      "line": 6,
+      "text": "B=P/'work/fpga/2026-10-25-board-coremark-m1';T=P/'work/system/2026-10-24-timed-coremark-m1'"
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/stage_coremark.py",
+      "line": 26,
+      "text": "def bounded(argv,cwd,name,seconds):"
+    }
+  ],
+  "oracles": [
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/oracles/performance/expected.json",
+      "streams": {
+        "EX": {
+          "count": 1900604,
+          "sha256": "F68D7CA5B2574B8386C525A838EBAFA8674BB9F235C3B5F9FD2E7156F6A4C9BF"
+        },
+        "WB": {
+          "count": 1296943,
+          "sha256": "71BA6A32BAC8D0D06D74FFC4E05F9B2080F7B2EC5BF2198E452EC98218981018"
+        },
+        "MEM": {
+          "count": 280185,
+          "sha256": "75E334D7D2E88E5C60642A66A3FD69C0368B35BB85B8966307B26DAAF27E46EB"
+        }
+      },
+      "keys": [
+        "status",
+        "case",
+        "baseline_replay",
+        "iterations",
+        "image_SHA256",
+        "ELF_SHA256",
+        "steps",
+        "stop_pc",
+        "stall",
+        "flush",
+        "streams",
+        "timer_reads",
+        "io_reads",
+        "io_writes",
+        "stamps",
+        "raw_ticks",
+        "expected_physical",
+        "report_bytes",
+        "report_SHA256",
+        "RAM_SHA256",
+        "RF_SHA256",
+        "crcfinal",
+        "host_seconds",
+        "native_DUT_runs",
+        "limited_schedule",
+        "hardware",
+        "calibration_source_SHA256"
+      ],
+      "complete_EX_WB_MEM_expected_record_files_supplied": false,
+      "expectations_generated_by_Reference_callbacks": true
+    },
+    {
+      "path": "work/fpga/2026-10-25-coremark-iter2-m1/oracles/validation/expected.json",
+      "streams": {
+        "EX": {
+          "count": 2005976,
+          "sha256": "5F05AB0D9E52ACFA8CBCD31ADAF36A7B08A53D5E16EE4AB89C41251350184D18"
+        },
+        "WB": {
+          "count": 1364865,
+          "sha256": "E08A0F702F96721514F609B15FB80FB8BCFC8E0BCAE74F87752680B6802BD5F6"
+        },
+        "MEM": {
+          "count": 280717,
+          "sha256": "F3D14A0882661D3012751D4FD0213D2B96C2761B11361661BF7FFF862B60F997"
+        }
+      },
+      "keys": [
+        "status",
+        "case",
+        "baseline_replay",
+        "iterations",
+        "image_SHA256",
+        "ELF_SHA256",
+        "steps",
+        "stop_pc",
+        "stall",
+        "flush",
+        "streams",
+        "timer_reads",
+        "io_reads",
+        "io_writes",
+        "stamps",
+        "raw_ticks",
+        "expected_physical",
+        "report_bytes",
+        "report_SHA256",
+        "RAM_SHA256",
+        "RF_SHA256",
+        "crcfinal",
+        "host_seconds",
+        "native_DUT_runs",
+        "limited_schedule",
+        "hardware",
+        "calibration_source_SHA256"
+      ],
+      "complete_EX_WB_MEM_expected_record_files_supplied": false,
+      "expectations_generated_by_Reference_callbacks": true
+    }
+  ],
+  "mainline_M1": "PENDING_NOT_IMPLEMENTED",
+  "critical_memory_growth": "UART samples, not absence of streaming EX/WB/MEM comparison",
+  "codec": "EXISTING_HOST_PROTOTYPE",
+  "B_runner": "EXISTING_WINDOWS_SPECIFIC_BOUNDED_RUNNER",
+  "recommendation": "NARROW_TO_OFFLINE_ADVERSARIAL_AND_PORTABILITY_ACCEPTANCE_PACKAGE",
+  "candidate_task": "B-VERIFY-OFFLINE-M0 suggested only; no approved contract/due date/commitment",
+  "new_tests": 0,
+  "new_DUT": 0,
+  "new_implementation": false,
+  "hardware": "STOPPED"
+}

@@ -527,6 +527,11 @@
 /reports/progress/evidence/2026-10-26-b-v02-freeze-ack/*
 !/reports/progress/evidence/2026-10-26-b-v02-freeze-ack/RESULT.json
 
+!/reports/progress/2026-10-26-b-stream-toolkit-assessment.md
+!/reports/progress/evidence/2026-10-26-b-stream-toolkit-assessment/
+/reports/progress/evidence/2026-10-26-b-stream-toolkit-assessment/*
+!/reports/progress/evidence/2026-10-26-b-stream-toolkit-assessment/ASSESSMENT_EVIDENCE.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC
