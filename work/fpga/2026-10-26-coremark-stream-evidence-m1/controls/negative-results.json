@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "id": "archive-positive-two-segments",
+      "status": "PASS",
+      "records": 32769,
+      "byte_for_byte": true,
+      "not_DUT": true
+    },
+    {
+      "id": "index-damage",
+      "status": "EXPECTED_REJECT",
+      "reason": "ValueError: global index identity"
+    },
+    {
+      "id": "payload-damage",
+      "status": "EXPECTED_REJECT",
+      "reason": "AssertionError: packed SHA"
+    },
+    {
+      "id": "missing-ready",
+      "status": "EXPECTED_REJECT",
+      "reason": "ValueError: end count"
+    },
+    {
+      "id": "reordered-ready",
+      "status": "EXPECTED_REJECT",
+      "reason": "ValueError: ready order/count"
+    },
+    {
+      "id": "duplicate-end",
+      "status": "EXPECTED_REJECT",
+      "reason": "ValueError: bad/duplicate end marker"
+    },
+    {
+      "id": "line-overflow",
+      "status": "EXPECTED_REJECT",
+      "reason": "ValueError: line too long or incomplete"
+    },
+    {
+      "id": "missing-WB",
+      "status": "EXPECTED_REJECT",
+      "reason": "AssertionError: missing WB event"
+    },
+    {
+      "id": "extra-STORE",
+      "status": "EXPECTED_REJECT",
+      "reason": "AssertionError: extra MEM event"
+    },
+    {
+      "id": "architectural-X",
+      "status": "EXPECTED_REJECT",
+      "reason": "AssertionError: unknown architectural event"
+    },
+    {
+      "id": "wrong-phase",
+      "status": "EXPECTED_REJECT",
+      "reason": "[{'kind': 'ordered MEM', 'index': 518, 'actual': ['STORE', '00000054', '00010800', '00000001', 'f'], 'expected': ['STORE', '00000054', '00010800', '00000000', 'f']}, {'kind': 'phase order including startup', 'actual': '[1, 1, 2, 3, 4]', 'expected': '[0, 1, 2, 3, 4]'}, {'kind': 'single BSS phase init"
+    },
+    {
+      "id": "wrong-timer",
+      "status": "EXPECTED_REJECT",
+      "reason": "[{'kind': 'pre tick physical clock', 'actual': '1', 'expected': '0'}, {'kind': 'no timer/port error', 'actual': False, 'expected': True}]"
+    },
+    {
+      "id": "wrong-stop",
+      "status": "EXPECTED_REJECT",
+      "reason": "[{'kind': 'normal stop', 'actual': \"[('1', '00000068')]\", 'expected': \"[('2', '00000068')]\"}, {'kind': 'no timer/port error', 'actual': False, 'expected': True}]"
+    },
+    {
+      "id": "missing-serial",
+      "status": "EXPECTED_REJECT",
+      "reason": "AssertionError: "
+    },
+    {
+      "id": "wrong-serial-time",
+      "status": "EXPECTED_REJECT",
+      "reason": "AssertionError: pin timestamp vs cycle"
+    }
+  ],
+  "host_seconds": 238.875,
+  "new_DUT": 0,
+  "mutations": "new files or bounded actual-input iterator only; no expected values changed",
+  "not_B_generic_suite": true
+}

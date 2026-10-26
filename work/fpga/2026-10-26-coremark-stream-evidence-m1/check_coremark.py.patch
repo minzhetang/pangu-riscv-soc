@@ -1,0 +1,96 @@
+--- before/check_coremark.py
++++ check_coremark.py
+@@ -5,7 +5,9 @@
+ sys.path.insert(0,str(H/'models'))
+ import stage_coremark as s
+ from cpu_program_reference import Reference
+-from peripheral_checker import ContractModel,decode_frames
++from stream_io import open_stream
++from stream_peripherals import SparseModel,public_frames
++from audit_uart import expected_changes
+ def data_row(line):
+     a=line.strip().split('|');assert len(a)==17 and a[0]=='EDGE'
+     assert not any(re.search('[xz]',v,re.I) for v in a[1:]),'unknown public/timer data'
+@@ -16,25 +18,23 @@
+     assert c>=1
+     return ((c-1)>>(32 if address==0x20000104 else 0))&0xffffffff
+ 
+-def check(tid):
+-    d=H/'runs'/tid;name,ns=tid.split('-N');n=int(ns);errors=[]
++def check(tid,directory=None):
++    d=Path(directory) if directory is not None else H/'runs'/tid;name,ns=tid.split('-N');n=int(ns);errors=[]
+     def eq(label,a,b):
+         if a!=b and len(errors)<32:errors.append(dict(kind=label,actual=str(a)[:300],expected=str(b)[:300]))
+     r=s.read(d/'process.json');assert r['returncode']==0 and not r['timed_out'] and not r['cap']
+     text=s.log(d/'stdout.log');m=re.findall(r'^METRICS\|(.*)$',text,re.M);assert len(m)==1
+     metrics={k:int(v) for k,v in (x.split('=') for x in m[0].split('|'))}
+-    model=ContractModel(n);samples=[1];read_at={};bus={};gpio=[];prev=0;max_bus=0
+-    with (d/'bus.log').open(encoding='ascii') as f:
++    sparse=SparseModel(n);model=sparse.model;last_pin=1;read_at={};bus={};gpio=[];prev=0;max_bus=0
++    with __import__('contextlib').closing(open_stream(d,'bus')) as f:
+         for line in f:
+             c,gin,addr,write,data,mask,rd,err,pre_tx,pre_gpio,post_tx,post_gpio,accept,stop,pre_t,post_t=data_row(line)
+             assert prev<c<=metrics['physical'];prev=c;max_bus=c
+-            while len(samples)<c:
+-                cycle=len(samples);out=model.step(cycle,1,0)
+-                eq('omitted UART sample must be high',out['tx_post'],1);samples.append(1)
++            sparse.gap(c-1);last_pin=sparse.last_pin
+             eq('GPIO frozen input',gin,0)
+             eq('pre tick physical clock',pre_t,c-1);eq('post tick physical clock',post_t,c)
+-            eq('UART pre-edge',pre_tx,samples[-1]);eq('GPIO pre-edge',pre_gpio,model.gpio_out)
+-            out=model.step(c,1,gin,addr,bool(write),data,mask)
++            eq('UART pre-edge',pre_tx,last_pin);eq('GPIO pre-edge',pre_gpio,model.gpio_out)
++            out=sparse.step(c,gin,addr,bool(write),data,mask)
+             if addr in [0x20000100,0x20000104]:expected=counter_pre(c,addr)
+             elif 0x20000000<=addr<=0x200000ff:expected=out['read_pre']
+             else:expected=None
+@@ -43,16 +43,17 @@
+             eq('UART post-edge',post_tx,out['tx_post']);eq('GPIO post-edge',post_gpio,out['gpio_post'])
+             ea=int(write and addr==0x2000000c and mask==15);eq('actual GPIO core accept',accept,ea)
+             if accept:gpio.append((c,data&255))
+-            samples.append(post_tx)
++            last_pin=post_tx
+             if 0x20000000<=addr<=0x20000107:bus[c]=dict(addr=addr,write=write,data=data,mask=mask,expected=expected)
+             if expected is not None:read_at[c]=expected
+     eq('bus captured through tail',max_bus,metrics['physical'])
+-    frames=decode_frames(samples,n);eq('all public starts vs independently accepted events',frames,model.accepts)
++    frames,changes,pin_detail=public_frames(d,n,metrics['physical']);eq('all public starts vs independently accepted events',frames,model.accepts)
++    eq('every actual UART transition',changes,expected_changes([c for c,b in model.accepts],[b for c,b in model.accepts],n))
+     io_reads=[];io_writes=[];timer_reads=[];phases=[];phase_init_pcs=[];timer_stores=[];counts={k:0 for k in ['EX','WB','READ','STORE']}
+     art=None if name=='baseline' else next(x for x in s.read(H/'build-result.json')['artifacts'] if x['id']==name)
+     if name=='baseline':image=(s.OLD.parent/'build/soc.bin').read_bytes();symbols=s.read(s.OLD.parent/'firmware-artifacts.json')['symbols']
+     else:image=(H/'build'/name/'program.bin').read_bytes();symbols=art['symbols']
+-    with (d/'trace.log').open(encoding='ascii') as f:
++    with __import__('contextlib').closing(open_stream(d,'trace')) as f:
+         last=0
+         for line in f:
+             a=line.strip().split('|');kind=a[0];assert kind in counts
+@@ -74,6 +75,7 @@
+                 if kind=='STORE' and addr==symbols.get('timing_phase',-1):
+                     value=int(a[4],16);phases.append((c,value))
+                     if value==0:phase_init_pcs.append(pc)
++    bus.clear();read_at.clear()
+     cursor=0
+     def io_read(pc,addr):
+         nonlocal cursor
+@@ -82,7 +84,7 @@
+         return value
+     ref=Reference(image,io_read,lambda *args:None)
+     class Stream:
+-        def __init__(self,kind):self.f=(d/'trace.log').open(encoding='ascii');self.kind=kind;self.count=0;self.digest=hashlib.sha256()
++        def __init__(self,kind):self.f=open_stream(d,'trace');self.kind=kind;self.count=0;self.digest=hashlib.sha256()
+         def append(self,expected):
+             for line in self.f:
+                 a=line.strip().split('|');k=a[0]
+@@ -166,9 +168,10 @@
+ 
+     import frozen_checks
+     frozen=frozen_checks.freeze_for(name)
+-    actual=frozen_checks.from_actual(name,answer)
++    actual=frozen_checks.from_actual(name,answer,d)
+     more=frozen_checks.validate(actual,frozen)
+     answer['frozen_comparison']=dict(status='PASS' if not more else 'FAIL',errors=more,oracle_SHA256=s.sha(H/'oracles'/name/'expected.json'),actual_iterations=actual['iterations'],crcfinal=actual['crcfinal'])
+     answer['errors'].extend(more)
+     answer['status']='PASS' if not answer['errors'] else 'FAIL'
++    answer['streaming']=dict(pin=pin_detail,idle_cycles_skipped=sparse.skipped,model_steps=sparse.stepped,no_per_clock_samples=True)
+     return answer

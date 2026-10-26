@@ -1,0 +1,51 @@
+{
+  "old_replays": [
+    "performance-N234",
+    "validation-N234"
+  ],
+  "old_expected": "F151 original check-result.json and original per-byte logs; independent ISA semantics unchanged",
+  "model_N": [
+    8,
+    16,
+    234
+  ],
+  "idle_controls": [
+    "initial release",
+    "fully idle",
+    "active frame gap must reject",
+    "completion edge old ready",
+    "next edge new ready",
+    "nonzero GPIO rejects"
+  ],
+  "negative_controls": [
+    "missing WB",
+    "extra STORE",
+    "architectural X",
+    "wrong phase",
+    "wrong stop",
+    "wrong timer",
+    "missing serial transition",
+    "wrong serial timestamp",
+    "index damage",
+    "payload damage",
+    "omitted ready segment",
+    "duplicate/reordered segment",
+    "line overflow",
+    "unarchived spool budget"
+  ],
+  "new_DUT": "performance-N234 only",
+  "expected_raw_ticks": 4207378,
+  "expected_crcfinal": "72be",
+  "expected_UART_bytes": 662,
+  "physical_cycles": 5888943,
+  "UART_N": 234,
+  "GPIO": 0,
+  "compile_timeout": 120,
+  "DUT_timeout": 600,
+  "max_cycles": 8000000,
+  "spool_cap_bytes": 33554432,
+  "archive_cap_bytes": 268435456,
+  "check_peak_bytes": 536870912,
+  "reference_steps": 5000000,
+  "reference_seconds": 600
+}

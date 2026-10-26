@@ -1,0 +1,40 @@
+{
+  "status": "PASS_OLD_REPLAY_NOT_NEW_DUT",
+  "old_result_identical": true,
+  "checkpoint_receipt": {
+    "result_SHA256": "152642159483051A1FE43CE68EEB96C45EB8B434E8B96F08A01D9B3F52C19281",
+    "strict_checker_status": "PASS",
+    "prior_process": "logs/replay-performance/process.json",
+    "harness_error": "Python tuples versus JSON arrays; stored JSON compared field-for-field has only the intentional streaming addition",
+    "new_DUT": 0
+  },
+  "streaming": {
+    "pin": {
+      "records": 3840,
+      "transitions": 3838,
+      "samples_list_allocated": false
+    },
+    "idle_cycles_skipped": 4335962,
+    "model_steps": 1552981,
+    "no_per_clock_samples": true
+  },
+  "UART": {
+    "id": "performance-N234",
+    "status": "PASS",
+    "pin_log_sha256": "7C45B8A83B45DEE349686A08A029B8738EBAA6A62A51455B01AB7555F3325CE8",
+    "records": 3840,
+    "actual_transitions": 3838,
+    "frames": 662,
+    "first_frame_cycle": 4329195,
+    "last_frame_cycle": 5886511,
+    "last_frame_end_cycle": 5888851,
+    "data_sha256": "EB7E336A412232990A29B2B3AAA89B1A9272CD40A44A392421DD178FF38DFA27",
+    "CLKS_PER_BIT": 234,
+    "clock_period_ps": 37037,
+    "first_active_posedge_ps": 277777,
+    "actual_transition_timestamps_match_cycles": true,
+    "separate_centre_decode": true,
+    "ordinary_native_VCD_is_windowed": true
+  },
+  "new_DUT": 0
+}

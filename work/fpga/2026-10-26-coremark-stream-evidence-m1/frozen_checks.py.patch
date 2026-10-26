@@ -1,0 +1,13 @@
+--- before/frozen_checks.py
++++ frozen_checks.py
+@@ -19,8 +19,8 @@
+     d=H/'oracles'/name
+     o=json.loads((d/'expected.json').read_text(encoding='utf-8-sig'));o['regs']=[int(x,16) for x in (d/'expected-registers.hex').read_text().split()]
+     return o
+-def from_actual(name,result):
+-    d=H/'runs'/(name+'-N234');report=(d/'ram-output.txt').read_bytes();text=report.decode('ascii')
++def from_actual(name,result,directory=None):
++    d=Path(directory) if directory is not None else H/'runs'/(name+'-N234');report=(d/'ram-output.txt').read_bytes();text=report.decode('ascii')
+     return dict(iterations=int(re.findall(r'^Iterations\s*:\s*(\d+)\s*$',text,re.M)[0]),crcfinal=re.findall(r'^\[0\]crcfinal\s*:\s*0x([0-9a-f]{4})\s*$',text,re.M)[0],raw_ticks=result['detail']['raw_ticks'],stamps=result['detail']['stamps'],streams=result['streams'],physical=result['metrics']['physical'],ram_SHA256=hashlib.sha256(bytes(int(x,16) for x in (d/'ram.hex').read_text().split())).hexdigest().upper(),regs=[int(x,16) for x in (d/'registers.hex').read_text().split()],report_SHA256=hashlib.sha256(report).hexdigest().upper(),timer_reads=result['timer_reads'],phases=[p for c,p in result['detail']['phases']],no_errors=not result['errors'])
+ def selftest():
+     f=freeze_for('performance');good=dict(iterations=2,crcfinal=f['crcfinal'],raw_ticks=f['raw_ticks'],stamps=f['stamps'],streams=f['streams'],physical=f['expected_physical'],ram_SHA256=f['RAM_SHA256'],regs=f['regs'],report_SHA256=f['report_SHA256'],timer_reads=f['timer_reads'],phases=[0,1,2,3,4],no_errors=True)

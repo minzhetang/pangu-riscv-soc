@@ -1,0 +1,13 @@
+{
+  "date_beijing": "2026-10-26",
+  "decision": "D156",
+  "scope_SHA256": "5CC3DADD4280BF5A742F1A0C065F4B329322D511B9C09B95709BCE31C272BCED",
+  "user_reply": "批准该主线M1范围，按既定预算实施",
+  "scope": "A-COREMARK-STREAM-EVIDENCE-M1",
+  "max_compile": 1,
+  "max_new_DUT": 1,
+  "iterations": 2,
+  "CPU_RTL_change": false,
+  "hardware": "STOPPED",
+  "external_compile_permission": "SEPARATE_TOOL_REVIEW"
+}

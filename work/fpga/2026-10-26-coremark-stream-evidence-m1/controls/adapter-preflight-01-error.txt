@@ -1,0 +1,1 @@
+Adapter preparation guard matched the newly added no_per_clock_samples keyword; failed before checker was written. No compiler or DUT executed. Guard narrowed to the actual old allocation token, not a test expectation change.

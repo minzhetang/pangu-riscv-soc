@@ -1,0 +1,19 @@
+--- before/audit_uart.py
++++ audit_uart.py
+@@ -25,13 +25,13 @@
+         old=v
+     assert value(last_cycle)==1
+     return frames
+-def audit(tid,path=None):
+-    d=H/'runs'/tid;p=d/'uart-pins.log' if path is None else path
++def audit(tid,path=None,directory=None):
++    d=Path(directory) if directory is not None else H/'runs'/tid;p=d/'uart-pins.log' if path is None else path
+     check=s.read(d/'check-result.json');assert check['status']=='PASS'
+     plan=s.read(H/'frozen-case-plan.json')['cases'][tid]
+     frozen=H/'oracles'/tid.split('-N')[0]/'expected-report.txt';assert s.sha(frozen)==plan['expected_report_sha256'];expected=frozen.read_bytes()
+     stores=[]
+-    with (d/'trace.log').open(encoding='ascii') as f:
++    with __import__('contextlib').closing(__import__('stream_io').open_stream(d,'trace')) as f:
+         for line in f:
+             a=line.strip().split('|')
+             if a[0]=='STORE' and a[3]=='20000000':stores.append((int(a[1]),int(a[4],16)&255))

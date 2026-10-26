@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "items": [
+    {
+      "N": 8,
+      "status": "PASS",
+      "stepped": 164,
+      "skipped": 99,
+      "full_clock_reference": 263
+    },
+    {
+      "N": 8,
+      "negative": "active low omitted",
+      "status": "EXPECTED_REJECT"
+    },
+    {
+      "N": 16,
+      "status": "PASS",
+      "stepped": 324,
+      "skipped": 99,
+      "full_clock_reference": 423
+    },
+    {
+      "N": 16,
+      "negative": "active low omitted",
+      "status": "EXPECTED_REJECT"
+    },
+    {
+      "N": 234,
+      "status": "PASS",
+      "stepped": 4684,
+      "skipped": 99,
+      "full_clock_reference": 4783
+    },
+    {
+      "N": 234,
+      "negative": "active low omitted",
+      "status": "EXPECTED_REJECT"
+    }
+  ],
+  "new_DUT": 0
+}

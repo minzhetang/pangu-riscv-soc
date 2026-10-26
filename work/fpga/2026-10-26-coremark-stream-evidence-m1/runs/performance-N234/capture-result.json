@@ -1,0 +1,46 @@
+{
+  "status": "ARCHIVE_CAPTURE_COMPLETE_NOT_FUNCTIONAL_PASS",
+  "supervisor": {
+    "offset": 6887,
+    "peak_spool": 4102446,
+    "peak_parent": 42344448,
+    "ready_events": 142,
+    "parse_lines": 149
+  },
+  "process": {
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-N",
+      "-M-",
+      "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\compile\\performance-N234.vvp",
+      "+MAX_CYCLES=8000000"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\runs\\performance-N234",
+    "returncode": 0,
+    "returncode_hex": "0x00000000",
+    "timed_out": false,
+    "cap": false,
+    "error": null,
+    "termination": "PROCESS_EXIT",
+    "peak_working_set_bytes": 60805120,
+    "elapsed_seconds": 449.313,
+    "timeout_seconds": 600,
+    "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\run-performance-N234\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\run-performance-N234\\stderr.log"
+  },
+  "streams": {
+    "trace": {
+      "mode": "segments",
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\runs\\performance-N234\\archive\\trace",
+      "index_SHA256": "A865A66AE9D34601A0EBCEA2F4841ED0C99EA1869904A0193A72FB2EDC212409"
+    },
+    "bus": {
+      "mode": "segments",
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\runs\\performance-N234\\archive\\bus",
+      "index_SHA256": "52354568A9B33E88B089C378722FB633EE7E3C0F23F0E25500E29907FE1B9B67"
+    }
+  },
+  "source_protected": 208,
+  "new_DUT": 1
+}

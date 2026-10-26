@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "options": [],
+      "native_rc": 0,
+      "stdout": "{\"status\": \"ENTRY_POLICY_OK\", \"optimization\": 0, \"compile_used\": true, \"DUT_used\": true, \"note\": \"Existing attempt markers prohibit repeating this stage\"}\n",
+      "stderr": "",
+      "status": "PASS_EXPECTED_OUTCOME"
+    },
+    {
+      "options": [
+        "-O"
+      ],
+      "native_rc": 2,
+      "stdout": "",
+      "stderr": "UNSUPPORTED_OPTIMIZED_PYTHON: verification assertions must remain enabled\n",
+      "status": "PASS_EXPECTED_OUTCOME"
+    },
+    {
+      "options": [
+        "-OO"
+      ],
+      "native_rc": 2,
+      "stdout": "",
+      "stderr": "UNSUPPORTED_OPTIMIZED_PYTHON: verification assertions must remain enabled\n",
+      "status": "PASS_EXPECTED_OUTCOME"
+    }
+  ],
+  "scope": "Entry guard only; no compiler/DUT invoked",
+  "new_DUT": 0
+}

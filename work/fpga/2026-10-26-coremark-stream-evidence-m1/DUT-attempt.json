@@ -1,0 +1,11 @@
+{
+  "maximum": 1,
+  "used": 1,
+  "stage": "D156",
+  "physical_limit": 8000000,
+  "host_seconds": 600,
+  "program": "performance",
+  "iterations": 2,
+  "CPU_RTL_changes": false,
+  "hardware": "STOPPED"
+}

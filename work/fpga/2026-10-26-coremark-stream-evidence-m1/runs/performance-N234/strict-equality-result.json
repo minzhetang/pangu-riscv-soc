@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "old_functional_summary_identical": true,
+  "evidence": [
+    {
+      "kind": "trace",
+      "status": "BYTE_FOR_BYTE_EQUAL",
+      "records": 3477732,
+      "raw_bytes": 84091326,
+      "SHA256": "35CA119FAD5DBF326AF495389BF811BD02489395E273FC1A2D29CA7FB1AEE774",
+      "not_digest_only": true
+    },
+    {
+      "kind": "bus",
+      "status": "BYTE_FOR_BYTE_EQUAL",
+      "records": 1124937,
+      "raw_bytes": 110243503,
+      "SHA256": "67A237D16314B8F9CFED3903E68DB6D5817C32B14DA15B744899BFFB0753024C",
+      "not_digest_only": true
+    },
+    {
+      "file": "registers.hex",
+      "status": "BYTE_FOR_BYTE_EQUAL",
+      "bytes": 320,
+      "SHA256": "1FAB413A954E1CA318E3EF9642FDAD9BBDA49D67B88D89582EB36C7574D08C3E"
+    },
+    {
+      "file": "ram.hex",
+      "status": "BYTE_FOR_BYTE_EQUAL",
+      "bytes": 327680,
+      "SHA256": "0DF363A9EB08BCAD2100087CD5F368439FD6AED2C0D848057A3B9BAA588A8609"
+    },
+    {
+      "file": "uart-pins.log",
+      "status": "BYTE_FOR_BYTE_EQUAL",
+      "bytes": 122855,
+      "SHA256": "7C45B8A83B45DEE349686A08A029B8738EBAA6A62A51455B01AB7555F3325CE8"
+    },
+    {
+      "file": "ram-output.txt",
+      "status": "BYTE_FOR_BYTE_EQUAL",
+      "bytes": 662,
+      "SHA256": "EB7E336A412232990A29B2B3AAA89B1A9272CD40A44A392421DD178FF38DFA27"
+    }
+  ],
+  "UART": {
+    "id": "performance-N234",
+    "status": "PASS",
+    "pin_log_sha256": "7C45B8A83B45DEE349686A08A029B8738EBAA6A62A51455B01AB7555F3325CE8",
+    "records": 3840,
+    "actual_transitions": 3838,
+    "frames": 662,
+    "first_frame_cycle": 4329195,
+    "last_frame_cycle": 5886511,
+    "last_frame_end_cycle": 5888851,
+    "data_sha256": "EB7E336A412232990A29B2B3AAA89B1A9272CD40A44A392421DD178FF38DFA27",
+    "CLKS_PER_BIT": 234,
+    "clock_period_ps": 37037,
+    "first_active_posedge_ps": 277777,
+    "actual_transition_timestamps_match_cycles": true,
+    "separate_centre_decode": true,
+    "ordinary_native_VCD_is_windowed": true
+  },
+  "wave": {
+    "id": "performance-N234",
+    "status": "PASS",
+    "VCD_sha256": "CE1EEA02DBB28D14E95431182B5E29AA2B653ADF236E60F14E593633A22BBD51",
+    "bytes": 400923,
+    "stable_post_checks": 3047,
+    "distinct_visible_cycles": 2183,
+    "intervals": [
+      [
+        1,
+        1024
+      ],
+      [
+        6223,
+        6479
+      ],
+      [
+        18767,
+        18778
+      ],
+      [
+        18793,
+        18804
+      ],
+      [
+        61961,
+        61972
+      ],
+      [
+        61981,
+        62237
+      ],
+      [
+        4269339,
+        4269350
+      ],
+      [
+        4269363,
+        4269619
+      ],
+      [
+        4329159,
+        4329415
+      ],
+      [
+        5888861,
+        5888943
+      ]
+    ],
+    "explicit_off_timestamp_groups": 9,
+    "timer_LOAD_pre_capture_cycles": [
+      18772,
+      18774,
+      18776,
+      18798,
+      18800,
+      18802,
+      61966,
+      61968,
+      61970,
+      4269344,
+      4269346,
+      4269348
+    ],
+    "settled_timer_address_samples": 88,
+    "first_active_posedge_ps": 277777,
+    "last_timestamp_ps": 218109041150,
+    "scope": "native VCD windows; captured pre-edge variables + independent physical-time/post-edge checks",
+    "full_algorithm_wave": false,
+    "hardware_ILA": false,
+    "retirement_PC": false
+  },
+  "host_seconds": 52.84399999992456,
+  "source_protected": 208,
+  "no_new_DUT_in_this_checker": true,
+  "hardware": "STOPPED",
+  "formal_score": false
+}

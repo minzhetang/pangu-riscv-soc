@@ -1,0 +1,40 @@
+{
+  "status": "PASS_OLD_REPLAY_NOT_NEW_DUT",
+  "old_result_identical": true,
+  "host_seconds": 35.063,
+  "streaming": {
+    "pin": {
+      "records": 3828,
+      "transitions": 3826,
+      "samples_list_allocated": false
+    },
+    "idle_cycles_skipped": 4654631,
+    "model_steps": 1550764,
+    "no_per_clock_samples": true
+  },
+  "UART": {
+    "id": "validation-N234",
+    "status": "PASS",
+    "pin_log_sha256": "23B56EC3AFDDF1BC7203DC93F54231E529B0CC9631F4A6CC03C64792027BE252",
+    "records": 3828,
+    "actual_transitions": 3826,
+    "frames": 661,
+    "first_frame_cycle": 4648003,
+    "last_frame_cycle": 6202963,
+    "last_frame_end_cycle": 6205303,
+    "data_sha256": "F9E0C38FE18B7C12959E9CC0558FE1FC9B92D0DABCAB553DBD3D5E91759CF018",
+    "CLKS_PER_BIT": 234,
+    "clock_period_ps": 37037,
+    "first_active_posedge_ps": 277777,
+    "actual_transition_timestamps_match_cycles": true,
+    "separate_centre_decode": true,
+    "ordinary_native_VCD_is_windowed": true
+  },
+  "trace_counts": {
+    "EX": 2005976,
+    "WB": 1364865,
+    "READ": 246042,
+    "STORE": 34675
+  },
+  "new_DUT": 0
+}

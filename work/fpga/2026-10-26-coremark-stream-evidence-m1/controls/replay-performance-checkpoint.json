@@ -1,0 +1,7 @@
+{
+  "result_SHA256": "152642159483051A1FE43CE68EEB96C45EB8B434E8B96F08A01D9B3F52C19281",
+  "strict_checker_status": "PASS",
+  "prior_process": "logs/replay-performance/process.json",
+  "harness_error": "Python tuples versus JSON arrays; stored JSON compared field-for-field has only the intentional streaming addition",
+  "new_DUT": 0
+}

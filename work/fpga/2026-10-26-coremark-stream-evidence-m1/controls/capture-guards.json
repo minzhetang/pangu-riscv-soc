@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "id": "unarchived spool >32MiB actual file",
+      "status": "EXPECTED_REJECT",
+      "reason": "UNARCHIVED_SPOOL_CAP"
+    },
+    {
+      "id": "duplicate ready segment",
+      "status": "EXPECTED_REJECT",
+      "reason": "ready order/count"
+    },
+    {
+      "id": "missing terminal receipt",
+      "status": "EXPECTED_REJECT",
+      "reason": "missing END_STREAM receipt"
+    },
+    {
+      "id": "nonzero GPIO outside skip assumption",
+      "status": "EXPECTED_REJECT",
+      "reason": ""
+    }
+  ],
+  "new_DUT": 0,
+  "failed_spool_retained": true
+}

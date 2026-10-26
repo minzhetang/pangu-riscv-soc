@@ -1,0 +1,221 @@
+{
+  "stage": "A-COREMARK-STREAM-EVIDENCE-M1",
+  "date_beijing": "2026-10-26",
+  "decision_approval": "D156",
+  "decision_result": "D157",
+  "status": "PASS_FINITE_PIPELINE_NOT_FORMAL_LONGRUN",
+  "old_replays": {
+    "performance": "PASS_OLD_REPLAY_NOT_NEW_DUT",
+    "validation": "PASS_OLD_REPLAY_NOT_NEW_DUT"
+  },
+  "model_controls": {
+    "status": "PASS",
+    "items": [
+      {
+        "N": 8,
+        "status": "PASS",
+        "stepped": 164,
+        "skipped": 99,
+        "full_clock_reference": 263
+      },
+      {
+        "N": 8,
+        "negative": "active low omitted",
+        "status": "EXPECTED_REJECT"
+      },
+      {
+        "N": 16,
+        "status": "PASS",
+        "stepped": 324,
+        "skipped": 99,
+        "full_clock_reference": 423
+      },
+      {
+        "N": 16,
+        "negative": "active low omitted",
+        "status": "EXPECTED_REJECT"
+      },
+      {
+        "N": 234,
+        "status": "PASS",
+        "stepped": 4684,
+        "skipped": 99,
+        "full_clock_reference": 4783
+      },
+      {
+        "N": 234,
+        "negative": "active low omitted",
+        "status": "EXPECTED_REJECT"
+      }
+    ],
+    "new_DUT": 0
+  },
+  "pipeline_controls": {
+    "total": 15,
+    "positive": 1,
+    "expected_rejections": 14,
+    "host_seconds": 238.875
+  },
+  "capture_guard_rejections": 4,
+  "entry_policy": "PASS",
+  "new_compiler_invocations": 1,
+  "new_DUT_runs": 1,
+  "compile": {
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-Wall",
+      "-DM0_VERIFY",
+      "-I",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source",
+      "-I",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification",
+      "-s",
+      "tb_board_coremark",
+      "-Ptb_board_coremark.PHASE_ADDR=67584",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\compile\\performance-N234.vvp",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\alu.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\control.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\cpu.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\gpio_core.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\local_regif_txgpio_m1.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\regfile.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\uart_tx.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\board_reset_sync.sv",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\board_top.sv",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\cycle_counter64.sv",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\memory_model.sv",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\soc_data_adapter.sv",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\cases\\performance-N234\\source\\soc_top.sv",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\tests\\tb_board_coremark.sv",
+      "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+      "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1",
+    "returncode": 0,
+    "returncode_hex": "0x00000000",
+    "timed_out": false,
+    "cap": false,
+    "error": null,
+    "termination": "PROCESS_EXIT",
+    "peak_working_set_bytes": 5464064,
+    "elapsed_seconds": 55.14,
+    "timeout_seconds": 120,
+    "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\compile-performance-N234\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\compile-performance-N234\\stderr.log"
+  },
+  "DUT": {
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-N",
+      "-M-",
+      "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\compile\\performance-N234.vvp",
+      "+MAX_CYCLES=8000000"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\runs\\performance-N234",
+    "returncode": 0,
+    "returncode_hex": "0x00000000",
+    "timed_out": false,
+    "cap": false,
+    "error": null,
+    "termination": "PROCESS_EXIT",
+    "peak_working_set_bytes": 60805120,
+    "elapsed_seconds": 449.313,
+    "timeout_seconds": 600,
+    "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\run-performance-N234\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\run-performance-N234\\stderr.log"
+  },
+  "final_functional_check": {
+    "argv": [
+      "<EXISTING_PYTHON>",
+      "-B",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\final_check_worker.py"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1",
+    "returncode": 0,
+    "returncode_hex": "0x00000000",
+    "timed_out": false,
+    "cap": false,
+    "error": null,
+    "termination": "PROCESS_EXIT",
+    "peak_working_set_bytes": 229031936,
+    "elapsed_seconds": 53.672,
+    "timeout_seconds": 600,
+    "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\final-functional-check\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\final-functional-check\\stderr.log"
+  },
+  "compiler_warning_groups": 3,
+  "compiler_warnings_identical_after_path_normalization": true,
+  "metrics": {
+    "physical": 5888943,
+    "advances": 2944471,
+    "stall": 173406,
+    "flush": 435221,
+    "tail": 32
+  },
+  "raw_ticks": 4207378,
+  "crcfinal": "72be",
+  "UART_bytes": 662,
+  "UART_pin_records": 3840,
+  "streaming": {
+    "pin": {
+      "records": 3840,
+      "transitions": 3838,
+      "samples_list_allocated": false
+    },
+    "idle_cycles_skipped": 4335962,
+    "model_steps": 1552981,
+    "no_per_clock_samples": true
+  },
+  "raw_bytes": 194334829,
+  "raw_records": 4602669,
+  "segments": 142,
+  "streams": {
+    "trace": {
+      "segments": 107,
+      "raw_bytes": 84091326,
+      "records": 3477732,
+      "raw_SHA256": "35CA119FAD5DBF326AF495389BF811BD02489395E273FC1A2D29CA7FB1AEE774"
+    },
+    "bus": {
+      "segments": 35,
+      "raw_bytes": 110243503,
+      "records": 1124937,
+      "raw_SHA256": "67A237D16314B8F9CFED3903E68DB6D5817C32B14DA15B744899BFFB0753024C"
+    }
+  },
+  "archive_bytes_including_metadata": 31974737,
+  "archive_ratio": 0.16453425855022621,
+  "spool_peak_bytes": 4102446,
+  "archive_parent_peak_bytes": 42344448,
+  "old_DUT_host_seconds": 320.39,
+  "new_DUT_host_seconds": 449.313,
+  "observed_host_time_ratio": 1.4023939573644622,
+  "host_time_comparison": "Different executions; load not controlled, not a causal attribution or speedup claim",
+  "byte_for_byte_old_logs_and_pins": true,
+  "normal_stop_tail_cycles": 32,
+  "reference_semantics_unchanged": true,
+  "source_protected": 208,
+  "frozen_live_inputs": 50,
+  "problems_preserved": [
+    "adapter guard false substring before checker write",
+    "initial host ImportError before model execution",
+    "performance replay Python tuple-vs-JSON-array qualification failed after strict checker PASS; exact saved JSON independently qualified without rerun"
+  ],
+  "remaining_limits": [
+    "Only two-iteration performance new DUT; validation old replay only",
+    "512MiB raw/stream,1024 segments/stream,16M records/stream and5M ISA steps remain short-stage caps; not a >4GB/160-iteration production claim",
+    "MMIO observations and bounded UART transitions still retained; no claim all metadata memory is O(1)",
+    "Checks rely on nonoptimized Python; guarded_entry rejects -O/-OO, direct internal modules unsupported",
+    "No true retirement PC/unified WB-STORE stream, fixed GPIO0/input/state model",
+    "No valid CoreMark score, real FPGA temperature/timebase/ILA or hardware validation"
+  ],
+  "hardware": "STOPPED",
+  "PDS_runs": 0,
+  "GCC_runs": 0,
+  "B_task": "Independent offline scope remains; no presumed receipt/new deliverable"
+}
