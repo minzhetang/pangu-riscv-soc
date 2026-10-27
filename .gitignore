@@ -716,6 +716,24 @@
 !/deliveries/mainline-b-offline-r1-2026-10-27-v1/TASK.md
 !/deliveries/mainline-b-offline-r1-2026-10-27-v1/TEAMMATE_PROMPT.md
 
+!/deliveries/mainline-coremark-longrun-ready-scope-2026-10-27-v1/
+/deliveries/mainline-coremark-longrun-ready-scope-2026-10-27-v1/*
+!/work/analysis/2026-10-27-coremark-longrun-budget-m0/
+/work/analysis/2026-10-27-coremark-longrun-budget-m0/*
+!/reports/verification/2026-10-27-coremark-longrun-budget-m0.md
+!/deliveries/mainline-coremark-longrun-ready-scope-2026-10-27-v1/IMPLEMENTATION_SCOPE.md
+!/deliveries/mainline-coremark-longrun-ready-scope-2026-10-27-v1/SCOPE_STATUS.json
+!/work/analysis/2026-10-27-coremark-longrun-budget-m0/INPUTS.json
+!/work/analysis/2026-10-27-coremark-longrun-budget-m0/TRACE_PROFILES.json
+!/work/analysis/2026-10-27-coremark-longrun-budget-m0/FORECASTS.json
+!/work/analysis/2026-10-27-coremark-longrun-budget-m0/CODE_ANCHORS.json
+!/work/analysis/2026-10-27-coremark-longrun-budget-m0/SUMMARY.json
+!/work/analysis/2026-10-27-coremark-longrun-budget-m0/POSTFLIGHT.json
+!/work/analysis/2026-10-27-coremark-longrun-budget-m0/performance-thresholds.json
+!/work/analysis/2026-10-27-coremark-longrun-budget-m0/validation-thresholds.json
+!/work/analysis/2026-10-27-coremark-longrun-budget-m0/run_analysis.py
+!/work/analysis/2026-10-27-coremark-longrun-budget-m0/COMMANDS.md
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

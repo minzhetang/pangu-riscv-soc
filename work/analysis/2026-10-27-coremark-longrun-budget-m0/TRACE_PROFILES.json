@@ -1,0 +1,249 @@
+{
+  "window_definition": "before: cycle<=start_ticks; compute: start_ticks<cycle<=end_ticks; after: cycle>end_ticks; trace row bytes only, not host wall-time attribution",
+  "profiles": [
+    {
+      "iterations": 1,
+      "seed": "performance",
+      "metrics": {
+        "physical": 3784487,
+        "advances": 1892243,
+        "stall": 152691,
+        "flush": 285711,
+        "tail": 32
+      },
+      "counts": {
+        "EX": 1168111,
+        "WB": 792281,
+        "READ": 190307,
+        "STORE": 20529
+      },
+      "steps": 1168111,
+      "trace_records": 2171228,
+      "trace_bytes": 53254975,
+      "bus_bytes": 110281625,
+      "raw_ticks": 2103648,
+      "stamps": [
+        18773,
+        18799,
+        61967,
+        2165615
+      ],
+      "host_DUT_seconds": 201.875,
+      "trace_groups": {
+        "before_compute": {
+          "records": 39279,
+          "bytes": 894338,
+          "kinds": {
+            "EX": 22202,
+            "WB": 12410,
+            "READ": 1683,
+            "STORE": 2984
+          }
+        },
+        "compute_window": {
+          "records": 1306160,
+          "bytes": 30245577,
+          "kinds": {
+            "EX": 732266,
+            "WB": 504541,
+            "READ": 55008,
+            "STORE": 14345
+          }
+        },
+        "after_compute": {
+          "records": 825789,
+          "bytes": 22115060,
+          "kinds": {
+            "EX": 413643,
+            "WB": 275330,
+            "READ": 133616,
+            "STORE": 3200
+          }
+        }
+      }
+    },
+    {
+      "iterations": 1,
+      "seed": "validation",
+      "metrics": {
+        "physical": 3941007,
+        "advances": 1970503,
+        "stall": 153013,
+        "flush": 298540,
+        "tail": 32
+      },
+      "counts": {
+        "EX": 1220391,
+        "WB": 826012,
+        "READ": 190574,
+        "STORE": 20433
+      },
+      "steps": 1220391,
+      "trace_records": 2257410,
+      "trace_bytes": 55167878,
+      "bus_bytes": 110131283,
+      "raw_ticks": 2263000,
+      "stamps": [
+        18785,
+        18811,
+        62369,
+        2325369
+      ],
+      "host_DUT_seconds": 209.235,
+      "trace_groups": {
+        "before_compute": {
+          "records": 39561,
+          "bytes": 901544,
+          "kinds": {
+            "EX": 22330,
+            "WB": 12507,
+            "READ": 1726,
+            "STORE": 2998
+          }
+        },
+        "compute_window": {
+          "records": 1393574,
+          "bytes": 32190511,
+          "kinds": {
+            "EX": 785232,
+            "WB": 538668,
+            "READ": 55434,
+            "STORE": 14240
+          }
+        },
+        "after_compute": {
+          "records": 824275,
+          "bytes": 22075823,
+          "kinds": {
+            "EX": 412829,
+            "WB": 274837,
+            "READ": 133414,
+            "STORE": 3195
+          }
+        }
+      }
+    },
+    {
+      "iterations": 2,
+      "seed": "performance",
+      "metrics": {
+        "physical": 5888943,
+        "advances": 2944471,
+        "stall": 173406,
+        "flush": 435221,
+        "tail": 32
+      },
+      "counts": {
+        "EX": 1900604,
+        "WB": 1296943,
+        "READ": 245317,
+        "STORE": 34868
+      },
+      "steps": 1900604,
+      "trace_records": 3477732,
+      "trace_bytes": 84091326,
+      "bus_bytes": 110243503,
+      "raw_ticks": 4207378,
+      "stamps": [
+        18773,
+        18799,
+        61967,
+        4269345
+      ],
+      "host_DUT_seconds": 320.39,
+      "trace_groups": {
+        "before_compute": {
+          "records": 39279,
+          "bytes": 894338,
+          "kinds": {
+            "EX": 22202,
+            "WB": 12410,
+            "READ": 1683,
+            "STORE": 2984
+          }
+        },
+        "compute_window": {
+          "records": 2612350,
+          "bytes": 61075019,
+          "kinds": {
+            "EX": 1464550,
+            "WB": 1009098,
+            "READ": 110018,
+            "STORE": 28684
+          }
+        },
+        "after_compute": {
+          "records": 826103,
+          "bytes": 22121969,
+          "kinds": {
+            "EX": 413852,
+            "WB": 275435,
+            "READ": 133616,
+            "STORE": 3200
+          }
+        }
+      }
+    },
+    {
+      "iterations": 2,
+      "seed": "validation",
+      "metrics": {
+        "physical": 6205395,
+        "advances": 3102697,
+        "stall": 174246,
+        "flush": 461228,
+        "tail": 32
+      },
+      "counts": {
+        "EX": 2005976,
+        "WB": 1364865,
+        "READ": 246042,
+        "STORE": 34675
+      },
+      "steps": 2005976,
+      "trace_records": 3651558,
+      "trace_bytes": 87958340,
+      "bus_bytes": 110178225,
+      "raw_ticks": 4526490,
+      "stamps": [
+        18785,
+        18811,
+        62369,
+        4588859
+      ],
+      "host_DUT_seconds": 357.453,
+      "trace_groups": {
+        "before_compute": {
+          "records": 39561,
+          "bytes": 901544,
+          "kinds": {
+            "EX": 22330,
+            "WB": 12507,
+            "READ": 1726,
+            "STORE": 2998
+          }
+        },
+        "compute_window": {
+          "records": 2787444,
+          "bytes": 64974910,
+          "kinds": {
+            "EX": 1570614,
+            "WB": 1077446,
+            "READ": 110902,
+            "STORE": 28482
+          }
+        },
+        "after_compute": {
+          "records": 824553,
+          "bytes": 22081886,
+          "kinds": {
+            "EX": 413032,
+            "WB": 274912,
+            "READ": 133414,
+            "STORE": 3195
+          }
+        }
+      }
+    }
+  ]
+}

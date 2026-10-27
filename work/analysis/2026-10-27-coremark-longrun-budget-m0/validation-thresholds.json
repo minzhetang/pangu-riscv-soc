@@ -1,0 +1,9 @@
+{
+  "seed": "validation",
+  "two_point_conditional_first_exceeding_iteration": {
+    "reference_steps": 6,
+    "raw_bytes": 16,
+    "trace_records": 11,
+    "segment_capacity": 24
+  }
+}

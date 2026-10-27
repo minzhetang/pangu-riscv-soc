@@ -1,0 +1,117 @@
+[
+  {
+    "file": "stream_io.py",
+    "line": 6,
+    "text": "LINE=256;RECORDS=32768;RAW_CAP=512*1024*1024;ARCHIVE_CAP=256*1024*1024"
+  },
+  {
+    "file": "stream_io.py",
+    "line": 48,
+    "text": "index=path/'stream-index.json';require(index.stat().st_size<=2*1024*1024 and sha(index)==spec['index_SHA256'],'global index identity')"
+  },
+  {
+    "file": "stream_io.py",
+    "line": 50,
+    "text": "require(len(meta['segments'])<=1024 and 0<meta['raw_bytes']<=RAW_CAP and meta['packed_bytes']<=ARCHIVE_CAP,'stream bounds')"
+  },
+  {
+    "file": "stream_io.py",
+    "line": 58,
+    "text": "require(total<=RAW_CAP and count<=16000000,'stream record/raw cap');whole.update(row)"
+  },
+  {
+    "file": "stream_io.py",
+    "line": 96,
+    "text": "path.unlink();self.deleted.append(dict(path=expected,SHA256=meta['SHA256'],verified_before_delete=True))"
+  },
+  {
+    "file": "check_coremark.py",
+    "line": 28,
+    "text": "sparse=SparseModel(n);model=sparse.model;last_pin=1;read_at={};bus={};gpio=[];prev=0;max_bus=0"
+  },
+  {
+    "file": "check_coremark.py",
+    "line": 52,
+    "text": "io_reads=[];io_writes=[];timer_reads=[];phases=[];phase_init_pcs=[];timer_stores=[];counts={k:0 for k in ['EX','WB','READ','STORE']}"
+  },
+  {
+    "file": "check_coremark.py",
+    "line": 105,
+    "text": "assert ref.steps<5000000 and time.monotonic()-ref_started<600"
+  },
+  {
+    "file": "host_supervisor.py",
+    "line": 19,
+    "text": "def bounded(argv,cwd,name,seconds,cap=512*1024*1024,while_running=None):"
+  },
+  {
+    "file": "host_supervisor.py",
+    "line": 26,
+    "text": "if measured is not None:maximum=max(maximum,measured)"
+  },
+  {
+    "file": "host_supervisor.py",
+    "line": 27,
+    "text": "assert time.monotonic()-start<=seconds,'PROCESS_TIMEOUT'"
+  },
+  {
+    "file": "host_supervisor.py",
+    "line": 28,
+    "text": "assert maximum<=cap,'PROCESS_MEMORY_CAP'"
+  },
+  {
+    "file": "host_supervisor.py",
+    "line": 30,
+    "text": "if while_running:while_running(d,code)"
+  },
+  {
+    "file": "host_supervisor.py",
+    "line": 38,
+    "text": "result=dict(argv=list(map(str,argv)),cwd=str(cwd),returncode=rc,returncode_hex=None if rc is None else f'0x{rc&0xffffffff:08X}',timed_out=error=='PROCESS_TIMEOUT',cap=error in ['PROCESS_MEMORY_CAP','PROCESS_LOG_CAP'],error=error,termination=reason,peak_working_set_bytes=maximum,elapsed_seconds=round(time.monotonic()-start,6),timeout_seconds=seconds,stdout=str(d/'stdout.log'),stderr=str(d/'stderr.log'))"
+  },
+  {
+    "file": "host_supervisor.py",
+    "line": 40,
+    "text": "print(json.dumps(dict(id=name,rc=rc,reason=reason,error=error,peak=maximum,host_seconds=result['elapsed_seconds'])),flush=True)"
+  },
+  {
+    "file": "tests/tb_board_coremark.sv",
+    "line": 9,
+    "text": "integer cycle=0,tail=0,limit=8000000,events_fd,bus_fd,rf_fd,ram_fd,i;"
+  },
+  {
+    "file": "tests/tb_board_coremark.sv",
+    "line": 59,
+    "text": "if(!$value$plusargs(\"MAX_CYCLES=%d\",limit))limit=8000000;"
+  },
+  {
+    "file": "tests/tb_board_coremark.sv",
+    "line": 61,
+    "text": "if(limit<1||limit>8000000)$fatal(1,\"BUDGET_BOUNDS\");"
+  },
+  {
+    "file": "tests/tb_board_coremark.sv",
+    "line": 93,
+    "text": "if(board_dut.soc.cpu_core.id_valid&&!board_dut.soc.cpu_core.eei_hold)begin if(!events_fd)open_trace();$fdisplay(events_fd,\"EX|%0d|%08x\",cycle,board_dut.soc.cpu_core.id_pc);trace_count=trace_count+1;trace_total=trace_total+1;if(trace_count==32768)close_trace();end"
+  },
+  {
+    "file": "tests/tb_board_coremark.sv",
+    "line": 95,
+    "text": "begin if(!events_fd)open_trace();$fdisplay(events_fd,\"READ|%0d|%08x|%08x|%08x|%08x\",cycle,board_dut.soc.cpu_core.ex_pc,board_dut.soc.address,board_dut.soc.rdata,board_dut.soc.cpu_core.mem_load_data);trace_count=trace_count+1;trace_total=trace_total+1;if(trace_count==32768)close_trace();end"
+  },
+  {
+    "file": "tests/tb_board_coremark.sv",
+    "line": 99,
+    "text": "if(board_dut.soc.cpu_core.rf.we&&board_dut.soc.cpu_core.mem_rd!=0)begin if(!events_fd)open_trace();$fdisplay(events_fd,\"WB|%0d|%0d|%08x\",cycle,board_dut.soc.cpu_core.mem_rd,board_dut.soc.cpu_core.wb_write_data);trace_count=trace_count+1;trace_total=trace_total+1;if(trace_count==32768)close_trace();end"
+  },
+  {
+    "file": "tests/tb_board_coremark.sv",
+    "line": 102,
+    "text": "begin if(!events_fd)open_trace();$fdisplay(events_fd,\"STORE|%0d|%08x|%08x|%08x|%01x\",cycle,board_dut.soc.cpu_core.ex_pc,board_dut.soc.address,board_dut.soc.wdata,board_dut.soc.wstrb);trace_count=trace_count+1;trace_total=trace_total+1;if(trace_count==32768)close_trace();end"
+  },
+  {
+    "file": "tests/tb_board_coremark.sv",
+    "line": 111,
+    "text": "pre_tx,pre_gpio_out,uart_tx,gpio_out,pre_gpio_accept,stopped,pre_ticks,board_dut.soc.timer_ticks);bus_count=bus_count+1;bus_total=bus_total+1;if(bus_count==32768)close_bus();end"
+  }
+]

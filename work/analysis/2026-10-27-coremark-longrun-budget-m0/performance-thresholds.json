@@ -1,0 +1,9 @@
+{
+  "seed": "performance",
+  "two_point_conditional_first_exceeding_iteration": {
+    "reference_steps": 7,
+    "raw_bytes": 17,
+    "trace_records": 12,
+    "segment_capacity": 26
+  }
+}

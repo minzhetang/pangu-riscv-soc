@@ -1,0 +1,16 @@
+{
+  "id": "A-COREMARK-LONGRUN-READY-M2",
+  "version": "1.0.0",
+  "date_client": "2026-10-27",
+  "status": "PENDING_SCOPE_APPROVAL_NOT_IMPLEMENTED",
+  "scope_SHA256": "B878F14BF530B9EAD8820AB7770E16954B2F21DEFC81B02E9AD02DCBD48B2F6B",
+  "max_new_C_build": 1,
+  "max_new_RTL_compile": 1,
+  "max_new_DUT": 1,
+  "iterations": 8,
+  "stage_seconds": 7200,
+  "estimated_DUT_host_minutes": 23.545072176016983,
+  "estimate_is_not_guarantee": true,
+  "CPU_RTL_changes": false,
+  "hardware": "STOPPED"
+}

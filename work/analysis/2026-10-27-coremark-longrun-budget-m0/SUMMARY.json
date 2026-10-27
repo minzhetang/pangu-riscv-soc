@@ -1,0 +1,47 @@
+{
+  "status": "READ_ONLY_BUDGET_AND_CAPTURE_COST_ANALYSIS",
+  "date_client": "2026-10-27",
+  "originals": 39,
+  "host_analysis_seconds": 5.531,
+  "new_DUT": 0,
+  "new_compile": 0,
+  "ISA_replay": 0,
+  "PDS": 0,
+  "hardware": "STOPPED",
+  "observed_host_seconds": {
+    "old": 320.39,
+    "new": 449.313,
+    "ratio": 1.4023939573644622,
+    "causal_attribution": false
+  },
+  "extra_SV_record_counter_updates": 9205338,
+  "record_branch_guards_also_added": true,
+  "file_close_events": 142,
+  "profile_missing": "No per-segment compression timings or comparable controlled host load; cannot apportion the 128.923s difference to gzip versus VVP instructions.",
+  "conditional_dual160_DUT_hours": 15.339411145903984,
+  "simulated_10seconds_is_hardware_score": false,
+  "current_pipeline_short_caps_not_longrun_ready": true,
+  "free_workspace_disk_bytes": 361809866752,
+  "recommended_next": "Bounded production stream/guard and host-size controls plus one 8-iteration performance software calibration; not dual160 or hardware",
+  "forecast8": {
+    "seed": "performance",
+    "iterations": 8,
+    "conditional_ticks": 16829758,
+    "conditional_seconds_at_nominal_27MHz": 0.6233243703703704,
+    "conditional_steps": 6295562,
+    "conditional_trace_records": 11316756,
+    "conditional_trace_raw_bytes": 269109432,
+    "conditional_segments": 346,
+    "conditional_physical": 18515679,
+    "conditional_host_DUT_hours": 0.3924178696002831,
+    "conditional_minimum_iteration_estimate": 129,
+    "old_caps_exceeded": {
+      "reference_5M": true,
+      "raw_512MiB": false,
+      "records_16M": false,
+      "segments_1024": false,
+      "cycles_8M": true
+    },
+    "not_DUT_or_oracle_or_guarantee": true
+  }
+}

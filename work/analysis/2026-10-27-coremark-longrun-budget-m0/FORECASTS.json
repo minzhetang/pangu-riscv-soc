@@ -1,0 +1,131 @@
+{
+  "method": "Linear extrapolation of two actual iteration points; format widths/report polling/data-dependent iteration costs may change. No prediction is a new executed result.",
+  "cases": [
+    {
+      "seed": "performance",
+      "iterations": 8,
+      "conditional_ticks": 16829758,
+      "conditional_seconds_at_nominal_27MHz": 0.6233243703703704,
+      "conditional_steps": 6295562,
+      "conditional_trace_records": 11316756,
+      "conditional_trace_raw_bytes": 269109432,
+      "conditional_segments": 346,
+      "conditional_physical": 18515679,
+      "conditional_host_DUT_hours": 0.3924178696002831,
+      "conditional_minimum_iteration_estimate": 129,
+      "old_caps_exceeded": {
+        "reference_5M": true,
+        "raw_512MiB": false,
+        "records_16M": false,
+        "segments_1024": false,
+        "cycles_8M": true
+      },
+      "not_DUT_or_oracle_or_guarantee": true
+    },
+    {
+      "seed": "performance",
+      "iterations": 32,
+      "conditional_ticks": 67319278,
+      "conditional_seconds_at_nominal_27MHz": 2.493306592592593,
+      "conditional_steps": 23875394,
+      "conditional_trace_records": 42672852,
+      "conditional_trace_raw_bytes": 1009181856,
+      "conditional_segments": 1303,
+      "conditional_physical": 69022623,
+      "conditional_host_DUT_hours": 1.4628526813347487,
+      "conditional_minimum_iteration_estimate": 129,
+      "old_caps_exceeded": {
+        "reference_5M": true,
+        "raw_512MiB": true,
+        "records_16M": true,
+        "segments_1024": true,
+        "cycles_8M": true
+      },
+      "not_DUT_or_oracle_or_guarantee": true
+    },
+    {
+      "seed": "performance",
+      "iterations": 160,
+      "conditional_ticks": 336596718,
+      "conditional_seconds_at_nominal_27MHz": 12.466545111111111,
+      "conditional_steps": 117634498,
+      "conditional_trace_records": 209905364,
+      "conditional_trace_raw_bytes": 4956234784,
+      "conditional_segments": 6406,
+      "conditional_physical": 338392991,
+      "conditional_host_DUT_hours": 7.171838343918566,
+      "conditional_minimum_iteration_estimate": 129,
+      "old_caps_exceeded": {
+        "reference_5M": true,
+        "raw_512MiB": true,
+        "records_16M": true,
+        "segments_1024": true,
+        "cycles_8M": true
+      },
+      "not_DUT_or_oracle_or_guarantee": true
+    },
+    {
+      "seed": "validation",
+      "iterations": 8,
+      "conditional_ticks": 18107430,
+      "conditional_seconds_at_nominal_27MHz": 0.6706455555555556,
+      "conditional_steps": 6719486,
+      "conditional_trace_records": 12016446,
+      "conditional_trace_raw_bytes": 284701112,
+      "conditional_segments": 367,
+      "conditional_physical": 19791723,
+      "conditional_host_DUT_hours": 0.4441203260612491,
+      "conditional_minimum_iteration_estimate": 120,
+      "old_caps_exceeded": {
+        "reference_5M": true,
+        "raw_512MiB": false,
+        "records_16M": false,
+        "segments_1024": false,
+        "cycles_8M": true
+      },
+      "not_DUT_or_oracle_or_guarantee": true
+    },
+    {
+      "seed": "validation",
+      "iterations": 32,
+      "conditional_ticks": 72431190,
+      "conditional_seconds_at_nominal_27MHz": 2.682636666666667,
+      "conditional_steps": 25573526,
+      "conditional_trace_records": 45475998,
+      "conditional_trace_raw_bytes": 1071672200,
+      "conditional_segments": 1388,
+      "conditional_physical": 74137035,
+      "conditional_host_DUT_hours": 1.6636128222598021,
+      "conditional_minimum_iteration_estimate": 120,
+      "old_caps_exceeded": {
+        "reference_5M": true,
+        "raw_512MiB": true,
+        "records_16M": true,
+        "segments_1024": true,
+        "cycles_8M": true
+      },
+      "not_DUT_or_oracle_or_guarantee": true
+    },
+    {
+      "seed": "validation",
+      "iterations": 160,
+      "conditional_ticks": 362157910,
+      "conditional_seconds_at_nominal_27MHz": 13.413255925925926,
+      "conditional_steps": 126128406,
+      "conditional_trace_records": 223926942,
+      "conditional_trace_raw_bytes": 5268851336,
+      "conditional_segments": 6834,
+      "conditional_physical": 363978699,
+      "conditional_host_DUT_hours": 8.167572801985418,
+      "conditional_minimum_iteration_estimate": 120,
+      "old_caps_exceeded": {
+        "reference_5M": true,
+        "raw_512MiB": true,
+        "records_16M": true,
+        "segments_1024": true,
+        "cycles_8M": true
+      },
+      "not_DUT_or_oracle_or_guarantee": true
+    }
+  ]
+}
