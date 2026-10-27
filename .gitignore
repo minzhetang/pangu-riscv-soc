@@ -700,6 +700,22 @@
 !/reports/verification/evidence/2026-10-26-coremark-stream-evidence-m1/NATIVE_PROCESSES.json
 !/reports/verification/evidence/2026-10-26-coremark-stream-evidence-m1/SUMMARY.json
 
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/
+/deliveries/mainline-b-offline-r1-2026-10-27-v1/*
+!/reports/progress/2026-10-27-b-offline-r1-dispatch.md
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/APPROVAL.json
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/BASELINE.json
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/C0-default.json
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/C1-worker-memory.json
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/C2-result-size.json
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/C3-optimized-protected-output.json
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/COUNTEREXAMPLES.json
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/REPRODUCE.md
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/SHA256SUMS.txt
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/START_HERE.md
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/TASK.md
+!/deliveries/mainline-b-offline-r1-2026-10-27-v1/TEAMMATE_PROMPT.md
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC
