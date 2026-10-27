@@ -1,0 +1,18 @@
+{
+  "id": "performance8-N234",
+  "status": "PASS",
+  "pin_log_sha256": "3E193F0350CF34BCDAB4EF294836C8E7BFD9C77C407CE9D5D9496C16FEAAD21D",
+  "records": 3844,
+  "actual_transitions": 3842,
+  "frames": 663,
+  "first_frame_cycle": 16953723,
+  "last_frame_cycle": 18513395,
+  "last_frame_end_cycle": 18515735,
+  "data_sha256": "9C3B61CD225EF097C00F7ED8D53ADB69F937F2451DF80B45535758366693DA4A",
+  "CLKS_PER_BIT": 234,
+  "clock_period_ps": 37037,
+  "first_active_posedge_ps": 277777,
+  "actual_transition_timestamps_match_cycles": true,
+  "separate_centre_decode": true,
+  "ordinary_native_VCD_is_windowed": true
+}

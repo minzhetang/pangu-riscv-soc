@@ -1,0 +1,61 @@
+{
+  "cases": {
+    "performance-N234": {
+      "phase_address": 67584,
+      "expected_raw_ticks": 4207378,
+      "expected_stamps": [
+        18773,
+        18799,
+        61967,
+        4269345
+      ],
+      "expected_report_sha256": "EB7E336A412232990A29B2B3AAA89B1A9272CD40A44A392421DD178FF38DFA27",
+      "expected_UART_bytes": 662,
+      "old_run": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\oracles\\performance",
+      "oracle_SHA256": "8CE8574ACBB5CD185C6283913DE50EA4885CE2131B4A7975251804F15D4794AB",
+      "iterations": 2,
+      "n": 234
+    },
+    "validation-N234": {
+      "phase_address": 67592,
+      "expected_raw_ticks": 4526490,
+      "expected_stamps": [
+        18785,
+        18811,
+        62369,
+        4588859
+      ],
+      "expected_report_sha256": "F9E0C38FE18B7C12959E9CC0558FE1FC9B92D0DABCAB553DBD3D5E91759CF018",
+      "expected_UART_bytes": 661,
+      "old_run": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\oracles\\validation",
+      "oracle_SHA256": "F7485A648DCF56778674384EE5795B73C6D8E5F261A7CBAFEC71C9EC3224B13F",
+      "iterations": 2,
+      "n": 234
+    },
+    "performance8-N234": {
+      "phase_address": 67584,
+      "expected_raw_ticks": 16829452,
+      "expected_stamps": [
+        18773,
+        18799,
+        61967,
+        16891419
+      ],
+      "expected_report_sha256": "9C3B61CD225EF097C00F7ED8D53ADB69F937F2451DF80B45535758366693DA4A",
+      "expected_UART_bytes": 663,
+      "oracle_SHA256": "19F50CF344AD2D0135E1CEE9BE77D10ED93CFC3666C880B039BF87CDEDF80569",
+      "iterations": 8,
+      "n": 234
+    }
+  },
+  "max_physical_cycles": 8000000,
+  "run_seconds": 600,
+  "compile_seconds": 120,
+  "file_cap_bytes": 268435456,
+  "formal_score": false,
+  "pre_DUT": true,
+  "M2_limits": {
+    "cycles": 32000000,
+    "seconds": 2400
+  }
+}

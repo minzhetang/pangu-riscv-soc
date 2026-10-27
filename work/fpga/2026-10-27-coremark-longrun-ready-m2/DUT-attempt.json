@@ -1,0 +1,8 @@
+{
+  "maximum": 1,
+  "used": 1,
+  "decision": "D160",
+  "iterations": 8,
+  "max_cycles": 32000000,
+  "max_host_seconds": 2400
+}

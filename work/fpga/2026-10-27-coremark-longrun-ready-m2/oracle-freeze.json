@@ -1,0 +1,26 @@
+{
+  "status": "PREFROZEN_BEFORE_DUT",
+  "files": [
+    {
+      "path": "oracles\\performance8\\expected-ram.bin",
+      "SHA256": "F49360EB8B30D2859B87374B70848DBF71FFDE67CB51F584D9E643CE72125FE8"
+    },
+    {
+      "path": "oracles\\performance8\\expected-registers.hex",
+      "SHA256": "63FC092BE385A9572A24D07DE630972BE0AEE2DAF17D86FF1542252607B7E71E"
+    },
+    {
+      "path": "oracles\\performance8\\expected-report.txt",
+      "SHA256": "9C3B61CD225EF097C00F7ED8D53ADB69F937F2451DF80B45535758366693DA4A"
+    },
+    {
+      "path": "oracles\\performance8\\expected.json",
+      "SHA256": "19F50CF344AD2D0135E1CEE9BE77D10ED93CFC3666C880B039BF87CDEDF80569"
+    }
+  ],
+  "steps": 6295556,
+  "cycles": 18515827,
+  "iterations": 8,
+  "raw_ticks": 16829452,
+  "new_DUT": 0
+}

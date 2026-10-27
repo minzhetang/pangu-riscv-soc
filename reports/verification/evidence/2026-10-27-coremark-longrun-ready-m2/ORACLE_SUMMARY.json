@@ -1,0 +1,135 @@
+{
+  "status": "PREFROZEN_REFERENCE_ONLY",
+  "case": "performance8",
+  "baseline_replay": false,
+  "iterations": 8,
+  "image_SHA256": "EC365839FEA1111CB365763322E2FA99C3C3B3F6B74A5884C5B0EB30593486F0",
+  "ELF_SHA256": "90E06A11E410E36FCDE16570BDA9BE6C4A57800D94FE4AA84B17FC2BE4224638",
+  "steps": 6295556,
+  "stop_pc": 104,
+  "stall": 297886,
+  "flush": 1332226,
+  "streams": {
+    "EX": {
+      "count": 6295556,
+      "sha256": "22DE684DE7BA9971E39837EFABD4EEE926C2D4AA9E4AB424B39D10F9E4D864D5"
+    },
+    "WB": {
+      "count": 4325030,
+      "sha256": "255670FDD7A78FC3819EACD8B231D5F70E781D48C8782268F835FD48CF63F29A"
+    },
+    "MEM": {
+      "count": 696445,
+      "sha256": "33089BE05040F7D19102E043DD008359020D43DD4768CA8DA82403069EEAF34C"
+    }
+  },
+  "timer_reads": [
+    {
+      "pc": 13232,
+      "address": 536871172,
+      "cycle": 18772,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 13236,
+      "address": 536871168,
+      "cycle": 18774,
+      "expected": 18773,
+      "actual": 18773
+    },
+    {
+      "pc": 13240,
+      "address": 536871172,
+      "cycle": 18776,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 13280,
+      "address": 536871172,
+      "cycle": 18798,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 13284,
+      "address": 536871168,
+      "cycle": 18800,
+      "expected": 18799,
+      "actual": 18799
+    },
+    {
+      "pc": 13288,
+      "address": 536871172,
+      "cycle": 18802,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 12940,
+      "address": 536871172,
+      "cycle": 61966,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 12944,
+      "address": 536871168,
+      "cycle": 61968,
+      "expected": 61967,
+      "actual": 61967
+    },
+    {
+      "pc": 12948,
+      "address": 536871172,
+      "cycle": 61970,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 12992,
+      "address": 536871172,
+      "cycle": 16891418,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "pc": 12996,
+      "address": 536871168,
+      "cycle": 16891420,
+      "expected": 16891419,
+      "actual": 16891419
+    },
+    {
+      "pc": 13000,
+      "address": 536871172,
+      "cycle": 16891422,
+      "expected": 0,
+      "actual": 0
+    }
+  ],
+  "stamps": [
+    18773,
+    18799,
+    61967,
+    16891419
+  ],
+  "raw_ticks": 16829452,
+  "expected_physical": 18515827,
+  "report_bytes": 663,
+  "report_SHA256": "9C3B61CD225EF097C00F7ED8D53ADB69F937F2451DF80B45535758366693DA4A",
+  "RAM_SHA256": "F49360EB8B30D2859B87374B70848DBF71FFDE67CB51F584D9E643CE72125FE8",
+  "RF_SHA256": "63FC092BE385A9572A24D07DE630972BE0AEE2DAF17D86FF1542252607B7E71E",
+  "crcfinal": "ccd1",
+  "host_seconds": 18.25,
+  "native_DUT_runs": 0,
+  "limited_schedule": "F143 SYNC_MEMORY1: EX6 then2 physical ticks, load-use+2, redirect+4, READ EX+2 and STORE EX+1; independently calibrated on two old F143 traces/states",
+  "hardware": false,
+  "calibration_source_SHA256": "8CE8574ACBB5CD185C6283913DE50EA4885CE2131B4A7975251804F15D4794AB",
+  "full_local_oracle_SHA256": "19F50CF344AD2D0135E1CEE9BE77D10ED93CFC3666C880B039BF87CDEDF80569",
+  "full_local_oracle_bytes": 9498577,
+  "omitted_only_from_Git": [
+    "full MMIO read/write expectation lists; retained and checked locally"
+  ]
+}

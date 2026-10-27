@@ -1,0 +1,67 @@
+{
+  "status": "ARCHIVE_CAPTURE_COMPLETE_NOT_FUNCTIONAL_PASS",
+  "process": {
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-N",
+      "-M-",
+      "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\compile\\performance8-N234.vvp",
+      "+MAX_CYCLES=32000000"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234",
+    "returncode": 0,
+    "returncode_hex": "0x00000000",
+    "timed_out": false,
+    "cap": false,
+    "error": null,
+    "termination": "PROCESS_EXIT",
+    "peak_working_set_bytes": 60706816,
+    "parent_peak_working_set_bytes": 45666304,
+    "child_memory_samples": 33866,
+    "elapsed_seconds": 1063.828,
+    "timeout_seconds": 2400.0,
+    "child_cpu": {
+      "kernel_s": 23.5625,
+      "user_s": 1017.90625
+    },
+    "parent_cpu_before": {
+      "kernel_s": 0.390625,
+      "user_s": 0.125
+    },
+    "parent_cpu_after": {
+      "kernel_s": 146.375,
+      "user_s": 24.171875
+    },
+    "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\logs\\run-performance8-N234\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\logs\\run-performance8-N234\\stderr.log",
+    "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+    "absolute_deadline_used": true
+  },
+  "streams": {
+    "trace": {
+      "mode": "segments",
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace",
+      "index_SHA256": "2D9F091A573126D0FDBA03C883622176975968F9C416FDA8E0227C753E8C3BE0"
+    },
+    "bus": {
+      "mode": "segments",
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\bus",
+      "index_SHA256": "B58320B8D8AB4A6BECA242625B508E99202199C7F0938082B9447271B7FFFED7"
+    }
+  },
+  "supervisor": {
+    "offset": 18361,
+    "peak_spool": 4235365,
+    "peak_parent": 45666304,
+    "ready_events": 381,
+    "parse_lines": 388
+  },
+  "timings": {
+    "encode_s": 6.097999999881722,
+    "decode_verify_s": 2.8080000007757917,
+    "source_verify_delete_s": 0.6050000002142042
+  },
+  "source_protected": 555,
+  "new_DUT": 1
+}

@@ -1,0 +1,94 @@
+{
+  "status": "PASS_FINITE_8_ITERATIONS_NOT_FORMAL_SCORE",
+  "check_seconds": 74.76500000001397,
+  "UART": {
+    "id": "performance8-N234",
+    "status": "PASS",
+    "pin_log_sha256": "3E193F0350CF34BCDAB4EF294836C8E7BFD9C77C407CE9D5D9496C16FEAAD21D",
+    "records": 3844,
+    "actual_transitions": 3842,
+    "frames": 663,
+    "first_frame_cycle": 16953723,
+    "last_frame_cycle": 18513395,
+    "last_frame_end_cycle": 18515735,
+    "data_sha256": "9C3B61CD225EF097C00F7ED8D53ADB69F937F2451DF80B45535758366693DA4A",
+    "CLKS_PER_BIT": 234,
+    "clock_period_ps": 37037,
+    "first_active_posedge_ps": 277777,
+    "actual_transition_timestamps_match_cycles": true,
+    "separate_centre_decode": true,
+    "ordinary_native_VCD_is_windowed": true
+  },
+  "VCD": {
+    "id": "performance8-N234",
+    "status": "PASS",
+    "VCD_sha256": "6463E2F24E52E5095C4C751BC3F7399447FD04C5434F5BA9E3608735D3B084F0",
+    "bytes": 381349,
+    "stable_post_checks": 3049,
+    "distinct_visible_cycles": 2183,
+    "intervals": [
+      [
+        1,
+        1024
+      ],
+      [
+        6223,
+        6479
+      ],
+      [
+        18767,
+        18778
+      ],
+      [
+        18793,
+        18804
+      ],
+      [
+        61961,
+        61972
+      ],
+      [
+        61981,
+        62237
+      ],
+      [
+        16891413,
+        16891424
+      ],
+      [
+        16891437,
+        16891693
+      ],
+      [
+        16953687,
+        16953943
+      ],
+      [
+        18515745,
+        18515827
+      ]
+    ],
+    "explicit_off_timestamp_groups": 9,
+    "timer_LOAD_pre_capture_cycles": [
+      18772,
+      18774,
+      18776,
+      18798,
+      18800,
+      18802,
+      61966,
+      61968,
+      61970,
+      16891418,
+      16891420,
+      16891422
+    ],
+    "settled_timer_address_samples": 88,
+    "first_active_posedge_ps": 277777,
+    "last_timestamp_ps": 685770943858,
+    "scope": "native VCD windows; captured pre-edge variables + independent physical-time/post-edge checks",
+    "full_algorithm_wave": false,
+    "hardware_ILA": false,
+    "retirement_PC": false
+  }
+}

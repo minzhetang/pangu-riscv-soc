@@ -1,0 +1,81 @@
+{
+  "status": "PASS_HOST_ONLY",
+  "rows": [
+    {
+      "id": "real-size-and-1025-segments",
+      "status": "PASS",
+      "bus_actual_bytes": 571018176,
+      "bus_actual_records": 5898240,
+      "trace_actual_segments": 1025,
+      "pointwise_every_line": true,
+      "not_CPU_or_new_DUT": true
+    },
+    {
+      "id": "bad-index",
+      "status": "EXPECTED_REJECT",
+      "reason": "global index identity"
+    },
+    {
+      "id": "bad-payload",
+      "status": "EXPECTED_REJECT",
+      "reason": "packed SHA"
+    },
+    {
+      "id": "missing-segment",
+      "status": "EXPECTED_REJECT",
+      "reason": "[WinError 2] 系统找不到指定的文件。: 'D:\\\\A_FPGA_Comp\\\\work\\\\fpga\\\\2026-10-27-coremark-longrun-ready-m2\\\\controls\\\\missing-segment\\\\archive\\\\trace\\\\000000\\\\block-000000.gz'"
+    },
+    {
+      "id": "reordered",
+      "status": "EXPECTED_REJECT",
+      "reason": "ready order/count"
+    },
+    {
+      "id": "missing-ready",
+      "status": "EXPECTED_REJECT",
+      "reason": "end count"
+    },
+    {
+      "id": "duplicate END",
+      "status": "EXPECTED_REJECT",
+      "reason": "bad/duplicate end marker"
+    },
+    {
+      "id": "missing terminal",
+      "status": "EXPECTED_REJECT",
+      "reason": "missing END_STREAM receipt"
+    },
+    {
+      "id": "absolute archive deadline",
+      "status": "EXPECTED_REJECT",
+      "reason": "ABSOLUTE_DEADLINE"
+    },
+    {
+      "id": "spool cap",
+      "status": "EXPECTED_REJECT",
+      "reason": "UNARCHIVED_SPOOL_CAP"
+    },
+    {
+      "id": "oversized line",
+      "status": "EXPECTED_REJECT",
+      "reason": "line too long or incomplete"
+    },
+    {
+      "id": "unavailable memory fails closed",
+      "status": "EXPECTED_REJECT",
+      "reason": "negative-no-memory stopped: CHILD_MEMORY_UNAVAILABLE"
+    },
+    {
+      "id": "parent deadline kills actual own child",
+      "status": "EXPECTED_REJECT",
+      "reason": "negative-parent-deadline stopped: ABSOLUTE_DEADLINE"
+    }
+  ],
+  "archive_timings": {
+    "encode_s": 5.946999998996034,
+    "decode_verify_s": 3.34699999995064,
+    "source_verify_delete_s": 1.854000000632368
+  },
+  "not_CPU": true,
+  "new_DUT": 0
+}

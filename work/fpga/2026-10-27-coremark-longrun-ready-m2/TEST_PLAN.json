@@ -1,0 +1,38 @@
+{
+  "frozen_before_execution": true,
+  "original_RTL": 13,
+  "container_real_bytes_min": 536870913,
+  "container_small_segments": 1025,
+  "host_negative": [
+    "bad index",
+    "bad payload",
+    "missing/reordered/duplicate segment",
+    "missing END",
+    "oversized line",
+    "spool limit",
+    "absolute deadline",
+    "unavailable memory",
+    "invalid resource/read metadata",
+    "-O"
+  ],
+  "old_replays": [
+    "performance-N234",
+    "validation-N234"
+  ],
+  "new_program": "performance8",
+  "iterations": 8,
+  "raw_limit_each": 17179869184,
+  "record_limit_each": 500000000,
+  "segments_limit_each": 16384,
+  "index_limit": 16777216,
+  "archive_limit_run": 4294967296,
+  "spool_limit": 33554432,
+  "compile_seconds": 120,
+  "DUT_seconds": 2400,
+  "DUT_cycles": 32000000,
+  "oracle_steps": 25000000,
+  "oracle_seconds": 900,
+  "check_seconds": 1800,
+  "stage_seconds": 7200,
+  "new_oracle": "Computed independently and frozen BEFORE DUT; no extrapolation used as expected result"
+}

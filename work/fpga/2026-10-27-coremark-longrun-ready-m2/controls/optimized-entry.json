@@ -1,0 +1,6 @@
+{
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\n  File \"D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\stage_budget.py\", line 4, in <module>\r\n    if sys.flags.optimize:raise RuntimeError('OPTIMIZED_PYTHON_UNSUPPORTED')\r\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nRuntimeError: OPTIMIZED_PYTHON_UNSUPPORTED\r\n",
+  "status": "EXPECTED_REJECT"
+}

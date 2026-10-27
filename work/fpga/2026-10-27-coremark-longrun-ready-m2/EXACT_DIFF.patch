@@ -1,0 +1,499 @@
+--- before/check_coremark.py
++++ check_coremark.py
+@@ -102,7 +102,7 @@
+     ref.EX=Stream('EX');ref.WB=Stream('WB');ref.MEM=Stream('MEM')
+     ref_started=time.monotonic()
+     while not ref.stopped:
+-        assert ref.steps<5000000 and time.monotonic()-ref_started<600
++        assert ref.steps<25000000 and time.monotonic()-ref_started<900
+         ref.step()
+     for x in [ref.EX,ref.WB,ref.MEM]:x.finish()
+     eq('all MMIO samples consumed',cursor,len(io_reads))
+--- before/frozen_checks.py
++++ frozen_checks.py
+@@ -6,13 +6,13 @@
+     errors=[]
+     def eq(k,a,b):
+         if a!=b:errors.append(dict(kind=k,actual=a,expected=b))
+-    eq('iterations',actual['iterations'],2)
++    eq('iterations',actual['iterations'],frozen['iterations'])
+     eq('crcfinal',actual['crcfinal'],frozen['crcfinal'])
+     for k in ['raw_ticks','stamps','streams','physical','ram_SHA256','regs','report_SHA256','timer_reads']:
+         expected=frozen['expected_physical'] if k=='physical' else frozen['RAM_SHA256'] if k=='ram_SHA256' else frozen[k]
+         eq(k,actual[k],expected)
+     eq('phase order',actual['phases'],[0,1,2,3,4])
+-    eq('budget',0<actual['physical']<=8000000,True)
++    eq('budget',0<actual['physical']<=(32000000 if frozen['iterations']==8 else 8000000),True)
+     eq('no timer/port error',actual['no_errors'],True)
+     return errors
+ def freeze_for(name):
+--- before/host_supervisor.py
++++ host_supervisor.py
+@@ -1,46 +1,78 @@
++"""Bounded own-process runner; no device enumeration or arbitrary-command CLI."""
+ from pathlib import Path
+-import ctypes,ctypes.wintypes as w,subprocess,time,sys,json
+-sys.dont_write_bytecode=True;sys.stdout.reconfigure(encoding='utf-8')
++import sys,os,json,subprocess,time,threading,ctypes,ctypes.wintypes as w
++from stage_budget import check,deadline,require,peak,measured_peak,k
++sys.dont_write_bytecode=True
+ H=Path(__file__).resolve().parent
+-class PMC(ctypes.Structure):
+-    _fields_=[('cb',w.DWORD),('PageFaultCount',w.DWORD),('PeakWorkingSetSize',ctypes.c_size_t),('WorkingSetSize',ctypes.c_size_t),('QuotaPeakPagedPoolUsage',ctypes.c_size_t),('QuotaPagedPoolUsage',ctypes.c_size_t),('QuotaPeakNonPagedPoolUsage',ctypes.c_size_t),('QuotaNonPagedPoolUsage',ctypes.c_size_t),('PagefileUsage',ctypes.c_size_t),('PeakPagefileUsage',ctypes.c_size_t)]
+-ctypes.windll.kernel32.OpenProcess.restype=w.HANDLE
+-ctypes.windll.kernel32.CloseHandle.argtypes=[w.HANDLE]
+-ctypes.windll.psapi.GetProcessMemoryInfo.argtypes=[w.HANDLE,ctypes.POINTER(PMC),w.DWORD]
+-def peak(pid):
+-    h=ctypes.windll.kernel32.OpenProcess(0x410,False,pid)
+-    if not h:return None
+-    try:
+-        p=PMC();p.cb=ctypes.sizeof(p)
+-        return p.PeakWorkingSetSize if ctypes.windll.psapi.GetProcessMemoryInfo(h,ctypes.byref(p),p.cb) else None
+-    finally:ctypes.windll.kernel32.CloseHandle(h)
+-def save(p,o):
+-    with Path(p).open('x',encoding='utf-8') as f:json.dump(o,f,ensure_ascii=False,indent=2);f.write('\n')
+-def bounded(argv,cwd,name,seconds,cap=512*1024*1024,while_running=None):
+-    d=H/'logs'/name;d.mkdir(exist_ok=False);start=time.monotonic();maximum=0;reason='PROCESS_EXIT';error=None
+-    with (d/'stdout.log').open('xb') as out,(d/'stderr.log').open('xb') as err:
+-        proc=subprocess.Popen(list(map(str,argv)),cwd=cwd,stdin=subprocess.DEVNULL,stdout=out,stderr=err,creationflags=subprocess.CREATE_NO_WINDOW)
+-        try:
+-            while True:
+-                code=proc.poll();measured=peak(proc.pid)
+-                if measured is not None:maximum=max(maximum,measured)
+-                assert time.monotonic()-start<=seconds,'PROCESS_TIMEOUT'
+-                assert maximum<=cap,'PROCESS_MEMORY_CAP'
+-                assert all((d/n).stat().st_size<=8*1024*1024 for n in ['stdout.log','stderr.log']),'PROCESS_LOG_CAP'
+-                if while_running:while_running(d,code)
+-                if code is not None:break
+-                time.sleep(.05)
+-        except Exception as exc:
+-            error=str(exc);reason='STOPPED';
+-            if proc.poll() is None:proc.kill()
+-        try:rc=proc.wait(timeout=8)
+-        except subprocess.TimeoutExpired:rc=None;error=(error or '')+';wait timeout';reason='STOPPED'
+-    result=dict(argv=list(map(str,argv)),cwd=str(cwd),returncode=rc,returncode_hex=None if rc is None else f'0x{rc&0xffffffff:08X}',timed_out=error=='PROCESS_TIMEOUT',cap=error in ['PROCESS_MEMORY_CAP','PROCESS_LOG_CAP'],error=error,termination=reason,peak_working_set_bytes=maximum,elapsed_seconds=round(time.monotonic()-start,6),timeout_seconds=seconds,stdout=str(d/'stdout.log'),stderr=str(d/'stderr.log'))
+-    save(d/'process.json',result)
+-    print(json.dumps(dict(id=name,rc=rc,reason=reason,error=error,peak=maximum,host_seconds=result['elapsed_seconds'])),flush=True)
+-    if rc or error or reason!='PROCESS_EXIT':raise RuntimeError(name+' stopped: '+str(error))
+-    return result
+-if __name__=='__main__':
+-    for label,args in [('model-v2',['model']),('replay-performance',['replay','performance']),('replay-validation',['replay','validation'])]:
+-        bounded([sys.executable,'-B',H/'host_worker.py',*args],H,label,600)
+-
++class FT(ctypes.Structure):_fields_=[('low',w.DWORD),('high',w.DWORD)]
++k.GetProcessTimes.argtypes=[w.HANDLE,*([ctypes.POINTER(FT)]*4)];k.GetCurrentProcess.restype=w.HANDLE
++def cpu_times(handle):
++ times=[FT() for _ in range(4)]
++ if not k.GetProcessTimes(handle,*[ctypes.byref(t) for t in times]):return None
++ return dict(kernel_s=((times[2].high<<32)|times[2].low)/1e7,user_s=((times[3].high<<32)|times[3].low)/1e7)
++def save(path,value):
++ with Path(path).open('x',encoding='utf-8') as f:json.dump(value,f,ensure_ascii=False,indent=2);f.write('\n')
++def bounded(argv,cwd,name,seconds,cap=512*1024**2,while_running=None,resource_probe=None):
++ check();d=H/'logs'/name;d.mkdir(exist_ok=False);start=time.monotonic();end=deadline(seconds);state=dict(error=None,peak_child=0,peak_parent=0,child_samples=0);lock=threading.Lock();stop=threading.Event();parent_before=cpu_times(k.GetCurrentProcess())
++ p=subprocess.Popen(list(map(str,argv)),cwd=cwd,stdin=subprocess.DEVNULL,stdout=subprocess.PIPE,stderr=subprocess.PIPE,creationflags=subprocess.CREATE_NO_WINDOW)
++ def fail(message):
++  with lock:
++   if state['error'] is None:state['error']=message
++  if p.poll() is None:
++   try:p.kill()
++   except OSError:pass
++ def policy():
++  check(end)
++  if state['error'] is not None:raise RuntimeError(state['error'])
++ def drain(pipe,path):
++  count=0
++  try:
++   with path.open('xb') as out:
++    while True:
++     block=os.read(pipe.fileno(),65536)
++     if not block:break
++     allowed=max(0,8*1024**2-count)
++     if allowed:out.write(block[:allowed]);out.flush();count+=min(len(block),allowed)
++     if len(block)>allowed:fail('PROCESS_LOG_CAP');break
++  except Exception as exc:fail('LOG_IO_ERROR:'+repr(exc))
++  finally:pipe.close()
++ def watch():
++  try:
++   while not stop.is_set():
++    policy();own=measured_peak();state['peak_parent']=max(state['peak_parent'],own);require(own<=cap,'PARENT_MEMORY_CAP')
++    if p.poll() is None:
++     value=peak(p.pid)
++     if value is None:
++      require(p.poll() is not None,'CHILD_MEMORY_UNAVAILABLE')
++     else:
++      state['child_samples']+=1;state['peak_child']=max(state['peak_child'],value);require(value<=cap,'CHILD_MEMORY_CAP')
++    if resource_probe:resource_probe()
++    stop.wait(.025)
++  except Exception as exc:fail(str(exc))
++ threads=[threading.Thread(target=drain,args=(p.stdout,d/'stdout.log'),daemon=True),threading.Thread(target=drain,args=(p.stderr,d/'stderr.log'),daemon=True)]
++ for t in threads:t.start()
++ monitor=threading.Thread(target=watch,daemon=True);monitor.start()
++ try:
++  while p.poll() is None:
++   policy()
++   if while_running:while_running(d,None)
++   time.sleep(.025)
++ except Exception as exc:fail(str(exc))
++ try:rc=p.wait(timeout=max(.001,min(8,end-time.monotonic())))
++ except subprocess.TimeoutExpired:
++  fail('PROCESS_WAIT_TIMEOUT');rc=p.wait(timeout=1)
++ for t in threads:t.join(timeout=max(.001,min(2,end-time.monotonic())))
++ if any(t.is_alive() for t in threads):fail('LOG_DRAIN_NOT_COMPLETE')
++ if state['error'] is None:
++  try:
++   policy();require(state['child_samples']>0,'NO_CHILD_MEMORY_SAMPLE')
++   if resource_probe:resource_probe()
++   if while_running:while_running(d,rc)
++   policy()
++  except Exception as exc:fail(str(exc))
++ stop.set();monitor.join(timeout=1)
++ elapsed=time.monotonic()-start;child_cpu=cpu_times(p._handle);parent_after=cpu_times(k.GetCurrentProcess());err=state['error']
++ result=dict(argv=list(map(str,argv)),cwd=str(cwd),returncode=rc,returncode_hex=f'0x{rc&0xffffffff:08X}',timed_out=err is not None and 'DEADLINE' in err,cap=err is not None and any(t in err for t in ['CAP','BUDGET']),error=err,termination='PROCESS_EXIT' if err is None else 'STOPPED',peak_working_set_bytes=state['peak_child'],parent_peak_working_set_bytes=state['peak_parent'],child_memory_samples=state['child_samples'],elapsed_seconds=round(elapsed,6),timeout_seconds=seconds,child_cpu=child_cpu,parent_cpu_before=parent_before,parent_cpu_after=parent_after,stdout=str(d/'stdout.log'),stderr=str(d/'stderr.log'),measurement_scope='direct child and this parent; native compiler internal descendants not separately measured',absolute_deadline_used=True)
++ save(d/'process.json',result);print(json.dumps(dict(id=name,rc=rc,error=err,child_peak=state['peak_child'],parent_peak=state['peak_parent'],seconds=result['elapsed_seconds'])),flush=True)
++ if rc!=0 or err is not None:raise RuntimeError(name+' stopped: '+str(err))
++ return result
+--- before/run_capture_once.py
++++ run_capture_once.py
+@@ -1,49 +1,46 @@
+-"""Bounded live capture. Only closed, verified new spool files may be removed."""
+ from pathlib import Path
+-import sys,json,time
++import sys,json,time,os,stat,re,shutil
+ sys.dont_write_bytecode=True;sys.stdout.reconfigure(encoding='utf-8')
+ H=Path(__file__).resolve().parent
+ from stage_coremark import read,sha
++from stage_budget import check,deadline,measured_peak
+ from stream_io import Archiver,save,require
+-from host_supervisor import bounded,peak
+-from compile_once import protect
+-import shutil
++from host_supervisor import bounded
++from preserve import protect
+ 
+ def spool_budget(run):
+-    spool=Path(run)/'spool';total=0
+-    for p in spool.iterdir():
+-        require(p.is_file() and not p.is_symlink() and not getattr(p.lstat(),'st_file_attributes',0)&0x400,'unknown spool file/link')
+-        total+=p.stat().st_size
+-    require(total<=32*1024*1024,'UNARCHIVED_SPOOL_CAP')
+-    return total
+-
++ total=0
++ for p in (Path(run)/'spool').iterdir():
++  try:st=p.lstat()
++  except FileNotFoundError:continue # only this run's concurrently verified/unlinked spool
++  require(stat.S_ISREG(st.st_mode) and not getattr(st,'st_file_attributes',0)&0x400 and re.fullmatch(r'(trace|bus)-[0-9]{6}\.log',p.name),'UNKNOWN_SPOOL_FILE_OR_LINK')
++  total+=st.st_size
++ require(total<=32*1024**2,'UNARCHIVED_SPOOL_CAP');return total
+ if __name__=='__main__':
+-    assert not sys.flags.optimize;protect()
+-    for row in read(H/'frozen-live-inputs.json')['files']:assert sha(row['path'])==row['SHA256'],row['path']
+-    comp=read(H/'compile-result.json');assert comp['status']=='PASS_COMPILE_ONLY_NOT_DUT'
+-    image=comp['rows'][0];assert sha(image['output'])==image['SHA256']
+-    save(H/'DUT-attempt.json',dict(maximum=1,used=1,stage='D156',physical_limit=8000000,host_seconds=600,program='performance',iterations=2,CPU_RTL_changes=False,hardware='STOPPED'))
+-    run=H/'runs/performance-N234';run.mkdir(exist_ok=False);(run/'spool').mkdir();arch=Archiver(run)
+-    state=dict(offset=0,pending=b'',peak_spool=0,peak_parent=0,ready_events=0,parse_lines=0)
+-    def collect(logdir,exitcode):
+-        state['peak_spool']=max(state['peak_spool'],spool_budget(run));state['peak_parent']=max(state['peak_parent'],peak(__import__('os').getpid()) or 0)
+-        require(state['peak_parent']<=512*1024*1024,'PARENT_WORKING_SET_CAP')
+-        wave=run/'wave.vcd';pins=run/'uart-pins.log'
+-        require(not wave.exists() or wave.stat().st_size<=256*1024*1024,'VCD_CAP')
+-        require(not pins.exists() or pins.stat().st_size<=8*1024*1024,'PIN_LOG_CAP')
+-        p=logdir/'stdout.log'
+-        with p.open('rb') as f:f.seek(state['offset']);data=f.read(8*1024*1024+1)
+-        state['offset']+=len(data);state['pending']+=data
+-        require(len(state['pending'])<=8*1024*1024,'STDOUT_BOUND')
+-        parts=state['pending'].split(b'\n');state['pending']=parts.pop()
+-        for line in parts:
+-            state['parse_lines']+=1;line=line.rstrip(b'\r').decode('utf-8-sig')
+-            if line.startswith(('SEGMENT|','END_STREAM|')):
+-                arch.consume(line);state['ready_events']+=line.startswith('SEGMENT|')
+-        state['peak_spool']=max(state['peak_spool'],spool_budget(run))
+-        if exitcode is not None:require(not state['pending'],'truncated stdout')
+-    lib=H.parents[2]/'tools/iverilog-13.0-msys2-ucrt64/ucrt64/lib/ivl';vvp=lib.parents[1]/'bin/vvp.exe'
+-    r=bounded([vvp,'-N','-M-','-M'+str(lib),image['output'],'+MAX_CYCLES=8000000'],run,'run-performance-N234',600,while_running=collect)
+-    specs=arch.finish();save(run/'process.json',r);shutil.copyfile(r['stdout'],run/'stdout.log')
+-    save(run/'capture-result.json',dict(status='ARCHIVE_CAPTURE_COMPLETE_NOT_FUNCTIONAL_PASS',supervisor={k:v for k,v in state.items() if k!='pending'},process=r,streams=specs,source_protected=protect(),new_DUT=1))
+-    print(json.dumps(dict(status='NEW_DUT_CAPTURE_COMPLETE_NOT_FUNCTIONAL_PASS',spool_peak=state['peak_spool'],parent_peak=state['peak_parent'],archived_events=state['ready_events']),ensure_ascii=False))
++ check();protect()
++ for x in read(H/'frozen-inputs.json')['files']:assert sha(H/x['path'])==x['SHA256']
++ comp=read(H/'compile-result.json');assert comp['status']=='COMPILED_NOT_FUNCTIONAL_PASS';row=comp;assert sha(row['output'])==row['SHA256']
++ save(H/'DUT-attempt.json',dict(maximum=1,used=1,decision='D160',iterations=8,max_cycles=32000000,max_host_seconds=2400))
++ run=H/'runs/performance8-N234';run.mkdir();(run/'spool').mkdir();end=deadline(2400)
++ state=dict(offset=0,pending=b'',peak_spool=0,peak_parent=0,ready_events=0,parse_lines=0)
++ def probe():
++  check(end);state['peak_spool']=max(state['peak_spool'],spool_budget(run));own=measured_peak();state['peak_parent']=max(state['peak_parent'],own);require(own<=512*1024**2,'PARENT_MEMORY_CAP')
++  for name,cap in [('wave.vcd',256*1024**2),('uart-pins.log',8*1024**2)]:
++   p=run/name
++   if p.exists():require(p.stat().st_size<=cap,name+'_CAP')
++ arch=Archiver(run,deadline=end,poll=probe)
++ def collect(logdir,exitcode):
++  probe();p=logdir/'stdout.log'
++  if not p.exists():return
++  with p.open('rb') as f:f.seek(state['offset']);data=f.read(8*1024**2+1)
++  state['offset']+=len(data);state['pending']+=data;require(len(state['pending'])<=8*1024**2,'STDOUT_PENDING_CAP')
++  parts=state['pending'].split(b'\n');state['pending']=parts.pop()
++  for line in parts:
++   check(end);state['parse_lines']+=1;text=line.rstrip(b'\r').decode('utf-8-sig')
++   if text.startswith(('SEGMENT|','END_STREAM|')):arch.consume(text);state['ready_events']+=text.startswith('SEGMENT|')
++  probe()
++  if exitcode is not None:require(not state['pending'],'TRUNCATED_STDOUT')
++ lib=H.parents[2]/'tools/iverilog-13.0-msys2-ucrt64/ucrt64/lib/ivl';vvp=lib.parents[1]/'bin/vvp.exe'
++ r=bounded([vvp,'-N','-M-','-M'+str(lib),row['output'],'+MAX_CYCLES=32000000'],run,'run-performance8-N234',max(.001,end-time.monotonic()),while_running=collect,resource_probe=probe)
++ specs=arch.finish();save(run/'process.json',r);shutil.copyfile(r['stdout'],run/'stdout.log');save(run/'capture-result.json',dict(status='ARCHIVE_CAPTURE_COMPLETE_NOT_FUNCTIONAL_PASS',process=r,streams=specs,supervisor={k:v for k,v in state.items() if k!='pending'},timings=arch.timings,source_protected=protect(),new_DUT=1))
++ print(json.dumps(dict(status='NEW_8_ITER_DUT_CAPTURE_COMPLETE',host_seconds=r['elapsed_seconds'],spool_peak=state['peak_spool'],segments=state['ready_events'],timings=arch.timings),ensure_ascii=False))
+--- before/stage_coremark.py
++++ stage_coremark.py
+@@ -1,5 +1,5 @@
+ from pathlib import Path
+-import json,hashlib
++import json,hashlib,struct
+ H=Path(__file__).resolve().parent
+ OLD=H/'UNUSED_BASELINE_NOT_AUTHORIZED'
+ def read(p):return json.loads(Path(p).read_text(encoding='utf-8-sig'))
+@@ -11,3 +11,33 @@
+ def log(p):
+     data=Path(p).read_bytes();assert len(data)<=8*1024*1024
+     return data.decode('utf-8-sig').replace('\r\n','\n')
++
++def elf_symbols(p):
++    data=Path(p).read_bytes();assert data[:7]==b'\x7fELF\x01\x01\x01'
++    fields=struct.unpack_from('<HHIIIIIHHHHHH',data,16);assert fields[1]==243 and fields[3]==0 and fields[6]==0
++    sections=[struct.unpack_from('<10I',data,fields[5]+i*fields[10]) for i in range(fields[11])];out={}
++    for section in sections:
++        if section[1]!=2:continue
++        st=sections[section[6]];strings=data[st[4]:st[4]+st[5]]
++        for offset in range(section[4],section[4]+section[5],section[9]):
++            name,value,size,info,other,index=struct.unpack_from('<IIIBBH',data,offset);text=strings[name:].split(b'\0',1)[0].decode('utf-8')
++            if text:out[text]=value
++    return out
++
++def initial_word(p,address):
++    data=Path(p).read_bytes();off=struct.unpack_from('<I',data,28)[0];size,count=struct.unpack_from('<HH',data,42)
++    for i in range(count):
++        typ,foff,virt,physical,filesz,memsz,flags,align=struct.unpack_from('<8I',data,off+i*size)
++        if typ==1 and virt<=address and address+4<=virt+filesz:return struct.unpack_from('<I',data,foff+address-virt)[0]
++    raise AssertionError('no initial word')
++
++def table(image,p):
++    assert len(image)%4==0 and len(image)<=32768
++    with p.open('x',encoding='ascii') as f:
++        for name,data in [('ROM',image+bytes(32768-len(image))),('RAM',bytes([0xa5])*32768)]:
++            value=data[::-1].hex();chunks=[value[i:i+1024] for i in range(0,len(value),1024)]
++            f.write('localparam [262143:0] '+name+'_BITS = {'+',\n'.join("4096'h"+c for c in chunks)+'};\n')
++        f.write('localparam integer ROM_BYTES=32768,RAM_BYTES=32768,RAM_BASE=65536;\n')
++
++def save(p,o):
++    with Path(p).open('x',encoding='utf-8') as f:json.dump(o,f,ensure_ascii=False,indent=2);f.write('\n')
+--- before/stream_io.py
++++ stream_io.py
+@@ -1,17 +1,19 @@
+ """A production-adapter candidate: bounded closed segments, no ISA semantics."""
+ from pathlib import Path
+ import hashlib,json,time
++from stage_budget import check,json_read,deadline as make_deadline
+ import block_codec
+ H=Path(__file__).resolve().parent
+-LINE=256;RECORDS=32768;RAW_CAP=512*1024*1024;ARCHIVE_CAP=256*1024*1024
++LINE=256;RECORDS=32768;RAW_CAP=16*1024**3;ARCHIVE_CAP=4*1024**3
++INDEX_CAP=16*1024**2;SEGMENT_CAP=16384;RECORD_CAP=500000000
+ 
+ def require(ok,text):
+     if not ok:raise ValueError(text)
+ 
+ def sha(path):
+-    d=hashlib.sha256()
++    check();d=hashlib.sha256()
+     with Path(path).open('rb') as f:
+-        for b in iter(lambda:f.read(1048576),b''):d.update(b)
++        for b in iter(lambda:f.read(1048576),b''):check();d.update(b)
+     return d.hexdigest().upper()
+ 
+ def save(path,value):
+@@ -23,7 +25,7 @@
+         yield line
+ 
+ def open_stream(directory,kind):
+-    d=Path(directory);spec=json.loads((d/'streams.json').read_text(encoding='utf-8'))[kind]
++    check();d=Path(directory);spec=json_read(d/'streams.json',65536)[kind]
+     mode=spec['mode'];path=Path(spec['path']);total=count=0;whole=hashlib.sha256()
+     if mode=='raw':
+         require(path.is_file() and path.stat().st_size<=RAW_CAP,'raw input bound')
+@@ -39,69 +41,85 @@
+     if mode=='f153':
+         iterator=block_codec.decode(path,spec['index_SHA256'])
+         for block in iterator:
++            check()
+             for row in bounded_lines(block):
+                 total+=len(row);count+=1;require(total<=RAW_CAP,'raw cap');whole.update(row)
+                 yield row.decode('ascii')
+         return
+     require(mode=='segments','stream format')
+     require(path.is_dir() and not path.is_symlink(),'archive path')
+-    index=path/'stream-index.json';require(index.stat().st_size<=2*1024*1024 and sha(index)==spec['index_SHA256'],'global index identity')
+-    meta=json.loads(index.read_text(encoding='utf-8'));require(meta['format']=='CLOSED-SEGMENTS-1' and meta['complete'] is True and meta['kind']==kind,'incomplete stream')
+-    require(len(meta['segments'])<=1024 and 0<meta['raw_bytes']<=RAW_CAP and meta['packed_bytes']<=ARCHIVE_CAP,'stream bounds')
++    index=path/'stream-index.json';require(index.stat().st_size<=INDEX_CAP and sha(index)==spec['index_SHA256'],'global index identity')
++    meta=json_read(index,INDEX_CAP);require(meta['format']=='CLOSED-SEGMENTS-1' and meta['complete'] is True and meta['kind']==kind,'incomplete stream')
++    require(len(meta['segments'])<=SEGMENT_CAP and 0<meta['raw_bytes']<=RAW_CAP and meta['packed_bytes']<=ARCHIVE_CAP,'stream bounds')
+     for number,seg in enumerate(meta['segments']):
++        check()
+         require(seg['seq']==number and seg['folder']==f'{number:06d}' and 0<seg['records']<=RECORDS,'segment order/count')
+         folder=path/seg['folder'];require(not folder.is_symlink(),'segment link')
+         got_n=got_b=0
+         for block in block_codec.decode(folder,seg['index_SHA256']):
++            check()
+             for row in bounded_lines(block):
+                 got_n+=1;got_b+=len(row);count+=1;total+=len(row)
+-                require(total<=RAW_CAP and count<=16000000,'stream record/raw cap');whole.update(row)
++                require(total<=RAW_CAP and count<=RECORD_CAP,'stream record/raw cap');whole.update(row)
+                 yield row.decode('ascii')
+         require((got_n,got_b)==(seg['records'],seg['raw_bytes']),'segment totals')
+     require((total,count,whole.hexdigest().upper())==(meta['raw_bytes'],meta['records'],meta['raw_SHA256']),'whole stream totals')
+ 
+ class Archiver:
+     """Only this newly created run's closed spool paths can be removed."""
+-    def __init__(self,run):
++    def __init__(self,run,deadline=None,poll=None):
++        self.deadline=make_deadline(900) if deadline is None else deadline;self.poll=poll
++        self.timings=dict(encode_s=0.0,decode_verify_s=0.0,source_verify_delete_s=0.0)
+         self.run=Path(run).resolve();self.spool=(self.run/'spool').resolve(strict=True)
+         self.root=self.run/'archive';self.root.mkdir(exist_ok=False)
+         self.rows={k:[] for k in ['trace','bus']};self.hashes={k:hashlib.sha256() for k in self.rows}
+         self.closed={};self.raw_total={k:0 for k in self.rows};self.packed=0;self.deleted=[]
+         for k in self.rows:(self.root/k).mkdir()
++    def checkpoint(self):
++        check(self.deadline)
++        if self.poll is not None:self.poll()
+     def consume(self,line):
++        self.checkpoint()
+         a=line.strip().split('|')
+         if a[0]=='END_STREAM':
+             require(len(a)==4 and a[1] in self.rows and a[1] not in self.closed,'bad/duplicate end marker')
+             k=a[1];require((int(a[2]),int(a[3]))==(len(self.rows[k]),sum(r['records'] for r in self.rows[k])),'end count')
+             self.closed[k]=True;return
+         require(len(a)==5 and a[0]=='SEGMENT' and a[1] in self.rows,'ready event')
+-        k=a[1];seq,n=int(a[2]),int(a[3]);require(k not in self.closed and seq==len(self.rows[k]) and 0<n<=RECORDS,'ready order/count')
++        k=a[1];seq,n=int(a[2]),int(a[3]);require(seq<SEGMENT_CAP,'SEGMENT_CAP');require(k not in self.closed and seq==len(self.rows[k]) and 0<n<=RECORDS,'ready order/count')
+         expected=f'spool/{k}-{seq:06d}.log';require(a[4]==expected,'ready path')
+         path=self.run/expected;resolved=path.resolve(strict=True)
+         require(resolved.parent==self.spool and not path.is_symlink() and not getattr(path.lstat(),'st_file_attributes',0)&0x400,'spool containment/link')
+         require(0<path.stat().st_size<=RECORDS*LINE,'closed segment size')
+         raw=path.read_bytes();lines=list(bounded_lines(raw));require(len(lines)==n,'ready record count')
+         total=self.raw_total[k]+len(raw);require(total<=RAW_CAP,'total raw budget')
+-        dst=self.root/k/f'{seq:06d}';meta=block_codec.encode(path,dst,time.monotonic()+15)
++        require(sum(r['records'] for r in self.rows[k])+n<=RECORD_CAP,'RECORD_CAP')
++        dst=self.root/k/f'{seq:06d}';started=time.monotonic();self.checkpoint();meta=block_codec.encode(path,dst,min(self.deadline,time.monotonic()+15));self.timings['encode_s']+=time.monotonic()-started
++        self.checkpoint();started=time.monotonic()
+         ih=sha(dst/'index.json');offset=0
+         for block in block_codec.decode(dst,ih):
++            self.checkpoint()
+             require(block==raw[offset:offset+len(block)],'byte-for-byte archive recovery');offset+=len(block)
+         require(offset==len(raw) and meta['lines']==n and meta['SHA256']==hashlib.sha256(raw).hexdigest().upper(),'closed byte/SHA/count')
++        self.timings['decode_verify_s']+=time.monotonic()-started
+         packed=sum(x.stat().st_size for x in dst.iterdir() if x.is_file());self.packed+=packed
+         require(self.packed<=ARCHIVE_CAP,'archive total budget')
+         row=dict(seq=seq,folder=f'{seq:06d}',records=n,raw_bytes=len(raw),raw_SHA256=meta['SHA256'],index_SHA256=ih,packed_bytes=packed,source_closed=True,byte_for_byte_verified=True)
+         self.rows[k].append(row);self.hashes[k].update(raw);self.raw_total[k]=total
+         # No recursive deletion, and no unverified/history path can reach here.
++        self.checkpoint();started=time.monotonic()
+         require(path.resolve(strict=True)==resolved and sha(path)==meta['SHA256'],'source changed before cleanup')
+-        path.unlink();self.deleted.append(dict(path=expected,SHA256=meta['SHA256'],verified_before_delete=True))
++        path.unlink();self.timings['source_verify_delete_s']+=time.monotonic()-started;self.deleted.append(dict(path=expected,SHA256=meta['SHA256'],verified_before_delete=True))
+     def finish(self):
++        self.checkpoint()
+         require(set(self.closed)==set(self.rows),'missing END_STREAM receipt')
+         require(not list(self.spool.iterdir()),'unaccounted raw segment')
+         specs={}
+         for k,rows in self.rows.items():
+             value=dict(format='CLOSED-SEGMENTS-1',kind=k,complete=True,segments=rows,raw_bytes=self.raw_total[k],records=sum(r['records'] for r in rows),raw_SHA256=self.hashes[k].hexdigest().upper(),packed_bytes=sum(r['packed_bytes'] for r in rows))
+-            idx=self.root/k/'stream-index.json';save(idx,value)
++            idx=self.root/k/'stream-index.json';require(len(json.dumps(value,indent=2).encode('utf-8'))+1<=INDEX_CAP,'GLOBAL_INDEX_CAP');save(idx,value)
+             specs[k]=dict(mode='segments',path=str(self.root/k),index_SHA256=sha(idx))
+         save(self.run/'streams.json',specs)
+-        save(self.run/'archive-receipt.json',dict(status='COMPLETE_ARCHIVE_NOT_FUNCTIONAL_PASS',packed_bytes=self.packed,deleted=self.deleted,per_stream={k:dict(segments=len(v),raw_bytes=self.raw_total[k],records=sum(x['records'] for x in v),raw_SHA256=self.hashes[k].hexdigest().upper()) for k,v in self.rows.items()}))
+-        return specs
++        save(self.run/'archive-receipt.json',dict(status='COMPLETE_ARCHIVE_NOT_FUNCTIONAL_PASS',packed_bytes=self.packed,timings=self.timings,deleted=self.deleted,per_stream={k:dict(segments=len(v),raw_bytes=self.raw_total[k],records=sum(x['records'] for x in v),raw_SHA256=self.hashes[k].hexdigest().upper()) for k,v in self.rows.items()}))
++        require(sum(q.stat().st_size for q in self.root.rglob('*') if q.is_file())<=ARCHIVE_CAP,'ARCHIVE_META_CAP')
++        self.checkpoint();return specs
+--- models-before/cpu_program_reference.py
++++ models/cpu_program_reference.py
+@@ -20,7 +20,7 @@
+         assert 0x10000<=address and address+size<=0x18000,('unmapped read',hx(address))
+         return int.from_bytes(self.ram[address-0x10000:address-0x10000+size],'little')
+     def step(self):
+-        assert not self.stopped and self.steps<5000000 and self.pc%4==0 and 0<=self.pc<32768
++        assert not self.stopped and self.steps<25000000 and self.pc%4==0 and 0<=self.pc<32768
+         pc=self.pc;word=self.ordinary_read(pc,4)
+         if word==0x00100073:self.stopped=True;return
+         op=word&127;rd=(word>>7)&31;f3=(word>>12)&7;r1=(word>>15)&31;r2=(word>>20)&31;f7=word>>25
+--- before/tb_board_coremark.sv
++++ tests/tb_board_coremark.sv
+@@ -6,7 +6,7 @@
+     reg clk=0;wire rst_n=board_dut.sys_rst_n;
+     wire [7:0] gpio_in_async={4'b0,~key_n[4:1]};
+     wire uart_tx,stopped,write_error;wire [7:0] gpio_out;wire [1:0] stop_kind;wire [31:0] stop_pc;
+-    integer cycle=0,tail=0,limit=8000000,events_fd,bus_fd,rf_fd,ram_fd,i;
++    integer cycle=0,tail=0,limit=32000000,events_fd,bus_fd,rf_fd,ram_fd,i;
+     integer trace_seq=0,bus_seq=0,trace_count=0,bus_count=0,trace_total=0,bus_total=0;
+     string trace_name,bus_name;
+     integer advances=0,stall=0,flush=0,wave_until=1024;reg dumping=1;
+@@ -40,7 +40,7 @@
+     task close_trace;
+         begin
+             if(events_fd)begin
+-                $fclose(events_fd);events_fd=0;
++                trace_total=trace_total+trace_count;$fclose(events_fd);events_fd=0;
+                 $display("SEGMENT|trace|%0d|%0d|%s",trace_seq,trace_count,trace_name);$fflush();
+                 trace_seq=trace_seq+1;trace_count=0;
+             end
+@@ -49,16 +49,16 @@
+     task close_bus;
+         begin
+             if(bus_fd)begin
+-                $fclose(bus_fd);bus_fd=0;
++                bus_total=bus_total+bus_count;$fclose(bus_fd);bus_fd=0;
+                 $display("SEGMENT|bus|%0d|%0d|%s",bus_seq,bus_count,bus_name);$fflush();
+                 bus_seq=bus_seq+1;bus_count=0;
+             end
+         end
+     endtask
+     initial begin
+-        if(!$value$plusargs("MAX_CYCLES=%d",limit))limit=8000000;
++        if(!$value$plusargs("MAX_CYCLES=%d",limit))limit=32000000;
+         if(N!=16&&N!=234)$fatal(1,"UNAPPROVED_N");
+-        if(limit<1||limit>8000000)$fatal(1,"BUDGET_BOUNDS");
++        if(limit<1||limit>32000000)$fatal(1,"BUDGET_BOUNDS");
+         open_trace();open_bus();
+         serial_fd=$fopen("uart-pins.log","w");if(!serial_fd)$fatal(1,"PIN_LOG_OPEN");
+         if(!events_fd||!bus_fd)$fatal(1,"TRACE_OPEN");
+@@ -90,16 +90,16 @@
+         if(cycle>wave_until&&pre_addr!=32'h20000100&&pre_addr!=32'h20000104&&!stopped&&dumping)begin $dumpoff;dumping=0;end
+         if(board_dut.soc.cpu_core.pipeline_advance)begin
+             advances=advances+1;if(board_dut.soc.cpu_core.stall_if)stall=stall+1;if(board_dut.soc.cpu_core.flush_if)flush=flush+1;
+-            if(board_dut.soc.cpu_core.id_valid&&!board_dut.soc.cpu_core.eei_hold)begin if(!events_fd)open_trace();$fdisplay(events_fd,"EX|%0d|%08x",cycle,board_dut.soc.cpu_core.id_pc);trace_count=trace_count+1;trace_total=trace_total+1;if(trace_count==32768)close_trace();end
++            if(board_dut.soc.cpu_core.id_valid&&!board_dut.soc.cpu_core.eei_hold)begin if(!events_fd)open_trace();$fdisplay(events_fd,"EX|%0d|%08x",cycle,board_dut.soc.cpu_core.id_pc);trace_count=trace_count+1;if(trace_count==32768)close_trace();end
+             if(board_dut.soc.cpu_core.ex_valid&&board_dut.soc.cpu_core.ex_mem_to_reg)
+-                begin if(!events_fd)open_trace();$fdisplay(events_fd,"READ|%0d|%08x|%08x|%08x|%08x",cycle,board_dut.soc.cpu_core.ex_pc,board_dut.soc.address,board_dut.soc.rdata,board_dut.soc.cpu_core.mem_load_data);trace_count=trace_count+1;trace_total=trace_total+1;if(trace_count==32768)close_trace();end
++                begin if(!events_fd)open_trace();$fdisplay(events_fd,"READ|%0d|%08x|%08x|%08x|%08x",cycle,board_dut.soc.cpu_core.ex_pc,board_dut.soc.address,board_dut.soc.rdata,board_dut.soc.cpu_core.mem_load_data);trace_count=trace_count+1;if(trace_count==32768)close_trace();end
+             if(!board_dut.soc.cpu_core.stall_if&&!board_dut.soc.cpu_core.flush_if&&!board_dut.soc.cpu_core.eei_hold&&
+                 (board_dut.soc.pc>=32'h8000||board_dut.soc.inst!==board_dut.soc.storage.rom[board_dut.soc.pc>>2]))$fatal(1,"FETCH_MISMATCH");
+         end
+-        if(board_dut.soc.cpu_core.rf.we&&board_dut.soc.cpu_core.mem_rd!=0)begin if(!events_fd)open_trace();$fdisplay(events_fd,"WB|%0d|%0d|%08x",cycle,board_dut.soc.cpu_core.mem_rd,board_dut.soc.cpu_core.wb_write_data);trace_count=trace_count+1;trace_total=trace_total+1;if(trace_count==32768)close_trace();end
++        if(board_dut.soc.cpu_core.rf.we&&board_dut.soc.cpu_core.mem_rd!=0)begin if(!events_fd)open_trace();$fdisplay(events_fd,"WB|%0d|%0d|%08x",cycle,board_dut.soc.cpu_core.mem_rd,board_dut.soc.cpu_core.wb_write_data);trace_count=trace_count+1;if(trace_count==32768)close_trace();end
+         if(board_dut.soc.wren)begin
+             if(board_dut.soc.cpu_core.pipeline_advance||!board_dut.soc.cpu_core.ex_valid)$fatal(1,"STORE_PHASE");
+-            begin if(!events_fd)open_trace();$fdisplay(events_fd,"STORE|%0d|%08x|%08x|%08x|%01x",cycle,board_dut.soc.cpu_core.ex_pc,board_dut.soc.address,board_dut.soc.wdata,board_dut.soc.wstrb);trace_count=trace_count+1;trace_total=trace_total+1;if(trace_count==32768)close_trace();end
++            begin if(!events_fd)open_trace();$fdisplay(events_fd,"STORE|%0d|%08x|%08x|%08x|%01x",cycle,board_dut.soc.cpu_core.ex_pc,board_dut.soc.address,board_dut.soc.wdata,board_dut.soc.wstrb);trace_count=trace_count+1;if(trace_count==32768)close_trace();end
+         end
+         if(stopped&&(board_dut.soc.wren||(board_dut.soc.cpu_core.rf.we&&board_dut.soc.cpu_core.mem_rd!=0)))$fatal(1,"STOP_SIDE_EFFECT");
+         #1;if(board_dut.soc.timer_ticks!==64'(cycle))$fatal(1,"COUNTER_POST_EDGE");
+@@ -108,7 +108,7 @@
+         if(pre_addr[31:8]==24'h200000||pre_addr[31:3]==29'h04000020||!pre_tx||!uart_tx||cycle<=16||stopped)
+             begin if(!bus_fd)open_bus();$fdisplay(bus_fd,"EDGE|%0d|%02x|%08x|%0d|%08x|%01x|%08x|%0d|%0d|%02x|%0d|%02x|%0d|%0d|%016x|%016x",
+                 cycle,pre_gpio_async,pre_addr,pre_write,pre_wdata,pre_strobe,pre_io_data,pre_io_error,
+-                pre_tx,pre_gpio_out,uart_tx,gpio_out,pre_gpio_accept,stopped,pre_ticks,board_dut.soc.timer_ticks);bus_count=bus_count+1;bus_total=bus_total+1;if(bus_count==32768)close_bus();end
++                pre_tx,pre_gpio_out,uart_tx,gpio_out,pre_gpio_accept,stopped,pre_ticks,board_dut.soc.timer_ticks);bus_count=bus_count+1;if(bus_count==32768)close_bus();end
+     end
+     always @(negedge clk)if(rst_n&&stopped)begin
+         tail=tail+1;if(tail==32)begin

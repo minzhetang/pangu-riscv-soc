@@ -1,0 +1,22 @@
+{
+  "status": "PASS_HOST_ONLY",
+  "rows": [
+    {
+      "id": "index cap before parse",
+      "status": "EXPECTED_REJECT",
+      "error": "JSON_CAP_BEFORE_READ"
+    },
+    {
+      "id": "configured memory cap",
+      "status": "EXPECTED_REJECT",
+      "process": "logs/negative-configured-memory/process.json"
+    },
+    {
+      "id": "deadline inside archive callback",
+      "status": "EXPECTED_REJECT",
+      "error": "ABSOLUTE_DEADLINE"
+    }
+  ],
+  "new_DUT": 0,
+  "qualification_note": "Initial auxiliary wrapper used lowercase deadline token; actual ABSOLUTE_DEADLINE correctly rejected but wrapper asserted. Original script/fixture retained; independent fresh callback confirmed exact rejection. No code/expected/DUT modification."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS_FINITE_8",
+  "manifest_entries": 3441,
+  "manifest_SHA256": "61E83E85626D38AEE6303F137A2B71EC33C051D1523ED620A3918D434949C70F",
+  "protected": 555,
+  "frozen": 60,
+  "stage_elapsed_total_seconds": 2310.0160000000615,
+  "stage_clock_not_reset": true,
+  "C_builds": 1,
+  "RTL_compiles": 1,
+  "DUT": 1,
+  "hardware": "STOPPED"
+}

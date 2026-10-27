@@ -1,0 +1,69 @@
+{
+  "status": "COMPILED_NOT_FUNCTIONAL_PASS",
+  "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\compile\\performance8-N234.vvp",
+  "bytes": 15890034,
+  "SHA256": "E71D301F813FBAB989DAF67E9BCCB6C56A2D910E41BC47F3F1908A8C3D3C6EA9",
+  "process": {
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-Wall",
+      "-DM0_VERIFY",
+      "-I",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source",
+      "-I",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification",
+      "-s",
+      "tb_board_coremark",
+      "-Ptb_board_coremark.PHASE_ADDR=67584",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\compile\\performance8-N234.vvp",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\alu.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\control.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\cpu.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\gpio_core.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\local_regif_txgpio_m1.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\regfile.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\uart_tx.v",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\board_reset_sync.sv",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\board_top.sv",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\cycle_counter64.sv",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\memory_model.sv",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\soc_data_adapter.sv",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\soc_top.sv",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\tests\\tb_board_coremark.sv",
+      "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+      "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2",
+    "returncode": 0,
+    "returncode_hex": "0x00000000",
+    "timed_out": false,
+    "cap": false,
+    "error": null,
+    "termination": "PROCESS_EXIT",
+    "peak_working_set_bytes": 5193728,
+    "parent_peak_working_set_bytes": 22663168,
+    "child_memory_samples": 1475,
+    "elapsed_seconds": 46.109,
+    "timeout_seconds": 120,
+    "child_cpu": {
+      "kernel_s": 0.0,
+      "user_s": 0.03125
+    },
+    "parent_cpu_before": {
+      "kernel_s": 0.9375,
+      "user_s": 0.28125
+    },
+    "parent_cpu_after": {
+      "kernel_s": 1.234375,
+      "user_s": 0.484375
+    },
+    "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\logs\\compile-performance8\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\logs\\compile-performance8\\stderr.log",
+    "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+    "absolute_deadline_used": true
+  }
+}

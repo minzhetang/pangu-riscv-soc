@@ -1,0 +1,8 @@
+{
+  "status": "PASS_FINITE_8_ITERATIONS_NOT_FORMAL_LONGRUN",
+  "compile_used": 1,
+  "DUT_used": 1,
+  "C_build_used": 1,
+  "hardware": "STOPPED",
+  "followup_longrun": "NOT_AUTHORIZED"
+}

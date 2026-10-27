@@ -1,0 +1,7 @@
+# M2 reproduction boundary
+
+Read SUMMARY.json, TEST_PLAN.json, APPROVAL.json, COMMANDS.md, SOURCE_RECEIPTS.json and EXACT_DIFF.patch first. All attempts are single-use. Do not rerun preparation/build/compile/capture scripts in this completed directory or remove markers. A new DUT reproduction needs a new independent copy and separately scoped approval; no160 or hardware authorization is implied.
+
+stage_budget.py rejects optimized Python at import; all public workers reach that guard through the adapter/supervisor. Keep -B and ordinary execution. Stage clock is absolute and must not be silently reset. The old guarded_entry.py is an inherited M1 boundary and is not an M2 production launch command. Existing vendor GTP models remain external to this repository. The local full evidence contains wave.vcd, ELF/bin/init, archive payloads and original logs; Git deliberately excludes these plus tools and overlimit fixtures. A Git clone alone is not the complete local raw-evidence collection.
+
+Host-scale and two old replays are not new CPU runs. Only performance8-N234 is the one new DUT. Its independently frozen reference predates compile/DUT. No change to13 functional RTL, official algorithms/port/start/link or ISA semantics. Model changes only budget5M to25M; frozen_checks uses the per-case iteration/cycle requirement. Remaining raw/F153 compatibility reader maxima are not fully stressed; CLOSED-SEGMENTS is the new tested path.

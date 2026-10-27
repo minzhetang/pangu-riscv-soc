@@ -1,0 +1,205 @@
+{
+  "stage": "A-COREMARK-LONGRUN-READY-M2",
+  "date_client": "2026-10-27",
+  "approval": "D160",
+  "decision_result": "D161",
+  "status": "PASS_FINITE_8_ITERATIONS_NOT_FORMAL_LONGRUN",
+  "C_builds": 1,
+  "RTL_compiles": 1,
+  "new_DUT": 1,
+  "metrics": {
+    "physical": 18515827,
+    "advances": 9257913,
+    "stall": 297886,
+    "flush": 1332226,
+    "tail": 32
+  },
+  "raw_ticks": 16829452,
+  "crcfinal": "ccd1",
+  "UART_bytes": 663,
+  "streams": {
+    "trace": {
+      "segments": 346,
+      "raw_bytes": 274238774,
+      "records": 11317031,
+      "raw_SHA256": "B14FF95D0A122EF249990D9485CB0D23697AA8E4DD0F273744D21E36BFDA8E66"
+    },
+    "bus": {
+      "segments": 35,
+      "raw_bytes": 111706828,
+      "records": 1128367,
+      "raw_SHA256": "A21A1BE7B8C8DD86FD5B0406EC22F09A45188FA049FB921A3654907CDEB858EA"
+    }
+  },
+  "raw_bytes": 385945602,
+  "raw_records": 12445398,
+  "segments": 381,
+  "archive_bytes_including_metadata": 78600149,
+  "archive_timings": {
+    "encode_s": 6.097999999881722,
+    "decode_verify_s": 2.8080000007757917,
+    "source_verify_delete_s": 0.6050000002142042
+  },
+  "spool_peak_bytes": 4235365,
+  "parent_archive_peak_bytes": 45666304,
+  "DUT_host_seconds": 1063.828,
+  "DUT_cpu": {
+    "kernel_s": 23.5625,
+    "user_s": 1017.90625
+  },
+  "archive_parent_cpu_before": {
+    "kernel_s": 0.390625,
+    "user_s": 0.125
+  },
+  "archive_parent_cpu_after": {
+    "kernel_s": 146.375,
+    "user_s": 24.171875
+  },
+  "check_host_seconds": 74.89,
+  "check_peak_bytes": 231190528,
+  "reference_host_seconds": 18.625,
+  "reference_steps": 6295556,
+  "reference_peak_bytes": 81182720,
+  "compile_host_seconds": 46.109,
+  "compile_warning_groups": 3,
+  "warnings_identical_normalized": true,
+  "host_container": {
+    "status": "PASS_HOST_ONLY",
+    "rows": [
+      {
+        "id": "real-size-and-1025-segments",
+        "status": "PASS",
+        "bus_actual_bytes": 571018176,
+        "bus_actual_records": 5898240,
+        "trace_actual_segments": 1025,
+        "pointwise_every_line": true,
+        "not_CPU_or_new_DUT": true
+      },
+      {
+        "id": "bad-index",
+        "status": "EXPECTED_REJECT",
+        "reason": "global index identity"
+      },
+      {
+        "id": "bad-payload",
+        "status": "EXPECTED_REJECT",
+        "reason": "packed SHA"
+      },
+      {
+        "id": "missing-segment",
+        "status": "EXPECTED_REJECT",
+        "reason": "[WinError 2] 系统找不到指定的文件。: 'D:\\\\A_FPGA_Comp\\\\work\\\\fpga\\\\2026-10-27-coremark-longrun-ready-m2\\\\controls\\\\missing-segment\\\\archive\\\\trace\\\\000000\\\\block-000000.gz'"
+      },
+      {
+        "id": "reordered",
+        "status": "EXPECTED_REJECT",
+        "reason": "ready order/count"
+      },
+      {
+        "id": "missing-ready",
+        "status": "EXPECTED_REJECT",
+        "reason": "end count"
+      },
+      {
+        "id": "duplicate END",
+        "status": "EXPECTED_REJECT",
+        "reason": "bad/duplicate end marker"
+      },
+      {
+        "id": "missing terminal",
+        "status": "EXPECTED_REJECT",
+        "reason": "missing END_STREAM receipt"
+      },
+      {
+        "id": "absolute archive deadline",
+        "status": "EXPECTED_REJECT",
+        "reason": "ABSOLUTE_DEADLINE"
+      },
+      {
+        "id": "spool cap",
+        "status": "EXPECTED_REJECT",
+        "reason": "UNARCHIVED_SPOOL_CAP"
+      },
+      {
+        "id": "oversized line",
+        "status": "EXPECTED_REJECT",
+        "reason": "line too long or incomplete"
+      },
+      {
+        "id": "unavailable memory fails closed",
+        "status": "EXPECTED_REJECT",
+        "reason": "negative-no-memory stopped: CHILD_MEMORY_UNAVAILABLE"
+      },
+      {
+        "id": "parent deadline kills actual own child",
+        "status": "EXPECTED_REJECT",
+        "reason": "negative-parent-deadline stopped: ABSOLUTE_DEADLINE"
+      }
+    ],
+    "archive_timings": {
+      "encode_s": 5.946999998996034,
+      "decode_verify_s": 3.34699999995064,
+      "source_verify_delete_s": 1.854000000632368
+    },
+    "not_CPU": true,
+    "new_DUT": 0
+  },
+  "stage_elapsed_before_documentation_seconds": 2295.25,
+  "stage_limit_seconds": 7200,
+  "limits": {
+    "raw_per_stream": 17179869184,
+    "records_per_stream": 500000000,
+    "segments_per_stream": 16384,
+    "index_per_stream": 16777216,
+    "archive_total": 4294967296,
+    "spool": 33554432,
+    "working_set": 536870912,
+    "VCD": 268435456
+  },
+  "protected": 555,
+  "frozen_inputs": 60,
+  "RTL13_unchanged": true,
+  "reference_semantics_unchanged": true,
+  "hardware": "STOPPED",
+  "PDS": 0,
+  "B_R1_receipt": "UNKNOWN",
+  "limitations": [
+    "Finite performance seed8 only; validation seed is old2 replay, not new DUT",
+    "No >4GiB actual I/O validation, no160 run or permission",
+    "No formal FPGA CoreMark score, real clock or ILA evidence",
+    "No real retirement PC or unified WB/STORE sequence; fixed input/initial state",
+    "Direct child and parent memory only; native compiler internal descendant peaks not separately measured",
+    "Timing observations across different runs are not controlled CPU or simulator speedup evidence",
+    "Container controls are host-only, not CPU verification",
+    "Compatibility raw/F153 readers are not independently stressed to every maximum"
+  ],
+  "extra_guards": {
+    "status": "PASS_HOST_ONLY",
+    "rows": [
+      {
+        "id": "index cap before parse",
+        "status": "EXPECTED_REJECT",
+        "error": "JSON_CAP_BEFORE_READ"
+      },
+      {
+        "id": "configured memory cap",
+        "status": "EXPECTED_REJECT",
+        "process": "logs/negative-configured-memory/process.json"
+      },
+      {
+        "id": "deadline inside archive callback",
+        "status": "EXPECTED_REJECT",
+        "error": "ABSOLUTE_DEADLINE"
+      }
+    ],
+    "new_DUT": 0,
+    "qualification_note": "Initial auxiliary wrapper used lowercase deadline token; actual ABSOLUTE_DEADLINE correctly rejected but wrapper asserted. Original script/fixture retained; independent fresh callback confirmed exact rejection. No code/expected/DUT modification."
+  },
+  "optimized_entry": "EXPECTED_REJECT",
+  "tools": {
+    "iverilog": "13.0 MSYS2 UCRT64 portable",
+    "vvp": "13.0",
+    "GNU": "xPack15.2.0-1 RV32I/ILP32",
+    "Python": "3.12.14"
+  }
+}

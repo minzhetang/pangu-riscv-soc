@@ -1,0 +1,1930 @@
+{
+  "status": "COMPLETE_ARCHIVE_NOT_FUNCTIONAL_PASS",
+  "packed_bytes": 78450006,
+  "timings": {
+    "encode_s": 6.097999999881722,
+    "decode_verify_s": 2.8080000007757917,
+    "source_verify_delete_s": 0.6050000002142042
+  },
+  "deleted": [
+    {
+      "path": "spool/trace-000000.log",
+      "SHA256": "4B98016C55539D51B64AE9096D1032903D759DC258211B4EA7EE6CDD6C11B29F",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000001.log",
+      "SHA256": "024A3D149401ADD29754AF21D81425EE4B2B48434B632FB0F31A9A162DCE7D4A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000002.log",
+      "SHA256": "18449B43B9F03CA542001F3BC607DE08CF74EEC60D16C6A4708CB58F156BF72A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000003.log",
+      "SHA256": "BAACBEF81844F5E93CFBAE89607BF5C899B1A230370FC83ED46A69D60BC8BE87",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000004.log",
+      "SHA256": "411916AE4831DB40AA1D52CE6C11188B4B6315B3BFC9D620269F6E2C1567F116",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000005.log",
+      "SHA256": "DDA4DA19BB6BDA2CCCA45A7CFAA904821A653E071C8CBB5C6856A9E44DB5A31F",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000006.log",
+      "SHA256": "5F8093A2058C9F1ECC6B36CFD03CE90EDFA501CD3A84D5B750176C237AB65458",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000007.log",
+      "SHA256": "A2298795C820D65A07F8283111A559237F7842B52F1EBF7DDEF024BF9CDDA0D7",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000008.log",
+      "SHA256": "DB043C8292273F57915BE176871DEE25EED4419CB0CA3488B97BFD009F73C524",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000009.log",
+      "SHA256": "6BB51FFF771AA7D6F7F49816CDD5AF4BA7C5E1A928A5286F38A0CA8CDF3A75C0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000010.log",
+      "SHA256": "6B22F05D1FE324E934B96ECB26D6744B3F1DB18BA324B2681BBF97014AF6A60A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000011.log",
+      "SHA256": "CFA787F12391283716E9EF92A5B12CA927C32D34493B5B72907E845F014EDF5C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000012.log",
+      "SHA256": "B6FC25FCC173DFD29E1F0227F7FE5E80E2C254311633E9E62D784410F67C4E39",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000013.log",
+      "SHA256": "24F229EA1FA04E8244D88A464931E7CFB9B96E6AAF434A0FA0336F543C9D15E8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000014.log",
+      "SHA256": "CECAB22532C88C8CDA1923F5364C8A4E949E6760900A6BEEF91A11CBED44D1E5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000015.log",
+      "SHA256": "F797FF0E66F0D7B1222A12F8F45C4356C25E29E4E334FF4555B18E5DD37DBC9A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000016.log",
+      "SHA256": "C6C932299E6460548B20EE766C03DE7BA294D707033331406B93DDA73C011C4C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000017.log",
+      "SHA256": "F169835A2061B36D005AF3E7DF260FC50558BB13E02AB3087CD426FC6E70605E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000018.log",
+      "SHA256": "4B06FBDD21FF0E9206EF1A14324F8D662D5DE2B311DF81F1F7A9126B70FFD524",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000019.log",
+      "SHA256": "6E90B856C115AB09B0FC8CCBC437A71E421B61A5EC9ABF0FEDB25B63F9489B81",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000020.log",
+      "SHA256": "075E32A0CD4B81E4E5546A66B876C346F0459F496A2E3AF1939E2BD35658585B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000021.log",
+      "SHA256": "011F54F38C4593237A06A9F22C5C74BEAE123223F8298C319AA66581B829A1B3",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000022.log",
+      "SHA256": "5CDF52698C5ED323E987FF08631E0EB3CF5483F199E443899C4F3776C647F966",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000023.log",
+      "SHA256": "9064D8ABF81EE9E7B7A8C6AC2EE718C09D561E53D6379E437701A25EBE0D8813",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000024.log",
+      "SHA256": "78454704BB12E4B21163788486B0F8BF10EA76B5F738B135FE8DB9D57737F863",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000025.log",
+      "SHA256": "C4BE19C084C75DD4EDB05F618F5EC66B9B312659D1F014A1B7116DA687EA9126",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000026.log",
+      "SHA256": "2261BF3EFF2CE9B451F912F1772448F5055E755840CB30F5110120025B4994D0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000027.log",
+      "SHA256": "A398BB6769A5A584398F88055E0EF7CB27996FF55F85AEB0AE291ECD56CE51DA",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000028.log",
+      "SHA256": "23D76F0BF4DEA7F58EB8009C4FD26847862235A256DCA8FCDB82C324A86BEA69",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000029.log",
+      "SHA256": "008E606B758E48EA9B64BE1BA01CE2208F3CE70B9CD6CA6EF8D184CFBA707B5D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000030.log",
+      "SHA256": "E7504820F636D59AFF5D39B10E19A8D9F2987BBD653C4EC24D98BBAA1E151037",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000031.log",
+      "SHA256": "C149A58CE9D9B387590F7AB305C6C33EAC140C47730B767915C2F605CF1BF4CA",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000032.log",
+      "SHA256": "009C26689153934CE5845F2418C48D7F8F7AAB76F196E9AF6D91D401681D6AA5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000033.log",
+      "SHA256": "B704A289D2D57EC0D81A185A050727D32C2A52781A56BE007BF5774FDF3D7346",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000034.log",
+      "SHA256": "120FDE2CC941BFF9EC43C5F2F416F7604C8DAB15B9F9A571AA11FC83FD00B87E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000035.log",
+      "SHA256": "6432820FBBA038BDE36872104E321123FB35B3130F0801F8565A17EEE5204FD8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000036.log",
+      "SHA256": "C4AA784369C8D7F50B271214FD8453EA8122197A2995BEFBC4E63CBDFC686DCE",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000037.log",
+      "SHA256": "269CCA311599A014E132533A7EDE7E76E741CB446F32543D2ECAD90E814D54C1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000038.log",
+      "SHA256": "C6EA82515BF7D256954D99A96FAC977DFA2A8C5064A2DCC46E0242A94FD4143A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000039.log",
+      "SHA256": "A2EE9B88B19CFBE4BCFC954F59495A756F56EE53A11EBF674EE406FB9A9F2E5E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000040.log",
+      "SHA256": "5721AB81FAF521DDBBFE7BA52EA0D809EAB655D56B3BF3F8DE3E5C72666B9B02",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000041.log",
+      "SHA256": "C58EA3CF30BAF0F93EA4C707C9EC44ED055214004C0701A95050043A723CBCDB",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000042.log",
+      "SHA256": "EF427E872328F277CA3F0AD1896047BA80533F0EB473E4EAB78E948E14D21E69",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000043.log",
+      "SHA256": "74D0A748D2B7DB5571268F3BA9EB01E9AE476C80C2C98DFC9A8C25619C053EF8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000044.log",
+      "SHA256": "CC9406162C52EED4366BE6D7C8058B9CEA666425D831C6E3B9C75593D95E3D8E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000045.log",
+      "SHA256": "0EC5D589FAD1557ED6D64422B3A5BF3C4D67A95E8D81FD4677837C837D7E2B97",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000046.log",
+      "SHA256": "F6A0ECF3D454EEE8B54490A9C5BE9C5695BDE57EB27FC8E2B47D029592F2DBA1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000047.log",
+      "SHA256": "F2DE68F4C4FDAF712B3069A31986622929E70422936CBD3AF8405013A1214AB9",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000048.log",
+      "SHA256": "24B1214EC3E4C7A4BA664B29542A876091BDE0D76E7234D575FAEDAB5CD3AF0B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000049.log",
+      "SHA256": "29A7DF1E7CCCF05D2A69C0D13749F444D1C6B52D18EED285CD18C01668DA6915",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000050.log",
+      "SHA256": "FC2CA435A7C7154802D25FCC487C92966E5E62AC7E420A5CC3BB79FB1F3747D5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000051.log",
+      "SHA256": "FD8A1C694EF85C705C1AF9F9554B46C7A5FE4F9C3B345E2341B5D42C041119A0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000052.log",
+      "SHA256": "01D8B7C5FA7F74EB5D602BD0094CACDFC2A58C101BCD9733396E4DA0FB4623F5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000053.log",
+      "SHA256": "58E4405791D7DA1940BE6C6AAEE0AFAD58E324185DC62C871E6B88381B499029",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000054.log",
+      "SHA256": "934ADF79F24E2C3A801723311426D4E83ECF69240251EBB9E82703E13978FF62",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000055.log",
+      "SHA256": "4C94B601F79B3F29B1A4EA40E62F360BBF7FD88C58D5066D2DAA10A720CBE024",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000056.log",
+      "SHA256": "2B24281F24E3D57F2CF89CCA0B7EF2BE6B882A682A43AE3F819CD5EEF45C635A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000057.log",
+      "SHA256": "8008169E614F75F8E360D127AC7CDD1662BA68FCD9E87F10A3C2698E4FF19F34",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000058.log",
+      "SHA256": "B2EE143C68320B9520E636FC5CD922C45AAD872DBE9CB7E6A27F3A70663BEED1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000059.log",
+      "SHA256": "10C72F1046769B27EABF100E5B50E0F5F94EA37180250A33C45AD9571672059B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000060.log",
+      "SHA256": "0B97BFFE3F68DA5FE84387F5E05D3D3BF8820FFB952AA8332AE32C95432A7540",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000061.log",
+      "SHA256": "B7C07A4FF6896DECF1053836CCF84DE751F9D10E3020F6D1AEC2B16C7D0468F6",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000062.log",
+      "SHA256": "6E414F4CD91FE38B70896ADB8E439B261169B7E7F8005F523DBCE770CB326FE5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000063.log",
+      "SHA256": "47DD13FA47F72BE96B82B307591B55F0B73CECE8290D3C664D9720850C5639F6",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000064.log",
+      "SHA256": "507C6F245512D272E4FD7540A12208284AAFFD2E1B6633273E0444BD423BCDFD",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000065.log",
+      "SHA256": "FD05FCF115C9C520668D221A6ECF0D526B394AFDC76EB008B3B72499C4A7E98D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000066.log",
+      "SHA256": "44D909A421911658899BB8FCBE49D171AD41467C31CA952C165BCC091721EDE9",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000067.log",
+      "SHA256": "1DCBC324742634AEA17708E51AEBA2B42EC24B430EAB845EF9EBD8C704C8921A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000068.log",
+      "SHA256": "304D423C346093281A9CDA765F9B69113621E35AE5090A950D2FD3B0EA0690B2",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000069.log",
+      "SHA256": "461AA626CC21E35E61C1F1035F6917D89DE527855CCF00DE0E5738268C5CF9BF",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000070.log",
+      "SHA256": "2A813C441F5BB35898C99366B0BCF238B6083C28D74F9B97B0E496BA1CA3654C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000071.log",
+      "SHA256": "A3FB917B3D131F1E153367B16E6A2946DA4F273533EBB7C6ECF111B68DFCFC5F",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000072.log",
+      "SHA256": "C26B11C4A743CA2A82689629D238352E902B909E838B86E42CD07B18969792E0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000073.log",
+      "SHA256": "1FB8F35117711444B605BC7C868E836DF21B4E1974DFA1B18D211933FA11DD34",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000074.log",
+      "SHA256": "18C24D38B1D0F39DCC6797E59F45B0CA9D73D9D48769B3C0C7C1BB2F43095717",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000075.log",
+      "SHA256": "E37C061ABDF664907B7D920D5ED63C3C599605429C0B0AEEF7FAEA52FE7C31A4",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000076.log",
+      "SHA256": "2ECC3FE89D4B1E230EAD3DD66366B751B8FFE4074C1625A5CB3E49FCF73682CA",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000077.log",
+      "SHA256": "B8E62947435A703358B55971CFDD27F9D872D36CA03865FD1ADFE1DD6CE505F2",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000078.log",
+      "SHA256": "B40BB0F1F4FFFEE7B72B54A3D54F0D069B19AAFA4A571EA60663BF90EB0C8B61",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000079.log",
+      "SHA256": "77D751B8CC8B790BF06D38204F087013C5EB1C34BC63ED8EBD66B5DB494D62BC",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000080.log",
+      "SHA256": "CB404EC7240247ED1BDB37DC1D767452FEC822E23C44CAABEF526552F951DB06",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000081.log",
+      "SHA256": "5D65B0F01B768647685598B82E1F4202910810E4B67355EE8612F75BEB892BA4",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000082.log",
+      "SHA256": "2CD82112AF941B1C3413EDD5C7B45D923EEBEFFAD913D008BB697A3B41483147",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000083.log",
+      "SHA256": "CE5C3F69DA0125D8E32F8C2A3BFC6EA867804A29B8F7D358486FB2903289BE4B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000084.log",
+      "SHA256": "CBF2D2B773C819401A99C2A89EECEA6745CFB6693245A4F0CB1C683CE3DEE429",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000085.log",
+      "SHA256": "9159BA4809EE693875D3C715DE7B12488D8F396F1E5296E15663FAD7D88C2FB5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000086.log",
+      "SHA256": "0E62D87AFA93AA3D73408B9D1AB866871292D8AC10A02A3F6997F360093EA9B8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000087.log",
+      "SHA256": "CD2976945D455432B2D1797158DAD31AB56CB9B7F8E422579F2BA6BA586E8F10",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000088.log",
+      "SHA256": "5F05847398DA0D957E32A3D559A6A4F987BA8AA5AA75D463BA2B9A6A4577C7F5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000089.log",
+      "SHA256": "E63EC57C16729E920A90444B75545AECE131B86ECBC2FE15EAAD16A896B4AF00",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000090.log",
+      "SHA256": "E6ABC2C72156232D5ED1806012AF122D77184362A22AE67A8806693D04C38319",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000091.log",
+      "SHA256": "798539E5B496B3F2F0E496F504271A80487392A5F68258E1EF176B3EF5522BC9",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000092.log",
+      "SHA256": "DEF0C02EBA57E65E2C75F8393D3D2237AB95F270A3D49D5E67BB35DB7FC6D9B4",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000093.log",
+      "SHA256": "FFD6F6EEBDC65A24B544CDDB1C61843805A35C23BD67BD34C11BD9B41187382E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000094.log",
+      "SHA256": "A371C865ABE842E08E685CEF7A9F6B96A383DB0A27B44FD2AB5D9805504B0B65",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000095.log",
+      "SHA256": "78ADC498648DC7F1113091E65623DD8861F0DF5CBCD4AFE262FC51095C296BE7",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000096.log",
+      "SHA256": "AB1929015DA917D9F506FC8283D4EC1EF1E0C199DF48035A1AF61CE2E57DD496",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000097.log",
+      "SHA256": "B8A7A33DD5B929771595C5549AC1E4C989511947CFEB903077709252C5957B8A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000098.log",
+      "SHA256": "2F671AF9D1245027E44302C35C597606E379D9CC95C93F819FDE679FACA91CFF",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000099.log",
+      "SHA256": "CE5431DE63567F46E3B31DFA9ED70996AFE6018081566B384C87A1BBFBD78EA3",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000100.log",
+      "SHA256": "7F7CB042E286C8B5D8389FF07449F387CEAD4A59384C484C7C179EDF0AA6EC67",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000101.log",
+      "SHA256": "31738A2924ABBC597488D0901D665F4C7819567953EF061B0B6E18B0B4B19190",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000102.log",
+      "SHA256": "0AA3A0B54F73AD32DF9B9E4DEF34F3C027AF4CB1378203BABFD3426D62D19A48",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000103.log",
+      "SHA256": "65B172DF7EE4F180EA5B379363C3D9FE47F2237DD828133DF7655EBDAAAF2603",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000104.log",
+      "SHA256": "E58D565CCB8103F7DDD790D896C2097FCCE0219B88C187EF34F4B4A75516CA40",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000105.log",
+      "SHA256": "873C52AE634444C22D379B1257EBADB398B143F329DFB5832EDD1F473D94CA27",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000106.log",
+      "SHA256": "9EDD389D41A3203BF3AF1C9B0DC44B4AB9D0233F7300E27DA0628C63B0AEB6CD",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000107.log",
+      "SHA256": "5FCB054CA8F82C695ADF843B78503BD2A94ACD7712341A551248AD8B611DA5BD",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000108.log",
+      "SHA256": "773AB0799F353D5F28321DCFAA519F8E737D5AC344396A4ACBB9D47DD0C18FDA",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000109.log",
+      "SHA256": "F429DA1B1FC0386B8A7D0DFBC9A22BE85941AC9455C6A95C737711F1E601C759",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000110.log",
+      "SHA256": "F091DB720EA8885466C9A1CFE83D93145A01D3A15989F49E605E4679B28BF35F",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000111.log",
+      "SHA256": "AEE71033D1009A35E301AD5E3812B1628A88A371A0E322C6BD08E6F07B544C5C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000112.log",
+      "SHA256": "30046EEE6271E42A7CB6E4C0677BDEE6F3438E7FEC76445671C11135669F35B2",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000113.log",
+      "SHA256": "33574AC8BD06A9E9FBDF2874DED5C716C15CED078E283DF091AAFA36C6ABDA52",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000114.log",
+      "SHA256": "542E8393DB8989A99030E31D121F099B6F6BE7B4ACEF7461EA2F1B7033430496",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000115.log",
+      "SHA256": "4CBEADFFC43134BF2FB9A5D9F39010C9CA98F6A0DEA5A82F81B36ED5C450F8FA",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000116.log",
+      "SHA256": "3E36F9179FBB96FE03D41657F54D39385318A42C26E9AE2C8EC339A9945A720A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000117.log",
+      "SHA256": "2EC071A0A54C83FF334C108BF8FB565F59625B6E95AF9587438CB2346008140C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000118.log",
+      "SHA256": "A5350FF8C51932B03B339DF90EB1741F1A90763380188F162392F1FEDAB07B3B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000119.log",
+      "SHA256": "C617348B3955ADBE510A5042AD3018DA9B0B306EBBAEA177D03D9CE4A08D1DD1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000120.log",
+      "SHA256": "82A85D221A01B12572BB6526EF87258836284960587769C92C4B38C2DAC21EF3",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000121.log",
+      "SHA256": "EB50CDEDB2BC4B5E97BF4E2306424F24C25F550FED5DC95BF852D46399D97C4F",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000122.log",
+      "SHA256": "52912E08D12DB72FA117AE28DF62278009410A3F11569B5476127FEFA3CAF085",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000123.log",
+      "SHA256": "E1A169934E7A4F4A388B59F9A39D268C962A646A10669C9AAB479A96BC275F23",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000124.log",
+      "SHA256": "D86E6F3E2CC5EE4DB9AB2013747824B0D6D0945322508175F237B755BD3739C8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000125.log",
+      "SHA256": "90E3B88735CA2A6A908625FB269805624F2C3DB6BF8F5A744ECDB24E51AB5FD1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000126.log",
+      "SHA256": "58117AF618B53B4CA1E083C17996C7960EF36A63AB113B2F79BAD19C69CB174D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000127.log",
+      "SHA256": "27D2268CF936FFAC6481CBF0D45F39E2F7CB5D8896738068F3D76DA4862CAD73",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000128.log",
+      "SHA256": "E69AC9B8FE466946753FA2019654362E82CD270C57846A7F4F069D8F192BE04A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000129.log",
+      "SHA256": "08D57333DB670F46DB556698FCCAD8ADEB6B01FC035332F2A900FFDB0EDCA627",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000130.log",
+      "SHA256": "369FA4C3E81267E88D1B52E7462A4498E175FEFB4AA0ED7CE0639CE31AD1F534",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000131.log",
+      "SHA256": "E7A200BB230E1C9F26B950E8D3A26B14634AA32DB6C48A456A27DEB6CD88EF64",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000132.log",
+      "SHA256": "F07A15A79E02F14994567C46856A8FE654D01FE4C828CBA3829A973D77FF97AA",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000133.log",
+      "SHA256": "5A1AC67105652745248951A02EEB83E76516E3830BC97587E5CCD41C4A7DACC7",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000134.log",
+      "SHA256": "F3AF2045CA5A55315A693E33CBFAED17C19E110C770785FE9F9023827C985298",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000135.log",
+      "SHA256": "F84498C4DCC25DA6C54DE30A0948F0F7A3863323AC89B7658C02CE27D3FCD840",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000136.log",
+      "SHA256": "F8C9170831E52BEDE66CEEC6CE7906879D7AA977B1CECB28C19DC197323E3188",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000137.log",
+      "SHA256": "E32908CDBD6F3B74EFEE1B9AFF63CBE6D04149A8D6EF0BB108F2094D7BF3F24F",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000138.log",
+      "SHA256": "D87062D54C1D68B922DF33703AC2DEF9603698044F89B375EF6EED05BC005137",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000139.log",
+      "SHA256": "DEDD82CF1EECD75BE2D2A425685C0014DD7C7B4E090791A6E1225C27BD7EDD0D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000140.log",
+      "SHA256": "75D08638137188AF3971B049A5B20C625DE9D447024E518711BAFFA2BD7268FD",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000141.log",
+      "SHA256": "6A37C5D0537975ACB6AFA8B51142BFDBC8A5B36D477CD7C6F4DFECCFC06C47CD",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000142.log",
+      "SHA256": "903AFCA90528E3B23D94110B08A3C108808F76C4D417E2C700FE655192A3FC69",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000143.log",
+      "SHA256": "953511FF244BC838F0758A710663299FCE3832E61127BB97A2057CC676D60B7B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000144.log",
+      "SHA256": "9FEE9583F85F2BCACA1DC3C0F6F01C7E7662C81058D54260091ED0D6D60AAACB",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000145.log",
+      "SHA256": "3E1A73FD354CF7B83F0DFFD3CC2F173150F996C31ACA013B46F0CCBAA0EFFDA0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000146.log",
+      "SHA256": "949BDC0D2240A7D1498237BBA9FDA54F9FFC2D7A22C4D5676E57E26685C92D09",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000147.log",
+      "SHA256": "BE3326F970C7F5B61942658CAB5AC324BAA5D82D74B6F403F08580EABE2AAA4E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000148.log",
+      "SHA256": "E35A1A8FE3D6180CA826723275CC157E105007D53C7CEC87246610755D95CFD7",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000149.log",
+      "SHA256": "8FAE956CBC41BCF76894236587DAA00FB260C34544C2A76B95B953AF8AFBEFDF",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000150.log",
+      "SHA256": "411808CD14219E48D25F201DA7C226769ECDBA54F8A95B8AC42E3964B757362B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000151.log",
+      "SHA256": "74DE59309441E3A2ED7B17C15FCFA400781405D8267E2057868763B05DB5E774",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000152.log",
+      "SHA256": "76B5157E14361258E9D0E5A0E472E568E6200E3EC15405752E664F5D59018162",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000153.log",
+      "SHA256": "A07E98E9128A9362E8557153B31460BBE1C71BE9BB9EFBF9E76C64D62C9DCEF0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000154.log",
+      "SHA256": "E93672613F65B44EB3EA4CC2E45740D74DCA9C0556D538649B9217B4E02CE3A5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000155.log",
+      "SHA256": "539B8DD06ECDBBC40FF37206D4407A6D1C93B26742FEE2B13067FB9F3FB52CB9",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000156.log",
+      "SHA256": "7B06BBEEC6557A19D08D216E1DA49CC49809B31D1ED4124E5CCBE66B9F8C6B3D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000157.log",
+      "SHA256": "2037DF7446A3858D812E6E5B9605480447FA3985EE808D4857B0BB26E222CD67",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000158.log",
+      "SHA256": "766545DBCE68FD3FDD7CC5A58407D2944A57FDE98CBB0B0082DC538009F035F0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000159.log",
+      "SHA256": "D308BB58A992C57D8BE323F3FAFC03C269B35DC8E077164DC35BC39950D47F66",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000160.log",
+      "SHA256": "0A3B226F356719CD5036B9DD96504240449823EB82C24F0300E7DB4DAECAE07C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000161.log",
+      "SHA256": "C5BB8D8B96C053E3B9D2B886DF692DC8BCF06E5A96DE4CCF831A0D3311B84AD4",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000162.log",
+      "SHA256": "E4335C7D58EEE0BF45667020F66C7151F3D4D13ED0670BAE9D0592788DB1A6BD",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000163.log",
+      "SHA256": "0D3877AEA7E5FED3B6075CD3A6896A1728909DE22961FE245EE13A7B06CD8A1F",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000164.log",
+      "SHA256": "460197995F4EB1337385D6B2EB37DCB48EA4008B23B7C1401CEF4D0985183506",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000165.log",
+      "SHA256": "856E0DCFA0C1E1E3B45105AC01DB33963438F233B124C446E4C13881A9DC02D8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000166.log",
+      "SHA256": "ABC1EB62C7CFAD0E15FDE6223EA9B5573FD7A1574F0111D260EC370B174B6792",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000167.log",
+      "SHA256": "7343F7F3ACEEE8722C170844CA0B4D411F49CAF7D73C537373677971DB1AD7EA",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000168.log",
+      "SHA256": "171F163847FF96014831EDB3E1A0522DE3BE464486ABBA76202D4FF6854F7CBB",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000169.log",
+      "SHA256": "517899CF0E38BCE216F5D934E2C92AD36ED883772AC6613C779BEADC68A76EFF",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000170.log",
+      "SHA256": "3654CE2FA06A5DBD7B59770F1B672F24AB55035513440EBF25882FFF24CFF826",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000171.log",
+      "SHA256": "D2247CB70F1CC5FE4B48BD1D24F9383FB5DC5D071F57535D124D9EB1E8724A8D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000172.log",
+      "SHA256": "7BA00B5104D286A8FE2CA181A4EFFE515BAFEE3B3ABF96E4E0DF2FB83E32B137",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000173.log",
+      "SHA256": "BB636A0DC77BF384A69555A42BA0FDA4717F7E1C51AB252C71765262A070F933",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000174.log",
+      "SHA256": "86130CDB3DDA13FE167216BB5D3BD16A1EA6CC16CD77C1891287AA64D6AE27AE",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000175.log",
+      "SHA256": "45A87041D0B3BDA6BFE88DF5F9D9CE9E5862DD75024DCBA2492C7AADD4E36C18",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000176.log",
+      "SHA256": "5C27A901139C32A7A649411F235AD46601A4443BF82F837C6ED6014C2BA7D6E1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000177.log",
+      "SHA256": "32A900E026A55BAE97FEF6E11467FB7485EBE5B814A0472EB4D6B9658041083E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000178.log",
+      "SHA256": "F11841FECC7AB1BF8F267DC1484F338F0F233881FA53E8EBC540AC80EF7A3EA1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000179.log",
+      "SHA256": "FF683185F38E3F7AB47EADB510860C8AA15C572EE3B1295E76F330CD71E9EC37",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000180.log",
+      "SHA256": "9A6780E6CB6F9F095E47D759F161DAC106F46104FF7B5D2AF4E0F31F51CFD61B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000181.log",
+      "SHA256": "B24A958B876EB1214DEBE978258ECC78B551193521C0180D3766EAC9CEF13A81",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000182.log",
+      "SHA256": "F0D4D7DF8CD279B40F76A8A30273A7C6DE85FFB5AF0EF8BF66C95FEB530828D5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000183.log",
+      "SHA256": "7F0E85D43CE5B55549A64487A30245AD3C4AE10A65CA9BCF0C2D757C61707F5A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000184.log",
+      "SHA256": "DE3BD88D1F9042C5F18304FDF0BCF7EFE900EC5F8AD522B15DE1F9197902E4F1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000185.log",
+      "SHA256": "CAE24A6E3CBA655E60B8FEED93759BE89F0B96BCFF7D2BA705E782265F5E83A4",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000186.log",
+      "SHA256": "A456A68D564DF52FEB2434EB21EB9629812FD23F8C04B1C18EA25624B9CD742A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000187.log",
+      "SHA256": "7A60AA62C5AEA6BDCF18F8BFA11A997F42E43FC00BAB185222FA32BD54B1F1B2",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000188.log",
+      "SHA256": "2EDDB0E99EB2908E9871E9CD437208CE5528ED242E6B76ED8751846D9B6FAEEA",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000189.log",
+      "SHA256": "ADDBCBB0946DCC486BD562742C16F2F9C244F7C5BD02A89941A74B46AADE4FBA",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000190.log",
+      "SHA256": "EFA38C9E5E4149BA6F1DC6B88C19135A787F384FBD9D74A9976FB1E5F24E9FD8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000191.log",
+      "SHA256": "20970E716194FCBC42C8D11F170F508EC156D4B58D506078515557C79B904E4B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000192.log",
+      "SHA256": "24072D73D13F68EA3207ED8A961F8FF19CA046DE0F5F378A9C3D811BDBBB700B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000193.log",
+      "SHA256": "73D7C85E99CEAAFF03F0105C83A8CC515F120A10CB9B443952AA52C3CAE804F8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000194.log",
+      "SHA256": "10C91A76138B15AE1829A5CD2320A182BE55EA92F99DBF31C81893A1049A5C40",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000195.log",
+      "SHA256": "2E5EDC8A223D3A64B2CAD7AD58E91C0B5FFE2DA3651E4130A545D3EF18782057",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000196.log",
+      "SHA256": "D05F92F3A1E34862CB7E77D3469443A3ED0F649B0CDD0D19C480B3DD6707E3B7",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000197.log",
+      "SHA256": "36BFD52D5DB6DA8848135FB0FC474E2C852B5D95515DDB3A3B9274EFAD8DB98A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000198.log",
+      "SHA256": "CF21B2DBEA8904D218DA30CBA660E263ECEB636F08DC330A77D61E6A9091171B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000199.log",
+      "SHA256": "1FCBA90D5773463CBCD5C07ABD0A5704FC68322B8614EAA0B8D693DBF6730784",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000200.log",
+      "SHA256": "12A795CB5B69DB700CB41A88150B1A82ACDD7696B8F08A5E5093DBE79BEB0208",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000201.log",
+      "SHA256": "B3757903580FF301B88F93E5EAA4B6AC67CBB65B1059B8E70227779292C4EBE8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000202.log",
+      "SHA256": "FF39FF6C1D19D53472760DA03FD08B48C75A15AA635BD54347D56F62FF56CCF5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000203.log",
+      "SHA256": "2FEDA7E0A38A8E6F74A4491D9D25FFC31EE7B42D4F5271E7B2E6CDB4A3DA2F20",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000204.log",
+      "SHA256": "9965E07B21E0CD294B826DBB65DD064FAD56C6F18FE3F3EE251C13A391C4F43E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000205.log",
+      "SHA256": "95E6F4EFBFFAEE01CD67D29A384BAAF7C15C74A7173E353C3C65F5FE4A64A1F1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000206.log",
+      "SHA256": "C7851EB83CA54A4EE146BBC1A40CFD9A75C284048BCA6C29D3C255D1F9251DE8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000207.log",
+      "SHA256": "BFA546FD2380989BA39B77F5831CA3256AF8D5945C727BA1240BCBFC0534C040",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000208.log",
+      "SHA256": "7E5CD9D315C018DD0DAF2437407472D8EA8DD0AB84E1473C9821FEF484F568F2",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000209.log",
+      "SHA256": "65D1629AF56A05887AE3DD7DA7A5EB6AAA5D66E1AB2B4A713ED3297154BB935C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000210.log",
+      "SHA256": "8C2BF12260B0773792DFDDA9A702D1F76681A721F685F324AA34C3E8FC0C70C5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000211.log",
+      "SHA256": "2B15FAB2920A4CDD93B386DB206CBF2899E7B6DB84A14C71FA55080AC470D08E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000212.log",
+      "SHA256": "3A5410F7C019AA7316E12370B88D5C076DE19864076633D75D35A4D290FB085A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000213.log",
+      "SHA256": "06EA340E59BE8D505B958B78330E7C0707764C667FDB13799D2C8F5687E60936",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000214.log",
+      "SHA256": "A1312EA27C256CF1A3E1D08253011F7B2120CA5488A7A28CBE59EEF4FEA7965E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000215.log",
+      "SHA256": "2A214291DE00AC33B9D72852162FB8540009097A67934447195C7E7020F33F97",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000216.log",
+      "SHA256": "BCF6CB556F5B22C0A618DAB199BE1540C873FAAA721726C633363E9BEECC03C2",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000217.log",
+      "SHA256": "2BECE65E3BB79E7D5F2D92D77D304C44FF9E2AB45F0CCFC23317D1FC03CB7607",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000218.log",
+      "SHA256": "FC719E5A3F0D5A5E06D1E859F1A50D107404DF84951C0A3CF19B9E1140C62D52",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000219.log",
+      "SHA256": "E644B240D3A21DF490FE7D888E1472A3556CF2E4EB2D47B553E185C302DC2083",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000220.log",
+      "SHA256": "88FE6E005E6D592265CFFA2E7FDD5AA0091C5069C635FA1D2C66A92C2C0354ED",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000221.log",
+      "SHA256": "31DAF5C3CA357775144E868F8B710E4F7CAE46058AFC6A4AEBEB2D5124662166",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000222.log",
+      "SHA256": "9170B541DEC4400D317E67C9173D1CF5530CE027B2EE73B541438836D0567D5D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000223.log",
+      "SHA256": "E129B85D86228903E334C0E225BDE77EEC16D49C6D633615466CEC79464224BD",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000224.log",
+      "SHA256": "AE64834B2A666FB60C24C05A4469AF0AE2DB4808143C889DEC5A2F6223CECEA4",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000225.log",
+      "SHA256": "CF8FB4CA0A8526D75919050EF6FEFB59C533631AFDDC222E82F89DE39F981078",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000226.log",
+      "SHA256": "29B804259FDCD82D10480A11C7975DAAF6179729AC2FDFABFFD031CED47384E0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000227.log",
+      "SHA256": "F58AE1940A4A84F7ABC26EAD035390B4CE2BED39DEB7C51FC4D814FE52FFB20E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000228.log",
+      "SHA256": "CB4284C706029D7A4C029B3E6194E76964C38EF1B1CE3CCA7367CA9F1EFCD58D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000229.log",
+      "SHA256": "D15C9DBCD7F432771E257F25BAF1A493511150C381F014A0173676E1B69A3C1E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000230.log",
+      "SHA256": "5DA151B0091B77DDF3EF4C48BD17C32940AC1E46C96B2E581E09BC318DAFE10B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000231.log",
+      "SHA256": "7A71B8AE54F79AC7B0BAF8EFA39C98A0BE5F745DA2CCC37F41200831D23B5C2B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000232.log",
+      "SHA256": "72C0CC1D4F4D009F658C3B6C498776AB7D8B4AF3D68A917867FA5C918C354B95",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000233.log",
+      "SHA256": "2AA9FE5D22EEBB6F81332C96CC1E6064402529FD5D63A87C5DE4F7BEC806A73A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000234.log",
+      "SHA256": "54794B35CE1EFBC20E0FE0927B9EDD6000D85C9DD28A564870489D0CE46B498A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000235.log",
+      "SHA256": "43641B0FAE18F4EE038C7B094074A7F9DFBC44A89D7E63A07BE39298BA4DB7D1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000236.log",
+      "SHA256": "34A8DF3F8DAF3DB7DDFA69701327ED8382B08E75E655B8395C44A999A017F36E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000237.log",
+      "SHA256": "8430F9FFF2A431A6D812E7DAD86940878AE3606499621110CD59E55D69E65942",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000238.log",
+      "SHA256": "9D890A05715592F7AC089E62B9764C4C4DD6A21B4755FC847E08541BE2AA8198",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000239.log",
+      "SHA256": "80BA64AF99583E962371E99E838A6F9C4AB37C8309A5DFEBA67F680B342C2415",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000240.log",
+      "SHA256": "191823615542BE40349610C4134658FF1CEC15EDEF7EBBBB25BEF7EAA1065965",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000241.log",
+      "SHA256": "F187AD31F21FF3CFC3DE9EB61FA3DF206741691EA8B179CED4ADB45EA871022C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000242.log",
+      "SHA256": "09736408ADC36E6CFF4C8B75FC932B695108D576E0E5EF3F438A27F685804CD9",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000243.log",
+      "SHA256": "68C02E71FA987899A4E1E8E177B779C8B4FDA0DFC85C9E6ED9F5243713F76850",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000244.log",
+      "SHA256": "1FD59138CBDC872DA0A0F1382A4C3008DA24829712AD82C42C400585EE005D7F",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000245.log",
+      "SHA256": "DAE1F62AD28B1BAEB0B84B13F01D1D6F2A7BDDA655658A47FB8E7FDE1322E4D3",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000246.log",
+      "SHA256": "181AAC5EDEAD14C4D73016F0FA1FFA630CAB6131712A559094CBFF7CCFAF0456",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000247.log",
+      "SHA256": "A0A6A363793A8D6E7690744912A0ABDB577CA957110C67DF08DA1ABDDF4290E0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000248.log",
+      "SHA256": "6255EB7D0DB6B29B0699B91D8781AB1E639CADDB6642F198DB867FA4D2D4A739",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000249.log",
+      "SHA256": "423B8EF78BE161B30ABF102C840F4BD5DFBEC6F8D2E42B45CAFB9963736F0552",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000250.log",
+      "SHA256": "984782B7E95097FAB58AE0B1B6456349157811F2803BB65E2E8E9001E6E28B6D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000251.log",
+      "SHA256": "B231337C3BE13C8649DDA67098795DEAAA5C1416171465973CB9415BDE2F65C1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000252.log",
+      "SHA256": "2E52D04AE9A28D129B5F54449B3C57C1E7A4B57EB8787EFCCFB401BA49E879DC",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000253.log",
+      "SHA256": "4674670FA2A7B3E0AD6F22FF731ED98C0E664A9462629C2798995098BE8A54A4",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000254.log",
+      "SHA256": "B8AADB208AC96C2160B00F0A588393D892EFB6931495F25D14D3B86C7C7AC7A1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000255.log",
+      "SHA256": "06BA12397FB3D2A8107CE2258D4CF43D05CA4281F5D5D9DCB548625F24296DC2",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000256.log",
+      "SHA256": "AF4DE8CF60AD6C28F5ECB3F565FC959BE8965624DE1C50A63F165E6A5990EEEE",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000257.log",
+      "SHA256": "0C38DEF2B3F49CE35E42A88A02F3DD0D59210A8E86810C5325432FAEF9BF2913",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000258.log",
+      "SHA256": "E6AA796112EA6FBF79C169678632179C16A7197BE3D98F0CF91E7BE236E51671",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000259.log",
+      "SHA256": "AA7CB26AAB2A8C23265E15C58E45880A277D3DF9F2AAEF0E14BA7601F56CC59E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000260.log",
+      "SHA256": "08C22766FAA22F546D888C6E54255D05516A4AEE72E42D96A599DCB27039A6B0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000261.log",
+      "SHA256": "3E4E8814447E4A73ECD919141D7FF15889B007DC57731E4559F97C914DC7134D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000262.log",
+      "SHA256": "D9B81694384EACCFD154DA8BACDB030BB1E1E03F1C7A0F1CF067C5FD04CAB703",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000263.log",
+      "SHA256": "8591659E1C4E12F73F3DE7E26E4A09789E27E824C9B9DCEEA14F7EBA924EE285",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000264.log",
+      "SHA256": "CCA8104469A3AF3A2B6B8EFBAFA80532399C2707D4F583D00CE0696639339F19",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000265.log",
+      "SHA256": "34810537EC5CAA01424DF81CF868BB086F8A71056BFF84C4C05500150C3013B1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000266.log",
+      "SHA256": "4BF04DB6A9FE3C3FDCE188C104C546351AE53106AB9636079EF1DCCB59B9BFDE",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000267.log",
+      "SHA256": "345735166469DFE19186DB9EF974EB82409BA292B3730E0C01374AE39B0447F3",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000268.log",
+      "SHA256": "B5E167DAA3ABFFDCB441A5E4409533FDA2713516A6DD38482689F98CF1D5A51B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000269.log",
+      "SHA256": "38520F7211556267036F032B5B3262994AE0D8902BF12B133BB41A2FECA6D5C5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000270.log",
+      "SHA256": "CECF37DC6F449F287C797BAC551BE2A7D13A056549E4BCD27052A666C0DFD751",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000271.log",
+      "SHA256": "B8427F90AE25E6CF651F12E959F404AEDA73477A72DADEFCB01E2DA6BAA036C8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000272.log",
+      "SHA256": "2116B0DEEFA5F791BD87CB655868A93B3F8F1AE67A89205FC4856263C1FDA619",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000273.log",
+      "SHA256": "FDF58F830DC13AF89085EA18D69B11EE8D21616E8EF4F52D6DF54D374ABEA4F9",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000274.log",
+      "SHA256": "AD3920C20E76A1EC2A4461B4D7AE920ABD8DB5B79FA6A54C619C3C9648896B24",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000275.log",
+      "SHA256": "9339BC097EE321E8CC45DE4E0F85C6E81BCEB9B5F2C5AA384381001BE0D13998",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000276.log",
+      "SHA256": "30D7FDE61AED716147014289A98BF5A2B31DDD2B19227A61E335633FE3ECF741",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000277.log",
+      "SHA256": "5AC553EDD6A08B27B369334C78239BA9F4859DB5CE869172BCC1FCE4EE18EACC",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000278.log",
+      "SHA256": "3E403CF9EBED58CB119EA97E1749F39175B898CA73DD7ED8D50AA7CEEEC06CA3",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000279.log",
+      "SHA256": "59003D571DDD196F20D4E24A224CDDC5E5D3BB505CE3C371E7DFCBFA2068CB8B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000280.log",
+      "SHA256": "D37632E8090B3DA1D6E54B01D43B8CC9DC711357F014CB626F065A1A73C0DC48",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000281.log",
+      "SHA256": "B20EB5FA66C5B4BFE0038C41B2E741A7483523844214CD18B171236D9EB9D480",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000282.log",
+      "SHA256": "4ACFE1089BF679C47C46DF3D74A158A74C6AB20B9B2CF1A217573264550CD81C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000283.log",
+      "SHA256": "908D5720FE0EDADA6836E70A69D00443CB2CE104915A3094B4E2E21692DC7C49",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000284.log",
+      "SHA256": "C0AF45CBD310C751E4F295A63208FBCDC6130EF34C5B0ED08F82AABBB5967399",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000285.log",
+      "SHA256": "E4114909F78822ED30BEA632290B36A728FE8BEE60D7BFD7DF23032B87C2B229",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000286.log",
+      "SHA256": "2B1F68D807AEF903712BA5B3B7A038D49858167015EF3B618E764A5513D15ED0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000287.log",
+      "SHA256": "7B5BE5AD65B549AB1EB35DC616D0732F336E4C099C33B056B2CEB52CE82DF0CE",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000288.log",
+      "SHA256": "73DBA5E89CB623FF141155C5D0E738013E18E1F727584FF008705F04E2B21808",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000289.log",
+      "SHA256": "8B2B40D3C73FB742AC2D083254865BCD24AFF52B24A76EBD16C58361F0D64A02",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000290.log",
+      "SHA256": "E47FE6E115895BA518022805CF621FB074A1BE8FE23F32AE5A6107EFF02E9ED5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000291.log",
+      "SHA256": "35F619282CADE647F4761C7610BA2D3A9D0CEB48BAA9639E2F1C86E0EA63D3AD",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000292.log",
+      "SHA256": "A9F065BDB33BEF1360E3C039C84D37751B03F46A858A18373445B81973BC6933",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000293.log",
+      "SHA256": "634F4129A8EA16F2436C59D59C82B28ED5BD8ED3EB1E5CA72914669CC18A61B8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000294.log",
+      "SHA256": "E3A8462FC2F87117309BA9093B076F3ABE799183982D630A400B0F28B504A59D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000295.log",
+      "SHA256": "5F1355F46D458FC8F2BA2F79ACCE96B81CEB85B69C1CA142A11DFFB7DD55497E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000296.log",
+      "SHA256": "5DB076249145F92B093891B7E41F87E5A0760E3F8C8822B9FA658FB3F1C08DDD",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000297.log",
+      "SHA256": "CAECC19EF469C75AD6C5C40E37462612F458E371EDF3878D43947B913B20DAB8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000298.log",
+      "SHA256": "05F1568951499FF3268C3AB3DBED83FD6A900B31333A2522B02BFD9667F630F4",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000299.log",
+      "SHA256": "ABEE8F1388DEE5597B48877CA026CCB91BC7D8147DDF6808E54E6679218CB679",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000300.log",
+      "SHA256": "6F55EC1EE96C84B1654CB4A9D7242FE34F493D1742CF090792E233ED85F3438E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000301.log",
+      "SHA256": "5BC0DB10AB3E182B41D3D5D01A950D5B1C3E8CBD8A182E6FCEE5E07386ED2110",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000302.log",
+      "SHA256": "6AE027506F985B56367E5506CB47512FBB76C82334AF401CBD0E5FAEA6FAC176",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000303.log",
+      "SHA256": "6E19A1AB75FAFDB7F449F4C786F948CCE43BEA3E6FE2F3A021519932A42235E7",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000304.log",
+      "SHA256": "CED80AC74263E769F541E0564981EACFDABB9CAA0688074F8399FCE47C60374F",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000305.log",
+      "SHA256": "029B270E4C4A6FF1E3CF1890FFDF51B6828FF07E9E6B0F1DC607079B71A0D633",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000306.log",
+      "SHA256": "8F9D5C1CB2551E64C68365646382BED36EFD14355402927EA78714548B273F64",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000307.log",
+      "SHA256": "E24D819458D1194833BE7DC60CE3AE5A2059F482717DDC9B20516A9005F9DCF1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000308.log",
+      "SHA256": "AA898680E73C4BC269C34B12968F19A6D0E746E24A41D8A25083BEE322BA6DC0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000309.log",
+      "SHA256": "A0BB530C0338B8E790295DCD5EAF9DF3679C444CC0D2C6A5470EEC129C095B73",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000310.log",
+      "SHA256": "00C62A80FBAF15ED80FB8565A1265294CCCE59AB7FD470954F245827A493C49B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000311.log",
+      "SHA256": "15E423048A6E327CF5B48F3ECEF53656C5FFAC70C406CC36C43E2AA42A58BEEA",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000312.log",
+      "SHA256": "63497D5297FEC53A94F9525FA6B5586DDEB1F6F1AB68A1963725C5A42E6609A8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000313.log",
+      "SHA256": "1EB78AD43A1A2D69DCA61EE04E3D3D3B2F8DAC2BD2F2F3ECBAFF1714B474DB25",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000314.log",
+      "SHA256": "8C2A0C11660413936CC58B2A403984541658A8E59C02D01B26F0D6B8EF3A8DA9",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000315.log",
+      "SHA256": "F01E753EC937B46DD156A231F0534B95B01D606A67D8F565F3F9787E2C6363CC",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000316.log",
+      "SHA256": "F1E95E4C484C5A1AAF50B436C3D994807F3C80462BBD3BF57821A73BFC7A6D5A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000317.log",
+      "SHA256": "500C3E510CDACCC6D400E656F88FA656A95C3266E3FE463F8291487B976A9E53",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000318.log",
+      "SHA256": "636EBB44DC482B58E81D7E51C49DFA7F53BFFF697F5AE9658B4F049A9600B55D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000319.log",
+      "SHA256": "0F7C1E4673FB628CA640F1FC0894D05B31421D21DCF07F0D582A25D0DEBF5F3E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000320.log",
+      "SHA256": "405467A9F5AC9521EB35B2FEDBB5BBC97A60EADFAEA38728EB06FF89B343C42B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000321.log",
+      "SHA256": "CC87B63031795BD95299EA1DB66740295332D5CE9B983AAD412A4D3D7CEF6EC8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000000.log",
+      "SHA256": "63C1DF4FB3CD2C8B2C14C1EFFF29F28DB1E92B85F70676AA1B198FC09EBA131B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000001.log",
+      "SHA256": "3D4A7E8891D5ACA90062B59F3DA16D3BC828136BFFD152A1995BD4A661AE5D7B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000322.log",
+      "SHA256": "4D3F4D12330292ABF5373D2F74DCA2F595906CB4C6C1FB9B4C2C6254900CA8E8",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000002.log",
+      "SHA256": "7F13FCAA3FFAAB783B83B86F462978C8DAE4A535B03E6168CF12B7DA03DC5C0C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000323.log",
+      "SHA256": "B1BCAFB90E6153C6427D3AEE7D4996395DAB4118AB64C22F28427362855FF5D2",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000003.log",
+      "SHA256": "0B69AA26CB75F20D94BCDFFA91761720C20D824F383BD94CD2A304B27E39CF2A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000004.log",
+      "SHA256": "678ABC3E61CE388C5774C3BC2079586604A6E3F7D10542BFBE5E6AABC75B5094",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000324.log",
+      "SHA256": "63B680A9E65EE562C3757926A7A321C46676C3ADD5F7EDF2EBB1850CDCB4E6A2",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000005.log",
+      "SHA256": "058A0158407202F0BE7C6B2788BB7158BDF1579DA6B121EDA9505D606203C67D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000325.log",
+      "SHA256": "D6EC7FDF182F4947A1D6D53EB2B6E457ED85E5AA3E6CB4D53237A3B36FC4CA6A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000006.log",
+      "SHA256": "A5A9FCF71E2835167AD35E2D13551FF8245D509E646D10DE3C1DD513A5F78E00",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000326.log",
+      "SHA256": "19DFEBE26B6BB53DF3131E27035EA5A960BDC040B670C7F42A1D35A113D2CB26",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000007.log",
+      "SHA256": "3046B013160DD68FE559A4A7B5154BBBBE0DABA361A473EED63641F2E52FDAD9",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000008.log",
+      "SHA256": "0C1E5FAFDDFBB74ABB67EE390427F46C6965DAB1EE3DC8E1A12441876D6D1B5B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000327.log",
+      "SHA256": "2B478D913753221806A0F04AB197262EF8E8BD4100C5F59FBDE5BE7E938FD85B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000009.log",
+      "SHA256": "CBF48E623E76F1AF04831672B6941A096918B53A58ADAE00AAC40FF5D0D79D09",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000328.log",
+      "SHA256": "B7EC945F872F613F676F688D17FA2E6B222E9A94BF87F03B1B4A5FD639EAE4E9",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000010.log",
+      "SHA256": "2EB6C7EB9BB1BD0E8D75F20E1F2929DFB05CA883CF8BBBE7734133AF0A4EB8D5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000011.log",
+      "SHA256": "3DFB70F8D7CADB83AF4031FC48D247D9624AF5F774904214D10F382B9ECDE7FE",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000329.log",
+      "SHA256": "35E184E0A17392F43D8207B11696931AEE10CC6377E85A02E8D0D17BEE955483",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000012.log",
+      "SHA256": "CABCD171C80B113F0D1EAD22AAAD2F60A852552C9DCD0AEA1529195A8C5E2E8D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000330.log",
+      "SHA256": "6BCB9ED20F0D056AE5260EDDD8D0B931B733F7CF20783F99937D5E4D79BFEEE5",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000013.log",
+      "SHA256": "8100D302F7FF51ED464EF508C5B1FDA96AA476A05A85BB2A62E93BE9EBDA461C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000331.log",
+      "SHA256": "E01C9B51817CD9D72338F73097B08F39FD4EB6BE952898F652810146A5F8ABBF",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000014.log",
+      "SHA256": "C43056DDF915ED3DA64B0AA3F190D50712B4C9CDDA5915DC76117BE75CCA6AA0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000015.log",
+      "SHA256": "2B62A6487B5F434F4B4EE6B9A8675FC551011CF89E1D17BCC8A63402893C22E0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000332.log",
+      "SHA256": "62365D9957833F457DB1E5570821CF297C99201804CECC80E6A88B7BAE9BEA0D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000016.log",
+      "SHA256": "A0FFB729AF45D6ED9D8E3825EEEED96D0F835922463B45CB556FEA5D9747CE16",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000333.log",
+      "SHA256": "1DE75B3750D5CE433D1C8C2721DFC3DD9CA90659997520C56233547C8BAF3222",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000017.log",
+      "SHA256": "D9CDF4DC2AB2E102427AD44AB78FCB3F95C077151F480500B9E3FCE9CA4AF41A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000018.log",
+      "SHA256": "3207B84D19A289D9EE990DC1DF8E946A20329105B03543CEC5DCBF9C91A85944",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000334.log",
+      "SHA256": "115A77B0915AC5CB2B877EE6EDFE1190ED3E8E451D84954884EE13A98B1BB45C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000019.log",
+      "SHA256": "247B90A6DCD6D09D1FF2A30317A30F18CC7EB6ADDBF5763E84FB9EAD12AFF68B",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000335.log",
+      "SHA256": "9DAB27012777356425E1522617F6C99935A838E9F379E259B5140C5154F5FF74",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000020.log",
+      "SHA256": "0CC3467DE3D0F60E5224288C1353E7E12B594B17BA6ADA3C398A9BB0E1171D35",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000021.log",
+      "SHA256": "E46359AFB9AE9A71526885EF26698500BF9ABB8C4B41D6A241CA6E0BF562CCD0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000336.log",
+      "SHA256": "8DD67241E24E2786CAB751A2F14C043402BF2584A810399BCF49AFA3022B048C",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000022.log",
+      "SHA256": "F032840AE34B07AEAC6D86F2FC0C9EA6F07995B75511F38219BC0371B893E34A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000337.log",
+      "SHA256": "D7E79ED0BADBCDD74DAFAFE78D7484AD02158AD5CC2F68C19A9D20BE59283521",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000023.log",
+      "SHA256": "9D8239A3220A6919FB364DAFD2151B3AB47BE34A7161B10A8D9B3DBB338740E1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000024.log",
+      "SHA256": "2B58F248C79D375442D2B5F72727B9DD11299DB5D7CA7BED6344BD6EED5BA94A",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000338.log",
+      "SHA256": "ECBE2A9CB5CD24F05A936E9997EF2F0803A0687FB3CB701832E4D37337DAF170",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000025.log",
+      "SHA256": "38174E7C1065F3AD3B13720BEEF003BF6490C519B0A46E1AE97E38791D220BBB",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000339.log",
+      "SHA256": "A8BBBCA9614082A70338AE3583B55AC50EC8358A31DC7C82048586C464498318",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000026.log",
+      "SHA256": "43F8A017E6B91B5E1B744449CB3C6E4A6FB2FE06785B9F162105C48AD3C117DF",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000340.log",
+      "SHA256": "FB7C1C339188B2C3BBD326090A36A3B3CB622B394CE4C07EDB9772172A8933A1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000027.log",
+      "SHA256": "7468E84AE88273291CDCE2140275CFABF6C6D86E41725B28E5315089BC6FAE22",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000028.log",
+      "SHA256": "EC53000B40F5EAA11A22C17047F1F831F5BF0D52F0D0C4CEBC1DAF32AAAC77D7",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000341.log",
+      "SHA256": "34917D0C8913577D90FEE13EC65DF39207465E0D28AC7CC92320200C0D02A054",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000029.log",
+      "SHA256": "7A8A551CEE3E6BE534BEDE91E3AF8E79106E7984859E6CE9A33D3C3E79AAECE0",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000342.log",
+      "SHA256": "DECC9EA2FC4FEB05122AC8A8CB600B2BF598864B74BB12EF092F014769819CD1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000030.log",
+      "SHA256": "981D8740F61BA4EB18D58D18DC59C5E3211AC9A0B99B82FD29772113202647B1",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000031.log",
+      "SHA256": "A79BA9198E4AE5A6741F25D4704C314714C4EAB0680CA3653D2990B8524F2E1D",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000343.log",
+      "SHA256": "34C9067EDF9C59315A74163E63B8825062703377D25E315BDC7FC9F1E5456FAE",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000032.log",
+      "SHA256": "C017D2B931BEB833D32C4D37C923FB438AC65A736C0CB8378F33957EDF6F1497",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000344.log",
+      "SHA256": "90291C70EC7F888E64F230CCB396130C4610A7068D0649FD8E7449685DEAAB11",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000033.log",
+      "SHA256": "6D965BB934586D6485ACA7533D09CC854E4C9F86A3380A34AF48DA62EA61FB8E",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/trace-000345.log",
+      "SHA256": "BDBFD95133B958B0E803D00E7FDE1256E659A48101F86F418241F5F947E3F963",
+      "verified_before_delete": true
+    },
+    {
+      "path": "spool/bus-000034.log",
+      "SHA256": "49F9F44C0DEEDE8741DD4484698E4DD54441EB484E1D80EA56FD2DF0D09A8CDA",
+      "verified_before_delete": true
+    }
+  ],
+  "per_stream": {
+    "trace": {
+      "segments": 346,
+      "raw_bytes": 274238774,
+      "records": 11317031,
+      "raw_SHA256": "B14FF95D0A122EF249990D9485CB0D23697AA8E4DD0F273744D21E36BFDA8E66"
+    },
+    "bus": {
+      "segments": 35,
+      "raw_bytes": 111706828,
+      "records": 1128367,
+      "raw_SHA256": "A21A1BE7B8C8DD86FD5B0406EC22F09A45188FA049FB921A3654907CDEB858EA"
+    }
+  }
+}

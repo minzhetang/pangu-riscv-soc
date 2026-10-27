@@ -1,0 +1,9 @@
+D:\A_FPGA_Comp\work\fpga\2026-10-27-coremark-longrun-ready-m2\cases\performance8-N234\source\regfile.v:1: warning: timescale for regfile inherited from another file.
+D:\A_FPGA_Comp\work\fpga\2026-10-27-coremark-longrun-ready-m2\cases\performance8-N234\source\local_regif_txgpio_m1.v:1: ...: The inherited timescale is here.
+D:\PDS\PDS_2022.2-SP6.4\arch\vendor\pango\verilog\simulation\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.
+warning: Some design elements have no explicit time unit and/or
+       : time precision. This may cause confusing timing results.
+       : Affected design elements are:
+       :   -- module alu declared here: D:\A_FPGA_Comp\work\fpga\2026-10-27-coremark-longrun-ready-m2\cases\performance8-N234\source\alu.v:1
+       :   -- module control declared here: D:\A_FPGA_Comp\work\fpga\2026-10-27-coremark-longrun-ready-m2\cases\performance8-N234\source\control.v:1
+       :   -- module cpu declared here: D:\A_FPGA_Comp\work\fpga\2026-10-27-coremark-longrun-ready-m2\cases\performance8-N234\source\cpu.v:6

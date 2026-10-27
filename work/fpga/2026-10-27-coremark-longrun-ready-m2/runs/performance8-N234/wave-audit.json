@@ -1,0 +1,72 @@
+{
+  "id": "performance8-N234",
+  "status": "PASS",
+  "VCD_sha256": "6463E2F24E52E5095C4C751BC3F7399447FD04C5434F5BA9E3608735D3B084F0",
+  "bytes": 381349,
+  "stable_post_checks": 3049,
+  "distinct_visible_cycles": 2183,
+  "intervals": [
+    [
+      1,
+      1024
+    ],
+    [
+      6223,
+      6479
+    ],
+    [
+      18767,
+      18778
+    ],
+    [
+      18793,
+      18804
+    ],
+    [
+      61961,
+      61972
+    ],
+    [
+      61981,
+      62237
+    ],
+    [
+      16891413,
+      16891424
+    ],
+    [
+      16891437,
+      16891693
+    ],
+    [
+      16953687,
+      16953943
+    ],
+    [
+      18515745,
+      18515827
+    ]
+  ],
+  "explicit_off_timestamp_groups": 9,
+  "timer_LOAD_pre_capture_cycles": [
+    18772,
+    18774,
+    18776,
+    18798,
+    18800,
+    18802,
+    61966,
+    61968,
+    61970,
+    16891418,
+    16891420,
+    16891422
+  ],
+  "settled_timer_address_samples": 88,
+  "first_active_posedge_ps": 277777,
+  "last_timestamp_ps": 685770943858,
+  "scope": "native VCD windows; captured pre-edge variables + independent physical-time/post-edge checks",
+  "full_algorithm_wave": false,
+  "hardware_ILA": false,
+  "retirement_PC": false
+}
