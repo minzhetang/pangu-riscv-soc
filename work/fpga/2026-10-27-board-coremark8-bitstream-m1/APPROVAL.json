@@ -1,0 +1,16 @@
+{
+  "date_client": "2026-10-27",
+  "decision": "D164",
+  "user_reply": "授权同意，继续",
+  "scope_SHA256": "6BE782B91E2670510E9A47FC1233B51FC89CFC5B7DDE9911D4D9E4C234BE4B08",
+  "scope_LF_normalized_SHA256": "BB1D768FBB82166753982CC5167569215A31606675B6D42A959DE7E976753B9D",
+  "scope_identity_erratum": "No content change: previous metadata hashed normalized LF, actual reviewed Git blob uses CRLF",
+  "scope": "A-BOARD-COREMARK8-BITSTREAM-M1",
+  "max_PDS": 1,
+  "max_C_build": 0,
+  "max_RTL_sim_compile": 0,
+  "max_DUT": 0,
+  "SCBV": "D010 High Voltage engineering assumption carried into new copy only",
+  "hardware": "STOPPED",
+  "external_tool_route": "SEPARATE_SYSTEM_REVIEW"
+}

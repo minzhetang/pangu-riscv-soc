@@ -1,0 +1,10 @@
+{
+  "date_client": "2026-10-27",
+  "kind": "HASH_METADATA_ERRATUM_NO_SCOPE_CHANGE",
+  "original_scope_status_preserved": true,
+  "actual_file_SHA256": "6BE782B91E2670510E9A47FC1233B51FC89CFC5B7DDE9911D4D9E4C234BE4B08",
+  "UTF8_LF_normalized_SHA256": "BB1D768FBB82166753982CC5167569215A31606675B6D42A959DE7E976753B9D",
+  "previous_scope_SHA256_field_was_normalized": true,
+  "reviewed_Git_blob_matches_actual": true,
+  "scope_content_unchanged": true
+}

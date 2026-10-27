@@ -1,0 +1,9 @@
+{
+  "used": 1,
+  "maximum": 1,
+  "approval": "D164",
+  "timeout_seconds": 1800,
+  "max_logs_each": 33554432,
+  "shell_parent_memory_limit_bytes": 4294967296,
+  "hardware": "STOPPED"
+}

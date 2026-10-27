@@ -1,0 +1,168 @@
+{
+  "files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\memory_model.sv",
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\build\\performance8\\program.bin",
+      "SHA256": "EC365839FEA1111CB365763322E2FA99C3C3B3F6B74A5884C5B0EB30593486F0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\build\\performance8\\program.elf",
+      "SHA256": "90E06A11E410E36FCDE16570BDA9BE6C4A57800D94FE4AA84B17FC2BE4224638"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\init_tables.svh",
+      "SHA256": "1882FB39C232AB924EB66DFD06E803523E0DB22D1E70E6EDF16E95C35EEB34FE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\memory_model.sv",
+      "SHA256": "7DB1F8A1049D447D7C8A459FFEDC60680E25AD30B7A2368229B171EB69F07BAE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\board_pins.fdc",
+      "SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\clock_27mhz.fdc",
+      "SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\deliveries\\mainline-board-coremark8-bitstream-scope-2026-10-27-v1\\IMPLEMENTATION_SCOPE.md",
+      "SHA256": "6BE782B91E2670510E9A47FC1233B51FC89CFC5B7DDE9911D4D9E4C234BE4B08"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\STATUS.json",
+      "SHA256": "5FD364009B05C2F3FB18A9F0096101FEF29D715457A68AB168D71A22FDD5B4D4"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\SUMMARY.json",
+      "SHA256": "191CB81392F91136013426C0C558C6CEA5BCC3F516311C6F4DEB0F506A4CCB23"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\SOURCE_RECEIPTS.json",
+      "SHA256": "8601B21BA803B95A3B27D5922E05B010029ED635F9DEE08333786A6CB0E6314A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\check-result.json",
+      "SHA256": "004E9BFF0EBA65A7851C5890E3206C4D1442912F7832F5C2FEBB1FD843E871BC"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds-audit.json",
+      "SHA256": "C2E514CFD1440996AE16D9A86A20526FCD089693358CFE055B7EEC4671E560F1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pin-plan.json",
+      "SHA256": "98C8C7BAC6B034EC534F30774FD797C026E9B1E510A725FEA53D19BBC8A6EC3B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\build.tcl",
+      "SHA256": "BD20DDD858C625294ADA6FAF51E6E1032E7ADB3E5A7EE94E40076307F9B17E51"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\synthesize\\board_top_syn.vm",
+      "SHA256": "BBE2782F0731F0AB4409DE59AE322CCC524982ACAEF3AA79C19ED85AD8AE2D19"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\pds_shell.exe",
+      "SHA256": "631FFD8F14D6246872873C72025CBC2734C9F8C388075B7AFB0B042F3A684E6F"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "status": "INITIAL_POSTCHECK_REJECTED_WRONG_LOG_LOCATION",
+  "reason": "Tcl completion echo is in stdout, not flow.log; actual gen-bitstream done marker present in both. Preserve initial auditor; no PDS retry, no design/expected/init change."
+}

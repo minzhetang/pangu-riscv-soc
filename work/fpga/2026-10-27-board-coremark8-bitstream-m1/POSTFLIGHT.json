@@ -1,0 +1,19 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_LIMITS",
+  "originals": 41,
+  "frozen_inputs": 48,
+  "originals_unchanged": true,
+  "frozen_unchanged": true,
+  "manifest_files": 132,
+  "manifest_SHA256": "E13CE0591D72E7009BB5B4D32006FBC06F5EA5D28EC6945A5A895E2F8700FD1D",
+  "local_evidence_bytes": 17839240,
+  "elapsed_seconds": 910.547,
+  "budget_seconds": 2400,
+  "within_stage_budget": true,
+  "PDS_invocations": 1,
+  "new_C": 0,
+  "new_simulation": 0,
+  "new_DUT": 0,
+  "hardware": "STOPPED",
+  "git_and_documentation_closeout": "separate non-build administrative work unit"
+}

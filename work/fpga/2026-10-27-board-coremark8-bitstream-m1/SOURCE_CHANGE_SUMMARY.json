@@ -1,0 +1,23 @@
+{
+  "functional_RTL_diff": [],
+  "firmware_source_changes": [],
+  "source_before_files": 13,
+  "production_exact_files": 12,
+  "memory_transformation": "No functional edits: strip M0_VERIFY verification-only blocks and inline same INIT",
+  "new8_ROM_replaces_old1_at_byte": 15904,
+  "new_program_bin_SHA256": "EC365839FEA1111CB365763322E2FA99C3C3B3F6B74A5884C5B0EB30593486F0",
+  "constraints_unchanged": [
+    {
+      "name": "board_pins.fdc",
+      "SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1",
+      "old_SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1"
+    },
+    {
+      "name": "clock_27mhz.fdc",
+      "SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F",
+      "old_SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F"
+    }
+  ],
+  "flow_diff": "FLOW_DIFF.patch",
+  "gen_bit_stream_added_with_existing_SCBV_decision": true
+}

@@ -1,0 +1,6 @@
+{
+  "status": "SECOND_POSTCHECK_STOPPED_ON_NONNUMERIC_INIT_MODE",
+  "reason": "INIT_MODE is a nonnumeric string parameter, not one of64 INIT_00..INIT_3F data pieces. Compare it as ordinary unchanged parameter. Existing completed configuration checkpoint is preserved and must match exactly on resume.",
+  "PDS_retry": false,
+  "functional_input_changes": false
+}

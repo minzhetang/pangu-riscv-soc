@@ -1,0 +1,134 @@
+{
+  "status": "SOFTWARE_BITSTREAM_GENERATED_WITH_KNOWN_LIMITS",
+  "stages": {
+    "compile": true,
+    "synthesis": true,
+    "mapping": true,
+    "pnr": true,
+    "timing": true,
+    "bitstream": true
+  },
+  "artifact": {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\generate_bitstream\\board_top.sbit",
+    "bytes": 3791112,
+    "SHA256": "F548BC8BAA3DDFB5E2EB3158AE108F5A9DFCE7FE6C08919DB8DB245187C8D7A4",
+    "mtime_epoch": 1793100036.0382822
+  },
+  "PDS_process": {
+    "argv": [
+      "D:/PDS/PDS_2022.2-SP6.4/bin/pds_shell.exe",
+      "-file",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\build.tcl"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds",
+    "returncode": 0,
+    "returncode_hex": "0x00000000",
+    "timed_out": false,
+    "cap": false,
+    "error": null,
+    "termination": "PROCESS_EXIT",
+    "peak_working_set_bytes": 103264256,
+    "parent_peak_working_set_bytes": 64360448,
+    "child_memory_samples": 2610,
+    "elapsed_seconds": 81.547,
+    "timeout_seconds": 1800,
+    "child_cpu": {
+      "kernel_s": 0.390625,
+      "user_s": 0.640625
+    },
+    "parent_cpu_before": {
+      "kernel_s": 0.046875,
+      "user_s": 0.046875
+    },
+    "parent_cpu_after": {
+      "kernel_s": 0.59375,
+      "user_s": 0.3125
+    },
+    "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\logs\\pds-flow-once\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\logs\\pds-flow-once\\stderr.log",
+    "measurement_scope": "PDS shell and this parent only; stage memory pool report retained separately, internal child peaks not separately measured",
+    "absolute_deadline_used": true,
+    "failure_cleanup": {
+      "taskkill_rc": null,
+      "error": null,
+      "tree_verified": "NOT_INDEPENDENTLY_ENUMERATED"
+    }
+  },
+  "timing": {
+    "setup_slow": {
+      "slack_ns": 23.279,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 4685
+    },
+    "hold_slow": {
+      "slack_ns": 0.185,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 4685
+    },
+    "recovery_slow": {
+      "slack_ns": 33.991,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 344
+    },
+    "removal_slow": {
+      "slack_ns": 0.751,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 344
+    },
+    "setup_fast": {
+      "slack_ns": 28.647,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 4685
+    },
+    "hold_fast": {
+      "slack_ns": 0.129,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 4685
+    },
+    "recovery_fast": {
+      "slack_ns": 35.065,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 344
+    },
+    "removal_fast": {
+      "slack_ns": 0.518,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 344
+    }
+  },
+  "resources": {
+    "LUT": 1805,
+    "FF": 1519,
+    "DRM36": 14,
+    "IO": 15
+  },
+  "changed_INIT_pieces": [
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_38",
+      "old": "288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100110000000000000000001000000000000000001000111010001000100000111010000111100000111010000110100010000010000000111000000010000001000000000010000011100010000010000010011",
+      "new": "288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100110000000000000001000000000000000000001000111010001000100000111010000111100000111010000110100010000010000000111000000010000001000000000010000011100010000010000010011"
+    }
+  ],
+  "SCBV": "High Voltage engineering assumption",
+  "license_days_remaining": [
+    7
+  ],
+  "constant_probe_count": 7,
+  "additional_warnings": {},
+  "original_files_protected": 41,
+  "frozen_execution_files": 48,
+  "new_DUT": 0,
+  "new_C_build": 0,
+  "PDS_runs": 1,
+  "hardware": "STOPPED",
+  "hardware_or_formal_score": false
+}

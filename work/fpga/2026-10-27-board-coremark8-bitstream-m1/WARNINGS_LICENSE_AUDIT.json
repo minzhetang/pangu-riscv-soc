@@ -1,0 +1,36 @@
+{
+  "warning_counts": {
+    "W: Verilog-2008": 2,
+    "W: Sdm-2000": 32,
+    "W: Loop was found during constant probe.": 7,
+    "W: Public-4008": 14,
+    "W: Removed bmsWIDEDFFCPE inst soc/cpu_core/id_alu_ctrl[4": 1,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/sync_meta[7": 4,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/gpio_in_sync[7": 4,
+    "W: Timing-4087": 18,
+    "W: Timing-4086": 10
+  },
+  "old_warning_counts": {
+    "W: Verilog-2008": 2,
+    "W: Sdm-2000": 32,
+    "W: Loop was found during constant probe.": 7,
+    "W: Public-4008": 14,
+    "W: Removed bmsWIDEDFFCPE inst soc/cpu_core/id_alu_ctrl[4": 1,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/sync_meta[7": 4,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/gpio_in_sync[7": 4,
+    "W: Timing-4087": 18,
+    "W: Timing-4086": 10
+  },
+  "extra_classes_or_counts": {},
+  "constant_probe_count": 7,
+  "old_constant_probe_count": 7,
+  "constant_probe_root_cause": "OPEN",
+  "Bitstream_2001_absent": true,
+  "license_checkout": "SUCCESS_FOR_THIS_RUN",
+  "license_days_remaining_prompts": [
+    7
+  ],
+  "license_content_or_identifiers_recorded": false,
+  "tool_reported_memory_pool_max_MB": 1247,
+  "unredacted_native_logs": "LOCAL_ONLY_NOT_FOR_GIT"
+}

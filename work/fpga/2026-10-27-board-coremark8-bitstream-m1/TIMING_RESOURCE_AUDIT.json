@@ -1,0 +1,194 @@
+{
+  "status": "INTERNAL_27MHZ_PASS_WITH_EXTERNAL_LIMITS",
+  "tool": "PDS2022.2-SP6.4 build146967",
+  "device": "PG2L100H",
+  "speed": "-6",
+  "package": "FBG676",
+  "pins": {
+    "clk": {
+      "direction": "input",
+      "loc": "D18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[0]": {
+      "direction": "input",
+      "loc": "C22",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[1]": {
+      "direction": "input",
+      "loc": "C23",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[2]": {
+      "direction": "input",
+      "loc": "B22",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[3]": {
+      "direction": "input",
+      "loc": "A22",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[4]": {
+      "direction": "input",
+      "loc": "B20",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[0]": {
+      "direction": "output",
+      "loc": "A20",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[1]": {
+      "direction": "output",
+      "loc": "C18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[2]": {
+      "direction": "output",
+      "loc": "C19",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[3]": {
+      "direction": "output",
+      "loc": "E18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[4]": {
+      "direction": "output",
+      "loc": "A17",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[5]": {
+      "direction": "output",
+      "loc": "A18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[6]": {
+      "direction": "output",
+      "loc": "C17",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[7]": {
+      "direction": "output",
+      "loc": "B17",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "uart_tx": {
+      "direction": "output",
+      "loc": "C24",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    }
+  },
+  "pin_constraints": 94,
+  "timing": {
+    "setup_slow": {
+      "slack_ns": 23.279,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 4685
+    },
+    "hold_slow": {
+      "slack_ns": 0.185,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 4685
+    },
+    "recovery_slow": {
+      "slack_ns": 33.991,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 344
+    },
+    "removal_slow": {
+      "slack_ns": 0.751,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 344
+    },
+    "setup_fast": {
+      "slack_ns": 28.647,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 4685
+    },
+    "hold_fast": {
+      "slack_ns": 0.129,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 4685
+    },
+    "recovery_fast": {
+      "slack_ns": 35.065,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 344
+    },
+    "removal_fast": {
+      "slack_ns": 0.518,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 344
+    }
+  },
+  "resources": {
+    "LUT": 1805,
+    "FF": 1519,
+    "DRM36": 14,
+    "DRM18": 28,
+    "IO": 15,
+    "latches": 0
+  },
+  "estimated_internal_MHz": 72.685,
+  "estimate_not_measured_Fmax": true,
+  "unconstrained_async_inputs": [
+    "key_n[0]",
+    "key_n[1]",
+    "key_n[2]",
+    "key_n[3]",
+    "key_n[4]"
+  ],
+  "unconstrained_outputs": [
+    "led[0]",
+    "led[1]",
+    "led[2]",
+    "led[3]",
+    "led[4]",
+    "led[5]",
+    "led[6]",
+    "led[7]",
+    "uart_tx"
+  ],
+  "physical_CDC_and_IO_timing": "NOT_VALIDATED"
+}

@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "D:/PDS/PDS_2022.2-SP6.4/bin/pds_shell.exe",
+    "-file",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\build.tcl"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds",
+  "native_rc": 0,
+  "timeout_seconds": 1800,
+  "wall_seconds": 81.547,
+  "PDS_invocations": 1,
+  "external_route": "separately approved ordinary-user execution; not Windows administrator",
+  "Python": "3.12.14",
+  "outputs": "fresh files in new directory checked after PDS exit",
+  "hardware": "STOPPED"
+}
