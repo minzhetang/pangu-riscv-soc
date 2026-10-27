@@ -1,0 +1,997 @@
+--- v01/RUN.py
++++ v02/RUN.py
+@@ -1,5 +1,9 @@
+ #!/usr/bin/env python3
+-"""B-owned offline M0 CLI wrapper (ABI 1.0.0)."""
++"""B-owned offline M0-R1 CLI (ABI 1.0.0, package 1.0.1).
++
++Only bounded resource/error guards and an internal fixed-fixture test hook are
++new.  Frozen comparison semantics and the original 1.0.0 ABI are unchanged.
++"""
+ from __future__ import annotations
+ 
+ import argparse
+@@ -20,15 +24,26 @@
+ STATUS_RC = support.STATUS_RC
+ 
+ 
+-def result_for_error(case_id, status, message, **extra):
+-    result = {
++def emit(status, case_id=None, out=None, extra=None):
++    payload = {"status": status, "native_rc": STATUS_RC.get(status, 7),
++               "case": case_id, "out": str(out) if out is not None else None,
++               "error": None}
++    if extra:
++        payload.update(extra)
++    print(json.dumps(payload, ensure_ascii=False))
++    return STATUS_RC.get(status, 7)
++
++
++def base_result(case_id, limits, status="TOOL_ERROR", reason=None):
++    return {
+         "kind": "B_VERIFY_OFFLINE_RESULT",
+         "case_id": case_id,
+-        "status": status,
+-        "native_rc": STATUS_RC[status],
+         "ABI": support.ABI,
+         "CPU_function_proven": False,
+         "new_DUT": 0,
++        "limits": limits,
++        "status": status,
++        "native_rc": STATUS_RC[status],
+         "fully_consumed": False,
+         "checked": 0,
+         "expected_records": 0,
+@@ -37,201 +52,282 @@
+         "differences": [],
+         "neighbors": [],
+         "first_difference": None,
+-        "termination": "tool_error",
+-        "error": message,
+-        "worker_rc": None,
++        "termination": "error",
++        "worker_started": False,
++        "worker_exited": False,
+         "worker_peak_bytes": None,
++        "worker_self_peak_bytes": None,
++        "memory_threshold_bytes": limits.get("worker_peak_working_set_bytes"),
++        "memory_observed_bytes": None,
++        "trigger": reason,
+         "parent_peak_bytes": support.peak_working_set(),
+         "measurement_method": "Windows GetProcessMemoryInfo PeakWorkingSetSize",
+         "log_truncated": False,
++        "stdout_bytes": 0,
++        "stderr_bytes": 0,
+         "worker_stdout": None,
+         "worker_stderr": None,
+         "command": None,
++        "elapsed_s": 0.0,
+         "case_sha256": None,
+         "run_py_sha256": support.sha256_file(Path(__file__)),
+-        "worker_sha256": support.sha256_file(WORKER),
++        "worker_sha256": None,
++        "error": reason,
+     }
+-    result.update(extra)
+-    return result
+-
+-
+-def write_result(out, result):
++
++
++def truncate_file(path, limit):
++    try:
++        if path.exists() and path.stat().st_size > limit:
++            with path.open("r+b") as fh:
++                fh.truncate(limit)
++    except OSError:
++        pass
++
++
++def publish(out, result, max_bytes):
++    """Publish only within this case's result budget; no over-limit fallback."""
++    written = support.dump_json(Path(out) / "result.json", result, max_bytes=max_bytes)
++    return written is not None
++
++
++def execute_case(case, input_root, out, limits, started, worker_path=WORKER):
++    """Single bounded parent path used by production and fixed test fixtures."""
++    case_id = case["id"]
+     out = Path(out)
+-    out.mkdir(parents=True, exist_ok=True)
+-    try:
+-        support.dump_json(out / "result.json", result)
+-    except ValueError as exc:
+-        # Never let an oversized diagnostic become a pass/valid result.
+-        fallback = result_for_error(result.get("case_id", "unknown"), "TOOL_ERROR",
+-                                    "result serialization: " + str(exc))
+-        fallback["worker_rc"] = result.get("worker_rc")
+-        support.dump_json(out / "result.json", fallback)
+-        return fallback
+-    return result
+-
+-
+-def emit(result, out):
+-    print(json.dumps({"status": result["status"], "native_rc": result["native_rc"],
+-                      "case": result.get("case_id"), "out": str(out)}, ensure_ascii=False))
+-    return result["native_rc"]
+-
+-
+-def main():
+-    parser = argparse.ArgumentParser()
+-    parser.add_argument("--case-file", required=True)
+-    parser.add_argument("--input-root", required=True)
+-    parser.add_argument("--out", required=True)
+-    args = parser.parse_args()
+-    out = Path(args.out).resolve()
+-    if out.exists():
+-        print(json.dumps({"status": "TOOL_ERROR", "native_rc": 7,
+-                          "error": "output directory already exists; overwrite is forbidden"},
+-                         ensure_ascii=False))
+-        return 7
+-    if sys.flags.optimize != 0:
+-        try:
+-            result = result_for_error("optimized-python", "INVALID_INPUT",
+-                                      "Python -O/-OO is unsupported; frozen assertions are required")
+-            write_result(out, result)
+-            return emit(result, out)
+-        except Exception:
+-            print(json.dumps({"status": "INVALID_INPUT", "native_rc": 3,
+-                              "error": "optimized Python unsupported"}, ensure_ascii=False))
+-            return 3
+-    input_root = Path(args.input_root).resolve()
+-    if not input_root.is_dir():
+-        result = result_for_error("invalid-input-root", "INVALID_INPUT", "input root is not a directory")
+-        write_result(out, result)
+-        return emit(result, out)
+-    if out == input_root or input_root in out.parents:
+-        print(json.dumps({"status": "TOOL_ERROR", "native_rc": 7,
+-                          "error": "output must be outside input root"}, ensure_ascii=False))
+-        return 7
+-    if out == RETURN_ROOT or RETURN_ROOT in out.parents:
+-        print(json.dumps({"status": "TOOL_ERROR", "native_rc": 7,
+-                          "error": "output must be outside the return tool"}, ensure_ascii=False))
+-        return 7
+-    case_path = Path(args.case_file).resolve()
+-    try:
+-        case = json.loads(case_path.read_text(encoding="utf-8-sig"))
+-        support.validate_case_shape(case)
+-        limits = support.normalize_limits(case.get("limits"))
+-    except Exception as exc:
+-        result = result_for_error("invalid-case", "INVALID_INPUT", "%s: %s" % (type(exc).__name__, exc))
+-        write_result(out, result)
+-        return emit(result, out)
+-
+-    try:
++    if not out.exists():
+         out.mkdir(parents=True, exist_ok=False)
+-    except FileExistsError:
+-        print(json.dumps({"status": "TOOL_ERROR", "native_rc": 7,
+-                          "error": "output directory already exists"}, ensure_ascii=False))
+-        return 7
+-    except Exception as exc:
+-        print(json.dumps({"status": "TOOL_ERROR", "native_rc": 7,
+-                          "error": "cannot create output: " + str(exc)}, ensure_ascii=False))
+-        return 7
+-
++    result = base_result(case_id, limits, "TOOL_ERROR", None)
++    result["worker_sha256"] = support.sha256_file(Path(worker_path))
++    result["case_sha256"] = None
++    # A threshold below minimal interpreter overhead is rejected before spawn.
++    if limits["worker_peak_working_set_bytes"] < support.MIN_WORKER_OVERHEAD_BYTES:
++        result.update({
++            "status": "LIMIT", "native_rc": 5, "fully_consumed": False,
++            "termination": "preflight_memory_limit",
++            "trigger": "worker_peak_working_set_bytes below minimum runner overhead",
++            "memory_threshold_bytes": limits["worker_peak_working_set_bytes"],
++            "memory_observed_bytes": None, "worker_started": False,
++            "worker_exited": False,
++            "elapsed_s": round(time.monotonic() - started, 6),
++        })
++        publish(out, result, limits["max_result_bytes"])
++        return result, 5, out
++    deadline = started + limits["case_timeout_seconds"]
++    remaining = deadline - time.monotonic()
++    if remaining <= 0:
++        result.update({"status": "TIMEOUT", "native_rc": 6,
++                       "termination": "deadline_before_worker",
++                       "trigger": "case deadline exhausted before worker start"})
++        publish(out, result, limits["max_result_bytes"])
++        return result, 6, out
+     command = {
+-        "argv": [sys.executable, "-B", str(WORKER), "--case-file", str(case_path),
+-                 "--input-root", str(input_root), "--out", str(out)],
+-        "cwd": str(Path.cwd()),
++        "argv": [sys.executable, "-B", str(worker_path), "--case-file", str(case.get("file")),
++                 "--input-root", str(input_root), "--out", str(out),
++                 "--deadline-seconds", "%.6f" % max(0.0, remaining)],
++        "cwd": str(RETURN_ROOT),
+         "python": sys.executable,
+         "optimize": sys.flags.optimize,
+-        "case_file": str(case_path),
++        "case_id": case_id,
+         "input_root": str(input_root),
+         "out": str(out),
++        "deadline_seconds": max(0.0, remaining),
+     }
+     (out / "command.json").write_text(json.dumps(command, ensure_ascii=False, indent=2) + "\n",
+                                       encoding="utf-8", newline="\n")
+     stdout_path = out / "worker.stdout.log"
+     stderr_path = out / "worker.stderr.log"
+-    started = time.monotonic()
++    hard_deadline = started + limits["case_timeout_seconds"] + limits["cleanup_seconds"]
++    log_limited = False
+     timed_out = False
+     worker_peak = None
++    worker_rc = None
+     with stdout_path.open("xb") as stdout, stderr_path.open("xb") as stderr:
+         proc = subprocess.Popen(command["argv"], cwd=str(RETURN_ROOT),
+                                 stdout=stdout, stderr=stderr, shell=False,
+                                 env={**os.environ, "PYTHONDONTWRITEBYTECODE": "1"})
+-        hard_timeout = min(support.MAX_TOTAL_CASE_SECONDS,
+-                           limits["case_timeout_seconds"] + limits["cleanup_seconds"])
++        result["worker_started"] = True
+         while proc.poll() is None:
++            now = time.monotonic()
+             current = support.peak_working_set(proc.pid)
+             if current is not None:
+                 worker_peak = current if worker_peak is None else max(worker_peak, current)
+-            if time.monotonic() - started > hard_timeout:
++            if stdout_path.stat().st_size > limits["max_log_bytes_each"] or \
++                    stderr_path.stat().st_size > limits["max_log_bytes_each"]:
++                log_limited = True
++                proc.kill()
++                break
++            if now > hard_deadline:
+                 timed_out = True
+                 proc.kill()
+                 break
+-            time.sleep(0.05)
++            time.sleep(0.02)
+         try:
+             worker_rc = proc.wait(timeout=limits["cleanup_seconds"])
+         except subprocess.TimeoutExpired:
+             timed_out = True
+             proc.kill()
+             worker_rc = proc.wait(timeout=limits["cleanup_seconds"])
+-    elapsed = time.monotonic() - started
+-    stdout_size, stderr_size = stdout_path.stat().st_size, stderr_path.stat().st_size
+-    log_truncated = (stdout_size > limits["max_log_bytes_each"] or
+-                     stderr_size > limits["max_log_bytes_each"])
+-    parent_peak = support.peak_working_set()
+-    result = result_for_error(case.get("id", "unknown"), "TOOL_ERROR", "worker result unavailable",
+-                              worker_rc=worker_rc, worker_peak_bytes=worker_peak,
+-                              parent_peak_bytes=parent_peak, elapsed_s=round(elapsed, 6),
+-                              worker_stdout="worker.stdout.log", worker_stderr="worker.stderr.log",
+-                              stdout_bytes=stdout_size, stderr_bytes=stderr_size,
+-                              log_truncated=log_truncated, command=command)
++    raw_stdout_size, raw_stderr_size = stdout_path.stat().st_size, stderr_path.stat().st_size
++    if raw_stdout_size > limits["max_log_bytes_each"] or raw_stderr_size > limits["max_log_bytes_each"]:
++        log_limited = True
++    truncate_file(stdout_path, limits["max_log_bytes_each"])
++    truncate_file(stderr_path, limits["max_log_bytes_each"])
++    result.update({
++        "command": command,
++        "elapsed_s": round(time.monotonic() - started, 6),
++        "worker_rc": worker_rc,
++        "worker_exited": True,
++        "worker_peak_bytes": worker_peak,
++        "stdout_bytes": stdout_path.stat().st_size,
++        "stderr_bytes": stderr_path.stat().st_size,
++        "raw_stdout_bytes": raw_stdout_size,
++        "raw_stderr_bytes": raw_stderr_size,
++        "log_truncated": log_limited,
++        "worker_stdout": "worker.stdout.log",
++        "worker_stderr": "worker.stderr.log",
++    })
+     if timed_out:
+         result.update({"status": "TIMEOUT", "native_rc": 6,
+                        "termination": "parent_timeout",
+-                       "error": "worker exceeded case timeout; killed and waited",
+-                       "fully_consumed": False})
+-        write_result(out, result)
+-        return emit(result, out)
+-    worker_result_path = out / "worker-result.json"
++                       "trigger": "case_timeout exceeded; worker killed and waited"})
++        publish(out, result, limits["max_result_bytes"])
++        return result, 6, out
++    if log_limited:
++        result.update({"status": "LIMIT", "native_rc": 5,
++                       "termination": "log_limit",
++                       "trigger": "stdout/stderr reached max_log_bytes_each"})
++        publish(out, result, limits["max_result_bytes"])
++        return result, 5, out
++    worker_result = None
+     try:
+-        worker_result = support.load_json(worker_result_path, limits["max_result_bytes"])
++        worker_result = support.load_json(out / "worker-result.json",
++                                          max_bytes=limits["max_result_bytes"])
+     except Exception as exc:
+-        result.update({"status": "TOOL_ERROR", "native_rc": 7,
+-                       "termination": "missing_or_invalid_worker_result",
+-                       "error": "%s: %s" % (type(exc).__name__, exc)})
+-        write_result(out, result)
+-        return emit(result, out)
++        worker_result = None
++        result["error"] = "%s: %s" % (type(exc).__name__, exc)
++    if worker_result is None:
++        if worker_rc == 5:
++            result.update({"status": "LIMIT", "native_rc": 5,
++                           "termination": "worker_result_limit",
++                           "trigger": "worker produced no result within max_result_bytes"})
++        elif worker_rc == 6:
++            result.update({"status": "TIMEOUT", "native_rc": 6,
++                           "termination": "worker_timeout"})
++        else:
++            result.update({"status": "TOOL_ERROR", "native_rc": 7,
++                           "termination": "missing_worker_result",
++                           "trigger": "worker result missing or invalid"})
++        publish(out, result, limits["max_result_bytes"])
++        return result, result["native_rc"], out
+     errors = support.validate_worker_result(worker_result, worker_rc=worker_rc)
+-    if log_truncated:
+-        errors.append("worker log truncated")
+-    result_size = support.sha256_bytes(json.dumps(worker_result, ensure_ascii=False,
+-                                                  indent=2).encode("utf-8"))
+-    if not errors and worker_result.get("status") == "TOOL_ERROR" and worker_rc != 7:
+-        errors.append("tool error status with inconsistent rc")
+     if errors:
+         result.update({"status": "TOOL_ERROR", "native_rc": 7,
+                        "termination": "worker_evidence_rejected",
+-                       "error": "; ".join(errors), "worker_result_sha256": result_size})
+-        write_result(out, result)
+-        return emit(result, out)
++                       "trigger": "; ".join(errors)})
++        publish(out, result, limits["max_result_bytes"])
++        return result, 7, out
+     result = dict(worker_result)
+     result.update({
+         "kind": "B_VERIFY_OFFLINE_RESULT",
+-        "case_id": case.get("id"),
++        "case_id": case_id,
+         "worker_rc": worker_rc,
++        "worker_started": True,
++        "worker_exited": True,
+         "worker_peak_bytes": worker_peak,
+-        "parent_peak_bytes": parent_peak,
+-        "measurement_method": "parent polling Windows GetProcessMemoryInfo PeakWorkingSetSize on worker; parent self peak separately",
+-        "elapsed_s": round(elapsed, 6),
++        "worker_self_peak_bytes": worker_result.get("worker_reported_peak_bytes"),
++        "memory_threshold_bytes": limits["worker_peak_working_set_bytes"],
++        "measurement_method": "parent polling Windows GetProcessMemoryInfo PeakWorkingSetSize on worker; self-report also retained",
+         "worker_stdout": "worker.stdout.log",
+         "worker_stderr": "worker.stderr.log",
+-        "stdout_bytes": stdout_size,
+-        "stderr_bytes": stderr_size,
+-        "log_truncated": log_truncated,
++        "stdout_bytes": stdout_path.stat().st_size,
++        "stderr_bytes": stderr_path.stat().st_size,
++        "log_truncated": result.get("log_truncated", False),
++        "elapsed_s": round(time.monotonic() - started, 6),
+         "command": command,
+-        "case_sha256": support.sha256_file(case_path),
++        "case_sha256": support.sha256_file(Path(case["file"])) if case.get("file") else None,
+         "run_py_sha256": support.sha256_file(Path(__file__)),
+-        "worker_sha256": support.sha256_file(WORKER),
++        "worker_sha256": support.sha256_file(Path(worker_path)),
+         "termination": "normal",
+     })
+-    result = write_result(out, result)
+-    return emit(result, out)
++    observed = [x for x in (worker_peak, worker_result.get("worker_reported_peak_bytes")) if x is not None]
++    if not observed:
++        result.update({"status": "TOOL_ERROR", "native_rc": 7,
++                       "termination": "memory_measurement_failed",
++                       "trigger": "no worker working-set observation"})
++        publish(out, result, limits["max_result_bytes"])
++        return result, 7, out
++    observed_peak = max(observed)
++    result["memory_observed_bytes"] = observed_peak
++    if observed_peak > limits["worker_peak_working_set_bytes"]:
++        result.update({"status": "LIMIT", "native_rc": 5,
++                       "fully_consumed": False,
++                       "termination": "memory_limit",
++                       "trigger": "worker peak exceeds configured threshold",
++                       "memory_threshold_bytes": limits["worker_peak_working_set_bytes"],
++                       "memory_observed_bytes": observed_peak})
++        publish(out, result, limits["max_result_bytes"])
++        return result, 5, out
++    published = publish(out, result, limits["max_result_bytes"])
++    if not published:
++        # No over-limit result file may be published; the real CLI rejects.
++        return result, 5, out
++    return result, result["native_rc"], out
++
++
++def main():
++    parser = argparse.ArgumentParser()
++    parser.add_argument("--case-file", required=True)
++    parser.add_argument("--input-root", required=True)
++    parser.add_argument("--out", required=True)
++    # Fixed, reviewed fixtures only; normal users do not need this option.
++    parser.add_argument("--fixture-worker", choices=("none", "log_flood", "sleep_forever",
++                                                     "nonzero_rc", "missing_result", "pass_text"),
++                        default="none")
++    args = parser.parse_args()
++    started = time.monotonic()
++    out = Path(args.out).resolve()
++    input_root = Path(args.input_root).resolve()
++    # Unified protection before any output mutation, including -O and bad CASE.
++    if out.exists():
++        return emit("TOOL_ERROR", "existing-out", None,
++                    {"error": "output directory already exists; no overwrite"})
++    if sys.flags.optimize != 0:
++        # The optimized runtime is rejected before any output creation, including
++        # when the requested output would be inside a protected tool tree.
++        return emit("INVALID_INPUT", "optimized-python", None,
++                    {"error": "Python -O/-OO is unsupported; no output created"})
++    if out == input_root or input_root in out.parents:
++        return emit("TOOL_ERROR", "protected-out", None,
++                    {"error": "output must be outside input root"})
++    if out == RETURN_ROOT or RETURN_ROOT in out.parents:
++        return emit("TOOL_ERROR", "protected-return", None,
++                    {"error": "output must be outside the return tool"})
++    if not input_root.is_dir():
++        return emit("INVALID_INPUT", "invalid-input-root", None,
++                    {"error": "input root is not a directory"})
++    try:
++        case = support.load_case(args.case_file)
++        support.validate_case_shape(case)
++        limits = support.normalize_limits(case.get("limits"))
++    except Exception as exc:
++        return emit("INVALID_INPUT", "invalid-case", None,
++                    {"error": "%s: %s" % (type(exc).__name__, exc)})
++    case["file"] = str(Path(args.case_file).resolve())
++    out.mkdir(parents=True, exist_ok=False)
++    worker = WORKER
++    if args.fixture_worker != "none":
++        mapping = {
++            "log_flood": HERE / "tests/fixtures/log_flood_worker.py",
++            "sleep_forever": HERE / "tests/fixtures/sleep_forever_worker.py",
++            "nonzero_rc": HERE / "tests/fixtures/nonzero_worker.py",
++            "missing_result": HERE / "tests/fixtures/missing_result_worker.py",
++            "pass_text": HERE / "tests/fixtures/pass_text_worker.py",
++        }
++        worker = mapping[args.fixture_worker]
++    result, rc, out = execute_case(case, input_root, out, limits, started, worker_path=worker)
++    return emit(result.get("status", "TOOL_ERROR"), result.get("case_id"), out,
++                {"error": result.get("error"), "worker_rc": result.get("worker_rc")})
+ 
+ 
+ if __name__ == "__main__":
+--- v01/src/support.py
++++ v02/src/support.py
+@@ -22,6 +22,8 @@
+ MAX_RESULT_BYTES = 1024 * 1024
+ MAX_LOG_BYTES = 4 * 1024 * 1024
+ MAX_WORKER_WS = 256 * 1024 * 1024
++CASE_MAX_BYTES = 1024 * 1024
++MIN_WORKER_OVERHEAD_BYTES = 8 * 1024 * 1024
+ DEFAULT_CASE_SECONDS = 180.0
+ DEFAULT_CLEANUP_SECONDS = 8.0
+ MAX_TOTAL_CASE_SECONDS = 188.0
+@@ -62,21 +64,50 @@
+     return hashlib.sha256(data).hexdigest().upper()
+ 
+ 
++def _is_reparse(path):
++    return bool(getattr(path.lstat(), "st_file_attributes", 0) & 0x400) or path.is_symlink()
++
++
+ def load_json(path, max_bytes=MAX_RESULT_BYTES):
+     p = Path(path)
+-    if not p.is_file() or p.stat().st_size > max_bytes:
+-        raise ValueError("JSON file missing or too large")
++    if not p.is_file() or p.is_symlink() or _is_reparse(p) or p.stat().st_size > max_bytes:
++        raise ValueError("JSON file missing, linked, or too large")
+     return json.loads(p.read_text(encoding="utf-8-sig"))
+ 
+ 
+-def dump_json(path, value):
++def load_case(path):
++    """CASE metadata is bounded before parsing; reject links/reparse and oversize."""
+     p = Path(path)
+-    data = json.dumps(value, ensure_ascii=False, indent=2) + "\n"
+-    if len(data.encode("utf-8")) > MAX_RESULT_BYTES:
+-        raise ValueError("JSON result exceeds result byte limit")
+-    with p.open("x", encoding="utf-8", newline="\n") as out:
+-        out.write(data)
+-    return len(data.encode("utf-8"))
++    if not p.is_file() or p.is_symlink() or _is_reparse(p):
++        raise ValueError("CASE is not a regular file")
++    if p.stat().st_size > CASE_MAX_BYTES:
++        raise ValueError("CASE exceeds 1MiB metadata limit")
++    return json.loads(p.read_text(encoding="utf-8-sig"))
++
++
++def dump_json(path, value, max_bytes=MAX_RESULT_BYTES):
++    """Atomically publish bounded JSON; return None rather than write oversize."""
++    p = Path(path)
++    data = (json.dumps(value, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
++    if len(data) > max_bytes:
++        return None
++    tmp = p.with_name(p.name + ".tmp-" + str(os.getpid()))
++    try:
++        with tmp.open("xb") as out:
++            out.write(data)
++            out.flush()
++            os.fsync(out.fileno())
++        if tmp.stat().st_size > max_bytes:
++            tmp.unlink()
++            return None
++        os.replace(tmp, p)
++        return len(data)
++    finally:
++        if tmp.exists():
++            try:
++                tmp.unlink()
++            except OSError:
++                pass
+ 
+ 
+ def normalize_limits(raw):
+--- v01/src/worker.py
++++ v02/src/worker.py
+@@ -6,6 +6,7 @@
+ from __future__ import annotations
+ 
+ import argparse
++import hashlib
+ import json
+ import sys
+ import time
+@@ -50,27 +51,43 @@
+         return value
+ 
+ 
+-def identity(root, spec):
+-    try:
+-        path = api.child(root, spec["path"])
+-        if spec["storage"] == "raw":
+-            return {"storage": "raw", "path": spec["path"],
+-                    "bytes": path.stat().st_size,
+-                    "sha256": support.sha256_file(path)}
+-        index = path / "index.json"
+-        meta = json.loads(index.read_text(encoding="utf-8-sig"))
+-        return {"storage": "archive", "path": spec["path"],
+-                "bytes": int(meta["bytes"]), "lines": int(meta["lines"]),
+-                "index_SHA256": support.sha256_file(index)}
+-    except Exception as exc:
+-        return {"storage": spec.get("storage"), "path": spec.get("path"),
+-                "error": type(exc).__name__, "sha256": None}
+-
+-
+-def field_name(stream, record):
+-    if record is None or record is SENTINEL:
+-        return None
+-    return FIELDS[stream].get(record[0], [])[0] if False else None
++def _deadline_check(deadline):
++    if deadline is not None and time.monotonic() > deadline:
++        raise api.InputError("TIMEOUT", "deadline during identity pre-read")
++
++
++def identity(root, spec, deadline, max_bytes):
++    """Bounded identity pre-read; it shares the case deadline."""
++    path = api.child(root, spec["path"])
++    if spec["storage"] == "raw":
++        size = path.stat().st_size
++        if size > max_bytes:
++            raise api.InputError("LIMIT", "raw input exceeds case byte budget before identity")
++        h = hashlib.sha256()
++        read = 0
++        with path.open("rb") as inp:
++            while True:
++                _deadline_check(deadline)
++                block = inp.read(1024 * 1024)
++                if not block:
++                    break
++                read += len(block)
++                if read > max_bytes:
++                    raise api.InputError("LIMIT", "raw input exceeds case byte budget during identity")
++                h.update(block)
++        return {"storage": "raw", "path": spec["path"], "bytes": size,
++                "sha256": h.hexdigest().upper()}
++    index = path / "index.json"
++    if not index.is_file() or index.is_symlink() or support._is_reparse(index):
++        raise api.InputError("INVALID_INPUT", "archive index is not a regular file")
++    if index.stat().st_size > 2 * 1024 * 1024:
++        raise api.InputError("INVALID_INPUT", "archive index exceeds 2MiB limit")
++    _deadline_check(deadline)
++    meta = json.loads(index.read_text(encoding="utf-8-sig"))
++    _deadline_check(deadline)
++    return {"storage": "archive", "path": spec["path"],
++            "bytes": int(meta["bytes"]), "lines": int(meta["lines"]),
++            "index_SHA256": support.sha256_file(index)}
+ 
+ 
+ def field_diff(stream, expected, actual):
+@@ -84,12 +101,12 @@
+     return None, expected, actual
+ 
+ 
+-def collect_neighbors(root, expected_spec, actual_spec, first, stream, limits, timeout):
+-    """Bounded diagnostic re-read; it never supplies the primary outcome."""
++def collect_neighbors(root, expected_spec, actual_spec, first, stream, limits, deadline):
++    """Bounded diagnostic re-read; it never gets a fresh budget."""
+     if not isinstance(first, int) or first < 1:
+         return [], None
+-    deadline = time.monotonic() + max(0.1, min(timeout, 10.0))
+     try:
++        _deadline_check(deadline)
+         left = api.records(root, expected_spec,
+                            max_records=limits["max_records_each"],
+                            max_bytes=limits["max_input_bytes_each"], deadline=deadline)
+@@ -124,15 +141,17 @@
+     parser.add_argument("--case-file", required=True)
+     parser.add_argument("--input-root", required=True)
+     parser.add_argument("--out", required=True)
++    parser.add_argument("--deadline-seconds", type=float, default=None)
+     args = parser.parse_args()
+     out = Path(args.out)
+     started = time.monotonic()
+-    case = json.loads(Path(args.case_file).read_text(encoding="utf-8-sig"))
++    case = support.load_case(args.case_file)
+     support.validate_case_shape(case)
+     limits = support.normalize_limits(case.get("limits"))
++    remaining = args.deadline_seconds
++    deadline = started + (float(remaining) if remaining is not None
++                          else limits["case_timeout_seconds"])
+     input_root = Path(args.input_root)
+-    stream = case["expected"]["stream"]
+-    deadline = started + limits["case_timeout_seconds"]
+     result = {
+         "kind": "B_VERIFY_OFFLINE_WORKER",
+         "case_id": case["id"],
+@@ -140,8 +159,8 @@
+         "CPU_function_proven": False,
+         "new_DUT": 0,
+         "limits": limits,
+-        "expected_input": identity(input_root, case["expected"]),
+-        "actual_input": identity(input_root, case["actual"]),
++        "expected_input": None,
++        "actual_input": None,
+         "status": "TOOL_ERROR",
+         "native_rc": 7,
+         "fully_consumed": False,
+@@ -158,6 +177,11 @@
+     exp_iter = act_iter = None
+     try:
+         api.runtime_guard()
++        result["expected_input"] = identity(input_root, case["expected"],
++                                            deadline, limits["max_input_bytes_each"])
++        result["actual_input"] = identity(input_root, case["actual"],
++                                          deadline, limits["max_input_bytes_each"])
++        stream = case["expected"]["stream"]
+         exp_iter = CountingIter(api.records(
+             input_root, case["expected"], max_records=limits["max_records_each"],
+             max_bytes=limits["max_input_bytes_each"], deadline=deadline))
+@@ -190,7 +214,7 @@
+             }
+             result["neighbors"], result["diagnostic_error"] = collect_neighbors(
+                 input_root, case["expected"], case["actual"], first["ordinal"], stream,
+-                limits, limits["case_timeout_seconds"])
++                limits, deadline)
+     except api.InputError as exc:
+         result.update({
+             "status": exc.status,
+@@ -202,7 +226,7 @@
+             "expected_records": exp_iter.count if exp_iter else 0,
+             "actual_records": act_iter.count if act_iter else 0,
+         })
+-    except MemoryError as exc:
++    except MemoryError:
+         result.update({"status": "TOOL_ERROR", "native_rc": 7, "error": "MemoryError",
+                        "termination": "resource_error"})
+     except Exception as exc:
+@@ -212,12 +236,19 @@
+     result["elapsed_s"] = round(time.monotonic() - started, 6)
+     result["worker_reported_peak_bytes"] = support.peak_working_set()
+     result["measurement_method"] = "Windows GetProcessMemoryInfo PeakWorkingSetSize (worker self-report); parent also measures child"
+-    support.dump_json(out / "worker-result.json", result)
++    published = support.dump_json(out / "worker-result.json", result,
++                                  max_bytes=limits["max_result_bytes"])
++    if published is None:
++        # No over-limit worker result may be published.  The CLI still has a
++        # bounded status line with the real rejection code.
++        print(json.dumps({"status": "LIMIT", "native_rc": 5, "case": result["case_id"],
++                          "reason": "worker-result exceeds max_result_bytes; no file published"},
++                         ensure_ascii=False))
++        return 5
+     print(json.dumps({"status": result["status"], "native_rc": result["native_rc"],
+                       "case": result["case_id"]}, ensure_ascii=False))
+     return result["native_rc"]
+ 
+-
+ if __name__ == "__main__":
+     sys.stdout.reconfigure(encoding="utf-8")
+     raise SystemExit(main())
+--- v01/tests/run_suite.py
++++ v02/tests/run_suite.py
+@@ -15,6 +15,8 @@
+ sys.dont_write_bytecode = True
+ sys.path.insert(0, str(RETURN_ROOT / "src"))
+ import support  # noqa: E402
++sys.path.insert(0, str(RETURN_ROOT))
++import RUN as runner  # noqa: E402
+ 
+ RUN = RETURN_ROOT / "RUN.py"
+ GEN = HERE / "generate.py"
+@@ -60,6 +62,12 @@
+                 shutil.copy2(src, dest / name)
+ 
+ 
++def hash_tree(root):
++    root = Path(root)
++    return {p.relative_to(root).as_posix(): support.sha256_file(p)
++            for p in root.rglob("*") if p.is_file()}
++
++
+ def artifact_text(path, limit=4 * 1024 * 1024):
+     p = Path(path)
+     if not p.exists():
+@@ -70,26 +78,76 @@
+     return data.decode("utf-8", errors="replace")
+ 
+ 
+-def expected_match(entry, result, rc, inputs):
++def expected_match(entry, result, rc, inputs, out=None):
+     exp = entry["expected"]
++    result_file = bool(out and (Path(out) / "result.json").is_file())
++    worker_file = bool(out and (Path(out) / "worker-result.json").is_file())
++    status_by_rc = {0: "MATCH", 2: "MISMATCH", 3: "INVALID_INPUT", 4: "INCOMPLETE",
++                    5: "LIMIT", 6: "TIMEOUT", 7: "TOOL_ERROR"}
+     actual = {
+-        "run_status": result.get("status") if result else ("TOOL_ERROR" if rc == 7 else "NO_RESULT"),
++        "run_status": result.get("status") if result else status_by_rc.get(rc, "NO_RESULT"),
+         "native_rc": result.get("native_rc") if result else rc,
++        "parent_rc": rc,
++        "result_file": result_file,
++        "worker_result_file": worker_file,
++        "output_created": bool(out and Path(out).exists()),
+         "checked": result.get("checked") if result else None,
+         "expected_records": result.get("expected_records") if result else None,
+         "actual_records": result.get("actual_records") if result else None,
++        "worker_started": result.get("worker_started") if result else None,
++        "worker_rc": result.get("worker_rc") if result else None,
++        "memory_threshold": result.get("memory_threshold_bytes") if result else None,
++        "memory_observed": result.get("memory_observed_bytes") if result else None,
++        "protected_tree_unchanged": result.get("protected_tree_unchanged") if result else None,
++        "marker_ok": bool(out and (Path(out) / "marker.txt").is_file()
++                         and (Path(out) / "marker.txt").read_text(encoding="ascii") == "preexisting\n"),
+         "first": result.get("first_difference") if result else None,
+         "inputs": inputs,
+     }
+     checks = []
+     checks.append(("status", actual["run_status"] == exp["run_status"]))
+     checks.append(("native_rc", int(actual["native_rc"]) == int(exp["native_rc"])))
++    checks.append(("parent_rc", int(actual["parent_rc"]) == int(exp["native_rc"])))
+     if "checked" in exp:
+         checks.append(("checked", actual["checked"] == exp["checked"]))
+     if "expected_records" in exp:
+         checks.append(("expected_records", actual["expected_records"] == exp["expected_records"]))
+     if "actual_records" in exp:
+         checks.append(("actual_records", actual["actual_records"] == exp["actual_records"]))
++    if "expect_result_file" in exp:
++        checks.append(("result_file", actual["result_file"] == bool(exp["expect_result_file"])))
++    if "output_created" in exp:
++        checks.append(("output_created", actual["output_created"] == bool(exp["output_created"])))
++    if "expect_worker_started" in exp:
++        checks.append(("worker_started", actual["worker_started"] == bool(exp["expect_worker_started"])))
++    if "worker_rc" in exp:
++        checks.append(("worker_rc", actual["worker_rc"] == exp["worker_rc"]))
++    if "memory_threshold" in exp:
++        checks.append(("memory_threshold", actual["memory_threshold"] == exp["memory_threshold"]))
++    if "memory_observed_gt" in exp:
++        checks.append(("memory_observed_gt", actual["memory_observed"] is not None
++                       and actual["memory_observed"] > exp["memory_observed_gt"]))
++    if "protected_tree_unchanged" in exp:
++        checks.append(("protected_tree_unchanged", actual["protected_tree_unchanged"] == bool(exp["protected_tree_unchanged"])))
++    if "marker_unchanged" in exp:
++        checks.append(("marker_unchanged", actual["marker_ok"] == bool(exp["marker_unchanged"])))
++    if "max_result_bytes" in exp:
++        p = (Path(out) / "result.json") if out else None
++        checks.append(("max_result_bytes", bool(p and p.is_file() and p.stat().st_size <= exp["max_result_bytes"])))
++    if "max_worker_result_bytes" in exp:
++        p = (Path(out) / "worker-result.json") if out else None
++        checks.append(("max_worker_result_bytes", bool(p and p.is_file() and p.stat().st_size <= exp["max_worker_result_bytes"])))
++    if "max_log_bytes" in exp:
++        vals = []
++        if out:
++            for n in ("worker.stdout.log", "worker.stderr.log"):
++                q = Path(out) / n
++                if q.exists():
++                    vals.append(q.stat().st_size)
++        checks.append(("max_log_bytes", bool(vals) and all(v <= exp["max_log_bytes"] for v in vals)))
++    if "max_elapsed" in exp:
++        checks.append(("max_elapsed", result is not None and result.get("elapsed_s") is not None
++                       and result.get("elapsed_s") <= exp["max_elapsed"]))
+     if "first" in exp and exp["first"] is not None:
+         first = actual["first"] or {}
+         checks.append(("first_ordinal", first.get("ordinal") == exp["first"]["ordinal"]))
+@@ -102,8 +160,6 @@
+         if "actual" in exp["first"]:
+             checks.append(("first_actual", first.get("actual") == exp["first"]["actual"]))
+     if "neighbor_ordinals" in exp:
+-        ords = [n.get("ordinal") for n in (actual.get("first") or {}).get("neighbors", [])] if False else None
+-        # actual neighbors are in result, not first_difference
+         neighbors = result.get("neighbors", []) if result else []
+         checks.append(("neighbors", [n.get("ordinal") for n in neighbors] == exp["neighbor_ordinals"]))
+     if "min_bytes_each" in exp:
+@@ -146,6 +202,11 @@
+         old.unlink()
+     for old in DIAG.glob("*.json"):
+         old.unlink()
++    for old in LOGS.iterdir():
++        if old.is_dir():
++            shutil.rmtree(old)
++        else:
++            old.unlink()
+     generate_log = LOGS / "generate.log"
+     generated_root = work / "input"
+     output_root = work / "out"
+@@ -172,8 +233,8 @@
+         rc = None
+         cmd = None
+         inputs = {}
+-        if kind in ("run", "existing_out", "optimized_python"):
+-            if kind == "run":
++        if kind in ("run", "existing_out", "optimized_python", "fixture"):
++            if entry.get("case"):
+                 case_obj = json.loads(json.dumps(entry["case"]))
+                 if entry.get("archive_manifest"):
+                     manifest = json.loads((generated_root / entry["archive_manifest"]).read_text(encoding="utf-8-sig"))
+@@ -194,6 +255,10 @@
+             if kind == "optimized_python":
+                 argv = [sys.executable, "-O", "-B", str(RUN), "--case-file", str(case_path),
+                         "--input-root", str(root), "--out", str(out)]
++            elif kind == "fixture":
++                argv = [sys.executable, "-B", str(RUN), "--case-file", str(case_path),
++                        "--input-root", str(root), "--out", str(out),
++                        "--fixture-worker", entry["fixture_worker"]]
+             else:
+                 argv = [sys.executable, "-B", str(RUN), "--case-file", str(case_path),
+                         "--input-root", str(root), "--out", str(out)]
+@@ -209,6 +274,94 @@
+                 inputs["actual_path"] = str(root / entry["case"]["actual"]["path"]) if entry.get("case") else None
+             row.update({"case_file": str(case_path.relative_to(RETURN_ROOT)),
+                         "command": {**cmd, "out": str(out)}})
++        elif kind == "optimized_protected":
++            write_case(CASES / "C3-optimized-protected.json", {
++                "id": "C3-optimized-protected",
++                "expected": {"storage": "raw", "stream": "trace", "path": "inputs/seeds/S00-duplicates-kept/expected.log", "complete": True},
++                "actual": {"storage": "raw", "stream": "trace", "path": "inputs/seeds/S00-duplicates-kept/actual.log", "complete": True},
++                "allow_empty": False, "limits": {}})
++            tool_copy = work / "protected-tool"
++            shutil.copytree(RETURN_ROOT, tool_copy)
++            before = hash_tree(tool_copy)
++            out = tool_copy / "forbidden-output-probe"
++            cmd = run_cmd([sys.executable, "-O", "-B", str(tool_copy / "RUN.py"),
++                           "--case-file", str(CASES / "C3-optimized-protected.json"),
++                           "--input-root", str(package), "--out", str(out)], tool_copy, timeout=120)
++            after = hash_tree(tool_copy)
++            rc = cmd["rc"]
++            result = {"status": "INVALID_INPUT" if rc == 3 else "NO_RESULT",
++                      "native_rc": rc, "fully_consumed": False,
++                      "checked": 0, "expected_records": 0, "actual_records": 0,
++                      "mismatch_count": 0, "differences": [],
++                      "worker_started": False,
++                      "protected_tree_unchanged": before == after}
++            row.update({"command": cmd, "output_created": out.exists(),
++                        "protected_tree_unchanged": before == after,
++                        "case_file": "tests/cases/C3-optimized-protected.json"})
++        elif kind == "invalid_case":
++            case_path.write_text("{not valid json\n", encoding="utf-8")
++            out = output_root / cid
++            cmd = run_cmd([sys.executable, "-B", str(RUN), "--case-file", str(case_path),
++                           "--input-root", str(package), "--out", str(out)], RETURN_ROOT, timeout=60)
++            rc = cmd["rc"]
++            result = None
++            row.update({"command": cmd, "output_created": out.exists(), "case_file": str(case_path.relative_to(RETURN_ROOT))})
++        elif kind == "invalid_root":
++            out = output_root / cid
++            cmd = run_cmd([sys.executable, "-B", str(RUN), "--case-file", str(CASES / "C0-default.json"),
++                           "--input-root", str(work / "missing-input-root"), "--out", str(out)],
++                          RETURN_ROOT, timeout=60)
++            rc = cmd["rc"]
++            result = None
++            row.update({"command": cmd, "output_created": out.exists()})
++        elif kind == "oversize_case":
++            case_path.write_text('{"id":"oversize","padding":"' + "X" * (1024 * 1024 + 1) + '"}', encoding="utf-8")
++            out = output_root / cid
++            cmd = run_cmd([sys.executable, "-B", str(RUN), "--case-file", str(case_path),
++                           "--input-root", str(package), "--out", str(out)], RETURN_ROOT, timeout=60)
++            rc = cmd["rc"]
++            result = None
++            row.update({"command": cmd, "output_created": out.exists(), "case_file": str(case_path.relative_to(RETURN_ROOT))})
++        elif kind == "oversize_index":
++            src = generated_root / "generated/block-boundary/expected_archive"
++            dst = generated_root / "generated/oversize-index"
++            shutil.copytree(src, dst)
++            with (dst / "index.json").open("ab") as fh:
++                fh.write(b" " * (2 * 1024 * 1024 + 2))
++            case_obj = {"id": cid,
++                        "expected": {"storage": "archive", "stream": "bus",
++                                     "path": "generated/oversize-index",
++                                     "index_SHA256": "A" * 64, "complete": True},
++                        "actual": {"storage": "archive", "stream": "bus",
++                                   "path": "generated/oversize-index",
++                                   "index_SHA256": "A" * 64, "complete": True},
++                        "allow_empty": False, "limits": {}}
++            write_case(case_path, case_obj)
++            out = output_root / cid
++            cmd = run_cmd([sys.executable, "-B", str(RUN), "--case-file", str(case_path),
++                           "--input-root", str(generated_root), "--out", str(out)], RETURN_ROOT, timeout=60)
++            rc = cmd["rc"]
++            if (out / "result.json").is_file():
++                result = support.load_json(out / "result.json")
++            row.update({"command": cmd, "case_file": str(case_path.relative_to(RETURN_ROOT))})
++        elif kind == "unit_memory":
++            case_obj = json.loads(json.dumps(entry["case"]))
++            write_case(case_path, case_obj)
++            case_obj["file"] = str(case_path)
++            out = output_root / cid
++            limits = support.normalize_limits(case_obj.get("limits"))
++            old_peak = support.peak_working_set
++            support.peak_working_set = lambda pid=None: None
++            try:
++                result, rc, out = runner.execute_case(
++                    case_obj, package, out, limits, time.monotonic(),
++                    worker_path=RETURN_ROOT / "tests/fixtures/no_peak_worker.py")
++            finally:
++                support.peak_working_set = old_peak
++            cmd = {"argv": ["internal:execute_case", "no_peak_worker.py"],
++                   "cwd": str(RETURN_ROOT), "rc": rc, "elapsed_s": result.get("elapsed_s"),
++                   "timed_out": False, "stdout": "", "stderr": ""}
++            row.update({"command": cmd, "case_file": str(case_path.relative_to(RETURN_ROOT))})
+         elif kind == "guard_nonzero_rc":
+             fake = {"status": "MATCH", "native_rc": 0, "ABI": support.ABI, "CPU_function_proven": False,
+                     "fully_consumed": True, "checked": 8, "expected_records": 8,
+@@ -270,13 +423,23 @@
+         else:
+             raise SystemExit("unknown kind " + kind)
+         if result is None:
+-            result = {"status": "TOOL_ERROR" if rc == 7 else "NO_RESULT",
+-                      "native_rc": rc if rc is not None else 7,
++            status_by_rc = {0: "MATCH", 2: "MISMATCH", 3: "INVALID_INPUT", 4: "INCOMPLETE",
++                            5: "LIMIT", 6: "TIMEOUT", 7: "TOOL_ERROR"}
++            cli = {}
++            try:
++                lines = [x for x in (cmd or {}).get("stdout", "").splitlines() if x.strip()]
++                cli = json.loads(lines[-1]) if lines else {}
++            except Exception:
++                cli = {}
++            result = {"status": cli.get("status", status_by_rc.get(rc, "NO_RESULT")),
++                      "native_rc": cli.get("native_rc", rc if rc is not None else 7),
++                      "worker_rc": cli.get("worker_rc"),
++                      "worker_started": bool(out and (Path(out) / "worker.stdout.log").is_file()),
+                       "fully_consumed": False, "checked": 0,
+                       "expected_records": 0, "actual_records": 0,
+                       "mismatch_count": 0, "differences": []}
+         if kind not in ("guard_nonzero_rc", "guard_printed_pass"):
+-            checks, actual = expected_match(entry, result, rc, inputs)
++            checks, actual = expected_match(entry, result, rc, inputs, out)
+             row["actual"] = actual
+             row["checks"] = [{"name": n, "pass": bool(v)} for n, v in checks]
+             row["test_status"] = "PASS" if all(v for _, v in checks) else "FAIL"
+@@ -295,7 +458,9 @@
+         (ind / "suite.stderr.log").write_text((cmd or {}).get("stderr", ""), encoding="utf-8")
+         if case_path.is_file():
+             shutil.copy2(case_path, ind / "case.json")
+-        if kind in ("run", "existing_out", "optimized_python", "moved"):
++        if kind in ("run", "existing_out", "optimized_python", "moved", "fixture",
++                    "optimized_protected", "invalid_case", "invalid_root",
++                    "oversize_case", "oversize_index", "unit_memory"):
+             diag = {"id": cid, "status": result.get("status"),
+                     "no_difference": not bool(result.get("differences")),
+                     "first_difference": result.get("first_difference"),
+@@ -327,8 +492,9 @@
+     all_pass = all(r["test_status"] == "PASS" for r in rows)
+     summary = {
+         "kind": "B_VERIFY_OFFLINE_RESULTS",
+-        "task": "B-VERIFY-OFFLINE-M0",
++        "task": "B-VERIFY-OFFLINE-M0-R1",
+         "ABI": support.ABI,
++        "amendment": "1.0.1 resource/error guards",
+         "plan": str(Path(args.plan).relative_to(RETURN_ROOT)) if Path(args.plan).is_relative_to(RETURN_ROOT) else args.plan,
+         "plan_sha256": plan_sha,
+         "source_package_manifest_sha256": plan["source_package"]["manifest_SHA256"],

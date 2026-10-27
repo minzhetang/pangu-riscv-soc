@@ -1,0 +1,636 @@
+{
+  "stage": "A independent B-R1 scoped review",
+  "date": "2026-10-27",
+  "source_manifest_SHA256": "5F06E6D6BCC3034D7EA1753BAE1168613519D45318881AD43B85E6F63371C8ED",
+  "frozen_before_execution": true,
+  "scope": "Host only; no B code/model/expected edits, no DUT/CPU/ISA/PDS/hardware",
+  "per_CLI_seconds": 120,
+  "stage_seconds": 900,
+  "parent_working_set_cap": 536870912,
+  "log_cap": 8388608,
+  "cases": [
+    {
+      "id": "P01-S00-duplicates-kept",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "P01-S00-duplicates-kept",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "P01-S01-wrong-field",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2,
+        "first": {
+          "ordinal": 5,
+          "field": "data"
+        },
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "P01-S01-wrong-field",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S01-wrong-field/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S01-wrong-field/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "P01-S02-missing-tail",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2,
+        "first": {
+          "ordinal": 8,
+          "field": null
+        },
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 7
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "P01-S02-missing-tail",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S02-missing-tail/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S02-missing-tail/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "P01-S03-unknown-data",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "P01-S03-unknown-data",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S03-unknown-data/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S03-unknown-data/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "P01-S04-empty-explicit",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 0,
+        "expected_records": 0,
+        "actual_records": 0
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "P01-S04-empty-explicit",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S04-empty-explicit/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S04-empty-explicit/actual.log",
+          "complete": true
+        },
+        "allow_empty": true,
+        "limits": {}
+      }
+    },
+    {
+      "id": "P01-S05-empty-forbidden",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "INCOMPLETE",
+        "native_rc": 4
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "P01-S05-empty-forbidden",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S05-empty-forbidden/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S05-empty-forbidden/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "P01-S06-bus-format",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 2,
+        "expected_records": 2,
+        "actual_records": 2
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "P01-S06-bus-format",
+        "expected": {
+          "storage": "raw",
+          "stream": "bus",
+          "path": "inputs/seeds/S06-bus-format/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "bus",
+          "path": "inputs/seeds/S06-bus-format/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "P02-R-performance-trace",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 3477732,
+        "expected_records": 3477732,
+        "actual_records": 3477732
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "P02-R-performance-trace",
+        "expected": {
+          "storage": "archive",
+          "stream": "trace",
+          "path": "inputs/archives/performance-trace",
+          "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA",
+          "complete": true
+        },
+        "actual": {
+          "storage": "archive",
+          "stream": "trace",
+          "path": "inputs/archives/performance-trace",
+          "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "P02-R-performance-bus",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 1124937,
+        "expected_records": 1124937,
+        "actual_records": 1124937
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "P02-R-performance-bus",
+        "expected": {
+          "storage": "archive",
+          "stream": "bus",
+          "path": "inputs/archives/performance-bus",
+          "index_SHA256": "2740C88449E42DF11033C9B4CA32D751C8830975F9E015E27327AF0FFFDF4011",
+          "complete": true
+        },
+        "actual": {
+          "storage": "archive",
+          "stream": "bus",
+          "path": "inputs/archives/performance-bus",
+          "index_SHA256": "2740C88449E42DF11033C9B4CA32D751C8830975F9E015E27327AF0FFFDF4011",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "P02-R-validation-trace",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 3651558,
+        "expected_records": 3651558,
+        "actual_records": 3651558
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "P02-R-validation-trace",
+        "expected": {
+          "storage": "archive",
+          "stream": "trace",
+          "path": "inputs/archives/validation-trace",
+          "index_SHA256": "AF2CA50BA2580EBE0969F68CECBFAFFD775FC5864FA0309E7B8FA0A27333950B",
+          "complete": true
+        },
+        "actual": {
+          "storage": "archive",
+          "stream": "trace",
+          "path": "inputs/archives/validation-trace",
+          "index_SHA256": "AF2CA50BA2580EBE0969F68CECBFAFFD775FC5864FA0309E7B8FA0A27333950B",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "P02-R-validation-bus",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 1124271,
+        "expected_records": 1124271,
+        "actual_records": 1124271
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "P02-R-validation-bus",
+        "expected": {
+          "storage": "archive",
+          "stream": "bus",
+          "path": "inputs/archives/validation-bus",
+          "index_SHA256": "CCF5CAD927E28BB9B630E25DA20EBF394D849D6365BF99C27A3990FEEA5BDB1A",
+          "complete": true
+        },
+        "actual": {
+          "storage": "archive",
+          "stream": "bus",
+          "path": "inputs/archives/validation-bus",
+          "index_SHA256": "CCF5CAD927E28BB9B630E25DA20EBF394D849D6365BF99C27A3990FEEA5BDB1A",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "C0-default",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8,
+        "expect_result_file": true,
+        "expect_worker_started": true
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "C0-default",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "C1-worker-memory",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "LIMIT",
+        "native_rc": 5,
+        "expect_result_file": true,
+        "expect_worker_started": false,
+        "memory_threshold": 1
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "C1-worker-memory",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "worker_peak_working_set_bytes": 1
+        }
+      }
+    },
+    {
+      "id": "C2-result-size",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "LIMIT",
+        "native_rc": 5,
+        "expect_result_file": false,
+        "expect_worker_started": true
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "C2-result-size",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "max_result_bytes": 256
+        }
+      }
+    },
+    {
+      "id": "R1-RESULT-ENOUGH",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "expect_result_file": true,
+        "max_result_bytes": 4096,
+        "max_worker_result_bytes": 4096
+      },
+      "fixture_worker": null,
+      "case": {
+        "id": "R1-RESULT-ENOUGH",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "max_result_bytes": 4096
+        }
+      }
+    },
+    {
+      "id": "R1-LOG-FLOOD",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "LIMIT",
+        "native_rc": 5,
+        "expect_result_file": true,
+        "max_log_bytes": 4096,
+        "expect_worker_started": true
+      },
+      "fixture_worker": "log_flood",
+      "case": {
+        "id": "R1-LOG-FLOOD",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "max_log_bytes_each": 4096
+        }
+      }
+    },
+    {
+      "id": "R1-WORKER-RC",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "TOOL_ERROR",
+        "native_rc": 7,
+        "expect_result_file": true,
+        "worker_rc": 17
+      },
+      "fixture_worker": "nonzero_rc",
+      "case": {
+        "id": "R1-WORKER-RC",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "R1-MISSING-RESULT",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "TOOL_ERROR",
+        "native_rc": 7,
+        "expect_result_file": true,
+        "worker_rc": 0
+      },
+      "fixture_worker": "missing_result",
+      "case": {
+        "id": "R1-MISSING-RESULT",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "R1-PASS-TEXT",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "TOOL_ERROR",
+        "native_rc": 7,
+        "expect_result_file": true,
+        "worker_rc": 0
+      },
+      "fixture_worker": "pass_text",
+      "case": {
+        "id": "R1-PASS-TEXT",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      }
+    },
+    {
+      "id": "C3-O-protected",
+      "kind": "protected",
+      "expected": {
+        "rc": 3,
+        "no_tree_changes": true
+      }
+    },
+    {
+      "id": "C3-OO-protected",
+      "kind": "protected",
+      "expected": {
+        "rc": 3,
+        "no_tree_changes": true
+      }
+    },
+    {
+      "id": "invalid-JSON-protected",
+      "kind": "protected",
+      "expected": {
+        "rc": 7,
+        "no_tree_changes": true
+      }
+    },
+    {
+      "id": "oversized-CASE",
+      "kind": "input",
+      "expected": {
+        "rc": 3,
+        "no_output": true
+      }
+    },
+    {
+      "id": "active-memory-guard",
+      "kind": "resource_fixture_internal",
+      "expected": {
+        "active_kill": true,
+        "rc": 5,
+        "cap_bytes": 16777216,
+        "allocation_bytes": 33554432
+      }
+    },
+    {
+      "id": "main-deadline",
+      "kind": "resource_fixture_internal",
+      "expected": {
+        "main_seconds": 1,
+        "cleanup_seconds": 1,
+        "kill_called_by_seconds": 1.1,
+        "total_by_seconds": 2.1,
+        "rc": 6
+      }
+    }
+  ],
+  "not_run": [
+    "B whole54 suite or fresh128MiB stress; targeted P0 failures suffice to withhold production acceptance"
+  ]
+}

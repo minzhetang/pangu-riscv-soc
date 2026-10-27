@@ -1,0 +1,297 @@
+[
+  {
+    "path": "COMMANDS.md",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "OPEN_ITEMS.md",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/IDENTITY.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/old-v01/C0-default/C0-default/command.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/old-v01/C0-default/C0-default/result.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/old-v01/C0-default/C0-default/worker-result.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/old-v01/C1-worker-memory/C1-worker-memory/command.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/old-v01/C1-worker-memory/C1-worker-memory/result.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/old-v01/C1-worker-memory/C1-worker-memory/worker-result.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/old-v01/C2-result-size/C2-result-size/command.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/old-v01/C2-result-size/C2-result-size/result.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/old-v01/C2-result-size/C2-result-size/worker-result.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/old-v01/C3-optimized-protected/forbidden-output-probe/result.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/task/APPROVAL.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/task/BASELINE.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/task/C0-default.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/task/C1-worker-memory.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/task/C2-result-size.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/task/C3-optimized-protected-output.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/task/COUNTEREXAMPLES.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/task/REPRODUCE.md",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/task/START_HERE.md",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/task/TASK.md",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "r1/task/TEAMMATE_PROMPT.md",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "R1_RESPONSE.md",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "RECEIPT.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "RUN.py",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "SOURCE_INDEX.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "src/support.py",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "src/worker.py",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "START_HERE.md",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/C0-default.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/C1-worker-memory.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/C2-result-size.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/C3-optimized-protected.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/R1-EXISTING-OUT.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/R1-INVALID-JSON.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/R1-LOG-FLOOD.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/R1-MEM-MEASURE.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/R1-MEM-OVER.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/R1-MISSING-RESULT.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/R1-OVERSIZE-CASE.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/R1-OVERSIZE-INDEX.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/R1-PASS-TEXT.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/R1-RESULT-ENOUGH.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/R1-TIMEOUT-TOTAL.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/cases/R1-WORKER-RC.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/fixtures/log_flood_worker.py",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/fixtures/missing_result_worker.py",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/fixtures/no_peak_worker.py",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/fixtures/nonzero_worker.py",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/fixtures/pass_text_worker.py",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/fixtures/sleep_forever_worker.py",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/history/PLAN-v01.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/history/PLAN-v01.sha256",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/history/results-v01.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/PLAN.json",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/PLAN.sha256",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  },
+  {
+    "path": "tests/run_suite.py",
+    "status": "APPLIED_EXACT_LINES",
+    "error": null
+  }
+]

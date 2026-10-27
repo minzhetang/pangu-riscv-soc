@@ -1,0 +1,344 @@
+{
+  "status": "MATERIAL_REVIEW_NOT_A_RUNTIME_PASS",
+  "original37_plan_identical": true,
+  "history_original_files_identical": true,
+  "metadata_mismatches": [],
+  "source_index_entries": 85,
+  "changed_entries": 537,
+  "diff_sections": 59,
+  "diff_bytes": 1567524,
+  "B_results": [
+    {
+      "id": "P01-S00-duplicates-kept",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "P01-S01-wrong-field",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "P01-S02-missing-tail",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "P01-S03-unknown-data",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "P01-S04-empty-explicit",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "P01-S05-empty-forbidden",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "P01-S06-bus-format",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "P02-R-performance-trace",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "P02-R-performance-bus",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "P02-R-validation-trace",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "P02-R-validation-bus",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F01",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F02",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F03",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F04",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F05",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F06",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F07",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F08",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F13",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F09",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F10",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F11",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F12",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F14",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F15",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "F16",
+      "B_status": "PASS",
+      "kind": "existing_out",
+      "issues": []
+    },
+    {
+      "id": "F17",
+      "B_status": "PASS",
+      "kind": "guard_nonzero_rc",
+      "issues": []
+    },
+    {
+      "id": "F18",
+      "B_status": "PASS",
+      "kind": "guard_printed_pass",
+      "issues": []
+    },
+    {
+      "id": "F19",
+      "B_status": "PASS",
+      "kind": "optimized_python",
+      "issues": []
+    },
+    {
+      "id": "D01",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "D02",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "R01",
+      "B_status": "PASS",
+      "kind": "moved",
+      "issues": []
+    },
+    {
+      "id": "S01-1",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "S01-16",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "S01-128",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "S02",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "C0-default",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "C1-worker-memory",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "C2-result-size",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "C3-optimized-protected",
+      "B_status": "PASS",
+      "kind": "optimized_protected",
+      "issues": []
+    },
+    {
+      "id": "R1-MEM-OVER",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "R1-RESULT-ENOUGH",
+      "B_status": "PASS",
+      "kind": "run",
+      "issues": []
+    },
+    {
+      "id": "R1-LOG-FLOOD",
+      "B_status": "PASS",
+      "kind": "fixture",
+      "issues": []
+    },
+    {
+      "id": "R1-TIMEOUT-TOTAL",
+      "B_status": "PASS",
+      "kind": "fixture",
+      "issues": []
+    },
+    {
+      "id": "R1-WORKER-RC",
+      "B_status": "PASS",
+      "kind": "fixture",
+      "issues": []
+    },
+    {
+      "id": "R1-MISSING-RESULT",
+      "B_status": "PASS",
+      "kind": "fixture",
+      "issues": []
+    },
+    {
+      "id": "R1-PASS-TEXT",
+      "B_status": "PASS",
+      "kind": "fixture",
+      "issues": []
+    },
+    {
+      "id": "R1-INVALID-JSON",
+      "B_status": "PASS",
+      "kind": "invalid_case",
+      "issues": []
+    },
+    {
+      "id": "R1-INVALID-ROOT",
+      "B_status": "PASS",
+      "kind": "invalid_root",
+      "issues": []
+    },
+    {
+      "id": "R1-OVERSIZE-CASE",
+      "B_status": "PASS",
+      "kind": "oversize_case",
+      "issues": []
+    },
+    {
+      "id": "R1-OVERSIZE-INDEX",
+      "B_status": "PASS",
+      "kind": "oversize_index",
+      "issues": []
+    },
+    {
+      "id": "R1-EXISTING-OUT",
+      "B_status": "PASS",
+      "kind": "existing_out",
+      "issues": []
+    },
+    {
+      "id": "R1-MEM-MEASURE",
+      "B_status": "PASS",
+      "kind": "unit_memory",
+      "issues": []
+    }
+  ],
+  "B_test_count": 54,
+  "B_RAW_log_inconsistencies": [],
+  "known_contract_gaps": [
+    "RUN.execute_case lacks in-loop memory threshold/fail-closed/parent budget checks",
+    "worker stdout/stderr written directly then truncated, not bounded sink",
+    "parent enforces hard_deadline after cleanup instead of main deadline, then fresh waits",
+    "R1-TIMEOUT frozen max_elapsed2.6 exceeds authorized total2+0.1 observation tolerance"
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "status": "INDEPENDENT_REVIEW_WITH_FAILURES",
+  "cases": [
+    {
+      "id": "P01-S00-duplicates-kept",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8
+      },
+      "actual": {
+        "native_rc": 0,
+        "CLI_status": "MATCH",
+        "checked": 8,
+        "worker_rc": 0,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 72,
+        "seconds": 0.234,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "checked": true,
+          "expected_records": true,
+          "actual_records": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "P01-S01-wrong-field",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2,
+        "first": {
+          "ordinal": 5,
+          "field": "data"
+        },
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8
+      },
+      "actual": {
+        "native_rc": 2,
+        "CLI_status": "MISMATCH",
+        "checked": 8,
+        "worker_rc": 2,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 71,
+        "seconds": 0.203,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "checked": true,
+          "expected_records": true,
+          "actual_records": true,
+          "first_ordinal": true,
+          "first_field": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "P01-S02-missing-tail",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2,
+        "first": {
+          "ordinal": 8,
+          "field": null
+        },
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 7
+      },
+      "actual": {
+        "native_rc": 2,
+        "CLI_status": "MISMATCH",
+        "checked": 8,
+        "worker_rc": 2,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 72,
+        "seconds": 0.203,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "checked": true,
+          "expected_records": true,
+          "actual_records": true,
+          "first_ordinal": true,
+          "first_field": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "P01-S03-unknown-data",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3
+      },
+      "actual": {
+        "native_rc": 3,
+        "CLI_status": "INVALID_INPUT",
+        "checked": 2,
+        "worker_rc": 3,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 77,
+        "seconds": 0.203,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "P01-S04-empty-explicit",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 0,
+        "expected_records": 0,
+        "actual_records": 0
+      },
+      "actual": {
+        "native_rc": 0,
+        "CLI_status": "MATCH",
+        "checked": 0,
+        "worker_rc": 0,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 71,
+        "seconds": 0.203,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "checked": true,
+          "expected_records": true,
+          "actual_records": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "P01-S05-empty-forbidden",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "INCOMPLETE",
+        "native_rc": 4
+      },
+      "actual": {
+        "native_rc": 4,
+        "CLI_status": "INCOMPLETE",
+        "checked": 0,
+        "worker_rc": 4,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 77,
+        "seconds": 0.219,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "P01-S06-bus-format",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 2,
+        "expected_records": 2,
+        "actual_records": 2
+      },
+      "actual": {
+        "native_rc": 0,
+        "CLI_status": "MATCH",
+        "checked": 2,
+        "worker_rc": 0,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 67,
+        "seconds": 0.234,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "checked": true,
+          "expected_records": true,
+          "actual_records": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "P02-R-performance-trace",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 3477732,
+        "expected_records": 3477732,
+        "actual_records": 3477732
+      },
+      "actual": {
+        "native_rc": 0,
+        "CLI_status": "MATCH",
+        "checked": 3477732,
+        "worker_rc": 0,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 72,
+        "seconds": 16.5,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "checked": true,
+          "expected_records": true,
+          "actual_records": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "P02-R-performance-bus",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 1124937,
+        "expected_records": 1124937,
+        "actual_records": 1124937
+      },
+      "actual": {
+        "native_rc": 0,
+        "CLI_status": "MATCH",
+        "checked": 1124937,
+        "worker_rc": 0,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 70,
+        "seconds": 19.468,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "checked": true,
+          "expected_records": true,
+          "actual_records": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "P02-R-validation-trace",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 3651558,
+        "expected_records": 3651558,
+        "actual_records": 3651558
+      },
+      "actual": {
+        "native_rc": 0,
+        "CLI_status": "MATCH",
+        "checked": 3651558,
+        "worker_rc": 0,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 71,
+        "seconds": 17.453,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "checked": true,
+          "expected_records": true,
+          "actual_records": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "P02-R-validation-bus",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 1124271,
+        "expected_records": 1124271,
+        "actual_records": 1124271
+      },
+      "actual": {
+        "native_rc": 0,
+        "CLI_status": "MATCH",
+        "checked": 1124271,
+        "worker_rc": 0,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 69,
+        "seconds": 19.375,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "checked": true,
+          "expected_records": true,
+          "actual_records": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "C0-default",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8,
+        "expect_result_file": true,
+        "expect_worker_started": true
+      },
+      "actual": {
+        "native_rc": 0,
+        "CLI_status": "MATCH",
+        "checked": 8,
+        "worker_rc": 0,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 59,
+        "seconds": 0.204,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "checked": true,
+          "expected_records": true,
+          "actual_records": true,
+          "worker_started": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "C1-worker-memory",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "LIMIT",
+        "native_rc": 5,
+        "expect_result_file": true,
+        "expect_worker_started": false,
+        "memory_threshold": 1
+      },
+      "actual": {
+        "native_rc": 5,
+        "CLI_status": "LIMIT",
+        "checked": 0,
+        "worker_rc": null,
+        "worker_started": false,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 0,
+        "seconds": 0.109,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "worker_started": true,
+          "result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "C2-result-size",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "LIMIT",
+        "native_rc": 5,
+        "expect_result_file": false,
+        "expect_worker_started": true
+      },
+      "actual": {
+        "native_rc": 5,
+        "CLI_status": "LIMIT",
+        "checked": null,
+        "worker_rc": null,
+        "worker_started": null,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 134,
+        "seconds": 0.203,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "worker_started": true,
+          "no_result_files": true
+        }
+      }
+    },
+    {
+      "id": "R1-RESULT-ENOUGH",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "expect_result_file": true,
+        "max_result_bytes": 4096,
+        "max_worker_result_bytes": 4096
+      },
+      "actual": {
+        "native_rc": 0,
+        "CLI_status": "MATCH",
+        "checked": 8,
+        "worker_rc": 0,
+        "worker_started": true,
+        "raw_worker_log_bytes": null,
+        "independent_peak_worker_log_size": 65,
+        "seconds": 0.203,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "result.json_bounded": true,
+          "worker-result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "R1-LOG-FLOOD",
+      "status": "FAIL",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "LIMIT",
+        "native_rc": 5,
+        "expect_result_file": true,
+        "max_log_bytes": 4096,
+        "expect_worker_started": true
+      },
+      "actual": {
+        "native_rc": 5,
+        "CLI_status": "LIMIT",
+        "checked": 0,
+        "worker_rc": 0,
+        "worker_started": true,
+        "raw_worker_log_bytes": 5242880,
+        "independent_peak_worker_log_size": 5242880,
+        "seconds": 0.141,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "worker_started": true,
+          "result.json_bounded": true,
+          "no_transient_overlimit_log": false
+        }
+      }
+    },
+    {
+      "id": "R1-WORKER-RC",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "TOOL_ERROR",
+        "native_rc": 7,
+        "expect_result_file": true,
+        "worker_rc": 17
+      },
+      "actual": {
+        "native_rc": 7,
+        "CLI_status": "TOOL_ERROR",
+        "checked": 0,
+        "worker_rc": 17,
+        "worker_started": true,
+        "raw_worker_log_bytes": 0,
+        "independent_peak_worker_log_size": 0,
+        "seconds": 0.14,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "R1-MISSING-RESULT",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "TOOL_ERROR",
+        "native_rc": 7,
+        "expect_result_file": true,
+        "worker_rc": 0
+      },
+      "actual": {
+        "native_rc": 7,
+        "CLI_status": "TOOL_ERROR",
+        "checked": 0,
+        "worker_rc": 0,
+        "worker_started": true,
+        "raw_worker_log_bytes": 0,
+        "independent_peak_worker_log_size": 0,
+        "seconds": 0.141,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "R1-PASS-TEXT",
+      "status": "PASS",
+      "kind": "CLI",
+      "expected": {
+        "run_status": "TOOL_ERROR",
+        "native_rc": 7,
+        "expect_result_file": true,
+        "worker_rc": 0
+      },
+      "actual": {
+        "native_rc": 7,
+        "CLI_status": "TOOL_ERROR",
+        "checked": 0,
+        "worker_rc": 0,
+        "worker_started": true,
+        "raw_worker_log_bytes": 58,
+        "independent_peak_worker_log_size": 58,
+        "seconds": 0.14,
+        "checks": {
+          "parent_rc": true,
+          "CLI_status": true,
+          "result.json_bounded": true
+        }
+      }
+    },
+    {
+      "id": "C3-O-protected",
+      "status": "PASS",
+      "kind": "protected",
+      "expected": {
+        "rc": 3,
+        "no_tree_changes": true
+      },
+      "actual": {
+        "rc": 3,
+        "protected_tree_unchanged": true,
+        "output_created": false
+      }
+    },
+    {
+      "id": "C3-OO-protected",
+      "status": "PASS",
+      "kind": "protected",
+      "expected": {
+        "rc": 3,
+        "no_tree_changes": true
+      },
+      "actual": {
+        "rc": 3,
+        "protected_tree_unchanged": true,
+        "output_created": false
+      }
+    },
+    {
+      "id": "invalid-JSON-protected",
+      "status": "PASS",
+      "kind": "protected",
+      "expected": {
+        "rc": 7,
+        "no_tree_changes": true
+      },
+      "actual": {
+        "rc": 7,
+        "protected_tree_unchanged": true,
+        "output_created": false
+      }
+    },
+    {
+      "id": "oversized-CASE",
+      "status": "PASS",
+      "kind": "input",
+      "expected": {
+        "rc": 3,
+        "no_output": true
+      },
+      "actual": {
+        "rc": 3,
+        "output_created": false
+      }
+    },
+    {
+      "id": "active-memory-guard",
+      "status": "FAIL",
+      "expected": {
+        "active_kill": true,
+        "rc": 5
+      },
+      "evidence": {
+        "observed_peak": 52289536,
+        "over_limit_observations": 158,
+        "over_limit_span_s": 0.828,
+        "worker_rc": 0,
+        "final_status": "LIMIT"
+      },
+      "kill_elapsed_s": [],
+      "elapsed_s": 0.906,
+      "actual_parent_function_rc": 5,
+      "guard_fixture_only": true,
+      "new_DUT": 0,
+      "production_source_unchanged": true
+    },
+    {
+      "id": "main-deadline",
+      "status": "FAIL",
+      "expected": {
+        "kill_by_s": 1.1,
+        "total_by_s": 2.1,
+        "rc": 6
+      },
+      "evidence": {
+        "worker_rc": 1,
+        "final_status": "TIMEOUT"
+      },
+      "kill_elapsed_s": [
+        2.016
+      ],
+      "elapsed_s": 2.031,
+      "actual_parent_function_rc": 6,
+      "guard_fixture_only": true,
+      "new_DUT": 0,
+      "production_source_unchanged": true
+    }
+  ],
+  "total": 25,
+  "PASS": 22,
+  "FAIL": 3,
+  "seconds": 81.281,
+  "new_DUT": 0,
+  "hardware": "STOPPED",
+  "not_full54": true
+}

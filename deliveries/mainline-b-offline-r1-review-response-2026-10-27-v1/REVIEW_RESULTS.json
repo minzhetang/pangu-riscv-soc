@@ -1,0 +1,56 @@
+{
+  "date_client": "2026-10-27",
+  "fact": "F161",
+  "decision": "D162",
+  "acceptance": "CONDITIONAL_ACCEPTANCE",
+  "production_resource_approval": "NOT_ACCEPTED_G1_G2_G3_OPEN",
+  "material": {
+    "files": 540,
+    "SHA_entries": 539,
+    "manifest_SHA256": "5F06E6D6BCC3034D7EA1753BAE1168613519D45318881AD43B85E6F63371C8ED",
+    "bytes": 5161927,
+    "plan_SHA256": "82C42434FDE78495B6A3F9F945756F1ADE464EEEB6A5E9DC3D63E5C5F442AA4F",
+    "declared_changes": 537,
+    "source_index": 85,
+    "diff_sections_exact": 59,
+    "original37_unchanged": true
+  },
+  "B_evidence": {
+    "local54_all_pass": true,
+    "raw_records_consistent": true,
+    "not_A_reproduced54": true
+  },
+  "A": {
+    "new_host_cases": 25,
+    "PASS": 22,
+    "FAIL": 3,
+    "host_seconds": 81.281,
+    "portable_counterexample_rerun_count": 3,
+    "portable_counterexample_status": "ALL_THREE_FAILURES_REPRODUCED;bootstrap rc1 expected",
+    "old_observation_records_replayed": 9378498,
+    "new_DUT": 0
+  },
+  "closure": {
+    "C0": "CLOSED_LIMITED",
+    "C1_1B_preflight": "CLOSED_LIMITED;GENERAL_ACTIVE_MEMORY_STILL_OPEN",
+    "C2_256B": "CLOSED_LIMITED",
+    "C3_protected_output": "CLOSED_LIMITED",
+    "G1_runtime_memory_parent": "OPEN",
+    "G2_streaming_log_sink": "OPEN",
+    "G3_main_and_total_deadline": "OPEN"
+  },
+  "interface": "ABI1.0.0/frozen bytes identical; no new production adapter integration",
+  "mainline": "F160 unchanged; B tool not a dependency or replacement for A production checker",
+  "hardware": "STOPPED",
+  "not_run": [
+    "whole B54 under A",
+    "fresh128MiB stress",
+    "CPU/ISA/reference/DUT/PDS/hardware"
+  ],
+  "source_protected": {
+    "B_v02": 540,
+    "B_v01": 374,
+    "mainline_frozen": 60
+  },
+  "followup": "D158 same bounded guard corrections only; reply ready not sent; no new deadline promised"
+}

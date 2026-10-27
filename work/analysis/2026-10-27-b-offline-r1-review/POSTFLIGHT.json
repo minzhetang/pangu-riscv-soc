@@ -1,0 +1,12 @@
+{
+  "status": "ORIGINALS_UNCHANGED_FAILURES_PRESERVED",
+  "B_files": 540,
+  "v01_files": 374,
+  "mainline_frozen": 60,
+  "response_files": 9,
+  "response_manifest_SHA256": "E5B65332FE321E8AFD8826FBEF2B6A1204E49D4E932E30A50CCFAE675E72D96C",
+  "response_manifest_entries": 8,
+  "new_DUT": 0,
+  "hardware": "STOPPED",
+  "python_version": "3.12.14"
+}

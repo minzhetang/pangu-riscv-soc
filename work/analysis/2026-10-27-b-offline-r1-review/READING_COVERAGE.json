@@ -1,0 +1,4097 @@
+{
+  "total": 540,
+  "all_bytes_hashed": true,
+  "all_text_read": true,
+  "expected_invalid_JSON": 2,
+  "none_unreadable": true,
+  "rows": [
+    {
+      "path": "CHANGED_FILES.json",
+      "bytes": 157560,
+      "SHA256": "21EE830E5A85011B0737E5A1AE036EA8D3C0D060E05A8736E94D3A64AEE16AE4",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "ALL_DECLARED_HASHES_AND_SIZES_CROSSCHECKED"
+    },
+    {
+      "path": "COMMANDS.md",
+      "bytes": 43565,
+      "SHA256": "BE927E6AE87ED7BD8733EE8FDF50C0F10DA252B5A6ECA1C4AADC490F658F1A2C",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "DIFF.patch",
+      "bytes": 1567524,
+      "SHA256": "6AF639690EAF42F03B6063BA997965DD4DFC7395FC242B219DA85B16409E09BF",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "ALL_59_HUNKS_APPLIED_TO_V01_MATCH_V02"
+    },
+    {
+      "path": "OPEN_ITEMS.md",
+      "bytes": 1030,
+      "SHA256": "79D561499A3DF4A68D68AAE08EAAC94E8333E71E685A6E656E9A2D33256E5981",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "R1_RESPONSE.md",
+      "bytes": 5008,
+      "SHA256": "53C30AC4D9A1FF448644DB4FF60BFCE67196645E32E975EF08A63FF579F854D5",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "RECEIPT.json",
+      "bytes": 1659,
+      "SHA256": "98C882AC66100E9C7862F76A5A18BBF5BD24421B866D27D54D2AC5EF376205F5",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "RUN.py",
+      "bytes": 14975,
+      "SHA256": "60E668DFB25600C19CCEEF7DFF16452C77A36EC1D787F280F371CCF97C9F34BC",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "FULL_SOURCE_REVIEWED"
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "bytes": 52371,
+      "SHA256": "5F06E6D6BCC3034D7EA1753BAE1168613519D45318881AD43B85E6F63371C8ED",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "SOURCE_INDEX.json",
+      "bytes": 13825,
+      "SHA256": "0401BED9EDE6972EE65DE36E2A5CD5C459A84C76B8B410A2DA3F332A6396D17E",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "ALL_DECLARED_HASHES_AND_SIZES_CROSSCHECKED"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 2479,
+      "SHA256": "FBB686C322E3AF977001344E572BE0EA6BE81363B7F21CA8D115E33468078931",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "diagnostics/C0-default.json",
+      "bytes": 232,
+      "SHA256": "FDD59C8599E8C9F1DB509CAEFA046BD5CA4D330922634C326C8F230F9C667101",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/C1-worker-memory.json",
+      "bytes": 238,
+      "SHA256": "DF81730E41D0969FBAFB1622D6634557FD813244E35BE9F2A634EBD1803002AB",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/C2-result-size.json",
+      "bytes": 236,
+      "SHA256": "C590012937F85FAB43E468CD397739AEA14717A49470224868E85F46962D9B96",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/C3-optimized-protected.json",
+      "bytes": 252,
+      "SHA256": "01A28FA032B14520B6D3378853FA7D43A859A7D1767E61834D34B2FBA7B25BB6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/D01.json",
+      "bytes": 1984,
+      "SHA256": "13BFCDE2E5ED8FFE173CE88C50B16730B8FC8BF2E0C1173D562359C5BB6B8CFE",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/D02.json",
+      "bytes": 4076,
+      "SHA256": "179FAF64B7360D10C8E34C325152D8E43CAFCB66362EAF774A64CCC09BA4C4B6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F01.json",
+      "bytes": 2900,
+      "SHA256": "E56977677955038A53CB5CEE199A58B0C52CF2459D25AD2EDEFB0861C8531E13",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F02.json",
+      "bytes": 2874,
+      "SHA256": "0D3F0B4A342153B6B5F5A463E3BC20352265DF9E9FAC975D10AE0AD0F1757F19",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F03.json",
+      "bytes": 2874,
+      "SHA256": "9FB987C0205537CE2BF87EDD6D0704F9D66C2CCB7CE2F2FD054DF045436D7A24",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F04.json",
+      "bytes": 225,
+      "SHA256": "D035A7BBDFD85C704395D20FC54FE20B9697767636AA0DEE7F19FB4F74776E03",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F05.json",
+      "bytes": 2116,
+      "SHA256": "7FA2350BB6C4E7DD71EF3D22F57A07101AEB8FA597C22359692776D3A1A32E55",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F06.json",
+      "bytes": 1984,
+      "SHA256": "9B62A09AAED55882DA31A25AFD2B0F21626E5A4BBBDFC50C9E96BBF577E30FD0",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F07.json",
+      "bytes": 253,
+      "SHA256": "80586D3EF096C697A714EB22835DF58421B5625615DD059493AC806764128BAC",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F08.json",
+      "bytes": 250,
+      "SHA256": "28BE0987459884B98AAE132DB2A08EE7D58E527A6D355E9683B35C8181FE9358",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F09.json",
+      "bytes": 261,
+      "SHA256": "95BAA208055A9443792D143609958CA8874837E7DA4509411413E24AB311343E",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F10.json",
+      "bytes": 271,
+      "SHA256": "904106F36EEF070D3C465AF2963E25A361E1A6300435BEDE8F4DDF0872B196CB",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F11.json",
+      "bytes": 271,
+      "SHA256": "C80C0333492F51E8852296B92A7FACFD9F1A8E860B5630B28A26D1C5CBA11EE9",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F12.json",
+      "bytes": 251,
+      "SHA256": "1026B8E1412AF3A67947451D0F4D5D4F9C864B215ADB6C8D514E79CCDD2A0A12",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F13.json",
+      "bytes": 249,
+      "SHA256": "4720D1E3F2DBDBC3F8A85C402E635EDE94DE761581B8F88374A89DD0633E23C2",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F14.json",
+      "bytes": 273,
+      "SHA256": "F38D2784A13E8B2336257F53F6178E72DD08D7A379F65E964B21CBC445A9D876",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F15.json",
+      "bytes": 258,
+      "SHA256": "0A65D33D4E2D206F5875164F99852F7FBEA332D35C68E5A64FDFEFAE9210F012",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F16.json",
+      "bytes": 230,
+      "SHA256": "01CED89BDA27CA6628E6C5DD4D539EEFDDCF16D3DAC47DA484C580D5ED0C2439",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/F19.json",
+      "bytes": 233,
+      "SHA256": "8EE293F2541E56D3C2CFB1C03E150576BF0133663AF183CBE6B88FDE654B37D9",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/P01-S00-duplicates-kept.json",
+      "bytes": 245,
+      "SHA256": "EB754BE6F0FA611CAA9DB1955F4B7AE32F45346BD76D806D4582086474706484",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/P01-S01-wrong-field.json",
+      "bytes": 2000,
+      "SHA256": "3D7A55BA56C8DBA9BAFB23AC6B7235F4485C2FAF5CF835A968423627792FE1F7",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/P01-S02-missing-tail.json",
+      "bytes": 1376,
+      "SHA256": "9C5A7C775D713CEC27C681CB76ED7489E448247780AF718F32036820DD9F7C7B",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/P01-S03-unknown-data.json",
+      "bytes": 270,
+      "SHA256": "0DFB47D608BCA4BEAD49FF32B9BB0EEE01252F426B2CDA5BCFD0455086EB4770",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/P01-S04-empty-explicit.json",
+      "bytes": 244,
+      "SHA256": "F78D85DD598AB78CA04DC15DB705279EFC9303B0D52838ABD05FA98CC9B56F3C",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/P01-S05-empty-forbidden.json",
+      "bytes": 272,
+      "SHA256": "C78D03A15AEFF1412BD6AC550DEED7CCED2667794100F48A19423FCF56EFCFEB",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/P01-S06-bus-format.json",
+      "bytes": 240,
+      "SHA256": "E007E3275089169A9E074D008EDBD5FF0FE0AA4A6F2BD02BD909C9A04C174778",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/P02-R-performance-bus.json",
+      "bytes": 261,
+      "SHA256": "B7858F22781B2975769231CB3C1653646E98A9335966043ADCA4898AFF9E4450",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/P02-R-performance-trace.json",
+      "bytes": 263,
+      "SHA256": "C3B302C0788AA4A948D7D273805BF47B9D1BFEDDFE9DE28906E09E06F7DBA43F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/P02-R-validation-bus.json",
+      "bytes": 260,
+      "SHA256": "156A8DC70DF831059235F43A8C7E9FCD87787C9ACA88B1D5918E7AE1E30E8A97",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/P02-R-validation-trace.json",
+      "bytes": 262,
+      "SHA256": "4C0D869935C94D7D30B5C6DF75D19FB73A5D83B3AB8CA9C09DEAD3734E140F49",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R01.json",
+      "bytes": 225,
+      "SHA256": "FB2C368DD560A43EE1F35E9C2F5F1C7D4563BBAEF15F9CF3CD8B7B03E909EDF2",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-EXISTING-OUT.json",
+      "bytes": 242,
+      "SHA256": "2597ECAF58902808BEF53D3231081F9DEDE6087C0E9072B0461A3DC397C44D83",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-INVALID-JSON.json",
+      "bytes": 245,
+      "SHA256": "A19DE7DA38A2326E24002ED5C7362CD9482F93FE92FA48C357D7AF13A0095505",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-INVALID-ROOT.json",
+      "bytes": 245,
+      "SHA256": "3D4CEA78964C3CDEF48395F0B89974B8300888D7023398F1F3144EBF619B7CC8",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-LOG-FLOOD.json",
+      "bytes": 234,
+      "SHA256": "F92E3DE82989F8B3AB535F8A7FE3D70B38CBB83C37F65A062D94834C60B8FA8E",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-MEM-MEASURE.json",
+      "bytes": 241,
+      "SHA256": "A4450FC185189DB68131479346B20AA0E70C5AAE902CDAB4549E4080889E23AB",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-MEM-OVER.json",
+      "bytes": 233,
+      "SHA256": "BDD3AFE2EE6C7FF2BCFE6C1B98C52B1FAEC3E4D999FDCF69B1C1814F3C48ABB4",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-MISSING-RESULT.json",
+      "bytes": 293,
+      "SHA256": "AE3D0D4575485008179355FF21956D7366AD112852E4CB69289914CC204BCBA1",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-OVERSIZE-CASE.json",
+      "bytes": 246,
+      "SHA256": "952B014127642A33E75649F3FC6F42B04CCC33967C23E8E26FC22D88809FC1B8",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-OVERSIZE-INDEX.json",
+      "bytes": 277,
+      "SHA256": "9FDC6466673115FEFD53ABF285E1D276959165D72B7DE89CA603F73E47A9DD7A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-PASS-TEXT.json",
+      "bytes": 288,
+      "SHA256": "7BEDE808904B05C780178273FCFB0E2C81E13036279D8E8C1EC9EAC1953767BF",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-RESULT-ENOUGH.json",
+      "bytes": 238,
+      "SHA256": "03A12CE4526913108F1273E3D174A66FC8CB5D67CB0169D996B5C6E730A55AC2",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-TIMEOUT-TOTAL.json",
+      "bytes": 240,
+      "SHA256": "93588FF1F8BDAADE1D28EF0B791DE911FFF1E5E4A2CF76C27FDA82DEDF6194EB",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/R1-WORKER-RC.json",
+      "bytes": 288,
+      "SHA256": "407CADE30740CE78B7703FF104EBF9B672658D0822064EF16CDD71148909DE51",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/README.md",
+      "bytes": 981,
+      "SHA256": "2A84B8C6F2EAA8F2414E7EFD3FCC6097FF0FCACB78E8A903FA82A14564577B5A",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/S01-1.json",
+      "bytes": 239,
+      "SHA256": "884663324530A42C173E00F11C760A3BF69EBA5F90026C4457ED122EB4F88F66",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/S01-128.json",
+      "bytes": 247,
+      "SHA256": "690F3E2D75F96AA407F5037B69E5E15AEB90D430CE487722758C9F846F0DD891",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/S01-16.json",
+      "bytes": 243,
+      "SHA256": "C584D7FC9F5BFFC8AA6029BC07E7FCAF731CD031591CAAE4518BB68A638FBA9E",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "diagnostics/S02.json",
+      "bytes": 225,
+      "SHA256": "12DE3E316D41E72261B95DB8EE39AB2EBE39D30E8E7501CAA075C587EC058D09",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "frozen/block_codec.py",
+      "bytes": 4765,
+      "SHA256": "EE2C41B6C2CF39CCFDD99FA64D8B333A2D1532FFD24AEDF8B3210C94108FDB80",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "IDENTICAL_A_FROZEN_API;NO_REDUNDANT_FULL_SEMANTIC_REAUDIT"
+    },
+    {
+      "path": "frozen/offline_api.py",
+      "bytes": 7154,
+      "SHA256": "71658AC3A787FD66844D69F1E261BDF4112DBCB20DA514DFFD108959318EF407",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "IDENTICAL_A_FROZEN_API;NO_REDUNDANT_FULL_SEMANTIC_REAUDIT"
+    },
+    {
+      "path": "logs/generate.log",
+      "bytes": 3415,
+      "SHA256": "F7A7731773683239061E79B9EE587FFFE99846061619FD0BED65EFF05DEAC4C8",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "pressure/METHOD.md",
+      "bytes": 964,
+      "SHA256": "9C67633604B74A7468375C55B52E8C52E023A0352DA7742677673B0FA536EB9E",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "pressure/results.json",
+      "bytes": 3335,
+      "SHA256": "A59963603A417061D2E221152A659B3B0109FD00E04ED419B4DF2366429FD048",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "pressure/S01-1.json",
+      "bytes": 638,
+      "SHA256": "018F1449807E6711F8A90EA5F4A9A07CDBAA6DDA79AB1E9BD889A72E9A0830E0",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "pressure/S01-128.json",
+      "bytes": 651,
+      "SHA256": "9FEC98FFC18E72CAFBBC172413185FB2ED9A04BCA16150A29B68240B4966A162",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "pressure/S01-16.json",
+      "bytes": 644,
+      "SHA256": "2D85B2D85AF0E6EF7BC708791A3F3BF7ED461BE8B2755596FCAE2A32E8A692D3",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "pressure/S02.json",
+      "bytes": 646,
+      "SHA256": "488D88EA975AA32C2E7518302DA84FD2733608A0BB5224541FDACE4309B007A5",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/IDENTITY.json",
+      "bytes": 1135,
+      "SHA256": "525EA90F0AE2697EBA0871EE447FC838A4C11D457EE8B79519F28FF4A2F6C4CC",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "src/support.py",
+      "bytes": 10780,
+      "SHA256": "1D65EEC9E9C71569FE39473E7682D17865D258B85DF560CFBB2D3E61C1284E85",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "FULL_SOURCE_REVIEWED"
+    },
+    {
+      "path": "src/worker.py",
+      "bytes": 11003,
+      "SHA256": "3C59BC7A2F36564157858A2DED2A637166080AB7959A72C7BED03B4176B2A924",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "FULL_SOURCE_REVIEWED"
+    },
+    {
+      "path": "tests/generate.py",
+      "bytes": 6914,
+      "SHA256": "DBE15805FC83228700C84BAD1340B17FD16332BD7A2A038CA71A6E7E406E4944",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "FULL_SOURCE_REVIEWED"
+    },
+    {
+      "path": "tests/PLAN.json",
+      "bytes": 43723,
+      "SHA256": "82C42434FDE78495B6A3F9F945756F1ADE464EEEB6A5E9DC3D63E5C5F442AA4F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/PLAN.sha256",
+      "bytes": 83,
+      "SHA256": "A07DEE6371A9B4838644228BD1AE25D22858A4FCE9FB6B192A15320DC7FCC944",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/results.json",
+      "bytes": 371736,
+      "SHA256": "84779B78417591F30F1DC58BE49606C6A537B3D474DF1E992D6BC879559F3661",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "tests/run_suite.py",
+      "bytes": 30683,
+      "SHA256": "875D1FB556B07AF1F61B44458E427016FE38E47B26B36DF448FE922EA238CC4E",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "FULL_SOURCE_REVIEWED"
+    },
+    {
+      "path": "logs/C0-default/case.json",
+      "bytes": 357,
+      "SHA256": "9EC0337A4C16B28150AA082A01031416A4D1770692499C8FAB8547C7807289FD",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C0-default/command.json",
+      "bytes": 1253,
+      "SHA256": "870CDF2C92427AA0AEDF2CEAEA04771FB0F958065EF3EE56DAD22B5E5AC3AB09",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C0-default/result.json",
+      "bytes": 3308,
+      "SHA256": "7017A4E1ED65154E9495115F0763085DBF95770961EF16FB804185B899A7211C",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C0-default/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C0-default/suite.stdout.log",
+      "bytes": 196,
+      "SHA256": "817101A403A9E34EF923FAF1498149342867F285EB060B9FBA82D37957974D1C",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C0-default/worker-result.json",
+      "bytes": 1370,
+      "SHA256": "D7FADB56A91ED61E5403B3B9BC7151815B3C80B07CD047CA740006719727B1C1",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C0-default/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C0-default/worker.stdout.log",
+      "bytes": 59,
+      "SHA256": "264807E698DE2B70FDAF99242CF831CB9A1B6F59D46B66A97689386B01E96685",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C1-worker-memory/case.json",
+      "bytes": 405,
+      "SHA256": "2E62D5D81659FD4AFB968015B744C8426841F6666ACBE5EB3F8A9FA2EB68D355",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C1-worker-memory/result.json",
+      "bytes": 1492,
+      "SHA256": "6820C5B9024B1B4D868AFFB17AECF51E3E0A837F60AF80ACAB89F2DDF8035D49",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C1-worker-memory/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C1-worker-memory/suite.stdout.log",
+      "bytes": 211,
+      "SHA256": "308F94AC403E77EAC233A7CF63E1B76EA9A2BBA177A41E8D559642CB20E70F29",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C2-result-size/case.json",
+      "bytes": 392,
+      "SHA256": "1E8BD61CA51885AD21C0D5A4D22A5CC9448EEC469339B717FA8E107539D1FFA3",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C2-result-size/command.json",
+      "bytes": 1269,
+      "SHA256": "206464B4BB7C8F165AD6F8EA96FD8BE7A08D6735ABA31B20F418240D9960529D",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C2-result-size/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C2-result-size/suite.stdout.log",
+      "bytes": 253,
+      "SHA256": "05DDB5BBD6521E0CB52AD9F36849481A8EC160D117989F70F2A4AC3A9B7B6623",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C2-result-size/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C2-result-size/worker.stdout.log",
+      "bytes": 134,
+      "SHA256": "92113434F6ECB50858A3E337EBC9FAC4B78BD7F993215F1620951E68D0855373",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C3-optimized-protected/case.json",
+      "bytes": 369,
+      "SHA256": "5F68C7713EF7AA30F38D8CA43C884B5EA92A0FAE12CD565455CB3BCF8F6A23E8",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C3-optimized-protected/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/C3-optimized-protected/suite.stdout.log",
+      "bytes": 146,
+      "SHA256": "A20439C342EA16AA973C9B4094A239FC8B7DA73F7262F33EBA42C289828521E4",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D01/case.json",
+      "bytes": 326,
+      "SHA256": "7788E90BB5B1AC65F9E1670287FD893EF42C52F46CBA3C1312363AFBC3C2AEDB",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D01/command.json",
+      "bytes": 1245,
+      "SHA256": "3E1513B20FFEDE2B6474EC7F354931A8A36DC6D2242A1C784B00ED4EFD16EC09",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D01/result.json",
+      "bytes": 4901,
+      "SHA256": "35CB1C208EE69C0CE513477CBB79AB1203C4B2850594B94321E60B0B3A1F5575",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D01/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D01/suite.stdout.log",
+      "bytes": 185,
+      "SHA256": "3D44E0E9A16B6597B3A4B77F3AE9D0D5C276122A3FFEA361551AA6019155D93A",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D01/worker-result.json",
+      "bytes": 2973,
+      "SHA256": "FC5A9FC002DEBD2A09C55E008476206658852547FF770C82E6BEA7B3BC61341F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D01/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D01/worker.stdout.log",
+      "bytes": 55,
+      "SHA256": "56312E928104A24779D8685B48943AA1995710E2A85891E83623470E83D630B2",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D02/case.json",
+      "bytes": 522,
+      "SHA256": "5BDF9609B383A64A90B15B6E54FAF874D3D7C34054EE9DD098787C7E314BAAF8",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D02/command.json",
+      "bytes": 1245,
+      "SHA256": "1CB9E2B97452A3AD7C6DE04900E5092D23AE4421C31FB338BEE77ED4DE3B654C",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D02/result.json",
+      "bytes": 6905,
+      "SHA256": "47C1A91CF67D27557155868439D5B99252C22094A3F9BF3C0DB2CD28B7A8AB57",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D02/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D02/suite.stdout.log",
+      "bytes": 185,
+      "SHA256": "EA444ACA94F082A917D5780802C167E357DC848AF1EDA41F10688B5FB8A41A95",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D02/worker-result.json",
+      "bytes": 4977,
+      "SHA256": "7F3BCE626038684BEDAE80E32EAF850AA47300B93A3C7D809AECCB5DA9035863",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D02/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/D02/worker.stdout.log",
+      "bytes": 55,
+      "SHA256": "BC07B5CC81D202CF05E8B0B6D4F12F25C2A67514BE1C5C03B07F65E20FE81630",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F01/case.json",
+      "bytes": 326,
+      "SHA256": "64AF8D173F2B2CDD82BE8AC9912A95FED27C9ABB496DC139CBE61FA9B4C694C4",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F01/command.json",
+      "bytes": 1245,
+      "SHA256": "0EC77542EADAE4BC407433254251B63238E8F491A13A627F579368604EEBA322",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F01/result.json",
+      "bytes": 5753,
+      "SHA256": "AF77827A8A1A9AFDB711D987B742DA07D38EA7E4C07F6CE05EA844BC9C4FA838",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F01/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F01/suite.stdout.log",
+      "bytes": 185,
+      "SHA256": "7F5CD45781A1A59EDEB04A8703F1952DB8287982B778213926700F45ED244CF0",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F01/worker-result.json",
+      "bytes": 3823,
+      "SHA256": "F4DB56F669ED57FA939A48BEA6636A14979D291EEC4692419A4938CDD89F24C0",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F01/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F01/worker.stdout.log",
+      "bytes": 55,
+      "SHA256": "4905CD1717E65DACCF707934A658C75CB37728BBEAA2046920EFD366B1577BE5",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F02/case.json",
+      "bytes": 323,
+      "SHA256": "865F35AA8B7A1EFA5270DD08F99F0F4D7DB07E8847232BFBDF6113EABBA183D1",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F02/command.json",
+      "bytes": 1245,
+      "SHA256": "B1561DDEC30A5C0D588CFD3BE1E24593451ED986E64F7F91C5CB64C036454016",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F02/result.json",
+      "bytes": 5726,
+      "SHA256": "D3FB3E5A739122A98075C9FB225C617A24A4133777D4A97A92CE4BDC5BC849A9",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F02/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F02/suite.stdout.log",
+      "bytes": 185,
+      "SHA256": "910A97152199651F301C4A6229A61568D955EAD4FFA666CCCBC9C2371E936FE1",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F02/worker-result.json",
+      "bytes": 3796,
+      "SHA256": "04E254884A3DB07452FE07667857A14DF15FC32039C095B88E2DD24E43E099F9",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F02/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F02/worker.stdout.log",
+      "bytes": 55,
+      "SHA256": "4F9B42BF29C29C6ED3488E65F0144200BE09B874F2F776846E637C26BD335D5D",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F03/case.json",
+      "bytes": 329,
+      "SHA256": "99FAB331602D7F99E4F1515C5A468DBEA3AA9C11E1770955D4373396E2F3C38A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F03/command.json",
+      "bytes": 1245,
+      "SHA256": "E19D2BE35D443680885DC4B5F6C92206552D6A81048AE3B58FE8BE35B9BDE2B2",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F03/result.json",
+      "bytes": 5732,
+      "SHA256": "BB13E8561C6C131AA151C5FE8826E1C63756E2EFE105FBE038BF2400D3A3540F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F03/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F03/suite.stdout.log",
+      "bytes": 185,
+      "SHA256": "AB99B864F0D43369795170E0868261B2B4882AD78AE47531EAA89BE3CADB8BA4",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F03/worker-result.json",
+      "bytes": 3802,
+      "SHA256": "3B9C6E26312618BA48329688C6DC655F86880DD78AC8C2B04B035ED91EFBA8A4",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F03/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F03/worker.stdout.log",
+      "bytes": 55,
+      "SHA256": "25C9BEEDCFAC21E43D883AF42CBF91C5FD3A9E859C4FD5B5B5503F463556FDE8",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F04/case.json",
+      "bytes": 350,
+      "SHA256": "FAF085AB6BB4A042FD8B23D9C3319B135FEEC958F127F9DC0178155761F5A7A7",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F04/command.json",
+      "bytes": 1238,
+      "SHA256": "33E4630B958BF3FF88243E37AB0A6E7DB7852CD50F5C0A42FE8F424DFE7155BB",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F04/result.json",
+      "bytes": 3285,
+      "SHA256": "A51A8FBC1DE4D269B79CB6A3BC44E4C226E54F3DEABF658DDA156AF08723198A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F04/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F04/suite.stdout.log",
+      "bytes": 182,
+      "SHA256": "7DFFE7469C7DC194699318FD7434FBE61AD2575E41D485BBE301095F1063B057",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F04/worker-result.json",
+      "bytes": 1363,
+      "SHA256": "8EFB47C6DDA46A5A62C109E498F1F31C9834B43EF49D608ECEB4499DED0C51F4",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F04/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F04/worker.stdout.log",
+      "bytes": 52,
+      "SHA256": "F72B74CEE8AE57E4F4C952B2B78E730DBB9303454A0AD5B1B5AA289CA7C7C445",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F05/case.json",
+      "bytes": 324,
+      "SHA256": "41723B060FA7FBBC7A823ED048B23C7EDCC235E2DEE674EAE6F7E5AAABE64425",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F05/command.json",
+      "bytes": 1245,
+      "SHA256": "AF8D7B445A6969A091D7250F30003C2E8CFACA764B69BF335247FFED2456C096",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F05/result.json",
+      "bytes": 5022,
+      "SHA256": "5A9005056BB8DA8BFEFD75A1BBCB92B0D7AFB55AFE4FB8A2312469A26042076A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F05/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F05/suite.stdout.log",
+      "bytes": 185,
+      "SHA256": "F06CC79E090EE7E6E608BDB3AA52F5D65EF58CF780CC38D005CC77206F363AE5",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F05/worker-result.json",
+      "bytes": 3092,
+      "SHA256": "FD883E3A3202179C7F84D5D6D55330C8649BB1BC67931E01DDE8620433A29BA5",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F05/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F05/worker.stdout.log",
+      "bytes": 55,
+      "SHA256": "BD342141736BDF849C9161833FB43368704BA04D32DB2C511A19A7E7D248385D",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F06/case.json",
+      "bytes": 326,
+      "SHA256": "C1ACA6FCAC7E1F874B3E8AFF7556CB46E047560A5E7CDC652DD144F91189370C",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F06/command.json",
+      "bytes": 1245,
+      "SHA256": "4A0E67C9355CCD751C8189889DCA2F639F059F8C24766CA870DF2B1025E68527",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F06/result.json",
+      "bytes": 4901,
+      "SHA256": "81EF6C897EBAF0A506BD728D99584A4886BF5E160D78295C99A6937F324EDF9B",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F06/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F06/suite.stdout.log",
+      "bytes": 185,
+      "SHA256": "65FAA1649F0151E675DF4910A0D5C7F98DF1D25A8D23028D09EC21EEF132DAE1",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F06/worker-result.json",
+      "bytes": 2973,
+      "SHA256": "2E79123F365CF09F4B97175BFF21DE10BAB496EBEAEEA2A6FA3A1935F22C625B",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F06/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F06/worker.stdout.log",
+      "bytes": 55,
+      "SHA256": "063EE3E57B3204EBEE573BCB874F1953D8CC7A4E855AF26241C9FC831D0853BB",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F07/case.json",
+      "bytes": 327,
+      "SHA256": "115F81F5C54DC278664EF2B3832FF035EB7A85E633C54510A5A3A96ADF4CDE28",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F07/command.json",
+      "bytes": 1245,
+      "SHA256": "95E7330B260B254CC834500FEE6CCBCCC455AC467B974501355C9630AA41BC11",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F07/result.json",
+      "bytes": 3315,
+      "SHA256": "487F3D5D8531397137C4276257B5B5C7A951B1E35DDEAF44E7ADD9F895BE01B2",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F07/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F07/suite.stdout.log",
+      "bytes": 210,
+      "SHA256": "AE4AF575D73649F11D29768AA6F8F9069B8FF10EFF28D5BD34AB1A12F11700E5",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F07/worker-result.json",
+      "bytes": 1393,
+      "SHA256": "BDB84668DE4281E48F3425CFF79BEC5EDB8FA3EC178C5DEF215325DC8E953141",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F07/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F07/worker.stdout.log",
+      "bytes": 60,
+      "SHA256": "7FDF79C1ADA20B2593478A2F2784717E9174130EAD51909A31E139DDFA59B32D",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F08/case.json",
+      "bytes": 327,
+      "SHA256": "86A2AE760A56EB34727C4670666FD3DD943BF11DD9F4A1F4096DB53521B8500F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F08/command.json",
+      "bytes": 1258,
+      "SHA256": "4C464D85D556A0305ED8169C94B322A2BEF25C91CF6F2A801FE18FC80ABA8257",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F08/result.json",
+      "bytes": 3326,
+      "SHA256": "41D6CD5ADEBECAB7218A725504CC661F63A16C4E7FAE9B4CF8CA18AEFD5BA112",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F08/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F08/suite.stdout.log",
+      "bytes": 207,
+      "SHA256": "13C6B82D7EB73CB836FF69756F32F241172338A1F60AB3C591104390B390BC3F",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F08/worker-result.json",
+      "bytes": 1390,
+      "SHA256": "F766C8724BAF528EC6E8FBE9411E07AA2F280C4B1EBE22432226034E6FE811DC",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F08/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F08/worker.stdout.log",
+      "bytes": 60,
+      "SHA256": "E34CB9139478664E38FAB1253F852D18CD9BC17F55CC369F78BD8909F0C53D0D",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F09/case.json",
+      "bytes": 352,
+      "SHA256": "7B32A79BA22125A9381C0B30C4EA4D73A50AE070350BB24C0D5BD6614BC0D003",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F09/command.json",
+      "bytes": 1238,
+      "SHA256": "4A867112E96432638516835F219331D9893C8450F32A96E1BAC86070CF716B6A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F09/result.json",
+      "bytes": 3340,
+      "SHA256": "F02BE409F711415F32118386969FF3715146761A0675C3796E1D98FFF06E2926",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F09/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F09/suite.stdout.log",
+      "bytes": 218,
+      "SHA256": "FC2109DE3C88804FDFC3E7A10AFF22F94FE8B12ED55AA1CCAC741BFB6B22051E",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F09/worker-result.json",
+      "bytes": 1422,
+      "SHA256": "442B35AEB9E5935226DF1616B1A161C11C16F64287C8817C4A1A66547437FA71",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F09/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F09/worker.stdout.log",
+      "bytes": 57,
+      "SHA256": "5CD8462BBBD667454F577A7993CA4A4C7B66EB50E1133DA28A9460AC0C1BBAF3",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F10/case.json",
+      "bytes": 506,
+      "SHA256": "A3C03A6D5EA775800D42E53E925C3070224A1457BE0896BB461CA10222F4B5EE",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F10/command.json",
+      "bytes": 1245,
+      "SHA256": "5BEA86BE9D47A5D305FC60CB299327D663CF92589804A7196D8FCDC9E5345862",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F10/result.json",
+      "bytes": 3403,
+      "SHA256": "F0F74F08726DA53599D69C9EA8B9F3D1C01B26BAC1165E540CC11FE9AEAF69AA",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F10/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F10/suite.stdout.log",
+      "bytes": 228,
+      "SHA256": "F5EA03A9A7172A63E340982CC461951407A008FDD51ACB01FCA1ADA7DF89E2FB",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F10/worker-result.json",
+      "bytes": 1480,
+      "SHA256": "A8C97CE25AEC23B4F20CC59A1B38B7EBB60CF2E00381E06E27E30C62B024C7BF",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F10/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F10/worker.stdout.log",
+      "bytes": 60,
+      "SHA256": "1DCFE7C569E4FDCF9FE427F9EC84A9C675F29C8555453F0B405AD25F6F0F91BC",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F11/case.json",
+      "bytes": 502,
+      "SHA256": "4E3E7447B3A31ADD6B1FEAE418301832D0BFC98A86F283F77ACFF5565AAC99E7",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F11/command.json",
+      "bytes": 1258,
+      "SHA256": "9663BBF1369FAF766508EB7A0D754521FC7B1A1CECEE5206B91EFB809F15D97B",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F11/result.json",
+      "bytes": 3412,
+      "SHA256": "71F4A8486939FF09DD8A7166722D4CD5D6EFD73780786C3767B3774D15DC5AC5",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F11/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F11/suite.stdout.log",
+      "bytes": 228,
+      "SHA256": "4D68627EB31F64426A8CD12267B28538F3E6792F92C22C79E9D72197756F9448",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F11/worker-result.json",
+      "bytes": 1476,
+      "SHA256": "CF81C1D5F7752AC2B08A2EEF4B66B5A0A9752B91B9AF804E94868D33DC740903",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F11/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F11/worker.stdout.log",
+      "bytes": 60,
+      "SHA256": "F126C505ECB48D3E8DFF2BF59E053AAEDBA930307ADF564878235329A9DDD008",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F12/case.json",
+      "bytes": 307,
+      "SHA256": "076D4BECDD0EDDC43CDD8CC3E3EA1B4084BF5B5A74D9C1987B9457CAB0328B33",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F12/command.json",
+      "bytes": 1245,
+      "SHA256": "99D541386347EFCE2E843DFFF6D5F3C0AFC04C41F55F53219BA57091F7A33E18",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F12/result.json",
+      "bytes": 2973,
+      "SHA256": "04CA3D3CC964F6C6130A6F6CB99F6AE324577B61DB90958131074633E6BCEDD1",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F12/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F12/suite.stdout.log",
+      "bytes": 208,
+      "SHA256": "1061E4032064580C7C9524559F43A196DA6EDCC48183AF8F9DBEE53ACDAA1AA0",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F12/worker-result.json",
+      "bytes": 1048,
+      "SHA256": "60C52E1EC9DBDCC16E345D9C0D491A84C8ED1693C541035EDB5DE6F105797089",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F12/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F12/worker.stdout.log",
+      "bytes": 60,
+      "SHA256": "75109E91208800D7210415B3F5FFF03E0B6210C371D162E1864C0017E6EE94C0",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F13/case.json",
+      "bytes": 328,
+      "SHA256": "4A9D869F636613EDCDD4AD63F32A5089993B2EF767E4D13BB272F30FE55AA394",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F13/command.json",
+      "bytes": 1258,
+      "SHA256": "566A9A9E0188421E15E57E1A7F92B168075FF478C948E776DD3C463FDDC9B839",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F13/result.json",
+      "bytes": 3325,
+      "SHA256": "F2FA46D2FBC84C73C6F8164A3B59832B179D8C18E8E60682218C6E6116F32FD1",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F13/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F13/suite.stdout.log",
+      "bytes": 206,
+      "SHA256": "5F2AE6139EADA3526B43D0C005F61C15B232144F98A3145953C45A29D31AE4AB",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F13/worker-result.json",
+      "bytes": 1388,
+      "SHA256": "AB55922B565D681BB4513C77F2CC8C027D318FB52006F4F5876DFF3CBDBF7634",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F13/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F13/worker.stdout.log",
+      "bytes": 60,
+      "SHA256": "0B86DAB6DEBD68512E2B67894C8555F56515FC4F899FE19B1C99A5BA5ACD488F",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F14/case.json",
+      "bytes": 384,
+      "SHA256": "FF335DDCB142E96D55178638CEF97224EFC8AABD500C86FE5690AAFDFE949616",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F14/command.json",
+      "bytes": 1225,
+      "SHA256": "FE95650EB42F0905A63F1CD0AC8FC85AB63E347640AD6A4F9EBA4BA556644737",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F14/result.json",
+      "bytes": 2968,
+      "SHA256": "8DE43D4197DA79313CD0238D4110BB4AFA2F36AA2EADBF1105CB30E8F02EA094",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F14/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F14/suite.stdout.log",
+      "bytes": 230,
+      "SHA256": "0DE757F2A25025CB77734055A50A90267C966B14C3D556EEC9F1BD2BAA901A82",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F14/worker-result.json",
+      "bytes": 1063,
+      "SHA256": "B7A7AB7DB42F4B496A3C14BA27FEFD72DDE411DCE95EB1FB3AFFDBDA00EAC1DF",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F14/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F14/worker.stdout.log",
+      "bytes": 52,
+      "SHA256": "C9306274A4DF80767364740DA3C1850B53F01AB4DF52C71F92603B0488E4203D",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F15/case.json",
+      "bytes": 389,
+      "SHA256": "D623165DE1BF77B2A2A42103D84EED7F4A6170285D1DDCC480657F595BBBF83A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F15/command.json",
+      "bytes": 1259,
+      "SHA256": "0719A4F1EFE1723E9F2B944B09E0269E0CFBB39B37B1554929316D91570D3495",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F15/result.json",
+      "bytes": 2993,
+      "SHA256": "1B9B34BD26D0BE6EE1F500079410E88AA86DE85E1CF33A162D1549F1264E3ACC",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F15/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F15/suite.stdout.log",
+      "bytes": 215,
+      "SHA256": "81DB5C1237DF7B1C819A720029EF5C7B3C763F64DF8E6328F3A612CC37DC8E9E",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F15/worker-result.json",
+      "bytes": 1057,
+      "SHA256": "0E28D8DFD24E0FD6296F07D2186B00D59FA217FF856170199D8FB090E825AC3A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F15/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F15/worker.stdout.log",
+      "bytes": 54,
+      "SHA256": "6B283EDE34E5CB81387FB5A1E8D2C594AD87E4A9FDE37756F951EF0579D95A53",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F16/case.json",
+      "bytes": 350,
+      "SHA256": "C1464C4DA98D85F21F86CCD2C3A1CC586D76A4BA1B71CDFBF9884340DEF6AFFD",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F16/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F16/suite.stdout.log",
+      "bytes": 137,
+      "SHA256": "E5E99248B405D419186ADFE2B62B79DB5F271FBEE82E1C330F841E68D0ECB6C9",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F17/guard.json",
+      "bytes": 279,
+      "SHA256": "2C8DB1DD0F0599AD13B278CB2325434A76136CE9EE6AE1C3375580E8A55DC946",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F17/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F17/suite.stdout.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F18/guard.json",
+      "bytes": 420,
+      "SHA256": "778CD46B72367ABD2DF1E04BDA6B15D0915B5126E9382259F159777F44B5ED51",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F18/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F18/suite.stdout.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F19/case.json",
+      "bytes": 350,
+      "SHA256": "46CF494B7DB9A84F334177A6E5E84B90C6EE5AB32313994729BC5329CEEE4AB7",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F19/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/F19/suite.stdout.log",
+      "bytes": 146,
+      "SHA256": "A20439C342EA16AA973C9B4094A239FC8B7DA73F7262F33EBA42C289828521E4",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S00-duplicates-kept/case.json",
+      "bytes": 370,
+      "SHA256": "8103BE6606D984DE15B3B8A303C13FDA6A5A45B8A083BBF941DB915A13C0E751",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S00-duplicates-kept/command.json",
+      "bytes": 1318,
+      "SHA256": "5374665A49E97A77B6BD6E8D18CFBCE31C96C6F1AA96E15308543CC8BCFE0722",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S00-duplicates-kept/result.json",
+      "bytes": 3386,
+      "SHA256": "3C023E67DEBC1E388D00425C75C310895A0195BF1B76B0CE701F613FF1F9C1B3",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S00-duplicates-kept/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S00-duplicates-kept/suite.stdout.log",
+      "bytes": 222,
+      "SHA256": "4E55C6EBEABE563A6846447AD2E443C73D3A5B91F3BD6A28161C5303C12F8ED1",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S00-duplicates-kept/worker-result.json",
+      "bytes": 1385,
+      "SHA256": "18F766AF8FCBE3053D8DBEA3D6815DFB88CC640E8BFC71D5A543B029C711CBA6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S00-duplicates-kept/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S00-duplicates-kept/worker.stdout.log",
+      "bytes": 72,
+      "SHA256": "1CA97CAA39C9D1A3ACEE3EC8D24FBF1A415C6D38FAF6F7C37278128E3BBCD1B9",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S01-wrong-field/case.json",
+      "bytes": 358,
+      "SHA256": "54D41B80159DAFF9C402BAD3C9F31A2EBC64757497ECD3A6EB9D242993A71332",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S01-wrong-field/command.json",
+      "bytes": 1289,
+      "SHA256": "481CDE698018B0A7357FAB063CD81397508BD65424C7E18EBC89047AA5F7FF9A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S01-wrong-field/result.json",
+      "bytes": 4977,
+      "SHA256": "C7C31299B2D35D277A518101E02736714980CA5EA2914EF61968C50ECF6FE007",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S01-wrong-field/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S01-wrong-field/suite.stdout.log",
+      "bytes": 217,
+      "SHA256": "30367D3773CAFF77B9FD16A9585126D7DDC1B101DF8560C86D86E98DC9E7CA17",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S01-wrong-field/worker-result.json",
+      "bytes": 3005,
+      "SHA256": "F1B623ACB828BF8FB6BFC2FF9A75BCB275404E5B82EB9A4B02845D7672DD4EC2",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S01-wrong-field/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S01-wrong-field/worker.stdout.log",
+      "bytes": 71,
+      "SHA256": "A56BB30B1EA8F9355E252FC285D00B55106F6DB9C6EA7A82B7E2A352B28F2F70",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S02-missing-tail/case.json",
+      "bytes": 361,
+      "SHA256": "C64FB70B33E72843A50F5770D7BBFD45B761804ECCAA878560F9C2CEB1632AB6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S02-missing-tail/command.json",
+      "bytes": 1293,
+      "SHA256": "FB7B92F77AB16B3CC3AC8287D3627CC27C02C3A438B42C275EF4E196FF4AAD0B",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S02-missing-tail/result.json",
+      "bytes": 4408,
+      "SHA256": "14A4DC029AF92F0567866F666E3B63F8A60D451A228C6FA5402C51D1C8F77303",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S02-missing-tail/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S02-missing-tail/suite.stdout.log",
+      "bytes": 219,
+      "SHA256": "9B6E97476F04DEE770987A392A91246BE35315CD13797ADF7573E0BD1E9CA024",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S02-missing-tail/worker-result.json",
+      "bytes": 2430,
+      "SHA256": "2394B6C23F864CE67B1F3EEBC6C2E1B19E88D54651AF51C3D1AABB72E536B856",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S02-missing-tail/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S02-missing-tail/worker.stdout.log",
+      "bytes": 72,
+      "SHA256": "A222A77038ED7638A6E3CD31B6FF361915C206EA32A634D6EF17ABD7759A1FF5",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S03-unknown-data/case.json",
+      "bytes": 361,
+      "SHA256": "864EDCD4BB3B3816022F07D5585CBC2580F748215C46691DBC36A93C5CF4D954",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S03-unknown-data/command.json",
+      "bytes": 1293,
+      "SHA256": "F1C9BC5FABC2A7F5E720CB1D47EA10EAD91055653C3F84BCCD62255A9D30584E",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S03-unknown-data/result.json",
+      "bytes": 3398,
+      "SHA256": "7FFCA7532AEF7668CCFDFE757F4587C5F1053B704B4325BC15153118858958BE",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S03-unknown-data/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S03-unknown-data/suite.stdout.log",
+      "bytes": 244,
+      "SHA256": "F94FCA3822ABF941860F32DF6725EA090C506E65DD9B379D5F2B671E2E2894C9",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S03-unknown-data/worker-result.json",
+      "bytes": 1425,
+      "SHA256": "65823699F0B88FD9854BCB2365EAE84D72790C9989C147CAA676F80D2BBE56A4",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S03-unknown-data/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S03-unknown-data/worker.stdout.log",
+      "bytes": 77,
+      "SHA256": "8742C9586B1BEFD42B542274EC060E5BC395F335696A955A3ACDB9A533468170",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S04-empty-explicit/case.json",
+      "bytes": 366,
+      "SHA256": "D207162E81DFF1FE8FA122CAF176C38BBFB77AA8C39CF09CCC8340C9B35E24F6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S04-empty-explicit/command.json",
+      "bytes": 1301,
+      "SHA256": "1FABD2BBBD9FADEE96276A2F18F4BCA4775E77D91543DF4D61D2E3F5F58F95C6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S04-empty-explicit/result.json",
+      "bytes": 3362,
+      "SHA256": "C885AEE584478134C822EBE8988E89DF3A4CB51CCC82D5F601739E8B4B0E7BEB",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S04-empty-explicit/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S04-empty-explicit/suite.stdout.log",
+      "bytes": 220,
+      "SHA256": "0727F70FBCB2F0295EB3F5A14C2BF9052DBF88D56C9787228DA656C7334CAA00",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S04-empty-explicit/worker-result.json",
+      "bytes": 1378,
+      "SHA256": "31A5A523313CB857BF8E527B43557AE309A037E54DFFE7C36AD0F5D74D914A51",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S04-empty-explicit/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S04-empty-explicit/worker.stdout.log",
+      "bytes": 71,
+      "SHA256": "3BAE71B46925D3B3E2517FD562A4C7864C774A1295A3D790720797CD99A31B1D",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S05-empty-forbidden/case.json",
+      "bytes": 370,
+      "SHA256": "412EAF52BC52C1B637054A36A27011DDB3FD5AD96A1BF85FC69627D362FE2768",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S05-empty-forbidden/command.json",
+      "bytes": 1305,
+      "SHA256": "5010036DE94005407BE19E0B67C044A57F8502A1255D1469CCA8933D12A4D49A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S05-empty-forbidden/result.json",
+      "bytes": 3414,
+      "SHA256": "2924891355D88645C7A90C5C71DAB36C247D1AD17E03C8F99120530890541627",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S05-empty-forbidden/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S05-empty-forbidden/suite.stdout.log",
+      "bytes": 249,
+      "SHA256": "9D29B2B6414AB977F1A8604E6049F01A5C086001192BB88DA11C5C54290EE22E",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S05-empty-forbidden/worker-result.json",
+      "bytes": 1431,
+      "SHA256": "101B62A82EB7DFF53A60AFFFB8D07C24E6D6430166B2DFC8C220435AB85517EC",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S05-empty-forbidden/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S05-empty-forbidden/worker.stdout.log",
+      "bytes": 77,
+      "SHA256": "D09BD183809C7DA63A80F9940A89365ADB81EBAD8CCCC7C1161F377C982D3F19",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S06-bus-format/case.json",
+      "bytes": 351,
+      "SHA256": "235C09AB8AA5286C5A0A97A83A581BA9F8BF83E0E5262489CC672E3CC2BFB860",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S06-bus-format/command.json",
+      "bytes": 1285,
+      "SHA256": "51809C579F6DDF47FFD19AB6C89B2DAF634E5819E6340AEA04579738590A537F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S06-bus-format/result.json",
+      "bytes": 3338,
+      "SHA256": "CCB9910A4D3BF528DC9834FB97BC695349F53859FA7D13A2BC952CFB82E0FB95",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S06-bus-format/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S06-bus-format/suite.stdout.log",
+      "bytes": 212,
+      "SHA256": "7A66A810CE980B65A7EF3CAE1ED5947E872C49633195842D5B02809722895CB2",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S06-bus-format/worker-result.json",
+      "bytes": 1370,
+      "SHA256": "97054FCA51900C4DF8806116328D422C2462C6F227E23D3B2644F8C7441A0408",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S06-bus-format/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P01-S06-bus-format/worker.stdout.log",
+      "bytes": 67,
+      "SHA256": "9827D6D7E2263A618A9C12508F57BD0BAFE71104677D407E6CBB3CDA252E7E42",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-bus/case.json",
+      "bytes": 522,
+      "SHA256": "25D4CBA2AF1A2BDCE2565136E4C248D0A97851401FB09BB921E8472528BE686F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-bus/command.json",
+      "bytes": 1297,
+      "SHA256": "01233ED02E581228C9C78E579FAD1D311DBB2A44E439F948E4DA61F6328F8B55",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-bus/result.json",
+      "bytes": 3432,
+      "SHA256": "3F19D75C6A195C53E104F6CC309F6A9380E9F282CFA0A91118D0E7A0BD4086D4",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-bus/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-bus/suite.stdout.log",
+      "bytes": 218,
+      "SHA256": "BF5FE18801E223820BEDD1FB99363C44CBA52AA9518E05E559030BCC58EDFFAC",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-bus/worker-result.json",
+      "bytes": 1452,
+      "SHA256": "C660C0CE64428C8AA59A52E64857FADE7BC00C17F39AFC11E62A65DA6E55B52B",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-bus/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-bus/worker.stdout.log",
+      "bytes": 70,
+      "SHA256": "EAC5C3B68DB1C175C89DE3FD1401A07CA4A55A0DB8D3F70954603864C9327AF2",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-trace/case.json",
+      "bytes": 532,
+      "SHA256": "55D996FB2DB4F4FE1F4627D2081A448062CAEB6F2C8832A145A6C1E276EED109",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-trace/command.json",
+      "bytes": 1318,
+      "SHA256": "5021BF8E4E4FF67ED53ABB1808C96E231A01DEF1FA26A8C6CAE8412A6B360F75",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-trace/result.json",
+      "bytes": 3457,
+      "SHA256": "76628500C70052933AE5E50507A5C7EB81AC14C72E47E9D2D78D7FE28B69B889",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-trace/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-trace/suite.stdout.log",
+      "bytes": 222,
+      "SHA256": "107D6051CF8AA9270791BCC2067E06D234108B6A20263F8FA64183ED6D006189",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-trace/worker-result.json",
+      "bytes": 1456,
+      "SHA256": "9D87BE5235BBE97D095EFD6F9C7975F98215497F1459E3584E863A1244640431",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-trace/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-performance-trace/worker.stdout.log",
+      "bytes": 72,
+      "SHA256": "56B3653307E714D686C3EAE548EF3CDBADA0CB3E326C5277CC8C4636ADC2ECC0",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-bus/case.json",
+      "bytes": 519,
+      "SHA256": "9093CF72552094BB8870CAB585B0E1F3B9BD54CF4CB32AF3DEF6CC5D909EAA96",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-bus/command.json",
+      "bytes": 1306,
+      "SHA256": "E5C96A4ED20B17539CDA877310B8967799D4FD1D49E892C0876267D5B755B5A1",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-bus/result.json",
+      "bytes": 3438,
+      "SHA256": "CFFC81D454FC0AC1EC25F5881D65EA23FB9BFA3CFD71C7117C54FA5F1175C90A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-bus/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-bus/suite.stdout.log",
+      "bytes": 216,
+      "SHA256": "925C096CB321DE3F6BA3B6B89357CE4F087E00C8F57E402C5FC7C325A9D0B0D1",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-bus/worker-result.json",
+      "bytes": 1448,
+      "SHA256": "E0BADE3D67EE0E356BBB2AA9D04F573ABAA68688A7FBB76FF2D73009F35938B1",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-bus/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-bus/worker.stdout.log",
+      "bytes": 69,
+      "SHA256": "E62BCC34EED4D2CC6E63500747F6E3088B9A79D837B4E5E23553AB27D7053F65",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-trace/case.json",
+      "bytes": 529,
+      "SHA256": "558EB378CBFFA2140287F8D3FB7D6321BDCE9C95F2B64D36C8265C1DAC06675D",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-trace/command.json",
+      "bytes": 1301,
+      "SHA256": "FAB824739F989DCB562E653D608E63F2EB014AEB81527FDDB2BAFAD03D84BCD4",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-trace/result.json",
+      "bytes": 3437,
+      "SHA256": "3737CD72FCB8682265087514D6443C23F58E498839043753EA8E591DAEA86C36",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-trace/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-trace/suite.stdout.log",
+      "bytes": 220,
+      "SHA256": "2D3A9793E6AD017512ECEEE9F38583E13BEBD24C7308BDD266B625C70C8DF472",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-trace/worker-result.json",
+      "bytes": 1453,
+      "SHA256": "E9AB1D296554B9D7A7E37A0CCCF7261AEE41B5230CBC3B7C05C74052B1D75AB5",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-trace/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/P02-R-validation-trace/worker.stdout.log",
+      "bytes": 71,
+      "SHA256": "32470F2D54C59756A477BA708A401D8E9526FB9D622671E204C2CA6052265D4F",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R01/command.json",
+      "bytes": 1271,
+      "SHA256": "C84FDE34DCEE0717683C20DA71820E5F10CDA3B89CDEF1900A6055CB6F883736",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R01/result.json",
+      "bytes": 3319,
+      "SHA256": "229415AF09D0C38676330C1CFB84492B2E1399A545BBA9F033F6D34CEF14FFDC",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R01/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R01/suite.stdout.log",
+      "bytes": 202,
+      "SHA256": "CCCA7A3CDF4A0A0C4A4299FC848C61509554519DFC9575EFB0AD4F242A9327F3",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R01/worker-result.json",
+      "bytes": 1365,
+      "SHA256": "ADA7DA4F620478120055961EA2BFADEA8AB290AEEC4E00705C51C19D3A5BF782",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R01/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R01/worker.stdout.log",
+      "bytes": 52,
+      "SHA256": "51C8688246DC35996B4AB2B45E0556E53CDA9ED4683E2EAA08EC67081958D7A7",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-EXISTING-OUT/case.json",
+      "bytes": 362,
+      "SHA256": "11911FFE3625DE4317518EFD59ACA88B70ADA380192FC487229386B847A96097",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-EXISTING-OUT/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-EXISTING-OUT/suite.stdout.log",
+      "bytes": 137,
+      "SHA256": "E5E99248B405D419186ADFE2B62B79DB5F271FBEE82E1C330F841E68D0ECB6C9",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-INVALID-JSON/case.json",
+      "bytes": 17,
+      "SHA256": "26FFEE76E28DA4963354F1E30B0C5B83EC106EA2AA98035487DDDF3B34419809",
+      "read_status": "EXPECTED_INVALID_JSON_FULL_BYTES_READ",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-INVALID-JSON/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-INVALID-JSON/suite.stdout.log",
+      "bytes": 187,
+      "SHA256": "7E219D6AF908595078AB64DC7838F58C7B3443D0EA09B4B8A2942104495D55BC",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-INVALID-ROOT/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-INVALID-ROOT/suite.stdout.log",
+      "bytes": 130,
+      "SHA256": "98C49FE2D7D46415867ABC1918E32940A7161FF89EA3D2368547462AF81D232B",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-LOG-FLOOD/case.json",
+      "bytes": 393,
+      "SHA256": "2695E0F4A15C02BD94EA74B99856EC782DD70655F11DEDB287AD50F8DB81E213",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-LOG-FLOOD/command.json",
+      "bytes": 1296,
+      "SHA256": "B9D2EEA4CBA33315D82B8171A1148741C0203B790AA306DEAD6D65CFEDFB4FC3",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-LOG-FLOOD/result.json",
+      "bytes": 2911,
+      "SHA256": "A536EA4D3AE3C4ABD1F8D4C4FCF70DDD1CE29D672CF32FC20637C644A6C3BD5A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-LOG-FLOOD/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-LOG-FLOOD/suite.stdout.log",
+      "bytes": 200,
+      "SHA256": "C0D8669E18BB7A64D0C51D17C7ABE56DE04F0AA39B0860B99CB304830CCB13A5",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-LOG-FLOOD/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-LOG-FLOOD/worker.stdout.log",
+      "bytes": 4096,
+      "SHA256": "D349A508C76FAD12956A99ADC3346B607F2309A4E6F546872D04345BA781088C",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-MEASURE/case.json",
+      "bytes": 361,
+      "SHA256": "933F97CEA070CAA6D57B593BBB3885BC176F492DD0E959B9E53073C60B25D2D8",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-MEASURE/command.json",
+      "bytes": 1289,
+      "SHA256": "07B6BF565D427713B70DE3CD9A54B045576C6B16A58848321D5A1D4E6518BA68",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-MEASURE/result.json",
+      "bytes": 2656,
+      "SHA256": "CB1D111420FBB22E54F656CD86366F57B969D2AE9DA2E4EA608591470D2EEC87",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-MEASURE/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-MEASURE/suite.stdout.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-MEASURE/worker-result.json",
+      "bytes": 509,
+      "SHA256": "71358F9CAE7E0DF029FA959EBB35BAA396CCDBA7074B837E43001693D51B1BC1",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-MEASURE/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-MEASURE/worker.stdout.log",
+      "bytes": 63,
+      "SHA256": "1A2FBA8073312E0C386D6578EAEE9315A66DB770F15264CC7AD026775A0E775A",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-OVER/case.json",
+      "bytes": 407,
+      "SHA256": "A3F675D89FA8A1DF0B4153FA41DBD52A123B5109661F5D4937AA1BD4FE70371B",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-OVER/command.json",
+      "bytes": 1257,
+      "SHA256": "1399F16B06F2ACA5795F582D4B1E80CE7043B0782894251A31F7F559307799E8",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-OVER/result.json",
+      "bytes": 3375,
+      "SHA256": "805DEDD81942C74A718CA3DDD26A9E6650B5A03EF2C7CC32C5893BEFFF0C2DEB",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-OVER/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-OVER/suite.stdout.log",
+      "bytes": 198,
+      "SHA256": "385A1C2E6C75ACB9FD33DD2AA82F927F91BCB182F1E85065ADD45505C1F93ED4",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-OVER/worker-result.json",
+      "bytes": 1370,
+      "SHA256": "101F0025C0CB41B2E49C02FD4190BC9D9756ED5F49E2FECB7F3AD77762FC0F20",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-OVER/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MEM-OVER/worker.stdout.log",
+      "bytes": 60,
+      "SHA256": "E61A87059DD56652EFDB19D87BE2C803F758ED0BB7B0E9BACAC6B536B86C241C",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MISSING-RESULT/case.json",
+      "bytes": 364,
+      "SHA256": "135A76C6FD64097F1DEC3261337ABA58A0321BAD01E9BD85229E52F25DB4514A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MISSING-RESULT/command.json",
+      "bytes": 1321,
+      "SHA256": "D3AD62CEB23D80804054F6D475C324D64BDA1880DF384CCFEB43DC264894B01F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MISSING-RESULT/result.json",
+      "bytes": 2994,
+      "SHA256": "A1B23FB892CEEB44B51E085DF20E71C381BDB250E88A97BFFB4AB2A8D0E51C50",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MISSING-RESULT/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MISSING-RESULT/suite.stdout.log",
+      "bytes": 264,
+      "SHA256": "BCCC8CEE8AEF1DBF0FBC11761ADE1A5E1C843844262B53FB95ACE590D24DAD06",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MISSING-RESULT/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-MISSING-RESULT/worker.stdout.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-OVERSIZE-CASE/case.json",
+      "bytes": 1048607,
+      "SHA256": "84ECEB5276B40D126AB37B066EFBAC9E82823720953D0DBBD7550915CB9AD18B",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-OVERSIZE-CASE/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-OVERSIZE-CASE/suite.stdout.log",
+      "bytes": 139,
+      "SHA256": "680C4CF0BE7DFC529C24A80259B93461E9CD3A5B2E9ACDFBC7BA436761B52639",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-OVERSIZE-INDEX/case.json",
+      "bytes": 504,
+      "SHA256": "3B62BAD6895F00BA0A5E6DDA40605FF44BD6B892357CF45F98BDD9E634CA3404",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-OVERSIZE-INDEX/command.json",
+      "bytes": 1301,
+      "SHA256": "926BC0BDA8F177BF94F730ACEF836DD09905A07994A9B00DF561FD3E3556F09B",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-OVERSIZE-INDEX/result.json",
+      "bytes": 3055,
+      "SHA256": "36B9845DE31991B671E44DC7F50185725EB937907578D2099C8DC739F934A1BF",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-OVERSIZE-INDEX/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-OVERSIZE-INDEX/suite.stdout.log",
+      "bytes": 248,
+      "SHA256": "862AAD0BD05E617A194350C2AE0E689D508E648C24A5444AE420B4EA2AA94512",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-OVERSIZE-INDEX/worker-result.json",
+      "bytes": 1074,
+      "SHA256": "E8DCFE9AB440EC16EB148409B5E88FC19931382EBD6FAC3479C7F6656C8BE8FA",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-OVERSIZE-INDEX/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-OVERSIZE-INDEX/worker.stdout.log",
+      "bytes": 74,
+      "SHA256": "6827490ABF792B456DDA72BF51790E731F3E5E1573F815482F1555CEFE65966F",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-PASS-TEXT/case.json",
+      "bytes": 359,
+      "SHA256": "44EE7C35745E79412F75820640C8C4ADDE175362AC970D5269CD17100377FCD6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-PASS-TEXT/command.json",
+      "bytes": 1296,
+      "SHA256": "1CF01E5C8466EABC0DC09895BAE6A2B1163BC4DC73BDFEBF27631BB474B251F3",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-PASS-TEXT/result.json",
+      "bytes": 2967,
+      "SHA256": "18011EA288434FBD839DE01E9AFCA4BBA20D046F70726CC666657EEE2DDBCB0A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-PASS-TEXT/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-PASS-TEXT/suite.stdout.log",
+      "bytes": 254,
+      "SHA256": "79CE421F7CF82B1E7C253802D6001C336143A79C41EC6F908206D586FFE97B3C",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-PASS-TEXT/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-PASS-TEXT/worker.stdout.log",
+      "bytes": 58,
+      "SHA256": "B00CCAB4E590618D3602FD87A69FA8FF562F5938C2283AF93D41FE06D6B5B783",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-RESULT-ENOUGH/case.json",
+      "bytes": 395,
+      "SHA256": "02D62B671C9CAE54D9FEEF752AAD2DCF4431DE3AF29BCFA3542EE336EE51D967",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-RESULT-ENOUGH/command.json",
+      "bytes": 1277,
+      "SHA256": "772FDE15E7C302E22028125342A4B5EBB79DAAD4EAABC963534C422A783530B2",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-RESULT-ENOUGH/result.json",
+      "bytes": 3335,
+      "SHA256": "C7E73D2E9AE0DDE96A61004FC8910610929811EF1B607BC9BACE3BF70AF6DDE3",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-RESULT-ENOUGH/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-RESULT-ENOUGH/suite.stdout.log",
+      "bytes": 208,
+      "SHA256": "EF24104687990DFE050D8DF3255BFF353BF39B3F45C234EA6E986F2280F1F5D2",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-RESULT-ENOUGH/worker-result.json",
+      "bytes": 1375,
+      "SHA256": "1A981DD819AC528E65C2860110A69E5050328F3AE55A371D21E05BC6244C9E0F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-RESULT-ENOUGH/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-RESULT-ENOUGH/worker.stdout.log",
+      "bytes": 65,
+      "SHA256": "6F53AB09766E884B9A1DCE45111ADCF529486868ADC6E9F231AC046D7DBF30BA",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-TIMEOUT-TOTAL/case.json",
+      "bytes": 426,
+      "SHA256": "8F0292E2B906BCC7E4872CF21E0043D842B43EE71ED3E8C806F1238C112D0BD6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-TIMEOUT-TOTAL/command.json",
+      "bytes": 1299,
+      "SHA256": "249DEAD2B30CC5A95E75846C441E4BFAAF2427888B5E433DC32E72CF385A0CFE",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-TIMEOUT-TOTAL/result.json",
+      "bytes": 2926,
+      "SHA256": "3E68B2BA064F47ADBE53A9DD7C0B8A88A0CD0BACF356326FE6F5CFB6C3BE3396",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-TIMEOUT-TOTAL/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-TIMEOUT-TOTAL/suite.stdout.log",
+      "bytes": 210,
+      "SHA256": "C99216BE28680A6DCEF085839286CF8F271E0998C487016DAEE767E297EFD8A6",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-TIMEOUT-TOTAL/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-TIMEOUT-TOTAL/worker.stdout.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-WORKER-RC/case.json",
+      "bytes": 359,
+      "SHA256": "91753E9D12B3099760FFC67E532145A307085659F28F0A795CF7D72FACA8B900",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-WORKER-RC/command.json",
+      "bytes": 1281,
+      "SHA256": "43C11E946825D48BA51116E27C7C6820D118062B89D4C9D96D85393ED694F365",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-WORKER-RC/result.json",
+      "bytes": 2950,
+      "SHA256": "EC94AAC30998F1CC34F31F6D7843A6F5D76F91FFC06E543A4E301E4325C40E5C",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-WORKER-RC/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-WORKER-RC/suite.stdout.log",
+      "bytes": 255,
+      "SHA256": "3B08F320EC29E6D9E20E59308788E5DE942B32FF9B6D0637CD6439FFD1C8F6A9",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-WORKER-RC/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/R1-WORKER-RC/worker.stdout.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-1/case.json",
+      "bytes": 363,
+      "SHA256": "4D0585701AF09BF38A0187C43C38CE569803D04E72F8E4FAA4D7B518F2EFF6C9",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-1/command.json",
+      "bytes": 1253,
+      "SHA256": "181B027403051D8FAC4FAF481A509EA803E3143B2B2CCA89A2360F5BEF34D313",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-1/result.json",
+      "bytes": 3301,
+      "SHA256": "F60BE8055F1D637F3FA3D81BDFD726497DCDDB739D6258536343C655441DC05B",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-1/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-1/suite.stdout.log",
+      "bytes": 186,
+      "SHA256": "7CE3D1DCBAFBA71F277FD924555DA9740B9A3C35B37199C2D2F116E47A7F5399",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-1/worker-result.json",
+      "bytes": 1364,
+      "SHA256": "66B560A73AC54B67F2B64C638EF770F5AE6D0A5BE414948812A0CBAAFC394560",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-1/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-1/worker.stdout.log",
+      "bytes": 54,
+      "SHA256": "0C8B8B856B0795CCABC4EEE29ABBDACE62102F3501A0A85F89E131D606A32642",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-128/case.json",
+      "bytes": 369,
+      "SHA256": "49CF7CEF77C873B64E75E6FE7D7C2C62B5E40230250B3BEB220EB5A1E3DCAADE",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-128/command.json",
+      "bytes": 1261,
+      "SHA256": "2F359B88A43E65940B012C31C4938AC43B20321D2EF63142DF43E7F62602FCAC",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-128/result.json",
+      "bytes": 3326,
+      "SHA256": "57302ABC5C1167B8CFFB7A40D13602245E4E417A9AD5276EF8B981A280879764",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-128/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-128/suite.stdout.log",
+      "bytes": 190,
+      "SHA256": "800B8479DF1857113CD413A4057D67FD22DBC8EB453B97E43C1EE03C0482C30E",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-128/worker-result.json",
+      "bytes": 1382,
+      "SHA256": "37A344ED8D258F3539DF0CDAA3E3BAFC48DC09CD0544B98099869A2843949173",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-128/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-128/worker.stdout.log",
+      "bytes": 56,
+      "SHA256": "EB84548D92C73E86B5621E8DCC4B905E36B5DD08BE5D07A4F2119F9FC9A35C36",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-16/case.json",
+      "bytes": 366,
+      "SHA256": "EF62EE8DFFF9054CC99DB2AF3FDC26102824F2DA4C371178AE5D6DA9C5693FE0",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-16/command.json",
+      "bytes": 1257,
+      "SHA256": "A6482F14D837C73FC4302205AB1608E580ACE5EDCD20A9BE27D99B131E90868C",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-16/result.json",
+      "bytes": 3313,
+      "SHA256": "6C870B3F73E817A91378EF8D0F90F972928F710DA7DF14D1B6D92E86A509A9DA",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-16/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-16/suite.stdout.log",
+      "bytes": 188,
+      "SHA256": "5A07CB350AF75ABD0515839408BBAAFAF95EAB0C27D728F620516AC671D619EF",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-16/worker-result.json",
+      "bytes": 1373,
+      "SHA256": "4F387E2E4BE63F8F8FCC1F50DF5DB03588BF130914B2D393E5A1981072666A50",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-16/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S01-16/worker.stdout.log",
+      "bytes": 55,
+      "SHA256": "EC4EA1C79D3A90DF5BC59A7F751A89C5C76EE3112818D632B3DB6E75DB0B56F2",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S02/case.json",
+      "bytes": 352,
+      "SHA256": "EB2CDEE2F4B14B7A303A4DC6BEBEBCC72FD25C8A09D4391C9DEC46B385CA9E32",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S02/command.json",
+      "bytes": 1245,
+      "SHA256": "2CCBBA9E33D39A4625EC47FDA5F2C4FE3FDBB1DE324C60BEB1DD32E87FCDAC03",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S02/result.json",
+      "bytes": 3292,
+      "SHA256": "1D217E76C256C47ED99BFD40D2E264B03FC4281FBD202144D22BD068AE7536A6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S02/suite.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S02/suite.stdout.log",
+      "bytes": 182,
+      "SHA256": "4EF2F3FD79BC0F0A18CEE1BB0EAB7CC569500BDB3ECAF168C75B9A26DCB8B3EF",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S02/worker-result.json",
+      "bytes": 1363,
+      "SHA256": "6FA54DA11CBC27FE57523B36A15F0C43D4572623111157044451C174A0B8AFFD",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S02/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "logs/S02/worker.stdout.log",
+      "bytes": 52,
+      "SHA256": "F994F8B6C46023E11D841E9451AAC186348B667F15B4F89981C2E7EA4D248629",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_TEXT_OR_JSON_READ;54_CASES_RAW_RC_RESULT_STDOUT_CROSSCHECKED;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/task/APPROVAL.json",
+      "bytes": 705,
+      "SHA256": "0B4B0BA8E2A0E001EF2B07B6340C655247EAA186D25069F06CCA9F15AC5F8E6A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "A_ORIGINAL_SCOPE_HISTORY;FULL_TEXT_READ_REUSED_SCOPE"
+    },
+    {
+      "path": "r1/task/BASELINE.json",
+      "bytes": 1332,
+      "SHA256": "8BBEBE6537ECE49CBC6656C411118B1E3492BE3356674EAC70E2D7608BE7455F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "A_ORIGINAL_SCOPE_HISTORY;FULL_TEXT_READ_REUSED_SCOPE"
+    },
+    {
+      "path": "r1/task/C0-default.json",
+      "bytes": 374,
+      "SHA256": "A466FFDF3D3651E079FC1A4E18962EF9FAE15C12EFA8F38BD90AE12C7471A067",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "A_ORIGINAL_SCOPE_HISTORY;FULL_TEXT_READ_REUSED_SCOPE"
+    },
+    {
+      "path": "r1/task/C1-worker-memory.json",
+      "bytes": 424,
+      "SHA256": "0E4163957839E06C52198214C951DD80F62F31BCB68757678576E9525AB40924",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "A_ORIGINAL_SCOPE_HISTORY;FULL_TEXT_READ_REUSED_SCOPE"
+    },
+    {
+      "path": "r1/task/C2-result-size.json",
+      "bytes": 411,
+      "SHA256": "433061C378C518A25BA92BC8275D0DADE4FA013F796BB5CF7DAC8D1C03DA3D46",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "A_ORIGINAL_SCOPE_HISTORY;FULL_TEXT_READ_REUSED_SCOPE"
+    },
+    {
+      "path": "r1/task/C3-optimized-protected-output.json",
+      "bytes": 393,
+      "SHA256": "737AB192B42F093EB1E8EBD3E04BB3FD73441959804FDBC60ABCC3B92DD35B5D",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "A_ORIGINAL_SCOPE_HISTORY;FULL_TEXT_READ_REUSED_SCOPE"
+    },
+    {
+      "path": "r1/task/COUNTEREXAMPLES.json",
+      "bytes": 4070,
+      "SHA256": "8995323C3AA9F507F1543CB06FAEE2810D1758B86B3643AB8AEBC61BD8718F94",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "A_ORIGINAL_SCOPE_HISTORY;FULL_TEXT_READ_REUSED_SCOPE"
+    },
+    {
+      "path": "r1/task/REPRODUCE.md",
+      "bytes": 1466,
+      "SHA256": "A791FD63EE59D3230494823AF7103C94913CE868059519E7941990E426293BD0",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "A_ORIGINAL_SCOPE_HISTORY;FULL_TEXT_READ_REUSED_SCOPE"
+    },
+    {
+      "path": "r1/task/START_HERE.md",
+      "bytes": 1279,
+      "SHA256": "B4517C80A833A9B8901DCF7FEB784F9BF9B85BD95AA07BEA595A0C66BEE5DEEA",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "A_ORIGINAL_SCOPE_HISTORY;FULL_TEXT_READ_REUSED_SCOPE"
+    },
+    {
+      "path": "r1/task/TASK.md",
+      "bytes": 6382,
+      "SHA256": "14C9D4ABA1976920D17B9560760761992C02466C33170BE77D416196081784BB",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "A_ORIGINAL_SCOPE_HISTORY;FULL_TEXT_READ_REUSED_SCOPE"
+    },
+    {
+      "path": "r1/task/TEAMMATE_PROMPT.md",
+      "bytes": 1705,
+      "SHA256": "785CAE9DC5A192C23BE3401E9D06186C7553FCC8A941A5004484FDB80DC3B304",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "A_ORIGINAL_SCOPE_HISTORY;FULL_TEXT_READ_REUSED_SCOPE"
+    },
+    {
+      "path": "r1/old-v01/C0-default/C0-default/command.json",
+      "bytes": 1097,
+      "SHA256": "0C201804C800FB9F579DA774D36AD5D52BB73913329752A5E19D03839F746F6A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C0-default/C0-default/result.json",
+      "bytes": 3016,
+      "SHA256": "A473688595052467183C6A6C8C03247BF0F393A4A9356FC37C930500807B4705",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C0-default/C0-default/worker-result.json",
+      "bytes": 1370,
+      "SHA256": "A0F668F8459ED907EA6F3B52F6D5CAD7C15B6AAB353F638713EB9D3CB31169DC",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C0-default/C0-default/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C0-default/C0-default/worker.stdout.log",
+      "bytes": 59,
+      "SHA256": "264807E698DE2B70FDAF99242CF831CB9A1B6F59D46B66A97689386B01E96685",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C1-worker-memory/C1-worker-memory/command.json",
+      "bytes": 1121,
+      "SHA256": "616579A4AE23C850742B3B7AE4EAD054F42F4CCC3EC71328D82B270A515CBE37",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C1-worker-memory/C1-worker-memory/result.json",
+      "bytes": 3038,
+      "SHA256": "7B63B404D4F06C8BD96DB6E8121819F88D97348565ADA82A6B33A29C86156F1F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C1-worker-memory/C1-worker-memory/worker-result.json",
+      "bytes": 1368,
+      "SHA256": "44AB385D41C1CDA30D509C8AE1F03830F06C195EF920F2227C85AA62607C2386",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C1-worker-memory/C1-worker-memory/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C1-worker-memory/C1-worker-memory/worker.stdout.log",
+      "bytes": 65,
+      "SHA256": "EF14AA4F7D308C9E6866368813562F886DBE652698234000FB269D48B7C4CA17",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C2-result-size/C2-result-size/command.json",
+      "bytes": 1113,
+      "SHA256": "AAF92650672442481537FBC34D02D66CFB64D2FA54C95BB9E54773D2CE394371",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C2-result-size/C2-result-size/result.json",
+      "bytes": 2184,
+      "SHA256": "FD8A383D78CE73DCE0677A0B60D4722FE88383D87EDBE3C059E25550D50D6E9A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C2-result-size/C2-result-size/worker-result.json",
+      "bytes": 1370,
+      "SHA256": "B8081A5058880DA6C06212901D66B98B97390BEAACFFD7406FD3E61B479B1BCC",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C2-result-size/C2-result-size/worker.stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C2-result-size/C2-result-size/worker.stdout.log",
+      "bytes": 63,
+      "SHA256": "F0BAC42EF746343CCF2B506E74D1A3108D90BF10B2E4C766746F2358C38F242C",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "r1/old-v01/C3-optimized-protected/forbidden-output-probe/result.json",
+      "bytes": 945,
+      "SHA256": "15FB8E369F0C4B3F1B56ADAA5A228D654BB05FC284BF334DA0C1A28251D61E75",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_ORIGINAL_HISTORY_READ;NOT_A_NEW_RUN"
+    },
+    {
+      "path": "tests/cases/C0-default.json",
+      "bytes": 357,
+      "SHA256": "9EC0337A4C16B28150AA082A01031416A4D1770692499C8FAB8547C7807289FD",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/C1-worker-memory.json",
+      "bytes": 405,
+      "SHA256": "2E62D5D81659FD4AFB968015B744C8426841F6666ACBE5EB3F8A9FA2EB68D355",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/C2-result-size.json",
+      "bytes": 392,
+      "SHA256": "1E8BD61CA51885AD21C0D5A4D22A5CC9448EEC469339B717FA8E107539D1FFA3",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/C3-optimized-protected.json",
+      "bytes": 369,
+      "SHA256": "5F68C7713EF7AA30F38D8CA43C884B5EA92A0FAE12CD565455CB3BCF8F6A23E8",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/D01.json",
+      "bytes": 326,
+      "SHA256": "7788E90BB5B1AC65F9E1670287FD893EF42C52F46CBA3C1312363AFBC3C2AEDB",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/D02.json",
+      "bytes": 522,
+      "SHA256": "5BDF9609B383A64A90B15B6E54FAF874D3D7C34054EE9DD098787C7E314BAAF8",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F01.json",
+      "bytes": 326,
+      "SHA256": "64AF8D173F2B2CDD82BE8AC9912A95FED27C9ABB496DC139CBE61FA9B4C694C4",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F02.json",
+      "bytes": 323,
+      "SHA256": "865F35AA8B7A1EFA5270DD08F99F0F4D7DB07E8847232BFBDF6113EABBA183D1",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F03.json",
+      "bytes": 329,
+      "SHA256": "99FAB331602D7F99E4F1515C5A468DBEA3AA9C11E1770955D4373396E2F3C38A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F04.json",
+      "bytes": 350,
+      "SHA256": "FAF085AB6BB4A042FD8B23D9C3319B135FEEC958F127F9DC0178155761F5A7A7",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F05.json",
+      "bytes": 324,
+      "SHA256": "41723B060FA7FBBC7A823ED048B23C7EDCC235E2DEE674EAE6F7E5AAABE64425",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F06.json",
+      "bytes": 326,
+      "SHA256": "C1ACA6FCAC7E1F874B3E8AFF7556CB46E047560A5E7CDC652DD144F91189370C",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F07.json",
+      "bytes": 327,
+      "SHA256": "115F81F5C54DC278664EF2B3832FF035EB7A85E633C54510A5A3A96ADF4CDE28",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F08.json",
+      "bytes": 327,
+      "SHA256": "86A2AE760A56EB34727C4670666FD3DD943BF11DD9F4A1F4096DB53521B8500F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F09.json",
+      "bytes": 352,
+      "SHA256": "7B32A79BA22125A9381C0B30C4EA4D73A50AE070350BB24C0D5BD6614BC0D003",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F10.json",
+      "bytes": 506,
+      "SHA256": "A3C03A6D5EA775800D42E53E925C3070224A1457BE0896BB461CA10222F4B5EE",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F11.json",
+      "bytes": 502,
+      "SHA256": "4E3E7447B3A31ADD6B1FEAE418301832D0BFC98A86F283F77ACFF5565AAC99E7",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F12.json",
+      "bytes": 307,
+      "SHA256": "076D4BECDD0EDDC43CDD8CC3E3EA1B4084BF5B5A74D9C1987B9457CAB0328B33",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F13.json",
+      "bytes": 328,
+      "SHA256": "4A9D869F636613EDCDD4AD63F32A5089993B2EF767E4D13BB272F30FE55AA394",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F14.json",
+      "bytes": 384,
+      "SHA256": "FF335DDCB142E96D55178638CEF97224EFC8AABD500C86FE5690AAFDFE949616",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F15.json",
+      "bytes": 389,
+      "SHA256": "D623165DE1BF77B2A2A42103D84EED7F4A6170285D1DDCC480657F595BBBF83A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F16.json",
+      "bytes": 350,
+      "SHA256": "C1464C4DA98D85F21F86CCD2C3A1CC586D76A4BA1B71CDFBF9884340DEF6AFFD",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/F19.json",
+      "bytes": 350,
+      "SHA256": "46CF494B7DB9A84F334177A6E5E84B90C6EE5AB32313994729BC5329CEEE4AB7",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/P01-S00-duplicates-kept.json",
+      "bytes": 370,
+      "SHA256": "8103BE6606D984DE15B3B8A303C13FDA6A5A45B8A083BBF941DB915A13C0E751",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/P01-S01-wrong-field.json",
+      "bytes": 358,
+      "SHA256": "54D41B80159DAFF9C402BAD3C9F31A2EBC64757497ECD3A6EB9D242993A71332",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/P01-S02-missing-tail.json",
+      "bytes": 361,
+      "SHA256": "C64FB70B33E72843A50F5770D7BBFD45B761804ECCAA878560F9C2CEB1632AB6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/P01-S03-unknown-data.json",
+      "bytes": 361,
+      "SHA256": "864EDCD4BB3B3816022F07D5585CBC2580F748215C46691DBC36A93C5CF4D954",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/P01-S04-empty-explicit.json",
+      "bytes": 366,
+      "SHA256": "D207162E81DFF1FE8FA122CAF176C38BBFB77AA8C39CF09CCC8340C9B35E24F6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/P01-S05-empty-forbidden.json",
+      "bytes": 370,
+      "SHA256": "412EAF52BC52C1B637054A36A27011DDB3FD5AD96A1BF85FC69627D362FE2768",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/P01-S06-bus-format.json",
+      "bytes": 351,
+      "SHA256": "235C09AB8AA5286C5A0A97A83A581BA9F8BF83E0E5262489CC672E3CC2BFB860",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/P02-R-performance-bus.json",
+      "bytes": 522,
+      "SHA256": "25D4CBA2AF1A2BDCE2565136E4C248D0A97851401FB09BB921E8472528BE686F",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/P02-R-performance-trace.json",
+      "bytes": 532,
+      "SHA256": "55D996FB2DB4F4FE1F4627D2081A448062CAEB6F2C8832A145A6C1E276EED109",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/P02-R-validation-bus.json",
+      "bytes": 519,
+      "SHA256": "9093CF72552094BB8870CAB585B0E1F3B9BD54CF4CB32AF3DEF6CC5D909EAA96",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/P02-R-validation-trace.json",
+      "bytes": 529,
+      "SHA256": "558EB378CBFFA2140287F8D3FB7D6321BDCE9C95F2B64D36C8265C1DAC06675D",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/R1-EXISTING-OUT.json",
+      "bytes": 362,
+      "SHA256": "11911FFE3625DE4317518EFD59ACA88B70ADA380192FC487229386B847A96097",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/R1-INVALID-JSON.json",
+      "bytes": 17,
+      "SHA256": "26FFEE76E28DA4963354F1E30B0C5B83EC106EA2AA98035487DDDF3B34419809",
+      "read_status": "EXPECTED_INVALID_JSON_FULL_BYTES_READ",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/R1-LOG-FLOOD.json",
+      "bytes": 393,
+      "SHA256": "2695E0F4A15C02BD94EA74B99856EC782DD70655F11DEDB287AD50F8DB81E213",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/R1-MEM-MEASURE.json",
+      "bytes": 361,
+      "SHA256": "933F97CEA070CAA6D57B593BBB3885BC176F492DD0E959B9E53073C60B25D2D8",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/R1-MEM-OVER.json",
+      "bytes": 407,
+      "SHA256": "A3F675D89FA8A1DF0B4153FA41DBD52A123B5109661F5D4937AA1BD4FE70371B",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/R1-MISSING-RESULT.json",
+      "bytes": 364,
+      "SHA256": "135A76C6FD64097F1DEC3261337ABA58A0321BAD01E9BD85229E52F25DB4514A",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/R1-OVERSIZE-CASE.json",
+      "bytes": 1048607,
+      "SHA256": "84ECEB5276B40D126AB37B066EFBAC9E82823720953D0DBBD7550915CB9AD18B",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/R1-OVERSIZE-INDEX.json",
+      "bytes": 504,
+      "SHA256": "3B62BAD6895F00BA0A5E6DDA40605FF44BD6B892357CF45F98BDD9E634CA3404",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/R1-PASS-TEXT.json",
+      "bytes": 359,
+      "SHA256": "44EE7C35745E79412F75820640C8C4ADDE175362AC970D5269CD17100377FCD6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/R1-RESULT-ENOUGH.json",
+      "bytes": 395,
+      "SHA256": "02D62B671C9CAE54D9FEEF752AAD2DCF4431DE3AF29BCFA3542EE336EE51D967",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/R1-TIMEOUT-TOTAL.json",
+      "bytes": 426,
+      "SHA256": "8F0292E2B906BCC7E4872CF21E0043D842B43EE71ED3E8C806F1238C112D0BD6",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/R1-WORKER-RC.json",
+      "bytes": 359,
+      "SHA256": "91753E9D12B3099760FFC67E532145A307085659F28F0A795CF7D72FACA8B900",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/S01-1.json",
+      "bytes": 363,
+      "SHA256": "4D0585701AF09BF38A0187C43C38CE569803D04E72F8E4FAA4D7B518F2EFF6C9",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/S01-128.json",
+      "bytes": 369,
+      "SHA256": "49CF7CEF77C873B64E75E6FE7D7C2C62B5E40230250B3BEB220EB5A1E3DCAADE",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/S01-16.json",
+      "bytes": 366,
+      "SHA256": "EF62EE8DFFF9054CC99DB2AF3FDC26102824F2DA4C371178AE5D6DA9C5693FE0",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/cases/S02.json",
+      "bytes": 352,
+      "SHA256": "EB2CDEE2F4B14B7A303A4DC6BEBEBCC72FD25C8A09D4391C9DEC46B385CA9E32",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/fixtures/log_flood_worker.py",
+      "bytes": 283,
+      "SHA256": "39F49D54994603A4B96C527B36AC13D2B906D471F2BC1A4EFFA803F29262EECD",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "FULL_SOURCE_REVIEWED"
+    },
+    {
+      "path": "tests/fixtures/missing_result_worker.py",
+      "bytes": 87,
+      "SHA256": "E551983323DE023F18448F44D1F4896863178961FA36950470B75075911FD445",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "FULL_SOURCE_REVIEWED"
+    },
+    {
+      "path": "tests/fixtures/nonzero_worker.py",
+      "bytes": 44,
+      "SHA256": "708B964DD5DA832C6A9E34E07A69357F80372A2CB82689ADAF2E0037B3BE8F63",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "FULL_SOURCE_REVIEWED"
+    },
+    {
+      "path": "tests/fixtures/no_peak_worker.py",
+      "bytes": 1128,
+      "SHA256": "F448E6E8B6FD697FDFBCA9D7BFD7AC6F9A183E8927F006E350C828F2A103B14B",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "FULL_SOURCE_REVIEWED"
+    },
+    {
+      "path": "tests/fixtures/pass_text_worker.py",
+      "bytes": 131,
+      "SHA256": "157BC5F337B9CF85909CB166FF24DF1A96DE5332476FD4C6459F87D5753F062A",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "FULL_SOURCE_REVIEWED"
+    },
+    {
+      "path": "tests/fixtures/sleep_forever_worker.py",
+      "bytes": 68,
+      "SHA256": "3AA9C1A4C592B4BE8BB2CB8AAE9D263B4E0B117F9D146B2205E04C51BD9F542C",
+      "read_status": "FULL_AST_PARSED_NOT_EXECUTED",
+      "semantic_review": "FULL_SOURCE_REVIEWED"
+    },
+    {
+      "path": "tests/history/PLAN-v01.json",
+      "bytes": 30320,
+      "SHA256": "9F74BDEFADC8981A55F0443855A0549F79A4FE1118E8D3EDBC330618355352BD",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/history/PLAN-v01.sha256",
+      "bytes": 83,
+      "SHA256": "34F3689CE7E0191BDD82DA36C5DF01CA20E5CA0D8DFEBDECBCAAF4D31687EA6C",
+      "read_status": "FULL_TEXT_READ_NOT_YET_SEMANTIC_REVIEW",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    },
+    {
+      "path": "tests/history/results-v01.json",
+      "bytes": 265250,
+      "SHA256": "5580398AB81666CD424D475B9C17C4891B785F3D93967831D6337867F7FD87A3",
+      "read_status": "FULL_JSON_PARSED",
+      "top_type": "dict",
+      "semantic_review": "FULL_METADATA_READ_OR_JSON_PARSED;RELEVANT_FIELDS_CROSSCHECKED"
+    }
+  ]
+}

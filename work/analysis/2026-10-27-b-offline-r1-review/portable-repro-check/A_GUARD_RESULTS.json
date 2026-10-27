@@ -1,0 +1,51 @@
+[
+  {
+    "id": "active-memory-guard",
+    "status": "FAIL",
+    "expected": {
+      "active_kill": true,
+      "rc": 5
+    },
+    "evidence": {
+      "observed_peak": 52154368,
+      "over_limit_observations": 154,
+      "over_limit_span_s": 0.828,
+      "worker_rc": 0,
+      "final_status": "LIMIT"
+    },
+    "kill_elapsed_s": [],
+    "elapsed_s": 0.906,
+    "actual_parent_function_rc": 5,
+    "guard_fixture_only": true,
+    "new_DUT": 0,
+    "production_source_unchanged": true
+  },
+  {
+    "id": "main-deadline",
+    "status": "FAIL",
+    "expected": {
+      "kill_by_s": 1.1,
+      "total_by_s": 2.1,
+      "rc": 6
+    },
+    "evidence": {
+      "worker_rc": 1,
+      "final_status": "TIMEOUT"
+    },
+    "kill_elapsed_s": [
+      2.016
+    ],
+    "elapsed_s": 2.031,
+    "actual_parent_function_rc": 6,
+    "guard_fixture_only": true,
+    "new_DUT": 0,
+    "production_source_unchanged": true
+  },
+  {
+    "id": "log-sink",
+    "status": "FAIL",
+    "native_rc": 5,
+    "max_observed_file_bytes": 5242880,
+    "limit": 4096
+  }
+]
