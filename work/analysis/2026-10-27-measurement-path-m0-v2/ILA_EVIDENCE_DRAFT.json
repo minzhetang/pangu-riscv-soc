@@ -1,0 +1,68 @@
+{
+  "status": "TECHNICAL_DRAFT_NOT_IMPLEMENTED_OR_HARDWARE_AUTHORIZATION",
+  "image_SHA256": "EC365839FEA1111CB365763322E2FA99C3C3B3F6B74A5884C5B0EB30593486F0",
+  "clock": "same physical27MHz source as counter, actual measurement/calibration pending",
+  "window_tag": "existing timing_phase STORE address0x00010800; preserve physical edge coordinate",
+  "probe_signals": [
+    "soc.cpu_core.id_pc",
+    "soc.cpu_core.id_valid",
+    "soc.cpu_core.pipeline_advance",
+    "soc.cpu_core.eei_hold",
+    "soc.cpu_core.stall_if",
+    "soc.cpu_core.flush_if",
+    "soc.address",
+    "soc.wren",
+    "soc.wdata",
+    "soc.timer_ticks"
+  ],
+  "EX_definition": "id_valid && pipeline_advance && !eei_hold; no retirement claim",
+  "trigger_ranges": [
+    {
+      "function": "core_bench_list",
+      "start": "0x00000530",
+      "end_exclusive": "0x00000844",
+      "EX": 521008
+    },
+    {
+      "function": "matrix_mul_matrix",
+      "start": "0x000016e0",
+      "end_exclusive": "0x000017f0",
+      "EX": 216288
+    },
+    {
+      "function": "core_state_transition",
+      "start": "0x00001ee0",
+      "end_exclusive": "0x000021c8",
+      "EX": 537536
+    },
+    {
+      "function": "core_bench_matrix",
+      "start": "0x00001d54",
+      "end_exclusive": "0x00001d98",
+      "EX": 544
+    },
+    {
+      "function": "__mulsi3",
+      "start": "0x00003520",
+      "end_exclusive": "0x00003544",
+      "EX": 3459392
+    },
+    {
+      "function": "matrix_mul_matrix_bitextract",
+      "start": "0x000017f0",
+      "end_exclusive": "0x00001918",
+      "EX": 356256
+    }
+  ],
+  "analysis": [
+    "list traversal/sort branch window",
+    "matrix call plus soft-multiply loop",
+    "state transition branches"
+  ],
+  "limitations": [
+    "ILA implementation/capture not authorized",
+    "capture depth, physical pre/post edge and debug insertion/resource cost need PDS-specific calibration",
+    "no real retirement PC or unified commit",
+    "no newM extension/accelerator scope"
+  ]
+}

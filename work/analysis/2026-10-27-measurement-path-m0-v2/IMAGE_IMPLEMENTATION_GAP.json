@@ -1,0 +1,17 @@
+{
+  "functional_sources13_unchanged": true,
+  "PDS_source12_exact_and_memory_preprocessing_verified": true,
+  "old_PDS_init_SHA256": "E81FD2B446C2446C2D32DB0D45C9BEDA54D0A6A5B670064F021125E8C7E22E1A",
+  "new8_init_SHA256": "1882FB39C232AB924EB66DFD06E803523E0DB22D1E70E6EDF16E95C35EEB34FE",
+  "byte_differences": [
+    {
+      "offset": 15904,
+      "implemented_old": 1,
+      "new8": 8
+    }
+  ],
+  "new8_matches_binary": true,
+  "new8_PDS": "NOT_RUN",
+  "CPU_sbit": "NOT_GENERATED",
+  "old_flow_gen_bit_stream": false
+}

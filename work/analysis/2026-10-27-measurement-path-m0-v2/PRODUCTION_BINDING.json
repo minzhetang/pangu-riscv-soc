@@ -1,0 +1,5 @@
+{
+  "exact_source_files": 12,
+  "memory_model": "M0_VERIFY views excluded; same INIT inlined; exact nonwhitespace identity",
+  "functional_source_changed": false
+}

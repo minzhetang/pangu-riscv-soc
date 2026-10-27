@@ -1,0 +1,45 @@
+{
+  "status": "CONDITIONAL_ARITHMETIC_ONLY",
+  "actual8_nominal_seconds": 0.623313037037037,
+  "official_score": false,
+  "port_SIM_ONLY": true,
+  "checker_requires_short_warning": true,
+  "forecasts": [
+    {
+      "seed": "performance",
+      "iterations": 160,
+      "physical_estimate": 338396888.3333333,
+      "raw_ticks_estimate": 336588660.0,
+      "nominal_seconds_estimate": 12.466246666666667,
+      "DUT_host_seconds_range": [
+        19442.614414245356,
+        25818.915395804474
+      ],
+      "oracle": "NOT_COMPUTED",
+      "DUT": "NOT_RUN"
+    },
+    {
+      "seed": "validation",
+      "iterations": 160,
+      "physical_estimate": 363978699.0,
+      "raw_ticks_estimate": 362157910.0,
+      "nominal_seconds_estimate": 13.413255925925926,
+      "DUT_host_seconds_range": [
+        20912.418948382485,
+        27770.749552812278
+      ],
+      "oracle": "NOT_COMPUTED",
+      "DUT": "NOT_RUN"
+    }
+  ],
+  "both_DUT_hours": [
+    11.209731489618846,
+    14.886018041282432
+  ],
+  "excludes_build_reference_checker_cleanup": true,
+  "rate_conditions": "different host loads, inputs, adapters; not controlled attribution",
+  "HAS_FLOAT0": "Allowed; preserve raw tick precision",
+  "hardware_clock": "UNVERIFIED",
+  "current8_10sec": "NOT_MET",
+  "future160": "NOT_AUTHORIZED"
+}

@@ -1,0 +1,3976 @@
+{
+  "files": [
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\adapt.py",
+      "bytes": 5272,
+      "SHA256": "F27BF9B7FF437CB618DDBB674E262396EE8C7FA1ADBF2DE92D996ADE743EA142"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\audit_uart.py",
+      "bytes": 5808,
+      "SHA256": "F12DE8608B161B076467C8BE9E2EAEB05AC42CCAF6F32DE9AFB1B669E71101E9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\audit_wave.py",
+      "bytes": 4500,
+      "SHA256": "7AEC9A1E3A2D7450904FA1C594D2A2900A273C8FE105F4C77439CD7A07EBFA9C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\block_codec.py",
+      "bytes": 4765,
+      "SHA256": "EE2C41B6C2CF39CCFDD99FA64D8B333A2D1532FFD24AEDF8B3210C94108FDB80"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\build_once.py",
+      "bytes": 3914,
+      "SHA256": "47D360EDD16110FA9CBA3D2B913DB1F0655CAA192AC7D5F74C3DF32FB0EBCFE9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\check_coremark.py",
+      "bytes": 12796,
+      "SHA256": "3F4045153C01CDDF5A6B333F26D39E6FA587B213CD1B43C969BA5A5F116FF487"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\compile_once.py",
+      "bytes": 1986,
+      "SHA256": "5E338AA67993C95BB94299363898DBDDFAC52507EDA40312C1915970B333983A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\container_controls.py",
+      "bytes": 4897,
+      "SHA256": "C04867266D66AD4F2AECC082CD07D8D77616A6F85FBB4422F4F79C761DA844DD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\final_check.py",
+      "bytes": 250,
+      "SHA256": "799D0C612C60A65778F4A3FD85CA28D9DB86742B630027CF5C7795E6C18CFA3D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\final_worker.py",
+      "bytes": 837,
+      "SHA256": "B724C55CCC8DA01DFCBCD6F38F15820C8FEFB9122E60B7B2CBA08DD28C735A09"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\freeze_oracle.py",
+      "bytes": 1838,
+      "SHA256": "0EC016E51CDA7CD6D37DBD6FD59609E9677227891E31CAD3C13AC327ED2E2DA0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\frozen_checks.py",
+      "bytes": 3044,
+      "SHA256": "F23C7A1F617A24893BEB33160889762304D9F7C20A48864F686359EC1C2B7C15"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\guarded_entry.py",
+      "bytes": 1007,
+      "SHA256": "920EB3984F12C9BE91597881ECDFDB276E4F925E475B0BC63ED1DE1337D43FB8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\host_stage.py",
+      "bytes": 623,
+      "SHA256": "EF48ABAFC901C94D53F022F0E696291CD47B3E62A2E21A1DD43DBED3E95D7DE9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\host_supervisor.py",
+      "bytes": 4685,
+      "SHA256": "3CCF25E731C472C577C78EBA2D21F6191E26157A9536BD56C856929671A2CC9B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\host_worker.py",
+      "bytes": 1622,
+      "SHA256": "F7AA3B3A2CD093FB733FCAB5F885B2918661282DC7D1997D2C7CF538449DB41D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\oracle.py",
+      "bytes": 6300,
+      "SHA256": "1FACD2B886F285F42976C21DF139CFA7A8F92EEB50E04D01885F7EB0D6709BBA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\prepare_next.py",
+      "bytes": 2734,
+      "SHA256": "43CE76B717DC37F35F39821B657ABDFFFC235646070B8DE9650AA39175129BF8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\preserve.py",
+      "bytes": 1040,
+      "SHA256": "21379FEEFE3C8655D86DE552EF783CC6ACE9B95E83E30C9DF0B65BBA60699150"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\run_capture_once.py",
+      "bytes": 3280,
+      "SHA256": "838B862E313FD23F4EC1C3FC4A6271B4D66C1B55F232BEECF55793E120856CA1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\run_container_controls.py",
+      "bytes": 220,
+      "SHA256": "B365C63B120E27C7132B9B41FFA2890A0BDAF3FE5CF4F13A9FA9ED32EBAD87D6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\stage_budget.py",
+      "bytes": 2106,
+      "SHA256": "571DF502754003D65881778685E43CD8C65333F8FBE72FD589FE2BD94E18E2AC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\stage_coremark.py",
+      "bytes": 2288,
+      "SHA256": "3B1F0D3D7D716D11376810895697490AE60D3C0E1CC838C8FF65364F29766E31"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\stream_io.py",
+      "bytes": 8289,
+      "SHA256": "88272C3FDB5472CBE2E6A9606E1F1F6456BF43367B4E027FC478DD072A1E6082"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\stream_peripherals.py",
+      "bytes": 3741,
+      "SHA256": "DD0C73ED792C8F3D82B2525F4A39CFADCD9719929B50CA9E98334DECFB6A3FD5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\models\\cpu_program_reference.py",
+      "bytes": 7252,
+      "SHA256": "090DFCF215189900B420EBBC569CB3F97BAFD0A4AF221F0A1EE9CEAB1382D7B9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\models\\peripheral_checker.py",
+      "bytes": 6001,
+      "SHA256": "E5BB96110DDF7B6BBD761D6A1922E83758DC71746B1813C3D851BD1DEC57677D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\alu.v",
+      "bytes": 1021,
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\board_reset_sync.sv",
+      "bytes": 504,
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\board_top.sv",
+      "bytes": 817,
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\control.v",
+      "bytes": 2988,
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\cpu.v",
+      "bytes": 17416,
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\cycle_counter64.sv",
+      "bytes": 395,
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\gpio_core.v",
+      "bytes": 2087,
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\local_regif_txgpio_m1.v",
+      "bytes": 3732,
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\memory_model.sv",
+      "bytes": 10236,
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\regfile.v",
+      "bytes": 666,
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\soc_data_adapter.sv",
+      "bytes": 1526,
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\soc_top.sv",
+      "bytes": 1872,
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\source\\uart_tx.v",
+      "bytes": 5195,
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\tests\\tb_board_coremark.sv",
+      "bytes": 8473,
+      "SHA256": "5E6674714F07B8A9FE4EFF05E05E275CDFC51D85DCC3B1346ABFEE3F777C9757"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\alu.v",
+      "bytes": 1021,
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\board_reset_sync.sv",
+      "bytes": 504,
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\board_top.sv",
+      "bytes": 817,
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\control.v",
+      "bytes": 2988,
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\cpu.v",
+      "bytes": 17416,
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\cycle_counter64.sv",
+      "bytes": 395,
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\gpio_core.v",
+      "bytes": 2087,
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\init_tables-iter2.svh",
+      "bytes": 132362,
+      "SHA256": "2E07D57F54533C426A337B9533E7A9A30EBD2A28891E52959920E7C8DAFDB4DB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\init_tables.svh",
+      "bytes": 132362,
+      "SHA256": "1882FB39C232AB924EB66DFD06E803523E0DB22D1E70E6EDF16E95C35EEB34FE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\local_regif_txgpio_m1.v",
+      "bytes": 3732,
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\memory_model.sv",
+      "bytes": 10236,
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\regfile.v",
+      "bytes": 666,
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\soc_data_adapter.sv",
+      "bytes": 1526,
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\soc_top.sv",
+      "bytes": 1872,
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\cases\\performance8-N234\\source\\uart_tx.v",
+      "bytes": 5195,
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\oracles\\performance8\\expected-ram.bin",
+      "bytes": 32768,
+      "SHA256": "F49360EB8B30D2859B87374B70848DBF71FFDE67CB51F584D9E643CE72125FE8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\oracles\\performance8\\expected-registers.hex",
+      "bytes": 320,
+      "SHA256": "63FC092BE385A9572A24D07DE630972BE0AEE2DAF17D86FF1542252607B7E71E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\oracles\\performance8\\expected-report.txt",
+      "bytes": 663,
+      "SHA256": "9C3B61CD225EF097C00F7ED8D53ADB69F937F2451DF80B45535758366693DA4A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\oracles\\performance8\\expected.json",
+      "bytes": 9498577,
+      "SHA256": "19F50CF344AD2D0135E1CEE9BE77D10ED93CFC3666C880B039BF87CDEDF80569"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\SUMMARY.json",
+      "bytes": 6478,
+      "SHA256": "191CB81392F91136013426C0C558C6CEA5BCC3F516311C6F4DEB0F506A4CCB23"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\postflight.json",
+      "bytes": 359,
+      "SHA256": "5ACB14576C04C6B91EBC15858FB3C8029263B8C9879A88ED53F6FA50728E372D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\build-result.json",
+      "bytes": 32670,
+      "SHA256": "131305FEA3F3F2B17293F8AF3FAF7B1BAFD0ED3CBB510BC271E30078D731796B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\build\\performance8\\program.bin",
+      "bytes": 15912,
+      "SHA256": "EC365839FEA1111CB365763322E2FA99C3C3B3F6B74A5884C5B0EB30593486F0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\build\\performance8\\program.elf",
+      "bytes": 26168,
+      "SHA256": "90E06A11E410E36FCDE16570BDA9BE6C4A57800D94FE4AA84B17FC2BE4224638"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\check-result.json",
+      "bytes": 3556,
+      "SHA256": "004E9BFF0EBA65A7851C5890E3206C4D1442912F7832F5C2FEBB1FD843E871BC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\streams.json",
+      "bytes": 513,
+      "SHA256": "F3F2E74377C68C13F0F2638686CBD665D72E5F726B36150E85FD34E46651114A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\build.tcl",
+      "bytes": 1032,
+      "SHA256": "BD20DDD858C625294ADA6FAF51E6E1032E7ADB3E5A7EE94E40076307F9B17E51"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\init_tables.svh",
+      "bytes": 132364,
+      "SHA256": "E81FD2B446C2446C2D32DB0D45C9BEDA54D0A6A5B670064F021125E8C7E22E1A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\board_pins.fdc",
+      "bytes": 4863,
+      "SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\clock_27mhz.fdc",
+      "bytes": 101,
+      "SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds-audit.json",
+      "bytes": 6833,
+      "SHA256": "C2E514CFD1440996AE16D9A86A20526FCD089693358CFE055B7EEC4671E560F1"
+    },
+    {
+      "path": "work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\README.md",
+      "bytes": 19687,
+      "SHA256": "5581FB67DC1609CBD1865F150DBCB1050D96C602987792456850EB96EB0DD08C"
+    },
+    {
+      "path": "work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\barebones_porting.md",
+      "bytes": 9745,
+      "SHA256": "487AB4D058AAD127EBAD527A314D4C5BEA72E093BDD18B9728359A9098E4E8FB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-coremark-iter2-m1\\runs\\performance-N234\\check-result.json",
+      "bytes": 3306,
+      "SHA256": "C3A8A59A1443E55AF4C58F35D308EC17F70BE01E2AF6AB5A2D30237F39D2272D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-coremark-iter2-m1\\runs\\validation-N234\\check-result.json",
+      "bytes": 3307,
+      "SHA256": "74A7E5222EA9172396241926CE8E3B9FCCE154724221FA403388F2D272B8302F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\run-performance-N234\\process.json",
+      "bytes": 938,
+      "SHA256": "F62E2468B629DD56D4CF28F25B0B61B52F793C2FCD4B98BD2AED59E389415513"
+    },
+    {
+      "path": "reports\\environment\\2026-10-11-scbv-high-verification.md",
+      "bytes": 10447,
+      "SHA256": "4C28A514F2AFADC0E2CDB17B25DF19C861EF64CF4A068C7B3898F81950F6BBF1"
+    },
+    {
+      "path": "reports\\progress\\2026-10-23-mainline-focus-reset.md",
+      "bytes": 21898,
+      "SHA256": "45B221C5018E0FAACEC2E0CD02560DB0A74707640E1CE2333F57F8320E41A67A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\alu.v",
+      "bytes": 1021,
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\board_reset_sync.sv",
+      "bytes": 504,
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\board_top.sv",
+      "bytes": 817,
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\control.v",
+      "bytes": 2988,
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\cpu.v",
+      "bytes": 17416,
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\cycle_counter64.sv",
+      "bytes": 395,
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\gpio_core.v",
+      "bytes": 2087,
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\local_regif_txgpio_m1.v",
+      "bytes": 3732,
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\memory_model.sv",
+      "bytes": 142233,
+      "SHA256": "7DB1F8A1049D447D7C8A459FFEDC60680E25AD30B7A2368229B171EB69F07BAE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\regfile.v",
+      "bytes": 666,
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\soc_data_adapter.sv",
+      "bytes": 1526,
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\soc_top.sv",
+      "bytes": 1872,
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\uart_tx.v",
+      "bytes": 5195,
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "题目\\35C3064C8368A11033C6A2796FBAB17A.png",
+      "bytes": 91929,
+      "SHA256": "AA7B5BA4E55EBD85BEDCFDE49CEBAB0DB73B8C1BB3C716D5B78B3E9E26FA9A77"
+    },
+    {
+      "path": "题目\\39768254A8FC1D1117D658C59C2F8DA8.png",
+      "bytes": 190458,
+      "SHA256": "D99BD55DE76C912D4D470CAB3EB826DA2DF6B2129D63BD2A731C642617A6199B"
+    },
+    {
+      "path": "题目\\4102F81EDA5369B996EE94DADDC1B62E.png",
+      "bytes": 79180,
+      "SHA256": "7934E7E7BA0C6B55EEE3DE360A432809434F0A917FAECCED298BF81AC1796DA7"
+    },
+    {
+      "path": "题目\\D0958C68DF452E40B7DE3198602DE189.png",
+      "bytes": 159417,
+      "SHA256": "79BCD0014AA68A0DF97A7FFB688BB65A1D9B4B8A9585D193ED0AFD2C16B3AA20"
+    },
+    {
+      "path": "题目\\使用授权书.pdf",
+      "bytes": 148750,
+      "SHA256": "B6B8D7706C1CF5589C3C616470940D7A3ECDCCA02ADA59C7EB621694C42A05D9"
+    },
+    {
+      "path": "题目\\全国大学生嵌入式芯片与系统设计竞赛'2026FPGA赛道选题指南-紫光同创 (1).pdf",
+      "bytes": 1348484,
+      "SHA256": "8581797A38A82BD7879A936E1C7A140C62C5285F432BFB8C18877CFE7974DCAF"
+    },
+    {
+      "path": "题目\\模板.docx",
+      "bytes": 87367,
+      "SHA256": "D15A2AA186F600CB9C234BFFD9DEFF0C4E9B05C569643D8A81D536F66F424F0C"
+    },
+    {
+      "path": "题目\\题目.png",
+      "bytes": 905680,
+      "SHA256": "B12DAEA15B80E6E8252482043C98949A291C0E7F3ECAE7B99F98E00700B9B63F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\stream-index.json",
+      "bytes": 136134,
+      "SHA256": "2D9F091A573126D0FDBA03C883622176975968F9C416FDA8E0227C753E8C3BE0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000000\\index.json",
+      "bytes": 610,
+      "SHA256": "1C5013D1FCFFFC9FE3E635FBCDF38158FD583CA001C0455520818379926C075B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000000\\block-000000.gz",
+      "bytes": 184838,
+      "SHA256": "7AF799795B85CE8CA77852FF3ABF6B15411A8CA65FEA004CB547D8E91B86831F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000001\\index.json",
+      "bytes": 610,
+      "SHA256": "EAD6D1406958E283ACEAF17601E9379DF0C4348EBEB4B40EDD5BDEAAB5482B66"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000001\\block-000000.gz",
+      "bytes": 200907,
+      "SHA256": "D12DD79EB0E04DE44249E7792B09122F6C799CB860CC0EF9FA72C95590BA4F4A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000002\\index.json",
+      "bytes": 610,
+      "SHA256": "63B726FAE215B606B4FB20C02661DA7532907D30D24A9CCAA98DD1FF1F705243"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000002\\block-000000.gz",
+      "bytes": 201104,
+      "SHA256": "BCE04FBF47DBC286AF2456DD64136968B737833F992D47871B99275DB1C6C0F6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000003\\index.json",
+      "bytes": 610,
+      "SHA256": "80E4BF973ED7DC0713D0FA6C74A01BA5A98BAFF197D1B47E5C61D02F51ACFF0C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000003\\block-000000.gz",
+      "bytes": 195001,
+      "SHA256": "3C51EF0379FB6EAD511A656AD17640A54639B97CDE180EB8B5747AC168305003"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000004\\index.json",
+      "bytes": 610,
+      "SHA256": "46C702984366566E401C32B35A34B43F7D9C10788225F514758F58F7322DC42A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000004\\block-000000.gz",
+      "bytes": 186245,
+      "SHA256": "375F262757A8170493272254AD3171BC2C6DF39A3C62E69AE8C5ECB081E4E054"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000005\\index.json",
+      "bytes": 610,
+      "SHA256": "5B405495D5A05D011BD6C7ACA737814D8D00F41E26EDAD59D00330551DD23CA4"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000005\\block-000000.gz",
+      "bytes": 185747,
+      "SHA256": "75A91708B24C4372E3022C038551210A6DD000144991EA6422BE4E12C1FB8402"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000006\\index.json",
+      "bytes": 610,
+      "SHA256": "97803AD32DFF6ACE1996FCCA9BB57EB118A7D07401EABD2829D7A5FF8A6468AB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000006\\block-000000.gz",
+      "bytes": 185076,
+      "SHA256": "E07BCCD188B8291EB1C1DFDD78AF4797AE19AC934DFF6DFC7DD990009599580A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000007\\index.json",
+      "bytes": 610,
+      "SHA256": "8C08EC0E307406282756B452134250910E7736D4F81CBE3AC0A8A19870065626"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000007\\block-000000.gz",
+      "bytes": 181847,
+      "SHA256": "EEBF7DBF04B638A4B72F1996DE334CB980E38A26CFA59033ADB76587C8CCB77B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000008\\index.json",
+      "bytes": 610,
+      "SHA256": "36101434BCB59B91490CF82EFA98663CD24E5C5FAF668C4B7BA37278703DAACA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000008\\block-000000.gz",
+      "bytes": 182018,
+      "SHA256": "B377093800D2F6ED1FAB41483CC27E92E20FE53493B25141E81839A83C673039"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000009\\index.json",
+      "bytes": 610,
+      "SHA256": "C5B78FC4F3D63568E6767DFA218F4A752F022031B0611DA44BE70661F5F0101A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000009\\block-000000.gz",
+      "bytes": 182188,
+      "SHA256": "56D87D7051B992E7761F5D40EFDB4B8F9CA4706F7F3B004466FA4FDED50319CB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000010\\index.json",
+      "bytes": 610,
+      "SHA256": "08B71EB5274D1B7167C87E92612F7D8DFBE5FE9FD3FD5CF2A120DD906ED45F8A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000010\\block-000000.gz",
+      "bytes": 187303,
+      "SHA256": "B0144B6392B07F22E1EF2DA524E4E42517657334EA307A7076FC7EC5A732FB81"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000011\\index.json",
+      "bytes": 610,
+      "SHA256": "38527045D6D51A4A1869051B53F0CB5A2E2A1502E24E1926A3E6BFA1FB6ACA02"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000011\\block-000000.gz",
+      "bytes": 187052,
+      "SHA256": "D0E3355709184C26EDC148812B117418408204EBC7382EDEB6934E6C658100C1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000012\\index.json",
+      "bytes": 610,
+      "SHA256": "3922EEB5B37FE169EE59858D6F1D68CE7F9B11DFA3C151D0B2E7726A5F43FE8B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000012\\block-000000.gz",
+      "bytes": 186033,
+      "SHA256": "59A59FADF7CFBA5ED9E9C9721E87EFAF0DD2C6889693F9FFA13024E28EA88F80"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000013\\index.json",
+      "bytes": 610,
+      "SHA256": "07ADAB9B861C704ACA5E468BEB85E8998CCA9FDAE2725D4C667DD3F135E14815"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000013\\block-000000.gz",
+      "bytes": 185165,
+      "SHA256": "FA3F3CAAAFF9F06EA6580366E102458F99615841056A35891281EB15D80485F1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000014\\index.json",
+      "bytes": 610,
+      "SHA256": "D8FDA7A847570571B4F376E367924AD97E326D7F3027E29DB8AC20A1454F6CB3"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000014\\block-000000.gz",
+      "bytes": 182403,
+      "SHA256": "275F11964C36AABC6144308CC6716AC70233918C88F450916CA1A6D7EEF9A9EA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000015\\index.json",
+      "bytes": 610,
+      "SHA256": "652DD2901A24066114A0F53B33A1C172FEBF55385994100D91A0E593C3B473A3"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000015\\block-000000.gz",
+      "bytes": 182404,
+      "SHA256": "4E236EFC512BF2845EECBE6CAF47E63ECA68BEAEBF801E7E33BDE633AC346552"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000016\\index.json",
+      "bytes": 610,
+      "SHA256": "64B5C81AD4ECE0EFDAE49EF108B9AF84E0E61D0A9196B31A4B7F3332864C16ED"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000016\\block-000000.gz",
+      "bytes": 182731,
+      "SHA256": "710E82715FE9B90CB2CF9C8D8716232A86DB6A2511D97755459C37A85C9C0232"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000017\\index.json",
+      "bytes": 610,
+      "SHA256": "82B180252094A7DF0DA98F16C66E9C15CE742C8057848120D0D0330C79A0C3CF"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000017\\block-000000.gz",
+      "bytes": 188551,
+      "SHA256": "2B9ADCD55A88FDF9F16BB12AF3764425FE03BB6864691D02B2C353C88B4A3153"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000018\\index.json",
+      "bytes": 610,
+      "SHA256": "2C17EA4F902DAF2167A677F03672958BD35742F36D35F60C8080BA0D3FDBFFAE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000018\\block-000000.gz",
+      "bytes": 187626,
+      "SHA256": "408A974297316F9BB57D938A85DD7B2512CCD76F40A66E598B06BDE60475D483"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000019\\index.json",
+      "bytes": 610,
+      "SHA256": "9F416C9979CCB6BEAE4C4452E8D1ED637C3C63E42085A4B712D05C5092C8F675"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000019\\block-000000.gz",
+      "bytes": 187704,
+      "SHA256": "CB5662E9257E423F2AB693F43F955809A030167DA427B12EE50173067FB4B7FD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000020\\index.json",
+      "bytes": 610,
+      "SHA256": "534F32014DCDECFB8564D2C1047570CA16D244E378C24BAD7E6620668D742242"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000020\\block-000000.gz",
+      "bytes": 186760,
+      "SHA256": "FDF4A906F82417930DD949B687F74FE66FDF73D33980D2515410501E8A6E494F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000021\\index.json",
+      "bytes": 610,
+      "SHA256": "9973A4074B559319F13A8685E6FE42E6BF4EA55A32C46B483250D42FD5032D55"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000021\\block-000000.gz",
+      "bytes": 183532,
+      "SHA256": "4050E720780974B1A98BFBECD2D297A42EDDE2178B72238910953B8782D47902"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000022\\index.json",
+      "bytes": 610,
+      "SHA256": "CED7CBAD85266551CE2BBD7A3777C36D3A55A226B8CE206F309CB83955436A0D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000022\\block-000000.gz",
+      "bytes": 183816,
+      "SHA256": "83CA5277F81ED884F498ED8AA89D6CC7AB5F7B23752E3ACF33754572A7D904FB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000023\\index.json",
+      "bytes": 610,
+      "SHA256": "950C1C21262D7D2F2B106F1F2C561E67B47E308C0D16050C310240DD382AC45B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000023\\block-000000.gz",
+      "bytes": 184104,
+      "SHA256": "F7AB3D36DCC5D2C13E79DE8970B077C21E0FDCA0F3AD77619E25B5702EE25BCA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000024\\index.json",
+      "bytes": 610,
+      "SHA256": "1142E674A7E6E530D2642051179836BCE832052C9778846F47E5E86B915E4339"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000024\\block-000000.gz",
+      "bytes": 205637,
+      "SHA256": "B9CD4329CCAD3F2BF82F562344AB4FFF223619482EA6471C8BCFBFEFC0B34C36"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000025\\index.json",
+      "bytes": 610,
+      "SHA256": "AB83150E03DEAB7EEB74B5002906D5C17DFD632772007E937E0510450E5E9FAD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000025\\block-000000.gz",
+      "bytes": 210434,
+      "SHA256": "577630FC6F4851FC50F579962E3A3B2679C8BEBC0324E1EFF0F5E752D48568D0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000026\\index.json",
+      "bytes": 610,
+      "SHA256": "B23746407B3A5DF199CD8F83E8C8A418DA5E0D13913A3BFD6A6C2024A7978F6E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000026\\block-000000.gz",
+      "bytes": 211890,
+      "SHA256": "799B14543A9EA793B06EC7438DD59BEB5A6404AB882C31AAAEB313484E0034CA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000027\\index.json",
+      "bytes": 610,
+      "SHA256": "CF66AF583A2AD639186E2CD23F58833799A27F070DD669F4E179163CD1742A22"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000027\\block-000000.gz",
+      "bytes": 210907,
+      "SHA256": "5E4805448C92AFDD525DF3ACB0D7CC9D4877BFC9F29FE42BA650896886E158A5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000028\\index.json",
+      "bytes": 610,
+      "SHA256": "2295E9B5407491E3DE3B8F33ABC981E20F2503EC34E129BBE4C4D6B4A7E55111"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000028\\block-000000.gz",
+      "bytes": 203111,
+      "SHA256": "895BAC1D9511774440B1079B4DB4AFD4C739DFFDD7675B0E3730BC6D855E8B89"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000029\\index.json",
+      "bytes": 610,
+      "SHA256": "271D12FAB1C8EA3B2A134DAEE0389E00A236514D44D51AA49BB60AB869A1E1E5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000029\\block-000000.gz",
+      "bytes": 188046,
+      "SHA256": "0C37B53BB4C88D20DB0C64E3BAD14DCFF3655D39BBA601534B99621DE03A2846"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000030\\index.json",
+      "bytes": 610,
+      "SHA256": "E47D02F8DA7E22DD6E1E8B51C6AB28AB01500649321AD0504C8878E02ACFE397"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000030\\block-000000.gz",
+      "bytes": 187799,
+      "SHA256": "F5B6488DBD86706EEA1A6EE261D71AB95486E9324247562A6BAD07BA04F4215E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000031\\index.json",
+      "bytes": 610,
+      "SHA256": "CECD098FA4C767003B248916C3C058C373173C5406E7ADA2EFF4C6E5D5ABFB22"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000031\\block-000000.gz",
+      "bytes": 188289,
+      "SHA256": "CF3BAF895BC2D33A834EC9318C86FF92B561CEB7FD1672C6726C5AE12C6D7C5B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000032\\index.json",
+      "bytes": 610,
+      "SHA256": "DABE419C944025D555F21E8EEEC1635253DD3056FBDD6F1E6F6B8EBCEDAA67CE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000032\\block-000000.gz",
+      "bytes": 183910,
+      "SHA256": "3C4A76811BF668D6E393A1ED9E449531D88C01F4D5194ABDF8D916C9E44EDA39"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000033\\index.json",
+      "bytes": 610,
+      "SHA256": "91A05B191814E3DF97A74E403E9F90CE4FB06554C50232568E63CFF747421605"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000033\\block-000000.gz",
+      "bytes": 184326,
+      "SHA256": "4D8AC0B4B1CAF91B13BC7CA1B2D0E92201909DA8A68093667C8B6AF66E96037F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000034\\index.json",
+      "bytes": 610,
+      "SHA256": "2436499D927082ED615D52FBC6D0EDA9D2333DC421DB0FF64536BB88D5D09AF4"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000034\\block-000000.gz",
+      "bytes": 184307,
+      "SHA256": "47A27FC599307CE8892049374B14A92A531A9419938A27CB7117E19F72160829"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000035\\index.json",
+      "bytes": 610,
+      "SHA256": "CF7E3F88C18CDB0F8E1AA06048DBD8D368CC28AEB99C504F6DE03BB15FB2FBE1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000035\\block-000000.gz",
+      "bytes": 195983,
+      "SHA256": "9A6DC3F5E602AA8C4984B7F1A69363B2CA52D48C0DCD8735A625A856995A47F5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000036\\index.json",
+      "bytes": 610,
+      "SHA256": "FE3D51EB9696DFA4517CF964D4727C09C93D45B728EE27CAB356E9D18562783A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000036\\block-000000.gz",
+      "bytes": 211406,
+      "SHA256": "8E0A753C24738D8205E084B51686AADC33530D370802D4646406F032E43E3FAB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000037\\index.json",
+      "bytes": 610,
+      "SHA256": "56819F87321734557DB0F2B0FC1817BC343B375ACBAFFBC37970F9781216A886"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000037\\block-000000.gz",
+      "bytes": 210294,
+      "SHA256": "A7FDF6CD1EF255AF8301DD4DB86B2F467541D91271A8E07B6DEC7EEE890071BD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000038\\index.json",
+      "bytes": 610,
+      "SHA256": "2114FE3C9A7D55755BF566F335E269576111335208FD92A494A7CDB3C30DB094"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000038\\block-000000.gz",
+      "bytes": 204851,
+      "SHA256": "465A1C7617625A4B846AD870953A1DDC0C07C052ECE1C3299E28AE443B45DA06"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000039\\index.json",
+      "bytes": 610,
+      "SHA256": "7537E97A5673EF3F49F3D729F897BE4D1B0F7DE9918E19A334B0D6BBDBD6FDB4"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000039\\block-000000.gz",
+      "bytes": 203661,
+      "SHA256": "1EF8C7752B0784C3C00FC42FFA181DB5BD97C43622B33A13A9DAE57372B45D4B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000040\\index.json",
+      "bytes": 610,
+      "SHA256": "8EC7F7CA5BEAFB776622AC079D2FA437BBEAEA4BFE42B3726BB1DC7355435405"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000040\\block-000000.gz",
+      "bytes": 208552,
+      "SHA256": "66028270C105BD0A07DA6E1846BE484AC797464AA7AD7A37AF618AE7FA7921D6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000041\\index.json",
+      "bytes": 610,
+      "SHA256": "618E4AA19D9E7B8D267897B14A7929223CB308A1738C56B9DAB7B7C3CF8A3F61"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000041\\block-000000.gz",
+      "bytes": 204143,
+      "SHA256": "FB7F7814D5061BD9D4E977E919EFAAEEFC0B4510FC3E6756061C790D5915F4D2"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000042\\index.json",
+      "bytes": 610,
+      "SHA256": "C333491F16691F42EF9EFFABEB8FBBEA79CE4184463A4FA28138E5C79D227CE1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000042\\block-000000.gz",
+      "bytes": 201551,
+      "SHA256": "B61BC3A4902439669BE1D5D182CD5D0127A56EBB432A83373FB23CA1568F9D0A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000043\\index.json",
+      "bytes": 610,
+      "SHA256": "57B335C77030593149FA75D6B6AE81CAA3B7004243920A68B40E92DA8C7C7915"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000043\\block-000000.gz",
+      "bytes": 196323,
+      "SHA256": "4923DE89743BC371BFC18680498D83452A348FDD8110E7D7F6543264F5916705"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000044\\index.json",
+      "bytes": 610,
+      "SHA256": "C0DEE2D445EDB7D6B4231498ACD9030ABB2794944460B94D016F332B791B86DE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000044\\block-000000.gz",
+      "bytes": 187010,
+      "SHA256": "B02AC5A32730B535B1B355068658970FA79BBB374238C72DFD396D960EFE4B5D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000045\\index.json",
+      "bytes": 610,
+      "SHA256": "9A81D374FEC2F45DBD44E6B8D10710774D77B6F30CAC1C27B9323540F6B7E11B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000045\\block-000000.gz",
+      "bytes": 187618,
+      "SHA256": "18B002036AC202CF9DBDD3A8A82A841FAA0C6007F3996EBC6C2DC229E2DDF6F2"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000046\\index.json",
+      "bytes": 610,
+      "SHA256": "97D1A0739290299F86D3DD0004C21FBC9AC9C35EDB9D62ACB5A6E880953C05AF"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000046\\block-000000.gz",
+      "bytes": 186029,
+      "SHA256": "96CABE77226B4DF0451B1E1D7D732BC2379E5C4126094D6B8A77006D3C526288"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000047\\index.json",
+      "bytes": 610,
+      "SHA256": "7F9967EF3A8769D0C1391F4863D37B9DD9D27C0613FCD24329D8D979875D5112"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000047\\block-000000.gz",
+      "bytes": 183725,
+      "SHA256": "7C7597E224225BBF0274AF0A2EDAE614872A3965446F36B414D566B847090139"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000048\\index.json",
+      "bytes": 610,
+      "SHA256": "C1FDC0E8A7D8838F4107898C5765AA751023E654E2FD2DC102B0D3A5A96AE87C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000048\\block-000000.gz",
+      "bytes": 183711,
+      "SHA256": "441F33E7BB52D6D3C4593CE3FC576BC9F8051F533398120F35A2ABD6D99A1E4E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000049\\index.json",
+      "bytes": 610,
+      "SHA256": "4D171729549F4B9B0C59886794C95D9C316714E22B6FF30EBEA6CBE4178F7A36"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000049\\block-000000.gz",
+      "bytes": 183954,
+      "SHA256": "F6A0FF40365B4CF8AF770193985BF20AB1CF6082208A6D8D035F7A35B68F9433"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000050\\index.json",
+      "bytes": 610,
+      "SHA256": "3E3A8520A378B639F6C88789BF0291E7064C9C4F32B7DD250BBDA0A9DAAC3829"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000050\\block-000000.gz",
+      "bytes": 191116,
+      "SHA256": "270E396504F487FFBCAA11A5E9BD012D097D624E9140069DB9496008333E9335"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000051\\index.json",
+      "bytes": 610,
+      "SHA256": "BB7F22F2C8F828FD389B72876F292F059DA7D056A980AE735F99B34DD609629A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000051\\block-000000.gz",
+      "bytes": 187660,
+      "SHA256": "71ED4B9CBD7315A3E4727F5121E0B1B93B3A7FD1DD90B482E4BAF214941BB4B0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000052\\index.json",
+      "bytes": 610,
+      "SHA256": "E98679F71B3E14585AD9C027AFC37C4026366898D5E358E3B254396A96DFE672"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000052\\block-000000.gz",
+      "bytes": 187865,
+      "SHA256": "02EDF20021B0A768146F912F4C5B0C2F8047C0DDEB44CC860EA5D39D9FAD9E6C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000053\\index.json",
+      "bytes": 610,
+      "SHA256": "5933EA8FF70C039AF64C3B9501CDDC4ECBE341176EAE9309B794134D3253E066"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000053\\block-000000.gz",
+      "bytes": 186533,
+      "SHA256": "92191261F6B39D541DA6E25BCB8CA5F509210422B642F4BE0C6D4B895013BD1F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000054\\index.json",
+      "bytes": 610,
+      "SHA256": "1D31C995C8D2DC3544F3F481780C5B4B6B584E5A2D4640B1A1E15D07071C4005"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000054\\block-000000.gz",
+      "bytes": 184394,
+      "SHA256": "7DE183EA4E34154F304F3EE05654CB8C4B44267AF53684E5EB4923B34945C492"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000055\\index.json",
+      "bytes": 610,
+      "SHA256": "D0ED1BA2FDDF594AF4349B3A374FF51D7398AB3BB23B77E44CA2215E81F46565"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000055\\block-000000.gz",
+      "bytes": 184641,
+      "SHA256": "305798303A8810240F9A9FD12D677DFC66AC49074D5B54DFB12290F0EABA3BCA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000056\\index.json",
+      "bytes": 610,
+      "SHA256": "D849A5CD9ABDEE530418DFF5148C58B463D51F884D2B00F87D3F2BBE03732B8A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000056\\block-000000.gz",
+      "bytes": 184483,
+      "SHA256": "A39FE8E4F1054B636488A94F8338E74605EC89CC5D84FAC597456898D5810F54"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000057\\index.json",
+      "bytes": 610,
+      "SHA256": "BD359345A636009C4F3833D43987C1F2F773EC03256604A4594B73A1FAB0B1DE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000057\\block-000000.gz",
+      "bytes": 191686,
+      "SHA256": "F2842798F67F8DF4235595D2B937291C55BC7B3364B9816E595B784591D7D7C0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000058\\index.json",
+      "bytes": 610,
+      "SHA256": "59E133B94F9C3B041C1EE1F7AB09F49D6E9F9CC5C98F2BC739C667A3150DC389"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000058\\block-000000.gz",
+      "bytes": 187061,
+      "SHA256": "FE867319B62AB87D576D7CCC207BD8125954512C4B703D69986E2E9869D0C0B5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000059\\index.json",
+      "bytes": 610,
+      "SHA256": "E95EE600463992AFD136EEE4B79C23A047BF1B54D7BC5FDEDDD7C0C8009759C0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000059\\block-000000.gz",
+      "bytes": 187804,
+      "SHA256": "F5DB4B6D92EB7F4601FCF0A3E89BD73CE4E868F7F9B250CCA1523FD05E2168A3"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000060\\index.json",
+      "bytes": 610,
+      "SHA256": "A62A7A3D24DBBAE1EFB76BB2CC9933A31A651637732ECC54D19658285FFC2F27"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000060\\block-000000.gz",
+      "bytes": 185855,
+      "SHA256": "CE48446C9165EF9ECBA4C6DC7BE608A384B6A99793400BE5BF02DCF2A8D79E4D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000061\\index.json",
+      "bytes": 610,
+      "SHA256": "7B34869D03D4B6D1ECEBF7F0093FA80BB898C25D4EB5AFD3C46B8F17B1560C10"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000061\\block-000000.gz",
+      "bytes": 183852,
+      "SHA256": "5231DDE23B2808BE9BA5CA5CBA4A8DF3BBA15768F0FD510A5072885E7BCA75A5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000062\\index.json",
+      "bytes": 610,
+      "SHA256": "A8F019AAADCC86512EB5BA6D486B951DAF9799A3EFBFEC68622E4C2E8E605E47"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000062\\block-000000.gz",
+      "bytes": 183732,
+      "SHA256": "72AF68B9B16EFCDBB44C298A16FF47C18CDE0B8C22E933E8FC6C912F7D32A1D9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000063\\index.json",
+      "bytes": 610,
+      "SHA256": "2254894966A2C20895F4A1044F6FDBED2996B155BD20549F375C12A51E133A15"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000063\\block-000000.gz",
+      "bytes": 183985,
+      "SHA256": "18DD862C3616EAD3FBA16257B6C87BEB72DC05F10F8126E77B07292E6D6A8E44"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000064\\index.json",
+      "bytes": 610,
+      "SHA256": "67FF9E1904BD7AEDACFD73BCA75F83B5212FE0C40BDA65C77F5E35C912BE13A1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000064\\block-000000.gz",
+      "bytes": 209854,
+      "SHA256": "9689A6CE00495DD0835FAC5C3AA296C7B2749AFCD992847D993A16532A11FE7B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000065\\index.json",
+      "bytes": 610,
+      "SHA256": "080EB5861E78588C23ED7AB0D98D6C9F9D96ADDBCD97BDA49E494B337FB02258"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000065\\block-000000.gz",
+      "bytes": 210549,
+      "SHA256": "00A3CD07D8C149ABE717F84C39F5FA46205F077F6835B04F75974F85646F4D90"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000066\\index.json",
+      "bytes": 610,
+      "SHA256": "43B4D21AF933C5AFA8418E306AC2CD71912D4AE54F6384E8C1A37EA5EF85107A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000066\\block-000000.gz",
+      "bytes": 210046,
+      "SHA256": "48E316BB6AFD68909B8A2B2639CF19020431EA949FED909DBE8BDC1C7B4412AA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000067\\index.json",
+      "bytes": 610,
+      "SHA256": "678EC1AAAF9008057F26E855D64FFDD776EFEC26B0193B7BFA5046302F6125DE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000067\\block-000000.gz",
+      "bytes": 212606,
+      "SHA256": "00194147A297CE193AD19F9917B6994C25EC3E1FD608C48FB51F693E7F608A81"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000068\\index.json",
+      "bytes": 610,
+      "SHA256": "B2FA704FB73A3646E70C469E5331CD6869E67A63AD513604F5378CEBFC8DE3CD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000068\\block-000000.gz",
+      "bytes": 200202,
+      "SHA256": "84F0B477D9090B62E61FA13D4E28B29ABCAD4AD681C01079994A918AC7338A81"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000069\\index.json",
+      "bytes": 610,
+      "SHA256": "9A0DD68DD4C347E85C1962F5D876DF0A7B459BD668D5121061929496DEA0528F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000069\\block-000000.gz",
+      "bytes": 188000,
+      "SHA256": "E563E24399A72CC2D60C9DBDC7F453BD97058669E9022FAD04363A8DD134BDC4"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000070\\index.json",
+      "bytes": 610,
+      "SHA256": "588362DEB3F2F925949CCD2E7F45A4D65733E9AFC3D2B2FB623F5BF784F0F072"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000070\\block-000000.gz",
+      "bytes": 188005,
+      "SHA256": "FA5B9923C317AD41F50EE8502F471F45EE9884314443567025952AEF6A2B7E29"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000071\\index.json",
+      "bytes": 610,
+      "SHA256": "36E18946C831ACCE243B4982AE2F43CE30A569DECB4B7531F67A3933493FFDFF"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000071\\block-000000.gz",
+      "bytes": 187819,
+      "SHA256": "704EAF9E9FEDDFC9927D137F67A94F9DE677C841DA45DECEAD53AF2873090359"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000072\\index.json",
+      "bytes": 610,
+      "SHA256": "16A42D9B831C08D3699ADAB040F77DDAF402C19CCD0086F1624015FEAC028D4B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000072\\block-000000.gz",
+      "bytes": 184392,
+      "SHA256": "13542CD8A2A20721AAA1C08A0E23786FD4F684FC3C78B59EE9AE07930707264E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000073\\index.json",
+      "bytes": 610,
+      "SHA256": "8A0E54D6D871768BEC6F043F698B931FD680CFD09132AF99380AF561B32CD706"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000073\\block-000000.gz",
+      "bytes": 184463,
+      "SHA256": "FE0EEFC0EC359A1FE50A7F59597687602BA9E444CBD5AA5FEAC14F8B574B5759"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000074\\index.json",
+      "bytes": 610,
+      "SHA256": "D129BD639E58860D9A9897A11D60C5D4CCD11C676AB27CF2CCB35A6BA1CDDB3E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000074\\block-000000.gz",
+      "bytes": 184466,
+      "SHA256": "851BA890C74570A15143D27742BDBEE0CCCE8AC3CD48E2C163E50BFBAB0DDB10"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000075\\index.json",
+      "bytes": 610,
+      "SHA256": "5FC038C349977AE097987DF9C79924F60DE89A0D8134D09479687E2BDF5E71D8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000075\\block-000000.gz",
+      "bytes": 199835,
+      "SHA256": "8E0E14A713647DC77D1E5C751B0819D172EA02B2A3B1941D58810D2845A962C6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000076\\index.json",
+      "bytes": 610,
+      "SHA256": "338020A952D8432710B973C357C1AF97C999B21E5B9F6C839BEAB7717F2C450F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000076\\block-000000.gz",
+      "bytes": 210326,
+      "SHA256": "76B1907F5803F70109E01F8015A1DBE5A1B439356E3EC2E2B9A5734E78452EEC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000077\\index.json",
+      "bytes": 610,
+      "SHA256": "959297CB9A3132CEE17CC10686E826CC607BFA95909267A3F5EBA7CFABD96FC2"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000077\\block-000000.gz",
+      "bytes": 210514,
+      "SHA256": "F7AAECDAEFC3F89EE5C054C8EFFCAA417F89A35D5AA80882C18C1D1267B51BBD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000078\\index.json",
+      "bytes": 610,
+      "SHA256": "4E3019479D4286882F0C248DB41720BCAFA34610EFDC10A3195B788EF0480678"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000078\\block-000000.gz",
+      "bytes": 203893,
+      "SHA256": "0AC77739BF49C6C2A720BF0DAA419E3F6EDE32E3BBD1FAA79064E5439CCC5059"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000079\\index.json",
+      "bytes": 610,
+      "SHA256": "B4348F57386D22259913747D7F8F5753E2333426A17C59C88A94876D5F58DA92"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000079\\block-000000.gz",
+      "bytes": 203181,
+      "SHA256": "25661A0B6D1B66B77AAF4BE4AED5E1FE06202367E005902865B97E0E8A87E5A6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000080\\index.json",
+      "bytes": 610,
+      "SHA256": "E3F068C67B1017DF16BFDEB36A05CC1F91EB4B75F8729299DCF81A32A198E8EB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000080\\block-000000.gz",
+      "bytes": 208939,
+      "SHA256": "8988062824CF565E105F9465F6399E1333C56FBCE97FAA0DA3AF35B00BD4AE36"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000081\\index.json",
+      "bytes": 610,
+      "SHA256": "FD5813491400D958B051C6A1552D707F6DC9C9405BDFE31B679AECA9C5A628FD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000081\\block-000000.gz",
+      "bytes": 202074,
+      "SHA256": "A3CC0339659CDBF849C5F0BDDDE88D435523EBB5A859F3C137C0D8CB1DF5F124"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000082\\index.json",
+      "bytes": 610,
+      "SHA256": "73A6473B88ED9A21ECC7F1DA410E3A1F0AD6919472265E85C757C6EB21E4C42B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000082\\block-000000.gz",
+      "bytes": 203310,
+      "SHA256": "36EFD5FAD17FB56621B72939054393DF691D1154418E06C0A261CE608D03A7BA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000083\\index.json",
+      "bytes": 610,
+      "SHA256": "CBB1EAA1FD4B72A3E56E9F5FD1FB73A9C8EB3AC82180082B21B705BA0CB96A30"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000083\\block-000000.gz",
+      "bytes": 192813,
+      "SHA256": "9B4F9C80FD56D2F074D50736FC5D5492CED5CD0DD5201728A6C8299C6A161B76"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000084\\index.json",
+      "bytes": 610,
+      "SHA256": "E7DD6B20788D22176CDB85E58DC5A8DD38DD9EBF5654BAC51A1104786E7BD508"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000084\\block-000000.gz",
+      "bytes": 187393,
+      "SHA256": "39812FA6C84BE23D4DCE5C968BBCA253C049B10B2319A897ECD472EE67B3D9B2"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000085\\index.json",
+      "bytes": 610,
+      "SHA256": "B9349163383193B59A89EC4F31F21B18C9D7F93D238E5F90BC0F6821CE6E6D0F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000085\\block-000000.gz",
+      "bytes": 187615,
+      "SHA256": "57B7B5D40E21D411F1EA15A02EB913F34B2B658FF18CC2068BB3EE781E798D0C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000086\\index.json",
+      "bytes": 610,
+      "SHA256": "AD10D30FA67D71EEE8B1383A42F511F7558FC40626D809C89AF21BC535394708"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000086\\block-000000.gz",
+      "bytes": 185349,
+      "SHA256": "355B049619548BB739531230A3C96C37E9A4BB4EA3CC28EE94F6782C7A85CB31"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000087\\index.json",
+      "bytes": 610,
+      "SHA256": "2421B7126B435C53E03FDE1B0DC3892C34B5D66C51027403CB8296782C61425F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000087\\block-000000.gz",
+      "bytes": 183710,
+      "SHA256": "5BA912DBFB784D9840EB18CE81897E40121D2FA8F5036EA5744F87FFE0A45EF1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000088\\index.json",
+      "bytes": 610,
+      "SHA256": "8C37C39DDEAC6FF4702D07DFEAF3E65980B624A3AE712EEBF1CAB01035DA20A4"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000088\\block-000000.gz",
+      "bytes": 183831,
+      "SHA256": "11819906162CC012B0315B3FE14122C8D0D4F0F0F7ADBDD86AD5E8B4BC175D0D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000089\\index.json",
+      "bytes": 610,
+      "SHA256": "795A518A47F7C0937E902D560D48752538D7810336633775D4000C9B15C002BB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000089\\block-000000.gz",
+      "bytes": 184644,
+      "SHA256": "3BEC89DDA11802FE5E17AD8477AF2E6735D0DC537EE806714C770A5DC87DCD50"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000090\\index.json",
+      "bytes": 610,
+      "SHA256": "6B615D5BA9C32A91F1DD4C0C90D101149167BB21BD37316AAF79264DBC5396F1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000090\\block-000000.gz",
+      "bytes": 190701,
+      "SHA256": "D020C9571F1CA8F86160BAA6B8A56DC2C7584939919376A2C2565778EC807B72"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000091\\index.json",
+      "bytes": 610,
+      "SHA256": "72F0AD4A007B1DEE4F0E486448880FBA60C908B215AF9C8680D210DA3B339E50"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000091\\block-000000.gz",
+      "bytes": 187576,
+      "SHA256": "489C4DA02C8801497994ECAFC44F2E2A5917564223580CFF403B33F6542F62BA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000092\\index.json",
+      "bytes": 610,
+      "SHA256": "76A0D72FE5A9A3E021B30FAA51C168F68E537D1F750F47ADBC900FB4E898D056"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000092\\block-000000.gz",
+      "bytes": 187781,
+      "SHA256": "DCD351DDD39D7164AFC54228A6FADACB5114E34DD16959E087292E111E820FFD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000093\\index.json",
+      "bytes": 610,
+      "SHA256": "691D8F4E5F0057417BBF82912BFC52D40E98E2612CDF724EC0557A0343C6BC50"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000093\\block-000000.gz",
+      "bytes": 186077,
+      "SHA256": "7F077663E3B786C1862922407DFB224C425D66E0E1F07A8FFFCED2CB9A70C147"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000094\\index.json",
+      "bytes": 610,
+      "SHA256": "83B358CEE77C6E99D6007416FC674EFA03C2393D51E6BEA819FE9263C2E69C5A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000094\\block-000000.gz",
+      "bytes": 184244,
+      "SHA256": "096A317A3026459BCCFBDB466FC631B2A6A602D3CA52CDAF62B4832F1CB8AE6D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000095\\index.json",
+      "bytes": 610,
+      "SHA256": "A7E0E38B18608F21ED0F006D36EE751CA297105F5CD8353929F392F24D59B7F7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000095\\block-000000.gz",
+      "bytes": 184317,
+      "SHA256": "980B1253321EB3C50880FE20E798EDFABE99F4AF81A7DC5AAAC388766A3E5DDB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000096\\index.json",
+      "bytes": 610,
+      "SHA256": "CB1423C61EB52A0B1DE25E01586C46C67F7D764097EC8EC9E2BFA1868ECCE335"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000096\\block-000000.gz",
+      "bytes": 184806,
+      "SHA256": "92EB53F0976A2C96EDD654E05EAF9AAEA95A480DFE302CA85E91DB7823FDAC08"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000097\\index.json",
+      "bytes": 610,
+      "SHA256": "47481F6650857754177BDEA4A0537E3DC65D41BC1FCA9B8EFB31DD795AF125A9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000097\\block-000000.gz",
+      "bytes": 191289,
+      "SHA256": "8BD3DB2424BA8F62F37234B7E19E82EBF63A01E68B254785F5B0DA2F7563D418"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000098\\index.json",
+      "bytes": 610,
+      "SHA256": "3B3B4D360D65958E49891414B2E1BF8EE79B3AEC7AA211D13D36A672815CA4FE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000098\\block-000000.gz",
+      "bytes": 187234,
+      "SHA256": "B0A0D46C57A9868264E8B87F528ABDABB5EC20F697AC192A92123CFA386A244E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000099\\index.json",
+      "bytes": 610,
+      "SHA256": "3EBB5AB5051E0183B7FBB1958BBF8B7D35D7D89E7DCC61CACEAAEFEED1060066"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000099\\block-000000.gz",
+      "bytes": 187582,
+      "SHA256": "05CD58404FDF99EA240B7288C948F5D47A58A60DD7BABA2E37B0593AF4EC16AB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000100\\index.json",
+      "bytes": 610,
+      "SHA256": "DD110E352D8A8D4CFB25640722C394C17B10EBD4295033FC5B9617F4DF5A8F06"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000100\\block-000000.gz",
+      "bytes": 185325,
+      "SHA256": "07E104E23229FB3E1251DDE2DC53E093A9B7A5256CC990F92C011A5375C029C6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000101\\index.json",
+      "bytes": 610,
+      "SHA256": "1FA0DA81D0AF1FCD1EAC0A3EC78DF7CBA6F01F705D7A66744502A613B7A0EA79"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000101\\block-000000.gz",
+      "bytes": 183574,
+      "SHA256": "58DA3CFDED4FB1AD35E7005D3E183B6C09B29C952A7D98C47FC3669174D4C486"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000102\\index.json",
+      "bytes": 610,
+      "SHA256": "92D74BABCAC1B6679FD80A18ED5B7770511FF969339529D2503162DD18273516"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000102\\block-000000.gz",
+      "bytes": 183858,
+      "SHA256": "7581E4382EEE5BEF27653CA06EFB74226F71191B53913E269DF5445AA5CA3763"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000103\\index.json",
+      "bytes": 610,
+      "SHA256": "8A531C092089B0720B31E2536A9DFDCF302C3BDD414F405CBF023D0E73EC3E51"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000103\\block-000000.gz",
+      "bytes": 184894,
+      "SHA256": "822D49AB2FA1919A60388B6EED859EE661E730BFD739295A3AC36416B1FBEE8E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000104\\index.json",
+      "bytes": 610,
+      "SHA256": "D2480BFA1D4664F1DFB66D4C23885DEC019ED2D502B7D000A394F601B8EB57C9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000104\\block-000000.gz",
+      "bytes": 213059,
+      "SHA256": "DA69093FEA01CF934550F786502DD16DF4393D9FCE32C5918E1B195D4F45E3B6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000105\\index.json",
+      "bytes": 610,
+      "SHA256": "05D757CCC3E9F3621EF269B506715D73FC3B3C2C17F087EFEEB400DD1131D846"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000105\\block-000000.gz",
+      "bytes": 210414,
+      "SHA256": "E28E4E9DB60D4BBBD145ADE674129AF104DB77E565CAB3472903E175ACF7D2EE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000106\\index.json",
+      "bytes": 610,
+      "SHA256": "7C74D3A5AD7FDB96297B3E55287F0F872971B11A25E7E013ABBD849FC3E221CE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000106\\block-000000.gz",
+      "bytes": 209818,
+      "SHA256": "20C0CC4CFEC91591A4F68DCF415013A17EDED220243EAD509B3FD86CCEC156AC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000107\\index.json",
+      "bytes": 610,
+      "SHA256": "21DD04D41677C555FE159C6B14194059ADECED6AF10E97F399EF3A81A5B111A0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000107\\block-000000.gz",
+      "bytes": 212574,
+      "SHA256": "E9FDE5028F31814A2646E4389BE142F24518EA082EB53C965ACAE2614BA4181E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000108\\index.json",
+      "bytes": 610,
+      "SHA256": "9FA1BB836781B433073BCCF9C216F7BD80FB7F4D4DA9069DE163EDAFD0C87574"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000108\\block-000000.gz",
+      "bytes": 195768,
+      "SHA256": "65FCC72015D4826995CB8DD2FA24573E037E2B30DEB8268BF7D722D649AA5B0E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000109\\index.json",
+      "bytes": 610,
+      "SHA256": "1D7BA922142090B8E2FE663EB4B5927ABAC762305351002B7E008E0F3C1BBB6E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000109\\block-000000.gz",
+      "bytes": 188827,
+      "SHA256": "FC913D766D66C2496F995C1F1752DB541BAC7611E729670DC7A4AA5D3E20D812"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000110\\index.json",
+      "bytes": 610,
+      "SHA256": "AA51193A2FE128207EA61F36844D3017E78B2A5274D43DB11A91EEF4422EE54C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000110\\block-000000.gz",
+      "bytes": 187722,
+      "SHA256": "C36B1CE96798D0C57D21E98EB7934B7D04E61DFE952575C385385EC0B70F0413"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000111\\index.json",
+      "bytes": 610,
+      "SHA256": "76A410C357C0F2BE8AE9308900A4F1BD7ED7E91296AC282B018BD798BE245E71"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000111\\block-000000.gz",
+      "bytes": 187303,
+      "SHA256": "7D9190574FA01E10AD64E753A0CC2BC26D1173E379219A5D70A2CAEA8894594C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000112\\index.json",
+      "bytes": 610,
+      "SHA256": "FA4C3463C4521B3BB49D99F1B4522088D4B9D1FC5E188A65C8974572592468EA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000112\\block-000000.gz",
+      "bytes": 184248,
+      "SHA256": "4668850412646594ADE8684037EBEFE72F9F446858F7081234DBB8824FA591C5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000113\\index.json",
+      "bytes": 610,
+      "SHA256": "A5998FEBCAF0B5E4C023DD6B2EF34289D2BE5ACFC6CBF1BEBD36BE715E7EA594"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000113\\block-000000.gz",
+      "bytes": 184353,
+      "SHA256": "EB3F1199A0DB5CE20B389659C6A2C6092C57D7BE3E408C9DC2912429DC14CF03"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000114\\index.json",
+      "bytes": 610,
+      "SHA256": "DC61DBE22C5FCC80EB01916F92DE7BD01FF7CDBE203546DAA012C636F6A6BD00"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000114\\block-000000.gz",
+      "bytes": 184578,
+      "SHA256": "9724619FA3AD2004B08271852EDDA309B444E4C0C3F63CA6182BEE1547E69D4E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000115\\index.json",
+      "bytes": 610,
+      "SHA256": "B4F5C283A28FFE36D214CFF0ABA1FDBDB744EC8A1F0AD9B18795D0B23DDEE0FB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000115\\block-000000.gz",
+      "bytes": 203735,
+      "SHA256": "2A40A8A102E5BBC63991A42F368AC8E1988156B0435E592DE294F79C1B0B34D7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000116\\index.json",
+      "bytes": 610,
+      "SHA256": "15A827B8C058970DB452914088D73F629E78674A966D248915C0A2D16B669697"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000116\\block-000000.gz",
+      "bytes": 210379,
+      "SHA256": "FA0189D12EA13B09E62BB817D31FA9946140E55BF842D857FA6C9E25B2E479BC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000117\\index.json",
+      "bytes": 610,
+      "SHA256": "A394F14A219DF778A86AC9B99F73C29F4CA552011B72D1EF8044380EA01E56FB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000117\\block-000000.gz",
+      "bytes": 209974,
+      "SHA256": "6BE4EE0BD1853ACFB031DA5352B9B68CAE71FF0D711E0255EC61920D40E2B2D1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000118\\index.json",
+      "bytes": 610,
+      "SHA256": "B8DE7F0B13BE1C0B2B553386F1384688AFDB352EF8265363E0CDD5146CD7CB5E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000118\\block-000000.gz",
+      "bytes": 203678,
+      "SHA256": "8B6A88F591AE96714510E861D5C2AB7EC91C059B1693AAF4023E943673C975D2"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000119\\index.json",
+      "bytes": 610,
+      "SHA256": "9DC4C79C2D0C833E69223CF47A87915595EF03F4A54C720A009D21AEA99F98D1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000119\\block-000000.gz",
+      "bytes": 204071,
+      "SHA256": "01A2F6365B6A30E4139E125CADBFC8173F7F26BDD7E604AF79025076DF83EA45"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000120\\index.json",
+      "bytes": 610,
+      "SHA256": "8A6940AA7EFFC12847BD5DDE4D0913B6945B21B8969F5CB9184CA61468F2EA52"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000120\\block-000000.gz",
+      "bytes": 208720,
+      "SHA256": "A7C70D893C7B5A3681B14E7A9F539EB3045C910A8704CCB5E4A52B591D2D358E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000121\\index.json",
+      "bytes": 610,
+      "SHA256": "9863D8FCCBB0E0D0981D0B078E7288E7591CF7721F2978C7043CB9F907CF0B25"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000121\\block-000000.gz",
+      "bytes": 201959,
+      "SHA256": "927E77BFF31B136C264A9193A65ED1762BBF0BBA28BC9B4B858C554BDD2E1E97"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000122\\index.json",
+      "bytes": 610,
+      "SHA256": "F9B589A8858E161ABF02CF6102513F676815B04DF00F73B33AD01581E3CA2964"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000122\\block-000000.gz",
+      "bytes": 206176,
+      "SHA256": "4F1A717FF7EECD0D2413A0331149793CBE55234FFB9F755D7CE5097291A4647A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000123\\index.json",
+      "bytes": 610,
+      "SHA256": "801DAC24EDA438088318B034EB15E7F847D550F63632A7D0A68527BF60E6D2CA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000123\\block-000000.gz",
+      "bytes": 187911,
+      "SHA256": "530C275BDC2C27158DE975562F2F9A07D1BF5CCAB8CC6E418630D5E0CDE628A2"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000124\\index.json",
+      "bytes": 610,
+      "SHA256": "85EA5FCB55E086CFB1B53AB5053250012131806F388B711EF2232D98161B8492"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000124\\block-000000.gz",
+      "bytes": 187217,
+      "SHA256": "4AB4D406D94DE0E5BDE3F5E91603CD905FBBE722878935CA0C925C7C75A0727D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000125\\index.json",
+      "bytes": 610,
+      "SHA256": "819AF68BCE7F544A57D94643A554E2A33F6AF252617E4A3F788B68D2F1D785C1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000125\\block-000000.gz",
+      "bytes": 188986,
+      "SHA256": "210E23CD7C29AFF5EFBBAECFD618A23C8757082682016C0EC56B482E4AA4F662"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000126\\index.json",
+      "bytes": 610,
+      "SHA256": "0B89365517D9289FF9E12EA9176948C543CE93168203E3CBEA1BEAD8044299A3"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000126\\block-000000.gz",
+      "bytes": 183595,
+      "SHA256": "9B79D10F430C4689600AAB4BD0E4A0700061A777E4939C6C2DC86A4E1427CE33"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000127\\index.json",
+      "bytes": 610,
+      "SHA256": "087CD670DE8AC6C71C44540F88E62AE79D4FF98BE82402197C9C3301083A95FB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000127\\block-000000.gz",
+      "bytes": 183662,
+      "SHA256": "DC338745C38D3A477BD4C45AD5D352202D372F474BC3855F1BAE1F213B9DA63A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000128\\index.json",
+      "bytes": 610,
+      "SHA256": "422F519C40B9F6D29E29F04B9C32472C943D55F99E6883D4CB97ECF18A0F098F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000128\\block-000000.gz",
+      "bytes": 183963,
+      "SHA256": "7F54CA64EEBE30DA77CD2D67E27566BB0119318CF71F9D03E2C947F7A94672A2"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000129\\index.json",
+      "bytes": 610,
+      "SHA256": "ADFF246EC87642BD7853E0932DD852B3ECA1CC3B7382190F90AF5E70909C0BE4"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000129\\block-000000.gz",
+      "bytes": 188790,
+      "SHA256": "C702F2EDB4FDB6FCB28F005530B2C59F19E116EBCD18872BA28D82C2EA458ECE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000130\\index.json",
+      "bytes": 610,
+      "SHA256": "B45F1F10420CA6FF0CAEBB536AA7FA7D1A3CAAFEF4C10217668F13AD9F519C11"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000130\\block-000000.gz",
+      "bytes": 187145,
+      "SHA256": "AB1EB23D0FF15A695FF7C60785A201DF13D91B0215F13B98EED4A209FF7E8890"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000131\\index.json",
+      "bytes": 610,
+      "SHA256": "4E4CBD6DF49BB701612683995D2D1C3B285F664FE1A56F5C96D2256CA94E5C28"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000131\\block-000000.gz",
+      "bytes": 187563,
+      "SHA256": "4686720EEB5465A1BF953BD6DF3CE92E0BE10B327035C601909B5E86A1FCF5D7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000132\\index.json",
+      "bytes": 610,
+      "SHA256": "183BA6EA543DCC40168C3AD77ADADA19AF8BF2F9E928AE403F2322C25F893EE7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000132\\block-000000.gz",
+      "bytes": 189293,
+      "SHA256": "CE9BE354705136E2ACDE2E995ACC4BC531173ADEC1C96689F6E4CF91E45CF962"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000133\\index.json",
+      "bytes": 610,
+      "SHA256": "E00177A95B6D99964BFEA186F532571B6E8DA80465362F670C7C3DE02199F990"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000133\\block-000000.gz",
+      "bytes": 184071,
+      "SHA256": "15BA64DC8D9547288B4DA39E2FF9E9FBB09507265905F020FD84AB645E134ADA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000134\\index.json",
+      "bytes": 610,
+      "SHA256": "89A3A0000893C12457697765738CC3D591731DC91C60EA65795715303042621F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000134\\block-000000.gz",
+      "bytes": 184179,
+      "SHA256": "7D84DBF9D8744B56D28DF66757E80EF69C46EFD7EE577C970549402134232CF0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000135\\index.json",
+      "bytes": 610,
+      "SHA256": "CCFAD1C48ED8E203A33A08EEC8DD75C479B4B2AC86570AC4490742DF94169E7F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000135\\block-000000.gz",
+      "bytes": 184617,
+      "SHA256": "8E73EA7363A71823E957A5497AD35D18D683B172497FFAB17791FB2F657F6A85"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000136\\index.json",
+      "bytes": 610,
+      "SHA256": "42499A5D0D418A2CF4CB6910FA9CED8047B22F6EE7226CC498266272A44CBD8C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000136\\block-000000.gz",
+      "bytes": 189148,
+      "SHA256": "F9887ACAF4F21E572174D6312D11C8E57B22D6E4907260630972A9B01EAF143C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000137\\index.json",
+      "bytes": 610,
+      "SHA256": "C911AC22D7F8AF736E4436C6523ADD36B8439D086BC0F1612A4E31C196705FF4"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000137\\block-000000.gz",
+      "bytes": 187407,
+      "SHA256": "07852439D5C213C2201F73C88D45087E5B83C1544E428EF5820FA60443D6A137"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000138\\index.json",
+      "bytes": 610,
+      "SHA256": "0A5A4248A6B77AC75C6DF45B71345F4EA98D9ECAEDF6AFA8A29E351B19B8CFD8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000138\\block-000000.gz",
+      "bytes": 187182,
+      "SHA256": "AACE9A9067062D509711E9C517D1BD915A0CFAA6328189500788DBD46495AE24"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000139\\index.json",
+      "bytes": 610,
+      "SHA256": "D1992FA58E69E57944FC234BAAFBA1AA6210CC67EFAFD0D48D1D14D448160830"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000139\\block-000000.gz",
+      "bytes": 188751,
+      "SHA256": "DFB17B30E39775FF2570B748C1A752806D256653D7A475823275C93E0DFEB2B6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000140\\index.json",
+      "bytes": 610,
+      "SHA256": "76C37FEB621C39F5491BAC3F21FCC20E979BDBABD269DAD5DC6FBD40AA2C9908"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000140\\block-000000.gz",
+      "bytes": 183640,
+      "SHA256": "52A03B1DD0228C975409296E9DFF33783844A0EDAFC4408FE2D677BD18456152"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000141\\index.json",
+      "bytes": 610,
+      "SHA256": "952ED145A40A9A555535EA795F0A2752829F6AE268D9FA3DAEE691E9C13A7925"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000141\\block-000000.gz",
+      "bytes": 183734,
+      "SHA256": "DE82CA79BB9266D13D5A33F17B2B29ADA4B72CB775704C8205529DD61862166E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000142\\index.json",
+      "bytes": 610,
+      "SHA256": "7FC50BB860CC3BFD4835FA4C19AE14518B6210041F107DF1BA7D14C258459169"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000142\\block-000000.gz",
+      "bytes": 183865,
+      "SHA256": "473F0231CE4B1F2E223948E3DDCA6190CDBB9488C608178EB53D84E790F34F62"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000143\\index.json",
+      "bytes": 610,
+      "SHA256": "F4064850C889576CBE79E2F39FF4760AA21AE6A4B847DBCEDB4A00D69CADD513"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000143\\block-000000.gz",
+      "bytes": 189021,
+      "SHA256": "5263E9FC67DA60E9C1D8471F0DA0F533A126A769EE182E8C28487D0AF70C54A4"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000144\\index.json",
+      "bytes": 610,
+      "SHA256": "89A44801041981DA7A0AAE8A25C9240693CB64C1FAB3CE28102B28E4E5541EEC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000144\\block-000000.gz",
+      "bytes": 212424,
+      "SHA256": "6255F369329BF5D06FE65E2ECF33D07CD1DDBC08C6CE1FFD13B2E349DEFC61D9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000145\\index.json",
+      "bytes": 610,
+      "SHA256": "A3D6A650039B0EA97721A6047F8F1322F54AAFA0F825761D010306487E94823C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000145\\block-000000.gz",
+      "bytes": 210386,
+      "SHA256": "C6138A6F6A5A79D2E9662BA82D2DFE7386BD63C014ADD6047FD43840331AA0B9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000146\\index.json",
+      "bytes": 610,
+      "SHA256": "A155A80B5B2B3B7DCD1D8ACFA663AE8ED6783B15C525A33167A55E564278DE68"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000146\\block-000000.gz",
+      "bytes": 210262,
+      "SHA256": "DCDC2196E2C49DCD2C2C96E9AC5E1F5F988AAC37B36966AE8F24DFC7B66325D7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000147\\index.json",
+      "bytes": 610,
+      "SHA256": "91B22A196E7516A4832C71D902A641DEED45CD751B931A6DBD986D371B8C2A5E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000147\\block-000000.gz",
+      "bytes": 212043,
+      "SHA256": "DCDE241DB6680F31C311D19C97AF587F31CEC7AAC444CA88010C43A92F52AAD1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000148\\index.json",
+      "bytes": 610,
+      "SHA256": "8B64557F1205FC22F8415DDC1438F1C3AA267746BBD9F3AF96387E43F1566676"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000148\\block-000000.gz",
+      "bytes": 193888,
+      "SHA256": "95570E536FD8B89D1D54EF9851EBCE22F7D697F12875FDED837D72E54A4DEB80"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000149\\index.json",
+      "bytes": 610,
+      "SHA256": "78659870DAEE5236A8AE1BEDFBCE7C300580AFC81F35FF710CFA0A1CDA39B63E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000149\\block-000000.gz",
+      "bytes": 187650,
+      "SHA256": "D44F54845A78BA21C23933B918FA4CA797EEAD8324A9572357B8B678D9D4BEBB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000150\\index.json",
+      "bytes": 610,
+      "SHA256": "0DCA1105B7E402020A6D4C48750524109A99CB1E73BDC8589FD02B6B36A44EAD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000150\\block-000000.gz",
+      "bytes": 187806,
+      "SHA256": "6A44B277F0B1E5798F2C09730D3FD3FFEED964DBAF28AC09FC7304355D3B19EE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000151\\index.json",
+      "bytes": 610,
+      "SHA256": "28D307A546942AEE61F4E56B543B76B14801D53D428A02C9FDC4EA28FE771690"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000151\\block-000000.gz",
+      "bytes": 186866,
+      "SHA256": "E4DEE5BBB3F5DC94C3885FCAA564E423461B667C7B69951A5FB474725DC36D78"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000152\\index.json",
+      "bytes": 610,
+      "SHA256": "EB3DD12B7BEF509B5DAB0237787688D3C316E2F3A0E9CC0EF476B91C18FE64BC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000152\\block-000000.gz",
+      "bytes": 184202,
+      "SHA256": "663A4B5AFEE4B5E4ED188C039F0E361769120B18BB66A6187E0759A552274A3B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000153\\index.json",
+      "bytes": 610,
+      "SHA256": "8FF5286C2E272FEAA9FEECFB7DCB73C4C03D37B511DA087987BBD73A54E436C5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000153\\block-000000.gz",
+      "bytes": 184206,
+      "SHA256": "1D117003D759007A58BCFF2C40A101377B91A809D7054B6F892B6224885AABFF"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000154\\index.json",
+      "bytes": 610,
+      "SHA256": "160E7C248A8913754F65318F7AC0FF31A322C67CF1B9AE04C591DAE10DA8A96B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000154\\block-000000.gz",
+      "bytes": 184790,
+      "SHA256": "FE27F1FC446F55CCF338E65E8E5FAB50B8E03188691BB57730F907BDBF18811B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000155\\index.json",
+      "bytes": 610,
+      "SHA256": "44EA558646BF11AE5D85FDE995B723CF1266FDB2FFBCF32FDD29CC99824D6DBE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000155\\block-000000.gz",
+      "bytes": 207238,
+      "SHA256": "FD7C6D94673703F7DEFE96B4929894A2CAF530242105568D063B871C263194D8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000156\\index.json",
+      "bytes": 610,
+      "SHA256": "DB166B079714E75DC60D91E291A7DD59F7F24381C4167367A59C2E5D3972251A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000156\\block-000000.gz",
+      "bytes": 209557,
+      "SHA256": "2CCB812049C73EA70D5C93A43FE918C69B25D2C21CDA0ABE35289F809C2C5478"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000157\\index.json",
+      "bytes": 610,
+      "SHA256": "FCCD4D9DA32C9AED4B59DDA04F66874259C6DFAC4FD634E891ACFED6D436B511"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000157\\block-000000.gz",
+      "bytes": 209948,
+      "SHA256": "B84A958F2D3AD8DDE8DF78DC685DA91F008247C812C89EB70B8299B4B55D60BD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000158\\index.json",
+      "bytes": 610,
+      "SHA256": "6838EACD09F82FDEFB854E6929BA4FEFDC6F49E03590312FB79231B3D4D74363"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000158\\block-000000.gz",
+      "bytes": 203608,
+      "SHA256": "58269DF77C415A4EC347279C94CFB7C560A4617487FF414D0C444A1A62DD648F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000159\\index.json",
+      "bytes": 610,
+      "SHA256": "84339316232CF92528ABFB8EBF1D0EE15286BB0DC9B211573E115D3DC120F583"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000159\\block-000000.gz",
+      "bytes": 205054,
+      "SHA256": "62A9DF4A838B040C8A8063FC2A89287DA502CB800292CFA010276BF3E9E28953"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000160\\index.json",
+      "bytes": 610,
+      "SHA256": "125C2DB3EEA93174F9C6B18147C746FCB21D97651D16E2EB3C399BB8DE00E2A1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000160\\block-000000.gz",
+      "bytes": 208348,
+      "SHA256": "24C0DBE62F43DDCEA952A7B98B6770608F9BEC57921F802EB205B8A66888090E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000161\\index.json",
+      "bytes": 610,
+      "SHA256": "AB480137372583BFF68148CCE366BB46C3DBE4B396BD4CB11773CBAAF02F1A09"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000161\\block-000000.gz",
+      "bytes": 202008,
+      "SHA256": "4520194D60B62F71AFEF50A408AF06719047D12F39758D842652BFE0942AD23D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000162\\index.json",
+      "bytes": 610,
+      "SHA256": "8A7CF2245449501600352FD92CAF30448358616744234CB705BEE60BDF789FC9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000162\\block-000000.gz",
+      "bytes": 204253,
+      "SHA256": "15EDD0074BE86148BBBFD44AB54242136C37664A16F9754B42586508E8612F25"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000163\\index.json",
+      "bytes": 610,
+      "SHA256": "6121E697F0069984537443F3994392E356B393B2658D082E5DE11E9F06B2F75D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000163\\block-000000.gz",
+      "bytes": 187707,
+      "SHA256": "6728B7CD36D2B97651AADB537265F5CD469AE357AD87991906357190CD0E2C3D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000164\\index.json",
+      "bytes": 610,
+      "SHA256": "3F0527551A94BC265E8F63B6B062945A5D307A2D6D0ED454FFC6B8E66316BB86"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000164\\block-000000.gz",
+      "bytes": 187604,
+      "SHA256": "CA9D8C65EF67EDBC049F7A007DC6D1033F5C4CF1ED52C9E88D1C578C4056AFB2"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000165\\index.json",
+      "bytes": 610,
+      "SHA256": "0AFEE48BAFCD686015F39EE1EB15CE7FCDC92853A2F1D3BA4B5D64EF516F9D3D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000165\\block-000000.gz",
+      "bytes": 188438,
+      "SHA256": "E5C4CA2F5BC589A5B9C888EE9193DB2CB59861DD29C6C0EE3D1DE70BE8158706"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000166\\index.json",
+      "bytes": 610,
+      "SHA256": "74468969B2739C478BA0D2F12D64D34CAEFC5178B4DD1472D03B6575446B4B9C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000166\\block-000000.gz",
+      "bytes": 183758,
+      "SHA256": "6A4A7EF8BD592F5A6B12CA041B4C8A844B36190E21B12F5A6D03F07B128C5363"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000167\\index.json",
+      "bytes": 610,
+      "SHA256": "0763A6E1FF20331D8721138B55A7125CEDB2843E97979F08DD92793442EDF6ED"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000167\\block-000000.gz",
+      "bytes": 183563,
+      "SHA256": "BC293B2A64C71E065C1AC5ECDDFDE10D1F380411CC0220FCBEE81644B6EE5E9C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000168\\index.json",
+      "bytes": 610,
+      "SHA256": "3D9D2FEE985F5D9844BFF66D0CE55312004AC82A7002D48AB8F81DB03357E0E4"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000168\\block-000000.gz",
+      "bytes": 183898,
+      "SHA256": "E9301BAA9B5E4A3A5837A155C71F4B80A24C4515AF8A482EF13D182A3139BC90"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000169\\index.json",
+      "bytes": 610,
+      "SHA256": "EFC34B3660B1F383A70EF48BCBC4A8523C191E45BE6E957FF276090DC21BACBC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000169\\block-000000.gz",
+      "bytes": 188394,
+      "SHA256": "F7FEB09E3EA2717112B15BC84F906187537412B43433901F620F530B2C9AFAB9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000170\\index.json",
+      "bytes": 610,
+      "SHA256": "EBE87BCC6CF736E6894BE1595EFDC701A6E97B004AC60976C0873B64C87C7F2B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000170\\block-000000.gz",
+      "bytes": 188053,
+      "SHA256": "52EC6059367B626781EEE2BC23D3E600740582CEA578B8E117E6FBD6420F3A81"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000171\\index.json",
+      "bytes": 610,
+      "SHA256": "85903E37B277406C3DC33D36080575169931D94ACBA78D1C2CFCA0FC1988C24F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000171\\block-000000.gz",
+      "bytes": 187882,
+      "SHA256": "DA7CAC5142AD67B02E3A054F5DC99FD264C05FC8E5142B04F10CD19D71A84A40"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000172\\index.json",
+      "bytes": 610,
+      "SHA256": "D5A7627603C5F70F8A3605DD41B832C37076A5EEC796CDF30E5AE222956333DC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000172\\block-000000.gz",
+      "bytes": 188771,
+      "SHA256": "BA32782181460A9534EDFAEED3CBE5EE50B2462341A7A77FD94C5FAF714E9E16"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000173\\index.json",
+      "bytes": 610,
+      "SHA256": "EAC5FBB53C5F16316B0EE6F438B9031053D7D24C4D632ECE2AF0578103E9BB5D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000173\\block-000000.gz",
+      "bytes": 184128,
+      "SHA256": "BF41D8212D9422003FA7BA639B875CB6A0F9C52D698308DAE5C3F57738804AD8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000174\\index.json",
+      "bytes": 610,
+      "SHA256": "A3371C4E02CF00117BE13D315F7F26F7A1A289B8781F4D99E0235F94FE438D33"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000174\\block-000000.gz",
+      "bytes": 184366,
+      "SHA256": "99C3AD5EED1BE8FE1B3EBCF8698DD7ACEF322B8316C004D788D62818977D5314"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000175\\index.json",
+      "bytes": 610,
+      "SHA256": "914CA5AC09395DBEB29F716F0D4D6409C7DD1F126AAACA630CF7D1DBD068F5B5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000175\\block-000000.gz",
+      "bytes": 184559,
+      "SHA256": "684FDF59F6D22A8DAFB9025BB7C6EC90A87F1151EC9FFCAF6857D76522AE47CA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000176\\index.json",
+      "bytes": 610,
+      "SHA256": "11CCF44F64181DF4219D3CBECEA0974AFBBC8681F215256DB77BD95FF7258A4D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000176\\block-000000.gz",
+      "bytes": 189443,
+      "SHA256": "085D2898E691BDE0A81814443B7B463F6F81A762DC320E187C026448937120D8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000177\\index.json",
+      "bytes": 610,
+      "SHA256": "EE4D91AB8E07B0DA5D7FBFE90B8B59E8FF4135DDBA66EAB866A6BAEBF176DAF6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000177\\block-000000.gz",
+      "bytes": 187836,
+      "SHA256": "32C68294DC263B3BAAB4B1AD1A435AF49D31D6D1EC9FF0C38094077B64489235"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000178\\index.json",
+      "bytes": 610,
+      "SHA256": "CE4381C874BBE8BC2E8D0A60DA20EECDCCFDEC54FDC7C4FCC5E6BAF5D034BDFC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000178\\block-000000.gz",
+      "bytes": 187142,
+      "SHA256": "3DD57AB630F3EC7C94AC0AA72BB32B0CE741DCC1DD0BC1668D023933C3A69C62"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000179\\index.json",
+      "bytes": 610,
+      "SHA256": "694956447252E7AB6CEB4F99D582DA46ECB00002BDAB43AF4D3233F59CFF01F7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000179\\block-000000.gz",
+      "bytes": 188098,
+      "SHA256": "3EF4B914C9FB9AE0456FC32E1D0BAD5A915D42AB07287C6A73EBBCADA3C66437"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000180\\index.json",
+      "bytes": 610,
+      "SHA256": "226E2B2505CEDE7C3823AC83BC23687078779CF87A203A5A8AD9F4EB8FC8A654"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000180\\block-000000.gz",
+      "bytes": 183359,
+      "SHA256": "2FF99843F0EAE58A9DBD868E93EDEA3443F8B79B53A93DB2BFD7D25DF06D3827"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000181\\index.json",
+      "bytes": 610,
+      "SHA256": "F5B188D6C49EEB94C0023C6D0395014BF3A0B9110F2ABA2E6717B86CAEECEBA6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000181\\block-000000.gz",
+      "bytes": 183530,
+      "SHA256": "E50A6E7895E03AD409F59E9A7B0C37F585D20351689270D8E9E12EDCEF18240D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000182\\index.json",
+      "bytes": 610,
+      "SHA256": "698EFC4EC07392BDD046B55F9DBF1F80FAD0E0D6EB219302D9C5CD8DEE9EF268"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000182\\block-000000.gz",
+      "bytes": 184009,
+      "SHA256": "9628D1B9025E91970E4580E3851C567EEA537C1DAF04023CA21DF163224316DF"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000183\\index.json",
+      "bytes": 610,
+      "SHA256": "420C24B2A544AF70D6355E900F852633AD27380BEE9C1EE462F729D0DADED706"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000183\\block-000000.gz",
+      "bytes": 193840,
+      "SHA256": "C0A2154AFD01F7D434BD50C14BCD468FFBA149199DDDD23F208178ABE05CEA1A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000184\\index.json",
+      "bytes": 610,
+      "SHA256": "28EA4E815E1DE99AC4D5CFD57AF38A8BC92CB09FE1157FA73F4CDD0FCE72E0C0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000184\\block-000000.gz",
+      "bytes": 212064,
+      "SHA256": "AAF6F42A4392A44ABBAD1171A748729FE11EB5678F9465A46CEAE6A0CC6E791B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000185\\index.json",
+      "bytes": 610,
+      "SHA256": "4E3229043053E10674822A27224B5DF005B71443F393CD60F89E2C1F7C8E7A51"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000185\\block-000000.gz",
+      "bytes": 210482,
+      "SHA256": "81D9FD5999A1F4ADE177E169EC78629C547512CB4EBE9163688ED231DDB60A58"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000186\\index.json",
+      "bytes": 610,
+      "SHA256": "3CFC51042CA08AA8A97B4A1C200E69C9E82CEF7FC7A7B1F601E2DAB5849A9501"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000186\\block-000000.gz",
+      "bytes": 210144,
+      "SHA256": "04CC1E65A149A28A55D647034773AFA2EE5D60191615A935E034DA540376B5FA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000187\\index.json",
+      "bytes": 610,
+      "SHA256": "C5DC1A7D487289DAEC094B685E60FBF4AA1EFDF44AC06A850CA626BBA055A59F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000187\\block-000000.gz",
+      "bytes": 210252,
+      "SHA256": "BA9F2F4CB37956DC859E713AE5556F273D12A711ADD02747C383DE558694F6AE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000188\\index.json",
+      "bytes": 610,
+      "SHA256": "EA7BE7388728AF37192BE33031AAF3F96D4231C730593AF302F28632877A1570"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000188\\block-000000.gz",
+      "bytes": 192226,
+      "SHA256": "1E18BDD2143F9D1037DD86E7ECDB2E4F85776A22EE457BB21623E349FFCE2ACB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000189\\index.json",
+      "bytes": 610,
+      "SHA256": "6FCED7BDED96E59B8800FC023029EFA4F9912A96E2A17F046F6191E35F95A500"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000189\\block-000000.gz",
+      "bytes": 189350,
+      "SHA256": "E004481312A23045EF78AF113FC274B5162509371FEC48686B18024F26185B3A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000190\\index.json",
+      "bytes": 610,
+      "SHA256": "760FDD17EA0F4850407EB7D6D31181DF5CD9766A0066823DED35C6DA110504D1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000190\\block-000000.gz",
+      "bytes": 189950,
+      "SHA256": "9A0A9209B5DCE57781476517F660F63AB98C80F33EB9D99105B86AC8F05A35F2"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000191\\index.json",
+      "bytes": 610,
+      "SHA256": "87EC24C395422ED810718A3ABB4EB82DA1F06B3958F857FE5A6632C7C0D97E69"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000191\\block-000000.gz",
+      "bytes": 188283,
+      "SHA256": "54358A926E0B1B6905EB019C1A73131D1A7E611C7D331A56596416E6BD995260"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000192\\index.json",
+      "bytes": 610,
+      "SHA256": "894BD2ACFD0F1A9217D7CC9B70FD7C158BFC78EC77084D02C2277D5DF289212C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000192\\block-000000.gz",
+      "bytes": 186233,
+      "SHA256": "A327E4FFB786583CD80236C49B8746FCFBE2B65E05E3D075D25522E70819D5EB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000193\\index.json",
+      "bytes": 610,
+      "SHA256": "5EAB5E2C3697750AE917343C624CDD4E1B51CFABACC2C76FC11F04A5DE73D57C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000193\\block-000000.gz",
+      "bytes": 186636,
+      "SHA256": "AF4152EC3E4940C3C67471F995B07F03CB4526BF6348513ADDC704BF2D406C36"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000194\\index.json",
+      "bytes": 610,
+      "SHA256": "D9FEB2EC71C25FD04ABD455D7674B68916A4B3B818E79AB143D78AF38CF88D05"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000194\\block-000000.gz",
+      "bytes": 186272,
+      "SHA256": "E4E4A2CD0181B1C8C6669BCF225C16A4EB525F7F9478B7BA7742BB2327608384"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000195\\index.json",
+      "bytes": 610,
+      "SHA256": "03A09B16BF0AF269403A3AD2E5C02CF07F703524294CEFB5E6CC9EA500F0873E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000195\\block-000000.gz",
+      "bytes": 213967,
+      "SHA256": "3A0FC545F8311CB7B4FE33AFF4F340792D1C5900C326823A83305883CB49440E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000196\\index.json",
+      "bytes": 610,
+      "SHA256": "4A3304497508D00105128C13F231D80CEF3BC7F21EFD82F2637FEF8956FCD426"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000196\\block-000000.gz",
+      "bytes": 211547,
+      "SHA256": "676671D0D535F6647778D1787C2060372BD15F417E4FA9313E9C43946EE15689"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000197\\index.json",
+      "bytes": 610,
+      "SHA256": "63DE5B5849E8EA5BD3CA76AB8A970A65B7BB659242E8DD08D4A71B9DA8D7BF87"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000197\\block-000000.gz",
+      "bytes": 211192,
+      "SHA256": "B644F298D66FB646A4DE9E4C1A04364AE477C3C4EC0C5D5AE395C7E8DBFFF32C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000198\\index.json",
+      "bytes": 610,
+      "SHA256": "FB85C40DA4C0A91653F36E91852ACA12190D8CE960518775CFA2DB80A7602E99"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000198\\block-000000.gz",
+      "bytes": 206332,
+      "SHA256": "C3CDCD497B846E91157E9536E069C083F561F838E7D452F0861AC3EB9C3CB443"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000199\\index.json",
+      "bytes": 610,
+      "SHA256": "B4B9ECF909BF9B4AF4E9966BBE17A79C06601D0C121ED98C618C7B373703AC1B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000199\\block-000000.gz",
+      "bytes": 208421,
+      "SHA256": "4A56459125933AE1D3CF47EB3D5648E3A2074A6490AB2B9F7CCECAE5417B6D44"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000200\\index.json",
+      "bytes": 610,
+      "SHA256": "45AB69492ECCEFF3E1B4700D7FB703D11C4186344844C0C547F907FD3F696882"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000200\\block-000000.gz",
+      "bytes": 209652,
+      "SHA256": "1F9B9123BA9233832D8D8FC4DA66897652B531ED13E38BF76B3C5C45D1714989"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000201\\index.json",
+      "bytes": 610,
+      "SHA256": "5841DD256C878C55AFA44F2D57074EE7D1D654683D24A967151D7B4352FD51B5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000201\\block-000000.gz",
+      "bytes": 204821,
+      "SHA256": "1E3DC8096D6657E2901EB0A93A1E2766B667523F6809ACB514A7EF04AE8BB495"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000202\\index.json",
+      "bytes": 610,
+      "SHA256": "76694016B48D3FD4B82EA4E4E3B74DEDA42188CED64356272C7DCF39A045EED1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000202\\block-000000.gz",
+      "bytes": 205300,
+      "SHA256": "0F1389E0DF48252A9EC954BDF07D7C4CB429DB57BB5C6193A850EFE3B9B3C021"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000203\\index.json",
+      "bytes": 610,
+      "SHA256": "D1CFABD709D888B25A3181D264857E418CBAF00DF84E1A522018FD0D28562876"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000203\\block-000000.gz",
+      "bytes": 189021,
+      "SHA256": "6FFFC141AE2EB76AE4172B7EA328F8D8B701FE43F89441188CC4D1E51F251FC0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000204\\index.json",
+      "bytes": 610,
+      "SHA256": "EE81047502E373C5191DED5CEBB18C6916844F2C8217FDF168EC194E3885127F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000204\\block-000000.gz",
+      "bytes": 189378,
+      "SHA256": "38F6A3816E34711B4F379867BC4EE60DDC7C2989BC3449DE6D1B1B36A1570548"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000205\\index.json",
+      "bytes": 610,
+      "SHA256": "0A4C6835BA30A984E53B3007B8D8E17C2281961EE174EC72073843606A7D8F7F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000205\\block-000000.gz",
+      "bytes": 189693,
+      "SHA256": "BCDE9A8376C66E74303BB9965103F07A19F40A09C85BFD45B4883DB368F51E62"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000206\\index.json",
+      "bytes": 610,
+      "SHA256": "1E3218A57736F850C853DE7FA6EA7C61EFD255D4E4A8D75D06D3916A9211BB42"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000206\\block-000000.gz",
+      "bytes": 185475,
+      "SHA256": "5F32E969ECDC299B6118DE516CFEB86F97E64B29BEE7CE9AC15C77A3F5A72384"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000207\\index.json",
+      "bytes": 610,
+      "SHA256": "DD8812815C5C33E86026D91C497D043D133F1CA0A778F563262E52F2665122C7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000207\\block-000000.gz",
+      "bytes": 185841,
+      "SHA256": "1E9492D3641B022AE133FF6945F10AE56DFC999552D59B63D879B76AB66F32D3"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000208\\index.json",
+      "bytes": 610,
+      "SHA256": "9705655539FA43EB57AFDA64C00CB5C0664F9342B8A7A9E2E2BCB33C430F5DBE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000208\\block-000000.gz",
+      "bytes": 185735,
+      "SHA256": "212A4A8A9D15CE81867908ADA36F8B601ACF2FF058A6CAD96DD8CFEFF2C8068F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000209\\index.json",
+      "bytes": 610,
+      "SHA256": "3A7B9B8E9E9CA9FE7F10CA50B7D1E89F9DF0D9381C1955ADC346E84EFBE200DD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000209\\block-000000.gz",
+      "bytes": 191345,
+      "SHA256": "A02B19BD602ACA92C57282A625386B0A821D8844E20E35BC2D146A5406883E93"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000210\\index.json",
+      "bytes": 610,
+      "SHA256": "2CC6DC7946ADBDEEC0476F1DB6214D53B920FE43A8BAD368ED6C50A6AAACABE0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000210\\block-000000.gz",
+      "bytes": 189729,
+      "SHA256": "43130E9CB8EA53451D7EC389564821D54161293EB040EE5B16D0445B8D8348A4"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000211\\index.json",
+      "bytes": 610,
+      "SHA256": "D384CD7C3CDC0E4AAF256859923959B89248D70B71F228D877DC8EC8E55CB7E0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000211\\block-000000.gz",
+      "bytes": 189896,
+      "SHA256": "72EF68CAD97A46CCD91FD75393BE80693F4040377E6B44A5528336335AC63A74"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000212\\index.json",
+      "bytes": 610,
+      "SHA256": "C5FE99A097C564CF7A79F63257E1185064D2E817C6ABFB0E2A6D7967ACCBA849"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000212\\block-000000.gz",
+      "bytes": 190802,
+      "SHA256": "ADAE77ED42C8F1A0F6E58B3CE0D86B4855E9025A22DFD2969FFEACB8A558CACE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000213\\index.json",
+      "bytes": 610,
+      "SHA256": "413CA9DCDA9F7052A5BF6BF0CF934426397A47E13F7E54175405C1A3C294361F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000213\\block-000000.gz",
+      "bytes": 185954,
+      "SHA256": "6C1D5B2EDE07BB853D46FAEC873729B9A02FF0484B27FF6D0EA853110359804C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000214\\index.json",
+      "bytes": 610,
+      "SHA256": "CF3A8388A0113CE5D1CBFCA9683B5F0658B94FD707871EEF45CE1C4B0334F4EF"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000214\\block-000000.gz",
+      "bytes": 186552,
+      "SHA256": "DBC2E2B8AA0A2FA655DC5E34B4D3C5C4097186D7A570165ABA5963C27244A513"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000215\\index.json",
+      "bytes": 610,
+      "SHA256": "288C96E14CCAB8A27DCFD4CCCB208ACBDF89BB3851FC2EF53EBA4C14CED0CF4A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000215\\block-000000.gz",
+      "bytes": 186601,
+      "SHA256": "E6E33772447D8B83DD735EABE71260234C67DAA22C39C3E3466DF89844F8376B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000216\\index.json",
+      "bytes": 610,
+      "SHA256": "3F66B43D0FB8941840CEDD8DC0177ADD318C083CD390D992180FBB9E34071D3F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000216\\block-000000.gz",
+      "bytes": 192964,
+      "SHA256": "9A5FDB364CF51E543116671CB103145D2E60AB724216F70F2BCFE0BB5296C040"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000217\\index.json",
+      "bytes": 610,
+      "SHA256": "099FE2B4A1E82B2C0DD42A175EEAF2E141448985327DB8FE826596E38DBFD620"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000217\\block-000000.gz",
+      "bytes": 189176,
+      "SHA256": "176E2489616FE27FFF4C13CD2A325838DF0E414EA2CAC1781E78B40A9A02E9E8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000218\\index.json",
+      "bytes": 610,
+      "SHA256": "A9F439061E320FCA422C4518938AA2E31DB180FAFE72F4B7C5738E16A86DA201"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000218\\block-000000.gz",
+      "bytes": 189508,
+      "SHA256": "D859E6AA0FC524F9656DDDC85A08C75A78F4104695AAE94E6B1F44BE512B8746"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000219\\index.json",
+      "bytes": 610,
+      "SHA256": "9D5CB34811B6B95D10369AF7AEDBF8F421B54A5AAC3EAC4C1ADF2B270394F17B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000219\\block-000000.gz",
+      "bytes": 189717,
+      "SHA256": "73C968BB2CA11D90895A2023C44C1EF083BC5A2C44E36459C6ACAC97A50B8B78"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000220\\index.json",
+      "bytes": 610,
+      "SHA256": "FB445E3EC0DFACC43E7374E6FB9A56EA2BB0B855593BB099794A0BD94788227E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000220\\block-000000.gz",
+      "bytes": 185679,
+      "SHA256": "9412177153924CA20A85DFC826EC206283561FE79DAF4D0649779809D15BEBF3"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000221\\index.json",
+      "bytes": 610,
+      "SHA256": "DDE457E3B492D22AFEE0B1D33119409B88A29DF11D7870DB1ACA9B465C504B90"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000221\\block-000000.gz",
+      "bytes": 185691,
+      "SHA256": "993BE02609CD9C6376E211E5CBBBDAD663E00F977940AC1D5143496DA836F0D0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000222\\index.json",
+      "bytes": 610,
+      "SHA256": "4AC7A3885BBB410FC2158E5DEA403F2B5B969002D9E7DBD2AD61F0A565BF1931"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000222\\block-000000.gz",
+      "bytes": 185525,
+      "SHA256": "50BF5C043689DF1F60BA1A49C0BF0B1E4EE901C81B93537520F8C3773CC83387"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000223\\index.json",
+      "bytes": 610,
+      "SHA256": "5CD1ECFE750058E7DA123A33074AC472D6725316C320783C2B946E4C623CE479"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000223\\block-000000.gz",
+      "bytes": 199559,
+      "SHA256": "063FC3956451558A0B6EA2C3D746861F7DF67B7B8FF97AB35300CB8F376EA253"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000224\\index.json",
+      "bytes": 610,
+      "SHA256": "3C66994BE1D909044B84A963E8745B84603FCE130ECDFD75BEC5F29127309B83"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000224\\block-000000.gz",
+      "bytes": 212488,
+      "SHA256": "CE2044E3C7A3E91E7BB665E0C18398C68C218A12FE3996D82F0C6C7CE9788908"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000225\\index.json",
+      "bytes": 610,
+      "SHA256": "21C2A17AC542F616339EE7FF4CAD68BB4492A79B55FD73E130EDC9382AB9B1A6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000225\\block-000000.gz",
+      "bytes": 214641,
+      "SHA256": "605B3787B7790608BB5D194B4920BE40B4AB4462FEDECAB4AE1384DF883A2DD2"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000226\\index.json",
+      "bytes": 610,
+      "SHA256": "67EF2D5EE4E1C71F19AE2A8C8BA61B68ABB446A7EABDD3E4EA2BB1D57022849A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000226\\block-000000.gz",
+      "bytes": 212574,
+      "SHA256": "562B4A2E6EDC9BB563150267D4E0B08433E168F3984CA97651C43C4DDDB9B997"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000227\\index.json",
+      "bytes": 610,
+      "SHA256": "A8D21A60FDEC37CD6AABB783520416FEDA95534FC03C51E7B40EF25E65B47FC6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000227\\block-000000.gz",
+      "bytes": 213753,
+      "SHA256": "B921D069F6B256804FBB39ADB679E35681543C130D29C9B2BD328C5B25DEBB0C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000228\\index.json",
+      "bytes": 610,
+      "SHA256": "2044DBD0C0A8D349E181604B1A2A8F5CF8880C0121580161105F134632824A3D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000228\\block-000000.gz",
+      "bytes": 189642,
+      "SHA256": "DD77600EC76A836F029123E2811CD9B5B88F5960C683D2891CE2811CEA9DA5D4"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000229\\index.json",
+      "bytes": 610,
+      "SHA256": "B53C48CFF458332008AC3D0A2B2D22B0706BCE718E98E81FD5F0B33F9E14A8AE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000229\\block-000000.gz",
+      "bytes": 189577,
+      "SHA256": "C13E8630A2580FDE9AAF4126FD56F38E5A03BF24A0553D59C35774BCA6F593F6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000230\\index.json",
+      "bytes": 610,
+      "SHA256": "CE1398171906D3C35F4755A9FE7017535D84277FD7BC871C74BD57B16DC2984C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000230\\block-000000.gz",
+      "bytes": 190650,
+      "SHA256": "5695C53FC24E0C3686FA65184AEB04DEF8224E774FFA0FA9C4C988D3F3A3C1EA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000231\\index.json",
+      "bytes": 610,
+      "SHA256": "4164F7B7C7C893875585D691F26C3A64BB5757247825EDC0DEF1D423905388FE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000231\\block-000000.gz",
+      "bytes": 187338,
+      "SHA256": "497807BC22C1F20A5810A8ECEC2E38A40A9B7CC4E01A016B99B566EB1404F94A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000232\\index.json",
+      "bytes": 610,
+      "SHA256": "678E0CD03613B71B9F6B8E0EF6D185401AC059447AD41A8CCFC3745DE23630C5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000232\\block-000000.gz",
+      "bytes": 186120,
+      "SHA256": "635FDE59C2213E3A7F6173478B0335EEA274677FF641CDCEA5C257B2B6869A6E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000233\\index.json",
+      "bytes": 610,
+      "SHA256": "9FF45AFB9B75987C6D6ECA305468287F77AF368A95BB74DA40A7162152A9528D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000233\\block-000000.gz",
+      "bytes": 186584,
+      "SHA256": "8EA21283A55C568B464604FF4F5038138AC1E425F4F6E22D9824F06E3B81ED03"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000234\\index.json",
+      "bytes": 610,
+      "SHA256": "AF12D5C5349FD61EE7036FB8149F58B06613DCA2C1C22D42C8B83EB7A462CDE1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000234\\block-000000.gz",
+      "bytes": 189484,
+      "SHA256": "C957704A991AB59769406E055381604C13C857FC45D347D80DA6841632180AA0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000235\\index.json",
+      "bytes": 610,
+      "SHA256": "0B765F0D8FC6493B6A8B791E2F89AD1943B2C3590B96269B25CC91BA1FE84B7A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000235\\block-000000.gz",
+      "bytes": 214996,
+      "SHA256": "A1A0E5D68F38F1DAE22F2FD829F4F1987BBFBFB0D042AE5E6B71219920760706"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000236\\index.json",
+      "bytes": 610,
+      "SHA256": "B740894AC9DEA2564905A11381F7FA957E761B953DD0AEC7FFBB28E2BA879846"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000236\\block-000000.gz",
+      "bytes": 210196,
+      "SHA256": "53B28319B415A0873D9AF6E6C1008FA35CA78757D6093D7DB06D385838A477F0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000237\\index.json",
+      "bytes": 610,
+      "SHA256": "A6A8AFC817AC6C995539A140BA314832FA2277784038D2B84ED7EA5572032690"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000237\\block-000000.gz",
+      "bytes": 211041,
+      "SHA256": "2CA441FF5CE34BD576F974E5274A0DDAFFB7FB8085D808EDF6D921A9E77AA06A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000238\\index.json",
+      "bytes": 610,
+      "SHA256": "659F08F01993BC1EE2FA4186165276265AB96FB7A4CCA35F5FAE12873AA5C3B0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000238\\block-000000.gz",
+      "bytes": 205881,
+      "SHA256": "13E0B7C9EC8B0E70CABDA5D048A41281DFDC7F85170F6C4B0F4E3A5ADFBD3ABE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000239\\index.json",
+      "bytes": 610,
+      "SHA256": "DDD84E64571F24748B7442186F69CA6C66E257D10952B29AEB22E1524DCFD23E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000239\\block-000000.gz",
+      "bytes": 209872,
+      "SHA256": "B43DC0108D5F599F3D461F506951119FCBE67B5FAE05CD8CB8538ACC3BE4559C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000240\\index.json",
+      "bytes": 610,
+      "SHA256": "8AD092765E9C7F4B35C306E349844FE2DE7B20936C2E4F85B8114CA6DFFE3E89"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000240\\block-000000.gz",
+      "bytes": 208301,
+      "SHA256": "BE6265C6EFF2F81FF48D2870081CAD534086A5C42CC9677A9A1D5A3A3CA94BB3"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000241\\index.json",
+      "bytes": 610,
+      "SHA256": "2F80C97628E8C32D347751C9436D0A197EB402AB6997716FC7A2B1FDA54C28A7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000241\\block-000000.gz",
+      "bytes": 204300,
+      "SHA256": "404B8B3F2F5721D29A5C16E2E143FEE8113CFA353E9C114005758928BF9240AD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000242\\index.json",
+      "bytes": 610,
+      "SHA256": "FC8DCFCD83422EC29BB9AC639DC2640282C2E6E6CFBCAE836D03F9969AF2C98E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000242\\block-000000.gz",
+      "bytes": 202561,
+      "SHA256": "341F61EB72A5D79752669891B3B02A51725A32C971CB5F2B38C2F64B2A315A17"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000243\\index.json",
+      "bytes": 610,
+      "SHA256": "58B3A0BA36D6D84FFBCB3FD8C6C2AA00F0EEFEA22F7DEC966A0628006911E512"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000243\\block-000000.gz",
+      "bytes": 189331,
+      "SHA256": "55DB0EB895EB8EF534880B24427F1A553B5319536AB9192D6BFD9358A132074B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000244\\index.json",
+      "bytes": 610,
+      "SHA256": "09FD161B8F87CCBBDAF3B33CD59C9A3F0AC7C3AD9CC247F5DF0C34FF9C25A74D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000244\\block-000000.gz",
+      "bytes": 189561,
+      "SHA256": "D1B8EF121B3D0D2DBEE9A2F15CEAE80E6E314ADB4903F4AB817BA98A0C0E9090"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000245\\index.json",
+      "bytes": 610,
+      "SHA256": "B90003BF77D8631D7BDF7ABE3E3CD01E595F30A58F49129A2A4B01F4F0A66F69"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000245\\block-000000.gz",
+      "bytes": 189271,
+      "SHA256": "DDE55954921BA8EEB116C17A3123ED6CBE97F888EF4C11D69FD6952C15259D67"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000246\\index.json",
+      "bytes": 610,
+      "SHA256": "3A6782856F9AE834711D9217C89E540CE7B329CB5F4B776DB2E39F4B50418D4E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000246\\block-000000.gz",
+      "bytes": 185660,
+      "SHA256": "D254862A28341CCD8F3A90D72CC074284632C75BB721C2D99AC19653B796F237"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000247\\index.json",
+      "bytes": 610,
+      "SHA256": "9AB93E2C5A643B1A9B0C0D338A12F14E6CCEC4A4F25EFD42A29A84513110812D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000247\\block-000000.gz",
+      "bytes": 185717,
+      "SHA256": "4C0409EB7421AC72BE5C77DC6FFD0F1C523BA50A0A7546D58D428B513F32532B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000248\\index.json",
+      "bytes": 610,
+      "SHA256": "716FAB8D9157E8C7E1955CABEAD92AE81D1983C78B0A6EE8683A1B3E5A85AECC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000248\\block-000000.gz",
+      "bytes": 185889,
+      "SHA256": "2BE373197AEC3AAFA475F1670B6550C5AD4D229F13074C531C52E73DCFC1D207"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000249\\index.json",
+      "bytes": 610,
+      "SHA256": "258A8A0ADE9E9E5F926F09B6BDE2E8119783700DC3569B900CDB04C33D75FB8B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000249\\block-000000.gz",
+      "bytes": 191328,
+      "SHA256": "F1498574C3CA063FB5A45C86AF938351B1678ED3B47C48AE4E724F8E6B189AEF"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000250\\index.json",
+      "bytes": 610,
+      "SHA256": "886B0801714C6F46ABF2C40F19B50F50CD8253D0A44FB3C6E0260C81F6B63F7F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000250\\block-000000.gz",
+      "bytes": 190222,
+      "SHA256": "18B4DF93D7EE7270E708F8F3722050DC48C60F4275F1A5EB23BB1B9CBC9603ED"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000251\\index.json",
+      "bytes": 610,
+      "SHA256": "46C1E164318F50F45F59D36B83DEEE160705FB64409237D8A674F1434D55751C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000251\\block-000000.gz",
+      "bytes": 190019,
+      "SHA256": "35C933C6F48E037889B948AC6DBF1578A3A6C7BD0E13025A64E30C2F5ABAE927"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000252\\index.json",
+      "bytes": 610,
+      "SHA256": "B0C9D4B6A180B3A39550F5CC16C08D47CD256CA212D687258B0630748A73FA93"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000252\\block-000000.gz",
+      "bytes": 189977,
+      "SHA256": "6EB37DFF1F0DD83964615AAD32D1F6CBE4FCD5B92AADD91E01CE6B5279CC6468"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000253\\index.json",
+      "bytes": 610,
+      "SHA256": "AF91F677C797D0A4F96A02C6FB8FC819993347E78C706E7B99DA4E7D886EEE6F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000253\\block-000000.gz",
+      "bytes": 186600,
+      "SHA256": "EB1E40D8E97062F6AF9086942D95DF77954A0155060FEBFE42D78204746C5BC7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000254\\index.json",
+      "bytes": 610,
+      "SHA256": "9DDA56D43827E834DAE8359F3007BF311C2B72DB4B4CE4115BAF41AB12F0B551"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000254\\block-000000.gz",
+      "bytes": 186535,
+      "SHA256": "563C96A71451E9724053AB742533C4A4EA458AC2231E5149F8736FE898B78CE0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000255\\index.json",
+      "bytes": 610,
+      "SHA256": "ED32D77BA5D3450700CAFB1E7F0FC8CAFABA6910D453B57FFF7D5900100ABC88"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000255\\block-000000.gz",
+      "bytes": 186421,
+      "SHA256": "200319CF89FE1540EA842CB7F5C73291611027713246E162057BDD33DBF1636E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000256\\index.json",
+      "bytes": 610,
+      "SHA256": "C96EE58590F958D4FB8A9FB8B5203C7DC293F22EEB3AC6B3A74EC3A977313898"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000256\\block-000000.gz",
+      "bytes": 192544,
+      "SHA256": "3885D159190EA959871250DE5355C6A48AC95100761A1D89A2A259B97F92ED09"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000257\\index.json",
+      "bytes": 610,
+      "SHA256": "BA201ACBA6629E1FBFD652E79A838E78EA96FC5591187AAEA79ED4D20A6CEA4F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000257\\block-000000.gz",
+      "bytes": 189773,
+      "SHA256": "7B8A0B143A3EE1E2D8AE7CD5BD99E6BE85BC1A8E2582DD89D35712FDE82CB011"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000258\\index.json",
+      "bytes": 610,
+      "SHA256": "5AFB57D7C5A8884D9145970643CF7FDF113927AEFD834F84D34D722A9612D635"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000258\\block-000000.gz",
+      "bytes": 189489,
+      "SHA256": "26B590452F882B2A482E8A6B9E86E80DADC3167250220C00F1E7BDEFFEBCA48B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000259\\index.json",
+      "bytes": 610,
+      "SHA256": "9E6DA3EE76C5B482C8F773F3FBC3372B350BE62DB0C6B2E0526115972DA4C9F8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000259\\block-000000.gz",
+      "bytes": 189371,
+      "SHA256": "4995226F8A143A41C1A39AD6584ACDF0E86A2D09ED8A90B36EE89D74969245D6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000260\\index.json",
+      "bytes": 610,
+      "SHA256": "A508F8D55A7465011CBD416276AEF30C548BB5639D727D7C5227619EE590BD20"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000260\\block-000000.gz",
+      "bytes": 185519,
+      "SHA256": "3E1497724EBC6FF1A14CC1F9A65A8634C8722E9C23742FC85EB7D6118CC4E460"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000261\\index.json",
+      "bytes": 610,
+      "SHA256": "9654B61E2DBFAE742D428772D2A8E28CAE3573A32C3B5C9453256C7188BFF1E2"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000261\\block-000000.gz",
+      "bytes": 185793,
+      "SHA256": "671E79D5CF232880C93FDE222F7BC54E64F6C46D2BD3E644C78B7649C6E02A34"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000262\\index.json",
+      "bytes": 610,
+      "SHA256": "ADF13E6CBDA2AC49C927B9F0A4CFA1001E132A69E48969347793F1B5AFD28E1A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000262\\block-000000.gz",
+      "bytes": 185922,
+      "SHA256": "2D30B9B1AB86602638F4A5B7B220FB12FCA25D5F8EA2C35413D125443F894734"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000263\\index.json",
+      "bytes": 610,
+      "SHA256": "B0502FAF4B83147DB6946A17ADB0F3392DE943BEF9F5776CFA7636C306DEA37B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000263\\block-000000.gz",
+      "bytes": 203347,
+      "SHA256": "C0284D496996E3B925ED339F854F4A47A90DDB0AE392B7D66F9998B034BFBFD7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000264\\index.json",
+      "bytes": 610,
+      "SHA256": "C23A9A6A128BE4CFB51676D830FFDFD81D56FF8CEEDB42C88B1D9A7D62C94EAA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000264\\block-000000.gz",
+      "bytes": 213076,
+      "SHA256": "7C7F9362085DCD49148E1E5994E747C6FE7EC7B314B0BE0591F1A344BAC70437"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000265\\index.json",
+      "bytes": 610,
+      "SHA256": "1F6E817FC38AEDD4042AA84199901D2E31F0065D83F4170DDDB4364F2A2A19C1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000265\\block-000000.gz",
+      "bytes": 214748,
+      "SHA256": "DEEAFA129C6EE14AE2C83E04D4865B6A3C0538F39DD68FE60074E4B2C22E093B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000266\\index.json",
+      "bytes": 610,
+      "SHA256": "1F6B54E8C6FACABED96628C3AFA8B8824BCD38B2BB3B0988E5B9741B1840AA3B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000266\\block-000000.gz",
+      "bytes": 212804,
+      "SHA256": "486F611BE5699B0D5DF035316D51A9DFC1617423D1A772772450830E03FD4FE7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000267\\index.json",
+      "bytes": 610,
+      "SHA256": "E72BAC0BFA298F5648D6E0231CC4E92BDBB1563E4AE92F364D3C90296FDF6748"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000267\\block-000000.gz",
+      "bytes": 210320,
+      "SHA256": "5417F9546FE8916AAB178440C7F77826C32E1B842A0F1427500627231594B691"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000268\\index.json",
+      "bytes": 610,
+      "SHA256": "81B2698265A9261CDAABC291951A5E5F7E1AF19089051C23B074388DC6DFD666"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000268\\block-000000.gz",
+      "bytes": 190124,
+      "SHA256": "841E18A62A9F4882705A6E9D32ED007FE5342D207A20D3BFB7C4E76A53346A05"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000269\\index.json",
+      "bytes": 610,
+      "SHA256": "5A80C1F582B3BEF6DCB07B78CFC9A13D73BEA3964AEE5BA98F7EB1BE73051F90"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000269\\block-000000.gz",
+      "bytes": 189885,
+      "SHA256": "E3BC9BD01FB870FB138A9A816BC0CB529AB423A88B8B6B34746DE0CFF1032246"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000270\\index.json",
+      "bytes": 610,
+      "SHA256": "1861E60FCF562004D0BA14475F9AECFEED4520FAFF4FE57AEA9C23956535339D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000270\\block-000000.gz",
+      "bytes": 191212,
+      "SHA256": "D54EE8E85851F2D5B237311AC18FC69C87E3E32E5A02022DFC18223994F98A42"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000271\\index.json",
+      "bytes": 610,
+      "SHA256": "198686A8568BDF0F8362CCDF50CDC493FF012182F054768DABC999CC326E8A6D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000271\\block-000000.gz",
+      "bytes": 186103,
+      "SHA256": "9F8AF3627844BF9045231306F01879F90FF00F29ABAA9742AC7F50B420E2D8A0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000272\\index.json",
+      "bytes": 610,
+      "SHA256": "671018ECFFD2A55C14B9874F6F182D1AF05121A839CA54AA8DB219A235F23B71"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000272\\block-000000.gz",
+      "bytes": 186271,
+      "SHA256": "109C192A025E2055B24030F572716A7D4AF644B2BB1B03723C2D0063A85E17F5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000273\\index.json",
+      "bytes": 610,
+      "SHA256": "A4CFDF570093E645D595169F3C4812CA1367B57DE643D47E49AB8FC98A75A68D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000273\\block-000000.gz",
+      "bytes": 186536,
+      "SHA256": "B86B699E6BF059F23A3D00665428188BB20CE0F7B144AD86F29FBA38B5EAC34E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000274\\index.json",
+      "bytes": 610,
+      "SHA256": "AA87E734EB89A326770D8AD1ABA6A53D5D753FFC80D8A924CE1EB53D5C03F593"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000274\\block-000000.gz",
+      "bytes": 193626,
+      "SHA256": "C8788D41D12A46B773E78A594871385E280AB9F474869123E69CDE89D7522F22"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000275\\index.json",
+      "bytes": 610,
+      "SHA256": "7D6D7F9B19E768921576AF7F2E2E4988222D9CC3000D6ACE72D9B064DE7F0229"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000275\\block-000000.gz",
+      "bytes": 214818,
+      "SHA256": "5B23133618B2EFAC6CC2A7EBA00069ACB438DDB7FFB364C1A7782DE10FF3C420"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000276\\index.json",
+      "bytes": 610,
+      "SHA256": "8C11E370A3A9ACDC35B805F3150A4AF006FCB7602E6995D8647F2CB6DECA4513"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000276\\block-000000.gz",
+      "bytes": 210989,
+      "SHA256": "25FB430AB732FDB8412FAE85B22AEE02900A3FD91F681C7AA318FDC126BCFD6B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000277\\index.json",
+      "bytes": 610,
+      "SHA256": "059656F16E1CF25464660F7F2CDEB0B32E8BD5DE56B5D68ACECA673BD223DDC2"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000277\\block-000000.gz",
+      "bytes": 208489,
+      "SHA256": "4E3E5C7F56483C56DD570A38C0BA718015726265537C6BFEF47D258E5C01A344"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000278\\index.json",
+      "bytes": 610,
+      "SHA256": "F164A0A5834421AD99714E92271D5C8DAADA7BCBF12EF3AFF3736CF45FFDD1C1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000278\\block-000000.gz",
+      "bytes": 206560,
+      "SHA256": "43813365BA534C48D797CA271AE19DE0892B06166C00412B35C8CE91FA88EF17"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000279\\index.json",
+      "bytes": 610,
+      "SHA256": "8B19617974D19B2F7C2C0F5818887D5FCC3C86003A3E89918BD96445D39AB480"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000279\\block-000000.gz",
+      "bytes": 210714,
+      "SHA256": "EADF1AC6B17A58822A4107FB20C21BD09B1C764651020E8A118DFD8D5FDC5660"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000280\\index.json",
+      "bytes": 610,
+      "SHA256": "30C763DF0AF7EA14AF8861AA4D5B42E2C311375552A72EFB2710B74B1C6D7030"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000280\\block-000000.gz",
+      "bytes": 207350,
+      "SHA256": "B8E697D0CCAE72807C4DB6944F3B8F07C8ACEC7956D27399873604AA859C7B6A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000281\\index.json",
+      "bytes": 610,
+      "SHA256": "F8A78EF656EED2A51DD06385C2F85B38B9333EFEEB35FFBB4FECCDA800A32BE3"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000281\\block-000000.gz",
+      "bytes": 204245,
+      "SHA256": "5B898E45A24696E279FAFBF24C4FA44AE2A17992AA48A536CE29693DFFA0A85B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000282\\index.json",
+      "bytes": 610,
+      "SHA256": "068D4245620A3A53A8F14C2F6AD5AAFD518353EA71C5F96731C0FCC383C24836"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000282\\block-000000.gz",
+      "bytes": 199967,
+      "SHA256": "6EA3AFBCE59307C09683162C6A2EA2611806EDDC63A80468AFF271FCEC5751D5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000283\\index.json",
+      "bytes": 610,
+      "SHA256": "C1633876E3D436D5C74B10908099EB89598AD219BD96AD3B9C0C03F0DEE4DBF5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000283\\block-000000.gz",
+      "bytes": 190137,
+      "SHA256": "37F6F62A8C601BEA6CA2CCFBDB2CFADC43441E316FA7264CD56D92135DAF1D7D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000284\\index.json",
+      "bytes": 610,
+      "SHA256": "20F18D11DFAD145019BC7FCB51FDE980E7B1CCB1E0090A3BCDE3834B7B08DDFD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000284\\block-000000.gz",
+      "bytes": 189472,
+      "SHA256": "AF2E514E10EEEA6E11BC70D7818DA4DA504CDA8973D8977EA574BC876850F467"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000285\\index.json",
+      "bytes": 610,
+      "SHA256": "67D70061051B1F103AE093E7E42B72DC1F1183709B6A66BFDDD7C7C6646B969A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000285\\block-000000.gz",
+      "bytes": 188675,
+      "SHA256": "2EBE2532390495C5B9BAC1C8FB60B6442E57F9A7F59F859734351D036E6F12DD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000286\\index.json",
+      "bytes": 610,
+      "SHA256": "925B5753AA1B2856CEB837DB821B81B9DA9B4A6A108EEE308C7D515BF09EF213"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000286\\block-000000.gz",
+      "bytes": 185924,
+      "SHA256": "2EC89A2B9EAF31527A9C3B1B8986E8C40B6B09E2BA7429A81E2CAC6AC1772669"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000287\\index.json",
+      "bytes": 610,
+      "SHA256": "3E9F49BB56E6F788BBC819E13AEA4B5067F8D8F2E1A6AE8AFD139B42094B2C55"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000287\\block-000000.gz",
+      "bytes": 186000,
+      "SHA256": "13C485AA6D90BFA4EACC0D5EFAC6BFA9FCF39B03BAC69374063EE5C791728BAE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000288\\index.json",
+      "bytes": 610,
+      "SHA256": "3065AA389BB54A02B33A7DC0C956BFC2FAA5335C2DDCE06273CCF57F41CB7A30"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000288\\block-000000.gz",
+      "bytes": 185789,
+      "SHA256": "6C4604B6EB06D8D48F78DAAA0AF1526D45C0F4F867D5E438E6B8326AE74607BB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000289\\index.json",
+      "bytes": 610,
+      "SHA256": "1DD974D753EA734DFAC5448FF7B3A0436434868482C532719419CF20D355C193"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000289\\block-000000.gz",
+      "bytes": 191359,
+      "SHA256": "897DCDA391FEDCC8B222312B187E31946832913DEF8242775BDD8341D7D85326"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000290\\index.json",
+      "bytes": 610,
+      "SHA256": "BA3F79DF0CA1ADF4406FBEA88EA8AA843C35F534B658A84E1E9FE72AC2FEFF5C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000290\\block-000000.gz",
+      "bytes": 191074,
+      "SHA256": "4F7C9AEDEC44DC00C16772EF017414C4CD547DAF16AE659BB9B2F3459383BA04"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000291\\index.json",
+      "bytes": 610,
+      "SHA256": "3CADE7DB229522DF782F61453AED620520087086584A29A339EE84C99DFF378B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000291\\block-000000.gz",
+      "bytes": 189917,
+      "SHA256": "5667A44B29AF9E492BF1D75445630C4270B0AD59C60D2BD018FDAF8B390D6F6B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000292\\index.json",
+      "bytes": 610,
+      "SHA256": "BC01421A0789526422E026197D443F39D78BF5EF91CEF96DDC26FE742115ABCC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000292\\block-000000.gz",
+      "bytes": 189516,
+      "SHA256": "5D13058BA9FAC9F72B8F6698086C3C6BB97E13FC81439FAF75762C8D4545810D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000293\\index.json",
+      "bytes": 610,
+      "SHA256": "8BA0EFF29E4D8A687668BC5D2243297F9D93C77A0273BE258F9216CB296891DD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000293\\block-000000.gz",
+      "bytes": 186161,
+      "SHA256": "0B3730ACAFEE01CC278DC0C564B585F7FA9F49CFD267E11775F07595969AD695"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000294\\index.json",
+      "bytes": 610,
+      "SHA256": "486FD50C5B12C0F1CEA1A5F6D9ACBEEF64D4FD963E1A9A3098806CCC03D41028"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000294\\block-000000.gz",
+      "bytes": 186250,
+      "SHA256": "08BFCEA854E59B87F90E3DF4335177E5777AD5FE107F774FD95678ACA3E6913B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000295\\index.json",
+      "bytes": 610,
+      "SHA256": "2D35438CB47D7606E3819360976B4F0271FDF82C0E4404FE02C26603EDB4AA62"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000295\\block-000000.gz",
+      "bytes": 186671,
+      "SHA256": "8A36AFB89B403C1B456E0D7CB8A796579A828726A8251D04B4BAE134605ED222"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000296\\index.json",
+      "bytes": 610,
+      "SHA256": "73D187D7D51E9AB20FC54AB90148492030BDEE3F33FD1A3CBDB344F26CCF00E7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000296\\block-000000.gz",
+      "bytes": 192105,
+      "SHA256": "F2BEFD19593841600A8853B24DB788476C73F83992006BCAC72F980C122379FB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000297\\index.json",
+      "bytes": 610,
+      "SHA256": "637D7B8A1D2087056939C196758FAD0D0263F7CF95B4BD5C3D7F825F042B5AC6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000297\\block-000000.gz",
+      "bytes": 190311,
+      "SHA256": "32F1FE01F60FD305B692B73B196DD8B200AB12094E30D4B5937A75797AE29EAA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000298\\index.json",
+      "bytes": 610,
+      "SHA256": "3A519623A4BB302876F682C9F602EF3D5535AD75A5645B7396048DE037606AF4"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000298\\block-000000.gz",
+      "bytes": 189397,
+      "SHA256": "754B5BA890FC13A9C3875275E67A649E4FCB9869DFAC0B7C9DE5EB253FA25360"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000299\\index.json",
+      "bytes": 610,
+      "SHA256": "900BD5E3E4A5A8C9E283E576BA2D866CDB85EB6B48602C66EA7F4A0D1533A1FF"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000299\\block-000000.gz",
+      "bytes": 188650,
+      "SHA256": "D2557C317DFBE7D0B8F05BF4DE7CA4FE738AA22B5966639BC6E177B42C0DBD5B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000300\\index.json",
+      "bytes": 610,
+      "SHA256": "8C55983E6BACD67B99E57BFEE6925C55AA6127417C5621024C9D6507DAC8CABF"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000300\\block-000000.gz",
+      "bytes": 185660,
+      "SHA256": "02558AF7D119666088802F073CEEA8039C25EE55AAA3E43BB95F8F9268B0D93E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000301\\index.json",
+      "bytes": 610,
+      "SHA256": "CB0BB4C277F766712B2BCD3D0A699A7990207885FD0F282E1056ACFDDA00605C"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000301\\block-000000.gz",
+      "bytes": 185976,
+      "SHA256": "242DBE058BC82D890FB039F8C58648131EEAAE50F43038B6675843107D59D941"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000302\\index.json",
+      "bytes": 610,
+      "SHA256": "913C3088579941AD8AB9784CC2F30D7B5F11E8DB0633047D2B0A5CE6D43A4BF3"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000302\\block-000000.gz",
+      "bytes": 185901,
+      "SHA256": "85C45542A29FBF56D858605B025EA89CFA4C42139434737760157A3228649BF9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000303\\index.json",
+      "bytes": 610,
+      "SHA256": "302AB83AE102DA97F9FE843258AEDE283C07722FFFCB8615C46B7523C82B771A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000303\\block-000000.gz",
+      "bytes": 207761,
+      "SHA256": "5BA9183A1DE034A77D9D99C49B86238A87458599B81E6331E68F4C771D4F3D2A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000304\\index.json",
+      "bytes": 610,
+      "SHA256": "49A3211BB1B8A40769C63C3F515965918103A640ED993DCA7C02AF45AC834411"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000304\\block-000000.gz",
+      "bytes": 212943,
+      "SHA256": "B5F79DC54CD38956D551AB960143A6422A23AC6E630220EB0CB758E1FFA4071A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000305\\index.json",
+      "bytes": 610,
+      "SHA256": "469E9595C582CD0FD3456C22DBB4F19A1B586D267EE81EEE87A4209976ADF9EC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000305\\block-000000.gz",
+      "bytes": 214523,
+      "SHA256": "24875E163E51C00D03E39328ADD05B4A770C72797A543B004B20DE2A2072B1D5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000306\\index.json",
+      "bytes": 610,
+      "SHA256": "E3F2E0F72273255D4548E6623082DDF644EC3B412C15E4723BF93FC83ED37919"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000306\\block-000000.gz",
+      "bytes": 213096,
+      "SHA256": "26273771D2FDB65EB0AE1B5AF9A4DF6370FC1FAC460CD93A7823BB425F7C5483"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000307\\index.json",
+      "bytes": 610,
+      "SHA256": "9A863202F5855D97BB1244409E872E921F810B4F8D020FDF91E486B3BAC403BE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000307\\block-000000.gz",
+      "bytes": 205989,
+      "SHA256": "C5B82524F069C1956095A575F5BBF8CFE38D4EA447625D07D72766740B38A948"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000308\\index.json",
+      "bytes": 610,
+      "SHA256": "5C7568443F13EA279A0C74957324E4DD7D1BD3D7CE71BA2FFC61A102A607F6C8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000308\\block-000000.gz",
+      "bytes": 190296,
+      "SHA256": "D672CA3E89D9E4CB2B9207897960606582C0E3195DC46DCD4F15856EE39E1F88"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000309\\index.json",
+      "bytes": 610,
+      "SHA256": "A4AAC493C4B05000AD20F41DE61C99C2ECAECCCED9DF4B3ACE2B849412CD5B3D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000309\\block-000000.gz",
+      "bytes": 189671,
+      "SHA256": "508AD8D9029F7101ACF7CBAFD50871CB5DB4DA7D91C8CFD100350C2EBD89E10D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000310\\index.json",
+      "bytes": 610,
+      "SHA256": "3F42B2B7A603795B7CB53329A1B8843AD4027589030A699EFF81C1A6D48D7EAF"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000310\\block-000000.gz",
+      "bytes": 190640,
+      "SHA256": "0E9EA5EE2EFD28B9D53378C44BBBEB848705BCC4E172A4BB90DD3C5B3017190D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000311\\index.json",
+      "bytes": 610,
+      "SHA256": "A99653372302DA1AB9111702110C6749D627315298700027037F3361F7A1E333"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000311\\block-000000.gz",
+      "bytes": 185883,
+      "SHA256": "CEB1B42BC0B4731D865331486ABAA891DD9CDFEE512FC69BFE981FB2C5CA3B05"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000312\\index.json",
+      "bytes": 610,
+      "SHA256": "48E72646787FC70FF39B1A76BA892A48BA95F71B00DFA4DDABED6A71021CFE5E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000312\\block-000000.gz",
+      "bytes": 186514,
+      "SHA256": "DEBDED8131238A53F2A392C84D073FBDD934926628F6C80EDFDCBC4DFCB6BA37"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000313\\index.json",
+      "bytes": 610,
+      "SHA256": "B75316C8E4C329C6D3760AC881BD671AB8237EEF072922D2A6315A21758DF6BD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000313\\block-000000.gz",
+      "bytes": 186586,
+      "SHA256": "613F5071A485A6142A335D3A244081B6810EA014AB6AD9459676AC3270B856DF"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000314\\index.json",
+      "bytes": 610,
+      "SHA256": "ADA625E760077D2D3FF6103059A27BDCAED34239795B527B780584BA518557D8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000314\\block-000000.gz",
+      "bytes": 197563,
+      "SHA256": "2E51C6F3DDEF3B1C220D43F2D85DA44AB98A0AEEA7FB6501D6A9997151E494F1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000315\\index.json",
+      "bytes": 610,
+      "SHA256": "7B039BB5505DE7B38C440B0219278256E3D64A395E311C9100E10EA1E70D280A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000315\\block-000000.gz",
+      "bytes": 214322,
+      "SHA256": "0F5DF2D4CA9B7508F7129F8D77BAAA15C068CFB95DB31D1991AAE3D4F986334B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000316\\index.json",
+      "bytes": 610,
+      "SHA256": "2956F6798036D6A0AC13C21DBC028837D81EA68F9253573AAE41D5A10BFA827A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000316\\block-000000.gz",
+      "bytes": 211982,
+      "SHA256": "4C3AAD7B9520D9B909011E8FB885C1A6EE9AE8061424967EE44EBFD63A82F01E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000317\\index.json",
+      "bytes": 610,
+      "SHA256": "9727EFCD5FF9AA1AD5CB7B6451C132DFE5226C7710BAFA5332D85A9A080EC4A9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000317\\block-000000.gz",
+      "bytes": 207028,
+      "SHA256": "3CB63B4964C5BD27DE030C936AEAF175D04AE6048C34B71EFA1E48A15FD518E8"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000318\\index.json",
+      "bytes": 610,
+      "SHA256": "27C2181C9A6A4635A8424641E51592793E88BE32A71B844D4A21B47320571BC5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000318\\block-000000.gz",
+      "bytes": 205834,
+      "SHA256": "D202223877056E9FB85E67FCBA3BD3C478FE642AE8E5653A8F39B78540FDB98F"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000319\\index.json",
+      "bytes": 610,
+      "SHA256": "835634AAAC424C22E567FBFC47812CD39AC04D3137EB212A283EC1F8AFF1DBBB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000319\\block-000000.gz",
+      "bytes": 209956,
+      "SHA256": "D6A5B7CD4C8214683938C277FDDC73717C67E61E441CC9A6BE9EDC2A8D5100BD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000320\\index.json",
+      "bytes": 610,
+      "SHA256": "10AB9F63E6EAD9E170B8F18E73D52C8C9D346C26A90C62EF7A6C322581B27D22"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000320\\block-000000.gz",
+      "bytes": 211417,
+      "SHA256": "D508D67A253B92DF3F903E6F2AF2FD9809459502CB7828F2A0F4980FFD96DB37"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000321\\index.json",
+      "bytes": 610,
+      "SHA256": "BB458D68ED672BD0F36F0F6C6ACFF10DF766E3FD931723B284C7E5A7488074AE"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000321\\block-000000.gz",
+      "bytes": 157375,
+      "SHA256": "288E8EB41DCE136DC3C2EA10EBFFB82C7D5429618889D973F648730A7361C80E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000322\\index.json",
+      "bytes": 610,
+      "SHA256": "AC451BA0798BC7EBB2C3FE0581CD84BA5D7C15E6FCB92BCA3FB2372E4CCDEE3B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000322\\block-000000.gz",
+      "bytes": 125542,
+      "SHA256": "0B978585BB4B39FD3698010D29879312AA404AD9451280952EEF636B9E0A1353"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000323\\index.json",
+      "bytes": 610,
+      "SHA256": "9E4DC73CA5CB80005C900383C90F08B608F921AF80E1E5D22F7EC2D36CD5277E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000323\\block-000000.gz",
+      "bytes": 125531,
+      "SHA256": "9E6B064263BE3929BA062505B569C9D9B6834E86486709F8C5562C53D1365EEB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000324\\index.json",
+      "bytes": 610,
+      "SHA256": "7738B85FD8DAD8F9B6D94713B898EC2CEEF3ED4FB598E2B64FD48E9056D0185A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000324\\block-000000.gz",
+      "bytes": 125125,
+      "SHA256": "DFDF29F811619449A28D7A3257C6F42F2D6B1808A5562719D296DC48FE1CCB2A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000325\\index.json",
+      "bytes": 610,
+      "SHA256": "8ACED97F768439248529BD244F82ECD12240E459EF5DEC661255CF2C3BB9F02D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000325\\block-000000.gz",
+      "bytes": 125413,
+      "SHA256": "CDB7D5AEAD3DDD61ECAF406A3EF135EA64ADE318D5AAC6DD07E76487A7B6FE5D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000326\\index.json",
+      "bytes": 610,
+      "SHA256": "8C1FB4E179C21F14CD7D889D39035821F2A3AFBD52BCE431DB24359A767EEC17"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000326\\block-000000.gz",
+      "bytes": 125359,
+      "SHA256": "A6D38CAD72286D8D92CB71854376E3CD6E0995A82300CFBDC7EAAB20A1AE8414"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000327\\index.json",
+      "bytes": 610,
+      "SHA256": "841A2ACB077A5B4B355A4C1DB5DC8237278F9B5E7132CA8A67CF24732BC406E5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000327\\block-000000.gz",
+      "bytes": 125191,
+      "SHA256": "84AF6257B81539A5B5F1368F271E2114EFB64D10FD60DE2A20E71A138CC8F162"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000328\\index.json",
+      "bytes": 610,
+      "SHA256": "4FF8C59D99B07B5B94EC2FCEACC330CFBAB95979D35BEA5AFF299E6620083FBA"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000328\\block-000000.gz",
+      "bytes": 125321,
+      "SHA256": "4BB11F37E2BB16C7B03534D6E1BEF0577D436C4AB630A34DC9169FCEBD3EA766"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000329\\index.json",
+      "bytes": 610,
+      "SHA256": "85948DC6A3BE193F41CA7BCCFDCB14643FDFB6CAA9284A11A7AE0C00BF4DE486"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000329\\block-000000.gz",
+      "bytes": 125405,
+      "SHA256": "055DFA4B91AE50C0D31960104E9857371B61508790B7A5AA85938DE5BE7FE520"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000330\\index.json",
+      "bytes": 610,
+      "SHA256": "EDAD744B2E6F3A8544DB04275D6E67B7163F7705C4C1F70D414014E67A701D5D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000330\\block-000000.gz",
+      "bytes": 125159,
+      "SHA256": "F6CA5FDE0C4B36DEBE8683F83D70CC7571BB1C1A920EDFF12B97783ECB228FFC"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000331\\index.json",
+      "bytes": 610,
+      "SHA256": "256B19CAD7C9CF97C2D09C5062DDAC0F84D9E73E4D4251D51E8062757295296D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000331\\block-000000.gz",
+      "bytes": 125507,
+      "SHA256": "6E22A078898207FF5DA0A27656A3185B27C3835110137ECA0222426E36BB80D3"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000332\\index.json",
+      "bytes": 610,
+      "SHA256": "47A6CC70634B9BDF99D2B27857ADEBE4D16309C512AD1E87C81EAD91B004D415"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000332\\block-000000.gz",
+      "bytes": 125494,
+      "SHA256": "5520885E820DE768D43C1174825FF456665C55B8A27BA170C87D4626AD10C6F0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000333\\index.json",
+      "bytes": 610,
+      "SHA256": "CDE55DA5D713C1290EB1996ACAFDD83A223602A367C1819C2CC2E94E2B8366F6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000333\\block-000000.gz",
+      "bytes": 125277,
+      "SHA256": "91C4C69F60A88694DEE5D60778F03581AAB47ADE1AE5A1CC9759A9CCE2C9D99E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000334\\index.json",
+      "bytes": 610,
+      "SHA256": "5A1DC7EB8CAF85E74772DAEA7417996F3FE01F332E18D7C70FA244D9329E7A0B"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000334\\block-000000.gz",
+      "bytes": 125350,
+      "SHA256": "6832FB1CC607C53C6B11B77FEED53A99555CD29D8ECA920C02FEDDF935949473"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000335\\index.json",
+      "bytes": 610,
+      "SHA256": "4602F197DA039BA30C1CC4010D1E8D68D16CDD3517E63941E3369263D7291D70"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000335\\block-000000.gz",
+      "bytes": 125130,
+      "SHA256": "02E5AE9D694494F6852859718EADC1F5B3D5B9CD8A7255F5CC668EE51B8D979D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000336\\index.json",
+      "bytes": 610,
+      "SHA256": "95436CD0012EF93DDB676B9B2806DB22FF1AC5037CEEF7AD1F34298BFEEC5727"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000336\\block-000000.gz",
+      "bytes": 125363,
+      "SHA256": "C6C068AC1ECD6BCC058B18CC220EA304B237AEAC24DD5692E625C40CFC3A3A88"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000337\\index.json",
+      "bytes": 610,
+      "SHA256": "086808CE589FEAE847D5F859CEE7D34386907B2998CE96DD22EA0BCC53295759"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000337\\block-000000.gz",
+      "bytes": 125574,
+      "SHA256": "4DE4C12CADA1CC8CB7B4F4D3A50F5C47DDBB9D6E24140D14DB2DE08FA90A78E9"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000338\\index.json",
+      "bytes": 610,
+      "SHA256": "5534D36CB0830B0B045F7244637B918A6F6CD3B1E5F20769089A7BACD27C2EA1"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000338\\block-000000.gz",
+      "bytes": 125226,
+      "SHA256": "721A2AFB2E46071A10C15197174F6E5B8739D827A36F32A99297134DC6EA4B4E"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000339\\index.json",
+      "bytes": 610,
+      "SHA256": "E1053A62F18BFD36C73F607E4868347B3770EFF7CEE9821BC535CA0CD59661AB"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000339\\block-000000.gz",
+      "bytes": 125312,
+      "SHA256": "345810DB46BF9DE549242D64DD680A655044B4DBE4EABEE974B45D6419E817A7"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000340\\index.json",
+      "bytes": 610,
+      "SHA256": "1CAB59923880BFA56A76E945FB26CD9310EAD8D2263F5771B9D6A0AF164BECAD"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000340\\block-000000.gz",
+      "bytes": 125489,
+      "SHA256": "2E895155D3F7F2DD0F6C2B950F3ACD3D0CBE7F22DAD3AD0F99C334AE8DAE7D08"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000341\\index.json",
+      "bytes": 610,
+      "SHA256": "EDA9F366EEB1A3B1BA95E6E6F7DC013042DEFB2334383412B95A658D1E1BC69A"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000341\\block-000000.gz",
+      "bytes": 125207,
+      "SHA256": "B05BB5F4144FB9CA156AB6A215DCA4CCF0E6E72C517241D9E2167F89D82F4CB6"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000342\\index.json",
+      "bytes": 610,
+      "SHA256": "1C5403CA9988A272B4B993054B455D7A8725750DCAE9F48825B67221C2678412"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000342\\block-000000.gz",
+      "bytes": 125369,
+      "SHA256": "27CFEE61A825B51B33FE960119E36E1AEB003CE1FBA13C8516BE1CEAD42C26A0"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000343\\index.json",
+      "bytes": 610,
+      "SHA256": "88CF7AEA2B65773E01DB32C4FD6BC6554CC2CFA1E63F3447281795AFB0E33F92"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000343\\block-000000.gz",
+      "bytes": 125477,
+      "SHA256": "94DD35A8D392B559C7A938442EF74C035F3D1173AE3BF5DFAC90ADD84905C871"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000344\\index.json",
+      "bytes": 610,
+      "SHA256": "757C6C4E97A33E5B73674ADE3621823C8A12CEEF3DA7FC4BB031312BAE53B7C5"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000344\\block-000000.gz",
+      "bytes": 125075,
+      "SHA256": "6C64705EE231BCCA67CA8628561FDA69E864C52124774AFB86EEA958A27FAA62"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000345\\index.json",
+      "bytes": 609,
+      "SHA256": "04B1EEB6A56BDD5C8AEA7217C66B74536274A417D0C18C4CBAD582913DCFBD38"
+    },
+    {
+      "path": "work\\fpga\\2026-10-27-coremark-longrun-ready-m2\\runs\\performance8-N234\\archive\\trace\\000345\\block-000000.gz",
+      "bytes": 46558,
+      "SHA256": "3110B35E5BC957063BA47D5224645BA2EF8BAF4B81228AE65EDF2F33E110B26D"
+    },
+    {
+      "path": "work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\check-result.json",
+      "bytes": 3088,
+      "SHA256": "3E044018F2ADB7D1F17270D9DA3957AD3E2624481B17CC41F3C953C96354A4D1"
+    }
+  ],
+  "problem_files_unchanged": 8,
+  "official_commit": "1f483d5b8316753a742cbf5590caf5bd0a4e4777"
+}

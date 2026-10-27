@@ -1,0 +1,6 @@
+{
+  "status": "STOP_BEFORE_TRACE_ANALYSIS",
+  "reason": "Exact source SHA assumption rejected: PDS memory_model inlines INIT and omits M0_VERIFY views; inspect deterministic production transformation before concluding mismatch.",
+  "source_files_changed": false,
+  "new_DUT": 0
+}

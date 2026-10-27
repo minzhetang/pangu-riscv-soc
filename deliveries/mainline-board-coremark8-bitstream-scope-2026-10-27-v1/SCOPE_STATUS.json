@@ -1,0 +1,11 @@
+{
+  "status": "PENDING_SCOPE_APPROVAL",
+  "scope": "A-BOARD-COREMARK8-BITSTREAM-M1",
+  "version": "1.0.0",
+  "scope_SHA256": "BB1D768FBB82166753982CC5167569215A31606675B6D42A959DE7E976753B9D",
+  "max_PDS": 1,
+  "max_C_build": 0,
+  "max_RTL_sim_compile": 0,
+  "max_DUT": 0,
+  "hardware": "STOPPED"
+}

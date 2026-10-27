@@ -1,0 +1,44 @@
+[
+  {
+    "requirement": "CPU合法C/同步片内存储/TXGPIO/Timer",
+    "evidence": "F130–143/F151/F160全态、逐笔、计时、UART",
+    "status": "FINITE_SOFTWARE_EVIDENCE_ACCEPTED",
+    "owner": "A/B existing integration",
+    "next": "Protect stable RTL; do not reopen unrelated ISA"
+  },
+  {
+    "requirement": "最新短程序CPU位流",
+    "evidence": "F162: oldPDS1 vs8 INIT one byte; old flow no bitstream generation",
+    "status": "PENDING_PDS_SCOPE",
+    "owner": "A",
+    "next": "one unchanged8-image PDS build, not hardware"
+  },
+  {
+    "requirement": "CoreMark双种子>=10秒与真实时钟",
+    "evidence": "F160performance8 nominal0.623313s; validation onlyold2; SIM ONLY marker",
+    "status": "NOT_MET",
+    "owner": "A + approved FPGA platform",
+    "next": "after bringup, separate calibrated measurement port and both-seed candidate scope"
+  },
+  {
+    "requirement": "CPU实际运行/片上关键算法波形",
+    "evidence": "only CPUsoftware simulations and PDS logicalimplementation; noCPUhardware",
+    "status": "BLOCKED_SAFETY_AND_PERMISSION",
+    "owner": "A/user/Pango platform",
+    "next": "safe usable platform + separate hardware/ILA authorization"
+  },
+  {
+    "requirement": "效率收益/资源时序对照",
+    "evidence": "F162EXdensity69.61775%, softmul59.0527%EX; F146candidate warning held",
+    "status": "ANALYSIS_READY_NOT_NEW_OPTIMIZATION_GAIN",
+    "owner": "A",
+    "next": "use measured bottleneck; no automatic M/cache/AI"
+  },
+  {
+    "requirement": "最终初赛报告/视频/代码RAR/照片/签字授权",
+    "evidence": "F118 source8 unchanged; interim reports exist",
+    "status": "FINAL_ARTIFACTS_NOT_ACCEPTED",
+    "owner": "A prepares,user signs/submits",
+    "next": "reuse credible sections; mark hardware/score gaps honestly; no upload or signature action now"
+  }
+]

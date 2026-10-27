@@ -884,6 +884,28 @@
 !/work/analysis/2026-10-27-b-offline-r1-review/logs/main-deadline.json
 !/work/analysis/2026-10-27-b-offline-r1-review/portable-repro-check/A_GUARD_RESULTS.json
 
+!/deliveries/mainline-board-coremark8-bitstream-scope-2026-10-27-v1/
+/deliveries/mainline-board-coremark8-bitstream-scope-2026-10-27-v1/*
+!/work/analysis/2026-10-27-measurement-path-m0/
+/work/analysis/2026-10-27-measurement-path-m0/*
+!/work/analysis/2026-10-27-measurement-path-m0-v2/
+/work/analysis/2026-10-27-measurement-path-m0-v2/*
+!/reports/progress/2026-10-27-measurement-path-and-window-profile.md
+!/work/analysis/analyze_measurement_path_20261027_v2.py
+!/work/analysis/2026-10-27-measurement-path-m0/PREPARATION_NOTE.json
+!/deliveries/mainline-board-coremark8-bitstream-scope-2026-10-27-v1/IMPLEMENTATION_SCOPE.md
+!/deliveries/mainline-board-coremark8-bitstream-scope-2026-10-27-v1/SCOPE_STATUS.json
+!/work/analysis/2026-10-27-measurement-path-m0-v2/INPUTS.json
+!/work/analysis/2026-10-27-measurement-path-m0-v2/POSTFLIGHT.json
+!/work/analysis/2026-10-27-measurement-path-m0-v2/PRODUCTION_BINDING.json
+!/work/analysis/2026-10-27-measurement-path-m0-v2/IMAGE_IMPLEMENTATION_GAP.json
+!/work/analysis/2026-10-27-measurement-path-m0-v2/TIMED_WINDOW_PROFILE.json
+!/work/analysis/2026-10-27-measurement-path-m0-v2/COST_AND_VALIDITY.json
+!/work/analysis/2026-10-27-measurement-path-m0-v2/ILA_EVIDENCE_DRAFT.json
+!/work/analysis/2026-10-27-measurement-path-m0-v2/GAP_MATRIX.json
+!/work/analysis/2026-10-27-measurement-path-m0-v2/prepare_scope.py
+!/work/analysis/2026-10-27-measurement-path-m0-v2/record_path.py
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC
