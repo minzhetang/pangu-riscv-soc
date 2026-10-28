@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-29",
+  "status": "READONLY_DIAGNOSIS_COMPLETE_WITH_NATIVE_CONNECTIVITY_GAP",
+  "critical_open": 4,
+  "sampler_clock_endpoints_both_corners": 140,
+  "main_sampling_clock": "clk_27mhz via clkbufg_3",
+  "async_relationships_not_CDC_validated": 3,
+  "full_data_pin_connectivity_verified": false,
+  "protected_entries": 148,
+  "frozen_entries": 106,
+  "inputs_unchanged": true,
+  "PDS_builds": 0,
+  "GUI": 0,
+  "new_DUT": 0,
+  "hardware": "STOPPED",
+  "next": "Request one bounded native Design Editor read-only session on copied existing routed DB; no rebuild or constraint change"
+}

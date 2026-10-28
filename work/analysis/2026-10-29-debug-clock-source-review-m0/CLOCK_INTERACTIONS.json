@@ -1,0 +1,142 @@
+{
+  "status": "ASYNC_RELATIONSHIPS_DOCUMENTED_NOT_CDC_VALIDATED",
+  "declared_clocks": [
+    {
+      "Clock Name": "clk_27mhz",
+      "Type": "Declared",
+      "Period": "37.0370",
+      "Frequency": "27.0000MHz",
+      "Rise": "0.0000",
+      "Fall": "18.5180",
+      "Clock Load": "2534",
+      "Non-clock Load": "102",
+      "Source": "",
+      "Targets": "{ clk }"
+    },
+    {
+      "Clock Name": "DebugCore_JCLK",
+      "Type": "Declared",
+      "Period": "50.0000",
+      "Frequency": "20.0000MHz",
+      "Rise": "0.0000",
+      "Fall": "25.0000",
+      "Clock Load": "285",
+      "Non-clock Load": "6",
+      "Source": "",
+      "Targets": "{ u_CORES/u_GTP_SCANCHAIN_PG/scanchain/TCK1 }"
+    },
+    {
+      "Clock Name": "DebugCore_CAPTURE",
+      "Type": "Declared",
+      "Period": "100.0000",
+      "Frequency": "10.0000MHz",
+      "Rise": "25.0000",
+      "Fall": "75.0000",
+      "Clock Load": "11",
+      "Non-clock Load": "0",
+      "Source": "",
+      "Targets": "{ u_CORES/u_GTP_SCANCHAIN_PG/scanchain/CAPTUREDR }"
+    }
+  ],
+  "interactions": [
+    {
+      "Launch Clock": "clk_27mhz",
+      "Capture Clock": "clk_27mhz",
+      "Common Primary Clock": "YES",
+      "Inter-Clock Constrains": "Timed",
+      "WNS(ns)": "24.876",
+      "TNS(ns)": "0.000",
+      "Failing End Point(TNS)": "0",
+      "Total End Point(TNS)": "8342",
+      "WHS(ns)": "0.158",
+      "THS(ns)": "0.000",
+      "Failing End Point(THS)": "0",
+      "Total End Point(THS)": "8342"
+    },
+    {
+      "Launch Clock": "DebugCore_JCLK",
+      "Capture Clock": "clk_27mhz",
+      "Common Primary Clock": "NO",
+      "Inter-Clock Constrains": "Asynchronous Groups",
+      "WNS(ns)": "",
+      "TNS(ns)": "",
+      "Failing End Point(TNS)": "",
+      "Total End Point(TNS)": "474",
+      "WHS(ns)": "",
+      "THS(ns)": "",
+      "Failing End Point(THS)": "",
+      "Total End Point(THS)": "474"
+    },
+    {
+      "Launch Clock": "DebugCore_CAPTURE",
+      "Capture Clock": "clk_27mhz",
+      "Common Primary Clock": "NO",
+      "Inter-Clock Constrains": "Asynchronous Groups",
+      "WNS(ns)": "",
+      "TNS(ns)": "",
+      "Failing End Point(TNS)": "",
+      "Total End Point(TNS)": "1",
+      "WHS(ns)": "",
+      "THS(ns)": "",
+      "Failing End Point(THS)": "",
+      "Total End Point(THS)": "1"
+    },
+    {
+      "Launch Clock": "clk_27mhz",
+      "Capture Clock": "DebugCore_JCLK",
+      "Common Primary Clock": "NO",
+      "Inter-Clock Constrains": "Asynchronous Groups",
+      "WNS(ns)": "",
+      "TNS(ns)": "",
+      "Failing End Point(TNS)": "",
+      "Total End Point(TNS)": "239",
+      "WHS(ns)": "",
+      "THS(ns)": "",
+      "Failing End Point(THS)": "",
+      "Total End Point(THS)": "239"
+    },
+    {
+      "Launch Clock": "DebugCore_JCLK",
+      "Capture Clock": "DebugCore_JCLK",
+      "Common Primary Clock": "YES",
+      "Inter-Clock Constrains": "Timed",
+      "WNS(ns)": "23.754",
+      "TNS(ns)": "0.000",
+      "Failing End Point(TNS)": "0",
+      "Total End Point(TNS)": "1133",
+      "WHS(ns)": "0.354",
+      "THS(ns)": "0.000",
+      "Failing End Point(THS)": "0",
+      "Total End Point(THS)": "1133"
+    },
+    {
+      "Launch Clock": "DebugCore_CAPTURE",
+      "Capture Clock": "DebugCore_JCLK",
+      "Common Primary Clock": "YES",
+      "Inter-Clock Constrains": "Timed",
+      "WNS(ns)": "20.033",
+      "TNS(ns)": "0.000",
+      "Failing End Point(TNS)": "0",
+      "Total End Point(TNS)": "87",
+      "WHS(ns)": "21.694",
+      "THS(ns)": "0.000",
+      "Failing End Point(THS)": "0",
+      "Total End Point(THS)": "87"
+    },
+    {
+      "Launch Clock": "DebugCore_JCLK",
+      "Capture Clock": "DebugCore_CAPTURE",
+      "Common Primary Clock": "YES",
+      "Inter-Clock Constrains": "Timed",
+      "WNS(ns)": "45.725",
+      "TNS(ns)": "0.000",
+      "Failing End Point(TNS)": "0",
+      "Total End Point(TNS)": "16",
+      "WHS(ns)": "1.784",
+      "THS(ns)": "0.000",
+      "Failing End Point(THS)": "0",
+      "Total End Point(THS)": "16"
+    }
+  ],
+  "explicit_limit": "Declared 20/10MHz debug clocks are not measured cable clocks. Asynchronous Groups has no setup/hold result for these relationships; endpoint counts are native report counts, not unique CDC crossing counts."
+}

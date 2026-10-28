@@ -1202,6 +1202,21 @@
 !/work/fpga/2026-10-28-local-debug-insert-m1-r4/scripts/gui-probe.tcl
 !/work/fpga/2026-10-28-local-debug-insert-m1-r4/scripts/gui-connect.tcl
 
+!/deliveries/mainline-debug-connectivity-scope-2026-10-29-v1/
+/deliveries/mainline-debug-connectivity-scope-2026-10-29-v1/*
+!/work/analysis/2026-10-29-debug-clock-source-review-m0/
+/work/analysis/2026-10-29-debug-clock-source-review-m0/*
+!/reports/verification/2026-10-29-debug-clock-source-review-m0.md
+!/deliveries/mainline-debug-connectivity-scope-2026-10-29-v1/IMPLEMENTATION_SCOPE.md
+!/deliveries/mainline-debug-connectivity-scope-2026-10-29-v1/SCOPE_STATUS.json
+!/work/analysis/2026-10-29-debug-clock-source-review-m0/review.py
+!/work/analysis/2026-10-29-debug-clock-source-review-m0/INPUTS.json
+!/work/analysis/2026-10-29-debug-clock-source-review-m0/CLOCK_INTERACTIONS.json
+!/work/analysis/2026-10-29-debug-clock-source-review-m0/WARNING_FINDINGS.json
+!/work/analysis/2026-10-29-debug-clock-source-review-m0/DATA_SOURCE_LIMITS.json
+!/work/analysis/2026-10-29-debug-clock-source-review-m0/SUMMARY.json
+!/work/analysis/2026-10-29-debug-clock-source-review-m0/READING_COVERAGE.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

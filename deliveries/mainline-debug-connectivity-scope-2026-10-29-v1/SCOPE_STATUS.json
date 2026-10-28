@@ -1,0 +1,13 @@
+{
+  "stage": "A-DEBUG-CONNECTIVITY-M1",
+  "version": "1.0.0",
+  "date": "2026-10-29",
+  "status": "PENDING_EXPLICIT_GUI_APPROVAL",
+  "scope_SHA256": "50B7C10E6A2F0D3C433AF05E90D3605FD60BF84CC56ACB5D6E0CF6CF3D5C882E",
+  "GUI_limit": 1,
+  "GUI_seconds": 600,
+  "stage_seconds": 1200,
+  "PDS_builds": 0,
+  "new_DUT": 0,
+  "hardware": "STOPPED"
+}

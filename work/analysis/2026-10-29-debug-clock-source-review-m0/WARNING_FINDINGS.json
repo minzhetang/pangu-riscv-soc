@@ -1,0 +1,32 @@
+{
+  "status": "FOUR_CRITICAL_REMAIN_OPEN",
+  "messages": [
+    "C: Place-2028: GLOBAL_CLOCK: the driver u_CORES/u_GTP_SCANCHAIN_PG/scanchain fixed at SCANCHAIN_88_312 is unreasonable. Sub-optimal placement for a clock source and a clock buffer.",
+    "C: Route-2036: The clock path from u_CORES/u_GTP_SCANCHAIN_PG/scanchain:TCK1 to clkbufg_4/gopclkbufg:CLK is routed by SRB.",
+    "C: Route-2036: The clock path from u_CORES/u_GTP_SCANCHAIN_PG/scanchain:CAPTUREDR to u_CORES/u_debug_core_0/u_hub_data_decode/id_sample.conf_id[1]/opit_0_inv:CLK is routed by SRB.",
+    "C: Route-2036: The clock path from clkbufg_4/gopclkbufg:CLKOUT to u_CORES/u_debug_core_0/u0_trig_unit/conf_reg[188]/opit_0_inv_L6QL5Q:CLK is routed by SRB."
+  ],
+  "generated_attribute": "u_CORES/drck_o PAP_CLOCK_DEDICATED_ROUTE=FALSE",
+  "manual_basis": [
+    {
+      "file": "D:\\PDS\\PDS_2022.2-SP6.4\\doc\\User_Constraint_Editor_User_Guide.pdf",
+      "version": "1.7",
+      "PDF_pages": [
+        97,
+        98
+      ],
+      "section": "2.3.4.9",
+      "finding": "FALSE permits SRB interconnect and may downgrade Place-0084 to Place-2028; not a waiver"
+    },
+    {
+      "file": "D:\\PDS\\PDS_2022.2-SP6.4\\doc\\Pango_Design_Suite_User_Guide.pdf",
+      "version": "1.5",
+      "PDF_pages": [
+        115
+      ],
+      "finding": "Check Clock Net Routing Path reports Route-2036 for non-clock-tree routing"
+    }
+  ],
+  "no_rebuild": true,
+  "warning_waived": false
+}

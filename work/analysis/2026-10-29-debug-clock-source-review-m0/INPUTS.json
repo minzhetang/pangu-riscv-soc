@@ -1,0 +1,102 @@
+[
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\report_timing\\rtr.db",
+    "SHA256": "69C4F8DC47D9CA6931994C4B0D975E5ECD5FF7F6C2E075F162D72562C57264DB",
+    "bytes": 2986921
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\board_top_pnr.netlist",
+    "SHA256": "13BF3FAC9EC1584DA1726AE628599351F1347C024C273E8D086FF660E2B588FC",
+    "bytes": 878630
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\clock_utilization.txt",
+    "SHA256": "A03D0B5CDD2970BCD39224FF8878A6331397297130D9339966F8A5528DA1428F",
+    "bytes": 8549
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\run.log",
+    "SHA256": "0EC839F23BF7C1EDB64A216B187BE11FC3929521E17C6B8226BFFEC17CD6CAA3",
+    "bytes": 24964
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\device_map\\board_top.dmr",
+    "SHA256": "D8ACDC67FCA1736CD918EB00775252E2174EE16AD48274510B5EADF9592203E8",
+    "bytes": 95023
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\device_map\\dmr.db",
+    "SHA256": "61F9001024CCA2732F055351EAA461DCC4185953823C46DE0285B80795F69256",
+    "bytes": 229387
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\prr.db",
+    "SHA256": "4E6A4E5FAD53EDC1BE63CE92B7207AE652BFBC177123FE8043FE743D9BF26C36",
+    "bytes": 128386
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\synthesize\\board_top_syn.vm",
+    "SHA256": "36CD0C916508F4582E9D0BF0557AB173EDF36B74CDB61F2DB7ECEB8950A7F1DF",
+    "bytes": 2076221
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\debug.fic",
+    "SHA256": "B4799B1A379A6D023E8B2A5AC19A283D48EF5484A3773A774F60F8F214CB8CFF",
+    "bytes": 8977
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\NET_MAPPING.json",
+    "SHA256": "35AAB92DB5E12B6E39BB57F8A1DB03FCE3FD273A5BE04AB1A38BAAE9285902D7",
+    "bytes": 24493
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\WARNINGS_AUDIT.json",
+    "SHA256": "77377256FE9F84854F6F8496063847ED6838EFF0D81827481963426765DBFA8D",
+    "bytes": 2064
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\DANGLING_REVIEW.json",
+    "SHA256": "378A51B8073EC2641E62EC2ACAF63B74E66A1B2D7A4BA21436E8B86BF9FACAAE",
+    "bytes": 6100
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\SOURCE_RECEIPTS.json",
+    "SHA256": "D9E4B98BC37AC32FA520416061711AA70AD287E9028E460A1A88FABD58109224",
+    "bytes": 3670
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\POSTFLIGHT.json",
+    "SHA256": "2C73567D633EA09E9792BD562838DF9F4B26C68473E2A545F1F9B9D2727530F5",
+    "bytes": 479
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\SUMMARY.json",
+    "SHA256": "E1E06D604891135C53D60C7A954918238E333BB5637417DE8710B66457BE01C5",
+    "bytes": 1539
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\generate_bitstream\\board_top.sbit",
+    "SHA256": "139DD52013B6C3A9ADA50B92D72F1479ED488DE2C70D024284A27AEC573EFC03",
+    "bytes": 3791112
+  },
+  {
+    "path": "D:\\PDS\\PDS_2022.2-SP6.4\\doc\\User_Constraint_Editor_User_Guide.pdf",
+    "SHA256": "23628D10AD9AC1D1F3817A560BE8B7DDFFEA71E397833A2E7559F1E8C26252F2",
+    "bytes": 8719220
+  },
+  {
+    "path": "D:\\PDS\\PDS_2022.2-SP6.4\\doc\\Pango_Design_Suite_User_Guide.pdf",
+    "SHA256": "E2AC3F2AC7BB539CC51FE85CC239EA2249F4EE6790912B67C86CAE23A3898BA2",
+    "bytes": 9001885
+  },
+  {
+    "path": "D:\\PDS\\PDS_2022.2-SP6.4\\doc\\Fabric_Inserter_User_Guide.pdf",
+    "SHA256": "342EE254307F436E63D2D0C17173313DBEB9D04DE9F77458F532F46634422423",
+    "bytes": 1384882
+  },
+  {
+    "path": "D:\\PDS\\PDS_2022.2-SP6.4\\doc\\Design_Editor_User_Guide.pdf",
+    "SHA256": "EC928526D28C484CD65124A3B03A295948E1DD6CBC1EEAAAADB2E57D5AA1F517",
+    "bytes": 4099591
+  }
+]

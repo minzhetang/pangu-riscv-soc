@@ -1,0 +1,40 @@
+{
+  "PDF_visual": [
+    {
+      "name": "User_Constraint_Editor_User_Guide.pdf",
+      "pages": [
+        97,
+        98
+      ]
+    },
+    {
+      "name": "Pango_Design_Suite_User_Guide.pdf",
+      "pages": [
+        115
+      ]
+    },
+    {
+      "name": "Design_Editor_User_Guide.pdf",
+      "pages": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "Fabric_Inserter_User_Guide.pdf",
+      "pages": [
+        7
+      ]
+    }
+  ],
+  "XML_reports": [
+    "dmr.db",
+    "prr.db",
+    "rtr.db"
+  ],
+  "native_help_database": "QCH opened read-only; relevant command-name search only; no full export",
+  "binary_ADF": "Not decoded; no proprietary IP read or executed",
+  "public_search": "No applicable official waiver obtained; third-party search returns not used for technical acceptance",
+  "no_new_DUT": true,
+  "hardware": "STOPPED"
+}

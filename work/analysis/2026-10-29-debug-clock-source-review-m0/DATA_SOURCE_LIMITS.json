@@ -1,0 +1,45 @@
+{
+  "status": "PREINSERTION_ALIAS_SUPPORTED_POSTROUTE_D_INPUT_UNRESOLVED",
+  "risk_channels": [
+    {
+      "logical": "soc/stopped",
+      "actual": "stopped",
+      "index": 2314,
+      "channel": 136
+    },
+    {
+      "logical": "soc/stop_kind[0]",
+      "actual": "stop_kind[0]",
+      "index": 4045,
+      "channel": 137
+    },
+    {
+      "logical": "soc/stop_kind[1]",
+      "actual": "stop_kind[1]",
+      "index": 2339,
+      "channel": 138
+    },
+    {
+      "logical": "soc/write_error",
+      "actual": "write_error",
+      "index": 3069,
+      "channel": 139
+    }
+  ],
+  "preinsertion_named_port_connections": true,
+  "inventory_entries": {
+    "Port": 15,
+    "Inst": 4659,
+    "Pin": 49290,
+    "Net": 6910,
+    "Clock": 3
+  },
+  "inventory_has_net_to_pin_edges": false,
+  "XML_reports_checked": [
+    "device_map/dmr.db",
+    "place_route/prr.db",
+    "report_timing/rtr.db"
+  ],
+  "no_binary_ADF_decoding": true,
+  "remaining": "Need native post-route driver/load report or editor observation to establish D pin -> mapped source driver, especially channels136-139; cell and net names alone are insufficient."
+}
