@@ -1,0 +1,55 @@
+{
+  "files": [
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\cdt_ins.exe",
+      "bytes": 39455232,
+      "SHA256": "B526DA86DA96B84A591F63D1E35F3B4CA50433F14DA9D136F7BF10DD50F07D94"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\pds_shell.exe",
+      "bytes": 43704832,
+      "SHA256": "631FFD8F14D6246872873C72025CBC2734C9F8C388075B7AFB0B042F3A684E6F"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\helpDoc_pango.qch",
+      "bytes": 17817600,
+      "SHA256": "CA2D9A07DB35D49FBF9BB582200845E6F32430798FADE1B40506BFAB7640E577"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\synthesize\\board_top_syn.adf",
+      "bytes": 556376,
+      "SHA256": "038B6D9CE26C68DC5358552075CB4223165F82A40425DE4E1D2B72B114FCD308"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\synthesize\\board_top_syn.vm",
+      "bytes": 2133100,
+      "SHA256": "1DE69544F9FA12DA01506FEFCDED5AE9D0F84837D24CD1F106437FE029F52C94"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\SUMMARY.json",
+      "bytes": 5755,
+      "SHA256": "5F7A949F76EECDF0714F37D38AE801F3E7AE6476BB5E4202FFE7CD8011BC44E7"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\FROZEN_INPUTS.json",
+      "bytes": 6815,
+      "SHA256": "4D68FD500DD1DB529DF56D8DD81D4E97B7BE617412849AB64BFBE1C7D756E116"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\example\\PG2L100H_adc_test\\pnr\\adc_ctrl_demo_syn.fic",
+      "bytes": 2979,
+      "SHA256": "7DE8BB4ED5717B769A7F739031D512A7907DBEE161278FDAFA48A00FF1236EE4"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\example\\PG2L100H_lvds4to1\\pnr\\pgd_ddr_lvds4to1_top_syn.fic",
+      "bytes": 4949,
+      "SHA256": "B44B0A09F7C9234991133CF35DC466AB47B9FF0B744D604D9EE4C6A35C8A78BF"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\example\\PGL25G_lvds8to1\\pnr\\lvds8to1_debug.fic",
+      "bytes": 12652,
+      "SHA256": "0E30017DD8E0E3A9399CA8140BC950614D990AC5F782D568FF15BBA23A8AB236"
+    }
+  ],
+  "scope": "read-only installed binary/help and historical examples; not native process or license query"
+}

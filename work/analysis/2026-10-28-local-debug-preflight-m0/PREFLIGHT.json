@@ -1,0 +1,85 @@
+{
+  "status": "STATIC_READY_RUNTIME_INTERFACE_UNVERIFIED",
+  "executable_flags_static": {
+    "-batch": true,
+    "-version": true,
+    "ins_set_file": true,
+    "ins_list_nets": true,
+    "ins_set_net": true,
+    "ins_save": true
+  },
+  "help_html_entries_considered": 18,
+  "official_help": [
+    {
+      "name": "Fabric_Inserter_User_Guide.htm",
+      "has_set_file": true,
+      "has_list_nets": true,
+      "net_selection_uses_indices": true,
+      "GUI_free_startup_syntax_documented": false,
+      "full_text_not_redistributed": true
+    }
+  ],
+  "examples": [
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\example\\PG2L100H_adc_test\\pnr\\adc_ctrl_demo_syn.fic",
+      "fields": {
+        "Project.device.deviceFamily": "Logos2",
+        "Project.device.deviceModel": "PG2L100H",
+        "Project.device.devicePackage": "FBG676",
+        "Project.device.deviceSpeedGrade": "-5",
+        "Project.unit.dimension": "1",
+        "Project.unit<0>.clockChannel": "nt_clk",
+        "Project.unit<0>.dataDepth": "1024",
+        "Project.unit<0>.dataEqualsTrigger": "true",
+        "Project.unit<0>.triggerPortCount": "1"
+      },
+      "serialized_channel_entries": 33,
+      "input_path_exists": false,
+      "historical_example_not_active_project": true
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\example\\PG2L100H_lvds4to1\\pnr\\pgd_ddr_lvds4to1_top_syn.fic",
+      "fields": {
+        "Project.device.deviceFamily": "Logos2",
+        "Project.device.deviceModel": "PG2L100H",
+        "Project.device.devicePackage": "FBG676",
+        "Project.device.deviceSpeedGrade": "-6",
+        "Project.unit.dimension": "1",
+        "Project.unit<0>.clockChannel": "rx_sysclk",
+        "Project.unit<0>.dataDepth": "1024",
+        "Project.unit<0>.dataEqualsTrigger": "true",
+        "Project.unit<0>.triggerPortCount": "1"
+      },
+      "serialized_channel_entries": 44,
+      "input_path_exists": false,
+      "historical_example_not_active_project": true
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\example\\PGL25G_lvds8to1\\pnr\\lvds8to1_debug.fic",
+      "fields": {
+        "Project.device.deviceFamily": "Logos",
+        "Project.device.deviceModel": "PGL25G",
+        "Project.device.devicePackage": "FBG256",
+        "Project.device.deviceSpeedGrade": "-6",
+        "Project.unit.dimension": "1",
+        "Project.unit<0>.clockChannel": "rx_sysclk",
+        "Project.unit<0>.dataDepth": "2048",
+        "Project.unit<0>.dataEqualsTrigger": "true",
+        "Project.unit<0>.triggerPortCount": "1"
+      },
+      "serialized_channel_entries": 145,
+      "input_path_exists": false,
+      "historical_example_not_active_project": true
+    }
+  ],
+  "existing_ADF_present": true,
+  "batch_command_line_syntax": "NOT_EXECUTED_OR_VERIFIED",
+  "old_examples_speed_not_target_scope": true,
+  "new_fic": 0,
+  "native_invocations": 0,
+  "new_PDS": 0,
+  "new_DUT": 0,
+  "GUI": 0,
+  "hardware": "STOPPED",
+  "next": "bounded native interface and isolated debug insertion scope approval; no external consultation prerequisite"
+}

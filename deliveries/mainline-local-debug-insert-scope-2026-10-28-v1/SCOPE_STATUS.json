@@ -1,0 +1,16 @@
+{
+  "date_client": "2026-10-28",
+  "scope": "A-LOCAL-DEBUG-INSERT-M1",
+  "version": "1.0.0",
+  "decision_recommendation": "D168",
+  "status": "PENDING_SCOPE_APPROVAL",
+  "scope_actual_file_SHA256": "A93E2E610278DC6C723CE257DB253F8BD425A34F657B2D74321ACA5C67550DA0",
+  "scope_bytes": 5330,
+  "max_Inserter_CLI": 6,
+  "max_PDS_builds": 1,
+  "max_new_C_or_DUT": 0,
+  "hardware": "STOPPED",
+  "GUI": "NOT_AUTHORIZED",
+  "external_consultation": "NOT_A_PREREQUISITE",
+  "not_an_approval_or_success": true
+}
