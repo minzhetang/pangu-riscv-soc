@@ -1217,6 +1217,36 @@
 !/work/analysis/2026-10-29-debug-clock-source-review-m0/SUMMARY.json
 !/work/analysis/2026-10-29-debug-clock-source-review-m0/READING_COVERAGE.json
 
+!/deliveries/mainline-postroute-netlist-export-scope-2026-10-29-v1/
+/deliveries/mainline-postroute-netlist-export-scope-2026-10-29-v1/*
+!/work/analysis/2026-10-29-debug-connectivity-m1/
+/work/analysis/2026-10-29-debug-connectivity-m1/*
+!/work/analysis/2026-10-29-debug-connectivity-m1/scripts/
+/work/analysis/2026-10-29-debug-connectivity-m1/scripts/*
+!/reports/verification/2026-10-29-debug-connectivity-m1.md
+!/deliveries/mainline-postroute-netlist-export-scope-2026-10-29-v1/IMPLEMENTATION_SCOPE.md
+!/deliveries/mainline-postroute-netlist-export-scope-2026-10-29-v1/SCOPE_STATUS.json
+!/work/analysis/2026-10-29-debug-connectivity-m1/prepare.py
+!/work/analysis/2026-10-29-debug-connectivity-m1/gui_control.py
+!/work/analysis/2026-10-29-debug-connectivity-m1/window_policy.py
+!/work/analysis/2026-10-29-debug-connectivity-m1/attach_controller.py
+!/work/analysis/2026-10-29-debug-connectivity-m1/fill_db.py
+!/work/analysis/2026-10-29-debug-connectivity-m1/find_token.py
+!/work/analysis/2026-10-29-debug-connectivity-m1/send_query.py
+!/work/analysis/2026-10-29-debug-connectivity-m1/source_plain.py
+!/work/analysis/2026-10-29-debug-connectivity-m1/widen_browser.py
+!/work/analysis/2026-10-29-debug-connectivity-m1/scripts/catalog.tcl
+!/work/analysis/2026-10-29-debug-connectivity-m1/APPROVAL.json
+!/work/analysis/2026-10-29-debug-connectivity-m1/EXE_RECEIPT.json
+!/work/analysis/2026-10-29-debug-connectivity-m1/COPY_RECEIPT.json
+!/work/analysis/2026-10-29-debug-connectivity-m1/ATTACH_RECEIPT.json
+!/work/analysis/2026-10-29-debug-connectivity-m1/FILL_RECEIPT.json
+!/work/analysis/2026-10-29-debug-connectivity-m1/PREPARATION.json
+!/work/analysis/2026-10-29-debug-connectivity-m1/POSTFLIGHT.json
+!/work/analysis/2026-10-29-debug-connectivity-m1/OBSERVATIONS.json
+!/work/analysis/2026-10-29-debug-connectivity-m1/SUMMARY.json
+!/work/analysis/2026-10-29-debug-connectivity-m1/GUI_ACTIONS.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

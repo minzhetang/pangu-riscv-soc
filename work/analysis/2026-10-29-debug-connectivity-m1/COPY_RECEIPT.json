@@ -1,0 +1,20 @@
+[
+  {
+    "source": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\board_top_pnr.adf",
+    "copy": "D:\\A_FPGA_Comp\\work\\analysis\\2026-10-29-debug-connectivity-m1\\inputs\\board_top_pnr.adf",
+    "SHA256": "1F54CB6A33F97BD8869FB6F334263E1719A435FD5398FCA1664CEDB743DCC779",
+    "bytes": 3231011
+  },
+  {
+    "source": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\report_timing\\rtr.db",
+    "copy": "D:\\A_FPGA_Comp\\work\\analysis\\2026-10-29-debug-connectivity-m1\\inputs\\rtr.db",
+    "SHA256": "69C4F8DC47D9CA6931994C4B0D975E5ECD5FF7F6C2E075F162D72562C57264DB",
+    "bytes": 2986921
+  },
+  {
+    "source": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\report_timing\\board_top_rtp.adf",
+    "copy": "D:\\A_FPGA_Comp\\work\\analysis\\2026-10-29-debug-connectivity-m1\\inputs\\board_top_rtp.adf",
+    "SHA256": "F481E0570B0B94BE147D82C80B8655C90F2CD7856FC13DAD5D4D97D44B04BA0B",
+    "bytes": 8513
+  }
+]

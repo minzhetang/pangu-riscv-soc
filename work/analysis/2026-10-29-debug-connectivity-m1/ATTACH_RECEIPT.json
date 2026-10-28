@@ -1,0 +1,8 @@
+{
+  "same_original_PID": true,
+  "image_matches": true,
+  "elapsed": 104.56299999996554,
+  "budget_extended": false,
+  "new_vendor_launches": 0,
+  "reason": "Original monitor returned on initial EnumWindows failure; explicit API prototype and current owned-main identity verified"
+}

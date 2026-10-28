@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-29",
+  "status": "BOUNDED_PARTIAL_NOT_CONNECTIVITY_ACCEPTANCE",
+  "native_GUI_launches": 1,
+  "GUI_seconds": 590.094000000041,
+  "GUI_rc": 1,
+  "GUI_termination": "GUI_DEADLINE",
+  "owned_PID_absent_error": 87,
+  "protected_entries": 260,
+  "all_protected_unchanged": true,
+  "same_byte_copies": 3,
+  "copies_unchanged": true,
+  "stage_seconds": 712.359999999986,
+  "within_1200": true,
+  "help_queries": 1,
+  "PDS_builds": 0,
+  "new_DUT": 0,
+  "user_RTL_compiles": 0,
+  "hardware": "STOPPED"
+}

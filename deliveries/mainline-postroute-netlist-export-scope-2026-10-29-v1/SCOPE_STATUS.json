@@ -1,0 +1,15 @@
+{
+  "stage": "A-POSTROUTE-NETLIST-EXPORT-M0",
+  "version": "1.0.0",
+  "date": "2026-10-29",
+  "status": "PENDING_PDS_CLI_APPROVAL",
+  "scope_SHA256": "E1A3CC9105AA708E12361710D9089A8F98E370AA0B947B4DC235CC90F10316A1",
+  "native_processes": 1,
+  "process_seconds": 180,
+  "stage_seconds": 900,
+  "help_queries_max": 6,
+  "GUI": 0,
+  "PDS_builds": 0,
+  "new_DUT": 0,
+  "hardware": "STOPPED"
+}

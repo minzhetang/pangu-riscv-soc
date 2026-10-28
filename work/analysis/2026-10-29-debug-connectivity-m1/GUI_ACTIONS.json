@@ -1,0 +1,352 @@
+[
+  {
+    "command": "02.json",
+    "operation": {
+      "role": "main",
+      "op": "restore"
+    },
+    "elapsed_seconds": 104.56299999996554,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode"
+  },
+  {
+    "command": "03.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 104.85999999998603,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode"
+  },
+  {
+    "command": "04.json",
+    "operation": {
+      "role": "main",
+      "op": "click",
+      "x": 392,
+      "y": 934,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 139.0470000000205,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode"
+  },
+  {
+    "command": "05.json",
+    "operation": {
+      "role": "main",
+      "op": "source",
+      "script": "catalog.tcl",
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 139.43799999996554,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode"
+  },
+  {
+    "command": "06.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 139.73499999998603,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode"
+  },
+  {
+    "command": "07.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 179.14099999994505,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode"
+  },
+  {
+    "command": "08.json",
+    "operation": {
+      "role": "main",
+      "op": "click",
+      "x": 46,
+      "y": 43,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 199.93799999996554,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode"
+  },
+  {
+    "command": "09.json",
+    "operation": {
+      "role": "load",
+      "op": "capture"
+    },
+    "elapsed_seconds": 200.2029999999795,
+    "window_title": "Select DB File"
+  },
+  {
+    "command": "10.json",
+    "operation": {
+      "role": "load",
+      "op": "capture"
+    },
+    "elapsed_seconds": 229.03099999995902,
+    "window_title": "Select DB File"
+  },
+  {
+    "command": "11.json",
+    "operation": {
+      "role": "load",
+      "op": "click",
+      "x": 293,
+      "y": 257,
+      "expected_client_size": [
+        400,
+        281
+      ]
+    },
+    "elapsed_seconds": 240.6720000000205,
+    "window_title": "Select DB File"
+  },
+  {
+    "command": "12.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 240.9529999999795,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "13.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 252.8279999999795,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "14.json",
+    "operation": {
+      "role": "main",
+      "op": "click",
+      "x": 13,
+      "y": 127,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 270.76599999994505,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "15.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 271.06299999996554,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "16.json",
+    "operation": {
+      "role": "main",
+      "op": "click",
+      "x": 54,
+      "y": 99,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 292.155999999959,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "17.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 292.4529999999795,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "18.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 318.875,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "19.json",
+    "operation": {
+      "role": "main",
+      "op": "click",
+      "x": 109,
+      "y": 239,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 331.93799999996554,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "20.json",
+    "operation": {
+      "role": "main",
+      "op": "click",
+      "x": 165,
+      "y": 239,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 332.18799999996554,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "21.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 332.48499999998603,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "22.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 368.98499999998603,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "23.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 413.094000000041,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "24.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 468.01599999994505,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "25.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 486.93799999996554,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "26.json",
+    "operation": {
+      "role": "main",
+      "op": "click",
+      "x": 130,
+      "y": 256,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 497.344000000041,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "27.json",
+    "operation": {
+      "role": "main",
+      "op": "click",
+      "x": 214,
+      "y": 256,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 497.60999999998603,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "28.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 497.89099999994505,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "29.json",
+    "operation": {
+      "role": "main",
+      "op": "click",
+      "x": 186,
+      "y": 330,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 527.530999999959,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "30.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 527.8129999999655,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "31.json",
+    "operation": {
+      "role": "main",
+      "op": "click",
+      "x": 963,
+      "y": 229,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 540.375,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  },
+  {
+    "command": "32.json",
+    "operation": {
+      "role": "main",
+      "op": "capture"
+    },
+    "elapsed_seconds": 540.6720000000205,
+    "window_title": "Design Editor 2022.2-SP6.4 - View PnR Mode -D:/A_FPGA_Comp/work/analysis/2026-10-29-debug-connectivity-m1/inputs/board_top_pnr.adf"
+  }
+]

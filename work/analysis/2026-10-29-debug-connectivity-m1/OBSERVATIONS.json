@@ -1,0 +1,64 @@
+{
+  "status": "PARTIAL_NATIVE_VISUAL_OBSERVATIONS_NOT_FULL_CONNECTIVITY",
+  "loaded_DB": {
+    "source": "COPY_RECEIPT.json",
+    "screenshots": [
+      "12.png",
+      "13.png"
+    ],
+    "import_finished_visual": true
+  },
+  "objects": [
+    {
+      "signal": "stopped",
+      "screenshots": [
+        "18.png",
+        "21.png"
+      ],
+      "physical_root": "Q1:CLMS_135_943",
+      "logic_driver_identity_verified": false
+    },
+    {
+      "signal": "trig0_d1[136] selected by unique Find filter",
+      "screenshots": [
+        "25.png",
+        "28.png",
+        "30.png"
+      ],
+      "input_D_visually_present": true,
+      "D_to_net_driver_verified": false
+    }
+  ],
+  "full_channels_verified": 0,
+  "critical_paths_newly_verified": 0,
+  "tool_errors": [
+    {
+      "screenshot": "06.png",
+      "message": "Flow-0048: source filename included braces; unsupported format"
+    },
+    {
+      "screenshot": "22.png",
+      "message": "Flow-0161: set unsupported in this DE console source entry"
+    },
+    {
+      "screenshot": "24.png",
+      "message": "WM_CHAR backspace ignored; filter appended old text; native Clear correction shown25"
+    }
+  ],
+  "control_error": "Initial EnumWindows FALSE; original helper stopped; same PID identity and main role then verified; attached without relaunch or extended deadline",
+  "native_help_requests": 1,
+  "new_license_days": null,
+  "official_export_basis": {
+    "file": "D:/PDS/PDS_2022.2-SP6.4/doc/Pango_Design_Suite_User_Guide.pdf",
+    "version": "1.5",
+    "PDF_pages_visually_checked": [
+      148,
+      252
+    ],
+    "sections": [
+      "3.7",
+      "9.11"
+    ],
+    "native_export_executed": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "files": [
+    "board_top_pnr.adf",
+    "board_top_rtp.adf",
+    "rtr.db"
+  ],
+  "version_check_unchanged": true,
+  "original_DBs_not_opened": true
+}
