@@ -1,0 +1,7 @@
+{
+  "status": "PASS_SYNTHESIS_LAYER_ONLY",
+  "DRM18_blocks": 28,
+  "INIT_pieces": 1792,
+  "changed": 0,
+  "no_final_bitstream_or_readback": true
+}

@@ -1,0 +1,12 @@
+{
+  "date_client": "2026-10-28",
+  "decision": "D177",
+  "scope": "1.3.0",
+  "scope_SHA256": "2DF97E37D6151A44BBEEE792BDBA741455CEA9E62E470B18BEC1D60812221917",
+  "user_reply": "批准 继续",
+  "GUI_max_launches": 1,
+  "GUI_max_seconds": 600,
+  "PDS_max_builds": 1,
+  "PDS_max_seconds": 1800,
+  "hardware": "STOPPED"
+}

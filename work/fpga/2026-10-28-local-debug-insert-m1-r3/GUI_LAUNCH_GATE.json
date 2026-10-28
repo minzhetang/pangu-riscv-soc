@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "marker": true,
+      "process_alive": true,
+      "creation_time_matches": true,
+      "allowed": true
+    },
+    {
+      "marker": true,
+      "process_alive": true,
+      "creation_time_matches": true,
+      "allowed": true
+    }
+  ],
+  "no_global_process_or_device_enumeration": true
+}

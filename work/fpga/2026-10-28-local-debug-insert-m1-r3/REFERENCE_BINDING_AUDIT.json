@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "new_R3_VM_canonical_SHA256": "C5F039BD8B74BF12094E148A41C4CF1034A5C6AE8968BB1A314A33A052F6E46F",
+  "reference_R2_VM_canonical_SHA256": "C5F039BD8B74BF12094E148A41C4CF1034A5C6AE8968BB1A314A33A052F6E46F",
+  "only_normalizations": [
+    "known stage root path",
+    "generated date line"
+  ],
+  "complete_canonical_VM_equal": true,
+  "not_bitstream_or_connection_acceptance": true
+}

@@ -1,0 +1,8 @@
+{
+  "status": "EXPLICIT_PREVIOUS_SYNTHESIS_REFERENCE_NOT_NEW_BUILD_OUTPUT",
+  "source_files_equal_to_R2": 14,
+  "reference_ADF_SHA256": "DA82B094644285DBD3535883CCD37BD340A190C23ADED39C394AF7B35E4459F3",
+  "copy_SHA256": "DA82B094644285DBD3535883CCD37BD340A190C23ADED39C394AF7B35E4459F3",
+  "not_current_synthesis_or_bitstream_acceptance": true,
+  "current_PDS_queue_observation": "SYNTH_READY present while no compile/synthesize directories; live process not completion proof"
+}

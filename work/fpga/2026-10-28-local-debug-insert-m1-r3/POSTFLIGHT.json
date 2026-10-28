@@ -1,0 +1,20 @@
+{
+  "protected_originals": 96,
+  "protected_unchanged": true,
+  "frozen_inputs": 52,
+  "frozen_unchanged": true,
+  "GUI_launches": 1,
+  "GUI_seconds": 511.125,
+  "GUI_rc": 0,
+  "PDS_build_attempts": 1,
+  "PDS_seconds": 560.265,
+  "PDS_rc": 1,
+  "additional_native_queries": 0,
+  "new_DUT": 0,
+  "new_bitstream": false,
+  "partial_FIC_SHA256": "4EC70EC2B013C49552EF4AADF5FC39AC69F122D1338C8D0240657F22C8222BEE",
+  "partial_FIC_bytes": 889,
+  "FIC_connected_data_bits": 0,
+  "stage_seconds": 841.9529999999795,
+  "hardware": "STOPPED"
+}

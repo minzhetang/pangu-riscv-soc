@@ -1,0 +1,32 @@
+{
+  "date_client": "2026-10-28",
+  "fact": "F170",
+  "approval": "D177",
+  "decision": "D178",
+  "stage": "A-LOCAL-DEBUG-INSERT-M1-R3",
+  "status": "STOP_REQUIRED_PROBE_MAPPING_INCOMPLETE",
+  "GUI": "NORMAL_NATIVE_EXIT_AFTER_RELIABLE_REMINDER_AND_MAIN_UI",
+  "GUI_seconds": 511.125,
+  "PDS": "EXPLICIT_MAPPING_GATE_ABORT_THEN_SYNTHESIS_COMPLETED_RC1",
+  "PDS_seconds": 560.265,
+  "actual_reference_nets": 4898,
+  "planned_bits": 140,
+  "exact_name_matches": 138,
+  "verified_direct_alias_bits": 1,
+  "accounted_bits": 139,
+  "unresolved": [
+    "soc/cpu_core/eei_hold"
+  ],
+  "connected_bits": 0,
+  "partial_FIC_SHA256": "4EC70EC2B013C49552EF4AADF5FC39AC69F122D1338C8D0240657F22C8222BEE",
+  "reference_binding": "NEW_R3_AND_REFERENCE_R2_COMPLETE_CANONICAL_VM_IDENTICAL",
+  "INIT_same": 1792,
+  "new_bitstream": false,
+  "new_final_timing": "NOT_RUN",
+  "license_actual_days": [
+    6
+  ],
+  "new_DUT": 0,
+  "hardware": "STOPPED",
+  "next": "One additional nonfunctional eei_hold tag and split two PDS CLI boundaries; separate approval required, not implemented"
+}

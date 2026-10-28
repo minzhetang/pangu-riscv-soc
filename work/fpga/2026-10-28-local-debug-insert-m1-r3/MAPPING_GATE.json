@@ -1,0 +1,18 @@
+{
+  "status": "STOP_REQUIRED_PROBE_UNRESOLVED",
+  "planned_bits": 140,
+  "exact_name_matches": 138,
+  "verified_direct_alias_bits": 1,
+  "accounted_bits": 139,
+  "unresolved": [
+    "soc/cpu_core/eei_hold"
+  ],
+  "flush_if_alias": {
+    "native_net": "soc/cpu_core/flush_id",
+    "native_index": 432,
+    "proof": "Both assigned exactly control_flush in frozen cpu.v",
+    "cpu_SHA256": "7F228368859B811B9CC2D72927EF171EAC447ABEFD9E82567711299D6FC3C9F0"
+  },
+  "no_RTL_change_beyond_approved_six_comments": true,
+  "no_reduced_width_acceptance": true
+}

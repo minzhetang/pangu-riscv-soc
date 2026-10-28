@@ -1,0 +1,104 @@
+[
+  {
+    "command": "01.json",
+    "operation": {
+      "op": "capture",
+      "role": "reminder"
+    },
+    "elapsed_seconds": 17.57799999997951,
+    "stable_role": "reminder",
+    "window_title": "Expiration Reminder"
+  },
+  {
+    "command": "02.json",
+    "operation": {
+      "op": "click",
+      "role": "reminder",
+      "x": 250,
+      "y": 81,
+      "expected_client_size": [
+        500,
+        106
+      ]
+    },
+    "elapsed_seconds": 34.875,
+    "stable_role": "reminder",
+    "window_title": "Expiration Reminder"
+  },
+  {
+    "command": "03.json",
+    "operation": {
+      "op": "restore",
+      "role": "main"
+    },
+    "elapsed_seconds": 46.93799999996554,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+  },
+  {
+    "command": "04.json",
+    "operation": {
+      "op": "capture",
+      "role": "main"
+    },
+    "elapsed_seconds": 47.21900000004098,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+  },
+  {
+    "command": "05.json",
+    "operation": {
+      "op": "click",
+      "role": "main",
+      "x": 150,
+      "y": 900,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 73.625,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+  },
+  {
+    "command": "06.json",
+    "operation": {
+      "op": "source",
+      "role": "main",
+      "script": "gui-probe.tcl",
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 74.01599999994505,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+  },
+  {
+    "command": "07.json",
+    "operation": {
+      "op": "source",
+      "role": "main",
+      "script": "gui-load-reference.tcl",
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 149.2970000000205,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 - D:/A_FPGA_Comp/work/fpga/2026-10-28-local-debug-insert-m1-r3/debug.fic (on [HOST_REDACTED])"
+  },
+  {
+    "command": "08.json",
+    "operation": {
+      "op": "close",
+      "role": "main"
+    },
+    "elapsed_seconds": 510.75,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 - debug.fic (on [HOST_REDACTED])"
+  }
+]

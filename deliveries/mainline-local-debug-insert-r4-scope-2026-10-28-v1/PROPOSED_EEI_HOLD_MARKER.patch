@@ -1,0 +1,5 @@
+--- baseline-r3/cpu.v
++++ candidate-r4/cpu.v
+@@ -61 +61 @@
+-    wire eei_hold = (eei_state != EEI_RUN) || eei_detect;
++    wire eei_hold /* synthesis PAP_MARK_DEBUG="true" */ = (eei_state != EEI_RUN) || eei_detect;

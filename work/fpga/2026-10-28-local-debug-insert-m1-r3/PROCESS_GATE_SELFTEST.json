@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "marker": false,
+      "alive": false,
+      "identity": false,
+      "abort": false,
+      "allowed": false
+    },
+    {
+      "marker": false,
+      "alive": false,
+      "identity": false,
+      "abort": true,
+      "allowed": false
+    },
+    {
+      "marker": false,
+      "alive": false,
+      "identity": true,
+      "abort": false,
+      "allowed": false
+    },
+    {
+      "marker": false,
+      "alive": false,
+      "identity": true,
+      "abort": true,
+      "allowed": false
+    },
+    {
+      "marker": false,
+      "alive": true,
+      "identity": false,
+      "abort": false,
+      "allowed": false
+    },
+    {
+      "marker": false,
+      "alive": true,
+      "identity": false,
+      "abort": true,
+      "allowed": false
+    },
+    {
+      "marker": false,
+      "alive": true,
+      "identity": true,
+      "abort": false,
+      "allowed": false
+    },
+    {
+      "marker": false,
+      "alive": true,
+      "identity": true,
+      "abort": true,
+      "allowed": false
+    },
+    {
+      "marker": true,
+      "alive": false,
+      "identity": false,
+      "abort": false,
+      "allowed": false
+    },
+    {
+      "marker": true,
+      "alive": false,
+      "identity": false,
+      "abort": true,
+      "allowed": false
+    },
+    {
+      "marker": true,
+      "alive": false,
+      "identity": true,
+      "abort": false,
+      "allowed": false
+    },
+    {
+      "marker": true,
+      "alive": false,
+      "identity": true,
+      "abort": true,
+      "allowed": false
+    },
+    {
+      "marker": true,
+      "alive": true,
+      "identity": false,
+      "abort": false,
+      "allowed": false
+    },
+    {
+      "marker": true,
+      "alive": true,
+      "identity": false,
+      "abort": true,
+      "allowed": false
+    },
+    {
+      "marker": true,
+      "alive": true,
+      "identity": true,
+      "abort": false,
+      "allowed": true
+    },
+    {
+      "marker": true,
+      "alive": true,
+      "identity": true,
+      "abort": true,
+      "allowed": false
+    }
+  ],
+  "no_native_processes_started": true
+}
