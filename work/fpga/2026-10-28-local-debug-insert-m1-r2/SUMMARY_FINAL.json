@@ -1,0 +1,30 @@
+{
+  "date_client": "2026-10-28",
+  "fact": "F169",
+  "approval": "D175",
+  "result_decision": "D176",
+  "stage": "A-LOCAL-DEBUG-INSERT-M1-R2",
+  "status": "SYNTHESIS_ONLY_STOPPED_OWN_CONTROL_SCRIPTS",
+  "synthesis": "PASS",
+  "native_PDS_error": "invalid command name clock after synthesis",
+  "GUI_error": "RuntimeError: OWN_WINDOW_ROLE_NOT_UNIQUE",
+  "GUI_error_classification": "A queued main-role action while only reminder existed; no control invocation",
+  "new_FIC": false,
+  "new_bitstream": false,
+  "new_timing": "NOT_RUN",
+  "new_DUT": 0,
+  "source_originals_unchanged": true,
+  "INIT_synthesis_pieces_equal": 1792,
+  "license_days_actual": [
+    6
+  ],
+  "hardware": "STOPPED",
+  "limits": "One GUI and one complete-build attempt used; do not rerun historical entries. Four of six readonly help queries used.",
+  "Git_sync": "SYSTEM_REVIEW_REJECTED_BEFORE_EXECUTION_DESPITE_CURRENT_USER_APPROVAL",
+  "readonly_help_processes": 2,
+  "readonly_queries_total": 6,
+  "wait_replacement": "BOUNDED_AFTER_WHILE_INCR_NATIVE_QUERY_PASS",
+  "window_policy": "13_SYNTHETIC_CASES_AND_STARTUP_SEQUENCE_PASS_NOT_NEW_GUI",
+  "recovery_files": "PREPARED_NOT_EXECUTED",
+  "initial_summary_superseded_only_for_license_and_final_query_counts": true
+}

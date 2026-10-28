@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "native_rc": 0,
+  "queries_total": 6,
+  "actual_bounded_while_after_incr": true,
+  "no_design_build": true,
+  "hardware": "STOPPED"
+}

@@ -1,0 +1,7 @@
+{
+  "level": "SYNTHESIS_NETLIST_ONLY_NOT_FINAL_BITSTREAM",
+  "DRM18_blocks": 28,
+  "INIT_pieces_compared": 1792,
+  "changed": [],
+  "original_final_bitstream_validation_not_replaced": true
+}

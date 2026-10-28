@@ -1,0 +1,14 @@
+{
+  "level": "STATIC_NEW_SYNTHESIS_VM_NOT_INSERTER_MAPPING",
+  "actual_attribute_lines": [
+    "(* PAP_MARK_DEBUG=\"true\" *)    wire branch_taken;",
+    "(* PAP_MARK_DEBUG=\"true\" *)    wire invalid_write;",
+    "(* PAP_MARK_DEBUG=\"true\" *)    wire io_error;",
+    "(* PAP_MARK_DEBUG=\"true\" *)    wire io_sel;",
+    "(* PAP_MARK_DEBUG=\"true\" *)    wire ram_we;",
+    "(* PAP_MARK_DEBUG=\"true\" *)    wire wren;",
+    "(* PAP_MARK_DEBUG=\"true\" *)    wire stopped;",
+    "(* PAP_MARK_DEBUG=\"true\" *)    wire write_error;"
+  ],
+  "limitation": "Some grouped/scalar declarations propagate tags; absence on a VM bus declaration does not alone prove source tag ineffective. No 140-bit native net mapping or connection completed."
+}

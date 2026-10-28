@@ -1,0 +1,30 @@
+{
+  "status": "PREPARED_NOT_RUN",
+  "files": [
+    {
+      "name": "build_fixed.tcl",
+      "SHA256": "D5F5A8AADA4702CB4450DE3C8128F12A251017AF22B536EA1C90ACE6A539F22A"
+    },
+    {
+      "name": "gui_control_fixed.py",
+      "SHA256": "A56E50DE7EA2AC5658575B8BCB4379FF0AB4FC2125436E9238323EDB36A3DE57"
+    },
+    {
+      "name": "POLICY_SELFTEST.json",
+      "SHA256": "106A01A8CD9FA493D6700AB0243045F34612C12A80303A27877BB9AE7046AA7F"
+    },
+    {
+      "name": "PREPARATION_RECEIPT.json",
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "name": "test_window_policy.py",
+      "SHA256": "0DDDCEB39FE6F5CE40C4F8F51B4613A1D642D9BA836BF4F83BC591D747484172"
+    },
+    {
+      "name": "window_policy.py",
+      "SHA256": "39F5B0F7DB4F07A73BF56F1E0E598691A409708271C6FDD340B2D183C43E1B23"
+    }
+  ],
+  "remaining_gate": "No new GUI/build budget in R2. Next execution must verify native PDS is still alive before consuming the GUI launch, not only SYNTH_READY presence."
+}

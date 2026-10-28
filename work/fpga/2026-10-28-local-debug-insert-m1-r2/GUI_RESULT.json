@@ -1,0 +1,9 @@
+{
+  "reason": "SUPERVISOR_STOP",
+  "error": "RuntimeError: OWN_WINDOW_ROLE_NOT_UNIQUE",
+  "rc": 1,
+  "seconds": 17.625,
+  "root_exited": true,
+  "remaining_own_windows": [],
+  "hardware": "STOPPED"
+}

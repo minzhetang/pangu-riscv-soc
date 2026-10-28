@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "queries_used": 4,
+  "query_limit": 6,
+  "clock_available": false,
+  "after_available": true,
+  "vwait_available": true,
+  "add_fic_help_pass": true,
+  "version": "2022.2-SP6.4 build146967",
+  "no_build": true
+}

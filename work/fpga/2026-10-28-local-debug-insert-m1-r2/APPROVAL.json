@@ -1,0 +1,12 @@
+{
+  "date_client": "2026-10-28",
+  "decision": "D175",
+  "scope": "A-LOCAL-DEBUG-INSERT-M1-R2 / 1.2.0",
+  "scope_SHA256": "C67EC98CBE52B27132D6EAA173D9630F16BEF543FCBAB0854038F385F6020B15",
+  "user_reply": "均批准",
+  "GUI_launch_limit": 1,
+  "GUI_seconds": 600,
+  "PDS_build_limit": 1,
+  "PDS_seconds": 1800,
+  "hardware": "STOPPED"
+}

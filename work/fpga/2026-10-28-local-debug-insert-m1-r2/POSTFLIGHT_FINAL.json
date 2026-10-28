@@ -1,0 +1,25 @@
+{
+  "protected_originals": 46,
+  "protected_unchanged": true,
+  "frozen_execution_files": 50,
+  "frozen_unchanged": true,
+  "GUI_launches": 1,
+  "GUI_seconds": 17.625,
+  "GUI_root_exited": true,
+  "PDS_build_attempts": 1,
+  "PDS_native_rc": 1,
+  "PDS_build_seconds": 18.546,
+  "PDS_readonly_help_processes": 2,
+  "help_queries": 6,
+  "new_DUT": 0,
+  "new_FIC": false,
+  "new_bitstream": false,
+  "INIT_synthesis_only_same": true,
+  "stage_seconds": 1075.4529999999795,
+  "hardware": "STOPPED",
+  "remaining_own_GUI_windows": 0,
+  "license_actual_days": [
+    6
+  ],
+  "completion": "PARTIAL_SYNTHESIS_ONLY_NO_FIC_OR_BITSTREAM"
+}
