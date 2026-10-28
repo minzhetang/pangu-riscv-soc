@@ -1,0 +1,251 @@
+{
+  "net_count": 4793,
+  "probes": [
+    {
+      "logical": "soc.cpu_core.id_pc",
+      "width": 32,
+      "missing": [],
+      "indices": [
+        1092,
+        4677,
+        848,
+        3847,
+        4152,
+        644,
+        2163,
+        3704,
+        4343,
+        4622,
+        298,
+        3843,
+        1087,
+        483,
+        1565,
+        99,
+        545,
+        3640,
+        2530,
+        4597,
+        3680,
+        3455,
+        311,
+        3639,
+        939,
+        2921,
+        3562,
+        3482,
+        1339,
+        2562,
+        560,
+        1098
+      ]
+    },
+    {
+      "logical": "soc.cpu_core.id_valid",
+      "width": 1,
+      "missing": [],
+      "indices": [
+        4115
+      ]
+    },
+    {
+      "logical": "soc.cpu_core.pipeline_advance",
+      "width": 1,
+      "missing": [],
+      "indices": [
+        1117
+      ]
+    },
+    {
+      "logical": "soc.cpu_core.eei_hold",
+      "width": 1,
+      "missing": [],
+      "indices": [
+        2403
+      ]
+    },
+    {
+      "logical": "soc.cpu_core.stall_if",
+      "width": 1,
+      "missing": [],
+      "indices": [
+        1
+      ]
+    },
+    {
+      "logical": "soc.cpu_core.flush_if",
+      "width": 1,
+      "missing": [],
+      "indices": [
+        3872
+      ]
+    },
+    {
+      "logical": "soc.cpu_core.branch_taken",
+      "width": 1,
+      "missing": [
+        "soc/cpu_core/branch_taken"
+      ],
+      "indices": []
+    },
+    {
+      "logical": "sys_rst_n",
+      "width": 1,
+      "missing": [],
+      "indices": [
+        354
+      ]
+    },
+    {
+      "logical": "soc.timer_ticks[31:0]",
+      "width": 32,
+      "missing": [],
+      "indices": [
+        3837,
+        1198,
+        3675,
+        4567,
+        4178,
+        3956,
+        3927,
+        994,
+        56,
+        3266,
+        213,
+        4078,
+        1337,
+        408,
+        1611,
+        189,
+        639,
+        3698,
+        2584,
+        3979,
+        4508,
+        93,
+        1764,
+        4475,
+        1637,
+        4511,
+        396,
+        4128,
+        3243,
+        3542,
+        1346,
+        3003
+      ]
+    },
+    {
+      "logical": "soc.address",
+      "width": 32,
+      "missing": [
+        "soc/address[0]",
+        "soc/address[1]",
+        "soc/address[2]",
+        "soc/address[3]",
+        "soc/address[4]",
+        "soc/address[5]",
+        "soc/address[6]",
+        "soc/address[7]"
+      ],
+      "indices": [
+        4728,
+        2429,
+        2595,
+        2825,
+        145,
+        3054,
+        1862,
+        1268,
+        1468,
+        3827,
+        4473,
+        3427,
+        1220,
+        1363,
+        3821,
+        1884,
+        4727,
+        1045,
+        997,
+        1603,
+        3143,
+        2024,
+        3332,
+        4577
+      ]
+    },
+    {
+      "logical": "soc.wren",
+      "width": 1,
+      "missing": [
+        "soc/wren"
+      ],
+      "indices": []
+    },
+    {
+      "logical": "soc.wdata",
+      "width": 32,
+      "missing": [],
+      "indices": [
+        1655,
+        1310,
+        1145,
+        4584,
+        2621,
+        3187,
+        798,
+        2184,
+        3047,
+        2771,
+        3015,
+        2988,
+        422,
+        2392,
+        4454,
+        3059,
+        3127,
+        2816,
+        953,
+        1755,
+        1102,
+        4176,
+        2062,
+        667,
+        1770,
+        1056,
+        884,
+        4463,
+        3021,
+        443,
+        2089,
+        3553
+      ]
+    },
+    {
+      "logical": "soc.stopped",
+      "width": 1,
+      "missing": [
+        "soc/stopped"
+      ],
+      "indices": []
+    },
+    {
+      "logical": "soc.stop_kind",
+      "width": 2,
+      "missing": [
+        "soc/stop_kind[0]",
+        "soc/stop_kind[1]"
+      ],
+      "indices": []
+    },
+    {
+      "logical": "soc.write_error",
+      "width": 1,
+      "missing": [
+        "soc/write_error"
+      ],
+      "indices": []
+    }
+  ]
+}

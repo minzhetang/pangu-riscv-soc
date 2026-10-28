@@ -1,0 +1,17 @@
+{
+  "protected_originals": 46,
+  "protected_originals_unchanged": true,
+  "source_before_13_unchanged": true,
+  "metadata_stripping_restores_original_13": true,
+  "new_PDS": 0,
+  "new_DUT": 0,
+  "new_Flash": 0,
+  "hardware": "STOPPED",
+  "gui_launches": 2,
+  "gui_seconds": 384.98499999998603,
+  "both_own_roots_exited": true,
+  "remaining_own_visible_windows": 0,
+  "partial_FIC_SHA256": "8E985383663B4A56837A736036AFB30D733427EF0C60CC4F86FF3CA540AFEA93",
+  "partial_FIC_bytes": 940,
+  "stage_seconds": 949.4060000000754
+}

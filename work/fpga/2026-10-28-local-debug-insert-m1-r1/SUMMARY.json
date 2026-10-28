@@ -1,0 +1,46 @@
+{
+  "date_client": "2026-10-28",
+  "stage": "A-LOCAL-DEBUG-INSERT-M1-R1",
+  "scope_version": "1.1.0",
+  "approval": "D173",
+  "fact": "F168",
+  "decision": "D174",
+  "status": "PARTIAL_GUI_CONFIGURATION_SAVED_STOPPED_NO_BUILD",
+  "gui_launches": 2,
+  "gui_seconds": 384.98499999998603,
+  "actual_listed_nets": 4793,
+  "planned_data_bits": 140,
+  "name_matched_bits": 126,
+  "unresolved_mapping_bits": 14,
+  "actual_connected_data_bits": 0,
+  "partial_FIC": "partial.fic",
+  "partial_FIC_SHA256": "8E985383663B4A56837A736036AFB30D733427EF0C60CC4F86FF3CA540AFEA93",
+  "depth": 1024,
+  "clock_edge": "Rising",
+  "qualification": false,
+  "multi_window": false,
+  "device_settings_new_FIC": "NOT_VERIFIED",
+  "new_PDS": 0,
+  "new_Inserter_CLI": 0,
+  "new_DUT": 0,
+  "new_debug_bitstream": "NOT_GENERATED",
+  "new_timing": "NOT_RUN",
+  "new_INIT_audit": "NOT_RUN",
+  "new_metadata_candidate": "PREPARED_NOT_SYNTHESIZED",
+  "stop_reason": "A GUI supervisor required a fixed title; ins_save changed it. No tool design failure established; GUI two-launch limit now exhausted.",
+  "root_exit_codes": [
+    0,
+    0
+  ],
+  "license_notice_days": [
+    6,
+    6
+  ],
+  "hardware": "STOPPED",
+  "limitations": [
+    "126 names matched are not proof of connected FIC channels",
+    "14 unmatched exact names do not establish absent logical functions",
+    "No bitstream or hardware capture acceptance",
+    "Next GUI use requires new bounded authorization; unused PDS budget is not a third GUI launch"
+  ]
+}

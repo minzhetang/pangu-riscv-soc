@@ -1040,6 +1040,32 @@
 !/work/analysis/2026-10-28-inserter-gui-inspection-m0/finalize.py
 !/work/analysis/2026-10-28-inserter-gui-inspection-m0/policy_probe.ps1
 
+!/deliveries/mainline-local-debug-insert-r2-scope-2026-10-28-v1/
+/deliveries/mainline-local-debug-insert-r2-scope-2026-10-28-v1/*
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/
+/work/fpga/2026-10-28-local-debug-insert-m1-r1/*
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/gui-attempt1/
+/work/fpga/2026-10-28-local-debug-insert-m1-r1/gui-attempt1/*
+!/reports/verification/2026-10-28-local-debug-insert-m1-r1.md
+!/deliveries/mainline-local-debug-insert-r2-scope-2026-10-28-v1/IMPLEMENTATION_SCOPE.md
+!/deliveries/mainline-local-debug-insert-r2-scope-2026-10-28-v1/SCOPE_STATUS.json
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/APPROVAL.json
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/GUI_RESULT.json
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/GUI_ACTIONS.json
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/NET_MAPPING.json
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/SOURCE_RECEIPTS.json
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/DEBUG_METADATA.patch
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/prepare_marked_candidate.py
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/gui_session.py
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/ui_text.py
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/finalize.py
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/POSTFLIGHT.json
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/SUMMARY.json
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/SAFE_TOOL_RESULT.json
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/COMMANDS.md
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/gui-attempt1/GUI_RESULT.json
+!/work/fpga/2026-10-28-local-debug-insert-m1-r1/gui-attempt1/CORRECTION.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

@@ -1,0 +1,108 @@
+[
+  {
+    "command": "gui-command-02.json",
+    "action": {
+      "op": "restore",
+      "title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+    },
+    "elapsed": 18.60999999998603
+  },
+  {
+    "command": "gui-command-03.json",
+    "action": {
+      "op": "capture",
+      "title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+    },
+    "elapsed": 27.10999999998603
+  },
+  {
+    "command": "gui-command-04.json",
+    "action": {
+      "op": "click",
+      "title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])",
+      "x": 600,
+      "y": 160
+    },
+    "elapsed": 98.125
+  },
+  {
+    "command": "gui-command-05.json",
+    "action": {
+      "op": "capture",
+      "title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+    },
+    "elapsed": 117.40700000000652
+  },
+  {
+    "command": "gui-command-06.json",
+    "action": {
+      "op": "capture",
+      "title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+    },
+    "elapsed": 167.23499999998603
+  },
+  {
+    "command": "gui-command-07.json",
+    "action": {
+      "op": "click",
+      "title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])",
+      "x": 393,
+      "y": 725
+    },
+    "elapsed": 217.21900000004098
+  },
+  {
+    "command": "gui-command-08.json",
+    "action": {
+      "op": "capture",
+      "title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+    },
+    "elapsed": 217.46900000004098
+  },
+  {
+    "command": "gui-command-09.json",
+    "action": {
+      "op": "click",
+      "title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])",
+      "x": 1620,
+      "y": 725
+    },
+    "elapsed": 245.125
+  },
+  {
+    "command": "gui-command-10.json",
+    "action": {
+      "op": "capture",
+      "title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+    },
+    "elapsed": 245.375
+  },
+  {
+    "command": "gui-command-11.json",
+    "action": {
+      "op": "click",
+      "title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])",
+      "x": 120,
+      "y": 143
+    },
+    "elapsed": 271.0470000000205
+  },
+  {
+    "command": "gui-command-12.json",
+    "action": {
+      "op": "capture",
+      "title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+    },
+    "elapsed": 271.31300000008196
+  },
+  {
+    "command": "gui-command-13.json",
+    "action": {
+      "op": "click",
+      "title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])",
+      "x": 160,
+      "y": 950
+    },
+    "elapsed": 357.75
+  }
+]

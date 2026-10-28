@@ -1,0 +1,9 @@
+{
+  "reason": "RuntimeError: Exact own window title not found",
+  "rc": 0,
+  "seconds": 19.140999999945052,
+  "root_exited": true,
+  "remaining_own_windows": [],
+  "new_PDS": 0,
+  "hardware": "STOPPED"
+}

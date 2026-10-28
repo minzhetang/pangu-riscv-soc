@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-28",
+  "decision": "D173",
+  "scope_version": "1.1.0",
+  "user_reply": "批准继续",
+  "scope_SHA256": "0A97B9126B19FC0F1A5A1839EE7AF5504EEF5D6821EA1A56D7BFF8C56F1A25BD",
+  "GUI_limit": 2,
+  "PDS_limit": 1,
+  "CLI_limit": 6,
+  "hardware": "STOPPED"
+}

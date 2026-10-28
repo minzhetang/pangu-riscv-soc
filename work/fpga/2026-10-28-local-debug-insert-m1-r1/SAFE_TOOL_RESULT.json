@@ -1,0 +1,12 @@
+{
+  "license_checkout_observed": "fabric_inserter",
+  "actual_expiry_notice_days": [
+    6,
+    6
+  ],
+  "ADF_compile_success": true,
+  "net_recovery_message": true,
+  "net_listing_success": true,
+  "FIC_save_success": true,
+  "license_paths_or_machine_identifiers_not_copied": true
+}
