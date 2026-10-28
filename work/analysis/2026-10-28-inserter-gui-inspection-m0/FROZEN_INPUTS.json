@@ -1,0 +1,20 @@
+{
+  "files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\analysis\\2026-10-28-inserter-gui-inspection-m0\\inspect_once.py",
+      "SHA256": "FB80DBDDFB058F89F579EC9FBDC4D6DCBD905C723334000DF28BF899B04407CF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\analysis\\2026-10-28-inserter-gui-inspection-m0\\read_window.ps1",
+      "SHA256": "D98401E081A9C9A8AE26DE823D7F76BFBE2ED86E63E5C2591535D8DE00D6A236"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\cdt_ins.exe",
+      "SHA256": "B526DA86DA96B84A591F63D1E35F3B4CA50433F14DA9D136F7BF10DD50F07D94"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1\\PROTECTED_ORIGINALS.json",
+      "SHA256": "E9C05B1980FE7B21C53C592E5879B9FBC45EA2201B98A3D18F1D269453797B9B"
+    }
+  ]
+}

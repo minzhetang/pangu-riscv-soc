@@ -1,0 +1,32 @@
+{
+  "status": "GUI_READ_ONLY_OBSERVED",
+  "windows": [
+    {
+      "hwnd": 199888,
+      "title": "Expiration Reminder",
+      "window_class": "Qt5152QWindowIcon"
+    }
+  ],
+  "read_only": true,
+  "GUI_launches": 1,
+  "control_invocations": 0,
+  "new_PDS": 0,
+  "new_DUT": 0,
+  "hardware": "STOPPED",
+  "UIA": [
+    {
+      "status": "UIA_UNAVAILABLE",
+      "rc": 1
+    }
+  ],
+  "WM_CLOSE_posts": 1,
+  "own_process_terminated_after_close_wait": true,
+  "returncode": 1,
+  "elapsed_seconds": 4.453,
+  "within_180_seconds": true,
+  "log_caps": [],
+  "root_exited": true,
+  "remaining_own_visible_windows": [],
+  "protected_originals_unchanged": true,
+  "protected_originals": 46
+}

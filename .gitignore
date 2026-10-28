@@ -1015,6 +1015,31 @@
 !/work/fpga/2026-10-28-local-debug-insert-m1/close_stop.py
 !/work/fpga/2026-10-28-local-debug-insert-m1/scripts/probe.tcl
 
+!/deliveries/mainline-local-debug-insert-r1-scope-2026-10-28-v1/
+/deliveries/mainline-local-debug-insert-r1-scope-2026-10-28-v1/*
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/
+/work/analysis/2026-10-28-inserter-gui-inspection-m0/*
+!/reports/verification/2026-10-28-inserter-gui-inspection-m0.md
+!/deliveries/mainline-local-debug-insert-r1-scope-2026-10-28-v1/IMPLEMENTATION_SCOPE.md
+!/deliveries/mainline-local-debug-insert-r1-scope-2026-10-28-v1/SCOPE_STATUS.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/read_window.ps1
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/inspect_once.py
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/APPROVAL.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/FROZEN_INPUTS.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/START.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/RESULT.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/POLICY_DIAGNOSTIC.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/SAFE_LOG_SUMMARY.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/EXPIRY_PROMPT.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/NOTIFICATION_WORDS.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/LICENSE_NOTICE.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/OLD_NOTICE_REPARSE.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/SUMMARY.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/POSTFLIGHT.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/SHA256SUMS.json
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/finalize.py
+!/work/analysis/2026-10-28-inserter-gui-inspection-m0/policy_probe.ps1
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

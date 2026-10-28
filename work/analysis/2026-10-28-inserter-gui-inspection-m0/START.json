@@ -1,0 +1,6 @@
+{
+  "pid_scope": "only newly created child; exact PID saved in local process receipt",
+  "started_monotonic": 785474.75,
+  "deadline_monotonic": 785654.75,
+  "GUI_launch_budget": 1
+}

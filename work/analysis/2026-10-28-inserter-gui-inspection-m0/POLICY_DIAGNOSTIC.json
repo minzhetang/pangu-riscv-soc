@@ -1,0 +1,12 @@
+{
+  "status": "READ_ONLY_POLICY_CHECK",
+  "effective_policy": "",
+  "query_rc": 1,
+  "minimal_ps1_rc": 1,
+  "marker_seen": false,
+  "security_exception": true,
+  "policy_changed": false,
+  "execution_policy_bypass_used": false,
+  "additional_GUI_launches": 0,
+  "does_not_prove_original_helper_stderr": "Original helper stderr was not retained, so exact original text is unavailable"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "READ_ONLY_GUI_SCOPE_COMPLETED_WITH_LIMITS",
+  "GUI_launches": 1,
+  "GUI_budget_seconds": 180,
+  "actual_GUI_seconds": 4.453,
+  "root_exited": true,
+  "remaining_own_visible_windows": 0,
+  "protected_originals": 46,
+  "frozen_inputs": 4,
+  "unchanged": true,
+  "new_PDS": 0,
+  "new_DUT": 0,
+  "hardware": "STOPPED"
+}

@@ -1,0 +1,21 @@
+{
+  "allowlisted_notification_words": [
+    [
+      "Warning",
+      "The",
+      "license",
+      "will",
+      "in",
+      "6",
+      "days",
+      "In",
+      "your",
+      "usage",
+      "please",
+      "the",
+      "license",
+      "in"
+    ]
+  ],
+  "no_raw_identifiers": true
+}

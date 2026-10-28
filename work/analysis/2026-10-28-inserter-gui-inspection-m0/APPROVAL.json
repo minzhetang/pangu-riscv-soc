@@ -1,0 +1,10 @@
+{
+  "date_client": "2026-10-28",
+  "decision": "D171",
+  "user_reply": "批准",
+  "scope": "One local Inserter GUI read-only inspection <=180 seconds; no builds/insertion/license configuration/hardware",
+  "argv": [
+    "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\cdt_ins.exe"
+  ],
+  "external_route": "SEPARATE_SYSTEM_REVIEW"
+}

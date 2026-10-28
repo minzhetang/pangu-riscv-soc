@@ -1,0 +1,8 @@
+{
+  "source": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1\\logs\\inserter-probe-01\\stdout.log",
+  "SHA256": "35D4585D90D868C3DC1E396415C2C493B7AD0147E4BBA9976D71C142BEA39D07",
+  "future_notification_phrase": "will invaild in 6 days",
+  "days": 6,
+  "correction": "Earlier parsers searched expire/expired and missed vendor typo invaild; historical raw log unchanged",
+  "does_not_reconstruct_old_window_title": true
+}

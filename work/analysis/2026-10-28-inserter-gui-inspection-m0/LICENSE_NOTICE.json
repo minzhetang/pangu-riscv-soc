@@ -1,0 +1,5 @@
+{
+  "future_notification_phrase": "will invaild in 6 days",
+  "days": 6,
+  "source": "own new Inserter stdout; only grammar and numeric duration extracted, not license file"
+}
