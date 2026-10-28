@@ -1,0 +1,27 @@
+{
+  "date_client": "2026-10-28",
+  "PDS_documents": [
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\doc\\Fabric_Inserter_User_Guide.pdf",
+      "SHA256": "342EE254307F436E63D2D0C17173313DBEB9D04DE9F77458F532F46634422423",
+      "pages": 49
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\doc\\Fabric_Debugger_User_Guide.pdf",
+      "SHA256": "887EC2178FDD58A9B516570D6A4EB174FA79AC87DF3DAE8BACECBFEC777D7112",
+      "pages": 107
+    }
+  ],
+  "remote": {
+    "publication": "https://szlogicmatrix.com/1501.html",
+    "file": "remote_lab_developer_manual.pdf",
+    "SHA256": "05FE830148F5638E0A6986938BE06DA916E700F283B28BA9ECA253A82620FDD0",
+    "version": "1.0",
+    "date": "2026/1/7",
+    "pages": 24
+  },
+  "public_entry": "http://www.logicmatrixsemi.com:5174/",
+  "thermal_previous_report": "reports/hardware/2026-10-15-systematic-hardware-evidence-review.md",
+  "thermal_query_already_prepared": "deliveries/pango-overtemp-question-2026-10-20-v01/package/START_HERE.md",
+  "document_download_is_not_vendor_signature_or_device_compatibility": true
+}

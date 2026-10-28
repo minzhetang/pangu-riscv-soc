@@ -952,6 +952,27 @@
 !/work/fpga/2026-10-27-board-coremark8-bitstream-m1/evidence/AUDIT_PARAMETER_NOTE.json
 !/work/fpga/2026-10-27-board-coremark8-bitstream-m1/evidence/AUDIT_PREPARATION_NOTE.json
 
+!/deliveries/mainline-fpga-platform-check-2026-10-28-v1/
+/deliveries/mainline-fpga-platform-check-2026-10-28-v1/*
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/
+/work/analysis/2026-10-28-fpga-evidence-readiness-m0/*
+!/reports/progress/2026-10-28-fpga-evidence-readiness-m0.md
+!/deliveries/mainline-fpga-platform-check-2026-10-28-v1/PLATFORM_QUESTIONS.txt
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/assess.py
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/fetch_public.py
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/record.py
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/INPUTS.json
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/BASELINE_CHECK.json
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/SOURCES.json
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/PROBE_PLAN_DRAFT.json
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/READING_COVERAGE.json
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/PLATFORM_GATES.json
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/POSTFLIGHT.json
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/HTTP_RESULTS.json
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/HTTP_RESULTS_EXTERNAL.json
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/RENDER_RECEIPTS.json
+!/work/analysis/2026-10-28-fpga-evidence-readiness-m0/RENDER_EXTRA_RECEIPTS.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

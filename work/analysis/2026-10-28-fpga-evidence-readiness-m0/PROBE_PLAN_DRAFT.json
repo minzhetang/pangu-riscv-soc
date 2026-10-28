@@ -1,0 +1,279 @@
+{
+  "status": "TECHNICAL_DRAFT_NOT_IMPLEMENTED_OR_NEW_SCOPE_APPROVAL",
+  "probes": [
+    {
+      "logical_signal": "soc.cpu_core.id_pc",
+      "width": 32,
+      "source": "cpu.v",
+      "source_line_refs": [
+        38,
+        98,
+        206,
+        240,
+        274,
+        287,
+        290,
+        317,
+        318
+      ],
+      "netlist_lexical_occurrences": 194,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.cpu_core.id_valid",
+      "width": 1,
+      "source": "cpu.v",
+      "source_line_refs": [
+        56,
+        60,
+        64,
+        70,
+        72,
+        76,
+        78,
+        321,
+        322,
+        323,
+        324,
+        325
+      ],
+      "netlist_lexical_occurrences": 14,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.cpu_core.pipeline_advance",
+      "width": 1,
+      "source": "cpu.v",
+      "source_line_refs": [
+        30,
+        67,
+        127,
+        135,
+        138,
+        188,
+        222,
+        231,
+        239,
+        316,
+        363
+      ],
+      "netlist_lexical_occurrences": 240,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.cpu_core.eei_hold",
+      "width": 1,
+      "source": "cpu.v",
+      "source_line_refs": [
+        61,
+        70,
+        71,
+        127,
+        135,
+        222,
+        321,
+        322,
+        323,
+        324,
+        325
+      ],
+      "netlist_lexical_occurrences": 4,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.cpu_core.stall_if",
+      "width": 1,
+      "source": "cpu.v",
+      "source_line_refs": [
+        54,
+        75,
+        76,
+        122,
+        138,
+        231,
+        393
+      ],
+      "netlist_lexical_occurrences": 8,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.cpu_core.flush_if",
+      "width": 1,
+      "source": "cpu.v",
+      "source_line_refs": [
+        54,
+        74,
+        121,
+        135,
+        391
+      ],
+      "netlist_lexical_occurrences": 10,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.cpu_core.branch_taken",
+      "width": 1,
+      "source": "cpu.v",
+      "source_line_refs": [
+        116,
+        292,
+        390
+      ],
+      "netlist_lexical_occurrences": 0,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "sys_rst_n",
+      "width": 1,
+      "source": "board_top.sv",
+      "source_line_refs": [
+        6,
+        12,
+        14
+      ],
+      "netlist_lexical_occurrences": 9,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.timer_ticks[31:0]",
+      "width": 32,
+      "source": "soc_top.sv",
+      "source_line_refs": [
+        10,
+        12,
+        19
+      ],
+      "netlist_lexical_occurrences": 72,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.address",
+      "width": 32,
+      "source": "soc_top.sv",
+      "source_line_refs": [
+        8,
+        14,
+        17,
+        18
+      ],
+      "netlist_lexical_occurrences": 73,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.wren",
+      "width": 1,
+      "source": "soc_top.sv",
+      "source_line_refs": [
+        9,
+        14,
+        17,
+        18
+      ],
+      "netlist_lexical_occurrences": 18,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.wdata",
+      "width": 32,
+      "source": "soc_top.sv",
+      "source_line_refs": [
+        8,
+        14,
+        17,
+        18
+      ],
+      "netlist_lexical_occurrences": 1337,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.stopped",
+      "width": 1,
+      "source": "soc_top.sv",
+      "source_line_refs": [
+        5,
+        15
+      ],
+      "netlist_lexical_occurrences": 0,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.stop_kind",
+      "width": 2,
+      "source": "soc_top.sv",
+      "source_line_refs": [
+        5,
+        15
+      ],
+      "netlist_lexical_occurrences": 0,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    },
+    {
+      "logical_signal": "soc.write_error",
+      "width": 1,
+      "source": "soc_top.sv",
+      "source_line_refs": [
+        6,
+        22
+      ],
+      "netlist_lexical_occurrences": 0,
+      "lexical_occurrence_is_not_connectable_net_proof": true
+    }
+  ],
+  "logical_width": 140,
+  "depth": 1024,
+  "logical_payload_bits": 143360,
+  "DRM36_payload_lower_bound": 4,
+  "actual_placement_resources": "NOT_IMPLEMENTED",
+  "logical_sample_clock_Hz": 27000000,
+  "selectable_clock_net": "MUST_RESOLVE_VALID_INTERNAL_CLOCK_IN_INSERTER_NOT_BLIND_TOP_PORT",
+  "sample_edge": "rising; physical sample phase/delay requires calibration",
+  "window_us": 37.925925925925924,
+  "mode": "single window, All Data, no qualification filter or multi-window initially",
+  "clock_port": "not counted as data",
+  "EX_definition": "id_valid && pipeline_advance && !eei_hold; not retirement",
+  "trigger_ranges": [
+    {
+      "function": "core_bench_list",
+      "start": "0x00000530",
+      "end_exclusive": "0x00000844",
+      "EX": 521008
+    },
+    {
+      "function": "matrix_mul_matrix",
+      "start": "0x000016e0",
+      "end_exclusive": "0x000017f0",
+      "EX": 216288
+    },
+    {
+      "function": "core_state_transition",
+      "start": "0x00001ee0",
+      "end_exclusive": "0x000021c8",
+      "EX": 537536
+    },
+    {
+      "function": "core_bench_matrix",
+      "start": "0x00001d54",
+      "end_exclusive": "0x00001d98",
+      "EX": 544
+    },
+    {
+      "function": "__mulsi3",
+      "start": "0x00003520",
+      "end_exclusive": "0x00003544",
+      "EX": 3459392
+    },
+    {
+      "function": "matrix_mul_matrix_bitextract",
+      "start": "0x000017f0",
+      "end_exclusive": "0x00001918",
+      "EX": 356256
+    }
+  ],
+  "limitations": [
+    "Actual insertable net mapping requires new approved PDS scope",
+    "Optimized signals may need separately approved nonfunctional preservation metadata",
+    "No FIC/debug bitstream/capture exists",
+    "No sampled raw result or physical timing calibration",
+    "Remote PCIe DMA integration requirements and actual device unknown"
+  ]
+}

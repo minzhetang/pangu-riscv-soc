@@ -1,0 +1,22 @@
+[
+  {
+    "name": "remote_manual",
+    "url": "https://szlogicmatrix.com/wp-content/uploads/2026/03/FPGA%E8%BF%9C%E7%A8%8B%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C-%E5%BC%80%E5%8F%91%E8%80%85%E7%89%88-4.pdf",
+    "cap_bytes": 8388608,
+    "timeout_seconds": 20,
+    "status": "ACCESS_FAILED",
+    "error_type": "URLError",
+    "error": "<urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>",
+    "elapsed_seconds": 0.046
+  },
+  {
+    "name": "portal",
+    "url": "http://www.logicmatrixsemi.com:5174/",
+    "cap_bytes": 8388608,
+    "timeout_seconds": 20,
+    "status": "ACCESS_FAILED",
+    "error_type": "URLError",
+    "error": "<urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>",
+    "elapsed_seconds": 0.016
+  }
+]

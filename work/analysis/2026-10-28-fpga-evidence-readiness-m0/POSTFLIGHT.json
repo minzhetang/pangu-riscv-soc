@@ -1,0 +1,15 @@
+{
+  "status": "READONLY_ANALYSIS_COMPLETE",
+  "protected_files": 45,
+  "unchanged": true,
+  "analysis_seconds": 0.109,
+  "new_PDS": 0,
+  "new_DUT": 0,
+  "new_C": 0,
+  "new_sim_compile": 0,
+  "hardware": "STOPPED",
+  "new_accounts": 0,
+  "uploads": 0,
+  "external_messages": 0,
+  "limitations": "No hardware readiness or timing/performance approval inferred"
+}

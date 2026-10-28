@@ -1,0 +1,30 @@
+[
+  {
+    "name": "remote_manual",
+    "url": "https://szlogicmatrix.com/wp-content/uploads/2026/03/FPGA%E8%BF%9C%E7%A8%8B%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C-%E5%BC%80%E5%8F%91%E8%80%85%E7%89%88-4.pdf",
+    "cap_bytes": 8388608,
+    "timeout_seconds": 20,
+    "http_status": 200,
+    "final_url": "https://szlogicmatrix.com/wp-content/uploads/2026/03/FPGA%E8%BF%9C%E7%A8%8B%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C-%E5%BC%80%E5%8F%91%E8%80%85%E7%89%88-4.pdf",
+    "content_type": "application/pdf",
+    "bytes": 3187357,
+    "SHA256": "05FE830148F5638E0A6986938BE06DA916E700F283B28BA9ECA253A82620FDD0",
+    "saved": "remote_lab_developer_manual.pdf",
+    "elapsed_seconds": 3.953
+  },
+  {
+    "name": "portal",
+    "url": "http://www.logicmatrixsemi.com:5174/",
+    "cap_bytes": 8388608,
+    "timeout_seconds": 20,
+    "http_status": 200,
+    "final_url": "http://www.logicmatrixsemi.com:5174/",
+    "content_type": "text/html",
+    "bytes": 1517,
+    "SHA256": "50F4CC9957CA5469736C3499378F874F46514B6C66CBD5C1B81874923D88CF4E",
+    "title": "FPGA LAB · 远程 FPGA 实验平台",
+    "html_shell_only": true,
+    "JS_executed": false,
+    "elapsed_seconds": 1.672
+  }
+]

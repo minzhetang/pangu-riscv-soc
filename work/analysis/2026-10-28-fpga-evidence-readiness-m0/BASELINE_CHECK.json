@@ -1,0 +1,14 @@
+{
+  "functional_source13_matches_F163_and_F160": true,
+  "bitstream": {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\generate_bitstream\\board_top.sbit",
+    "bytes": 3791112,
+    "SHA256": "F548BC8BAA3DDFB5E2EB3158AE108F5A9DFCE7FE6C08919DB8DB245187C8D7A4"
+  },
+  "new_PDS": 0,
+  "new_DUT": 0,
+  "new_sim_compile": 0,
+  "new_C": 0,
+  "hardware": "STOPPED",
+  "license": "LAST_CHECKOUT_2026-10-27_PROMPT_7_DAYS_NOT_RECHECKED_TODAY"
+}
