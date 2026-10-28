@@ -1,0 +1,11 @@
+{
+  "status": "OPEN_NO_CONSTRAINT_OR_RTL_CHANGE",
+  "Place2028": 1,
+  "Route2036": 3,
+  "source": "Tool-inserted SCANCHAIN/TCK1/CAPTUREDR/drck clock paths; not new user FDC edits",
+  "physical_clock_warning_waived": false,
+  "native_timing_summary": "All Constraints Met under declared clocks; not a physical JTAG/CDC validation",
+  "generated_dedicated_route_false_attribute_observed": true,
+  "generated_attribute_not_user_edit": true,
+  "next": "Read-only investigate documented debug-clock routing and actual source connectivity before any implementation acceptance or hardware stage"
+}

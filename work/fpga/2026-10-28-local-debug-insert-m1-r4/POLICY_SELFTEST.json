@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "name": "startup_main_absent",
+      "expected": "WAIT_ROLE",
+      "actual": "WAIT_ROLE",
+      "PASS": true
+    },
+    {
+      "name": "reminder_before_main",
+      "expected": "WAIT_REMINDER",
+      "actual": "WAIT_REMINDER",
+      "PASS": true
+    },
+    {
+      "name": "reminder_over_main_blocks_typing",
+      "expected": "WAIT_REMINDER",
+      "actual": "WAIT_REMINDER",
+      "PASS": true
+    },
+    {
+      "name": "main_after_reminder",
+      "expected": "EXECUTE",
+      "actual": "EXECUTE",
+      "PASS": true
+    },
+    {
+      "name": "save_title_change_same_role",
+      "expected": "EXECUTE",
+      "actual": "EXECUTE",
+      "PASS": true
+    },
+    {
+      "name": "duplicate_main",
+      "expected": "STOP_AMBIGUOUS_ROLE",
+      "actual": "STOP_AMBIGUOUS_ROLE",
+      "PASS": true
+    },
+    {
+      "name": "unknown_dialog",
+      "expected": "STOP_UNKNOWN_DIALOG",
+      "actual": "STOP_UNKNOWN_DIALOG",
+      "PASS": true
+    },
+    {
+      "name": "minimized_prevents_typing",
+      "expected": "WAIT_RESTORE",
+      "actual": "WAIT_RESTORE",
+      "PASS": true
+    },
+    {
+      "name": "resized_prevents_typing",
+      "expected": "STOP_GEOMETRY_CHANGED",
+      "actual": "STOP_GEOMETRY_CHANGED",
+      "PASS": true
+    },
+    {
+      "name": "restore_allowed_minimized",
+      "expected": "EXECUTE",
+      "actual": "EXECUTE",
+      "PASS": true
+    },
+    {
+      "name": "reminder_capture_explicit",
+      "expected": "EXECUTE",
+      "actual": "EXECUTE",
+      "PASS": true
+    },
+    {
+      "name": "reminder_click_exact_geometry",
+      "expected": "EXECUTE",
+      "actual": "EXECUTE",
+      "PASS": true
+    },
+    {
+      "name": "reminder_wrong_geometry",
+      "expected": "STOP_GEOMETRY_CHANGED",
+      "actual": "STOP_GEOMETRY_CHANGED",
+      "PASS": true
+    }
+  ],
+  "startup_sequence": [
+    "WAIT_ROLE",
+    "WAIT_REMINDER",
+    "EXECUTE"
+  ],
+  "scope": "PURE_HOST_SYNTHETIC_METADATA_NOT_GUI_OR_DUT"
+}

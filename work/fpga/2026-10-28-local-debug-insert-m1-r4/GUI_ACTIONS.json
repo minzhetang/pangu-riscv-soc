@@ -1,0 +1,140 @@
+[
+  {
+    "command": "01.json",
+    "operation": {
+      "op": "restore",
+      "role": "main"
+    },
+    "elapsed_seconds": 19.406000000075437,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+  },
+  {
+    "command": "02.json",
+    "operation": {
+      "op": "capture",
+      "role": "main"
+    },
+    "elapsed_seconds": 19.71799999999348,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+  },
+  {
+    "command": "03.json",
+    "operation": {
+      "op": "click",
+      "role": "main",
+      "x": 150,
+      "y": 900,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 30.359000000054948,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+  },
+  {
+    "command": "04.json",
+    "operation": {
+      "op": "source",
+      "role": "main",
+      "script": "gui-probe.tcl",
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 30.75,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 (on [HOST_REDACTED])"
+  },
+  {
+    "command": "05.json",
+    "operation": {
+      "op": "source",
+      "role": "main",
+      "script": "gui-connect.tcl",
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 130.21799999999348,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 - D:/A_FPGA_Comp/work/fpga/2026-10-28-local-debug-insert-m1-r4/debug.fic (on [HOST_REDACTED])"
+  },
+  {
+    "command": "06.json",
+    "operation": {
+      "op": "capture",
+      "role": "main"
+    },
+    "elapsed_seconds": 159.9529999999795,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 - D:/A_FPGA_Comp/work/fpga/2026-10-28-local-debug-insert-m1-r4/debug.fic (on [HOST_REDACTED])"
+  },
+  {
+    "command": "07.json",
+    "operation": {
+      "op": "click",
+      "role": "main",
+      "x": 100,
+      "y": 142,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 175.39000000001397,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 - D:/A_FPGA_Comp/work/fpga/2026-10-28-local-debug-insert-m1-r4/debug.fic (on [HOST_REDACTED])"
+  },
+  {
+    "command": "08.json",
+    "operation": {
+      "op": "capture",
+      "role": "main"
+    },
+    "elapsed_seconds": 175.68700000003446,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 - D:/A_FPGA_Comp/work/fpga/2026-10-28-local-debug-insert-m1-r4/debug.fic (on [HOST_REDACTED])"
+  },
+  {
+    "command": "09.json",
+    "operation": {
+      "op": "click",
+      "role": "main",
+      "x": 474,
+      "y": 135,
+      "expected_client_size": [
+        1707,
+        996
+      ]
+    },
+    "elapsed_seconds": 204.0779999999795,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 - D:/A_FPGA_Comp/work/fpga/2026-10-28-local-debug-insert-m1-r4/debug.fic (on [HOST_REDACTED])"
+  },
+  {
+    "command": "10.json",
+    "operation": {
+      "op": "capture",
+      "role": "main"
+    },
+    "elapsed_seconds": 204.375,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 - D:/A_FPGA_Comp/work/fpga/2026-10-28-local-debug-insert-m1-r4/debug.fic (on [HOST_REDACTED])"
+  },
+  {
+    "command": "11.json",
+    "operation": {
+      "op": "close",
+      "role": "main"
+    },
+    "elapsed_seconds": 275.4679999999935,
+    "stable_role": "main",
+    "window_title": "Fabric Inserter 2022.2-SP6.4 - D:/A_FPGA_Comp/work/fpga/2026-10-28-local-debug-insert-m1-r4/debug.fic (on [HOST_REDACTED])"
+  }
+]

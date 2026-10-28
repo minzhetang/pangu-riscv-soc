@@ -1,0 +1,13 @@
+{
+  "date_client": "2026-10-28",
+  "decision": "D179",
+  "scope_version": "1.4.0",
+  "scope_SHA256": "133BA9BB7BA890EE3DFD792B486DCFCA6899092D25BA62335C22676634DA9484",
+  "user_reply": "批准",
+  "PDS_entries": 2,
+  "pre_seconds": 180,
+  "build_seconds": 1800,
+  "GUI_launches": 1,
+  "GUI_seconds": 600,
+  "hardware": "STOPPED"
+}

@@ -1,0 +1,26 @@
+{
+  "protected_original_entries": 148,
+  "protected_unchanged": true,
+  "frozen_files": {
+    "pre": 52,
+    "build": 54
+  },
+  "frozen_unchanged": true,
+  "scope_version": "1.4.0",
+  "PDS_entries": 2,
+  "PDS_rc": [
+    0,
+    0
+  ],
+  "PDS_seconds": [
+    18.719,
+    105.078
+  ],
+  "GUI_entries": 1,
+  "GUI_rc": 0,
+  "GUI_seconds": 275.8279999999795,
+  "stage_seconds": 1145.125,
+  "extra_native_queries": 0,
+  "new_DUT": 0,
+  "hardware": "STOPPED"
+}

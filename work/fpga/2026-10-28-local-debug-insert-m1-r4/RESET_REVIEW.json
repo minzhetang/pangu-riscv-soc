@@ -1,0 +1,24 @@
+{
+  "status": "OPTIONAL_USER_RESET_PORT_DISABLED_SUPPORTED_DEFAULT_NOT_BOARD_RESET_CONNECTED",
+  "source": "D:\\PDS\\PDS_2022.2-SP6.4\\doc\\Fabric_Inserter_User_Guide.pdf",
+  "SHA256": "342EE254307F436E63D2D0C17173313DBEB9D04DE9F77458F532F46634422423",
+  "version": "V1.0 / 2022.07.12",
+  "PDF_pages_visually_checked": [
+    13,
+    39
+  ],
+  "source_facts": [
+    "Reset Port optional; example does not use it",
+    "Use Reset Port defaults disabled; hidden when disabled"
+  ],
+  "actual_FIC_reset_channel": null,
+  "requested_command_was_not_persisted": true,
+  "sys_rst_n_data_channel": 38,
+  "generated_core_reset_nets_present": [
+    "u_CORES/u_debug_core_0/conf_rst",
+    "u_CORES/u_debug_core_0/resetn"
+  ],
+  "independent_internal_reset_fanin_verified": false,
+  "board_key_resets_ILA_state": "NOT_VERIFIED_NOT_CLAIMED",
+  "no_preference_or_RTL_change": true
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS_COMPLETE_NORMALIZED_VM_EQUAL",
+  "pre_SHA256": "5DBFAA18582B3225FDD4354C2723FA8E9643108F365EEF11A07432E5E97A975E",
+  "build_SHA256": "5DBFAA18582B3225FDD4354C2723FA8E9643108F365EEF11A07432E5E97A975E",
+  "normalization": [
+    "exact pre/build phase root paths",
+    "generated date line"
+  ],
+  "not_postmap_formal_equivalence": true
+}

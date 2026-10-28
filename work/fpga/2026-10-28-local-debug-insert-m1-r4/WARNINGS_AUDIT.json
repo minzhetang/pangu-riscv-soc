@@ -1,0 +1,45 @@
+{
+  "status": "STOP_FINAL_ACCEPTANCE_NEW_CRITICAL_CLOCK_ROUTING_WARNINGS",
+  "critical": [
+    "C: Place-2028: GLOBAL_CLOCK: the driver u_CORES/u_GTP_SCANCHAIN_PG/scanchain fixed at SCANCHAIN_88_312 is unreasonable. Sub-optimal placement for a clock source and a clock buffer.",
+    "C: Route-2036: The clock path from u_CORES/u_GTP_SCANCHAIN_PG/scanchain:TCK1 to clkbufg_4/gopclkbufg:CLK is routed by SRB.",
+    "C: Route-2036: The clock path from u_CORES/u_GTP_SCANCHAIN_PG/scanchain:CAPTUREDR to u_CORES/u_debug_core_0/u_hub_data_decode/id_sample.conf_id[1]/opit_0_inv:CLK is routed by SRB.",
+    "C: Route-2036: The clock path from clkbufg_4/gopclkbufg:CLKOUT to u_CORES/u_debug_core_0/u0_trig_unit/conf_reg[188]/opit_0_inv_L6QL5Q:CLK is routed by SRB."
+  ],
+  "baseline_critical": [],
+  "critical_new": 4,
+  "warnings": {
+    "W: Verilog-2008": 2,
+    "W: Sdm-2000": 32,
+    "W: Loop was found during constant probe.": 7,
+    "W: Public-4008": 49,
+    "W: Removed bmsWIDEDFFCPE inst soc/cpu_core/id_alu_ctrl[4": 1,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/sync_meta[7": 4,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/gpio_in_sync[7": 4,
+    "W: Timing-4087": 18,
+    "W: Timing-4086": 10
+  },
+  "baseline_warnings": {
+    "W: Verilog-2008": 2,
+    "W: Sdm-2000": 32,
+    "W: Loop was found during constant probe.": 7,
+    "W: Public-4008": 14,
+    "W: Removed bmsWIDEDFFCPE inst soc/cpu_core/id_alu_ctrl[4": 1,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/sync_meta[7": 4,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/gpio_in_sync[7": 4,
+    "W: Timing-4087": 18,
+    "W: Timing-4086": 10
+  },
+  "additional_warning_counts": {
+    "W: Public-4008": 35
+  },
+  "constant_probe": 7,
+  "license_actual_days": [
+    6
+  ],
+  "SCBV": "High Voltage / unchanged engineering assumption",
+  "physical_voltage_verified": false,
+  "Bitstream_2001_absent": true,
+  "generated_attribute": "u_CORES/drck_o PAP_CLOCK_DEDICATED_ROUTE=FALSE",
+  "warnings_not_waived": true
+}

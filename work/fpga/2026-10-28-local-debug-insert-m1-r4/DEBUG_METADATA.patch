@@ -1,0 +1,46 @@
+--- source-before/board_top.sv
++++ source/board_top.sv
+@@ -5,8 +5,8 @@
+                  output wire uart_tx, output wire [7:0] led);
+     wire sys_rst_n;
+     wire [7:0] gpio_keys = {4'b0000, ~key_n[4:1]};
+-    wire stopped, write_error;
+-    wire [1:0] stop_kind;
++    wire stopped /* synthesis PAP_MARK_DEBUG="true" */, write_error /* synthesis PAP_MARK_DEBUG="true" */;
++    wire [1:0] stop_kind /* synthesis PAP_MARK_DEBUG="true" */;
+     wire [31:0] stop_pc;
+     board_reset_sync reset_sync(.clk(clk), .key0_n(key_n[0]),
+                                 .sys_rst_n(sys_rst_n));
+--- source-before/cpu.v
++++ source/cpu.v
+@@ -58,7 +58,7 @@
+     localparam EEI_RUN=2'd0, EEI_DRAIN=2'd1, EEI_STOP=2'd2;
+     reg [1:0] eei_state;
+     wire eei_detect = (eei_state == EEI_RUN) && id_valid && (id_system_kind != 0);
+-    wire eei_hold = (eei_state != EEI_RUN) || eei_detect;
++    wire eei_hold /* synthesis PAP_MARK_DEBUG="true" */ = (eei_state != EEI_RUN) || eei_detect;
+     always @(posedge clk or negedge rst_n) begin
+         if (!rst_n) begin
+             if_valid<=0; id_valid<=0; ex_valid<=0; mem_valid<=0;
+@@ -113,7 +113,7 @@
+     wire [31:0] pc_next;
+ 
+     // 冒险控制信号
+-    wire        branch_taken;
++    wire        branch_taken /* synthesis PAP_MARK_DEBUG="true" */;
+     wire [31:0] branch_target;
+     wire [31:0] jump_target;
+ 
+--- source-before/soc_top.sv
++++ source/soc_top.sv
+@@ -5,8 +5,8 @@
+     output wire stopped,output wire [1:0] stop_kind,output wire [31:0] stop_pc,
+     output wire write_error
+ );
+-    wire [31:0] pc,inst,address,wdata,rdata,mem_rdata,io_rdata,io_wdata;
+-    wire wren,ram_we,io_sel,io_we,io_error,invalid_write;
++    wire [31:0] pc,inst,address /* synthesis PAP_MARK_DEBUG="true" */,wdata,rdata,mem_rdata,io_rdata,io_wdata;
++    wire wren /* synthesis PAP_MARK_DEBUG="true" */,ram_we,io_sel,io_we,io_error,invalid_write;
+     wire [63:0] timer_ticks;
+     wire [3:0] wstrb,ram_strobe,io_strobe;wire [7:0] io_addr;
+     cycle_counter64 timer(.clk(clk),.rst_n(rst_n),.ticks(timer_ticks));

@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "exit_ok": false,
+      "hashes_verified": false,
+      "unused": false,
+      "allowed": false
+    },
+    {
+      "exit_ok": false,
+      "hashes_verified": false,
+      "unused": true,
+      "allowed": false
+    },
+    {
+      "exit_ok": false,
+      "hashes_verified": true,
+      "unused": false,
+      "allowed": false
+    },
+    {
+      "exit_ok": false,
+      "hashes_verified": true,
+      "unused": true,
+      "allowed": false
+    },
+    {
+      "exit_ok": true,
+      "hashes_verified": false,
+      "unused": false,
+      "allowed": false
+    },
+    {
+      "exit_ok": true,
+      "hashes_verified": false,
+      "unused": true,
+      "allowed": false
+    },
+    {
+      "exit_ok": true,
+      "hashes_verified": true,
+      "unused": false,
+      "allowed": false
+    },
+    {
+      "exit_ok": true,
+      "hashes_verified": true,
+      "unused": true,
+      "allowed": true
+    }
+  ],
+  "native_runs": 0
+}

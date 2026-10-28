@@ -1,0 +1,20 @@
+{
+  "status": "PASS_FULL_140_CONNECTIONS",
+  "FIC_SHA256": "B4799B1A379A6D023E8B2A5AC19A283D48EF5484A3773A774F60F8F214CB8CFF",
+  "FIC_bytes": 8977,
+  "ordered_data_bits": 140,
+  "unit_count": 1,
+  "clock": "nt_clk buffered physical clk",
+  "clock_edge": "Rising",
+  "depth": 1024,
+  "filter": false,
+  "multi_window": false,
+  "all_data": true,
+  "device_source": "PRE PDS set_arch Logos2 PG2L100H/-6/FBG676; GUI target visually matched",
+  "requested_reset": "sys_rst_n",
+  "reset_serialized": false,
+  "reset_status": "COMMAND_ACCEPTED_BUT_NO_RESET_CHANNEL_IN_SAVED_FIC; GENERATED_CORE_RESET_AUDIT_PENDING",
+  "sys_rst_n_observed_data_channel": 38,
+  "native_GUI_exit": 0,
+  "not_hardware_capture": true
+}

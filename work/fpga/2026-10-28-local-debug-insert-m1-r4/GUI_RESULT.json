@@ -1,0 +1,9 @@
+{
+  "reason": "PROCESS_EXIT",
+  "error": null,
+  "rc": 0,
+  "seconds": 275.8279999999795,
+  "root_exited": true,
+  "remaining_own_windows": [],
+  "hardware": "STOPPED"
+}

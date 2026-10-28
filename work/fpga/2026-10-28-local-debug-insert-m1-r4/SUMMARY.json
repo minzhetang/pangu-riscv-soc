@@ -1,0 +1,53 @@
+{
+  "date_client": "2026-10-28",
+  "fact": "F171",
+  "approval": "D179",
+  "result_decision": "D180",
+  "stage": "A-LOCAL-DEBUG-INSERT-M1-R4",
+  "status": "DEBUG_BITSTREAM_GENERATED_CANDIDATE_NOT_FINAL_ACCEPTANCE",
+  "bitstream": {
+    "path": "build/generate_bitstream/board_top.sbit",
+    "bytes": 3791112,
+    "SHA256": "139DD52013B6C3A9ADA50B92D72F1479ED488DE2C70D024284A27AEC573EFC03",
+    "mtime_epoch": 1793196053.5068426
+  },
+  "FIC": {
+    "path": "debug.fic",
+    "SHA256": "B4799B1A379A6D023E8B2A5AC19A283D48EF5484A3773A774F60F8F214CB8CFF",
+    "data_channels": 140,
+    "depth": 1024,
+    "clock": "nt_clk physical rising",
+    "filter": false,
+    "multi_window": false
+  },
+  "clock27": "PASS_REPORTED_INTERNAL_TIMING",
+  "minimum_setup_ns": 24.876,
+  "minimum_hold_ns": 0.113,
+  "resources": {
+    "LUT": 2931,
+    "FF": 3838,
+    "DRM36": 18,
+    "DRM18": 36,
+    "IO": 15
+  },
+  "resource_delta": {
+    "LUT": 1126,
+    "FF": 2319,
+    "DRM36": 4,
+    "DRM18": 8,
+    "IO": 0
+  },
+  "functional_INIT_same": 1792,
+  "critical_open": 4,
+  "constant_probe_open": 7,
+  "new_Public4008": 37,
+  "optional_user_reset_port": "DISABLED_DOCUMENTED_DEFAULT; NOT_BOARD_RESET_CONNECTED; sys_rst_n observed channel38",
+  "CPU_functional_changes": 0,
+  "source_comments": 7,
+  "new_DUT": 0,
+  "license_actual_days": [
+    6
+  ],
+  "hardware": "STOPPED",
+  "next": "Read-only review of four tool-generated debug/JTAG clock critical warnings; no automatic rebuild/hardware clearance"
+}

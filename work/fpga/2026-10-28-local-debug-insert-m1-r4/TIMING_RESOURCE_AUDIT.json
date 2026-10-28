@@ -1,0 +1,431 @@
+{
+  "status": "DECLARED_INTERNAL_CLOCKS_PASS_WITH_PHYSICAL_REVIEW_GATES",
+  "tool": "PDS2022.2-SP6.4 build146967",
+  "target": "PG2L100H-6IFBG676",
+  "timing": {
+    "setup_slow": {
+      "type": "setup",
+      "corner": "slow",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 24.876,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 7160
+    },
+    "hold_slow": {
+      "type": "hold",
+      "corner": "slow",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 0.158,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 7160
+    },
+    "recovery_slow": {
+      "type": "recovery",
+      "corner": "slow",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 33.099,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 1182
+    },
+    "removal_slow": {
+      "type": "removal",
+      "corner": "slow",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 0.352,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 1182
+    },
+    "setup_fast": {
+      "type": "setup",
+      "corner": "fast",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 29.752,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 7160
+    },
+    "hold_fast": {
+      "type": "hold",
+      "corner": "fast",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 0.113,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 7160
+    },
+    "recovery_fast": {
+      "type": "recovery",
+      "corner": "fast",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 34.48,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 1182
+    },
+    "removal_fast": {
+      "type": "removal",
+      "corner": "fast",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 0.249,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 1182
+    }
+  },
+  "all_reported_rows": [
+    {
+      "type": "setup",
+      "corner": "slow",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 24.876,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 7160
+    },
+    {
+      "type": "setup",
+      "corner": "slow",
+      "launch": "DebugCore_JCLK",
+      "capture": "DebugCore_JCLK",
+      "slack_ns": 23.754,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 1133
+    },
+    {
+      "type": "setup",
+      "corner": "slow",
+      "launch": "DebugCore_CAPTURE",
+      "capture": "DebugCore_JCLK",
+      "slack_ns": 20.033,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 87
+    },
+    {
+      "type": "setup",
+      "corner": "slow",
+      "launch": "DebugCore_JCLK",
+      "capture": "DebugCore_CAPTURE",
+      "slack_ns": 45.725,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 16
+    },
+    {
+      "type": "hold",
+      "corner": "slow",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 0.158,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 7160
+    },
+    {
+      "type": "hold",
+      "corner": "slow",
+      "launch": "DebugCore_JCLK",
+      "capture": "DebugCore_JCLK",
+      "slack_ns": 0.354,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 1133
+    },
+    {
+      "type": "hold",
+      "corner": "slow",
+      "launch": "DebugCore_CAPTURE",
+      "capture": "DebugCore_JCLK",
+      "slack_ns": 21.694,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 87
+    },
+    {
+      "type": "hold",
+      "corner": "slow",
+      "launch": "DebugCore_JCLK",
+      "capture": "DebugCore_CAPTURE",
+      "slack_ns": 1.784,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 16
+    },
+    {
+      "type": "recovery",
+      "corner": "slow",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 33.099,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 1182
+    },
+    {
+      "type": "removal",
+      "corner": "slow",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 0.352,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 1182
+    },
+    {
+      "type": "setup",
+      "corner": "fast",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 29.752,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 7160
+    },
+    {
+      "type": "setup",
+      "corner": "fast",
+      "launch": "DebugCore_JCLK",
+      "capture": "DebugCore_JCLK",
+      "slack_ns": 24.371,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 1133
+    },
+    {
+      "type": "setup",
+      "corner": "fast",
+      "launch": "DebugCore_CAPTURE",
+      "capture": "DebugCore_JCLK",
+      "slack_ns": 22.098,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 87
+    },
+    {
+      "type": "setup",
+      "corner": "fast",
+      "launch": "DebugCore_JCLK",
+      "capture": "DebugCore_CAPTURE",
+      "slack_ns": 47.123,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 16
+    },
+    {
+      "type": "hold",
+      "corner": "fast",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 0.113,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 7160
+    },
+    {
+      "type": "hold",
+      "corner": "fast",
+      "launch": "DebugCore_JCLK",
+      "capture": "DebugCore_JCLK",
+      "slack_ns": 0.252,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 1133
+    },
+    {
+      "type": "hold",
+      "corner": "fast",
+      "launch": "DebugCore_CAPTURE",
+      "capture": "DebugCore_JCLK",
+      "slack_ns": 23.004,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 87
+    },
+    {
+      "type": "hold",
+      "corner": "fast",
+      "launch": "DebugCore_JCLK",
+      "capture": "DebugCore_CAPTURE",
+      "slack_ns": 1.438,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 16
+    },
+    {
+      "type": "recovery",
+      "corner": "fast",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 34.48,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 1182
+    },
+    {
+      "type": "removal",
+      "corner": "fast",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 0.249,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 1182
+    }
+  ],
+  "resources": {
+    "LUT": 2931,
+    "FF": 3838,
+    "DRM36": 18,
+    "DRM18": 36,
+    "IO": 15
+  },
+  "delta_vs_F163_no_debug": {
+    "LUT": 1126,
+    "FF": 2319,
+    "DRM36": 4,
+    "DRM18": 8,
+    "IO": 0
+  },
+  "pins": {
+    "clk": {
+      "direction": "input",
+      "loc": "D18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[0]": {
+      "direction": "input",
+      "loc": "C22",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[1]": {
+      "direction": "input",
+      "loc": "C23",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[2]": {
+      "direction": "input",
+      "loc": "B22",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[3]": {
+      "direction": "input",
+      "loc": "A22",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[4]": {
+      "direction": "input",
+      "loc": "B20",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[0]": {
+      "direction": "output",
+      "loc": "A20",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[1]": {
+      "direction": "output",
+      "loc": "C18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[2]": {
+      "direction": "output",
+      "loc": "C19",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[3]": {
+      "direction": "output",
+      "loc": "E18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[4]": {
+      "direction": "output",
+      "loc": "A17",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[5]": {
+      "direction": "output",
+      "loc": "A18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[6]": {
+      "direction": "output",
+      "loc": "C17",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[7]": {
+      "direction": "output",
+      "loc": "B17",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "uart_tx": {
+      "direction": "output",
+      "loc": "C24",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    }
+  },
+  "constraints": 94,
+  "unconstrained_inputs": [
+    "key_n[0]",
+    "key_n[1]",
+    "key_n[2]",
+    "key_n[3]",
+    "key_n[4]"
+  ],
+  "unconstrained_outputs": [
+    "led[0]",
+    "led[1]",
+    "led[2]",
+    "led[3]",
+    "led[4]",
+    "led[5]",
+    "led[6]",
+    "led[7]",
+    "uart_tx"
+  ],
+  "estimated_fmax_not_measured": true,
+  "physical_CDC_IO": "NOT_VALIDATED"
+}
