@@ -1,0 +1,345 @@
+{
+  "files": [
+    {
+      "path": "APPROVAL.json",
+      "bytes": 418,
+      "SHA256": "4EA3DE4FDB50D3270D18566199C12218D3D2F3B477862C14D603D8F8CBCF86DC"
+    },
+    {
+      "path": "close_stop.py",
+      "bytes": 5787,
+      "SHA256": "5833575A55B626CB1A6F7AAF84563FD5000D66A288B602851CA922894BF57C5E"
+    },
+    {
+      "path": "COMMANDS.md",
+      "bytes": 1513,
+      "SHA256": "7F02AF3E6286122295617883E575C382A456BB34386F308A5A4B0E809341DBE3"
+    },
+    {
+      "path": "COUNTERS.json",
+      "bytes": 76,
+      "SHA256": "9DB7918446F06AECFE60CA070AF8FE1490B9AAD04E258BE21940E29D108D2457"
+    },
+    {
+      "path": "firmware/program.bin",
+      "bytes": 15912,
+      "SHA256": "EC365839FEA1111CB365763322E2FA99C3C3B3F6B74A5884C5B0EB30593486F0"
+    },
+    {
+      "path": "firmware/program.elf",
+      "bytes": 26168,
+      "SHA256": "90E06A11E410E36FCDE16570BDA9BE6C4A57800D94FE4AA84B17FC2BE4224638"
+    },
+    {
+      "path": "host_supervisor.py",
+      "bytes": 5929,
+      "SHA256": "857423157DBEAA5A3B6CE2741DC0D3988CD767B7D0261BD50C6E9235CEBA55B9"
+    },
+    {
+      "path": "ins-input/board_top_syn.adf",
+      "bytes": 556376,
+      "SHA256": "038B6D9CE26C68DC5358552075CB4223165F82A40425DE4E1D2B72B114FCD308"
+    },
+    {
+      "path": "logs/inserter-probe-01/process.json",
+      "bytes": 1379,
+      "SHA256": "1D8E926D148491BE3A1774F88EEDF00F19A98CAEC031BE22C1A778E8E081D1FA"
+    },
+    {
+      "path": "logs/inserter-probe-01/stderr.log",
+      "bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "logs/inserter-probe-01/stdout.log",
+      "bytes": 194,
+      "SHA256": "35D4585D90D868C3DC1E396415C2C493B7AD0147E4BBA9976D71C142BEA39D07"
+    },
+    {
+      "path": "NATIVE_START_01.json",
+      "bytes": 428,
+      "SHA256": "AA5065F56A73B4E0AA0A01091F1A283226009DC4A9E03BE4C1FCA4BAD02B49DC"
+    },
+    {
+      "path": "pds/board_pins.fdc",
+      "bytes": 4863,
+      "SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1"
+    },
+    {
+      "path": "pds/clock_27mhz.fdc",
+      "bytes": 101,
+      "SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F"
+    },
+    {
+      "path": "pds/source/alu.v",
+      "bytes": 1021,
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "pds/source/board_reset_sync.sv",
+      "bytes": 504,
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "pds/source/board_top.sv",
+      "bytes": 817,
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "pds/source/control.v",
+      "bytes": 2988,
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "pds/source/cpu.v",
+      "bytes": 17416,
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "pds/source/cycle_counter64.sv",
+      "bytes": 395,
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "pds/source/gpio_core.v",
+      "bytes": 2087,
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "pds/source/local_regif_txgpio_m1.v",
+      "bytes": 3732,
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "pds/source/memory_model.sv",
+      "bytes": 142231,
+      "SHA256": "BDBADBF190038B6950FE0DBEE3029BE2A78C83FC1B4D0D3358351DCDA6E912FE"
+    },
+    {
+      "path": "pds/source/regfile.v",
+      "bytes": 666,
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "pds/source/soc_data_adapter.sv",
+      "bytes": 1526,
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "pds/source/soc_top.sv",
+      "bytes": 1872,
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "pds/source/uart_tx.v",
+      "bytes": 5195,
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "PREPARATION.json",
+      "bytes": 162,
+      "SHA256": "6512F184E6F836F1E5B5A9663EC946D9669DC27BBA8BE4FEE31FE8CA28C4D089"
+    },
+    {
+      "path": "PREPARATION_ERROR.json",
+      "bytes": 726,
+      "SHA256": "A565EAD744E3DA92006FFCA1CD92A2F0601A505B6B49FAA6EC01395DCD7EB3E1"
+    },
+    {
+      "path": "PROBE_ATTEMPT.json",
+      "bytes": 382,
+      "SHA256": "DADEA3B2EA4FECCDBA0D095A726AE9D505FCF1F3AF5FBE35011E29043A542B34"
+    },
+    {
+      "path": "PROBE_FROZEN_INPUTS.json",
+      "bytes": 705,
+      "SHA256": "22A10C3E419EE0F0367B9A0D065538A4DF9EBE73DEDCDD495ECA477EE904E6F3"
+    },
+    {
+      "path": "PROBE_RESULT.json",
+      "bytes": 353,
+      "SHA256": "4F313B2424AD559E9A404D7F98DC32DB40F3D8BF14F823F1467FC4A76C9A4DDE"
+    },
+    {
+      "path": "PROBE_RESULT_V2.json",
+      "bytes": 260,
+      "SHA256": "689D6EEB3F93155BCBA416939A464A7BA6B0ADA3CA21C683F53763B3CB9CE203"
+    },
+    {
+      "path": "PROTECTED_ORIGINALS.json",
+      "bytes": 10646,
+      "SHA256": "E9C05B1980FE7B21C53C592E5879B9FBC45EA2201B98A3D18F1D269453797B9B"
+    },
+    {
+      "path": "run_probe.py",
+      "bytes": 2473,
+      "SHA256": "5917E641B683105436D57672F2F72C0DE51572C80B0F7219C9D3004BA6C47F6C"
+    },
+    {
+      "path": "run_probe_v2.py",
+      "bytes": 2254,
+      "SHA256": "39E56F160F7BD22AE90AE0F77EF25DC017FD6DE7815E1B6C4C67159D3D0743E2"
+    },
+    {
+      "path": "RUNNER_CHANGE.json",
+      "bytes": 280,
+      "SHA256": "D1C1EA134F219F7C2C6C77C7DD6DFB7C3D37AED538B6BAF45D5686BA507C00D1"
+    },
+    {
+      "path": "scripts/probe.tcl",
+      "bytes": 441,
+      "SHA256": "F4FEAEFB3B6325516ACA86EC42BB7B14F761334CBCFA208D2EF524AE13392300"
+    },
+    {
+      "path": "source/alu.v",
+      "bytes": 1021,
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "source/board_reset_sync.sv",
+      "bytes": 504,
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "source/board_top.sv",
+      "bytes": 817,
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "source/control.v",
+      "bytes": 2988,
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "source/cpu.v",
+      "bytes": 17416,
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "source/cycle_counter64.sv",
+      "bytes": 395,
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "source/gpio_core.v",
+      "bytes": 2087,
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "source/local_regif_txgpio_m1.v",
+      "bytes": 3732,
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "source/memory_model.sv",
+      "bytes": 10236,
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "source/regfile.v",
+      "bytes": 666,
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "source/soc_data_adapter.sv",
+      "bytes": 1526,
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "source/soc_top.sv",
+      "bytes": 1872,
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "source/uart_tx.v",
+      "bytes": 5195,
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "source-before/alu.v",
+      "bytes": 1021,
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "source-before/board_reset_sync.sv",
+      "bytes": 504,
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "source-before/board_top.sv",
+      "bytes": 817,
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "source-before/control.v",
+      "bytes": 2988,
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "source-before/cpu.v",
+      "bytes": 17416,
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "source-before/cycle_counter64.sv",
+      "bytes": 395,
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "source-before/gpio_core.v",
+      "bytes": 2087,
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "source-before/local_regif_txgpio_m1.v",
+      "bytes": 3732,
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "source-before/memory_model.sv",
+      "bytes": 10236,
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "source-before/regfile.v",
+      "bytes": 666,
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "source-before/soc_data_adapter.sv",
+      "bytes": 1526,
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "source-before/soc_top.sv",
+      "bytes": 1872,
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "source-before/uart_tx.v",
+      "bytes": 5195,
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "stage_budget.py",
+      "bytes": 2106,
+      "SHA256": "571DF502754003D65881778685E43CD8C65333F8FBE72FD589FE2BD94E18E2AC"
+    },
+    {
+      "path": "STAGE_CLOCK.json",
+      "bytes": 136,
+      "SHA256": "AA05575C552AEF0AF302E59425AC5027BB78CA6A9BE5EDAEA1E9AEF06C089325"
+    },
+    {
+      "path": "STATUS.json",
+      "bytes": 192,
+      "SHA256": "FDCB1563654CF3421582A74D7762712B6B1B4D8D7002B5AC59DD688062AE113E"
+    },
+    {
+      "path": "SUMMARY.json",
+      "bytes": 2236,
+      "SHA256": "A7883682A4BCCE7BF8D38B71DFC8676193612DC47BBA26AAB4093E70EB4828D6"
+    }
+  ],
+  "scope": "Local immutable evidence; vendor ADF/expanded initializer/firmware and native logs excluded from Git"
+}

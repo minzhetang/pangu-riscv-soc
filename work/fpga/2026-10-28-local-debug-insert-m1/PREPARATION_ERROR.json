@@ -1,0 +1,13 @@
+{
+  "date_client": "2026-10-28",
+  "kind": "OWN_RUNNER_PREPARATION_ERROR_BEFORE_SUBPROCESS",
+  "error": "FileNotFoundError WinError3 creating logs/inserter-probe-01; logs parent omitted",
+  "failure_location": "host_supervisor.bounded: mkdir before subprocess.Popen",
+  "actual_vendor_invocations": 0,
+  "old_PROBE_RESULT_classification_superseded": "This was not a native interface or ADF load failure",
+  "COUNTERS_json": "Preserved historical reservation/error flag; not proof a vendor process ran",
+  "correction": "Create missing parent; separate v2 resume script and actual-native start receipt; preserve original script/frozen inputs/results",
+  "clock_reset": false,
+  "native_retry": false,
+  "hardware": "STOPPED"
+}

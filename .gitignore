@@ -985,6 +985,36 @@
 !/work/analysis/2026-10-28-local-debug-preflight-m0/PREFLIGHT.json
 !/work/analysis/2026-10-28-local-debug-preflight-m0/POSTFLIGHT.json
 
+!/work/fpga/2026-10-28-local-debug-insert-m1/
+/work/fpga/2026-10-28-local-debug-insert-m1/*
+!/work/fpga/2026-10-28-local-debug-insert-m1/scripts/
+/work/fpga/2026-10-28-local-debug-insert-m1/scripts/*
+!/reports/verification/2026-10-28-local-debug-insert-m1.md
+!/work/analysis/prepare_local_debug_20261028.py
+!/work/fpga/2026-10-28-local-debug-insert-m1/APPROVAL.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/STAGE_CLOCK.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/PROTECTED_ORIGINALS.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/PREPARATION.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/RUNNER_CHANGE.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/COUNTERS.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/PROBE_FROZEN_INPUTS.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/PROBE_ATTEMPT.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/PREPARATION_ERROR.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/NATIVE_START_01.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/PROBE_RESULT.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/PROBE_RESULT_V2.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/SUMMARY.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/STATUS.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/COMMANDS.md
+!/work/fpga/2026-10-28-local-debug-insert-m1/SHA256SUMS.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/POSTFLIGHT.json
+!/work/fpga/2026-10-28-local-debug-insert-m1/host_supervisor.py
+!/work/fpga/2026-10-28-local-debug-insert-m1/stage_budget.py
+!/work/fpga/2026-10-28-local-debug-insert-m1/run_probe.py
+!/work/fpga/2026-10-28-local-debug-insert-m1/run_probe_v2.py
+!/work/fpga/2026-10-28-local-debug-insert-m1/close_stop.py
+!/work/fpga/2026-10-28-local-debug-insert-m1/scripts/probe.tcl
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

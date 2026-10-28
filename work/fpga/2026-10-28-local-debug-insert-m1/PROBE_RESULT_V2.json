@@ -1,0 +1,9 @@
+{
+  "status": "FIRST_NATIVE_INTERFACE_OR_LOAD_FAILURE_STOPPED",
+  "error_type": "RuntimeError",
+  "error": "inserter-probe-01 stopped: UNEXPECTED_GUI_VISIBLE",
+  "actual_Inserter_calls": 1,
+  "PDS_used": 0,
+  "hardware": "STOPPED",
+  "retry": false
+}

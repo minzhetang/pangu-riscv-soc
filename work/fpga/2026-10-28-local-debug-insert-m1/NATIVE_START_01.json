@@ -1,0 +1,13 @@
+{
+  "actual_Inserter_calls_reserved": 1,
+  "max_Inserter": 6,
+  "PDS_used": 0,
+  "argv": [
+    "D:/PDS/PDS_2022.2-SP6.4/bin/cdt_ins.exe",
+    "-batch",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1\\scripts\\probe.tcl"
+  ],
+  "v2_resume_SHA256": "39E56F160F7BD22AE90AE0F77EF25DC017FD6DE7815E1B6C4C67159D3D0743E2",
+  "preparation_correction": "PREPARATION_ERROR.json",
+  "hardware": "STOPPED"
+}

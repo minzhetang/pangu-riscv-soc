@@ -1,0 +1,234 @@
+{
+  "files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "bytes": 1021
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "bytes": 1021
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152",
+      "bytes": 504
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152",
+      "bytes": 504
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478",
+      "bytes": 817
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478",
+      "bytes": 817
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "bytes": 2988
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "bytes": 2988
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D",
+      "bytes": 17416
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D",
+      "bytes": 17416
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+      "bytes": 395
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+      "bytes": 395
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+      "bytes": 2087
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+      "bytes": 2087
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "bytes": 3732
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "bytes": 3732
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\memory_model.sv",
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27",
+      "bytes": 10236
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\memory_model.sv",
+      "SHA256": "BDBADBF190038B6950FE0DBEE3029BE2A78C83FC1B4D0D3358351DCDA6E912FE",
+      "bytes": 142231
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "bytes": 666
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "bytes": 666
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+      "bytes": 1526
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+      "bytes": 1526
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A",
+      "bytes": 1872
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A",
+      "bytes": 1872
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "bytes": 5195
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "bytes": 5195
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\board_pins.fdc",
+      "SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1",
+      "bytes": 4863
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\clock_27mhz.fdc",
+      "SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F",
+      "bytes": 101
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\synthesize\\board_top_syn.adf",
+      "SHA256": "038B6D9CE26C68DC5358552075CB4223165F82A40425DE4E1D2B72B114FCD308",
+      "bytes": 556376
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\firmware\\program.bin",
+      "SHA256": "EC365839FEA1111CB365763322E2FA99C3C3B3F6B74A5884C5B0EB30593486F0",
+      "bytes": 15912
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\firmware\\program.elf",
+      "SHA256": "90E06A11E410E36FCDE16570BDA9BE6C4A57800D94FE4AA84B17FC2BE4224638",
+      "bytes": 26168
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\SUMMARY.json",
+      "SHA256": "5F7A949F76EECDF0714F37D38AE801F3E7AE6476BB5E4202FFE7CD8011BC44E7",
+      "bytes": 5755
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\SOURCE_RECEIPTS.json",
+      "SHA256": "16227C32EF32E43854CC40CB9887DA94A4B8C0DA6DB8B23DF62BB4AE3886C604",
+      "bytes": 3496
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\CONFIGURATION_AUDIT.json",
+      "SHA256": "D41794D2999DC18E3B111CBD6EDFB9A66BC734DF41D364665C5CD2C96A4061F2",
+      "bytes": 494
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\TIMING_RESOURCE_AUDIT.json",
+      "SHA256": "7A1E8D77A3A6994DAA508D23DC4C8AEB42C62D396DDC5CBCBA4AB4EB7AAA4EA5",
+      "bytes": 4089
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\WARNINGS_LICENSE_AUDIT.json",
+      "SHA256": "8387781E3E1B1192EC047477A22857CF993366F2332BC3F2B09EE6E9C201C60A",
+      "bytes": 1303
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\MEMORY_INIT_AUDIT.json",
+      "SHA256": "29C52EFDB623FB231AFCA59DB54DA006E104B7B549232D4C7934ABDE71B5245F",
+      "bytes": 1799
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\INIT_RECEIPT.json",
+      "SHA256": "0D83F716709E6811C2FD2951D5398908989C87721A30AA8E08E262D8BA5E049B",
+      "bytes": 466
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\build.tcl",
+      "SHA256": "F6598E492A3C60C8D2DE1FDD92CB93CB9B78E1EEAF4CC894424C7965B64A9705",
+      "bytes": 1154
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\pds\\generate_bitstream\\board_top.sbit",
+      "SHA256": "F548BC8BAA3DDFB5E2EB3158AE108F5A9DFCE7FE6C08919DB8DB245187C8D7A4",
+      "bytes": 3791112
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\deliveries\\mainline-local-debug-insert-scope-2026-10-28-v1\\IMPLEMENTATION_SCOPE.md",
+      "SHA256": "A93E2E610278DC6C723CE257DB253F8BD425A34F657B2D74321ACA5C67550DA0",
+      "bytes": 5330
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\deliveries\\mainline-local-debug-insert-scope-2026-10-28-v1\\SCOPE_STATUS.json",
+      "SHA256": "D8CAEF0BAF6111A00568934E29D8186ADD3EF1DD9A26FFAAD3AC9F8213272C19",
+      "bytes": 502
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\cdt_ins.exe",
+      "SHA256": "B526DA86DA96B84A591F63D1E35F3B4CA50433F14DA9D136F7BF10DD50F07D94",
+      "bytes": 39455232
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\pds_shell.exe",
+      "SHA256": "631FFD8F14D6246872873C72025CBC2734C9F8C388075B7AFB0B042F3A684E6F",
+      "bytes": 43704832
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\stage_budget.py",
+      "SHA256": "571DF502754003D65881778685E43CD8C65333F8FBE72FD589FE2BD94E18E2AC",
+      "bytes": 2106
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\host_supervisor.py",
+      "SHA256": "A097345D52813BF6CA1776B11DB078E23C09A8209F02C678847EE1F2D4121BE1",
+      "bytes": 5279
+    }
+  ]
+}

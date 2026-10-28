@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "D:/PDS/PDS_2022.2-SP6.4/bin/cdt_ins.exe",
+    "-batch",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1\\scripts\\probe.tcl"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1\\ins-input",
+  "seconds": 60,
+  "GUI_expected": false,
+  "only_new_process_visible_window_guard": true,
+  "hardware": "STOPPED"
+}

@@ -1,0 +1,59 @@
+{
+  "stage": "A-LOCAL-DEBUG-INSERT-M1",
+  "date_client": "2026-10-28",
+  "approval": "D169",
+  "fact": "F166",
+  "decision_result": "D170",
+  "status": "STOPPED_AT_GUI_BOUNDARY_NO_INSERTION",
+  "actual_Inserter_CLI": 1,
+  "PDS_builds": 0,
+  "new_C": 0,
+  "new_DUT": 0,
+  "GUI": "Unexpected visible window detected, no GUI interaction performed",
+  "hardware": "STOPPED",
+  "native_process": {
+    "argv": [
+      "D:/PDS/PDS_2022.2-SP6.4/bin/cdt_ins.exe",
+      "-batch",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1\\scripts\\probe.tcl"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1\\ins-input",
+    "returncode": 1,
+    "termination": "STOPPED",
+    "error": "UNEXPECTED_GUI_VISIBLE",
+    "seconds": 1.718,
+    "child_peak_bytes": 106414080,
+    "parent_peak_bytes": 65708032,
+    "cleanup": {
+      "taskkill_rc": 255,
+      "error": null,
+      "tree_verified": "NOT_INDEPENDENTLY_ENUMERATED"
+    }
+  },
+  "preparation_error": {
+    "kind": "Missing logs parent before Popen",
+    "actual_vendor_calls": 0,
+    "retained": "PREPARATION_ERROR.json",
+    "old_counter_and_probe_classification": "Historical reservation/error; superseded by preparation diagnostic and actual native receipt"
+  },
+  "Tcl_markers_seen": [],
+  "netlist_load": "NOT_PROVEN",
+  "new_FIC": false,
+  "debug_insertion": "NOT_RUN",
+  "new_bitstream": false,
+  "debug_timing_resources": "NOT_RUN",
+  "functional_RTL_changes": [],
+  "source13_unchanged": true,
+  "protected_originals": 46,
+  "frozen_probe_inputs": 5,
+  "native_license_status": "NO_UNAMBIGUOUS_CURRENT_SUCCESS_OR_EXPIRY_PARSED",
+  "last_PDS_license_prompt": "2026-10-27: 7days; not updated by this result",
+  "window_cause": "UNDETERMINED; do not infer license failure or unsupported batch syntax",
+  "process_followup": {
+    "CIM_attempt": "ACCESS_DENIED",
+    "Get_Process_filtered_cdt_ins_count": 0,
+    "Get_Process_check_scope": "current matching Inserter root names, not an independent all-descendant snapshot"
+  },
+  "next": "Request one bounded local Inserter GUI inspection only; no build, no hardware, no external consultation",
+  "first_native_failure_stop": true
+}

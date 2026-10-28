@@ -1,0 +1,14 @@
+{
+  "date_client": "2026-10-28",
+  "decision": "D169",
+  "user_reply": "批准",
+  "scope": "A-LOCAL-DEBUG-INSERT-M1 / 1.0.0",
+  "scope_actual_SHA256": "A93E2E610278DC6C723CE257DB253F8BD425A34F657B2D74321ACA5C67550DA0",
+  "max_Inserter_CLI": 6,
+  "max_PDS_builds": 1,
+  "max_new_C": 0,
+  "max_new_DUT": 0,
+  "GUI": false,
+  "hardware": "STOPPED",
+  "external_tool_permission": "SEPARATE_SYSTEM_REVIEW"
+}

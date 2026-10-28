@@ -1,0 +1,16 @@
+{
+  "status": "INPUT_PROTECTION_PASS_STAGE_STOPPED",
+  "protected_originals": 46,
+  "frozen_probe_inputs": 5,
+  "functional_source13_unchanged": true,
+  "all_originals_and_frozen_unchanged": true,
+  "elapsed_seconds": 593.563,
+  "budget_seconds": 3600,
+  "within_budget": true,
+  "manifest_files": 68,
+  "manifest_SHA256": "F3EC2C739F5399D789C879F2123652F74F336E1EAA10E11B9991C70153553A6B",
+  "actual_Inserter": 1,
+  "PDS": 0,
+  "new_DUT": 0,
+  "hardware": "STOPPED"
+}

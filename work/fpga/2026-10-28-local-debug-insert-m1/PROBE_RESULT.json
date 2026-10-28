@@ -1,0 +1,9 @@
+{
+  "status": "FIRST_INTERFACE_OR_LOAD_FAILURE_STOPPED",
+  "error_type": "FileNotFoundError",
+  "error": "[WinError 3] 系统找不到指定的路径。: 'D:\\\\A_FPGA_Comp\\\\work\\\\fpga\\\\2026-10-28-local-debug-insert-m1\\\\logs\\\\inserter-probe-01'",
+  "native_calls_used": 1,
+  "PDS_used": 0,
+  "hardware": "STOPPED",
+  "retry": false
+}

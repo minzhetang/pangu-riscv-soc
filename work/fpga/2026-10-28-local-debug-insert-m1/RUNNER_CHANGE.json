@@ -1,0 +1,5 @@
+{
+  "base": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-27-board-coremark8-bitstream-m1\\host_supervisor.py",
+  "change": "Only check visible top-level windows belonging to the just-created Inserter/PDS process; stop own task on unexpected GUI",
+  "does_not_scan_hardware": true
+}

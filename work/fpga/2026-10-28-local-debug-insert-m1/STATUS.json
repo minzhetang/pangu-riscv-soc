@@ -1,0 +1,8 @@
+{
+  "status": "STOPPED_AT_GUI_BOUNDARY_NO_INSERTION",
+  "native_calls": 1,
+  "PDS_used": 0,
+  "hardware": "STOPPED",
+  "GUI_permission_needed_for_inspection": true,
+  "retry": false
+}
