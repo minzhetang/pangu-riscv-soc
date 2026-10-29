@@ -1,0 +1,2 @@
+#define COREMARK_CLOCK_HZ 27000000u
+#define FLAGS_STR "-march=rv32i -mabi=ilp32 -O2 -ffreestanding -fno-builtin -fno-common -fno-pie -fno-stack-protector -fno-unwind-tables -fno-asynchronous-unwind-tables -mno-relax -msmall-data-limit=0 -Wall -Wextra -Werror -nostdlib -nostartfiles -Wl,--no-relax -Wl,--build-id=none -Wl,-T,firmware/link.ld -Wl,-Map,build/performance2/program.map -Ifirmware -Iport -Iupstream -Ibuild/performance2 -DTOTAL_DATA_SIZE=2000 -DITERATIONS=2 -DPERFORMANCE_RUN=1"

@@ -1,0 +1,310 @@
+{
+  "date": "2026-10-29",
+  "status": "PASS_SCOPED_SOFTWARE_NOT_FORMAL_SCORE",
+  "approval": [
+    "D194",
+    "D196"
+  ],
+  "C_builds": 4,
+  "C_rebuilds_this_recovery": 0,
+  "reference_invocations_total_including_preflight_failure": 5,
+  "completed_references": 4,
+  "RTL_compiles": 2,
+  "new_DUT": 2,
+  "rows": [
+    {
+      "id": "performance2",
+      "build": "PASS",
+      "reference": "PASS_REFERENCE_ONLY",
+      "steps": 2164556,
+      "raw_ticks": 4207378,
+      "nominal_seconds": 0.1558288148148148,
+      "crcfinal": "72be",
+      "bin_SHA256": "957D7F06DCCE764248FBEDF5A3F0D33825534380B25D01F4A81067A18CBD6894",
+      "ELF_SHA256": "0C3912508534A3B507AB4DE343ABFA26BBCFC3323847779D59F5ED19E23D1105",
+      "hardware_valid": false,
+      "formal_score_valid": false,
+      "DUT": "PASS_FINITE_TWO_ITERATIONS",
+      "functional": {
+        "status": "PASS_FINITE_2_ITERATIONS_NOT_FORMAL_SCORE",
+        "seconds": 39.34299999999348,
+        "UART": {
+          "id": "performance2-N234",
+          "status": "PASS",
+          "pin_log_sha256": "ED9A4A6BF738B91EC69313D9B283A7B4809D7B387B8C903D0A411C337C68682C",
+          "records": 6654,
+          "actual_transitions": 6652,
+          "frames": 1095,
+          "first_frame_cycle": 4350737,
+          "last_frame_cycle": 6928201,
+          "last_frame_end_cycle": 6930541,
+          "data_sha256": "ED00CC54B35811EDFF9C0590A46AA243FCED6DABF412E2D4E86DCDD5B8B41DF9",
+          "CLKS_PER_BIT": 234,
+          "clock_period_ps": 37037,
+          "first_active_posedge_ps": 277777,
+          "actual_transition_timestamps_match_cycles": true,
+          "separate_centre_decode": true,
+          "ordinary_native_VCD_is_windowed": true
+        },
+        "VCD": {
+          "id": "performance2-N234",
+          "status": "PASS",
+          "VCD_sha256": "0406658ED5F7F6D75E9A7E151AD731F894AA69739C9C328F868041190DFCD225",
+          "bytes": 376808,
+          "stable_post_checks": 3047,
+          "distinct_visible_cycles": 2183,
+          "intervals": [
+            [
+              1,
+              1024
+            ],
+            [
+              6223,
+              6479
+            ],
+            [
+              18767,
+              18778
+            ],
+            [
+              18793,
+              18804
+            ],
+            [
+              61961,
+              61972
+            ],
+            [
+              61981,
+              62237
+            ],
+            [
+              4269339,
+              4269350
+            ],
+            [
+              4269363,
+              4269619
+            ],
+            [
+              4350701,
+              4350957
+            ],
+            [
+              6930551,
+              6930633
+            ]
+          ],
+          "explicit_off_timestamp_groups": 9,
+          "timer_LOAD_pre_capture_cycles": [
+            18772,
+            18774,
+            18776,
+            18798,
+            18800,
+            18802,
+            61966,
+            61968,
+            61970,
+            4269344,
+            4269346,
+            4269348
+          ],
+          "settled_timer_address_samples": 88,
+          "first_active_posedge_ps": 277777,
+          "last_timestamp_ps": 256690113680,
+          "scope": "native VCD windows; captured pre-edge variables + independent physical-time/post-edge checks",
+          "full_algorithm_wave": false,
+          "hardware_ILA": false,
+          "retirement_PC": false
+        }
+      },
+      "metrics": {
+        "physical": 6930633,
+        "advances": 3465316,
+        "stall": 259567,
+        "flush": 520587,
+        "tail": 32
+      },
+      "trace_counts": {
+        "EX": 2164556,
+        "WB": 1472607,
+        "READ": 332362,
+        "STORE": 36616
+      }
+    },
+    {
+      "id": "validation2",
+      "build": "PASS",
+      "reference": "PASS_REFERENCE_ONLY",
+      "steps": 2268113,
+      "raw_ticks": 4526490,
+      "nominal_seconds": 0.16764777777777778,
+      "crcfinal": "fe8c",
+      "bin_SHA256": "5190F257E0C9F0C9EE638DDDD3408919C21F0E8BEF7DAF7DEACA540CF97ED8E7",
+      "ELF_SHA256": "5980DADAE61EE02B2DDFD48096574A180A5478AA67E088A6BCC7128EDACAE496",
+      "hardware_valid": false,
+      "formal_score_valid": false,
+      "DUT": "PASS_FINITE_TWO_ITERATIONS",
+      "functional": {
+        "status": "PASS_FINITE_2_ITERATIONS_NOT_FORMAL_SCORE",
+        "seconds": 40.84400000004098,
+        "UART": {
+          "id": "validation2-N234",
+          "status": "PASS",
+          "pin_log_sha256": "B9516D6D8B71A60B24D8B329F9A2240AE0B5734007D7B346ACBE70A028522845",
+          "records": 6622,
+          "actual_transitions": 6620,
+          "frames": 1091,
+          "first_frame_cycle": 4669437,
+          "last_frame_cycle": 7237477,
+          "last_frame_end_cycle": 7239817,
+          "data_sha256": "0AC65FBDA4BF6071E407A68BA289B1A63AF3C27ECE88471AAF65ACC70D58B26F",
+          "CLKS_PER_BIT": 234,
+          "clock_period_ps": 37037,
+          "first_active_posedge_ps": 277777,
+          "actual_transition_timestamps_match_cycles": true,
+          "separate_centre_decode": true,
+          "ordinary_native_VCD_is_windowed": true
+        },
+        "VCD": {
+          "id": "validation2-N234",
+          "status": "PASS",
+          "VCD_sha256": "9AC70F70413F654076E59FAD5A8B145BE8F1BED1FA9DA39AEAFD804B69941211",
+          "bytes": 380208,
+          "stable_post_checks": 3077,
+          "distinct_visible_cycles": 2183,
+          "intervals": [
+            [
+              1,
+              1024
+            ],
+            [
+              6259,
+              6515
+            ],
+            [
+              18779,
+              18790
+            ],
+            [
+              18805,
+              18816
+            ],
+            [
+              62363,
+              62374
+            ],
+            [
+              62383,
+              62639
+            ],
+            [
+              4588853,
+              4588864
+            ],
+            [
+              4588877,
+              4589133
+            ],
+            [
+              4669401,
+              4669657
+            ],
+            [
+              7239827,
+              7239909
+            ]
+          ],
+          "explicit_off_timestamp_groups": 9,
+          "timer_LOAD_pre_capture_cycles": [
+            18784,
+            18786,
+            18788,
+            18810,
+            18812,
+            18814,
+            62368,
+            62370,
+            62372,
+            4588858,
+            4588860,
+            4588862
+          ],
+          "settled_timer_address_samples": 88,
+          "first_active_posedge_ps": 277777,
+          "last_timestamp_ps": 268144768892,
+          "scope": "native VCD windows; captured pre-edge variables + independent physical-time/post-edge checks",
+          "full_algorithm_wave": false,
+          "hardware_ILA": false,
+          "retirement_PC": false
+        }
+      },
+      "metrics": {
+        "physical": 7239909,
+        "advances": 3619954,
+        "stall": 259810,
+        "flush": 546006,
+        "tail": 32
+      },
+      "trace_counts": {
+        "EX": 2268113,
+        "WB": 1539320,
+        "READ": 332484,
+        "STORE": 36411
+      }
+    },
+    {
+      "id": "performance256",
+      "build": "PASS",
+      "reference": "PASS_REFERENCE_ONLY",
+      "steps": 188179549,
+      "raw_ticks": 538539600,
+      "nominal_seconds": 19.945911111111112,
+      "crcfinal": "b40f",
+      "bin_SHA256": "0160BF311C70A8CCDDDF1B4F19B96C4F5B7357CB2E4BD04E69DB9A87DBC8C21E",
+      "ELF_SHA256": "FA9822A21D61AE72E807541CFB9676EE308D3F247EF7180F84E74151AD7B0D1C",
+      "hardware_valid": false,
+      "formal_score_valid": false,
+      "DUT": "NOT_RUN",
+      "status": "PROGRAM_BUILT_REFERENCE_ONLY_PENDING_TARGET_RUN"
+    },
+    {
+      "id": "validation256",
+      "build": "PASS",
+      "reference": "PASS_REFERENCE_ONLY",
+      "steps": 201767006,
+      "raw_ticks": 579425414,
+      "nominal_seconds": 21.46020051851852,
+      "crcfinal": "798f",
+      "bin_SHA256": "3C28FC298D431BA8FDB09A1075E3EECE5DDD123549EB6CE26870FB7101359559",
+      "ELF_SHA256": "764E1D2A9EACC7AA69D7523C3A511C5BB27DA0CF7122157200D0D294F646E96F",
+      "hardware_valid": false,
+      "formal_score_valid": false,
+      "DUT": "NOT_RUN",
+      "status": "PROGRAM_BUILT_REFERENCE_ONLY_PENDING_TARGET_RUN"
+    }
+  ],
+  "host_controls": 48,
+  "original_protected_unchanged": 27,
+  "hardware": "STOPPED",
+  "PDS": 0,
+  "clock": {
+    "start": 873782.406,
+    "deadline_monotonic": 880691.359,
+    "old_clock": {
+      "start": 873491.359,
+      "deadline_monotonic": 880691.359
+    },
+    "old_expired": false,
+    "approval": "2026-10-29 user 批准，继续; replacement preflight and remaining tests; old clock retained"
+  },
+  "remaining_absolute_seconds": 5698.281000000075,
+  "limitations": [
+    "no hardware or long256 DUT",
+    "no true retirement PC or unified WB/STORE commit",
+    "fixed memory/initial state; finite inputs",
+    "nominal frequency only; VCD is not ILA",
+    "old preflight failure retained"
+  ]
+}

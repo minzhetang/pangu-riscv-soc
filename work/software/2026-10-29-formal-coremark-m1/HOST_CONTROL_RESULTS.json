@@ -1,0 +1,302 @@
+{
+  "status": "PASS_HOST_ONLY",
+  "rows": [
+    {
+      "id": "performance2/good",
+      "status": "PASS_CONTROL"
+    },
+    {
+      "id": "performance2/bad_crc",
+      "status": "EXPECTED_REJECT",
+      "error": "CRC"
+    },
+    {
+      "id": "performance2/bad_final",
+      "status": "EXPECTED_REJECT",
+      "error": "crcfinal"
+    },
+    {
+      "id": "performance2/bad_iterations",
+      "status": "EXPECTED_REJECT",
+      "error": "iterations"
+    },
+    {
+      "id": "performance2/duplicate_ticks",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate field ^Total ticks\\s*:\\s*(\\d+)\\s*$"
+    },
+    {
+      "id": "performance2/missing_flags",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate field ^Compiler flags\\s*:\\s*(.+)$"
+    },
+    {
+      "id": "performance2/truncated",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate field ^seedcrc\\s*:\\s*0x([0-9a-f]{4})\\s*$"
+    },
+    {
+      "id": "performance2/wrong_delta",
+      "status": "EXPECTED_REJECT",
+      "error": "raw timing"
+    },
+    {
+      "id": "performance2/overflow_delta",
+      "status": "EXPECTED_REJECT",
+      "error": "raw timing"
+    },
+    {
+      "id": "performance2/wrong_hz",
+      "status": "EXPECTED_REJECT",
+      "error": "frequency setting"
+    },
+    {
+      "id": "performance2/extra_output",
+      "status": "EXPECTED_REJECT",
+      "error": "unexpected output"
+    },
+    {
+      "id": "performance2/duplicate_status",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate status"
+    },
+    {
+      "id": "validation2/good",
+      "status": "PASS_CONTROL"
+    },
+    {
+      "id": "validation2/bad_crc",
+      "status": "EXPECTED_REJECT",
+      "error": "CRC"
+    },
+    {
+      "id": "validation2/bad_final",
+      "status": "EXPECTED_REJECT",
+      "error": "crcfinal"
+    },
+    {
+      "id": "validation2/bad_iterations",
+      "status": "EXPECTED_REJECT",
+      "error": "iterations"
+    },
+    {
+      "id": "validation2/duplicate_ticks",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate field ^Total ticks\\s*:\\s*(\\d+)\\s*$"
+    },
+    {
+      "id": "validation2/missing_flags",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate field ^Compiler flags\\s*:\\s*(.+)$"
+    },
+    {
+      "id": "validation2/truncated",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate field ^seedcrc\\s*:\\s*0x([0-9a-f]{4})\\s*$"
+    },
+    {
+      "id": "validation2/wrong_delta",
+      "status": "EXPECTED_REJECT",
+      "error": "raw timing"
+    },
+    {
+      "id": "validation2/overflow_delta",
+      "status": "EXPECTED_REJECT",
+      "error": "raw timing"
+    },
+    {
+      "id": "validation2/wrong_hz",
+      "status": "EXPECTED_REJECT",
+      "error": "frequency setting"
+    },
+    {
+      "id": "validation2/extra_output",
+      "status": "EXPECTED_REJECT",
+      "error": "unexpected output"
+    },
+    {
+      "id": "validation2/duplicate_status",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate status"
+    },
+    {
+      "id": "performance256/good",
+      "status": "PASS_CONTROL"
+    },
+    {
+      "id": "performance256/bad_crc",
+      "status": "EXPECTED_REJECT",
+      "error": "CRC"
+    },
+    {
+      "id": "performance256/bad_final",
+      "status": "EXPECTED_REJECT",
+      "error": "crcfinal"
+    },
+    {
+      "id": "performance256/bad_iterations",
+      "status": "EXPECTED_REJECT",
+      "error": "iterations"
+    },
+    {
+      "id": "performance256/duplicate_ticks",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate field ^Total ticks\\s*:\\s*(\\d+)\\s*$"
+    },
+    {
+      "id": "performance256/missing_flags",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate field ^Compiler flags\\s*:\\s*(.+)$"
+    },
+    {
+      "id": "performance256/truncated",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate field ^seedcrc\\s*:\\s*0x([0-9a-f]{4})\\s*$"
+    },
+    {
+      "id": "performance256/wrong_delta",
+      "status": "EXPECTED_REJECT",
+      "error": "raw timing"
+    },
+    {
+      "id": "performance256/overflow_delta",
+      "status": "EXPECTED_REJECT",
+      "error": "raw timing"
+    },
+    {
+      "id": "performance256/wrong_hz",
+      "status": "EXPECTED_REJECT",
+      "error": "frequency setting"
+    },
+    {
+      "id": "performance256/extra_output",
+      "status": "EXPECTED_REJECT",
+      "error": "unexpected output"
+    },
+    {
+      "id": "performance256/duplicate_status",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate status"
+    },
+    {
+      "id": "validation256/good",
+      "status": "PASS_CONTROL"
+    },
+    {
+      "id": "validation256/bad_crc",
+      "status": "EXPECTED_REJECT",
+      "error": "CRC"
+    },
+    {
+      "id": "validation256/bad_final",
+      "status": "EXPECTED_REJECT",
+      "error": "crcfinal"
+    },
+    {
+      "id": "validation256/bad_iterations",
+      "status": "EXPECTED_REJECT",
+      "error": "iterations"
+    },
+    {
+      "id": "validation256/duplicate_ticks",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate field ^Total ticks\\s*:\\s*(\\d+)\\s*$"
+    },
+    {
+      "id": "validation256/missing_flags",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate field ^Compiler flags\\s*:\\s*(.+)$"
+    },
+    {
+      "id": "validation256/truncated",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate field ^seedcrc\\s*:\\s*0x([0-9a-f]{4})\\s*$"
+    },
+    {
+      "id": "validation256/wrong_delta",
+      "status": "EXPECTED_REJECT",
+      "error": "raw timing"
+    },
+    {
+      "id": "validation256/overflow_delta",
+      "status": "EXPECTED_REJECT",
+      "error": "raw timing"
+    },
+    {
+      "id": "validation256/wrong_hz",
+      "status": "EXPECTED_REJECT",
+      "error": "frequency setting"
+    },
+    {
+      "id": "validation256/extra_output",
+      "status": "EXPECTED_REJECT",
+      "error": "unexpected output"
+    },
+    {
+      "id": "validation256/duplicate_status",
+      "status": "EXPECTED_REJECT",
+      "error": "missing/duplicate status"
+    }
+  ],
+  "reports": [
+    {
+      "id": "performance2",
+      "parsed": {
+        "status": "SHORT_FUNCTIONAL_ONLY",
+        "iterations": 2,
+        "delta": 4207378,
+        "nominal_hz": 27000000,
+        "seconds_fraction": "2103689/13500000",
+        "nominal_iterations_per_second_fraction": "27000000/2103689",
+        "hardware_valid": false,
+        "formal_score_valid": false,
+        "requires": "matching target program identity, real clock evidence, both seeds >=10s and repeated target runs, A review"
+      }
+    },
+    {
+      "id": "validation2",
+      "parsed": {
+        "status": "SHORT_FUNCTIONAL_ONLY",
+        "iterations": 2,
+        "delta": 4526490,
+        "nominal_hz": 27000000,
+        "seconds_fraction": "150883/900000",
+        "nominal_iterations_per_second_fraction": "1800000/150883",
+        "hardware_valid": false,
+        "formal_score_valid": false,
+        "requires": "matching target program identity, real clock evidence, both seeds >=10s and repeated target runs, A review"
+      }
+    },
+    {
+      "id": "performance256",
+      "parsed": {
+        "status": "SOFTWARE_MEASUREMENT_CANDIDATE",
+        "iterations": 256,
+        "delta": 538539600,
+        "nominal_hz": 27000000,
+        "seconds_fraction": "448783/22500",
+        "nominal_iterations_per_second_fraction": "5760000/448783",
+        "hardware_valid": false,
+        "formal_score_valid": false,
+        "requires": "matching target program identity, real clock evidence, both seeds >=10s and repeated target runs, A review"
+      }
+    },
+    {
+      "id": "validation256",
+      "parsed": {
+        "status": "SOFTWARE_MEASUREMENT_CANDIDATE",
+        "iterations": 256,
+        "delta": 579425414,
+        "nominal_hz": 27000000,
+        "seconds_fraction": "289712707/13500000",
+        "nominal_iterations_per_second_fraction": "3456000000/289712707",
+        "hardware_valid": false,
+        "formal_score_valid": false,
+        "requires": "matching target program identity, real clock evidence, both seeds >=10s and repeated target runs, A review"
+      }
+    }
+  ],
+  "seconds": 0.34299999999348074,
+  "new_DUT": 0,
+  "not_target_evidence": true
+}

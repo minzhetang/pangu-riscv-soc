@@ -1,0 +1,23 @@
+{
+  "own_verification_headers": [
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification\\memory_observe_bank.svh",
+      "copy": "verification\\memory_observe_bank.svh",
+      "SHA256": "0D8D6A781F264052DBF399542247D23D13DB6B14D3464CAA2202A2D824660539"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification\\memory_observe_decl.svh",
+      "copy": "verification\\memory_observe_decl.svh",
+      "SHA256": "CF5999285CF74F21F5F38E069C3E55D06C25BD81887DF867A790F925FC5D9B2F"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification\\memory_protocol_checks.svh",
+      "copy": "verification\\memory_protocol_checks.svh",
+      "SHA256": "7435B9EA41198C02BA25CDB2F44427952F7B5EA8CD80800424091F157E644E49"
+    }
+  ],
+  "licensed_models": "Obtain GTP_DRM18K_E1.v and GTP_GRS.v from lawful PDS2022.2-SP6.4 installation; not copied",
+  "scripts": "one-shot historical entries, absolute local argv recorded; do not rerun over artifacts",
+  "bitstream": "NOT_GENERATED",
+  "previous_handoff": "UNCHANGED"
+}

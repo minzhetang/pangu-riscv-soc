@@ -1,0 +1,16 @@
+{
+  "coremark": {
+    "performance2": {
+      "seedcrc": 59893,
+      "crclist": 59156,
+      "crcmatrix": 8151,
+      "crcstate": 36410
+    },
+    "validation2": {
+      "seedcrc": 6386,
+      "crclist": 58305,
+      "crcmatrix": 1863,
+      "crcstate": 36228
+    }
+  }
+}

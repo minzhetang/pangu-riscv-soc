@@ -1,0 +1,21 @@
+--- reference_worker.py
++++ reference_worker-r1-PENDING.py
+@@ -9,11 +9,17 @@
+ elf=H/'build'/tid/'program.elf';symbols=elf_symbols(elf);image=elf.with_suffix('.bin').read_bytes()
+ assert initial_word(elf,symbols['seed4_volatile'])==case['iterations']
+ assert initial_word(elf,symbols['seed3_volatile'])==0x66
+-assert initial_word(elf,symbols['seed1_volatile'])==(0 if case['seed']=='performance' else 0x3415)
++expected_seed=0 if case['seed']=='performance' else 0x3415
++seed_address=symbols['seed1_volatile']
++if symbols['__bss_start']<=seed_address and seed_address+4<=symbols['__bss_end']:
++    assert expected_seed==0  # declaration only; do not prezero Reference RAM
++else:
++    assert initial_word(elf,seed_address)==expected_seed
+ assert symbols['__bss_end']<=0x16000 and symbols['__stack_top']==0x18000
+ start=time.monotonic();s=Scheduled(image);r=s.run();check();assert r.steps<=(5000000 if case['iterations']==2 else 250000000)
+ def word(n,size=4):
+  a=symbols[n]-0x10000;return int.from_bytes(r.ram[a:a+size],'little')
++assert word('seed1_volatile')==expected_seed and word('seed2_volatile')==expected_seed
+ n=word('ram_log_count');assert n<4096;a=symbols['ram_log']-0x10000;report=bytes(r.ram[a:a+n]);text=report.decode('ascii')
+ for field,expected in zip(['seedcrc','[0]crclist','[0]crcmatrix','[0]crcstate'],case['standard_CRC']):assert re.findall(re.escape(field)+r'\s*:\s*0x([0-9a-f]{4})',text)==[f'{expected:04x}'],field
+ assert re.findall(r'^Iterations\s*:\s*(\d+)\s*$',text,re.M)==[str(case['iterations'])]

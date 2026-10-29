@@ -1,0 +1,910 @@
+[
+  {
+    "id": "performance2",
+    "bytes": 16344,
+    "bin_SHA256": "957D7F06DCCE764248FBEDF5A3F0D33825534380B25D01F4A81067A18CBD6894",
+    "ELF_SHA256": "0C3912508534A3B507AB4DE343ABFA26BBCFC3323847779D59F5ED19E23D1105",
+    "commands": [
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+          "-march=rv32i",
+          "-mabi=ilp32",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-common",
+          "-fno-pie",
+          "-fno-stack-protector",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables",
+          "-mno-relax",
+          "-msmall-data-limit=0",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-nostdlib",
+          "-nostartfiles",
+          "-Wl,--no-relax",
+          "-Wl,--build-id=none",
+          "-Wl,-T,firmware/link.ld",
+          "-Wl,-Map,build/performance2/program.map",
+          "-Ifirmware",
+          "-Iport",
+          "-Iupstream",
+          "-Ibuild/performance2",
+          "-DTOTAL_DATA_SIZE=2000",
+          "-DITERATIONS=2",
+          "-DPERFORMANCE_RUN=1",
+          "-o",
+          "build/performance2/program.elf",
+          "firmware/start.S",
+          "upstream/core_list_join.c",
+          "upstream/core_main.c",
+          "upstream/core_matrix.c",
+          "upstream/core_state.c",
+          "upstream/core_util.c",
+          "port/core_portme.c",
+          "-lgcc"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 7065600,
+        "parent_peak_working_set_bytes": 21794816,
+        "child_memory_samples": 31,
+        "elapsed_seconds": 1.0,
+        "timeout_seconds": 60,
+        "child_cpu": {
+          "kernel_s": 0.0625,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.09375,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.09375,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance2-gcc\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance2-gcc\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+          "-O",
+          "binary",
+          "build/performance2/program.elf",
+          "build/performance2/program.bin"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 21852160,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.078,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.015625,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.09375,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.09375,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance2-objcopy\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance2-objcopy\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+          "-d",
+          "-M",
+          "no-aliases",
+          "build/performance2/program.elf"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 21856256,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.063,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.0,
+          "user_s": 0.015625
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.09375,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.109375,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance2-objdump\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance2-objdump\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+          "-h",
+          "-A",
+          "-l",
+          "-sW",
+          "build/performance2/program.elf"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 21925888,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.062,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.0,
+          "user_s": 0.015625
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.109375,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.125,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance2-readelf\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance2-readelf\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+          "-u",
+          "build/performance2/program.elf"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 21929984,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.063,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.015625,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.125,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance2-nm\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance2-nm\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      }
+    ],
+    "status": "BUILD_ONLY_NOT_EXECUTED"
+  },
+  {
+    "id": "validation2",
+    "bytes": 16348,
+    "bin_SHA256": "5190F257E0C9F0C9EE638DDDD3408919C21F0E8BEF7DAF7DEACA540CF97ED8E7",
+    "ELF_SHA256": "5980DADAE61EE02B2DDFD48096574A180A5478AA67E088A6BCC7128EDACAE496",
+    "commands": [
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+          "-march=rv32i",
+          "-mabi=ilp32",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-common",
+          "-fno-pie",
+          "-fno-stack-protector",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables",
+          "-mno-relax",
+          "-msmall-data-limit=0",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-nostdlib",
+          "-nostartfiles",
+          "-Wl,--no-relax",
+          "-Wl,--build-id=none",
+          "-Wl,-T,firmware/link.ld",
+          "-Wl,-Map,build/validation2/program.map",
+          "-Ifirmware",
+          "-Iport",
+          "-Iupstream",
+          "-Ibuild/validation2",
+          "-DTOTAL_DATA_SIZE=2000",
+          "-DITERATIONS=2",
+          "-DVALIDATION_RUN=1",
+          "-o",
+          "build/validation2/program.elf",
+          "firmware/start.S",
+          "upstream/core_list_join.c",
+          "upstream/core_main.c",
+          "upstream/core_matrix.c",
+          "upstream/core_state.c",
+          "upstream/core_util.c",
+          "port/core_portme.c",
+          "-lgcc"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 6631424,
+        "parent_peak_working_set_bytes": 21942272,
+        "child_memory_samples": 20,
+        "elapsed_seconds": 0.641,
+        "timeout_seconds": 60,
+        "child_cpu": {
+          "kernel_s": 0.078125,
+          "user_s": 0.03125
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation2-gcc\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation2-gcc\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+          "-O",
+          "binary",
+          "build/validation2/program.elf",
+          "build/validation2/program.bin"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 21942272,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.0,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation2-objcopy\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation2-objcopy\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+          "-d",
+          "-M",
+          "no-aliases",
+          "build/validation2/program.elf"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 21942272,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.016,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.0,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation2-objdump\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation2-objdump\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+          "-h",
+          "-A",
+          "-l",
+          "-sW",
+          "build/validation2/program.elf"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 22016000,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.0,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation2-readelf\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation2-readelf\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+          "-u",
+          "build/validation2/program.elf"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 22016000,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.0,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation2-nm\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation2-nm\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      }
+    ],
+    "status": "BUILD_ONLY_NOT_EXECUTED"
+  },
+  {
+    "id": "performance256",
+    "bytes": 16352,
+    "bin_SHA256": "0160BF311C70A8CCDDDF1B4F19B96C4F5B7357CB2E4BD04E69DB9A87DBC8C21E",
+    "ELF_SHA256": "FA9822A21D61AE72E807541CFB9676EE308D3F247EF7180F84E74151AD7B0D1C",
+    "commands": [
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+          "-march=rv32i",
+          "-mabi=ilp32",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-common",
+          "-fno-pie",
+          "-fno-stack-protector",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables",
+          "-mno-relax",
+          "-msmall-data-limit=0",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-nostdlib",
+          "-nostartfiles",
+          "-Wl,--no-relax",
+          "-Wl,--build-id=none",
+          "-Wl,-T,firmware/link.ld",
+          "-Wl,-Map,build/performance256/program.map",
+          "-Ifirmware",
+          "-Iport",
+          "-Iupstream",
+          "-Ibuild/performance256",
+          "-DTOTAL_DATA_SIZE=2000",
+          "-DITERATIONS=256",
+          "-DPERFORMANCE_RUN=1",
+          "-o",
+          "build/performance256/program.elf",
+          "firmware/start.S",
+          "upstream/core_list_join.c",
+          "upstream/core_main.c",
+          "upstream/core_matrix.c",
+          "upstream/core_state.c",
+          "upstream/core_util.c",
+          "port/core_portme.c",
+          "-lgcc"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 6586368,
+        "parent_peak_working_set_bytes": 22228992,
+        "child_memory_samples": 20,
+        "elapsed_seconds": 0.609,
+        "timeout_seconds": 60,
+        "child_cpu": {
+          "kernel_s": 0.046875,
+          "user_s": 0.015625
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance256-gcc\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance256-gcc\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+          "-O",
+          "binary",
+          "build/performance256/program.elf",
+          "build/performance256/program.bin"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 22228992,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.032,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.0,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance256-objcopy\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance256-objcopy\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+          "-d",
+          "-M",
+          "no-aliases",
+          "build/performance256/program.elf"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2256896,
+        "parent_peak_working_set_bytes": 22228992,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.015625,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.140625,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.15625,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance256-objdump\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance256-objdump\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+          "-h",
+          "-A",
+          "-l",
+          "-sW",
+          "build/performance256/program.elf"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 22290432,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.015625,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.15625,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.15625,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance256-readelf\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance256-readelf\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+          "-u",
+          "build/performance256/program.elf"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 22294528,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.0,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.15625,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.15625,
+          "user_s": 0.015625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance256-nm\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-performance256-nm\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      }
+    ],
+    "status": "BUILD_ONLY_NOT_EXECUTED"
+  },
+  {
+    "id": "validation256",
+    "bytes": 16356,
+    "bin_SHA256": "3C28FC298D431BA8FDB09A1075E3EECE5DDD123549EB6CE26870FB7101359559",
+    "ELF_SHA256": "764E1D2A9EACC7AA69D7523C3A511C5BB27DA0CF7122157200D0D294F646E96F",
+    "commands": [
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+          "-march=rv32i",
+          "-mabi=ilp32",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-common",
+          "-fno-pie",
+          "-fno-stack-protector",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables",
+          "-mno-relax",
+          "-msmall-data-limit=0",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-nostdlib",
+          "-nostartfiles",
+          "-Wl,--no-relax",
+          "-Wl,--build-id=none",
+          "-Wl,-T,firmware/link.ld",
+          "-Wl,-Map,build/validation256/program.map",
+          "-Ifirmware",
+          "-Iport",
+          "-Iupstream",
+          "-Ibuild/validation256",
+          "-DTOTAL_DATA_SIZE=2000",
+          "-DITERATIONS=256",
+          "-DVALIDATION_RUN=1",
+          "-o",
+          "build/validation256/program.elf",
+          "firmware/start.S",
+          "upstream/core_list_join.c",
+          "upstream/core_main.c",
+          "upstream/core_matrix.c",
+          "upstream/core_state.c",
+          "upstream/core_util.c",
+          "port/core_portme.c",
+          "-lgcc"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 6627328,
+        "parent_peak_working_set_bytes": 22310912,
+        "child_memory_samples": 20,
+        "elapsed_seconds": 0.61,
+        "timeout_seconds": 60,
+        "child_cpu": {
+          "kernel_s": 0.0625,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.15625,
+          "user_s": 0.015625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.1875,
+          "user_s": 0.046875
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation256-gcc\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation256-gcc\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+          "-O",
+          "binary",
+          "build/validation256/program.elf",
+          "build/validation256/program.bin"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2211840,
+        "parent_peak_working_set_bytes": 22310912,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.0,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.1875,
+          "user_s": 0.046875
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.1875,
+          "user_s": 0.046875
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation256-objcopy\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation256-objcopy\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+          "-d",
+          "-M",
+          "no-aliases",
+          "build/validation256/program.elf"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 22310912,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.015625,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.1875,
+          "user_s": 0.046875
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.1875,
+          "user_s": 0.046875
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation256-objdump\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation256-objdump\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+          "-h",
+          "-A",
+          "-l",
+          "-sW",
+          "build/validation256/program.elf"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2269184,
+        "parent_peak_working_set_bytes": 22376448,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.031,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.0,
+          "user_s": 0.015625
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.1875,
+          "user_s": 0.046875
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.1875,
+          "user_s": 0.0625
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation256-readelf\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation256-readelf\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      },
+      {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+          "-u",
+          "build/validation256/program.elf"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "error": null,
+        "termination": "PROCESS_EXIT",
+        "peak_working_set_bytes": 2252800,
+        "parent_peak_working_set_bytes": 22376448,
+        "child_memory_samples": 1,
+        "elapsed_seconds": 0.032,
+        "timeout_seconds": 20,
+        "child_cpu": {
+          "kernel_s": 0.015625,
+          "user_s": 0.0
+        },
+        "parent_cpu_before": {
+          "kernel_s": 0.1875,
+          "user_s": 0.0625
+        },
+        "parent_cpu_after": {
+          "kernel_s": 0.1875,
+          "user_s": 0.078125
+        },
+        "stdout": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation256-nm\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\software\\2026-10-29-formal-coremark-m1\\logs\\build-validation256-nm\\stderr.log",
+        "measurement_scope": "direct child and this parent; native compiler internal descendants not separately measured",
+        "absolute_deadline_used": true
+      }
+    ],
+    "status": "BUILD_ONLY_NOT_EXECUTED"
+  }
+]

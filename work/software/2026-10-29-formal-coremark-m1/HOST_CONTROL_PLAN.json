@@ -1,0 +1,20 @@
+{
+  "before_controls": true,
+  "cases": [
+    "good",
+    "bad_crc",
+    "bad_final",
+    "bad_iterations",
+    "duplicate_ticks",
+    "missing_flags",
+    "truncated",
+    "wrong_delta",
+    "overflow_delta",
+    "wrong_hz",
+    "extra_output",
+    "duplicate_status"
+  ],
+  "good": "candidate or short-only; never formal",
+  "negative": "ValueError",
+  "DUT": 0
+}

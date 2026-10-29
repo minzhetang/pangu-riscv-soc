@@ -1,0 +1,62 @@
+{
+  "before_new_C_builds": true,
+  "cases": [
+    {
+      "id": "performance2",
+      "seed": "performance",
+      "iterations": 2,
+      "standard_CRC": [
+        59893,
+        59156,
+        8151,
+        36410
+      ],
+      "DUT": true,
+      "expected_short_error": true,
+      "hardware_valid": false
+    },
+    {
+      "id": "validation2",
+      "seed": "validation",
+      "iterations": 2,
+      "standard_CRC": [
+        6386,
+        58305,
+        1863,
+        36228
+      ],
+      "DUT": true,
+      "expected_short_error": true,
+      "hardware_valid": false
+    },
+    {
+      "id": "performance256",
+      "seed": "performance",
+      "iterations": 256,
+      "standard_CRC": [
+        59893,
+        59156,
+        8151,
+        36410
+      ],
+      "DUT": false,
+      "expected_short_error": false,
+      "hardware_valid": false
+    },
+    {
+      "id": "validation256",
+      "seed": "validation",
+      "iterations": 256,
+      "standard_CRC": [
+        6386,
+        58305,
+        1863,
+        36228
+      ],
+      "DUT": false,
+      "expected_short_error": false,
+      "hardware_valid": false
+    }
+  ],
+  "source_constraints": "13RTL/official6/start/link unchanged; port metadata/time constant only"
+}

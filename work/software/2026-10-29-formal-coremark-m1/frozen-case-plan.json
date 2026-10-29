@@ -1,0 +1,32 @@
+{
+  "cases": {
+    "performance2-N234": {
+      "phase_address": 67584,
+      "expected_raw_ticks": 4207378,
+      "expected_stamps": [
+        18773,
+        18799,
+        61967,
+        4269345
+      ],
+      "expected_report_sha256": "ED00CC54B35811EDFF9C0590A46AA243FCED6DABF412E2D4E86DCDD5B8B41DF9",
+      "expected_UART_bytes": 1095,
+      "iterations": 2,
+      "n": 234
+    },
+    "validation2-N234": {
+      "phase_address": 67592,
+      "expected_raw_ticks": 4526490,
+      "expected_stamps": [
+        18785,
+        18811,
+        62369,
+        4588859
+      ],
+      "expected_report_sha256": "0AC65FBDA4BF6071E407A68BA289B1A63AF3C27ECE88471AAF65ACC70D58B26F",
+      "expected_UART_bytes": 1091,
+      "iterations": 2,
+      "n": 234
+    }
+  }
+}

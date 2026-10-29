@@ -1,0 +1,212 @@
+{
+  "files": [
+    {
+      "path": "source\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "source\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "source\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "source\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "source\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "source\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "source\\memory_model.sv",
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "source\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "source\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "source\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "models\\cpu_program_reference.py",
+      "SHA256": "4BA559E88968086567FA9F2630D8177CF427E71D7029C55E35C8514434DF32C7"
+    },
+    {
+      "path": "models\\peripheral_checker.py",
+      "SHA256": "E5BB96110DDF7B6BBD761D6A1922E83758DC71746B1813C3D851BD1DEC57677D"
+    },
+    {
+      "path": "tests\\tb_board_coremark.sv",
+      "SHA256": "4775A3E60378A5653A91A385245758DFB59E8BF1D8F67DB6D54BFA5D6545676F"
+    },
+    {
+      "path": "cases\\performance2\\source\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "cases\\performance2\\source\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "cases\\performance2\\source\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "cases\\performance2\\source\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "cases\\performance2\\source\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "cases\\performance2\\source\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "cases\\performance2\\source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "cases\\performance2\\source\\init_tables.svh",
+      "SHA256": "66B988DFBFFD3F9DB5973019518D1FC9B8576A9BBFEDD4BF8269F0196AEACED9"
+    },
+    {
+      "path": "cases\\performance2\\source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "cases\\performance2\\source\\memory_model.sv",
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "cases\\performance2\\source\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "cases\\performance2\\source\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "cases\\performance2\\source\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "cases\\performance2\\source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "cases\\validation2\\source\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "cases\\validation2\\source\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "cases\\validation2\\source\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "cases\\validation2\\source\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "cases\\validation2\\source\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "cases\\validation2\\source\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "cases\\validation2\\source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "cases\\validation2\\source\\init_tables.svh",
+      "SHA256": "52DA3A591FC02A6BEC5DFE354983932E0431BECAF9E16088F01ACDC666B51AF5"
+    },
+    {
+      "path": "cases\\validation2\\source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "cases\\validation2\\source\\memory_model.sv",
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "cases\\validation2\\source\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "cases\\validation2\\source\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "cases\\validation2\\source\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "cases\\validation2\\source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "oracles-recovery\\performance2\\expected-ram.bin",
+      "SHA256": "ED9CDA22E837BFA120FB931A0F7F92F613CD40B1A49EE91064344A336CA55850"
+    },
+    {
+      "path": "oracles-recovery\\performance2\\expected-registers.hex",
+      "SHA256": "6CA9D5174F5ED041D4CEE03C443EFD5DD07252E2BFC9E9349A5313C0632F3154"
+    },
+    {
+      "path": "oracles-recovery\\performance2\\expected-report.txt",
+      "SHA256": "ED00CC54B35811EDFF9C0590A46AA243FCED6DABF412E2D4E86DCDD5B8B41DF9"
+    },
+    {
+      "path": "oracles-recovery\\performance2\\expected.json",
+      "SHA256": "BE16ED9D622C4C250A1F29FA90B0069DAD433B70E71119E0DC8F0B0EF7DA2406"
+    },
+    {
+      "path": "oracles-recovery\\validation2\\expected-ram.bin",
+      "SHA256": "D206140F00578011FB6AB17EDE012F1058E988BE06C66AD2C5653FB0B4D82E30"
+    },
+    {
+      "path": "oracles-recovery\\validation2\\expected-registers.hex",
+      "SHA256": "3DB0C6D1AE6AADB29C4B6C7C040A1AA32AB5CF790BA1AC559C9B7B2F75C72E25"
+    },
+    {
+      "path": "oracles-recovery\\validation2\\expected-report.txt",
+      "SHA256": "0AC65FBDA4BF6071E407A68BA289B1A63AF3C27ECE88471AAF65ACC70D58B26F"
+    },
+    {
+      "path": "oracles-recovery\\validation2\\expected.json",
+      "SHA256": "E2AF902D5796123CF1CC34DB78D5B8737991DEFA8EC849C2450DEEDB9D931A1E"
+    }
+  ]
+}

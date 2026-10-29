@@ -1,0 +1,159 @@
+{
+  "rows": [
+    {
+      "id": "performance2",
+      "seed_location_check": [
+        {
+          "symbol": "seed1_volatile",
+          "address": 71744,
+          "ELF_region": "BSS_ZERO_REQUIRED_FROM_CRT_NOT_FILE_BYTES",
+          "declared_initial": 0,
+          "requires_actual_startup_validation": true
+        },
+        {
+          "symbol": "seed2_volatile",
+          "address": 71740,
+          "ELF_region": "BSS_ZERO_REQUIRED_FROM_CRT_NOT_FILE_BYTES",
+          "declared_initial": 0,
+          "requires_actual_startup_validation": true
+        },
+        {
+          "symbol": "seed3_volatile",
+          "address": 65556,
+          "ELF_region": "FILE_BACKED",
+          "declared_initial": 102,
+          "requires_actual_startup_validation": false
+        },
+        {
+          "symbol": "seed4_volatile",
+          "address": 65552,
+          "ELF_region": "FILE_BACKED",
+          "declared_initial": 2,
+          "requires_actual_startup_validation": false
+        }
+      ],
+      "decoded_instructions": 3456,
+      "all_decoded_OPs_base_I": true,
+      "bin_SHA256": "957D7F06DCCE764248FBEDF5A3F0D33825534380B25D01F4A81067A18CBD6894",
+      "ELF_SHA256": "0C3912508534A3B507AB4DE343ABFA26BBCFC3323847779D59F5ED19E23D1105",
+      "executed": false
+    },
+    {
+      "id": "validation2",
+      "seed_location_check": [
+        {
+          "symbol": "seed1_volatile",
+          "address": 65564,
+          "ELF_region": "FILE_BACKED",
+          "declared_initial": 13333,
+          "requires_actual_startup_validation": false
+        },
+        {
+          "symbol": "seed2_volatile",
+          "address": 65560,
+          "ELF_region": "FILE_BACKED",
+          "declared_initial": 13333,
+          "requires_actual_startup_validation": false
+        },
+        {
+          "symbol": "seed3_volatile",
+          "address": 65556,
+          "ELF_region": "FILE_BACKED",
+          "declared_initial": 102,
+          "requires_actual_startup_validation": false
+        },
+        {
+          "symbol": "seed4_volatile",
+          "address": 65552,
+          "ELF_region": "FILE_BACKED",
+          "declared_initial": 2,
+          "requires_actual_startup_validation": false
+        }
+      ],
+      "decoded_instructions": 3456,
+      "all_decoded_OPs_base_I": true,
+      "bin_SHA256": "5190F257E0C9F0C9EE638DDDD3408919C21F0E8BEF7DAF7DEACA540CF97ED8E7",
+      "ELF_SHA256": "5980DADAE61EE02B2DDFD48096574A180A5478AA67E088A6BCC7128EDACAE496",
+      "executed": false
+    },
+    {
+      "id": "performance256",
+      "seed_location_check": [
+        {
+          "symbol": "seed1_volatile",
+          "address": 71744,
+          "ELF_region": "BSS_ZERO_REQUIRED_FROM_CRT_NOT_FILE_BYTES",
+          "declared_initial": 0,
+          "requires_actual_startup_validation": true
+        },
+        {
+          "symbol": "seed2_volatile",
+          "address": 71740,
+          "ELF_region": "BSS_ZERO_REQUIRED_FROM_CRT_NOT_FILE_BYTES",
+          "declared_initial": 0,
+          "requires_actual_startup_validation": true
+        },
+        {
+          "symbol": "seed3_volatile",
+          "address": 65556,
+          "ELF_region": "FILE_BACKED",
+          "declared_initial": 102,
+          "requires_actual_startup_validation": false
+        },
+        {
+          "symbol": "seed4_volatile",
+          "address": 65552,
+          "ELF_region": "FILE_BACKED",
+          "declared_initial": 256,
+          "requires_actual_startup_validation": false
+        }
+      ],
+      "decoded_instructions": 3456,
+      "all_decoded_OPs_base_I": true,
+      "bin_SHA256": "0160BF311C70A8CCDDDF1B4F19B96C4F5B7357CB2E4BD04E69DB9A87DBC8C21E",
+      "ELF_SHA256": "FA9822A21D61AE72E807541CFB9676EE308D3F247EF7180F84E74151AD7B0D1C",
+      "executed": false
+    },
+    {
+      "id": "validation256",
+      "seed_location_check": [
+        {
+          "symbol": "seed1_volatile",
+          "address": 65564,
+          "ELF_region": "FILE_BACKED",
+          "declared_initial": 13333,
+          "requires_actual_startup_validation": false
+        },
+        {
+          "symbol": "seed2_volatile",
+          "address": 65560,
+          "ELF_region": "FILE_BACKED",
+          "declared_initial": 13333,
+          "requires_actual_startup_validation": false
+        },
+        {
+          "symbol": "seed3_volatile",
+          "address": 65556,
+          "ELF_region": "FILE_BACKED",
+          "declared_initial": 102,
+          "requires_actual_startup_validation": false
+        },
+        {
+          "symbol": "seed4_volatile",
+          "address": 65552,
+          "ELF_region": "FILE_BACKED",
+          "declared_initial": 256,
+          "requires_actual_startup_validation": false
+        }
+      ],
+      "decoded_instructions": 3456,
+      "all_decoded_OPs_base_I": true,
+      "bin_SHA256": "3C28FC298D431BA8FDB09A1075E3EECE5DDD123549EB6CE26870FB7101359559",
+      "ELF_SHA256": "764E1D2A9EACC7AA69D7523C3A511C5BB27DA0CF7122157200D0D294F646E96F",
+      "executed": false
+    }
+  ],
+  "status": "STATIC_ONLY_NO_PROGRAM_RUN",
+  "cause": "initial_word accepts only file-backed bytes; zero seeds are in BSS. Existing CRT must really clear RAM A5 in subsequent reference/DUT, not prezeroed by testbench",
+  "original_inputs_unchanged": 27
+}

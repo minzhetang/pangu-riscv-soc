@@ -1,0 +1,10 @@
+{
+  "start": 873782.406,
+  "deadline_monotonic": 880691.359,
+  "old_clock": {
+    "start": 873491.359,
+    "deadline_monotonic": 880691.359
+  },
+  "old_expired": false,
+  "approval": "2026-10-29 user \u6279\u51c6\uff0c\u7ee7\u7eed; replacement preflight and remaining tests; old clock retained"
+}
