@@ -1,0 +1,40 @@
+{
+  "argv": [
+    "D:/PDS/PDS_2022.2-SP6.4/bin/pds_shell.exe",
+    "-file",
+    "D:\\A_FPGA_Comp\\work\\analysis\\2026-10-29-postroute-netlist-export-m0\\inspect.tcl"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\analysis\\2026-10-29-postroute-netlist-export-m0",
+  "returncode": 0,
+  "returncode_hex": "0x00000000",
+  "timed_out": false,
+  "cap": false,
+  "error": null,
+  "termination": "PROCESS_EXIT",
+  "peak_working_set_bytes": 100077568,
+  "parent_peak_working_set_bytes": 20041728,
+  "child_memory_samples": 2571,
+  "elapsed_seconds": 79.922,
+  "timeout_seconds": 180,
+  "child_cpu": {
+    "kernel_s": 0.125,
+    "user_s": 0.34375
+  },
+  "parent_cpu_before": {
+    "kernel_s": 0.03125,
+    "user_s": 0.03125
+  },
+  "parent_cpu_after": {
+    "kernel_s": 0.9375,
+    "user_s": 0.203125
+  },
+  "stdout": "D:\\A_FPGA_Comp\\work\\analysis\\2026-10-29-postroute-netlist-export-m0\\logs\\inspect-once\\stdout.log",
+  "stderr": "D:\\A_FPGA_Comp\\work\\analysis\\2026-10-29-postroute-netlist-export-m0\\logs\\inspect-once\\stderr.log",
+  "measurement_scope": "PDS shell and this parent only; stage memory pool report retained separately, internal child peaks not separately measured",
+  "absolute_deadline_used": true,
+  "failure_cleanup": {
+    "taskkill_rc": null,
+    "error": null,
+    "tree_verified": "NOT_INDEPENDENTLY_ENUMERATED"
+  }
+}

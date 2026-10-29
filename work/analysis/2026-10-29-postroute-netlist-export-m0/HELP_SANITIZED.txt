@@ -1,0 +1,22 @@
+
+
+
+Executing : gen_netlist -help
+H: gen_netlist : Generate Netlist (Version 2022.2-SP6.4 build 146967)
+    [ -help  ]
+        Turn on to print this message
+    [ -of_flow string ]
+        Specify the flow which will be run
+    [ -force_to_run  ]
+        Run this action without checking the status
+    [ -input_db_file file string ]
+        Specify the input design DB file name
+    [ -func_sim_only  ]
+        Generate netlist for functional simulation only
+    [ -sdf_annotate Boolean_value (TRUE/FALSE) ]
+        Enable Sdf Annotate
+    [ -process_corner string ]
+        Process Corner
+
+
+Executing : gen_netlist -help successfully.

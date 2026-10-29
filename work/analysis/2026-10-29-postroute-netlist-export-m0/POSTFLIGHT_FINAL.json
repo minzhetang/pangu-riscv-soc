@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-29",
+  "fact": "F174",
+  "approval": "D184",
+  "decision": "D185",
+  "status": "INTERFACE_VERIFIED_NO_EXPORT",
+  "native_processes": 1,
+  "seconds": 79.922,
+  "rc": 0,
+  "exported_netlists": 0,
+  "protected_entries": 260,
+  "copies": 4,
+  "unchanged": true,
+  "PDS_builds": 0,
+  "GUI": 0,
+  "new_DUT": 0,
+  "license_actual_days": 5,
+  "hardware": "STOPPED"
+}

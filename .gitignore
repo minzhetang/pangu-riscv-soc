@@ -1247,6 +1247,25 @@
 !/work/analysis/2026-10-29-debug-connectivity-m1/SUMMARY.json
 !/work/analysis/2026-10-29-debug-connectivity-m1/GUI_ACTIONS.json
 
+!/deliveries/mainline-postroute-netlist-export-r1-scope-2026-10-29-v1/
+/deliveries/mainline-postroute-netlist-export-r1-scope-2026-10-29-v1/*
+!/work/analysis/2026-10-29-postroute-netlist-export-m0/
+/work/analysis/2026-10-29-postroute-netlist-export-m0/*
+!/reports/verification/2026-10-29-postroute-netlist-export-m0.md
+!/deliveries/mainline-postroute-netlist-export-r1-scope-2026-10-29-v1/IMPLEMENTATION_SCOPE.md
+!/deliveries/mainline-postroute-netlist-export-r1-scope-2026-10-29-v1/SCOPE_STATUS.json
+!/work/analysis/2026-10-29-postroute-netlist-export-m0/run.py
+!/work/analysis/2026-10-29-postroute-netlist-export-m0/host_supervisor.py
+!/work/analysis/2026-10-29-postroute-netlist-export-m0/stage_budget.py
+!/work/analysis/2026-10-29-postroute-netlist-export-m0/inspect.tcl
+!/work/analysis/2026-10-29-postroute-netlist-export-m0/APPROVAL.json
+!/work/analysis/2026-10-29-postroute-netlist-export-m0/COPY_RECEIPT.json
+!/work/analysis/2026-10-29-postroute-netlist-export-m0/NATIVE_ATTEMPT.json
+!/work/analysis/2026-10-29-postroute-netlist-export-m0/NATIVE_EXIT.json
+!/work/analysis/2026-10-29-postroute-netlist-export-m0/HELP_SANITIZED.txt
+!/work/analysis/2026-10-29-postroute-netlist-export-m0/SUMMARY.json
+!/work/analysis/2026-10-29-postroute-netlist-export-m0/POSTFLIGHT_FINAL.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC
