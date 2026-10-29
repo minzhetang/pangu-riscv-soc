@@ -1,0 +1,5 @@
+{
+  "source": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\board_top_pnr.adf",
+  "copy": "D:\\A_FPGA_Comp\\work\\analysis\\2026-10-29-postroute-netlist-export-r1\\inputs\\board_top_pnr.adf",
+  "SHA256": "1F54CB6A33F97BD8869FB6F334263E1719A435FD5398FCA1664CEDB743DCC779"
+}

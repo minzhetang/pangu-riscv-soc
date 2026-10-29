@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-29",
+  "decision": "D186",
+  "scope_SHA256": "DB2B53DF7EBFF0E8531C705281FC5A811A6603F1CA514396824E20EBAB5F40A3",
+  "native_processes": 1,
+  "seconds": 180,
+  "hardware": "STOPPED"
+}

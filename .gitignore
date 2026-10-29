@@ -1266,6 +1266,20 @@
 !/work/analysis/2026-10-29-postroute-netlist-export-m0/SUMMARY.json
 !/work/analysis/2026-10-29-postroute-netlist-export-m0/POSTFLIGHT_FINAL.json
 
+!/work/analysis/2026-10-29-postroute-netlist-export-r1/
+/work/analysis/2026-10-29-postroute-netlist-export-r1/*
+!/reports/verification/2026-10-29-postroute-netlist-export-r1.md
+!/work/analysis/2026-10-29-postroute-netlist-export-r1/run.py
+!/work/analysis/2026-10-29-postroute-netlist-export-r1/host_supervisor.py
+!/work/analysis/2026-10-29-postroute-netlist-export-r1/stage_budget.py
+!/work/analysis/2026-10-29-postroute-netlist-export-r1/export.tcl
+!/work/analysis/2026-10-29-postroute-netlist-export-r1/APPROVAL.json
+!/work/analysis/2026-10-29-postroute-netlist-export-r1/COPY_RECEIPT.json
+!/work/analysis/2026-10-29-postroute-netlist-export-r1/HOST_ERROR.json
+!/work/analysis/2026-10-29-postroute-netlist-export-r1/POSTFLIGHT.json
+!/work/analysis/2026-10-29-postroute-netlist-export-r1/SUMMARY.json
+!/work/analysis/2026-10-29-postroute-netlist-export-r1/DIAGNOSTIC.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

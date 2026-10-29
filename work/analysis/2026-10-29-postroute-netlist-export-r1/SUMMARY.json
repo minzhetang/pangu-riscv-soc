@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-29",
+  "fact": "F175",
+  "approval": "D186",
+  "decision": "D187",
+  "status": "EXPORT_REJECTED_PREREQUISITE_NOT_CPU_FAILURE",
+  "native_processes": 1,
+  "seconds": 1.109,
+  "rc": 1,
+  "error": "E: Flow-0044: Place & Route hasn't been run, it's not allowed to run Generate Netlist..",
+  "old_pnr_state": 2,
+  "new_pnr_state": 0,
+  "exported_netlists": 0,
+  "connection_verified": 0,
+  "protected_entries": 260,
+  "unchanged": true,
+  "PDS_builds": 0,
+  "new_DUT": 0,
+  "GUI": 0,
+  "hardware": "STOPPED"
+}
