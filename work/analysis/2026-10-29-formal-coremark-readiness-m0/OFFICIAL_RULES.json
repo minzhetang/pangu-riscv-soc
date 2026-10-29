@@ -1,0 +1,27 @@
+{
+  "commit": "1f483d5b8316753a742cbf5590caf5bd0a4e4777",
+  "source": "local previously authenticated upstream files, rehashed against receipt; no network this task",
+  "source_SHA256": {
+    "README.md": "5581FB67DC1609CBD1865F150DBCB1050D96C602987792456850EB96EB0DD08C",
+    "barebones_porting.md": "487AB4D058AAD127EBAD527A314D4C5BEA72E093BDD18B9728359A9098E4E8FB"
+  },
+  "required": [
+    ">=10s real target timed workload",
+    "both performance and validation seeds",
+    "2000 total bytes",
+    "uniform compilation flags/data types",
+    "no changes to six official algorithm/header sources"
+  ],
+  "allowed": [
+    "core_portme implementation/configuration",
+    "fixed iteration count",
+    "build options"
+  ],
+  "HAS_FLOAT0": "explicitly permitted in barebones guide; integer seconds precision is a reporting limitation, not ISA or timer failure",
+  "timing_reference": "barebones guide requires test of time measurement against external reference; not yet hardware validated",
+  "all_benchmark_success_paths": "core_main return0 independent of total_errors; require success/CRC/error evidence, not main return alone",
+  "source_URLs": [
+    "https://github.com/eembc/coremark/blob/1f483d5b8316753a742cbf5590caf5bd0a4e4777/README.md#run-rules",
+    "https://github.com/eembc/coremark/blob/1f483d5b8316753a742cbf5590caf5bd0a4e4777/barebones_porting.md"
+  ]
+}

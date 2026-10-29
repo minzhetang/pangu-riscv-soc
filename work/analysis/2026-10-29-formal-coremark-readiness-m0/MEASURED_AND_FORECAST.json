@@ -1,0 +1,193 @@
+{
+  "measured_old_only": [
+    {
+      "seed": "performance",
+      "iterations": 1,
+      "raw_ticks": 2103648,
+      "physical": 3784487,
+      "source": "work/fpga/2026-10-25-board-coremark-m1/runs/performance-N234/check-result.json",
+      "nominal_hz": 27000000,
+      "hardware": false
+    },
+    {
+      "seed": "validation",
+      "iterations": 1,
+      "raw_ticks": 2263000,
+      "physical": 3941007,
+      "source": "work/fpga/2026-10-25-board-coremark-m1/runs/validation-N234/check-result.json",
+      "nominal_hz": 27000000,
+      "hardware": false
+    },
+    {
+      "seed": "performance",
+      "iterations": 2,
+      "raw_ticks": 4207378,
+      "physical": 5888943,
+      "source": "work/fpga/2026-10-25-coremark-iter2-m1/runs/performance-N234/check-result.json",
+      "nominal_hz": 27000000,
+      "hardware": false
+    },
+    {
+      "seed": "validation",
+      "iterations": 2,
+      "raw_ticks": 4526490,
+      "physical": 6205395,
+      "source": "work/fpga/2026-10-25-coremark-iter2-m1/runs/validation-N234/check-result.json",
+      "nominal_hz": 27000000,
+      "hardware": false
+    },
+    {
+      "seed": "performance",
+      "iterations": 8,
+      "raw_ticks": 16829452,
+      "physical": 18515827,
+      "source": "work/fpga/2026-10-27-coremark-longrun-ready-m2/runs/performance8-N234/check-result.json",
+      "nominal_hz": 27000000,
+      "hardware": false
+    }
+  ],
+  "models": [
+    {
+      "seed": "performance",
+      "source_points": [
+        {
+          "seed": "performance",
+          "iterations": 2,
+          "raw_ticks": 4207378,
+          "physical": 5888943,
+          "source": "work/fpga/2026-10-25-coremark-iter2-m1/runs/performance-N234/check-result.json",
+          "nominal_hz": 27000000,
+          "hardware": false
+        },
+        {
+          "seed": "performance",
+          "iterations": 8,
+          "raw_ticks": 16829452,
+          "physical": 18515827,
+          "source": "work/fpga/2026-10-27-coremark-longrun-ready-m2/runs/performance8-N234/check-result.json",
+          "nominal_hz": 27000000,
+          "hardware": false
+        }
+      ],
+      "slope_ticks_exact": "2103679",
+      "intercept_exact": "20",
+      "rows": [
+        {
+          "iterations": 128,
+          "predicted_ticks_exact": "269270932",
+          "nominal_seconds_exact": "67317733/6750000",
+          "nominal_seconds_display": 9.972997481481482,
+          "candidate_over_10_nominal_seconds": false,
+          "official_32bit_range_if_estimate_holds": true,
+          "NOT_EXECUTED": true
+        },
+        {
+          "iterations": 160,
+          "predicted_ticks_exact": "336588660",
+          "nominal_seconds_exact": "1869937/150000",
+          "nominal_seconds_display": 12.466246666666667,
+          "candidate_over_10_nominal_seconds": true,
+          "official_32bit_range_if_estimate_holds": true,
+          "NOT_EXECUTED": true
+        },
+        {
+          "iterations": 192,
+          "predicted_ticks_exact": "403906388",
+          "nominal_seconds_exact": "100976597/6750000",
+          "nominal_seconds_display": 14.959495851851852,
+          "candidate_over_10_nominal_seconds": true,
+          "official_32bit_range_if_estimate_holds": true,
+          "NOT_EXECUTED": true
+        },
+        {
+          "iterations": 256,
+          "predicted_ticks_exact": "538541844",
+          "nominal_seconds_exact": "44878487/2250000",
+          "nominal_seconds_display": 19.94599422222222,
+          "candidate_over_10_nominal_seconds": true,
+          "official_32bit_range_if_estimate_holds": true,
+          "NOT_EXECUTED": true
+        }
+      ],
+      "interpretation": "CONDITIONAL_EXTRAPOLATION_NOT_FROZEN_EXPECTED_NOT_HW_TIME"
+    },
+    {
+      "seed": "validation",
+      "source_points": [
+        {
+          "seed": "validation",
+          "iterations": 1,
+          "raw_ticks": 2263000,
+          "physical": 3941007,
+          "source": "work/fpga/2026-10-25-board-coremark-m1/runs/validation-N234/check-result.json",
+          "nominal_hz": 27000000,
+          "hardware": false
+        },
+        {
+          "seed": "validation",
+          "iterations": 2,
+          "raw_ticks": 4526490,
+          "physical": 6205395,
+          "source": "work/fpga/2026-10-25-coremark-iter2-m1/runs/validation-N234/check-result.json",
+          "nominal_hz": 27000000,
+          "hardware": false
+        }
+      ],
+      "slope_ticks_exact": "2263490",
+      "intercept_exact": "-490",
+      "rows": [
+        {
+          "iterations": 128,
+          "predicted_ticks_exact": "289726230",
+          "nominal_seconds_exact": "9657541/900000",
+          "nominal_seconds_display": 10.730601111111111,
+          "candidate_over_10_nominal_seconds": true,
+          "official_32bit_range_if_estimate_holds": true,
+          "NOT_EXECUTED": true
+        },
+        {
+          "iterations": 160,
+          "predicted_ticks_exact": "362157910",
+          "nominal_seconds_exact": "36215791/2700000",
+          "nominal_seconds_display": 13.413255925925926,
+          "candidate_over_10_nominal_seconds": true,
+          "official_32bit_range_if_estimate_holds": true,
+          "NOT_EXECUTED": true
+        },
+        {
+          "iterations": 192,
+          "predicted_ticks_exact": "434589590",
+          "nominal_seconds_exact": "43458959/2700000",
+          "nominal_seconds_display": 16.09591074074074,
+          "candidate_over_10_nominal_seconds": true,
+          "official_32bit_range_if_estimate_holds": true,
+          "NOT_EXECUTED": true
+        },
+        {
+          "iterations": 256,
+          "predicted_ticks_exact": "579452950",
+          "nominal_seconds_exact": "11589059/540000",
+          "nominal_seconds_display": 21.46122037037037,
+          "candidate_over_10_nominal_seconds": true,
+          "official_32bit_range_if_estimate_holds": true,
+          "NOT_EXECUTED": true
+        }
+      ],
+      "interpretation": "CONDITIONAL_EXTRAPOLATION_NOT_FROZEN_EXPECTED_NOT_HW_TIME"
+    }
+  ],
+  "choice": {
+    "proposed_iterations": 256,
+    "reason": "about20s at fixed27MHz conditional estimate, margin over10s without port/CPU width changes; real time gate remains mandatory",
+    "NOT_APPROVED_OR_EXECUTED": true
+  },
+  "timer": {
+    "hardware_counter_bits": 64,
+    "port_tick_bits": 32,
+    "ten_second_threshold": 270000000,
+    "max_accepted_delta": 4294967295,
+    "max_nominal_seconds_exact": "286331153/1800000",
+    "max_nominal_seconds_display": 159.07286277777777,
+    "core_clock_basis": "physical original clock; do not divide MHz by2 for two-phase pipeline"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-29",
+  "stage": "A-FORMAL-COREMARK-SOFTWARE-M1",
+  "version": "1.0.0",
+  "status": "PENDING_STAGE_APPROVAL",
+  "scope_SHA256": "92FE0A94A8713CFFF55B7F006B607F41FC4FE6D6C0513036B3D094EBB575C39F",
+  "C_builds": 4,
+  "reference_runs": 4,
+  "RTL_compiles": 2,
+  "new_DUT": 2,
+  "DUT_iterations": [
+    2,
+    2
+  ],
+  "long256_DUT": 0,
+  "hardware": "STOPPED",
+  "PDS": 0
+}

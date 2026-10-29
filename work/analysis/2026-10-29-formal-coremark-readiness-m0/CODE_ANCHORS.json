@@ -1,0 +1,222 @@
+[
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.c",
+    "line": 9,
+    "text": "#ifndef ITERATIONS"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.c",
+    "line": 10,
+    "text": "#define ITERATIONS 1"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.c",
+    "line": 12,
+    "text": "#if ITERATIONS < 1 || ITERATIONS > 2147483647"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.c",
+    "line": 13,
+    "text": "#error \"ITERATIONS must be a positive signed 32-bit integer; automatic zero is disabled\""
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.c",
+    "line": 15,
+    "text": "volatile ee_s32 seed3_volatile=0x66, seed4_volatile=ITERATIONS, seed5_volatile=0;"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.c",
+    "line": 55,
+    "text": "if(end_ticks<start_ticks||elapsed_ticks>UINT32_MAX)timer_error=1;"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.c",
+    "line": 58,
+    "text": "secs_ret time_in_secs(CORE_TICKS ticks) { return ticks/27000000u; }"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.c",
+    "line": 68,
+    "text": "ee_printf(\"Timer Hz set    : 27000000; SIM ONLY, NO VALID SCORE\\n\");"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.c",
+    "line": 69,
+    "text": "timing_phase=3;"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.h",
+    "line": 5,
+    "text": "#define HAS_FLOAT 0"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.h",
+    "line": 11,
+    "text": "#define COMPILER_FLAGS \"RV32I/ILP32 -O2; full flags in build request\""
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.h",
+    "line": 12,
+    "text": "#define MEM_LOCATION \"STATIC RAM; timed simulation, NO VALID SCORE\""
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.h",
+    "line": 23,
+    "text": "typedef ee_u32 CORE_TICKS;"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 36,
+    "text": "static ee_u16 list_known_crc[]   = { (ee_u16)0xd4b0,"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 41,
+    "text": "static ee_u16 matrix_known_crc[] = { (ee_u16)0xbe52,"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 46,
+    "text": "static ee_u16 state_known_crc[]  = { (ee_u16)0x5e47,"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 132,
+    "text": "return MAIN_RETURN_VAL;"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 242,
+    "text": "if (results[0].iterations == 0)"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 250,
+    "text": "start_time();"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 252,
+    "text": "stop_time();"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 265,
+    "text": "start_time();"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 284,
+    "text": "stop_time();"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 327,
+    "text": "&& (results[i].crclist != list_known_crc[known_id]))"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 332,
+    "text": "list_known_crc[known_id]);"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 336,
+    "text": "&& (results[i].crcmatrix != matrix_known_crc[known_id]))"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 341,
+    "text": "matrix_known_crc[known_id]);"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 345,
+    "text": "&& (results[i].crcstate != state_known_crc[known_id]))"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 350,
+    "text": "state_known_crc[known_id]);"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 360,
+    "text": "#if HAS_FLOAT"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 373,
+    "text": "if (time_in_secs(total_time) < 10)"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 406,
+    "text": "#if HAS_FLOAT"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "line": 441,
+    "text": "return MAIN_RETURN_VAL;"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/check_coremark.py",
+    "line": 143,
+    "text": "for sym in ['timer_start_calls','timer_stop_calls','port_finished']:eq(sym,word(sym),1)"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/check_coremark.py",
+    "line": 153,
+    "text": "eq('short run validity warning retained','Must execute for at least 10 secs' in report_text,True)"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/check_coremark.py",
+    "line": 159,
+    "text": "simulated_seconds_at_setting=delta/27000000,formal_score_valid=False,phases=phases,report_bytes=length)"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/oracle.py",
+    "line": 42,
+    "text": "assert self.ref.steps<25000000"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/oracle.py",
+    "line": 47,
+    "text": "baseline=False;name=case;assert name=='performance8';expected_iterations=8"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/oracle.py",
+    "line": 59,
+    "text": "stamps=[word(n,0,8) for n in ['empty_start','empty_end','start_ticks','end_ticks']];delta=word('elapsed_ticks',0,8);assert delta==stamps[3]-stamps[2] and 0<delta<270000000"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/coremark.h",
+    "line": 50,
+    "text": "/* Typedef: secs_ret"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/coremark.h",
+    "line": 55,
+    "text": "typedef double secs_ret;"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/coremark.h",
+    "line": 57,
+    "text": "typedef ee_u32 secs_ret;"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/coremark.h",
+    "line": 61,
+    "text": "#define MAIN_RETURN_VAL"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/coremark.h",
+    "line": 64,
+    "text": "#define MAIN_RETURN_VAL  0"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/coremark.h",
+    "line": 71,
+    "text": "secs_ret   time_in_secs(CORE_TICKS ticks);"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "version_record": "xPack15.2.0-1 GCC15.2.0; bytes same as existing verified install",
+  "tools": [
+    {
+      "path": "tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/riscv-none-elf-gcc.exe",
+      "SHA256": "9FD3AECDD6AE127A5545709F44F8F154B4A39898B021FE87D2991947B0A235C5",
+      "matches_previously_verified_install": true,
+      "executed": false
+    },
+    {
+      "path": "tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/riscv-none-elf-objcopy.exe",
+      "SHA256": "F795429A74B30249A0FC337DC31614F6FEE265701A972844D830D1EB70CEE4AD",
+      "matches_previously_verified_install": true,
+      "executed": false
+    },
+    {
+      "path": "tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/riscv-none-elf-objdump.exe",
+      "SHA256": "307D930A497551A94C7459AC49A947C842C320D28EDA485C844A79FCE1CE7641",
+      "matches_previously_verified_install": true,
+      "executed": false
+    },
+    {
+      "path": "tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/riscv-none-elf-readelf.exe",
+      "SHA256": "CA108A4AF50D50770A39D0462704C881102CEEEC8AB3037DD02AC9D6829097B5",
+      "matches_previously_verified_install": true,
+      "executed": false
+    },
+    {
+      "path": "tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/riscv-none-elf-nm.exe",
+      "SHA256": "9AB395ADA4E901A56A16DC7753275488885F6960BF31CDF5089A8A9E59372643",
+      "matches_previously_verified_install": true,
+      "executed": false
+    }
+  ],
+  "new_native_version_queries": 0
+}

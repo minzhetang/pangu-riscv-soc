@@ -1,0 +1,232 @@
+[
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.c",
+    "bytes": 3562,
+    "SHA256": "08F4FAA75514D6430F3F1EE6B1AE1DFCE760B61D43305D321F645EF0337210AC"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/port/core_portme.h",
+    "bytes": 1156,
+    "SHA256": "24119A04D7C23C0BDA6F31FCE68869D75A00B1B0611D9C46C155F64891542586"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/firmware/timer.h",
+    "bytes": 518,
+    "SHA256": "61F1F30134CBD034ACD2887344F44293AE5B82251B1FD6CC5B79A2DC4B8BEADC"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/firmware/start.S",
+    "bytes": 675,
+    "SHA256": "50D3AD9F9D591DE5007665FF074B21E94812548A9B0972416954E569F6FC9DDC"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/firmware/link.ld",
+    "bytes": 949,
+    "SHA256": "2616CB1A27B60FCBA98C0D5E73267A8E5CAA39FB05AA46A2D6E34B6C99914A6E"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/check_coremark.py",
+    "bytes": 12796,
+    "SHA256": "3F4045153C01CDDF5A6B333F26D39E6FA587B213CD1B43C969BA5A5F116FF487"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/oracle.py",
+    "bytes": 6300,
+    "SHA256": "1FACD2B886F285F42976C21DF139CFA7A8F92EEB50E04D01885F7EB0D6709BBA"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/frozen_checks.py",
+    "bytes": 3044,
+    "SHA256": "F23C7A1F617A24893BEB33160889762304D9F7C20A48864F686359EC1C2B7C15"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/manual-plan.json",
+    "bytes": 1542,
+    "SHA256": "B4DB45F104BA718D9F3886C4B2E031455595352332FC058B15AFDC8BE78E0776"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/build_once.py",
+    "bytes": 3914,
+    "SHA256": "47D360EDD16110FA9CBA3D2B913DB1F0655CAA192AC7D5F74C3DF32FB0EBCFE9"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/SUMMARY.json",
+    "bytes": 6478,
+    "SHA256": "191CB81392F91136013426C0C558C6CEA5BCC3F516311C6F4DEB0F506A4CCB23"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/runs/performance8-N234/ram-output.txt",
+    "bytes": 663,
+    "SHA256": "9C3B61CD225EF097C00F7ED8D53ADB69F937F2451DF80B45535758366693DA4A"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/runs/performance8-N234/check-result.json",
+    "bytes": 3556,
+    "SHA256": "004E9BFF0EBA65A7851C5890E3206C4D1442912F7832F5C2FEBB1FD843E871BC"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/models/cpu_program_reference.py",
+    "bytes": 7252,
+    "SHA256": "090DFCF215189900B420EBBC569CB3F97BAFD0A4AF221F0A1EE9CEAB1382D7B9"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/models/peripheral_checker.py",
+    "bytes": 6001,
+    "SHA256": "E5BB96110DDF7B6BBD761D6A1922E83758DC71746B1813C3D851BD1DEC57677D"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/tests/tb_board_coremark.sv",
+    "bytes": 8473,
+    "SHA256": "5E6674714F07B8A9FE4EFF05E05E275CDFC51D85DCC3B1346ABFEE3F777C9757"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/build/performance8/program.bin",
+    "bytes": 15912,
+    "SHA256": "EC365839FEA1111CB365763322E2FA99C3C3B3F6B74A5884C5B0EB30593486F0"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/build/performance8/program.elf",
+    "bytes": 26168,
+    "SHA256": "90E06A11E410E36FCDE16570BDA9BE6C4A57800D94FE4AA84B17FC2BE4224638"
+  },
+  {
+    "path": "work/system/2026-10-23-coremark-correctness-m1/upstream-direct/files/README.md",
+    "bytes": 19687,
+    "SHA256": "5581FB67DC1609CBD1865F150DBCB1050D96C602987792456850EB96EB0DD08C"
+  },
+  {
+    "path": "work/system/2026-10-23-coremark-correctness-m1/upstream-direct/files/barebones_porting.md",
+    "bytes": 9745,
+    "SHA256": "487AB4D058AAD127EBAD527A314D4C5BEA72E093BDD18B9728359A9098E4E8FB"
+  },
+  {
+    "path": "work/system/2026-10-23-coremark-correctness-m1/source-integrity-review.json",
+    "bytes": 3590,
+    "SHA256": "74EE91B4ECD5BF64A71AEB9563C3D6435FF781AB9C80B4ACEDA24EAB67BC5F4A"
+  },
+  {
+    "path": "work/fpga/2026-10-25-coremark-iter2-m1/runs/performance-N234/check-result.json",
+    "bytes": 3306,
+    "SHA256": "C3A8A59A1443E55AF4C58F35D308EC17F70BE01E2AF6AB5A2D30237F39D2272D"
+  },
+  {
+    "path": "work/fpga/2026-10-25-coremark-iter2-m1/runs/validation-N234/check-result.json",
+    "bytes": 3307,
+    "SHA256": "74A7E5222EA9172396241926CE8E3B9FCCE154724221FA403388F2D272B8302F"
+  },
+  {
+    "path": "work/fpga/2026-10-25-board-coremark-m1/runs/performance-N234/check-result.json",
+    "bytes": 3088,
+    "SHA256": "41069A454D56B0F0655D5E0A29491A6D633F05CB9C5F903B5F53E776AC5F232D"
+  },
+  {
+    "path": "work/fpga/2026-10-25-board-coremark-m1/runs/validation-N234/check-result.json",
+    "bytes": 3088,
+    "SHA256": "3E044018F2ADB7D1F17270D9DA3957AD3E2624481B17CC41F3C953C96354A4D1"
+  },
+  {
+    "path": "deliveries/full-project-technical-handoff-2026-10-29-v01/MANIFEST.json",
+    "bytes": 308546,
+    "SHA256": "1D542AFD5AE418C9D83FC695271B77951BFFB0CC29987C2BA69E392B7F018A92"
+  },
+  {
+    "path": "deliveries/full-project-technical-handoff-2026-10-29-v01/SHA256SUMS.txt",
+    "bytes": 213705,
+    "SHA256": "7DFEE05817A612970FCB01674DE8404928D99DF387D1D8ABCFFA64C6C4DAAFA2"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/alu.v",
+    "bytes": 1021,
+    "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/board_reset_sync.sv",
+    "bytes": 504,
+    "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/board_top.sv",
+    "bytes": 817,
+    "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/control.v",
+    "bytes": 2988,
+    "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/cpu.v",
+    "bytes": 17416,
+    "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/cycle_counter64.sv",
+    "bytes": 395,
+    "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/gpio_core.v",
+    "bytes": 2087,
+    "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/local_regif_txgpio_m1.v",
+    "bytes": 3732,
+    "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/memory_model.sv",
+    "bytes": 10236,
+    "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/regfile.v",
+    "bytes": 666,
+    "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/soc_data_adapter.sv",
+    "bytes": 1526,
+    "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/soc_top.sv",
+    "bytes": 1872,
+    "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/source/uart_tx.v",
+    "bytes": 5195,
+    "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_list_join.c",
+    "bytes": 18225,
+    "SHA256": "CA00E4E010ECE47D7F040CB92AA50A95345A00D3171B59D088F6B243BE06CE7B"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_main.c",
+    "bytes": 15788,
+    "SHA256": "17884C93C5B94378EB0FF02B4DF3725756CF2ADDB9B8CBCAA6200A4649FF5CA7"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_matrix.c",
+    "bytes": 9598,
+    "SHA256": "ECDFF717B5A5C4907D221A606760E25499899CBF617582C05D40DB71C91351E4"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_state.c",
+    "bytes": 9707,
+    "SHA256": "F4B84BB0A3452C45A4DAA664AB502BFDCCBD31CB57D93E9AC490C60937717A4E"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/core_util.c",
+    "bytes": 6004,
+    "SHA256": "A3FBFCB9BB943B638624B8ECE01C5836DD56A96D7BCDE2697B248D077447327F"
+  },
+  {
+    "path": "work/fpga/2026-10-27-coremark-longrun-ready-m2/upstream/coremark.h",
+    "bytes": 4760,
+    "SHA256": "42642B9A06C7ED2B3BD9EDA971B7C3868C4F5D27BF7EF6C4BBA11291A0C2598A"
+  }
+]

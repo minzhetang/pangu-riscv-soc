@@ -1,0 +1,13 @@
+{
+  "status": "PENDING_SOFTWARE_STAGE_APPROVAL",
+  "clarification": "SUMMARY build-only N256 means no RTL DUT; detailed proposal additionally requires independent ISA reference for both256 before delivering expected crcfinal/state, never substituting old8 or linear forecast",
+  "C_builds": 4,
+  "short_reference_runs": 2,
+  "long256_reference_runs": 2,
+  "short_RTL_compiles": 2,
+  "short_DUT_runs": 2,
+  "long256_DUT_runs": 0,
+  "PDS": 0,
+  "stage_limit_seconds": 7200,
+  "hardware": "STOPPED"
+}

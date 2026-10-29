@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-29",
+  "stage": "A-FORMAL-COREMARK-READINESS-M0",
+  "status": "READONLY_EVIDENCE_AND_NEXT_SCOPE_ONLY",
+  "facts": "F179",
+  "decision": "D193",
+  "inputs": 46,
+  "official_sources_rehashed": true,
+  "existing_tools_five_SHA_match": true,
+  "new_execution": 0,
+  "hardware": "STOPPED",
+  "recommendation": "propose bounded software-only 2+2 short DUT regression and two256 build-only candidates; no long RTL run or PDS",
+  "pending_scope": "deliveries/mainline-formal-coremark-software-scope-2026-10-29-v1/IMPLEMENTATION_SCOPE.md"
+}

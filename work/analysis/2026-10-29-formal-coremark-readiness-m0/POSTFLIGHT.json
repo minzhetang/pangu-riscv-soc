@@ -1,0 +1,11 @@
+{
+  "protected_inputs": 46,
+  "unchanged": true,
+  "RTL_modifications": 0,
+  "new_C_builds": 0,
+  "new_RTL_compiles": 0,
+  "new_reference_or_DUT_runs": 0,
+  "hardware": "STOPPED",
+  "B_receipt": "PENDING_USER_WILL_FORWARD",
+  "handoff_manifest_unchanged": true
+}
