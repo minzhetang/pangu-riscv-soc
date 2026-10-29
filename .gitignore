@@ -1294,6 +1294,24 @@
 !/work/analysis/2026-10-29-project-context-preflight-m0/NESTED_DEPENDENCY.json
 !/work/analysis/2026-10-29-project-context-preflight-m0/SUMMARY.json
 
+!/deliveries/mainline-direct-netlist-export-scope-2026-10-29-v1/
+/deliveries/mainline-direct-netlist-export-scope-2026-10-29-v1/*
+!/work/analysis/2026-10-29-project-context-export-m1/
+/work/analysis/2026-10-29-project-context-export-m1/*
+!/reports/verification/2026-10-29-project-context-export-m1.md
+!/work/analysis/2026-10-29-project-context-export-m1/run.py
+!/work/analysis/2026-10-29-project-context-export-m1/host_supervisor.py
+!/work/analysis/2026-10-29-project-context-export-m1/stage_budget.py
+!/work/analysis/2026-10-29-project-context-export-m1/APPROVAL.json
+!/work/analysis/2026-10-29-project-context-export-m1/EXPORT_OPTIONS.patch
+!/work/analysis/2026-10-29-project-context-export-m1/PATCH_RECEIPT.json
+!/work/analysis/2026-10-29-project-context-export-m1/POSTFLIGHT.json
+!/work/analysis/2026-10-29-project-context-export-m1/HOST_ERROR.json
+!/work/analysis/2026-10-29-project-context-export-m1/SUMMARY.json
+!/work/analysis/2026-10-29-project-context-export-m1/EXIT_RECHECK.json
+!/deliveries/mainline-direct-netlist-export-scope-2026-10-29-v1/IMPLEMENTATION_SCOPE.md
+!/deliveries/mainline-direct-netlist-export-scope-2026-10-29-v1/SCOPE_STATUS.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

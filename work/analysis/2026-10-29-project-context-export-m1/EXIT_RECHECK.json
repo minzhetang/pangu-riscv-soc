@@ -1,0 +1,10 @@
+{
+  "complete_snapshot": true,
+  "root_absent": true,
+  "current_descendants": 0,
+  "original_taskkill_rc": 1,
+  "original_tree_check": "NOT_INDEPENDENTLY_ENUMERATED",
+  "limitation": "Current PPID ancestry only, not historical child execution proof; no kill/relaunch",
+  "WMI": "ACCESS_DENIED",
+  "hardware": "STOPPED"
+}

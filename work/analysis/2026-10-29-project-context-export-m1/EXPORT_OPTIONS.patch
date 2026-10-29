@@ -1,0 +1,12 @@
+--- original/flow.pds
++++ execution/flow.pds
+@@ -275,6 +275,9 @@
+             (_gci_state (_integer 0))
+             (_attribute _auto_exe_lock (_switch OFF))
+             (_attribute _auto_exe (_switch OFF))
++        
++            (_option func_sim_only (_switch ON))
++            (_option sdf_annotate (_boolean FALSE))
+         )
+     )
+     (_task tsk_gen_bitstream
