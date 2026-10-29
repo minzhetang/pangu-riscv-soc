@@ -1,0 +1,416 @@
+[
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\board_pins.fdc",
+    "SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1",
+    "bytes": 4863,
+    "mtime_ns": 1793099867732061900
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\clock_27mhz.fdc",
+    "SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F",
+    "bytes": 101,
+    "mtime_ns": 1793099867733518400
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\compile\\board_top.cmr",
+    "SHA256": "A9D620BA33F3435B3BC3348228301D2AB1C272956EAE52D9014A87014B58EA52",
+    "bytes": 2843,
+    "mtime_ns": 1793195958533058100
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\compile\\board_top_comp.adf",
+    "SHA256": "3DAA365659C468772C51656F9D678C69C23F240EEC183B7E25D7F4728B440EEA",
+    "bytes": 345249,
+    "mtime_ns": 1793195958525512900
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\compile\\cmr.db",
+    "SHA256": "8AF74993BB784F3DFD3EA5E8C963D19200A736F603F32D8D98A8196E9CEAE915",
+    "bytes": 37071,
+    "mtime_ns": 1793195958549068700
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\compile\\error_info.txt",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "bytes": 0,
+    "mtime_ns": 1793195952653167000
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\compile\\formal.pvf",
+    "SHA256": "BADF9C8C0B0064200C2E09D1B58FA0AAC3F0EE3FCEB07AE1310402182F969DE5",
+    "bytes": 1907,
+    "mtime_ns": 1793195958550606400
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\compile\\include_relation.txt",
+    "SHA256": "E0419347DC8B702AD892593F7095099217F5DE2062F5D46C3DE740909CBC5960",
+    "bytes": 26,
+    "mtime_ns": 1793195952658172400
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\compile\\parse_design\\run.log",
+    "SHA256": "6472034CC0E59B5AE93B77D7F6ED75B4AD05EC9B9EC961B297C08DDF46984269",
+    "bytes": 1656,
+    "mtime_ns": 1793195952652169500
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\compile\\parse_design\\screen.pds",
+    "SHA256": "568EFC3894964B8149436FE99E58EA423AEAC3315D9D5146FC032C1D297A7B3C",
+    "bytes": 2966,
+    "mtime_ns": 1793195952661171500
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\compile\\parse_design\\screen.tcl",
+    "SHA256": "397F033AFECCF69086D98D74E7698A94BCA87BE970B0D49AE508A57C1F59CF2B",
+    "bytes": 1354,
+    "mtime_ns": 1793195951583680100
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\compile\\run.log",
+    "SHA256": "3CC25EC071CBE02DD7553EB4A8907AE7806E0397A893CA9ED6D75C275EFB331F",
+    "bytes": 29048,
+    "mtime_ns": 1793195958534058000
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\constraint_check\\constraint_check.ccr",
+    "SHA256": "E48AD31DF27B696ABD3FAA85436815BA5C9EF4F10426368AF737163BF92FD0E5",
+    "bytes": 990,
+    "mtime_ns": 1793195963703521000
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\device_map\\board_top.dmr",
+    "SHA256": "D8ACDC67FCA1736CD918EB00775252E2174EE16AD48274510B5EADF9592203E8",
+    "bytes": 95023,
+    "mtime_ns": 1793195992544859500
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\device_map\\board_top.pcf",
+    "SHA256": "F7D0351458DF1DBE418DD3EE61B8E1342ADFB88908BC1D37C4C141458D04B15F",
+    "bytes": 1276,
+    "mtime_ns": 1793195992493841400
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\device_map\\board_top_dmr.prt",
+    "SHA256": "EBEADF2038419D1BA18C7C11A361290E81ABE4CAF83140166D2B4623946E393A",
+    "bytes": 14052,
+    "mtime_ns": 1793195974370647700
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\device_map\\board_top_map.adf",
+    "SHA256": "AA9D86E47A1C664069F11A9819E078CC1966A68BB35A9F48F1CFA766FC92EF0D",
+    "bytes": 694978,
+    "mtime_ns": 1793195992489839400
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\device_map\\dmr.db",
+    "SHA256": "61F9001024CCA2732F055351EAA461DCC4185953823C46DE0285B80795F69256",
+    "bytes": 229387,
+    "mtime_ns": 1793195992564373600
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\device_map\\formal.pvf",
+    "SHA256": "FEA374289B057E4C2C764F4EEE924D2962DD227DCE5DAA4DCDC462570CC39BA5",
+    "bytes": 317,
+    "mtime_ns": 1793195992567372100
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\device_map\\ins_ads.log",
+    "SHA256": "D1CDDFF0BF75676BCB58FEC2395602483C4B043A92C1BDD81232B29C4D5A678F",
+    "bytes": 104954,
+    "mtime_ns": 1793195990649276400
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\device_map\\run.log",
+    "SHA256": "A3654244ED4D56BB935F07BBC2A59C47F66E44CE19049474B862DB9FFCE66129",
+    "bytes": 10021,
+    "mtime_ns": 1793195992544859500
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\device_map\\temp_20261028215934",
+    "SHA256": "664B4439BBBE4A8DD486269AAFEE8E0CAD808B3D712FC046A5F9796BB18C0DB3",
+    "bytes": 129,
+    "mtime_ns": 1793195974389864200
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\flow.log",
+    "SHA256": "2069D0727FBABCB6C809C41FDC719717D3AC1A2C33B77D8570457ACB34C029F7",
+    "bytes": 104899,
+    "mtime_ns": 1793196054391885400
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\flow.pds",
+    "SHA256": "E1FF23F9113A4F865F6087DBC568F4FB478C412A42F020D26F5E98894116BA22",
+    "bytes": 10595,
+    "mtime_ns": 1793196054401391000
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\flow.tcl",
+    "SHA256": "8BF624B9D3A271C6F1FECE6C7221567A04E69677F89FA91DA569F24B9787BFA7",
+    "bytes": 1218,
+    "mtime_ns": 1793195540637793300
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\generate_bitstream\\bgr.db",
+    "SHA256": "645456EF86DA423C6985D05463024B60AF4098399C96A26F68680065AE6433F0",
+    "bytes": 13558,
+    "mtime_ns": 1793196054204420000
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\generate_bitstream\\board_top.bgr",
+    "SHA256": "6796EEA64266C01305F439AA74938A5155EAFBDCF171EB4AFAA9F10B5917AB2B",
+    "bytes": 1777,
+    "mtime_ns": 1793196054189406700
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\generate_bitstream\\board_top.sbit",
+    "SHA256": "139DD52013B6C3A9ADA50B92D72F1479ED488DE2C70D024284A27AEC573EFC03",
+    "bytes": 3791112,
+    "mtime_ns": 1793196053506842600
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\generate_bitstream\\board_top.smsk",
+    "SHA256": "B5A5577B7EA36F257E5EDA9308DC7F2BCB3962BC995DFDBF9E9E0F55921BDFA4",
+    "bytes": 3791112,
+    "mtime_ns": 1793196053587426600
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\generate_bitstream\\run.log",
+    "SHA256": "FDD9F9E32F70D94F128431B35FB631E7AEE635CA3CA353CE1E13B25C0FF67936",
+    "bytes": 1130,
+    "mtime_ns": 1793196054189406700
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\impl.tcl",
+    "SHA256": "D6A6E169EEE996AE799CF686AD696ED7419DA1085BA267FBC70751234409DCDD",
+    "bytes": 1946,
+    "mtime_ns": 1793196054359372900
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\multiseed_summary.csv",
+    "SHA256": "9C1D589E05A6CFC9F8321FDFBF458287D70A8529FADA6D099E2F62AECD18EF9A",
+    "bytes": 1664,
+    "mtime_ns": 1793196041338305200
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\board_top.prr",
+    "SHA256": "E28B54B17F879D9CEA78F13E0F3BEA2B59671A56D3850266711B63A8F5164049",
+    "bytes": 21079,
+    "mtime_ns": 1793196030319270300
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\board_top_plc.adf",
+    "SHA256": "22AA27D304835F0FA7FCC724B08BF45FBB82BF79C7EFF9C350778116682D4BE6",
+    "bytes": 805918,
+    "mtime_ns": 1793196010076834600
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\board_top_pnr.adf",
+    "SHA256": "1F54CB6A33F97BD8869FB6F334263E1719A435FD5398FCA1664CEDB743DCC779",
+    "bytes": 3231011,
+    "mtime_ns": 1793196030180067800
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\board_top_pnr.netlist",
+    "SHA256": "13BF3FAC9EC1584DA1726AE628599351F1347C024C273E8D086FF660E2B588FC",
+    "bytes": 878630,
+    "mtime_ns": 1793196030188541800
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\board_top_prr.prt",
+    "SHA256": "C9AB7C345195283BAFB4E7CCE6A5096A6A3FA0B85CACB867906C4961EAF86340",
+    "bytes": 14234,
+    "mtime_ns": 1793196027098594000
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\board_top_timing_summary_after_hold_fix.txt",
+    "SHA256": "90F4D8991449B3B2434EE6BAEB417955A3AE94F322851CAA8BCADDD3AE7327C2",
+    "bytes": 7527,
+    "mtime_ns": 1793196025114077000
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\clock_utilization.txt",
+    "SHA256": "A03D0B5CDD2970BCD39224FF8878A6331397297130D9339966F8A5528DA1428F",
+    "bytes": 8549,
+    "mtime_ns": 1793196027113562700
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\layers.txt",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "bytes": 0,
+    "mtime_ns": 1793196001852353500
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\prr.db",
+    "SHA256": "4E6A4E5FAD53EDC1BE63CE92B7207AE652BFBC177123FE8043FE743D9BF26C36",
+    "bytes": 128386,
+    "mtime_ns": 1793196030336789000
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\place_route\\run.log",
+    "SHA256": "0EC839F23BF7C1EDB64A216B187BE11FC3929521E17C6B8226BFFEC17CD6CAA3",
+    "bytes": 24964,
+    "mtime_ns": 1793196030319270300
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\report_timing\\board_top.rtr",
+    "SHA256": "9D617E41C11A9936E64A8DACEB20C06BE5C1FDD69D8182976D88CAF5B610CFAD",
+    "bytes": 380000,
+    "mtime_ns": 1793196041079286100
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\report_timing\\board_top_rtp.adf",
+    "SHA256": "F481E0570B0B94BE147D82C80B8655C90F2CD7856FC13DAD5D4D97D44B04BA0B",
+    "bytes": 8513,
+    "mtime_ns": 1793196040531422300
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\report_timing\\rtr.db",
+    "SHA256": "69C4F8DC47D9CA6931994C4B0D975E5ECD5FF7F6C2E075F162D72562C57264DB",
+    "bytes": 2986921,
+    "mtime_ns": 1793196041116491400
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\report_timing\\run.log",
+    "SHA256": "E6E83A2597E193119DA2161AFFE5A1ED7E8C24F9E9478FB2DACB3AEB6EFDDE3F",
+    "bytes": 2215,
+    "mtime_ns": 1793196041079286100
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\run.log",
+    "SHA256": "366131BED320E41A880CB6C6F3435E579E62A39269B8DDBA3FDAD31A373B0F92",
+    "bytes": 110005,
+    "mtime_ns": 1793196054396885300
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\alu.v",
+    "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+    "bytes": 1021,
+    "mtime_ns": 1793099867690207100
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\board_reset_sync.sv",
+    "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152",
+    "bytes": 504,
+    "mtime_ns": 1793099867692206500
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\board_top.sv",
+    "SHA256": "A30BCBFDD172E0A9C2995F324298130A1737C47A7E3AEEFED51904CF93BECF2F",
+    "bytes": 931,
+    "mtime_ns": 1793180945708786000
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\control.v",
+    "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+    "bytes": 2988,
+    "mtime_ns": 1793099867697127800
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\cpu.v",
+    "SHA256": "8A6C3B517CE9564E2B982F214B4B522AB2062E03E12F0B5F687524B962CD1E7E",
+    "bytes": 17492,
+    "mtime_ns": 1793195540602979000
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\cycle_counter64.sv",
+    "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+    "bytes": 395,
+    "mtime_ns": 1793099867701800400
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\gpio_core.v",
+    "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+    "bytes": 2087,
+    "mtime_ns": 1793099867704800800
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\init_tables.svh",
+    "SHA256": "1882FB39C232AB924EB66DFD06E803523E0DB22D1E70E6EDF16E95C35EEB34FE",
+    "bytes": 132362,
+    "mtime_ns": 1793099867723410000
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\local_regif_txgpio_m1.v",
+    "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+    "bytes": 3732,
+    "mtime_ns": 1793099867707134300
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\memory_model.sv",
+    "SHA256": "BDBADBF190038B6950FE0DBEE3029BE2A78C83FC1B4D0D3358351DCDA6E912FE",
+    "bytes": 142231,
+    "mtime_ns": 1793099867726410100
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\regfile.v",
+    "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+    "bytes": 666,
+    "mtime_ns": 1793099867712145500
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\soc_data_adapter.sv",
+    "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+    "bytes": 1526,
+    "mtime_ns": 1793099867714572300
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\soc_top.sv",
+    "SHA256": "87ACB8B2FFECCE01DFA4012AB97CC200FA0615B00A77011673C25DD0E12F5846",
+    "bytes": 1948,
+    "mtime_ns": 1793180945732830500
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\source\\uart_tx.v",
+    "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+    "bytes": 5195,
+    "mtime_ns": 1793099867719765900
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\synthesize\\add_sub_carrychain.log",
+    "SHA256": "1AAEFC53F04B635FFA6B6FEF3ECB75DF1028951305D272A0452C527024EC07D9",
+    "bytes": 2577,
+    "mtime_ns": 1793195963940879200
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\synthesize\\board_top.snr",
+    "SHA256": "3027479552FC1ED7AA4B19084239343FB0DC50A1DAAB637EB6FB3EF54BD6066E",
+    "bytes": 100901,
+    "mtime_ns": 1793195968036163900
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\synthesize\\board_top_controlsets.txt",
+    "SHA256": "75AC57AE8E20EB5FB99B830C648F336F99E7FAB8DF927573562F973F275547A6",
+    "bytes": 6163,
+    "mtime_ns": 1793195966851735700
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\synthesize\\board_top_syn.adf",
+    "SHA256": "BD03E783BAA82B67887EFECD51F036954A3ABE873E8CD1CAE83BE14361114003",
+    "bytes": 560899,
+    "mtime_ns": 1793195967478714900
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\synthesize\\board_top_syn.vm",
+    "SHA256": "36CD0C916508F4582E9D0BF0557AB173EDF36B74CDB61F2DB7ECEB8950A7F1DF",
+    "bytes": 2076221,
+    "mtime_ns": 1793195967721711600
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\synthesize\\formal.pvf",
+    "SHA256": "EAE728531F7684E20150705CA0B97966972605358E1FC66171A91715BB270433",
+    "bytes": 3517,
+    "mtime_ns": 1793195968057695700
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\synthesize\\run.log",
+    "SHA256": "31F83179BA8F51D9FC6FE6D9EFEB40E9A9E6D425AD233462284879A872683A66",
+    "bytes": 34473,
+    "mtime_ns": 1793195968036163900
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\build\\synthesize\\snr.db",
+    "SHA256": "46A66AE718F16A74DEDE7B73C16A282829A18958C5DB2B6A83C956F2D17E0850",
+    "bytes": 632059,
+    "mtime_ns": 1793195968055692200
+  }
+]

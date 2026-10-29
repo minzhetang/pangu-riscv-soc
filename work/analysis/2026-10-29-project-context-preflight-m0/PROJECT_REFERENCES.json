@@ -1,0 +1,303 @@
+[
+  {
+    "reference": "source/alu.v",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+    "bytes": 1021
+  },
+  {
+    "reference": "source/board_reset_sync.sv",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152",
+    "bytes": 504
+  },
+  {
+    "reference": "source/board_top.sv",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "A30BCBFDD172E0A9C2995F324298130A1737C47A7E3AEEFED51904CF93BECF2F",
+    "bytes": 931
+  },
+  {
+    "reference": "source/control.v",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+    "bytes": 2988
+  },
+  {
+    "reference": "source/cpu.v",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "8A6C3B517CE9564E2B982F214B4B522AB2062E03E12F0B5F687524B962CD1E7E",
+    "bytes": 17492
+  },
+  {
+    "reference": "source/cycle_counter64.sv",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+    "bytes": 395
+  },
+  {
+    "reference": "source/gpio_core.v",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+    "bytes": 2087
+  },
+  {
+    "reference": "source/local_regif_txgpio_m1.v",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+    "bytes": 3732
+  },
+  {
+    "reference": "source/memory_model.sv",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "BDBADBF190038B6950FE0DBEE3029BE2A78C83FC1B4D0D3358351DCDA6E912FE",
+    "bytes": 142231
+  },
+  {
+    "reference": "source/regfile.v",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+    "bytes": 666
+  },
+  {
+    "reference": "source/soc_data_adapter.sv",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+    "bytes": 1526
+  },
+  {
+    "reference": "source/soc_top.sv",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "87ACB8B2FFECCE01DFA4012AB97CC200FA0615B00A77011673C25DD0E12F5846",
+    "bytes": 1948
+  },
+  {
+    "reference": "source/uart_tx.v",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+    "bytes": 5195
+  },
+  {
+    "reference": "board_pins.fdc",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1",
+    "bytes": 4863
+  },
+  {
+    "reference": "clock_27mhz.fdc",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F",
+    "bytes": 101
+  },
+  {
+    "reference": "compile/board_top_comp.adf",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "3DAA365659C468772C51656F9D678C69C23F240EEC183B7E25D7F4728B440EEA",
+    "bytes": 345249
+  },
+  {
+    "reference": "compile/board_top.cmr",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "A9D620BA33F3435B3BC3348228301D2AB1C272956EAE52D9014A87014B58EA52",
+    "bytes": 2843
+  },
+  {
+    "reference": "compile/cmr.db",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "8AF74993BB784F3DFD3EA5E8C963D19200A736F603F32D8D98A8196E9CEAE915",
+    "bytes": 37071
+  },
+  {
+    "reference": "synthesize/board_top_syn.adf",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "BD03E783BAA82B67887EFECD51F036954A3ABE873E8CD1CAE83BE14361114003",
+    "bytes": 560899
+  },
+  {
+    "reference": "synthesize/board_top_syn.vm",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "36CD0C916508F4582E9D0BF0557AB173EDF36B74CDB61F2DB7ECEB8950A7F1DF",
+    "bytes": 2076221
+  },
+  {
+    "reference": "synthesize/board_top_controlsets.txt",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "75AC57AE8E20EB5FB99B830C648F336F99E7FAB8DF927573562F973F275547A6",
+    "bytes": 6163
+  },
+  {
+    "reference": "synthesize/snr.db",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "46A66AE718F16A74DEDE7B73C16A282829A18958C5DB2B6A83C956F2D17E0850",
+    "bytes": 632059
+  },
+  {
+    "reference": "synthesize/board_top.snr",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "3027479552FC1ED7AA4B19084239343FB0DC50A1DAAB637EB6FB3EF54BD6066E",
+    "bytes": 100901
+  },
+  {
+    "reference": "../debug.fic",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "B4799B1A379A6D023E8B2A5AC19A283D48EF5484A3773A774F60F8F214CB8CFF",
+    "bytes": 8977
+  },
+  {
+    "reference": "device_map/board_top_map.adf",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "AA9D86E47A1C664069F11A9819E078CC1966A68BB35A9F48F1CFA766FC92EF0D",
+    "bytes": 694978
+  },
+  {
+    "reference": "device_map/board_top_dmr.prt",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "EBEADF2038419D1BA18C7C11A361290E81ABE4CAF83140166D2B4623946E393A",
+    "bytes": 14052
+  },
+  {
+    "reference": "device_map/board_top.dmr",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "D8ACDC67FCA1736CD918EB00775252E2174EE16AD48274510B5EADF9592203E8",
+    "bytes": 95023
+  },
+  {
+    "reference": "device_map/dmr.db",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "61F9001024CCA2732F055351EAA461DCC4185953823C46DE0285B80795F69256",
+    "bytes": 229387
+  },
+  {
+    "reference": "device_map/board_top.pcf",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "F7D0351458DF1DBE418DD3EE61B8E1342ADFB88908BC1D37C4C141458D04B15F",
+    "bytes": 1276
+  },
+  {
+    "reference": "place_route/board_top_pnr.adf",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "1F54CB6A33F97BD8869FB6F334263E1719A435FD5398FCA1664CEDB743DCC779",
+    "bytes": 3231011
+  },
+  {
+    "reference": "place_route/clock_utilization.txt",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "A03D0B5CDD2970BCD39224FF8878A6331397297130D9339966F8A5528DA1428F",
+    "bytes": 8549
+  },
+  {
+    "reference": "place_route/board_top_plc.adf",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "22AA27D304835F0FA7FCC724B08BF45FBB82BF79C7EFF9C350778116682D4BE6",
+    "bytes": 805918
+  },
+  {
+    "reference": "place_route/board_top.prr",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "E28B54B17F879D9CEA78F13E0F3BEA2B59671A56D3850266711B63A8F5164049",
+    "bytes": 21079
+  },
+  {
+    "reference": "place_route/board_top_prr.prt",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "C9AB7C345195283BAFB4E7CCE6A5096A6A3FA0B85CACB867906C4961EAF86340",
+    "bytes": 14234
+  },
+  {
+    "reference": "place_route/board_top_pnr.netlist",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "13BF3FAC9EC1584DA1726AE628599351F1347C024C273E8D086FF660E2B588FC",
+    "bytes": 878630
+  },
+  {
+    "reference": "place_route/prr.db",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "4E6A4E5FAD53EDC1BE63CE92B7207AE652BFBC177123FE8043FE743D9BF26C36",
+    "bytes": 128386
+  },
+  {
+    "reference": "report_timing/board_top_rtp.adf",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "F481E0570B0B94BE147D82C80B8655C90F2CD7856FC13DAD5D4D97D44B04BA0B",
+    "bytes": 8513
+  },
+  {
+    "reference": "report_timing/board_top.rtr",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "9D617E41C11A9936E64A8DACEB20C06BE5C1FDD69D8182976D88CAF5B610CFAD",
+    "bytes": 380000
+  },
+  {
+    "reference": "report_timing/rtr.db",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "69C4F8DC47D9CA6931994C4B0D975E5ECD5FF7F6C2E075F162D72562C57264DB",
+    "bytes": 2986921
+  },
+  {
+    "reference": "generate_bitstream/board_top.sbit",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "139DD52013B6C3A9ADA50B92D72F1479ED488DE2C70D024284A27AEC573EFC03",
+    "bytes": 3791112
+  },
+  {
+    "reference": "generate_bitstream/board_top.smsk",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "B5A5577B7EA36F257E5EDA9308DC7F2BCB3962BC995DFDBF9E9E0F55921BDFA4",
+    "bytes": 3791112
+  },
+  {
+    "reference": "generate_bitstream/bgr.db",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "645456EF86DA423C6985D05463024B60AF4098399C96A26F68680065AE6433F0",
+    "bytes": 13558
+  },
+  {
+    "reference": "generate_bitstream/board_top.bgr",
+    "inside_mirror": true,
+    "exists": true,
+    "SHA256": "6796EEA64266C01305F439AA74938A5155EAFBDCF171EB4AFAA9F10B5917AB2B",
+    "bytes": 1777
+  }
+]

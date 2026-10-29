@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-29",
+  "status": "OFFLINE_MIRROR_VERIFIED_NATIVE_LOAD_NOT_RUN",
+  "files": 70,
+  "bytes": 21644039,
+  "project_byte_identical": true,
+  "timestamps_preserved": true,
+  "command_states": {
+    "cmd_compile": 2,
+    "cmd_synthesize": 2,
+    "cmd_devmap": 2,
+    "cmd_pnr": 2,
+    "cmd_report_post_pnr_timing": 2,
+    "cmd_report_power": 0,
+    "cmd_gen_netlist": 0,
+    "cmd_gen_bitstream": 2
+  },
+  "references": 43,
+  "missing_references": [],
+  "outside_mirror": [],
+  "init_include_present": true,
+  "native_calls": 0,
+  "new_DUT": 0,
+  "hardware": "STOPPED"
+}

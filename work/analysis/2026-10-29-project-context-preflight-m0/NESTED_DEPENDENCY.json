@@ -1,0 +1,7 @@
+{
+  "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-28-local-debug-insert-m1-r4\\pre\\synthesize\\board_top_syn.adf",
+  "SHA256": "C6BD759ACDFDF528069E9CA7DEF73AB9309A4C7FAB6547C5C6BBA08E49F0BA97",
+  "bytes": 560888,
+  "role": "Preserved absolute pre-synthesis reference in unchanged FIC; read-only external dependency, not an execution entry",
+  "exists": true
+}

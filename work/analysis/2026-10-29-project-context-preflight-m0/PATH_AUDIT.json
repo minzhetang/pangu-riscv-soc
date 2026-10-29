@@ -1,0 +1,44 @@
+{
+  "active_files": [
+    {
+      "file": "flow.pds",
+      "original_root_reference_lines": []
+    },
+    {
+      "file": "impl.tcl",
+      "original_root_reference_lines": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21
+      ]
+    },
+    {
+      "file": "flow.tcl",
+      "original_root_reference_lines": []
+    },
+    {
+      "file": "board_pins.fdc",
+      "original_root_reference_lines": []
+    },
+    {
+      "file": "clock_27mhz.fdc",
+      "original_root_reference_lines": []
+    }
+  ],
+  "FIC_contains_original_root": true,
+  "FIC_not_changed": true,
+  "interpretation": "Original-source references need classification; no native loader executed"
+}

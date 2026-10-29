@@ -1,0 +1,9 @@
+{
+  "stage": "A-PROJECT-CONTEXT-EXPORT-M1",
+  "version": "1.2.0",
+  "status": "PENDING_NATIVE_PROJECT_MODE_APPROVAL",
+  "scope_SHA256": "96D4AE9C010B5DAEAC47F5589A82E2F235AF60BEB85EFE7AE36639E84508AF51",
+  "native_processes": 1,
+  "seconds": 180,
+  "hardware": "STOPPED"
+}
