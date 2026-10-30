@@ -1400,6 +1400,10 @@
 !/work/software/2026-10-29-formal-coremark-m1/build/performance256/build_identity.h
 !/work/software/2026-10-29-formal-coremark-m1/build/validation256/build_identity.h
 
+!/deliveries/coordination-cancellation-2026-10-30-v1/
+/deliveries/coordination-cancellation-2026-10-30-v1/*
+!/deliveries/coordination-cancellation-2026-10-30-v1/CANCELLATION.md
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC
