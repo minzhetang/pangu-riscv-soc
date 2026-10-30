@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-30",
+  "status": "NO_HARDWARE_CLEARANCE",
+  "PDF_rows": [
+    {
+      "path": "D:\\A_FPGA_Comp\\reports\\hardware\\2026-10-14-over-temp-evidence\\UG040005_Logos2_Configuration_V1.3_EN.pdf",
+      "SHA256": "326794CD880EA789CC3BB2FD5D8369E59A7BEA508B1D7B10BA16E064CCCB6C27",
+      "actual_pdf_page": 59,
+      "printed_page": 58,
+      "read": "text and fresh rendered full page visually checked",
+      "key": "STATUSR27 row lacks complete mapping/clear rules"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\reports\\hardware\\2026-10-14-over-temp-evidence\\UG040009_Logos2_ADC_V1.6_EN.pdf",
+      "SHA256": "43A0A99BF004AA721418A140D82F183B209B7C7559327299E693CD60F646F10B",
+      "actual_pdf_page": 15,
+      "printed_page": 14,
+      "read": "text and fresh rendered full page visually checked",
+      "key": "temperature conversion/OT hysteresis"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\reports\\hardware\\2026-10-14-over-temp-evidence\\UG040009_Logos2_ADC_V1.6_EN.pdf",
+      "SHA256": "43A0A99BF004AA721418A140D82F183B209B7C7559327299E693CD60F646F10B",
+      "actual_pdf_page": 29,
+      "printed_page": 28,
+      "read": "text and fresh rendered full page visually checked",
+      "key": "unconfigured ADC power-up still outputs OT"
+    }
+  ],
+  "old_state": {
+    "source": "D:\\A_FPGA_Comp\\reports\\hardware\\2026-10-14-led-volatile-result.json",
+    "SHA256": "95E46960ADA1FE01803FAEF9B6A9E812D6B1C7212295F560F1ACED3C85F244D0",
+    "STATUSR": "0x081efca0",
+    "bit27": 1
+  },
+  "configuration_log": {
+    "SHA256": "5CACB2F2200E86283CE6E5055699764B16FDDDDA00B518C0FD632CFA60CAD0A3",
+    "commands": 10,
+    "new_execution": false
+  },
+  "equipment_user_report": {
+    "multimeter_basic_voltage_current_resistance_continuity": true,
+    "temperature_capability": false,
+    "brand_model": "UNKNOWN",
+    "independently_verified": false,
+    "source": "2026-10-30 user replies"
+  },
+  "rendering": "three pdftoppm page renders; missing Symbol/ArialUnicode font warnings retained in tool output; critical rows/text readable by visual inspection",
+  "new_temperature_measurement": false,
+  "new_voltage_measurement": false,
+  "PDS": 0,
+  "simulation": 0,
+  "hardware": 0,
+  "decision": "D202",
+  "next": "resolve measurement conditions before drafting any powered test; continue independent report/analysis tasks"
+}
