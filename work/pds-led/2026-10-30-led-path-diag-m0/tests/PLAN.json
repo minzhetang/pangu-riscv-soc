@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "frozen_before_DUT_execution": true,
+  "default_heartbeat_bit": 24,
+  "test_heartbeat_bit": 3,
+  "expected_reset_high_base": "0xA4",
+  "expected_reset_low_base": "0x94",
+  "expected_heartbeat_bit": "floor(completed_clock_edges / 8) modulo 2",
+  "cycles": 96,
+  "expected_checks": 193,
+  "expected_transitions": 12,
+  "reset_schedule": "before edge i: rstn = (i modulo 7 >= 3)",
+  "requirements": ["constant signature", "raw reset complementary lamps before clock", "counter not reset by rstn", "six shortened complete heartbeat periods", "no X/Z"],
+  "default_frequency_dynamic_verification": false,
+  "limits": {"compile_seconds": 60, "simulation_seconds": 30, "PDS_seconds": 180, "simulation_watchdog_ns": 2000},
+  "no_hardware_authorized": true
+}

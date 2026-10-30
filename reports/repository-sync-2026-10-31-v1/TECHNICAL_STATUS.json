@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-31",
+  "classification": "STATIC_REVIEW_OF_EXISTING_RESULTS_NOT_NEW_EXECUTION",
+  "coremark": "256-iteration images built and ISA-reference checked; 2-iteration RTL checked; 256 RTL and board score not validated",
+  "production_report": "reports/verification/2026-10-30-coremark256-nodebug-m1.md",
+  "LED_diagnostic": {
+    "source": "work/pds-led/2026-10-30-led-path-diag-m0/source/led_test.v",
+    "short_test_checks": 193,
+    "short_test_edges": 96,
+    "short_test_toggles": 12,
+    "default_bit24_full_period_not_simulated": true,
+    "bitstream_sha256": "F3B6A6DDE3047D6DBCD59C785C836B69063A2B072ECC06A5CCE1010380A4BA46",
+    "hardware_function_not_accepted": true
+  },
+  "latest_hardware_attempt": {
+    "date": "2026-10-30",
+    "scope": "D243 H4",
+    "source_result_sha256": "14BEE1308BD267F00AAC08A527A83DC32AC1E002A2F6902D5D4A02901656A1F9",
+    "status": "FAILED",
+    "program_commands": 1,
+    "elapsed": 20.76500000001397,
+    "public_error": "Configuration-0005: Try to abort Programming",
+    "after_status_available": false,
+    "LED_observation_valid": false,
+    "owned_job_empty": true,
+    "cause_not_resolved": true,
+    "no_Flash": true
+  },
+  "power": "User reported power disconnected and paused on 2026-10-30; not independently measured",
+  "exclusions": [
+    "Vendor models/tools/licenses, raw logs, bitstreams/databases, private handoffs remain local",
+    "H4 diagnostic scripts and incomplete postflight remain local; do not present them as a reusable validated runner"
+  ],
+  "coverage": {
+    "CPU_SoC_peripherals": "Existing tracked stable system and separately labelled optimization files retained",
+    "constraints": "Existing tracked board-top project and pin/clock constraints retained",
+    "software": "Existing tracked startup/link/port/reference and measurement candidates retained",
+    "third_party": "Existing external dependency rules retained; no vendor model or teammate archive added"
+  }
+}

@@ -1,0 +1,1660 @@
+{
+  "phase": 0,
+  "date": "2026-10-31",
+  "branch": "main",
+  "origin": "https://github.com/minzhetang/pangu-riscv-soc",
+  "remote_before": "1e9a91e6c5a6f3fe62794499f29129d9cbfbf685",
+  "local_before": "39c2c89972bc7b1940e967b4f70614003a086f35",
+  "remote_only_commits": 0,
+  "local_only_commits": 19,
+  "reviewed_existing_outgoing_files": [
+    {
+      "path": ".gitignore",
+      "bytes": 98008,
+      "sha256": "235120348EEBBB0E030CC43000EA97CBDDC65A508D3278CFB09E536779C52174"
+    },
+    {
+      "path": "deliveries/coordination-cancellation-2026-10-30-v1/CANCELLATION.md",
+      "bytes": 2041,
+      "sha256": "754F87242F0A82AB503785DB7A1381ADD88287374257F96E417934683D85E2F3"
+    },
+    {
+      "path": "deliveries/mainline-cold-readonly-2026-10-30-v1/EXECUTION_SCOPE.md",
+      "bytes": 3821,
+      "sha256": "1E115AE7A7EFFDBB43BB181CBA6E340379666CCF9D660BBD3256E7B2521183A1"
+    },
+    {
+      "path": "deliveries/mainline-coremark256-nodebug-scope-2026-10-30-v1/IMPLEMENTATION_SCOPE.md",
+      "bytes": 4328,
+      "sha256": "4C6E5A61DFFB882F378883926D098364EDF8FB16C6150A01B193DE47A67C0A46"
+    },
+    {
+      "path": "deliveries/mainline-coremark256-nodebug-scope-2026-10-30-v1/SCOPE_STATUS.json",
+      "bytes": 245,
+      "sha256": "CA01A92CC5951C9462AF0CBC293B459D81F2E64C7825EA15051F47111167BAA5"
+    },
+    {
+      "path": "deliveries/mainline-debug-connectivity-scope-2026-10-29-v1/IMPLEMENTATION_SCOPE.md",
+      "bytes": 3012,
+      "sha256": "50B7C10E6A2F0D3C433AF05E90D3605FD60BF84CC56ACB5D6E0CF6CF3D5C882E"
+    },
+    {
+      "path": "deliveries/mainline-debug-connectivity-scope-2026-10-29-v1/SCOPE_STATUS.json",
+      "bytes": 354,
+      "sha256": "DDE6BA30F782FA37C6D8E6731029C4A9AAA756A6E502F0F3DAED2A57322ED17D"
+    },
+    {
+      "path": "deliveries/mainline-direct-netlist-export-scope-2026-10-29-v1/IMPLEMENTATION_SCOPE.md",
+      "bytes": 1493,
+      "sha256": "FC79479289551DC6B473F827E5578CDD0B333CD88DCFA884FDE5865886068219"
+    },
+    {
+      "path": "deliveries/mainline-direct-netlist-export-scope-2026-10-29-v1/SCOPE_STATUS.json",
+      "bytes": 171,
+      "sha256": "EFEB6D90E724927A2780395BE326AB95FBEC40402C0A7C86ED378D75992CBE9D"
+    },
+    {
+      "path": "deliveries/mainline-formal-coremark-software-scope-2026-10-29-v1/IMPLEMENTATION_SCOPE.md",
+      "bytes": 5652,
+      "sha256": "92FE0A94A8713CFFF55B7F006B607F41FC4FE6D6C0513036B3D094EBB575C39F"
+    },
+    {
+      "path": "deliveries/mainline-formal-coremark-software-scope-2026-10-29-v1/SCOPE_STATUS.json",
+      "bytes": 407,
+      "sha256": "D2CF131F237A6891DD6A4572AD53F0CFEA20D8B45E3E7436302FCA36DEAC6CB9"
+    },
+    {
+      "path": "deliveries/mainline-led-configured-status-scope-2026-10-30-v1/EXECUTION_SCOPE.md",
+      "bytes": 3761,
+      "sha256": "38C740317C1911F1B0752E6BE969CA300252DE01EA36D9F848766991938A93D2"
+    },
+    {
+      "path": "deliveries/mainline-local-debug-insert-r2-scope-2026-10-28-v1/IMPLEMENTATION_SCOPE.md",
+      "bytes": 2693,
+      "sha256": "C67EC98CBE52B27132D6EAA173D9630F16BEF543FCBAB0854038F385F6020B15"
+    },
+    {
+      "path": "deliveries/mainline-local-debug-insert-r2-scope-2026-10-28-v1/SCOPE_STATUS.json",
+      "bytes": 243,
+      "sha256": "791E07D8A7A379E2CD0FB9229161A180C2DBEC45F3463528B28CABCAED6B4837"
+    },
+    {
+      "path": "deliveries/mainline-local-debug-insert-r3-scope-2026-10-28-v1/IMPLEMENTATION_SCOPE.md",
+      "bytes": 1814,
+      "sha256": "2DF97E37D6151A44BBEEE792BDBA741455CEA9E62E470B18BEC1D60812221917"
+    },
+    {
+      "path": "deliveries/mainline-local-debug-insert-r3-scope-2026-10-28-v1/SCOPE_STATUS.json",
+      "bytes": 238,
+      "sha256": "CD7F17585338AB3A7FF47EE280B1A20259D89C8274F9F51F9C868DFCFAA51F20"
+    },
+    {
+      "path": "deliveries/mainline-local-debug-insert-r4-scope-2026-10-28-v1/IMPLEMENTATION_SCOPE.md",
+      "bytes": 2543,
+      "sha256": "133BA9BB7BA890EE3DFD792B486DCFCA6899092D25BA62335C22676634DA9484"
+    },
+    {
+      "path": "deliveries/mainline-local-debug-insert-r4-scope-2026-10-28-v1/PROPOSED_EEI_HOLD_MARKER.patch",
+      "bytes": 215,
+      "sha256": "1B7B40FB427143BEA497FC8CDA80ACFE2B96B232E15C8E903AB1941B477C3D6B"
+    },
+    {
+      "path": "deliveries/mainline-local-debug-insert-r4-scope-2026-10-28-v1/SCOPE_STATUS.json",
+      "bytes": 238,
+      "sha256": "93105A328DACD8440D8F60F36A45CD21A89885D84826C64218A74ED469E2D705"
+    },
+    {
+      "path": "deliveries/mainline-postroute-netlist-export-r1-scope-2026-10-29-v1/IMPLEMENTATION_SCOPE.md",
+      "bytes": 1442,
+      "sha256": "DB2B53DF7EBFF0E8531C705281FC5A811A6603F1CA514396824E20EBAB5F40A3"
+    },
+    {
+      "path": "deliveries/mainline-postroute-netlist-export-r1-scope-2026-10-29-v1/SCOPE_STATUS.json",
+      "bytes": 137,
+      "sha256": "E016915A7A09552FC4761C317D5A1168D733FA2AD691F6AA051E6FDFDD17ED8D"
+    },
+    {
+      "path": "deliveries/mainline-postroute-netlist-export-scope-2026-10-29-v1/IMPLEMENTATION_SCOPE.md",
+      "bytes": 2736,
+      "sha256": "E1A3CC9105AA708E12361710D9089A8F98E370AA0B947B4DC235CC90F10316A1"
+    },
+    {
+      "path": "deliveries/mainline-postroute-netlist-export-scope-2026-10-29-v1/SCOPE_STATUS.json",
+      "bytes": 404,
+      "sha256": "E9BB2F1D931BB6CB07657D62D35BC12514006DF12FBEE638BBF3314B1EE1EF86"
+    },
+    {
+      "path": "deliveries/mainline-project-context-export-scope-2026-10-29-v1/IMPLEMENTATION_SCOPE.md",
+      "bytes": 2304,
+      "sha256": "96D4AE9C010B5DAEAC47F5589A82E2F235AF60BEB85EFE7AE36639E84508AF51"
+    },
+    {
+      "path": "deliveries/mainline-project-context-export-scope-2026-10-29-v1/SCOPE_STATUS.json",
+      "bytes": 272,
+      "sha256": "DBF510863EDC87FC03EEC39B067E8F7575B17318FEDEB0DE2D8C95D6A183C596"
+    },
+    {
+      "path": "reports/hardware/2026-10-30-cold-readonly-result.md",
+      "bytes": 2666,
+      "sha256": "80C469DCAA3BC45F209F3940D49CF351A442D0436EAC614A00E10540CAA384C8"
+    },
+    {
+      "path": "reports/hardware/2026-10-30-configured-status-review.md",
+      "bytes": 4114,
+      "sha256": "8A4D9D55BCE64672C2EE5D222D7FF3D66F7C0C86178450F5BDD85A5ED07331D0"
+    },
+    {
+      "path": "reports/hardware/2026-10-30-diagnostic-readiness.md",
+      "bytes": 3668,
+      "sha256": "26468133FA21FDD2FD7897982EADA950E06EA96705D536BE89E62C541AE1D77C"
+    },
+    {
+      "path": "reports/progress/2026-10-30-board-readiness-m0.md",
+      "bytes": 4333,
+      "sha256": "02A9D8006B7FFF67625634B6F08DC0140342C1D5A617F9227AF1C49C796B24AB"
+    },
+    {
+      "path": "reports/verification/2026-10-28-local-debug-insert-m1-r1.md",
+      "bytes": 4372,
+      "sha256": "2D177DCFEE2FE361B17B0D081BBBCD57AAADB6CBCE3F5F33AF2CA185C53D4CCA"
+    },
+    {
+      "path": "reports/verification/2026-10-28-local-debug-insert-m1-r2.md",
+      "bytes": 4433,
+      "sha256": "7F71025586A1EEC945E70699CB7527AA4DBFA977B9F99327486233296FFD33D6"
+    },
+    {
+      "path": "reports/verification/2026-10-28-local-debug-insert-m1-r3.md",
+      "bytes": 5486,
+      "sha256": "6A98584519DC79E7FB83198961EF1CCB61B54C284E1DD1F97CFC768B6902244F"
+    },
+    {
+      "path": "reports/verification/2026-10-28-local-debug-insert-m1-r4.md",
+      "bytes": 7231,
+      "sha256": "CC69A58C7C1F4F1F7ADB14C390D5E72F5C95B03A4BA6D82011FAEF0B6720E269"
+    },
+    {
+      "path": "reports/verification/2026-10-29-debug-clock-source-review-m0.md",
+      "bytes": 5520,
+      "sha256": "96569C77FE8C8B8E92C0A84907250774E98D7B3B0A28173F21B1E6118117229A"
+    },
+    {
+      "path": "reports/verification/2026-10-29-debug-connectivity-m1.md",
+      "bytes": 5669,
+      "sha256": "46B04AB0E98B42B9C55F10A3AB0C60484DA8C8DF947C76A178B1E1DAE8C20C83"
+    },
+    {
+      "path": "reports/verification/2026-10-29-formal-coremark-m1-partial.md",
+      "bytes": 2179,
+      "sha256": "09C20BED6750D45B13E02B4BFFE2E2251EFC888F050A64B34B3C1AB2589E9535"
+    },
+    {
+      "path": "reports/verification/2026-10-29-formal-coremark-m1.md",
+      "bytes": 4503,
+      "sha256": "7E4205931159691182F3F4BB12EB0FBFE7D11983A1C857AB58FC412D4432DB44"
+    },
+    {
+      "path": "reports/verification/2026-10-29-formal-coremark-readiness-m0.md",
+      "bytes": 7154,
+      "sha256": "BF4FC34EA4B6089CE6840302811FF503F3F0DD897114A90910A3E4247F08A7B5"
+    },
+    {
+      "path": "reports/verification/2026-10-29-postroute-netlist-export-m0.md",
+      "bytes": 2045,
+      "sha256": "176BC8C8343800F3B10617E79A4C78926381CF069E60782A78AE18740C14345A"
+    },
+    {
+      "path": "reports/verification/2026-10-29-postroute-netlist-export-r1.md",
+      "bytes": 2683,
+      "sha256": "029B16E4DE40FB4FFF4E95A533A91592B8C739FE823B47DD7AA125000CAB8D7C"
+    },
+    {
+      "path": "reports/verification/2026-10-29-project-context-export-m1.md",
+      "bytes": 2726,
+      "sha256": "6258BB230AB1F0DB41BD002111D06659E544EED8577B6E39909D72EEF064C092"
+    },
+    {
+      "path": "reports/verification/2026-10-29-project-context-preflight-m0.md",
+      "bytes": 3852,
+      "sha256": "2CA6DB8FF016B909835B93D5021083264FF137C6133B3E5BACEC8CF454708F7A"
+    },
+    {
+      "path": "reports/verification/2026-10-30-coremark256-nodebug-m1.md",
+      "bytes": 4547,
+      "sha256": "ECBBD1C818AAD0E582CEDD098DA338FDAFBEF619E16B1B5F4918CF4C5D53266E"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-clock-source-review-m0/CLOCK_INTERACTIONS.json",
+      "bytes": 4358,
+      "sha256": "7D09A8395B6C083EF10C92DE22FEAD6AB93E1FB688657359F7459FF217814394"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-clock-source-review-m0/DATA_SOURCE_LIMITS.json",
+      "bytes": 1175,
+      "sha256": "D8EA331055B69DAA64A6BF7BCCDFF8EC9C7FDB8EC4F6873667FBB7E4888DAA29"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-clock-source-review-m0/INPUTS.json",
+      "bytes": 4353,
+      "sha256": "979175EE69FCF8BBBDCCA64D6882C4479C132D0D98D084156D0CC1F45967A9DD"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-clock-source-review-m0/READING_COVERAGE.json",
+      "bytes": 886,
+      "sha256": "4649E7F3E303123CADBDF23C6F10DC19934C0039BE9C0AD8EEDB73ABEC89BBFE"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-clock-source-review-m0/SUMMARY.json",
+      "bytes": 618,
+      "sha256": "96E32AD4716B49EDD328776C6F03C793E761EAAD8344A69A22A6A390CFE29A22"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-clock-source-review-m0/WARNING_FINDINGS.json",
+      "bytes": 1480,
+      "sha256": "135737013EE1D4BEE7E33D5F4373E95F48450378057374FFD5312CDE312A5F6F"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-clock-source-review-m0/review.py",
+      "bytes": 7904,
+      "sha256": "5BA89F0F2320131137039B058E070325D35E30707B507657C57FDA60293C7086"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/APPROVAL.json",
+      "bytes": 285,
+      "sha256": "5D38BEAF82741A59057F68C7F7F84A5D1201C313C53A220925194BC98AED17E0"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/ATTACH_RECEIPT.json",
+      "bytes": 289,
+      "sha256": "AEE33033470B86724C3942DAC49219BEDFDAC97BADC44EB5D58528D2A504DDA7"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/COPY_RECEIPT.json",
+      "bytes": 1025,
+      "sha256": "0D5696030A306DB2282E3F743012615867C87E96067C250E58FEB0DC71B4CBAD"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/EXE_RECEIPT.json",
+      "bytes": 139,
+      "sha256": "3D7C1324B857EEF5674FF9DCC0A27CB6BBC1976DCCD2DD7B8C8C4E4B3886B0B8"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/FILL_RECEIPT.json",
+      "bytes": 161,
+      "sha256": "88CDA1AD4528DAD1C317044858B0F8C3DC4A1FDE360D78E68E546900862D9CB4"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/GUI_ACTIONS.json",
+      "bytes": 9842,
+      "sha256": "8AE72DAD56CB3677801139415D4446B38B53E29A4FA0C2F5C764D19690358166"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/OBSERVATIONS.json",
+      "bytes": 1738,
+      "sha256": "979C2BB0938F4D91EF6B54D5242C6E757A42B5F593D86FC5DD0C2C8147C8310B"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/POSTFLIGHT.json",
+      "bytes": 534,
+      "sha256": "5C49B9E080773E41DCD86A51116D13E3D4B92DDB6308232B229BFF07E5A196B6"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/PREPARATION.json",
+      "bytes": 105,
+      "sha256": "C71790BD4CEEFB01E3B61E5FCB4FCD4F0290894B637ADEB924B0AE5266F1F3E5"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/SUMMARY.json",
+      "bytes": 776,
+      "sha256": "030FBDFD3712DCC305A5BFB20CF383589EED3F9F301ECAF3A36D2DBB57A87A57"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/attach_controller.py",
+      "bytes": 4250,
+      "sha256": "2D3504576550350164C92E75E9C4213CF40E924E73E39EFC7BFA4900027E612E"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/fill_db.py",
+      "bytes": 1215,
+      "sha256": "5E7AA9945A76E8A3D50E2CBC4EEE8CF3AE8D33D456603C4BE0D88597F5640547"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/find_token.py",
+      "bytes": 1183,
+      "sha256": "E1B315FFA9BA89570ED4B18E1F0DE723F730C8F2AB97B8C7B12BB53337FF94DC"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/gui_control.py",
+      "bytes": 8401,
+      "sha256": "EDCE9D86F8D458E57605271E1C1B92B73AE78AEF845E09A65BB120C7B0A9D94B"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/prepare.py",
+      "bytes": 3482,
+      "sha256": "3CF4B6B9B4E05BF94BF98DA05328BF65B81F3B48BC17D4FC3AF6B06ED2259289"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/scripts/catalog.tcl",
+      "bytes": 185,
+      "sha256": "B04B31D5C42ADDC6212926D5050D4F8F92EDFD45C21146BC24FD2E04796380E2"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/send_query.py",
+      "bytes": 1145,
+      "sha256": "4FF08E1818E975941F87CE32CC81B3148DD81B3F38DB0F407C34E259B15BC8DA"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/source_plain.py",
+      "bytes": 1057,
+      "sha256": "13F74CEA9D820EBC26765DF4367E592828086023A6CE5E6C1C691BDC5292D129"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/widen_browser.py",
+      "bytes": 799,
+      "sha256": "FD624555FBC45D2A02851235AC51AE8EE1F580BBAABC9644E705C10754A13B3D"
+    },
+    {
+      "path": "work/analysis/2026-10-29-debug-connectivity-m1/window_policy.py",
+      "bytes": 695,
+      "sha256": "39F5B0F7DB4F07A73BF56F1E0E598691A409708271C6FDD340B2D183C43E1B23"
+    },
+    {
+      "path": "work/analysis/2026-10-29-formal-coremark-readiness-m0/CODE_ANCHORS.json",
+      "bytes": 7322,
+      "sha256": "9EF7F94DCAC36374DF2737812F06F1F8A852001F720507469BFD927E704515F3"
+    },
+    {
+      "path": "work/analysis/2026-10-29-formal-coremark-readiness-m0/INPUTS.json",
+      "bytes": 8960,
+      "sha256": "77B73E25AD38E28CCA9A16BD374BFD80BB732F59F7E448372ED9C5851A87C6CD"
+    },
+    {
+      "path": "work/analysis/2026-10-29-formal-coremark-readiness-m0/MEASURED_AND_FORECAST.json",
+      "bytes": 6559,
+      "sha256": "EF35632544FC1E4A93435211A5BF395CA1A6CDF221690C61E5621FC5EF51E212"
+    },
+    {
+      "path": "work/analysis/2026-10-29-formal-coremark-readiness-m0/OFFICIAL_RULES.json",
+      "bytes": 1370,
+      "sha256": "73EF41A47E839BBFBD9DDBA30B829E83F1DE843B52789AB51A8820E299313E50"
+    },
+    {
+      "path": "work/analysis/2026-10-29-formal-coremark-readiness-m0/PLAN_DETAIL.json",
+      "bytes": 509,
+      "sha256": "563406712EC5A1E8F0062FB1A7F8626E2A5FD78A96A51787B68F48A3B6C15DCD"
+    },
+    {
+      "path": "work/analysis/2026-10-29-formal-coremark-readiness-m0/POSTFLIGHT.json",
+      "bytes": 263,
+      "sha256": "ECB708BD1C850673DC67869A5ACD4962B5275F215E1A765D34E0D07B9C502F91"
+    },
+    {
+      "path": "work/analysis/2026-10-29-formal-coremark-readiness-m0/SUMMARY.json",
+      "bytes": 553,
+      "sha256": "CE966041662545529FBB1B3C60E09E948E86A3C8AB1022DEB1FD4CE266911402"
+    },
+    {
+      "path": "work/analysis/2026-10-29-formal-coremark-readiness-m0/TOOL_IDENTITIES.json",
+      "bytes": 1434,
+      "sha256": "FB45743F31C32018F2F5A974620BE6BB55AF393D536EB2160E98CF1783A89ADE"
+    },
+    {
+      "path": "work/analysis/2026-10-29-formal-coremark-readiness-m0/audit.py",
+      "bytes": 8313,
+      "sha256": "29E3ACA4866C281B24BC94A99177287CAAE94777CA58FF08517166717E44A459"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-m0/APPROVAL.json",
+      "bytes": 209,
+      "sha256": "D831833B9E3FC62A88E7A6BCF22E54C672D49B8D011494BBA70DBD24401CABF3"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-m0/COPY_RECEIPT.json",
+      "bytes": 1304,
+      "sha256": "9DA6C1CED87A502EB4E44DAFA8BB413DDD536A6DD094DBD756563CD7D0228CED"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-m0/HELP_SANITIZED.txt",
+      "bytes": 658,
+      "sha256": "46214C048B147E17DBD26F20A3477007187E9869D16360C9F0DB03AD48DDB77D"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-m0/NATIVE_ATTEMPT.json",
+      "bytes": 65,
+      "sha256": "916CBC12F97D141916E82C9F0A1A089E28E645FBA3EA0631C23135B2CECFCCB7"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-m0/NATIVE_EXIT.json",
+      "bytes": 1372,
+      "sha256": "1224B3354D1CC832DEFBDB94311AD5E9A05AAA93A6160F31D86C11ECE04AEE35"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-m0/POSTFLIGHT_FINAL.json",
+      "bytes": 397,
+      "sha256": "7A15479A3D0E54B44CBE3129964D410C366D44EE9EE5C6C31AAC5A980F621A92"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-m0/SUMMARY.json",
+      "bytes": 397,
+      "sha256": "7A15479A3D0E54B44CBE3129964D410C366D44EE9EE5C6C31AAC5A980F621A92"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-m0/host_supervisor.py",
+      "bytes": 5593,
+      "sha256": "B47FAE2FE85D078C5B0E3024678F9021FE6797540984CCCA3DE69B6C8D987811"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-m0/inspect.tcl",
+      "bytes": 551,
+      "sha256": "6137EEA1090311E3BE10475BDBA3045DBBC7E1B59B4DD4CC318E30819C6CBD4D"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-m0/run.py",
+      "bytes": 2818,
+      "sha256": "18FB1FC23840BA5D7D4C8706556DB9F53AE718EA5536272BB41B44B423EC6CB6"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-m0/stage_budget.py",
+      "bytes": 2137,
+      "sha256": "0CEE644F01E36CF8174443AC8E3673F68212CDB06EACD6D256A509E4B4F3B6F6"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-r1/APPROVAL.json",
+      "bytes": 202,
+      "sha256": "94F2A7A56D16778C4876A5B55C4932E86F5319C054FA14E834C626E30FC24A38"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-r1/COPY_RECEIPT.json",
+      "bytes": 313,
+      "sha256": "92C1E999E516645E7A2B109882B93DE060D063745B1191E583626F44FF191D0F"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-r1/DIAGNOSTIC.json",
+      "bytes": 525,
+      "sha256": "1D9A234D0A807F9681F6ADF416916140A0D9F06615FA7A09C4A96D13797F3611"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-r1/HOST_ERROR.json",
+      "bytes": 42,
+      "sha256": "598D697530B09AB975857EBB78354DA97580BCF5A0317D16BD108713F9FF0D54"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-r1/POSTFLIGHT.json",
+      "bytes": 126,
+      "sha256": "69B3FC013F234A6BF081F7BF0A584133DD5C71EB1EBE44C56585AFB954D4E93F"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-r1/SUMMARY.json",
+      "bytes": 525,
+      "sha256": "1D9A234D0A807F9681F6ADF416916140A0D9F06615FA7A09C4A96D13797F3611"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-r1/export.tcl",
+      "bytes": 229,
+      "sha256": "1FD54E2BFB61F679A7800AD4D2AFA77777728A14EA64DFCC460630369099291B"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-r1/host_supervisor.py",
+      "bytes": 5593,
+      "sha256": "B47FAE2FE85D078C5B0E3024678F9021FE6797540984CCCA3DE69B6C8D987811"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-r1/run.py",
+      "bytes": 2361,
+      "sha256": "C6BFC6CB2DF4973BD4BF798599CE5FFDFB2A999D7C55774578BDAA3768634C7C"
+    },
+    {
+      "path": "work/analysis/2026-10-29-postroute-netlist-export-r1/stage_budget.py",
+      "bytes": 2137,
+      "sha256": "0CEE644F01E36CF8174443AC8E3673F68212CDB06EACD6D256A509E4B4F3B6F6"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-export-m1/APPROVAL.json",
+      "bytes": 184,
+      "sha256": "F6F6EE2BEE75B0DA812BD32E53A929193431250BAC947337678E26E0EAA23539"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-export-m1/EXIT_RECHECK.json",
+      "bytes": 330,
+      "sha256": "C3917DD30182D16816B6E6245A0D4A14E29FD22F9824816AA72E43F73BB1E5DD"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-export-m1/EXPORT_OPTIONS.patch",
+      "bytes": 376,
+      "sha256": "49F6AFF3F896AAD67F52CD5D5A3952BDBDC7E07D57584C2511C623B09F11A646"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-export-m1/HOST_ERROR.json",
+      "bytes": 253,
+      "sha256": "F8FED57A6A68871741E676EE4F186DB69C0EF75A7244293085BC673B24461734"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-export-m1/PATCH_RECEIPT.json",
+      "bytes": 240,
+      "sha256": "E2493E28F8F5C454CFC611EB16CC3E5004EC08671956877867636003A79EBEFB"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-export-m1/POSTFLIGHT.json",
+      "bytes": 126,
+      "sha256": "3BAA496DDA9E26712D806E2185B1660D2EA9FE8CAC18D09E615A5DE1053020E1"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-export-m1/SUMMARY.json",
+      "bytes": 862,
+      "sha256": "5CE8B92ECCC5428D7DB3B0617AD46C137F9769E253ABC18690C79CB9FCC5287E"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-export-m1/host_supervisor.py",
+      "bytes": 5593,
+      "sha256": "B47FAE2FE85D078C5B0E3024678F9021FE6797540984CCCA3DE69B6C8D987811"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-export-m1/run.py",
+      "bytes": 3908,
+      "sha256": "DA4453EB84902590DEA3E21CF5E27905A4D1BB6BE1FF7B8BBC1C4E76FCDE32AE"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-export-m1/stage_budget.py",
+      "bytes": 2137,
+      "sha256": "0CEE644F01E36CF8174443AC8E3673F68212CDB06EACD6D256A509E4B4F3B6F6"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-preflight-m0/NESTED_DEPENDENCY.json",
+      "bytes": 361,
+      "sha256": "6B0ECBD5402B539882DE984F898CF6A7AEA18ABF0CE812FF6C4DA0F687A5E92F"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-preflight-m0/PATH_AUDIT.json",
+      "bytes": 797,
+      "sha256": "1702442C1F1930F74FC092A38F7E2BBFC9043AB615C7EFCA8B58B58B02424CDF"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-preflight-m0/PROJECT_REFERENCES.json",
+      "bytes": 8659,
+      "sha256": "D7269E9858686FFBEF5DBD6FB7C52904295BF5F5C2FAFE606B1DBE29E6B3267A"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-preflight-m0/SOURCE_INVENTORY.json",
+      "bytes": 17915,
+      "sha256": "A9A3D644467B324E901A5FCCA7EACE9390339A3FD465147C0E1E8A0528500D61"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-preflight-m0/SUMMARY.json",
+      "bytes": 583,
+      "sha256": "C42363E8764A65C9EA4647D7A5B8AD34A29498C3E1D68BF39E39C10B07164515"
+    },
+    {
+      "path": "work/analysis/2026-10-29-project-context-preflight-m0/prepare.py",
+      "bytes": 4034,
+      "sha256": "016B5C49633B433694F73D09B8CC0F55FFCF9169BD1999555156C698749A55D0"
+    },
+    {
+      "path": "work/analysis/2026-10-30-board-readiness-m0/SAFETY_GATES.json",
+      "bytes": 958,
+      "sha256": "F95C57F9E9FA1E22444B436A276D764CAA2DCD0A778B63FE435A92DDF8A2CFC5"
+    },
+    {
+      "path": "work/analysis/2026-10-30-board-readiness-m0/SOURCE_AND_IMAGE_IDENTITY.json",
+      "bytes": 8068,
+      "sha256": "327B4ADD3C74ECB43489F6B9C6302FEDAA5B01035317651FF15E268070FA1407"
+    },
+    {
+      "path": "work/analysis/2026-10-30-board-readiness-m0/SUMMARY.json",
+      "bytes": 599,
+      "sha256": "40BD26E1CE091CCA9A45122CBA4DBE987F7C533345AD8F22F072E6145CC47237"
+    },
+    {
+      "path": "work/analysis/2026-10-30-board-readiness-m0/audit.py",
+      "bytes": 5750,
+      "sha256": "B01CAFCFF2CD3A344A2F05EEDF10E90C9F583D9395F51F688FA0C3FD0E89D183"
+    },
+    {
+      "path": "work/analysis/2026-10-30-configured-status-review-m0/SOURCE_RECHECK.json",
+      "bytes": 1173,
+      "sha256": "CFB45BF55635EE46951DEDB0A5D42FB54B57F3A7FD5BA43D6C3EBF025136AC25"
+    },
+    {
+      "path": "work/analysis/2026-10-30-hardware-diagnostic-readiness-m0/REVIEW_RESULT.json",
+      "bytes": 2402,
+      "sha256": "85D87F2C95AA7531CD51A89D5CF9C8559E6A4B81C1A506856C3668EE769B717F"
+    },
+    {
+      "path": "work/analysis/2026-10-30-hardware-diagnostic-readiness-m0/review.py",
+      "bytes": 2556,
+      "sha256": "F417F6D2700261EA4A48125840A40C07AC247D4AEF3E84C6D517AE82B5F71E13"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/APPROVAL.json",
+      "bytes": 283,
+      "sha256": "63ABFFA521CACE75ED71443CEC4103FC1AA88B0C69E5535DFBA534780591402C"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/COMMANDS.md",
+      "bytes": 1463,
+      "sha256": "394D2557FF99DAA4D22B1DAEFAD6FC72169511B9EF7712F8C184753CBF5FA576"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/DEBUG_METADATA.patch",
+      "bytes": 1562,
+      "sha256": "6C0ED0C09E17586A9C27171C075334A25AC51527272B921D57E256B66F29A841"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/GUI_ACTIONS.json",
+      "bytes": 2541,
+      "sha256": "426666562ED7FA1E0A0E2DD9CDF57C9D5B546119E63F3D5370AAD4F574000FF9"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/GUI_RESULT.json",
+      "bytes": 211,
+      "sha256": "1B7623E4755A7710A7F1A20C6F9976E22C354F99FCB7072420781636BA22DAAF"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/NET_MAPPING.json",
+      "bytes": 4142,
+      "sha256": "717615B5F0FDB1E606983626E91C744BD4320D17A77F9649020031AEAAFA2699"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/POSTFLIGHT.json",
+      "bytes": 541,
+      "sha256": "B5F428E98A8F79E43A348E023D9DE466336FE622D1F86AA6D7725396A60D6810"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/SAFE_TOOL_RESULT.json",
+      "bytes": 297,
+      "sha256": "916C89D739CFD1DBCBD0FF208AD6AF7BEEFBC28746AD895150D17A79323FB13B"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/SOURCE_RECEIPTS.json",
+      "bytes": 5339,
+      "sha256": "E1FD7AA05A8552FD0D019255B32B9B97D1DB8EC16D139DA11209EC3119734321"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/SUMMARY.json",
+      "bytes": 1541,
+      "sha256": "A5EF7EF33DC5060D423841529607BF3C4304E73B2A7A5A1FEBBB18E50278C26E"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/finalize.py",
+      "bytes": 4065,
+      "sha256": "32D0F5C4D38C6FDC423BE9AE44AB9F0423DBC4EFBDA82FC9DF8B1662D80C515F"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/gui-attempt1/CORRECTION.json",
+      "bytes": 251,
+      "sha256": "A21C33D9E15E8B4216547C6D3A3555A977887FE14D5CCBEE0B8CBE2E5310F50A"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/gui-attempt1/GUI_RESULT.json",
+      "bytes": 213,
+      "sha256": "EB5182376B2FF3CEEF58614A720C0343834B67F941AAE00E9AE658B11F2C1920"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/gui_session.py",
+      "bytes": 5486,
+      "sha256": "DC8638DA54086FDD300D6E0C63FF5E095A25D79F7254710C38481B390FB91B8A"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/prepare_marked_candidate.py",
+      "bytes": 2009,
+      "sha256": "0AF0E2871530776AA976CE6DDC7B93E0785F1A758057D367EFA9E9DA6415B193"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r1/ui_text.py",
+      "bytes": 1093,
+      "sha256": "4D59F288673B12D3E1A3ECBC6624DCB78446A0561D2490503C3AD9110DD92759"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/APPROVAL.json",
+      "bytes": 351,
+      "sha256": "AE810822BD23D9EC02A15773AC1C4276D58E57626B24B6DD845EA425CDBD63E8"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/DEBUG_METADATA.patch",
+      "bytes": 1562,
+      "sha256": "6C0ED0C09E17586A9C27171C075334A25AC51527272B921D57E256B66F29A841"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/FROZEN_INPUTS.json",
+      "bytes": 7026,
+      "sha256": "3F5AA5E3A997D41A04165D04C6E61AE008CF2E3151C7CC89352054B4997F5C4A"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/GUI_RESULT.json",
+      "bytes": 209,
+      "sha256": "C3A21385027AD2AE96A859129E348B88134A66975FF4900F49F29E8CA360C78D"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/MARKER_OBSERVATIONS.json",
+      "bytes": 753,
+      "sha256": "604D5A29E2744B41118C5FC90DAB97C0AD2520D587F253E7D5638A9EBD7F76C0"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/POSTFLIGHT_FINAL.json",
+      "bytes": 654,
+      "sha256": "183C0C43083C4954D00EEB41C2BC22D122A4869AC885085608ED823AACB129F6"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/READONLY_HELP_RESULT.json",
+      "bytes": 247,
+      "sha256": "E68517C44AE6EF886F2C690716287309482AC3BE1D07F314A04294E8A625B14A"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/SOURCE_RECEIPTS.json",
+      "bytes": 5339,
+      "sha256": "E1FD7AA05A8552FD0D019255B32B9B97D1DB8EC16D139DA11209EC3119734321"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/SUMMARY_FINAL.json",
+      "bytes": 1274,
+      "sha256": "6E90C6861F730055D9B293C4A79E4BA70E378E4AC43C86AA96A6A15F75AB9903"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/SYNTHESIS_MEMORY_AUDIT.json",
+      "bytes": 198,
+      "sha256": "45033BA9F7DFC11152BAA13D3343F99AC563D838D1D046C4FF42D9E73E9D04EB"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/WAIT_QUERY_RESULT.json",
+      "bytes": 166,
+      "sha256": "20219D5CC8C7D3816935A9C156B1965F01AE33A4B06BB92204A2C97EB5B6E200"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/audit_partial.py",
+      "bytes": 4363,
+      "sha256": "E78090E3AD6D383A1FD39DD84EA83628AC65276514A561F60E69E91E10DADE44"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/finalize_stage.py",
+      "bytes": 1605,
+      "sha256": "E9BF04FD571DF1005F2F90FC47D2D424A217042DD911BB70E9B3B12162CBBF3B"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/gui_control.py",
+      "bytes": 8161,
+      "sha256": "2382C7169689150681E8693A6C35558D3121FE6663DEC7A6A7E9B41E62E8F8C6"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/pds/build.tcl",
+      "bytes": 1659,
+      "sha256": "4404B460650225D5FDF71C3C8741AB207CF0248AE49B1A8F6C64BE694D0D5E5E"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/prepare_recovery.py",
+      "bytes": 3833,
+      "sha256": "1A168E1BF0CCAE476FB2DEB51A24F0FDE01AC18F778C929D213D19C5C87C720F"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/prepare_stage.py",
+      "bytes": 3207,
+      "sha256": "D963D5745AABC1145132D8B423FACEBD4197398AC0D1E137D7F1152E7A275EF6"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/prepared/POLICY_SELFTEST.json",
+      "bytes": 2083,
+      "sha256": "106A01A8CD9FA493D6700AB0243045F34612C12A80303A27877BB9AE7046AA7F"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/prepared/PREPARATION_RECEIPT.json",
+      "bytes": 1051,
+      "sha256": "EA0BF3E07749102D0E717ED865E60BB2BBE4C864968E722381B549E22456D22B"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/prepared/build_fixed.tcl",
+      "bytes": 1643,
+      "sha256": "D5F5A8AADA4702CB4450DE3C8128F12A251017AF22B536EA1C90ACE6A539F22A"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/prepared/gui_control_fixed.py",
+      "bytes": 8480,
+      "sha256": "A56E50DE7EA2AC5658575B8BCB4379FF0AB4FC2125436E9238323EDB36A3DE57"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/prepared/test_window_policy.py",
+      "bytes": 2106,
+      "sha256": "0DDDCEB39FE6F5CE40C4F8F51B4613A1D642D9BA836BF4F83BC591D747484172"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/prepared/window_policy.py",
+      "bytes": 695,
+      "sha256": "39F5B0F7DB4F07A73BF56F1E0E598691A409708271C6FDD340B2D183C43E1B23"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/run_help.py",
+      "bytes": 740,
+      "sha256": "31D381499239CAD402E5CEA30C37A4801124DEE4454BAEC3F76AD051F8920EAC"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/run_pds.py",
+      "bytes": 2198,
+      "sha256": "A720FA65BAEC35F7C96728CC25B52CA0F32EA0BA1D4589FF9C90FA92EEEB6A70"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/run_wait_query.py",
+      "bytes": 1018,
+      "sha256": "8D642993B1FCAB2B67260132B285EABEDB5466EEAB99E0785DEAD91A8C620A1A"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/scripts/gui-probe.tcl",
+      "bytes": 366,
+      "sha256": "9577096597518576C626EC252EFD52AD3EE1C74E5E73A43C9D171F3060D6773A"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/scripts/help-only.tcl",
+      "bytes": 201,
+      "sha256": "7E64921317B37688538012F8D4A99241A99EEF789F57885C083FA8456A4CC6F8"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r2/scripts/wait-query.tcl",
+      "bytes": 224,
+      "sha256": "D9FADD99CB8531F692D9543F0E0183DF47A83A7C78C98647C67338F052C4BDAB"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/APPROVAL.json",
+      "bytes": 333,
+      "sha256": "DC986F7ACAABFF503A57FBDB2C28CC5D999E707BAF968F88C4BA3C926A0A912B"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/CONFIGURATION_INPUT_RECEIPT.json",
+      "bytes": 486,
+      "sha256": "96F78B29B804B8C8E60E8942B52B6FE92B04A97843C59A1F948E2257A4E39D99"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/DEBUG_METADATA.patch",
+      "bytes": 1562,
+      "sha256": "6C0ED0C09E17586A9C27171C075334A25AC51527272B921D57E256B66F29A841"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/FROZEN_INPUTS.json",
+      "bytes": 7294,
+      "sha256": "23045A61DC2121E8C05E596D8515F603C4046B99C2294CA23F8D304C263267AB"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/GUI_ACTIONS.json",
+      "bytes": 2480,
+      "sha256": "CE92C5A537E8916540933AE74DBC6FA35D8137F262E1E39973199AF91F63D13C"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/GUI_LAUNCH_GATE.json",
+      "bytes": 354,
+      "sha256": "6209ADEB4E5982885116F237FF6182BED8424D4E4BFDFB35F968D84B4D1D344B"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/GUI_RESULT.json",
+      "bytes": 169,
+      "sha256": "8C968823564B0A69A1C75C7664706DA788737A0576F2C964900AF36552F63B00"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/HOLD_MAPPING_SEARCH.json",
+      "bytes": 90,
+      "sha256": "82F3F707549558B198730450F1E9BF0076E6D95011A5113E1AFA4B1808FBA989"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/MAPPING_GATE.json",
+      "bytes": 569,
+      "sha256": "AAB4317D3FD035B7E02E35F3507C498648A6A399893FB356DA2B701570993AF6"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/MEMORY_INIT_AUDIT.json",
+      "bytes": 154,
+      "sha256": "5D9377E4F532DA467D6B9A43C655E2D1C367172E0C4503CD8161565F60B296A5"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/NET_MAPPING.json",
+      "bytes": 24240,
+      "sha256": "5563A9E3049E25196BC1FAD8BFADAC8C4F294493C57AC08D2FB93F1046632F99"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/POLICY_SELFTEST.json",
+      "bytes": 2083,
+      "sha256": "106A01A8CD9FA493D6700AB0243045F34612C12A80303A27877BB9AE7046AA7F"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/POSTFLIGHT.json",
+      "bytes": 555,
+      "sha256": "5E6537FF75653DC85110AF6D7042BD5F3D8C3915752A06D5410003A35708335E"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/PROCESS_GATE_SELFTEST.json",
+      "bytes": 2210,
+      "sha256": "E5AEC38406B38A7ACE0678607D7A873193984CEA813BB78CF789E1958E25D911"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/REFERENCE_BINDING_AUDIT.json",
+      "bytes": 414,
+      "sha256": "500CB3BF3CA36F3E4A61E3C311AB410F0CA3D0418220D45C2EF575ADCB38E9D3"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/SOURCE_RECEIPTS.json",
+      "bytes": 5339,
+      "sha256": "E1FD7AA05A8552FD0D019255B32B9B97D1DB8EC16D139DA11209EC3119734321"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/SUMMARY.json",
+      "bytes": 1096,
+      "sha256": "D456BC8710ABC1B9AFEF3E47547ACE634AECB9181E503E0106BFE8EA42A9A6CC"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/finalize_stage.py",
+      "bytes": 4086,
+      "sha256": "5CE7B1F36ED2EC05A65755BD540D4C9DCE68DB7D99B7963332AD391BF3963306"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/find_hold_mapping.py",
+      "bytes": 1770,
+      "sha256": "5FBF47E44ECB04287E218EC4DF7F74CBD0A477B0D49C2DFD8760FC75511FC449"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/gui_control.py",
+      "bytes": 8551,
+      "sha256": "55DD7006DF009B57ACD7684D6995F426C1FC88C35138E11EC92FA52FD28C087A"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/host_supervisor.py",
+      "bytes": 5593,
+      "sha256": "CF24E5B478B0D5A5F2BA44BD95A0B0CB417796BE017983D1EE6FB6ACC7772B70"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/map_probes.py",
+      "bytes": 2504,
+      "sha256": "DF2C14C4A1BD0DC208135340AD9062A62A28F8A121134596F8E6CF48E5EBA877"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/pds/build.tcl",
+      "bytes": 1643,
+      "sha256": "D5F5A8AADA4702CB4450DE3C8128F12A251017AF22B536EA1C90ACE6A539F22A"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/prepare_stage.py",
+      "bytes": 3734,
+      "sha256": "3646B6B6BC4B694FDC2424C65F71FE360AD5C24A9E78E208E1D4486208FC2BD2"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/process_guard.py",
+      "bytes": 1733,
+      "sha256": "96A66FC43CB4B9844C7A54A3BB82193DBADB64AA76AA9E2101A85718F171AF5F"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/run_pds.py",
+      "bytes": 2264,
+      "sha256": "825CB97847E74671F6DF1AD6B95B68C6BC5901383A5E4DCD506CA9BCCA6DD342"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/scripts/gui-load-reference.tcl",
+      "bytes": 333,
+      "sha256": "340EEB61907C350081690BFA884206CEA873743088E63C572030E157C9FD019A"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/scripts/gui-probe.tcl",
+      "bytes": 366,
+      "sha256": "9577096597518576C626EC252EFD52AD3EE1C74E5E73A43C9D171F3060D6773A"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/stage_budget.py",
+      "bytes": 2106,
+      "sha256": "571DF502754003D65881778685E43CD8C65333F8FBE72FD589FE2BD94E18E2AC"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/test_window_policy.py",
+      "bytes": 2106,
+      "sha256": "0DDDCEB39FE6F5CE40C4F8F51B4613A1D642D9BA836BF4F83BC591D747484172"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r3/window_policy.py",
+      "bytes": 695,
+      "sha256": "39F5B0F7DB4F07A73BF56F1E0E598691A409708271C6FDD340B2D183C43E1B23"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/APPROVAL.json",
+      "bytes": 344,
+      "sha256": "A8BA6DCA4A45FEE1FCC61173598645E8463256E748CC7BEFF191DBAF614DC13E"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/AUDIT_RESULT.json",
+      "bytes": 1205,
+      "sha256": "53BAE596F141F5BD345B571DD520B8A0F4BD6E739567DD39B1131B51F8EF3210"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/COMPLETED_GATE_SELFTEST.json",
+      "bytes": 1019,
+      "sha256": "8181E2C87DC047E8BC0013C7005F178166152A53636ADB123016428FF6729B38"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/CRITICAL_TRIAGE.json",
+      "bytes": 602,
+      "sha256": "DECF2917797AEAA58086110F56E12AC810AE703D36ABE0FAB5B9B8DB28CFC104"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/DANGLING_REVIEW.json",
+      "bytes": 6100,
+      "sha256": "378A51B8073EC2641E62EC2ACAF63B74E66A1B2D7A4BA21436E8B86BF9FACAAE"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/DEBUG_METADATA.patch",
+      "bytes": 2058,
+      "sha256": "F166E4952CBF5C72CBA08D6A8EC07B75D395D9B00E34D18BEC9F5326B50972CD"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/FIC_AUDIT.json",
+      "bytes": 728,
+      "sha256": "890C8360748A732171E13FF575952691A538537EE9A6051255E6F0F4E8C5A2D5"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/GUI_ACTIONS.json",
+      "bytes": 3832,
+      "sha256": "386B1EC5F297FD50090991C0C223BF2D1EDF1362EA9A7E9D1C5ACB83EB0FC534"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/GUI_LAUNCH_GATE.json",
+      "bytes": 145,
+      "sha256": "3A1DF196EE471E0B8C9206C93451EFBC8974775B0CD66E1E9B2D77E28637A02B"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/GUI_RESULT.json",
+      "bytes": 179,
+      "sha256": "C54621F44C4BF7AFE36B3C3ED5D07ED49C83F23C0D8B2203EE33E255AE938068"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/INSERTION_AUDIT.json",
+      "bytes": 1891,
+      "sha256": "C0810CBDAC643C89142FD7CB9CAF05F65B8470157B7B0CCA2AA0FDFA8A33E325"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/MEMORY_INIT_AUDIT.json",
+      "bytes": 571,
+      "sha256": "63C0B0E24913361C22B93C512E7BD3ECA15D0EC0746CE70B029B11F5EFCF99DD"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/NET_MAPPING.json",
+      "bytes": 24493,
+      "sha256": "35AAB92DB5E12B6E39BB57F8A1DB03FCE3FD273A5BE04AB1A38BAAE9285902D7"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/POLICY_SELFTEST.json",
+      "bytes": 2083,
+      "sha256": "106A01A8CD9FA493D6700AB0243045F34612C12A80303A27877BB9AE7046AA7F"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/POSTFLIGHT.json",
+      "bytes": 479,
+      "sha256": "2C73567D633EA09E9792BD562838DF9F4B26C68473E2A545F1F9B9D2727530F5"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/RESET_REVIEW.json",
+      "bytes": 893,
+      "sha256": "7F307C1338E208FF0FFC1300F45343B6D72D5C6C2BDB02A75B3C816ED101BE6C"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/SOURCE_RECEIPTS.json",
+      "bytes": 3670,
+      "sha256": "D9E4B98BC37AC32FA520416061711AA70AD287E9028E460A1A88FABD58109224"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/SUMMARY.json",
+      "bytes": 1539,
+      "sha256": "E1E06D604891135C53D60C7A954918238E333BB5637417DE8710B66457BE01C5"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/SYNTHESIS_IDENTITY.json",
+      "bytes": 366,
+      "sha256": "B08205F54E45D3E32C87C92EC5A10187567C688DCBF248EB812FB2689A935883"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/TIMING_RESOURCE_AUDIT.json",
+      "bytes": 9558,
+      "sha256": "5C3C7305696E12BA486B567AF9218611F05E1702EA8493E4F9FBC90CFDF22F19"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/WARNINGS_AUDIT.json",
+      "bytes": 2064,
+      "sha256": "77377256FE9F84854F6F8496063847ED6838EFF0D81827481963426765DBFA8D"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/WARNING_DETAIL.json",
+      "bytes": 5370,
+      "sha256": "42AB07097B0CB128C16697DB4C992A5A111442F6101B727B052D97E484A9F0D2"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/audit_build.py",
+      "bytes": 10400,
+      "sha256": "DA5320332C4BD0D7103F8D2BFAA46581E077D4C3BA8EF3AE7FE24A01C2F1960B"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/audit_fic.py",
+      "bytes": 2323,
+      "sha256": "ED6BC0902E80FFE22EDA01306953741EFD326D7A88FEB4CFFBFBFCCD16774B00"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/build/flow.tcl",
+      "bytes": 1218,
+      "sha256": "8BF624B9D3A271C6F1FECE6C7221567A04E69677F89FA91DA569F24B9787BFA7"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/finish_stage.py",
+      "bytes": 3434,
+      "sha256": "5C601AD7EF515F41E77126483AE6D40BA0584C520F4C33138BDA4D85A921C1B3"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/gui_control.py",
+      "bytes": 8567,
+      "sha256": "3167427466F6FFD4ED52748A56F0CEE71E2ED8A54A3E0B1DBA8BF70E13F4553F"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/host_supervisor.py",
+      "bytes": 5593,
+      "sha256": "CF24E5B478B0D5A5F2BA44BD95A0B0CB417796BE017983D1EE6FB6ACC7772B70"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/map_probes.py",
+      "bytes": 2562,
+      "sha256": "0884E3459F8410618AF9570A4569156934F6B92B696D4FA5B9B9BF387E478889"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/pre/flow.tcl",
+      "bytes": 1088,
+      "sha256": "EAFDDFC200C2406882E35D72A16C1A6D6D60A3A2569CFB06CA298857BC4A7E8A"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/prepare_stage.py",
+      "bytes": 3894,
+      "sha256": "3453BC0D4593D50DE2D97138C69AD22AC04A6F20A94CA95184F1D27AA328BFE1"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/process_guard.py",
+      "bytes": 834,
+      "sha256": "C934E6C8CFD15A2478B546AC148FF6D35FD303D59A5150E8AFC080CE6CAD8724"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/review_warning_delta.py",
+      "bytes": 2178,
+      "sha256": "AF807FF2ED46D5DFBE46BE70BA753AF83EC6D107529D69633529CE0507CCBA74"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/run_phase.py",
+      "bytes": 2891,
+      "sha256": "ABEEFBB21E3BC1B445FA33C99CE9ACA092D6098BECFA0A6A51EE20789A0DE93F"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/scripts/gui-connect.tcl",
+      "bytes": 944,
+      "sha256": "354D3BD83004A8B3E9A5893804FE5D94809319D01975ACE6B676E995D8E32319"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/scripts/gui-probe.tcl",
+      "bytes": 442,
+      "sha256": "CB80DED792699DFF5CB3489278EC13E477A3A35356EED75A77EC83950676F27F"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/stage_budget.py",
+      "bytes": 2106,
+      "sha256": "571DF502754003D65881778685E43CD8C65333F8FBE72FD589FE2BD94E18E2AC"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/test_window_policy.py",
+      "bytes": 2106,
+      "sha256": "0DDDCEB39FE6F5CE40C4F8F51B4613A1D642D9BA836BF4F83BC591D747484172"
+    },
+    {
+      "path": "work/fpga/2026-10-28-local-debug-insert-m1-r4/window_policy.py",
+      "bytes": 695,
+      "sha256": "39F5B0F7DB4F07A73BF56F1E0E598691A409708271C6FDD340B2D183C43E1B23"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/APPROVAL.json",
+      "bytes": 232,
+      "sha256": "A5193698747A66B0216514EB057A0697FD6ECD8A0796A70ACA34AB704518054F"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/FROZEN_INPUTS-r1.json",
+      "bytes": 17742,
+      "sha256": "BEDC8F0C7DDC0EA1D7B13386914CD994EC83A21B0A9A0676E26B27076068CB9F"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/FROZEN_INPUTS.json",
+      "bytes": 17322,
+      "sha256": "F8ADFEF0796A695EE57CA4707FB2E788318DC3C6522F24839ED319DE1074E835"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/HOST_PREFLIGHT-r1.json",
+      "bytes": 199,
+      "sha256": "E641D976AB5C8750B1CDFD835172789D88EB1EDA63733B1FD97AC6C36C83D6C0"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/HOST_PREFLIGHT.json",
+      "bytes": 199,
+      "sha256": "E641D976AB5C8750B1CDFD835172789D88EB1EDA63733B1FD97AC6C36C83D6C0"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/PLAN.json",
+      "bytes": 1510,
+      "sha256": "DE497750690675F8F9CC23BCD87BC259355C9D57A74FFC723A82D3CB3C7A87DF"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/POSTFLIGHT.json",
+      "bytes": 409,
+      "sha256": "D2B6DAA8E61FDD1C9BD8B9C1D5AEEF9BCC75DFB45CCD2FB76857109B96E352DB"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/PRELAUNCH_RECOVERY.json",
+      "bytes": 443,
+      "sha256": "7428259F1D14D52BF25DCBD99785E61BF4CB07FA35C35C9DED10304E062811A4"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/PROTECTED_INPUTS.json",
+      "bytes": 22488,
+      "sha256": "EA271577DE4723FDF57AF7508B897C4A479FF7D17CE2E527E55E2D1F8B4CFE8B"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/RESULTS.json",
+      "bytes": 43459,
+      "sha256": "7A510894FFDD3F120E4CBFEECCB614B96A4F75E80C56CBA3DF63B20466DAA922"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/STAGE_CLOCK.json",
+      "bytes": 64,
+      "sha256": "38FD505DF7A046C6CA9811984EF02438480325624A55F6180EF06CC2E7464BAC"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/STOPPED.json",
+      "bytes": 362,
+      "sha256": "92AEF47114B88CFF85967DABDF2F5BC91A0FB773616DC68277D3D3E1CF32A066"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/TARGET_IDENTITIES.json",
+      "bytes": 5262,
+      "sha256": "F7EC5A38E99991AB2D17EF00EB8FC499AAE8702248BC72D1AD16E754E30DC400"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/audit_case.py",
+      "bytes": 6717,
+      "sha256": "6640D26243E5704A6FBE6891C1118251F1508368B7CB0B839CAEF7E89B97D395"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/close_stage.py",
+      "bytes": 3128,
+      "sha256": "FA14189CAB287D13B3735067C8A0A74C4EE1FF22E44450B0FC5531D3208E7A9B"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/host_checks.py",
+      "bytes": 2012,
+      "sha256": "914A337B47464581E4B5EE1DD3D3600A58F49FBB0FE42C8C6CE049C92A1191F1"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/host_supervisor.py",
+      "bytes": 5287,
+      "sha256": "DA78E0FBA228EDC1465E955940252248A94913E8A71356A7D9F6F5E8F32422FE"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/performance256/AUDIT_RESULT.json",
+      "bytes": 17780,
+      "sha256": "449C9C91EF9CAF187E899A807A0DECBCA7AADB9EEB123256B492B1BB18F50689"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/performance256/BUILD_EXIT_RECEIPT.json",
+      "bytes": 1607,
+      "sha256": "18B9535C0A1A32F85270C0CAA97EADAE979584CD76D2521142AAF78152396576"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/performance256/PDS_ATTEMPT-r1.json",
+      "bytes": 383,
+      "sha256": "BA7DB831B70E2D0DE284C2DD27D6EFCC1662D8B505B92E19CDC3D7A67B3431DC"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/prepare.py",
+      "bytes": 3745,
+      "sha256": "33D3F920AFBA42FD044AD81F7E74FA604E8F4069422F94F708394B014BFD7F8B"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/prepare_recovery.py",
+      "bytes": 1372,
+      "sha256": "7170444E4283F230BDB1ACC989A8DD3391AADDAA841BBAC7C8C246D3C0664ADE"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/run_stage-r1.py",
+      "bytes": 3077,
+      "sha256": "FC360D02289D04820AE059654CB232BD8B27A865031C361CCEC4493587B05688"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/run_stage.py",
+      "bytes": 3012,
+      "sha256": "2406D98A123F228844B6E4686A5EFE006FAD5E25FDB2642F9D4C40559D5E6106"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/stage_budget.py",
+      "bytes": 2106,
+      "sha256": "571DF502754003D65881778685E43CD8C65333F8FBE72FD589FE2BD94E18E2AC"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/validation256/AUDIT_RESULT.json",
+      "bytes": 19066,
+      "sha256": "EA7E56D4AB262428E040FA28B983E3BA20B31F6AF635DA317802456323E3468B"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/validation256/BUILD_EXIT_RECEIPT.json",
+      "bytes": 1605,
+      "sha256": "614245C01E671EB2B19ED3B61F87C9A1B649FEC2890CDE618CEEB756BF290DD5"
+    },
+    {
+      "path": "work/fpga/2026-10-30-coremark256-nodebug-m1/validation256/PDS_ATTEMPT-r1.json",
+      "bytes": 381,
+      "sha256": "2BCCB6F779E003B1AC55AF2AFD62F2B7A87B77E6CEC16752D8B32578D001F207"
+    },
+    {
+      "path": "work/pds-jtag/2026-10-30-cold-readonly-m0/OFFLINE_CHECK-v2.json",
+      "bytes": 1127,
+      "sha256": "FA22D2C63E3E3559366DA4B40A36A4ED9701BB17DFAABF1D43AFB533465E05E1"
+    },
+    {
+      "path": "work/pds-jtag/2026-10-30-cold-readonly-m0/OFFLINE_CHECK-v3.json",
+      "bytes": 1127,
+      "sha256": "B834578A31D06B398DFA03325C4EC769CD48EFC148054E935909DA4050DA16BD"
+    },
+    {
+      "path": "work/pds-jtag/2026-10-30-cold-readonly-m0/OFFLINE_CHECK.json",
+      "bytes": 1039,
+      "sha256": "C800DFCEBD931C8D50A56261181B4B5A7AC443623133C8F0DED95DC064DB7E48"
+    },
+    {
+      "path": "work/pds-jtag/2026-10-30-cold-readonly-m0/POWER-OFF-REPORT.json",
+      "bytes": 275,
+      "sha256": "1B3D5DF67698DEC54B618B57703D740D61F6E58AAB72BEC7169E15DFE1FF1D42"
+    },
+    {
+      "path": "work/pds-jtag/2026-10-30-cold-readonly-m0/RESULT.json",
+      "bytes": 4418,
+      "sha256": "3DF85AD19AF8AE99EFA6FD9E1068EA68EA031CBB1D818B7EFAA9656A43AA7BA7"
+    },
+    {
+      "path": "work/pds-jtag/2026-10-30-cold-readonly-m0/read_status.py",
+      "bytes": 8842,
+      "sha256": "E84C93515ED684B76C800DDCA83DB717C9C13C47E6BABA22902B7858F2320081"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/APPROVAL.json",
+      "bytes": 185,
+      "sha256": "9A8AA46F2EF9288B253E83FD927630585AEFF3C0AFF865AAD01E3ACDE22811FE"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/BUILD_POSTFLIGHT.json",
+      "bytes": 75,
+      "sha256": "FB4184DF70052F06ACB768924A63D8F52B09B249A99DC799A85D674B73FC796C"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/BUILD_RESULTS.json",
+      "bytes": 33435,
+      "sha256": "7647666C89EEE673020011FCCD396E957A329A2DD7FA16AEB9F8CF0F85885A4D"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/DEPENDENCIES.json",
+      "bytes": 1159,
+      "sha256": "9531DD1087001AE307666F7BDAB6756B37C28A33B1B5E76773A0DBD11CAED50F"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/EXACT_SOURCE_DIFF.patch",
+      "bytes": 2620,
+      "sha256": "498D4AF51E5F19F5F265114E961EDA95993258E570572143E8730E21C3AADB09"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/FROZEN_PLAN.json",
+      "bytes": 1231,
+      "sha256": "052A580989E34FA499C5F932BAD53C2D77CC2B31FF2CE0C4A77895C5DDB57B3B"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/HOST_CONTROL_PLAN.json",
+      "bytes": 386,
+      "sha256": "C468509AF78B4B25CFC8F4C85858E6C1FAD3C79F14C9986F74C892008D727F25"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/HOST_CONTROL_RESULTS.json",
+      "bytes": 8614,
+      "sha256": "9BC6DB560B9591843432B7C97A6D4652773B6E52C410EA4860C4F07729208CF2"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/MEASUREMENT_README.md",
+      "bytes": 2665,
+      "sha256": "DB8FA33C003E3CA4015BC3C58D57FA344FBB92F9E841B130EEB220A319F0BCDE"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/PORT_DIFF.patch",
+      "bytes": 1920,
+      "sha256": "82EE7365DC200E72EA052C647AA0E893ADC56FF799B3D7F8AFE33FADB04D0C46"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/PROTECTED_INPUTS.json",
+      "bytes": 5252,
+      "sha256": "F795BB0D770A4A9734BEDF1D43534F0094F077D43153390E84DF9DF91420A7FE"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/RECOVERY_CLOCK.json",
+      "bytes": 305,
+      "sha256": "54F34BCD02A51558E551497A2404CC96F07686272A7F50840AE78267D5B74D2E"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/REFERENCE_FIX_PENDING.patch",
+      "bytes": 1545,
+      "sha256": "D4F96B7A3A4828A0C985A0D8D83C3E02352A38A8F3A45691DF3C0D317DC07124"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/RESULTS-M1.json",
+      "bytes": 9307,
+      "sha256": "23108AC4A3E9C1D6C1F7E01981D10FBD62FF95B00D3BC99C99FCF9B4A38D2B4E"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/SHORT_COMPILE_PLAN.json",
+      "bytes": 5172,
+      "sha256": "EB62EFD04318DFCB5F58AA96E82072B12E7CB82FB65FE5E9E304CF0636030D66"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/SHORT_FROZEN_INPUTS.json",
+      "bytes": 8064,
+      "sha256": "666CEBBBD80DDF5C2F42F4757279178F996EE8833934A51C0CB0C5F7B35A9A63"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/STAGE_CLOCK.json",
+      "bytes": 62,
+      "sha256": "46F64F96E13F98A05C9B64D0715BED9F4F4518D0DF48FF2E524AE780BCFC4B09"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/STATIC_ELF_DIAGNOSIS.json",
+      "bytes": 5401,
+      "sha256": "4E580A948547442E94ABC7581596481F1E6F6A96FC4B3D7F6F0B17CFBA538E4F"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/audit_uart.py",
+      "bytes": 5910,
+      "sha256": "8E068DAA80727FEF1F0A3945F9CB96ABACDA9D7E2354629639F3FE42F1A2D6BC"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/audit_wave.py",
+      "bytes": 4500,
+      "sha256": "7AEC9A1E3A2D7450904FA1C594D2A2900A273C8FE105F4C77439CD7A07EBFA9C"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/block_codec.py",
+      "bytes": 4765,
+      "sha256": "EE2C41B6C2CF39CCFDD99FA64D8B333A2D1532FFD24AEDF8B3210C94108FDB80"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/build/performance2/build_identity.h",
+      "bytes": 493,
+      "sha256": "C599B134163406057C8DB3CAD352375DC2765C1A4A3BD82803CD32D5B1AD6BD3"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/build/performance256/build_identity.h",
+      "bytes": 499,
+      "sha256": "EE8695C6BE2AB676F129FFA01E2C78FE2F409248D0693471C592F0B659E88EFF"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/build/validation2/build_identity.h",
+      "bytes": 490,
+      "sha256": "74907B22BBF8CA429F9F2E99560220A603C3FCC10A3866ED5A904CAF83D8ED32"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/build/validation256/build_identity.h",
+      "bytes": 496,
+      "sha256": "E436B4466FF85A02F74E8264020E34012115BC8E40913CC94F909DC66EBA20AB"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/check_coremark.py",
+      "bytes": 12982,
+      "sha256": "11C9F6A2E76855811C46B2A92C9C5A36B49E587A9F4AC680D1D34F9F732DE3DA"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/check_short_worker.py",
+      "bytes": 631,
+      "sha256": "23DCC8717C4DF630CF191166FC992E5D5673140354FCA30BB7C7B1E7E316ADD2"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/diagnose_static.py",
+      "bytes": 3616,
+      "sha256": "74DE9DF90BEFEF5C81B569AE66675A303B902DF7773C8304502B957D7E6497F2"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/finalize_host.py",
+      "bytes": 2393,
+      "sha256": "B8B9276C3F2627A8D26A20C2450FCBA37379727C53FD77D0F2007A42CD15BBA0"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/finalize_stage.py",
+      "bytes": 3853,
+      "sha256": "1527A2EEEA363D2CD36AE5BA13F7FD256E717664BEBD227724B60354DB40C7CC"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/frozen-case-plan.json",
+      "bytes": 793,
+      "sha256": "FF0EFDEA2326E6A6D308D37113FDAF8B75678E85BFF9A3B94DC49E823766AE03"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/frozen_checks.py",
+      "bytes": 3307,
+      "sha256": "9A12BFBD19040428D14E886097FFBE55FA7CE1E1327666F9A5165B6334345870"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/host_supervisor.py",
+      "bytes": 4685,
+      "sha256": "3CCF25E731C472C577C78EBA2D21F6191E26157A9536BD56C856929671A2CC9B"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/manual-plan.json",
+      "bytes": 289,
+      "sha256": "F6BB4FAE3BF937C02AF48C4403AE98CE4E1615E232E6B68C69BE4603F2EC3DDD"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/measurement_report.py",
+      "bytes": 3729,
+      "sha256": "FFD8B59872FA575981293558BC3875115A7B5EBA1CEC5020BA55FA0C3CD61BFF"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/port/core_portme.c",
+      "bytes": 3533,
+      "sha256": "9601DC2E570AD9E5E99EAE450D1580AFF5D7BC74C94CB0B2406CE360F320E7C5"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/port/core_portme.h",
+      "bytes": 1167,
+      "sha256": "E821E3467B36C78CFAE91F5B4AC072C6F19A364C1205730DA66C56875683E9D3"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/prepare_and_build.py",
+      "bytes": 5365,
+      "sha256": "B580ECBA6346C238A4675F920960B7BA29199DB5D7BFDFBCC07FEE5146FC3D6E"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/prepare_reference.py",
+      "bytes": 648,
+      "sha256": "4CC1C80A955A17B5BB5A005F1194607C3C095E4DECEECC038F4F8F74A965F9F3"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/prepare_short.py",
+      "bytes": 3186,
+      "sha256": "A8C7D1DD177E67BA74631538C2B1E3091B333490EAF7DBF7EE50C89724DA11FD"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/reference_schedule.py",
+      "bytes": 2421,
+      "sha256": "6BD96D70F26EDF87E3AE5AA95C18136668B8653937C872499567C4A64E86403F"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/reference_worker-r1-PENDING.py",
+      "bytes": 3277,
+      "sha256": "FC4C4CEA69D884C41AEE805405C365F9A28B2616CA740AB8384816B4CF0CC157"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/reference_worker-r1.py",
+      "bytes": 3286,
+      "sha256": "F99F2D2E51801A8493D2FEF237AA3FF2EF43D4404099D26AE2329C94AAD0386D"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/reference_worker.py",
+      "bytes": 2932,
+      "sha256": "F1FAECEC6A3B4A747F94D11946DADF55C6ED849F73D09838EDC72A97A8BD6DC1"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/resume_references.py",
+      "bytes": 1140,
+      "sha256": "4FB163A0D36FF113AFA407F2E786DAE1C1FE2F1AAB1E8CE12D71B5EBEA88D43C"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/run_host_once.py",
+      "bytes": 299,
+      "sha256": "AB7BF3738F5DFD922E2E36E00337717A0688A9274EDA8317B9E63839E0F1DCA5"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/run_reference_once.py",
+      "bytes": 444,
+      "sha256": "CB0B220602BB8541AFCD1E46D323B028A81FC2EA9912BE57B699660034127625"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/run_short_once.py",
+      "bytes": 2894,
+      "sha256": "A5B0C566F4813339CA6315EE78B0EBE9D23FF4E126B491B3C03960B2085488C5"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/stage_budget.py",
+      "bytes": 2109,
+      "sha256": "568F43B43D223F51CD6A261365558D62B61B4583C81E1461F91C2CC0441B5C6F"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/stage_coremark.py",
+      "bytes": 2288,
+      "sha256": "3B1F0D3D7D716D11376810895697490AE60D3C0E1CC838C8FF65364F29766E31"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/stream_io.py",
+      "bytes": 8289,
+      "sha256": "88272C3FDB5472CBE2E6A9606E1F1F6456BF43367B4E027FC478DD072A1E6082"
+    },
+    {
+      "path": "work/software/2026-10-29-formal-coremark-m1/stream_peripherals.py",
+      "bytes": 3741,
+      "sha256": "DD0C73ED792C8F3D82B2525F4A39CFADCD9719929B50CA9E98334DECFB6A3FD5"
+    }
+  ],
+  "new_files": [
+    {
+      "path": "work/pds-led/2026-10-30-led-path-diag-m0/source/led_test.v",
+      "bytes": 525,
+      "sha256": "A6E87FE3505B1F2A75F6545C5301A7DBFAC05B0B09951687BA3B3623847BD476"
+    },
+    {
+      "path": "work/pds-led/2026-10-30-led-path-diag-m0/tests/tb_led_path.sv",
+      "bytes": 1576,
+      "sha256": "EA1AF40A70D2AD22C0B273CD2BC8869EBB63603BAF9A681CD32C1CC651574D93"
+    },
+    {
+      "path": "work/pds-led/2026-10-30-led-path-diag-m0/tests/PLAN.json",
+      "bytes": 776,
+      "sha256": "28D8B89F3D38128C9A1817769B366771E986258250C57191AB657A31157DEC87"
+    },
+    {
+      "path": "reports/repository-sync-2026-10-31-v1/TECHNICAL_STATUS.json",
+      "bytes": 1964,
+      "sha256": "E247C9FD3FA00B545E50D275C45EB6C2474E4A49183CA3381C19B5CD7C62EC27"
+    }
+  ],
+  "review": "All outgoing paths/content scanned for listed sensitive signatures and size; primary implementation/results manually reviewed. Heuristic scan is not a proof of absence.",
+  "no_RTL_or_TB_modified": true,
+  "no_tests_or_builds_executed": true,
+  "no_teammate_private_packages_added": true,
+  "no_bitstreams_raw_logs_or_vendor_models_added": true,
+  "documentation_phase_must_not_commit_or_push": true
+}

@@ -1531,3 +1531,20 @@
 **/*.pyc
 **/__pycache__/
 **/init_tables.svh
+
+# Reviewed Phase 0 additions, 2026-10-31; no raw hardware logs or tools.
+!/work/pds-led/
+/work/pds-led/*
+!/work/pds-led/2026-10-30-led-path-diag-m0/
+/work/pds-led/2026-10-30-led-path-diag-m0/*
+!/work/pds-led/2026-10-30-led-path-diag-m0/source/
+/work/pds-led/2026-10-30-led-path-diag-m0/source/*
+!/work/pds-led/2026-10-30-led-path-diag-m0/tests/
+/work/pds-led/2026-10-30-led-path-diag-m0/tests/*
+!/reports/repository-sync-2026-10-31-v1/
+/reports/repository-sync-2026-10-31-v1/*
+!/work/pds-led/2026-10-30-led-path-diag-m0/source/led_test.v
+!/work/pds-led/2026-10-30-led-path-diag-m0/tests/tb_led_path.sv
+!/work/pds-led/2026-10-30-led-path-diag-m0/tests/PLAN.json
+!/reports/repository-sync-2026-10-31-v1/TECHNICAL_STATUS.json
+!/reports/repository-sync-2026-10-31-v1/SYNC_REVIEW.json
