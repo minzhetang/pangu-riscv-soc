@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-30",
+  "status": "OFFLINE_ONLY_READY_NOT_HARDWARE_RUN",
+  "commands": [
+    "cfg_set_tcl_break -flag true",
+    "cfg_connect -ip 127.0.0.1 -port 65420",
+    "cfg_set_cable_property -index 0 -freq 1Mhz",
+    "cfg_scan_chain",
+    "cfg_read_device_property -mode 0 -device_index 0",
+    "cfg_read_device_property -mode 3 -device_index 0",
+    "cfg_disconnect"
+  ],
+  "positive": 3,
+  "negative": 4,
+  "hardware_executions": 0,
+  "tool_files": [
+    {
+      "name": "cdt_cfg_shell.exe",
+      "bytes": 6231040,
+      "SHA256": "8C7F1EE99A1FCAD01214D1C5F330DA49C1A52CF83F2A237E62CAD68C38D2C54F"
+    },
+    {
+      "name": "cdt_js.exe",
+      "bytes": 4260352,
+      "SHA256": "46A0EDB798DF2AEC07D184DD6A643953104032A4AD17E02ADBED1C6464A57361"
+    },
+    {
+      "name": "CH347DLLA64.DLL",
+      "bytes": 104560,
+      "SHA256": "F4075B4614D91623A6E3FD7536D2F180CD7BEDECE85353B05C3AAA3B2185C427"
+    }
+  ],
+  "physical_gate_required": true,
+  "limit_seconds": 45,
+  "repeat_scan": false
+}

@@ -1464,6 +1464,17 @@
 !/work/analysis/2026-10-30-hardware-diagnostic-readiness-m0/review.py
 !/work/analysis/2026-10-30-hardware-diagnostic-readiness-m0/REVIEW_RESULT.json
 
+!/deliveries/mainline-cold-readonly-2026-10-30-v1/
+/deliveries/mainline-cold-readonly-2026-10-30-v1/*
+!/work/pds-jtag/
+/work/pds-jtag/*
+!/work/pds-jtag/2026-10-30-cold-readonly-m0/
+/work/pds-jtag/2026-10-30-cold-readonly-m0/*
+!/deliveries/mainline-cold-readonly-2026-10-30-v1/EXECUTION_SCOPE.md
+!/work/pds-jtag/2026-10-30-cold-readonly-m0/read_status.py
+!/work/pds-jtag/2026-10-30-cold-readonly-m0/OFFLINE_CHECK.json
+!/work/pds-jtag/2026-10-30-cold-readonly-m0/OFFLINE_CHECK-v2.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC
