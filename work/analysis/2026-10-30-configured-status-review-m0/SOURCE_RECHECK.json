@@ -1,0 +1,41 @@
+{
+  "document": "D:\\PDS\\PDS_2022.2-SP6.4\\doc\\Fabric_Configuration_User_Guide.pdf",
+  "SHA256": "30D8BC2A1324E10529ECC4390FC6F6F3E0D1964300FDA863378CAFB692E124AA",
+  "version": "V1.0",
+  "pages": [
+    13,
+    30,
+    81,
+    82,
+    83,
+    84,
+    85
+  ],
+  "bitstream": {
+    "path": "D:\\A_FPGA_Comp\\work\\pds-led\\2026-10-11-scbv-high-build\\generate_bitstream\\led_test.sbit",
+    "bytes": 3791112,
+    "SHA256": "5CBE55491613F163BBDC372F2F5226F1D0E1C1A95A508A02ED54BF150704F307",
+    "same_as_old_result": true
+  },
+  "old_configured": {
+    "status": "0x081efca0",
+    "flags": {
+      "done": 1,
+      "done_i": 1,
+      "wakeup_over": 1,
+      "timeout": 0,
+      "rbcrc_err": 0,
+      "aut_err": 0,
+      "crc_err": 0,
+      "id_err": 0,
+      "over_temp": 1
+    },
+    "duration_lines": [
+      "COMMAND[check version information] execute successfully, takes 0.2 secs.",
+      "COMMAND[Get device id] execute successfully, takes 0.6 secs.",
+      "COMMAND[Program] execute successfully, takes 168.5 secs.",
+      "COMMAND[Read status] execute successfully, takes 0.6 secs."
+    ]
+  },
+  "new_hardware_executions": 0
+}
