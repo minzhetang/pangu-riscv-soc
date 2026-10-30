@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-30",
+  "source": "successive user replies after session ended",
+  "first": "12V disconnected",
+  "second": "downloader USB disconnected",
+  "independently_measured": false,
+  "physical_elapsed_seconds": null,
+  "hardware_authorization_exhausted": true
+}

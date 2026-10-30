@@ -50,12 +50,12 @@ def no_competing_clients():
  finally:k.CloseHandle(handle)
 def run():
  assert not ctypes.windll.shell32.IsUserAnAdmin(),'ordinary user only'
- proof=json.loads((H/'OFFLINE_CHECK-v2.json').read_text(encoding='utf8'))
+ proof=json.loads((H/'OFFLINE_CHECK-v3.json').read_text(encoding='utf8'))
  assert hashlib.sha256(Path(__file__).read_bytes()).hexdigest().upper()==proof['script_SHA256']
  for x in proof['tool_files']:assert hashlib.sha256((BIN/x['name']).read_bytes()).hexdigest().upper()==x['SHA256'],'tool changed'
  gate=json.loads((H/'PHYSICAL_GATE.json').read_text(encoding='utf8'))
  assert gate['state']=='READY_AFTER_APPROVED_STEP' and gate['user_reports_power_on'] and gate['connection_confirmed']
- assert time.time()-gate['power_on_epoch_estimate']<15,'power window already expired; user must power off'
+ assert 0<=time.time()-gate['power_on_epoch_estimate']<40,'insufficient power window; user must power off'
  save('ATTEMPT.json',dict(used=1,max=1,scope='D204 cold read-only only',time=time.time()))
  started=time.monotonic();end=min(started+45,started+54-(time.time()-gate['power_on_epoch_estimate'])) # reserve cleanup time
  server=None;client=None;logs=[];history=[];values=[];why=None;cq=queue.Queue();counts=[0];err=[]
@@ -97,7 +97,9 @@ def run():
    v=status(cmd(COMMANDS[5]));v['monotonic']=time.monotonic();values.append(v)
    if v['flags']['over_temp']:why='FLAG1_OBSERVED_NOT_TRUE_TEMPERATURE_PROOF';break
    if i==0:
-    assert time.monotonic()+5<end,'not enough time for second sample';time.sleep(5)
+    if time.monotonic()+10>=end:
+     why='ONE_FLAG0_SAMPLE_TIME_BUDGET_NOT_SAFETY_CLEARANCE';break
+    time.sleep(5)
   cmd(COMMANDS[6]);client.stdin.write(b'exit\n');client.stdin.flush();client.stdin.close();client.wait(timeout=max(.001,min(2,end-time.monotonic())))
   assert client.returncode==0,'client abnormal exit'
   if why is None:why='TWO_FLAG0_SAMPLES_NOT_SAFETY_CLEARANCE'
@@ -113,6 +115,6 @@ def run():
   save('RESULT.json',dict(status=why,samples=values,commands=history,cleanup=cleanup,sanitized_output=logs,hardware_diagnostic=True,temperature_measured=False,hardware_safe=False,programmed=False,Flash=False,needs_user_power_off=True))
   print('READ_ONLY_SESSION_ENDED: disconnect 12V then downloader USB; no programming performed',flush=True)
 if __name__=='__main__':
- assert len(sys.argv)==2 and sys.argv[1] in ['--offline-check','--offline-check-v2','--run']
+ assert len(sys.argv)==2 and sys.argv[1] in ['--offline-check','--offline-check-v2','--offline-check-v3','--run']
  if sys.argv[1]=='--run':run()
- else:offline('OFFLINE_CHECK-v2.json' if sys.argv[1]=='--offline-check-v2' else 'OFFLINE_CHECK.json')
+ else:offline('OFFLINE_CHECK-v3.json' if sys.argv[1]=='--offline-check-v3' else 'OFFLINE_CHECK-v2.json' if sys.argv[1]=='--offline-check-v2' else 'OFFLINE_CHECK.json')

@@ -1474,6 +1474,10 @@
 !/work/pds-jtag/2026-10-30-cold-readonly-m0/read_status.py
 !/work/pds-jtag/2026-10-30-cold-readonly-m0/OFFLINE_CHECK.json
 !/work/pds-jtag/2026-10-30-cold-readonly-m0/OFFLINE_CHECK-v2.json
+!/work/pds-jtag/2026-10-30-cold-readonly-m0/OFFLINE_CHECK-v3.json
+!/work/pds-jtag/2026-10-30-cold-readonly-m0/RESULT.json
+!/work/pds-jtag/2026-10-30-cold-readonly-m0/POWER-OFF-REPORT.json
+!/reports/hardware/2026-10-30-cold-readonly-result.md
 
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
