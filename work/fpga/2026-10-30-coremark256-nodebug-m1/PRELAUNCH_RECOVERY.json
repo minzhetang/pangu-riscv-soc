@@ -1,0 +1,10 @@
+{
+  "reason": "missing logs parent, FileNotFoundError at bounded mkdir before subprocess.Popen; native PDS0",
+  "original_error": "STOPPED.json",
+  "native_attempts_consumed": 0,
+  "maximum_native": 2,
+  "original_clock_retained": true,
+  "source_inputs_modified": false,
+  "repair": "create logs and r1 metadata/entry paths only",
+  "frozen_original_entry_SHA256": "2406D98A123F228844B6E4686A5EFE006FAD5E25FDB2642F9D4C40559D5E6106"
+}

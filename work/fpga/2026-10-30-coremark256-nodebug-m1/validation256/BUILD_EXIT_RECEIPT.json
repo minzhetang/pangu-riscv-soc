@@ -1,0 +1,45 @@
+{
+  "status": "EXITED_NOT_YET_ACCEPTED",
+  "process": {
+    "argv": [
+      "D:/PDS/PDS_2022.2-SP6.4/bin/pds_shell.exe",
+      "-file",
+      "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\validation256\\pds\\build.tcl"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\validation256\\pds",
+    "returncode": 0,
+    "returncode_hex": "0x00000000",
+    "timed_out": false,
+    "cap": false,
+    "error": null,
+    "termination": "PROCESS_EXIT",
+    "peak_working_set_bytes": 102105088,
+    "parent_peak_working_set_bytes": 67731456,
+    "child_memory_samples": 2089,
+    "elapsed_seconds": 82.609,
+    "timeout_seconds": 1800,
+    "child_cpu": {
+      "kernel_s": 0.265625,
+      "user_s": 0.796875
+    },
+    "parent_cpu_before": {
+      "kernel_s": 13.515625,
+      "user_s": 1.046875
+    },
+    "parent_cpu_after": {
+      "kernel_s": 30.078125,
+      "user_s": 2.25
+    },
+    "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\logs\\pds-validation256\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\logs\\pds-validation256\\stderr.log",
+    "measurement_scope": "PDS shell and this parent only; stage memory pool report retained separately, internal child peaks not separately measured",
+    "absolute_deadline_used": true,
+    "failure_cleanup": {
+      "taskkill_rc": null,
+      "error": null,
+      "tree_verified": "NOT_INDEPENDENTLY_ENUMERATED"
+    }
+  },
+  "started_epoch": 1793328346.406536,
+  "ended_epoch": 1793328429.0254939
+}

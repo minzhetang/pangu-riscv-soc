@@ -1,0 +1,766 @@
+{
+  "id": "performance256",
+  "status": "SOFTWARE_BITSTREAM_GENERATED_WITH_KNOWN_LIMITS",
+  "artifact": {
+    "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\performance256\\pds\\generate_bitstream\\board_top.sbit",
+    "bytes": 3791112,
+    "SHA256": "A86C7ECB6EF98CC2DDFD3CEFB67D8027BD66EFA5B136FADEC3F558B7FF644CC4"
+  },
+  "stages": {
+    "compile": true,
+    "synthesis": true,
+    "mapping": true,
+    "pnr": true,
+    "timing": true,
+    "bitstream": true
+  },
+  "timing": {
+    "setup_slow": {
+      "slack_ns": 23.279,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 4685
+    },
+    "hold_slow": {
+      "slack_ns": 0.185,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 4685
+    },
+    "recovery_slow": {
+      "slack_ns": 33.991,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 344
+    },
+    "removal_slow": {
+      "slack_ns": 0.751,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 344
+    },
+    "setup_fast": {
+      "slack_ns": 28.647,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 4685
+    },
+    "hold_fast": {
+      "slack_ns": 0.129,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 4685
+    },
+    "recovery_fast": {
+      "slack_ns": 35.065,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 344
+    },
+    "removal_fast": {
+      "slack_ns": 0.518,
+      "TNS_ns": 0.0,
+      "failing": 0,
+      "endpoints": 344
+    }
+  },
+  "resources": {
+    "LUT": 1805,
+    "FF": 1519,
+    "DRM18": 28,
+    "IO": 15,
+    "latches": 0
+  },
+  "pins": {
+    "clk": {
+      "direction": "input",
+      "loc": "D18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[0]": {
+      "direction": "input",
+      "loc": "C22",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[1]": {
+      "direction": "input",
+      "loc": "C23",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[2]": {
+      "direction": "input",
+      "loc": "B22",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[3]": {
+      "direction": "input",
+      "loc": "A22",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "key_n[4]": {
+      "direction": "input",
+      "loc": "B20",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[0]": {
+      "direction": "output",
+      "loc": "A20",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[1]": {
+      "direction": "output",
+      "loc": "C18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[2]": {
+      "direction": "output",
+      "loc": "C19",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[3]": {
+      "direction": "output",
+      "loc": "E18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[4]": {
+      "direction": "output",
+      "loc": "A17",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[5]": {
+      "direction": "output",
+      "loc": "A18",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[6]": {
+      "direction": "output",
+      "loc": "C17",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "led[7]": {
+      "direction": "output",
+      "loc": "B17",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    },
+    "uart_tx": {
+      "direction": "output",
+      "loc": "C24",
+      "bank": "BANKL3",
+      "VCCIO": "3.3",
+      "standard": "LVCMOS33"
+    }
+  },
+  "INIT_pieces": 1792,
+  "changed_INIT_pieces": [
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_00"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_21"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_25"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_2D"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_30"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_31"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_33"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_34"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_35"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_36"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_39"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_3B"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_3C"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_3D"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_3E"
+    },
+    {
+      "block": "\\bank[0].halfword[1].rom_block",
+      "piece": "INIT_3F"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_01"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_02"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_03"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_05"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_06"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_07"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_08"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_09"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_0C"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_0E"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_16"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_1A"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_1D"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_22"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_27"
+    },
+    {
+      "block": "\\bank[1].halfword[1].rom_block",
+      "piece": "INIT_37"
+    },
+    {
+      "block": "\\bank[2].halfword[1].rom_block",
+      "piece": "INIT_0E"
+    },
+    {
+      "block": "\\bank[2].halfword[1].rom_block",
+      "piece": "INIT_12"
+    },
+    {
+      "block": "\\bank[2].halfword[1].rom_block",
+      "piece": "INIT_17"
+    },
+    {
+      "block": "\\bank[2].halfword[1].rom_block",
+      "piece": "INIT_1F"
+    },
+    {
+      "block": "\\bank[2].halfword[1].rom_block",
+      "piece": "INIT_30"
+    },
+    {
+      "block": "\\bank[2].halfword[1].rom_block",
+      "piece": "INIT_37"
+    },
+    {
+      "block": "\\bank[2].halfword[1].rom_block",
+      "piece": "INIT_38"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_12"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_13"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_14"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_15"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_16"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_17"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_18"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_19"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_1A"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_1B"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_1C"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_1D"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_1E"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_1F"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_20"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_21"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_22"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_23"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_24"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_25"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_26"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_27"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_28"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_29"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_2A"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_2B"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_2C"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_2D"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_2E"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_2F"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_30"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_31"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_32"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_33"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_34"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_35"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_36"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_37"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_38"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_39"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_3A"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_3B"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_3C"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_3D"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_3E"
+    },
+    {
+      "block": "\\bank[3].halfword[0].rom_block",
+      "piece": "INIT_3F"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_0E"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_10"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_11"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_12"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_13"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_14"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_15"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_16"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_17"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_18"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_19"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_1A"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_1B"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_1C"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_1D"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_1E"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_1F"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_20"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_21"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_22"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_23"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_24"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_25"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_26"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_27"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_28"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_29"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_2A"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_2B"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_2C"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_2D"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_2E"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_2F"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_30"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_31"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_32"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_33"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_34"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_35"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_36"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_37"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_38"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_39"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_3A"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_3B"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_3C"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_3D"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_3E"
+    },
+    {
+      "block": "\\bank[3].halfword[1].rom_block",
+      "piece": "INIT_3F"
+    }
+  ],
+  "warning_counts": {
+    "W: Verilog-2008": 2,
+    "W: Sdm-2000": 32,
+    "W: Loop was found during constant probe.": 7,
+    "W: Public-4008": 14,
+    "W: Removed bmsWIDEDFFCPE inst soc/cpu_core/id_alu_ctrl[4": 1,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/sync_meta[7": 4,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/gpio_in_sync[7": 4,
+    "W: Timing-4087": 18,
+    "W: Timing-4086": 10
+  },
+  "extra_warning_messages": {},
+  "constant_probe": 7,
+  "critical_count": 0,
+  "license_days_remaining": [
+    4
+  ],
+  "license_checkout": "SUCCESS_THIS_RUN",
+  "memory_pool_reported_MB": 1248,
+  "physical_CDC": "NOT_VALIDATED",
+  "external_input_delays_unspecified": [
+    "key_n[0]",
+    "key_n[1]",
+    "key_n[2]",
+    "key_n[3]",
+    "key_n[4]"
+  ],
+  "external_output_delays_unspecified": [
+    "led[0]",
+    "led[1]",
+    "led[2]",
+    "led[3]",
+    "led[4]",
+    "led[5]",
+    "led[6]",
+    "led[7]",
+    "uart_tx"
+  ],
+  "hardware": "STOPPED",
+  "hardware_valid": false,
+  "formal_score_valid": false,
+  "source_bin_SHA256": "0160BF311C70A8CCDDDF1B4F19B96C4F5B7357CB2E4BD04E69DB9A87DBC8C21E",
+  "source_ELF_SHA256": "FA9822A21D61AE72E807541CFB9676EE308D3F247EF7180F84E74151AD7B0D1C",
+  "INIT_table_SHA256": "62339C1629F4A22ABACA7C2D02B1581BC37FFAF6CF804A275C9AEABFD28B2331",
+  "SCBV": "High Voltage engineering decision only",
+  "long256_DUT": "NOT_RUN"
+}

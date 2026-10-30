@@ -1,0 +1,10 @@
+{
+  "status": "STOPPED_PRESERVE_EVIDENCE_NO_RETRY",
+  "exception_type": "FileNotFoundError",
+  "message": "[WinError 3] 系统找不到指定的路径。: 'D:\\\\A_FPGA_Comp\\\\work\\\\fpga\\\\2026-10-30-coremark256-nodebug-m1\\\\logs\\\\pds-performance256'",
+  "completed_audits": [],
+  "attempts": [
+    "performance256"
+  ],
+  "hardware": "STOPPED"
+}

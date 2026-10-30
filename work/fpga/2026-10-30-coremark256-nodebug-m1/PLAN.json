@@ -1,0 +1,36 @@
+{
+  "before_PDS": true,
+  "cases": [
+    {
+      "id": "performance256",
+      "bin_SHA256": "0160BF311C70A8CCDDDF1B4F19B96C4F5B7357CB2E4BD04E69DB9A87DBC8C21E",
+      "ELF_SHA256": "FA9822A21D61AE72E807541CFB9676EE308D3F247EF7180F84E74151AD7B0D1C",
+      "init_SHA256": "62339C1629F4A22ABACA7C2D02B1581BC37FFAF6CF804A275C9AEABFD28B2331",
+      "argv": [
+        "D:/PDS/PDS_2022.2-SP6.4/bin/pds_shell.exe",
+        "-file",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\performance256\\pds\\build.tcl"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\performance256\\pds",
+      "seconds": 1800,
+      "compile_seed4": 256
+    },
+    {
+      "id": "validation256",
+      "bin_SHA256": "3C28FC298D431BA8FDB09A1075E3EECE5DDD123549EB6CE26870FB7101359559",
+      "ELF_SHA256": "764E1D2A9EACC7AA69D7523C3A511C5BB27DA0CF7122157200D0D294F646E96F",
+      "init_SHA256": "82632BD2B0CDA6D4C69F53937F1F70677504EE07982B3575B776C83CE7F05C6D",
+      "argv": [
+        "D:/PDS/PDS_2022.2-SP6.4/bin/pds_shell.exe",
+        "-file",
+        "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\validation256\\pds\\build.tcl"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\validation256\\pds",
+      "seconds": 1800,
+      "compile_seed4": 256
+    }
+  ],
+  "all_stage_seconds": 4800,
+  "source_RTL_changes": "none; production INIT substitution only",
+  "hardware": "STOPPED"
+}

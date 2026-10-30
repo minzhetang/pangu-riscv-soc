@@ -1,0 +1,453 @@
+{
+  "before_native": true,
+  "files": [
+    {
+      "path": "performance256\\INIT_DIFF.patch",
+      "SHA256": "38F98A1997EB4861AB253764F4D4B9212516018505114C610D9E6A62A6ADBDF2"
+    },
+    {
+      "path": "performance256\\PDS_ATTEMPT.json",
+      "SHA256": "BA7DB831B70E2D0DE284C2DD27D6EFCC1662D8B505B92E19CDC3D7A67B3431DC"
+    },
+    {
+      "path": "performance256\\firmware\\build_identity.h",
+      "SHA256": "EE8695C6BE2AB676F129FFA01E2C78FE2F409248D0693471C592F0B659E88EFF"
+    },
+    {
+      "path": "performance256\\firmware\\FROZEN_BUILD.json",
+      "SHA256": "C95CF44CEECFAD62C5B8EF8B19D8FC188845E6DF4D0D359C06F818F3B54490FD"
+    },
+    {
+      "path": "performance256\\firmware\\program.bin",
+      "SHA256": "0160BF311C70A8CCDDDF1B4F19B96C4F5B7357CB2E4BD04E69DB9A87DBC8C21E"
+    },
+    {
+      "path": "performance256\\firmware\\program.elf",
+      "SHA256": "FA9822A21D61AE72E807541CFB9676EE308D3F247EF7180F84E74151AD7B0D1C"
+    },
+    {
+      "path": "performance256\\firmware\\program.map",
+      "SHA256": "0A0E5A7EC0C9AB6128C5770746EF70357534A7EA8274FC36D5F871714CFB0088"
+    },
+    {
+      "path": "performance256\\firmware\\RESULT.json",
+      "SHA256": "91D7CDEC47BFC89F4177BE353FF56547A2302082F253348AD4BCA6709AE5A9AE"
+    },
+    {
+      "path": "performance256\\pds\\board_pins.fdc",
+      "SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1"
+    },
+    {
+      "path": "performance256\\pds\\build.tcl",
+      "SHA256": "F6598E492A3C60C8D2DE1FDD92CB93CB9B78E1EEAF4CC894424C7965B64A9705"
+    },
+    {
+      "path": "performance256\\pds\\clock_27mhz.fdc",
+      "SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F"
+    },
+    {
+      "path": "performance256\\production-before\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "performance256\\production-before\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "performance256\\production-before\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "performance256\\production-before\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "performance256\\production-before\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "performance256\\production-before\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "performance256\\production-before\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "performance256\\production-before\\init_tables.svh",
+      "SHA256": "1882FB39C232AB924EB66DFD06E803523E0DB22D1E70E6EDF16E95C35EEB34FE"
+    },
+    {
+      "path": "performance256\\production-before\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "performance256\\production-before\\memory_model.sv",
+      "SHA256": "BDBADBF190038B6950FE0DBEE3029BE2A78C83FC1B4D0D3358351DCDA6E912FE"
+    },
+    {
+      "path": "performance256\\production-before\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "performance256\\production-before\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "performance256\\production-before\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "performance256\\production-before\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "performance256\\source-before\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "performance256\\source-before\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "performance256\\source-before\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "performance256\\source-before\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "performance256\\source-before\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "performance256\\source-before\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "performance256\\source-before\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "performance256\\source-before\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "performance256\\source-before\\memory_model.sv",
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "performance256\\source-before\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "performance256\\source-before\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "performance256\\source-before\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "performance256\\source-before\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "performance256\\pds\\source\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "performance256\\pds\\source\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "performance256\\pds\\source\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "performance256\\pds\\source\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "performance256\\pds\\source\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "performance256\\pds\\source\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "performance256\\pds\\source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "performance256\\pds\\source\\init_tables.svh",
+      "SHA256": "62339C1629F4A22ABACA7C2D02B1581BC37FFAF6CF804A275C9AEABFD28B2331"
+    },
+    {
+      "path": "performance256\\pds\\source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "performance256\\pds\\source\\memory_model.sv",
+      "SHA256": "D8F77B18C38DEE3E07FAC0FC0BE53AA08D26A842217DAFF2B5F4073D2FB8079B"
+    },
+    {
+      "path": "performance256\\pds\\source\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "performance256\\pds\\source\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "performance256\\pds\\source\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "performance256\\pds\\source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "validation256\\INIT_DIFF.patch",
+      "SHA256": "7C003E088C3011C6DEFFEFC44AC4B98405F75B62BFB67F5723611C01EB529255"
+    },
+    {
+      "path": "validation256\\firmware\\build_identity.h",
+      "SHA256": "E436B4466FF85A02F74E8264020E34012115BC8E40913CC94F909DC66EBA20AB"
+    },
+    {
+      "path": "validation256\\firmware\\FROZEN_BUILD.json",
+      "SHA256": "318637004270E31D343DB96B6D0EF70EDE2AEF223BE64E03CD1817D3713DF2CF"
+    },
+    {
+      "path": "validation256\\firmware\\program.bin",
+      "SHA256": "3C28FC298D431BA8FDB09A1075E3EECE5DDD123549EB6CE26870FB7101359559"
+    },
+    {
+      "path": "validation256\\firmware\\program.elf",
+      "SHA256": "764E1D2A9EACC7AA69D7523C3A511C5BB27DA0CF7122157200D0D294F646E96F"
+    },
+    {
+      "path": "validation256\\firmware\\program.map",
+      "SHA256": "F1095727662E2B8C588CE6CF24F830F6E51EFBED9F79C9765AFE6D01280E2BDF"
+    },
+    {
+      "path": "validation256\\firmware\\RESULT.json",
+      "SHA256": "D30C640D3E268EB21AE59B794117737C87926715054AC69D4415BBDB42E07CB0"
+    },
+    {
+      "path": "validation256\\pds\\board_pins.fdc",
+      "SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1"
+    },
+    {
+      "path": "validation256\\pds\\build.tcl",
+      "SHA256": "F6598E492A3C60C8D2DE1FDD92CB93CB9B78E1EEAF4CC894424C7965B64A9705"
+    },
+    {
+      "path": "validation256\\pds\\clock_27mhz.fdc",
+      "SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F"
+    },
+    {
+      "path": "validation256\\production-before\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "validation256\\production-before\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "validation256\\production-before\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "validation256\\production-before\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "validation256\\production-before\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "validation256\\production-before\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "validation256\\production-before\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "validation256\\production-before\\init_tables.svh",
+      "SHA256": "1882FB39C232AB924EB66DFD06E803523E0DB22D1E70E6EDF16E95C35EEB34FE"
+    },
+    {
+      "path": "validation256\\production-before\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "validation256\\production-before\\memory_model.sv",
+      "SHA256": "BDBADBF190038B6950FE0DBEE3029BE2A78C83FC1B4D0D3358351DCDA6E912FE"
+    },
+    {
+      "path": "validation256\\production-before\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "validation256\\production-before\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "validation256\\production-before\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "validation256\\production-before\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "validation256\\source-before\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "validation256\\source-before\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "validation256\\source-before\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "validation256\\source-before\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "validation256\\source-before\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "validation256\\source-before\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "validation256\\source-before\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "validation256\\source-before\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "validation256\\source-before\\memory_model.sv",
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "validation256\\source-before\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "validation256\\source-before\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "validation256\\source-before\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "validation256\\source-before\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "validation256\\pds\\source\\alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "validation256\\pds\\source\\board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "validation256\\pds\\source\\board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "validation256\\pds\\source\\control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "validation256\\pds\\source\\cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "validation256\\pds\\source\\cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "validation256\\pds\\source\\gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "validation256\\pds\\source\\init_tables.svh",
+      "SHA256": "82632BD2B0CDA6D4C69F53937F1F70677504EE07982B3575B776C83CE7F05C6D"
+    },
+    {
+      "path": "validation256\\pds\\source\\local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "validation256\\pds\\source\\memory_model.sv",
+      "SHA256": "1A8EDC7873FC5B225437E0102302D27ED623D08AA307B334CA1C478F0E199214"
+    },
+    {
+      "path": "validation256\\pds\\source\\regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "validation256\\pds\\source\\soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "validation256\\pds\\source\\soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "validation256\\pds\\source\\uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "audit_case.py",
+      "SHA256": "6640D26243E5704A6FBE6891C1118251F1508368B7CB0B839CAEF7E89B97D395"
+    },
+    {
+      "path": "host_checks.py",
+      "SHA256": "914A337B47464581E4B5EE1DD3D3600A58F49FBB0FE42C8C6CE049C92A1191F1"
+    },
+    {
+      "path": "host_supervisor.py",
+      "SHA256": "DA78E0FBA228EDC1465E955940252248A94913E8A71356A7D9F6F5E8F32422FE"
+    },
+    {
+      "path": "prepare.py",
+      "SHA256": "33D3F920AFBA42FD044AD81F7E74FA604E8F4069422F94F708394B014BFD7F8B"
+    },
+    {
+      "path": "prepare_recovery.py",
+      "SHA256": "7170444E4283F230BDB1ACC989A8DD3391AADDAA841BBAC7C8C246D3C0664ADE"
+    },
+    {
+      "path": "run_stage-r1.py",
+      "SHA256": "FC360D02289D04820AE059654CB232BD8B27A865031C361CCEC4493587B05688"
+    },
+    {
+      "path": "run_stage.py",
+      "SHA256": "2406D98A123F228844B6E4686A5EFE006FAD5E25FDB2642F9D4C40559D5E6106"
+    },
+    {
+      "path": "stage_budget.py",
+      "SHA256": "571DF502754003D65881778685E43CD8C65333F8FBE72FD589FE2BD94E18E2AC"
+    },
+    {
+      "path": "PLAN.json",
+      "SHA256": "DE497750690675F8F9CC23BCD87BC259355C9D57A74FFC723A82D3CB3C7A87DF"
+    }
+  ]
+}

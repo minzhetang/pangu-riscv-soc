@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-30",
+  "decision": "D200",
+  "source": "user 批准",
+  "version": "1.0.0",
+  "scope_SHA256": "4C6E5A61DFFB882F378883926D098364EDF8FB16C6150A01B193DE47A67C0A46",
+  "max_PDS": 2,
+  "hardware": "STOPPED"
+}

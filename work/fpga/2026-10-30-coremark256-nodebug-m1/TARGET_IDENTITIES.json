@@ -1,0 +1,169 @@
+{
+  "status": "SOFTWARE_IDENTITIES_ONLY_NOT_HARDWARE_ACCEPTANCE",
+  "cases": [
+    {
+      "case": "performance256",
+      "iterations": 256,
+      "board": "MES2L676-100HP",
+      "target": "PG2L100H-6IFBG676",
+      "clock_setting_hz": 27000000,
+      "measured_clock": false,
+      "bin_SHA256": "0160BF311C70A8CCDDDF1B4F19B96C4F5B7357CB2E4BD04E69DB9A87DBC8C21E",
+      "ELF_SHA256": "FA9822A21D61AE72E807541CFB9676EE308D3F247EF7180F84E74151AD7B0D1C",
+      "INIT_SHA256": "62339C1629F4A22ABACA7C2D02B1581BC37FFAF6CF804A275C9AEABFD28B2331",
+      "production_memory_SHA256": "D8F77B18C38DEE3E07FAC0FC0BE53AA08D26A842217DAFF2B5F4073D2FB8079B",
+      "bitstream": {
+        "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\performance256\\pds\\generate_bitstream\\board_top.sbit",
+        "bytes": 3791112,
+        "SHA256": "A86C7ECB6EF98CC2DDFD3CEFB67D8027BD66EFA5B136FADEC3F558B7FF644CC4"
+      },
+      "timing": {
+        "setup_slow": {
+          "slack_ns": 23.279,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 4685
+        },
+        "hold_slow": {
+          "slack_ns": 0.185,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 4685
+        },
+        "recovery_slow": {
+          "slack_ns": 33.991,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 344
+        },
+        "removal_slow": {
+          "slack_ns": 0.751,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 344
+        },
+        "setup_fast": {
+          "slack_ns": 28.647,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 4685
+        },
+        "hold_fast": {
+          "slack_ns": 0.129,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 4685
+        },
+        "recovery_fast": {
+          "slack_ns": 35.065,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 344
+        },
+        "removal_fast": {
+          "slack_ns": 0.518,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 344
+        }
+      },
+      "INIT_pieces": 1792,
+      "changed_INIT_count": 134,
+      "seconds": 83.36,
+      "native_rc": 0,
+      "shell_peak_bytes": 103223296,
+      "parent_peak_bytes": 64868352,
+      "reported_pool_MB": 1248,
+      "license_days": [
+        4
+      ],
+      "expected_report_SHA256": "73425EECBAB76C9DDE20D58A7F1E85014F346B3242C995C9B6F64B1DCDC0679E",
+      "hardware_valid": false,
+      "formal_score_valid": false,
+      "UART_physical_run": "NOT_RUN",
+      "long256_DUT": "NOT_RUN"
+    },
+    {
+      "case": "validation256",
+      "iterations": 256,
+      "board": "MES2L676-100HP",
+      "target": "PG2L100H-6IFBG676",
+      "clock_setting_hz": 27000000,
+      "measured_clock": false,
+      "bin_SHA256": "3C28FC298D431BA8FDB09A1075E3EECE5DDD123549EB6CE26870FB7101359559",
+      "ELF_SHA256": "764E1D2A9EACC7AA69D7523C3A511C5BB27DA0CF7122157200D0D294F646E96F",
+      "INIT_SHA256": "82632BD2B0CDA6D4C69F53937F1F70677504EE07982B3575B776C83CE7F05C6D",
+      "production_memory_SHA256": "1A8EDC7873FC5B225437E0102302D27ED623D08AA307B334CA1C478F0E199214",
+      "bitstream": {
+        "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\validation256\\pds\\generate_bitstream\\board_top.sbit",
+        "bytes": 3791112,
+        "SHA256": "992EA6D9FBCD1990E07A1F46EA86F13DBD41E7CBA1941AD42DA96612E86D3F10"
+      },
+      "timing": {
+        "setup_slow": {
+          "slack_ns": 23.279,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 4685
+        },
+        "hold_slow": {
+          "slack_ns": 0.185,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 4685
+        },
+        "recovery_slow": {
+          "slack_ns": 33.991,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 344
+        },
+        "removal_slow": {
+          "slack_ns": 0.751,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 344
+        },
+        "setup_fast": {
+          "slack_ns": 28.647,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 4685
+        },
+        "hold_fast": {
+          "slack_ns": 0.129,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 4685
+        },
+        "recovery_fast": {
+          "slack_ns": 35.065,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 344
+        },
+        "removal_fast": {
+          "slack_ns": 0.518,
+          "TNS_ns": 0.0,
+          "failing": 0,
+          "endpoints": 344
+        }
+      },
+      "INIT_pieces": 1792,
+      "changed_INIT_count": 148,
+      "seconds": 82.609,
+      "native_rc": 0,
+      "shell_peak_bytes": 102105088,
+      "parent_peak_bytes": 67731456,
+      "reported_pool_MB": 1249,
+      "license_days": [
+        4
+      ],
+      "expected_report_SHA256": "964A824A23C19E1626DE0986CD904776133FA44B4A258E63B7DC70DE6D9ACADC",
+      "hardware_valid": false,
+      "formal_score_valid": false,
+      "UART_physical_run": "NOT_RUN",
+      "long256_DUT": "NOT_RUN"
+    }
+  ]
+}

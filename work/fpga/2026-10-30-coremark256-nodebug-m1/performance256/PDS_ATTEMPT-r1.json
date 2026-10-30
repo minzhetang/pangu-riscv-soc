@@ -1,0 +1,13 @@
+{
+  "used": 1,
+  "max_case": 1,
+  "max_stage": 2,
+  "approval": "D200",
+  "argv": [
+    "D:/PDS/PDS_2022.2-SP6.4/bin/pds_shell.exe",
+    "-file",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\performance256\\pds\\build.tcl"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-30-coremark256-nodebug-m1\\performance256\\pds",
+  "max_seconds": 1800
+}

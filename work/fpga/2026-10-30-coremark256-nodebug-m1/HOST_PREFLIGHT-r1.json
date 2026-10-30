@@ -1,0 +1,6 @@
+{
+  "status": "PASS_HOST_PREFLIGHT_ONLY",
+  "completion_checks": 9,
+  "mutable_missing_stat_branch": "FileNotFoundError only; protected input failures never ignored",
+  "native_invocations": 0
+}

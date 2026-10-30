@@ -1,0 +1,17 @@
+{
+  "status": "PROTECTED_AND_FROZEN_INPUTS_UNCHANGED",
+  "protected_entries": 108,
+  "frozen_entries": 112,
+  "stage_bytes_before_postflight": 36359811,
+  "deadline_remaining": 4364.25,
+  "PDS_actual": 2,
+  "prelaunch_failures": 1,
+  "original_prelaunch_error": "STOPPED.json",
+  "GCC": 0,
+  "DUT": 0,
+  "hardware": "STOPPED",
+  "license_days_actual": [
+    4
+  ],
+  "no_external_send": true
+}
