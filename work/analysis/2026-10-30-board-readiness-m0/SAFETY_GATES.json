@@ -1,0 +1,31 @@
+{
+  "status": "STOPPED_NOT_CLEARED",
+  "historical_status": "0x081efca0",
+  "public_id": "0x00602899",
+  "flags": {
+    "done": 1,
+    "done_i": 1,
+    "wakeup_over": 1,
+    "timeout": 0,
+    "rbcrc_err": 0,
+    "aut_err": 0,
+    "crc_err": 0,
+    "id_err": 0,
+    "over_temp": 1
+  },
+  "temperature_measured": false,
+  "pre_configuration_bit27_baseline": false,
+  "hardware_queried_this_round": false,
+  "source": "reports/hardware/2026-10-14-led-volatile-result.json",
+  "unknowns": [
+    "CFG27 exact validity/polarity/latch-clear relation to ADC OT",
+    "actual temperature and time evolution",
+    "physical CFG rail endpoint voltage not closed",
+    "board power switch complete circuit definition"
+  ],
+  "no_inference": [
+    "software pass/LED/DONE cannot establish safe temperature",
+    "ADC OT hysteresis does not define CFG27 clear rules",
+    "High Voltage remains engineering decision, not measured supply"
+  ]
+}

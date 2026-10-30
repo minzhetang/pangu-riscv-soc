@@ -1404,6 +1404,20 @@
 /deliveries/coordination-cancellation-2026-10-30-v1/*
 !/deliveries/coordination-cancellation-2026-10-30-v1/CANCELLATION.md
 
+!/deliveries/mainline-coremark256-nodebug-scope-2026-10-30-v1/
+/deliveries/mainline-coremark256-nodebug-scope-2026-10-30-v1/*
+!/work/analysis/
+/work/analysis/*
+!/work/analysis/2026-10-30-board-readiness-m0/
+/work/analysis/2026-10-30-board-readiness-m0/*
+!/reports/progress/2026-10-30-board-readiness-m0.md
+!/work/analysis/2026-10-30-board-readiness-m0/audit.py
+!/work/analysis/2026-10-30-board-readiness-m0/SUMMARY.json
+!/work/analysis/2026-10-30-board-readiness-m0/SOURCE_AND_IMAGE_IDENTITY.json
+!/work/analysis/2026-10-30-board-readiness-m0/SAFETY_GATES.json
+!/deliveries/mainline-coremark256-nodebug-scope-2026-10-30-v1/IMPLEMENTATION_SCOPE.md
+!/deliveries/mainline-coremark256-nodebug-scope-2026-10-30-v1/SCOPE_STATUS.json
+
 # Defense in depth: never admit authorization, keys, tools or large outputs.
 **/*.lic
 **/*.LIC

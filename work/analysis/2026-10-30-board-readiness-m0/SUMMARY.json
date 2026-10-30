@@ -1,0 +1,17 @@
+{
+  "date_client": "2026-10-30",
+  "status": "READINESS_REVIEW_COMPLETE_HARDWARE_STOPPED",
+  "protected_entries_verified": 68,
+  "functional_source_exact_to_baseline": 13,
+  "production_exact": 12,
+  "production_memory_binding": "reuse existing audited transform, new INIT only",
+  "new_C": 0,
+  "new_reference": 0,
+  "new_DUT": 0,
+  "PDS": 0,
+  "GUI": 0,
+  "hardware": 0,
+  "formal_score": false,
+  "scope_next": "A-BOARD-COREMARK256-NODEBUG-M1 1.0.0 pending approval",
+  "debug_export": "not prerequisite for nondebug program build; still required evidence before ILA acceptance"
+}
