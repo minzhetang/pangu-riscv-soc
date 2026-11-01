@@ -1,0 +1,30 @@
+{
+  "recorded": "2026-11-01T23:04:19.704201+08:00",
+  "status": "PAUSED_BY_USER_NO_AUTOMATIC_RESUME",
+  "decision": "D295",
+  "EEI_directed": 24,
+  "frozen_regression": 763,
+  "first_candidate_ticks": 496232016,
+  "repeat_ticks": 496232016,
+  "repeat_errors": [
+    "Overrun"
+  ],
+  "clean_repeat_accepted": false,
+  "cause": "UNRESOLVED; no error event timestamps, cannot attribute to host or prior boot",
+  "validation_build_audit": true,
+  "validation_target_run": false,
+  "validation_bit_sha256": "65567CF5D50D53925DADEAE3B5FF5E2FBF6DD04CD4F9E91EDE5F0621C382D68D",
+  "candidate_adopted": false,
+  "configs_used": 2,
+  "planned_max_configs": 3,
+  "tools": "Known receiver and build normal0, Job empty; no matching PDS/cfg/server/PowerShell/Python process at read-only check",
+  "hardware": "Last configured H69 if power retained; no new physical power/connection confirmation",
+  "pending": [
+    "Overrun diagnosis and clean repeat",
+    "validation seed target run",
+    "final adoption",
+    "report/code/demo packaging"
+  ],
+  "no_new_tests_build_or_hardware": true,
+  "no_commit_push": true
+}

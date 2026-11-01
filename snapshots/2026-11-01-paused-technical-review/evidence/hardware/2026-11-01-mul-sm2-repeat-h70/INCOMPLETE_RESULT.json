@@ -1,0 +1,9 @@
+{
+  "status": "TRUNCATED_BY_TOTAL_CAPTURE_WINDOW_NOT_COMPLETE_BENCHMARK",
+  "raw_bytes": 691,
+  "received": "newBOOT,RAMTEST,MUL80,allLEDreadbacks,GPIO_INPUT_PASS",
+  "not_received": "benchmark report/end marker",
+  "serial_native_error_events": 0,
+  "reason": "240s total wait left insufficient compute time after delayed physical reset/keys; no functional failure inferred",
+  "original_logs_kept": true
+}

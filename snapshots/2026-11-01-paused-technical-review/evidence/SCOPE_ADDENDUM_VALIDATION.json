@@ -1,0 +1,13 @@
+{
+  "decision": "D294",
+  "reason": "Single SM2 candidate first hardware run meets pre-frozen5percent/60byte/noextraDRM criterion; verify the standard second seed before recommendation, not a second optimization",
+  "additional_implementation": 1,
+  "complete_implementation_total": 3,
+  "configuration_original_upper_bound": 3,
+  "prior_actual_configurations": 2,
+  "planned_final_validation_configuration": 1,
+  "high_features_added": false,
+  "original_CPU_scope_unchanged": true,
+  "repeat_readonly_capture": "H70 active, no Program",
+  "policy_source": "official CoreMark README run rules; immutable six benchmark source files unchanged, compiler runtime change fully disclosed; no certification claim"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "path": "work/quality/2026-11-01-basic-completion-m2/eei-alignment/RESULTS_ADJUDICATED.json",
+    "bytes": 44577,
+    "sha256": "A1340A81066D02138963E6B45B594DB090D62F5DAC65CC3E1259F238E0FE6A3F"
+  },
+  {
+    "path": "work/quality/2026-11-01-basic-completion-m2/regression763/RESULTS.json",
+    "bytes": 1391003,
+    "sha256": "154548F67952B53D331FA242A0652C050BCA5C1C2FC796B70C871CB26C7FBB7C"
+  },
+  {
+    "path": "work/quality/2026-11-01-basic-completion-m2/impl-validation/AUDIT_RESULT.json",
+    "bytes": 2007,
+    "sha256": "63DC38DC70782EEBC8BC6BA19508DD62892A78C06F4B2EB50D46BF5AE5774809"
+  },
+  {
+    "path": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build-EXIT.json",
+    "bytes": 554,
+    "sha256": "E29952683D5BCB977BBA70426570302F81C0DB0C93662CEE35AACAEA4C7F2D56"
+  },
+  {
+    "path": "work/pds-jtag/2026-11-01-board-qa-target-h66/BOARD_CHECK.json",
+    "bytes": 1758,
+    "sha256": "204A3B1BE46560104615CA6923DAEA27D976034E6B4281BA0289D0DD10D580E1"
+  },
+  {
+    "path": "work/pds-jtag/2026-11-01-board-qa-reset-h67/VISUAL_RECEIPT.json",
+    "bytes": 356,
+    "sha256": "3A1D1614A9C8934012828F3F08F6332A279739C7BF2EA6A40AC9C44D6884457E"
+  },
+  {
+    "path": "work/pds-jtag/2026-11-01-mul-sm2-target-h69/PERFORMANCE_CHECK.json",
+    "bytes": 862,
+    "sha256": "B12E8E4C2BFC78457969326DAD9ED9432266A5B0E5D56843D18C053C75B7F7AA"
+  },
+  {
+    "path": "work/pds-jtag/2026-11-01-mul-sm2-repeat-h70/INCOMPLETE_RESULT.json",
+    "bytes": 415,
+    "sha256": "F42EA5B7498CC1F40D0B9FEE0C4EF1B10C29011C17D039E27FA2B997D4C7E67F"
+  },
+  {
+    "path": "work/pds-jtag/2026-11-01-mul-sm2-repeat-h70-r1/RESULT.json",
+    "bytes": 364,
+    "sha256": "B3759F6B995FEC425BD87B452B8CF1DAA45A576DF65075652AD8DBE8E1EBE662"
+  },
+  {
+    "path": "work/pds-jtag/2026-11-01-mul-sm2-repeat-h70-r1/SERIAL_RESULT.json",
+    "bytes": 834,
+    "sha256": "AEF47B7B569394B0A780BECBE1C6CEF72560E3395F81427D50E65186D0B25162"
+  },
+  {
+    "path": "work/pds-jtag/2026-11-01-mul-sm2-repeat-h70-r1/uart-raw.bin",
+    "bytes": 1942,
+    "sha256": "F4404537F68B1CFED8FD02892993D2F1FF017B58F78C243FFF432AFDEAF71479"
+  },
+  {
+    "path": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/generate_bitstream/board_top.sbit",
+    "bytes": 3791112,
+    "sha256": "65567CF5D50D53925DADEAE3B5FF5E2FBF6DD04CD4F9E91EDE5F0621C382D68D"
+  }
+]

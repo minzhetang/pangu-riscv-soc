@@ -1,0 +1,30 @@
+﻿{
+    "started":  "2026-11-01T20:56:57.3146626+08:00",
+    "port":  "COM22",
+    "baud":  115200,
+    "data_bits":  8,
+    "parity":  "None",
+    "stop_bits":  1,
+    "handshake":  "None",
+    "dtr_enable":  false,
+    "rts_enable":  false,
+    "max_seconds":  600,
+    "max_bytes":  65536,
+    "after_data_quiet_seconds":  2,
+    "read_only":  true,
+    "write_calls":  0,
+    "program_calls":  0,
+    "pds_calls":  0,
+    "reset_source":  "USER_KEY0_PENDING",
+    "opened":  true,
+    "bytes":  1942,
+    "error_events":  [
+                         "Overrun"
+                     ],
+    "state":  "DATA_CAPTURED_THEN_QUIET",
+    "end_marker_seen":  true,
+    "listen_seconds":  79.5048771,
+    "total_seconds":  84.817892,
+    "finished":  "2026-11-01T20:58:22.1531755+08:00",
+    "closed":  true
+}

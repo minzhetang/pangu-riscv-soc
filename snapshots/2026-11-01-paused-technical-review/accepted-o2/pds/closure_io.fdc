@@ -1,0 +1,7 @@
+# Scoped asynchronous entry exceptions. get_cells endpoints are supported by official UCE.
+# Raw keys1..4 drive only the GPIO first-stage data cone; no clock/reset usage.
+set_false_path -from [get_ports -regexp {^key_n\[[1-4]\]$}] -to [get_cells -hierarchical -regexp {^soc/peripherals/u_gpio/sync_meta.*$}]
+# Raw KEY0 drives only async clear of these3 reset-release flops.
+set_false_path -from [get_ports -regexp {^key_n\[0\]$}] -to [get_cells -hierarchical -regexp {^reset_sync/release_ff.*$}]
+# Synchronized release->consumer recovery/removal and GPIO stage1->stage2 remain timed.
+set_max_delay -datapath_only -to [get_ports -regexp {^(led\[[0-7]\]|uart_tx)$}] 37.037037

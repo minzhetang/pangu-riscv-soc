@@ -1,0 +1,2 @@
+#define COREMARK_CLOCK_HZ 27000000u
+#define FLAGS_STR "-DBOARD_QA_M2=1 -DPROJECT_MULSI3_SM2=1 -march=rv32i -mabi=ilp32 -O2 -ffreestanding -fno-builtin -fno-common -fno-pie -fno-stack-protector -fno-unwind-tables -fno-asynchronous-unwind-tables -mno-relax -msmall-data-limit=0 -Wall -Wextra -Werror -nostdlib -nostartfiles -Wl,--no-relax -Wl,--build-id=none -Wl,-T,firmware/link.ld -Wl,-Map,build/validation256/program.map -Ifirmware -Iport -Iupstream -Ibuild/validation256 -DTOTAL_DATA_SIZE=2000 -DITERATIONS=256 -DVALIDATION_RUN=1"

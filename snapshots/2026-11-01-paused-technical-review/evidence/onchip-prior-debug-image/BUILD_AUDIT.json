@@ -1,0 +1,135 @@
+{
+  "status": "SOFTWARE_OBSERVATION_CANDIDATE_READY_FOR_AUTHORIZED_LIMITED_HARDWARE",
+  "stages": {
+    "synthesis": true,
+    "map": true,
+    "pnr": true,
+    "timing": true,
+    "bitstream": true
+  },
+  "bitstream": {
+    "path": "build\\generate_bitstream\\board_top.sbit",
+    "bytes": 3791112,
+    "sha256": "51A361EFAB8DD43A13464820063A127B9E80B953B212452FC8C511118E7A0222",
+    "fresh": true
+  },
+  "FIC_sha256": "F03A9F4D10A8356A617DEA50E2115F693280D265E67390416B670231F8518163",
+  "source_function_unchanged": true,
+  "software_binary_sha256": "0160BF311C70A8CCDDDF1B4F19B96C4F5B7357CB2E4BD04E69DB9A87DBC8C21E",
+  "program_bytes": 16352,
+  "functional_INIT_pieces": 1792,
+  "all_INIT_equal_fixed_non_debug": true,
+  "pre_build_full_VM_equal": true,
+  "probe_order_width": 140,
+  "depth": 1024,
+  "all140_sampler_register_indices_present": true,
+  "all140_postroute_wiring_independently_proven": false,
+  "timing": {
+    "Setup_Slow": {
+      "kind": "Setup",
+      "corner": "Slow",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 24.876,
+      "failing": 0,
+      "endpoints": 7160
+    },
+    "Hold_Slow": {
+      "kind": "Hold",
+      "corner": "Slow",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 0.158,
+      "failing": 0,
+      "endpoints": 7160
+    },
+    "Recovery_Slow": {
+      "kind": "Recovery",
+      "corner": "Slow",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 33.099,
+      "failing": 0,
+      "endpoints": 1182
+    },
+    "Removal_Slow": {
+      "kind": "Removal",
+      "corner": "Slow",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 0.352,
+      "failing": 0,
+      "endpoints": 1182
+    },
+    "Setup_Fast": {
+      "kind": "Setup",
+      "corner": "Fast",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 29.752,
+      "failing": 0,
+      "endpoints": 7160
+    },
+    "Hold_Fast": {
+      "kind": "Hold",
+      "corner": "Fast",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 0.113,
+      "failing": 0,
+      "endpoints": 7160
+    },
+    "Recovery_Fast": {
+      "kind": "Recovery",
+      "corner": "Fast",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 34.48,
+      "failing": 0,
+      "endpoints": 1182
+    },
+    "Removal_Fast": {
+      "kind": "Removal",
+      "corner": "Fast",
+      "launch": "clk_27mhz",
+      "capture": "clk_27mhz",
+      "slack_ns": 0.249,
+      "failing": 0,
+      "endpoints": 1182
+    }
+  },
+  "minimum_setup_ns": 24.876,
+  "minimum_hold_ns": 0.113,
+  "resources": {
+    "LUT": 2931,
+    "FF": 3838,
+    "DRM36": 18,
+    "IO": 15
+  },
+  "pins_equal": true,
+  "open_Critical": [
+    "C: Place-2028: GLOBAL_CLOCK: the driver u_CORES/u_GTP_SCANCHAIN_PG/scanchain fixed at SCANCHAIN_88_312 is unreasonable. Sub-optimal placement for a clock source and a clock buffer.",
+    "C: Route-2036: The clock path from u_CORES/u_GTP_SCANCHAIN_PG/scanchain:TCK1 to clkbufg_4/gopclkbufg:CLK is routed by SRB.",
+    "C: Route-2036: The clock path from u_CORES/u_GTP_SCANCHAIN_PG/scanchain:CAPTUREDR to u_CORES/u_debug_core_0/u_hub_data_decode/id_sample.conf_id[1]/opit_0_inv:CLK is routed by SRB.",
+    "C: Route-2036: The clock path from clkbufg_4/gopclkbufg:CLKOUT to u_CORES/u_debug_core_0/u0_trig_unit/conf_reg[188]/opit_0_inv_L6QL5Q:CLK is routed by SRB."
+  ],
+  "critical_not_waived": true,
+  "warnings": {
+    "W: Verilog-2008": 2,
+    "W: Sdm-2000": 32,
+    "W: Loop was found during constant probe.": 7,
+    "W: Public-4008": 49,
+    "W: Removed bmsWIDEDFFCPE inst soc/cpu_core/id_alu_ctrl[4": 1,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/sync_meta[7": 4,
+    "W: Removed bmsWIDEDFFCPE inst soc/peripherals/u_gpio/gpio_in_sync[7": 4,
+    "W: Timing-4087": 18,
+    "W: Timing-4086": 10
+  },
+  "license_actual_days": [
+    2
+  ],
+  "CDC_and_external_IO_not_validated": true,
+  "SCBV": "Unchanged High Voltage engineering assumption",
+  "new_hardware_calls": 0,
+  "no_Git_commit_push": true
+}

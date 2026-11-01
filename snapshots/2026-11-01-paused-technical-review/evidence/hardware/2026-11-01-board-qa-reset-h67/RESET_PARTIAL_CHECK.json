@@ -1,0 +1,55 @@
+{
+  "status": "RESET_LED_RAM_MUL_COREMARK_ACCEPTED_GPIO_NOT_REPEATED",
+  "full_board_checker_failed": true,
+  "failed_check": "second round GPIO inputs only [0], operator sequence was not repeated",
+  "not_silently_changed_to_full_PASS": true,
+  "first_round_GPIO": "H66/BOARD_CHECK.json PASS",
+  "user_visual_receipt": "VISUAL_RECEIPT.json all8 and resetalloff/A5",
+  "new_boot": true,
+  "RAM_MUL80_PASS": true,
+  "LED_order_readbacks": [
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      2,
+      2
+    ],
+    [
+      2,
+      4,
+      4
+    ],
+    [
+      3,
+      8,
+      8
+    ],
+    [
+      4,
+      16,
+      16
+    ],
+    [
+      5,
+      32,
+      32
+    ],
+    [
+      6,
+      64,
+      64
+    ],
+    [
+      7,
+      128,
+      128
+    ]
+  ],
+  "new_coremark_delta": 538539600,
+  "all5CRC_match": true,
+  "scope": "Second reset/LED evidence only, not a repeated all-key acceptance"
+}

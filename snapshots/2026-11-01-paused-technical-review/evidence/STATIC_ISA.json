@@ -1,0 +1,40 @@
+[
+  {
+    "case": "software-baseline",
+    "entry": 0,
+    "all_executable_words_RV32I": true,
+    "opcode_counts": {
+      "17": 126,
+      "13": 1517,
+      "63": 362,
+      "03": 590,
+      "23": 419,
+      "6f": 105,
+      "67": 187,
+      "73": 6,
+      "33": 444,
+      "37": 203
+    },
+    "source_unchanged_upstream": true,
+    "not_dynamic_correctness": true
+  },
+  {
+    "case": "software-sm2",
+    "entry": 0,
+    "all_executable_words_RV32I": true,
+    "opcode_counts": {
+      "17": 126,
+      "13": 1521,
+      "63": 363,
+      "03": 590,
+      "23": 419,
+      "6f": 105,
+      "67": 187,
+      "73": 6,
+      "33": 449,
+      "37": 203
+    },
+    "source_unchanged_upstream": true,
+    "not_dynamic_correctness": true
+  }
+]

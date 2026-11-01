@@ -1,0 +1,8 @@
+{
+  "source": "current user reply, physical observation not camera/electrical measurement",
+  "at": 1793536376.801813,
+  "user_report": "复位之后全灭，松开后八灯从LED0到LED7依次点亮，然后LED0，LED2，LED5，LED7常亮，其他LED熄灭",
+  "all8_walk_seen": true,
+  "reset_all_off_seen": true,
+  "final_A5_pattern_seen": true
+}

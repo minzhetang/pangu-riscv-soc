@@ -1,0 +1,22 @@
+{
+  "error": null,
+  "elapsed": 82.2819999998901,
+  "cleanup": {
+    "job_empty": true,
+    "forced_cleanup": false,
+    "forced_non_console_cleanup": false,
+    "remaining_names_before_cleanup": [],
+    "root_exit_code": 0
+  },
+  "inputs_unchanged": true,
+  "artifacts": [
+    {
+      "path": "build\\generate_bitstream\\board_top.sbit",
+      "bytes": 3791112,
+      "sha256": "65567CF5D50D53925DADEAE3B5FF5E2FBF6DD04CD4F9E91EDE5F0621C382D68D",
+      "fresh": true
+    }
+  ],
+  "design_audit_pending": true,
+  "hardware_calls": 0
+}

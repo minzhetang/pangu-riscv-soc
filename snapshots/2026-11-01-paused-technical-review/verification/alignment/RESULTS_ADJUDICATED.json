@@ -1,0 +1,2479 @@
+{
+  "status": "24_NEW_DIRECTED_PASS_OLD_ALIGNMENT_COUNTEREXAMPLES_CONFIRMED",
+  "rows": [
+    {
+      "id": "LH_ODD",
+      "version": "source",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "5"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\LH_ODD.log"
+    },
+    {
+      "id": "LHU_ODD",
+      "version": "source",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "5"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\LHU_ODD.log"
+    },
+    {
+      "id": "LW_OFF2",
+      "version": "source",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "5"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\LW_OFF2.log"
+    },
+    {
+      "id": "SH_ODD",
+      "version": "source",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "5"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\SH_ODD.log"
+    },
+    {
+      "id": "SW_OFF2",
+      "version": "source",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "5"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\SW_OFF2.log"
+    },
+    {
+      "id": "JAL_PLUS2",
+      "version": "source",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "5"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\JAL_PLUS2.log"
+    },
+    {
+      "id": "JALR_BIT1",
+      "version": "source",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "5"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\JALR_BIT1.log"
+    },
+    {
+      "id": "BEQ_TAKEN_PLUS2",
+      "version": "source",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "5"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\BEQ_TAKEN_PLUS2.log"
+    },
+    {
+      "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "version": "source",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "2",
+          "0000000c",
+          "7"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\BEQ_NOTTAKEN_MISALIGNED_TARGET.log"
+    },
+    {
+      "id": "JALR_CLEAR_BIT0",
+      "version": "source",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          6,
+          12
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "9"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\JALR_CLEAR_BIT0.log"
+    },
+    {
+      "id": "ALIGNED_LW_SW",
+      "version": "source",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          2289526357
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "8"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\ALIGNED_LW_SW.log"
+    },
+    {
+      "id": "BYTE_ODD_ALLOWED",
+      "version": "source",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          102
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          1,
+          1792,
+          2
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "8"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\BYTE_ODD_ALLOWED.log"
+    },
+    {
+      "id": "LH_ODD",
+      "version": "source",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "10"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\LH_ODD.log"
+    },
+    {
+      "id": "LHU_ODD",
+      "version": "source",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "10"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\LHU_ODD.log"
+    },
+    {
+      "id": "LW_OFF2",
+      "version": "source",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "10"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\LW_OFF2.log"
+    },
+    {
+      "id": "SH_ODD",
+      "version": "source",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "10"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\SH_ODD.log"
+    },
+    {
+      "id": "SW_OFF2",
+      "version": "source",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "10"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\SW_OFF2.log"
+    },
+    {
+      "id": "JAL_PLUS2",
+      "version": "source",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "10"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\JAL_PLUS2.log"
+    },
+    {
+      "id": "JALR_BIT1",
+      "version": "source",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "10"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\JALR_BIT1.log"
+    },
+    {
+      "id": "BEQ_TAKEN_PLUS2",
+      "version": "source",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "3",
+          "00000004",
+          "10"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\BEQ_TAKEN_PLUS2.log"
+    },
+    {
+      "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "version": "source",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "2",
+          "0000000c",
+          "14"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\BEQ_NOTTAKEN_MISALIGNED_TARGET.log"
+    },
+    {
+      "id": "JALR_CLEAR_BIT0",
+      "version": "source",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          6,
+          12
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "18"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\JALR_CLEAR_BIT0.log"
+    },
+    {
+      "id": "ALIGNED_LW_SW",
+      "version": "source",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          2289526357
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "16"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\ALIGNED_LW_SW.log"
+    },
+    {
+      "id": "BYTE_ODD_ALLOWED",
+      "version": "source",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          102
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          1,
+          1792,
+          2
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "16"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\BYTE_ODD_ALLOWED.log"
+    },
+    {
+      "id": "LH_ODD",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          26197
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "8"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\LH_ODD.log"
+    },
+    {
+      "id": "LHU_ODD",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          26197
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "8"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\LHU_ODD.log"
+    },
+    {
+      "id": "LW_OFF2",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          2289526357
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "8"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\LW_OFF2.log"
+    },
+    {
+      "id": "SH_ODD",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          1,
+          7,
+          3
+        ],
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "8"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\SH_ODD.log"
+    },
+    {
+      "id": "SW_OFF2",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          2,
+          7,
+          15
+        ],
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "8"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\SW_OFF2.log"
+    },
+    {
+      "id": "JAL_PLUS2",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "13"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\JAL_PLUS2.log"
+    },
+    {
+      "id": "JALR_BIT1",
+      "version": "source-before",
+      "sync": 0,
+      "status": "TIMEOUT",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": true,
+        "RF": false,
+        "MEM": false,
+        "END": false
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\JALR_BIT1.log"
+    },
+    {
+      "id": "BEQ_TAKEN_PLUS2",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "13"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\BEQ_TAKEN_PLUS2.log"
+    },
+    {
+      "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "version": "source-before",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "2",
+          "0000000c",
+          "7"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\BEQ_NOTTAKEN_MISALIGNED_TARGET.log"
+    },
+    {
+      "id": "JALR_CLEAR_BIT0",
+      "version": "source-before",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          6,
+          12
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "9"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\JALR_CLEAR_BIT0.log"
+    },
+    {
+      "id": "ALIGNED_LW_SW",
+      "version": "source-before",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          2289526357
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "8"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\ALIGNED_LW_SW.log"
+    },
+    {
+      "id": "BYTE_ODD_ALLOWED",
+      "version": "source-before",
+      "sync": 0,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          102
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          1,
+          1792,
+          2
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "8"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\BYTE_ODD_ALLOWED.log"
+    },
+    {
+      "id": "LH_ODD",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          26197
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "16"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\LH_ODD.log"
+    },
+    {
+      "id": "LHU_ODD",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          26197
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "16"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\LHU_ODD.log"
+    },
+    {
+      "id": "LW_OFF2",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          2289526357
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "16"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\LW_OFF2.log"
+    },
+    {
+      "id": "SH_ODD",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          1,
+          7,
+          3
+        ],
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "16"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\SH_ODD.log"
+    },
+    {
+      "id": "SW_OFF2",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          2,
+          7,
+          15
+        ],
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "16"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\SW_OFF2.log"
+    },
+    {
+      "id": "JAL_PLUS2",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "26"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\JAL_PLUS2.log"
+    },
+    {
+      "id": "JALR_BIT1",
+      "version": "source-before",
+      "sync": 1,
+      "status": "TIMEOUT",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": true,
+        "RF": false,
+        "MEM": false,
+        "END": false
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\JALR_BIT1.log"
+    },
+    {
+      "id": "BEQ_TAKEN_PLUS2",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "checks": {
+        "stop": false,
+        "WB": false,
+        "STORE": false,
+        "RF": false,
+        "MEM": false,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "26"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\BEQ_TAKEN_PLUS2.log"
+    },
+    {
+      "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "version": "source-before",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "2",
+          "0000000c",
+          "14"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\BEQ_NOTTAKEN_MISALIGNED_TARGET.log"
+    },
+    {
+      "id": "JALR_CLEAR_BIT0",
+      "version": "source-before",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          6,
+          12
+        ]
+      ],
+      "actual_STORE": [],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "18"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\JALR_CLEAR_BIT0.log"
+    },
+    {
+      "id": "ALIGNED_LW_SW",
+      "version": "source-before",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          2289526357
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "16"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\ALIGNED_LW_SW.log"
+    },
+    {
+      "id": "BYTE_ODD_ALLOWED",
+      "version": "source-before",
+      "sync": 1,
+      "status": "PASS",
+      "checks": {
+        "stop": true,
+        "WB": true,
+        "STORE": true,
+        "RF": true,
+        "MEM": true,
+        "END": true
+      },
+      "actual_WB": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          102
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "actual_STORE": [
+        [
+          1,
+          1792,
+          2
+        ]
+      ],
+      "actual_stop": [
+        [
+          "2",
+          "00000010",
+          "16"
+        ]
+      ],
+      "raw_log": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\BYTE_ODD_ALLOWED.log"
+    }
+  ],
+  "new_DUT_runs": 0,
+  "reason": "Original dynamic runs complete; raw logs used CRLF, initial string decoder anchored regex rejected trailing CR. Universal newline read fixes HOST classification only; original RESULTS-r1/raw logs kept. No RTL/input/expectation changed, no reruns"
+}

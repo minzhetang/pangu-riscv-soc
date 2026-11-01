@@ -1,0 +1,29 @@
+{
+  "status": "FINITE_PERFORMANCE_PASS_FIRST_RUN_ADOPTION_PENDING_REPEAT_AND_VALIDATION",
+  "ticks": 496232016,
+  "nominal_seconds": 18.378963555555554,
+  "nominal_iterations_per_second": 13.928968259073393,
+  "cycle_reduction_percent": 7.855983849655625,
+  "speedup": 1.0852576670506484,
+  "program_byte_delta": 60,
+  "resource_comparison": {
+    "baseline": {
+      "LUT": 1810,
+      "FF": 1527,
+      "DRM36": 14,
+      "IO": 15
+    },
+    "candidate": {
+      "LUT": 1810,
+      "FF": 1527,
+      "DRM36": 14,
+      "IO": 15
+    }
+  },
+  "both_same27MHz_STA_pass": true,
+  "passes_frozen_gain_cost_gate": true,
+  "CRCs5_PASS": true,
+  "RAM_MUL80_PASS": true,
+  "GPIO_this_run": "NOT_REPEATED;120s operator input window timed out, not board input PASS; earlier H66 acceptance remains separate",
+  "formal_score_certified": false
+}

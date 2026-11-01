@@ -1,0 +1,311 @@
+{
+  "manual_frozen_before_DUT": true,
+  "timeunit": "1ns/1ps",
+  "cases": [
+    {
+      "id": "LH_ODD",
+      "words": [
+        7340691,
+        1053443,
+        103809939,
+        5251107,
+        1048691
+      ],
+      "stop_pc": 4,
+      "stop_kind": 3,
+      "wb": [
+        [
+          5,
+          7
+        ]
+      ],
+      "stores": [],
+      "initial_mem": 2289526357,
+      "final_mem": 2289526357
+    },
+    {
+      "id": "LHU_ODD",
+      "words": [
+        7340691,
+        1069827,
+        103809939,
+        5251107,
+        1048691
+      ],
+      "stop_pc": 4,
+      "stop_kind": 3,
+      "wb": [
+        [
+          5,
+          7
+        ]
+      ],
+      "stores": [],
+      "initial_mem": 2289526357,
+      "final_mem": 2289526357
+    },
+    {
+      "id": "LW_OFF2",
+      "words": [
+        7340691,
+        2106115,
+        103809939,
+        5251107,
+        1048691
+      ],
+      "stop_pc": 4,
+      "stop_kind": 3,
+      "wb": [
+        [
+          5,
+          7
+        ]
+      ],
+      "stores": [],
+      "initial_mem": 2289526357,
+      "final_mem": 2289526357
+    },
+    {
+      "id": "SH_ODD",
+      "words": [
+        7340691,
+        5247139,
+        103809939,
+        5251107,
+        1048691
+      ],
+      "stop_pc": 4,
+      "stop_kind": 3,
+      "wb": [
+        [
+          5,
+          7
+        ]
+      ],
+      "stores": [],
+      "initial_mem": 2289526357,
+      "final_mem": 2289526357
+    },
+    {
+      "id": "SW_OFF2",
+      "words": [
+        7340691,
+        5251363,
+        103809939,
+        5251107,
+        1048691
+      ],
+      "stop_pc": 4,
+      "stop_kind": 3,
+      "wb": [
+        [
+          5,
+          7
+        ]
+      ],
+      "stores": [],
+      "initial_mem": 2289526357,
+      "final_mem": 2289526357
+    },
+    {
+      "id": "JAL_PLUS2",
+      "words": [
+        7340691,
+        2098031,
+        103809939,
+        5251107,
+        1048691
+      ],
+      "stop_pc": 4,
+      "stop_kind": 3,
+      "wb": [
+        [
+          5,
+          7
+        ]
+      ],
+      "stores": [],
+      "initial_mem": 2289526357,
+      "final_mem": 2289526357
+    },
+    {
+      "id": "JALR_BIT1",
+      "words": [
+        7340691,
+        2098023,
+        103809939,
+        5251107,
+        1048691
+      ],
+      "stop_pc": 4,
+      "stop_kind": 3,
+      "wb": [
+        [
+          5,
+          7
+        ]
+      ],
+      "stores": [],
+      "initial_mem": 2289526357,
+      "final_mem": 2289526357
+    },
+    {
+      "id": "BEQ_TAKEN_PLUS2",
+      "words": [
+        7340691,
+        355,
+        103809939,
+        5251107,
+        1048691
+      ],
+      "stop_pc": 4,
+      "stop_kind": 3,
+      "wb": [
+        [
+          5,
+          7
+        ]
+      ],
+      "stores": [],
+      "initial_mem": 2289526357,
+      "final_mem": 2289526357
+    },
+    {
+      "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "words": [
+        7340691,
+        164195,
+        103809939,
+        1048691
+      ],
+      "stop_pc": 12,
+      "stop_kind": 2,
+      "wb": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "stores": [],
+      "initial_mem": 2289526357,
+      "final_mem": 2289526357
+    },
+    {
+      "id": "JALR_CLEAR_BIT0",
+      "words": [
+        7340691,
+        17825939,
+        33639,
+        103809939,
+        1048691
+      ],
+      "stop_pc": 16,
+      "stop_kind": 2,
+      "wb": [
+        [
+          5,
+          7
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          6,
+          12
+        ]
+      ],
+      "stores": [],
+      "initial_mem": 2289526357,
+      "final_mem": 2289526357
+    },
+    {
+      "id": "ALIGNED_LW_SW",
+      "words": [
+        7340691,
+        8963,
+        103809939,
+        5251107,
+        1048691
+      ],
+      "stop_pc": 16,
+      "stop_kind": 2,
+      "wb": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          2289526357
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "stores": [
+        [
+          0,
+          7,
+          15
+        ]
+      ],
+      "initial_mem": 2289526357,
+      "final_mem": 7
+    },
+    {
+      "id": "BYTE_ODD_ALLOWED",
+      "words": [
+        7340691,
+        1065731,
+        103809939,
+        5243043,
+        1048691
+      ],
+      "stop_pc": 16,
+      "stop_kind": 2,
+      "wb": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          102
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "stores": [
+        [
+          1,
+          1792,
+          2
+        ]
+      ],
+      "initial_mem": 2289526357,
+      "final_mem": 2289502037
+    }
+  ],
+  "clock_modes": [
+    0,
+    1
+  ],
+  "max_cycles": 250,
+  "checks": [
+    "all RF32",
+    "memory final",
+    "ordered every WB",
+    "ordered every STORE",
+    "stop PC/kind",
+    "bounded stop",
+    "no post-stop WB/STORE"
+  ]
+}

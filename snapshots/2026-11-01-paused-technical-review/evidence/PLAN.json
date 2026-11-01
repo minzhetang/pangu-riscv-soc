@@ -1,0 +1,25 @@
+{
+  "decision": "D294",
+  "scope": [
+    "RV32I/EEI finite gap review and minimum justified tests/fix",
+    "GPIO actual input/LED/reset acceptance with fixed27MHz same board",
+    "debug critical/CDC/IO truthful triage and scoped remedy",
+    "one measured mulsi3 software hot-loop candidate based on observed matrix127/418 validEX slots, not whole-runtime fraction",
+    "aligned final local report/code/demo materials"
+  ],
+  "frozen_baseline": "deliveries\\accepted-basic-snapshot-2026-11-01-v1",
+  "hardware_exclusions": [
+    "Flash",
+    "protection/SCBV/power/jumper changes",
+    "new PLL/clock increase or other unapproved hardware expansion"
+  ],
+  "performance_hypothesis": "Existing __mulsi3 is visibly frequent in real matrix windows; one two-bit-per-iteration pureRV32I helper may reduce branch overhead without CPU/ISA redesign",
+  "performance_gate": "Freeze exact candidate/tests/cost gate before DUT; fallback if insufficient; do not retry O3 unroll",
+  "phase": "OFFLINE_PREPARATION",
+  "not_authorized": [
+    "high ISA extensions",
+    "major pipeline/memory architecture redesign",
+    "new installs",
+    "external publishing/Git push pendingD245"
+  ]
+}

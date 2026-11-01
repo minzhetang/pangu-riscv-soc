@@ -1,0 +1,72 @@
+{
+  "status": "BOARD_QA_PROTOCOL_AND_COREMARK_PASS_LED_VISUAL_SEPARATE",
+  "ticks": 538539600,
+  "nominal_hz": 27000000,
+  "nominal_seconds": 19.945911111111112,
+  "iterations": 256,
+  "iterations_per_nominal_second": 12.834710762216929,
+  "GPIO_input_complete_ordered": true,
+  "all_input_events_preserved": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    4,
+    0,
+    8,
+    0
+  ],
+  "GPIO_output_reads": [
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      2,
+      2
+    ],
+    [
+      2,
+      4,
+      4
+    ],
+    [
+      3,
+      8,
+      8
+    ],
+    [
+      4,
+      16,
+      16
+    ],
+    [
+      5,
+      32,
+      32
+    ],
+    [
+      6,
+      64,
+      64
+    ],
+    [
+      7,
+      128,
+      128
+    ]
+  ],
+  "RAM_byte_half_sign_zero_PASS": true,
+  "mul80_manual_products_PASS": true,
+  "benchmark_CRCS_five_PASS": true,
+  "flags": "-DBOARD_QA_M2=1 -march=rv32i -mabi=ilp32 -O2 -ffreestanding -fno-builtin -fno-common -fno-pie -fno-stack-protector -fno-unwind-tables -fno-asynchronous-unwind-tables -mno-relax -msmall-data-limit=0 -Wall -Wextra -Werror -nostdlib -nostartfiles -Wl,--no-relax -Wl,--build-id=none -Wl,-T,firmware/link.ld -Wl,-Map,build/performance256/program.map -Ifirmware -Iport -Iupstream -Ibuild/performance256 -DTOTAL_DATA_SIZE=2000 -DITERATIONS=256 -DPERFORMANCE_RUN=1",
+  "bytes": 1929,
+  "sha256": "21E014AB6E8B60A05BA846C090EA6F03C8F3084FF7EE0066927F0DE52EEA30BB",
+  "physical_LED_emission": "requires user visual receipt, output register reads are not optical evidence",
+  "RF_memory_state": "No full architectural hardware trace; finite program signatures only",
+  "clock_independently_measured": false,
+  "formal_score_certified": false
+}

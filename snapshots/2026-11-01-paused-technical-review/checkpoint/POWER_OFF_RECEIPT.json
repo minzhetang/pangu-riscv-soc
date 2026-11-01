@@ -1,0 +1,9 @@
+{
+  "recorded": "2026-11-01T23:05:10.085100+08:00",
+  "source": "用户本次明确回复",
+  "user_report": "已断电",
+  "classification": "USER_REPORTED_NOT_INSTRUMENT_VERIFIED",
+  "USB_JTAG_disconnection": "NOT_CONFIRMED",
+  "state": "PROJECT_REMAINS_PAUSED",
+  "hardware_calls": 0
+}
