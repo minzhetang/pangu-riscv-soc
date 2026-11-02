@@ -1,0 +1,87 @@
+BOARD_QA_M2 BOOT
+RAMTEST PASS wstrb/sign/zero
+MULTEST PASS 80
+LED 00000000 WRITE 00000001 READ 00000001
+LED 00000001 WRITE 00000002 READ 00000002
+LED 00000002 WRITE 00000004 READ 00000004
+LED 00000003 WRITE 00000008 READ 00000008
+LED 00000004 WRITE 00000010 READ 00000010
+LED 00000005 WRITE 00000020 READ 00000020
+LED 00000006 WRITE 00000040 READ 00000040
+LED 00000007 WRITE 00000080 READ 00000080
+GPIO_INPUT_READY KEY1..4 press/release;120s limit
+INPUT 00000000
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+GPIO_WAIT
+INPUT 00000001
+GPIO_WAIT
+INPUT 00000000
+GPIO_WAIT
+INPUT 00000002
+INPUT 00000000
+GPIO_WAIT
+INPUT 00000004
+GPIO_WAIT
+INPUT 00000000
+GPIO_WAIT
+INPUT 00000008
+INPUT 00000000
+GPIO_INPUT PASS press=0000000f release=0000000f
+2K validation run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 522673286
+Total time (secs): 19
+Iterations/Sec   : 13
+Iterations       : 256
+Compiler version : GCC 15.2.0
+Compiler flags   : -DBOARD_QA_M2=1 -DPROJECT_MULSI3_SM2=1 -march=rv32i -mabi=ilp32 -O2 -ffreestanding -fno-builtin -fno-common -fno-pie -fno-stack-protector -fno-unwind-tables -fno-asynchronous-unwind-tables -mno-relax -msmall-data-limit=0 -Wall -Wextra -Werror -nostdlib -nostartfiles -Wl,--no-relax -Wl,--build-id=none -Wl,-T,firmware/link.ld -Wl,-Map,build/validation256/program.map -Ifirmware -Iport -Iupstream -Ibuild/validation256 -DTOTAL_DATA_SIZE=2000 -DITERATIONS=256 -DVALIDATION_RUN=1
+Memory location  : Code in on-chip ROM; data in static on-chip RAM; clock ratio 1:1
+seedcrc          : 0x18f2
+[0]crclist       : 0xe3c1
+[0]crcmatrix     : 0x0747
+[0]crcstate      : 0x8d84
+[0]crcfinal      : 0x798f
+Correct operation validated. See README.md for run and reporting rules.
+Raw start hi/lo : 00000000 4fd3d0b7
+Raw end hi/lo   : 00000000 6efb2d3d
+Raw delta hi/lo : 00000000 1f275c86
+Timer Hz set    : 27000000; MEASUREMENT CANDIDATE; TARGET EVIDENCE REQUIRED
+BOARD_QA_M2 END LED=000000a5

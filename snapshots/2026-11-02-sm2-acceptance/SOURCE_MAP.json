@@ -1,0 +1,190 @@
+{
+  "base_commit": "5ac2aa573e0a943c50655325e66c82de3130c999",
+  "current_source_performance": "snapshots/2026-11-01-paused-technical-review/candidate-sm2",
+  "current_source_validation": "snapshots/2026-11-01-paused-technical-review/candidate-validation-not-run",
+  "note": "Historical paths/names retained. Current limited acceptance supersedes their old pending status only through this evidence. No source replacement or B-HL4 import.",
+  "files": [
+    {
+      "path": "RESULTS.json",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/RESULTS.json",
+      "source_sha256": "C1369F6B3D0D4C2FFD768E00B53C22EB6C1139980666C82D9A4455FA74FA2EA6",
+      "snapshot_sha256": "C1369F6B3D0D4C2FFD768E00B53C22EB6C1139980666C82D9A4455FA74FA2EA6",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "REPORT.md",
+      "source": "reports/hardware/2026-11-02-sm2-dualseed-and-uart-closure.md",
+      "source_sha256": "E22C54C0C06FE5596C0A30870FA3C419AB255B70734637C0010D131126C42020",
+      "snapshot_sha256": "0E4451930BA15706BF2987DD86F4C4C1D28A8F1C30EE90CD415255C1F7CE6B7D",
+      "transform": "explicit derivative"
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-performance-native-repeat-m3/CAPTURE_CHECK.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-performance-native-repeat-m3/CAPTURE_CHECK.json",
+      "source_sha256": "0499C4816D8A7C38FF536DDAE3389C0795B0CC31DA1A3C2A57C43F46CC14D780",
+      "snapshot_sha256": "0499C4816D8A7C38FF536DDAE3389C0795B0CC31DA1A3C2A57C43F46CC14D780",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-performance-native-repeat-m3/SERIAL_RESULT.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-performance-native-repeat-m3/SERIAL_RESULT.json",
+      "source_sha256": "75B7AE00B11166C10AC89F58175FFEC85FECEAEC112BE1417327D5EB1A5DD378",
+      "snapshot_sha256": "75B7AE00B11166C10AC89F58175FFEC85FECEAEC112BE1417327D5EB1A5DD378",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-performance-native-repeat-m3/CONTROLLER_RESULT.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-performance-native-repeat-m3/RESULT.json",
+      "source_sha256": "E3BA4E2C1A00116C5F76BB57488C914B0791C933D03DDEAD81C18DD28783E6A3",
+      "snapshot_sha256": "E3BA4E2C1A00116C5F76BB57488C914B0791C933D03DDEAD81C18DD28783E6A3",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-performance-native-repeat-m3/uart-raw.txt",
+      "source": "work/pds-jtag/2026-11-02-sm2-performance-native-repeat-m3/uart-raw.bin",
+      "source_sha256": "7EAE718AEE028A6C114572174F66585213EB52A099180DDA04418EACF4E0BD4F",
+      "snapshot_sha256": "7EAE718AEE028A6C114572174F66585213EB52A099180DDA04418EACF4E0BD4F",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-m3/CAPTURE_CHECK.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-m3/CAPTURE_CHECK.json",
+      "source_sha256": "4A2C2D35EF4C11B0B40056CFAC6744FE4DA2D5E8B0411B46A9224947F48DEFBC",
+      "snapshot_sha256": "4A2C2D35EF4C11B0B40056CFAC6744FE4DA2D5E8B0411B46A9224947F48DEFBC",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-m3/SERIAL_RESULT.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-m3/SERIAL_RESULT.json",
+      "source_sha256": "56ECAF6587CE9A6C086DA8441B21CC101E31C94EF75D22B03DCB58086339598A",
+      "snapshot_sha256": "56ECAF6587CE9A6C086DA8441B21CC101E31C94EF75D22B03DCB58086339598A",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-m3/CONTROLLER_RESULT.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-m3/RESULT.json",
+      "source_sha256": "B088E75397F17EF77247590BB923FEE88D7C70BA89021C88249B05D989E04FD5",
+      "snapshot_sha256": "B088E75397F17EF77247590BB923FEE88D7C70BA89021C88249B05D989E04FD5",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-m3/uart-raw.txt",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-m3/uart-raw.bin",
+      "source_sha256": "AB481BBD1336185CA2DC1ABC2DDB838AA68D98FF749F269CB6DFB0C72C29FB0F",
+      "snapshot_sha256": "AB481BBD1336185CA2DC1ABC2DDB838AA68D98FF749F269CB6DFB0C72C29FB0F",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-native-repeat-m3/CAPTURE_CHECK.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-native-repeat-m3/CAPTURE_CHECK.json",
+      "source_sha256": "515FA40ED646ED44C722123527DFB248F5A57C2A0D28FF6392EC5F97C930B983",
+      "snapshot_sha256": "515FA40ED646ED44C722123527DFB248F5A57C2A0D28FF6392EC5F97C930B983",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-native-repeat-m3/SERIAL_RESULT.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-native-repeat-m3/SERIAL_RESULT.json",
+      "source_sha256": "75CF46CDBBAD603BD12D821DCA272FD4A6EA22023AFEE0DFAAF9592DA94D89AA",
+      "snapshot_sha256": "75CF46CDBBAD603BD12D821DCA272FD4A6EA22023AFEE0DFAAF9592DA94D89AA",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-native-repeat-m3/CONTROLLER_RESULT.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-native-repeat-m3/RESULT.json",
+      "source_sha256": "711C38E7AF338F0C2F166CF558FEC014173DEDFC2530CC523CEEB7E36191762E",
+      "snapshot_sha256": "711C38E7AF338F0C2F166CF558FEC014173DEDFC2530CC523CEEB7E36191762E",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-native-repeat-m3/uart-raw.txt",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-native-repeat-m3/uart-raw.bin",
+      "source_sha256": "ED7BD8DB233BF228DD276CC82134A17B21D17A05664567C66C5C6DF3F405748F",
+      "snapshot_sha256": "ED7BD8DB233BF228DD276CC82134A17B21D17A05664567C66C5C6DF3F405748F",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "diagnostics/NATIVE_CAPTURE_DIAGNOSTIC.json",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/NATIVE_CAPTURE_DIAGNOSTIC.json",
+      "source_sha256": "143413D4F11A45F2ABAAA12F610017422EC67A7D2972A0F674BD65B47BFC0D1E",
+      "snapshot_sha256": "143413D4F11A45F2ABAAA12F610017422EC67A7D2972A0F674BD65B47BFC0D1E",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "diagnostics/RECEIVER_DIAGNOSTIC_INTERIM.json",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/RECEIVER_DIAGNOSTIC_INTERIM.json",
+      "source_sha256": "5693950418940A8969774E814E45A2A63458B0D3AF562C7E0A50A7B53F9492B4",
+      "snapshot_sha256": "5693950418940A8969774E814E45A2A63458B0D3AF562C7E0A50A7B53F9492B4",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "diagnostics/BUFFER4K_RESULT.json",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/BUFFER4K_RESULT.json",
+      "source_sha256": "C07F3DE3F05DDFC8A681467DCB2965D2147599FB95FCD7E78C83C3377C146846",
+      "snapshot_sha256": "C07F3DE3F05DDFC8A681467DCB2965D2147599FB95FCD7E78C83C3377C146846",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "diagnostics/CONTROLLER_SETTLE_CHANGE.json",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/CONTROLLER_SETTLE_CHANGE.json",
+      "source_sha256": "6A2D0CB99D3F630198EE9E35FA798BB437938C00A9DCD4132744A0084E9B3172",
+      "snapshot_sha256": "6A2D0CB99D3F630198EE9E35FA798BB437938C00A9DCD4132744A0084E9B3172",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "host-tools/native_serial_capture.py",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/native_serial_capture.py",
+      "source_sha256": "40E2819DE6AC39B4CF190910B2F4F838BC85FF88173F1C19C3D6E86BC30BA3FB",
+      "snapshot_sha256": "40E2819DE6AC39B4CF190910B2F4F838BC85FF88173F1C19C3D6E86BC30BA3FB",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "host-tools/native_serial_capture_program.py",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/native_serial_capture_program.py",
+      "source_sha256": "7091888BEC20DB02426FFEA1E336597464882B85F800E8BF4749BDCA1BC2F87E",
+      "snapshot_sha256": "7091888BEC20DB02426FFEA1E336597464882B85F800E8BF4749BDCA1BC2F87E",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "host-tools/native_capture_controller.py",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/native_capture_controller.py",
+      "source_sha256": "45F5A175B407DFF7DB067B59F1803E97B3D7F00228D2210C280BCE95956ABFF0",
+      "snapshot_sha256": "45F5A175B407DFF7DB067B59F1803E97B3D7F00228D2210C280BCE95956ABFF0",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "host-tools/native_capture_controller_v2.py",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/native_capture_controller_v2.py",
+      "source_sha256": "6EB7FF0E50D045A0A7ED0219F2A09A896A574352FDBCC23B9151EF9D775D185D",
+      "snapshot_sha256": "6EB7FF0E50D045A0A7ED0219F2A09A896A574352FDBCC23B9151EF9D775D185D",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "host-tools/check_capture.py",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/check_capture.py",
+      "source_sha256": "5E1D6A2A7A2F807B66B4663B0F43137EBB5236EFC2382FCB3FE06388A753D75C",
+      "snapshot_sha256": "5E1D6A2A7A2F807B66B4663B0F43137EBB5236EFC2382FCB3FE06388A753D75C",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "host-tools/measurement_report_frozen.py",
+      "source": "work/quality/2026-11-02-offline-resume-prep-v1/measurement_report_frozen.py",
+      "source_sha256": "FFD8B59872FA575981293558BC3875115A7B5EBA1CEC5020BA55FA0C3CD61BFF",
+      "snapshot_sha256": "FFD8B59872FA575981293558BC3875115A7B5EBA1CEC5020BA55FA0C3CD61BFF",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "host-tools/validate_capture.py",
+      "source": "work/quality/2026-11-02-offline-resume-prep-v1/validate_capture.py",
+      "source_sha256": "1A1D21CF6E2159AB2BCEA62C5543B3CCDA3168DC0CC03A2A9C5B515B017DF33E",
+      "snapshot_sha256": "1A1D21CF6E2159AB2BCEA62C5543B3CCDA3168DC0CC03A2A9C5B515B017DF33E",
+      "transform": "byte-identical"
+    },
+    {
+      "path": "host-tools/owned_job.py",
+      "source": "work/pds-jtag/2026-10-30-led-official-batch-h4/owned_job.py",
+      "source_sha256": "2946FD3F5FB0FC324981C15DF434CF9561E921D676F18F6BAD016AAAED4C1563",
+      "snapshot_sha256": "2946FD3F5FB0FC324981C15DF434CF9561E921D676F18F6BAD016AAAED4C1563",
+      "transform": "byte-identical"
+    }
+  ]
+}

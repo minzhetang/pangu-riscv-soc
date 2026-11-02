@@ -1,0 +1,43 @@
+{
+  "cause": "UNRESOLVED",
+  "new_64k_receiver_not_accepted": true,
+  "records": [
+    {
+      "stage": "2026-11-02-sm2-performance-m3",
+      "bytes": 0,
+      "state": "CONTROLLER_STOP",
+      "errors": 114,
+      "types": [
+        "RXOver"
+      ],
+      "first": {
+        "type": "RXOver",
+        "event_generated_at": "2026-11-02T14:22:48.8520604+08:00",
+        "observed_at": "2026-11-02T14:22:48.8735185+08:00",
+        "observed_elapsed_seconds": 339.6135649,
+        "bytes_recorded": 0
+      },
+      "last": {
+        "type": "RXOver",
+        "event_generated_at": "2026-11-02T14:24:57.3403460+08:00",
+        "observed_at": "2026-11-02T14:24:57.3433461+08:00",
+        "observed_elapsed_seconds": 468.09629759999996,
+        "bytes_recorded": 0
+      },
+      "reported_buffer": 65536,
+      "error": null
+    },
+    {
+      "stage": "2026-11-02-sm2-performance-repeat-m3",
+      "bytes": 0,
+      "state": "CONTROLLER_STOP",
+      "errors": 0,
+      "types": [],
+      "first": null,
+      "last": null,
+      "reported_buffer": 65536,
+      "error": null
+    }
+  ],
+  "next_single_change": "4096 requested buffer, same timestamping and fixed CPU program, capture only"
+}

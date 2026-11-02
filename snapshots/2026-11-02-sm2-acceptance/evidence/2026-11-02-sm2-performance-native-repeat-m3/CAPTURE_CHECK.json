@@ -1,0 +1,22 @@
+{
+  "status": "FINITE_TARGET_REPORT_PASS",
+  "mode": "performance",
+  "new_target_capture": true,
+  "error": null,
+  "ticks": 496232016,
+  "nominal_seconds": 18.378963555555554,
+  "GPIO_this_capture": "ORDERED_INPUT_PASS",
+  "GPIO_previous_acceptance_separate": true,
+  "LED_optical_check": "NOT_OBSERVED_BY_HOST",
+  "target_image_identity": "REQUIRES_SEPARATE_CONFIGURATION_BINDING",
+  "hardware_adopted": false,
+  "formal_score_certified": false,
+  "capture_stage": "work\\pds-jtag\\2026-11-02-sm2-performance-native-repeat-m3",
+  "program_binding": "work\\pds-jtag\\2026-11-02-sm2-performance-m3",
+  "bytes": 1872,
+  "raw_sha256": "7EAE718AEE028A6C114572174F66585213EB52A099180DDA04418EACF4E0BD4F",
+  "bit_sha256": "5A687E9081AB17EB8EAA7FBC6277CB383F5035B70FDBACD4F4EEBA2F21668CE4",
+  "serial_errors": [],
+  "clock_independently_measured": false,
+  "full_architectural_trace": false
+}

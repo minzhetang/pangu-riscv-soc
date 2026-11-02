@@ -1,0 +1,10 @@
+{
+  "status": "NOT_ACCEPTED",
+  "bytes": 0,
+  "RXOver_events": 16,
+  "state": "CONTROLLER_STOP",
+  "same_CPU_program": true,
+  "configuration_calls": 0,
+  "conclusion": "Changing requested buffer alone did not restore received data; root cause unknown",
+  "next": "Independent native Windows ReadFile/COMSTAT capture, same program"
+}

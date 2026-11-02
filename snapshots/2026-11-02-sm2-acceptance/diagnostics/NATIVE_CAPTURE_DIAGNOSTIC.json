@@ -1,0 +1,59 @@
+{
+  "state": "CONTROLLER_STOP",
+  "bytes": 0,
+  "read_calls": 3955,
+  "initial_settings": {
+    "baud": 115200,
+    "data_bits": 8,
+    "parity": 0,
+    "stop_bits": 0,
+    "flags_hex": "0x00000001"
+  },
+  "effective_settings": {
+    "baud": 115200,
+    "data_bits": 8,
+    "parity": 0,
+    "stop_bits": 0,
+    "flags_hex": "0x00000001"
+  },
+  "timeout_readback": {
+    "interval": 4294967295,
+    "read_multiplier": 0,
+    "read_constant": 50,
+    "write_multiplier": 0,
+    "write_constant": 150
+  },
+  "total_seconds": 245.78100000019185,
+  "transport_clean": false,
+  "error": null,
+  "error_count": 15,
+  "error_types": [
+    "RXOver"
+  ],
+  "first_error": {
+    "type": "RXOver",
+    "mask": 1,
+    "observed_at": "2026-11-02T17:47:37.436647+08:00",
+    "elapsed_seconds": 141.40600000019185,
+    "bytes_recorded": 0,
+    "input_queue": 0
+  },
+  "last_error": {
+    "type": "RXOver",
+    "mask": 1,
+    "observed_at": "2026-11-02T17:48:01.537784+08:00",
+    "elapsed_seconds": 165.51600000006147,
+    "bytes_recorded": 0,
+    "input_queue": 0
+  },
+  "GPIO_optical": "User confirms reset all off, eight sequential, final0/2/5/7 on",
+  "driver": {
+    "name": "CP210x",
+    "version": "11.6.0.420",
+    "signed": true,
+    "source": "Win32_PnPSignedDriver read-only query"
+  },
+  "conclusion": "No received bytes with independently verified8N1 settings; not isolated to .NET; hardware/driver/USB UART path root cause remains unknown",
+  "new_program_calls": 0,
+  "Flash": false
+}

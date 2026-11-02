@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-02",
+  "status": "DEFINED_EEI_SM2_DUALSEED_ACCEPTED_LIMITED",
+  "decision": "D300",
+  "candidate_adopted_for_defined_EEI": true,
+  "performance": {
+    "baseline_ticks": 538539600,
+    "ticks": 496232016,
+    "nominal_seconds": 18.378963555555554,
+    "cycle_reduction_percent": 7.855983849655624,
+    "throughput_increase_percent": 8.525766705064834,
+    "prior_clean_first_run": "2026-11-01-mul-sm2-target-h69",
+    "new_clean_repeat": "2026-11-02-sm2-performance-native-repeat-m3",
+    "new_report_with_cleanup_issue_retained": "2026-11-02-sm2-performance-native-m3-r2"
+  },
+  "validation": {
+    "ticks": 522673286,
+    "nominal_seconds": 19.35826985185185,
+    "first": "2026-11-02-sm2-validation-m3",
+    "repeat": "2026-11-02-sm2-validation-native-repeat-m3",
+    "same_cycles": true
+  },
+  "iterations_each": 256,
+  "nominal_clock_hz": 27000000,
+  "resources": {
+    "LUT": 1810,
+    "FF": 1527,
+    "DRM36": 14,
+    "IO": 15
+  },
+  "performance_code_bytes": {
+    "baseline": 19684,
+    "SM2": 19744,
+    "delta": 60
+  },
+  "CPU_sha256": "60F02899294C5BEF04E522622E32764A13B910008ADD85A73FE607550F9AF272",
+  "configuration_calls_this_phase": 2,
+  "new_CPU_RTL_changes_this_phase": 0,
+  "new_simulation_runs_this_phase": 0,
+  "new_FPGA_implementation_runs_this_phase": 0,
+  "remaining_configuration_budget": 0,
+  "Flash": false,
+  "protection_changes": false,
+  "bit27_recorded_not_independent_stop": true,
+  "resident_image": "validation256 SM2, nondebug",
+  "clock_independently_measured": false,
+  "physical_temperature_measured": false,
+  "formal_score_certified": false,
+  "complete_RV32I_or_privileged_compliance_proven": false,
+  "optimized_image_ILA_captured": false,
+  "evidence_limitations": [
+    "Defined bare-metal EEI and finite tests only",
+    "No true full retirement trace; WB/STORE split",
+    "Physical CDC/IO/MTBF and frequency/temperature limitations remain",
+    "Old ILA belongs to fixed prior baseline, not the new SM2 program",
+    "UART reset correlated with recovery; unique RXOver root cause unresolved",
+    "Prior native-r2 report passed but forced-unknown cleanup failed; no retrospective waiver"
+  ],
+  "next": "Final competition report/code/demo integration; no new ISA/cache/BTB or hardware automatically authorized"
+}
