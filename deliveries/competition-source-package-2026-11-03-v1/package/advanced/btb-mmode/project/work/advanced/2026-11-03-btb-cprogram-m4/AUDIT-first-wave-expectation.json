@@ -1,0 +1,1705 @@
+{
+  "stream_comparison": [
+    {
+      "seed": "00000001",
+      "sync": 0,
+      "pred": 0,
+      "checks": {
+        "wb.txt": true,
+        "store.txt": true,
+        "regs.txt": true,
+        "memory.txt": true
+      },
+      "pass_": true
+    },
+    {
+      "seed": "deadbeef",
+      "sync": 0,
+      "pred": 0,
+      "checks": {
+        "wb.txt": true,
+        "store.txt": true,
+        "regs.txt": true,
+        "memory.txt": true
+      },
+      "pass_": true
+    },
+    {
+      "seed": "00000001",
+      "sync": 0,
+      "pred": 1,
+      "checks": {
+        "wb.txt": true,
+        "store.txt": true,
+        "regs.txt": true,
+        "memory.txt": true
+      },
+      "pass_": true
+    },
+    {
+      "seed": "deadbeef",
+      "sync": 0,
+      "pred": 1,
+      "checks": {
+        "wb.txt": true,
+        "store.txt": true,
+        "regs.txt": true,
+        "memory.txt": true
+      },
+      "pass_": true
+    },
+    {
+      "seed": "00000001",
+      "sync": 1,
+      "pred": 0,
+      "checks": {
+        "wb.txt": true,
+        "store.txt": true,
+        "regs.txt": true,
+        "memory.txt": true
+      },
+      "pass_": true
+    },
+    {
+      "seed": "deadbeef",
+      "sync": 1,
+      "pred": 0,
+      "checks": {
+        "wb.txt": true,
+        "store.txt": true,
+        "regs.txt": true,
+        "memory.txt": true
+      },
+      "pass_": true
+    },
+    {
+      "seed": "00000001",
+      "sync": 1,
+      "pred": 1,
+      "checks": {
+        "wb.txt": true,
+        "store.txt": true,
+        "regs.txt": true,
+        "memory.txt": true
+      },
+      "pass_": true
+    },
+    {
+      "seed": "deadbeef",
+      "sync": 1,
+      "pred": 1,
+      "checks": {
+        "wb.txt": true,
+        "store.txt": true,
+        "regs.txt": true,
+        "memory.txt": true
+      },
+      "pass_": true
+    }
+  ],
+  "metrics": [
+    {
+      "seed": "00000001",
+      "sync": 0,
+      "pred": 0,
+      "reset_to_done": 14297,
+      "compute_cycles": 14066,
+      "start_cycle": 231,
+      "wall_seconds": 1.5309999999590218,
+      "wb_count": 11228,
+      "store_count": 391
+    },
+    {
+      "seed": "deadbeef",
+      "sync": 0,
+      "pred": 0,
+      "reset_to_done": 14352,
+      "compute_cycles": 14121,
+      "start_cycle": 231,
+      "wall_seconds": 1.5309999999590218,
+      "wb_count": 11260,
+      "store_count": 394
+    },
+    {
+      "seed": "00000001",
+      "sync": 0,
+      "pred": 1,
+      "reset_to_done": 13105,
+      "compute_cycles": 12938,
+      "start_cycle": 167,
+      "wall_seconds": 1.4369999999180436,
+      "wb_count": 11228,
+      "store_count": 391
+    },
+    {
+      "seed": "deadbeef",
+      "sync": 0,
+      "pred": 1,
+      "reset_to_done": 13150,
+      "compute_cycles": 12983,
+      "start_cycle": 167,
+      "wall_seconds": 1.4369999999180436,
+      "wb_count": 11260,
+      "store_count": 394
+    },
+    {
+      "seed": "00000001",
+      "sync": 1,
+      "pred": 0,
+      "reset_to_done": 28593,
+      "compute_cycles": 28132,
+      "start_cycle": 461,
+      "wall_seconds": 1.577999999979511,
+      "wb_count": 11228,
+      "store_count": 391
+    },
+    {
+      "seed": "deadbeef",
+      "sync": 1,
+      "pred": 0,
+      "reset_to_done": 28703,
+      "compute_cycles": 28242,
+      "start_cycle": 461,
+      "wall_seconds": 1.5620000001508743,
+      "wb_count": 11260,
+      "store_count": 394
+    },
+    {
+      "seed": "00000001",
+      "sync": 1,
+      "pred": 1,
+      "reset_to_done": 26209,
+      "compute_cycles": 25876,
+      "start_cycle": 333,
+      "wall_seconds": 1.452999999979511,
+      "wb_count": 11228,
+      "store_count": 391
+    },
+    {
+      "seed": "deadbeef",
+      "sync": 1,
+      "pred": 1,
+      "reset_to_done": 26299,
+      "compute_cycles": 25966,
+      "start_cycle": 333,
+      "wall_seconds": 1.4689999998081475,
+      "wb_count": 11260,
+      "store_count": 394
+    }
+  ],
+  "comparisons": [
+    {
+      "seed": "00000001",
+      "sync": 0,
+      "off": 14066,
+      "on": 12938,
+      "saved": 1128,
+      "cycle_reduction_percent": 8.019337409355893
+    },
+    {
+      "seed": "00000001",
+      "sync": 1,
+      "off": 28132,
+      "on": 25876,
+      "saved": 2256,
+      "cycle_reduction_percent": 8.019337409355893
+    },
+    {
+      "seed": "deadbeef",
+      "sync": 0,
+      "off": 14121,
+      "on": 12983,
+      "saved": 1138,
+      "cycle_reduction_percent": 8.058919339990085
+    },
+    {
+      "seed": "deadbeef",
+      "sync": 1,
+      "off": 28242,
+      "on": 25966,
+      "saved": 2276,
+      "cycle_reduction_percent": 8.058919339990085
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "wb_duplicate",
+      "rejected": true
+    },
+    {
+      "name": "wb_missing",
+      "rejected": true
+    },
+    {
+      "name": "wb_wrong_value",
+      "rejected": true
+    },
+    {
+      "name": "wb_swapped",
+      "rejected": true
+    },
+    {
+      "name": "wb_truncated",
+      "rejected": true
+    },
+    {
+      "name": "wb_extra",
+      "rejected": true
+    },
+    {
+      "name": "store_duplicate",
+      "rejected": true
+    },
+    {
+      "name": "store_wrong_mask",
+      "rejected": true
+    },
+    {
+      "name": "store_early_done",
+      "rejected": true
+    },
+    {
+      "name": "store_missing",
+      "rejected": true
+    }
+  ],
+  "algorithm_crc_crosscheck": [
+    {
+      "seed": 1,
+      "zlib_crc": 219552364,
+      "expected": 219552364,
+      "pass_": true
+    },
+    {
+      "seed": 3735928559,
+      "zlib_crc": 481511221,
+      "expected": 481511221,
+      "pass_": true
+    }
+  ],
+  "vcd_done": [
+    {
+      "seed": 1,
+      "sync": 0,
+      "pred": 0,
+      "done_cycle": 14297,
+      "time_ps": 143015001,
+      "expected": {
+        "tb.addr": 12320,
+        "tb.wd": 1611489293,
+        "tb.trap": 0
+      },
+      "actual": {
+        "tb.addr": 68,
+        "tb.wd": 0,
+        "tb.trap": 0
+      },
+      "pass_": false
+    },
+    {
+      "seed": 3735928559,
+      "sync": 0,
+      "pred": 0,
+      "done_cycle": 14352,
+      "time_ps": 143565001,
+      "expected": {
+        "tb.addr": 12320,
+        "tb.wd": 1611489293,
+        "tb.trap": 0
+      },
+      "actual": {
+        "tb.addr": 68,
+        "tb.wd": 0,
+        "tb.trap": 0
+      },
+      "pass_": false
+    },
+    {
+      "seed": 1,
+      "sync": 0,
+      "pred": 1,
+      "done_cycle": 13105,
+      "time_ps": 131095001,
+      "expected": {
+        "tb.addr": 12320,
+        "tb.wd": 1611489293,
+        "tb.trap": 0
+      },
+      "actual": {
+        "tb.addr": 68,
+        "tb.wd": 0,
+        "tb.trap": 0
+      },
+      "pass_": false
+    },
+    {
+      "seed": 3735928559,
+      "sync": 0,
+      "pred": 1,
+      "done_cycle": 13150,
+      "time_ps": 131545001,
+      "expected": {
+        "tb.addr": 12320,
+        "tb.wd": 1611489293,
+        "tb.trap": 0
+      },
+      "actual": {
+        "tb.addr": 68,
+        "tb.wd": 0,
+        "tb.trap": 0
+      },
+      "pass_": false
+    },
+    {
+      "seed": 1,
+      "sync": 1,
+      "pred": 0,
+      "done_cycle": 28593,
+      "time_ps": 285975001,
+      "expected": {
+        "tb.addr": 12320,
+        "tb.wd": 1611489293,
+        "tb.trap": 0
+      },
+      "actual": {
+        "tb.addr": 12320,
+        "tb.wd": 1611489293,
+        "tb.trap": 0
+      },
+      "pass_": true
+    },
+    {
+      "seed": 3735928559,
+      "sync": 1,
+      "pred": 0,
+      "done_cycle": 28703,
+      "time_ps": 287075001,
+      "expected": {
+        "tb.addr": 12320,
+        "tb.wd": 1611489293,
+        "tb.trap": 0
+      },
+      "actual": {
+        "tb.addr": 12320,
+        "tb.wd": 1611489293,
+        "tb.trap": 0
+      },
+      "pass_": true
+    },
+    {
+      "seed": 1,
+      "sync": 1,
+      "pred": 1,
+      "done_cycle": 26209,
+      "time_ps": 262135001,
+      "expected": {
+        "tb.addr": 12320,
+        "tb.wd": 1611489293,
+        "tb.trap": 0
+      },
+      "actual": {
+        "tb.addr": 12320,
+        "tb.wd": 1611489293,
+        "tb.trap": 0
+      },
+      "pass_": true
+    },
+    {
+      "seed": 3735928559,
+      "sync": 1,
+      "pred": 1,
+      "done_cycle": 26299,
+      "time_ps": 263035001,
+      "expected": {
+        "tb.addr": 12320,
+        "tb.wd": 1611489293,
+        "tb.trap": 0
+      },
+      "actual": {
+        "tb.addr": 12320,
+        "tb.wd": 1611489293,
+        "tb.trap": 0
+      },
+      "pass_": true
+    }
+  ],
+  "source": [
+    {
+      "file": "alu.v",
+      "unchanged": true,
+      "sha256": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e"
+    },
+    {
+      "file": "btb.v",
+      "unchanged": true,
+      "sha256": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0"
+    },
+    {
+      "file": "control.v",
+      "unchanged": true,
+      "sha256": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067"
+    },
+    {
+      "file": "cpu_hl4.v",
+      "unchanged": true,
+      "sha256": "aa5a84c0028f37d0d3719a8f0829d593d9dcfae456e5c08f6229b1942f8442ef"
+    },
+    {
+      "file": "csr_file_hl3.v",
+      "unchanged": true,
+      "sha256": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1"
+    },
+    {
+      "file": "mmu_sv32.v",
+      "unchanged": true,
+      "sha256": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4"
+    },
+    {
+      "file": "pmp.v",
+      "unchanged": true,
+      "sha256": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a"
+    },
+    {
+      "file": "regfile.v",
+      "unchanged": true,
+      "sha256": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468"
+    }
+  ],
+  "protected": [
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/COPY_SHA256.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/FINAL_MANIFEST.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/REPORT.md",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/START_HERE.md",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/UPSTREAM_DEPENDENCIES.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/CONTROLLER_SETTLE_CHANGE.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/LEGACY_H69_RECHECK.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/NATIVE_CAPTURE_DIAGNOSTIC.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/RESULTS.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-performance-native-repeat-m3/CAPTURE_CHECK.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-performance-native-repeat-m3/RESULT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-performance-native-repeat-m3/SERIAL_RESULT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-performance-native-repeat-m3/uart-raw.bin",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-m3/CAPTURE_CHECK.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-m3/RESULT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-m3/SERIAL_RESULT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-m3/uart-raw.bin",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-native-repeat-m3/CAPTURE_CHECK.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-native-repeat-m3/RESULT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-native-repeat-m3/SERIAL_RESULT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-native-repeat-m3/uart-raw.bin",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/configuration/board_top.sbit",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/configuration/configuration.svf",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/evidence/IMPLEMENTATION_AUDIT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/evidence/ORIGINAL_COMPILE_COMMANDS.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/board_pins.fdc",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/clock_27mhz.fdc",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/closure_io.fdc",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/flow.tcl",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/alu.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/board_reset_sync.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/board_top.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/control.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/cpu.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/cycle_counter64.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/gpio_core.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/init_tables.svh",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/local_regif_txgpio_m1.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/memory_model.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/regfile.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/soc_data_adapter.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/soc_top.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/uart_tx.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/board_qa.c",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/link.ld",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/mul_sm2.S",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/start.S",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/timer.h",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/port/core_portme.c",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/port/core_portme.h",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/build/performance256/build_identity.h",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/build/performance256/program.bin",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/build/performance256/program.elf",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/configuration/board_top.sbit",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/configuration/configuration.svf",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/evidence/IMPLEMENTATION_AUDIT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/evidence/ORIGINAL_COMPILE_COMMANDS.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/board_pins.fdc",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/clock_27mhz.fdc",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/closure_io.fdc",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/flow.tcl",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/alu.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/board_reset_sync.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/board_top.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/control.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/cpu.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/cycle_counter64.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/gpio_core.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/init_tables.svh",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/local_regif_txgpio_m1.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/memory_model.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/regfile.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/soc_data_adapter.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/soc_top.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/uart_tx.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/firmware/board_qa.c",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/firmware/link.ld",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/firmware/mul_sm2.S",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/firmware/start.S",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/firmware/timer.h",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/port/core_portme.c",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/port/core_portme.h",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/build/validation256/build_identity.h",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/build/validation256/program.bin",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/build/validation256/program.elf",
+      "unchanged": true
+    },
+    {
+      "path": "work/application/2026-11-03-event-recorder-m2/firmware/app-before-dense-declaration-fix.c",
+      "unchanged": true
+    },
+    {
+      "path": "work/application/2026-11-03-event-recorder-m2/firmware/app.c",
+      "unchanged": true
+    },
+    {
+      "path": "work/application/2026-11-03-event-recorder-m2/firmware/link.ld",
+      "unchanged": true
+    },
+    {
+      "path": "work/application/2026-11-03-event-recorder-m2/firmware/start.S",
+      "unchanged": true
+    }
+  ],
+  "m3_manifest_count": 1291,
+  "m3_manifest_mismatch": [],
+  "compile_binding": [
+    {
+      "job": "compile-first-s0-p0",
+      "matches": true
+    },
+    {
+      "job": "compile-first-s0-p1",
+      "matches": true
+    },
+    {
+      "job": "compile-first-s1-p0",
+      "matches": true
+    },
+    {
+      "job": "compile-first-s1-p1",
+      "matches": true
+    },
+    {
+      "job": "compile-irq-final-s0-p0",
+      "matches": true
+    },
+    {
+      "job": "compile-irq-final-s0-p1",
+      "matches": true
+    },
+    {
+      "job": "compile-irq-final-s1-p0",
+      "matches": true
+    },
+    {
+      "job": "compile-irq-final-s1-p1",
+      "matches": true
+    }
+  ],
+  "irq_results": [
+    {
+      "case": "interrupt_before_store",
+      "sync": 0,
+      "pred": 0,
+      "status": "PASS",
+      "checks": {
+        "rc": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "precise_input": true,
+        "vector": true,
+        "redirect_post": true,
+        "trap_status": true,
+        "registers": true,
+        "memory": true,
+        "status": true,
+        "unknown": true,
+        "response_bound": true,
+        "no_stalled_training": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            257
+          ],
+          [
+            2,
+            128
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            10,
+            28
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            4,
+            91
+          ]
+        ],
+        "stores": [
+          [
+            516,
+            7,
+            15
+          ],
+          [
+            512,
+            257,
+            15
+          ]
+        ],
+        "traps": [
+          [
+            28,
+            2147483655,
+            0
+          ]
+        ],
+        "status": [
+          [
+            "00000088",
+            "3"
+          ]
+        ],
+        "vector": [
+          [
+            "10",
+            "0000011c",
+            "00000008"
+          ]
+        ],
+        "csr_enable": [
+          [
+            "9",
+            "00000018",
+            "300",
+            "00000008"
+          ]
+        ],
+        "trap_pre": [
+          [
+            "10",
+            "0000001c",
+            "80000007",
+            "00000000"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "mret_pending_response",
+      "sync": 0,
+      "pred": 0,
+      "status": "PASS",
+      "checks": {
+        "rc": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "precise_input": true,
+        "vector": true,
+        "redirect_post": true,
+        "trap_status": true,
+        "registers": true,
+        "memory": true,
+        "status": true,
+        "unknown": true,
+        "response_bound": true,
+        "no_stalled_training": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            257
+          ],
+          [
+            2,
+            128
+          ],
+          [
+            3,
+            8192
+          ],
+          [
+            3,
+            6272
+          ],
+          [
+            4,
+            128
+          ],
+          [
+            10,
+            128
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            5,
+            91
+          ]
+        ],
+        "stores": [
+          [
+            516,
+            7,
+            15
+          ],
+          [
+            512,
+            91,
+            15
+          ]
+        ],
+        "traps": [
+          [
+            128,
+            2147483655,
+            0
+          ]
+        ],
+        "status": [
+          [
+            "00000088",
+            "3"
+          ]
+        ],
+        "vector": [
+          [
+            "15",
+            "0000011c",
+            "00000088"
+          ]
+        ],
+        "csr_enable": [
+          [
+            "12",
+            "00000024"
+          ]
+        ],
+        "trap_pre": [
+          [
+            "15",
+            "00000080",
+            "80000007",
+            "00000000"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "interrupt_before_store",
+      "sync": 0,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "rc": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "precise_input": true,
+        "vector": true,
+        "redirect_post": true,
+        "trap_status": true,
+        "registers": true,
+        "memory": true,
+        "status": true,
+        "unknown": true,
+        "response_bound": true,
+        "no_stalled_training": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            257
+          ],
+          [
+            2,
+            128
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            10,
+            28
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            4,
+            91
+          ]
+        ],
+        "stores": [
+          [
+            516,
+            7,
+            15
+          ],
+          [
+            512,
+            257,
+            15
+          ]
+        ],
+        "traps": [
+          [
+            28,
+            2147483655,
+            0
+          ]
+        ],
+        "status": [
+          [
+            "00000088",
+            "3"
+          ]
+        ],
+        "vector": [
+          [
+            "10",
+            "0000011c",
+            "00000008"
+          ]
+        ],
+        "csr_enable": [
+          [
+            "9",
+            "00000018",
+            "300",
+            "00000008"
+          ]
+        ],
+        "trap_pre": [
+          [
+            "10",
+            "0000001c",
+            "80000007",
+            "00000000"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "mret_pending_response",
+      "sync": 0,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "rc": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "precise_input": true,
+        "vector": true,
+        "redirect_post": true,
+        "trap_status": true,
+        "registers": true,
+        "memory": true,
+        "status": true,
+        "unknown": true,
+        "response_bound": true,
+        "no_stalled_training": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            257
+          ],
+          [
+            2,
+            128
+          ],
+          [
+            3,
+            8192
+          ],
+          [
+            3,
+            6272
+          ],
+          [
+            4,
+            128
+          ],
+          [
+            10,
+            128
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            5,
+            91
+          ]
+        ],
+        "stores": [
+          [
+            516,
+            7,
+            15
+          ],
+          [
+            512,
+            91,
+            15
+          ]
+        ],
+        "traps": [
+          [
+            128,
+            2147483655,
+            0
+          ]
+        ],
+        "status": [
+          [
+            "00000088",
+            "3"
+          ]
+        ],
+        "vector": [
+          [
+            "15",
+            "0000011c",
+            "00000088"
+          ]
+        ],
+        "csr_enable": [
+          [
+            "12",
+            "00000024"
+          ]
+        ],
+        "trap_pre": [
+          [
+            "15",
+            "00000080",
+            "80000007",
+            "00000000"
+          ]
+        ]
+      },
+      "seconds": 0.10999999986961484
+    },
+    {
+      "case": "interrupt_before_store",
+      "sync": 1,
+      "pred": 0,
+      "status": "PASS",
+      "checks": {
+        "rc": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "precise_input": true,
+        "vector": true,
+        "redirect_post": true,
+        "trap_status": true,
+        "registers": true,
+        "memory": true,
+        "status": true,
+        "unknown": true,
+        "response_bound": true,
+        "no_stalled_training": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            257
+          ],
+          [
+            2,
+            128
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            10,
+            28
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            4,
+            91
+          ]
+        ],
+        "stores": [
+          [
+            516,
+            7,
+            15
+          ],
+          [
+            512,
+            257,
+            15
+          ]
+        ],
+        "traps": [
+          [
+            28,
+            2147483655,
+            0
+          ]
+        ],
+        "status": [
+          [
+            "00000088",
+            "3"
+          ]
+        ],
+        "vector": [
+          [
+            "20",
+            "0000011c",
+            "00000008"
+          ]
+        ],
+        "csr_enable": [
+          [
+            "18",
+            "00000018",
+            "300",
+            "00000008"
+          ]
+        ],
+        "trap_pre": [
+          [
+            "20",
+            "0000001c",
+            "80000007",
+            "00000000"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "mret_pending_response",
+      "sync": 1,
+      "pred": 0,
+      "status": "PASS",
+      "checks": {
+        "rc": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "precise_input": true,
+        "vector": true,
+        "redirect_post": true,
+        "trap_status": true,
+        "registers": true,
+        "memory": true,
+        "status": true,
+        "unknown": true,
+        "response_bound": true,
+        "no_stalled_training": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            257
+          ],
+          [
+            2,
+            128
+          ],
+          [
+            3,
+            8192
+          ],
+          [
+            3,
+            6272
+          ],
+          [
+            4,
+            128
+          ],
+          [
+            10,
+            128
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            5,
+            91
+          ]
+        ],
+        "stores": [
+          [
+            516,
+            7,
+            15
+          ],
+          [
+            512,
+            91,
+            15
+          ]
+        ],
+        "traps": [
+          [
+            128,
+            2147483655,
+            0
+          ]
+        ],
+        "status": [
+          [
+            "00000088",
+            "3"
+          ]
+        ],
+        "vector": [
+          [
+            "30",
+            "0000011c",
+            "00000088"
+          ]
+        ],
+        "csr_enable": [
+          [
+            "24",
+            "00000024"
+          ]
+        ],
+        "trap_pre": [
+          [
+            "30",
+            "00000080",
+            "80000007",
+            "00000000"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "interrupt_before_store",
+      "sync": 1,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "rc": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "precise_input": true,
+        "vector": true,
+        "redirect_post": true,
+        "trap_status": true,
+        "registers": true,
+        "memory": true,
+        "status": true,
+        "unknown": true,
+        "response_bound": true,
+        "no_stalled_training": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            257
+          ],
+          [
+            2,
+            128
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            10,
+            28
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            4,
+            91
+          ]
+        ],
+        "stores": [
+          [
+            516,
+            7,
+            15
+          ],
+          [
+            512,
+            257,
+            15
+          ]
+        ],
+        "traps": [
+          [
+            28,
+            2147483655,
+            0
+          ]
+        ],
+        "status": [
+          [
+            "00000088",
+            "3"
+          ]
+        ],
+        "vector": [
+          [
+            "20",
+            "0000011c",
+            "00000008"
+          ]
+        ],
+        "csr_enable": [
+          [
+            "18",
+            "00000018",
+            "300",
+            "00000008"
+          ]
+        ],
+        "trap_pre": [
+          [
+            "20",
+            "0000001c",
+            "80000007",
+            "00000000"
+          ]
+        ]
+      },
+      "seconds": 0.10900000017136335
+    },
+    {
+      "case": "mret_pending_response",
+      "sync": 1,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "rc": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "precise_input": true,
+        "vector": true,
+        "redirect_post": true,
+        "trap_status": true,
+        "registers": true,
+        "memory": true,
+        "status": true,
+        "unknown": true,
+        "response_bound": true,
+        "no_stalled_training": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            257
+          ],
+          [
+            2,
+            128
+          ],
+          [
+            3,
+            8192
+          ],
+          [
+            3,
+            6272
+          ],
+          [
+            4,
+            128
+          ],
+          [
+            10,
+            128
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            5,
+            91
+          ]
+        ],
+        "stores": [
+          [
+            516,
+            7,
+            15
+          ],
+          [
+            512,
+            91,
+            15
+          ]
+        ],
+        "traps": [
+          [
+            128,
+            2147483655,
+            0
+          ]
+        ],
+        "status": [
+          [
+            "00000088",
+            "3"
+          ]
+        ],
+        "vector": [
+          [
+            "30",
+            "0000011c",
+            "00000088"
+          ]
+        ],
+        "csr_enable": [
+          [
+            "24",
+            "00000024"
+          ]
+        ],
+        "trap_pre": [
+          [
+            "30",
+            "00000080",
+            "80000007",
+            "00000000"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    }
+  ],
+  "pass_": false
+}

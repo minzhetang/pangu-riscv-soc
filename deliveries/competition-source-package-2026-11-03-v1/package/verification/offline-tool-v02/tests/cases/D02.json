@@ -1,0 +1,19 @@
+{
+  "id": "D02",
+  "expected": {
+    "storage": "archive",
+    "stream": "bus",
+    "path": "generated/block-boundary/expected_archive",
+    "complete": true,
+    "index_SHA256": "AB170543CE61E9F28112BF5B84143D41B93A2C8D7B67B6A0074D9ED14B1AABD7"
+  },
+  "actual": {
+    "storage": "archive",
+    "stream": "bus",
+    "path": "generated/block-boundary/actual_archive",
+    "complete": true,
+    "index_SHA256": "B7C986B5CBA461D4DA301701C0FF06F76EFA8D4D5A735D4C9BE7651B372394AC"
+  },
+  "allow_empty": false,
+  "limits": {}
+}

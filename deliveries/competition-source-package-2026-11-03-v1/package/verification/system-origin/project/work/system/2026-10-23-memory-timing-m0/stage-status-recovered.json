@@ -1,0 +1,18 @@
+{
+  "date_beijing": "2026-10-23",
+  "classification": "PARTIAL_TEST_MODEL_DIAGNOSTIC",
+  "source_results": "result-after-external.json",
+  "historical_ordinary_compile": "results.json",
+  "official_DRM_checks": {"status": "PASS", "count": 13},
+  "CPU_probe_runs": {"total": 24, "PASS": 9, "FAIL": 15},
+  "zero_wait_control_P02": "FAIL",
+  "hypotheses_not_yet_retested": [
+    "Combinational read function hides RAM update dependencies from continuous assignment",
+    "Synchronous IF reset/first-word prewarm policy interferes with characterization"
+  ],
+  "accepted_memory_adaptation": false,
+  "CPU_functional_RTL_changed": false,
+  "next_authorized_action": "Correct new verification memory model only, preserve original inputs/expectations/results; bounded recheck under M0",
+  "new_external_compilation_permission": "REQUIRED_IF_USED; prior two-command batch exhausted",
+  "hardware": "STOP"
+}

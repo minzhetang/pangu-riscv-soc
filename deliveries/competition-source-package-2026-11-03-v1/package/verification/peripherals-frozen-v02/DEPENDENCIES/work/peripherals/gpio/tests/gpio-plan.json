@@ -1,0 +1,343 @@
+{
+  "plan_id": "B-GPIO-PLAN-1.0.2",
+  "plan_version": "1.0.2",
+  "created_at": "2026-10-22T20:40:00+08:00",
+  "frozen_at": "2026-10-22T20:40:00+08:00",
+  "frozen_before_final_dut_runs": true,
+  "supersedes": "B-GPIO-PLAN-1.0.1; 1.0.2 applies the review corrections: runner hash/path gate, native-exit/count classification, bounded process-tree cleanup, formal TB hard cycle cap, negative TB watchdog, and exact two-edge sync wording. RTL is unchanged; TB hashes and plan hash are new.",
+  "task_id": "B-GPIO",
+  "module": "gpio_core",
+  "module_version": "1.0.0",
+  "interface_version": "PERIPH-CORE-0.1-DRAFT",
+  "scope": "GPIO output register and two-stage input synchronizer only; no direction/tristate/debounce/interrupt, no address map, no bus wrapper, no board pin mapping, and no hardware test.",
+  "tools": {
+    "simulator": "Icarus Verilog",
+    "version": "12.0 (devel) (s20150603-1539-g2693dd32b)",
+    "iverilog_path": "D:\\iverilog\\bin\\iverilog.exe",
+    "vvp_path": "D:\\iverilog\\bin\\vvp.exe",
+    "library_path": "D:\\iverilog\\lib\\ivl",
+    "legal_source": "Existing lawful local Icarus installation recorded in B-ENV; path passed explicitly, PATH not modified."
+  },
+  "artifacts": {
+    "rtl": {
+      "path": "work/peripherals/gpio/src/gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    "tb": {
+      "path": "work/peripherals/gpio/tb/tb_gpio.sv",
+      "sha256": "D1C65938EDFB1B4519452503AB32A52F3F9128475078D2B509FFB4747942CF43"
+    },
+    "negative_tb": {
+      "path": "work/peripherals/gpio/tb/tb_gpio_neg.sv",
+      "sha256": "9479C016F5F91BFF40AF3C13AD32DA3F10EF8038FB2964ABA196C3D80E247038"
+    }
+  },
+  "design": {
+    "width": "parameter integer W; intended range 1..32; final coverage W=1, 8, 16",
+    "output_register": "gpio_out is a W-bit register; every sampling edge with gpio_wr_en=1 and rst_n=1 writes the complete gpio_wdata; equal values are not de-duplicated",
+    "hold": "when gpio_wr_en=0, gpio_out holds its value regardless of gpio_wdata and gpio_in_async",
+    "input_synchronizer": "two cascaded W-bit registers; gpio_in_async -> sync_meta -> gpio_in_sync; both stages reset to 0",
+    "input_output_isolation": "gpio_in_async is never connected or fed back to gpio_out",
+    "reset": "asynchronous active-low rst_n clears gpio_out, sync_meta and gpio_in_sync to 0; writes while rst_n=0 are ignored",
+    "readback": "gpio_out is the registered output port and the observable value; there is no separate bus read port or address decode",
+    "excluded": "direction control, bidirectional inout, tri-state, debounce, interrupt generation, pin polarity/width adaptation, and CPU bus integration"
+  },
+  "timing": {
+    "clock_period_ns": 10,
+    "sampling_edge": "posedge clk",
+    "write_acceptance": "one full-width write on each posedge with gpio_wr_en=1 and rst_n=1; no ready/backpressure",
+    "sync_latency": "a value stable before edge E0 enters sync_meta after E0 and reaches gpio_in_sync after the next rising edge E1; the total is two sampling edges (E0 for stage 1, E1 for stage 2). It is not E0+2 clocks.",
+    "input_phases_ns": [
+      2,
+      3,
+      7,
+      8
+    ],
+    "input_phase_rule": "all four drive points are at least 2 ns from both the preceding and following clock edge; no input is driven at a sampling edge",
+    "reset_release": "rst_n is released away from a sampling edge",
+    "checked_hold_cycles": 12,
+    "checked_consecutive_writes": 3,
+    "sync_latency_edges": [
+      "E0: first stage captures",
+      "E1: second stage/output updates"
+    ],
+    "tb_max_cycles_default": 200000,
+    "hard_max_cycles": 300000,
+    "watchdog_test_cycles": 200,
+    "watchdog_cycle_basis": "cycle_count is blocking-incremented on every posedge; MAX_CYCLES=N terminates on the Nth posedge. The preserved 1.0.1 watchdog log printed cycles=201/limit=200 and actually terminated on the 202nd posedge; it is not reinterpreted as an exact-200-cycle cutoff.",
+    "watchdog_expected_marker": "TB_WATCHDOG_TIMEOUT cycles=200 limit=200 edge=200"
+  },
+  "configurations": [
+    {
+      "id": "W1",
+      "width": 1,
+      "purpose": "minimum width, single-bit write and synchronizer boundary"
+    },
+    {
+      "id": "W8",
+      "width": 8,
+      "purpose": "default width and 8-bit LED/key-style vector"
+    },
+    {
+      "id": "W16",
+      "width": 16,
+      "purpose": "wider vector, full walking-one coverage across 16 bits"
+    }
+  ],
+  "expected_per_configuration": {
+    "by_width": {
+      "1": {
+        "writes": 8,
+        "compares": 72
+      },
+      "8": {
+        "writes": 15,
+        "compares": 86
+      },
+      "16": {
+        "writes": 23,
+        "compares": 102
+      }
+    },
+    "write_formula": "W + 7 (4 fixed pattern writes + W walking-one writes + 3 consecutive writes)",
+    "max_cycles": 200000,
+    "hard_max_cycles": 300000,
+    "compile_timeout_s": 60,
+    "run_timeout_s": 30,
+    "success_marker": "GPIO_SELFCHECK_PASS",
+    "failure_marker": "GPIO_SELFCHECK_FAIL",
+    "watchdog_marker": "TB_WATCHDOG_TIMEOUT",
+    "watchdog_test_cycles": 200
+  },
+  "cases": [
+    {
+      "id": "GPIO-01",
+      "acceptance_id": "GPIO-01",
+      "purpose": "reset, width, and reset-dominance",
+      "configs": [
+        "W1",
+        "W8",
+        "W16"
+      ],
+      "expected": "During reset gpio_out=0 and gpio_in_sync=0 with no X/Z even while input is high and gpio_wr_en=1; the write is ignored. After release, input high appears at gpio_in_sync only after two edges and gpio_out remains 0.",
+      "tb_markers": [
+        "TEST_BEGIN GPIO-01",
+        "GPIO_WIDTH W=",
+        "TEST_PASS GPIO-01"
+      ],
+      "subcases": [
+        {
+          "id": "GPIO-01-RESET",
+          "purpose": "asynchronous reset and reset-dominance",
+          "expected": "out=0, sync=0, no X/Z during reset; write while reset low does not change out"
+        },
+        {
+          "id": "GPIO-01-RELEASE",
+          "purpose": "input held high during reset and release",
+          "expected": "sync remains 0 after one release edge, becomes all ones after two; out remains 0"
+        }
+      ]
+    },
+    {
+      "id": "GPIO-02",
+      "acceptance_id": "GPIO-02",
+      "purpose": "full-width write, readback, patterns and input/output separation",
+      "configs": [
+        "W1",
+        "W8",
+        "W16"
+      ],
+      "expected": "Write 0, all ones, 8'h55 and 8'hAA zero-extended to W, and every walking-one value; gpio_out equals the expected value after every edge. Input is driven to the complement of each written value and never appears on gpio_out.",
+      "tb_markers": [
+        "TEST_BEGIN GPIO-02",
+        "GPIO02_WRITES",
+        "TEST_PASS GPIO-02"
+      ],
+      "subcases": [
+        {
+          "id": "GPIO-02-ZERO",
+          "data": "0",
+          "expected": "out=0 after write"
+        },
+        {
+          "id": "GPIO-02-ONES",
+          "data": "all ones truncated to W",
+          "expected": "out=all ones after write"
+        },
+        {
+          "id": "GPIO-02-55",
+          "data": "8'h55 zero-extended to W (W=8: 0x55; W=16: 0x0055)",
+          "expected": "out equals 0x55 zero-extended to W; high bits above bit 7 remain 0"
+        },
+        {
+          "id": "GPIO-02-AA",
+          "data": "8'hAA zero-extended to W (W=8: 0xAA; W=16: 0x00AA)",
+          "expected": "out equals 0xAA zero-extended to W; high bits above bit 7 remain 0"
+        },
+        {
+          "id": "GPIO-02-WALK",
+          "data": "one-hot for each of W bits",
+          "expected": "every bit position is written and read back; no truncation"
+        },
+        {
+          "id": "GPIO-02-ISOLATION",
+          "data": "input complement of written value",
+          "expected": "input changes do not alter gpio_out"
+        }
+      ]
+    },
+    {
+      "id": "GPIO-03",
+      "acceptance_id": "GPIO-03",
+      "purpose": "hold when not selected",
+      "configs": [
+        "W1",
+        "W8",
+        "W16"
+      ],
+      "expected": "With gpio_wr_en=0 for 12 cycles, arbitrary changes on gpio_wdata and gpio_in_async do not alter gpio_out; no write is accepted.",
+      "tb_markers": [
+        "TEST_BEGIN GPIO-03",
+        "GPIO03_HOLD",
+        "TEST_PASS GPIO-03"
+      ],
+      "subcases": [
+        {
+          "id": "GPIO-03-HOLD12",
+          "cycles": 12,
+          "expected": "out remains the last written value on every negedge; no write count increment"
+        }
+      ]
+    },
+    {
+      "id": "GPIO-04",
+      "acceptance_id": "GPIO-04",
+      "purpose": "consecutive and repeated requests",
+      "configs": [
+        "W1",
+        "W8",
+        "W16"
+      ],
+      "expected": "gpio_wr_en is high for three consecutive sampling edges with values A,A,B; all three edges are accepted, A is written twice without de-duplication, and gpio_out is A after edge 1, A after edge 2, B after edge 3.",
+      "tb_markers": [
+        "TEST_BEGIN GPIO-04",
+        "GPIO04_CONSEC accepted=3",
+        "TEST_PASS GPIO-04"
+      ],
+      "subcases": [
+        {
+          "id": "GPIO-04-AAB",
+          "values": "A,A,B",
+          "expected": "accepted count=3; per-edge out=A,A,B; final out=B; A is deliberately repeated"
+        }
+      ]
+    },
+    {
+      "id": "GPIO-05",
+      "acceptance_id": "GPIO-05",
+      "purpose": "two-stage input synchronization and reset with input high",
+      "configs": [
+        "W1",
+        "W8",
+        "W16"
+      ],
+      "expected": "Drive input at 2, 3, 7 and 8 ns after a posedge, alternating low/high. After one edge the second stage still holds the old value; after the second edge it holds the new value. gpio_out remains held throughout. Reset with input high still clears out and sync.",
+      "tb_markers": [
+        "TEST_BEGIN GPIO-05",
+        "GPIO05_PHASE",
+        "TEST_PASS GPIO-05"
+      ],
+      "subcases": [
+        {
+          "id": "GPIO-05-PHASE2",
+          "drive_ns": 2,
+          "expected": "old after one edge, new after two"
+        },
+        {
+          "id": "GPIO-05-PHASE3",
+          "drive_ns": 3,
+          "expected": "old after one edge, new after two"
+        },
+        {
+          "id": "GPIO-05-PHASE7",
+          "drive_ns": 7,
+          "expected": "old after one edge, new after two"
+        },
+        {
+          "id": "GPIO-05-PHASE8",
+          "drive_ns": 8,
+          "expected": "old after one edge, new after two"
+        },
+        {
+          "id": "GPIO-05-RESET-HIGH",
+          "expected": "during reset out=0 and sync=0 while input high; after release sync reaches high after two edges and out remains 0"
+        }
+      ]
+    },
+    {
+      "id": "GPIO-06",
+      "acceptance_id": "GPIO-06",
+      "purpose": "independent negative checker",
+      "configs": [
+        "W8"
+      ],
+      "expected": "Control expectation passes. A deliberately wrong hold expectation (A5 instead of 5A while wr_en=0) is detected, and a deliberately wrong one-edge synchronizer expectation is detected. The formal DUT expectation is not changed.",
+      "tb_markers": [
+        "GPIO_NEG_CONTROL_PASS",
+        "GPIO_NEG_HOLD_NEG errors=",
+        "GPIO_NEG_SYNC_NEG errors=",
+        "GPIO_NEG_CHECKER_PASS"
+      ],
+      "subcases": [
+        {
+          "id": "GPIO-06-HOLD",
+          "expected": "wrong held value A5 is rejected: hold_errs>=1"
+        },
+        {
+          "id": "GPIO-06-SYNC",
+          "expected": "wrong early synchronizer value FF is rejected after one edge: sync_early_errs>=1"
+        }
+      ]
+    }
+  ],
+  "com_cases": [
+    {
+      "id": "COM-01",
+      "purpose": "frozen plan and artifact hashes before final DUT runs",
+      "expected": "plan SHA256 verified; RTL, TB and negative TB hashes match the frozen plan; on any mismatch the runner writes the gate log and does not start a DUT"
+    },
+    {
+      "id": "COM-02",
+      "purpose": "bounded process and TB watchdog",
+      "expected": "compile 60 s/run 30 s limits are used; deliberate +HANG +MAX_CYCLES=200 emits TB_WATCHDOG_TIMEOUT on the 200th posedge and is classified TIMEOUT; overrides are clamped at 300000 cycles"
+    },
+    {
+      "id": "COM-03",
+      "purpose": "top-level X/Z and public-port observations",
+      "expected": "gpio_out and gpio_in_sync are never X/Z; no CHK_FAIL; writes and compares are counted"
+    },
+    {
+      "id": "COM-04",
+      "purpose": "fresh artifacts and independent checker success marker",
+      "expected": "new run directory, new compile/run logs, non-empty VCDs, GPIO_SELFCHECK_PASS with compares>0 and exact expected write count"
+    },
+    {
+      "id": "COM-05",
+      "purpose": "negative checker isolation",
+      "expected": "negative TB is separate from the formal TB and reports GPIO_NEG_CHECKER_PASS; formal DUT is not marked FAIL"
+    },
+    {
+      "id": "COM-06",
+      "purpose": "status and limitations",
+      "expected": "results.json is ACTUAL, schema-valid, has unique IDs and records finite coverage/limitations"
+    }
+  ],
+  "limitations": [
+    "No PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board pin test, or temperature test was performed; hardware remains stopped.",
+    "Simulation verifies logical cycle behavior only, not physical metastability, MTBF, debounce, noise immunity, or board-level input integrity.",
+    "Only W=1, 8 and 16 are covered; the module accepts a parameter W but all widths 1..32 are not exhaustively tested.",
+    "The four input phases (2,3,7,8 ns in a 10 ns clock) demonstrate logical two-edge delay away from sampling edges; input changes exactly at a sampling edge are not covered.",
+    "No direction control, bidirectional inout, tri-state, interrupt, read bus, address map, or CPU integration exists in this core; mainline must add any board pin/polarity adaptation.",
+    "The GPIO outputs are not mapped to the board's 8 LEDs or 5 keys; no board-level active-low/active-high assumption is made."
+  ]
+}

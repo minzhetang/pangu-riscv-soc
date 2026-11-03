@@ -1,0 +1,11 @@
+OUTPUT row=0 raw=-431 y=-7
+OUTPUT row=1 raw=34 y=1
+OUTPUT row=2 raw=75 y=1
+OUTPUT row=3 raw=-5156 y=-81
+OUTPUT row=4 raw=609 y=10
+OUTPUT row=5 raw=-190 y=-3
+OUTPUT row=6 raw=-1543 y=-24
+OUTPUT row=7 raw=58 y=1
+AI_METRIC cycles=136 config_cycles=304
+PASS ai
+ai_tb.sv:91: $finish called at 4510000 (1ps)

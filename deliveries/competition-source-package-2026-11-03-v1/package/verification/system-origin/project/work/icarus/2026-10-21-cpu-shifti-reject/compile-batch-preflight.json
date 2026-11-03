@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-21",
+  "status": "PREFLIGHT_ONLY_NO_NATIVE_CALLS",
+  "protected_entries": 41670,
+  "delivery_entries": 0,
+  "plan_sha256": "16A83489F7239635ADCDB9AD1C782D7E2341B36DE2A552C2524922CA906E57B5",
+  "controller_sha256": "924DD1E5E252C4D87A0F4B12BFF1E366DAB5D6B144B22ADC69ECF349E9A3E4F4",
+  "wrapper_sha256": "3AC2F5849D4976C7CC7AA3346D79CECE4E84D395E13B93B93E4986B667D4AA50",
+  "powershell_sha256": "362A356CE7F0940EC74F73A8FC2C990A2CC24A38A11C90BBD8ECA947110AD139",
+  "tools": [
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "sha256": "25E1BA02E72F58D9D484BC5457D69A6B179D22D86BDF5BA5D6F9F0D4FE620BBF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "sha256": "F0775603E1F1BCF1B2DEA16DFF963A4B7D71B7B33D5BBE23D2B01FF5B2304E09"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl\\ivl.exe",
+      "sha256": "75B5B4569796B4CD85C74E9B4836699A70159279C3BAE20268A8578558686643"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl\\ivlpp.exe",
+      "sha256": "D41181DF44C4C6A6AD07E5F91A34F7624EC081150C5B08E007133AFDB7FAD3C8"
+    }
+  ],
+  "requests": 14,
+  "native_calls": 0,
+  "simulations": 0
+}

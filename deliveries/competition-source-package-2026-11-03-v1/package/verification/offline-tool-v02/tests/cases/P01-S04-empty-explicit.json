@@ -1,0 +1,17 @@
+{
+  "id": "P01-S04-empty-explicit",
+  "expected": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S04-empty-explicit/expected.log",
+    "complete": true
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S04-empty-explicit/actual.log",
+    "complete": true
+  },
+  "allow_empty": true,
+  "limits": {}
+}

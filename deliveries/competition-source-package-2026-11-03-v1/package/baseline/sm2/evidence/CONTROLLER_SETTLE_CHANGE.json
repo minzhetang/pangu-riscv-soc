@@ -1,0 +1,8 @@
+{
+  "old_retained": true,
+  "change": "Wait at most2s for owned-job children to exit after root normal termination, before unchanged conservative Job close",
+  "no_expectation_changed": true,
+  "no_CPU_or_serial_setting_change": true,
+  "old_capture_status": "valid report and clean transport; overall strict check FAIL due forced-unknown cleanup",
+  "new_code_sha256": "6EB7FF0E50D045A0A7ED0219F2A09A896A574352FDBCC23B9151EF9D775D185D"
+}

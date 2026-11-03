@@ -1,0 +1,313 @@
+{
+  "stage": "after-r32-if-trap",
+  "plan_sha256": "b1c5a08b915d5e68f11062bbc84a3d45e0741af2e105c3afa8de3a3b7bc13797",
+  "results": [
+    {
+      "case": "misaligned_jump_ifmiss",
+      "sync": 1,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true,
+        "precise_exception_input": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [],
+        "traps": [
+          [
+            4088,
+            0,
+            4090
+          ]
+        ],
+        "focus_hold": [
+          [
+            "51",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "52",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "53",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "54",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "56",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "57",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "58",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [],
+        "focus_resolve": [
+          [
+            "60",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000800",
+            "3"
+          ]
+        ]
+      },
+      "seconds": 0.15600000019185245
+    },
+    {
+      "case": "ebreak_ifmiss",
+      "sync": 1,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true,
+        "precise_exception_input": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [],
+        "traps": [
+          [
+            4088,
+            3,
+            4088
+          ]
+        ],
+        "focus_hold": [
+          [
+            "51",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "52",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "53",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "54",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "56",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "57",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "58",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [],
+        "focus_resolve": [],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000800",
+            "3"
+          ]
+        ]
+      },
+      "seconds": 0.14099999982863665
+    }
+  ]
+}

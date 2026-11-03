@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "constant_values_equal": 20,
+  "old_max_hex_token": 65536,
+  "new_max_hex_token": 1024,
+  "DUT_runs": 0
+}

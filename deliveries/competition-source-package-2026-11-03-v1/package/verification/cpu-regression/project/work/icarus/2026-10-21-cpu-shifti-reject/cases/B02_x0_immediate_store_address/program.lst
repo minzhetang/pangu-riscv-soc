@@ -1,0 +1,9 @@
+0000: 00f00013  addi x0,x0,15
+0004: 00400093  addi x1,x0,4
+0008: 05500113  addi x2,x0,85
+000c: 0020a223  sw x2,4(x1)
+0010: 00700293  addi x5,x0,7
+0014: 00500193  addi x3,x0,5 ; raw rs2 field equals x5, but immediate must win
+0018: 00900013  addi x0,x0,9
+001c: 00002023  sw x0,0(x0)
+0020: 05a00f93  addi x31,x0,90 ; completion

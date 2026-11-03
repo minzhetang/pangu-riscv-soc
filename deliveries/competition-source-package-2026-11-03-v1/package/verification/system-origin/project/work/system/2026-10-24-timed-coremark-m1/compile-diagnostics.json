@@ -1,0 +1,44 @@
+[
+  {
+    "id": "unit",
+    "native_rc": 0,
+    "seconds": 0.157,
+    "stderr": ""
+  },
+  {
+    "id": "baseline-N16",
+    "native_rc": 0,
+    "seconds": 35.703,
+    "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\n"
+  },
+  {
+    "id": "baseline-N234",
+    "native_rc": 0,
+    "seconds": 39.031,
+    "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\n"
+  },
+  {
+    "id": "smoke-N16",
+    "native_rc": 0,
+    "seconds": 40.641,
+    "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\n"
+  },
+  {
+    "id": "performance-N16",
+    "native_rc": 0,
+    "seconds": 35.25,
+    "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\n"
+  },
+  {
+    "id": "validation-N16",
+    "native_rc": 0,
+    "seconds": 40.813,
+    "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\n"
+  },
+  {
+    "id": "unit-v2",
+    "native_rc": 0,
+    "seconds": 0.094,
+    "stderr": ""
+  }
+]

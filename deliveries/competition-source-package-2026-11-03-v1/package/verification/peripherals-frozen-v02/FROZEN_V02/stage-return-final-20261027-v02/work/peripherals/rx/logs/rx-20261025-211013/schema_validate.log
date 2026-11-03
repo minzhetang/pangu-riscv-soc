@@ -1,0 +1,30 @@
+COMMAND=["C:\\Users\\ANON_USER\\AppData\\Local\\Programs\\Python\\Python312-embed\\python.exe", "C:\\Users\\ANON_USER\\Desktop\\FPGA\\发给队员_盘古100Pro项目交接包_2026-10-18_v01\\scripts\\schema_validate.py", "--schema", "C:\\Users\\ANON_USER\\Desktop\\FPGA\\发给队员_盘古100Pro项目交接包_2026-10-18_v01\\templates\\results.schema.json", "--data", "C:\\Users\\ANON_USER\\Desktop\\FPGA\\发给队员_盘古100Pro项目交接包_2026-10-18_v01\\work\\peripherals\\rx\\results.json"]
+CWD=C:\Users\ANON_USER\Desktop\FPGA\发给队员_盘古100Pro项目交接包_2026-10-18_v01
+TIMEOUT_S=30
+RC=0
+TIMED_OUT=False
+CLEANUP_S=0.0
+CLEANUP_METHOD=not_needed
+CLEANUP_STATUS=NOT_NEEDED
+TASKKILL_RC=None
+CLEANUP_ERROR=
+DESCENDANT_CHECK=NOT_NEEDED
+DESCENDANTS_BEFORE=
+DESCENDANTS_ALIVE=
+DESCENDANTS_EXITED=
+DESCENDANT_CHECK_ERROR=
+START_ERROR=
+DURATION_S=0.078
+LOG_LIMIT_BYTES=4000000
+LOG_TRUNCATED=False
+STDOUT_BYTES=129
+STDOUT_READ_BYTES=129
+STDOUT_TRUNCATED=False
+STDERR_BYTES=0
+STDERR_READ_BYTES=0
+STDERR_TRUNCATED=False
+--- STDOUT ---
+{"schema_check": "PASS", "kind": "ACTUAL", "scope": "supported subset and structural semantics only; not module functionality"}
+
+--- STDERR ---
+

@@ -1,0 +1,1096 @@
+[
+  {
+    "name": "gcc-performance",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-O2",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-fno-common",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-mno-relax",
+      "-msmall-data-limit=0",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-nostdlib",
+      "-nostartfiles",
+      "-Wl,--no-relax",
+      "-Wl,--build-id=none",
+      "-T",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\firmware\\link.ld",
+      "-Wl,-Map,D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\performance\\program.map",
+      "-ID:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\firmware",
+      "-ID:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\port",
+      "-ID:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream",
+      "-DTOTAL_DATA_SIZE=2000",
+      "-DITERATIONS=1",
+      "-DPERFORMANCE_RUN=1",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\performance\\program.elf",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\firmware\\start.S",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_list_join.c",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_main.c",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_matrix.c",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_state.c",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_util.c",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\port\\core_portme.c",
+      "-lgcc"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.796000000089407,
+    "remaining_before_close": [],
+    "input_sha256": {}
+  },
+  {
+    "name": "objcopy-performance",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+      "-O",
+      "binary",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\performance\\program.elf",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\performance\\program.bin"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {}
+  },
+  {
+    "name": "nm-performance",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+      "-n",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\performance\\program.elf"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.15699999989010394,
+    "remaining_before_close": [],
+    "input_sha256": {}
+  },
+  {
+    "name": "gcc-validation",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-O2",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-fno-common",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-mno-relax",
+      "-msmall-data-limit=0",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-nostdlib",
+      "-nostartfiles",
+      "-Wl,--no-relax",
+      "-Wl,--build-id=none",
+      "-T",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\firmware\\link.ld",
+      "-Wl,-Map,D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\validation\\program.map",
+      "-ID:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\firmware",
+      "-ID:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\port",
+      "-ID:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream",
+      "-DTOTAL_DATA_SIZE=2000",
+      "-DITERATIONS=1",
+      "-DVALIDATION_RUN=1",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\validation\\program.elf",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\firmware\\start.S",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_list_join.c",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_main.c",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_matrix.c",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_state.c",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_util.c",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\port\\core_portme.c",
+      "-lgcc"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.7819999998901039,
+    "remaining_before_close": [],
+    "input_sha256": {}
+  },
+  {
+    "name": "objcopy-validation",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+      "-O",
+      "binary",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\validation\\program.elf",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\validation\\program.bin"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {}
+  },
+  {
+    "name": "nm-validation",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+      "-n",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\validation\\program.elf"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {}
+  },
+  {
+    "name": "compile-strict-p0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb",
+      "-Ptb.PRED=0",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\strict-p0.vvp",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\tb.sv"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.18700000015087426,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v": "aa5a84c0028f37d0d3719a8f0829d593d9dcfae456e5c08f6229b1942f8442ef",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\tb.sv": "eb53e7295be008a749748c6dbd31376b4a8865590ce2cfc315adc09ad371636c"
+    }
+  },
+  {
+    "name": "strict-p0-performance",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\strict-p0.vvp",
+      "+PHASE=10800"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\strict-p0\\performance",
+    "rc": 0,
+    "seconds": 108.75,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\strict-p0.vvp": "d22431b967557e09b38b90d51518abf37919a1927276d253a283617a3087eda6",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\strict-p0\\performance\\program.hex": "0c3289d3aa4a1a7d73a116a78c23c2ab95acc76084d2c28d056cfdbc3071e097"
+    }
+  },
+  {
+    "name": "strict-p0-validation",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\strict-p0.vvp",
+      "+PHASE=10808"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\strict-p0\\validation",
+    "rc": 0,
+    "seconds": 115.18800000008196,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\strict-p0.vvp": "d22431b967557e09b38b90d51518abf37919a1927276d253a283617a3087eda6",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\strict-p0\\validation\\program.hex": "eb065861e6673df05d3d443916d6947b7ce2183ba1e5d21ac56331582a7ffe46"
+    }
+  },
+  {
+    "name": "compile-strict-p1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb",
+      "-Ptb.PRED=1",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\strict-p1.vvp",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\tb.sv"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.2029999999795109,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v": "aa5a84c0028f37d0d3719a8f0829d593d9dcfae456e5c08f6229b1942f8442ef",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\tb.sv": "eb53e7295be008a749748c6dbd31376b4a8865590ce2cfc315adc09ad371636c"
+    }
+  },
+  {
+    "name": "strict-p1-performance",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\strict-p1.vvp",
+      "+PHASE=10800"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\strict-p1\\performance",
+    "rc": 0,
+    "seconds": 91.61000000010245,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\strict-p1.vvp": "d6c93be55ee787f42d065db29bd7be53d96b1369b1dc258a365987be31806768",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\strict-p1\\performance\\program.hex": "0c3289d3aa4a1a7d73a116a78c23c2ab95acc76084d2c28d056cfdbc3071e097"
+    }
+  },
+  {
+    "name": "strict-p1-validation",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\strict-p1.vvp",
+      "+PHASE=10808"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\strict-p1\\validation",
+    "rc": 0,
+    "seconds": 96.54699999978766,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\strict-p1.vvp": "d6c93be55ee787f42d065db29bd7be53d96b1369b1dc258a365987be31806768",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\strict-p1\\validation\\program.hex": "eb065861e6673df05d3d443916d6947b7ce2183ba1e5d21ac56331582a7ffe46"
+    }
+  },
+  {
+    "name": "compile-fault-final-s0-p0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb",
+      "-Ptb.PRED=0",
+      "-Ptb.SYNC=0",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-tb.sv"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.13999999989755452,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v": "aa5a84c0028f37d0d3719a8f0829d593d9dcfae456e5c08f6229b1942f8442ef",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-tb.sv": "37817a66838591c141f03076c29f97be3b74641eade756b24fb1deea0d7727ba"
+    }
+  },
+  {
+    "name": "fault-final-s0-p0-instruction_access",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=1"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p0\\instruction_access",
+    "rc": 0,
+    "seconds": 0.1410000000614673,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp": "7a796eb3d48c56267f4168b9a092dbd49a4fead4e30e14d06c2055673c7769d2",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p0\\instruction_access\\program.hex": "d6a2b6faa7d4ffd4a5623bea7350834e3b89b23449a5850f7fb01620932927f0"
+    }
+  },
+  {
+    "name": "fault-final-s0-p0-load_access",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=2"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p0\\load_access",
+    "rc": 0,
+    "seconds": 0.14099999982863665,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp": "7a796eb3d48c56267f4168b9a092dbd49a4fead4e30e14d06c2055673c7769d2",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p0\\load_access\\program.hex": "bf3ebc6ea411fe36704f2f433f68a49f67b3505f5cdc0273e3b66a39b74cbc08"
+    }
+  },
+  {
+    "name": "fault-final-s0-p0-store_access",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=2"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p0\\store_access",
+    "rc": 0,
+    "seconds": 0.14000000013038516,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp": "7a796eb3d48c56267f4168b9a092dbd49a4fead4e30e14d06c2055673c7769d2",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p0\\store_access\\program.hex": "333ee967b1a842de1e01c0dde3aa7013f06cf10c9fc829127fcfd9f8f8757302"
+    }
+  },
+  {
+    "name": "fault-final-s0-p0-readonly_csr",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=0"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p0\\readonly_csr",
+    "rc": 0,
+    "seconds": 0.1410000000614673,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp": "7a796eb3d48c56267f4168b9a092dbd49a4fead4e30e14d06c2055673c7769d2",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p0\\readonly_csr\\program.hex": "391a594661d8462961cdff830e1f606f505029969b1b6e9b072d2a16472cb81f"
+    }
+  },
+  {
+    "name": "fault-final-s0-p0-unknown_csr",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=0"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p0\\unknown_csr",
+    "rc": 0,
+    "seconds": 0.2190000000409782,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp": "7a796eb3d48c56267f4168b9a092dbd49a4fead4e30e14d06c2055673c7769d2",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p0\\unknown_csr\\program.hex": "02110980f51097fb7323a133ed984bec8f80b8977a30054997cc3d347c236590"
+    }
+  },
+  {
+    "name": "fault-final-s0-p0-illegal_multiply",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=0"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p0\\illegal_multiply",
+    "rc": 0,
+    "seconds": 0.13999999989755452,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p0.vvp": "7a796eb3d48c56267f4168b9a092dbd49a4fead4e30e14d06c2055673c7769d2",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p0\\illegal_multiply\\program.hex": "59d89f07808d25f6c05fcc4d07b5c54afef628104979741d4e02005c7d07fce1"
+    }
+  },
+  {
+    "name": "compile-fault-final-s0-p1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb",
+      "-Ptb.PRED=1",
+      "-Ptb.SYNC=0",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-tb.sv"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.15600000019185245,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v": "aa5a84c0028f37d0d3719a8f0829d593d9dcfae456e5c08f6229b1942f8442ef",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-tb.sv": "37817a66838591c141f03076c29f97be3b74641eade756b24fb1deea0d7727ba"
+    }
+  },
+  {
+    "name": "fault-final-s0-p1-instruction_access",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=1"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p1\\instruction_access",
+    "rc": 0,
+    "seconds": 0.15699999989010394,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp": "4a523ea73427948e0c8509b83f912d25a77c77ea17c38dc2bdcdb0684cc39b98",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p1\\instruction_access\\program.hex": "d6a2b6faa7d4ffd4a5623bea7350834e3b89b23449a5850f7fb01620932927f0"
+    }
+  },
+  {
+    "name": "fault-final-s0-p1-load_access",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=2"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p1\\load_access",
+    "rc": 0,
+    "seconds": 0.14000000013038516,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp": "4a523ea73427948e0c8509b83f912d25a77c77ea17c38dc2bdcdb0684cc39b98",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p1\\load_access\\program.hex": "bf3ebc6ea411fe36704f2f433f68a49f67b3505f5cdc0273e3b66a39b74cbc08"
+    }
+  },
+  {
+    "name": "fault-final-s0-p1-store_access",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=2"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p1\\store_access",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp": "4a523ea73427948e0c8509b83f912d25a77c77ea17c38dc2bdcdb0684cc39b98",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p1\\store_access\\program.hex": "333ee967b1a842de1e01c0dde3aa7013f06cf10c9fc829127fcfd9f8f8757302"
+    }
+  },
+  {
+    "name": "fault-final-s0-p1-readonly_csr",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=0"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p1\\readonly_csr",
+    "rc": 0,
+    "seconds": 0.1410000000614673,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp": "4a523ea73427948e0c8509b83f912d25a77c77ea17c38dc2bdcdb0684cc39b98",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p1\\readonly_csr\\program.hex": "391a594661d8462961cdff830e1f606f505029969b1b6e9b072d2a16472cb81f"
+    }
+  },
+  {
+    "name": "fault-final-s0-p1-unknown_csr",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=0"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p1\\unknown_csr",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp": "4a523ea73427948e0c8509b83f912d25a77c77ea17c38dc2bdcdb0684cc39b98",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p1\\unknown_csr\\program.hex": "02110980f51097fb7323a133ed984bec8f80b8977a30054997cc3d347c236590"
+    }
+  },
+  {
+    "name": "fault-final-s0-p1-illegal_multiply",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=0"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p1\\illegal_multiply",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s0-p1.vvp": "4a523ea73427948e0c8509b83f912d25a77c77ea17c38dc2bdcdb0684cc39b98",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s0-p1\\illegal_multiply\\program.hex": "59d89f07808d25f6c05fcc4d07b5c54afef628104979741d4e02005c7d07fce1"
+    }
+  },
+  {
+    "name": "compile-fault-final-s1-p0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb",
+      "-Ptb.PRED=0",
+      "-Ptb.SYNC=1",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-tb.sv"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.1720000000204891,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v": "aa5a84c0028f37d0d3719a8f0829d593d9dcfae456e5c08f6229b1942f8442ef",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-tb.sv": "37817a66838591c141f03076c29f97be3b74641eade756b24fb1deea0d7727ba"
+    }
+  },
+  {
+    "name": "fault-final-s1-p0-instruction_access",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=1"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p0\\instruction_access",
+    "rc": 0,
+    "seconds": 0.15600000019185245,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp": "899602acc22d4f6e93d7d9f9207ad590a613393580b73539fda98164bc12c296",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p0\\instruction_access\\program.hex": "d6a2b6faa7d4ffd4a5623bea7350834e3b89b23449a5850f7fb01620932927f0"
+    }
+  },
+  {
+    "name": "fault-final-s1-p0-load_access",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=2"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p0\\load_access",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp": "899602acc22d4f6e93d7d9f9207ad590a613393580b73539fda98164bc12c296",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p0\\load_access\\program.hex": "bf3ebc6ea411fe36704f2f433f68a49f67b3505f5cdc0273e3b66a39b74cbc08"
+    }
+  },
+  {
+    "name": "fault-final-s1-p0-store_access",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=2"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p0\\store_access",
+    "rc": 0,
+    "seconds": 0.1559999999590218,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp": "899602acc22d4f6e93d7d9f9207ad590a613393580b73539fda98164bc12c296",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p0\\store_access\\program.hex": "333ee967b1a842de1e01c0dde3aa7013f06cf10c9fc829127fcfd9f8f8757302"
+    }
+  },
+  {
+    "name": "fault-final-s1-p0-readonly_csr",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=0"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p0\\readonly_csr",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp": "899602acc22d4f6e93d7d9f9207ad590a613393580b73539fda98164bc12c296",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p0\\readonly_csr\\program.hex": "391a594661d8462961cdff830e1f606f505029969b1b6e9b072d2a16472cb81f"
+    }
+  },
+  {
+    "name": "fault-final-s1-p0-unknown_csr",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=0"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p0\\unknown_csr",
+    "rc": 0,
+    "seconds": 0.14000000013038516,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp": "899602acc22d4f6e93d7d9f9207ad590a613393580b73539fda98164bc12c296",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p0\\unknown_csr\\program.hex": "02110980f51097fb7323a133ed984bec8f80b8977a30054997cc3d347c236590"
+    }
+  },
+  {
+    "name": "fault-final-s1-p0-illegal_multiply",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=0"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p0\\illegal_multiply",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p0.vvp": "899602acc22d4f6e93d7d9f9207ad590a613393580b73539fda98164bc12c296",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p0\\illegal_multiply\\program.hex": "59d89f07808d25f6c05fcc4d07b5c54afef628104979741d4e02005c7d07fce1"
+    }
+  },
+  {
+    "name": "compile-fault-final-s1-p1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb",
+      "-Ptb.PRED=1",
+      "-Ptb.SYNC=1",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-tb.sv"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.1559999999590218,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v": "aa5a84c0028f37d0d3719a8f0829d593d9dcfae456e5c08f6229b1942f8442ef",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-tb.sv": "37817a66838591c141f03076c29f97be3b74641eade756b24fb1deea0d7727ba"
+    }
+  },
+  {
+    "name": "fault-final-s1-p1-instruction_access",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=1"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p1\\instruction_access",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp": "641941c1f27b08f20fe03a18241789b084cc02ad53c2622c4e8f5940adbb55ff",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p1\\instruction_access\\program.hex": "d6a2b6faa7d4ffd4a5623bea7350834e3b89b23449a5850f7fb01620932927f0"
+    }
+  },
+  {
+    "name": "fault-final-s1-p1-load_access",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=2"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p1\\load_access",
+    "rc": 0,
+    "seconds": 0.1410000000614673,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp": "641941c1f27b08f20fe03a18241789b084cc02ad53c2622c4e8f5940adbb55ff",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p1\\load_access\\program.hex": "bf3ebc6ea411fe36704f2f433f68a49f67b3505f5cdc0273e3b66a39b74cbc08"
+    }
+  },
+  {
+    "name": "fault-final-s1-p1-store_access",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=2"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p1\\store_access",
+    "rc": 0,
+    "seconds": 0.13999999989755452,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp": "641941c1f27b08f20fe03a18241789b084cc02ad53c2622c4e8f5940adbb55ff",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p1\\store_access\\program.hex": "333ee967b1a842de1e01c0dde3aa7013f06cf10c9fc829127fcfd9f8f8757302"
+    }
+  },
+  {
+    "name": "fault-final-s1-p1-readonly_csr",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=0"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p1\\readonly_csr",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp": "641941c1f27b08f20fe03a18241789b084cc02ad53c2622c4e8f5940adbb55ff",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p1\\readonly_csr\\program.hex": "391a594661d8462961cdff830e1f606f505029969b1b6e9b072d2a16472cb81f"
+    }
+  },
+  {
+    "name": "fault-final-s1-p1-unknown_csr",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=0"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p1\\unknown_csr",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp": "641941c1f27b08f20fe03a18241789b084cc02ad53c2622c4e8f5940adbb55ff",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p1\\unknown_csr\\program.hex": "02110980f51097fb7323a133ed984bec8f80b8977a30054997cc3d347c236590"
+    }
+  },
+  {
+    "name": "fault-final-s1-p1-illegal_multiply",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp",
+      "+IRQ=0",
+      "+IRQ_AT=1",
+      "+FAULT=0"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p1\\illegal_multiply",
+    "rc": 0,
+    "seconds": 0.125,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-final-s1-p1.vvp": "641941c1f27b08f20fe03a18241789b084cc02ad53c2622c4e8f5940adbb55ff",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-final-s1-p1\\illegal_multiply\\program.hex": "59d89f07808d25f6c05fcc4d07b5c54afef628104979741d4e02005c7d07fce1"
+    }
+  },
+  {
+    "name": "compile-timed-p0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb",
+      "-Ptb.PRED=0",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\timed-p0.vvp",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\tb-timed.sv"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.1869999999180436,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v": "aa5a84c0028f37d0d3719a8f0829d593d9dcfae456e5c08f6229b1942f8442ef",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\tb-timed.sv": "ac84c05c1488cfc3f742d0fc58e79c7ff5035c8a77581fc92a510be0ea1a571f"
+    }
+  },
+  {
+    "name": "timed-p0-performance",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\timed-p0.vvp",
+      "+PHASE=10800"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\timed-p0\\performance",
+    "rc": 0,
+    "seconds": 109.18800000008196,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\timed-p0.vvp": "ad79e3e202ec3503580b99714609e3104e4e0616ca98d38a4273788d6cf54ab7",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\timed-p0\\performance\\program.hex": "0c3289d3aa4a1a7d73a116a78c23c2ab95acc76084d2c28d056cfdbc3071e097"
+    }
+  },
+  {
+    "name": "timed-p0-validation",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\timed-p0.vvp",
+      "+PHASE=10808"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\timed-p0\\validation",
+    "rc": 0,
+    "seconds": 112.89100000006147,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\timed-p0.vvp": "ad79e3e202ec3503580b99714609e3104e4e0616ca98d38a4273788d6cf54ab7",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\timed-p0\\validation\\program.hex": "eb065861e6673df05d3d443916d6947b7ce2183ba1e5d21ac56331582a7ffe46"
+    }
+  },
+  {
+    "name": "compile-timed-p1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb",
+      "-Ptb.PRED=1",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\timed-p1.vvp",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\tb-timed.sv"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5",
+    "rc": 0,
+    "seconds": 0.14000000013038516,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v": "aa5a84c0028f37d0d3719a8f0829d593d9dcfae456e5c08f6229b1942f8442ef",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\tb-timed.sv": "ac84c05c1488cfc3f742d0fc58e79c7ff5035c8a77581fc92a510be0ea1a571f"
+    }
+  },
+  {
+    "name": "timed-p1-performance",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\timed-p1.vvp",
+      "+PHASE=10800"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\timed-p1\\performance",
+    "rc": 0,
+    "seconds": 88.54700000002049,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\timed-p1.vvp": "7ae3a4e961c70cbb25902799dca382bdbd6fc9c381dea2d146e273fed30b781d",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\timed-p1\\performance\\program.hex": "0c3289d3aa4a1a7d73a116a78c23c2ab95acc76084d2c28d056cfdbc3071e097"
+    }
+  },
+  {
+    "name": "timed-p1-validation",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\timed-p1.vvp",
+      "+PHASE=10808"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\timed-p1\\validation",
+    "rc": 0,
+    "seconds": 98.15600000019185,
+    "remaining_before_close": [],
+    "input_sha256": {
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\timed-p1.vvp": "7ae3a4e961c70cbb25902799dca382bdbd6fc9c381dea2d146e273fed30b781d",
+      "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\timed-p1\\validation\\program.hex": "eb065861e6673df05d3d443916d6947b7ce2183ba1e5d21ac56331582a7ffe46"
+    }
+  }
+]

@@ -1,0 +1,9 @@
+D:\A_FPGA_Comp\work\advanced\2026-11-03-btb-mmode-m1\source\control.v:1: warning: timescale for control inherited from another file.
+D:\A_FPGA_Comp\work\advanced\2026-11-03-btb-mmode-m1\source\btb.v:1: ...: The inherited timescale is here.
+D:\A_FPGA_Comp\work\advanced\2026-11-03-btb-mmode-m1\source\regfile.v:1: warning: timescale for regfile inherited from another file.
+D:\A_FPGA_Comp\work\advanced\2026-11-03-btb-mmode-m1\source\pmp.v:1: ...: The inherited timescale is here.
+warning: Some design elements have no explicit time unit and/or
+       : time precision. This may cause confusing timing results.
+       : Affected design elements are:
+       :   -- module alu declared here: D:\A_FPGA_Comp\work\advanced\2026-11-03-btb-mmode-m1\source\alu.v:1
+D:\A_FPGA_Comp\work\advanced\2026-11-03-btb-mmode-m1\tb.sv:6: warning: @* is sensitive to all 256 words in array 'rom'.

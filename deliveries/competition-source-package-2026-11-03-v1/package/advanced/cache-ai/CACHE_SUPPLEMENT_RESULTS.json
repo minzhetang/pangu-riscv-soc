@@ -1,0 +1,50 @@
+[
+  {
+    "key": "0_lanes_0",
+    "delay": 0,
+    "requests": 65,
+    "cycles": 591,
+    "hits": 16,
+    "transactions": 47,
+    "bytes": 336,
+    "mmio": 0,
+    "eligible_reads": 33,
+    "status": "PASS"
+  },
+  {
+    "key": "0_lanes_0",
+    "delay": 3,
+    "requests": 65,
+    "cycles": 885,
+    "hits": 16,
+    "transactions": 47,
+    "bytes": 336,
+    "mmio": 0,
+    "eligible_reads": 33,
+    "status": "PASS"
+  },
+  {
+    "key": "0_lanes_1",
+    "delay": 0,
+    "requests": 65,
+    "cycles": 519,
+    "hits": 0,
+    "transactions": 63,
+    "bytes": 196,
+    "mmio": 0,
+    "eligible_reads": 0,
+    "status": "PASS"
+  },
+  {
+    "key": "0_lanes_1",
+    "delay": 3,
+    "requests": 65,
+    "cycles": 706,
+    "hits": 0,
+    "transactions": 63,
+    "bytes": 196,
+    "mmio": 0,
+    "eligible_reads": 0,
+    "status": "PASS"
+  }
+]

@@ -1,0 +1,212 @@
+{
+  "summary": {
+    "new_pass": 24,
+    "new_total": 24,
+    "m1_before_pass": 4,
+    "m1_before_fail": 20,
+    "original_pass": 0,
+    "original_fail": 16,
+    "regression_pass": 84,
+    "regression_total": 84,
+    "hardware": "NOT_RUN",
+    "pds": "NOT_RUN",
+    "full_task2": false
+  },
+  "waves": [
+    {
+      "run": "before-v2-s0-p1",
+      "case": "jal_ifmiss",
+      "cycle": 26,
+      "phase": "before_rising_edge",
+      "time_ps": 304999,
+      "expected": {
+        "id_pc": 4088,
+        "id_valid": 1,
+        "stall_all": 1,
+        "i_hit": 0,
+        "redirect": 1
+      },
+      "actual": {
+        "id_pc": 4088,
+        "id_valid": 1,
+        "stall_all": 1,
+        "i_hit": 0,
+        "redirect": 1
+      },
+      "pass_": true
+    },
+    {
+      "run": "before-v2-s0-p1",
+      "case": "jal_ifmiss",
+      "cycle": 26,
+      "phase": "after_rising_edge_1ps",
+      "time_ps": 305001,
+      "expected": {
+        "id_valid": 0
+      },
+      "actual": {
+        "id_valid": 0
+      },
+      "pass_": true
+    },
+    {
+      "run": "after-v2-s0-p1",
+      "case": "jal_ifmiss",
+      "cycle": 26,
+      "phase": "before_rising_edge",
+      "time_ps": 304999,
+      "expected": {
+        "id_pc": 4088,
+        "id_valid": 1,
+        "stall_all": 1,
+        "i_hit": 0,
+        "redirect": 0
+      },
+      "actual": {
+        "id_pc": 4088,
+        "id_valid": 1,
+        "stall_all": 1,
+        "i_hit": 0,
+        "redirect": 0
+      },
+      "pass_": true
+    },
+    {
+      "run": "after-v2-s0-p1",
+      "case": "jal_ifmiss",
+      "cycle": 26,
+      "phase": "after_rising_edge_1ps",
+      "time_ps": 305001,
+      "expected": {
+        "id_pc": 4088,
+        "id_valid": 1
+      },
+      "actual": {
+        "id_pc": 4088,
+        "id_valid": 1
+      },
+      "pass_": true
+    },
+    {
+      "run": "after-v2-s0-p1",
+      "case": "jal_ifmiss",
+      "cycle": 30,
+      "phase": "before_rising_edge",
+      "time_ps": 344999,
+      "expected": {
+        "id_pc": 4088,
+        "stall_all": 0,
+        "redirect": 1,
+        "ex_alu_result_final": 4092
+      },
+      "actual": {
+        "id_pc": 4088,
+        "stall_all": 0,
+        "redirect": 1,
+        "ex_alu_result_final": 4092
+      },
+      "pass_": true
+    },
+    {
+      "run": "after-v2-s0-p1",
+      "case": "jal_ifmiss",
+      "cycle": 30,
+      "phase": "after_rising_edge_1ps",
+      "time_ps": 345001,
+      "expected": {
+        "ex_rd": 5,
+        "ex_reg_write": 1,
+        "ex_alu_result": 4092
+      },
+      "actual": {
+        "ex_rd": 5,
+        "ex_reg_write": 1,
+        "ex_alu_result": 4092
+      },
+      "pass_": true
+    },
+    {
+      "run": "after-trap-s0-p1",
+      "case": "misaligned_jump_ifmiss",
+      "cycle": 26,
+      "phase": "before_rising_edge",
+      "time_ps": 304999,
+      "expected": {
+        "stall_all": 1,
+        "ex_exception": 1,
+        "trap_valid": 0,
+        "redirect": 0,
+        "id_valid": 1
+      },
+      "actual": {
+        "stall_all": 1,
+        "ex_exception": 1,
+        "trap_valid": 0,
+        "redirect": 0,
+        "id_valid": 1
+      },
+      "pass_": true
+    },
+    {
+      "run": "after-trap-s0-p1",
+      "case": "misaligned_jump_ifmiss",
+      "cycle": 30,
+      "phase": "before_rising_edge",
+      "time_ps": 344999,
+      "expected": {
+        "stall_all": 0,
+        "ex_exception": 1,
+        "trap_valid": 1,
+        "trap_epc": 4088,
+        "trap_tval": 4090
+      },
+      "actual": {
+        "stall_all": 0,
+        "ex_exception": 1,
+        "trap_valid": 1,
+        "trap_epc": 4088,
+        "trap_tval": 4090
+      },
+      "pass_": true
+    }
+  ],
+  "controls": [
+    {
+      "name": "drop_link",
+      "rejected": true
+    },
+    {
+      "name": "duplicate_link",
+      "rejected": true
+    },
+    {
+      "name": "duplicate_training",
+      "rejected": true
+    },
+    {
+      "name": "stall_training",
+      "rejected": true
+    },
+    {
+      "name": "drop_resolve",
+      "rejected": true
+    },
+    {
+      "name": "lost_ifmiss_evidence",
+      "rejected": true
+    },
+    {
+      "name": "wrong_path_store",
+      "rejected": true
+    },
+    {
+      "name": "truncated",
+      "rejected": true
+    },
+    {
+      "name": "unknown",
+      "rejected": true
+    }
+  ],
+  "pass_": true
+}

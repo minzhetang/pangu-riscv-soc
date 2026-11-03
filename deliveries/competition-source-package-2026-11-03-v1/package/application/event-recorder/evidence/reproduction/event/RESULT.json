@@ -1,0 +1,9 @@
+{
+  "status": "BINARY_IDENTICAL",
+  "SHA256": "CBB37E60674713CCFBB0E603BA774ECB82E2460FA7D2DD2707AF34D4175E3D30",
+  "bytes": 1836,
+  "golden_profile": "production0-r1",
+  "identical": true,
+  "FPGA_ROM_updated": false,
+  "DUT_run": false
+}

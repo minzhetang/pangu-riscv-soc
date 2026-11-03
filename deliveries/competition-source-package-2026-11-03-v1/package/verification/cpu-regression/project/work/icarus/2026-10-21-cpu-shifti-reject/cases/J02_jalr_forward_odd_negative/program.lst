@@ -1,0 +1,8 @@
+0000: 01000093  addi x1,x0,16
+0004: 01d00093  addi x1,x0,29 ; newest producer
+0008: ffc082e7  jalr x5,-4(x1) ; (29-4)&~1=24, link12
+000c: 00002023  sw x0,0(x0) ; wrong path
+0010: 06300113  addi x2,x0,99 ; wrong path
+0014: 05800193  addi x3,x0,88 ; wrong path
+0018: 00128313  addi x6,x5,1 ; target-first consumes link
+001c: 05a00f93  addi x31,x0,90 ; completion

@@ -1,0 +1,58 @@
+{
+  "status": "PENDING_USER_CONFIRMATION_NOT_EXECUTED",
+  "scope": "exactly one non-admin outside-sandbox compiler invocation, no outside-sandbox simulation",
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+    "-B",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "-g2012",
+    "-Wall",
+    "-s",
+    "tb_c_boot",
+    "-o",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\external-compile-01\\c_boot.vvp",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\alu.v",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\control.v",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\regfile.v",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\cpu.v",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\memory_model.sv",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\tb_c_boot.sv"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1",
+  "timeout_seconds": 60,
+  "outputs": "fresh external-compile-01 only; preserve runs/c_boot.vvp from failed ordinary compile",
+  "input_SHA256": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "bytes": 1021
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "bytes": 2988
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\cpu.v",
+      "sha256": "555CB51AC20FFC439B61BB29D4F4D9F4DC02C38B54A37291A79519CD413B8114",
+      "bytes": 16582
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "bytes": 666
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\tb_c_boot.sv",
+      "sha256": "891CA3B224D01D5AA6587E7B9342ABF240A9C25007BAF8AA21161EAF11CD77E3",
+      "bytes": 3833
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\memory_model.sv",
+      "sha256": "ECAC647F8D6CD1CE2B55D60023E57E11C8B0B04E88926F35522170ED8857DF0C",
+      "bytes": 1457
+    }
+  ],
+  "compiler_SHA256": "25E1BA02E72F58D9D484BC5457D69A6B179D22D86BDF5BA5D6F9F0D4FE620BBF",
+  "conditions": "verify fixed inputs, record actual native exit and warnings; no blind retry; only successful fresh VVP may enter already-authorized ordinary simulation"
+}

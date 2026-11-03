@@ -1,0 +1,92 @@
+
+Discarded input sections
+
+ .comment       0x00000000       0x34 C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccqUs8qr.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccqUs8qr.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x00000000         0x00008000         xr
+RAM              0x00010000         0x00008000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x00000000      0x850
+ *(.text.start)
+ .text.start    0x00000000       0x70 C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccw7aJSV.o
+                0x00000000                _start
+ *(.text .text.*)
+ .text          0x00000070        0x0 C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccw7aJSV.o
+ .text          0x00000070      0x158 C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccqUs8qr.o
+ .text.startup  0x000001c8      0x688 C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccqUs8qr.o
+                0x000001c8                main
+                0x00000850                        . = ALIGN (0x4)
+
+.rodata         0x00000850       0x24
+ *(.rodata .rodata.*)
+ .rodata.str1.4
+                0x00000850       0x21 C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccqUs8qr.o
+                0x00000874                        . = ALIGN (0x4)
+ *fill*         0x00000871        0x3 
+
+.rela.dyn       0x00000874        0x0
+ .rela.text.start
+                0x00000874        0x0 C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccw7aJSV.o
+
+.data           0x00010000        0x0 load address 0x00000874
+                0x00010000                        __data_start = .
+ *(.sdata .sdata.*)
+ *(.data .data.*)
+ .data          0x00010000        0x0 C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccw7aJSV.o
+ .data          0x00010000        0x0 C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccqUs8qr.o
+                0x00010000                        . = ALIGN (0x4)
+                0x00010000                        __data_end = .
+                0x00000874                        __data_load = LOADADDR (.data)
+                0x00010800                        __global_pointer$ = (ORIGIN (RAM) + 0x800)
+
+.bss            0x00010000      0x4c4 load address 0x00000874
+                0x00010000                        __bss_start = .
+ *(.sbss .sbss.*)
+ *(.bss .bss.*)
+ .bss           0x00010000        0x0 C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccw7aJSV.o
+ .bss           0x00010000      0x4c4 C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccqUs8qr.o
+                0x00010000                head
+                0x00010004                events
+                0x00010084                count
+                0x00010088                evicted
+                0x0001008c                fault
+                0x00010090                post
+                0x00010094                frozen
+                0x00010098                start_tick
+                0x0001009c                late
+                0x000100a0                rejected
+                0x000100a8                done_samples
+                0x000100b8                raw
+                0x000104b8                work_ticks
+                0x000104bc                end_tick
+                0x000104c0                complete
+ *(COMMON)
+                0x000104c4                        . = ALIGN (0x4)
+                0x000104c4                        __bss_end = .
+                0x00018000                        __stack_top = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00016000                        __stack_bottom = (__stack_top - 0x2000)
+                0x00000001                        ASSERT ((__bss_end <= __stack_bottom), program RAM overlaps reserved 8K stack)
+                0x00000001                        ASSERT (((LOADADDR (.data) + SIZEOF (.data)) <= (ORIGIN (ROM) + LENGTH (ROM))), ROM overflow)
+
+/DISCARD/
+ *(.comment)
+ *(.note.GNU-stack)
+LOAD C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccw7aJSV.o
+LOAD C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccqUs8qr.o
+OUTPUT(D:\A_FPGA_Comp\work\application\2026-11-03-event-recorder-m2\build\production1-r1\program.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x1c
+ .riscv.attributes
+                0x00000000       0x1a C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccw7aJSV.o
+ .riscv.attributes
+                0x0000001a       0x1c C:\Users\ANON_USER\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{4050324b-fa7f-4c91-a00e-bd1c3b778c2c}\Temp\ccqUs8qr.o

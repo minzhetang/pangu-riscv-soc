@@ -1,0 +1,20 @@
+{
+  "name": "final-r32-m1-r2-sync-p1-store_misaligned",
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+    "-M",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\final-r32-m1-r2-sync-p1.vvp",
+    "+IRQ=0",
+    "+REFRESH=0",
+    "+IRQ_AT=80"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\final-r32-m1-r2-sync-p1\\store_misaligned",
+  "rc": 0,
+  "seconds": 0.125,
+  "remaining_before_close": [],
+  "input_sha256": {
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\final-r32-m1-r2-sync-p1.vvp": "be1faba0f0fc9e712796280981edc092476f2ee8b9fd0eae499e99918f0e3433",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\final-r32-m1-r2-sync-p1\\store_misaligned\\program.hex": "35130f8064194d3e231acaadaa535a6f2c86b0ee6e9c61bfc44a3a1c3d8e50fb"
+  }
+}

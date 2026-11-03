@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "C:\\Users\\ANON_USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\pipeline_controls.py"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1",
+  "returncode": 0,
+  "returncode_hex": "0x00000000",
+  "timed_out": false,
+  "cap": false,
+  "error": null,
+  "termination": "PROCESS_EXIT",
+  "peak_working_set_bytes": 257560576,
+  "elapsed_seconds": 239.11,
+  "timeout_seconds": 600,
+  "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\pipeline-controls\\stdout.log",
+  "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\pipeline-controls\\stderr.log"
+}

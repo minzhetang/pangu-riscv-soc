@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "repeats": [
+    {
+      "done_samples": 17,
+      "fault": 3,
+      "late": 1,
+      "event": [
+        2315,
+        17,
+        0,
+        3
+      ]
+    },
+    {
+      "done_samples": 17,
+      "fault": 3,
+      "late": 1,
+      "event": [
+        2315,
+        17,
+        0,
+        3
+      ]
+    }
+  ],
+  "ordinary_CPU_execution": true,
+  "new_hardware": false
+}

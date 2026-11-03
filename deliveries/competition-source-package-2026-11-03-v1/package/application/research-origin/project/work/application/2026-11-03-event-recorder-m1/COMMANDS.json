@@ -1,0 +1,304 @@
+[
+  {
+    "name": "gcc0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-O2",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-msmall-data-limit=0",
+      "-mno-relax",
+      "-nostdlib",
+      "-nostartfiles",
+      "-Wl,--no-relax",
+      "-Wl,-T,firmware/link.ld",
+      "-DDENSE=0",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\program0.elf",
+      "firmware/start.S",
+      "firmware/app.c"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1",
+    "rc": 0,
+    "seconds": 0.26500000013038516,
+    "reused_prior_execution": true
+  },
+  {
+    "name": "objcopy0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+      "-O",
+      "binary",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\program0.elf",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\program0.bin"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1",
+    "rc": 0,
+    "seconds": 0.015999999828636646,
+    "reused_prior_execution": true
+  },
+  {
+    "name": "nm0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\program0.elf"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1",
+    "rc": 0,
+    "seconds": 0.01600000006146729,
+    "reused_prior_execution": true
+  },
+  {
+    "name": "compile0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-s",
+      "tb",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\alu.v",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\control.v",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\cpu.v",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\cycle_counter64.sv",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\gpio_core.v",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\local_regif_txgpio_m1.v",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\regfile.v",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\soc_data_adapter.sv",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\soc_top.sv",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\uart_tx.v",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\memory_sim.sv",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\tb.sv"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1",
+    "rc": 0,
+    "seconds": 0.0779999999795109,
+    "reused_prior_execution": true
+  },
+  {
+    "name": "run-normal-0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\normal-dense0",
+    "rc": 0,
+    "seconds": 10.702999999979511,
+    "reused_prior_execution": true
+  },
+  {
+    "name": "run-order_post-0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\order_post-dense0",
+    "rc": 0,
+    "seconds": 10.405999999959022,
+    "reused_prior_execution": true
+  },
+  {
+    "name": "run-timeout-0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\timeout-dense0",
+    "rc": 0,
+    "seconds": 10.609999999869615,
+    "reused_prior_execution": true
+  },
+  {
+    "name": "run-bounce_reject-0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\bounce_reject-dense0",
+    "rc": 0,
+    "seconds": 10.094000000040978,
+    "reused_prior_execution": true
+  },
+  {
+    "name": "run-bounce_boundary-0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\bounce_boundary-dense0",
+    "rc": 0,
+    "seconds": 10.718000000109896,
+    "reused_prior_execution": true
+  },
+  {
+    "name": "run-ring_wrap-0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\ring_wrap-dense0",
+    "rc": 0,
+    "seconds": 11.171000000089407,
+    "reused_prior_execution": true
+  },
+  {
+    "name": "run-wrap_fault_window-0",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\wrap_fault_window-dense0",
+    "rc": 0,
+    "seconds": 12.922000000020489
+  },
+  {
+    "name": "gcc1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-O2",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-msmall-data-limit=0",
+      "-mno-relax",
+      "-nostdlib",
+      "-nostartfiles",
+      "-Wl,--no-relax",
+      "-Wl,-T,firmware/link.ld",
+      "-DDENSE=1",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\program1.elf",
+      "firmware/start.S",
+      "firmware/app.c"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1",
+    "rc": 0,
+    "seconds": 0.31299999984912574
+  },
+  {
+    "name": "objcopy1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+      "-O",
+      "binary",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\program1.elf",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\program1.bin"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1",
+    "rc": 0,
+    "seconds": 0.01600000006146729
+  },
+  {
+    "name": "nm1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\program1.elf"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1",
+    "rc": 0,
+    "seconds": 0.014999999897554517
+  },
+  {
+    "name": "run-normal-1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\normal-dense1",
+    "rc": 0,
+    "seconds": 14.125
+  },
+  {
+    "name": "run-order_post-1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\order_post-dense1",
+    "rc": 0,
+    "seconds": 13.031000000191852
+  },
+  {
+    "name": "run-timeout-1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\timeout-dense1",
+    "rc": 0,
+    "seconds": 12.891000000061467
+  },
+  {
+    "name": "run-bounce_reject-1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\bounce_reject-dense1",
+    "rc": 0,
+    "seconds": 12.639999999897555
+  },
+  {
+    "name": "run-bounce_boundary-1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\bounce_boundary-dense1",
+    "rc": 0,
+    "seconds": 13.452999999979511
+  },
+  {
+    "name": "run-ring_wrap-1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\ring_wrap-dense1",
+    "rc": 0,
+    "seconds": 13.562000000150874
+  },
+  {
+    "name": "run-wrap_fault_window-1",
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-M",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\wrap_fault_window-dense1",
+    "rc": 0,
+    "seconds": 13.452999999979511
+  }
+]

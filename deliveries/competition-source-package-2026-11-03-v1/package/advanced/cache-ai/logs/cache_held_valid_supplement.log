@@ -1,0 +1,4 @@
+VCD info: dumpfile cache_held.vcd opened for output.
+HELD_VALID_PASS
+PASS cache
+cache_tb.sv:105: $finish called at 580000 (1ps)

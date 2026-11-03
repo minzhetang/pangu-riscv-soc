@@ -1,0 +1,8 @@
+0000: fff02093  slti x1,x0,-1 ;0
+0004: ffe00113  addi x2,x0,-2
+0008: fff12193  slti x3,x2,-1 ;1
+000c: ffe12213  slti x4,x2,-2 ;0 equal
+0010: 00012293  slti x5,x2,0 ;1
+0014: 80002313  slti x6,x0,-2048 ;0
+0018: 7ff02393  slti x7,x0,2047 ;1
+001c: 05a00f93  addi x31,x0,90 ; completion

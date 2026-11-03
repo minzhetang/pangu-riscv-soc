@@ -1,0 +1,8 @@
+{
+  "changed_parts": [
+    "docProps/core.xml",
+    "docProps/custom.xml"
+  ],
+  "all_layout_parts_identical": true,
+  "reason": "匿名模板；移除本机Office保存者和模板ICV标识；不改变作者归属正文"
+}

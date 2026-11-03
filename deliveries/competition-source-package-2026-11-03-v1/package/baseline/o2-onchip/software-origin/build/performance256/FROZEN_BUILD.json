@@ -1,0 +1,173 @@
+{
+  "case": {
+    "id": "performance256",
+    "seed": "performance",
+    "iterations": 256,
+    "standard_CRC": [
+      59893,
+      59156,
+      8151,
+      36410
+    ],
+    "DUT": false,
+    "expected_short_error": false,
+    "hardware_valid": false
+  },
+  "flags": [
+    "-march=rv32i",
+    "-mabi=ilp32",
+    "-O2",
+    "-ffreestanding",
+    "-fno-builtin",
+    "-fno-common",
+    "-fno-pie",
+    "-fno-stack-protector",
+    "-fno-unwind-tables",
+    "-fno-asynchronous-unwind-tables",
+    "-mno-relax",
+    "-msmall-data-limit=0",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-nostdlib",
+    "-nostartfiles",
+    "-Wl,--no-relax",
+    "-Wl,--build-id=none",
+    "-Wl,-T,firmware/link.ld",
+    "-Wl,-Map,build/performance256/program.map",
+    "-Ifirmware",
+    "-Iport",
+    "-Iupstream",
+    "-Ibuild/performance256",
+    "-DTOTAL_DATA_SIZE=2000",
+    "-DITERATIONS=256",
+    "-DPERFORMANCE_RUN=1"
+  ],
+  "jobs": [
+    {
+      "name": "gcc",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+        "-march=rv32i",
+        "-mabi=ilp32",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-common",
+        "-fno-pie",
+        "-fno-stack-protector",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-mno-relax",
+        "-msmall-data-limit=0",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-nostdlib",
+        "-nostartfiles",
+        "-Wl,--no-relax",
+        "-Wl,--build-id=none",
+        "-Wl,-T,firmware/link.ld",
+        "-Wl,-Map,build/performance256/program.map",
+        "-Ifirmware",
+        "-Iport",
+        "-Iupstream",
+        "-Ibuild/performance256",
+        "-DTOTAL_DATA_SIZE=2000",
+        "-DITERATIONS=256",
+        "-DPERFORMANCE_RUN=1",
+        "-o",
+        "build/performance256/program.elf",
+        "firmware/start.S",
+        "upstream/core_list_join.c",
+        "upstream/core_main.c",
+        "upstream/core_matrix.c",
+        "upstream/core_state.c",
+        "upstream/core_util.c",
+        "port/core_portme.c",
+        "-lgcc"
+      ]
+    },
+    {
+      "name": "objcopy",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "build/performance256/program.elf",
+        "build/performance256/program.bin"
+      ]
+    },
+    {
+      "name": "objdump",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+        "-d",
+        "-M",
+        "no-aliases",
+        "build/performance256/program.elf"
+      ]
+    },
+    {
+      "name": "readelf",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+        "-h",
+        "-A",
+        "-l",
+        "-sW",
+        "build/performance256/program.elf"
+      ]
+    },
+    {
+      "name": "nm",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+        "-u",
+        "build/performance256/program.elf"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "path": "firmware\\start.S",
+      "SHA256": "50D3AD9F9D591DE5007665FF074B21E94812548A9B0972416954E569F6FC9DDC"
+    },
+    {
+      "path": "upstream\\core_list_join.c",
+      "SHA256": "CA00E4E010ECE47D7F040CB92AA50A95345A00D3171B59D088F6B243BE06CE7B"
+    },
+    {
+      "path": "upstream\\core_main.c",
+      "SHA256": "17884C93C5B94378EB0FF02B4DF3725756CF2ADDB9B8CBCAA6200A4649FF5CA7"
+    },
+    {
+      "path": "upstream\\core_matrix.c",
+      "SHA256": "ECDFF717B5A5C4907D221A606760E25499899CBF617582C05D40DB71C91351E4"
+    },
+    {
+      "path": "upstream\\core_state.c",
+      "SHA256": "F4B84BB0A3452C45A4DAA664AB502BFDCCBD31CB57D93E9AC490C60937717A4E"
+    },
+    {
+      "path": "upstream\\core_util.c",
+      "SHA256": "A3FBFCB9BB943B638624B8ECE01C5836DD56A96D7BCDE2697B248D077447327F"
+    },
+    {
+      "path": "port\\core_portme.c",
+      "SHA256": "9601DC2E570AD9E5E99EAE450D1580AFF5D7BC74C94CB0B2406CE360F320E7C5"
+    },
+    {
+      "path": "port\\core_portme.h",
+      "SHA256": "E821E3467B36C78CFAE91F5B4AC072C6F19A364C1205730DA66C56875683E9D3"
+    },
+    {
+      "path": "firmware\\link.ld",
+      "SHA256": "2616CB1A27B60FCBA98C0D5E73267A8E5CAA39FB05AA46A2D6E34B6C99914A6E"
+    },
+    {
+      "path": "build\\performance256\\build_identity.h",
+      "SHA256": "EE8695C6BE2AB676F129FFA01E2C78FE2F409248D0693471C592F0B659E88EFF"
+    }
+  ]
+}

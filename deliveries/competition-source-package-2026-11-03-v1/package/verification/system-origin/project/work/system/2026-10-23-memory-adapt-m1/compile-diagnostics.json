@@ -1,0 +1,100 @@
+{
+  "targets": [
+    {
+      "id": "generic-0",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\memory_model.sv:27: warning: @* is sensitive to all 8192 words in array 'ram'.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\memory_model.sv:28: warning: @* is sensitive to all 8192 words in array 'rom'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "generic-1",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\memory_model.sv:27: warning: @* is sensitive to all 8192 words in array 'ram'.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\memory_model.sv:28: warning: @* is sensitive to all 8192 words in array 'rom'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-base",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_selfcheck_v1.sv:27: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_selfcheck_v1.sv:32: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-lbu",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lbu_selfcheck_v1.sv:29: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lbu_selfcheck_v1.sv:34: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-lb",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lb_selfcheck_v1.sv:29: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lb_selfcheck_v1.sv:34: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-lhu",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lhu_selfcheck_v1.sv:29: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lhu_selfcheck_v1.sv:34: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-lh",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lh_selfcheck_v1.sv:29: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lh_selfcheck_v1.sv:34: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-sb",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_sb_selfcheck_v1.sv:42: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_sb_selfcheck_v1.sv:47: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-sh",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_sh_selfcheck_v1.sv:42: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_sh_selfcheck_v1.sv:47: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-fence",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_fence_selfcheck_v1.sv:104: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_fence_selfcheck_v1.sv:109: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-eei",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_eei_selfcheck_v1.sv:54: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_eei_selfcheck_v1.sv:59: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-zero",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_zero_selfcheck_v1.sv:54: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_zero_selfcheck_v1.sv:59: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-r4",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_r4_selfcheck_v1.sv:54: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_r4_selfcheck_v1.sv:59: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-rcmp",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_rcmp_selfcheck_v1.sv:54: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_rcmp_selfcheck_v1.sv:59: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-addsub",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_addsub_selfcheck_v1.sv:54: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_addsub_selfcheck_v1.sv:59: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    },
+    {
+      "id": "regression-rshift",
+      "warnings": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module alu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\alu.v:1\n       :   -- module control declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\control.v:1\n       :   -- module cpu declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\cpu.v:6\n       :   -- module regfile declared here: D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\source\\regfile.v:1\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_rshift_selfcheck_v1.sv:54: warning: @* is sensitive to all 256 words in array 'imem'.\nD:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_rshift_selfcheck_v1.sv:59: warning: @* is sensitive to all 64 words in array 'dmem'.\n",
+      "warning_lines": 3,
+      "errors": []
+    }
+  ]
+}

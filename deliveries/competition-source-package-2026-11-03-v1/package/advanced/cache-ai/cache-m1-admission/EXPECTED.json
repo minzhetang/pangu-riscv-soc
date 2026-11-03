@@ -1,0 +1,444 @@
+{
+  "0_locality": {
+    "baseline": {
+      "hits": 60,
+      "transactions": 4,
+      "bytes": 64,
+      "eligible_reads": 64,
+      "requests": 64,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 56,
+      "transactions": 8,
+      "bytes": 80,
+      "eligible_reads": 64,
+      "requests": 64,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 64,
+      "bytes": 256,
+      "eligible_reads": 0,
+      "requests": 64,
+      "mmio": 0
+    }
+  },
+  "0_stream": {
+    "baseline": {
+      "hits": 0,
+      "transactions": 32,
+      "bytes": 512,
+      "eligible_reads": 32,
+      "requests": 32,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 0,
+      "transactions": 32,
+      "bytes": 128,
+      "eligible_reads": 32,
+      "requests": 32,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 32,
+      "bytes": 128,
+      "eligible_reads": 0,
+      "requests": 32,
+      "mmio": 0
+    }
+  },
+  "0_conflict": {
+    "baseline": {
+      "hits": 2,
+      "transactions": 5,
+      "bytes": 80,
+      "eligible_reads": 7,
+      "requests": 7,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 0,
+      "transactions": 7,
+      "bytes": 28,
+      "eligible_reads": 7,
+      "requests": 7,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 7,
+      "bytes": 28,
+      "eligible_reads": 0,
+      "requests": 7,
+      "mmio": 0
+    }
+  },
+  "0_protocol": {
+    "baseline": {
+      "hits": 2,
+      "transactions": 5,
+      "bytes": 32,
+      "eligible_reads": 3,
+      "requests": 8,
+      "mmio": 2
+    },
+    "admission": {
+      "hits": 1,
+      "transactions": 6,
+      "bytes": 36,
+      "eligible_reads": 3,
+      "requests": 8,
+      "mmio": 2
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 7,
+      "bytes": 28,
+      "eligible_reads": 0,
+      "requests": 8,
+      "mmio": 2
+    }
+  },
+  "0_bytes": {
+    "baseline": {
+      "hits": 1,
+      "transactions": 20,
+      "bytes": 74,
+      "eligible_reads": 3,
+      "requests": 22,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 0,
+      "transactions": 21,
+      "bytes": 66,
+      "eligible_reads": 3,
+      "requests": 22,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 21,
+      "bytes": 54,
+      "eligible_reads": 0,
+      "requests": 22,
+      "mmio": 0
+    }
+  },
+  "0_mixed": {
+    "baseline": {
+      "hits": 0,
+      "transactions": 96,
+      "bytes": 1086,
+      "eligible_reads": 64,
+      "requests": 96,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 0,
+      "transactions": 96,
+      "bytes": 318,
+      "eligible_reads": 64,
+      "requests": 96,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 96,
+      "bytes": 318,
+      "eligible_reads": 0,
+      "requests": 96,
+      "mmio": 0
+    }
+  },
+  "0_lanes": {
+    "baseline": {
+      "hits": 16,
+      "transactions": 47,
+      "bytes": 336,
+      "eligible_reads": 33,
+      "requests": 65,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 15,
+      "transactions": 48,
+      "bytes": 148,
+      "eligible_reads": 33,
+      "requests": 65,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 63,
+      "bytes": 196,
+      "eligible_reads": 0,
+      "requests": 65,
+      "mmio": 0
+    }
+  },
+  "0_twoword": {
+    "baseline": {
+      "hits": 24,
+      "transactions": 24,
+      "bytes": 384,
+      "eligible_reads": 48,
+      "requests": 48,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 0,
+      "transactions": 48,
+      "bytes": 480,
+      "eligible_reads": 48,
+      "requests": 48,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 48,
+      "bytes": 192,
+      "eligible_reads": 0,
+      "requests": 48,
+      "mmio": 0
+    }
+  },
+  "0_adverse": {
+    "baseline": {
+      "hits": 46,
+      "transactions": 2,
+      "bytes": 32,
+      "eligible_reads": 48,
+      "requests": 48,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 0,
+      "transactions": 48,
+      "bytes": 192,
+      "eligible_reads": 48,
+      "requests": 48,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 48,
+      "bytes": 192,
+      "eligible_reads": 0,
+      "requests": 48,
+      "mmio": 0
+    }
+  },
+  "0_pollution": {
+    "baseline": {
+      "hits": 46,
+      "transactions": 38,
+      "bytes": 608,
+      "eligible_reads": 84,
+      "requests": 84,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 68,
+      "transactions": 16,
+      "bytes": 88,
+      "eligible_reads": 84,
+      "requests": 84,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 84,
+      "bytes": 336,
+      "eligible_reads": 0,
+      "requests": 84,
+      "mmio": 0
+    }
+  },
+  "1_locality": {
+    "baseline": {
+      "hits": 60,
+      "transactions": 4,
+      "bytes": 64,
+      "eligible_reads": 64,
+      "requests": 64,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 56,
+      "transactions": 8,
+      "bytes": 80,
+      "eligible_reads": 64,
+      "requests": 64,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 64,
+      "bytes": 256,
+      "eligible_reads": 0,
+      "requests": 64,
+      "mmio": 0
+    }
+  },
+  "1_stream": {
+    "baseline": {
+      "hits": 0,
+      "transactions": 32,
+      "bytes": 512,
+      "eligible_reads": 32,
+      "requests": 32,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 0,
+      "transactions": 32,
+      "bytes": 128,
+      "eligible_reads": 32,
+      "requests": 32,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 32,
+      "bytes": 128,
+      "eligible_reads": 0,
+      "requests": 32,
+      "mmio": 0
+    }
+  },
+  "1_conflict": {
+    "baseline": {
+      "hits": 2,
+      "transactions": 5,
+      "bytes": 80,
+      "eligible_reads": 7,
+      "requests": 7,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 0,
+      "transactions": 7,
+      "bytes": 28,
+      "eligible_reads": 7,
+      "requests": 7,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 7,
+      "bytes": 28,
+      "eligible_reads": 0,
+      "requests": 7,
+      "mmio": 0
+    }
+  },
+  "1_protocol": {
+    "baseline": {
+      "hits": 2,
+      "transactions": 4,
+      "bytes": 28,
+      "eligible_reads": 3,
+      "requests": 8,
+      "mmio": 2
+    },
+    "admission": {
+      "hits": 1,
+      "transactions": 5,
+      "bytes": 32,
+      "eligible_reads": 3,
+      "requests": 8,
+      "mmio": 2
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 6,
+      "bytes": 24,
+      "eligible_reads": 0,
+      "requests": 8,
+      "mmio": 2
+    }
+  },
+  "1_twoword": {
+    "baseline": {
+      "hits": 24,
+      "transactions": 24,
+      "bytes": 384,
+      "eligible_reads": 48,
+      "requests": 48,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 0,
+      "transactions": 48,
+      "bytes": 480,
+      "eligible_reads": 48,
+      "requests": 48,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 48,
+      "bytes": 192,
+      "eligible_reads": 0,
+      "requests": 48,
+      "mmio": 0
+    }
+  },
+  "1_adverse": {
+    "baseline": {
+      "hits": 46,
+      "transactions": 2,
+      "bytes": 32,
+      "eligible_reads": 48,
+      "requests": 48,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 0,
+      "transactions": 48,
+      "bytes": 192,
+      "eligible_reads": 48,
+      "requests": 48,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 48,
+      "bytes": 192,
+      "eligible_reads": 0,
+      "requests": 48,
+      "mmio": 0
+    }
+  },
+  "1_pollution": {
+    "baseline": {
+      "hits": 46,
+      "transactions": 38,
+      "bytes": 608,
+      "eligible_reads": 84,
+      "requests": 84,
+      "mmio": 0
+    },
+    "admission": {
+      "hits": 68,
+      "transactions": 16,
+      "bytes": 88,
+      "eligible_reads": 84,
+      "requests": 84,
+      "mmio": 0
+    },
+    "bypass": {
+      "hits": 0,
+      "transactions": 84,
+      "bytes": 336,
+      "eligible_reads": 0,
+      "requests": 84,
+      "mmio": 0
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-22",
+  "reference": "F-114/D-101",
+  "phase": "Before compiler execution",
+  "input_a": 1234567,
+  "input_b": 97,
+  "hand_results": [119752999, 12727, 48, 1234664],
+  "proof": "1234567*97=123456700-3703701; 97*12727=1234519; remainder=48; sum=1234664",
+  "success_signature": "0x50524f42",
+  "important": "本阶段只编译/链接与格式验证，不在CPU/FPGA运行，不能把这些手工数值说成实际执行结果。",
+  "linker_layout": "仅独立工具自检；不批准主线SoC/MMIO地址"
+}

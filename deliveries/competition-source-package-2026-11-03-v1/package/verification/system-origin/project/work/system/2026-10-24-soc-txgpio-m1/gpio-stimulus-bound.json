@@ -1,0 +1,17 @@
+{
+  "status": "PASS_SOFTWARE_BOUND_NOT_DUT",
+  "architectural_steps_to_first_GPIO_IN": 170,
+  "first_input_read_pc": 380,
+  "pessimistic_physical_bound": 1392,
+  "GPIO_changes_before_edges": [
+    16,
+    4096
+  ],
+  "assumptions": [
+    "CPU is F130 fixed two-edge mode, no variable waits",
+    "at most one load-use and two flush bubbles per instruction; fixed fill allowance",
+    "no earlier external-dependent IO or interrupt"
+  ],
+  "DUT_runs": 0,
+  "note": "timing plan frozen before DUT; unexpected dynamic behavior must fail, not retime stimulus to fit"
+}

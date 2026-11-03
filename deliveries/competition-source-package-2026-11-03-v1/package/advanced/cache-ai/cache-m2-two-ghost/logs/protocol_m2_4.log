@@ -1,0 +1,4 @@
+VCD info: dumpfile protocol_4.vcd opened for output.
+TWO_GHOST_RESET_PASS
+PASS cache
+cache_tb.sv:139: $finish called at 1190000 (1ps)

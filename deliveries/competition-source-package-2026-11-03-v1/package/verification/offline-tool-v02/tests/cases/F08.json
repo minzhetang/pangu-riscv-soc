@@ -1,0 +1,17 @@
+{
+  "id": "F08",
+  "expected": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "generated/faults/s00_expected.log",
+    "complete": true
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "generated/faults/f08_partial.log",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {}
+}

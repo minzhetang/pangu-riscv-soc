@@ -1,0 +1,17 @@
+{
+  "status": "REJECT_NOT_MATCH",
+  "native_rc": 7,
+  "fully_consumed": false,
+  "checked": 0,
+  "expected_records": 0,
+  "actual_records": 0,
+  "mismatch_count": 0,
+  "differences": [],
+  "guard_errors": [
+    "success/mismatch result not fully consumed",
+    "missing/invalid checked",
+    "missing/invalid expected_records",
+    "missing/invalid actual_records",
+    "MATCH not fully consumed"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "status": "STATIC_CLOSURE_PASS",
+  "copy_entries": 2913,
+  "portable_c_dependencies_present": true,
+  "tools_included": false,
+  "reproduction": "PACKAGE_REPRO.json",
+  "excluded": "Generated VVP and most old large VCD; original history remains in main workspace",
+  "not_full_task2": true
+}

@@ -1,0 +1,4 @@
+0000: 00002093  slti x1,x0,0 ;0
+0004: 00002013  slti x0,x0,0 ;discard0
+0008: 0000a113  slti x2,x1,0 ;0
+000c: 05a00f93  addi x31,x0,90 ; completion

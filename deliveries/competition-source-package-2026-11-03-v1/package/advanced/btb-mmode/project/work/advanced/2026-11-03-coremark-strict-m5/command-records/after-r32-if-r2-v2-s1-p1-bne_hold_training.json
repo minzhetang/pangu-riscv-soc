@@ -1,0 +1,17 @@
+{
+  "name": "after-r32-if-r2-v2-s1-p1-bne_hold_training",
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+    "-M",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\after-r32-if-r2-v2-s1-p1.vvp"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\after-r32-if-r2-v2-s1-p1\\bne_hold_training",
+  "rc": 0,
+  "seconds": 0.14099999982863665,
+  "remaining_before_close": [],
+  "input_sha256": {
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\after-r32-if-r2-v2-s1-p1.vvp": "8db57a246dcdd62fca047cd101f5bca7c6e035a5b2d14cabdd0ff205861b0c8b",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\after-r32-if-r2-v2-s1-p1\\bne_hold_training\\program.hex": "f7c35c6d2d164fd4576d2f18ecd18598a26909cd6a6332ac4abfc0164d0e5a8e"
+  }
+}

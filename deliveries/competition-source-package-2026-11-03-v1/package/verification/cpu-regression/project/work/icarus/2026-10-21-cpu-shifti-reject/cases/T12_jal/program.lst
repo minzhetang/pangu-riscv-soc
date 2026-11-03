@@ -1,0 +1,6 @@
+0000: 010000ef  jal x1,+16
+0004: 00400113  addi x2,x0,4 ; wrong path
+0008: 00800113  addi x2,x0,8 ; wrong path
+000c: 00c00113  addi x2,x0,12 ; wrong path
+0010: 00700193  addi x3,x0,7 ; target
+0014: 05a00f93  addi x31,x0,90 ; completion

@@ -1,0 +1,23 @@
+{
+  "status": "READY_FOR_USER_REVIEW_AND_MANUAL_UPLOAD",
+  "date": "2026-11-03",
+  "archive": "pangu-riscv-soc-all-source-2026-11-03-v1.rar",
+  "archive_format": "RAR5",
+  "archive_bytes": 6053724,
+  "archive_sha256": "2A8B11E52A86D87DC117DAF43451071CF2EF7C10D219E144AE37B74A243882BC",
+  "strict_decimal_size_limit": 200000000,
+  "within_limit": true,
+  "payload_files": 8745,
+  "payload_bytes": 124093673,
+  "archive_member_coverage": "EXACT",
+  "RAR_native_test": "PASS",
+  "extracted_SHA_and_coverage": "PASS_MATERIAL_IDENTITY_ONLY",
+  "manifest_sha256": "C635751191C51E887E2F7F06DCE7E02E2990720BB2F89923D435F14902BA56FE",
+  "tool_sha256": "D72A7BA6DE0A0368FB2188664A01AC459874A0AC7608C14A909BDA881A010748",
+  "compile_runs": 0,
+  "DUT_runs": 0,
+  "PDS_runs": 0,
+  "hardware_calls": 0,
+  "no_upload_Git_commit_or_push": true,
+  "scope": "code/material identity only; no new build or functional acceptance"
+}

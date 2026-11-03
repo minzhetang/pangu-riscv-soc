@@ -1,0 +1,152 @@
+{
+  "files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\port\\core_portme.c",
+      "sha256": "16F8F09C7B8FDE168D9597573153EE2FD78F1CA112A320CBFF5C47A9E39EF6A8"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\port\\core_portme.h",
+      "sha256": "27AC2CC81ECB7A920F88DFDCCF6B01FF29E2964A326FE4055DD433A160540D89"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\core_list_join.c",
+      "sha256": "CA00E4E010ECE47D7F040CB92AA50A95345A00D3171B59D088F6B243BE06CE7B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\core_main.c",
+      "sha256": "17884C93C5B94378EB0FF02B4DF3725756CF2ADDB9B8CBCAA6200A4649FF5CA7"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\core_matrix.c",
+      "sha256": "ECDFF717B5A5C4907D221A606760E25499899CBF617582C05D40DB71C91351E4"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\core_state.c",
+      "sha256": "F4B84BB0A3452C45A4DAA664AB502BFDCCBD31CB57D93E9AC490C60937717A4E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\core_util.c",
+      "sha256": "A3FBFCB9BB943B638624B8ECE01C5836DD56A96D7BCDE2697B248D077447327F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\coremark.h",
+      "sha256": "42642B9A06C7ED2B3BD9EDA971B7C3868C4F5D27BF7EF6C4BBA11291A0C2598A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\soc.bin",
+      "sha256": "90E6FBB6837309313723E3851BD7B58A410E1692A5FEFB84171ABF1CFD2023B6"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\soc.elf",
+      "sha256": "8C31C7C5AD48D37E99B9C4A669B8A2B20604AEA60A0453A215A87C2250DA8ED0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\init_tables.svh",
+      "sha256": "B9BE4F5A86B9E18DCE7B65937DBAA1FD60BFF285B103CBAA5C17839638EBBA08"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\memory_model.sv",
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\soc_data_adapter.sv",
+      "sha256": "5631D65BEEC48409BD959C260392671CC315BCB7A83F9A4D480D0267CF5FC739"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\soc_top.sv",
+      "sha256": "E502EFA2F0260C95CA5615C3FB5D6FF3519A5BAA8DC78A6B5D9359D6C5733ABB"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\tb_soc_txgpio_m1.sv",
+      "sha256": "0BA91F4AC163E52A7EE2EAAE5300C829F18228EFE7D85985F6D2E89493269F92"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\tb_wrapper.sv",
+      "sha256": "ACF2B27DBE487D524F535FC8B2C5AEE25444D2C41ED5D22F0EC65F6E9ACCA5C1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\summary.json",
+      "sha256": "1399DD01D31F57876CE4412F45860186AF85CAC9E61B78E373E251D6F5E41766"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\source\\init_tables.svh",
+      "sha256": "B9BE4F5A86B9E18DCE7B65937DBAA1FD60BFF285B103CBAA5C17839638EBBA08"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\source\\memory_model.sv",
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\source\\soc_data_adapter.sv",
+      "sha256": "5631D65BEEC48409BD959C260392671CC315BCB7A83F9A4D480D0267CF5FC739"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\source\\soc_top.sv",
+      "sha256": "E502EFA2F0260C95CA5615C3FB5D6FF3519A5BAA8DC78A6B5D9359D6C5733ABB"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\tests\\tb_soc_txgpio_m1.sv",
+      "sha256": "0BA91F4AC163E52A7EE2EAAE5300C829F18228EFE7D85985F6D2E89493269F92"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\队员成果接收\\increment-20261024-0030\\work\\regif\\txgpio-m1\\src\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\队员成果接收\\increment-20261024-0030\\work\\regif\\txgpio-m1\\tb\\tb_local_regif_txgpio_m1.sv",
+      "sha256": "ACF2B27DBE487D524F535FC8B2C5AEE25444D2C41ED5D22F0EC65F6E9ACCA5C1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-20261023-1345\\work\\peripherals\\gpio\\src\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-20261023-1345\\work\\peripherals\\src\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    }
+  ]
+}

@@ -1,0 +1,608 @@
+[
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/firmware/app-before-dense-declaration-fix.c",
+    "destination": "firmware/app-before-dense-declaration-fix.c",
+    "bytes": 3235,
+    "SHA256": "B495202DF20A7A3B0B40D108ED8A3D26B5132D9D872C5358FFC0B5C624A1A1E1"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/firmware/app.c",
+    "destination": "firmware/app.c",
+    "bytes": 3194,
+    "SHA256": "460271475F167A684722AF818986C36DFFBA66FA8C5730FA4C3ECF7AD6AECE50"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/firmware/link.ld",
+    "destination": "firmware/link.ld",
+    "bytes": 949,
+    "SHA256": "2616CB1A27B60FCBA98C0D5E73267A8E5CAA39FB05AA46A2D6E34B6C99914A6E"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/firmware/start.S",
+    "destination": "firmware/start.S",
+    "bytes": 675,
+    "SHA256": "50D3AD9F9D591DE5007665FF074B21E94812548A9B0972416954E569F6FC9DDC"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/build/production0-r1/BUILD.json",
+    "destination": "software/production0-r1/BUILD.json",
+    "bytes": 1319,
+    "SHA256": "BF51A7B44A9B19496BA5E71AFA773D528BB59E94778F0A1C6505DC3249DCBFF2"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/build/production0-r1/program.bin",
+    "destination": "software/production0-r1/program.bin",
+    "bytes": 1836,
+    "SHA256": "CBB37E60674713CCFBB0E603BA774ECB82E2460FA7D2DD2707AF34D4175E3D30"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/build/production0-r1/program.elf",
+    "destination": "software/production0-r1/program.elf",
+    "bytes": 9628,
+    "SHA256": "0A7906EBA37CD2D9048088730EF711DD49FEEE6ACDD4D055C16BBAF74E996060"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/build/production0-r1/program.hex",
+    "destination": "software/production0-r1/program.hex",
+    "bytes": 81920,
+    "SHA256": "F38BBE6DECE51CA6BBE5EE7BAE9A9F5589DE8BEA3FACF66045DF613C4A3F6FA7"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/build/production0-r1/program.map",
+    "destination": "software/production0-r1/program.map",
+    "bytes": 5754,
+    "SHA256": "57AA9165C9E869206C946C536F822B9D235471095EC21CD98D03F1C30C98D2F2"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/build/production0-r1/symbols.txt",
+    "destination": "software/production0-r1/symbols.txt",
+    "bytes": 893,
+    "SHA256": "02ACA63E100B2A02117D0322D5401BB1B2A77649BEDCBA39F0060CC0F97D3072"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/build/production1-r1/BUILD.json",
+    "destination": "software/production1-r1/BUILD.json",
+    "bytes": 1367,
+    "SHA256": "BCC03735EFF254EFB6F6C31AD39E67A35C7E29D3247C0E21E7EC97FD4D6D3E76"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/build/production1-r1/program.bin",
+    "destination": "software/production1-r1/program.bin",
+    "bytes": 2164,
+    "SHA256": "CE394C50FF735F55422DFD3BADC6843C130DE7004521F5AE3049EB9BE2DC591C"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/build/production1-r1/program.elf",
+    "destination": "software/production1-r1/program.elf",
+    "bytes": 9648,
+    "SHA256": "654ED3C2241A316D9D34EB2A0112419C88324C619467EE5FCEAB1DC3C3D46747"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/build/production1-r1/program.hex",
+    "destination": "software/production1-r1/program.hex",
+    "bytes": 81920,
+    "SHA256": "436383DF1058E95F8864D1234C22C3D8D664649D2258F1615D18B21D8FFCF60E"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/build/production1-r1/program.map",
+    "destination": "software/production1-r1/program.map",
+    "bytes": 5801,
+    "SHA256": "4E8CA6EFAF9BC4994B3CB5D63E9018109A91D73BD4CB87E4C2879BB84FDD3EB5"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/build/production1-r1/symbols.txt",
+    "destination": "software/production1-r1/symbols.txt",
+    "bytes": 919,
+    "SHA256": "CFFA636AA6D50D896E51CCFFD87EE953D6D3031F963185B7E0FE28DD819D6FA1"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/alu.v",
+    "destination": "fpga/source/alu.v",
+    "bytes": 1021,
+    "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/board_reset_sync.sv",
+    "destination": "fpga/source/board_reset_sync.sv",
+    "bytes": 547,
+    "SHA256": "08624035721B144F80E65E8746CD5FF96C19EFA13A5A3D199479CA1DFFE30EA8"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/board_top.sv",
+    "destination": "fpga/source/board_top.sv",
+    "bytes": 817,
+    "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/control.v",
+    "destination": "fpga/source/control.v",
+    "bytes": 2988,
+    "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/cpu.v",
+    "destination": "fpga/source/cpu.v",
+    "bytes": 18331,
+    "SHA256": "60F02899294C5BEF04E522622E32764A13B910008ADD85A73FE607550F9AF272"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/cycle_counter64.sv",
+    "destination": "fpga/source/cycle_counter64.sv",
+    "bytes": 395,
+    "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/gpio_core.v",
+    "destination": "fpga/source/gpio_core.v",
+    "bytes": 2175,
+    "SHA256": "414C54D1E5F4AD6A662CB217C2519C1AC7BFCB7D740C1C251FB1A43C803A83B4"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/init_tables.svh",
+    "destination": "fpga/source/init_tables.svh",
+    "bytes": 132366,
+    "SHA256": "7C7DDAC901C27DB522202E4956A29B518DBA8319F995E9FC738DA63A7B013FC0"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/local_regif_txgpio_m1.v",
+    "destination": "fpga/source/local_regif_txgpio_m1.v",
+    "bytes": 3732,
+    "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/memory_model.sv",
+    "destination": "fpga/source/memory_model.sv",
+    "bytes": 142235,
+    "SHA256": "7B7D98E51F7040864BDCEE4F71EF73131EF73DE14CDA69AB4B1F659AB145CA37"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v",
+    "destination": "fpga/source/regfile.v",
+    "bytes": 666,
+    "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/soc_data_adapter.sv",
+    "destination": "fpga/source/soc_data_adapter.sv",
+    "bytes": 1526,
+    "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/soc_top.sv",
+    "destination": "fpga/source/soc_top.sv",
+    "bytes": 1872,
+    "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/source/uart_tx.v",
+    "destination": "fpga/source/uart_tx.v",
+    "bytes": 5195,
+    "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/flow.tcl",
+    "destination": "fpga/flow.tcl",
+    "bytes": 1210,
+    "SHA256": "A25654043E6ED5E79F91B3F013D2DDE4E2109AA0E980DFBA1254C3C20890A150"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/board_pins.fdc",
+    "destination": "fpga/board_pins.fdc",
+    "bytes": 4863,
+    "SHA256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/clock_27mhz.fdc",
+    "destination": "fpga/clock_27mhz.fdc",
+    "bytes": 101,
+    "SHA256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/closure_io.fdc",
+    "destination": "fpga/closure_io.fdc",
+    "bytes": 681,
+    "SHA256": "BB6211BD447E9DC4ABB90C1258E1EF3A0A22A0D5B78DB2285F61FC9AE9CFB3A6"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/AUDIT_RESULT_v2.json",
+    "destination": "evidence/implementation/AUDIT_RESULT_v2.json",
+    "bytes": 14554,
+    "SHA256": "471C14B025652395F6F095B3ADF4A80A5634616FD2364F20A3DF1A7E5B1DC982"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/PRECHECK.json",
+    "destination": "evidence/implementation/PRECHECK.json",
+    "bytes": 309,
+    "SHA256": "CBA7E77CBEBE9DBD9C0E1FCC0492C2148CCFF33D65C9CB3A3C57391542BA1049"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/ROM_PAYLOAD_DIFF.patch",
+    "destination": "evidence/implementation/ROM_PAYLOAD_DIFF.patch",
+    "bytes": 171912,
+    "SHA256": "4F853C1E5827C33CAF11D9665407E92101C681861C00494C12D046ED8A9C36C3"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/BUILD_EXIT.json",
+    "destination": "evidence/implementation/BUILD_EXIT.json",
+    "bytes": 964,
+    "SHA256": "A2585B338DA7DEB27355B98E7EDBB0663B1698ACB934795944B5615DC16DBC35"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/RESOURCE_PARSER_CORRECTION.json",
+    "destination": "evidence/implementation/RESOURCE_PARSER_CORRECTION.json",
+    "bytes": 465,
+    "SHA256": "3B06D242A06AAFD5CCA705E501C644B3698AA1795BDB4A5423E6A539522CBF2D"
+  },
+  {
+    "source": "work/fpga/2026-11-03-event-recorder-m3/build/generate_bitstream/board_top.sbit",
+    "destination": "images/board_top.sbit",
+    "bytes": 3791112,
+    "SHA256": "D43E4E419CC2F3656F92BCA2AF7BB23EFBE48B3EEC74A019A1D04FAABD60CEDE"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/inputs/configuration.svf",
+    "destination": "images/configuration.svf",
+    "bytes": 7643949,
+    "SHA256": "99729EB81F4FD99E03DE7A19277DE39D59CBC8BBD01D85ADBA8CF22BF47BF06B"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/PLAN.json",
+    "destination": "verification/PLAN.json",
+    "bytes": 1488,
+    "SHA256": "759DD78D50C5E07834ACA122DCC3725E4241313D4B52B10AD64D2C454C9F7787"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/check_report.py",
+    "destination": "verification/check_report.py",
+    "bytes": 2888,
+    "SHA256": "C2F013274EF0121422B99E7CD172849F05E7D12FAE58E203E2857238EDC593BC"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/checker_selftest.py",
+    "destination": "verification/checker_selftest.py",
+    "bytes": 1554,
+    "SHA256": "7BCE6A2DD75B5CEC71F48699996BC7B5AB88E945EC2F3E6D35C63E09856AF7E7"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/tb.sv",
+    "destination": "simulation/tb.sv",
+    "bytes": 3206,
+    "SHA256": "C68D9B36FEC94408D99B190355ECCDE60E51CC6A366F1D1255361FDC36098574"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/memory_sim.sv",
+    "destination": "simulation/memory_sim.sv",
+    "bytes": 640,
+    "SHA256": "D10B89E88C03869EB9862156D3A760D9777288132079605570F49179152D789E"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/FROZEN_PLAN.json",
+    "destination": "simulation/FROZEN_PLAN.json",
+    "bytes": 6398,
+    "SHA256": "733798BB0F5A5377D64946E7DBE56E0F5F3C798CA8A7FC8B6E4F46C634E516EB"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/EXTENDED_PLAN.json",
+    "destination": "simulation/EXTENDED_PLAN.json",
+    "bytes": 5046,
+    "SHA256": "961F6A751CAA5667C8EE699FAFF7F31620FB82A9D58E0591A05D7E70535BED10"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/OVERLOAD_PLAN.json",
+    "destination": "simulation/OVERLOAD_PLAN.json",
+    "bytes": 734,
+    "SHA256": "C1BD77E3589C3CCA487442D5A27975908A29B882137A583D3D6EDE20312BBD7A"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/execute.py",
+    "destination": "historical-scripts/execute.py",
+    "bytes": 4135,
+    "SHA256": "5240F5E977A93BADE7A0E05526773C60BA206DAA03C94FED943C7CC4DC1CF3D3"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/extended_check.py",
+    "destination": "historical-scripts/extended_check.py",
+    "bytes": 3237,
+    "SHA256": "3F62496BD193FD56DDE5588D103BDBD81F0F779053E459223D579491543B696B"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/frozen_tb_validation.py",
+    "destination": "historical-scripts/frozen_tb_validation.py",
+    "bytes": 4468,
+    "SHA256": "C47A0D58DB8ED4C01A1CE5039CA374C4A29544049374E4FD35340841A114FAEE"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/overload_check.py",
+    "destination": "historical-scripts/overload_check.py",
+    "bytes": 2706,
+    "SHA256": "0D1612275E049AAB681AF5335CA9955CEC6A13AAE6BCA2F3FCCDA9F314B65B12"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/FAST_RESULTS.json",
+    "destination": "evidence/software/FAST_RESULTS.json",
+    "bytes": 47056,
+    "SHA256": "DDEF40A3D05CF6B7C171726AC4799B01FB7B180202621750FD059C54B0B59EC2"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/OVERLOAD_RESULT.json",
+    "destination": "evidence/software/OVERLOAD_RESULT.json",
+    "bytes": 420,
+    "SHA256": "23FF38275D4F6920AC052F7A11102F428FA06A7978273642B6ADFFEF201B1010"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/SLOW_WITNESS_RESULT.json",
+    "destination": "evidence/software/SLOW_WITNESS_RESULT.json",
+    "bytes": 354,
+    "SHA256": "684985A5C2CC67F98812A8E35A52C3CD70C9092C75AFE070E0076C7668C98FC1"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/EXTENDED_RESULTS.json",
+    "destination": "evidence/software/EXTENDED_RESULTS.json",
+    "bytes": 2372,
+    "SHA256": "EC89CB351346D1DF9DDA1F921627419209AB1CF6B24D0EE64CA55877F963F014"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/MEMORY_AND_PROFILES.json",
+    "destination": "evidence/software/MEMORY_AND_PROFILES.json",
+    "bytes": 823,
+    "SHA256": "2AF44AF528909D28350334CB8EB9E8A7B60F17EA0532FF625BD176F88EBD4572"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m2/POSTFLIGHT.json",
+    "destination": "evidence/software/POSTFLIGHT.json",
+    "bytes": 125,
+    "SHA256": "FB2861D804693CC2BDAC34AC29FB56334CCE6656FF2BC04975B6EC4E0BACF4B7"
+  },
+  {
+    "source": "work/application/2026-11-03-event-recorder-m1/COMPARISON.json",
+    "destination": "evidence/software/M1_COMPARISON.json",
+    "bytes": 23976,
+    "SHA256": "F2D18289FBA7454BC3D7BB0962A6BF608EA2FC8FFC15C3E0FD60CD5AD1D4474A"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-normal/CAPTURE_EXIT.json",
+    "destination": "evidence/board/M4/capture-normal/CAPTURE_EXIT.json",
+    "bytes": 241,
+    "SHA256": "8BD17632BAC483B6D96FBCBACBA475DAD0972C0E69306E8DB53260ED5131FCB2"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-normal/REPORT_CHECK.json",
+    "destination": "evidence/board/M4/capture-normal/REPORT_CHECK.json",
+    "bytes": 102,
+    "SHA256": "A4C3B3F41BE76EF3117C39F14CA9FBAA1D20B08F07A00CD8AA1362E9BE5E511E"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-normal/SERIAL_RESULT.json",
+    "destination": "evidence/board/M4/capture-normal/SERIAL_RESULT.json",
+    "bytes": 1262,
+    "SHA256": "D35FB63627FEA98ABBFD9B8E71334AEE082298FB564877ABEBA1F9090B9F3BE2"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-normal/uart-raw.bin",
+    "destination": "evidence/board/M4/capture-normal/uart-raw.bin",
+    "bytes": 331,
+    "SHA256": "88736AC59769DEA52B871696BA8F787F56239D4ECAFD3D1DFD80B34D60BA7DAD"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-normal/USER_OBSERVATION.json",
+    "destination": "evidence/board/M4/capture-normal/USER_OBSERVATION.json",
+    "bytes": 277,
+    "SHA256": "73E7B2D2A9478E734A0A0D84C91FD66F97DA3CC08208F202E1E3B218A4262473"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-normal-r2/CAPTURE_EXIT.json",
+    "destination": "evidence/board/M4/capture-normal-r2/CAPTURE_EXIT.json",
+    "bytes": 241,
+    "SHA256": "5494B18793E5FC67FCC0A5A240ACDF8FAB1B80E64ABEC7AA6013CDBD4B99C9B7"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-normal-r2/REPORT_CHECK.json",
+    "destination": "evidence/board/M4/capture-normal-r2/REPORT_CHECK.json",
+    "bytes": 869,
+    "SHA256": "2947054CB4DAEDFA5E1F06A50C79B59A6DC8FD9C403C902611049A90FD295804"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-normal-r2/SERIAL_RESULT.json",
+    "destination": "evidence/board/M4/capture-normal-r2/SERIAL_RESULT.json",
+    "bytes": 1265,
+    "SHA256": "248C340E3E9FF4D9B4D1AC8FE25A358C33075032151D9FE4B35DC3334ADE4A06"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-normal-r2/uart-raw.bin",
+    "destination": "evidence/board/M4/capture-normal-r2/uart-raw.bin",
+    "bytes": 292,
+    "SHA256": "39301E14AE51A73A9AD99B7173B1E3E367AD0CF346E0F1683F9DF71B791B7EE9"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-normal-r2/USER_OBSERVATION.json",
+    "destination": "evidence/board/M4/capture-normal-r2/USER_OBSERVATION.json",
+    "bytes": 199,
+    "SHA256": "C6E5038FC55CBA7AD89F3E52A17C6CEF6A0ED9F0EB4F1104B1A9934B52181258"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-order/CAPTURE_EXIT.json",
+    "destination": "evidence/board/M4/capture-order/CAPTURE_EXIT.json",
+    "bytes": 241,
+    "SHA256": "CE4EB7C9D74D890C75D14C79EF66B303C5CEE17F12824EA0267251E3C23B22E7"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-order/REPORT_CHECK.json",
+    "destination": "evidence/board/M4/capture-order/REPORT_CHECK.json",
+    "bytes": 101,
+    "SHA256": "D3867897F26B825300C406106E265B6841A5F504E97B9057D2C07E0B75FA6CF2"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-order/SERIAL_RESULT.json",
+    "destination": "evidence/board/M4/capture-order/SERIAL_RESULT.json",
+    "bytes": 1263,
+    "SHA256": "6AB9C51BF6B8ADD6E7C77F0A1AAF4DE8A3434D8D0D8CB9532833D5C6FEEB33FE"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-order/uart-raw.bin",
+    "destination": "evidence/board/M4/capture-order/uart-raw.bin",
+    "bytes": 214,
+    "SHA256": "6A42AADFABC4642A2FA051655FECA4437080D5B5E14C93679BCDD1FCCBFEA86B"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-order/USER_OBSERVATION.json",
+    "destination": "evidence/board/M4/capture-order/USER_OBSERVATION.json",
+    "bytes": 173,
+    "SHA256": "6089EAAF9DCCF82ABAE2D0B8DB18E48F753BA9A6FA3EECF88CE91451D3C19DE9"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-order-r2/CAPTURE_EXIT.json",
+    "destination": "evidence/board/M4/capture-order-r2/CAPTURE_EXIT.json",
+    "bytes": 227,
+    "SHA256": "0039E9A5F725CA92160697AFFDA24892F402ADC8134863968C4C5E96DFEF3E0C"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-order-r2/REPORT_CHECK.json",
+    "destination": "evidence/board/M4/capture-order-r2/REPORT_CHECK.json",
+    "bytes": 802,
+    "SHA256": "1DD77E18D4A80CEC406586FA84809FB030CD6AFBB4CF66D981C851E3C7A1CC41"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-order-r2/SERIAL_RESULT.json",
+    "destination": "evidence/board/M4/capture-order-r2/SERIAL_RESULT.json",
+    "bytes": 1252,
+    "SHA256": "B0F98059F643268D9E2945E6184204D7DBB71C29846A54FF0A42A53002C7EAB2"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-order-r2/uart-raw.bin",
+    "destination": "evidence/board/M4/capture-order-r2/uart-raw.bin",
+    "bytes": 253,
+    "SHA256": "D0887C39087364D05253B434AC192B7ADEAF9F17B80130D6015E48F406209010"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-order-r2/USER_OBSERVATION.json",
+    "destination": "evidence/board/M4/capture-order-r2/USER_OBSERVATION.json",
+    "bytes": 173,
+    "SHA256": "6089EAAF9DCCF82ABAE2D0B8DB18E48F753BA9A6FA3EECF88CE91451D3C19DE9"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-timeout/CAPTURE_EXIT.json",
+    "destination": "evidence/board/M4/capture-timeout/CAPTURE_EXIT.json",
+    "bytes": 230,
+    "SHA256": "0530670E0A030DB3BA5BDACC3EC99F6F8D8A6A9E9220EFBB3075FCC18B6318B6"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-timeout/REPORT_CHECK.json",
+    "destination": "evidence/board/M4/capture-timeout/REPORT_CHECK.json",
+    "bytes": 105,
+    "SHA256": "77F7EB91D5D2AEF4FF3A2AE2853FD3A993C38FE77FDBC12FC397D98216D995B4"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-timeout/SERIAL_RESULT.json",
+    "destination": "evidence/board/M4/capture-timeout/SERIAL_RESULT.json",
+    "bytes": 1063,
+    "SHA256": "351F5927A2F13D0AC6D42048453DB91EB3B49377D1ED434BBC334180BBAFB59D"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-timeout/uart-raw.bin",
+    "destination": "evidence/board/M4/capture-timeout/uart-raw.bin",
+    "bytes": 0,
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-timeout/USER_OBSERVATION_INITIAL.json",
+    "destination": "evidence/board/M4/capture-timeout/USER_OBSERVATION_INITIAL.json",
+    "bytes": 211,
+    "SHA256": "01F1BBC9EE114CDEA2FF704B749781C5B4D837E3B8522E1B8FC4F8BA2EDFF24F"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-timeout-r2/CAPTURE_EXIT.json",
+    "destination": "evidence/board/M4/capture-timeout-r2/CAPTURE_EXIT.json",
+    "bytes": 241,
+    "SHA256": "8AC7659A91613B59EE0372FED8020F6A420EE14C440F1703D021D7AAD667837F"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-timeout-r2/DIAGNOSTIC_CLASSIFICATION.json",
+    "destination": "evidence/board/M4/capture-timeout-r2/DIAGNOSTIC_CLASSIFICATION.json",
+    "bytes": 311,
+    "SHA256": "6FC5DEB296CE7472D8AE8B893A27A9F135643AEDBCF4FFE8DDDA80F24CBCCA29"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-timeout-r2/SERIAL_RESULT.json",
+    "destination": "evidence/board/M4/capture-timeout-r2/SERIAL_RESULT.json",
+    "bytes": 1066,
+    "SHA256": "A343AF5A9F8FF3C858D08997C0B49EE3B6A3D052C11DA5DCE478C3F66E537320"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-timeout-r2/uart-raw.bin",
+    "destination": "evidence/board/M4/capture-timeout-r2/uart-raw.bin",
+    "bytes": 0,
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/capture-timeout-r2/USER_OBSERVATION.json",
+    "destination": "evidence/board/M4/capture-timeout-r2/USER_OBSERVATION.json",
+    "bytes": 141,
+    "SHA256": "7D13749F6092E782FCE04DBBA1070685F990B0D3A5A6F824B279C3AD5691E680"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/HARDWARE_RESULT.json",
+    "destination": "evidence/board/M4/HARDWARE_RESULT.json",
+    "bytes": 9193,
+    "SHA256": "08262D5D1D71B090EE91A287FB0E2D48AD001138B1D710321876C15ECC068BCA"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/PROGRAM_RESULT.json",
+    "destination": "evidence/board/M4/PROGRAM_RESULT.json",
+    "bytes": 141,
+    "SHA256": "5BB45D48A69E51E59F08419EE7D3EDC02CD5F35091AFE86C10CB0C540C430E24"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/SVF_IDENTITY.json",
+    "destination": "evidence/board/M4/SVF_IDENTITY.json",
+    "bytes": 1202,
+    "SHA256": "FFF2AAFA428D7CFB02E035B88CF0BAF6BF2FBE6475A1E1AB32272DBAF7E34BA2"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/REPORT_CHECK.json",
+    "destination": "evidence/board/M4/REPORT_CHECK.json",
+    "bytes": 610,
+    "SHA256": "403F3D81DEBC78148E29D5B55521D2602F28FCC670151233CE604672CFD455BD"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/SERIAL_RESULT.json",
+    "destination": "evidence/board/M4/SERIAL_RESULT.json",
+    "bytes": 1276,
+    "SHA256": "422784070A37DF995F97B3FC5A3B367575F8EC0617FD0F8121EA2A8AFEBA74BC"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/uart-raw.bin",
+    "destination": "evidence/board/M4/uart-raw.bin",
+    "bytes": 136,
+    "SHA256": "48178E1DB318E5721BA27D1B836959F0CB4B5F1405BF36FB19EA38980FF1F01F"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/RESUMED_STAGE_RESULT.json",
+    "destination": "evidence/board/M4/RESUMED_STAGE_RESULT.json",
+    "bytes": 9744,
+    "SHA256": "7B9BE23E314616FD31E54399E3E6B372EB78192B5238E60BA1965211EE5791CC"
+  },
+  {
+    "source": "work/pds-jtag/2026-11-03-event-recorder-m4/live-state-diagnostic/RESULT.json",
+    "destination": "evidence/board/M4/live-state-diagnostic/RESULT.json",
+    "bytes": 5941,
+    "SHA256": "1E8535464DAE9C7A2F0AE68B78A1AA6A31639B8EF8B7675B969AC64527937C69"
+  },
+  {
+    "source": "reports/application/2026-11-03-event-recorder-m2-software-freeze.md",
+    "destination": "historical-reports/2026-11-03-event-recorder-m2-software-freeze.md",
+    "bytes": 5427,
+    "SHA256": "CC879C70FDCA909A25D798626DA975E283AEF74BEB870EEF70BF5F9ACFB6C3C7"
+  },
+  {
+    "source": "reports/application/2026-11-03-event-recorder-pds-build.md",
+    "destination": "historical-reports/2026-11-03-event-recorder-pds-build.md",
+    "bytes": 5468,
+    "SHA256": "E12A8ADD83F63E267F60E1F6073CE531E42D42F8163B3611E8DF61DFBECD4312"
+  },
+  {
+    "source": "reports/application/2026-11-03-event-recorder-board-partial.md",
+    "destination": "historical-reports/2026-11-03-event-recorder-board-partial.md",
+    "bytes": 5248,
+    "SHA256": "2274014768EBE946E7D68FF94048E48D2D68221C60C837508BE4A716D19062A0"
+  }
+]

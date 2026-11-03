@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-03",
+  "status": "OFFLINE_STA_RESOURCE_PAIR_PASS_NOT_HARDWARE",
+  "configurations": [
+    {
+      "entries": 0,
+      "resources": {
+        "LUT": 10437,
+        "FF": 3068,
+        "DRM36": 16.0,
+        "IO": 15
+      },
+      "performance": {
+        "requested_MHz": 27.0,
+        "estimated_MHz": 32.3593,
+        "requested_period_ns": 37.037,
+        "estimated_period_ns": 30.903,
+        "slack_ns": 6.134
+      },
+      "constraints": {
+        "errors": 0,
+        "critical": 0,
+        "warnings": 0,
+        "count": 97
+      },
+      "native_exit": 0
+    },
+    {
+      "entries": 64,
+      "resources": {
+        "LUT": 11910,
+        "FF": 6976,
+        "DRM36": 16.0,
+        "IO": 15
+      },
+      "performance": {
+        "requested_MHz": 27.0,
+        "estimated_MHz": 30.9665,
+        "requested_period_ns": 37.037,
+        "estimated_period_ns": 32.293,
+        "slack_ns": 4.744
+      },
+      "constraints": {
+        "errors": 0,
+        "critical": 0,
+        "warnings": 0,
+        "count": 97
+      },
+      "native_exit": 0
+    },
+    {
+      "entries": 32,
+      "resources": {
+        "LUT": 11299,
+        "FF": 5088,
+        "DRM36": 16.0,
+        "IO": 15
+      },
+      "performance": {
+        "requested_MHz": 27.0,
+        "estimated_MHz": 33.9006,
+        "requested_period_ns": 37.037,
+        "estimated_period_ns": 29.498,
+        "slack_ns": 7.539
+      },
+      "constraints": {
+        "errors": 0,
+        "critical": 0,
+        "warnings": 0,
+        "count": 97
+      },
+      "native_exit": 0
+    }
+  ],
+  "recommended_entries": 32,
+  "hardware_calls": 0,
+  "bitstream_generated": false,
+  "physical_IO_CDC_signoff": false,
+  "frequency_is": "PDS estimated internal clock frequency under specified constraints, NOT measured board Fmax",
+  "software_source_identity": "../../advanced/2026-11-03-coremark-strict-m5/AUDIT.json"
+}

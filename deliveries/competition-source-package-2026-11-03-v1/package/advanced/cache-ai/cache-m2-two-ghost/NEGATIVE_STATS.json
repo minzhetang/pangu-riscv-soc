@@ -1,0 +1,20 @@
+{
+  "expected_rejection": true,
+  "correct_data": true,
+  "actual": {
+    "requests": 48,
+    "cycles": 534,
+    "hits": 0,
+    "transactions": 48,
+    "bytes": 192,
+    "mmio": 0
+  },
+  "expected_m2": {
+    "hits": 44,
+    "transactions": 4,
+    "bytes": 40,
+    "eligible_reads": 48,
+    "requests": 48,
+    "mmio": 0
+  }
+}

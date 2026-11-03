@@ -1,0 +1,12 @@
+{
+  "previous": "event-recorder-A-2026-11-03-v1",
+  "previous_zip_SHA256": "2F1E6E47EA75390B8714161647CD04A839334B8E429682DF2068EB78A4EDA570",
+  "previous_not_modified": true,
+  "delta": [
+    "Late user receipt recorded separately",
+    "One new timeout UART capture and LED observation, no new programming",
+    "One post-timeout read-only ID/status check",
+    "Updated final status/report/offline replay case list"
+  ],
+  "old_failures_retained": true
+}

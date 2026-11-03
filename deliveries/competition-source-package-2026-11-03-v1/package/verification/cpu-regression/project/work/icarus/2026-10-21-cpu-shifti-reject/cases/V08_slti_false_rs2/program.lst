@@ -1,0 +1,7 @@
+0000: 00002283  lw x5,0(x0)
+0004: 00502093  slti x1,x0,5 ;not rs2=5
+0008: ffe00113  addi x2,x0,-2
+000c: fff12193  slti x3,x2,-1 ;trueEX
+0010: 00402f83  lw x31,4(x0) ;data51 not completion90
+0014: fff02213  slti x4,x0,-1 ;not rs2=31
+0018: 05a00f93  addi x31,x0,90 ; completion

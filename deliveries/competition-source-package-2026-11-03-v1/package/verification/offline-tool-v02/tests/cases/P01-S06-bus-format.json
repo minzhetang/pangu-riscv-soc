@@ -1,0 +1,17 @@
+{
+  "id": "P01-S06-bus-format",
+  "expected": {
+    "storage": "raw",
+    "stream": "bus",
+    "path": "inputs/seeds/S06-bus-format/expected.log",
+    "complete": true
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "bus",
+    "path": "inputs/seeds/S06-bus-format/actual.log",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {}
+}

@@ -1,0 +1,22 @@
+{
+  "performance": {
+    "active_cycles": 1101315,
+    "EX_non_EBREAK": 768391,
+    "redirect_bubbles_model_accounting": 310434,
+    "load_use_stalls": 22483,
+    "initial_fill_and_EEI_observation": 7,
+    "EX_slot_utilization": 0.6977032002651375,
+    "cycles_per_EX_NOT_retirement_CPI": 1.4332742054500898,
+    "scope": "Whole startup+benchmark+RAM formatting, NOT timed CoreMark kernel or FPGA performance"
+  },
+  "validation": {
+    "active_cycles": 1180725,
+    "EX_non_EBREAK": 821131,
+    "redirect_bubbles_model_accounting": 336586,
+    "load_use_stalls": 23001,
+    "initial_fill_and_EEI_observation": 7,
+    "EX_slot_utilization": 0.6954464418048233,
+    "cycles_per_EX_NOT_retirement_CPI": 1.4379252518782022,
+    "scope": "Whole startup+benchmark+RAM formatting, NOT timed CoreMark kernel or FPGA performance"
+  }
+}

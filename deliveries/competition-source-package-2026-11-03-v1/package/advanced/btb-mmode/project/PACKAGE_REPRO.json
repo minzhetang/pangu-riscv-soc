@@ -1,0 +1,13 @@
+{
+  "status": "PASS_NEW_DUT_8_RUNS",
+  "first_attempt": "ENTRY_ERROR_MISSING_LOG_DIR_DUT_NOT_RUN",
+  "first_result": "work/advanced/2026-11-03-m4-package-repro/REPRO_RESULT.json",
+  "result": {
+    "rc": 0,
+    "stage": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-m4-package-repro-r2\\work\\advanced\\2026-11-03-btb-cprogram-m4",
+    "results": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-m4-package-repro-r2\\work\\advanced\\2026-11-03-btb-cprogram-m4\\package-repro-RESULTS.json",
+    "scope": "New CPU simulation of the frozen C binary, not a formal CoreMark or hardware acceptance"
+  },
+  "all_eight_pass": true,
+  "cycles_match": true
+}

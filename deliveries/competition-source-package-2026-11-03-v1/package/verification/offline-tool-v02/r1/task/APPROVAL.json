@@ -1,0 +1,16 @@
+{
+  "task": "B-VERIFY-OFFLINE-M0-R1",
+  "amendment_version": "1.0.1",
+  "frozen_ABI": "1.0.0 unchanged",
+  "date_client": "2026-10-27",
+  "decision": "D158",
+  "user_request": "根据目前进度，给B指派新的工作任务",
+  "status": "APPROVED_TO_START_ON_VERIFIED_RECEIPT",
+  "prepared_not_sent": true,
+  "new_B_receipt": "UNKNOWN",
+  "priority": "P0",
+  "target_net_hours": "2-4 estimated by A; B capacity/ETA unconfirmed",
+  "old_peripheral_window": "2026-10-27T18:00:00+08:00 unchanged; not a new-task deadline promise",
+  "allowed": "Independent new B v02 wrapper/support/tests/docs only; existing ordinary Python; no frozen kernel or CPU changes",
+  "new_install_or_DUT_or_hardware": false
+}

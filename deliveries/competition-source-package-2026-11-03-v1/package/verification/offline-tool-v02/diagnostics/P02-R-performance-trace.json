@@ -1,0 +1,12 @@
+{
+  "id": "P02-R-performance-trace",
+  "status": "MATCH",
+  "no_difference": true,
+  "first_difference": null,
+  "neighbors": [],
+  "differences": [],
+  "error": null,
+  "checked": 3477732,
+  "expected_records": 3477732,
+  "actual_records": 3477732
+}

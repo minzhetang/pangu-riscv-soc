@@ -1,0 +1,9 @@
+{
+  "purpose": "Idle reset positive control, NOT timeout stimulus",
+  "user": "没亮",
+  "UART_bytes": 0,
+  "termination": "Explicit CONTROLLER_STOP",
+  "result": "INCOMPLETE_NO_UART_NOT_TIMEOUT_TEST",
+  "configuration_status_after": "two read-only samples DONE/DONE_I/GOUTEN=0",
+  "cause": "UNKNOWN"
+}

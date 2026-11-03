@@ -1,0 +1,20 @@
+{
+  "command": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+    "m0.vvp",
+    "+RO=0",
+    "+BYPASS=1",
+    "+DELAY=3",
+    "+VEC=vectors/0_triple.txt"
+  ],
+  "exit": 0,
+  "reason": null,
+  "seconds": 0.06300000008195639,
+  "priority": "BELOW_NORMAL",
+  "wall_limit_seconds": 20,
+  "process_memory_limit": 268435456,
+  "job_memory_limit": 402653184,
+  "log_limit": 1048576,
+  "directory_limit": 67108864,
+  "observed_directory_bytes": 635979
+}

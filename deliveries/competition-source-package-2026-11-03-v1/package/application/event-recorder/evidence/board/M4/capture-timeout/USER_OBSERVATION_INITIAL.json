@@ -1,0 +1,6 @@
+{
+  "user": "完成了，一个LED都没亮",
+  "UART_bytes_at_receipt": 0,
+  "status": "ANOMALY_PENDING_NO_PASS",
+  "next_check": "All keys released; POWER and LEDs after15 seconds, no new reset/program"
+}

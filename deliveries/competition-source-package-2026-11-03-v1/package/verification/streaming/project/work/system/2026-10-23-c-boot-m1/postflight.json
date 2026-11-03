@@ -1,0 +1,22 @@
+{
+  "stage": "A-CBOOT-M1",
+  "date": "2026-10-23",
+  "protected_existing_files": 37,
+  "frozen_files": 22,
+  "verified_records": 59,
+  "changed_protected_existing": [],
+  "post_compile_runner_only_change": [
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\run_c_boot.py"
+  ],
+  "compile_native_exit_hex": "0xC0000005",
+  "DUT_execution": "NOT_RUN",
+  "native_simulator_calls": 0,
+  "wave_generated": false,
+  "failed_partial_vvp_executed": false,
+  "old_CPU_baseline": "F108 limited; unchanged",
+  "permission_request": "PENDING_USER_CONFIRMATION_NOT_EXECUTED",
+  "new_hardware_operations": 0,
+  "new_installations": 0,
+  "report_sha256": "AC76B97CB889675A441FFDE5EF927D97A2DAE6F084857A665FDE5AFEA6A4CF35",
+  "memory_records": "F119/D106"
+}

@@ -1,0 +1,9 @@
+{
+  "vvp": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp",
+  "vvp_sha256": "7D12A19E7CC3A91934CA953EE936483B6B5668191F98640460574E1C01843D3D",
+  "source_tb": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\tb.sv",
+  "source_tb_sha256": "9B0EE1554DE6DBBFA6A0B744D0297C3DCD0BB5F084135509307C77C5EA904B26",
+  "profile": "fixed PERIOD12000 COUNT32 REPEATS2",
+  "new_firmware": true,
+  "new_RTL_compile": false
+}

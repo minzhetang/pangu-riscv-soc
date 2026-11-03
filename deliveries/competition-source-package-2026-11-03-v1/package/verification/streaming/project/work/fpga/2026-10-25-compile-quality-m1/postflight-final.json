@@ -1,0 +1,31 @@
+{
+  "date_beijing": "2026-10-25",
+  "stage": "COMPLETE_STOP",
+  "protected_files_unchanged": 726,
+  "manifest_files": 187,
+  "manifest_SHA256": "28B2091FCC54457C80F029C580535F23D083C13EFBA5F477DCB29D208156129E",
+  "report_SHA256": "37FBDB8E12B741777756810341DEEC40A2A46F55351B39F89F4464E988EEBE85",
+  "RESULTS_SHA256": "4C13E5BA1304839D965CFB9503A3219FB730391F693287CA837B75482EBB52E7",
+  "git_sync": {
+    "status": "PUSHED_VERIFIED",
+    "commit": "03850aa073afe2ff22001a17f9151e95067ce2a6",
+    "remote_main": "03850aa073afe2ff22001a17f9151e95067ce2a6",
+    "upstream": "origin/main",
+    "files": 23,
+    "tracked": 144,
+    "clean": true,
+    "forced": false,
+    "credential_contents_read": false
+  },
+  "selected_baseline": "F143 O2",
+  "candidate": "O3 REJECTED",
+  "new_GCC_images": 2,
+  "new_Icarus_targets": 2,
+  "new_DUT_runs": 2,
+  "old_DUT_reruns": 0,
+  "PDS_runs": 0,
+  "hardware": "STOPPED",
+  "formal_score": false,
+  "efficiency_benefit": false,
+  "next_scope": "A-CONTROL-FLOW-QUALITY-M0 recommended read-only assessment, not implemented"
+}

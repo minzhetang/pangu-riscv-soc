@@ -1,0 +1,17 @@
+{
+  "id": "P01-S01-wrong-field",
+  "expected": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S01-wrong-field/expected.log",
+    "complete": true
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S01-wrong-field/actual.log",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {}
+}

@@ -1,0 +1,40 @@
+{
+  "maximum": 1,
+  "timeout_seconds": 60,
+  "only_compile": true,
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+    "-B",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "-g2012",
+    "-Wall",
+    "-s",
+    "tb_data_adapter",
+    "-o",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\adapter.vvp",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\source\\soc_data_adapter.sv",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\tests\\tb_data_adapter.sv"
+  ],
+  "protected": [
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "sha256": "25E1BA02E72F58D9D484BC5457D69A6B179D22D86BDF5BA5D6F9F0D4FE620BBF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "sha256": "F0775603E1F1BCF1B2DEA16DFF963A4B7D71B7B33D5BBE23D2B01FF5B2304E09"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\source\\soc_data_adapter.sv",
+      "sha256": "5631D65BEEC48409BD959C260392671CC315BCB7A83F9A4D480D0267CF5FC739"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\tests\\tb_data_adapter.sv",
+      "sha256": "60288395C1650636D662A8F4D50A2783E5B4B240A684912A652C95141B59B3A4"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\verify_adapter.py",
+      "sha256": "25E87EADC217336AE30822049D94CABEB3A76978E86A31503DC0B0C83A92BD42"
+    }
+  ]
+}

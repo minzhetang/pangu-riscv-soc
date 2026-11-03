@@ -1,0 +1,4 @@
+0000: 000030b3  sltu x1,x0,x0 ;0
+0004: 00003033  sltu x0,x0,x0 ;discard0
+0008: 0000b133  sltu x2,x1,x0 ;0
+000c: 05a00f93  addi x31,x0,90 ; completion

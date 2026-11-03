@@ -1,0 +1,28 @@
+{
+  "status": "PASS_NOT_RUN",
+  "process": {
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_data_adapter",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\adapter.vvp",
+      "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\source\\soc_data_adapter.sv",
+      "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\tests\\tb_data_adapter.sv"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build",
+    "returncode": 0,
+    "returncode_hex": "0x00000000",
+    "timed_out": false,
+    "trace_cap": false,
+    "elapsed_seconds": 0.093,
+    "timeout_seconds": 60,
+    "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\adapter-compile\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\adapter-compile\\stderr.log"
+  },
+  "sha256": "18D6951BD82B591F8BAE258A3A11E6464F0CECB40E63C2DA6076837389FF5280"
+}

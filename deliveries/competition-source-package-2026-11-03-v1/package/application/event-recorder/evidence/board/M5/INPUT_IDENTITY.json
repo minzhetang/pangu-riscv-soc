@@ -1,0 +1,19 @@
+{
+  "rows": [
+    {
+      "file": "board_top.sbit",
+      "bytes": 3791112,
+      "SHA256": "D43E4E419CC2F3656F92BCA2AF7BB23EFBE48B3EEC74A019A1D04FAABD60CEDE",
+      "source": "D:/A_FPGA_Comp/work/pds-jtag/2026-11-03-event-recorder-m4/inputs/board_top.sbit"
+    },
+    {
+      "file": "configuration.svf",
+      "bytes": 7643949,
+      "SHA256": "99729EB81F4FD99E03DE7A19277DE39D59CBC8BBD01D85ADBA8CF22BF47BF06B",
+      "source": "D:/A_FPGA_Comp/work/pds-jtag/2026-11-03-event-recorder-m4/inputs/configuration.svf"
+    }
+  ],
+  "copied_equal": true,
+  "prior_frozen_PLAN_unchanged": true,
+  "new_programs_so_far": 0
+}

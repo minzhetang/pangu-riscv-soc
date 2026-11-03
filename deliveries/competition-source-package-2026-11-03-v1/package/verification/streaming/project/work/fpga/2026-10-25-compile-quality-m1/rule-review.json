@@ -1,0 +1,41 @@
+{
+  "commit": "1f483d5b8316753a742cbf5590caf5bd0a4e4777",
+  "url": "https://github.com/eembc/coremark/blob/1f483d5b8316753a742cbf5590caf5bd0a4e4777/README.md#run-rules",
+  "local_README_SHA256": "5581FB67DC1609CBD1865F150DBCB1050D96C602987792456850EB96EB0DD08C",
+  "sources": [
+    {
+      "name": "coremark.h",
+      "sha256": "42642B9A06C7ED2B3BD9EDA971B7C3868C4F5D27BF7EF6C4BBA11291A0C2598A"
+    },
+    {
+      "name": "core_list_join.c",
+      "sha256": "CA00E4E010ECE47D7F040CB92AA50A95345A00D3171B59D088F6B243BE06CE7B"
+    },
+    {
+      "name": "core_main.c",
+      "sha256": "17884C93C5B94378EB0FF02B4DF3725756CF2ADDB9B8CBCAA6200A4649FF5CA7"
+    },
+    {
+      "name": "core_matrix.c",
+      "sha256": "ECDFF717B5A5C4907D221A606760E25499899CBF617582C05D40DB71C91351E4"
+    },
+    {
+      "name": "core_state.c",
+      "sha256": "F4B84BB0A3452C45A4DAA664AB502BFDCCBD31CB57D93E9AC490C60937717A4E"
+    },
+    {
+      "name": "core_util.c",
+      "sha256": "A3FBFCB9BB943B638624B8ECE01C5836DD56A96D7BCDE2697B248D077447327F"
+    }
+  ],
+  "rules": [
+    "build options may change",
+    "all sources share flags",
+    "no algorithm/header changes",
+    "two standardized seeds and 2000 bytes",
+    "reporting requires at least 10 seconds"
+  ],
+  "short_test_not_formal": true,
+  "old_MD5_manifest_header_comment_issue_preserved": true,
+  "web_API_unavailable_not_a_download_failure": true
+}

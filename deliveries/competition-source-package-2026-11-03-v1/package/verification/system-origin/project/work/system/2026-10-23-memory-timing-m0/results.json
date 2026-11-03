@@ -1,0 +1,43 @@
+{
+  "scope": "A-MEM-TIMING-M0",
+  "status": "TOOL_ERROR",
+  "compiles": [
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_drm",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\drm.vvp",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\tb_drm.sv",
+        "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+        "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0",
+      "timeout_seconds": 60,
+      "returncode": 3221225477,
+      "returncode_hex": "0xC0000005",
+      "elapsed_seconds": 1.906,
+      "timeout": false,
+      "log_cap": false,
+      "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\logs\\compile-drm.stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\logs\\compile-drm.stderr.log"
+    }
+  ],
+  "drm": "NOT_RUN",
+  "cpu": [],
+  "note": "same CPU; behavioral latency probes are not physical memory mapping",
+  "stop_reason": "first compiler failure; no further compiler or partial VVP execution",
+  "unexecuted_targets": [
+    "cpu"
+  ],
+  "postflight": {
+    "checked": 53,
+    "changed": []
+  },
+  "date_beijing": "2026-10-23T19:25:29.145374+08:00"
+}

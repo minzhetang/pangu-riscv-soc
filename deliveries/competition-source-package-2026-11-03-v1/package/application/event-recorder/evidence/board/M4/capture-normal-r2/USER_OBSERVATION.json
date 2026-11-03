@@ -1,0 +1,6 @@
+{
+  "user": "已完成，LED0，2，5，7常亮",
+  "expected_mask": "0xa5",
+  "observation_matches_expected": true,
+  "scope": "Human final LED observation, not continuous electrical capture"
+}

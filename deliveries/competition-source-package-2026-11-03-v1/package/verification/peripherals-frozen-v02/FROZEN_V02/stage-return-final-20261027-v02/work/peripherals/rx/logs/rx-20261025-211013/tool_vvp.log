@@ -1,0 +1,47 @@
+COMMAND=["D:\\iverilog\\bin\\vvp.exe", "-V"]
+CWD=C:\Users\ANON_USER\Desktop\FPGA\发给队员_盘古100Pro项目交接包_2026-10-18_v01\work\peripherals\rx
+TIMEOUT_S=10
+RC=0
+TIMED_OUT=False
+CLEANUP_S=0.0
+CLEANUP_METHOD=not_needed
+CLEANUP_STATUS=NOT_NEEDED
+TASKKILL_RC=None
+CLEANUP_ERROR=
+DESCENDANT_CHECK=NOT_NEEDED
+DESCENDANTS_BEFORE=
+DESCENDANTS_ALIVE=
+DESCENDANTS_EXITED=
+DESCENDANT_CHECK_ERROR=
+START_ERROR=
+DURATION_S=0.016
+LOG_LIMIT_BYTES=4000000
+LOG_TRUNCATED=False
+STDOUT_BYTES=0
+STDOUT_READ_BYTES=0
+STDOUT_TRUNCATED=False
+STDERR_BYTES=856
+STDERR_READ_BYTES=856
+STDERR_TRUNCATED=False
+--- STDOUT ---
+
+--- STDERR ---
+Icarus Verilog runtime version 12.0 (devel) (s20150603-1539-g2693dd32b)
+
+Copyright (c) 2001-2021 Stephen Williams (steve@icarus.com)
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+

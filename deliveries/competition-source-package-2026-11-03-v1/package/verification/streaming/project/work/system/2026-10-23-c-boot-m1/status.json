@@ -1,0 +1,10 @@
+{
+  "stage": "COMPILE_TOOL_ERROR",
+  "compile": {
+    "exit_code": 3221225477,
+    "timed_out": false,
+    "elapsed_wall_seconds": 6.265
+  },
+  "CPU_execution": "NOT_RUN",
+  "reason": "Stop; no blind retry or stale VVP execution. New external permission required if indicated."
+}

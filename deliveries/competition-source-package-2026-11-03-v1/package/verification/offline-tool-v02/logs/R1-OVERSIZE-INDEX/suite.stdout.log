@@ -1,0 +1,1 @@
+{"status": "INVALID_INPUT", "native_rc": 3, "case": "R1-OVERSIZE-INDEX", "out": "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\out\\R1-OVERSIZE-INDEX", "error": "archive index exceeds 2MiB limit", "worker_rc": 3}

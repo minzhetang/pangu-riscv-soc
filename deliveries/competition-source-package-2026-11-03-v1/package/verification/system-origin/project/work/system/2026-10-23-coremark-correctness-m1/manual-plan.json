@@ -1,0 +1,50 @@
+{
+  "stage": "A-COREMARK-CORRECTNESS-M1",
+  "authorized": "2026-10-23 user continuation directly following explicit single-phase proposal",
+  "created_before_DUT": "2026-10-23T11:55:22.518926+08:00",
+  "upstream_commit": "1f483d5b8316753a742cbf5590caf5bd0a4e4777",
+  "cases": {
+    "performance": {
+      "seeds": [
+        0,
+        0,
+        102
+      ],
+      "seedcrc": "e9f5",
+      "crclist": "e714",
+      "crcmatrix": "1fd7",
+      "crcstate": "8e3a"
+    },
+    "validation": {
+      "seeds": [
+        13333,
+        13333,
+        102
+      ],
+      "seedcrc": "18f2",
+      "crclist": "e3c1",
+      "crcmatrix": "0747",
+      "crcstate": "8d84"
+    }
+  },
+  "iterations": 1,
+  "total_data_size": 2000,
+  "all_algorithms": 7,
+  "CPU_modified": false,
+  "initial_RF": "existing initial zeros",
+  "RAM_poison": "a5",
+  "clock": "1ns/1ps, period10ns verification-only",
+  "ROM_capacity": 32768,
+  "RAM_base": 65536,
+  "RAM_capacity": 32768,
+  "stack_reserved": 8192,
+  "timing": "UNAVAILABLE; get_time=0, expected upstream duration error retained, NO official score",
+  "acceptance": "three official CRCs + params + exact golden RF/RAM/WB/RW/EX streams, no dedup, X/bounds/stop guards",
+  "limits": {
+    "reference_steps": 5000000,
+    "cycles": 10000000,
+    "compile_seconds": 60,
+    "run_seconds": 180
+  },
+  "excluded": "CPU changes, new ISA, production MMIO/timer/peripherals/BRAM, new software, hardware"
+}

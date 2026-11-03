@@ -1,0 +1,66 @@
+COMMAND=["D:\\iverilog\\bin\\vvp.exe", "-N", "-M-", "-MD:\\iverilog\\lib\\ivl", "waves/regif-m1-20261025-210743/regif_m1_N234.vvp", "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N234.vcd"]
+CWD=C:\Users\ANON_USER\Desktop\FPGA\发给队员_盘古100Pro项目交接包_2026-10-18_v01\work\regif\txgpio-m1
+TIMEOUT_S=30
+RC=0
+TIMED_OUT=False
+CLEANUP_S=0.0
+CLEANUP_METHOD=not_needed
+CLEANUP_STATUS=NOT_NEEDED
+TASKKILL_RC=None
+CLEANUP_ERROR=
+DESCENDANT_CHECK=NOT_NEEDED
+DESCENDANTS_BEFORE=
+DESCENDANTS_ALIVE=
+DESCENDANTS_EXITED=
+DESCENDANT_CHECK_ERROR=
+START_ERROR=
+DURATION_S=0.11
+LOG_LIMIT_BYTES=4000000
+LOG_TRUNCATED=False
+STDOUT_BYTES=2578
+STDOUT_READ_BYTES=2578
+STDOUT_TRUNCATED=False
+STDERR_BYTES=0
+STDERR_READ_BYTES=0
+STDERR_TRUNCATED=False
+--- STDOUT ---
+VCD info: dumpfile waves/regif-m1-20261025-210743/regif_m1_N234.vcd opened for output.
+TEST_BEGIN W05-N234
+REGIF_REQ seq=1 edge=6 addr=00 data=5a strb=1111 error=0 ready=1 busy=0 tx_accept=1 gpio_accept=0
+REGIF_TX_FRAME event=START edge=6 observed_edge=7
+REGIF_TX_FRAME event=COMPLETE idx=1 edge=2346 data=5a observed_edge=2347
+TEST_PASS W05-N234
+TEST_BEGIN W06-N234
+REGIF_REQ seq=2 edge=2349 addr=00 data=a5 strb=1111 error=0 ready=1 busy=0 tx_accept=1 gpio_accept=0
+REGIF_TX_FRAME event=START edge=2349 observed_edge=2350
+REGIF_REQ seq=3 edge=2350 addr=00 data=3c strb=1111 error=1 ready=0 busy=1 tx_accept=0 gpio_accept=0
+REGIF_TX_FRAME event=COMPLETE idx=2 edge=4689 data=a5 observed_edge=4690
+REGIF_REQ seq=4 edge=4692 addr=00 data=a5 strb=1111 error=0 ready=1 busy=0 tx_accept=1 gpio_accept=0
+REGIF_TX_FRAME event=START edge=4692 observed_edge=4693
+REGIF_TX_FRAME event=COMPLETE idx=3 edge=7032 data=a5 observed_edge=7033
+TEST_PASS W06-N234
+TEST_BEGIN W09-N234
+REGIF_REQ seq=5 edge=7040 addr=00 data=96 strb=1111 error=0 ready=1 busy=0 tx_accept=1 gpio_accept=0
+REGIF_TX_FRAME event=START edge=7040 observed_edge=7041
+REGIF_TX_FRAME event=CANCEL idx=1 edge=7042 observed_edge=7043
+REGIF_REQ seq=6 edge=7048 addr=00 data=6a strb=1111 error=0 ready=1 busy=0 tx_accept=1 gpio_accept=0
+REGIF_TX_FRAME event=START edge=7048 observed_edge=7049
+REGIF_TX_FRAME event=COMPLETE idx=4 edge=9388 data=6a observed_edge=9389
+REGIF_REQ seq=7 edge=9398 addr=00 data=96 strb=1111 error=0 ready=1 busy=0 tx_accept=1 gpio_accept=0
+REGIF_TX_FRAME event=START edge=9398 observed_edge=9399
+REGIF_TX_FRAME event=CANCEL idx=2 edge=10334 observed_edge=10335
+REGIF_REQ seq=8 edge=10340 addr=00 data=6a strb=1111 error=0 ready=1 busy=0 tx_accept=1 gpio_accept=0
+REGIF_TX_FRAME event=START edge=10340 observed_edge=10341
+REGIF_TX_FRAME event=COMPLETE idx=5 edge=12680 data=6a observed_edge=12681
+REGIF_REQ seq=9 edge=12690 addr=00 data=96 strb=1111 error=0 ready=1 busy=0 tx_accept=1 gpio_accept=0
+REGIF_TX_FRAME event=START edge=12690 observed_edge=12691
+REGIF_TX_FRAME event=CANCEL idx=3 edge=14798 observed_edge=14799
+REGIF_REQ seq=10 edge=14804 addr=00 data=6a strb=1111 error=0 ready=1 busy=0 tx_accept=1 gpio_accept=0
+REGIF_TX_FRAME event=START edge=14804 observed_edge=14805
+REGIF_TX_FRAME event=COMPLETE idx=6 edge=17144 data=6a observed_edge=17145
+TEST_PASS W09-N234
+REGIF_M1_SELFCHECK_PASS accepted_tx=9 accepted_gpio=0 rejected=1 frames=6 requests=10 complete=6 cancel=3 bad_stop=0
+tb/tb_local_regif_txgpio_m1.sv:565: $finish called at 171476000 (1ps)
+
+--- STDERR ---
+

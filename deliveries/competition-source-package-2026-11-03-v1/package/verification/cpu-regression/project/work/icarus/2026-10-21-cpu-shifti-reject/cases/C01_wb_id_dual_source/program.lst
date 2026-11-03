@@ -1,0 +1,5 @@
+0000: 00700093  addi x1,x0,7
+0004: 00100213  addi x4,x0,1 ; independent instruction
+0008: 00200293  addi x5,x0,2 ; independent instruction
+000c: 00108133  add x2,x1,x1
+0010: 05a00f93  addi x31,x0,90 ; completion

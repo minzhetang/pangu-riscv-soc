@@ -1,0 +1,53 @@
+{
+  "kind": "FINAL_STAGE_MODULE_STATUS",
+  "as_of": "2026-10-25T21:20:00+08:00",
+  "stage_id": "stage-return-final-20261027-v02",
+  "base_stage": "stage-return-final-20261027-v01",
+  "base_increment": "increment-20261024-2335",
+  "B-REGIF": {
+    "status": "PASS_LOCAL_SCOPE_1.0.5",
+    "plan": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.json",
+    "plan_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+    "run_id": "regif-m1-20261025-210743",
+    "N16": "26 requests; 9/6/11; 6 complete/3 cancel/0 badstop; event edges 37..1276",
+    "N234": "10 requests; 9/0/1; 6 complete/3 cancel; event 6..17144 complete",
+    "capture": "event_edge true accept/E+10N; observed_edge=event_edge+1",
+    "capture_selfcheck": "regif-capture-20261025-210624 PASS",
+    "entry_selfcheck": "regif-entry-selfcheck-20261025-210805 PASS",
+    "W06": "A-W06-SUPPLEMENT; B did not rerun",
+    "mainline_reproduction": "NOT_RUN",
+    "final_acceptance": "PENDING"
+  },
+  "B-UART-RX": {
+    "status": "PASS_LOCAL_1.3.5",
+    "plan": "work/peripherals/rx/tests/rx-plan-1.3.5.json",
+    "plan_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+    "run_id": "rx-20261025-211013",
+    "ledger": {
+      "N8": 92,
+      "N16": 110,
+      "N234": 68
+    },
+    "functional": {
+      "N8": "41/41/4/7",
+      "N16": "50/50/4/7",
+      "N234": "29/29/4/7"
+    },
+    "snapshots": "RX_SNAPSHOT_CHECK_PASS; seq0 0/1; seq30 0/1; 5e post_clear=1/post_fe=0",
+    "shared_capture": "ordered exact type/data/edge PASS",
+    "status_selfcheck": "rx-status-selfcheck-20261025-211027 PASS",
+    "mainline_reproduction": "NOT_RUN"
+  },
+  "GPIO": {
+    "status": "ACCEPTED_LIMITED_1.0.2",
+    "core_sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+    "plan_sha256": "BACF07BE0FD179B532B1BF51AD17EE1910DC6B10E0174C6ED887C6C5D4EB47BE",
+    "runner_sha256": "6CDDE2E5DA70673988E287A201095DEE2136FBE89F24BB972701C78D621034CC",
+    "not_rerun": true
+  },
+  "A_system": "A_OWNED; CPU/storage/SoC/Timer/CoreMark/PDS/final integration",
+  "root_package_integrity": "OPEN_PREEXISTING_MANIFEST_SOURCE_LINK",
+  "hardware": "STOPPED",
+  "manifest_files": 69,
+  "not_final_acceptance": true
+}

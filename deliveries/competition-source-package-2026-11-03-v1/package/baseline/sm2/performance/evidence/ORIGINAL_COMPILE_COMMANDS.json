@@ -1,0 +1,139 @@
+{
+  "status": "COMPILED_NOT_DUT_VERIFIED",
+  "jobs": [
+    {
+      "name": "gcc",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+        "-DPROJECT_MULSI3_SM2=1",
+        "-DBOARD_QA_M2=1",
+        "-march=rv32i",
+        "-mabi=ilp32",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-common",
+        "-fno-pie",
+        "-fno-stack-protector",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-mno-relax",
+        "-msmall-data-limit=0",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-nostdlib",
+        "-nostartfiles",
+        "-Wl,--no-relax",
+        "-Wl,--build-id=none",
+        "-Wl,-T,firmware/link.ld",
+        "-Wl,-Map,build/performance256/program.map",
+        "-Ifirmware",
+        "-Iport",
+        "-Iupstream",
+        "-Ibuild/performance256",
+        "-DTOTAL_DATA_SIZE=2000",
+        "-DITERATIONS=256",
+        "-DPERFORMANCE_RUN=1",
+        "-o",
+        "build/performance256/program.elf",
+        "firmware/start.S",
+        "upstream/core_list_join.c",
+        "upstream/core_main.c",
+        "upstream/core_matrix.c",
+        "upstream/core_state.c",
+        "upstream/core_util.c",
+        "port/core_portme.c",
+        "firmware/board_qa.c",
+        "firmware/mul_sm2.S",
+        "-lgcc"
+      ],
+      "rc": 0,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      },
+      "elapsed": 1.125
+    },
+    {
+      "name": "objcopy",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "build/performance256/program.elf",
+        "build/performance256/program.bin"
+      ],
+      "rc": 0,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      },
+      "elapsed": 0.39099999982863665
+    },
+    {
+      "name": "objdump",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+        "-d",
+        "-M",
+        "no-aliases",
+        "build/performance256/program.elf"
+      ],
+      "rc": 0,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      },
+      "elapsed": 0.3910000000614673
+    },
+    {
+      "name": "readelf",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+        "-h",
+        "-A",
+        "-l",
+        "-sW",
+        "build/performance256/program.elf"
+      ],
+      "rc": 0,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      },
+      "elapsed": 0.3899999998975545
+    },
+    {
+      "name": "nm",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+        "-u",
+        "build/performance256/program.elf"
+      ],
+      "rc": 0,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      },
+      "elapsed": 0.375
+    }
+  ],
+  "bytes": 19744,
+  "sha256": "7BE534D0F4798A182BED549AB3E36244C79D86A45F6040BBD0E1AFB701619D9D"
+}

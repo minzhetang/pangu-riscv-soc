@@ -1,0 +1,130 @@
+{
+  "scope": "Finite MRET immediate-pending response and interrupt before STORE",
+  "tests": [
+    {
+      "name": "interrupt_before_store",
+      "wb": [
+        [
+          1,
+          257
+        ],
+        [
+          2,
+          128
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          4,
+          91
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          7,
+          15
+        ],
+        [
+          512,
+          257,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          28,
+          2147483655,
+          0
+        ]
+      ],
+      "enable_pc": 24,
+      "mask": 128,
+      "entry": 284,
+      "status": [
+        "00000088",
+        "3"
+      ],
+      "program_sha256": "b95ea21976fa8e8f69e83ccdee813114a7036931a8a9003a52cc036af4dc7e5b"
+    },
+    {
+      "name": "mret_pending_response",
+      "wb": [
+        [
+          1,
+          257
+        ],
+        [
+          2,
+          128
+        ],
+        [
+          3,
+          8192
+        ],
+        [
+          3,
+          6272
+        ],
+        [
+          4,
+          128
+        ],
+        [
+          10,
+          128
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          5,
+          91
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          7,
+          15
+        ],
+        [
+          512,
+          91,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          128,
+          2147483655,
+          0
+        ]
+      ],
+      "enable_pc": 36,
+      "mret": true,
+      "mask": 128,
+      "entry": 284,
+      "status": [
+        "00000088",
+        "3"
+      ],
+      "program_sha256": "18b60252f1722d097c4cee1538d47d2546d4ddb53e523d4fac4876f83319dc6c"
+    }
+  ]
+}

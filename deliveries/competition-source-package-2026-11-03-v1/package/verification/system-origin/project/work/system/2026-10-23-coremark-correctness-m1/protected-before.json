@@ -1,0 +1,167 @@
+[
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\alu.v",
+    "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+    "bytes": 1021
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\control.v",
+    "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+    "bytes": 2988
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\cpu.v",
+    "sha256": "555CB51AC20FFC439B61BB29D4F4D9F4DC02C38B54A37291A79519CD413B8114",
+    "bytes": 16582
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\regfile.v",
+    "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+    "bytes": 666
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\tb_c_boot.sv",
+    "sha256": "891CA3B224D01D5AA6587E7B9342ABF240A9C25007BAF8AA21161EAF11CD77E3",
+    "bytes": 3833
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\memory_model.sv",
+    "sha256": "ECAC647F8D6CD1CE2B55D60023E57E11C8B0B04E88926F35522170ED8857DF0C",
+    "bytes": 1457
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\check_c_boot.py",
+    "sha256": "F0C6B2651039176D2E7856CF3C31E747DF3C90AE17F3920D36ED0C863C26792F",
+    "bytes": 10715
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\result-after-external.json",
+    "sha256": "53B58F91F2F875FC7F349BFFF36A870B2A945DC39C3ACD8D9F60CB2F9A3EB608",
+    "bytes": 1112
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\wave-review.json",
+    "sha256": "594E70E16F7A661F15C1C707DFA6AADCAFB0F68054225F7689FF3D581813FCD8",
+    "bytes": 918
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\COMMANDS.md",
+    "sha256": "5200CF45195DF8EDE0B953D49E262206A85E310CE93431AD3C06D3026944318C",
+    "bytes": 3545
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\manual-expectations.json",
+    "sha256": "10C1466887B045D2DCF955CA861ADD3BD034233F44C3843500856056F17614AA",
+    "bytes": 527
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\objdump.log",
+    "sha256": "F5044F1442341D4EE3EE3AEA37AF8DB0CCB9A7C965A26E0052553846323FD6BA",
+    "bytes": 6894
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.bin",
+    "sha256": "E6C0738F5E238AA5A4A679E279F0822E67CD74BAD14E2900B2473CC54B062DF6",
+    "bytes": 576
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.bytes.hex",
+    "sha256": "ACAD83FD2418CF4A0A33CD332D12BFEF9411790499468193DDF094268C5BD385",
+    "bytes": 2304
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.c",
+    "sha256": "0E0685C7967204B753A352D4C7C317D68011E3F4CBB53E0C7F3D096B4945EACB",
+    "bytes": 783
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.elf",
+    "sha256": "EF785D0F91657B2ECA67AD8DB5B5534A40AFC8F89DBB7968084609858772B08A",
+    "bytes": 11564
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.ld",
+    "sha256": "0973CB6739117D65FB40D7B7E28D647A5C7170BBEBBB5BB25E8C8A7C9A52AC37",
+    "bytes": 851
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.mem32.hex",
+    "sha256": "A4A0EA43494E429D416CC2DE18DE584883D9895FEC0746468C8573BB2B608894",
+    "bytes": 1440
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\start.S",
+    "sha256": "50D3AD9F9D591DE5007665FF074B21E94812548A9B0972416954E569F6FC9DDC",
+    "bytes": 675
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\runs-v2\\result.json",
+    "sha256": "A6A5731D5C4177114B31F5398456A348DEE86F8A84548712407875F99027D07F",
+    "bytes": 1610306
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\validation-v2\\plan.json",
+    "sha256": "C892B72FEE950E9384A1687569A906F96FA490E983F9AC6888FAD514C6D94AAD",
+    "bytes": 2307728
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\barebones_porting.md",
+    "sha256": "487AB4D058AAD127EBAD527A314D4C5BEA72E093BDD18B9728359A9098E4E8FB",
+    "bytes": 9745
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\coremark.h",
+    "sha256": "42642B9A06C7ED2B3BD9EDA971B7C3868C4F5D27BF7EF6C4BBA11291A0C2598A",
+    "bytes": 4760
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\coremark.md5",
+    "sha256": "DAD92861212F8F012E75974E23EA97F7A275A375E0D3BC1D3B216423BA6B6306",
+    "bytes": 283
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\core_list_join.c",
+    "sha256": "CA00E4E010ECE47D7F040CB92AA50A95345A00D3171B59D088F6B243BE06CE7B",
+    "bytes": 18225
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\core_main.c",
+    "sha256": "17884C93C5B94378EB0FF02B4DF3725756CF2ADDB9B8CBCAA6200A4649FF5CA7",
+    "bytes": 15788
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\core_matrix.c",
+    "sha256": "ECDFF717B5A5C4907D221A606760E25499899CBF617582C05D40DB71C91351E4",
+    "bytes": 9598
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\core_state.c",
+    "sha256": "F4B84BB0A3452C45A4DAA664AB502BFDCCBD31CB57D93E9AC490C60937717A4E",
+    "bytes": 9707
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\core_util.c",
+    "sha256": "A3FBFCB9BB943B638624B8ECE01C5836DD56A96D7BCDE2697B248D077447327F",
+    "bytes": 6004
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\LICENSE.md",
+    "sha256": "9577B9C846F61FD69A0D8AC965998C6450C7D8969F71F0BB4A931B91AEBAD28A",
+    "bytes": 18582
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\README.md",
+    "sha256": "5581FB67DC1609CBD1865F150DBCB1050D96C602987792456850EB96EB0DD08C",
+    "bytes": 19687
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\barebones\\core_portme.c",
+    "sha256": "3001CFDA7CD6EF56ADC63590064064D3062220843C389248D00E7E454E4A8E2B",
+    "bytes": 4923
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\upstream-direct\\files\\barebones\\core_portme.h",
+    "sha256": "4A789446774E9327126768B2379D7619F8FFD11D9A2AFECC37126565486AAC5A",
+    "bytes": 5837
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "user": "正常场景已完成，LED0和LED7常亮",
+  "assessment": "Exact normal ledger mismatch, fault1; no root cause inferred",
+  "host_preparation_error": "Prior PowerShell quoting parse failure then missing script; no hardware/serial action by failed commands"
+}

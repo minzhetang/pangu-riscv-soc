@@ -1,0 +1,46 @@
+{
+  "maximum": 1,
+  "timeout": 30,
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+    "-B",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "-g2012",
+    "-Wall",
+    "-s",
+    "tb_timer_unit_v2",
+    "-o",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile\\unit-v2.vvp",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\cycle_counter64.sv",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\soc_data_adapter.sv",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\tests\\tb_timer_unit_v2.sv"
+  ],
+  "output": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile\\unit-v2.vvp",
+  "files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\tests\\tb_timer_unit_v2.sv",
+      "sha256": "DC5210CE673722A1A361B9B4476755583E99979BB33CF2C7A00751B1A4E4443F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\unit_boundary.py",
+      "sha256": "40F45989B6C28F39E4D16B3BBC83CFB46512D7B5CB0763AE960FF0C2A29C5BD2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "sha256": "25E1BA02E72F58D9D484BC5457D69A6B179D22D86BDF5BA5D6F9F0D4FE620BBF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "sha256": "F0775603E1F1BCF1B2DEA16DFF963A4B7D71B7B33D5BBE23D2B01FF5B2304E09"
+    }
+  ],
+  "purpose": "read nonzero high word through actual router, both words all write masks, held-read no side effects"
+}

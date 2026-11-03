@@ -1,0 +1,22 @@
+{
+  "executable": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+  "arguments": [
+    "-B",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "-g2012",
+    "-Wall",
+    "-s",
+    "tb_cpu_selfcheck_v1",
+    "-o",
+    "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\compile-batch\\group-02\\cpu-selfcheck.vvp",
+    "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\alu.v",
+    "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\control.v",
+    "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\regfile.v",
+    "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\cpu.v",
+    "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lb_selfcheck_v1.sv"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\compile-batch\\group-02",
+  "timeout_seconds": 60,
+  "log": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\compile-batch\\group-02\\compile.log",
+  "response": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\compile-batch\\group-02\\compile-process.json"
+}

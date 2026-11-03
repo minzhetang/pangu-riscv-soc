@@ -1,0 +1,122 @@
+{
+  "kind": "B_VERIFY_OFFLINE_WORKER",
+  "case_id": "P01-S02-missing-tail",
+  "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0",
+  "CPU_function_proven": false,
+  "new_DUT": 0,
+  "limits": {
+    "max_input_bytes_each": 536870912,
+    "max_records_each": 6000000,
+    "max_differences": 16,
+    "max_diagnostic_neighbors_each_side": 2,
+    "max_result_bytes": 1048576,
+    "max_log_bytes_each": 4194304,
+    "worker_peak_working_set_bytes": 268435456,
+    "case_timeout_seconds": 180.0,
+    "cleanup_seconds": 8.0
+  },
+  "expected_input": {
+    "storage": "raw",
+    "path": "inputs/seeds/S02-missing-tail/expected.log",
+    "bytes": 194,
+    "sha256": "019947B4F018F3822053E2151E763AD4D4A53CBAB1A710E46EB396B00931AA51"
+  },
+  "actual_input": {
+    "storage": "raw",
+    "path": "inputs/seeds/S02-missing-tail/actual.log",
+    "bytes": 177,
+    "sha256": "6406D0FBC90E95D9349A8F36BFC4A66392A6D4478E849A3E35A7434F13748A8B"
+  },
+  "status": "MISMATCH",
+  "native_rc": 2,
+  "fully_consumed": true,
+  "checked": 8,
+  "expected_records": 8,
+  "actual_records": 7,
+  "mismatch_count": 1,
+  "differences": [
+    {
+      "ordinal": 8,
+      "kind": "MISSING",
+      "expected": [
+        "WB",
+        10,
+        2,
+        1
+      ],
+      "actual": null
+    }
+  ],
+  "neighbors": [
+    {
+      "ordinal": 6,
+      "expected": [
+        "STORE",
+        7,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "actual": [
+        "STORE",
+        7,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "relation": "EQUAL"
+    },
+    {
+      "ordinal": 7,
+      "expected": [
+        "READ",
+        8,
+        8,
+        65536,
+        1,
+        1
+      ],
+      "actual": [
+        "READ",
+        8,
+        8,
+        65536,
+        1,
+        1
+      ],
+      "relation": "EQUAL"
+    },
+    {
+      "ordinal": 8,
+      "expected": [
+        "WB",
+        10,
+        2,
+        1
+      ],
+      "actual": null,
+      "relation": "MISSING_ACTUAL"
+    }
+  ],
+  "first_difference": {
+    "ordinal": 8,
+    "kind": "MISSING",
+    "field": null,
+    "expected": [
+      "WB",
+      10,
+      2,
+      1
+    ],
+    "actual": null,
+    "field_expected": null,
+    "field_actual": null
+  },
+  "termination": "normal",
+  "diagnostic_error": null,
+  "elapsed_s": 0.0,
+  "worker_reported_peak_bytes": 20725760,
+  "measurement_method": "Windows GetProcessMemoryInfo PeakWorkingSetSize (worker self-report); parent also measures child"
+}

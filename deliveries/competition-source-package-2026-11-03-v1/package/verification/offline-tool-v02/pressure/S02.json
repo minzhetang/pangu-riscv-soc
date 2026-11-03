@@ -1,0 +1,22 @@
+{
+  "id": "S02",
+  "status": "MATCH",
+  "expected_input": {
+    "storage": "raw",
+    "path": "generated/faults/s02_large_cycles_expected.log",
+    "bytes": 71,
+    "sha256": "938E37E8C42BEFA5601F52B68F876EC8414458A11EF9F4E6915C22DE6B32ED8B"
+  },
+  "actual_input": {
+    "storage": "raw",
+    "path": "generated/faults/s02_large_cycles_actual.log",
+    "bytes": 71,
+    "sha256": "938E37E8C42BEFA5601F52B68F876EC8414458A11EF9F4E6915C22DE6B32ED8B"
+  },
+  "checked": 3,
+  "elapsed_s": 0.172,
+  "worker_peak_bytes": 20668416,
+  "parent_peak_bytes": null,
+  "worker_peak_limit_bytes": 268435456,
+  "within_worker_limit": true
+}

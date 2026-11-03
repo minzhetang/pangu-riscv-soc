@@ -1,0 +1,1133 @@
+{
+  "kind": "ACTUAL",
+  "run_id": "rx-20261025-211013",
+  "generated_at": "2026-10-25T21:10:13+08:00",
+  "task_id": "B-UART-RX",
+  "module_version": "1.0.0",
+  "interface_version": "PERIPH-CORE-RX-1.0 / 1.0.0",
+  "tools": [
+    {
+      "name": "Icarus Verilog (iverilog)",
+      "version": "12.0 (devel) (s20150603-1539-g2693dd32b)",
+      "legal_source": "Existing lawful local Icarus installation recorded in B-ENV; explicit path D:\\iverilog\\bin\\iverilog.exe, PATH unchanged."
+    },
+    {
+      "name": "Icarus Verilog (vvp)",
+      "version": "12.0 (devel) (s20150603-1539-g2693dd32b)",
+      "legal_source": "Existing lawful local Icarus installation recorded in B-ENV; explicit path D:\\iverilog\\bin\\vvp.exe, PATH unchanged."
+    },
+    {
+      "name": "Python (runner/results only)",
+      "version": "3.12.10",
+      "legal_source": "Existing local Python 3.12 embeddable installation recorded in B-ENV; explicit path, standard library only."
+    }
+  ],
+  "tests": [
+    {
+      "id": "COM-01",
+      "acceptance_id": "COM-01",
+      "purpose": "frozen plan and artifact hash gate",
+      "expected": "Plan SHA matches tests/rx-plan-1.3.4.sha256; RTL/TB/negative/watchdog/illegal/ledger-check hashes match the plan.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "PLAN_CHECK=PASS; 7 artifact hashes match",
+      "status": "PASS",
+      "duration_s": 0.0,
+      "command": {
+        "argv": [
+          "C:\\Users\\ANON_USER\\AppData\\Local\\Programs\\Python\\Python312-embed\\python.exe",
+          "-c",
+          "internal plan/artifact hash check"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/plan_check.log"
+      ],
+      "wave_paths": [],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "COM-03",
+      "acceptance_id": "COM-03",
+      "purpose": "bounded process and TB cycle limits",
+      "expected": "Compile 60 s/item, run 30 s/item, TB_MAX_CYCLES selected per plan, hard cap 1,000,000.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "compile_timeout_s=60; run_timeout_s=30; per-config last_check+32 budgets=N8=5045(last=5013),N16=11319(last=11287),N234=110967(last=110935); tb_hard_cap=1000000; runner rejects >hard_cap; TB_HARD_CAP_REJECT on >1000000",
+      "status": "PASS",
+      "duration_s": 0.0,
+      "command": {
+        "argv": [
+          "C:\\Users\\ANON_USER\\AppData\\Local\\Programs\\Python\\Python312-embed\\python.exe",
+          "-c",
+          "internal bounded-limit check"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/plan_check.log"
+      ],
+      "wave_paths": [],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "COM-04",
+      "acceptance_id": "COM-04",
+      "purpose": "fresh run evidence",
+      "expected": "New run_id with new logs, results and VCDs; no old results or waves reused.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "run_id=rx-20261025-211013; logs=work/peripherals/rx/logs/rx-20261025-211013; waves=work/peripherals/rx/waves/rx-20261025-211013",
+      "status": "PASS",
+      "duration_s": 0.0,
+      "command": {
+        "argv": [
+          "C:\\Users\\ANON_USER\\AppData\\Local\\Programs\\Python\\Python312-embed\\python.exe",
+          "-c",
+          "internal fresh-evidence check"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/plan_check.log"
+      ],
+      "wave_paths": [],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-01-N8",
+      "acceptance_id": "RX-01",
+      "purpose": "valid frames and LSB-first byte order Configuration N8.",
+      "expected": "For each of 0x00,0xFF,0x55,0xAA,0x01,0x80,0x7E: valid/data appear at S_postNBA; no frame_error/overrun; after consume valid=0 and data holds.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-01: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.078,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N8.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N8.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N8.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N8.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N8.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-02-N8",
+      "acceptance_id": "RX-02",
+      "purpose": "four sampling phases and representative frames Configuration N8.",
+      "expected": "N8/N16: 0.1/0.3/0.6/0.9T phases for 0x55 and 0xAA; N234: 0x55 and 0xAA representative frames; all valid/data at S_postNBA, no errors.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-02: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.078,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N8.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N8.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N8.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N8.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N8.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-03-N8",
+      "acceptance_id": "RX-03",
+      "purpose": "true back-to-back frames with no extra idle Configuration N8.",
+      "expected": "N16 16 frames, N8 8 frames, N234 2 frames; raw frame period exactly 10*N*T; same-phase d_next=d+10N; each S_postNBA shows the expected byte, S+1 consumes it, no overrun/frame_error.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-03: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.078,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N8.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N8.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N8.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N8.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N8.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-05-N8",
+      "acceptance_id": "RX-05",
+      "purpose": "bad stop, mailbox hold/consume, sustained low, clear/new-error priority Configuration N8.",
+      "expected": "Bad stop sets frame_error, writes no data; ready=0 keeps old, ready=1 consumes old; sustained low does not create a second visible frame; full mailbox recovery sets overrun; clear with new frame_error keeps new FE and clears old OV. 5e: clear_errors with a new overrun keeps the new OV=1, clears the old FE, and leaves the full mailbox byte 0x11 held. The new good frame 0x44 is still a protocol DROP (OV already 1, no OV rise; independent serial-decoded data). 5f: bad stop with a sustained low tail clears FE while low, confirms no re-raise during the low tail, and recovers after high.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-05: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.078,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N8.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N8.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N8.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N8.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N8.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-06-N8",
+      "acceptance_id": "RX-06",
+      "purpose": "valid timing and hold/consume behavior Configuration N8.",
+      "expected": "Good byte appears at S_postNBA; valid&&!ready holds 24+ cycles; one ready handshake consumes exactly once; data holds after consume.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-06: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.078,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N8.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N8.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N8.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N8.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N8.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-07-N8",
+      "acceptance_id": "RX-07",
+      "purpose": "full mailbox, overrun, clear, same-byte non-dedup Configuration N8.",
+      "expected": "Second good byte with full mailbox keeps old, drops new, sets overrun; clear_errors clears overrun without consuming; after consume, the same byte value is accepted again.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-07: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.078,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N8.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N8.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N8.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N8.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N8.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-08-N8",
+      "acceptance_id": "RX-08",
+      "purpose": "same-edge consume old plus replace new Configuration N8.",
+      "expected": "With valid=1 and ready asserted only for S: old consumed, new data published at S, valid remains 1, no overrun; new byte is consumed at S+1 when ready stays high. The ledger records CONSUME old plus ACCEPT-REPLACE at the same edge with edge/time and pre/post public states; same-byte replacement is not rejected merely because rx_data does not change.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-08: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.078,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N8.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N8.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N8.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N8.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N8.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-09-N8",
+      "acceptance_id": "RX-09",
+      "purpose": "mid-frame reset, reset-release-low recovery, clear/new-error Configuration N8.",
+      "expected": "Mid-frame reset cancels in-flight frame and clears outputs; release-low stays ignored until high then falling; clear with a new frame_error keeps FE=1 and clears the other error where applicable. Mid-frame reset is exercised during DATA, START and STOP; CANCEL is derived from reset while the independent serial decoder reports an active frame, not by a post-stimulus actual_cancel() call. Each cancels the in-flight frame and a following good frame is accepted.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-09: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.078,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N8.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N8.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N8.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N8.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N8.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-01-N16",
+      "acceptance_id": "RX-01",
+      "purpose": "valid frames and LSB-first byte order Configuration N16.",
+      "expected": "For each of 0x00,0xFF,0x55,0xAA,0x01,0x80,0x7E: valid/data appear at S_postNBA; no frame_error/overrun; after consume valid=0 and data holds.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-01: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.125,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N16.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N16.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N16.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N16.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-02-N16",
+      "acceptance_id": "RX-02",
+      "purpose": "four sampling phases and representative frames Configuration N16.",
+      "expected": "N8/N16: 0.1/0.3/0.6/0.9T phases for 0x55 and 0xAA; N234: 0x55 and 0xAA representative frames; all valid/data at S_postNBA, no errors.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-02: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.125,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N16.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N16.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N16.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N16.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-03-N16",
+      "acceptance_id": "RX-03",
+      "purpose": "true back-to-back frames with no extra idle Configuration N16.",
+      "expected": "N16 16 frames, N8 8 frames, N234 2 frames; raw frame period exactly 10*N*T; same-phase d_next=d+10N; each S_postNBA shows the expected byte, S+1 consumes it, no overrun/frame_error.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-03: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.125,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N16.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N16.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N16.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N16.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-04-N16",
+      "acceptance_id": "RX-04",
+      "purpose": "short false start at N16 Configuration N16.",
+      "expected": "Low durations L=7 and L=8 (pre-second-stage samples) with return high before start center are ignored; no valid/error; a following good 0x5A is accepted.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-04: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.125,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N16.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N16.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N16.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N16.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-05-N16",
+      "acceptance_id": "RX-05",
+      "purpose": "bad stop, mailbox hold/consume, sustained low, clear/new-error priority Configuration N16.",
+      "expected": "Bad stop sets frame_error, writes no data; ready=0 keeps old, ready=1 consumes old; sustained low does not create a second visible frame; full mailbox recovery sets overrun; clear with new frame_error keeps new FE and clears old OV. 5e: clear_errors with a new overrun keeps the new OV=1, clears the old FE, and leaves the full mailbox byte 0x11 held. The new good frame 0x44 is still a protocol DROP (OV already 1, no OV rise; independent serial-decoded data). 5f: bad stop with a sustained low tail clears FE while low, confirms no re-raise during the low tail, and recovers after high.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-05: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.125,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N16.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N16.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N16.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N16.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-06-N16",
+      "acceptance_id": "RX-06",
+      "purpose": "valid timing and hold/consume behavior Configuration N16.",
+      "expected": "Good byte appears at S_postNBA; valid&&!ready holds 24+ cycles; one ready handshake consumes exactly once; data holds after consume.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-06: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.125,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N16.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N16.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N16.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N16.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-07-N16",
+      "acceptance_id": "RX-07",
+      "purpose": "full mailbox, overrun, clear, same-byte non-dedup Configuration N16.",
+      "expected": "Second good byte with full mailbox keeps old, drops new, sets overrun; clear_errors clears overrun without consuming; after consume, the same byte value is accepted again.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-07: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.125,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N16.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N16.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N16.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N16.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-08-N16",
+      "acceptance_id": "RX-08",
+      "purpose": "same-edge consume old plus replace new Configuration N16.",
+      "expected": "With valid=1 and ready asserted only for S: old consumed, new data published at S, valid remains 1, no overrun; new byte is consumed at S+1 when ready stays high. The ledger records CONSUME old plus ACCEPT-REPLACE at the same edge with edge/time and pre/post public states; same-byte replacement is not rejected merely because rx_data does not change.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-08: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.125,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N16.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N16.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N16.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N16.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-09-N16",
+      "acceptance_id": "RX-09",
+      "purpose": "mid-frame reset, reset-release-low recovery, clear/new-error Configuration N16.",
+      "expected": "Mid-frame reset cancels in-flight frame and clears outputs; release-low stays ignored until high then falling; clear with a new frame_error keeps FE=1 and clears the other error where applicable. Mid-frame reset is exercised during DATA, START and STOP; CANCEL is derived from reset while the independent serial decoder reports an active frame, not by a post-stimulus actual_cancel() call. Each cancels the in-flight frame and a following good frame is accepted.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-09: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.125,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N16.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N16.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N16.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N16.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-01-N234",
+      "acceptance_id": "RX-01",
+      "purpose": "valid frames and LSB-first byte order Configuration N234.",
+      "expected": "For each of 0x00,0xFF,0x55,0xAA,0x01,0x80,0x7E: valid/data appear at S_postNBA; no frame_error/overrun; after consume valid=0 and data holds.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-01: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.891,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N234.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N234.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N234.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N234.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N234.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-02-N234",
+      "acceptance_id": "RX-02",
+      "purpose": "four sampling phases and representative frames Configuration N234.",
+      "expected": "N8/N16: 0.1/0.3/0.6/0.9T phases for 0x55 and 0xAA; N234: 0x55 and 0xAA representative frames; all valid/data at S_postNBA, no errors.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-02: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.891,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N234.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N234.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N234.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N234.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N234.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-03-N234",
+      "acceptance_id": "RX-03",
+      "purpose": "true back-to-back frames with no extra idle Configuration N234.",
+      "expected": "N16 16 frames, N8 8 frames, N234 2 frames; raw frame period exactly 10*N*T; same-phase d_next=d+10N; each S_postNBA shows the expected byte, S+1 consumes it, no overrun/frame_error.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-03: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.891,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N234.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N234.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N234.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N234.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N234.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-05-N234",
+      "acceptance_id": "RX-05",
+      "purpose": "bad stop, mailbox hold/consume, sustained low, clear/new-error priority Configuration N234.",
+      "expected": "Bad stop sets frame_error, writes no data; ready=0 keeps old, ready=1 consumes old; sustained low does not create a second visible frame; full mailbox recovery sets overrun; clear with new frame_error keeps new FE and clears old OV. 5e: clear_errors with a new overrun keeps the new OV=1, clears the old FE, and leaves the full mailbox byte 0x11 held. The new good frame 0x44 is still a protocol DROP (OV already 1, no OV rise; independent serial-decoded data). 5f: bad stop with a sustained low tail clears FE while low, confirms no re-raise during the low tail, and recovers after high.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-05: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.891,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N234.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N234.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N234.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N234.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N234.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-06-N234",
+      "acceptance_id": "RX-06",
+      "purpose": "valid timing and hold/consume behavior Configuration N234.",
+      "expected": "Good byte appears at S_postNBA; valid&&!ready holds 24+ cycles; one ready handshake consumes exactly once; data holds after consume.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-06: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.891,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N234.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N234.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N234.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N234.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N234.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-07-N234",
+      "acceptance_id": "RX-07",
+      "purpose": "full mailbox, overrun, clear, same-byte non-dedup Configuration N234.",
+      "expected": "Second good byte with full mailbox keeps old, drops new, sets overrun; clear_errors clears overrun without consuming; after consume, the same byte value is accepted again.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-07: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.891,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N234.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N234.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N234.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N234.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N234.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-08-N234",
+      "acceptance_id": "RX-08",
+      "purpose": "same-edge consume old plus replace new Configuration N234.",
+      "expected": "With valid=1 and ready asserted only for S: old consumed, new data published at S, valid remains 1, no overrun; new byte is consumed at S+1 when ready stays high. The ledger records CONSUME old plus ACCEPT-REPLACE at the same edge with edge/time and pre/post public states; same-byte replacement is not rejected merely because rx_data does not change.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-08: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.891,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N234.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N234.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N234.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N234.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N234.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "RX-09-N234",
+      "acceptance_id": "RX-09",
+      "purpose": "mid-frame reset, reset-release-low recovery, clear/new-error Configuration N234.",
+      "expected": "Mid-frame reset cancels in-flight frame and clears outputs; release-low stays ignored until high then falling; clear with a new frame_error keeps FE=1 and clears the other error where applicable. Mid-frame reset is exercised during DATA, START and STOP; CANCEL is derived from reset while the independent serial decoder reports an active frame, not by a post-stimulus actual_cancel() call. Each cancels the in-flight frame and a following good frame is accepted.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX-09: TEST_PASS marker; no CHK_FAIL/TEST_FAIL in block",
+      "status": "PASS",
+      "duration_s": 0.891,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_N234.vvp",
+          "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N234.vcd"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_N234.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_N234.log"
+      ],
+      "wave_paths": [
+        "work/peripherals/rx/waves/rx-20261025-211013/uart_rx_N234.vcd"
+      ],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "COM-05",
+      "acceptance_id": "RX-10/COM-05",
+      "purpose": "independent checker and ledger-capture negative proof at N=16",
+      "expected": "Separate TB sends 0x55 but expects 0xAA; a public-stream capture source feeds the shared ordered comparator. Extra, missing, wrong-order and wrong-byte actual streams must be rejected, with one- and two-event controls passing.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "NEG_CONTROL_PASS; NEG_CHECKER_PASS; NEG_EXTRA/MISSING/ORDER/WRONG_BYTE_DETECTED; NEG_TWO_EVENT_CONTROL_PASS; NEG_CAPTURE_SAME_EDGE/DROP/CANCEL controls and missing/wrong/extra detection; public-stream capture plus shared ordered comparator",
+      "status": "PASS",
+      "duration_s": 0.016,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_neg.vvp"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_neg.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_neg.log"
+      ],
+      "wave_paths": [],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    },
+    {
+      "id": "COM-02",
+      "acceptance_id": "COM-02",
+      "purpose": "bounded run and TB cycle watchdog",
+      "expected": "Deliberate no-completion run with MAX_CYCLES=200 emits TB_WATCHDOG_TIMEOUT with rc=0 and is classified TIMEOUT; a process timeout is FAIL.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "TB_WATCHDOG_TIMEOUT cycles=201 limit=200; TB-emitted watchdog with native rc=0 and no process timeout; classified TIMEOUT not functional FAIL",
+      "status": "TIMEOUT",
+      "duration_s": 0.016,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_watchdog.vvp"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_watchdog.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_watchdog.log"
+      ],
+      "wave_paths": [],
+      "limitations": [
+        "The deliberate watchdog test proves bounded termination, not functional correctness."
+      ]
+    },
+    {
+      "id": "COM-06",
+      "acceptance_id": "COM-06",
+      "purpose": "illegal N<8 configuration rejection",
+      "expected": "N=4 must emit RX_ILLEGAL_CLKS_PER_BIT=4 minimum=8 at simulation start.",
+      "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "actual": "RX_ILLEGAL_CLKS_PER_BIT=4 minimum=8; no silent clamp",
+      "status": "PASS",
+      "duration_s": 0.031,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/rx-20261025-211013/uart_rx_illegal.vvp"
+        ],
+        "cwd": "work/peripherals/rx",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work/peripherals/rx/logs/rx-20261025-211013/compile_illegal.log",
+        "work/peripherals/rx/logs/rx-20261025-211013/run_illegal.log"
+      ],
+      "wave_paths": [],
+      "limitations": [
+        "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+        "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+        "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+        "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz."
+      ]
+    }
+  ],
+  "limitations": [
+    "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+    "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+    "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+    "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz.",
+    "The two-stage synchronizer proves logical latency only, not analog metastability or MTBF.",
+    "PASS_REHEARSAL, local PASS and this plan's PASS are not mainline reproduction, interface compatibility, system integration or hardware acceptance.",
+    "The 1.1.0 plan adds RX contract-boundary cases and runner mechanism evidence; it is not a TX/GPIO full-matrix rerun and not a hardware/system acceptance.",
+    "The 1.2.0 plan adds a frozen ordered transaction ledger, +32-cycle per-config budgets, shared comparator negative proof, and process-timeout/log-truncation rejection; it is not a new full-matrix claim.",
+    "The 1.3.0 ledger adds protocol-derived events, edge/time and public pre/post states. It does not claim observation of hidden physical write pulses or replace the aggregate public-state counters.",
+    "Only RX-05 5e adds one DROP per configuration; old 1.2.0 logs/counts are retained as history and are not rewritten.",
+    "1.3.1 changes only RX verification: same-byte replacement coverage, true pre/post clear state and capture-path DROP/CANCEL negatives. RX RTL is unchanged; 5e DROP data remains independently decoded.",
+    "1.3.2 changes only event timing/state capture and status propagation; RX RTL is unchanged.",
+    "1.3.3 only shares the RX public capture module and fixes one-based CONSUME/pre/post observation; RX RTL unchanged.",
+    "1.3.4 changes only RX capture/order/snapshot and status controls; RX RTL unchanged.",
+    "1.3.5 fixes only RX snapshot edge/time and plan/index consistency; RX RTL and functional expectations are unchanged. Counts remain 92/110/68 and 41/41, 50/50, 29/29."
+  ],
+  "issues": [
+    "No functional FAIL; COM-02 is an expected watchdog TIMEOUT, not a functional failure."
+  ]
+}

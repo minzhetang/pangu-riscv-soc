@@ -1,0 +1,13 @@
+0000: 00100513  addi x10,x0,1 ; comparison bound
+0004: ffb00093  addi x1,x0,-5
+0008: 00a0b133  sltu x2,x1,x10 ;EX rs1,0
+000c: ffa00193  addi x3,x0,-6
+0010: 00400a13  addi x20,x0,4 ;useful gap
+0014: 00a1b233  sltu x4,x3,x10 ;WB->EX rs1,0
+0018: ff900293  addi x5,x0,-7
+001c: 00800a93  addi x21,x0,8 ;useful gap
+0020: 00c00b13  addi x22,x0,12 ;useful gap
+0024: 00a2b333  sltu x6,x5,x10 ;WB->ID rs1,0
+0028: 00930393  addi x7,x6,9 ;9
+002c: 00602023  sw x6,0(x0) ;overwrite sentinel with0
+0030: 05a00f93  addi x31,x0,90 ; completion

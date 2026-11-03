@@ -1,0 +1,215 @@
+{
+  "schema": 2,
+  "transport": "WIN32_READFILE",
+  "run_id": "2026-11-02-sm2-performance-native-repeat-m3",
+  "started": "2026-11-02T17:56:13.177011+08:00",
+  "port": "COM22",
+  "baud": 115200,
+  "opened": true,
+  "closed": true,
+  "write_calls": 0,
+  "program_calls": 0,
+  "pds_calls": 0,
+  "bytes": 1872,
+  "error_events": [],
+  "chunks": [
+    {
+      "offset": 0,
+      "bytes": 104,
+      "elapsed_seconds": 51.79700000002049,
+      "observed_at": "2026-11-02T17:57:04.975799+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 104,
+      "bytes": 42,
+      "elapsed_seconds": 52.29700000002049,
+      "observed_at": "2026-11-02T17:57:05.477938+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 146,
+      "bytes": 42,
+      "elapsed_seconds": 52.859999999869615,
+      "observed_at": "2026-11-02T17:57:06.037504+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 188,
+      "bytes": 42,
+      "elapsed_seconds": 53.34399999980815,
+      "observed_at": "2026-11-02T17:57:06.533177+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 230,
+      "bytes": 42,
+      "elapsed_seconds": 53.84399999980815,
+      "observed_at": "2026-11-02T17:57:07.029073+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 272,
+      "bytes": 42,
+      "elapsed_seconds": 54.34399999980815,
+      "observed_at": "2026-11-02T17:57:07.521895+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 314,
+      "bytes": 42,
+      "elapsed_seconds": 54.84399999980815,
+      "observed_at": "2026-11-02T17:57:08.020913+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 356,
+      "bytes": 42,
+      "elapsed_seconds": 55.32899999991059,
+      "observed_at": "2026-11-02T17:57:08.514217+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 398,
+      "bytes": 65,
+      "elapsed_seconds": 55.82899999991059,
+      "observed_at": "2026-11-02T17:57:09.011050+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 463,
+      "bytes": 15,
+      "elapsed_seconds": 56.625,
+      "observed_at": "2026-11-02T17:57:09.815139+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 478,
+      "bytes": 10,
+      "elapsed_seconds": 56.812999999849126,
+      "observed_at": "2026-11-02T17:57:10.001721+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 488,
+      "bytes": 15,
+      "elapsed_seconds": 57.0,
+      "observed_at": "2026-11-02T17:57:10.189072+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 503,
+      "bytes": 10,
+      "elapsed_seconds": 57.875,
+      "observed_at": "2026-11-02T17:57:11.056940+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 513,
+      "bytes": 15,
+      "elapsed_seconds": 57.937999999849126,
+      "observed_at": "2026-11-02T17:57:11.119383+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 528,
+      "bytes": 15,
+      "elapsed_seconds": 58.562999999849126,
+      "observed_at": "2026-11-02T17:57:11.738953+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 543,
+      "bytes": 10,
+      "elapsed_seconds": 58.875,
+      "observed_at": "2026-11-02T17:57:12.051717+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 553,
+      "bytes": 15,
+      "elapsed_seconds": 59.29700000002049,
+      "observed_at": "2026-11-02T17:57:12.486050+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 568,
+      "bytes": 10,
+      "elapsed_seconds": 59.859999999869615,
+      "observed_at": "2026-11-02T17:57:13.043721+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 578,
+      "bytes": 15,
+      "elapsed_seconds": 60.109999999869615,
+      "observed_at": "2026-11-02T17:57:13.291379+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 593,
+      "bytes": 15,
+      "elapsed_seconds": 60.67200000002049,
+      "observed_at": "2026-11-02T17:57:13.851466+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 608,
+      "bytes": 10,
+      "elapsed_seconds": 60.859999999869615,
+      "observed_at": "2026-11-02T17:57:14.039960+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 618,
+      "bytes": 63,
+      "elapsed_seconds": 61.359999999869615,
+      "observed_at": "2026-11-02T17:57:14.538979+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 681,
+      "bytes": 512,
+      "elapsed_seconds": 79.7819999998901,
+      "observed_at": "2026-11-02T17:57:32.970689+08:00",
+      "pending_before_read": 0
+    },
+    {
+      "offset": 1193,
+      "bytes": 679,
+      "elapsed_seconds": 79.84399999980815,
+      "observed_at": "2026-11-02T17:57:33.032473+08:00",
+      "pending_before_read": 0
+    }
+  ],
+  "queue_observations": [],
+  "read_calls": 1319,
+  "max_seconds": 600,
+  "max_bytes": 65536,
+  "end_marker_seen": true,
+  "initial_settings": {
+    "baud": 115200,
+    "data_bits": 8,
+    "parity": 0,
+    "stop_bits": 0,
+    "flags_hex": "0x00000001"
+  },
+  "effective_settings": {
+    "baud": 115200,
+    "data_bits": 8,
+    "parity": 0,
+    "stop_bits": 0,
+    "flags_hex": "0x00000001"
+  },
+  "timeout_readback": {
+    "interval": 4294967295,
+    "read_multiplier": 0,
+    "read_constant": 50,
+    "write_multiplier": 0,
+    "write_constant": 150
+  },
+  "state": "END_MARKER_THEN_QUIET",
+  "total_seconds": 81.89099999982864,
+  "finished": "2026-11-02T17:57:35.079342+08:00",
+  "transport_clean": true
+}

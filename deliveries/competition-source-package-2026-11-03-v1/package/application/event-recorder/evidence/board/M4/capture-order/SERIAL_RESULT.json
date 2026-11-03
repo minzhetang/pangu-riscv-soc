@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "transport": "WIN32_READFILE",
+  "run_id": "capture-order",
+  "started": "2026-11-03T09:58:46.307587+08:00",
+  "port": "COM22",
+  "baud": 115200,
+  "opened": true,
+  "closed": true,
+  "write_calls": 0,
+  "program_calls": 0,
+  "pds_calls": 0,
+  "bytes": 214,
+  "error_events": [],
+  "chunks": [
+    {
+      "offset": 0,
+      "bytes": 214,
+      "elapsed_seconds": 140.65600000019185,
+      "observed_at": "2026-11-03T10:01:06.966442+08:00",
+      "pending_before_read": 0
+    }
+  ],
+  "queue_observations": [],
+  "read_calls": 2301,
+  "max_seconds": 900,
+  "max_bytes": 65536,
+  "end_marker_seen": true,
+  "initial_settings": {
+    "baud": 115200,
+    "data_bits": 8,
+    "parity": 0,
+    "stop_bits": 0,
+    "flags_hex": "0x00000001"
+  },
+  "effective_settings": {
+    "baud": 115200,
+    "data_bits": 8,
+    "parity": 0,
+    "stop_bits": 0,
+    "flags_hex": "0x00000001"
+  },
+  "timeout_readback": {
+    "interval": 4294967295,
+    "read_multiplier": 0,
+    "read_constant": 50,
+    "write_multiplier": 0,
+    "write_constant": 150
+  },
+  "state": "END_MARKER_THEN_QUIET",
+  "total_seconds": 142.70300000021234,
+  "finished": "2026-11-03T10:01:09.012806+08:00",
+  "transport_clean": true
+}

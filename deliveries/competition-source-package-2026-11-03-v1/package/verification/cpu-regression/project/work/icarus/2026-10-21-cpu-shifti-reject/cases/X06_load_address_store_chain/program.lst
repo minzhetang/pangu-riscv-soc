@@ -1,0 +1,9 @@
+0000: 00800093  addi x1,x0,8
+0004: ff80a103  lw x2,-8(x1) ; data16
+0008: 00012183  lw x3,0(x2) ; data85
+000c: fe312e23  sw x3,-4(x2) ; addr12
+0010: ffc12203  lw x4,-4(x2)
+0014: 00120293  addi x5,x4,1
+0018: 0050a223  sw x5,4(x1) ; addr12
+001c: 0040a303  lw x6,4(x1)
+0020: 05a00f93  addi x31,x0,90 ; completion

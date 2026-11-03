@@ -1,0 +1,127 @@
+[
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\source\\alu.v",
+    "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+    "bytes": 1021
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\source\\control.v",
+    "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+    "bytes": 2988
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\source\\cpu.v",
+    "sha256": "555CB51AC20FFC439B61BB29D4F4D9F4DC02C38B54A37291A79519CD413B8114",
+    "bytes": 16582
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\source\\regfile.v",
+    "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+    "bytes": 666
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\memory_model.sv",
+    "sha256": "44D3C4B8D248FFC3E56E15202C421293E3A162E1E9F7B084C9A8BEEF7FA04FC8",
+    "bytes": 1437
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\tb_coremark.sv",
+    "sha256": "F879A323B1B300B851E317D0FBABDE217F69EDE45331090457E1FC9BD189A69E",
+    "bytes": 3870
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\reference_coremark.py",
+    "sha256": "B2E822A7EC1799FD72838127F58794C1098F050F1D16A473AD2B010DA1FB3CEC",
+    "bytes": 8204
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\check_and_run.py",
+    "sha256": "9F6D19C013618116194768C2DCB5A73FD589BC077A404F2397F8EECEECE6492D",
+    "bytes": 9560
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\manual-plan.json",
+    "sha256": "95AD27ADC06067B885DF5BC51A35BC0BC4D1BB389567E46AD0BC523F24D3F708",
+    "bytes": 1472
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\coremark.ld",
+    "sha256": "0F1859322245F79211A5799D9056F18169A763765AEEC12DFB8C6E02F2679B23",
+    "bytes": 850
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\start.S",
+    "sha256": "50D3AD9F9D591DE5007665FF074B21E94812548A9B0972416954E569F6FC9DDC",
+    "bytes": 675
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\prepare_and_build.py",
+    "sha256": "BCF7EFBB95903E4C952E40C002520B27E40EE856F06A6273CD9490080DCDBE2F",
+    "bytes": 8215
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\source-integrity-review.json",
+    "sha256": "74EE91B4ECD5BF64A71AEB9563C3D6435FF781AB9C80B4ACEDA24EAB67BC5F4A",
+    "bytes": 3590
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\port\\core_portme.c",
+    "sha256": "16F8F09C7B8FDE168D9597573153EE2FD78F1CA112A320CBFF5C47A9E39EF6A8",
+    "bytes": 2756
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\port\\core_portme.h",
+    "sha256": "27AC2CC81ECB7A920F88DFDCCF6B01FF29E2964A326FE4055DD433A160540D89",
+    "bytes": 1160
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\performance\\coremark.elf",
+    "sha256": "CF0CB3DE47AC2A35400F0DEFE67F5E211C7D47D7772E3EE23E8D64ADE4AA9DDD",
+    "bytes": 25884
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\performance\\coremark.bin",
+    "sha256": "1D1EB5E247AAF1A7003A56F283035C8B5578500CDFE3A924A0B76EE15A0BE9A8",
+    "bytes": 15168
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\performance\\image.hex",
+    "sha256": "46BB7DF0B8CAEA3B3F6463F35F1BDCBC2BC245F563F419BF9835910A3E47FB61",
+    "bytes": 37920
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\performance\\expected.json",
+    "sha256": "21ECC99E023555C39BC2AB0DEEA68E0FB30E11036CFA033170115DEE6172F8B7",
+    "bytes": 321033
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\performance\\expected-output.txt",
+    "sha256": "BE1A1D39517C77043A23089936EB2A9B46E4F87BF99BFB2F3C3C6404168A495C",
+    "bytes": 513
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\validation\\coremark.elf",
+    "sha256": "80164E2BFFAEFD5D835399CF7784F41C198CD8CBCF3F5C4E9B25D26A2BF4A742",
+    "bytes": 25892
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\validation\\coremark.bin",
+    "sha256": "6700B9A0C7E85CAF157516FFF38804E63921317901EE0B8FC66636CFEEF18DA7",
+    "bytes": 15176
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\validation\\image.hex",
+    "sha256": "F7C09F2EBBC2BB192C855D58C30F20D45C5637FE35DB06E910068FD5E9D5FC2B",
+    "bytes": 37940
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\validation\\expected.json",
+    "sha256": "EA74013E9A6625390A9B6FBC4CBD49D9483129F6EE62E1CE1160B15E51EE395A",
+    "bytes": 321073
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\validation\\expected-output.txt",
+    "sha256": "36A319A8A9CBB19E5A521B675C9BB3D370A87754636D93B0C786CF2A1574D53E",
+    "bytes": 512
+  }
+]

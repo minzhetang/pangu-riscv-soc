@@ -1,0 +1,295 @@
+{
+  "status": "PDS_BUILD_AND_INIT_INTERNAL_STA_PASS_NOT_HARDWARE",
+  "stages": {
+    "synthesis": true,
+    "map": true,
+    "pnr": true,
+    "timing": true,
+    "bitstream": true
+  },
+  "program_bytes": 1836,
+  "program_bin_sha256": "CBB37E60674713CCFBB0E603BA774ECB82E2460FA7D2DD2707AF34D4175E3D30",
+  "bitstream": {
+    "path": "build/generate_bitstream/board_top.sbit",
+    "bytes": 3791112,
+    "sha256": "D43E4E419CC2F3656F92BCA2AF7BB23EFBE48B3EEC74A019A1D04FAABD60CEDE",
+    "fresh": true
+  },
+  "INIT_pieces_checked": 1600,
+  "primitive_blocks": 25,
+  "memory_banks": [
+    {
+      "bank": 0,
+      "half": 0,
+      "kind": "ram"
+    },
+    {
+      "bank": 0,
+      "half": 0,
+      "kind": "rom"
+    },
+    {
+      "bank": 0,
+      "half": 1,
+      "kind": "ram"
+    },
+    {
+      "bank": 0,
+      "half": 1,
+      "kind": "rom"
+    },
+    {
+      "bank": 1,
+      "half": 0,
+      "kind": "ram"
+    },
+    {
+      "bank": 1,
+      "half": 0,
+      "kind": "rom"
+    },
+    {
+      "bank": 1,
+      "half": 1,
+      "kind": "ram"
+    },
+    {
+      "bank": 2,
+      "half": 0,
+      "kind": "ram"
+    },
+    {
+      "bank": 2,
+      "half": 0,
+      "kind": "rom"
+    },
+    {
+      "bank": 2,
+      "half": 1,
+      "kind": "ram"
+    },
+    {
+      "bank": 3,
+      "half": 0,
+      "kind": "ram"
+    },
+    {
+      "bank": 3,
+      "half": 0,
+      "kind": "rom"
+    },
+    {
+      "bank": 3,
+      "half": 1,
+      "kind": "ram"
+    },
+    {
+      "bank": 4,
+      "half": 0,
+      "kind": "ram"
+    },
+    {
+      "bank": 4,
+      "half": 0,
+      "kind": "rom"
+    },
+    {
+      "bank": 4,
+      "half": 1,
+      "kind": "ram"
+    },
+    {
+      "bank": 5,
+      "half": 0,
+      "kind": "ram"
+    },
+    {
+      "bank": 5,
+      "half": 0,
+      "kind": "rom"
+    },
+    {
+      "bank": 5,
+      "half": 1,
+      "kind": "ram"
+    },
+    {
+      "bank": 6,
+      "half": 0,
+      "kind": "ram"
+    },
+    {
+      "bank": 6,
+      "half": 0,
+      "kind": "rom"
+    },
+    {
+      "bank": 6,
+      "half": 1,
+      "kind": "ram"
+    },
+    {
+      "bank": 7,
+      "half": 0,
+      "kind": "ram"
+    },
+    {
+      "bank": 7,
+      "half": 0,
+      "kind": "rom"
+    },
+    {
+      "bank": 7,
+      "half": 1,
+      "kind": "ram"
+    }
+  ],
+  "all_INIT_values_match_program_or_unchanged_RAM": true,
+  "only_changed_ROM_payloads": [
+    "init_tables.svh",
+    "memory_model.sv"
+  ],
+  "CPU_SoC_pins_clock_reliability_constraints_unchanged": true,
+  "resources": {
+    "LUT": 1778,
+    "FF": 1527,
+    "DRM36": 12.5,
+    "IO": 15
+  },
+  "timing": {
+    "Setup_Slow": {
+      "slack_ns": 22.238,
+      "failing": 0,
+      "endpoints": 4666
+    },
+    "Hold_Slow": {
+      "slack_ns": 0.173,
+      "failing": 0,
+      "endpoints": 4666
+    },
+    "Recovery_Slow": {
+      "slack_ns": 33.554,
+      "failing": 0,
+      "endpoints": 358
+    },
+    "Removal_Slow": {
+      "slack_ns": 0.849,
+      "failing": 0,
+      "endpoints": 358
+    },
+    "Setup_Fast": {
+      "slack_ns": 28.17,
+      "failing": 0,
+      "endpoints": 4666
+    },
+    "Hold_Fast": {
+      "slack_ns": 0.123,
+      "failing": 0,
+      "endpoints": 4666
+    },
+    "Recovery_Fast": {
+      "slack_ns": 34.788,
+      "failing": 0,
+      "endpoints": 358
+    },
+    "Removal_Fast": {
+      "slack_ns": 0.591,
+      "failing": 0,
+      "endpoints": 358
+    }
+  },
+  "constraints_checked": 97,
+  "errors": 0,
+  "critical_count": 0,
+  "remaining_warnings": [
+    "W: Verilog-2008: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/local_regif_txgpio_m1.v(line number: 94)] Ignore 'system task' $display",
+    "W: Verilog-2008: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/local_regif_txgpio_m1.v(line number: 95)] Ignore 'system task' $finish",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][31] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][30] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][29] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][28] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][27] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][26] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][25] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][24] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][23] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][22] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][21] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][20] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][19] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][18] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][17] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][16] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][15] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][14] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][13] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][12] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][11] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][10] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][9] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][8] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][7] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][6] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][5] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][4] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][3] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][2] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][1] that is stuck at constant 0.",
+    "W: Sdm-2000: [D:/A_FPGA_Comp/work/fpga/2026-11-03-event-recorder-m3/build/source/regfile.v(line number: 16)] Removed register node soc/cpu_core/rf/regs[0][0] that is stuck at constant 0.",
+    "W: Loop was found during constant probe.",
+    "W: Loop was found during constant probe.",
+    "W: Loop was found during constant probe.",
+    "W: Loop was found during constant probe.",
+    "W: Loop was found during constant probe.",
+    "W: Loop was found during constant probe.",
+    "W: Loop was found during constant probe.",
+    "W: Public-4008: Instance 'u_tx/tx_busy' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.",
+    "W: Public-4008: Instance 'soc/cpu_core/eei_stop_kind[1:0]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.",
+    "W: Public-4008: Instance 'soc/cpu_core/eei_stop_pc[31:0]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.",
+    "W: Public-4008: Instance 'soc/cpu_core/eei_stop_valid' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.",
+    "W: Removed bmsWIDEDFFCPE inst soc/cpu_core/id_alu_ctrl[4:0] at 4 that is stuck at constant 0.",
+    "W: Public-4008: Instance 'soc/cpu_core/eei_state_reg[2]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.",
+    "W: Public-4008: Instance 'soc/cpu_core/id_alu_ctrl[4]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.",
+    "W: Timing-4087: Port 'led[0]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[1]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[2]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[3]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[4]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[5]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[6]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[7]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'uart_tx' is not constrained, it is treated as combinational output.",
+    "W: Timing-4086: Port 'key_n[0]' is not constrained, it is treated as combinational input.",
+    "W: Timing-4086: Port 'key_n[1]' is not constrained, it is treated as combinational input.",
+    "W: Timing-4086: Port 'key_n[2]' is not constrained, it is treated as combinational input.",
+    "W: Timing-4086: Port 'key_n[3]' is not constrained, it is treated as combinational input.",
+    "W: Timing-4086: Port 'key_n[4]' is not constrained, it is treated as combinational input.",
+    "W: Timing-4087: Port 'led[0]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[1]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[2]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[3]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[4]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[5]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[6]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'led[7]' is not constrained, it is treated as combinational output.",
+    "W: Timing-4087: Port 'uart_tx' is not constrained, it is treated as combinational output.",
+    "W: Timing-4086: Port 'key_n[0]' is not constrained, it is treated as combinational input.",
+    "W: Timing-4086: Port 'key_n[1]' is not constrained, it is treated as combinational input.",
+    "W: Timing-4086: Port 'key_n[2]' is not constrained, it is treated as combinational input.",
+    "W: Timing-4086: Port 'key_n[3]' is not constrained, it is treated as combinational input.",
+    "W: Timing-4086: Port 'key_n[4]' is not constrained, it is treated as combinational input."
+  ],
+  "warning_counts": {
+    "W: Verilog-2008": 2,
+    "W: Sdm-2000": 32,
+    "W: Loop was found during constant probe.": 7,
+    "W: Public-4008": 6,
+    "W: Removed bmsWIDEDFFCPE inst soc/cpu_core/id_alu_ctrl[4": 1,
+    "W: Timing-4087": 18,
+    "W: Timing-4086": 10
+  },
+  "license_remaining_days_actual_prompts": [],
+  "physical_CDC_IO_full_signoff": false,
+  "hardware_download": false,
+  "full_12_8s_runtime": false
+}

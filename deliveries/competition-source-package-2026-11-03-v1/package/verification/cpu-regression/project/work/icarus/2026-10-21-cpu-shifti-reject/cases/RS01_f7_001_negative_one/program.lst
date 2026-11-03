@@ -1,0 +1,5 @@
+0000 00002083 load f3=2 x1,0(x0)
+0004 00402103 load f3=2 x2,4(x0)
+0008 0220d1b3 SRL/SRA funct3=5 funct7=1 x3,x1,x2
+000c 00302423 store f3=2 x3,8(x0)
+0010 00000000 exact zero word, local fatal kind3

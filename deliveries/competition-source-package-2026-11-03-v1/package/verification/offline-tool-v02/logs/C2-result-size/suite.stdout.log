@@ -1,0 +1,1 @@
+{"status": "LIMIT", "native_rc": 5, "case": "C2-result-size", "out": "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\out\\C2-result-size", "error": "ValueError: JSON file missing, linked, or too large", "worker_rc": 5}

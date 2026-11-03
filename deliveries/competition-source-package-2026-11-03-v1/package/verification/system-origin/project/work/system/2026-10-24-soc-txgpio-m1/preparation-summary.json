@@ -1,0 +1,187 @@
+{
+  "stage": "A-SOC-TXGPIO-M1",
+  "authorization": "D120 explicitly approved",
+  "date_beijing": "2026-10-24",
+  "status": "PREPARATION_VERIFIED_SYSTEM_PENDING_B_PACKAGE",
+  "sources": [
+    {
+      "file": "cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "file": "alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "file": "control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "file": "regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "file": "memory_model.sv",
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    }
+  ],
+  "protected_files": 3198,
+  "firmware": {
+    "status": "BUILD_AND_STATIC_CHECKS_PASS_NOT_CPU_EXECUTION",
+    "bytes": 632,
+    "words": 158,
+    "symbols": {
+      "ccKNiXTE.o": 0,
+      "$xrv32i2p1": 196,
+      "main.c": 0,
+      "stack_checksum": 112,
+      "message": 616,
+      "__global_pointer$": 67584,
+      "__data_load": 628,
+      "boot_cookie": 65536,
+      "__bss_end": 65608,
+      "signature": 65604,
+      "results": 65540,
+      "__stack_top": 98304,
+      "_start": 0,
+      "__data_end": 65540,
+      "__bss_start": 65540,
+      "main": 196,
+      "boot_bss": 65588,
+      "__stack_bottom": 90112,
+      "__data_start": 65536
+    },
+    "text_instructions_statically_decoded": 154,
+    "mnemonics": [
+      "add",
+      "addi",
+      "andi",
+      "auipc",
+      "beq",
+      "bgeu",
+      "bne",
+      "ebreak",
+      "jal",
+      "jalr",
+      "lbu",
+      "lui",
+      "lw",
+      "or",
+      "ori",
+      "slli",
+      "sltu",
+      "sw"
+    ],
+    "ebreak_pc": 104,
+    "image_sha256": "90E6FBB6837309313723E3851BD7B58A410E1692A5FEFB84171ABF1CFD2023B6",
+    "ELF_sha256": "8C31C7C5AD48D37E99B9C4A669B8A2B20604AEA60A0453A215A87C2250DA8ED0",
+    "stack_reserved_bytes": 8192,
+    "assertions": [
+      "ELF32LE/RISC-V/flags0",
+      "data/BSS/layout/stack bounds",
+      "no undefined symbols",
+      "finite disassembly mnemonic whitelist",
+      "hex roundtrip"
+    ],
+    "limits": "mnemonic whitelist is not full encoding/CPU semantic certification; no CPU/SoC execution"
+  },
+  "firmware_CPU_DUT_runs": 0,
+  "complete_SoC_compile": "NOT_RUN",
+  "complete_SoC_simulation": "NOT_RUN",
+  "B_module_reproduction": "NOT_RUN_NEW_PACKAGE_NOT_RECEIVED",
+  "candidate_live_checker": "PYTHON_SYNTAX_ONLY; end-to-end positive/negative tests NOT_RUN",
+  "routing_unit": {
+    "status": "PASS",
+    "process": {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-N",
+        "-M-",
+        "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\adapter.vvp"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\tests\\adapter-run",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "trace_cap": false,
+      "elapsed_seconds": 0.078,
+      "timeout_seconds": 30,
+      "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\adapter-run\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\adapter-run\\stderr.log"
+    },
+    "checks": 9792,
+    "scope": "CPU-side address/data routing unit only, no CPU, RAM primitive or B module instantiated",
+    "complete_system": "NOT_RUN"
+  },
+  "contract_checker_synthetic": {
+    "status": "PASS",
+    "synthetic_only": true,
+    "DUT_runs": 0,
+    "checks": 27,
+    "items": [
+      "N8:exact_public_pin_decode",
+      "N8:accepted_all12_without_dedup",
+      "N8:two_flipflop_timing",
+      "N8:wrong_byte_rejected",
+      "N8:extra_duplicate_frame_rejected",
+      "N8:bad_stop_rejected",
+      "N16:exact_public_pin_decode",
+      "N16:accepted_all12_without_dedup",
+      "N16:two_flipflop_timing",
+      "N16:wrong_byte_rejected",
+      "N16:extra_duplicate_frame_rejected",
+      "N16:bad_stop_rejected",
+      "N234:exact_public_pin_decode",
+      "N234:accepted_all12_without_dedup",
+      "N234:two_flipflop_timing",
+      "N234:wrong_byte_rejected",
+      "N234:extra_duplicate_frame_rejected",
+      "N234:bad_stop_rejected",
+      "release_first_edge_rejected",
+      "completion_old_ready_rejects",
+      "next_edge_accepts",
+      "GPIO_duplicate_transactions_preserved",
+      "unaligned_GPIO_no_accept",
+      "partial_GPIO_no_accept",
+      "GPIO_missing_rejected",
+      "GPIO_extra_rejected",
+      "GPIO_wrong_rejected"
+    ],
+    "scope": "contract model and separate serial decoder; NOT B module or full system validation"
+  },
+  "software_reference_synthetic": {
+    "status": "PASS",
+    "synthetic_environment": true,
+    "CPU_DUT_runs": 0,
+    "SoC_runs": 0,
+    "architectural_steps": 331,
+    "stop_pc": 104,
+    "GPIO_writes": 3,
+    "TX_writes": 12,
+    "signature": 1397703473,
+    "stack_restored": true,
+    "note": "alternating abstract ready reads, synthetic GPIO values; NOT physical timing or frozen live-system expected trace"
+  },
+  "GPIO_stimulus_bound": {
+    "status": "PASS_SOFTWARE_BOUND_NOT_DUT",
+    "architectural_steps_to_first_GPIO_IN": 170,
+    "first_input_read_pc": 380,
+    "pessimistic_physical_bound": 1392,
+    "GPIO_changes_before_edges": [
+      16,
+      4096
+    ],
+    "assumptions": [
+      "CPU is F130 fixed two-edge mode, no variable waits",
+      "at most one load-use and two flush bubbles per instruction; fixed fill allowance",
+      "no earlier external-dependent IO or interrupt"
+    ],
+    "DUT_runs": 0,
+    "note": "timing plan frozen before DUT; unexpected dynamic behavior must fail, not retime stimulus to fit"
+  },
+  "B_contract": "LOCAL-REGIF-TXGPIO-M1/1.0.0 unchanged; no A replacement implementation",
+  "hardware": "STOP over_temp unchanged",
+  "new_external_compile_permission": "one adapter-only target, consumed",
+  "next": "continue SAME approved stage after B intake, separately gate new external compiler execution"
+}

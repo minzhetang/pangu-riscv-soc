@@ -1,0 +1,9 @@
+{
+  "purpose": "Bounded parameter-only resource tradeoff after 64-entry +127% FF cost",
+  "BTB_INDEX_BITS": 5,
+  "runs": 1,
+  "only_wrapper_parameter_changes": true,
+  "source_CPU_unchanged": true,
+  "hardware_calls": 0,
+  "no_bitstream": true
+}

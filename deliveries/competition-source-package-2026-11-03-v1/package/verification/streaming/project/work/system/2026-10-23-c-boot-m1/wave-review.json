@@ -1,0 +1,35 @@
+{
+  "status": "PASS_FINITE_VCD_CROSSCHECK",
+  "VCD": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\ordinary-run-01\\runs\\wave.vcd",
+  "sha256": "3C033E38913FE48F02A037CA33DC99188F79336705BFE31ED1972CEE1AD165CE",
+  "pre_edge_observations": {
+    "WB": 263,
+    "READ": 13,
+    "STORE": 16,
+    "valid_EX_PC_not_retirement": 439,
+    "active_clock_edges": 642,
+    "stall": 2,
+    "flush": 97
+  },
+  "EEI_detect_before_edge": [
+    {
+      "time_ps": 6415000,
+      "valid_EX_pc": "00000068",
+      "kind": 2
+    }
+  ],
+  "EEI_publish_after_edge": [
+    {
+      "time_ps": 6425000,
+      "pc": "00000068",
+      "kind": 2
+    }
+  ],
+  "poststop_no_side_effect_edges": 3,
+  "timescale": "1ps",
+  "last_tick_ps": 6460000,
+  "whole_simulation_time_ns": 6460.0,
+  "raw_stdout_time_ns_field_is_actually_ps_ticks": true,
+  "protected_records_after": 59,
+  "new_simulation_calls": 0
+}

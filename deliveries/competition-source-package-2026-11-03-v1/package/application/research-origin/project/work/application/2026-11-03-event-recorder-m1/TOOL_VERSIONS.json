@@ -1,0 +1,20 @@
+[
+  {
+    "name": "gcc",
+    "rc": 0,
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+      "--version"
+    ]
+  },
+  {
+    "name": "iverilog",
+    "rc": 0,
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-V"
+    ]
+  }
+]

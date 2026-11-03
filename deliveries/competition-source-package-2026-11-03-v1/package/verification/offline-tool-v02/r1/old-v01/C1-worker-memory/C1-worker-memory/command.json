@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "C:\\Users\\ANON_USER\\AppData\\Local\\Programs\\Python\\Python312-embed\\python.exe",
+    "-B",
+    "C:\\Users\\ANON_USER\\Desktop\\FPGA\\发给队员_盘古100Pro项目交接包_2026-10-18_v01\\work\\B-RETURN\\B-VERIFY-OFFLINE-M0-return-v01\\src\\worker.py",
+    "--case-file",
+    "C:\\Users\\ANON_USER\\Desktop\\FPGA\\mainline-b-offline-r1-2026-10-27-v1\\C1-worker-memory.json",
+    "--input-root",
+    "C:\\Users\\ANON_USER\\Desktop\\FPGA\\mainline-b-verify-offline-m0-2026-10-26-v1",
+    "--out",
+    "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-old-v01-r1\\C1-worker-memory"
+  ],
+  "cwd": "C:\\Users\\ANON_USER\\Desktop\\FPGA\\发给队员_盘古100Pro项目交接包_2026-10-18_v01",
+  "python": "C:\\Users\\ANON_USER\\AppData\\Local\\Programs\\Python\\Python312-embed\\python.exe",
+  "optimize": 0,
+  "case_file": "C:\\Users\\ANON_USER\\Desktop\\FPGA\\mainline-b-offline-r1-2026-10-27-v1\\C1-worker-memory.json",
+  "input_root": "C:\\Users\\ANON_USER\\Desktop\\FPGA\\mainline-b-verify-offline-m0-2026-10-26-v1",
+  "out": "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-old-v01-r1\\C1-worker-memory"
+}

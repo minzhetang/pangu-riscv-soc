@@ -1,0 +1,7 @@
+{
+  "time": "2026-11-03T11:06:43.786099+08:00",
+  "user": "已完成，都亮",
+  "meaning": "LED0 and LED7 both on, in reply to explicit separate LED0/7 question",
+  "expected_mask": "0x81",
+  "matches": true
+}

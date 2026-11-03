@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "process": {
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "-N",
+      "-M-",
+      "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\adapter.vvp"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\tests\\adapter-run",
+    "returncode": 0,
+    "returncode_hex": "0x00000000",
+    "timed_out": false,
+    "trace_cap": false,
+    "elapsed_seconds": 0.078,
+    "timeout_seconds": 30,
+    "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\adapter-run\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\adapter-run\\stderr.log"
+  },
+  "checks": 9792,
+  "scope": "CPU-side address/data routing unit only, no CPU, RAM primitive or B module instantiated",
+  "complete_system": "NOT_RUN"
+}

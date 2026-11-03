@@ -1,0 +1,20 @@
+{
+  "status": "PASS_REAL_TIMER_PERIOD_2700000_TWO_SAMPLES",
+  "results": [
+    {
+      "status": "PASS",
+      "events": [
+        [
+          5400705,
+          1,
+          1,
+          0
+        ]
+      ],
+      "samples": 2,
+      "period": 2700000,
+      "window_ticks": 5400244
+    }
+  ],
+  "full_128_sample_profile": "NOT_RUN"
+}

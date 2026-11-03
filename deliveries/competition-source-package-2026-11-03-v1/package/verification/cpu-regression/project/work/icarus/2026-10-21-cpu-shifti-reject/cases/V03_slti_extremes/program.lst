@@ -1,0 +1,9 @@
+0000: 00002083  lw x1,0(x0)
+0004: 8000a113  slti x2,x1,-2048 ;1, stale0 false
+0008: 7ff0a193  slti x3,x1,2047 ;1
+000c: 00402203  lw x4,4(x0)
+0010: 7ff22293  slti x5,x4,2047 ;0, stale0 true
+0014: 80022313  slti x6,x4,-2048 ;0
+0018: 0000a393  slti x7,x1,0 ;1
+001c: fff22413  slti x8,x4,-1 ;0
+0020: 05a00f93  addi x31,x0,90 ; completion

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "process": {
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "-B",
+      "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_timer_unit_v2",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile\\unit-v2.vvp",
+      "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\cycle_counter64.sv",
+      "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\soc_data_adapter.sv",
+      "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\tests\\tb_timer_unit_v2.sv"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1",
+    "returncode": 0,
+    "timed_out": false,
+    "cap": false,
+    "cleanup": null,
+    "elapsed_seconds": 0.094,
+    "timeout_seconds": 30,
+    "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\compile-unit-v2\\stdout.log",
+    "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\compile-unit-v2\\stderr.log"
+  },
+  "output": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile\\unit-v2.vvp",
+  "sha256": "FD4EB5E428DA325F118765AE94EC0ECDF5AC67E33896EC803DEC894169531FA9"
+}

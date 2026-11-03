@@ -1,0 +1,19 @@
+{
+  "kind": "REGIF_CAPTURE_SELFCHECK",
+  "run_id": "regif-capture-20261025-210624",
+  "compile_rc": 0,
+  "run_rc": 0,
+  "timed_out": false,
+  "log_truncated": false,
+  "status": "PASS",
+  "required_markers": [
+    "REGIF_CAP_GOOD_PASS",
+    "REGIF_CAP_BAD_STOP_DETECTED",
+    "REGIF_CAP_EXTRA_DETECTED",
+    "REGIF_CAP_MISSING_DETECTED",
+    "REGIF_CAP_LAST_HALF_STOP_CANCEL",
+    "REGIF_CAP_CONTROL_PASS",
+    "REGIF_CAP_SELFCHECK_PASS"
+  ],
+  "note": "Same shared regif_tx_public_monitor as the formal wrapper TB; synthetic public uart_tx only."
+}

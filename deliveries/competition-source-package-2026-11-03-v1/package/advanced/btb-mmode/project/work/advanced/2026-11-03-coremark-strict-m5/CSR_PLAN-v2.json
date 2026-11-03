@@ -1,0 +1,678 @@
+{
+  "version": "2.0.0",
+  "frozen_before_dut": true,
+  "scope": "Finite M-mode direct/vector traps, enabling CSR response, masking, priority, MRET. Inputs held pending from first cycle until first accepted trap; no S/U.",
+  "response_pipeline_steps": 3,
+  "tests": [
+    {
+      "name": "irq_3_vector0",
+      "mask": 8,
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          4,
+          91
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          3,
+          15
+        ],
+        [
+          512,
+          91,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          28,
+          2147483651,
+          0
+        ]
+      ],
+      "entry": 256,
+      "status": [
+        "00000088",
+        "3"
+      ],
+      "enable_pc": 24,
+      "irq_from_cycle": 1,
+      "program_sha256": "8d8d7e03ca972b922b48fb0aa5f00380d0591c7468bf691fd5f456b6a32dd96b",
+      "mode": "irq"
+    },
+    {
+      "name": "irq_3_vector1",
+      "mask": 8,
+      "wb": [
+        [
+          1,
+          257
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          4,
+          91
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          3,
+          15
+        ],
+        [
+          512,
+          91,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          28,
+          2147483651,
+          0
+        ]
+      ],
+      "entry": 268,
+      "status": [
+        "00000088",
+        "3"
+      ],
+      "enable_pc": 24,
+      "irq_from_cycle": 1,
+      "program_sha256": "6a38cc0f6d4ad93b4ba15ccf99ae7b61c0e2a4b2d256c035de6cb39078615a40",
+      "mode": "irq"
+    },
+    {
+      "name": "irq_7_vector0",
+      "mask": 128,
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          64
+        ],
+        [
+          2,
+          128
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          4,
+          91
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          7,
+          15
+        ],
+        [
+          512,
+          91,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          28,
+          2147483655,
+          0
+        ]
+      ],
+      "entry": 256,
+      "status": [
+        "00000088",
+        "3"
+      ],
+      "enable_pc": 24,
+      "irq_from_cycle": 1,
+      "program_sha256": "c66c6fbf9b2002b614d14db431f5be0592e9de5fbbc2f12414c0a754f9012e3a",
+      "mode": "irq"
+    },
+    {
+      "name": "irq_7_vector1",
+      "mask": 128,
+      "wb": [
+        [
+          1,
+          257
+        ],
+        [
+          2,
+          64
+        ],
+        [
+          2,
+          128
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          4,
+          91
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          7,
+          15
+        ],
+        [
+          512,
+          91,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          28,
+          2147483655,
+          0
+        ]
+      ],
+      "entry": 284,
+      "status": [
+        "00000088",
+        "3"
+      ],
+      "enable_pc": 24,
+      "irq_from_cycle": 1,
+      "program_sha256": "14b23c453a1300239cdda98eff4af64c164c39a33d743e24406d17af65e2dca7",
+      "mode": "irq"
+    },
+    {
+      "name": "irq_11_vector0",
+      "mask": 2048,
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          1024
+        ],
+        [
+          2,
+          2048
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          4,
+          91
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          11,
+          15
+        ],
+        [
+          512,
+          91,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          28,
+          2147483659,
+          0
+        ]
+      ],
+      "entry": 256,
+      "status": [
+        "00000088",
+        "3"
+      ],
+      "enable_pc": 24,
+      "irq_from_cycle": 1,
+      "program_sha256": "d62c208ad2b8d0dc65d06979049d71e5958c1ff77ec9a952690735a19a716d67",
+      "mode": "irq"
+    },
+    {
+      "name": "irq_11_vector1",
+      "mask": 2048,
+      "wb": [
+        [
+          1,
+          257
+        ],
+        [
+          2,
+          1024
+        ],
+        [
+          2,
+          2048
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          4,
+          91
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          11,
+          15
+        ],
+        [
+          512,
+          91,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          28,
+          2147483659,
+          0
+        ]
+      ],
+      "entry": 300,
+      "status": [
+        "00000088",
+        "3"
+      ],
+      "enable_pc": 24,
+      "irq_from_cycle": 1,
+      "program_sha256": "1f26b83be72515686dc4739c9c9a5d4839fc614804ba8656e7151282e908a119",
+      "mode": "irq"
+    },
+    {
+      "name": "priority_external",
+      "mask": 2184,
+      "wb": [
+        [
+          1,
+          257
+        ],
+        [
+          2,
+          1092
+        ],
+        [
+          2,
+          2184
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          4,
+          91
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          11,
+          15
+        ],
+        [
+          512,
+          91,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          28,
+          2147483659,
+          0
+        ]
+      ],
+      "entry": 300,
+      "status": [
+        "00000088",
+        "3"
+      ],
+      "enable_pc": 24,
+      "irq_from_cycle": 1,
+      "program_sha256": "6771ed5b90023c4cbfee198d291a6f1db9690cc87bf86d7ff3ece00812b6b625",
+      "mode": "irq"
+    },
+    {
+      "name": "priority_software",
+      "mask": 136,
+      "wb": [
+        [
+          1,
+          257
+        ],
+        [
+          2,
+          68
+        ],
+        [
+          2,
+          136
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          4,
+          91
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          3,
+          15
+        ],
+        [
+          512,
+          91,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          28,
+          2147483651,
+          0
+        ]
+      ],
+      "entry": 268,
+      "status": [
+        "00000088",
+        "3"
+      ],
+      "enable_pc": 24,
+      "irq_from_cycle": 1,
+      "program_sha256": "c6314f3685ba94c4335a781af8ffdcbfeb74c82fb874daac65f687b159457e87",
+      "mode": "irq"
+    },
+    {
+      "name": "mie_enable_pending",
+      "mask": 128,
+      "wb": [
+        [
+          1,
+          257
+        ],
+        [
+          2,
+          64
+        ],
+        [
+          2,
+          128
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          4,
+          91
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          7,
+          15
+        ],
+        [
+          512,
+          91,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          28,
+          2147483655,
+          0
+        ]
+      ],
+      "entry": 284,
+      "status": [
+        "00000088",
+        "3"
+      ],
+      "enable_pc": 24,
+      "irq_from_cycle": 1,
+      "program_sha256": "548c1b569d1c54f6448fb5d0a01a90e942b6fe24e4f2cc4a584e3edd19af7537",
+      "mode": "irq"
+    },
+    {
+      "name": "adjacent_disable_precise",
+      "mask": 128,
+      "wb": [
+        [
+          1,
+          257
+        ],
+        [
+          2,
+          64
+        ],
+        [
+          2,
+          128
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          4,
+          91
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          7,
+          15
+        ],
+        [
+          512,
+          91,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          28,
+          2147483655,
+          0
+        ]
+      ],
+      "entry": 284,
+      "status": [
+        "00000000",
+        "3"
+      ],
+      "enable_pc": 24,
+      "irq_from_cycle": 1,
+      "program_sha256": "b259a4feff0f4fd373a5c7dee6c5b830c5e8f2bbfdd4564ebc583b86bc4af738",
+      "mode": "disable"
+    },
+    {
+      "name": "exception_beats_pending_vectored",
+      "mask": 128,
+      "wb": [
+        [
+          1,
+          257
+        ],
+        [
+          2,
+          64
+        ],
+        [
+          2,
+          128
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          11,
+          111
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          111,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          28,
+          11,
+          0
+        ]
+      ],
+      "entry": 256,
+      "status": [
+        "00001880",
+        "3"
+      ],
+      "enable_pc": 24,
+      "irq_from_cycle": 1,
+      "program_sha256": "a7c5c60039c2fbacabb46e2818c340939aa6b5c305724a8d1bff7bbb61b78e7f",
+      "mode": "exception"
+    }
+  ],
+  "correction": "Initial adjacent-enable/disable expectation allowed the next CSR to mask an already enabled pending interrupt. Replaced before new runs using privileged ISA immediate-after-CSR evaluation rule; preserve original plan and results, do not count old case as acceptance."
+}

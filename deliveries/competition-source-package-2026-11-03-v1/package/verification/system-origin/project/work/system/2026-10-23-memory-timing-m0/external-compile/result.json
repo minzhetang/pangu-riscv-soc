@@ -1,0 +1,67 @@
+{
+  "scope": "two fixed non-admin compiles only; no VVP execution",
+  "compiles": [
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_drm",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\external-compile\\drm.vvp",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\tb_drm.sv",
+        "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+        "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "elapsed_seconds": 0.11,
+      "timeout": false,
+      "log_cap": false,
+      "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\logs\\external-compile-drm.stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\logs\\external-compile-drm.stderr.log",
+      "target": "drm",
+      "output": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\external-compile\\drm.vvp"
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_timing",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\external-compile\\cpu.vvp",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\tb_cpu_timing.sv",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\regfile.v"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "elapsed_seconds": 0.109,
+      "timeout": false,
+      "log_cap": false,
+      "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\logs\\external-compile-cpu.stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\logs\\external-compile-cpu.stderr.log",
+      "target": "cpu",
+      "output": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\external-compile\\cpu.vvp"
+    }
+  ],
+  "status": "COMPILED_NOT_SIMULATED",
+  "date_beijing": "2026-10-23T19:26:19.713555+08:00",
+  "postflight": {
+    "checked": 53,
+    "changed": []
+  }
+}

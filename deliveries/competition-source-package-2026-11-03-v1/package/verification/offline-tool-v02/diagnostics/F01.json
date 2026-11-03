@@ -1,0 +1,202 @@
+{
+  "id": "F01",
+  "status": "MISMATCH",
+  "no_difference": false,
+  "first_difference": {
+    "ordinal": 4,
+    "kind": "FIELD",
+    "field": "kind",
+    "expected": [
+      "EX",
+      6,
+      4
+    ],
+    "actual": [
+      "WB",
+      6,
+      1,
+      1
+    ],
+    "field_expected": "EX",
+    "field_actual": "WB"
+  },
+  "neighbors": [
+    {
+      "ordinal": 2,
+      "expected": [
+        "WB",
+        4,
+        1,
+        1
+      ],
+      "actual": [
+        "WB",
+        4,
+        1,
+        1
+      ],
+      "relation": "EQUAL"
+    },
+    {
+      "ordinal": 3,
+      "expected": [
+        "STORE",
+        5,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "actual": [
+        "STORE",
+        5,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "relation": "EQUAL"
+    },
+    {
+      "ordinal": 4,
+      "expected": [
+        "EX",
+        6,
+        4
+      ],
+      "actual": [
+        "WB",
+        6,
+        1,
+        1
+      ],
+      "relation": "DIFFER"
+    },
+    {
+      "ordinal": 5,
+      "expected": [
+        "WB",
+        6,
+        1,
+        1
+      ],
+      "actual": [
+        "STORE",
+        7,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "relation": "DIFFER"
+    },
+    {
+      "ordinal": 6,
+      "expected": [
+        "STORE",
+        7,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "actual": [
+        "READ",
+        8,
+        8,
+        65536,
+        1,
+        1
+      ],
+      "relation": "DIFFER"
+    }
+  ],
+  "differences": [
+    {
+      "ordinal": 4,
+      "kind": "FIELD",
+      "expected": [
+        "EX",
+        6,
+        4
+      ],
+      "actual": [
+        "WB",
+        6,
+        1,
+        1
+      ]
+    },
+    {
+      "ordinal": 5,
+      "kind": "FIELD",
+      "expected": [
+        "WB",
+        6,
+        1,
+        1
+      ],
+      "actual": [
+        "STORE",
+        7,
+        4,
+        65536,
+        1,
+        15
+      ]
+    },
+    {
+      "ordinal": 6,
+      "kind": "FIELD",
+      "expected": [
+        "STORE",
+        7,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "actual": [
+        "READ",
+        8,
+        8,
+        65536,
+        1,
+        1
+      ]
+    },
+    {
+      "ordinal": 7,
+      "kind": "FIELD",
+      "expected": [
+        "READ",
+        8,
+        8,
+        65536,
+        1,
+        1
+      ],
+      "actual": [
+        "WB",
+        10,
+        2,
+        1
+      ]
+    },
+    {
+      "ordinal": 8,
+      "kind": "MISSING",
+      "expected": [
+        "WB",
+        10,
+        2,
+        1
+      ],
+      "actual": null
+    }
+  ],
+  "error": null,
+  "checked": 8,
+  "expected_records": 8,
+  "actual_records": 7
+}

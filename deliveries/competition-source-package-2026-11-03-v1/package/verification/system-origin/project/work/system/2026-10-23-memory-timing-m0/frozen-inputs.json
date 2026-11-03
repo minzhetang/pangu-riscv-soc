@@ -1,0 +1,217 @@
+{
+  "date": "2026-10-23T19:25:19.881594+08:00",
+  "files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\deliveries\\mainline-stage-alignment-2026-10-23-v1\\IMPLEMENTATION_SCOPE.md",
+      "sha256": "F632C038AB4E0F47173195B150563350DCFA0C047596323BDF715AFC52A33CB6"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\deliveries\\mainline-stage-alignment-2026-10-23-v1\\SHA256SUMS.txt",
+      "sha256": "6E05D77A11BD2CC7508E5E280716027F73162698BDBEF9D78600CADBF1C2A925"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\deliveries\\mainline-stage-alignment-2026-10-23-v1\\TXGPIO_REGIF_CONTRACT.md",
+      "sha256": "F0E31602D008459B3E95901C0F533BC7FF4153F6B5A93859780EA8D2AD64E988"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "sha256": "25E1BA02E72F58D9D484BC5457D69A6B179D22D86BDF5BA5D6F9F0D4FE620BBF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "sha256": "F0775603E1F1BCF1B2DEA16DFF963A4B7D71B7B33D5BBE23D2B01FF5B2304E09"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\cpu.v",
+      "sha256": "555CB51AC20FFC439B61BB29D4F4D9F4DC02C38B54A37291A79519CD413B8114"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\tb_cpu.v",
+      "sha256": "17AFD2B4CFBAF9E4D6183D4C44CA4F8717357D2725DE61E9D90AB1096180B9E5"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\peripherals\\2026-10-23-tx-gpio-reproduction\\review-result.json",
+      "sha256": "57C4D573FF1F547F1372F1507A9E0A4F75D74432258A0707C5006B1D3DDB096E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\handoff-result.json",
+      "sha256": "DB3CF540C5202EF1CBFC77091790B856AF489CF8259E85CE66997D68C442E77F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\memory_model.sv",
+      "sha256": "44D3C4B8D248FFC3E56E15202C421293E3A162E1E9F7B084C9A8BEEF7FA04FC8"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\result.json",
+      "sha256": "87C3E2273588DE2A9FEE89118CF3AB36B7E1CF85C0CA89A9590799468602EB2D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\tb_coremark_wave_v2.sv",
+      "sha256": "B4C17F462F975CE282ECD329540574FB2ABEF8940F7B50FF7CBC38C105855283"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\commands.json",
+      "sha256": "C0998EA78B6B0789DDDB8705136FF2C6A2FCD01565BC886937905AE4A2DDC246"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\cases.json",
+      "sha256": "49B26AC923B211CF29A9A3FFEC361D2DDCA767C44800C023B3F75BA5F93788E1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P01.data.hex",
+      "sha256": "AB23E7EF8FEAAE644FD5A3DA951C9E747DF4988F19221EE086C0ECBC9755EB09"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P01.expected.json",
+      "sha256": "D220AF48BC4B23F6D7A1D1EA5CF29DB92A164B1A3CDCF06C8A3353BC9A736E36"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P01.program.hex",
+      "sha256": "9798E573E0CA23C5BDC5769AFD5E29683AADAB8E768923DD371FAC9664C800B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P02.data.hex",
+      "sha256": "AB23E7EF8FEAAE644FD5A3DA951C9E747DF4988F19221EE086C0ECBC9755EB09"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P02.expected.json",
+      "sha256": "67E5F5C1BFE37E27B5AF8EF62B32410F95D54D1AAC48B47FD10DB858E777922B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P02.program.hex",
+      "sha256": "FED66038CB91FCE65FF9941A0D5B61760D8B3EBFCFB4825E4B9E6AB987B66BD7"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P03N.data.hex",
+      "sha256": "D0AEF5F19988DFBA3B06462D1FACB1C81676A8A64BA76B3E82251D7C455D7A88"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P03N.expected.json",
+      "sha256": "CA36A4579DABBDDDD437ADEE7635A760773D3279F1B31BDB1959E50E2DCD6D49"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P03N.program.hex",
+      "sha256": "1812BBA9A9E2EFC2BFBEA1398BA746418274D659C352708424844F144249C5A1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P03T.data.hex",
+      "sha256": "784B23EA270E3B8DA043D3206DC61F3F58A9F7217E8B00A9E51A8265D50AB033"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P03T.expected.json",
+      "sha256": "FE9BB37D27DBCA0F583E8F27938E8DCD5281884289BE43CCDB2351586E72C8DC"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P03T.program.hex",
+      "sha256": "1812BBA9A9E2EFC2BFBEA1398BA746418274D659C352708424844F144249C5A1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P04.data.hex",
+      "sha256": "AB23E7EF8FEAAE644FD5A3DA951C9E747DF4988F19221EE086C0ECBC9755EB09"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P04.expected.json",
+      "sha256": "CDA27D499C6D59061F7BD324B3C61AE0D3B3B3D08B3B925BC7A41FF20789E590"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P04.program.hex",
+      "sha256": "E96B9EDF77176C971B4A9DAE9978D2F3061563A145D7EF91B7FCF38F4001F190"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P05.data.hex",
+      "sha256": "1F09D44A92E87D1F9961E1C19A35AEBA7AD037F3E112A58DCE192BD7E9C2B277"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P05.expected.json",
+      "sha256": "18359F5C9B618FA3BFA9B34BD76735D16CA43AD081059F87A75CC0AF1A0D4821"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P05.program.hex",
+      "sha256": "A058C66A848EED172E74068E3DA812EF74D97F0ECE607712D820D30B95B9E5B8"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\PLAN.md",
+      "sha256": "9FE09BEFDBE652B1AE5BD28B26DE69129BA966619045066171EE7896749ADF0F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\run.py",
+      "sha256": "7258827D926D4B096DD87AEF403CA13D71A488891C5928A706E4183E21D43FDA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\cpu.v",
+      "sha256": "555CB51AC20FFC439B61BB29D4F4D9F4DC02C38B54A37291A79519CD413B8114"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source-before\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source-before\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source-before\\cpu.v",
+      "sha256": "555CB51AC20FFC439B61BB29D4F4D9F4DC02C38B54A37291A79519CD413B8114"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source-before\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\tb_cpu_timing.sv",
+      "sha256": "276E51D8865A8D9E6DE252DA8E91209110E77DB6EF3CDC76607A90079ACEB8FB"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\tb_drm.sv",
+      "sha256": "76387C0F50551D76B3A97B0A64C79440EA2AD65D450CDFEB6D380F03737FA146"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-20261023-122640\\SHA256SUMS-STAGE-RETURN.txt",
+      "sha256": "9852919C612C7676A0BA790593817D496CE64C09AC13DD435A21837DAF97C151"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-20261023-122640\\work\\peripherals\\gpio\\src\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\队员成果接收\\stage-return-20261023-122640\\work\\peripherals\\src\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+      "sha256": "73A4DC428A369FE4FF6F6995BB9D79B58C0963E5812E6E9BFBAAF85DC237AB60"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v",
+      "sha256": "DAE720BCC467DDB4FF99F2753368934E2649B87F6AC63B8A0D7219699BAC1DEC"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\ip\\module_ip\\ipm2l_flex_ram\\ipm2l_flex_ram_eval\\ipm2l_spram\\rtl\\ipm2l_spram_v1_8.v.xml",
+      "sha256": "261727EC28F318A853CD3421B6E5A7345B7918A69CF67B551724A4873276D9DD"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "purpose": "Only fix $dumpon condition after first stop negedge. No DUT/input/expected changes.",
+  "source_diff": "- if(holds==0) $dumpon;\n+ // first stopped negedge has incremented holds\n+ if(holds<=1) $dumpon;",
+  "original_results": "result.json remains original two-case functional verdict",
+  "files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "bytes": 1021
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "bytes": 2988
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "bytes": 666
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\source\\cpu.v",
+      "sha256": "555CB51AC20FFC439B61BB29D4F4D9F4DC02C38B54A37291A79519CD413B8114",
+      "bytes": 16582
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\memory_model.sv",
+      "sha256": "44D3C4B8D248FFC3E56E15202C421293E3A162E1E9F7B084C9A8BEEF7FA04FC8",
+      "bytes": 1437
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\tb_coremark_wave_v2.sv",
+      "sha256": "B4C17F462F975CE282ECD329540574FB2ABEF8940F7B50FF7CBC38C105855283",
+      "bytes": 3946
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\wave_v2.py",
+      "sha256": "447E4D921E1CD81E317F0AE22B14934727D13A3AB76679094044235D68F90023",
+      "bytes": 5077
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\performance\\coremark.elf",
+      "sha256": "CF0CB3DE47AC2A35400F0DEFE67F5E211C7D47D7772E3EE23E8D64ADE4AA9DDD",
+      "bytes": 25884
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\performance\\image.hex",
+      "sha256": "46BB7DF0B8CAEA3B3F6463F35F1BDCBC2BC245F563F419BF9835910A3E47FB61",
+      "bytes": 37920
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\performance\\expected.json",
+      "sha256": "21ECC99E023555C39BC2AB0DEEA68E0FB30E11036CFA033170115DEE6172F8B7",
+      "bytes": 321033
+    }
+  ],
+  "run_cases": [
+    "performance"
+  ],
+  "requires_new_external_compile_permission": true
+}

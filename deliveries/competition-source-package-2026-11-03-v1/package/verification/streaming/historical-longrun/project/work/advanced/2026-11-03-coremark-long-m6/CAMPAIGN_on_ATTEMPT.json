@@ -1,0 +1,10 @@
+{
+  "unix": 1793697471.754059,
+  "remaining_seconds": 64800.0,
+  "plan_sha256": "665099362485867f85a564e0061d7dba94567faff428ff762ff740c6f2b38176",
+  "capture_sha256": "558282608142992787c2faaad10675ac05434f16e30c812a0b7ef6c94aec514a",
+  "qualified_prediction_seconds": [
+    93.98399999993853,
+    99.81200000015087
+  ]
+}

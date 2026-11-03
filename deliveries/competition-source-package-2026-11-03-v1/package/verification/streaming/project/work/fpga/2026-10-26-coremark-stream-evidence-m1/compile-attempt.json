@@ -1,0 +1,7 @@
+{
+  "maximum": 1,
+  "used": 1,
+  "decision": "D156",
+  "before_originals": 208,
+  "scope": "logging-only TB; same 13RTL/initialization/images; no GCC"
+}

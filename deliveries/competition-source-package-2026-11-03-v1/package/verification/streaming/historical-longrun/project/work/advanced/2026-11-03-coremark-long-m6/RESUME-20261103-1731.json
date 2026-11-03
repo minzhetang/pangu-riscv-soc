@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-03T17:32:10.429849",
+  "status": "REATTACHED_EXISTING_RUNNING_CAMPAIGN_NO_RESTART",
+  "campaign_session": 63349,
+  "controller_session": 78362,
+  "on_exit_exists": false,
+  "frozen_inputs_unchanged": true,
+  "cases": [
+    {
+      "name": "long-performance-p1",
+      "complete": false,
+      "gzip_chunks": 10,
+      "last_progress": [
+        "PROGRESS cycles=10000000 phase_start=48969 phase_stop=-1"
+      ]
+    },
+    {
+      "name": "long-validation-p1",
+      "complete": false,
+      "gzip_chunks": 10,
+      "last_progress": [
+        "PROGRESS cycles=10000000 phase_start=49267 phase_stop=-1"
+      ]
+    }
+  ]
+}

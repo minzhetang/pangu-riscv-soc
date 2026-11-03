@@ -1,0 +1,134 @@
+{
+  "reused_snapshot": "deliveries/accepted-basic-sm2-2026-11-02-v1",
+  "all_match": true,
+  "files": [
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\configuration\\board_top.sbit",
+      "sha256": "5a687e9081ab17eb8eaa7fbc6277cb383f5035b70fdbacd4f4eeba2f21668ce4"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\configuration\\configuration.svf",
+      "sha256": "18501e48c340300ccfd9762a20615dd9b420a38eb558c4412e4fe89a114446fd"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\evidence\\IMPLEMENTATION_AUDIT.json",
+      "sha256": "44a803bbbf2573e9b72aca3cebd9c76b953add0792b3949cd4d7df9647b4c906"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\evidence\\ORIGINAL_COMPILE_COMMANDS.json",
+      "sha256": "6af13e1765edf5dd0aeef67abb48846b9905ec351d7fecb23dac4fdd877f429d"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\board_pins.fdc",
+      "sha256": "a743f06fc1dea2f9ba1ce299f2d222f713aab68e71ec996e4bc828dfa9804db1"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\clock_27mhz.fdc",
+      "sha256": "5e5ad8102827936d9816edb370b779006e8801fe9c0853a8257fc2f6db3bed4f"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\closure_io.fdc",
+      "sha256": "bb6211bd447e9dc4abb90c1258e1ef3a0a22a0d5b78db2285f61fc9ae9cfb3a6"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\flow.tcl",
+      "sha256": "a25654043e6ed5e79f91b3f013d2dde4e2109aa0e980dfba1254c3c20890a150"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\alu.v",
+      "sha256": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\board_reset_sync.sv",
+      "sha256": "08624035721b144f80e65e8746cd5ff96c19efa13a5a3d199479ca1dffe30ea8"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\board_top.sv",
+      "sha256": "afc24c2ea643fd75aa4fd2c3e88b70b985a2bee481a99a2acd92224f16946478"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\control.v",
+      "sha256": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\cpu.v",
+      "sha256": "60f02899294c5bef04e522622e32764a13b910008add85a73fe607550f9af272"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\cycle_counter64.sv",
+      "sha256": "1351ac5674a5df18f937205fe34cf8f6c27ea966215edba23b445f8fc646fa2a"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\gpio_core.v",
+      "sha256": "414c54d1e5f4ad6a662cb217c2519c1ac7bfcb7d740c1c251fb1a43c803a83b4"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\init_tables.svh",
+      "sha256": "73aaec16d2fdb98dd817b02bf281867241ae24dcc9249eeccc3b3ce371514de4"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5c81ee8f01372d33d4173a34bb095b3d6e649541e4716c933af11a2390d264fa"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\memory_model.sv",
+      "sha256": "e56e868397fd01cf6bc928507c78af9fb0dcbd8206f8c881d72adf0d11f7d64a"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\regfile.v",
+      "sha256": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\soc_data_adapter.sv",
+      "sha256": "28d9deacbbeeb35fa18e8767b01b0acd835ea0009759cf370dbdbe77392c5229"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\soc_top.sv",
+      "sha256": "eb6fcf028cfb40f3036a7b0ca2750043a277c7515c2877d5299c7d355c0cec6a"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\pds\\source\\uart_tx.v",
+      "sha256": "21044928b621403c275b79f4794866ea5c2047d87505e763885e6e50179b988c"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\software\\firmware\\board_qa.c",
+      "sha256": "8ec9be68777eb1206993e6a205c025304e21b0d7844ed3199fd4a3a000a5cabb"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\software\\firmware\\link.ld",
+      "sha256": "2616cb1a27b60fcba98c0d5e73267a8e5caa39fb05aa46a2d6e34b6c99914a6e"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\software\\firmware\\mul_sm2.S",
+      "sha256": "7c8d3b1cf47434f2e71f7f64c472405d2b61c2d12a21e779efe57872d0d3b94a"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\software\\firmware\\start.S",
+      "sha256": "50d3ad9f9d591de5007665ff074b21e94812548a9b0972416954e569f6fc9ddc"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\software\\firmware\\timer.h",
+      "sha256": "61f1f30134cbd034acd2887344f44293ae5b82251b1fd6cc5b79a2dc4b8beadc"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\software\\port\\core_portme.c",
+      "sha256": "47c59dbde4f651836847085ca5e60cc90a68a8842417e2525c2a35b7e7c13af6"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\software\\port\\core_portme.h",
+      "sha256": "e821e3467b36c78cfae91f5b4ac072c6f19a364c1205730da66c56875683e9d3"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\software\\build\\performance256\\build_identity.h",
+      "sha256": "96a0e56a24e548b924f26057f83c7a10e0443eaf8a63e2e0d5251a87fcb0db8f"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\software\\build\\performance256\\program.bin",
+      "sha256": "7be534d0f4798a182bed549ab3e36244c79d86a45f6040bbd0e1afb701619d9d"
+    },
+    {
+      "path": "deliveries\\accepted-basic-sm2-2026-11-02-v1\\performance\\software\\build\\performance256\\program.elf",
+      "sha256": "1a1e7f4515389a1e9d9b99db9e8d60123e2ffa94a33d373531102d98096979ba"
+    }
+  ]
+}

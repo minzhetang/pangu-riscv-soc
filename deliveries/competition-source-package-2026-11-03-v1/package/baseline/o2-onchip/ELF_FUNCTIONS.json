@@ -1,0 +1,284 @@
+[
+  {
+    "name": "_start",
+    "pc": 0,
+    "pc_hex": "0x0",
+    "bytes": 112
+  },
+  {
+    "name": "cmp_idx",
+    "pc": 112,
+    "pc_hex": "0x70",
+    "bytes": 84
+  },
+  {
+    "name": "calc_func",
+    "pc": 196,
+    "pc_hex": "0xc4",
+    "bytes": 320
+  },
+  {
+    "name": "cmp_complex",
+    "pc": 516,
+    "pc_hex": "0x204",
+    "bytes": 80
+  },
+  {
+    "name": "copy_info",
+    "pc": 596,
+    "pc_hex": "0x254",
+    "bytes": 20
+  },
+  {
+    "name": "core_list_insert_new",
+    "pc": 616,
+    "pc_hex": "0x268",
+    "bytes": 96
+  },
+  {
+    "name": "core_list_remove",
+    "pc": 712,
+    "pc_hex": "0x2c8",
+    "bytes": 40
+  },
+  {
+    "name": "core_list_undo_remove",
+    "pc": 752,
+    "pc_hex": "0x2f0",
+    "bytes": 32
+  },
+  {
+    "name": "core_list_find",
+    "pc": 784,
+    "pc_hex": "0x310",
+    "bytes": 76
+  },
+  {
+    "name": "core_list_reverse",
+    "pc": 860,
+    "pc_hex": "0x35c",
+    "bytes": 36
+  },
+  {
+    "name": "core_list_mergesort",
+    "pc": 896,
+    "pc_hex": "0x380",
+    "bytes": 432
+  },
+  {
+    "name": "core_bench_list",
+    "pc": 1328,
+    "pc_hex": "0x530",
+    "bytes": 788
+  },
+  {
+    "name": "core_list_init",
+    "pc": 2116,
+    "pc_hex": "0x844",
+    "bytes": 404
+  },
+  {
+    "name": "iterate",
+    "pc": 2520,
+    "pc_hex": "0x9d8",
+    "bytes": 152
+  },
+  {
+    "name": "main",
+    "pc": 2672,
+    "pc_hex": "0xa70",
+    "bytes": 2124
+  },
+  {
+    "name": "core_init_matrix",
+    "pc": 4796,
+    "pc_hex": "0x12bc",
+    "bytes": 480
+  },
+  {
+    "name": "matrix_sum",
+    "pc": 5276,
+    "pc_hex": "0x149c",
+    "bytes": 128
+  },
+  {
+    "name": "matrix_mul_const",
+    "pc": 5404,
+    "pc_hex": "0x151c",
+    "bytes": 188
+  },
+  {
+    "name": "matrix_add_const",
+    "pc": 5592,
+    "pc_hex": "0x15d8",
+    "bytes": 56
+  },
+  {
+    "name": "matrix_mul_vect",
+    "pc": 5648,
+    "pc_hex": "0x1610",
+    "bytes": 208
+  },
+  {
+    "name": "matrix_mul_matrix",
+    "pc": 5856,
+    "pc_hex": "0x16e0",
+    "bytes": 272
+  },
+  {
+    "name": "matrix_mul_matrix_bitextract",
+    "pc": 6128,
+    "pc_hex": "0x17f0",
+    "bytes": 296
+  },
+  {
+    "name": "matrix_test",
+    "pc": 6424,
+    "pc_hex": "0x1918",
+    "bytes": 1084
+  },
+  {
+    "name": "core_bench_matrix",
+    "pc": 7508,
+    "pc_hex": "0x1d54",
+    "bytes": 68
+  },
+  {
+    "name": "core_init_state",
+    "pc": 7576,
+    "pc_hex": "0x1d98",
+    "bytes": 328
+  },
+  {
+    "name": "core_state_transition",
+    "pc": 7904,
+    "pc_hex": "0x1ee0",
+    "bytes": 744
+  },
+  {
+    "name": "core_bench_state",
+    "pc": 8648,
+    "pc_hex": "0x21c8",
+    "bytes": 432
+  },
+  {
+    "name": "get_seed_32",
+    "pc": 9080,
+    "pc_hex": "0x2378",
+    "bytes": 100
+  },
+  {
+    "name": "crcu8",
+    "pc": 9180,
+    "pc_hex": "0x23dc",
+    "bytes": 304
+  },
+  {
+    "name": "crcu16",
+    "pc": 9484,
+    "pc_hex": "0x250c",
+    "bytes": 552
+  },
+  {
+    "name": "crcu32",
+    "pc": 10036,
+    "pc_hex": "0x2734",
+    "bytes": 1056
+  },
+  {
+    "name": "crc16",
+    "pc": 11092,
+    "pc_hex": "0x2b54",
+    "bytes": 556
+  },
+  {
+    "name": "check_data_types",
+    "pc": 11648,
+    "pc_hex": "0x2d80",
+    "bytes": 8
+  },
+  {
+    "name": "print_uint",
+    "pc": 11656,
+    "pc_hex": "0x2d88",
+    "bytes": 352
+  },
+  {
+    "name": "ee_printf",
+    "pc": 12008,
+    "pc_hex": "0x2ee8",
+    "bytes": 896
+  },
+  {
+    "name": "start_time",
+    "pc": 12904,
+    "pc_hex": "0x3268",
+    "bytes": 72
+  },
+  {
+    "name": "stop_time",
+    "pc": 12976,
+    "pc_hex": "0x32b0",
+    "bytes": 172
+  },
+  {
+    "name": "get_time",
+    "pc": 13148,
+    "pc_hex": "0x335c",
+    "bytes": 32
+  },
+  {
+    "name": "time_in_secs",
+    "pc": 13180,
+    "pc_hex": "0x337c",
+    "bytes": 36
+  },
+  {
+    "name": "portable_init",
+    "pc": 13216,
+    "pc_hex": "0x33a0",
+    "bytes": 100
+  },
+  {
+    "name": "portable_fini",
+    "pc": 13316,
+    "pc_hex": "0x3404",
+    "bytes": 292
+  },
+  {
+    "name": "__mulsi3",
+    "pc": 13608,
+    "pc_hex": "0x3528",
+    "bytes": 36
+  },
+  {
+    "name": "__divsi3",
+    "pc": 13644,
+    "pc_hex": "0x354c",
+    "bytes": 132
+  },
+  {
+    "name": "__hidden___udivsi3",
+    "pc": 13652,
+    "pc_hex": "0x3554",
+    "bytes": 72
+  },
+  {
+    "name": "__udivsi3",
+    "pc": 13652,
+    "pc_hex": "0x3554",
+    "bytes": 72
+  },
+  {
+    "name": "__umodsi3",
+    "pc": 13724,
+    "pc_hex": "0x359c",
+    "bytes": 16
+  },
+  {
+    "name": "__modsi3",
+    "pc": 13776,
+    "pc_hex": "0x35d0",
+    "bytes": 48
+  }
+]

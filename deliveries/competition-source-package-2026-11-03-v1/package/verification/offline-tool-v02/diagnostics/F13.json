@@ -1,0 +1,12 @@
+{
+  "id": "F13",
+  "status": "INVALID_INPUT",
+  "no_difference": true,
+  "first_difference": null,
+  "neighbors": [],
+  "differences": [],
+  "error": "record length/type",
+  "checked": 1,
+  "expected_records": 1,
+  "actual_records": 0
+}

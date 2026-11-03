@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+    "-B",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "-g2012",
+    "-s",
+    "tb",
+    "-o",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\probe.vvp",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\alu.v",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\control.v",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\cpu.v",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\cycle_counter64.sv",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\gpio_core.v",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\local_regif_txgpio_m1.v",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\regfile.v",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\soc_data_adapter.sv",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\soc_top.sv",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\uart_tx.v",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\memory_sim.sv",
+    "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\tb.sv"
+  ],
+  "rc": 0,
+  "reason": "Equivalent observation net selection; preserved first TB and failure; no RTL edits"
+}

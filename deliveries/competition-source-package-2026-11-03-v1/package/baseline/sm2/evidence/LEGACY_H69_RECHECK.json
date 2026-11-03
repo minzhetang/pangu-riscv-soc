@@ -1,0 +1,12 @@
+{
+  "kind": "OLD_RECORD_RECHECK_NOT_NEW_DUT",
+  "status": "CAPTURE_REPORT_CHECKS_PASS",
+  "ticks": 496232016,
+  "nominal_seconds": 18.378963555555554,
+  "GPIO_this_capture": "TIMEOUT_NOT_RETESTED",
+  "GPIO_previous_acceptance_separate": true,
+  "LED_optical_check": "NOT_OBSERVED_BY_HOST",
+  "target_image_identity": "REQUIRES_SEPARATE_CONFIGURATION_BINDING",
+  "hardware_adopted": false,
+  "formal_score_certified": false
+}

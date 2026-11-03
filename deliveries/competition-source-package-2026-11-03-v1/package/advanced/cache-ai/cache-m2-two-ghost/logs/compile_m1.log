@@ -1,0 +1,14 @@
+m1.sv:27: warning: @* is sensitive to all 8 words in array 'valid'.
+m1.sv:27: warning: @* is sensitive to all 8 words in array 'tags'.
+m1.sv:28: warning: @* is sensitive to all 8 words in array 'valid'.
+m1.sv:28: warning: @* is sensitive to all 8 words in array 'tags'.
+m1.sv:29: warning: @* is sensitive to all 8 words in array 'valid'.
+m1.sv:30: warning: @* is sensitive to all 8 words in array 'valid'.
+m1.sv:31: warning: @* is sensitive to all 4 words in array 'lru'.
+m1.sv:27: warning: @* is sensitive to all 8 words in array 'valid'.
+m1.sv:27: warning: @* is sensitive to all 8 words in array 'tags'.
+m1.sv:28: warning: @* is sensitive to all 8 words in array 'valid'.
+m1.sv:28: warning: @* is sensitive to all 8 words in array 'tags'.
+m1.sv:29: warning: @* is sensitive to all 8 words in array 'valid'.
+m1.sv:30: warning: @* is sensitive to all 8 words in array 'valid'.
+m1.sv:31: warning: @* is sensitive to all 4 words in array 'lru'.

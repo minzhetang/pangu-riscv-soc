@@ -1,0 +1,4 @@
+0000: 000020b3  slt x1,x0,x0 ;0
+0004: 00002033  slt x0,x0,x0 ;discard0
+0008: 0000a133  slt x2,x1,x0 ;0
+000c: 05a00f93  addi x31,x0,90 ; completion

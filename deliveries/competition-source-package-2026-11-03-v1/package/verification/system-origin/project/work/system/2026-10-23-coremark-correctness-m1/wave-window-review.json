@@ -1,0 +1,36 @@
+{
+  "performance": {
+    "status": "PARTIAL_MISSING_STOP_WINDOW",
+    "VCD_SHA256": "5269F8F653548044BBDFB45A05B8130B3F24AB73A3ADB8868FC35488DC11BBB1",
+    "VCD_bytes": 3140534,
+    "time_unit": "1ps",
+    "last_tick": 40995000,
+    "duration_ns": 40995.0,
+    "continuous_initial_edges": 4095,
+    "prefix_event_counts": {
+      "EX": 2733,
+      "WB": 704,
+      "MEM": 683
+    },
+    "observed_late_stop_edges_no_WB_STORE": [],
+    "limitation": "VCD initial4095 only if stop window missing; otherwise initial+stop windows. No full kernel timeline; full text streams separate.",
+    "no_new_simulation": true
+  },
+  "validation": {
+    "status": "PARTIAL_MISSING_STOP_WINDOW",
+    "VCD_SHA256": "2AD2A18E34BEB2116693104020DF2B70D8481E1ADD0048E2496E9AE76B7FC9F8",
+    "VCD_bytes": 3140585,
+    "time_unit": "1ps",
+    "last_tick": 40995000,
+    "duration_ns": 40995.0,
+    "continuous_initial_edges": 4095,
+    "prefix_event_counts": {
+      "EX": 2733,
+      "WB": 707,
+      "MEM": 684
+    },
+    "observed_late_stop_edges_no_WB_STORE": [],
+    "limitation": "VCD initial4095 only if stop window missing; otherwise initial+stop windows. No full kernel timeline; full text streams separate.",
+    "no_new_simulation": true
+  }
+}

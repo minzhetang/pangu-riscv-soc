@@ -1,0 +1,69 @@
+{
+  "frozen_before_DUT": true,
+  "program_sha256": "D43E4E419CC2F3656F92BCA2AF7BB23EFBE48B3EEC74A019A1D04FAABD60CEDE",
+  "period": 2700000,
+  "count": 128,
+  "wait": 20,
+  "debounce": 2,
+  "scenarios": {
+    "idle": {
+      "states": [],
+      "fault": 0,
+      "frozen": 0
+    },
+    "normal": {
+      "states": [
+        1,
+        3,
+        7,
+        0
+      ],
+      "reasons": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fault": 0,
+      "frozen": 0
+    },
+    "order": {
+      "states": [
+        2,
+        0,
+        1
+      ],
+      "reasons": [
+        1,
+        1,
+        0
+      ],
+      "fault": 1,
+      "frozen": 1
+    },
+    "timeout": {
+      "states": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "reasons": [
+        0,
+        2,
+        1,
+        0
+      ],
+      "fault": 2,
+      "frozen": 1
+    }
+  },
+  "common": [
+    "Complete REC2+all ordered E+END, no extra bytes or UART error",
+    "128 samples, late=0, DENSE=0, evicted=0, event count <=8",
+    "Index strictly increasing except timeout may not change state; timestamps match sample schedule with explicit observation tolerance",
+    "No event before 2 samples; timeout exactly 20 samples after accepted state1",
+    "No unobserved physical-edge accuracy or full internal side-effect claim"
+  ],
+  "physical_input": "Human key actions; software observation timestamps, not exact physical edge times"
+}

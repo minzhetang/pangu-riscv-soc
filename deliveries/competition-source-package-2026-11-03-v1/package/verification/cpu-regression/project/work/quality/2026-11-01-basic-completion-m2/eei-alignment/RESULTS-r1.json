@@ -1,0 +1,2777 @@
+{
+  "cases": [
+    {
+      "id": "LH_ODD",
+      "version": "source",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "LH_ODD",
+        "words": [
+          7340691,
+          1053443,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "LHU_ODD",
+      "version": "source",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "LHU_ODD",
+        "words": [
+          7340691,
+          1069827,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "LW_OFF2",
+      "version": "source",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "LW_OFF2",
+        "words": [
+          7340691,
+          2106115,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "SH_ODD",
+      "version": "source",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "SH_ODD",
+        "words": [
+          7340691,
+          5247139,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "SW_OFF2",
+      "version": "source",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "SW_OFF2",
+        "words": [
+          7340691,
+          5251363,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "JAL_PLUS2",
+      "version": "source",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "JAL_PLUS2",
+        "words": [
+          7340691,
+          2098031,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "JALR_BIT1",
+      "version": "source",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "JALR_BIT1",
+        "words": [
+          7340691,
+          2098023,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "BEQ_TAKEN_PLUS2",
+      "version": "source",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "BEQ_TAKEN_PLUS2",
+        "words": [
+          7340691,
+          355,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "version": "source",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+        "words": [
+          7340691,
+          164195,
+          103809939,
+          1048691
+        ],
+        "stop_pc": 12,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "JALR_CLEAR_BIT0",
+      "version": "source",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "JALR_CLEAR_BIT0",
+        "words": [
+          7340691,
+          17825939,
+          33639,
+          103809939,
+          1048691
+        ],
+        "stop_pc": 16,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            1,
+            17
+          ],
+          [
+            6,
+            12
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "ALIGNED_LW_SW",
+      "version": "source",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "ALIGNED_LW_SW",
+        "words": [
+          7340691,
+          8963,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 16,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            2289526357
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [
+          [
+            0,
+            7,
+            15
+          ]
+        ],
+        "initial_mem": 2289526357,
+        "final_mem": 7
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "BYTE_ODD_ALLOWED",
+      "version": "source",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "BYTE_ODD_ALLOWED",
+        "words": [
+          7340691,
+          1065731,
+          103809939,
+          5243043,
+          1048691
+        ],
+        "stop_pc": 16,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            102
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [
+          [
+            1,
+            1792,
+            2
+          ]
+        ],
+        "initial_mem": 2289526357,
+        "final_mem": 2289502037
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "LH_ODD",
+      "version": "source",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "LH_ODD",
+        "words": [
+          7340691,
+          1053443,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "LHU_ODD",
+      "version": "source",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "LHU_ODD",
+        "words": [
+          7340691,
+          1069827,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "LW_OFF2",
+      "version": "source",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "LW_OFF2",
+        "words": [
+          7340691,
+          2106115,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "SH_ODD",
+      "version": "source",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "SH_ODD",
+        "words": [
+          7340691,
+          5247139,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "SW_OFF2",
+      "version": "source",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "SW_OFF2",
+        "words": [
+          7340691,
+          5251363,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "JAL_PLUS2",
+      "version": "source",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "JAL_PLUS2",
+        "words": [
+          7340691,
+          2098031,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "JALR_BIT1",
+      "version": "source",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "JALR_BIT1",
+        "words": [
+          7340691,
+          2098023,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "BEQ_TAKEN_PLUS2",
+      "version": "source",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "BEQ_TAKEN_PLUS2",
+        "words": [
+          7340691,
+          355,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "version": "source",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+        "words": [
+          7340691,
+          164195,
+          103809939,
+          1048691
+        ],
+        "stop_pc": 12,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "JALR_CLEAR_BIT0",
+      "version": "source",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "JALR_CLEAR_BIT0",
+        "words": [
+          7340691,
+          17825939,
+          33639,
+          103809939,
+          1048691
+        ],
+        "stop_pc": 16,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            1,
+            17
+          ],
+          [
+            6,
+            12
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "ALIGNED_LW_SW",
+      "version": "source",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "ALIGNED_LW_SW",
+        "words": [
+          7340691,
+          8963,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 16,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            2289526357
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [
+          [
+            0,
+            7,
+            15
+          ]
+        ],
+        "initial_mem": 2289526357,
+        "final_mem": 7
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "BYTE_ODD_ALLOWED",
+      "version": "source",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "BYTE_ODD_ALLOWED",
+        "words": [
+          7340691,
+          1065731,
+          103809939,
+          5243043,
+          1048691
+        ],
+        "stop_pc": 16,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            102
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [
+          [
+            1,
+            1792,
+            2
+          ]
+        ],
+        "initial_mem": 2289526357,
+        "final_mem": 2289502037
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "LH_ODD",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "LH_ODD",
+        "words": [
+          7340691,
+          1053443,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "LHU_ODD",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "LHU_ODD",
+        "words": [
+          7340691,
+          1069827,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "LW_OFF2",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "LW_OFF2",
+        "words": [
+          7340691,
+          2106115,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "SH_ODD",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "SH_ODD",
+        "words": [
+          7340691,
+          5247139,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "SW_OFF2",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "SW_OFF2",
+        "words": [
+          7340691,
+          5251363,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "JAL_PLUS2",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "JAL_PLUS2",
+        "words": [
+          7340691,
+          2098031,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "JALR_BIT1",
+      "version": "source-before",
+      "sync": 0,
+      "status": "TIMEOUT",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "JALR_BIT1",
+        "words": [
+          7340691,
+          2098023,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "BEQ_TAKEN_PLUS2",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "BEQ_TAKEN_PLUS2",
+        "words": [
+          7340691,
+          355,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+        "words": [
+          7340691,
+          164195,
+          103809939,
+          1048691
+        ],
+        "stop_pc": 12,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "JALR_CLEAR_BIT0",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "JALR_CLEAR_BIT0",
+        "words": [
+          7340691,
+          17825939,
+          33639,
+          103809939,
+          1048691
+        ],
+        "stop_pc": 16,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            1,
+            17
+          ],
+          [
+            6,
+            12
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "ALIGNED_LW_SW",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "ALIGNED_LW_SW",
+        "words": [
+          7340691,
+          8963,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 16,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            2289526357
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [
+          [
+            0,
+            7,
+            15
+          ]
+        ],
+        "initial_mem": 2289526357,
+        "final_mem": 7
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "BYTE_ODD_ALLOWED",
+      "version": "source-before",
+      "sync": 0,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "BYTE_ODD_ALLOWED",
+        "words": [
+          7340691,
+          1065731,
+          103809939,
+          5243043,
+          1048691
+        ],
+        "stop_pc": 16,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            102
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [
+          [
+            1,
+            1792,
+            2
+          ]
+        ],
+        "initial_mem": 2289526357,
+        "final_mem": 2289502037
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "LH_ODD",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "LH_ODD",
+        "words": [
+          7340691,
+          1053443,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "LHU_ODD",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "LHU_ODD",
+        "words": [
+          7340691,
+          1069827,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "LW_OFF2",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "LW_OFF2",
+        "words": [
+          7340691,
+          2106115,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "SH_ODD",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "SH_ODD",
+        "words": [
+          7340691,
+          5247139,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "SW_OFF2",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "SW_OFF2",
+        "words": [
+          7340691,
+          5251363,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "JAL_PLUS2",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "JAL_PLUS2",
+        "words": [
+          7340691,
+          2098031,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "JALR_BIT1",
+      "version": "source-before",
+      "sync": 1,
+      "status": "TIMEOUT",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "JALR_BIT1",
+        "words": [
+          7340691,
+          2098023,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "BEQ_TAKEN_PLUS2",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "BEQ_TAKEN_PLUS2",
+        "words": [
+          7340691,
+          355,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 4,
+        "stop_kind": 3,
+        "wb": [
+          [
+            5,
+            7
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+        "words": [
+          7340691,
+          164195,
+          103809939,
+          1048691
+        ],
+        "stop_pc": 12,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "JALR_CLEAR_BIT0",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "JALR_CLEAR_BIT0",
+        "words": [
+          7340691,
+          17825939,
+          33639,
+          103809939,
+          1048691
+        ],
+        "stop_pc": 16,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            1,
+            17
+          ],
+          [
+            6,
+            12
+          ]
+        ],
+        "stores": [],
+        "initial_mem": 2289526357,
+        "final_mem": 2289526357
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "ALIGNED_LW_SW",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "ALIGNED_LW_SW",
+        "words": [
+          7340691,
+          8963,
+          103809939,
+          5251107,
+          1048691
+        ],
+        "stop_pc": 16,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            2289526357
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [
+          [
+            0,
+            7,
+            15
+          ]
+        ],
+        "initial_mem": 2289526357,
+        "final_mem": 7
+      },
+      "full_RF_match": false
+    },
+    {
+      "id": "BYTE_ODD_ALLOWED",
+      "version": "source-before",
+      "sync": 1,
+      "status": "FAIL",
+      "actual_stop": [],
+      "WB": [],
+      "STORE": [],
+      "expected": {
+        "id": "BYTE_ODD_ALLOWED",
+        "words": [
+          7340691,
+          1065731,
+          103809939,
+          5243043,
+          1048691
+        ],
+        "stop_pc": 16,
+        "stop_kind": 2,
+        "wb": [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            102
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [
+          [
+            1,
+            1792,
+            2
+          ]
+        ],
+        "initial_mem": 2289526357,
+        "final_mem": 2289502037
+      },
+      "full_RF_match": false
+    }
+  ],
+  "jobs": [
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-s",
+        "tb",
+        "-Ptb.SYNC=0",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\tb.sv"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "compile",
+      "rc": 0,
+      "seconds": 0.3119999999180436,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\LH_ODD.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\LH_ODD.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "LH_ODD",
+      "rc": 0,
+      "seconds": 0.2660000000614673,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\LHU_ODD.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\LHU_ODD.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "LHU_ODD",
+      "rc": 0,
+      "seconds": 0.26599999982863665,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\LW_OFF2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\LW_OFF2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "LW_OFF2",
+      "rc": 0,
+      "seconds": 0.28100000019185245,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\SH_ODD.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\SH_ODD.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "SH_ODD",
+      "rc": 0,
+      "seconds": 0.28199999989010394,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\SW_OFF2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\SW_OFF2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "SW_OFF2",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\JAL_PLUS2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\JAL_PLUS2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "JAL_PLUS2",
+      "rc": 0,
+      "seconds": 0.26500000013038516,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\JALR_BIT1.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\JALR_BIT1.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "JALR_BIT1",
+      "rc": 0,
+      "seconds": 0.28199999989010394,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\BEQ_TAKEN_PLUS2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\BEQ_TAKEN_PLUS2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "BEQ_TAKEN_PLUS2",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\BEQ_NOTTAKEN_MISALIGNED_TARGET.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\BEQ_NOTTAKEN_MISALIGNED_TARGET.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\JALR_CLEAR_BIT0.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\JALR_CLEAR_BIT0.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "JALR_CLEAR_BIT0",
+      "rc": 0,
+      "seconds": 0.28100000019185245,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\ALIGNED_LW_SW.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\ALIGNED_LW_SW.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "ALIGNED_LW_SW",
+      "rc": 0,
+      "seconds": 0.26599999982863665,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\BYTE_ODD_ALLOWED.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0\\BYTE_ODD_ALLOWED.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source0",
+      "label": "BYTE_ODD_ALLOWED",
+      "rc": 0,
+      "seconds": 0.28100000019185245,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-s",
+        "tb",
+        "-Ptb.SYNC=1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\tb.sv"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "compile",
+      "rc": 0,
+      "seconds": 0.29699999978765845,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\LH_ODD.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\LH_ODD.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "LH_ODD",
+      "rc": 0,
+      "seconds": 0.28100000019185245,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\LHU_ODD.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\LHU_ODD.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "LHU_ODD",
+      "rc": 0,
+      "seconds": 0.28199999989010394,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\LW_OFF2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\LW_OFF2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "LW_OFF2",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\SH_ODD.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\SH_ODD.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "SH_ODD",
+      "rc": 0,
+      "seconds": 0.2660000000614673,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\SW_OFF2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\SW_OFF2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "SW_OFF2",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\JAL_PLUS2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\JAL_PLUS2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "JAL_PLUS2",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\JALR_BIT1.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\JALR_BIT1.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "JALR_BIT1",
+      "rc": 0,
+      "seconds": 0.28100000019185245,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\BEQ_TAKEN_PLUS2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\BEQ_TAKEN_PLUS2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "BEQ_TAKEN_PLUS2",
+      "rc": 0,
+      "seconds": 0.28199999989010394,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\BEQ_NOTTAKEN_MISALIGNED_TARGET.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\BEQ_NOTTAKEN_MISALIGNED_TARGET.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "rc": 0,
+      "seconds": 0.2649999998975545,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\JALR_CLEAR_BIT0.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\JALR_CLEAR_BIT0.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "JALR_CLEAR_BIT0",
+      "rc": 0,
+      "seconds": 0.28100000019185245,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\ALIGNED_LW_SW.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\ALIGNED_LW_SW.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "ALIGNED_LW_SW",
+      "rc": 0,
+      "seconds": 0.28199999989010394,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\BYTE_ODD_ALLOWED.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1\\BYTE_ODD_ALLOWED.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source1",
+      "label": "BYTE_ODD_ALLOWED",
+      "rc": 0,
+      "seconds": 0.26500000013038516,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-s",
+        "tb",
+        "-Ptb.SYNC=0",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source-before\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source-before\\control.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source-before\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source-before\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\tb.sv"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "compile",
+      "rc": 0,
+      "seconds": 0.31299999984912574,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\LH_ODD.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\LH_ODD.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "LH_ODD",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\LHU_ODD.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\LHU_ODD.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "LHU_ODD",
+      "rc": 0,
+      "seconds": 0.2660000000614673,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\LW_OFF2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\LW_OFF2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "LW_OFF2",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\SH_ODD.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\SH_ODD.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "SH_ODD",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\SW_OFF2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\SW_OFF2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "SW_OFF2",
+      "rc": 0,
+      "seconds": 0.28100000019185245,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\JAL_PLUS2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\JAL_PLUS2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "JAL_PLUS2",
+      "rc": 0,
+      "seconds": 0.28199999989010394,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\JALR_BIT1.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\JALR_BIT1.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "JALR_BIT1",
+      "rc": 1,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 1
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\BEQ_TAKEN_PLUS2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\BEQ_TAKEN_PLUS2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "BEQ_TAKEN_PLUS2",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\BEQ_NOTTAKEN_MISALIGNED_TARGET.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\BEQ_NOTTAKEN_MISALIGNED_TARGET.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "rc": 0,
+      "seconds": 0.28100000019185245,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\JALR_CLEAR_BIT0.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\JALR_CLEAR_BIT0.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "JALR_CLEAR_BIT0",
+      "rc": 0,
+      "seconds": 0.28199999989010394,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\ALIGNED_LW_SW.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\ALIGNED_LW_SW.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "ALIGNED_LW_SW",
+      "rc": 0,
+      "seconds": 0.26500000013038516,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\BYTE_ODD_ALLOWED.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0\\BYTE_ODD_ALLOWED.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before0",
+      "label": "BYTE_ODD_ALLOWED",
+      "rc": 0,
+      "seconds": 0.28199999989010394,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-s",
+        "tb",
+        "-Ptb.SYNC=1",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source-before\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source-before\\control.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source-before\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\source-before\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\tb.sv"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "compile",
+      "rc": 0,
+      "seconds": 0.3119999999180436,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\LH_ODD.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\LH_ODD.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "LH_ODD",
+      "rc": 0,
+      "seconds": 0.2660000000614673,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\LHU_ODD.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\LHU_ODD.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "LHU_ODD",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\LW_OFF2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\LW_OFF2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "LW_OFF2",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\SH_ODD.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\SH_ODD.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "SH_ODD",
+      "rc": 0,
+      "seconds": 0.28100000019185245,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\SW_OFF2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\SW_OFF2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "SW_OFF2",
+      "rc": 0,
+      "seconds": 0.26599999982863665,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\JAL_PLUS2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\JAL_PLUS2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "JAL_PLUS2",
+      "rc": 0,
+      "seconds": 0.28100000019185245,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\JALR_BIT1.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\JALR_BIT1.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "JALR_BIT1",
+      "rc": 1,
+      "seconds": 0.28199999989010394,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 1
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\BEQ_TAKEN_PLUS2.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\BEQ_TAKEN_PLUS2.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "BEQ_TAKEN_PLUS2",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\BEQ_NOTTAKEN_MISALIGNED_TARGET.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\BEQ_NOTTAKEN_MISALIGNED_TARGET.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "BEQ_NOTTAKEN_MISALIGNED_TARGET",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\JALR_CLEAR_BIT0.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\JALR_CLEAR_BIT0.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "JALR_CLEAR_BIT0",
+      "rc": 0,
+      "seconds": 0.2660000000614673,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\ALIGNED_LW_SW.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\ALIGNED_LW_SW.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "ALIGNED_LW_SW",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    },
+    {
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\tb.vvp",
+        "+ROM=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\BYTE_ODD_ALLOWED.hex",
+        "+VCD=D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1\\BYTE_ODD_ALLOWED.vcd"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\quality\\2026-11-01-basic-completion-m2\\eei-alignment\\runs-r1\\source-before1",
+      "label": "BYTE_ODD_ALLOWED",
+      "rc": 0,
+      "seconds": 0.2809999999590218,
+      "cleanup": {
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    }
+  ],
+  "new_source_all_pass": false,
+  "old_counterexample_count": 22,
+  "scope": "Finite local EEI alignment tests, not full RV32I or physical memory signoff"
+}

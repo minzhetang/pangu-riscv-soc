@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "C:\\Users\\ANON_USER\\AppData\\Local\\Programs\\Python\\Python312-embed\\python.exe",
+    "-B",
+    "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\moved 中文 空格\\return tool\\src\\worker.py",
+    "--case-file",
+    "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\moved 中文 空格\\return tool\\tests\\cases\\R01.json",
+    "--input-root",
+    "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\moved 中文 空格\\input package",
+    "--out",
+    "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\moved 中文 空格\\out R01",
+    "--deadline-seconds",
+    "180.000000"
+  ],
+  "cwd": "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\moved 中文 空格\\return tool",
+  "python": "C:\\Users\\ANON_USER\\AppData\\Local\\Programs\\Python\\Python312-embed\\python.exe",
+  "optimize": 0,
+  "case_id": "R01",
+  "input_root": "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\moved 中文 空格\\input package",
+  "out": "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\moved 中文 空格\\out R01",
+  "deadline_seconds": 180.0
+}

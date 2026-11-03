@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "checks": 12,
+  "scope": "Re-run of inherited finite BTB unit test on current candidate source; not CPU or ISA acceptance"
+}

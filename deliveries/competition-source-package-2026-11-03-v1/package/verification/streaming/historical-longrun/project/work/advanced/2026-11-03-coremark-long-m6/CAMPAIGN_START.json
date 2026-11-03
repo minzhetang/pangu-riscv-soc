@@ -1,0 +1,9 @@
+{
+  "unix": 1793697471.754059,
+  "monotonic": 1304624.953,
+  "logical_cpus": 24,
+  "parallel_cases": 2,
+  "total_wall_limit": 64800,
+  "case_limit": 21600,
+  "scope": "192 dual seeds on first; off only after both pass"
+}

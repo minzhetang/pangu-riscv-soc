@@ -1,0 +1,12 @@
+{
+  "id": "R1-OVERSIZE-INDEX",
+  "status": "INVALID_INPUT",
+  "no_difference": true,
+  "first_difference": null,
+  "neighbors": [],
+  "differences": [],
+  "error": "archive index exceeds 2MiB limit",
+  "checked": 0,
+  "expected_records": 0,
+  "actual_records": 0
+}

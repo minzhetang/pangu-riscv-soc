@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "id": 0,
+      "status": "PASS",
+      "expected": "normal selftest",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\selftest.vvp",
+          "+BAD=0"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\selftest-0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 1.656,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\selftest-0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\selftest-0\\stderr.log"
+      }
+    },
+    {
+      "id": 1,
+      "status": "PASS",
+      "expected": "explicit protocol rejection",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\selftest.vvp",
+          "+BAD=1"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\selftest-1",
+        "returncode": 1,
+        "returncode_hex": "0x00000001",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.703,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\selftest-1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\selftest-1\\stderr.log"
+      }
+    },
+    {
+      "id": 2,
+      "status": "PASS",
+      "expected": "explicit protocol rejection",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\selftest.vvp",
+          "+BAD=2"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\selftest-2",
+        "returncode": 1,
+        "returncode_hex": "0x00000001",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.703,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\selftest-2\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\selftest-2\\stderr.log"
+      }
+    },
+    {
+      "id": 3,
+      "status": "PASS",
+      "expected": "explicit protocol rejection",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\selftest.vvp",
+          "+BAD=3"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\selftest-3",
+        "returncode": 1,
+        "returncode_hex": "0x00000001",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.703,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\selftest-3\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\selftest-3\\stderr.log"
+      }
+    }
+  ],
+  "protected": 3177
+}

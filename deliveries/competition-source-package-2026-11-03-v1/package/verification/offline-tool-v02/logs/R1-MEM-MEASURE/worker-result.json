@@ -1,0 +1,22 @@
+{
+  "kind": "B_VERIFY_OFFLINE_WORKER",
+  "case_id": "R1-MEM-MEASURE",
+  "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0",
+  "CPU_function_proven": false,
+  "new_DUT": 0,
+  "limits": {},
+  "expected_input": null,
+  "actual_input": null,
+  "status": "MATCH",
+  "native_rc": 0,
+  "fully_consumed": true,
+  "checked": 8,
+  "expected_records": 8,
+  "actual_records": 8,
+  "mismatch_count": 0,
+  "differences": [],
+  "neighbors": [],
+  "first_difference": null,
+  "termination": "normal",
+  "worker_reported_peak_bytes": null
+}

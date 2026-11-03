@@ -1,0 +1,485 @@
+{
+  "status": "COPIED_BYTES_MATCH_ONLY_NOT_NEW_BUILD_OR_RUN",
+  "files": [
+    {
+      "path": "performance/pds/source/alu.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "bytes": 1021
+    },
+    {
+      "path": "performance/pds/source/board_reset_sync.sv",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/board_reset_sync.sv",
+      "sha256": "08624035721B144F80E65E8746CD5FF96C19EFA13A5A3D199479CA1DFFE30EA8",
+      "bytes": 547
+    },
+    {
+      "path": "performance/pds/source/board_top.sv",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/board_top.sv",
+      "sha256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478",
+      "bytes": 817
+    },
+    {
+      "path": "performance/pds/source/control.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "bytes": 2988
+    },
+    {
+      "path": "performance/pds/source/cpu.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/cpu.v",
+      "sha256": "60F02899294C5BEF04E522622E32764A13B910008ADD85A73FE607550F9AF272",
+      "bytes": 18331
+    },
+    {
+      "path": "performance/pds/source/cycle_counter64.sv",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+      "bytes": 395
+    },
+    {
+      "path": "performance/pds/source/gpio_core.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/gpio_core.v",
+      "sha256": "414C54D1E5F4AD6A662CB217C2519C1AC7BFCB7D740C1C251FB1A43C803A83B4",
+      "bytes": 2175
+    },
+    {
+      "path": "performance/pds/source/init_tables.svh",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/init_tables.svh",
+      "sha256": "73AAEC16D2FDB98DD817B02BF281867241AE24DCC9249EECCC3B3CE371514DE4",
+      "bytes": 132366
+    },
+    {
+      "path": "performance/pds/source/local_regif_txgpio_m1.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "bytes": 3732
+    },
+    {
+      "path": "performance/pds/source/memory_model.sv",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/memory_model.sv",
+      "sha256": "E56E868397FD01CF6BC928507C78AF9FB0DCBD8206F8C881D72ADF0D11F7D64A",
+      "bytes": 142235
+    },
+    {
+      "path": "performance/pds/source/regfile.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "bytes": 666
+    },
+    {
+      "path": "performance/pds/source/soc_data_adapter.sv",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+      "bytes": 1526
+    },
+    {
+      "path": "performance/pds/source/soc_top.sv",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A",
+      "bytes": 1872
+    },
+    {
+      "path": "performance/pds/source/uart_tx.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/source/uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "bytes": 5195
+    },
+    {
+      "path": "performance/pds/flow.tcl",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/flow.tcl",
+      "sha256": "A25654043E6ED5E79F91B3F013D2DDE4E2109AA0E980DFBA1254C3C20890A150",
+      "bytes": 1210
+    },
+    {
+      "path": "performance/pds/board_pins.fdc",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/board_pins.fdc",
+      "sha256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1",
+      "bytes": 4863
+    },
+    {
+      "path": "performance/pds/clock_27mhz.fdc",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/clock_27mhz.fdc",
+      "sha256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F",
+      "bytes": 101
+    },
+    {
+      "path": "performance/pds/closure_io.fdc",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/closure_io.fdc",
+      "sha256": "BB6211BD447E9DC4ABB90C1258E1EF3A0A22A0D5B78DB2285F61FC9AE9CFB3A6",
+      "bytes": 681
+    },
+    {
+      "path": "performance/evidence/IMPLEMENTATION_AUDIT.json",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/AUDIT_RESULT.json",
+      "sha256": "44A803BBBF2573E9B72ACA3CEBD9C76B953ADD0792B3949CD4D7DF9647B4C906",
+      "bytes": 2007
+    },
+    {
+      "path": "performance/software/firmware/board_qa.c",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-sm2/firmware/board_qa.c",
+      "sha256": "8EC9BE68777EB1206993E6A205C025304E21B0D7844ED3199FD4A3A000A5CABB",
+      "bytes": 5239
+    },
+    {
+      "path": "performance/software/firmware/link.ld",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-sm2/firmware/link.ld",
+      "sha256": "2616CB1A27B60FCBA98C0D5E73267A8E5CAA39FB05AA46A2D6E34B6C99914A6E",
+      "bytes": 949
+    },
+    {
+      "path": "performance/software/firmware/mul_sm2.S",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-sm2/firmware/mul_sm2.S",
+      "sha256": "7C8D3B1CF47434F2E71F7F64C472405D2B61C2D12A21E779EFE57872D0D3B94A",
+      "bytes": 497
+    },
+    {
+      "path": "performance/software/firmware/start.S",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-sm2/firmware/start.S",
+      "sha256": "50D3AD9F9D591DE5007665FF074B21E94812548A9B0972416954E569F6FC9DDC",
+      "bytes": 675
+    },
+    {
+      "path": "performance/software/firmware/timer.h",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-sm2/firmware/timer.h",
+      "sha256": "61F1F30134CBD034ACD2887344F44293AE5B82251B1FD6CC5B79A2DC4B8BEADC",
+      "bytes": 518
+    },
+    {
+      "path": "performance/software/port/core_portme.c",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-sm2/port/core_portme.c",
+      "sha256": "47C59DBDE4F651836847085CA5E60CC90A68A8842417E2525C2A35B7E7C13AF6",
+      "bytes": 3699
+    },
+    {
+      "path": "performance/software/port/core_portme.h",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-sm2/port/core_portme.h",
+      "sha256": "E821E3467B36C78CFAE91F5B4AC072C6F19A364C1205730DA66C56875683E9D3",
+      "bytes": 1167
+    },
+    {
+      "path": "performance/software/build/performance256/program.bin",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-sm2/build/performance256/program.bin",
+      "sha256": "7BE534D0F4798A182BED549AB3E36244C79D86A45F6040BBD0E1AFB701619D9D",
+      "bytes": 19744
+    },
+    {
+      "path": "performance/software/build/performance256/program.elf",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-sm2/build/performance256/program.elf",
+      "sha256": "1A1E7F4515389A1E9D9B99DB9E8D60123E2FFA94A33D373531102D98096979BA",
+      "bytes": 29976
+    },
+    {
+      "path": "performance/software/build/performance256/build_identity.h",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-sm2/build/performance256/build_identity.h",
+      "sha256": "96A0E56A24E548B924F26057F83C7A10E0443EAF8A63E2E0D5251A87FCB0DB8F",
+      "bytes": 538
+    },
+    {
+      "path": "performance/evidence/ORIGINAL_COMPILE_COMMANDS.json",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-sm2/COMPILE_RESULT.json",
+      "sha256": "6AF13E1765EDF5DD0AEEF67ABB48846B9905EC351D7FECB23DAC4FDD877F429D",
+      "bytes": 3907
+    },
+    {
+      "path": "performance/configuration/board_top.sbit",
+      "source": "work/pds-jtag/2026-11-02-sm2-performance-m3/inputs/board_top.sbit",
+      "sha256": "5A687E9081AB17EB8EAA7FBC6277CB383F5035B70FDBACD4F4EEBA2F21668CE4",
+      "bytes": 3791112
+    },
+    {
+      "path": "performance/configuration/configuration.svf",
+      "source": "work/pds-jtag/2026-11-02-sm2-performance-m3/inputs/configuration.svf",
+      "sha256": "18501E48C340300CCFD9762A20615DD9B420A38EB558C4412E4FE89A114446FD",
+      "bytes": 7643949
+    },
+    {
+      "path": "validation/pds/source/alu.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "bytes": 1021
+    },
+    {
+      "path": "validation/pds/source/board_reset_sync.sv",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/board_reset_sync.sv",
+      "sha256": "08624035721B144F80E65E8746CD5FF96C19EFA13A5A3D199479CA1DFFE30EA8",
+      "bytes": 547
+    },
+    {
+      "path": "validation/pds/source/board_top.sv",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/board_top.sv",
+      "sha256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478",
+      "bytes": 817
+    },
+    {
+      "path": "validation/pds/source/control.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "bytes": 2988
+    },
+    {
+      "path": "validation/pds/source/cpu.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/cpu.v",
+      "sha256": "60F02899294C5BEF04E522622E32764A13B910008ADD85A73FE607550F9AF272",
+      "bytes": 18331
+    },
+    {
+      "path": "validation/pds/source/cycle_counter64.sv",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+      "bytes": 395
+    },
+    {
+      "path": "validation/pds/source/gpio_core.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/gpio_core.v",
+      "sha256": "414C54D1E5F4AD6A662CB217C2519C1AC7BFCB7D740C1C251FB1A43C803A83B4",
+      "bytes": 2175
+    },
+    {
+      "path": "validation/pds/source/init_tables.svh",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/init_tables.svh",
+      "sha256": "7C47028CC5D5931E08985FE85A61739E1BA4F3E274DA8C8F4735338B9A4523F7",
+      "bytes": 132366
+    },
+    {
+      "path": "validation/pds/source/local_regif_txgpio_m1.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "bytes": 3732
+    },
+    {
+      "path": "validation/pds/source/memory_model.sv",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/memory_model.sv",
+      "sha256": "665EED5AFE3769B8B5A04A82F0E1B1E078195758BE6A9919EECA7ED6A4B37F0D",
+      "bytes": 142235
+    },
+    {
+      "path": "validation/pds/source/regfile.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "bytes": 666
+    },
+    {
+      "path": "validation/pds/source/soc_data_adapter.sv",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+      "bytes": 1526
+    },
+    {
+      "path": "validation/pds/source/soc_top.sv",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A",
+      "bytes": 1872
+    },
+    {
+      "path": "validation/pds/source/uart_tx.v",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/source/uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "bytes": 5195
+    },
+    {
+      "path": "validation/pds/flow.tcl",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/flow.tcl",
+      "sha256": "A25654043E6ED5E79F91B3F013D2DDE4E2109AA0E980DFBA1254C3C20890A150",
+      "bytes": 1210
+    },
+    {
+      "path": "validation/pds/board_pins.fdc",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/board_pins.fdc",
+      "sha256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1",
+      "bytes": 4863
+    },
+    {
+      "path": "validation/pds/clock_27mhz.fdc",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/clock_27mhz.fdc",
+      "sha256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F",
+      "bytes": 101
+    },
+    {
+      "path": "validation/pds/closure_io.fdc",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/build/closure_io.fdc",
+      "sha256": "BB6211BD447E9DC4ABB90C1258E1EF3A0A22A0D5B78DB2285F61FC9AE9CFB3A6",
+      "bytes": 681
+    },
+    {
+      "path": "validation/evidence/IMPLEMENTATION_AUDIT.json",
+      "source": "work/quality/2026-11-01-basic-completion-m2/impl-validation/AUDIT_RESULT.json",
+      "sha256": "63DC38DC70782EEBC8BC6BA19508DD62892A78C06F4B2EB50D46BF5AE5774809",
+      "bytes": 2007
+    },
+    {
+      "path": "validation/software/firmware/board_qa.c",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-validation-sm2/firmware/board_qa.c",
+      "sha256": "8EC9BE68777EB1206993E6A205C025304E21B0D7844ED3199FD4A3A000A5CABB",
+      "bytes": 5239
+    },
+    {
+      "path": "validation/software/firmware/link.ld",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-validation-sm2/firmware/link.ld",
+      "sha256": "2616CB1A27B60FCBA98C0D5E73267A8E5CAA39FB05AA46A2D6E34B6C99914A6E",
+      "bytes": 949
+    },
+    {
+      "path": "validation/software/firmware/mul_sm2.S",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-validation-sm2/firmware/mul_sm2.S",
+      "sha256": "7C8D3B1CF47434F2E71F7F64C472405D2B61C2D12A21E779EFE57872D0D3B94A",
+      "bytes": 497
+    },
+    {
+      "path": "validation/software/firmware/start.S",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-validation-sm2/firmware/start.S",
+      "sha256": "50D3AD9F9D591DE5007665FF074B21E94812548A9B0972416954E569F6FC9DDC",
+      "bytes": 675
+    },
+    {
+      "path": "validation/software/firmware/timer.h",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-validation-sm2/firmware/timer.h",
+      "sha256": "61F1F30134CBD034ACD2887344F44293AE5B82251B1FD6CC5B79A2DC4B8BEADC",
+      "bytes": 518
+    },
+    {
+      "path": "validation/software/port/core_portme.c",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-validation-sm2/port/core_portme.c",
+      "sha256": "47C59DBDE4F651836847085CA5E60CC90A68A8842417E2525C2A35B7E7C13AF6",
+      "bytes": 3699
+    },
+    {
+      "path": "validation/software/port/core_portme.h",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-validation-sm2/port/core_portme.h",
+      "sha256": "E821E3467B36C78CFAE91F5B4AC072C6F19A364C1205730DA66C56875683E9D3",
+      "bytes": 1167
+    },
+    {
+      "path": "validation/software/build/validation256/program.bin",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-validation-sm2/build/validation256/program.bin",
+      "sha256": "C2410635BBC83AA2C561D8EB545A21DD1C303F8DF5AFE94C2DD41B81EFD7061A",
+      "bytes": 19752
+    },
+    {
+      "path": "validation/software/build/validation256/program.elf",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-validation-sm2/build/validation256/program.elf",
+      "sha256": "9DD85277DF103FA047D24D1D2891FC408A6E9838B967C4F28D6C830B10D2EF3D",
+      "bytes": 29984
+    },
+    {
+      "path": "validation/software/build/validation256/build_identity.h",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-validation-sm2/build/validation256/build_identity.h",
+      "sha256": "BB4425267629EAF07EB4F12255967B62C5A1F4CC851383EB200FF8EEB6016936",
+      "bytes": 535
+    },
+    {
+      "path": "validation/evidence/ORIGINAL_COMPILE_COMMANDS.json",
+      "source": "work/quality/2026-11-01-basic-completion-m2/software-validation-sm2/COMPILE_RESULT.json",
+      "sha256": "10026DFB7269EDD13A4DDA571758F173B042267B0DD3101071BB4C1210450D72",
+      "bytes": 3897
+    },
+    {
+      "path": "validation/configuration/board_top.sbit",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-m3/inputs/board_top.sbit",
+      "sha256": "65567CF5D50D53925DADEAE3B5FF5E2FBF6DD04CD4F9E91EDE5F0621C382D68D",
+      "bytes": 3791112
+    },
+    {
+      "path": "validation/configuration/configuration.svf",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-m3/inputs/configuration.svf",
+      "sha256": "D20212CEA388D9F8B22D2F2D1AC6E7D2F6140ABD4C538E01113CBBCA1FEAF87C",
+      "bytes": 7643949
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-performance-native-repeat-m3/CAPTURE_CHECK.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-performance-native-repeat-m3/CAPTURE_CHECK.json",
+      "sha256": "0499C4816D8A7C38FF536DDAE3389C0795B0CC31DA1A3C2A57C43F46CC14D780",
+      "bytes": 908
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-performance-native-repeat-m3/SERIAL_RESULT.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-performance-native-repeat-m3/SERIAL_RESULT.json",
+      "sha256": "75B7AE00B11166C10AC89F58175FFEC85FECEAEC112BE1417327D5EB1A5DD378",
+      "bytes": 5672
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-performance-native-repeat-m3/RESULT.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-performance-native-repeat-m3/RESULT.json",
+      "sha256": "E3BA4E2C1A00116C5F76BB57488C914B0791C933D03DDEAD81C18DD28783E6A3",
+      "bytes": 364
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-performance-native-repeat-m3/uart-raw.bin",
+      "source": "work/pds-jtag/2026-11-02-sm2-performance-native-repeat-m3/uart-raw.bin",
+      "sha256": "7EAE718AEE028A6C114572174F66585213EB52A099180DDA04418EACF4E0BD4F",
+      "bytes": 1872
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-m3/CAPTURE_CHECK.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-m3/CAPTURE_CHECK.json",
+      "sha256": "4A2C2D35EF4C11B0B40056CFAC6744FE4DA2D5E8B0411B46A9224947F48DEFBC",
+      "bytes": 890
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-m3/SERIAL_RESULT.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-m3/SERIAL_RESULT.json",
+      "sha256": "56ECAF6587CE9A6C086DA8441B21CC101E31C94EF75D22B03DCB58086339598A",
+      "bytes": 13344
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-m3/RESULT.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-m3/RESULT.json",
+      "sha256": "B088E75397F17EF77247590BB923FEE88D7C70BA89021C88249B05D989E04FD5",
+      "bytes": 9193
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-m3/uart-raw.bin",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-m3/uart-raw.bin",
+      "sha256": "AB481BBD1336185CA2DC1ABC2DDB838AA68D98FF749F269CB6DFB0C72C29FB0F",
+      "bytes": 2268
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-native-repeat-m3/CAPTURE_CHECK.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-native-repeat-m3/CAPTURE_CHECK.json",
+      "sha256": "515FA40ED646ED44C722123527DFB248F5A57C2A0D28FF6392EC5F97C930B983",
+      "bytes": 904
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-native-repeat-m3/SERIAL_RESULT.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-native-repeat-m3/SERIAL_RESULT.json",
+      "sha256": "75CF46CDBBAD603BD12D821DCA272FD4A6EA22023AFEE0DFAAF9592DA94D89AA",
+      "bytes": 6458
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-native-repeat-m3/RESULT.json",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-native-repeat-m3/RESULT.json",
+      "sha256": "711C38E7AF338F0C2F166CF558FEC014173DEDFC2530CC523CEEB7E36191762E",
+      "bytes": 364
+    },
+    {
+      "path": "evidence/2026-11-02-sm2-validation-native-repeat-m3/uart-raw.bin",
+      "source": "work/pds-jtag/2026-11-02-sm2-validation-native-repeat-m3/uart-raw.bin",
+      "sha256": "ED7BD8DB233BF228DD276CC82134A17B21D17A05664567C66C5C6DF3F405748F",
+      "bytes": 1908
+    },
+    {
+      "path": "evidence/RESULTS.json",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/RESULTS.json",
+      "sha256": "C1369F6B3D0D4C2FFD768E00B53C22EB6C1139980666C82D9A4455FA74FA2EA6",
+      "bytes": 2341
+    },
+    {
+      "path": "evidence/NATIVE_CAPTURE_DIAGNOSTIC.json",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/NATIVE_CAPTURE_DIAGNOSTIC.json",
+      "sha256": "143413D4F11A45F2ABAAA12F610017422EC67A7D2972A0F674BD65B47BFC0D1E",
+      "bytes": 1541
+    },
+    {
+      "path": "evidence/CONTROLLER_SETTLE_CHANGE.json",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/CONTROLLER_SETTLE_CHANGE.json",
+      "sha256": "6A2D0CB99D3F630198EE9E35FA798BB437938C00A9DCD4132744A0084E9B3172",
+      "bytes": 445
+    },
+    {
+      "path": "evidence/LEGACY_H69_RECHECK.json",
+      "source": "work/quality/2026-11-02-sm2-resume-m3/LEGACY_H69_RECHECK.json",
+      "sha256": "2E8AF6107CDF2874B75ABFA1AFAFCB3621C39CA7A69839A8A85B7693818C37C1",
+      "bytes": 435
+    }
+  ]
+}

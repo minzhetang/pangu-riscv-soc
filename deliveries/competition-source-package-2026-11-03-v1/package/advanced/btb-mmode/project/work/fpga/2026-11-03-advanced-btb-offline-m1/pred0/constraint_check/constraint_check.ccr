@@ -1,0 +1,72 @@
+##### Written on 2026/11/03 16:19:10 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PG2L100H-6FBG676
+
+Top Module : 
+	board_top_hl4
+
+Constraint File(s) : 
+	D:/A_FPGA_Comp/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/board_pins.fdc
+	D:/A_FPGA_Comp/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/clock_27mhz.fdc
+	D:/A_FPGA_Comp/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/closure_io.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 0 critical warning(s), 0 warning(s), out of 97 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+set_false_path -from [get_ports -regexp {^key_n\[0\]$}] -to [get_cells -hierarchical -regexp {^reset_sync/release_ff.*$}]
+	I: The pattern '^key_n\[0\]$' in command 'get_ports -regexp {^key_n\[0\]$}' match 1 objects below:
+	I: port key_n[0]
+
+set_false_path -from [get_ports -regexp {^key_n\[0\]$}] -to [get_cells -hierarchical -regexp {^reset_sync/release_ff.*$}]
+	I: The pattern '^reset_sync/release_ff.*$' in command 'get_cells -hierarchical -regexp ^reset_sync/release_ff.*$' match 1 objects below:
+	I: instance reset_sync/release_ff[2:0]
+
+set_false_path -from [get_ports -regexp {^key_n\[[1-4]\]$}] -to [get_cells -hierarchical -regexp {^soc/peripherals/u_gpio/sync_meta.*$}]
+	I: The pattern '^key_n\[[1-4]\]$' in command 'get_ports -regexp {^key_n\[[1-4]\]$}' match 4 objects below:
+	I: port key_n[1]
+	I: port key_n[2]
+	I: port key_n[3]
+	I: port key_n[4]
+
+set_false_path -from [get_ports -regexp {^key_n\[[1-4]\]$}] -to [get_cells -hierarchical -regexp {^soc/peripherals/u_gpio/sync_meta.*$}]
+	I: The pattern '^soc/peripherals/u_gpio/sync_meta.*$' in command 'get_cells -hierarchical -regexp ^soc/peripherals/u_gpio/sync_meta.*$' match 1 objects below:
+	I: instance soc/peripherals/u_gpio/sync_meta[7:0]
+
+set_max_delay -datapath_only -to [get_ports -regexp {^(led\[[0-7]\]|uart_tx)$}] 37.037037
+	I: The pattern '^(led\[[0-7]\]|uart_tx)$' in command 'get_ports -regexp {^(led\[[0-7]\]|uart_tx)$}' match 9 objects below:
+	I: port led[0]
+	I: port led[1]
+	I: port led[2]
+	I: port led[3]
+	I: port led[4]
+	I: port led[5]
+	I: port led[6]
+	I: port led[7]
+	I: port uart_tx
+
+

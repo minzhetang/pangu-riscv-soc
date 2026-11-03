@@ -1,0 +1,16 @@
+{
+  "stage": "COMPILED",
+  "compile_directory": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\compile-external-01",
+  "compile": {
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 12.61,
+    "VVP": {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\compile-external-01\\coremark.vvp",
+      "sha256": "D7DFE55E09096DB45FA19C21DCA8A0E8F9EBADDE1EB57891129461D55F595302",
+      "bytes": 4317867
+    }
+  },
+  "DUT": "NOT_RUN",
+  "new_CPU_changes": 0
+}

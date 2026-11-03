@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "transport": "WIN32_READFILE",
+  "run_id": "capture-timeout-r2",
+  "started": "2026-11-03T10:10:08.078014+08:00",
+  "port": "COM22",
+  "baud": 115200,
+  "opened": true,
+  "closed": true,
+  "write_calls": 0,
+  "program_calls": 0,
+  "pds_calls": 0,
+  "bytes": 0,
+  "error_events": [],
+  "chunks": [],
+  "queue_observations": [],
+  "read_calls": 2085,
+  "max_seconds": 900,
+  "max_bytes": 65536,
+  "end_marker_seen": false,
+  "initial_settings": {
+    "baud": 115200,
+    "data_bits": 8,
+    "parity": 0,
+    "stop_bits": 0,
+    "flags_hex": "0x00000001"
+  },
+  "effective_settings": {
+    "baud": 115200,
+    "data_bits": 8,
+    "parity": 0,
+    "stop_bits": 0,
+    "flags_hex": "0x00000001"
+  },
+  "timeout_readback": {
+    "interval": 4294967295,
+    "read_multiplier": 0,
+    "read_constant": 50,
+    "write_multiplier": 0,
+    "write_constant": 150
+  },
+  "state": "CONTROLLER_STOP",
+  "total_seconds": 129.3279999999795,
+  "finished": "2026-11-03T10:12:17.399019+08:00",
+  "transport_clean": false
+}

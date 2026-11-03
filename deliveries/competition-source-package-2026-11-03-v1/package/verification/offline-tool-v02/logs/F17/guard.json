@@ -1,0 +1,13 @@
+{
+  "status": "REJECT_NOT_MATCH",
+  "native_rc": 7,
+  "fully_consumed": false,
+  "checked": 0,
+  "expected_records": 0,
+  "actual_records": 0,
+  "mismatch_count": 0,
+  "differences": [],
+  "guard_errors": [
+    "worker process rc does not match result status"
+  ]
+}

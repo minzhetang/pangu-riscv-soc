@@ -1,0 +1,22 @@
+{
+  "status": "LIMITED_BTB_M_MODE_SIMULATION_PASS_NOT_FULL_TASK2",
+  "programs": 21,
+  "configurations": 4,
+  "final_runs": 84,
+  "pass_count": 84,
+  "baseline_control_pass": 25,
+  "baseline_control_fail": 13,
+  "tool_error": "Sandbox connected-TB compile 0xC0000005; scoped ordinary-user external route succeeded, root cause UNKNOWN",
+  "unit": {
+    "status": "PASS",
+    "checks": 12,
+    "scope": "Re-run of inherited finite BTB unit test on current candidate source; not CPU or ISA acceptance"
+  },
+  "audit_pass": true,
+  "protected_files": 89,
+  "production_replaced": false,
+  "pds": "NOT_RUN",
+  "hardware": "NOT_RUN",
+  "full_HL4": "NOT_ACCEPTED",
+  "remaining_jobs": []
+}

@@ -1,0 +1,387 @@
+{
+  "date_beijing": "2026-10-24",
+  "stage_started": "2026-10-23",
+  "stage": "A-MEM-ADAPT-M1",
+  "status": "LIMITED_SOFTWARE_ACCEPTED",
+  "sources": [
+    {
+      "file": "cpu.v",
+      "original": "555CB51AC20FFC439B61BB29D4F4D9F4DC02C38B54A37291A79519CD413B8114",
+      "before": "555CB51AC20FFC439B61BB29D4F4D9F4DC02C38B54A37291A79519CD413B8114",
+      "after": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D",
+      "changed": true
+    },
+    {
+      "file": "alu.v",
+      "original": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "before": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "after": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "changed": false
+    },
+    {
+      "file": "control.v",
+      "original": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "before": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "after": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "changed": false
+    },
+    {
+      "file": "regfile.v",
+      "original": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "before": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "after": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "changed": false
+    }
+  ],
+  "frozen_files_rechecked": 3155,
+  "compile_count": 16,
+  "external_compile_permission": "single maximum16 batch consumed; non-admin; no external simulation",
+  "compile_errors": 0,
+  "compile_warnings_preserved": true,
+  "new_DUT_runs": 781,
+  "PASS": 781,
+  "FAIL": 0,
+  "TIMEOUT": 0,
+  "default_compatibility_cases": 763,
+  "small_cases": 12,
+  "program_cases": 6,
+  "specified_expectation_checks": {
+    "stall": 746,
+    "flush": 743
+  },
+  "NOT_SPECIFIED_preserved": {
+    "stall": 17,
+    "flush": 20
+  },
+  "historical_count_checks": 1526,
+  "historical_count_equal": true,
+  "independent_full_wave_checks": 41320,
+  "programs": [
+    {
+      "id": "cboot",
+      "sync": 0,
+      "status": "PASS",
+      "metrics": {
+        "physical": 642,
+        "advances": 642,
+        "memory_holds": 0,
+        "stall": 2,
+        "flush": 97,
+        "raw_stall": 2,
+        "raw_flush": 97,
+        "tail": 4,
+        "time_ps": 6460000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 439,
+          "WB": 263,
+          "READ": 13,
+          "STORE": 16
+        },
+        "SHA256": {
+          "EX": "0AA86E449B2F5F136526B7B3D52743012AE9DD53522FC240681742835E2F6587",
+          "WB": "98F1558F740A0126A41F7D23C644EE209EAF12D0967D1765AA1E20A255DA447E",
+          "MEM": "99F0BE6C44E64609DDFFA18E7FA02C6BC8F0F33F91D86CAE7ED608E275900540"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\compile\\generic-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.mem32.hex",
+          "+WORDS=144",
+          "+ROM_BYTES=16384",
+          "+RAM_BYTES=16384",
+          "+RAM_BASE=65536",
+          "+MAX_CYCLES=100000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\runs\\cboot-sync0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.391,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\logs\\run-cboot-sync0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\logs\\run-cboot-sync0\\stderr.log"
+      }
+    },
+    {
+      "id": "cboot",
+      "sync": 1,
+      "status": "PASS",
+      "metrics": {
+        "physical": 1285,
+        "advances": 642,
+        "memory_holds": 643,
+        "stall": 2,
+        "flush": 97,
+        "raw_stall": 4,
+        "raw_flush": 194,
+        "tail": 8,
+        "time_ps": 12890000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 439,
+          "WB": 263,
+          "READ": 13,
+          "STORE": 16
+        },
+        "SHA256": {
+          "EX": "0AA86E449B2F5F136526B7B3D52743012AE9DD53522FC240681742835E2F6587",
+          "WB": "98F1558F740A0126A41F7D23C644EE209EAF12D0967D1765AA1E20A255DA447E",
+          "MEM": "99F0BE6C44E64609DDFFA18E7FA02C6BC8F0F33F91D86CAE7ED608E275900540"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\compile\\generic-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.mem32.hex",
+          "+WORDS=144",
+          "+ROM_BYTES=16384",
+          "+RAM_BYTES=16384",
+          "+RAM_BASE=65536",
+          "+MAX_CYCLES=100000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\runs\\cboot-sync1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.391,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\logs\\run-cboot-sync1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\logs\\run-cboot-sync1\\stderr.log"
+      }
+    },
+    {
+      "id": "performance",
+      "sync": 0,
+      "status": "PASS",
+      "metrics": {
+        "physical": 1101315,
+        "advances": 1101315,
+        "memory_holds": 0,
+        "stall": 22483,
+        "flush": 155217,
+        "raw_stall": 22483,
+        "raw_flush": 155217,
+        "tail": 4,
+        "time_ps": 11013190000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 768391,
+          "WB": 526027,
+          "READ": 59090,
+          "STORE": 19201
+        },
+        "SHA256": {
+          "EX": "8DBBE81808F9FAAAB861FB654AEACC8B7129D718CE2AC8E6467C44FBB64B0DE3",
+          "WB": "1EE4BFAC97C3013FE5ECC01C6EB9007BB76E656B3C0921C5046B9F3AF14E1F6D",
+          "MEM": "E56042C82DFA9A3550BA80623A2F63C6B20473291935A0A4F1ED894CCEB3A9EF"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\compile\\generic-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\performance\\image.hex",
+          "+WORDS=3792",
+          "+ROM_BYTES=32768",
+          "+RAM_BYTES=32768",
+          "+RAM_BASE=65536",
+          "+MAX_CYCLES=2202758"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\runs\\performance-sync0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 21.437,
+        "timeout_seconds": 180,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\logs\\run-performance-sync0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\logs\\run-performance-sync0\\stderr.log"
+      }
+    },
+    {
+      "id": "performance",
+      "sync": 1,
+      "status": "PASS",
+      "metrics": {
+        "physical": 2202631,
+        "advances": 1101315,
+        "memory_holds": 1101316,
+        "stall": 22483,
+        "flush": 155217,
+        "raw_stall": 44966,
+        "raw_flush": 310434,
+        "tail": 8,
+        "time_ps": 22026350000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 768391,
+          "WB": 526027,
+          "READ": 59090,
+          "STORE": 19201
+        },
+        "SHA256": {
+          "EX": "8DBBE81808F9FAAAB861FB654AEACC8B7129D718CE2AC8E6467C44FBB64B0DE3",
+          "WB": "1EE4BFAC97C3013FE5ECC01C6EB9007BB76E656B3C0921C5046B9F3AF14E1F6D",
+          "MEM": "E56042C82DFA9A3550BA80623A2F63C6B20473291935A0A4F1ED894CCEB3A9EF"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\compile\\generic-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\performance\\image.hex",
+          "+WORDS=3792",
+          "+ROM_BYTES=32768",
+          "+RAM_BYTES=32768",
+          "+RAM_BASE=65536",
+          "+MAX_CYCLES=2202758"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\runs\\performance-sync1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 29.281,
+        "timeout_seconds": 180,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\logs\\run-performance-sync1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\logs\\run-performance-sync1\\stderr.log"
+      }
+    },
+    {
+      "id": "validation",
+      "sync": 0,
+      "status": "PASS",
+      "metrics": {
+        "physical": 1180725,
+        "advances": 1180725,
+        "memory_holds": 0,
+        "stall": 23001,
+        "flush": 168293,
+        "raw_stall": 23001,
+        "raw_flush": 168293,
+        "tail": 4,
+        "time_ps": 11807290000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 821131,
+          "WB": 560029,
+          "READ": 59554,
+          "STORE": 19106
+        },
+        "SHA256": {
+          "EX": "6B799EAA0EB7C3C5E6D2060AE5E31703F7505843475A7BB7121D54626F617147",
+          "WB": "13EDBD67D567831C25A0919691C5D5059ABFFEC6D37A136E712D234DA4CBD83D",
+          "MEM": "9911E18D160BC361AF60F398309D7E142ADA7EB266EDB2941D91D2583346CF96"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\compile\\generic-0.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\validation\\image.hex",
+          "+WORDS=3794",
+          "+ROM_BYTES=32768",
+          "+RAM_BYTES=32768",
+          "+RAM_BASE=65536",
+          "+MAX_CYCLES=2361578"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\runs\\validation-sync0",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 22.391,
+        "timeout_seconds": 180,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\logs\\run-validation-sync0\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\logs\\run-validation-sync0\\stderr.log"
+      }
+    },
+    {
+      "id": "validation",
+      "sync": 1,
+      "status": "PASS",
+      "metrics": {
+        "physical": 2361451,
+        "advances": 1180725,
+        "memory_holds": 1180726,
+        "stall": 23001,
+        "flush": 168293,
+        "raw_stall": 46002,
+        "raw_flush": 336586,
+        "tail": 8,
+        "time_ps": 23614550000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 821131,
+          "WB": 560029,
+          "READ": 59554,
+          "STORE": 19106
+        },
+        "SHA256": {
+          "EX": "6B799EAA0EB7C3C5E6D2060AE5E31703F7505843475A7BB7121D54626F617147",
+          "WB": "13EDBD67D567831C25A0919691C5D5059ABFFEC6D37A136E712D234DA4CBD83D",
+          "MEM": "9911E18D160BC361AF60F398309D7E142ADA7EB266EDB2941D91D2583346CF96"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\compile\\generic-1.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\validation\\image.hex",
+          "+WORDS=3794",
+          "+ROM_BYTES=32768",
+          "+RAM_BYTES=32768",
+          "+RAM_BASE=65536",
+          "+MAX_CYCLES=2361578"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\runs\\validation-sync1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 31.171,
+        "timeout_seconds": 180,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\logs\\run-validation-sync1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-adapt-m1\\logs\\run-validation-sync1\\stderr.log"
+      }
+    }
+  ],
+  "limitations": [
+    "behavioral memory only; not full32K target DRM mapping/initialization/port collision or Fmax",
+    "conservative two-clock phase correctness baseline; about2x physical clocks, not an efficiency improvement",
+    "763 default-mode compatibility cases, NOT763 sync-mode cases",
+    "finite CoreMark1-iteration CRC checks, no valid timer or official score",
+    "no real retirement PC; EX and WB/STORE observations separate; fixed memory and reset state",
+    "no peripherals integrated, no hardware/ILA; over_tempSTOP unchanged"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "after-r32-csr-r2-v2-s1-p1-exception_beats_pending_vectored",
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+    "-M",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\after-r32-csr-r2-v2-s1-p1.vvp",
+    "+IRQ=128",
+    "+IRQ_AT=1"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\after-r32-csr-r2-v2-s1-p1\\exception_beats_pending_vectored",
+  "rc": 0,
+  "seconds": 0.10999999986961484,
+  "remaining_before_close": [],
+  "input_sha256": {
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\after-r32-csr-r2-v2-s1-p1.vvp": "c799fce64d95ade965b8ed28e7ed325c6b302d428d2fe487a235fad68e3dfe88",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\after-r32-csr-r2-v2-s1-p1\\exception_beats_pending_vectored\\program.hex": "a7c5c60039c2fbacabb46e2818c340939aa6b5c305724a8d1bff7bbb61b78e7f"
+  }
+}

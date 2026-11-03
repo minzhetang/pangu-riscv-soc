@@ -1,0 +1,1329 @@
+{
+  "samples": 1024,
+  "nominal_clock_hz": 27000000,
+  "ROI_physical_samples": 575,
+  "logical_slots": 287,
+  "active_EX_events": 210,
+  "invalid_EX_slots": 77,
+  "EX_events_per_logical_slot": 0.7317073170731707,
+  "EX_events_per_physical_sample": 0.3652173913043478,
+  "qualified_load_use_stalls": 6,
+  "qualified_control_flushes": 35,
+  "function_EX_event_counts": {
+    "start_time": 6,
+    "main": 3,
+    "iterate": 15,
+    "core_bench_list": 186
+  },
+  "function_counts_are_not_time_fraction": true,
+  "load_use_events": [
+    {
+      "sample": 554,
+      "pc": 1412,
+      "rd": 14,
+      "fully_observed": true,
+      "bubble_sample": 556,
+      "consumer_pc": 1416,
+      "consumer_word": "00271803"
+    },
+    {
+      "sample": 558,
+      "pc": 1416,
+      "rd": 16,
+      "fully_observed": true,
+      "bubble_sample": 560,
+      "consumer_pc": 1420,
+      "consumer_word": "fed818e3"
+    },
+    {
+      "sample": 568,
+      "pc": 1404,
+      "rd": 15,
+      "fully_observed": true,
+      "bubble_sample": 570,
+      "consumer_pc": 1408,
+      "consumer_word": "0e078463"
+    },
+    {
+      "sample": 574,
+      "pc": 1412,
+      "rd": 14,
+      "fully_observed": true,
+      "bubble_sample": 576,
+      "consumer_pc": 1416,
+      "consumer_word": "00271803"
+    },
+    {
+      "sample": 578,
+      "pc": 1416,
+      "rd": 16,
+      "fully_observed": true,
+      "bubble_sample": 580,
+      "consumer_pc": 1420,
+      "consumer_word": "fed818e3"
+    },
+    {
+      "sample": 1012,
+      "pc": 1464,
+      "rd": 14,
+      "fully_observed": true,
+      "bubble_sample": 1014,
+      "consumer_pc": 1468,
+      "consumer_word": "00177693"
+    }
+  ],
+  "control_flow_events": [
+    {
+      "sample": 462,
+      "pc": 12972,
+      "word": "00008067",
+      "kind": "jalr",
+      "fully_observed": true,
+      "bubble_samples": [
+        464,
+        466
+      ],
+      "next_valid_pc": 3164,
+      "static_target": null,
+      "JALR_target_not_reconstructed": true
+    },
+    {
+      "sample": 472,
+      "pc": 3172,
+      "word": "d78080e7",
+      "kind": "jalr",
+      "fully_observed": true,
+      "bubble_samples": [
+        474,
+        476
+      ],
+      "next_valid_pc": 2520,
+      "static_target": null,
+      "JALR_target_not_reconstructed": true
+    },
+    {
+      "sample": 506,
+      "pc": 2576,
+      "word": "b24080e7",
+      "kind": "jalr",
+      "fully_observed": true,
+      "bubble_samples": [
+        508,
+        510
+      ],
+      "next_valid_pc": 1328,
+      "static_target": null,
+      "JALR_target_not_reconstructed": true
+    },
+    {
+      "sample": 548,
+      "pc": 1400,
+      "word": "00c0006f",
+      "kind": "jal",
+      "fully_observed": true,
+      "bubble_samples": [
+        550,
+        552
+      ],
+      "next_valid_pc": 1412,
+      "static_target": 1412,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 562,
+      "pc": 1420,
+      "word": "fed818e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        564,
+        566
+      ],
+      "next_valid_pc": 1404,
+      "static_target": 1404,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 586,
+      "pc": 1428,
+      "word": "0080006f",
+      "kind": "jal",
+      "fully_observed": true,
+      "bubble_samples": [
+        588,
+        590
+      ],
+      "next_valid_pc": 1436,
+      "static_target": 1436,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 598,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        600,
+        602
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 612,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        614,
+        616
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 626,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        628,
+        630
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 640,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        642,
+        644
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 654,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        656,
+        658
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 668,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        670,
+        672
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 682,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        684,
+        686
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 696,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        698,
+        700
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 710,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        712,
+        714
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 724,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        726,
+        728
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 738,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        740,
+        742
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 752,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        754,
+        756
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 766,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        768,
+        770
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 780,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        782,
+        784
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 794,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        796,
+        798
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 808,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        810,
+        812
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 822,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        824,
+        826
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 836,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        838,
+        840
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 850,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        852,
+        854
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 864,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        866,
+        868
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 878,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        880,
+        882
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 892,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        894,
+        896
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 906,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        908,
+        910
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 920,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        922,
+        924
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 934,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        936,
+        938
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 948,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        950,
+        952
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 962,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        964,
+        966
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 976,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        978,
+        980
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    },
+    {
+      "sample": 990,
+      "pc": 1448,
+      "word": "fe0718e3",
+      "kind": "branch",
+      "fully_observed": true,
+      "bubble_samples": [
+        992,
+        994
+      ],
+      "next_valid_pc": 1432,
+      "static_target": 1432,
+      "JALR_target_not_reconstructed": false
+    }
+  ],
+  "ordered_observed_writes": [
+    {
+      "sample": 41,
+      "address": 67538,
+      "wdata": 3211264,
+      "phase": 0,
+      "timer": 61560,
+      "concurrent_EX_PC_not_store_origin": 7736
+    },
+    {
+      "sample": 55,
+      "address": 67539,
+      "wdata": 1409286144,
+      "phase": 0,
+      "timer": 61574,
+      "concurrent_EX_PC_not_store_origin": 7736
+    },
+    {
+      "sample": 69,
+      "address": 67540,
+      "wdata": 51,
+      "phase": 0,
+      "timer": 61588,
+      "concurrent_EX_PC_not_store_origin": 7736
+    },
+    {
+      "sample": 83,
+      "address": 67541,
+      "wdata": 11776,
+      "phase": 0,
+      "timer": 61602,
+      "concurrent_EX_PC_not_store_origin": 7736
+    },
+    {
+      "sample": 97,
+      "address": 67542,
+      "wdata": 3407872,
+      "phase": 0,
+      "timer": 61616,
+      "concurrent_EX_PC_not_store_origin": 7736
+    },
+    {
+      "sample": 111,
+      "address": 67543,
+      "wdata": 1694498816,
+      "phase": 0,
+      "timer": 61630,
+      "concurrent_EX_PC_not_store_origin": 7736
+    },
+    {
+      "sample": 125,
+      "address": 67544,
+      "wdata": 52,
+      "phase": 0,
+      "timer": 61644,
+      "concurrent_EX_PC_not_store_origin": 7736
+    },
+    {
+      "sample": 139,
+      "address": 67545,
+      "wdata": 31232,
+      "phase": 0,
+      "timer": 61658,
+      "concurrent_EX_PC_not_store_origin": 7736
+    },
+    {
+      "sample": 145,
+      "address": 67546,
+      "wdata": 2883584,
+      "phase": 0,
+      "timer": 61664,
+      "concurrent_EX_PC_not_store_origin": 7748
+    },
+    {
+      "sample": 213,
+      "address": 67547,
+      "wdata": 721420288,
+      "phase": 0,
+      "timer": 61732,
+      "concurrent_EX_PC_not_store_origin": 7736
+    },
+    {
+      "sample": 227,
+      "address": 67548,
+      "wdata": 49,
+      "phase": 0,
+      "timer": 61746,
+      "concurrent_EX_PC_not_store_origin": 7736
+    },
+    {
+      "sample": 241,
+      "address": 67549,
+      "wdata": 12800,
+      "phase": 0,
+      "timer": 61760,
+      "concurrent_EX_PC_not_store_origin": 7736
+    },
+    {
+      "sample": 255,
+      "address": 67550,
+      "wdata": 3276800,
+      "phase": 0,
+      "timer": 61774,
+      "concurrent_EX_PC_not_store_origin": 7736
+    },
+    {
+      "sample": 261,
+      "address": 67551,
+      "wdata": 738197504,
+      "phase": 0,
+      "timer": 61780,
+      "concurrent_EX_PC_not_store_origin": 7748
+    },
+    {
+      "sample": 323,
+      "address": 67552,
+      "wdata": 0,
+      "phase": 0,
+      "timer": 61842,
+      "concurrent_EX_PC_not_store_origin": 7816
+    },
+    {
+      "sample": 337,
+      "address": 67553,
+      "wdata": 0,
+      "phase": 0,
+      "timer": 61856,
+      "concurrent_EX_PC_not_store_origin": 7816
+    },
+    {
+      "sample": 351,
+      "address": 67554,
+      "wdata": 0,
+      "phase": 0,
+      "timer": 61870,
+      "concurrent_EX_PC_not_store_origin": 7816
+    },
+    {
+      "sample": 365,
+      "address": 67555,
+      "wdata": 0,
+      "phase": 0,
+      "timer": 61884,
+      "concurrent_EX_PC_not_store_origin": 7816
+    },
+    {
+      "sample": 379,
+      "address": 67556,
+      "wdata": 0,
+      "phase": 0,
+      "timer": 61898,
+      "concurrent_EX_PC_not_store_origin": 7816
+    },
+    {
+      "sample": 393,
+      "address": 67557,
+      "wdata": 0,
+      "phase": 0,
+      "timer": 61912,
+      "concurrent_EX_PC_not_store_origin": 7816
+    },
+    {
+      "sample": 439,
+      "address": 67572,
+      "wdata": 1,
+      "phase": 0,
+      "timer": 61958,
+      "concurrent_EX_PC_not_store_origin": 12932
+    },
+    {
+      "sample": 455,
+      "address": 67576,
+      "wdata": 61967,
+      "phase": 0,
+      "timer": 61974,
+      "concurrent_EX_PC_not_store_origin": 12960
+    },
+    {
+      "sample": 457,
+      "address": 67580,
+      "wdata": 0,
+      "phase": 0,
+      "timer": 61976,
+      "concurrent_EX_PC_not_store_origin": 12964
+    },
+    {
+      "sample": 461,
+      "address": 67584,
+      "wdata": 1,
+      "phase": 0,
+      "timer": 61980,
+      "concurrent_EX_PC_not_store_origin": 12972
+    },
+    {
+      "sample": 481,
+      "address": 98160,
+      "wdata": 98200,
+      "phase": 0,
+      "timer": 62000,
+      "concurrent_EX_PC_not_store_origin": 2528
+    },
+    {
+      "sample": 485,
+      "address": 98172,
+      "wdata": 3176,
+      "phase": 0,
+      "timer": 62004,
+      "concurrent_EX_PC_not_store_origin": 2536
+    },
+    {
+      "sample": 487,
+      "address": 98244,
+      "wdata": 0,
+      "phase": 0,
+      "timer": 62006,
+      "concurrent_EX_PC_not_store_origin": 2540
+    },
+    {
+      "sample": 489,
+      "address": 98248,
+      "wdata": 0,
+      "phase": 0,
+      "timer": 62008,
+      "concurrent_EX_PC_not_store_origin": 2544
+    },
+    {
+      "sample": 493,
+      "address": 98168,
+      "wdata": 3,
+      "phase": 0,
+      "timer": 62012,
+      "concurrent_EX_PC_not_store_origin": 2552
+    },
+    {
+      "sample": 495,
+      "address": 98164,
+      "wdata": 7,
+      "phase": 0,
+      "timer": 62014,
+      "concurrent_EX_PC_not_store_origin": 2556
+    },
+    {
+      "sample": 517,
+      "address": 98152,
+      "wdata": 98188,
+      "phase": 0,
+      "timer": 62036,
+      "concurrent_EX_PC_not_store_origin": 1340
+    },
+    {
+      "sample": 519,
+      "address": 98156,
+      "wdata": 2580,
+      "phase": 0,
+      "timer": 62038,
+      "concurrent_EX_PC_not_store_origin": 1344
+    },
+    {
+      "sample": 521,
+      "address": 98148,
+      "wdata": 0,
+      "phase": 0,
+      "timer": 62040,
+      "concurrent_EX_PC_not_store_origin": 1348
+    },
+    {
+      "sample": 523,
+      "address": 98144,
+      "wdata": 256,
+      "phase": 0,
+      "timer": 62042,
+      "concurrent_EX_PC_not_store_origin": 1352
+    },
+    {
+      "sample": 525,
+      "address": 98140,
+      "wdata": 3,
+      "phase": 0,
+      "timer": 62044,
+      "concurrent_EX_PC_not_store_origin": 1356
+    },
+    {
+      "sample": 595,
+      "address": 65560,
+      "wdata": 0,
+      "phase": 0,
+      "timer": 62114,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 609,
+      "address": 65792,
+      "wdata": 65560,
+      "phase": 0,
+      "timer": 62128,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 623,
+      "address": 65784,
+      "wdata": 65792,
+      "phase": 0,
+      "timer": 62142,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 637,
+      "address": 65776,
+      "wdata": 65784,
+      "phase": 0,
+      "timer": 62156,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 651,
+      "address": 65768,
+      "wdata": 65776,
+      "phase": 0,
+      "timer": 62170,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 665,
+      "address": 65760,
+      "wdata": 65768,
+      "phase": 0,
+      "timer": 62184,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 679,
+      "address": 65744,
+      "wdata": 65760,
+      "phase": 0,
+      "timer": 62198,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 693,
+      "address": 65680,
+      "wdata": 65744,
+      "phase": 0,
+      "timer": 62212,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 707,
+      "address": 65616,
+      "wdata": 65680,
+      "phase": 0,
+      "timer": 62226,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 721,
+      "address": 65736,
+      "wdata": 65616,
+      "phase": 0,
+      "timer": 62240,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 735,
+      "address": 65672,
+      "wdata": 65736,
+      "phase": 0,
+      "timer": 62254,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 749,
+      "address": 65608,
+      "wdata": 65672,
+      "phase": 0,
+      "timer": 62268,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 763,
+      "address": 65728,
+      "wdata": 65608,
+      "phase": 0,
+      "timer": 62282,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 777,
+      "address": 65664,
+      "wdata": 65728,
+      "phase": 0,
+      "timer": 62296,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 791,
+      "address": 65600,
+      "wdata": 65664,
+      "phase": 0,
+      "timer": 62310,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 805,
+      "address": 65720,
+      "wdata": 65600,
+      "phase": 0,
+      "timer": 62324,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 819,
+      "address": 65656,
+      "wdata": 65720,
+      "phase": 0,
+      "timer": 62338,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 833,
+      "address": 65592,
+      "wdata": 65656,
+      "phase": 0,
+      "timer": 62352,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 847,
+      "address": 65712,
+      "wdata": 65592,
+      "phase": 0,
+      "timer": 62366,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 861,
+      "address": 65648,
+      "wdata": 65712,
+      "phase": 0,
+      "timer": 62380,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 875,
+      "address": 65584,
+      "wdata": 65648,
+      "phase": 0,
+      "timer": 62394,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 889,
+      "address": 65704,
+      "wdata": 65584,
+      "phase": 0,
+      "timer": 62408,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 903,
+      "address": 65640,
+      "wdata": 65704,
+      "phase": 0,
+      "timer": 62422,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 917,
+      "address": 65576,
+      "wdata": 65640,
+      "phase": 0,
+      "timer": 62436,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 931,
+      "address": 65696,
+      "wdata": 65576,
+      "phase": 0,
+      "timer": 62450,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 945,
+      "address": 65632,
+      "wdata": 65696,
+      "phase": 0,
+      "timer": 62464,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 959,
+      "address": 65752,
+      "wdata": 65632,
+      "phase": 0,
+      "timer": 62478,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 973,
+      "address": 65688,
+      "wdata": 65752,
+      "phase": 0,
+      "timer": 62492,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 987,
+      "address": 65624,
+      "wdata": 65688,
+      "phase": 0,
+      "timer": 62506,
+      "concurrent_EX_PC_not_store_origin": 1444
+    },
+    {
+      "sample": 1001,
+      "address": 65568,
+      "wdata": 65624,
+      "phase": 0,
+      "timer": 62520,
+      "concurrent_EX_PC_not_store_origin": 1444
+    }
+  ],
+  "EX_sample_indices": [
+    452,
+    454,
+    456,
+    458,
+    460,
+    462,
+    468,
+    470,
+    472,
+    478,
+    480,
+    482,
+    484,
+    486,
+    488,
+    490,
+    492,
+    494,
+    496,
+    498,
+    500,
+    502,
+    504,
+    506,
+    512,
+    514,
+    516,
+    518,
+    520,
+    522,
+    524,
+    526,
+    528,
+    530,
+    532,
+    534,
+    536,
+    538,
+    540,
+    542,
+    544,
+    546,
+    548,
+    554,
+    558,
+    562,
+    568,
+    572,
+    574,
+    578,
+    582,
+    584,
+    586,
+    592,
+    594,
+    596,
+    598,
+    604,
+    606,
+    608,
+    610,
+    612,
+    618,
+    620,
+    622,
+    624,
+    626,
+    632,
+    634,
+    636,
+    638,
+    640,
+    646,
+    648,
+    650,
+    652,
+    654,
+    660,
+    662,
+    664,
+    666,
+    668,
+    674,
+    676,
+    678,
+    680,
+    682,
+    688,
+    690,
+    692,
+    694,
+    696,
+    702,
+    704,
+    706,
+    708,
+    710,
+    716,
+    718,
+    720,
+    722,
+    724,
+    730,
+    732,
+    734,
+    736,
+    738,
+    744,
+    746,
+    748,
+    750,
+    752,
+    758,
+    760,
+    762,
+    764,
+    766,
+    772,
+    774,
+    776,
+    778,
+    780,
+    786,
+    788,
+    790,
+    792,
+    794,
+    800,
+    802,
+    804,
+    806,
+    808,
+    814,
+    816,
+    818,
+    820,
+    822,
+    828,
+    830,
+    832,
+    834,
+    836,
+    842,
+    844,
+    846,
+    848,
+    850,
+    856,
+    858,
+    860,
+    862,
+    864,
+    870,
+    872,
+    874,
+    876,
+    878,
+    884,
+    886,
+    888,
+    890,
+    892,
+    898,
+    900,
+    902,
+    904,
+    906,
+    912,
+    914,
+    916,
+    918,
+    920,
+    926,
+    928,
+    930,
+    932,
+    934,
+    940,
+    942,
+    944,
+    946,
+    948,
+    954,
+    956,
+    958,
+    960,
+    962,
+    968,
+    970,
+    972,
+    974,
+    976,
+    982,
+    984,
+    986,
+    988,
+    990,
+    996,
+    998,
+    1000,
+    1002,
+    1004,
+    1006,
+    1008,
+    1010,
+    1012,
+    1016,
+    1018,
+    1020,
+    1022
+  ],
+  "EX_intervals_physical_samples": {
+    "2": 168,
+    "6": 35,
+    "4": 6
+  },
+  "trigger_predicate_sample_indices": [
+    512
+  ],
+  "trigger_position": 512,
+  "all_signal_planes_binary": true,
+  "timer_adjacent_delta": 1,
+  "phase_alternates": true,
+  "not_retirement_IPC": true,
+  "no_unified_commit_trace": true,
+  "JALR_full_target_and_data_forwarding_values_not_observed": true,
+  "case": "list",
+  "source": "NEW_REAL_FPGA_WDF",
+  "wdf": "work\\fpga\\2026-11-01-coremark256-ila-efficiency-m1\\qualified-windows\\list\\list.wdf",
+  "wdf_sha256": "B2540C779588038E2BE627BA09D3DC3A926E6A8E178E206C5E737CDA8BB9273E",
+  "limitations": [
+    "Local1024-point windows only, not whole-run statistical sampling",
+    "EX event density is not retired IPC or CPU utilization",
+    "Function EX counts are not execution-time fractions",
+    "id_pc is ID/EX register PC concurrent with MEM writes, not store-origin/retired PC",
+    "No full forwarding operand or JALR target reconstruction",
+    "27MHz display scaling is nominal, not independently measured",
+    "Existing4Critical/CDC/externalIO limitations not waived"
+  ]
+}

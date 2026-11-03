@@ -1,0 +1,8 @@
+0000: 00500093  addi x1,x0,5
+0004: 00103013  sltiu x0,x0,1 ;discard1
+0008: 00103113  sltiu x2,x0,1 ;1
+000c: 0060b093  sltiu x1,x1,6 ;1
+0010: 0020b093  sltiu x1,x1,2 ;1 repeated legalWB
+0014: 0010b193  sltiu x3,x1,1 ;0 equal
+0018: 00102023  sw x1,0(x0)
+001c: 05a00f93  addi x31,x0,90 ; completion

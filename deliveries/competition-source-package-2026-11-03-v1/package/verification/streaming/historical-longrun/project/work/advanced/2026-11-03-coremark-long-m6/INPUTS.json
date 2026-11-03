@@ -1,0 +1,116 @@
+{
+  "files": [
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\alu.v",
+      "copy": "source\\alu.v",
+      "sha256": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\btb.v",
+      "copy": "source\\btb.v",
+      "sha256": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\control.v",
+      "copy": "source\\control.v",
+      "sha256": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\cpu_hl4.v",
+      "copy": "source\\cpu_hl4.v",
+      "sha256": "aa5a84c0028f37d0d3719a8f0829d593d9dcfae456e5c08f6229b1942f8442ef"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\csr_file_hl3.v",
+      "copy": "source\\csr_file_hl3.v",
+      "sha256": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\mmu_sv32.v",
+      "copy": "source\\mmu_sv32.v",
+      "sha256": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\pmp.v",
+      "copy": "source\\pmp.v",
+      "sha256": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\source\\regfile.v",
+      "copy": "source\\regfile.v",
+      "sha256": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_list_join.c",
+      "copy": "upstream\\core_list_join.c",
+      "sha256": "ca00e4e010ece47d7f040cb92aa50a95345a00d3171b59d088f6b243be06ce7b"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_main.c",
+      "copy": "upstream\\core_main.c",
+      "sha256": "17884c93c5b94378eb0ff02b4df3725756cf2addb9b8cbcaa6200a4649ff5ca7"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_matrix.c",
+      "copy": "upstream\\core_matrix.c",
+      "sha256": "ecdff717b5a5c4907d221a606760e25499899cbf617582c05d40db71c91351e4"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_state.c",
+      "copy": "upstream\\core_state.c",
+      "sha256": "f4b84bb0a3452c45a4daa664ab502bfdccbd31cb57d93e9ac490c60937717a4e"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\core_util.c",
+      "copy": "upstream\\core_util.c",
+      "sha256": "a3fbfcb9bb943b638624b8ece01c5836dd56a96d7bcde2697b248d077447327f"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\upstream\\coremark.h",
+      "copy": "upstream\\coremark.h",
+      "sha256": "42642b9a06c7ed2b3bd9eda971b7c3868c4f5d27bf7ef6c4bba11291a0c2598a"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\port\\core_portme.c",
+      "copy": "port\\core_portme.c",
+      "sha256": "16eefae03c174453b18a6d90e1b7ce8f6c78c4095d32ed44cba4450f6a04aae6"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\port\\core_portme.h",
+      "copy": "port\\core_portme.h",
+      "sha256": "93a4e3b0f0280ca1c0195099ac1a88a215d331eb076a9c2ff0958ecb095fa3db"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\firmware\\link.ld",
+      "copy": "firmware\\link.ld",
+      "sha256": "51fe39d230ed7edf4b14f635f63a10e23d84890f1273be810f45d95948f6bfed"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\firmware\\start.S",
+      "copy": "firmware\\start.S",
+      "sha256": "eb4f4c41d99c6847c411ab4ccd552f74d05b0d3a8e94529db1610953aafed7a0"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\firmware\\timer.h",
+      "copy": "firmware\\timer.h",
+      "sha256": "61f1f30134cbd034acd2887344f44293ae5b82251b1fd6cc5b79a2dc4b8beadc"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-15-msys2-baseline\\inspected-tars\\iverilog.tar::ucrt64/include/iverilog/vpi_user.h",
+      "copy": "vpi-deps\\vpi_user.h",
+      "sha256": "109e905f31b6b25dcd3ad784784177baf1bab342a3c1634a82a20abf00516256"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-15-msys2-baseline\\inspected-tars\\iverilog.tar::ucrt64/include/iverilog/_pli_types.h",
+      "copy": "vpi-deps\\_pli_types.h",
+      "sha256": "6c15cdc1f17bf4e79913d3fabeea20786cc7b7caefcf412899baee6438e53751"
+    },
+    {
+      "source": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-15-msys2-baseline\\inspected-tars\\iverilog.tar::ucrt64/lib/libvpi.a",
+      "copy": "vpi-deps\\libvpi.a",
+      "sha256": "4c6576daa1d6ee63d8ee89afcabea4d7cf5748adf53aace3de9859d4652cf1b3"
+    }
+  ],
+  "archive_sha256": "7a33b425fe5af2fe344288f1178bade41349c8d373f11ed444b9bdadc616bc32",
+  "note": "Only existing archive VPI headers/import library copied into this independent source tree; no installation or PATH change"
+}

@@ -1,0 +1,59 @@
+{
+  "compiler_timeout": 60,
+  "run_timeout": 30,
+  "cycle_limit": 2000,
+  "targets": [
+    {
+      "id": "drm",
+      "top": "tb_drm",
+      "sources": [
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\tb_drm.sv",
+        "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+        "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\drm.vvp",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_drm",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\drm.vvp",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\tb_drm.sv",
+        "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+        "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v"
+      ]
+    },
+    {
+      "id": "cpu",
+      "top": "tb_cpu_timing",
+      "sources": [
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\tb_cpu_timing.sv",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\regfile.v"
+      ],
+      "output": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\cpu.vvp",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_cpu_timing",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\cpu.vvp",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\tb_cpu_timing.sv",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\regfile.v"
+      ]
+    }
+  ]
+}

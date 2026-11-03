@@ -1,0 +1,156 @@
+{
+  "status": "PASS",
+  "control_and_negatives": [
+    {
+      "id": "control",
+      "status": "PASS"
+    },
+    {
+      "id": "iterations1",
+      "status": "EXPECTED_REJECT",
+      "errors": [
+        {
+          "kind": "iterations",
+          "actual": 1,
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "id": "crcfinal",
+      "status": "EXPECTED_REJECT",
+      "errors": [
+        {
+          "kind": "crcfinal",
+          "actual": "0000",
+          "expected": "72be"
+        }
+      ]
+    },
+    {
+      "id": "missing_WB",
+      "status": "EXPECTED_REJECT",
+      "errors": [
+        {
+          "kind": "streams",
+          "actual": {
+            "EX": {
+              "count": 1900604,
+              "sha256": "F68D7CA5B2574B8386C525A838EBAFA8674BB9F235C3B5F9FD2E7156F6A4C9BF"
+            },
+            "WB": {
+              "count": 1296942,
+              "sha256": "71BA6A32BAC8D0D06D74FFC4E05F9B2080F7B2EC5BF2198E452EC98218981018"
+            },
+            "MEM": {
+              "count": 280185,
+              "sha256": "75E334D7D2E88E5C60642A66A3FD69C0368B35BB85B8966307B26DAAF27E46EB"
+            }
+          },
+          "expected": {
+            "EX": {
+              "count": 1900604,
+              "sha256": "F68D7CA5B2574B8386C525A838EBAFA8674BB9F235C3B5F9FD2E7156F6A4C9BF"
+            },
+            "WB": {
+              "count": 1296943,
+              "sha256": "71BA6A32BAC8D0D06D74FFC4E05F9B2080F7B2EC5BF2198E452EC98218981018"
+            },
+            "MEM": {
+              "count": 280185,
+              "sha256": "75E334D7D2E88E5C60642A66A3FD69C0368B35BB85B8966307B26DAAF27E46EB"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "extra_MEM",
+      "status": "EXPECTED_REJECT",
+      "errors": [
+        {
+          "kind": "streams",
+          "actual": {
+            "EX": {
+              "count": 1900604,
+              "sha256": "F68D7CA5B2574B8386C525A838EBAFA8674BB9F235C3B5F9FD2E7156F6A4C9BF"
+            },
+            "WB": {
+              "count": 1296943,
+              "sha256": "71BA6A32BAC8D0D06D74FFC4E05F9B2080F7B2EC5BF2198E452EC98218981018"
+            },
+            "MEM": {
+              "count": 280186,
+              "sha256": "75E334D7D2E88E5C60642A66A3FD69C0368B35BB85B8966307B26DAAF27E46EB"
+            }
+          },
+          "expected": {
+            "EX": {
+              "count": 1900604,
+              "sha256": "F68D7CA5B2574B8386C525A838EBAFA8674BB9F235C3B5F9FD2E7156F6A4C9BF"
+            },
+            "WB": {
+              "count": 1296943,
+              "sha256": "71BA6A32BAC8D0D06D74FFC4E05F9B2080F7B2EC5BF2198E452EC98218981018"
+            },
+            "MEM": {
+              "count": 280185,
+              "sha256": "75E334D7D2E88E5C60642A66A3FD69C0368B35BB85B8966307B26DAAF27E46EB"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "raw_timing",
+      "status": "EXPECTED_REJECT",
+      "errors": [
+        {
+          "kind": "raw_ticks",
+          "actual": 4207379,
+          "expected": 4207378
+        }
+      ]
+    },
+    {
+      "id": "phase_missing_BSS",
+      "status": "EXPECTED_REJECT",
+      "errors": [
+        {
+          "kind": "phase order",
+          "actual": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "budget_over",
+      "status": "EXPECTED_REJECT",
+      "errors": [
+        {
+          "kind": "physical",
+          "actual": 8000001,
+          "expected": 5888943
+        },
+        {
+          "kind": "budget",
+          "actual": false,
+          "expected": true
+        }
+      ]
+    }
+  ],
+  "new_DUT": 0,
+  "shared_actual_checker_path": true
+}

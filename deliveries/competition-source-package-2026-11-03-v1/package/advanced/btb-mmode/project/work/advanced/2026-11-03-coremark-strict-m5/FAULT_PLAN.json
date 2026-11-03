@@ -1,0 +1,245 @@
+{
+  "scope": "Finite M-mode external access faults and CSR/unsupported-ISA precision; frozen before DUT",
+  "tests": [
+    {
+      "name": "instruction_access",
+      "mask": 0,
+      "fault": 1,
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          11,
+          77
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          77,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          8,
+          1,
+          8
+        ]
+      ],
+      "entry": 256,
+      "status": [
+        "00001800",
+        "3"
+      ],
+      "trap_status": [
+        "00001800",
+        "3"
+      ],
+      "enable_pc": 4,
+      "program_sha256": "d6a2b6faa7d4ffd4a5623bea7350834e3b89b23449a5850f7fb01620932927f0"
+    },
+    {
+      "name": "load_access",
+      "mask": 0,
+      "fault": 2,
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          11,
+          77
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          77,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          8,
+          5,
+          544
+        ]
+      ],
+      "entry": 256,
+      "status": [
+        "00001800",
+        "3"
+      ],
+      "trap_status": [
+        "00001800",
+        "3"
+      ],
+      "enable_pc": 4,
+      "program_sha256": "bf3ebc6ea411fe36704f2f433f68a49f67b3505f5cdc0273e3b66a39b74cbc08"
+    },
+    {
+      "name": "store_access",
+      "mask": 0,
+      "fault": 2,
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          11,
+          77
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          77,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          8,
+          7,
+          544
+        ]
+      ],
+      "entry": 256,
+      "status": [
+        "00001800",
+        "3"
+      ],
+      "trap_status": [
+        "00001800",
+        "3"
+      ],
+      "enable_pc": 4,
+      "program_sha256": "333ee967b1a842de1e01c0dde3aa7013f06cf10c9fc829127fcfd9f8f8757302"
+    },
+    {
+      "name": "readonly_csr",
+      "mask": 0,
+      "fault": 0,
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          11,
+          77
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          77,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          8,
+          2,
+          3221263091
+        ]
+      ],
+      "entry": 256,
+      "status": [
+        "00001800",
+        "3"
+      ],
+      "trap_status": [
+        "00001800",
+        "3"
+      ],
+      "enable_pc": 4,
+      "program_sha256": "391a594661d8462961cdff830e1f606f505029969b1b6e9b072d2a16472cb81f"
+    },
+    {
+      "name": "unknown_csr",
+      "mask": 0,
+      "fault": 0,
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          11,
+          77
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          77,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          8,
+          2,
+          2146472691
+        ]
+      ],
+      "entry": 256,
+      "status": [
+        "00001800",
+        "3"
+      ],
+      "trap_status": [
+        "00001800",
+        "3"
+      ],
+      "enable_pc": 4,
+      "program_sha256": "02110980f51097fb7323a133ed984bec8f80b8977a30054997cc3d347c236590"
+    },
+    {
+      "name": "illegal_multiply",
+      "mask": 0,
+      "fault": 0,
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          11,
+          77
+        ]
+      ],
+      "stores": [
+        [
+          516,
+          77,
+          15
+        ]
+      ],
+      "traps": [
+        [
+          8,
+          2,
+          34636467
+        ]
+      ],
+      "entry": 256,
+      "status": [
+        "00001800",
+        "3"
+      ],
+      "trap_status": [
+        "00001800",
+        "3"
+      ],
+      "enable_pc": 4,
+      "program_sha256": "59d89f07808d25f6c05fcc4d07b5c54afef628104979741d4e02005c7d07fce1"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+VCD info: dumpfile wave.vcd opened for output.
+METRICS|physical=4179|advances=2089|stall=303|flush=319|tail=32
+STOP|2|00000068
+SYSTEM_ENDED_NOT_FUNCTIONAL_PASS
+D:\A_FPGA_Comp\work\system\2026-10-24-soc-txgpio-m1\integration-0030-v1\source\tb_soc_txgpio_m1.sv:80: $finish called at 41830000 (1ps)

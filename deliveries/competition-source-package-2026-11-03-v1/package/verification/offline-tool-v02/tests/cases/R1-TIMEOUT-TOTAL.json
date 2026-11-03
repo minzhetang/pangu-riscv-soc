@@ -1,0 +1,20 @@
+{
+  "id": "R1-TIMEOUT-TOTAL",
+  "expected": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+    "complete": true
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {
+    "case_timeout_seconds": 1.0,
+    "cleanup_seconds": 1.0
+  }
+}

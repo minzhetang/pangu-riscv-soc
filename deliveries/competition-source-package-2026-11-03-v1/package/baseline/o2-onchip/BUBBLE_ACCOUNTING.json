@@ -1,0 +1,32 @@
+{
+  "list": {
+    "invalid_slots": 77,
+    "explained": 76,
+    "unattributed_indices": [
+      450
+    ],
+    "first_ROI_sample": 449,
+    "first_ROI_logical_sample": 450
+  },
+  "matrix": {
+    "invalid_slots": 94,
+    "explained": 94,
+    "unattributed_indices": [],
+    "first_ROI_sample": 0,
+    "first_ROI_logical_sample": 0
+  },
+  "state": {
+    "invalid_slots": 92,
+    "explained": 92,
+    "unattributed_indices": [],
+    "first_ROI_sample": 0,
+    "first_ROI_logical_sample": 0
+  },
+  "matrix_repeat": {
+    "invalid_slots": 90,
+    "explained": 90,
+    "unattributed_indices": [],
+    "first_ROI_sample": 0,
+    "first_ROI_logical_sample": 0
+  }
+}

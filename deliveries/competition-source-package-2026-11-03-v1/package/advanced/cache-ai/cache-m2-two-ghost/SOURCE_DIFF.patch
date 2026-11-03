@@ -1,0 +1,47 @@
+--- M1/m1.sv
++++ M2/candidate.sv
+@@ -1,5 +1,5 @@
+ `timescale 1ns/1ps
+-module cache_m0 #(parameter READ_ONLY=0, parameter ADMISSION=0)(
++module cache_m0 #(parameter READ_ONLY=0, parameter ADMISSION=0, parameter GHOST_TWO=0)(
+  input wire clk,rst,bypass,
+  input wire qvalid, output wire qready, input wire [31:0] qaddr,qdata,
+  input wire qwrite, input wire [3:0] qstrb,
+@@ -16,6 +16,7 @@
+  reg [1:0] saved_set,saved_word,beat; reg saved_way,allocate;
+  reg [25:0] saved_tag;
+  reg ghost_valid[0:3];reg [25:0] ghost_tag[0:3];
++ reg ghost_valid_b[0:3];reg [25:0] ghost_tag_b[0:3];reg ghost_fifo[0:3];
+  integer i,j,b; reg hit,way,victim;
+  wire [1:0] si=qaddr[5:4]; wire [25:0] tag=qaddr[31:6];
+  assign qready=!rst && state==IDLE;
+@@ -35,7 +36,7 @@
+    state<=IDLE; pdata<=0;perror<=0; hits<=0;
+    maddr<=0;mdata<=0;mwrite<=0;mstrb<=0;mlen<=0;
+    saved_set<=0;saved_word<=0;saved_way<=0;saved_tag<=0;beat<=0;allocate<=0;
+-   for(i=0;i<4;i=i+1) begin ghost_valid[i]<=0;ghost_tag[i]<=0;lru[i]<=0;for(j=0;j<2;j=j+1) valid[i][j]<=0;end
++   for(i=0;i<4;i=i+1) begin ghost_valid_b[i]<=0;ghost_tag_b[i]<=0;ghost_fifo[i]<=0;ghost_valid[i]<=0;ghost_tag[i]<=0;lru[i]<=0;for(j=0;j<2;j=j+1) valid[i][j]<=0;end
+   end else case(state)
+    IDLE: if(qvalid) begin
+     pdata<=0;perror<=0; allocate<=0;beat<=0;
+@@ -54,12 +55,18 @@
+       pdata<=words[si][way][qaddr[3:2]];hits<=hits+1;state<=RESP;
+      end else begin
+       mdata<=0;mwrite<=0;mstrb<=0;
+-      if(!bypass && !qaddr[31] && (!ADMISSION || (ghost_valid[si] && ghost_tag[si]==tag))) begin
++      if(!bypass && !qaddr[31] && (!ADMISSION || ((ghost_valid[si] && ghost_tag[si]==tag) || (GHOST_TWO && ghost_valid_b[si] && ghost_tag_b[si]==tag)))) begin
+        maddr<={qaddr[31:4],4'b0};mlen<=3;allocate<=1;saved_way<=victim;
+        valid[si][victim]<=0;
+       end else begin
+        maddr<=qaddr;mlen<=0;
+-       if(ADMISSION && !bypass && !qaddr[31]) begin ghost_valid[si]<=1;ghost_tag[si]<=tag;end
++       if(ADMISSION && !bypass && !qaddr[31]) begin
++        if(!GHOST_TWO || !ghost_valid[si] || (ghost_valid_b[si] && !ghost_fifo[si])) begin
++         ghost_valid[si]<=1;ghost_tag[si]<=tag;ghost_fifo[si]<=1;
++        end else begin
++         ghost_valid_b[si]<=1;ghost_tag_b[si]<=tag;ghost_fifo[si]<=0;
++        end
++       end
+       end
+       state<=CMD;
+      end

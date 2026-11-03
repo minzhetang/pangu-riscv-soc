@@ -1,0 +1,12 @@
+{
+  "id": "S02",
+  "status": "MATCH",
+  "no_difference": true,
+  "first_difference": null,
+  "neighbors": [],
+  "differences": [],
+  "error": null,
+  "checked": 3,
+  "expected_records": 3,
+  "actual_records": 3
+}

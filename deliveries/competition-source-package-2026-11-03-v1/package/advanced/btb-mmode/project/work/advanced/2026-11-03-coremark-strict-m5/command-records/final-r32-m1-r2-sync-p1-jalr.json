@@ -1,0 +1,20 @@
+{
+  "name": "final-r32-m1-r2-sync-p1-jalr",
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+    "-M",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\final-r32-m1-r2-sync-p1.vvp",
+    "+IRQ=0",
+    "+REFRESH=0",
+    "+IRQ_AT=80"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\final-r32-m1-r2-sync-p1\\jalr",
+  "rc": 0,
+  "seconds": 0.1410000000614673,
+  "remaining_before_close": [],
+  "input_sha256": {
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\final-r32-m1-r2-sync-p1.vvp": "be1faba0f0fc9e712796280981edc092476f2ee8b9fd0eae499e99918f0e3433",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\final-r32-m1-r2-sync-p1\\jalr\\program.hex": "3275945693e57411a3ad3cb2f44e5bc49a6364e4945baf5895a3b997e1b67bb8"
+  }
+}

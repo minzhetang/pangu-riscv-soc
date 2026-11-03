@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "C:\\Users\\ANON_USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\host_worker.py",
+    "model"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1",
+  "returncode": 1,
+  "returncode_hex": "0x00000001",
+  "timed_out": false,
+  "cap": false,
+  "error": null,
+  "termination": "PROCESS_EXIT",
+  "peak_working_set_bytes": 16773120,
+  "elapsed_seconds": 0.109,
+  "timeout_seconds": 600,
+  "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\model\\stdout.log",
+  "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-26-coremark-stream-evidence-m1\\logs\\model\\stderr.log"
+}

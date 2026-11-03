@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "program": "performance",
+      "same_size": true,
+      "old_bytes": 15912,
+      "new_bytes": 15912,
+      "changed_bytes": [
+        {
+          "offset": 15904,
+          "old": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "program": "validation",
+      "same_size": true,
+      "old_bytes": 15920,
+      "new_bytes": 15920,
+      "changed_bytes": [
+        {
+          "offset": 15904,
+          "old": 1,
+          "new": 2
+        }
+      ]
+    }
+  ],
+  "pre_DUT_frozen_oracles": true,
+  "not_a_DUT_check": true
+}

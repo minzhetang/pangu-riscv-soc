@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-21",
+  "reference": "F-108/D-095",
+  "classification": "TEST_PLAN_TEMPLATE_ERROR_NOT_RTL_FAILURE",
+  "original_plan_sha256": "488DF73C9DA5F57DD42DEEE2D11C44391E2DF5E4EE2728F77ED41B7572932635",
+  "first_run_result_sha256": "EB5A74FA7D5977F2DEB5B78AB80955B37CE33F17C8D52762350F1969A372A008",
+  "unchanged_CPU_sha256": "555CB51AC20FFC439B61BB29D4F4D9F4DC02C38B54A37291A79519CD413B8114",
+  "changes": [
+    {
+      "id": "SI06_old_lw",
+      "old_stall": 0,
+      "new_stall": 1,
+      "load_word": "00002083",
+      "consumer_word": "02209193",
+      "reason": "Unchanged op13 uses_rs1; adjacent valid load rd1 matches consumer rs1=1. Existing hazard injects one bubble before EX event; word0 template did not read rs1."
+    },
+    {
+      "id": "SI06_old_lb",
+      "old_stall": 0,
+      "new_stall": 1,
+      "load_word": "00100083",
+      "consumer_word": "02209193",
+      "reason": "Unchanged op13 uses_rs1; adjacent valid load rd1 matches consumer rs1=1. Existing hazard injects one bubble before EX event; word0 template did not read rs1."
+    },
+    {
+      "id": "SI06_old_lbu",
+      "old_stall": 0,
+      "new_stall": 1,
+      "load_word": "00104083",
+      "consumer_word": "02209193",
+      "reason": "Unchanged op13 uses_rs1; adjacent valid load rd1 matches consumer rs1=1. Existing hazard injects one bubble before EX event; word0 template did not read rs1."
+    },
+    {
+      "id": "SI06_old_lh",
+      "old_stall": 0,
+      "new_stall": 1,
+      "load_word": "00201083",
+      "consumer_word": "02209193",
+      "reason": "Unchanged op13 uses_rs1; adjacent valid load rd1 matches consumer rs1=1. Existing hazard injects one bubble before EX event; word0 template did not read rs1."
+    },
+    {
+      "id": "SI06_old_lhu",
+      "old_stall": 0,
+      "new_stall": 1,
+      "load_word": "00205083",
+      "consumer_word": "02209193",
+      "reason": "Unchanged op13 uses_rs1; adjacent valid load rd1 matches consumer rs1=1. Existing hazard injects one bubble before EX event; word0 template did not read rs1."
+    },
+    {
+      "id": "SR_SI06_old_lw",
+      "old_stall": 0,
+      "new_stall": 1,
+      "load_word": "00002083",
+      "consumer_word": "0220d193",
+      "reason": "Unchanged op13 uses_rs1; adjacent valid load rd1 matches consumer rs1=1. Existing hazard injects one bubble before EX event; word0 template did not read rs1."
+    }
+  ],
+  "old_plan_logs_preserved": true,
+  "not_claimed_before_first_v1_DUT": true,
+  "before_v2_DUT": true,
+  "source_expected_state_and_ordered_traces_changed": false,
+  "original717_unchanged": true,
+  "completed_cases_to_reuse": 723,
+  "failed_case_to_rerun": "SI06_old_lw",
+  "new_native_runs_expected": 43
+}

@@ -1,0 +1,43 @@
+{
+  "stage": "A-CBOOT-M1",
+  "compile_receipt": "external-compile-01/result.json",
+  "process": {
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_wall_seconds": 0.891
+  },
+  "CPU_C_execution": "PASS",
+  "CPU_RTL_changed": false,
+  "protected_records_after": 59,
+  "hardware_calls": 0,
+  "checks": {
+    "status": "PASS",
+    "differences": [],
+    "unknown_active_events": [],
+    "metrics": {
+      "cycles": "642",
+      "stall": "2",
+      "flush": "97",
+      "stop_hold_edges": "4",
+      "time_ns": "6460000"
+    },
+    "observed_WB": 263,
+    "observed_memory_events": 29,
+    "observed_EX_instructions": 439,
+    "separate_WB_and_memory_order": true,
+    "no_retirement_PC_interface": true
+  },
+  "actual_C_results": [
+    119752999,
+    12727,
+    48,
+    1234664
+  ],
+  "actual_signature": "50524f42",
+  "actual_main_return_a0": 0,
+  "wave": {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\ordinary-run-01\\runs\\wave.vcd",
+    "sha256": "3C033E38913FE48F02A037CA33DC99188F79336705BFE31ED1972CEE1AD165CE",
+    "bytes": 514545
+  }
+}

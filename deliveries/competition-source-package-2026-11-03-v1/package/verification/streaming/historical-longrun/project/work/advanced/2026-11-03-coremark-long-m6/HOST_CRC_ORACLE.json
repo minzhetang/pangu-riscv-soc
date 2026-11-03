@@ -1,0 +1,46 @@
+[
+  {
+    "mode": "performance",
+    "iterations": 1,
+    "crcs": [
+      "e714",
+      "1fd7",
+      "8e3a"
+    ],
+    "final_crc": "e714",
+    "scope": "Native unchanged algorithm oracle only. Fixed host timer value is NOT any performance evidence."
+  },
+  {
+    "mode": "validation",
+    "iterations": 1,
+    "crcs": [
+      "e3c1",
+      "0747",
+      "8d84"
+    ],
+    "final_crc": "e3c1",
+    "scope": "Native unchanged algorithm oracle only. Fixed host timer value is NOT any performance evidence."
+  },
+  {
+    "mode": "performance",
+    "iterations": 192,
+    "crcs": [
+      "e714",
+      "1fd7",
+      "8e3a"
+    ],
+    "final_crc": "9ba8",
+    "scope": "Native unchanged algorithm oracle only. Fixed host timer value is NOT any performance evidence."
+  },
+  {
+    "mode": "validation",
+    "iterations": 192,
+    "crcs": [
+      "e3c1",
+      "0747",
+      "8d84"
+    ],
+    "final_crc": "9555",
+    "scope": "Native unchanged algorithm oracle only. Fixed host timer value is NOT any performance evidence."
+  }
+]

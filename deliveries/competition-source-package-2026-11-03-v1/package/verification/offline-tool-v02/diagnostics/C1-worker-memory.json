@@ -1,0 +1,12 @@
+{
+  "id": "C1-worker-memory",
+  "status": "LIMIT",
+  "no_difference": true,
+  "first_difference": null,
+  "neighbors": [],
+  "differences": [],
+  "error": null,
+  "checked": 0,
+  "expected_records": 0,
+  "actual_records": 0
+}

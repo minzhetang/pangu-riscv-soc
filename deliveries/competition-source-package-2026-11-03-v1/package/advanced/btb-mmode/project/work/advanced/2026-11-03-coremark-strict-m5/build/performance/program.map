@@ -1,0 +1,250 @@
+Archive member included to satisfy reference by file (symbol)
+
+D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(muldi3.o)
+                              C:\Users\ANON_USER\AppData\Local\Temp\ccMVlNh7.o (__mulsi3)
+D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(div.o)
+                              C:\Users\ANON_USER\AppData\Local\Temp\ccZ316DX.o (__udivsi3)
+
+Discarded input sections
+
+ .comment       0x00000000       0x34 C:\Users\ANON_USER\AppData\Local\Temp\ccZ316DX.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccZ316DX.o
+ .comment       0x00000000       0x34 C:\Users\ANON_USER\AppData\Local\Temp\ccMVlNh7.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccMVlNh7.o
+ .comment       0x00000000       0x34 C:\Users\ANON_USER\AppData\Local\Temp\cc6ncxpg.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\ANON_USER\AppData\Local\Temp\cc6ncxpg.o
+ .comment       0x00000000       0x34 C:\Users\ANON_USER\AppData\Local\Temp\ccCcrHUs.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccCcrHUs.o
+ .comment       0x00000000       0x34 C:\Users\ANON_USER\AppData\Local\Temp\cci2RA9M.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\ANON_USER\AppData\Local\Temp\cci2RA9M.o
+ .comment       0x00000000       0x34 C:\Users\ANON_USER\AppData\Local\Temp\ccyGzUdf.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccyGzUdf.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x00000000         0x00008000         xr
+RAM              0x00010000         0x00008000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\ANON_USER\AppData\Local\Temp\ccirADIV.o
+LOAD C:\Users\ANON_USER\AppData\Local\Temp\ccZ316DX.o
+LOAD C:\Users\ANON_USER\AppData\Local\Temp\ccMVlNh7.o
+LOAD C:\Users\ANON_USER\AppData\Local\Temp\cc6ncxpg.o
+LOAD C:\Users\ANON_USER\AppData\Local\Temp\ccCcrHUs.o
+LOAD C:\Users\ANON_USER\AppData\Local\Temp\cci2RA9M.o
+LOAD C:\Users\ANON_USER\AppData\Local\Temp\ccyGzUdf.o
+LOAD D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a
+
+.text           0x00000000     0x360c
+ *(.text.start)
+ .text.start    0x00000000       0x84 C:\Users\ANON_USER\AppData\Local\Temp\ccirADIV.o
+                0x00000000                _start
+ *(.text .text.*)
+ .text          0x00000084        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccirADIV.o
+ .text          0x00000084      0x968 C:\Users\ANON_USER\AppData\Local\Temp\ccZ316DX.o
+                0x00000084                cmp_idx
+                0x000000d8                calc_func
+                0x00000218                cmp_complex
+                0x00000268                copy_info
+                0x0000027c                core_list_insert_new
+                0x000002dc                core_list_remove
+                0x00000304                core_list_undo_remove
+                0x00000324                core_list_find
+                0x00000370                core_list_reverse
+                0x00000394                core_list_mergesort
+                0x00000544                core_bench_list
+                0x00000858                core_list_init
+ .text          0x000009ec       0x98 C:\Users\ANON_USER\AppData\Local\Temp\ccMVlNh7.o
+                0x000009ec                iterate
+ .text.startup  0x00000a84      0x84c C:\Users\ANON_USER\AppData\Local\Temp\ccMVlNh7.o
+                0x00000a84                main
+ .text          0x000012d0      0xadc C:\Users\ANON_USER\AppData\Local\Temp\cc6ncxpg.o
+                0x000012d0                core_init_matrix
+                0x000014b0                matrix_sum
+                0x00001530                matrix_mul_const
+                0x000015ec                matrix_add_const
+                0x00001624                matrix_mul_vect
+                0x000016f4                matrix_mul_matrix
+                0x00001804                matrix_mul_matrix_bitextract
+                0x0000192c                matrix_test
+                0x00001d68                core_bench_matrix
+ .text          0x00001dac      0x5e0 C:\Users\ANON_USER\AppData\Local\Temp\ccCcrHUs.o
+                0x00001dac                core_init_state
+                0x00001ef4                core_state_transition
+                0x000021dc                core_bench_state
+ .text          0x0000238c      0xa10 C:\Users\ANON_USER\AppData\Local\Temp\cci2RA9M.o
+                0x0000238c                get_seed_32
+                0x000023f0                crcu8
+                0x00002520                crcu16
+                0x00002748                crcu32
+                0x00002b68                crc16
+                0x00002d94                check_data_types
+ .text          0x00002d9c      0x798 C:\Users\ANON_USER\AppData\Local\Temp\ccyGzUdf.o
+                0x00002efc                ee_printf
+                0x0000327c                start_time
+                0x000032c4                stop_time
+                0x00003370                get_time
+                0x00003390                time_in_secs
+                0x000033b4                portable_init
+                0x00003418                portable_fini
+ .text          0x00003534       0x24 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(muldi3.o)
+                0x00003534                __mulsi3
+ .text          0x00003558       0xb4 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(div.o)
+                0x00003558                __divsi3
+                0x00003560                __udivsi3
+                0x00003560                __hidden___udivsi3
+                0x000035a8                __umodsi3
+                0x000035dc                __modsi3
+                0x0000360c                        . = ALIGN (0x4)
+
+.rodata         0x0000360c      0x818
+ *(.rodata .rodata.*)
+ .rodata.str1.4
+                0x0000360c      0x59a C:\Users\ANON_USER\AppData\Local\Temp\ccMVlNh7.o
+                                0x452 (size before relaxing)
+ *fill*         0x00003ba6        0x2 
+ .rodata        0x00003ba8       0x22 C:\Users\ANON_USER\AppData\Local\Temp\ccMVlNh7.o
+ .rodata.str1.4
+                0x00003bca        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccCcrHUs.o
+                                 0xad (size before relaxing)
+ *fill*         0x00003bca        0x2 
+ .rodata        0x00003bcc       0x40 C:\Users\ANON_USER\AppData\Local\Temp\ccCcrHUs.o
+ .rodata        0x00003c0c      0x218 C:\Users\ANON_USER\AppData\Local\Temp\cci2RA9M.o
+ .rodata.str1.4
+                0x00003e24        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccyGzUdf.o
+                                 0x96 (size before relaxing)
+                0x00003e24                        . = ALIGN (0x4)
+
+.rela.dyn       0x00003e24        0x0
+ .rela.text.start
+                0x00003e24        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccirADIV.o
+
+.data           0x00010000       0x18 load address 0x00003e24
+                0x00010000                        __data_start = .
+ *(.sdata .sdata.*)
+ *(.data .data.*)
+ .data          0x00010000        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccirADIV.o
+ .data          0x00010000        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccZ316DX.o
+ .data          0x00010000        0xc C:\Users\ANON_USER\AppData\Local\Temp\ccMVlNh7.o
+                0x00010000                mem_name
+ .data          0x0001000c        0x0 C:\Users\ANON_USER\AppData\Local\Temp\cc6ncxpg.o
+ .data          0x0001000c        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccCcrHUs.o
+ .data          0x0001000c        0x0 C:\Users\ANON_USER\AppData\Local\Temp\cci2RA9M.o
+ .data          0x0001000c        0xc C:\Users\ANON_USER\AppData\Local\Temp\ccyGzUdf.o
+                0x0001000c                default_num_contexts
+                0x00010010                seed4_volatile
+                0x00010014                seed3_volatile
+ .data          0x00010018        0x0 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(muldi3.o)
+ .data          0x00010018        0x0 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(div.o)
+                0x00010018                        . = ALIGN (0x4)
+                0x00010018                        __data_end = .
+                0x00003e24                        __data_load = LOADADDR (.data)
+                0x00010800                        __global_pointer$ = (ORIGIN (RAM) + 0x800)
+
+.bss            0x00010018     0x182c load address 0x00003e3c
+                0x00010018                        __bss_start = .
+ *(.sbss .sbss.*)
+ *(.bss .bss.*)
+ .bss           0x00010018        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccirADIV.o
+ .bss           0x00010018        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccZ316DX.o
+ .bss           0x00010018      0x7d0 C:\Users\ANON_USER\AppData\Local\Temp\ccMVlNh7.o
+                0x00010018                static_memblk
+ .bss           0x000107e8        0x0 C:\Users\ANON_USER\AppData\Local\Temp\cc6ncxpg.o
+ .bss           0x000107e8        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccCcrHUs.o
+ .bss           0x000107e8        0x0 C:\Users\ANON_USER\AppData\Local\Temp\cci2RA9M.o
+ .bss           0x000107e8     0x105c C:\Users\ANON_USER\AppData\Local\Temp\ccyGzUdf.o
+                0x000107e8                ram_log_count
+                0x000107ec                ram_log_overflow
+                0x000107f0                port_error
+                0x000107f4                timer_start_calls
+                0x000107f8                start_ticks
+                0x00010800                timing_phase
+                0x00010808                end_ticks
+                0x00010810                elapsed_ticks
+                0x00010818                timer_stop_calls
+                0x0001081c                timer_error
+                0x00010820                empty_start
+                0x00010828                empty_end
+                0x00010830                port_finished
+                0x00010834                timing_unavailable
+                0x00010838                ram_log
+                0x00011838                seed5_volatile
+                0x0001183c                seed2_volatile
+                0x00011840                seed1_volatile
+ .bss           0x00011844        0x0 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(muldi3.o)
+ .bss           0x00011844        0x0 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(div.o)
+ *(COMMON)
+                0x00011844                        . = ALIGN (0x4)
+                0x00011844                        __bss_end = .
+                0x00017ff0                        __stack_top = ((ORIGIN (RAM) + LENGTH (RAM)) - 0x10)
+                0x00015ff0                        __stack_bottom = (__stack_top - 0x2000)
+                0x00000001                        ASSERT ((__bss_end <= __stack_bottom), program RAM overlaps reserved 8K stack)
+                0x00000001                        ASSERT (((LOADADDR (.data) + SIZEOF (.data)) <= (ORIGIN (ROM) + LENGTH (ROM))), ROM overflow)
+
+/DISCARD/
+ *(.comment)
+ *(.note.GNU-stack)
+OUTPUT(D:\A_FPGA_Comp\work\advanced\2026-11-03-coremark-strict-m5\build\performance\program.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x1c
+ .riscv.attributes
+                0x00000000       0x1a C:\Users\ANON_USER\AppData\Local\Temp\ccirADIV.o
+ .riscv.attributes
+                0x0000001a       0x1c C:\Users\ANON_USER\AppData\Local\Temp\ccZ316DX.o
+ .riscv.attributes
+                0x00000036       0x1c C:\Users\ANON_USER\AppData\Local\Temp\ccMVlNh7.o
+ .riscv.attributes
+                0x00000052       0x1c C:\Users\ANON_USER\AppData\Local\Temp\cc6ncxpg.o
+ .riscv.attributes
+                0x0000006e       0x1c C:\Users\ANON_USER\AppData\Local\Temp\ccCcrHUs.o
+ .riscv.attributes
+                0x0000008a       0x1c C:\Users\ANON_USER\AppData\Local\Temp\cci2RA9M.o
+ .riscv.attributes
+                0x000000a6       0x1c C:\Users\ANON_USER\AppData\Local\Temp\ccyGzUdf.o
+ .riscv.attributes
+                0x000000c2       0x1a D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(muldi3.o)
+ .riscv.attributes
+                0x000000dc       0x1a D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(div.o)
+
+.debug_line     0x00000000      0x1cd
+ .debug_line    0x00000000       0x7a D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(muldi3.o)
+ .debug_line    0x0000007a      0x153 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(div.o)
+
+.debug_line_str
+                0x00000000      0x194
+ .debug_line_str
+                0x00000000      0x194 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(muldi3.o)
+                                0x18e (size before relaxing)
+ .debug_line_str
+                0x00000194        0x0 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(div.o)
+                                0x18b (size before relaxing)
+
+.debug_info     0x00000000       0x90
+ .debug_info    0x00000000       0x31 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(muldi3.o)
+ .debug_info    0x00000031       0x5f D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(div.o)
+
+.debug_abbrev   0x00000000       0x50
+ .debug_abbrev  0x00000000       0x28 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(muldi3.o)
+ .debug_abbrev  0x00000028       0x28 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(div.o)
+
+.debug_aranges  0x00000000       0x40
+ .debug_aranges
+                0x00000000       0x20 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(muldi3.o)
+ .debug_aranges
+                0x00000020       0x20 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(div.o)
+
+.debug_str      0x00000000      0x280
+ .debug_str     0x00000000      0x280 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(muldi3.o)
+                                0x1a3 (size before relaxing)
+ .debug_str     0x00000280        0x0 D:/A_FPGA_Comp/tools/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32i/ilp32\libgcc.a(div.o)
+                                0x1d0 (size before relaxing)

@@ -1,0 +1,5 @@
+0000: 07b00013  addi x0,x0,123
+0004: 00700093  addi x1,x0,7
+0008: ffd00113  addi x2,x0,-3
+000c: 00000193  addi x3,x0,0
+0010: 05a00f93  addi x31,x0,90 ; completion

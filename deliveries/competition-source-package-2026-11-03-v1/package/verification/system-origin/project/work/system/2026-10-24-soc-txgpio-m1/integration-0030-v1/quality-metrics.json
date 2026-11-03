@@ -1,0 +1,124 @@
+[
+  {
+    "N": 16,
+    "physical_cycles": 4179,
+    "pipeline_advances": 2089,
+    "first_TX_accept": 505,
+    "last_TX_complete": 2601,
+    "TX_starts": [
+      505,
+      681,
+      857,
+      1033,
+      1209,
+      1385,
+      1561,
+      1737,
+      1913,
+      2089,
+      2265,
+      2441
+    ],
+    "start_gaps": [
+      176,
+      176,
+      176,
+      176,
+      176,
+      176,
+      176,
+      176,
+      176,
+      176,
+      176
+    ],
+    "core_earliest_gap": 161,
+    "UART_line_active_clock_count": 1920,
+    "IO_READ_count": {
+      "2000000c": 4,
+      "20000010": 127,
+      "20000008": 169
+    },
+    "IO_STORE_count": {
+      "2000000c": 3,
+      "20000000": 12
+    },
+    "GPIO_actual_accepts": [
+      [
+        411,
+        90
+      ],
+      [
+        421,
+        90
+      ],
+      [
+        429,
+        165
+      ]
+    ],
+    "interpretation": "testbench GPIO input intentionally changes atE4096; N16 completion includes deliberate input wait, not an application-compute benchmark",
+    "limitations": "physical simulation clocks only, includes startup/drain/tail, not real retirement CPI or CoreMark score"
+  },
+  {
+    "N": 234,
+    "physical_cycles": 28779,
+    "pipeline_advances": 14389,
+    "first_TX_accept": 505,
+    "last_TX_complete": 28673,
+    "TX_starts": [
+      505,
+      2853,
+      5201,
+      7549,
+      9897,
+      12245,
+      14593,
+      16941,
+      19289,
+      21637,
+      23985,
+      26333
+    ],
+    "start_gaps": [
+      2348,
+      2348,
+      2348,
+      2348,
+      2348,
+      2348,
+      2348,
+      2348,
+      2348,
+      2348,
+      2348
+    ],
+    "core_earliest_gap": 2341,
+    "UART_line_active_clock_count": 28080,
+    "IO_READ_count": {
+      "2000000c": 4,
+      "20000010": 4,
+      "20000008": 2342
+    },
+    "IO_STORE_count": {
+      "2000000c": 3,
+      "20000000": 12
+    },
+    "GPIO_actual_accepts": [
+      [
+        411,
+        90
+      ],
+      [
+        421,
+        90
+      ],
+      [
+        429,
+        165
+      ]
+    ],
+    "interpretation": "testbench GPIO input intentionally changes atE4096; N16 completion includes deliberate input wait, not an application-compute benchmark",
+    "limitations": "physical simulation clocks only, includes startup/drain/tail, not real retirement CPI or CoreMark score"
+  }
+]

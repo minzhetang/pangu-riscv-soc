@@ -1,0 +1,19 @@
+{
+  "id": "P02-R-validation-trace",
+  "expected": {
+    "storage": "archive",
+    "stream": "trace",
+    "path": "inputs/archives/validation-trace",
+    "index_SHA256": "AF2CA50BA2580EBE0969F68CECBFAFFD775FC5864FA0309E7B8FA0A27333950B",
+    "complete": true
+  },
+  "actual": {
+    "storage": "archive",
+    "stream": "trace",
+    "path": "inputs/archives/validation-trace",
+    "index_SHA256": "AF2CA50BA2580EBE0969F68CECBFAFFD775FC5864FA0309E7B8FA0A27333950B",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {}
+}

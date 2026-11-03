@@ -1,0 +1,319 @@
+{
+  "date_beijing": "2026-10-23T23:44:24.112616+08:00",
+  "groups": [
+    {
+      "if_sync": 0,
+      "data_sync": 0,
+      "counts": {
+        "PASS": 6
+      }
+    },
+    {
+      "if_sync": 1,
+      "data_sync": 0,
+      "counts": {
+        "FAIL": 6
+      }
+    },
+    {
+      "if_sync": 0,
+      "data_sync": 1,
+      "counts": {
+        "PASS": 4,
+        "FAIL": 2
+      }
+    },
+    {
+      "if_sync": 1,
+      "data_sync": 1,
+      "counts": {
+        "FAIL": 6
+      }
+    }
+  ],
+  "counts": {
+    "PASS": 10,
+    "FAIL": 14
+  },
+  "all_process_native_zero": true,
+  "process_timeouts": 0,
+  "cycles_min": 15,
+  "cycles_max": 25,
+  "sim_time_ps_min": 176000,
+  "sim_time_ps_max": 276000,
+  "CPU_wall_seconds_total": 1.326,
+  "CPU_wall_seconds_min": 0.046,
+  "CPU_wall_seconds_max": 0.078,
+  "memory_model_wave_samples": [
+    {
+      "time_ps": 45000,
+      "async_data": 287454020,
+      "registered_data": 2779096485,
+      "legacy_data": 2779096485
+    },
+    {
+      "time_ps": 65000,
+      "async_data": 287506244,
+      "registered_data": 287454020,
+      "legacy_data": 2779096485
+    },
+    {
+      "time_ps": 85000,
+      "async_data": 1432813380,
+      "registered_data": 287506244,
+      "legacy_data": 2779096485
+    }
+  ],
+  "wave_consistency_checks": 2616,
+  "key_counterexamples": {
+    "P02-i0-d0": {
+      "id": "P02-i0-d0",
+      "status": "PASS",
+      "checks": 138,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "8BCDFFEB42D545ABCA7DDB182EE0D3E8161170B63A74FDDE3101A6BEFF1349CA",
+      "active_cycles": 24,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [
+        {
+          "time_ps": 105000,
+          "cycle": 8,
+          "load_pc": 16,
+          "addr": 256,
+          "ideal_word": 85,
+          "response_before": 85,
+          "response_after": 85,
+          "CPU_captured_after": 85,
+          "rd": 3
+        },
+        {
+          "time_ps": 165000,
+          "cycle": 14,
+          "load_pc": 36,
+          "addr": 256,
+          "ideal_word": 5701461,
+          "response_before": 5701461,
+          "response_after": 5701461,
+          "CPU_captured_after": 5701461,
+          "rd": 6
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          85
+        ],
+        [
+          3,
+          85
+        ],
+        [
+          4,
+          86
+        ],
+        [
+          5,
+          4294967295
+        ],
+        [
+          6,
+          5701461
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          256,
+          85,
+          15
+        ],
+        [
+          256,
+          85,
+          15
+        ],
+        [
+          257,
+          65280,
+          2
+        ],
+        [
+          258,
+          5636096,
+          12
+        ]
+      ]
+    },
+    "P01-i1-d0": {
+      "id": "P01-i1-d0",
+      "status": "PASS",
+      "checks": 101,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "6B8547F76D5CF857EAC20D6B3AA08D8E0B641B4B1C15AE98B149A1BE0BB50CAF",
+      "active_cycles": 18,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 134217875
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 134217875
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 3,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 134217875,
+          "pc_after": 8,
+          "inst_after": 41219,
+          "IFID_pc": 4,
+          "IFID_inst": 134217875,
+          "architectural_word": 41219
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 41219,
+          "pc_after": 12,
+          "inst_after": 1114515,
+          "IFID_pc": 8,
+          "IFID_inst": 41219,
+          "architectural_word": 1114515
+        },
+        {
+          "time_ps": 65000,
+          "pc_before": 12,
+          "inst_before": 1114515,
+          "pc_after": 16,
+          "inst_after": 1048691,
+          "IFID_pc": 12,
+          "IFID_inst": 1114515,
+          "architectural_word": 1048691
+        }
+      ],
+      "load_edges": [
+        {
+          "time_ps": 85000,
+          "cycle": 6,
+          "load_pc": 8,
+          "addr": 128,
+          "ideal_word": 305419896,
+          "response_before": 305419896,
+          "response_after": 305419896,
+          "CPU_captured_after": 305419896,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          128
+        ],
+        [
+          1,
+          128
+        ],
+        [
+          2,
+          305419896
+        ],
+        [
+          3,
+          305419897
+        ]
+      ],
+      "ordered_STORE": []
+    },
+    "P05-i0-d1": {
+      "id": "P05-i0-d1",
+      "status": "PASS",
+      "checks": 85,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "1DB8E63BD4C8308E6541952DD497F67B563C8794065AD167A8006558A5F57676",
+      "active_cycles": 15,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [
+        {
+          "time_ps": 75000,
+          "cycle": 5,
+          "load_pc": 4,
+          "addr": 260,
+          "ideal_word": 3735928559,
+          "response_before": 2779096485,
+          "response_after": 3735928559,
+          "CPU_captured_after": 2779096485,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          2779096485
+        ]
+      ],
+      "ordered_STORE": []
+    }
+  },
+  "E1": "LIMITED_CHARACTERIZATION_COMPLETE",
+  "E2": "NOT_IMPLEMENTED_NOT_APPROVED",
+  "hardware": "STOP"
+}

@@ -1,0 +1,12 @@
+0000: ffb00093  addi x1,x0,-5
+0004: 0000a133  slt x2,x1,x0 ; EX rs1
+0008: ffa00193  addi x3,x0,-6
+000c: 00400a13  addi x20,x0,4 ; useful gap
+0010: 0001a233  slt x4,x3,x0 ; WB->EX rs1
+0014: ff900293  addi x5,x0,-7
+0018: 00800a93  addi x21,x0,8 ; useful gap
+001c: 00c00b13  addi x22,x0,12 ; useful gap
+0020: 0002a333  slt x6,x5,x0 ; WB->ID rs1
+0024: 00930393  addi x7,x6,9 ; ALU consumes1
+0028: 00402023  sw x4,0(x0)
+002c: 05a00f93  addi x31,x0,90 ; completion

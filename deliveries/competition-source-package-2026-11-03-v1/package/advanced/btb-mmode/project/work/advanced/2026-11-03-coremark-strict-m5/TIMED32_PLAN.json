@@ -1,0 +1,15 @@
+{
+  "scope": "Additional clock-driven simulated mtime. No formal score (<10s target time).",
+  "clock_rule": "At rising edge N after reset: counter sample = N-1; one-edge registered memory read supplied to MEM at edge N is N-2; high word zero during bounded run.",
+  "reference_rule": "Check each accepted timer read address/value against fixed clock rule; sequential ISA model consumes computed rule values in independent instruction order, not DUT data. Fixed CRC/main return and full streams/state required.",
+  "modes": [
+    "performance",
+    "validation"
+  ],
+  "pred": [
+    1
+  ],
+  "BTB_INDEX_BITS": 5,
+  "max_cycles": 4000000,
+  "process_seconds": 600
+}

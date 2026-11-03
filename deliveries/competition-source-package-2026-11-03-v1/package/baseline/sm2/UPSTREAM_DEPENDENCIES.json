@@ -1,0 +1,38 @@
+{
+  "coremark_files": [
+    {
+      "name": "coremark.h",
+      "sha256": "42642B9A06C7ED2B3BD9EDA971B7C3868C4F5D27BF7EF6C4BBA11291A0C2598A",
+      "url": "https://github.com/eembc/coremark/blob/main/coremark.h"
+    },
+    {
+      "name": "core_list_join.c",
+      "sha256": "CA00E4E010ECE47D7F040CB92AA50A95345A00D3171B59D088F6B243BE06CE7B",
+      "url": "https://github.com/eembc/coremark/blob/main/core_list_join.c"
+    },
+    {
+      "name": "core_main.c",
+      "sha256": "17884C93C5B94378EB0FF02B4DF3725756CF2ADDB9B8CBCAA6200A4649FF5CA7",
+      "url": "https://github.com/eembc/coremark/blob/main/core_main.c"
+    },
+    {
+      "name": "core_matrix.c",
+      "sha256": "ECDFF717B5A5C4907D221A606760E25499899CBF617582C05D40DB71C91351E4",
+      "url": "https://github.com/eembc/coremark/blob/main/core_matrix.c"
+    },
+    {
+      "name": "core_state.c",
+      "sha256": "F4B84BB0A3452C45A4DAA664AB502BFDCCBD31CB57D93E9AC490C60937717A4E",
+      "url": "https://github.com/eembc/coremark/blob/main/core_state.c"
+    },
+    {
+      "name": "core_util.c",
+      "sha256": "A3FBFCB9BB943B638624B8ECE01C5836DD56A96D7BCDE2697B248D077447327F",
+      "url": "https://github.com/eembc/coremark/blob/main/core_util.c"
+    }
+  ],
+  "license": "Apache-2.0 per source headers; obtain upstream LICENSE.md too; no project-wide license granted",
+  "models": "Pango GTP_DRM primitives supplied by licensed PDS2022.2-SP6.4; not redistributed",
+  "tools": "Existing Icarus13 and xPack GCC15.2; tools/installers excluded",
+  "historical_verification": "Regression script retains original D:/A_FPGA_Comp paths and frozen historical test dependencies; this snapshot alone is not a portable all-tests runner"
+}

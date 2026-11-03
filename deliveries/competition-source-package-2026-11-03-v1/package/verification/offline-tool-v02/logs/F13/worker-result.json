@@ -1,0 +1,46 @@
+{
+  "kind": "B_VERIFY_OFFLINE_WORKER",
+  "case_id": "F13",
+  "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0",
+  "CPU_function_proven": false,
+  "new_DUT": 0,
+  "limits": {
+    "max_input_bytes_each": 536870912,
+    "max_records_each": 6000000,
+    "max_differences": 16,
+    "max_diagnostic_neighbors_each_side": 2,
+    "max_result_bytes": 1048576,
+    "max_log_bytes_each": 4194304,
+    "worker_peak_working_set_bytes": 268435456,
+    "case_timeout_seconds": 180.0,
+    "cleanup_seconds": 8.0
+  },
+  "expected_input": {
+    "storage": "raw",
+    "path": "generated/faults/s00_expected.log",
+    "bytes": 194,
+    "sha256": "019947B4F018F3822053E2151E763AD4D4A53CBAB1A710E46EB396B00931AA51"
+  },
+  "actual_input": {
+    "storage": "raw",
+    "path": "generated/faults/f13_overlong.log",
+    "bytes": 606,
+    "sha256": "8CC09F3418860365B7EFD1CF40B0B4CEDD39573F016B89603018B2FD23E72B61"
+  },
+  "status": "INVALID_INPUT",
+  "native_rc": 3,
+  "fully_consumed": false,
+  "checked": 1,
+  "expected_records": 1,
+  "actual_records": 0,
+  "mismatch_count": 0,
+  "differences": [],
+  "neighbors": [],
+  "first_difference": null,
+  "termination": "early_error",
+  "diagnostic_error": null,
+  "error": "record length/type",
+  "elapsed_s": 0.0,
+  "worker_reported_peak_bytes": 20434944,
+  "measurement_method": "Windows GetProcessMemoryInfo PeakWorkingSetSize (worker self-report); parent also measures child"
+}

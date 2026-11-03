@@ -1,0 +1,2 @@
+FATAL: cache_tb.sv:47: data ch1 expected 00000000/0 got 36251403/0
+       Time: 190000  Scope: cache_tb.response

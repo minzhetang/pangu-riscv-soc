@@ -1,0 +1,180 @@
+{
+  "status": "PASS_ANALYSIS_ONLY",
+  "rows": [
+    {
+      "program": "performance",
+      "window_start_tick": 61967,
+      "window_end_tick": 2165615,
+      "raw_physical_ticks": 2103648,
+      "minimum_empty_read_window": 26,
+      "window_EX_observations": 732266,
+      "reference_load_use": 20714,
+      "reference_redirect": 149422,
+      "fixed_two_clock_EX_component": 1464532,
+      "fixed_two_clock_load_use_component": 41428,
+      "fixed_two_stage_redirect_component": 597688,
+      "boundary_residual": 0,
+      "instruction_groups": {
+        "BRANCH": 198102,
+        "STORE": 14345,
+        "ALU_I": 348946,
+        "JALR": 22432,
+        "AUIPC": 10899,
+        "LOAD": 55008,
+        "JAL": 4060,
+        "ALU_R": 76869,
+        "LUI": 1605
+      },
+      "top_function_EX_observations": [
+        [
+          "__mulsi3",
+          432424
+        ],
+        [
+          "core_state_transition",
+          67192
+        ],
+        [
+          "core_bench_list",
+          65126
+        ],
+        [
+          "matrix_mul_matrix_bitextract",
+          44532
+        ],
+        [
+          "matrix_mul_matrix",
+          27036
+        ],
+        [
+          "matrix_test",
+          23084
+        ],
+        [
+          "crc16",
+          18626
+        ],
+        [
+          "crcu32",
+          16896
+        ],
+        [
+          "core_bench_state",
+          13660
+        ],
+        [
+          "core_list_mergesort",
+          8202
+        ],
+        [
+          "crcu16",
+          4140
+        ],
+        [
+          "cmp_idx",
+          3553
+        ]
+      ],
+      "non_compute_intervals": {
+        "reset_release_to_start_sample": 61967,
+        "stop_sample_to_UART_phase": 59088,
+        "UART_phase_to_finished": 113906
+      },
+      "correct_replay": true,
+      "new_DUT_runs": 0,
+      "limitations": [
+        "not retired CPI; reference classifies load-use and redirect, not independent full-wave bubble audit",
+        "window includes timer-call boundary code; empty read cost is not blindly subtracted",
+        "frequency setting not measured hardware frequency; no valid formal score or optimization benefit"
+      ]
+    },
+    {
+      "program": "validation",
+      "window_start_tick": 62369,
+      "window_end_tick": 2325369,
+      "raw_physical_ticks": 2263000,
+      "minimum_empty_read_window": 26,
+      "window_EX_observations": 785232,
+      "reference_load_use": 21220,
+      "reference_redirect": 162524,
+      "fixed_two_clock_EX_component": 1570464,
+      "fixed_two_clock_load_use_component": 42440,
+      "fixed_two_stage_redirect_component": 650096,
+      "boundary_residual": 0,
+      "instruction_groups": {
+        "BRANCH": 217130,
+        "STORE": 14240,
+        "ALU_I": 377438,
+        "JALR": 22404,
+        "AUIPC": 10885,
+        "LOAD": 55434,
+        "JAL": 3990,
+        "ALU_R": 82106,
+        "LUI": 1605
+      },
+      "top_function_EX_observations": [
+        [
+          "__mulsi3",
+          485282
+        ],
+        [
+          "core_state_transition",
+          66876
+        ],
+        [
+          "core_bench_list",
+          66052
+        ],
+        [
+          "matrix_mul_matrix_bitextract",
+          44532
+        ],
+        [
+          "matrix_mul_matrix",
+          27036
+        ],
+        [
+          "matrix_test",
+          23084
+        ],
+        [
+          "crc16",
+          18626
+        ],
+        [
+          "crcu32",
+          16896
+        ],
+        [
+          "core_bench_state",
+          13104
+        ],
+        [
+          "core_list_mergesort",
+          8213
+        ],
+        [
+          "crcu16",
+          4140
+        ],
+        [
+          "cmp_idx",
+          3502
+        ]
+      ],
+      "non_compute_intervals": {
+        "reset_release_to_start_sample": 62369,
+        "stop_sample_to_UART_phase": 58210,
+        "UART_phase_to_finished": 113734
+      },
+      "correct_replay": true,
+      "new_DUT_runs": 0,
+      "limitations": [
+        "not retired CPI; reference classifies load-use and redirect, not independent full-wave bubble audit",
+        "window includes timer-call boundary code; empty read cost is not blindly subtracted",
+        "frequency setting not measured hardware frequency; no valid formal score or optimization benefit"
+      ]
+    }
+  ],
+  "new_DUT_runs": 0
+}

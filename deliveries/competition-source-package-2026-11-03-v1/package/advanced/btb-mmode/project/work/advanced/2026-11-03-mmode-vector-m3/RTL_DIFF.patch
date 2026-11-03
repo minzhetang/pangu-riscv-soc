@@ -1,0 +1,20 @@
+--- M2/cpu_hl4.v
++++ M3/cpu_hl4.v
+@@ -520,7 +520,7 @@
+ 
+     assign csr_access = id_valid && ex_is_csr;
+     assign csr_commit = id_valid && ex_is_csr && !ex_exception;
+-    wire csr_commit_eff = csr_commit && !stall_all;
++    wire csr_commit_eff = csr_commit && !stall_all && !interrupt_taken;
+     assign csr_we = ex_csr_we;
+ 
+     // Address and access checks for the current EX instruction.
+@@ -710,7 +710,7 @@
+     assign if_is_mret = (if_inst == 32'h30200073);
+     assign if_is_sret = (if_inst == 32'h10200073);
+     assign ex_suppress_int = id_valid &&
+-        (ex_is_csr || ex_is_mret || ex_is_sret ||
++        (ex_is_mret || ex_is_sret ||
+          ex_is_sfence);
+     assign interrupt_taken = int_request && id_valid && !stall_all &&
+         !ex_exception && !ex_suppress_int && !if_is_mret && !if_is_sret;

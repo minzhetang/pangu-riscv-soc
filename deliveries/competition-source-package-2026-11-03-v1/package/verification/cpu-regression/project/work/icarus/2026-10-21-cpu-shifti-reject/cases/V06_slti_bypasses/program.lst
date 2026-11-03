@@ -1,0 +1,12 @@
+0000: ffb00093  addi x1,x0,-5
+0004: fff0a113  slti x2,x1,-1 ;EX
+0008: ffa00193  addi x3,x0,-6
+000c: 00400a13  addi x20,x0,4 ;useful gap
+0010: fff1a213  slti x4,x3,-1 ;WB->EX
+0014: ff900293  addi x5,x0,-7
+0018: 00800a93  addi x21,x0,8 ;useful gap
+001c: 00c00b13  addi x22,x0,12 ;useful gap
+0020: fff2a313  slti x6,x5,-1 ;WB->ID
+0024: 00930393  addi x7,x6,9 ;10
+0028: 00602023  sw x6,0(x0)
+002c: 05a00f93  addi x31,x0,90 ; completion

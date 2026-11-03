@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "id": "performance-N234",
+      "status": "PASS",
+      "VCD_sha256": "9CEF0AF0C89DFBCE4658E7CE571901116E5379B76DAA75DF1F19E9397AB37750",
+      "bytes": 348994,
+      "stable_post_checks": 2720,
+      "distinct_visible_cycles": 2183,
+      "intervals": [
+        [
+          1,
+          1024
+        ],
+        [
+          6223,
+          6479
+        ],
+        [
+          18767,
+          18778
+        ],
+        [
+          18793,
+          18804
+        ],
+        [
+          61961,
+          61972
+        ],
+        [
+          61981,
+          62237
+        ],
+        [
+          4269339,
+          4269350
+        ],
+        [
+          4269363,
+          4269619
+        ],
+        [
+          4329159,
+          4329415
+        ],
+        [
+          5888861,
+          5888943
+        ]
+      ],
+      "explicit_off_timestamp_groups": 9,
+      "timer_LOAD_pre_capture_cycles": [
+        18772,
+        18774,
+        18776,
+        18798,
+        18800,
+        18802,
+        61966,
+        61968,
+        61970,
+        4269344,
+        4269346,
+        4269348
+      ],
+      "settled_timer_address_samples": 44,
+      "first_active_posedge_ps": 277777,
+      "last_timestamp_ps": 218109041150,
+      "scope": "native VCD windows; captured pre-edge variables + independent physical-time/post-edge checks",
+      "full_algorithm_wave": false,
+      "hardware_ILA": false,
+      "retirement_PC": false
+    },
+    {
+      "id": "validation-N234",
+      "status": "PASS",
+      "VCD_sha256": "CB3D577779A49C7236D2242E1A9E6FD5914F74E1A9D44D4805038BC3CACC881F",
+      "bytes": 352454,
+      "stable_post_checks": 2750,
+      "distinct_visible_cycles": 2183,
+      "intervals": [
+        [
+          1,
+          1024
+        ],
+        [
+          6259,
+          6515
+        ],
+        [
+          18779,
+          18790
+        ],
+        [
+          18805,
+          18816
+        ],
+        [
+          62363,
+          62374
+        ],
+        [
+          62383,
+          62639
+        ],
+        [
+          4588853,
+          4588864
+        ],
+        [
+          4588877,
+          4589133
+        ],
+        [
+          4647967,
+          4648223
+        ],
+        [
+          6205313,
+          6205395
+        ]
+      ],
+      "explicit_off_timestamp_groups": 9,
+      "timer_LOAD_pre_capture_cycles": [
+        18784,
+        18786,
+        18788,
+        18810,
+        18812,
+        18814,
+        62368,
+        62370,
+        62372,
+        4588858,
+        4588860,
+        4588862
+      ],
+      "settled_timer_address_samples": 44,
+      "first_active_posedge_ps": 277777,
+      "last_timestamp_ps": 229829473874,
+      "scope": "native VCD windows; captured pre-edge variables + independent physical-time/post-edge checks",
+      "full_algorithm_wave": false,
+      "hardware_ILA": false,
+      "retirement_PC": false
+    }
+  ],
+  "new_DUT_runs": 0,
+  "protected": 130
+}

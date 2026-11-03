@@ -1,0 +1,6 @@
+{
+  "user": "错误场景已完成，LED0和7常亮",
+  "expected_mask": "0x81",
+  "observation_matches_expected": true,
+  "scope": "Final human LED observation only"
+}

@@ -1,0 +1,6 @@
+{
+  "bad_signature_rejected": true,
+  "duplicate_WB_rejected": true,
+  "missing_STORE_rejected": true,
+  "unknown_WB_rejected": true
+}

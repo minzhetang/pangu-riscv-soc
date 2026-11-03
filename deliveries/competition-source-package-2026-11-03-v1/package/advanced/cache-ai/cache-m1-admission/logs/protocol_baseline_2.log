@@ -1,0 +1,4 @@
+VCD info: dumpfile protocol_baseline_2.vcd opened for output.
+HELD_VALID_PASS
+PASS cache
+execution_tb.sv:124: $finish called at 580000 (1ps)

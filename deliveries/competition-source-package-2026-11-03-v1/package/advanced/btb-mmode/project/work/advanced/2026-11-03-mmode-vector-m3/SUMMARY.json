@@ -1,0 +1,18 @@
+{
+  "status": "LIMITED_M_MODE_VECTOR_CSR_PASS_NOT_FULL_TASK2",
+  "new_programs": 11,
+  "new_runs": 44,
+  "new_pass": 44,
+  "before_pass": 40,
+  "before_fail": 4,
+  "regression_runs": 108,
+  "final_pass": 152,
+  "source_changed": [
+    "cpu_hl4.v"
+  ],
+  "protected": 89,
+  "m2_manifest": 959,
+  "pds": "NOT_RUN",
+  "hardware": "NOT_RUN",
+  "jobs_remaining": []
+}

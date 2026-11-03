@@ -1,0 +1,11 @@
+{
+  "started": 1793697815.1780837,
+  "scope": "Wait current on group, full stream audit, bounded same-image off group, full stream audit; no other work",
+  "input_sha256": {
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-long-m6\\controller.py": "f095309f1be470cf398237c3df6072aa873d0c48740245a9856b3e568b3ca2a1",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-long-m6\\audit_stream.py": "16afe3f599cfb41501bb2a72f1187f468a3b60121d526c283d4be9ab85e2d549",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-long-m6\\audit_raw.exe": "c04c0a528de190a297c1f9fc6dfd3fa1325e47f15e5caf13e45382444219d860",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-long-m6\\engine.hpp": "05445392dfa0f04975c806fd0133792a8eedd982646c28a4557a8cf998e01fa4",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-long-m6\\plans\\EXECUTION_FROZEN.json": "dde8b309aa60a6bff1adcd18cb8700ec16d9a69b3ba6b876000e56605bb9f194"
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "wrapper-N16",
+    "stderr": "",
+    "elapsed_seconds": 0.078
+  },
+  {
+    "id": "wrapper-N234",
+    "stderr": "",
+    "elapsed_seconds": 0.094
+  },
+  {
+    "id": "system-N16",
+    "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\n",
+    "elapsed_seconds": 50.094
+  },
+  {
+    "id": "system-N234",
+    "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\source\\gpio_core.v:1: ...: The inherited timescale is here.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\n",
+    "elapsed_seconds": 44.485
+  }
+]

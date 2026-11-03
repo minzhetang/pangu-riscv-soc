@@ -1,0 +1,21 @@
+{
+  "authorization": "User approved A-CBOOT-M1 after D105 review, 2026-10-23",
+  "hand_results": [
+    119752999,
+    12727,
+    48,
+    1234664
+  ],
+  "signature": "50524f42",
+  "proof": "1234567*97=119752999; 97*12727+48=1234567; sum=1234664",
+  "startup": "copy 8 ROM bytes to .data, clear 20 BSS bytes from A5 poison; SP/GP per ELF",
+  "stop": {
+    "kind": 2,
+    "pc": "00000068",
+    "main_return": 0
+  },
+  "initial_conditions": "all RAM bytes A5, existing RF initial-zero, 4 reset clocks",
+  "scope": "unchanged CPU, zero-wait verification memory only; no MMIO/BRAM/ISA/hardware",
+  "stall_flush": "model-derived from frozen executed instruction sequence, independently of DUT; not hand-counted",
+  "created_before_reference": "2026-10-23T10:43:30.696251+08:00"
+}

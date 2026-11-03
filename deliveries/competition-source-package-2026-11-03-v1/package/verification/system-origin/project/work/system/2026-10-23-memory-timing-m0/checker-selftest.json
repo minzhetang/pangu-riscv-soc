@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "synthetic": true,
+  "DUT_runs": 0
+}

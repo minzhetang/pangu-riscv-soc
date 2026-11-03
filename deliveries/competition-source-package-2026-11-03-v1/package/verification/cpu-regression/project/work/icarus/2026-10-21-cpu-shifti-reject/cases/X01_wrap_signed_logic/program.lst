@@ -1,0 +1,12 @@
+0000: fff00093  addi x1,x0,-1
+0004: 00100113  addi x2,x0,1
+0008: 002081b3  add x3,x1,x2 ; wrap to0
+000c: 40200233  sub x4,x0,x2
+0010: 80000293  addi x5,x0,-2048
+0014: 7ff28313  addi x6,x5,2047
+0018: 80006393  ori x7,x0,-2048 ; sign-extended immediate
+001c: 7ff2e413  ori x8,x5,2047
+0020: 0070f4b3  and x9,x1,x7
+0024: 0013c533  xor x10,x7,x1
+0028: 00a4e5b3  or x11,x9,x10
+002c: 05a00f93  addi x31,x0,90 ; completion

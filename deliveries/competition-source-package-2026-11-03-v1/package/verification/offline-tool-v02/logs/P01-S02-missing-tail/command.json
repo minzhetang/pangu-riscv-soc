@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "C:\\Users\\ANON_USER\\AppData\\Local\\Programs\\Python\\Python312-embed\\python.exe",
+    "-B",
+    "C:\\Users\\ANON_USER\\Desktop\\FPGA\\发给队员_盘古100Pro项目交接包_2026-10-18_v01\\work\\B-RETURN\\B-VERIFY-OFFLINE-M0-return-v02\\src\\worker.py",
+    "--case-file",
+    "C:\\Users\\ANON_USER\\Desktop\\FPGA\\发给队员_盘古100Pro项目交接包_2026-10-18_v01\\work\\B-RETURN\\B-VERIFY-OFFLINE-M0-return-v02\\tests\\cases\\P01-S02-missing-tail.json",
+    "--input-root",
+    "C:\\Users\\ANON_USER\\Desktop\\FPGA\\mainline-b-verify-offline-m0-2026-10-26-v1",
+    "--out",
+    "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\out\\P01-S02-missing-tail",
+    "--deadline-seconds",
+    "180.000000"
+  ],
+  "cwd": "C:\\Users\\ANON_USER\\Desktop\\FPGA\\发给队员_盘古100Pro项目交接包_2026-10-18_v01\\work\\B-RETURN\\B-VERIFY-OFFLINE-M0-return-v02",
+  "python": "C:\\Users\\ANON_USER\\AppData\\Local\\Programs\\Python\\Python312-embed\\python.exe",
+  "optimize": 0,
+  "case_id": "P01-S02-missing-tail",
+  "input_root": "C:\\Users\\ANON_USER\\Desktop\\FPGA\\mainline-b-verify-offline-m0-2026-10-26-v1",
+  "out": "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\out\\P01-S02-missing-tail",
+  "deadline_seconds": 180.0
+}

@@ -1,0 +1,47 @@
+{
+  "reason": "Checker omitted the mandatory BSS zero STORE; preserve original failure, explicitly require the single startup PC54 zero before first timer read; no event filtering, RTL/input/CRC weakening or new DUT run.",
+  "original_failure": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\check-result.json",
+  "startup_instruction_hex": "0005a023",
+  "unchanged_streams": true,
+  "new_DUT_runs": 0,
+  "files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\check_timed_v2.py",
+      "sha256": "33940ECAC918B21126B4D681BC335B522BAD691FD7758CA0DE4C2CCC6135ACF1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker_negative_tests_v2.py",
+      "sha256": "0CDD3ACE4E746D62C7D13F5511EE3FABB109295A65C45F0472BA5F8E4FF9C0DF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\wave_review.py",
+      "sha256": "3920802CC2D7D6879960E6CA76103DFC58EB90B79ECCB2CCB08098F6CB158ED6"
+    }
+  ],
+  "raw_performance": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\trace.log",
+      "sha256": "FC6FD3B3BFE00CCA9FF3A2EB5240BC036DBB877D1A4ACFA9DC2659850FD3A2D0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\bus.log",
+      "sha256": "668EE4F390913AA4F462EF9CBD4DAC6072D386D49DB681157D968B3777CDF74A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\ram.hex",
+      "sha256": "F21B089CEF81B43B87D693338B57773E5637E32047F2873E09514341DC342CA6"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\registers.hex",
+      "sha256": "1FAB413A954E1CA318E3EF9642FDAD9BBDA49D67B88D89582EB36C7574D08C3E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\stdout.log",
+      "sha256": "30427D60514FAAD56F0BAF8EF9445DBFD38D3DEE763E7D7DB26E3C2718FD9644"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\wave.vcd",
+      "sha256": "BEE3AE65CE81466136ED2B1836FD616C67D8AA8C787FBC0FF761E4560BE293AB"
+    }
+  ]
+}

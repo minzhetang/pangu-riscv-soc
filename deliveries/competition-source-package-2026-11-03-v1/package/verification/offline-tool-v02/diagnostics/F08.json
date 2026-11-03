@@ -1,0 +1,12 @@
+{
+  "id": "F08",
+  "status": "INVALID_INPUT",
+  "no_difference": true,
+  "first_difference": null,
+  "neighbors": [],
+  "differences": [],
+  "error": "unterminated record",
+  "checked": 8,
+  "expected_records": 8,
+  "actual_records": 7
+}

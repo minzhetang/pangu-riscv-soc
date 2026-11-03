@@ -1,0 +1,306 @@
+{
+  "status": "PASS_LIMITED_SYSTEM",
+  "cases": [
+    {
+      "id": "wrapper-N16",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\compile\\wrapper-N16.vvp",
+          "+WAVE_FILE=wave.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\runs\\wrapper-N16",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.046,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\logs\\run-wrapper-N16\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\logs\\run-wrapper-N16\\stderr.log"
+      },
+      "status": "PASS_LIMITED_ORIGINAL_TB",
+      "expected_case_markers": [
+        "W01",
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07",
+        "W08",
+        "W09",
+        "W10"
+      ],
+      "actual_case_markers": [
+        "W01",
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07",
+        "W08",
+        "W09",
+        "W10"
+      ],
+      "caveat": "fresh original TB execution, NOT closure of counter/negative-checker gaps"
+    },
+    {
+      "id": "wrapper-N234",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\compile\\wrapper-N234.vvp",
+          "+WAVE_FILE=wave.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\runs\\wrapper-N234",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.079,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\logs\\run-wrapper-N234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\logs\\run-wrapper-N234\\stderr.log"
+      },
+      "status": "PASS_LIMITED_ORIGINAL_TB",
+      "expected_case_markers": [
+        "W05-N234",
+        "W06-N234",
+        "W09-N234"
+      ],
+      "actual_case_markers": [
+        "W05-N234",
+        "W06-N234",
+        "W09-N234"
+      ],
+      "caveat": "fresh original TB execution, NOT closure of counter/negative-checker gaps"
+    },
+    {
+      "id": "system-N16",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\compile\\system-N16.vvp",
+          "+MAX_CYCLES=100000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\runs\\system-N16",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.969,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\logs\\run-system-N16\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\logs\\run-system-N16\\stderr.log"
+      },
+      "status": "PASS",
+      "checker": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 4179,
+          "advances": 2089,
+          "stall": 303,
+          "flush": 319,
+          "tail": 32
+        },
+        "reference_stall": 303,
+        "reference_flush": 319,
+        "WB_events": 724,
+        "MEM_events": 385,
+        "EX_PC_events": 1129,
+        "public_UART_frames": [
+          [
+            505,
+            80
+          ],
+          [
+            681,
+            71
+          ],
+          [
+            857,
+            49
+          ],
+          [
+            1033,
+            48
+          ],
+          [
+            1209,
+            48
+          ],
+          [
+            1385,
+            32
+          ],
+          [
+            1561,
+            77
+          ],
+          [
+            1737,
+            49
+          ],
+          [
+            1913,
+            13
+          ],
+          [
+            2089,
+            10
+          ],
+          [
+            2265,
+            65
+          ],
+          [
+            2441,
+            65
+          ]
+        ],
+        "GPIO_actual_events": [
+          [
+            411,
+            90
+          ],
+          [
+            421,
+            90
+          ],
+          [
+            429,
+            165
+          ]
+        ],
+        "independent_MMIO_reads": 300,
+        "limitations": [
+          "not real retirement PC or unified WB-STORE commit order",
+          "fixed memory and initial RF state; no hardware evidence"
+        ]
+      }
+    },
+    {
+      "id": "system-N234",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\compile\\system-N234.vvp",
+          "+MAX_CYCLES=100000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\runs\\system-N234",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 2.359,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\logs\\run-system-N234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\integration-0030-v1\\logs\\run-system-N234\\stderr.log"
+      },
+      "status": "PASS",
+      "checker": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 28779,
+          "advances": 14389,
+          "stall": 2353,
+          "flush": 2369,
+          "tail": 32
+        },
+        "reference_stall": 2353,
+        "reference_flush": 2369,
+        "WB_events": 4824,
+        "MEM_events": 2435,
+        "EX_PC_events": 7279,
+        "public_UART_frames": [
+          [
+            505,
+            80
+          ],
+          [
+            2853,
+            71
+          ],
+          [
+            5201,
+            49
+          ],
+          [
+            7549,
+            48
+          ],
+          [
+            9897,
+            48
+          ],
+          [
+            12245,
+            32
+          ],
+          [
+            14593,
+            77
+          ],
+          [
+            16941,
+            49
+          ],
+          [
+            19289,
+            13
+          ],
+          [
+            21637,
+            10
+          ],
+          [
+            23985,
+            65
+          ],
+          [
+            26333,
+            65
+          ]
+        ],
+        "GPIO_actual_events": [
+          [
+            411,
+            90
+          ],
+          [
+            421,
+            90
+          ],
+          [
+            429,
+            165
+          ]
+        ],
+        "independent_MMIO_reads": 2350,
+        "limitations": [
+          "not real retirement PC or unified WB-STORE commit order",
+          "fixed memory and initial RF state; no hardware evidence"
+        ]
+      }
+    }
+  ],
+  "protected": 3358,
+  "no_CPU_or_B_RTL_changes": true,
+  "hardware": "STOP"
+}

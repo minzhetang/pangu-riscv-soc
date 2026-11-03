@@ -1,0 +1,19 @@
+{
+  "id": "R1-OVERSIZE-INDEX",
+  "expected": {
+    "storage": "archive",
+    "stream": "bus",
+    "path": "generated/oversize-index",
+    "index_SHA256": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "complete": true
+  },
+  "actual": {
+    "storage": "archive",
+    "stream": "bus",
+    "path": "generated/oversize-index",
+    "index_SHA256": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {}
+}

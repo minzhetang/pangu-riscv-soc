@@ -1,0 +1,100 @@
+{
+  "status": "LIMITED_APPLICATION_MVP_ACCEPTED_THREE_BOARD_SCENARIOS",
+  "date": "2026-11-03T11:09:50.231220+08:00",
+  "scope": "Fixed event-recorder program on unchanged SM2 CPU/SoC, finite board input cases, not industrial certification or complete system safety acceptance",
+  "normal": "PASS_LIMITED_M4_R2",
+  "order": "PASS_LIMITED_M4_R2",
+  "timeout": {
+    "status": "PASS_LIMITED_BOARD_LEDGER",
+    "case": "timeout",
+    "header": [
+      2700000,
+      128,
+      20,
+      128,
+      0,
+      679,
+      345600779,
+      8876,
+      0,
+      4,
+      0,
+      1,
+      2,
+      1
+    ],
+    "events": [
+      [
+        62100703,
+        22,
+        1,
+        0
+      ],
+      [
+        116100703,
+        42,
+        1,
+        2
+      ],
+      [
+        132300701,
+        48,
+        0,
+        1
+      ],
+      [
+        202500705,
+        74,
+        1,
+        0
+      ]
+    ],
+    "elapsed_target_ticks": 345600100,
+    "nominal_seconds": 12.800003703703704,
+    "source_SHA256": "697AA9527F5D013FBFC21539F6066775B0384F65E9F348E209C248588F92CF63",
+    "limits": [
+      "Human input timing not independently edge-captured",
+      "No physical pulse completeness or internal WB/STORE/stop-status claim",
+      "Nominal 27MHz, no oscillator calibration"
+    ]
+  },
+  "timeout_source": "evidence/board/M5/capture-timeout-r2",
+  "timeout_LED0": true,
+  "timeout_LED7": true,
+  "post_configuration_state": [
+    {
+      "raw": "0x081ffca0",
+      "flags": {
+        "over_temp": 1,
+        "done": 1,
+        "done_i": 1,
+        "timeout": 0,
+        "rbcrc_err": 0,
+        "aut_err": 0,
+        "crc_err": 0,
+        "id_err": 0
+      },
+      "gouten": 1
+    },
+    {
+      "raw": "0x081ffca0",
+      "flags": {
+        "over_temp": 1,
+        "done": 1,
+        "done_i": 1,
+        "timeout": 0,
+        "rbcrc_err": 0,
+        "aut_err": 0,
+        "crc_err": 0,
+        "id_err": 0
+      },
+      "gouten": 1
+    }
+  ],
+  "software_rebuild": "EVENT_AND_DENSE_BINARY_IDENTICAL",
+  "old_timeout_waits_preserved": true,
+  "configuration_state_change_root_cause": "OPEN_UNKNOWN",
+  "new_RTL": false,
+  "Flash": false,
+  "no_background_jobs": true
+}

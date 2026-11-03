@@ -1,0 +1,54 @@
+{
+  "status": "CLOSED_READBACK_AND_PROTECTION_PASS",
+  "date": "2026-10-25",
+  "memory": {
+    "CURRENT.md": {
+      "SHA256": "7E84A7C02C364FF1A504346770067A76AC7BBD6897B29F20F5B5D8B6C2B4E5C7",
+      "lines": 11
+    },
+    "INDEX.md": {
+      "SHA256": "BA619DF97F7615993C2FE32C984DBAE609AC1226AE9CB530C5E86F469307A45A",
+      "lines": 75
+    },
+    "FACTS.md": {
+      "SHA256": "B8782BA436356C3CD8F1FD64BADC575D29780C4BF560714F28CCDCD1F5EE422E",
+      "lines": 1649
+    },
+    "DECISIONS.md": {
+      "SHA256": "E21AFFFCCA7815EC7957EB2CA98E54F64FE7646A0F709FDB34F4AFB57008664C",
+      "lines": 1293
+    },
+    "TODO.md": {
+      "SHA256": "1B3159800215D8B167885AB92E518C06C55DF8FDE89F33747F7E3F76FC8ACFBF",
+      "lines": 567
+    },
+    "COLLABORATION.md": {
+      "SHA256": "60311B8EFA849C006F9E3A5A8E5901A371F8DE9426CDC2814ED714EEFB69B1F5",
+      "lines": 445
+    }
+  },
+  "protection": {
+    "protected-originals.json": 130,
+    "frozen.json": 80,
+    "audit-scripts-frozen.json": 2
+  },
+  "new_DUT": 2,
+  "results": "PASS_LIMITED_DOUBLE_ITERATION_CALIBRATION",
+  "git": {
+    "status": "PUSHED_VERIFIED",
+    "commit": "fb16c5d06d99173430480b8ac1f04d0785621669",
+    "remote_main": "fb16c5d06d99173430480b8ac1f04d0785621669",
+    "upstream": "origin/main",
+    "files": 40,
+    "tracked": 333,
+    "clean": true,
+    "forced": false,
+    "credential_contents_read": false,
+    "candidate_promoted": false
+  },
+  "hardware": "STOPPED",
+  "PDS_runs": 0,
+  "candidate_promoted": false,
+  "previous_manifest": "SHA256SUMS-final.txt is an immutable 195-file earlier snapshot; this closure is supplemental",
+  "no_tests_rerun_for_git": true
+}

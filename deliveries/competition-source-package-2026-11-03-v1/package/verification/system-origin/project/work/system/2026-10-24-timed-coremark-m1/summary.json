@@ -1,0 +1,1486 @@
+{
+  "date": "2026-10-24",
+  "stage": "A-TIMED-COREMARK-M1",
+  "authorization": "D123",
+  "status": "FINITE_TIMED_SOFTWARE_SYSTEM_ACCEPTED_NO_FORMAL_SCORE_OR_HARDWARE",
+  "CPU_B_and_official_algorithms_unchanged": true,
+  "protected_originals": 37,
+  "stage_frozen_files": 174,
+  "old_system_protected": 3358,
+  "fresh_compiles": 7,
+  "fresh_DUT_runs": 7,
+  "external_compile_permissions": "fixed6+fixed1 separately approved and consumed",
+  "native_builds": [
+    {
+      "id": "smoke",
+      "bytes": 812,
+      "symbols": {
+        "cc2oh9vD.o": 0,
+        "$xrv32i2p1": 112,
+        "timer_smoke.c": 0,
+        "__global_pointer$": 67584,
+        "__data_load": 808,
+        "__bss_end": 65604,
+        "signature": 65600,
+        "__stack_top": 98304,
+        "_start": 0,
+        "__data_end": 65540,
+        "initialized": 65536,
+        "deltas": 65584,
+        "__bss_start": 65544,
+        "main": 112,
+        "__stack_bottom": 90112,
+        "checksum": 65576,
+        "__data_start": 65536,
+        "stamps": 65544
+      },
+      "bin_sha": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2",
+      "ELF_sha": "EB8369AD8464A3812B44EF3F99880CB3CB1B2D42F2B2A6EE655ACA16CE1527C5",
+      "commands": [
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+            "-march=rv32i",
+            "-mabi=ilp32",
+            "-O2",
+            "-ffreestanding",
+            "-fno-builtin",
+            "-fno-common",
+            "-fno-pie",
+            "-fno-stack-protector",
+            "-fno-unwind-tables",
+            "-fno-asynchronous-unwind-tables",
+            "-mno-relax",
+            "-msmall-data-limit=0",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-nostdlib",
+            "-nostartfiles",
+            "-Wl,--no-relax",
+            "-Wl,--build-id=none",
+            "-Wl,-T,D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\link.ld",
+            "-Wl,-Map,D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke\\program.map",
+            "-ID:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware",
+            "-ID:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port",
+            "-ID:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream",
+            "-o",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke\\program.elf",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\start.S",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\timer_smoke.c",
+            "-lgcc"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.39,
+          "timeout_seconds": 60,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-compile\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-compile\\stderr.log"
+        },
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+            "-O",
+            "binary",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke\\program.elf",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke\\program.bin"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.063,
+          "timeout_seconds": 20,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-objcopy\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-objcopy\\stderr.log"
+        },
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+            "-d",
+            "-M",
+            "no-aliases",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke\\program.elf"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.078,
+          "timeout_seconds": 20,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-objdump\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-objdump\\stderr.log"
+        },
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+            "-h",
+            "-A",
+            "-l",
+            "-sW",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke\\program.elf"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.047,
+          "timeout_seconds": 20,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-readelf\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-readelf\\stderr.log"
+        },
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+            "-u",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke\\program.elf"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.062,
+          "timeout_seconds": 20,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-undefined\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-undefined\\stderr.log"
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "bytes": 15912,
+      "symbols": {
+        "ccoIH7U3.o": 0,
+        "$xrv32i2p1": 13636,
+        "core_list_join.c": 0,
+        "core_main.c": 0,
+        "list_known_crc": 15252,
+        "matrix_known_crc": 15264,
+        "state_known_crc": 15276,
+        "core_matrix.c": 0,
+        "core_state.c": 0,
+        "intpat": 15288,
+        "floatpat": 15304,
+        "scipat": 15320,
+        "errpat": 15336,
+        "core_util.c": 0,
+        "core_portme.c": 0,
+        "print_uint": 11656,
+        "muldi3.o": 0,
+        "div.o": 0,
+        "seed1_volatile": 71744,
+        "timing_phase": 67584,
+        "__global_pointer$": 67584,
+        "core_list_init": 2116,
+        "crcu32": 10036,
+        "check_data_types": 11648,
+        "stop_time": 12976,
+        "mem_name": 65536,
+        "__data_load": 15888,
+        "core_list_reverse": 860,
+        "crcu16": 9484,
+        "start_ticks": 67576,
+        "matrix_sum": 5276,
+        "portable_fini": 13316,
+        "matrix_test": 6424,
+        "get_time": 13148,
+        "core_bench_state": 8648,
+        "port_error": 67568,
+        "core_bench_list": 1328,
+        "matrix_mul_const": 5404,
+        "__hidden___udivsi3": 13644,
+        "__udivsi3": 13644,
+        "ee_printf": 12008,
+        "seed3_volatile": 65556,
+        "seed4_volatile": 65552,
+        "iterate": 2520,
+        "matrix_mul_matrix": 5856,
+        "__bss_end": 71748,
+        "cmp_complex": 516,
+        "core_state_transition": 7904,
+        "end_ticks": 67592,
+        "timing_unavailable": 67636,
+        "__stack_top": 98304,
+        "core_bench_matrix": 7508,
+        "__umodsi3": 13716,
+        "core_list_mergesort": 896,
+        "port_finished": 67632,
+        "start_time": 12904,
+        "seed5_volatile": 71736,
+        "elapsed_ticks": 67600,
+        "_start": 0,
+        "ram_log_count": 67560,
+        "__data_end": 65560,
+        "core_list_remove": 712,
+        "crc16": 11092,
+        "timer_start_calls": 67572,
+        "__mulsi3": 13600,
+        "copy_info": 596,
+        "core_list_undo_remove": 752,
+        "ram_log": 67640,
+        "static_memblk": 65560,
+        "__bss_start": 65560,
+        "main": 2672,
+        "get_seed_32": 9080,
+        "timer_stop_calls": 67608,
+        "__divsi3": 13636,
+        "crcu8": 9180,
+        "__stack_bottom": 90112,
+        "matrix_mul_matrix_bitextract": 6128,
+        "ram_log_overflow": 67564,
+        "core_list_insert_new": 616,
+        "portable_init": 13216,
+        "core_init_matrix": 4796,
+        "matrix_mul_vect": 5648,
+        "timer_error": 67612,
+        "matrix_add_const": 5592,
+        "core_init_state": 7576,
+        "__modsi3": 13768,
+        "empty_start": 67616,
+        "time_in_secs": 13180,
+        "empty_end": 67624,
+        "__data_start": 65536,
+        "seed2_volatile": 71740,
+        "core_list_find": 784,
+        "cmp_idx": 112,
+        "calc_func": 196,
+        "default_num_contexts": 65548
+      },
+      "bin_sha": "B4CEEC1B250A5151C1D02F018FC45B3D22CDC049E12E26EFC2A0562D23740E60",
+      "ELF_sha": "BD38A6A4CD131A099954215504464A8AFDF130F89D1F9815C91EBEEEAD9BDB95",
+      "commands": [
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+            "-march=rv32i",
+            "-mabi=ilp32",
+            "-O2",
+            "-ffreestanding",
+            "-fno-builtin",
+            "-fno-common",
+            "-fno-pie",
+            "-fno-stack-protector",
+            "-fno-unwind-tables",
+            "-fno-asynchronous-unwind-tables",
+            "-mno-relax",
+            "-msmall-data-limit=0",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-nostdlib",
+            "-nostartfiles",
+            "-Wl,--no-relax",
+            "-Wl,--build-id=none",
+            "-Wl,-T,D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\link.ld",
+            "-Wl,-Map,D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance\\program.map",
+            "-ID:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware",
+            "-ID:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port",
+            "-ID:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream",
+            "-DTOTAL_DATA_SIZE=2000",
+            "-DITERATIONS=1",
+            "-DPERFORMANCE_RUN=1",
+            "-o",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance\\program.elf",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\start.S",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_list_join.c",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_main.c",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_matrix.c",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_state.c",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_util.c",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port\\core_portme.c",
+            "-lgcc"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.766,
+          "timeout_seconds": 60,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-compile\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-compile\\stderr.log"
+        },
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+            "-O",
+            "binary",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance\\program.elf",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance\\program.bin"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.031,
+          "timeout_seconds": 20,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-objcopy\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-objcopy\\stderr.log"
+        },
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+            "-d",
+            "-M",
+            "no-aliases",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance\\program.elf"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.031,
+          "timeout_seconds": 20,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-objdump\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-objdump\\stderr.log"
+        },
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+            "-h",
+            "-A",
+            "-l",
+            "-sW",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance\\program.elf"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.031,
+          "timeout_seconds": 20,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-readelf\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-readelf\\stderr.log"
+        },
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+            "-u",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance\\program.elf"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.031,
+          "timeout_seconds": 20,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-undefined\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-undefined\\stderr.log"
+        }
+      ]
+    },
+    {
+      "id": "validation",
+      "bytes": 15920,
+      "symbols": {
+        "ccSW5cTN.o": 0,
+        "$xrv32i2p1": 13636,
+        "core_list_join.c": 0,
+        "core_main.c": 0,
+        "list_known_crc": 15252,
+        "matrix_known_crc": 15264,
+        "state_known_crc": 15276,
+        "core_matrix.c": 0,
+        "core_state.c": 0,
+        "intpat": 15288,
+        "floatpat": 15304,
+        "scipat": 15320,
+        "errpat": 15336,
+        "core_util.c": 0,
+        "core_portme.c": 0,
+        "print_uint": 11656,
+        "muldi3.o": 0,
+        "div.o": 0,
+        "seed1_volatile": 65564,
+        "timing_phase": 67592,
+        "__global_pointer$": 67584,
+        "core_list_init": 2116,
+        "crcu32": 10036,
+        "check_data_types": 11648,
+        "stop_time": 12976,
+        "mem_name": 65536,
+        "__data_load": 15888,
+        "core_list_reverse": 860,
+        "crcu16": 9484,
+        "start_ticks": 67584,
+        "matrix_sum": 5276,
+        "portable_fini": 13316,
+        "matrix_test": 6424,
+        "get_time": 13148,
+        "core_bench_state": 8648,
+        "port_error": 67576,
+        "core_bench_list": 1328,
+        "matrix_mul_const": 5404,
+        "__hidden___udivsi3": 13644,
+        "__udivsi3": 13644,
+        "ee_printf": 12008,
+        "seed3_volatile": 65556,
+        "seed4_volatile": 65552,
+        "iterate": 2520,
+        "matrix_mul_matrix": 5856,
+        "__bss_end": 71748,
+        "cmp_complex": 516,
+        "core_state_transition": 7904,
+        "end_ticks": 67600,
+        "timing_unavailable": 67644,
+        "__stack_top": 98304,
+        "core_bench_matrix": 7508,
+        "__umodsi3": 13716,
+        "core_list_mergesort": 896,
+        "port_finished": 67640,
+        "start_time": 12904,
+        "seed5_volatile": 71744,
+        "elapsed_ticks": 67608,
+        "_start": 0,
+        "ram_log_count": 67568,
+        "__data_end": 65568,
+        "core_list_remove": 712,
+        "crc16": 11092,
+        "timer_start_calls": 67580,
+        "__mulsi3": 13600,
+        "copy_info": 596,
+        "core_list_undo_remove": 752,
+        "ram_log": 67648,
+        "static_memblk": 65568,
+        "__bss_start": 65568,
+        "main": 2672,
+        "get_seed_32": 9080,
+        "timer_stop_calls": 67616,
+        "__divsi3": 13636,
+        "crcu8": 9180,
+        "__stack_bottom": 90112,
+        "matrix_mul_matrix_bitextract": 6128,
+        "ram_log_overflow": 67572,
+        "core_list_insert_new": 616,
+        "portable_init": 13216,
+        "core_init_matrix": 4796,
+        "matrix_mul_vect": 5648,
+        "timer_error": 67620,
+        "matrix_add_const": 5592,
+        "core_init_state": 7576,
+        "__modsi3": 13768,
+        "empty_start": 67624,
+        "time_in_secs": 13180,
+        "empty_end": 67632,
+        "__data_start": 65536,
+        "seed2_volatile": 65560,
+        "core_list_find": 784,
+        "cmp_idx": 112,
+        "calc_func": 196,
+        "default_num_contexts": 65548
+      },
+      "bin_sha": "26B4F9C2900141EC2EF3A19F4C75C831ED62A1F6E02B34C441501B0FF4E84429",
+      "ELF_sha": "E2BEC75900D330237FC80F1BF798DF87EF0372B1D527BAAFED806317E75626FE",
+      "commands": [
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+            "-march=rv32i",
+            "-mabi=ilp32",
+            "-O2",
+            "-ffreestanding",
+            "-fno-builtin",
+            "-fno-common",
+            "-fno-pie",
+            "-fno-stack-protector",
+            "-fno-unwind-tables",
+            "-fno-asynchronous-unwind-tables",
+            "-mno-relax",
+            "-msmall-data-limit=0",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-nostdlib",
+            "-nostartfiles",
+            "-Wl,--no-relax",
+            "-Wl,--build-id=none",
+            "-Wl,-T,D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\link.ld",
+            "-Wl,-Map,D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation\\program.map",
+            "-ID:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware",
+            "-ID:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port",
+            "-ID:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream",
+            "-DTOTAL_DATA_SIZE=2000",
+            "-DITERATIONS=1",
+            "-DVALIDATION_RUN=1",
+            "-o",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation\\program.elf",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\start.S",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_list_join.c",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_main.c",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_matrix.c",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_state.c",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_util.c",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port\\core_portme.c",
+            "-lgcc"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.75,
+          "timeout_seconds": 60,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-compile\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-compile\\stderr.log"
+        },
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+            "-O",
+            "binary",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation\\program.elf",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation\\program.bin"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.032,
+          "timeout_seconds": 20,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-objcopy\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-objcopy\\stderr.log"
+        },
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+            "-d",
+            "-M",
+            "no-aliases",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation\\program.elf"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.031,
+          "timeout_seconds": 20,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-objdump\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-objdump\\stderr.log"
+        },
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+            "-h",
+            "-A",
+            "-l",
+            "-sW",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation\\program.elf"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.031,
+          "timeout_seconds": 20,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-readelf\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-readelf\\stderr.log"
+        },
+        {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+            "-u",
+            "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation\\program.elf"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation",
+          "returncode": 0,
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 0.031,
+          "timeout_seconds": 20,
+          "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-undefined\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-undefined\\stderr.log"
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "baseline-N16",
+      "result_file": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\baseline-N16\\check-result.json",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile\\baseline-N16.vvp",
+          "+MAX_CYCLES=10000000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\baseline-N16",
+        "returncode": 0,
+        "timed_out": false,
+        "cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.938,
+        "timeout_seconds": 45,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-baseline-N16\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-baseline-N16\\stderr.log"
+      },
+      "functional": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 4179,
+          "advances": 2089,
+          "stall": 303,
+          "flush": 319,
+          "tail": 32
+        },
+        "trace_counts": {
+          "EX": 1129,
+          "WB": 724,
+          "READ": 334,
+          "STORE": 51
+        },
+        "streams": {
+          "EX": {
+            "count": 1129,
+            "sha256": "55A90AB666930B0D60517A23CF4C28BA6CE8C8AF1767F1ECC507841711BC8A1B"
+          },
+          "WB": {
+            "count": 724,
+            "sha256": "32054E2D7B9AB57FEC28FBB228D37AAF98A7E0A9AECE41EA98FD85349EC15DE8"
+          },
+          "MEM": {
+            "count": 385,
+            "sha256": "3E9F565C3C38B580ECA88665DC4612E111B26682E776EB057E1D5CA113BEEBD0"
+          }
+        },
+        "timer_reads": [],
+        "GPIO_actual": [
+          [
+            411,
+            90
+          ],
+          [
+            421,
+            90
+          ],
+          [
+            429,
+            165
+          ]
+        ],
+        "UART_frames": 12,
+        "detail": {},
+        "limitations": [
+          "finite inputs; no true retirement PC or unified WB-STORE commit",
+          "short simulation not valid CoreMark score",
+          "no hardware evidence"
+        ]
+      }
+    },
+    {
+      "id": "baseline-N234",
+      "result_file": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\baseline-N234\\check-result.json",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile\\baseline-N234.vvp",
+          "+MAX_CYCLES=10000000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\baseline-N234",
+        "returncode": 0,
+        "timed_out": false,
+        "cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 2.312,
+        "timeout_seconds": 45,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-baseline-N234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-baseline-N234\\stderr.log"
+      },
+      "functional": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 28779,
+          "advances": 14389,
+          "stall": 2353,
+          "flush": 2369,
+          "tail": 32
+        },
+        "trace_counts": {
+          "EX": 7279,
+          "WB": 4824,
+          "READ": 2384,
+          "STORE": 51
+        },
+        "streams": {
+          "EX": {
+            "count": 7279,
+            "sha256": "1A7468F5AB57010E3270420414261CFF6E355AE4775D785FEF45D57960B60A15"
+          },
+          "WB": {
+            "count": 4824,
+            "sha256": "0EE944EC30EC4D3D498DFB5DE3AAF6FCBD50B76C6F16726EF891A0F2CBB86D9B"
+          },
+          "MEM": {
+            "count": 2435,
+            "sha256": "4C48F209313E5290A8F7232B61DE95EA31D7D050098B8654F0075D8636EDBB17"
+          }
+        },
+        "timer_reads": [],
+        "GPIO_actual": [
+          [
+            411,
+            90
+          ],
+          [
+            421,
+            90
+          ],
+          [
+            429,
+            165
+          ]
+        ],
+        "UART_frames": 12,
+        "detail": {},
+        "limitations": [
+          "finite inputs; no true retirement PC or unified WB-STORE commit",
+          "short simulation not valid CoreMark score",
+          "no hardware evidence"
+        ]
+      }
+    },
+    {
+      "id": "smoke-N16",
+      "result_file": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\smoke-N16\\check-result.json",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile\\smoke-N16.vvp",
+          "+MAX_CYCLES=10000000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\smoke-N16",
+        "returncode": 0,
+        "timed_out": false,
+        "cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 0.828,
+        "timeout_seconds": 45,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-smoke-N16\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-smoke-N16\\stderr.log"
+      },
+      "functional": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 1979,
+          "advances": 989,
+          "stall": 94,
+          "flush": 132,
+          "tail": 32
+        },
+        "trace_counts": {
+          "EX": 612,
+          "WB": 373,
+          "READ": 124,
+          "STORE": 68
+        },
+        "streams": {
+          "EX": {
+            "count": 612,
+            "sha256": "2086E703B425F3CD388C70C6F7FEB29AEC515057531AACA6E48DAB9CDA9DD30D"
+          },
+          "WB": {
+            "count": 373,
+            "sha256": "716917322D81F85D9BEF669B4A6C06D6D8BA86A3FE5CFA6840272776E120DE10"
+          },
+          "MEM": {
+            "count": 192,
+            "sha256": "62DBE7BDFCD99CCBCC7C391A9EC3A1C15841CE01837819EB16608FF1FDF48959"
+          }
+        },
+        "timer_reads": [
+          {
+            "pc": 128,
+            "address": 536871172,
+            "cycle": 262,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 132,
+            "address": 536871168,
+            "cycle": 264,
+            "expected": 263,
+            "actual": 263
+          },
+          {
+            "pc": 136,
+            "address": 536871172,
+            "cycle": 266,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 176,
+            "address": 536871172,
+            "cycle": 288,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 180,
+            "address": 536871168,
+            "cycle": 290,
+            "expected": 289,
+            "actual": 289
+          },
+          {
+            "pc": 184,
+            "address": 536871172,
+            "cycle": 292,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 216,
+            "address": 536871172,
+            "cycle": 310,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 220,
+            "address": 536871168,
+            "cycle": 312,
+            "expected": 311,
+            "actual": 311
+          },
+          {
+            "pc": 224,
+            "address": 536871172,
+            "cycle": 314,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 292,
+            "address": 536871172,
+            "cycle": 722,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 296,
+            "address": 536871168,
+            "cycle": 724,
+            "expected": 723,
+            "actual": 723
+          },
+          {
+            "pc": 300,
+            "address": 536871172,
+            "cycle": 726,
+            "expected": 0,
+            "actual": 0
+          }
+        ],
+        "GPIO_actual": [],
+        "UART_frames": 6,
+        "detail": {
+          "stamps": [
+            263,
+            289,
+            311,
+            723
+          ],
+          "deltas": [
+            26,
+            412
+          ]
+        },
+        "limitations": [
+          "finite inputs; no true retirement PC or unified WB-STORE commit",
+          "short simulation not valid CoreMark score",
+          "no hardware evidence"
+        ]
+      }
+    },
+    {
+      "id": "performance-N16",
+      "result_file": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\check-result-v2.json",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile\\performance-N16.vvp",
+          "+MAX_CYCLES=10000000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16",
+        "returncode": 0,
+        "timed_out": false,
+        "cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 128.782,
+        "timeout_seconds": 240,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-performance-N16\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-performance-N16\\stderr.log"
+      },
+      "functional": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 2338691,
+          "advances": 1169345,
+          "stall": 32208,
+          "flush": 165228,
+          "tail": 32
+        },
+        "trace_counts": {
+          "EX": 806662,
+          "WB": 551315,
+          "READ": 69824,
+          "STORE": 20529
+        },
+        "streams": {
+          "EX": {
+            "count": 806662,
+            "sha256": "FA98B3D52D81EDB5F8FABB05CF442D2012B1B851C00F1D5678580BE8D9043400"
+          },
+          "WB": {
+            "count": 551315,
+            "sha256": "4B8EC361DF87CFBE50EA1FE26CC70A64B8BFA82891D9FC046FF4DFF93040FA21"
+          },
+          "MEM": {
+            "count": 90353,
+            "sha256": "1FE6D3986EB7D552ACA552D405CCF6FABBA912212807BCA74CC6162CB6919658"
+          }
+        },
+        "timer_reads": [
+          {
+            "pc": 13232,
+            "address": 536871172,
+            "cycle": 18772,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 13236,
+            "address": 536871168,
+            "cycle": 18774,
+            "expected": 18773,
+            "actual": 18773
+          },
+          {
+            "pc": 13240,
+            "address": 536871172,
+            "cycle": 18776,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 13280,
+            "address": 536871172,
+            "cycle": 18798,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 13284,
+            "address": 536871168,
+            "cycle": 18800,
+            "expected": 18799,
+            "actual": 18799
+          },
+          {
+            "pc": 13288,
+            "address": 536871172,
+            "cycle": 18802,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12940,
+            "address": 536871172,
+            "cycle": 61966,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12944,
+            "address": 536871168,
+            "cycle": 61968,
+            "expected": 61967,
+            "actual": 61967
+          },
+          {
+            "pc": 12948,
+            "address": 536871172,
+            "cycle": 61970,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12992,
+            "address": 536871172,
+            "cycle": 2165614,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12996,
+            "address": 536871168,
+            "cycle": 2165616,
+            "expected": 2165615,
+            "actual": 2165615
+          },
+          {
+            "pc": 13000,
+            "address": 536871172,
+            "cycle": 2165618,
+            "expected": 0,
+            "actual": 0
+          }
+        ],
+        "GPIO_actual": [],
+        "UART_frames": 662,
+        "detail": {
+          "stamps": [
+            18773,
+            18799,
+            61967,
+            2165615
+          ],
+          "empty_window": 26,
+          "raw_ticks": 2103648,
+          "frequency_setting_hz": 27000000,
+          "simulated_seconds_at_setting": 0.07791288888888889,
+          "formal_score_valid": false,
+          "phases": [
+            [
+              6223,
+              0
+            ],
+            [
+              61981,
+              1
+            ],
+            [
+              2165633,
+              2
+            ],
+            [
+              2224703,
+              3
+            ],
+            [
+              2338609,
+              4
+            ]
+          ],
+          "report_bytes": 662
+        },
+        "limitations": [
+          "finite inputs; no true retirement PC or unified WB-STORE commit",
+          "short simulation not valid CoreMark score",
+          "no hardware evidence"
+        ]
+      }
+    },
+    {
+      "id": "validation-N16",
+      "result_file": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\validation-N16\\check-result-v2.json",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile\\validation-N16.vvp",
+          "+MAX_CYCLES=10000000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\validation-N16",
+        "returncode": 0,
+        "timed_out": false,
+        "cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 137.781,
+        "timeout_seconds": 240,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-validation-N16\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-validation-N16\\stderr.log"
+      },
+      "functional": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 2497395,
+          "advances": 1248697,
+          "stall": 32712,
+          "flush": 178239,
+          "tail": 32
+        },
+        "trace_counts": {
+          "EX": 859488,
+          "WB": 585410,
+          "READ": 70273,
+          "STORE": 20433
+        },
+        "streams": {
+          "EX": {
+            "count": 859488,
+            "sha256": "FD968FDBF2CA878113B853253E40590BCB26AFD29BC0B2D52C5B27D3672192BB"
+          },
+          "WB": {
+            "count": 585410,
+            "sha256": "92F1067971E3F3C356400F7A3C13E434D957C0416448B68F4956C9BE2AB1EF1B"
+          },
+          "MEM": {
+            "count": 90706,
+            "sha256": "E637581D20C3C808ED81651EFEF05ACF56DD528306D9D05CFDF1D47EA7C4E39A"
+          }
+        },
+        "timer_reads": [
+          {
+            "pc": 13232,
+            "address": 536871172,
+            "cycle": 18784,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 13236,
+            "address": 536871168,
+            "cycle": 18786,
+            "expected": 18785,
+            "actual": 18785
+          },
+          {
+            "pc": 13240,
+            "address": 536871172,
+            "cycle": 18788,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 13280,
+            "address": 536871172,
+            "cycle": 18810,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 13284,
+            "address": 536871168,
+            "cycle": 18812,
+            "expected": 18811,
+            "actual": 18811
+          },
+          {
+            "pc": 13288,
+            "address": 536871172,
+            "cycle": 18814,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12940,
+            "address": 536871172,
+            "cycle": 62368,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12944,
+            "address": 536871168,
+            "cycle": 62370,
+            "expected": 62369,
+            "actual": 62369
+          },
+          {
+            "pc": 12948,
+            "address": 536871172,
+            "cycle": 62372,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12992,
+            "address": 536871172,
+            "cycle": 2325368,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 12996,
+            "address": 536871168,
+            "cycle": 2325370,
+            "expected": 2325369,
+            "actual": 2325369
+          },
+          {
+            "pc": 13000,
+            "address": 536871172,
+            "cycle": 2325372,
+            "expected": 0,
+            "actual": 0
+          }
+        ],
+        "GPIO_actual": [],
+        "UART_frames": 661,
+        "detail": {
+          "stamps": [
+            18785,
+            18811,
+            62369,
+            2325369
+          ],
+          "empty_window": 26,
+          "raw_ticks": 2263000,
+          "frequency_setting_hz": 27000000,
+          "simulated_seconds_at_setting": 0.08381481481481481,
+          "formal_score_valid": false,
+          "phases": [
+            [
+              6259,
+              0
+            ],
+            [
+              62383,
+              1
+            ],
+            [
+              2325387,
+              2
+            ],
+            [
+              2383579,
+              3
+            ],
+            [
+              2497313,
+              4
+            ]
+          ],
+          "report_bytes": 661
+        },
+        "limitations": [
+          "finite inputs; no true retirement PC or unified WB-STORE commit",
+          "short simulation not valid CoreMark score",
+          "no hardware evidence"
+        ]
+      }
+    }
+  ],
+  "unit_current_checks": 296,
+  "unit_initial_checks": 171,
+  "carry_retry_coverage": "unit/router near-carry seed only; production reset zero; CPU retry branch not dynamically reached",
+  "checker_selftest": {
+    "correct": 1,
+    "negative_rejections": 8,
+    "extra_DUT_runs": 0
+  },
+  "waveform_stable_post_edge_checks": 6776,
+  "quality": [
+    {
+      "program": "performance",
+      "window_start_tick": 61967,
+      "window_end_tick": 2165615,
+      "raw_physical_ticks": 2103648,
+      "minimum_empty_read_window": 26,
+      "window_EX_observations": 732266,
+      "reference_load_use": 20714,
+      "reference_redirect": 149422,
+      "fixed_two_clock_EX_component": 1464532,
+      "fixed_two_clock_load_use_component": 41428,
+      "fixed_two_stage_redirect_component": 597688,
+      "boundary_residual": 0,
+      "instruction_groups": {
+        "BRANCH": 198102,
+        "STORE": 14345,
+        "ALU_I": 348946,
+        "JALR": 22432,
+        "AUIPC": 10899,
+        "LOAD": 55008,
+        "JAL": 4060,
+        "ALU_R": 76869,
+        "LUI": 1605
+      },
+      "top_function_EX_observations": [
+        [
+          "__mulsi3",
+          432424
+        ],
+        [
+          "core_state_transition",
+          67192
+        ],
+        [
+          "core_bench_list",
+          65126
+        ],
+        [
+          "matrix_mul_matrix_bitextract",
+          44532
+        ],
+        [
+          "matrix_mul_matrix",
+          27036
+        ],
+        [
+          "matrix_test",
+          23084
+        ],
+        [
+          "crc16",
+          18626
+        ],
+        [
+          "crcu32",
+          16896
+        ],
+        [
+          "core_bench_state",
+          13660
+        ],
+        [
+          "core_list_mergesort",
+          8202
+        ],
+        [
+          "crcu16",
+          4140
+        ],
+        [
+          "cmp_idx",
+          3553
+        ]
+      ],
+      "non_compute_intervals": {
+        "reset_release_to_start_sample": 61967,
+        "stop_sample_to_UART_phase": 59088,
+        "UART_phase_to_finished": 113906
+      },
+      "correct_replay": true,
+      "new_DUT_runs": 0,
+      "limitations": [
+        "not retired CPI; reference classifies load-use and redirect, not independent full-wave bubble audit",
+        "window includes timer-call boundary code; empty read cost is not blindly subtracted",
+        "frequency setting not measured hardware frequency; no valid formal score or optimization benefit"
+      ]
+    },
+    {
+      "program": "validation",
+      "window_start_tick": 62369,
+      "window_end_tick": 2325369,
+      "raw_physical_ticks": 2263000,
+      "minimum_empty_read_window": 26,
+      "window_EX_observations": 785232,
+      "reference_load_use": 21220,
+      "reference_redirect": 162524,
+      "fixed_two_clock_EX_component": 1570464,
+      "fixed_two_clock_load_use_component": 42440,
+      "fixed_two_stage_redirect_component": 650096,
+      "boundary_residual": 0,
+      "instruction_groups": {
+        "BRANCH": 217130,
+        "STORE": 14240,
+        "ALU_I": 377438,
+        "JALR": 22404,
+        "AUIPC": 10885,
+        "LOAD": 55434,
+        "JAL": 3990,
+        "ALU_R": 82106,
+        "LUI": 1605
+      },
+      "top_function_EX_observations": [
+        [
+          "__mulsi3",
+          485282
+        ],
+        [
+          "core_state_transition",
+          66876
+        ],
+        [
+          "core_bench_list",
+          66052
+        ],
+        [
+          "matrix_mul_matrix_bitextract",
+          44532
+        ],
+        [
+          "matrix_mul_matrix",
+          27036
+        ],
+        [
+          "matrix_test",
+          23084
+        ],
+        [
+          "crc16",
+          18626
+        ],
+        [
+          "crcu32",
+          16896
+        ],
+        [
+          "core_bench_state",
+          13104
+        ],
+        [
+          "core_list_mergesort",
+          8213
+        ],
+        [
+          "crcu16",
+          4140
+        ],
+        [
+          "cmp_idx",
+          3502
+        ]
+      ],
+      "non_compute_intervals": {
+        "reset_release_to_start_sample": 62369,
+        "stop_sample_to_UART_phase": 58210,
+        "UART_phase_to_finished": 113734
+      },
+      "correct_replay": true,
+      "new_DUT_runs": 0,
+      "limitations": [
+        "not retired CPI; reference classifies load-use and redirect, not independent full-wave bubble audit",
+        "window includes timer-call boundary code; empty read cost is not blindly subtracted",
+        "frequency setting not measured hardware frequency; no valid formal score or optimization benefit"
+      ]
+    }
+  ],
+  "prior_checker_error": "v1 omitted legitimate BSS zero STORE; raw FAIL preserved, exact startup PC54 required in v2; no DUT rerun or source/input changes",
+  "hardware": "STOP",
+  "formal_CoreMark_score": false,
+  "limits": [
+    "not full ISA or all timer/IO cases",
+    "no real retirement PC/unified commit order",
+    "fixed memory/initial state",
+    "integer seconds display floors short duration; raw ticks exact, no >32bit delta certification",
+    "no PDS synthesis/resource/Fmax/physical clock measurement/ILA evidence",
+    "two-clock storage throughput cost remains; no optimization benefit claimed"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "kind": "COVERAGE_MAP",
+  "as_of": "2026-10-25T21:20:00+08:00",
+  "final_stage": "work/B-RETURN/stage-return-final-20261027-v02",
+  "prior_stage": "work/B-RETURN/stage-return-final-20261027-v01",
+  "packaging": {
+    "plan": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.json",
+    "plan_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+    "run_id": "regif-m1-20261025-210743",
+    "W01": "PASS final B run",
+    "W02": "PASS final B run",
+    "W03": "PASS final B run",
+    "W04": "PASS final B run",
+    "W05": "PASS final B run",
+    "W06": {
+      "status": "A-W06-SUPPLEMENT",
+      "note": "A supplemented N16/N234 ready-return-edge boundary; B did not rerun W06.",
+      "path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/RESULTS.json",
+      "sha256": "EA54D33B031971F2431A2979638A481A12AC4C1393319C0918430EACA227CBA6",
+      "tb_path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/tb_w06_boundary_v2.sv",
+      "tb_sha256": "C4B9A86E5D9F7AEE23F33D448B79D059B23EBBDA007282344EB59B9E30F5040D"
+    },
+    "W07": "PASS final B run",
+    "W08": "PASS final B run",
+    "W09": "PASS final B run",
+    "W10": "PASS final B run",
+    "N16": "PASS; 26 requests; 9 TX / 6 GPIO / 11 reject; 6 complete / 3 cancel / 0 bad_stop; first accept event_edge=37, complete event_edge=197",
+    "N234": "PASS; 10 requests; 9 TX / 0 GPIO / 1 reject; 6 complete / 3 cancel; first accept event_edge=6, complete event_edge=2346",
+    "event_observed_rule": "START event_edge equals accepted request edge; COMPLETE event_edge = START+10N; observed_edge = event_edge+1.",
+    "evidence": [
+      "work/regif/txgpio-m1/logs/regif-m1-20261025-210743/",
+      "work/regif/txgpio-m1/logs/regif-entry-selfcheck-20261025-210805/summary.json",
+      "work/regif/txgpio-m1/logs/regif-capture-20261025-210624/summary.json"
+    ]
+  },
+  "rx": {
+    "plan": "work/peripherals/rx/tests/rx-plan-1.3.5.json",
+    "plan_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+    "run_id": "rx-20261025-211013",
+    "cases": [
+      "RX-01",
+      "RX-02",
+      "RX-03",
+      "RX-04",
+      "RX-05",
+      "RX-06",
+      "RX-07",
+      "RX-08",
+      "RX-09"
+    ],
+    "N8": "PASS; ledger 92; functional 41/41/4/7",
+    "N16": "PASS; ledger 110; functional 50/50/4/7; seq0 edge170 pre_valid=0/post_valid=1; seq30 edge2618 pre_valid=0/post_valid=1; 5e post_clear=1/post_fe=0",
+    "N234": "PASS; ledger 68; functional 29/29/4/7",
+    "shared_capture": "rx_public_capture; formal ordered exact type/data/edge; negative uses same module",
+    "snapshot": "pre at true S/consume edge before NBA; post +1 ps after same NBA; snapshot invariants PASS; no X/Z/missing/duplicate",
+    "status_selfcheck": "work/peripherals/rx/logs/rx-status-selfcheck-20261025-211027/summary.json"
+  },
+  "gpio": {
+    "status": "ACCEPTED_LIMITED_1.0.2",
+    "core_sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+    "plan": "work/peripherals/gpio/tests/gpio-plan.json",
+    "plan_sha256": "BACF07BE0FD179B532B1BF51AD17EE1910DC6B10E0174C6ED887C6C5D4EB47BE",
+    "runner": "work/B-RETURN/increment-20261023-1930/work/peripherals/gpio/scripts/run_gpio.py",
+    "runner_sha256": "6CDDE2E5DA70673988E287A201095DEE2136FBE89F24BB972701C78D621034CC",
+    "evidence": "F123 W1/W8/W16 + negatives; F139; final packaging N16 six independent writes/two-stage sync",
+    "not_rerun": true
+  },
+  "external": {
+    "tx_core": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/src/uart_tx.v",
+    "gpio_core": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/gpio/src/gpio_core.v",
+    "rx_core": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/src/uart_rx.v",
+    "wrapper": "work/B-RETURN/increment-20261024-0030/work/regif/txgpio-m1/src/local_regif_txgpio_m1.v",
+    "shared_runner": "work/B-RETURN/increment-20261024-1735/work/peripherals/scripts/runner_common.py"
+  },
+  "hardware": "STOPPED",
+  "claim": "Finite local/public-interface verification only; not mainline reproduction/final acceptance/A integration."
+}

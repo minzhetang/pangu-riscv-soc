@@ -1,0 +1,12 @@
+{
+  "id": "F10",
+  "status": "INVALID_INPUT",
+  "no_difference": true,
+  "first_difference": null,
+  "neighbors": [],
+  "differences": [],
+  "error": "container/record failure: AssertionError",
+  "checked": 0,
+  "expected_records": 0,
+  "actual_records": 0
+}

@@ -1,0 +1,635 @@
+{
+  "plan_id": "B-REGIF-TXGPIO-M1-PLAN-1.0.5",
+  "plan_version": "1.0.5",
+  "created_at": "2026-10-25T21:07:14+08:00",
+  "frozen_at": "2026-10-25T21:07:14+08:00",
+  "frozen_before_dut_runs": true,
+  "task_id": "B-REGIF-TXGPIO-M1",
+  "contract": {
+    "contract_id": "LOCAL-REGIF-TXGPIO-M1",
+    "version": "1.0.0",
+    "sha256": "F0E31602D008459B3E95901C0F533BC7FF4153F6B5A93859780EA8D2AD64E988",
+    "quality_id": "TXGPIO-QUALITY-EVOLUTION",
+    "quality_version": "1.0.0",
+    "quality_sha256": "80DEBA901A0917E730CD14D98A08933274337588A1E2A31AFBAB6D91D700F476",
+    "approval": "D115 / APPROVED_TO_START_ON_RECEIPT",
+    "received_at": "2026-10-23T23:52:38+08:00"
+  },
+  "baseline": {
+    "tx_rtl": {
+      "path": "work/peripherals/src/uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    "gpio_rtl": {
+      "path": "work/peripherals/gpio/src/gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    "wrapper": {
+      "path": "work/regif/txgpio-m1/src/local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    "tb": {
+      "path": "work/regif/txgpio-m1/tb/tb_local_regif_txgpio_m1.sv",
+      "sha256": "7F0C1060ED9524B18965575CC3BE8DA1AE76D899521916F2D701976AEFAD793B"
+    },
+    "tx_public_monitor": {
+      "path": "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv",
+      "sha256": "A7C857C1451B5C3960F6DA4A1CF90451E72D4D572815D806FA14B51ADE106CFB"
+    },
+    "capture_negative_tb": {
+      "path": "work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv",
+      "sha256": "8D3E47D1185483CC864406BE91484EBC44ADD191D42D997282A84430A51888ED"
+    }
+  },
+  "scope": "Only the approved zero-wait TX/GPIO wrapper. No RX, FIFO, interrupt, bus fabric, CPU, SoC, formal timing or hardware.",
+  "configurations": {
+    "primary": {
+      "id": "N16",
+      "clks_per_bit": 16,
+      "gpio_width": 8,
+      "cases": [
+        "W01",
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07",
+        "W08",
+        "W09",
+        "W10"
+      ]
+    },
+    "secondary": {
+      "id": "N234",
+      "clks_per_bit": 234,
+      "gpio_width": 8,
+      "cases": [
+        "W05",
+        "W06",
+        "W09"
+      ],
+      "note": "Minimal normal send, repeat and reset recovery only."
+    },
+    "not_run": [
+      {
+        "id": "N8",
+        "reason": "No new full matrix; N16 primary and N234 minimal cover approved scope. N8 retained as prior core evidence."
+      }
+    ]
+  },
+  "manual_expectations": {
+    "W01": "rst_n=0: io_rdata=0, gpio_out=0, uart_tx=1, io_wr_error=0. Release edge with a write request must not accept (pre-edge ready=0); that edge is one real request and must be counted as rejected by the public request monitor. A following legal edge accepts exactly once.",
+    "W02": "io_sel=0 or io_wr_en=0: all writes rejected/no effect. Reads 0x00/0x08/0x0c/0x10 return 0/tx_ready/gpio_out/gpio_in_sync; unselected or nonaligned reads return 0; reads never change counters/state.",
+    "W03": "Three consecutive GPIO writes A,A,B on E edges produce three independent write events, no dedup; the actual GPIO accept ledger must show A,A,B, including two separate A writes. High 24 wdata bits ignored.",
+    "W04": "GPIO input is not fed to output. A stable change before E0 reaches sync_meta at E0 and gpio_in_sync at E1; wrapper adds no extra synchronizer. Check x/z on relevant outputs.",
+    "W05": "Aligned full-strobe write 0x00 with tx_ready=1 starts one 8N1 frame at E; independent serial decoder sees start low, 8 LSB-first data bits and stop high; high wdata bits ignored. No extra frame.",
+    "W06": "Write 0x00 while tx_busy=1: io_wr_error=1, tx_valid not asserted, no queued frame. At the ready-return edge pre-edge ready=0: reject. Following eligible edge accepts exactly one. Same byte repeated still creates independent frames.",
+    "W07": "Writes to 04/14, 08, 10, unselected, nonaligned, io_wstrb!=1111 all set io_wr_error and cause no TX/GPIO side effect. Read-only/reserved reads return 0.",
+    "W08": "Every valid E edge is one request; no edge detection/dedup. Request count/order, success/reject flags and side effects match the frozen table; no hidden extra writes.",
+    "W09": "Reset during TX start/data/stop cancels the frame (no completion); gpio_out and gpio_in_sync clear; after release a new TX write/GPIO write succeeds once, old request is not replayed.",
+    "W10": "Control checker passes correct expected TX byte/GPIO sequence. Deliberately wrong byte, missing frame, extra frame, extra/missing/duplicate GPIO acceptance, missing/duplicate/wrong TEST marker, TEST_FAIL, nonzero native rc and truncated log must be detected; ordinary process timeout is not success."
+  },
+  "write_gate": "request = rst_n && io_sel && io_wr_en; success = aligned && strobe=1111 && ((addr=00 && tx_ready) || addr=0c); otherwise io_wr_error=1 and no core side effect.",
+  "read_mux": {
+    "00": "0",
+    "08": "tx_ready",
+    "0c": "gpio_out",
+    "10": "gpio_in_sync",
+    "other_or_nonaligned": "0",
+    "side_effect": "none"
+  },
+  "limits": {
+    "compile_timeout_s": 60,
+    "run_timeout_s": 30,
+    "tb_max_cycles": 300000,
+    "hard_max_cycles": 1000000,
+    "runner": "shared bounded runner after P0-1/P0-2 corrections"
+  },
+  "expected_counts": {
+    "N16": {
+      "accepted_tx": 9,
+      "accepted_gpio": 6,
+      "rejected": 11,
+      "frames": 6,
+      "requests": 26,
+      "complete": 6,
+      "cancel": 3,
+      "first_edge": 9
+    },
+    "N234": {
+      "accepted_tx": 9,
+      "accepted_gpio": 0,
+      "rejected": 1,
+      "frames": 6,
+      "requests": 10,
+      "complete": 6,
+      "cancel": 3,
+      "first_edge": 6
+    },
+    "note": "W01 first-release request is a real rejected request (pre-edge ready=0) and must be counted by the public request monitor. W06/W07 rejects and W09 cancellations are separate from completed frames. A,A and 11,11 are independent GPIO accepts."
+  },
+  "result_rules": {
+    "PASS": "native rc=0, no timeout, no truncated log, all expected markers/counts and checker control",
+    "TIMEOUT": "only deliberate watchdog case; a normal case timeout is FAIL",
+    "FAIL": "any functional/checker mismatch",
+    "TOOL_ERROR": "compile/start failure before DUT execution"
+  },
+  "limitations": [
+    "Simulation-only; no PDS/timing/board/hardware evidence.",
+    "No RX, FIFO, interrupt, bus fabric, CPU or SoC integration.",
+    "N8 is not rerun in this package; prior core evidence remains separate.",
+    "N234 is a reduced normal/repeat/reset smoke, not a full W01-W10 matrix.",
+    "The 1.0.1 plan is functionally identical to 1.0.0; it only records ordinary VCD generation. The earlier 1.0.0 run remains available as history, not as a final VCD-bearing acceptance run.",
+    "The 1.0.2 plan corrects the W01 request accounting from 10 to 11 rejects and freezes the actual event ledger; it does not change the wrapper RTL or frozen TX/GPIO cores.",
+    "W06 ready-return-edge request coverage is explicitly marked as a gap; no claim is made for it.",
+    "W06 is covered by A-W06-SUPPLEMENT in the mainline reply; B's 1.0.4 retains the old gap as history and does not rerun W06.",
+    "1.0.5 changes only TX monitor event/observed edge labels; TX/wrapper RTL and timing unchanged. W06 remains A-W06-SUPPLEMENT."
+  ],
+  "frozen_before_final_dut_runs": true,
+  "supersedes": "1.0.4",
+  "old_plan_preserved": [
+    "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.json",
+    "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.sha256",
+    "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.4.json",
+    "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.4.sha256"
+  ],
+  "evidence": {
+    "ordinary_vcd_required": true,
+    "vcd_plusarg": "+WAVE_FILE=<path>",
+    "vcd_scope": "$dumpvars(0, tb_local_regif_txgpio_m1)",
+    "note": "1.0.3 freezes independent uart_tx capture, one-based seq/edge, request fields, and capture selfcheck. It preserves 1.0.2 functional counts and all old plans."
+  },
+  "entry_markers": {
+    "N16": [
+      "W01",
+      "W02",
+      "W03",
+      "W04",
+      "W05",
+      "W06",
+      "W07",
+      "W08",
+      "W09",
+      "W10"
+    ],
+    "N234": [
+      "W05-N234",
+      "W06-N234",
+      "W09-N234"
+    ],
+    "rule": "Each expected TEST_BEGIN/TEST_PASS appears exactly once, in order, with no extra marker; one global REGIF_M1_SELFCHECK_PASS; missing/duplicate/wrong marker, TEST_FAIL/CHK_FAIL, nonzero native rc or truncated log => FAIL."
+  },
+  "event_ledger": {
+    "source": "Public REGIF_REQ/TX_FRAME/GPIO_ACCEPT logs; TX COMPLETE/CANCEL comes from the shared public uart_tx serial monitor, not tx_ready or last_tx_byte. Request fields are frozen in request_fields.",
+    "N16": {
+      "request_count": 26,
+      "tx_accept_data": [
+        "5a",
+        "a5",
+        "a5",
+        "96",
+        "6a",
+        "96",
+        "6a",
+        "96",
+        "6a"
+      ],
+      "tx_complete_data": [
+        "5a",
+        "a5",
+        "a5",
+        "6a",
+        "6a",
+        "6a"
+      ],
+      "gpio_accept_data": [
+        "a5",
+        "a5",
+        "5a",
+        "11",
+        "11",
+        "22"
+      ],
+      "tx_cancel": 3,
+      "reject": 11
+    },
+    "N234": {
+      "request_count": 10,
+      "tx_accept_data": [
+        "5a",
+        "a5",
+        "a5",
+        "96",
+        "6a",
+        "96",
+        "6a",
+        "96",
+        "6a"
+      ],
+      "tx_complete_data": [
+        "5a",
+        "a5",
+        "a5",
+        "6a",
+        "6a",
+        "6a"
+      ],
+      "gpio_accept_data": [],
+      "tx_cancel": 3,
+      "reject": 1
+    },
+    "negative_controls": [
+      "wrong TX byte/wrong completed data",
+      "extra completed frame",
+      "missing completed frame",
+      "extra GPIO accept",
+      "missing GPIO accept",
+      "duplicate GPIO accept",
+      "missing/duplicate/wrong TEST marker",
+      "TEST_FAIL",
+      "nonzero native rc",
+      "truncated log"
+    ]
+  },
+  "request_fields": {
+    "rule": "seq consecutive 1..N; edge first anchor 9/6 and strictly increasing/unique; address/strobe/error/ready/accept kind match the manually frozen sequence; no DUT-derived edge table.",
+    "N16": [
+      [
+        "00",
+        "5a",
+        "1111",
+        "1",
+        "0",
+        "reject"
+      ],
+      [
+        "0c",
+        "a5",
+        "1111",
+        "0",
+        "1",
+        "gpio"
+      ],
+      [
+        "0c",
+        "a5",
+        "1111",
+        "0",
+        "1",
+        "gpio"
+      ],
+      [
+        "0c",
+        "5a",
+        "1111",
+        "0",
+        "1",
+        "gpio"
+      ],
+      [
+        "00",
+        "5a",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "a5",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "3c",
+        "1111",
+        "1",
+        "0",
+        "reject"
+      ],
+      [
+        "00",
+        "a5",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "04",
+        "01",
+        "1111",
+        "1",
+        "1",
+        "reject"
+      ],
+      [
+        "14",
+        "02",
+        "1111",
+        "1",
+        "1",
+        "reject"
+      ],
+      [
+        "08",
+        "03",
+        "1111",
+        "1",
+        "1",
+        "reject"
+      ],
+      [
+        "10",
+        "04",
+        "1111",
+        "1",
+        "1",
+        "reject"
+      ],
+      [
+        "02",
+        "05",
+        "1111",
+        "1",
+        "1",
+        "reject"
+      ],
+      [
+        "0c",
+        "06",
+        "0000",
+        "1",
+        "1",
+        "reject"
+      ],
+      [
+        "0c",
+        "07",
+        "0001",
+        "1",
+        "1",
+        "reject"
+      ],
+      [
+        "0c",
+        "08",
+        "0011",
+        "1",
+        "1",
+        "reject"
+      ],
+      [
+        "00",
+        "09",
+        "1100",
+        "1",
+        "1",
+        "reject"
+      ],
+      [
+        "0c",
+        "11",
+        "1111",
+        "0",
+        "1",
+        "gpio"
+      ],
+      [
+        "0c",
+        "11",
+        "1111",
+        "0",
+        "1",
+        "gpio"
+      ],
+      [
+        "0c",
+        "22",
+        "1111",
+        "0",
+        "1",
+        "gpio"
+      ],
+      [
+        "00",
+        "96",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "6a",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "96",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "6a",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "96",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "6a",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ]
+    ],
+    "N234": [
+      [
+        "00",
+        "5a",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "a5",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "3c",
+        "1111",
+        "1",
+        "0",
+        "reject"
+      ],
+      [
+        "00",
+        "a5",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "96",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "6a",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "96",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "6a",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "96",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ],
+      [
+        "00",
+        "6a",
+        "1111",
+        "0",
+        "1",
+        "tx"
+      ]
+    ]
+  },
+  "capture_selfcheck": {
+    "script": "work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py",
+    "shared_source": "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv",
+    "required_markers": [
+      "REGIF_CAP_GOOD_PASS",
+      "REGIF_CAP_BAD_STOP_DETECTED",
+      "REGIF_CAP_EXTRA_DETECTED",
+      "REGIF_CAP_MISSING_DETECTED",
+      "REGIF_CAP_CONTROL_PASS",
+      "REGIF_CAP_SELFCHECK_PASS"
+    ],
+    "note": "Synthetic public uart_tx only; same monitor module as formal N16/N234."
+  },
+  "coverage_gaps": [
+    "W06: a write request exactly on the ready-return edge is not separately exercised; the busy write covers pre-edge ready=0 rejection. This is explicitly marked, not claimed as ready-return-edge coverage."
+  ],
+  "expected_request_edges": {
+    "N16": [
+      9,
+      26,
+      29,
+      30,
+      37,
+      202,
+      203,
+      365,
+      528,
+      529,
+      530,
+      531,
+      532,
+      533,
+      534,
+      535,
+      536,
+      537,
+      538,
+      539,
+      546,
+      554,
+      724,
+      794,
+      964,
+      1116
+    ],
+    "N234": [
+      6,
+      2349,
+      2350,
+      4692,
+      7040,
+      7048,
+      9398,
+      10340,
+      12690,
+      14804
+    ],
+    "note": "Frozen request timeline from the fixed test schedule; analyzer rejects nonfirst edge mutations, not just first edge."
+  },
+  "tx_event_rules": {
+    "event_edge": "true accept/start edge E or true E+10N end edge.",
+    "observed_edge": "next posedge where the independent public-pin monitor sampled the transition; observed_edge = event_edge + 1.",
+    "start": "START event_edge equals the accepted request edge.",
+    "complete": "COMPLETE event_edge = START event_edge + 10N; observed_edge = event_edge + 1.",
+    "cancel": "reset before E+10N is CANCEL; event_edge and observed_edge are logged separately.",
+    "last_half_stop": "synthetic shared-monitor reset in the last half of the stop bit must CANCEL."
+  },
+  "v3_checks": [
+    "nonfirst edge exact",
+    "busy field exact",
+    "TX COMPLETE edge=START+10N",
+    "GPIO log seq/edge/data aligned"
+  ],
+  "R2_acceptance": {
+    "N16_first": {
+      "accept_event_edge": 37,
+      "complete_event_edge": 197
+    },
+    "N234_first": {
+      "accept_event_edge": 6,
+      "complete_event_edge": 2346
+    },
+    "counts": "6 complete / 3 cancel / 0 bad_stop",
+    "mutation": "COMPLETE observed edge 999999 or event edge not E+10N rejected."
+  }
+}

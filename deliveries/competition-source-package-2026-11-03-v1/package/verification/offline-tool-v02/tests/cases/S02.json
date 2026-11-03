@@ -1,0 +1,17 @@
+{
+  "id": "S02",
+  "expected": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "generated/faults/s02_large_cycles_expected.log",
+    "complete": true
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "generated/faults/s02_large_cycles_actual.log",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {}
+}

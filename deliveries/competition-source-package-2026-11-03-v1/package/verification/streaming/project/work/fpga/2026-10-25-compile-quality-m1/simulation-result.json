@@ -1,0 +1,374 @@
+{
+  "status": "PASS",
+  "new_DUT_runs": 2,
+  "rows": [
+    {
+      "id": "performance-N234",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\compile\\performance-N234.vvp",
+          "+MAX_CYCLES=6000000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\runs\\performance-N234",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "elapsed_seconds": 201.015,
+        "timeout_seconds": 360,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\logs\\run-performance-N234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\logs\\run-performance-N234\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 3780627,
+          "advances": 1890313,
+          "stall": 152642,
+          "flush": 283667,
+          "tail": 32
+        },
+        "trace_counts": {
+          "EX": 1170318,
+          "WB": 796509,
+          "READ": 190535,
+          "STORE": 20356
+        },
+        "streams": {
+          "EX": {
+            "count": 1170318,
+            "sha256": "2B49FAEC332993B305C28CBAE8E710ADECB672AAF1654822C44202A84D63D5AD"
+          },
+          "WB": {
+            "count": 796509,
+            "sha256": "DCD1FC0F8F3ECC05C6FCBF04EF70424384EBA0EAC1BF2DDAA60DD4B6A3C59C14"
+          },
+          "MEM": {
+            "count": 210891,
+            "sha256": "FE687FA8526B0BFAE82AA5B086747C01443011E6115EA467FA324584AA13FCCD"
+          }
+        },
+        "timer_reads": [
+          {
+            "pc": 16348,
+            "address": 536871172,
+            "cycle": 18774,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16352,
+            "address": 536871168,
+            "cycle": 18776,
+            "expected": 18775,
+            "actual": 18775
+          },
+          {
+            "pc": 16356,
+            "address": 536871172,
+            "cycle": 18778,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16396,
+            "address": 536871172,
+            "cycle": 18800,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16400,
+            "address": 536871168,
+            "cycle": 18802,
+            "expected": 18801,
+            "actual": 18801
+          },
+          {
+            "pc": 16404,
+            "address": 536871172,
+            "cycle": 18804,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16056,
+            "address": 536871172,
+            "cycle": 55548,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16060,
+            "address": 536871168,
+            "cycle": 55550,
+            "expected": 55549,
+            "actual": 55549
+          },
+          {
+            "pc": 16064,
+            "address": 536871172,
+            "cycle": 55552,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16108,
+            "address": 536871172,
+            "cycle": 2161826,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16112,
+            "address": 536871168,
+            "cycle": 2161828,
+            "expected": 2161827,
+            "actual": 2161827
+          },
+          {
+            "pc": 16116,
+            "address": 536871172,
+            "cycle": 2161830,
+            "expected": 0,
+            "actual": 0
+          }
+        ],
+        "GPIO_actual": [],
+        "UART_frames": 662,
+        "detail": {
+          "stamps": [
+            18775,
+            18801,
+            55549,
+            2161827
+          ],
+          "empty_window": 26,
+          "raw_ticks": 2106278,
+          "frequency_setting_hz": 27000000,
+          "simulated_seconds_at_setting": 0.0780102962962963,
+          "formal_score_valid": false,
+          "phases": [
+            [
+              6223,
+              0
+            ],
+            [
+              55563,
+              1
+            ],
+            [
+              2161845,
+              2
+            ],
+            [
+              2220841,
+              3
+            ],
+            [
+              3780543,
+              4
+            ]
+          ],
+          "report_bytes": 662
+        },
+        "limitations": [
+          "finite inputs; no true retirement PC or unified WB-STORE commit",
+          "short simulation not valid CoreMark score",
+          "no hardware evidence"
+        ]
+      }
+    },
+    {
+      "id": "validation-N234",
+      "status": "PASS",
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\compile\\validation-N234.vvp",
+          "+MAX_CYCLES=6000000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\runs\\validation-N234",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "elapsed_seconds": 209.125,
+        "timeout_seconds": 360,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\logs\\run-validation-N234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-compile-quality-m1\\logs\\run-validation-N234\\stderr.log"
+      },
+      "check": {
+        "status": "PASS",
+        "errors": [],
+        "metrics": {
+          "physical": 3938809,
+          "advances": 1969404,
+          "stall": 152957,
+          "flush": 296606,
+          "tail": 32
+        },
+        "trace_counts": {
+          "EX": 1223216,
+          "WB": 830548,
+          "READ": 190800,
+          "STORE": 20257
+        },
+        "streams": {
+          "EX": {
+            "count": 1223216,
+            "sha256": "2D67359F8DA81BB7A00A94C7452C0361A3E1F33AEF0BCFBE54639258DC6D554B"
+          },
+          "WB": {
+            "count": 830548,
+            "sha256": "BFD6C278A2FD5972E2688F30E69D16E73FEB1F8BD52D9719B06ADCD96180F04F"
+          },
+          "MEM": {
+            "count": 211057,
+            "sha256": "612A472ED8B095993E7CE9F9DB799180853FE172305BD81CE47E1090B5557C62"
+          }
+        },
+        "timer_reads": [
+          {
+            "pc": 16348,
+            "address": 536871172,
+            "cycle": 18786,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16352,
+            "address": 536871168,
+            "cycle": 18788,
+            "expected": 18787,
+            "actual": 18787
+          },
+          {
+            "pc": 16356,
+            "address": 536871172,
+            "cycle": 18790,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16396,
+            "address": 536871172,
+            "cycle": 18812,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16400,
+            "address": 536871168,
+            "cycle": 18814,
+            "expected": 18813,
+            "actual": 18813
+          },
+          {
+            "pc": 16404,
+            "address": 536871172,
+            "cycle": 18816,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16056,
+            "address": 536871172,
+            "cycle": 55842,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16060,
+            "address": 536871168,
+            "cycle": 55844,
+            "expected": 55843,
+            "actual": 55843
+          },
+          {
+            "pc": 16064,
+            "address": 536871172,
+            "cycle": 55846,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16108,
+            "address": 536871172,
+            "cycle": 2323194,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "pc": 16112,
+            "address": 536871168,
+            "cycle": 2323196,
+            "expected": 2323195,
+            "actual": 2323195
+          },
+          {
+            "pc": 16116,
+            "address": 536871172,
+            "cycle": 2323198,
+            "expected": 0,
+            "actual": 0
+          }
+        ],
+        "GPIO_actual": [],
+        "UART_frames": 661,
+        "detail": {
+          "stamps": [
+            18787,
+            18813,
+            55843,
+            2323195
+          ],
+          "empty_window": 26,
+          "raw_ticks": 2267352,
+          "frequency_setting_hz": 27000000,
+          "simulated_seconds_at_setting": 0.083976,
+          "formal_score_valid": false,
+          "phases": [
+            [
+              6259,
+              0
+            ],
+            [
+              55857,
+              1
+            ],
+            [
+              2323213,
+              2
+            ],
+            [
+              2381379,
+              3
+            ],
+            [
+              3938725,
+              4
+            ]
+          ],
+          "report_bytes": 661
+        },
+        "limitations": [
+          "finite inputs; no true retirement PC or unified WB-STORE commit",
+          "short simulation not valid CoreMark score",
+          "no hardware evidence"
+        ]
+      }
+    }
+  ],
+  "protected": 726,
+  "formal_score": false
+}

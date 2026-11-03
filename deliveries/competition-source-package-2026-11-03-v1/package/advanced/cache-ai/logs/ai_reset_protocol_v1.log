@@ -1,0 +1,4 @@
+VCD info: dumpfile ai_reset.vcd opened for output.
+PROTOCOL_PASS
+PASS ai
+ai_tb.sv:91: $finish called at 14320000 (1ps)

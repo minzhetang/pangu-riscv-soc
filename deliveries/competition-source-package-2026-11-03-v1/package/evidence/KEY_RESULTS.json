@@ -1,0 +1,73 @@
+{
+  "scope": "Existing bounded evidence only; current packaging is static",
+  "baseline_sm2": {
+    "performance_ticks": 496232016,
+    "validation_ticks": 522673286,
+    "clock_nominal_Hz": 27000000,
+    "iterations": 256,
+    "cycle_reduction_percent": 7.85598385,
+    "LUT": 1810,
+    "FF": 1527,
+    "DRM36_equivalent": 14.5,
+    "board": "finite dual-seed accepted"
+  },
+  "application": {
+    "normal_outputs_chars": [
+      1216,
+      256
+    ],
+    "record_payload_bytes": [
+      384,
+      128
+    ],
+    "processing_ticks": [
+      3002,
+      2722
+    ],
+    "comparison": "same-input RTL M1, not board dense comparison",
+    "board_cases": [
+      "normal",
+      "order fault",
+      "timeout"
+    ],
+    "poll_ms_nominal": 100
+  },
+  "btb32": {
+    "performance_cycles": 1730128,
+    "validation_cycles": 1849336,
+    "LUT": 11299,
+    "FF": 5088,
+    "DRM36_equivalent": 16,
+    "STA_estimate_MHz": 33.9006,
+    "scope": "single-iteration simulation / offline implementation, no board or >=10s completion"
+  },
+  "cache_m2": {
+    "adverse_M1_M2_cycles": [
+      534,
+      282
+    ],
+    "adverse_M0_cycles": 270,
+    "stream_cycles": 357,
+    "scope": "isolated finite simulation, no CPU integration"
+  },
+  "AI": {
+    "inputs": 16,
+    "outputs": 8,
+    "MACs": 128,
+    "cycles_no_backpressure": 136,
+    "cycles_backpressure": 148,
+    "data": "synthetic fixed point, no real model"
+  },
+  "offline_tool": {
+    "B_PASS_LOCAL": 54,
+    "mainline_PASS": 22,
+    "mainline_FAIL": 3,
+    "guard_defects_open": [
+      "G1_memory",
+      "G2_log",
+      "G3_deadline"
+    ],
+    "production_adopted": false
+  },
+  "new_DUT_PDS_hardware_runs": 0
+}

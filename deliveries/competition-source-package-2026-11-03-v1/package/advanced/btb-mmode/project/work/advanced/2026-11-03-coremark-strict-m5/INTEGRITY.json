@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "file_count": 828,
+  "bytes": 222455746,
+  "mismatches": [],
+  "manifest_sha256": "A04058A628EDA9FE61C52252E9F86091442E72DE36129C12570D9E5C590064D3",
+  "excludes": [
+    "SHA256SUMS.txt itself",
+    "INTEGRITY.json written after verification"
+  ],
+  "claim": "Local material integrity only, not a new DUT or hardware run"
+}

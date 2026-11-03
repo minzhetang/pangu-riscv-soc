@@ -1,0 +1,91 @@
+{
+  "pass_": true,
+  "CoreMark_runs": 10,
+  "comparisons": [
+    {
+      "mode": "performance",
+      "entries": 64,
+      "off_cycles": 2103652,
+      "on_cycles": 1719152,
+      "cycle_reduction_percent": 18.277737952855322,
+      "speedup": 1.223656779621581
+    },
+    {
+      "mode": "performance",
+      "entries": 32,
+      "off_cycles": 2103652,
+      "on_cycles": 1730128,
+      "cycle_reduction_percent": 17.7559786504612,
+      "speedup": 1.2158938529403605
+    },
+    {
+      "mode": "validation",
+      "entries": 64,
+      "off_cycles": 2263004,
+      "on_cycles": 1837836,
+      "cycle_reduction_percent": 18.787770591656045,
+      "speedup": 1.231341643106349
+    },
+    {
+      "mode": "validation",
+      "entries": 32,
+      "off_cycles": 2263004,
+      "on_cycles": 1849336,
+      "cycle_reduction_percent": 18.279596500934158,
+      "speedup": 1.2236846089623519
+    }
+  ],
+  "r32": 46,
+  "fault_cases": 24,
+  "native_commands": 102,
+  "timing": [
+    {
+      "mode": "performance",
+      "entries": 0,
+      "phase_cycles": 2103652,
+      "mtime_delta": 2103648,
+      "simulated_seconds_at_27MHz": 0.07791288888888889,
+      "full_cycles": 2243329
+    },
+    {
+      "mode": "validation",
+      "entries": 0,
+      "phase_cycles": 2263004,
+      "mtime_delta": 2263000,
+      "simulated_seconds_at_27MHz": 0.08381481481481481,
+      "full_cycles": 2402177
+    },
+    {
+      "mode": "performance",
+      "entries": 64,
+      "phase_cycles": 1719152,
+      "mtime_delta": 1719148,
+      "simulated_seconds_at_27MHz": 0.06367214814814814,
+      "full_cycles": 1834621
+    },
+    {
+      "mode": "validation",
+      "entries": 64,
+      "phase_cycles": 1837836,
+      "mtime_delta": 1837832,
+      "simulated_seconds_at_27MHz": 0.06806785185185185,
+      "full_cycles": 1952857
+    },
+    {
+      "mode": "performance",
+      "entries": 32,
+      "phase_cycles": 1730128,
+      "mtime_delta": 1730124,
+      "simulated_seconds_at_27MHz": 0.06407866666666667,
+      "full_cycles": 1846885
+    },
+    {
+      "mode": "validation",
+      "entries": 32,
+      "phase_cycles": 1849336,
+      "mtime_delta": 1849332,
+      "simulated_seconds_at_27MHz": 0.06849377777777778,
+      "full_cycles": 1965447
+    }
+  ]
+}

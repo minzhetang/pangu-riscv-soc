@@ -1,0 +1,93 @@
+{
+  "sources": [
+    {
+      "name": "alu.v",
+      "original_sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "observed_sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "functional_text_equal": true
+    },
+    {
+      "name": "board_reset_sync.sv",
+      "original_sha256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152",
+      "observed_sha256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152",
+      "functional_text_equal": true
+    },
+    {
+      "name": "board_top.sv",
+      "original_sha256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478",
+      "observed_sha256": "D286BA75E8B4193AD746F33A19B1A9B246ED05BFC2F897BB0615A75E1FFBF272",
+      "functional_text_equal": true
+    },
+    {
+      "name": "control.v",
+      "original_sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "observed_sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "functional_text_equal": true
+    },
+    {
+      "name": "cpu.v",
+      "original_sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D",
+      "observed_sha256": "8A6C3B517CE9564E2B982F214B4B522AB2062E03E12F0B5F687524B962CD1E7E",
+      "functional_text_equal": true
+    },
+    {
+      "name": "cycle_counter64.sv",
+      "original_sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+      "observed_sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+      "functional_text_equal": true
+    },
+    {
+      "name": "gpio_core.v",
+      "original_sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+      "observed_sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+      "functional_text_equal": true
+    },
+    {
+      "name": "init_tables.svh",
+      "original_sha256": "62339C1629F4A22ABACA7C2D02B1581BC37FFAF6CF804A275C9AEABFD28B2331",
+      "observed_sha256": "62339C1629F4A22ABACA7C2D02B1581BC37FFAF6CF804A275C9AEABFD28B2331",
+      "functional_text_equal": true
+    },
+    {
+      "name": "local_regif_txgpio_m1.v",
+      "original_sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "observed_sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "functional_text_equal": true
+    },
+    {
+      "name": "memory_model.sv",
+      "original_sha256": "D8F77B18C38DEE3E07FAC0FC0BE53AA08D26A842217DAFF2B5F4073D2FB8079B",
+      "observed_sha256": "D8F77B18C38DEE3E07FAC0FC0BE53AA08D26A842217DAFF2B5F4073D2FB8079B",
+      "functional_text_equal": true
+    },
+    {
+      "name": "regfile.v",
+      "original_sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "observed_sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "functional_text_equal": true
+    },
+    {
+      "name": "soc_data_adapter.sv",
+      "original_sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+      "observed_sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+      "functional_text_equal": true
+    },
+    {
+      "name": "soc_top.sv",
+      "original_sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A",
+      "observed_sha256": "5DCAD904D4C0BD381C699FCF1D596129CEE26768B0904428C7DB33CDE93FED37",
+      "functional_text_equal": true
+    },
+    {
+      "name": "uart_tx.v",
+      "original_sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "observed_sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "functional_text_equal": true
+    }
+  ],
+  "firmware_fixed": true,
+  "program_binary_sha256": "0160BF311C70A8CCDDDF1B4F19B96C4F5B7357CB2E4BD04E69DB9A87DBC8C21E",
+  "original_sources_unchanged": true,
+  "modifications": "Only seven previously-used PAP_MARK_DEBUG retention annotations in three copied files",
+  "no_functional_RTL_or_software_changes": true
+}

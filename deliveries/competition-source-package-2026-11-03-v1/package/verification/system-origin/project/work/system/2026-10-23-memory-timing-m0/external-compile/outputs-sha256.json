@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\external-compile\\drm.vvp",
+      "sha256": "96DC84DFEA7514ADC7373D7A6A1D9D514BFFF9B91905BEA6E162E55E878AE872"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\external-compile\\cpu.vvp",
+      "sha256": "C67236BC62F150AD1AAD10B1CA73D6DD5D4FAEC37BAF1D28F9CC0D212F1B0003"
+    }
+  ]
+}

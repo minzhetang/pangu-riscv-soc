@@ -1,0 +1,9 @@
+{
+  "status": "TOOL_ERROR",
+  "native_rc": 3221225477,
+  "hex_rc": "0xC0000005",
+  "command": "execute.py initial sandbox compile-source-before",
+  "evidence": "Tool transcript for initial invocation; original log filename was reused by subsequent successful compile, initial stderr not independently retained.",
+  "root_cause": "UNKNOWN",
+  "mitigation": "Scoped external ordinary-user execution, no installation/admin/PATH/security changes"
+}

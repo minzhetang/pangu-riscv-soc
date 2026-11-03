@@ -1,0 +1,29 @@
+[
+  {
+    "case": "matrix",
+    "native_filename_not_authoritative": "list_revised",
+    "source": "D:\\A_FPGA_Comp\\work\\pds-jtag\\2026-11-01-coremark256-ila-windows-h54-r2\\list_revised.wdf",
+    "expected_PC": "0x17f0",
+    "project_exact140bit_predicate": true,
+    "wdf_sha256": "7832DA2D24665F27868673637E14751DDE01EFA9C1CCC7217C06BF0D499255F3",
+    "dprj_sha256": "E95FACC9787E96C43D675144EA4F5F43C2B5083EB28E6BFD92A950CE7888D08D"
+  },
+  {
+    "case": "state",
+    "native_filename_not_authoritative": "matrix_revised",
+    "source": "D:\\A_FPGA_Comp\\work\\pds-jtag\\2026-11-01-coremark256-ila-windows-h54-r2\\matrix_revised.wdf",
+    "expected_PC": "0x1ee0",
+    "project_exact140bit_predicate": true,
+    "wdf_sha256": "07B8A52B66F49D534B1D725048EEEDB1511D9CDC99C9BB0F05B146584BD4F104",
+    "dprj_sha256": "7DF343258AE2372C902038B670895D8750B567E56D404B697BCE955EBE747048"
+  },
+  {
+    "case": "matrix_repeat",
+    "native_filename_not_authoritative": "matrix_repeat_revised",
+    "source": "D:\\A_FPGA_Comp\\work\\pds-jtag\\2026-11-01-coremark256-ila-windows-h54-r2\\matrix_repeat_revised.wdf",
+    "expected_PC": "0x17f0",
+    "project_exact140bit_predicate": true,
+    "wdf_sha256": "9503899CFC624D6C9CC769BC20301CD86B2844EB1B271FDB97AA6F834DB06733",
+    "dprj_sha256": "17E37F22E6882CE4102A8DDE19D8AF1669D22DFF27ADF03C338DCFCAD1B2F798"
+  }
+]

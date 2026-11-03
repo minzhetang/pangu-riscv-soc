@@ -1,0 +1,18 @@
+{
+  "0_lanes_0": {
+    "hits": 16,
+    "eligible_reads": 33,
+    "transactions": 47,
+    "bytes": 336,
+    "mmio": 0,
+    "requests": 65
+  },
+  "0_lanes_1": {
+    "hits": 0,
+    "eligible_reads": 0,
+    "transactions": 63,
+    "bytes": 196,
+    "mmio": 0,
+    "requests": 65
+  }
+}

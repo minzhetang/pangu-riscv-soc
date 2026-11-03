@@ -1,0 +1,106 @@
+{
+  "cases": [
+    {
+      "id": "P01",
+      "image": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P01.program.hex",
+      "image_sha": "9798E573E0CA23C5BDC5769AFD5E29683AADAB8E768923DD371FAC9664C800B2",
+      "physical_ROM_bytes": 32768,
+      "physical_RAM_bytes": 32768,
+      "visible_ROM_bytes": 1024,
+      "visible_RAM_bytes": 256,
+      "RAM_base": 256
+    },
+    {
+      "id": "P02",
+      "image": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P02.program.hex",
+      "image_sha": "FED66038CB91FCE65FF9941A0D5B61760D8B3EBFCFB4825E4B9E6AB987B66BD7",
+      "physical_ROM_bytes": 32768,
+      "physical_RAM_bytes": 32768,
+      "visible_ROM_bytes": 1024,
+      "visible_RAM_bytes": 256,
+      "RAM_base": 256
+    },
+    {
+      "id": "P03T",
+      "image": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P03T.program.hex",
+      "image_sha": "1812BBA9A9E2EFC2BFBEA1398BA746418274D659C352708424844F144249C5A1",
+      "physical_ROM_bytes": 32768,
+      "physical_RAM_bytes": 32768,
+      "visible_ROM_bytes": 1024,
+      "visible_RAM_bytes": 256,
+      "RAM_base": 256
+    },
+    {
+      "id": "P03N",
+      "image": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P03N.program.hex",
+      "image_sha": "1812BBA9A9E2EFC2BFBEA1398BA746418274D659C352708424844F144249C5A1",
+      "physical_ROM_bytes": 32768,
+      "physical_RAM_bytes": 32768,
+      "visible_ROM_bytes": 1024,
+      "visible_RAM_bytes": 256,
+      "RAM_base": 256
+    },
+    {
+      "id": "P04",
+      "image": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P04.program.hex",
+      "image_sha": "E96B9EDF77176C971B4A9DAE9978D2F3061563A145D7EF91B7FCF38F4001F190",
+      "physical_ROM_bytes": 32768,
+      "physical_RAM_bytes": 32768,
+      "visible_ROM_bytes": 1024,
+      "visible_RAM_bytes": 256,
+      "RAM_base": 256
+    },
+    {
+      "id": "P05",
+      "image": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P05.program.hex",
+      "image_sha": "A058C66A848EED172E74068E3DA812EF74D97F0ECE607712D820D30B95B9E5B8",
+      "physical_ROM_bytes": 32768,
+      "physical_RAM_bytes": 32768,
+      "visible_ROM_bytes": 1024,
+      "visible_RAM_bytes": 256,
+      "RAM_base": 256
+    },
+    {
+      "id": "cboot",
+      "image": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.mem32.hex",
+      "image_sha": "A4A0EA43494E429D416CC2DE18DE584883D9895FEC0746468C8573BB2B608894",
+      "physical_ROM_bytes": 32768,
+      "physical_RAM_bytes": 32768,
+      "visible_ROM_bytes": 16384,
+      "visible_RAM_bytes": 16384,
+      "RAM_base": 65536
+    },
+    {
+      "id": "performance",
+      "image": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\performance\\image.hex",
+      "image_sha": "46BB7DF0B8CAEA3B3F6463F35F1BDCBC2BC245F563F419BF9835910A3E47FB61",
+      "physical_ROM_bytes": 32768,
+      "physical_RAM_bytes": 32768,
+      "visible_ROM_bytes": 32768,
+      "visible_RAM_bytes": 32768,
+      "RAM_base": 65536
+    },
+    {
+      "id": "validation",
+      "image": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\validation\\image.hex",
+      "image_sha": "F7C09F2EBBC2BB192C855D58C30F20D45C5637FE35DB06E910068FD5E9D5FC2B",
+      "physical_ROM_bytes": 32768,
+      "physical_RAM_bytes": 32768,
+      "visible_ROM_bytes": 32768,
+      "visible_RAM_bytes": 32768,
+      "RAM_base": 65536
+    },
+    {
+      "id": "selftest",
+      "image": null,
+      "image_sha": null,
+      "physical_ROM_bytes": 32768,
+      "physical_RAM_bytes": 32768,
+      "visible_ROM_bytes": 32768,
+      "visible_RAM_bytes": 32768,
+      "RAM_base": 65536
+    }
+  ],
+  "synthetic_roundtrip_checks": 327680,
+  "DUT_runs": 0
+}

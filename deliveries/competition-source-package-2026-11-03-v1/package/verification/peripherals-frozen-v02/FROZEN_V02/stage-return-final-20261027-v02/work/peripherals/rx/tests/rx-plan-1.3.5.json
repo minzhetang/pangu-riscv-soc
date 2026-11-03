@@ -1,0 +1,546 @@
+{
+  "plan_id": "B-UART-RX-PLAN-1.3.5",
+  "plan_version": "1.3.5",
+  "created_at": "2026-10-25T21:09:55+08:00",
+  "frozen_at": "2026-10-25T21:09:55+08:00",
+  "frozen_before_final_dut_runs": true,
+  "task_id": "B-UART-RX",
+  "module": "uart_rx",
+  "module_version": "1.0.0",
+  "interface_version": "PERIPH-CORE-RX-1.0 / 1.0.0",
+  "contract": {
+    "contract_id": "PERIPH-CORE-RX-1.0",
+    "version": "1.0.0",
+    "status": "APPROVED_RELEASED",
+    "sha256": "E1DA0CC3BC1E9F64285B5846369D910338FF2289652E297629DDA9F5BAEEA706",
+    "release_sha256": "4B60CB9E29DFCA130AB0568FD617B6AE639AF745DB2323DF13E865F016E59D8C",
+    "received_at": "2026-10-23T11:27:47+08:00",
+    "receipt_path": "work/peripherals/rx/docs/MAINLINE-RX-RECEIPT-20261023.md",
+    "contract_path": "work/peripherals/rx/contracts/RX_CORE_CONTRACT.md"
+  },
+  "scope": "UART 8N1 RX core only: independent RTL/TB/scripts, existing lawful Icarus 12/vvp, bounded N=8/16/234 simulations. No FIFO, parity, flow control, address map, bus wrapper, CPU/SoC, REGIF, board clock/PLL or hardware test.",
+  "tools": {
+    "simulator": "Icarus Verilog",
+    "version": "12.0 (devel) (s20150603-1539-g2693dd32b)",
+    "iverilog_path": "D:\\iverilog\\bin\\iverilog.exe",
+    "vvp_path": "D:\\iverilog\\bin\\vvp.exe",
+    "library_path": "D:\\iverilog\\lib\\ivl",
+    "legal_source": "Existing lawful local Icarus installation recorded in B-ENV; explicit path passed, PATH unchanged."
+  },
+  "artifacts": {
+    "rtl": {
+      "path": "work/peripherals/rx/src/uart_rx.v",
+      "sha256": "BDCD02CA8CBA1CAE9D8A774D336B30B43E9457834856234BD7C2BA8AE1719F34"
+    },
+    "tb": {
+      "path": "work/peripherals/rx/tb/tb_uart_rx.sv",
+      "sha256": "FDE6B17592970A27A759827FAC5D6AF24B6666CDBF7BF049D9925A98BB739BB6"
+    },
+    "negative_tb": {
+      "path": "work/peripherals/rx/tb/tb_uart_rx_neg.sv",
+      "sha256": "0CA0D6A519354AF1F1AE610677DFC7D9CCA01286408DC9AB882ED78AEF9407B6"
+    },
+    "watchdog_tb": {
+      "path": "work/peripherals/rx/tb/tb_uart_rx_watchdog.sv",
+      "sha256": "0F9C2159F2FFD76F0D84A34C39721648AAFF7528B7B1604E48C6D16D299E2BD9"
+    },
+    "illegal_tb": {
+      "path": "work/peripherals/rx/tb/tb_uart_rx_illegal.sv",
+      "sha256": "5FF8F379FB5DAED06A07B51B2E902182CA806AB7D7CADCDDE3C3C5BCE10DC191"
+    },
+    "ledger_check": {
+      "path": "work/peripherals/rx/tb/rx_ledger_check.svh",
+      "sha256": "C8FFFF1A2554236C7935F1863CB0BF870CD8739CC69A3EAF3287C26E1A967868"
+    },
+    "capture": {
+      "path": "work/peripherals/rx/tb/rx_public_capture.sv",
+      "sha256": "ADBD4EBC7A549DB48B704C11F740E9FD66DBBA185E1D795596C95BE2DF84EA5D"
+    }
+  },
+  "design": {
+    "frame": "8N1: 1 start low, 8 data LSB-first, 1 stop high, idle high, no parity/FIFO/flow control/BREAK detection.",
+    "clks_per_bit": "integer N >= 8, default 16; N<8 explicitly rejected at simulation start.",
+    "synchronizer": "exactly two async-reset-to-1 FFs; main logic reads only pre-edge second stage; d=E2.",
+    "sampling": "start d+floor(N/2); data d+N+floor(N/2)+k*N; stop S=d+9N+floor(N/2).",
+    "publish": "good stop publishes rx_data/rx_valid in S NBA; no extra S+1 pipeline delay.",
+    "back_to_back": "raw bit period N*T; raw frame period 10*N*T; same-phase d_next=d+10N, no +1 and no inserted idle.",
+    "mailbox": "one-byte level valid; full+not-ready keeps old and sets overrun; full+ready consumes old and replaces new with valid held; bad stop never writes data.",
+    "errors": "frame_error and overrun are independent sticky flags; clear_errors clears a bit only when no new event of that bit occurs on the same edge.",
+    "reset": "async low assertion clears mailbox/errors/state; two warmup edges then arm only after pre-edge second stage is high; low after reset is ignored until a real high then falling edge."
+  },
+  "configurations": [
+    {
+      "id": "N8",
+      "clks_per_bit": 8,
+      "tb_max_cycles": 5045,
+      "purpose": "short-frame and four-phase boundary coverage plus same-byte replacement",
+      "last_check_cycle": 5013
+    },
+    {
+      "id": "N16",
+      "clks_per_bit": 16,
+      "tb_max_cycles": 11319,
+      "purpose": "default configuration; four phases, back-to-back frames, false start, same-byte replacement",
+      "last_check_cycle": 11287
+    },
+    {
+      "id": "N234",
+      "clks_per_bit": 234,
+      "tb_max_cycles": 110967,
+      "purpose": "27 MHz / 115200 candidate divider plus same-byte replacement",
+      "last_check_cycle": 110935
+    }
+  ],
+  "expected_per_configuration": {
+    "compile_timeout_s": 60,
+    "run_timeout_s": 30,
+    "tb_hard_cap": 1000000,
+    "success_marker": "RX_SELFCHECK_PASS",
+    "failure_marker": "RX_SELFCHECK_FAIL",
+    "watchdog_marker": "TB_WATCHDOG_TIMEOUT",
+    "tb_hard_cap_enforced": "Runner rejects plan cycle budgets >1000000; TB emits TB_HARD_CAP_REJECT if TB_MAX_CYCLES >1000000.",
+    "forbidden_markers": [
+      "RX_SELFCHECK_FAIL",
+      "CHK_FAIL",
+      "TB_HARD_CAP_REJECT",
+      "TB_WATCHDOG_TIMEOUT"
+    ],
+    "job_budget_rule": "Each configuration freezes last_check_cycle and uses tb_max_cycles = last_check_cycle + 32; runner/TB reject >1000000.",
+    "process_timeout_classification": "FAIL for the deliberate watchdog; only TB_WATCHDOG_TIMEOUT with native rc=0 is TIMEOUT mechanism success.",
+    "tb_max_cycles_by_config": {
+      "N8": 5045,
+      "N16": 11319,
+      "N234": 110967
+    },
+    "budget_authority": "Per configs[].tb_max_cycles; no 106285 or 200000 legacy budget is active."
+  },
+  "cases": [
+    {
+      "id": "RX-01",
+      "acceptance_id": "RX-01",
+      "purpose": "valid frames and LSB-first byte order",
+      "configs": [
+        "N8",
+        "N16",
+        "N234"
+      ],
+      "expected": "For each of 0x00,0xFF,0x55,0xAA,0x01,0x80,0x7E: valid/data appear at S_postNBA; no frame_error/overrun; after consume valid=0 and data holds.",
+      "tb_markers": [
+        "TEST_BEGIN RX-01",
+        "TEST_PASS RX-01"
+      ]
+    },
+    {
+      "id": "RX-02",
+      "acceptance_id": "RX-02",
+      "purpose": "four sampling phases and representative frames",
+      "configs": [
+        "N8",
+        "N16",
+        "N234"
+      ],
+      "expected": "N8/N16: 0.1/0.3/0.6/0.9T phases for 0x55 and 0xAA; N234: 0x55 and 0xAA representative frames; all valid/data at S_postNBA, no errors.",
+      "tb_markers": [
+        "TEST_BEGIN RX-02",
+        "TEST_PASS RX-02"
+      ]
+    },
+    {
+      "id": "RX-03",
+      "acceptance_id": "RX-03",
+      "purpose": "true back-to-back frames with no extra idle",
+      "configs": [
+        "N8",
+        "N16",
+        "N234"
+      ],
+      "expected": "N16 16 frames, N8 8 frames, N234 2 frames; raw frame period exactly 10*N*T; same-phase d_next=d+10N; each S_postNBA shows the expected byte, S+1 consumes it, no overrun/frame_error.",
+      "tb_markers": [
+        "TEST_BEGIN RX-03",
+        "TEST_PASS RX-03"
+      ]
+    },
+    {
+      "id": "RX-04",
+      "acceptance_id": "RX-04",
+      "purpose": "short false start at N16",
+      "configs": [
+        "N16"
+      ],
+      "expected": "Low durations L=7 and L=8 (pre-second-stage samples) with return high before start center are ignored; no valid/error; a following good 0x5A is accepted.",
+      "tb_markers": [
+        "TEST_BEGIN RX-04",
+        "TEST_PASS RX-04"
+      ]
+    },
+    {
+      "id": "RX-05",
+      "acceptance_id": "RX-05",
+      "purpose": "bad stop, mailbox hold/consume, sustained low, clear/new-error priority",
+      "configs": [
+        "N8",
+        "N16",
+        "N234"
+      ],
+      "expected": "Bad stop sets frame_error, writes no data; ready=0 keeps old, ready=1 consumes old; sustained low does not create a second visible frame; full mailbox recovery sets overrun; clear with new frame_error keeps new FE and clears old OV. 5e: clear_errors with a new overrun keeps the new OV=1, clears the old FE, and leaves the full mailbox byte 0x11 held. The new good frame 0x44 is still a protocol DROP (OV already 1, no OV rise; independent serial-decoded data). 5f: bad stop with a sustained low tail clears FE while low, confirms no re-raise during the low tail, and recovers after high.",
+      "tb_markers": [
+        "TEST_BEGIN RX-05",
+        "TEST_PASS RX-05"
+      ]
+    },
+    {
+      "id": "RX-06",
+      "acceptance_id": "RX-06",
+      "purpose": "valid timing and hold/consume behavior",
+      "configs": [
+        "N8",
+        "N16",
+        "N234"
+      ],
+      "expected": "Good byte appears at S_postNBA; valid&&!ready holds 24+ cycles; one ready handshake consumes exactly once; data holds after consume.",
+      "tb_markers": [
+        "TEST_BEGIN RX-06",
+        "TEST_PASS RX-06"
+      ]
+    },
+    {
+      "id": "RX-07",
+      "acceptance_id": "RX-07",
+      "purpose": "full mailbox, overrun, clear, same-byte non-dedup",
+      "configs": [
+        "N8",
+        "N16",
+        "N234"
+      ],
+      "expected": "Second good byte with full mailbox keeps old, drops new, sets overrun; clear_errors clears overrun without consuming; after consume, the same byte value is accepted again.",
+      "tb_markers": [
+        "TEST_BEGIN RX-07",
+        "TEST_PASS RX-07"
+      ]
+    },
+    {
+      "id": "RX-08",
+      "acceptance_id": "RX-08",
+      "purpose": "same-edge consume old plus replace new",
+      "configs": [
+        "N8",
+        "N16",
+        "N234"
+      ],
+      "expected": "With valid=1 and ready asserted only for S: old consumed, new data published at S, valid remains 1, no overrun; new byte is consumed at S+1 when ready stays high. The ledger records CONSUME old plus ACCEPT-REPLACE at the same edge with edge/time and pre/post public states; same-byte replacement is not rejected merely because rx_data does not change.",
+      "tb_markers": [
+        "TEST_BEGIN RX-08",
+        "TEST_PASS RX-08"
+      ]
+    },
+    {
+      "id": "RX-09",
+      "acceptance_id": "RX-09",
+      "purpose": "mid-frame reset, reset-release-low recovery, clear/new-error",
+      "configs": [
+        "N8",
+        "N16",
+        "N234"
+      ],
+      "expected": "Mid-frame reset cancels in-flight frame and clears outputs; release-low stays ignored until high then falling; clear with a new frame_error keeps FE=1 and clears the other error where applicable. Mid-frame reset is exercised during DATA, START and STOP; CANCEL is derived from reset while the independent serial decoder reports an active frame, not by a post-stimulus actual_cancel() call. Each cancels the in-flight frame and a following good frame is accepted.",
+      "tb_markers": [
+        "TEST_BEGIN RX-09",
+        "TEST_PASS RX-09"
+      ]
+    }
+  ],
+  "negative": {
+    "tb": "work/peripherals/rx/tb/tb_uart_rx_neg.sv",
+    "tb_max_cycles": 20000,
+    "expected_markers": [
+      "NEG_CONTROL_PASS",
+      "NEG_CHECKER_PASS",
+      "NEG_EXTRA_VALID_DETECTED",
+      "NEG_EXTRA_VALID_CONTROL_PASS",
+      "NEG_MISSING_DETECTED",
+      "NEG_ORDER_DETECTED",
+      "NEG_WRONG_BYTE_DETECTED",
+      "NEG_TWO_EVENT_CONTROL_PASS",
+      "NEG_CAPTURE_SAME_EDGE_CONTROL_PASS",
+      "NEG_CAPTURE_DROP_CONTROL_PASS",
+      "NEG_CAPTURE_DROP_MISSING_DETECTED",
+      "NEG_CAPTURE_DROP_WRONG_BYTE_DETECTED",
+      "NEG_CAPTURE_CANCEL_CONTROL_PASS",
+      "NEG_CAPTURE_CANCEL_MISSING_DETECTED",
+      "NEG_CAPTURE_CANCEL_EXTRA_DETECTED"
+    ],
+    "forbidden_markers": [
+      "NEG_CONTROL_FAIL",
+      "NEG_CHECKER_MISSED",
+      "NEG_EXTRA_VALID_MISSED",
+      "NEG_EXTRA_VALID_CONTROL_FAIL",
+      "NEG_MISSING_MISSED",
+      "NEG_ORDER_MISSED",
+      "NEG_WRONG_BYTE_MISSED",
+      "NEG_TWO_EVENT_CONTROL_FAIL",
+      "NEG_CAPTURE_SAME_EDGE_CONTROL_FAIL",
+      "NEG_CAPTURE_DROP_CONTROL_FAIL",
+      "NEG_CAPTURE_DROP_MISSING_MISSED",
+      "NEG_CAPTURE_DROP_WRONG_BYTE_MISSED",
+      "NEG_CAPTURE_CANCEL_CONTROL_FAIL",
+      "NEG_CAPTURE_CANCEL_MISSING_MISSED",
+      "NEG_CAPTURE_CANCEL_EXTRA_MISSED",
+      "TB_WATCHDOG_TIMEOUT",
+      "TB_HARD_CAP_REJECT"
+    ],
+    "note": "Formal capture-path controls: same-edge, DROP, CANCEL; missing/extra/order/wrong-byte and missing/extra DROP/CANCEL; shared comparator macro on captured events. Status-propagation selfcheck is separate.",
+    "capture_source": "rx_public_capture is driven by public valid/ready/data/line_good/line_data/cancel inputs; it captures same-byte replacement, DROP and CANCEL streams and feeds the shared ordered comparator. The negatives are generated from captured event streams, not hand-filled actual arrays."
+  },
+  "watchdog": {
+    "tb": "work/peripherals/rx/tb/tb_uart_rx_watchdog.sv",
+    "tb_max_cycles": 200,
+    "expected_marker": "TB_WATCHDOG_TIMEOUT",
+    "expected_classification": "TIMEOUT",
+    "note": "A process timeout without TB_WATCHDOG_TIMEOUT is FAIL, not mechanism success.",
+    "process_timeout_classification": "FAIL",
+    "require_tb_marker": true,
+    "require_native_rc_zero": true
+  },
+  "illegal_config": {
+    "tb": "work/peripherals/rx/tb/tb_uart_rx_illegal.sv",
+    "clks_per_bit": 4,
+    "expected_marker": "RX_ILLEGAL_CLKS_PER_BIT=4 minimum=8",
+    "expected_classification": "PASS",
+    "note": "N<8 must be rejected at simulation start; no silent clamp."
+  },
+  "limitations": [
+    "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
+    "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
+    "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
+    "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz.",
+    "The two-stage synchronizer proves logical latency only, not analog metastability or MTBF.",
+    "PASS_REHEARSAL, local PASS and this plan's PASS are not mainline reproduction, interface compatibility, system integration or hardware acceptance.",
+    "The 1.1.0 plan adds RX contract-boundary cases and runner mechanism evidence; it is not a TX/GPIO full-matrix rerun and not a hardware/system acceptance.",
+    "The 1.2.0 plan adds a frozen ordered transaction ledger, +32-cycle per-config budgets, shared comparator negative proof, and process-timeout/log-truncation rejection; it is not a new full-matrix claim.",
+    "The 1.3.0 ledger adds protocol-derived events, edge/time and public pre/post states. It does not claim observation of hidden physical write pulses or replace the aggregate public-state counters.",
+    "Only RX-05 5e adds one DROP per configuration; old 1.2.0 logs/counts are retained as history and are not rewritten.",
+    "1.3.1 changes only RX verification: same-byte replacement coverage, true pre/post clear state and capture-path DROP/CANCEL negatives. RX RTL is unchanged; 5e DROP data remains independently decoded.",
+    "1.3.2 changes only event timing/state capture and status propagation; RX RTL is unchanged.",
+    "1.3.3 only shares the RX public capture module and fixes one-based CONSUME/pre/post observation; RX RTL unchanged.",
+    "1.3.4 changes only RX capture/order/snapshot and status controls; RX RTL unchanged.",
+    "1.3.5 fixes only RX snapshot edge/time and plan/index consistency; RX RTL and functional expectations are unchanged. Counts remain 92/110/68 and 41/41, 50/50, 29/29."
+  ],
+  "supersedes": "1.3.4",
+  "old_plan_preserved": [
+    "work/peripherals/rx/tests/rx-plan-1.3.3.json",
+    "work/peripherals/rx/tests/rx-plan-1.3.3.sha256",
+    "work/peripherals/rx/tests/rx-plan-1.3.2.json",
+    "work/peripherals/rx/tests/rx-plan-1.3.2.sha256",
+    "work/peripherals/rx/tests/rx-plan-1.3.4.json",
+    "work/peripherals/rx/tests/rx-plan-1.3.4.sha256"
+  ],
+  "event_ledger": {
+    "purpose": "Pre-freeze ordered accept/consume/drop/cancel expectations; TB increments expected counters as directed cases execute and asserts aggregate counts.",
+    "counters": [
+      "valid_assertions",
+      "consumed_count",
+      "overrun_events",
+      "frame_error_events"
+    ],
+    "cancellation": "Mid-frame DATA/START/STOP resets are checked by no stale valid/error and a following good frame; cancellation has no public count port.",
+    "expected_by_config": {
+      "N8": {
+        "valid_assertions": 41,
+        "consumed_count": 41,
+        "overrun_events": 4,
+        "frame_error_events": 7,
+        "ledger": 92
+      },
+      "N16": {
+        "valid_assertions": 50,
+        "consumed_count": 50,
+        "overrun_events": 4,
+        "frame_error_events": 7,
+        "ledger": 110
+      },
+      "N234": {
+        "valid_assertions": 29,
+        "consumed_count": 29,
+        "overrun_events": 4,
+        "frame_error_events": 7,
+        "ledger": 68
+      }
+    },
+    "authority": "These counters are the single active values; functional_expected repeats them. Old 1.3.4 40/39,49/48,28/27 values are historical and not active."
+  },
+  "runner_mechanism": {
+    "selfcheck": "work/peripherals/logs/runner-selfcheck-20261023-173021/runner-selfcheck.json",
+    "properties": [
+      "file-backed stdout/stderr instead of pipes",
+      "bounded taskkill/kill tree cleanup",
+      "cleanup result and duration recorded",
+      "simulated cleanup failure fallback bounded"
+    ],
+    "not_a_dut_result": true
+  },
+  "ledger": {
+    "expected_events": {
+      "N8": 92,
+      "N16": 110,
+      "N234": 68
+    },
+    "previous_package_events": {
+      "N8": 88,
+      "N16": 106,
+      "N234": 64
+    },
+    "delta_reason": "RX-08 adds same-byte A1/A1 same-edge consume/replace: per configuration +1 ACCEPT (fill), +1 CONSUME +1 ACCEPT-REPLACE +1 CONSUME (same-edge sequence), for +4 events. The 5e DROP and its independent serial-decoded data remain unchanged.",
+    "event_fields": [
+      "seq",
+      "edge",
+      "type",
+      "data",
+      "pre/post rx_valid",
+      "pre/post rx_ready",
+      "pre/post clear_errors",
+      "pre/post overrun",
+      "pre/post frame_error",
+      "label"
+    ],
+    "drop_data_source": "Independent raw-serial decoder on the external rx pin; not stim_bytes[0] and not a hidden physical write pulse.",
+    "drop_rule": "A good serial frame completion (decoded start/data/stop) with pre-edge rx_valid=1 and rx_ready=0 is DROP. It is still DROP when OV was already 1 and clear_errors is asserted at the same S edge.",
+    "same_edge_rule": "With valid=1 and ready=1 at the publish edge, the old byte is CONSUME and the new byte is ACCEPT-REPLACE even when the byte value is unchanged; ACCEPT is not inferred only from a valid rise.",
+    "accept_consume_rule": "ACCEPT/CONSUME are ordered protocol events tied to the good-frame completion and public valid/ready; aggregate valid/consume/FE/OV counters remain separate observable-state checks.",
+    "cancel_rule": "CANCEL is derived at reset assertion while the independent serial decoder reports an active frame. The old post-stimulus actual_cancel() call is removed; expected cancels remain in the frozen test sequence.",
+    "observable_state_limit": "The TB does not claim to observe any hidden internal write pulse; pre/post states are public ports only.",
+    "expected_cancel_labels": [
+      "RESET-DATA",
+      "RESET-START",
+      "RESET-STOP"
+    ],
+    "pre_clear_5e": {
+      "N16": {
+        "edge": 8081,
+        "data": "0x44",
+        "pre_clear": 1,
+        "post_clear": 1,
+        "pre_ov": 1,
+        "post_ov": 1
+      },
+      "note": "5e pre and post clear_errors are both real public samples at edge 8081 (+1 ps after NBA); no pre-copy special case."
+    },
+    "cancel_post_state": "CANCEL pre/post fields are sampled from public ports after asynchronous reset settles; they are not a fixed zero literal. The current three reset cases legitimately settle to 0.",
+    "same_edge_configs": [
+      "N8",
+      "N16",
+      "N234"
+    ],
+    "formal_negative_capture": [
+      "NEG_CAPTURE_SAME_EDGE_CONTROL_PASS",
+      "NEG_CAPTURE_DROP_CONTROL_PASS",
+      "NEG_CAPTURE_DROP_MISSING_DETECTED",
+      "NEG_CAPTURE_DROP_WRONG_BYTE_DETECTED",
+      "NEG_CAPTURE_CANCEL_CONTROL_PASS",
+      "NEG_CAPTURE_CANCEL_MISSING_DETECTED",
+      "NEG_CAPTURE_CANCEL_EXTRA_DETECTED"
+    ],
+    "event_timebase": {
+      "definition": "Contract d/S edges; public edge is one-based. Pre state is the last settled pre-edge public state; post state is sampled after NBA. The drop event edge 8081 keeps its actual edge; CONSUME is recorded on its actual following one-based edge.",
+      "pre_post": "pre at the true event edge before NBA; post at +1 ps after the same NBA, before 1 ns stimulus changes.",
+      "rx05_5e": {
+        "N16": {
+          "edge": 8081,
+          "data": "0x44",
+          "pre_fe": 1,
+          "post_fe": 0,
+          "pre_clear": 1,
+          "post_clear": 1,
+          "pre_ov": 1,
+          "post_ov": 1
+        }
+      },
+      "cancel": "CANCEL post fields sampled from public ports after asynchronous reset; not fixed literals."
+    },
+    "shared_capture": "Formal TB instantiates rx_public_capture and compares each event type/data/edge one-to-one in order; negative TB instantiates the same module. No content-only equivalence.",
+    "shared_capture_rule": "Formal and negative instantiate the same rx_public_capture; formal compares each event type/data/edge ordered one-to-one, not a multiset.",
+    "snapshot_rule": "pre at the true event edge before NBA; post at +1 ps after the same NBA; DROP post_clear is the real sampled value, not copied from pre_clear.",
+    "rx05_5e": {
+      "N16": {
+        "edge": 8081,
+        "data": "0x44",
+        "pre_clear": 1,
+        "pre_fe": 1,
+        "pre_ov": 1,
+        "post_clear": 1,
+        "post_fe": 0,
+        "post_ov": 1
+      }
+    }
+  },
+  "functional_expected": {
+    "N8": {
+      "valid": 41,
+      "consumed": 41,
+      "overrun": 4,
+      "frame_error": 7,
+      "ledger": 92
+    },
+    "N16": {
+      "valid": 50,
+      "consumed": 50,
+      "overrun": 4,
+      "frame_error": 7,
+      "ledger": 110
+    },
+    "N234": {
+      "valid": 29,
+      "consumed": 29,
+      "overrun": 4,
+      "frame_error": 7,
+      "ledger": 68
+    },
+    "note": "Single authoritative values; matches event_ledger.expected_by_config and new run."
+  },
+  "status_propagation": {
+    "script": "work/peripherals/rx/scripts/rx_status_selfcheck.py",
+    "rule": "nonzero native rc, truncated log, or global RX_SELFCHECK_FAIL forces FAIL in every case and in the runner exit; a per-case TEST_PASS cannot override.",
+    "verification": "Run rx_status_selfcheck.py after the final RX run; require all_pass=true. Old 20261024-232527 run is historical, not an active reference."
+  },
+  "R1_acceptance": {
+    "rule": "Every accepted ledger event has immutable pre values at the true S/consume edge and real post values at +1 ps after the same NBA; no X/Z, no missing/duplicate events, counts 92/110/68, functional 41/41, 50/50, 29/29.",
+    "first": {
+      "N8": {
+        "seq": 0,
+        "edge": 94,
+        "pre_valid": 0,
+        "post_valid": 1
+      },
+      "N16": {
+        "seq": 0,
+        "edge": 170,
+        "pre_valid": 0,
+        "post_valid": 1
+      },
+      "N234": {
+        "seq": 0,
+        "edge": 2241,
+        "pre_valid": 0,
+        "post_valid": 1
+      }
+    },
+    "first_wrong_post": {
+      "N16": {
+        "seq": 30,
+        "edge": 2618,
+        "pre_valid": 0,
+        "post_valid": 1
+      }
+    },
+    "5e": {
+      "N16": {
+        "edge": 8081,
+        "pre_clear": 1,
+        "pre_fe": 1,
+        "post_clear": 1,
+        "post_fe": 0,
+        "post_ov": 1
+      }
+    },
+    "mutation": "Any stale/next-edge pre or post snapshot, X/Z, missing/duplicate event, or pre-copied DROP post_clear is rejected."
+  }
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "成果": "五级流水线与冒险",
+    "实现位置": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/cpu.v",
+    "验证证据": [
+      "reports/verification/2026-10-24-memory-adapt-m1.md",
+      "work/quality/2026-11-01-basic-completion-m2/regression763"
+    ],
+    "适用版本": "SM2生产裸机EEI",
+    "可使用的表述": "五级流水线、两相同步存储适配、前推和真实源load-use；有限回归，不等完整ISA认证"
+  },
+  {
+    "成果": "启动链接",
+    "实现位置": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/start.S",
+    "验证证据": [
+      "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/link.ld",
+      "reports/verification/2026-10-23-c-boot-m1-external-and-run.md"
+    ],
+    "适用版本": "SM2以及独立event",
+    "可使用的表述": "真实GCC RV32I/ILP32、data复制/BSS清零/8KiB栈；RF initial不是热复位清零"
+  },
+  {
+    "成果": "SoC外设与Timer64",
+    "实现位置": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/soc_top.sv",
+    "验证证据": [
+      "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/soc_data_adapter.sv",
+      "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/local_regif_txgpio_m1.v",
+      "reports/verification/2026-10-24-timed-coremark-m1.md"
+    ],
+    "适用版本": "固定SYNC_MEMORY=1",
+    "可使用的表述": "ROM32KiB/RAM32KiB、TX/GPIO及Timer64；RX仅独立核心"
+  },
+  {
+    "成果": "基础板级CoreMark",
+    "实现位置": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/port/core_portme.c",
+    "验证证据": [
+      "reports/hardware/2026-11-02-sm2-dualseed-and-uart-closure.md",
+      "work/quality/2026-11-02-sm2-resume-m3/RESULTS.json"
+    ],
+    "适用版本": "SM2性能256/验证256",
+    "可使用的表述": "27MHz名义条件18.378963556/19.358269852秒；五CRC与重复输出通过；非EEMBC认证或独立校频"
+  },
+  {
+    "成果": "软乘优化",
+    "实现位置": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/mul_sm2.S",
+    "验证证据": [
+      "work/quality/2026-11-01-basic-completion-m2/PERFORMANCE_PLAN.json",
+      "reports/hardware/2026-11-02-sm2-dualseed-and-uart-closure.md"
+    ],
+    "适用版本": "SM2 vs同EEI旧软乘",
+    "可使用的表述": "同条件性能计算周期538539600→496232016，下降7.85598%，+60B、不增DRM；不是硬件乘法"
+  },
+  {
+    "成果": "主线资源勘误",
+    "实现位置": "work/quality/2026-11-01-basic-completion-m2/impl-sm2/build/place_route/board_top.prr",
+    "验证证据": [
+      "work/fpga/2026-11-03-event-recorder-m3/RESOURCE_PARSER_CORRECTION.json"
+    ],
+    "适用版本": "SM2 PnR",
+    "可使用的表述": "1810LUT/1527FF/14.5 DRM36等效；旧整数14已被原表纠正"
+  },
+  {
+    "成果": "真实片上效率分析",
+    "实现位置": "work/fpga/2026-11-01-coremark256-ila-efficiency-m1/qualified-windows",
+    "验证证据": [
+      "reports/hardware/2026-11-01-coremark256-onchip-pipeline-efficiency.md",
+      "work/fpga/2026-11-01-coremark256-ila-efficiency-m1/BUBBLE_ACCOUNTING.json"
+    ],
+    "适用版本": "旧O2固定256调试版",
+    "可使用的表述": "4个不同140通道×1024点窗口，实际EX槽密度/14load-use/169控制冲刷；非退休IPC或SM2新窗口"
+  },
+  {
+    "成果": "复位同步可靠性",
+    "实现位置": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/board_reset_sync.sv",
+    "验证证据": [
+      "reports/hardware/2026-11-01-basic-reliability-and-performance.md",
+      "work/quality/2026-11-01-basic-completion-m2/DEBUG_CDC_IO_DISPOSITION.json"
+    ],
+    "适用版本": "非调试可靠性版/旧调试观察版分开",
+    "可使用的表述": "显式同步级保留及窄域入口例外；旧调试4Critical保持有限观察限制"
+  },
+  {
+    "成果": "事件记录算法",
+    "实现位置": "work/application/2026-11-03-event-recorder-m2/firmware/app.c",
+    "验证证据": [
+      "reports/application/2026-11-03-event-recorder-three-scenario-acceptance.md",
+      "reports/application/2026-11-03-event-recorder-m2-software-freeze.md"
+    ],
+    "适用版本": "event M2/M3-M5板级",
+    "可使用的表述": "100ms/128样本、二样本滤波、8槽环形与故障后2事件；正常/顺序错/超时真实板级账本"
+  },
+  {
+    "成果": "应用量化比较",
+    "实现位置": "work/application/2026-11-03-event-recorder-m1/COMPARISON.json",
+    "验证证据": [
+      "reports/application/2026-11-03-event-recorder-and-independent-advanced.md"
+    ],
+    "适用版本": "M1 12000tick/32样本软件同条件",
+    "可使用的表述": "正常UART1216→256字符、记录载荷384→128B、处理3002→2722tick；不是当前板级dense对比或总CPU占用"
+  },
+  {
+    "成果": "应用实现",
+    "实现位置": "work/fpga/2026-11-03-event-recorder-m3/AUDIT_RESULT_v2.json",
+    "验证证据": [
+      "reports/application/2026-11-03-event-recorder-pds-build.md"
+    ],
+    "适用版本": "1836B event固件",
+    "可使用的表述": "1778LUT/1527FF/12.5DRM36，27MHz内部8组时序通过，非全IO/CDC签核"
+  },
+  {
+    "成果": "应用真实演示",
+    "实现位置": "work/video-recording/2026-11-03-event-demo-v1/take-normal-r3/sscom-after-take.png",
+    "验证证据": [
+      "work/video-recording/2026-11-03-event-demo-v1/take-order/sscom-receive-original.txt",
+      "work/video-recording/2026-11-03-event-demo-v1/take-timeout-r2/sscom-after-take.png"
+    ],
+    "适用版本": "正常/超时真实SSCOM UI；顺序错误为真实串口原文",
+    "可使用的表述": "三场景真实接收文本与正常/超时界面；顺序错误原截图为Codex前台已排除；手机视频用户报告完成，原片/终剪未审"
+  },
+  {
+    "成果": "BTB与精确控制修复",
+    "实现位置": "work/advanced/2026-11-03-mmode-vector-m3/source/cpu_hl4.v",
+    "验证证据": [
+      "reports/verification/2026-11-03-btb-mmode-independent-candidate.md",
+      "reports/verification/2026-11-03-btb-ifstall-candidate-m2.md",
+      "reports/verification/2026-11-03-mmode-vector-m3.md"
+    ],
+    "适用版本": "独立M1-M3，不替换生产",
+    "可使用的表述": "单次store消费/训练、目标异常归属、stall链接保留、有限M-mode向量IRQ及返回；非完整特权"
+  },
+  {
+    "成果": "候选真C与CoreMark",
+    "实现位置": "work/advanced/2026-11-03-coremark-strict-m5/AUDIT.json",
+    "验证证据": [
+      "reports/verification/2026-11-03-taskB-software-closure.md",
+      "reports/verification/2026-11-03-coremark-resource-no-board.md"
+    ],
+    "适用版本": "M4/M5独立32项BTB",
+    "可使用的表述": "真C逐笔和全态；CoreMark10次短测、24故障、46相关；32项周期降低17.7560%/18.2796%"
+  },
+  {
+    "成果": "BTB资源时序",
+    "实现位置": "work/fpga/2026-11-03-advanced-btb-offline-m1",
+    "验证证据": [
+      "reports/verification/2026-11-03-coremark-resource-no-board.md"
+    ],
+    "适用版本": "同1迭代ROM 0/64/32项",
+    "可使用的表述": "32项11299LUT/5088FF/16DRM36，27MHz内部STA通过/估33.9006MHz，较64少611LUT/1888FF；未板测"
+  },
+  {
+    "成果": "长轨迹复用",
+    "实现位置": "work/analysis/2026-11-03-coremark-evidence-alternative-v1/r3/RESULTS.json",
+    "验证证据": [
+      "reports/verification/2026-11-03-coremark-layered-evidence.md"
+    ],
+    "适用版本": "M6 192次未完成前缀",
+    "可使用的表述": "每种子16252928事件逐笔前缀匹配；guard错误终止，绝非≥10秒候选通过"
+  },
+  {
+    "成果": "两路I/D Cache",
+    "实现位置": "work/independent-extensions/2026-11-03-cache-ai-m0-7c92/CACHE_REPORT.md",
+    "验证证据": [
+      "work/independent-extensions/2026-11-03-cache-ai-m0-7c92/CACHE_COMPARISON.csv",
+      "reports/verification/2026-11-03-independent-cache-ai-reception.md"
+    ],
+    "适用版本": "M0独立Cache",
+    "可使用的表述": "I/D各128B、2way/4set/16B、write-through/no-write-allocate；局部性709→390、stream357→918"
+  },
+  {
+    "成果": "准入策略演进",
+    "实现位置": "work/independent-extensions/2026-11-03-cache-ai-m0-7c92/cache-m2-two-ghost/REPORT.md",
+    "验证证据": [
+      "work/independent-extensions/2026-11-03-cache-ai-m0-7c92/cache-m1-admission/REPORT.md",
+      "work/independent-extensions/2026-11-03-cache-ai-m0-7c92/cache-m2-two-ghost/COMPARISON.csv",
+      "reports/reviews/2026-11-03-cache-ai-m0-m2-v1/GOLDEN_RECHECK.json"
+    ],
+    "适用版本": "M1/M2独立，不默认启用",
+    "可使用的表述": "双ghost交替534→282、stream357；M0交替270仍快，twoword942等退化保留"
+  },
+  {
+    "成果": "定点FC",
+    "实现位置": "work/independent-extensions/2026-11-03-cache-ai-m0-7c92/AI_REPORT.md",
+    "验证证据": [
+      "work/independent-extensions/2026-11-03-cache-ai-m0-7c92/AI_RESULTS.json",
+      "reports/verification/2026-11-03-independent-cache-ai-reception.md"
+    ],
+    "适用版本": "独立16×8合成FC",
+    "可使用的表述": "128MAC、40bit整数累加、ties-away舍入/饱和、136/148拍；配置单列，无真实模型/识别率"
+  },
+  {
+    "成果": "流式严格验证",
+    "实现位置": "reports/verification/2026-10-26-coremark-stream-evidence-m1.md",
+    "验证证据": [
+      "reports/verification/2026-11-03-coremark-resource-no-board.md",
+      "reports/verification/2026-11-03-coremark-layered-evidence.md"
+    ],
+    "适用版本": "主线验证链",
+    "可使用的表述": "无损分段/逐笔有序/全态及独立计时、负向守卫；不将旧重放作新DUT"
+  },
+  {
+    "成果": "成果归属",
+    "实现位置": ".project-memory/COLLABORATION.md",
+    "验证证据": [
+      "CONTRIBUTION.md",
+      "deliveries/task2-review-20261101-v01/mainline-adjudication-v1/MAINLINE_DECISION.md"
+    ],
+    "适用版本": "用户确认主线及B来源",
+    "可使用的表述": "主线由负责人Codex辅助；B外设/包装/自测/离线工具与原HL4另列，主线审查修复集成另列"
+  }
+]

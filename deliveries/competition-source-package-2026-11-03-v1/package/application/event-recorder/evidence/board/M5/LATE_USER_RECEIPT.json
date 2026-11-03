@@ -1,0 +1,8 @@
+{
+  "received_at": "2026-11-03T11:04:48.708632+08:00",
+  "user": "已完成，KEY0按完后LED6亮，全部完成后等约两秒LED6灭LED0亮",
+  "previous_capture_state": "TIME_LIMIT_0_BYTES",
+  "relation": "Receipt arrived after prior capture closed; cannot attribute a complete UART ledger to this physical observation",
+  "reset_or_program_calls": 0,
+  "plan": "Fresh timeout receiver, same image and unchanged frozen expected ledger"
+}

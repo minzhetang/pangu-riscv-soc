@@ -1,0 +1,45 @@
+[
+  {
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+      "-march=rv32i",
+      "-mabi=ilp32",
+      "-O2",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-msmall-data-limit=0",
+      "-mno-relax",
+      "-nostdlib",
+      "-nostartfiles",
+      "-Wl,--no-relax",
+      "-Wl,-T,firmware/link.ld",
+      "-Wl,-Map,D:\\A_FPGA_Comp\\work\\pds-jtag\\2026-11-03-event-recorder-m5\\portable-build-dense\\program.map",
+      "-DSAMPLE_PERIOD=2700000",
+      "-DSAMPLE_COUNT=128",
+      "-DWAIT_SAMPLES=20",
+      "-DDENSE=1",
+      "-DAUDIT=0",
+      "-o",
+      "D:\\A_FPGA_Comp\\work\\pds-jtag\\2026-11-03-event-recorder-m5\\portable-build-dense\\program.elf",
+      "firmware/start.S",
+      "firmware/app.c"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\deliveries\\event-recorder-A-2026-11-03-v1",
+    "native_rc": 0,
+    "seconds": 0.1720000000204891,
+    "max_seconds": 60
+  },
+  {
+    "argv": [
+      "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+      "-O",
+      "binary",
+      "D:\\A_FPGA_Comp\\work\\pds-jtag\\2026-11-03-event-recorder-m5\\portable-build-dense\\program.elf",
+      "D:\\A_FPGA_Comp\\work\\pds-jtag\\2026-11-03-event-recorder-m5\\portable-build-dense\\program.bin"
+    ],
+    "cwd": "D:\\A_FPGA_Comp\\deliveries\\event-recorder-A-2026-11-03-v1",
+    "native_rc": 0,
+    "seconds": 0.01500000013038516,
+    "max_seconds": 60
+  }
+]

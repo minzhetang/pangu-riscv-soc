@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "correct_control",
+      "selftest_status": "PASS",
+      "actual_checker_status": "PASS",
+      "expected": "PASS",
+      "detail": [],
+      "DUT_runs": 0
+    },
+    {
+      "id": "extra_duplicate_WB",
+      "selftest_status": "PASS",
+      "actual_checker_status": "FAIL",
+      "expected": "REJECT",
+      "detail": [
+        {
+          "kind": "every ordered WB",
+          "index": 2,
+          "actual": "['2', '00018000']",
+          "expected": "['3', '00010008']",
+          "actual_count": 725,
+          "expected_count": 724
+        }
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "missing_STORE",
+      "selftest_status": "PASS",
+      "actual_checker_status": "FAIL",
+      "expected": "REJECT",
+      "detail": [
+        {
+          "kind": "ordered READ/STORE",
+          "index": 1,
+          "actual": "['STORE', '00000054', '00010004', '00000000', 'f']",
+          "expected": "['STORE', '00000030', '00010000', '13579bdf', 'f']",
+          "actual_count": 384,
+          "expected_count": 385
+        }
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "wrong_WB",
+      "selftest_status": "PASS",
+      "actual_checker_status": "FAIL",
+      "expected": "REJECT",
+      "detail": [
+        {
+          "kind": "every ordered WB",
+          "index": 0,
+          "actual": "['2', '00018001']",
+          "expected": "['2', '00018000']",
+          "actual_count": 724,
+          "expected_count": 724
+        }
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "wrong_UART_pin",
+      "selftest_status": "PASS",
+      "actual_checker_status": "FAIL",
+      "expected": "REJECT",
+      "detail": [
+        {
+          "kind": "UART post-edge",
+          "actual": "0",
+          "expected": "1"
+        }
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "extra_GPIO_accept",
+      "selftest_status": "PASS",
+      "actual_checker_status": "FAIL",
+      "expected": "REJECT",
+      "detail": [
+        {
+          "kind": "actual reviewed GPIO enable",
+          "actual": "1",
+          "expected": "0"
+        },
+        {
+          "kind": "actual GPIO enable stream",
+          "index": 0,
+          "actual": "(101, 0)",
+          "expected": "(411, 90)",
+          "actual_count": 4,
+          "expected_count": 3
+        }
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "wrong_MMIO_read",
+      "selftest_status": "PASS",
+      "actual_checker_status": "FAIL",
+      "expected": "REJECT",
+      "detail": [
+        {
+          "kind": "MMIO read independent pre-edge",
+          "actual": "2",
+          "expected": "1"
+        }
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "unknown_pin",
+      "selftest_status": "PASS",
+      "actual_checker_status": "REJECTED_INPUT_VALIDATION",
+      "expected": "REJECT",
+      "detail": [
+        "unknown bus values"
+      ],
+      "DUT_runs": 0
+    }
+  ],
+  "source_original_SHA_unchanged": {
+    "bus.log": "64CE75F4813947980B29305F8F9280A20AC53C8B709C414003E23B2BB186B934",
+    "trace.log": "33855C9128E96225057F2BB53880DA49203A93FE6E1229DE06D86212AB79FBD1",
+    "registers.hex": "631992E63D7BBD4AE21A0692A5B79F4571182DFD6877A1954ADF4DE65A5554A7",
+    "ram.hex": "AE5553DEAF58482DA748C3A2DCC9418C55FE0B00204E08841F0352CD5C233510",
+    "stdout.log": "F5E9055EDACED18B135E4C13F4AC96E388B483B2846940C20A6809F74D399803"
+  },
+  "new_DUT_runs": 0,
+  "scope": "mainline live checker, derived corrupted evidence only"
+}

@@ -1,0 +1,470 @@
+{
+  "kind": "ACTUAL",
+  "run_id": "regif-m1-20261025-210743",
+  "generated_at": "2026-10-25T21:07:43+08:00",
+  "task_id": "B-REGIF",
+  "module_version": "1.0.0",
+  "interface_version": "LOCAL-REGIF-TXGPIO-M1/1.0.0",
+  "tools": [
+    {
+      "name": "iverilog",
+      "version": "12.0 (devel) (s20150603-1539-g2693dd32b)",
+      "legal_source": "Existing lawful local tool; explicit path, PATH unchanged."
+    },
+    {
+      "name": "vvp",
+      "version": "12.0 (devel) (s20150603-1539-g2693dd32b)",
+      "legal_source": "Existing lawful local tool; explicit path, PATH unchanged."
+    },
+    {
+      "name": "python",
+      "version": "3.12.10",
+      "legal_source": "Existing lawful local tool; explicit path, PATH unchanged."
+    }
+  ],
+  "tests": [
+    {
+      "id": "W01-N16",
+      "acceptance_id": "W01",
+      "purpose": "W01-W10 wrapper contract check at N=16",
+      "expected": "rst_n=0: io_rdata=0, gpio_out=0, uart_tx=1, io_wr_error=0. Release edge with a write request must not accept (pre-edge ready=0); that edge is one real request and must be counted as rejected by the public request monitor. A following legal edge accepts exactly once.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/6/11/6/26/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.031,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N16.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N16.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N16.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N16.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    },
+    {
+      "id": "W02-N16",
+      "acceptance_id": "W02",
+      "purpose": "W01-W10 wrapper contract check at N=16",
+      "expected": "io_sel=0 or io_wr_en=0: all writes rejected/no effect. Reads 0x00/0x08/0x0c/0x10 return 0/tx_ready/gpio_out/gpio_in_sync; unselected or nonaligned reads return 0; reads never change counters/state.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/6/11/6/26/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.031,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N16.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N16.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N16.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N16.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    },
+    {
+      "id": "W03-N16",
+      "acceptance_id": "W03",
+      "purpose": "W01-W10 wrapper contract check at N=16",
+      "expected": "Three consecutive GPIO writes A,A,B on E edges produce three independent write events, no dedup; the actual GPIO accept ledger must show A,A,B, including two separate A writes. High 24 wdata bits ignored.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/6/11/6/26/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.031,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N16.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N16.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N16.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N16.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    },
+    {
+      "id": "W04-N16",
+      "acceptance_id": "W04",
+      "purpose": "W01-W10 wrapper contract check at N=16",
+      "expected": "GPIO input is not fed to output. A stable change before E0 reaches sync_meta at E0 and gpio_in_sync at E1; wrapper adds no extra synchronizer. Check x/z on relevant outputs.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/6/11/6/26/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.031,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N16.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N16.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N16.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N16.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    },
+    {
+      "id": "W05-N16",
+      "acceptance_id": "W05",
+      "purpose": "W01-W10 wrapper contract check at N=16",
+      "expected": "Aligned full-strobe write 0x00 with tx_ready=1 starts one 8N1 frame at E; independent serial decoder sees start low, 8 LSB-first data bits and stop high; high wdata bits ignored. No extra frame.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/6/11/6/26/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.031,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N16.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N16.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N16.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N16.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    },
+    {
+      "id": "W06-N16",
+      "acceptance_id": "W06",
+      "purpose": "W01-W10 wrapper contract check at N=16",
+      "expected": "Write 0x00 while tx_busy=1: io_wr_error=1, tx_valid not asserted, no queued frame. At the ready-return edge pre-edge ready=0: reject. Following eligible edge accepts exactly one. Same byte repeated still creates independent frames.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/6/11/6/26/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.031,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N16.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N16.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N16.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N16.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    },
+    {
+      "id": "W07-N16",
+      "acceptance_id": "W07",
+      "purpose": "W01-W10 wrapper contract check at N=16",
+      "expected": "Writes to 04/14, 08, 10, unselected, nonaligned, io_wstrb!=1111 all set io_wr_error and cause no TX/GPIO side effect. Read-only/reserved reads return 0.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/6/11/6/26/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.031,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N16.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N16.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N16.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N16.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    },
+    {
+      "id": "W08-N16",
+      "acceptance_id": "W08",
+      "purpose": "W01-W10 wrapper contract check at N=16",
+      "expected": "Every valid E edge is one request; no edge detection/dedup. Request count/order, success/reject flags and side effects match the frozen table; no hidden extra writes.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/6/11/6/26/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.031,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N16.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N16.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N16.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N16.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    },
+    {
+      "id": "W09-N16",
+      "acceptance_id": "W09",
+      "purpose": "W01-W10 wrapper contract check at N=16",
+      "expected": "Reset during TX start/data/stop cancels the frame (no completion); gpio_out and gpio_in_sync clear; after release a new TX write/GPIO write succeeds once, old request is not replayed.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/6/11/6/26/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.031,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N16.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N16.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N16.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N16.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    },
+    {
+      "id": "W10-N16",
+      "acceptance_id": "W10",
+      "purpose": "W01-W10 wrapper contract check at N=16",
+      "expected": "Control checker passes correct expected TX byte/GPIO sequence. Deliberately wrong byte, missing frame, extra frame, extra/missing/duplicate GPIO acceptance, missing/duplicate/wrong TEST marker, TEST_FAIL, nonzero native rc and truncated log must be detected; ordinary process timeout is not success.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/6/11/6/26/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.031,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N16.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N16.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N16.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N16.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N16.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    },
+    {
+      "id": "W05-N234",
+      "acceptance_id": "W05",
+      "purpose": "W01-W10 wrapper contract check at N=234",
+      "expected": "Aligned full-strobe write 0x00 with tx_ready=1 starts one 8N1 frame at E; independent serial decoder sees start low, 8 LSB-first data bits and stop high; high wdata bits ignored. No extra frame.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/0/1/6/10/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.11,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N234.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N234.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N234.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N234.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N234.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    },
+    {
+      "id": "W06-N234",
+      "acceptance_id": "W06",
+      "purpose": "W01-W10 wrapper contract check at N=234",
+      "expected": "Write 0x00 while tx_busy=1: io_wr_error=1, tx_valid not asserted, no queued frame. At the ready-return edge pre-edge ready=0: reject. Following eligible edge accepts exactly one. Same byte repeated still creates independent frames.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/0/1/6/10/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.11,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N234.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N234.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N234.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N234.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N234.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    },
+    {
+      "id": "W09-N234",
+      "acceptance_id": "W09",
+      "purpose": "W01-W10 wrapper contract check at N=234",
+      "expected": "Reset during TX start/data/stop cancels the frame (no completion); gpio_out and gpio_in_sync clear; after release a new TX write/GPIO write succeeds once, old request is not replayed.",
+      "expected_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "actual": "BEGIN=1 PASS=1; counters 9/0/1/6/10/6/3/0",
+      "status": "PASS",
+      "duration_s": 0.11,
+      "command": {
+        "argv": [
+          "D:\\iverilog\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\iverilog\\lib\\ivl",
+          "waves/regif-m1-20261025-210743/regif_m1_N234.vvp",
+          "+WAVE_FILE=waves/regif-m1-20261025-210743/regif_m1_N234.vcd"
+        ],
+        "cwd": "work\\regif\\txgpio-m1",
+        "executed": true,
+        "timeout_s": 30
+      },
+      "log_paths": [
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\compile_N234.log",
+        "work\\regif\\txgpio-m1\\logs\\regif-m1-20261025-210743\\run_N234.log"
+      ],
+      "wave_paths": [
+        "work\\regif\\txgpio-m1\\waves\\regif-m1-20261025-210743\\regif_m1_N234.vcd"
+      ],
+      "limitations": [
+        "Simulation-only; no hardware/PDS/timing evidence."
+      ]
+    }
+  ],
+  "limitations": [
+    "Simulation-only; no PDS/timing/board/hardware evidence.",
+    "No RX, FIFO, interrupt, bus fabric, CPU or SoC integration.",
+    "N8 is not rerun in this package; prior core evidence remains separate.",
+    "N234 is a reduced normal/repeat/reset smoke, not a full W01-W10 matrix.",
+    "The 1.0.1 plan is functionally identical to 1.0.0; it only records ordinary VCD generation. The earlier 1.0.0 run remains available as history, not as a final VCD-bearing acceptance run.",
+    "The 1.0.2 plan corrects the W01 request accounting from 10 to 11 rejects and freezes the actual event ledger; it does not change the wrapper RTL or frozen TX/GPIO cores.",
+    "W06 ready-return-edge request coverage is explicitly marked as a gap; no claim is made for it.",
+    "W06 is covered by A-W06-SUPPLEMENT in the mainline reply; B's 1.0.4 retains the old gap as history and does not rerun W06.",
+    "1.0.5 changes only TX monitor event/observed edge labels; TX/wrapper RTL and timing unchanged. W06 remains A-W06-SUPPLEMENT."
+  ],
+  "issues": [
+    "Packaging only; not A SoC integration, formal timing, RX packaging or hardware."
+  ]
+}

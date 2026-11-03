@@ -1,0 +1,4 @@
+0000: 00003093  sltiu x1,x0,0 ;0
+0004: 00003013  sltiu x0,x0,0 ;discard0
+0008: 0000b113  sltiu x2,x1,0 ;0
+000c: 05a00f93  addi x31,x0,90 ; completion

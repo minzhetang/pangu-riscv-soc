@@ -1,0 +1,12 @@
+{
+  "id": "P02-R-validation-bus",
+  "status": "MATCH",
+  "no_difference": true,
+  "first_difference": null,
+  "neighbors": [],
+  "differences": [],
+  "error": null,
+  "checked": 1124271,
+  "expected_records": 1124271,
+  "actual_records": 1124271
+}

@@ -1,0 +1,12 @@
+0000: 00002083  lw x1,0(x0) ; 80000000
+0004: 00402103  lw x2,4(x0) ; 7fffffff
+0008: 0020a1b3  slt x3,x1,x2 ; 1, subtraction wraps+1
+000c: 00112233  slt x4,x2,x1 ; 0, subtraction wraps-1
+0010: 0010a2b3  slt x5,x1,x1 ; 0
+0014: 00212333  slt x6,x2,x2 ; 0
+0018: 0000a3b3  slt x7,x1,x0 ; 1
+001c: 00102433  slt x8,x0,x1 ; 0
+0020: 002024b3  slt x9,x0,x2 ; 1
+0024: 00012533  slt x10,x2,x0 ; 0
+0028: 00302423  sw x3,8(x0)
+002c: 05a00f93  addi x31,x0,90 ; completion

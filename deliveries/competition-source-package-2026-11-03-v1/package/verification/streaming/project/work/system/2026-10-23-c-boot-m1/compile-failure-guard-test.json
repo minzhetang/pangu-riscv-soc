@@ -1,0 +1,5 @@
+{
+  "status": "PASS_GUARD_ONLY",
+  "assertion": "Never run a partial failed-compile VVP",
+  "native_tools_started": 0
+}

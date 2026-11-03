@@ -1,0 +1,12 @@
+warning: Some design elements have no explicit time unit and/or
+       : time precision. This may cause confusing timing results.
+       : Affected design elements are:
+       :   -- module alu declared here: D:\A_FPGA_Comp\work\system\2026-10-23-c-boot-m1\source\alu.v:1
+       :   -- module control declared here: D:\A_FPGA_Comp\work\system\2026-10-23-c-boot-m1\source\control.v:1
+       :   -- module cpu declared here: D:\A_FPGA_Comp\work\system\2026-10-23-c-boot-m1\source\cpu.v:6
+       :   -- module regfile declared here: D:\A_FPGA_Comp\work\system\2026-10-23-c-boot-m1\source\regfile.v:1
+D:\A_FPGA_Comp\work\system\2026-10-23-c-boot-m1\memory_model.sv:22: warning: @* is sensitive to all 4096 words in array 'rom'.
+D:\A_FPGA_Comp\work\system\2026-10-23-c-boot-m1\memory_model.sv:24: warning: @* is sensitive to all 16384 words in array 'ram'.
+D:\A_FPGA_Comp\work\system\2026-10-23-c-boot-m1\memory_model.sv:24: warning: @* is sensitive to all 16384 words in array 'ram'.
+D:\A_FPGA_Comp\work\system\2026-10-23-c-boot-m1\memory_model.sv:25: warning: @* is sensitive to all 16384 words in array 'ram'.
+D:\A_FPGA_Comp\work\system\2026-10-23-c-boot-m1\memory_model.sv:25: warning: @* is sensitive to all 16384 words in array 'ram'.

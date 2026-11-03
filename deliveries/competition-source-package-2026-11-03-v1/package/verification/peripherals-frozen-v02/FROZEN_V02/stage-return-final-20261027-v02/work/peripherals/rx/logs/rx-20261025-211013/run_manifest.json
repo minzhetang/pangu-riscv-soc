@@ -1,0 +1,162 @@
+{
+  "run_id": "rx-20261025-211013",
+  "generated_at": "2026-10-25T21:10:13+08:00",
+  "plan": {
+    "path": "work/peripherals/rx/tests/rx-plan-1.3.5.json",
+    "expected_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+    "actual_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+    "hash_match": true,
+    "artifacts_ok": true,
+    "status": "PASS",
+    "log": "work/peripherals/rx/logs/rx-20261025-211013/plan_check.log"
+  },
+  "tools": [
+    {
+      "name": "Icarus Verilog (iverilog)",
+      "version": "12.0 (devel) (s20150603-1539-g2693dd32b)",
+      "legal_source": "Existing lawful local Icarus installation recorded in B-ENV; explicit path D:\\iverilog\\bin\\iverilog.exe, PATH unchanged."
+    },
+    {
+      "name": "Icarus Verilog (vvp)",
+      "version": "12.0 (devel) (s20150603-1539-g2693dd32b)",
+      "legal_source": "Existing lawful local Icarus installation recorded in B-ENV; explicit path D:\\iverilog\\bin\\vvp.exe, PATH unchanged."
+    },
+    {
+      "name": "Python (runner/results only)",
+      "version": "3.12.10",
+      "legal_source": "Existing local Python 3.12 embeddable installation recorded in B-ENV; explicit path, standard library only."
+    }
+  ],
+  "configs": {
+    "8": {
+      "compile_command": [
+        "D:\\iverilog\\bin\\iverilog.exe",
+        "-B",
+        "D:\\iverilog\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_uart_rx",
+        "-DCLKS_PER_BIT=8",
+        "-DTB_MAX_CYCLES=5045",
+        "-I",
+        "tb",
+        "-o",
+        "waves/rx-20261025-211013/uart_rx_N8.vvp",
+        "src/uart_rx.v",
+        "tb/rx_public_capture.sv",
+        "tb/tb_uart_rx.sv"
+      ],
+      "compile_log": "work/peripherals/rx/logs/rx-20261025-211013/compile_N8.log",
+      "compile_rc": 0,
+      "compile_duration_s": 0.047,
+      "run_command": [
+        "D:\\iverilog\\bin\\vvp.exe",
+        "-N",
+        "-M-",
+        "-MD:\\iverilog\\lib\\ivl",
+        "waves/rx-20261025-211013/uart_rx_N8.vvp",
+        "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N8.vcd"
+      ],
+      "run_log": "work/peripherals/rx/logs/rx-20261025-211013/run_N8.log",
+      "run_rc": 0,
+      "run_duration_s": 0.078,
+      "status": "PASS",
+      "vcd": "waves/rx-20261025-211013/uart_rx_N8.vcd",
+      "vcd_bytes": 456354
+    },
+    "16": {
+      "compile_command": [
+        "D:\\iverilog\\bin\\iverilog.exe",
+        "-B",
+        "D:\\iverilog\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_uart_rx",
+        "-DCLKS_PER_BIT=16",
+        "-DTB_MAX_CYCLES=11319",
+        "-I",
+        "tb",
+        "-o",
+        "waves/rx-20261025-211013/uart_rx_N16.vvp",
+        "src/uart_rx.v",
+        "tb/rx_public_capture.sv",
+        "tb/tb_uart_rx.sv"
+      ],
+      "compile_log": "work/peripherals/rx/logs/rx-20261025-211013/compile_N16.log",
+      "compile_rc": 0,
+      "compile_duration_s": 0.063,
+      "run_command": [
+        "D:\\iverilog\\bin\\vvp.exe",
+        "-N",
+        "-M-",
+        "-MD:\\iverilog\\lib\\ivl",
+        "waves/rx-20261025-211013/uart_rx_N16.vvp",
+        "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N16.vcd"
+      ],
+      "run_log": "work/peripherals/rx/logs/rx-20261025-211013/run_N16.log",
+      "run_rc": 0,
+      "run_duration_s": 0.125,
+      "status": "PASS",
+      "vcd": "waves/rx-20261025-211013/uart_rx_N16.vcd",
+      "vcd_bytes": 1023554
+    },
+    "234": {
+      "compile_command": [
+        "D:\\iverilog\\bin\\iverilog.exe",
+        "-B",
+        "D:\\iverilog\\lib\\ivl",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_uart_rx",
+        "-DCLKS_PER_BIT=234",
+        "-DTB_MAX_CYCLES=110967",
+        "-I",
+        "tb",
+        "-o",
+        "waves/rx-20261025-211013/uart_rx_N234.vvp",
+        "src/uart_rx.v",
+        "tb/rx_public_capture.sv",
+        "tb/tb_uart_rx.sv"
+      ],
+      "compile_log": "work/peripherals/rx/logs/rx-20261025-211013/compile_N234.log",
+      "compile_rc": 0,
+      "compile_duration_s": 0.062,
+      "run_command": [
+        "D:\\iverilog\\bin\\vvp.exe",
+        "-N",
+        "-M-",
+        "-MD:\\iverilog\\lib\\ivl",
+        "waves/rx-20261025-211013/uart_rx_N234.vvp",
+        "+WAVE_FILE=waves/rx-20261025-211013/uart_rx_N234.vcd"
+      ],
+      "run_log": "work/peripherals/rx/logs/rx-20261025-211013/run_N234.log",
+      "run_rc": 0,
+      "run_duration_s": 0.891,
+      "status": "PASS",
+      "vcd": "waves/rx-20261025-211013/uart_rx_N234.vcd",
+      "vcd_bytes": 11243096
+    }
+  },
+  "negative": {
+    "compile_log": "work/peripherals/rx/logs/rx-20261025-211013/compile_neg.log",
+    "run_log": "work/peripherals/rx/logs/rx-20261025-211013/run_neg.log",
+    "status": "PASS"
+  },
+  "watchdog": {
+    "compile_log": "work/peripherals/rx/logs/rx-20261025-211013/compile_watchdog.log",
+    "run_log": "work/peripherals/rx/logs/rx-20261025-211013/run_watchdog.log",
+    "status": "TIMEOUT"
+  },
+  "illegal_config": {
+    "compile_log": "work/peripherals/rx/logs/rx-20261025-211013/compile_illegal.log",
+    "run_log": "work/peripherals/rx/logs/rx-20261025-211013/run_illegal.log",
+    "status": "PASS"
+  },
+  "schema_validate": {
+    "status": "PASS",
+    "log": "work/peripherals/rx/logs/rx-20261025-211013/schema_validate.log"
+  }
+}

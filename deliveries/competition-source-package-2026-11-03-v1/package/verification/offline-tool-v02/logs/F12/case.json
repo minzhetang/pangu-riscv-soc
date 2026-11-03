@@ -1,0 +1,17 @@
+{
+  "id": "F12",
+  "expected": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "../outside.log",
+    "complete": true
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "generated/faults/f06_mutate.log",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {}
+}

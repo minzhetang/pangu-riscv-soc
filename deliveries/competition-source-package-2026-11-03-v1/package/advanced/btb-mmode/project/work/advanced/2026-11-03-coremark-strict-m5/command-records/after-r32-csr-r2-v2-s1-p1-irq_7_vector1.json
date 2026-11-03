@@ -1,0 +1,19 @@
+{
+  "name": "after-r32-csr-r2-v2-s1-p1-irq_7_vector1",
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+    "-M",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\after-r32-csr-r2-v2-s1-p1.vvp",
+    "+IRQ=128",
+    "+IRQ_AT=1"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\after-r32-csr-r2-v2-s1-p1\\irq_7_vector1",
+  "rc": 0,
+  "seconds": 0.125,
+  "remaining_before_close": [],
+  "input_sha256": {
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\after-r32-csr-r2-v2-s1-p1.vvp": "c799fce64d95ade965b8ed28e7ed325c6b302d428d2fe487a235fad68e3dfe88",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\after-r32-csr-r2-v2-s1-p1\\irq_7_vector1\\program.hex": "14b23c453a1300239cdda98eff4af64c164c39a33d743e24406d17af65e2dca7"
+  }
+}

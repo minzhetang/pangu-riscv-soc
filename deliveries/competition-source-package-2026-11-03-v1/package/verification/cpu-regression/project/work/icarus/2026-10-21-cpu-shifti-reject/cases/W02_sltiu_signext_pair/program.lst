@@ -1,0 +1,11 @@
+0000: fff03093  sltiu x1,x0,-1 ;1
+0004: fff02113  slti x2,x0,-1 ;0 signed
+0008: fff00193  addi x3,x0,-1
+000c: 0011b213  sltiu x4,x3,1 ;0
+0010: 0011a293  slti x5,x3,1 ;1 signed
+0014: 00100313  addi x6,x0,1
+0018: 00c31313  slli x6,x6,12 ;4096
+001c: fff33393  sltiu x7,x6,-1 ;1, wrongfff threshold gives0
+0020: fff1b413  sltiu x8,x3,-1 ;0 equal
+0024: 0001b493  sltiu x9,x3,0 ;0
+0028: 05a00f93  addi x31,x0,90 ; completion

@@ -1,0 +1,27 @@
+{
+  "error": null,
+  "elapsed_seconds": 190.93700000015087,
+  "cleanup": {
+    "job_empty": true,
+    "forced_cleanup": false,
+    "forced_non_console_cleanup": false,
+    "remaining_names_before_cleanup": [],
+    "root_exit_code": 0
+  },
+  "inputs_unchanged": true,
+  "artifacts": [],
+  "license_issue": false,
+  "license_remaining_days_actual_prompts": [],
+  "sanitized_native_log_files": [
+    "pred0/flow.log",
+    "pred0/run.log",
+    "pred0/compile/run.log",
+    "pred0/device_map/run.log",
+    "pred0/place_route/run.log",
+    "pred0/report_timing/run.log",
+    "pred0/synthesize/run.log",
+    "pred0/compile/parse_design/run.log"
+  ],
+  "audit_pending": true,
+  "hardware_calls": 0
+}

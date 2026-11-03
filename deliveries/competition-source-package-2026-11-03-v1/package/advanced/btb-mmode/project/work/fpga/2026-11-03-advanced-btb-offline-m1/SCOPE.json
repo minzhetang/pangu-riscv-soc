@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-03",
+  "purpose": "User requested no-board CoreMark/frequency/resource comparison",
+  "runs": 2,
+  "device": "PG2L100H-6IFBG676",
+  "clock_MHz": 27,
+  "flow": "compile/synthesize/dev_map/pnr/report_timing; NO bitstream",
+  "comparison": "Only BTB_ENABLE differs; same wrappers/constraints/image",
+  "hardware_calls": 0,
+  "license_environment_changes": false,
+  "limitations": "No claim of physical frequency, IO/CDC signoff or correct full HL4; synthetic timing mock applies to simulation only, PDS wrapper has native timer"
+}

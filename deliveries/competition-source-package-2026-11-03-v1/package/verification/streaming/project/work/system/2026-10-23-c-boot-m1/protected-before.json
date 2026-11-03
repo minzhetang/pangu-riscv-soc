@@ -1,0 +1,187 @@
+[
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\cpu.v",
+    "sha256": "555CB51AC20FFC439B61BB29D4F4D9F4DC02C38B54A37291A79519CD413B8114",
+    "bytes": 16582
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\control.v",
+    "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+    "bytes": 2988
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\alu.v",
+    "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+    "bytes": 1021
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\source\\regfile.v",
+    "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+    "bytes": 666
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\models\\cpu_selfcheck_v1.py",
+    "sha256": "F5C550660F4120B5D863D3A3EA6D9261B2F7D540B98DE7C7958D216457818994",
+    "bytes": 25777
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\models\\cpu_trace_oracle.py",
+    "sha256": "69BD1EC52C359D998CA64C5E53E6E3EC923D2C37D42DA2D8803E7D968EBAF1E0",
+    "bytes": 9491
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_addsub_selfcheck_v1.sv",
+    "sha256": "93FC001E196C40032083F5B5BE360DA8C474ADC4E163C61D4DFD8E617C498A56",
+    "bytes": 12476
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_eei_selfcheck_v1.sv",
+    "sha256": "93FC001E196C40032083F5B5BE360DA8C474ADC4E163C61D4DFD8E617C498A56",
+    "bytes": 12476
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_fence_selfcheck_v1.sv",
+    "sha256": "7224B857DC7796ED63576FF3D4CB44568AA59BEC6B73BF8CF85E36D463D9D0FA",
+    "bytes": 13389
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lbu_selfcheck_v1.sv",
+    "sha256": "172C01D7019911779E91EB57AC983F33A92386BC03E8E35A36ACF18C9D3A8F66",
+    "bytes": 7608
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lb_selfcheck_v1.sv",
+    "sha256": "D294224B7526A28D68D49340AF3F3FD7F7AA59B06263F56BAD49D912938C916A",
+    "bytes": 7662
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lhu_selfcheck_v1.sv",
+    "sha256": "EFE32C7AEF50E203FFD7C8EC4C93F98A4D3BDB3CB489916E6256F74CD6FFCE1D",
+    "bytes": 7755
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_lh_selfcheck_v1.sv",
+    "sha256": "D726FF4EC232DB84C5BA19CA330C992D3C2AC238DE61CD10504A84BCCF2D4C9B",
+    "bytes": 7787
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_r4_selfcheck_v1.sv",
+    "sha256": "93FC001E196C40032083F5B5BE360DA8C474ADC4E163C61D4DFD8E617C498A56",
+    "bytes": 12476
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_rcmp_selfcheck_v1.sv",
+    "sha256": "93FC001E196C40032083F5B5BE360DA8C474ADC4E163C61D4DFD8E617C498A56",
+    "bytes": 12476
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_rshift_selfcheck_v1.sv",
+    "sha256": "93FC001E196C40032083F5B5BE360DA8C474ADC4E163C61D4DFD8E617C498A56",
+    "bytes": 12476
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_sb_selfcheck_v1.sv",
+    "sha256": "E2A934868EE558FA7E7B411099F9F4A620C5E84F08FF03533C494797C5D1B876",
+    "bytes": 9496
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_selfcheck_v1.sv",
+    "sha256": "053A626A7C0A680BE934E7DA5A819A0FA901A5DC7CB162326177186518DEBBDC",
+    "bytes": 6754
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_sh_selfcheck_v1.sv",
+    "sha256": "218C61DF4367641915940462DCC016924099F8715C464653891E77A337E7266B",
+    "bytes": 9655
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\tb_cpu_zero_selfcheck_v1.sv",
+    "sha256": "93FC001E196C40032083F5B5BE360DA8C474ADC4E163C61D4DFD8E617C498A56",
+    "bytes": 12476
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\runs-v2\\result.json",
+    "sha256": "A6A5731D5C4177114B31F5398456A348DEE86F8A84548712407875F99027D07F",
+    "bytes": 1610306
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject\\validation-v2\\plan.json",
+    "sha256": "C892B72FEE950E9384A1687569A906F96FA490E983F9AC6888FAD514C6D94AAD",
+    "bytes": 2307728
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\toolchain-readiness\\2026-10-22-xpack-rv32i\\summary.json",
+    "sha256": "E9D6DDF51FE28D90003E86E59DBD5857A621F40CEE2DBF8E176535EE30C5E0BD",
+    "bytes": 1877
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\toolchain-readiness\\2026-10-22-xpack-rv32i\\artifact-checks.json",
+    "sha256": "2D085E8C032B2FB398CED5657CC197DD00E08618AF27EAD131011F9E85B2699E",
+    "bytes": 2933
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\toolchain-readiness\\2026-10-22-xpack-rv32i\\smoke.c",
+    "sha256": "0E0685C7967204B753A352D4C7C317D68011E3F4CBB53E0C7F3D096B4945EACB",
+    "bytes": 783
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\toolchain-readiness\\2026-10-22-xpack-rv32i\\start.S",
+    "sha256": "50D3AD9F9D591DE5007665FF074B21E94812548A9B0972416954E569F6FC9DDC",
+    "bytes": 675
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\toolchain-readiness\\2026-10-22-xpack-rv32i\\smoke.ld",
+    "sha256": "0973CB6739117D65FB40D7B7E28D647A5C7170BBEBBB5BB25E8C8A7C9A52AC37",
+    "bytes": 851
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\toolchain-readiness\\2026-10-22-xpack-rv32i\\manual-expectations.json",
+    "sha256": "10C1466887B045D2DCF955CA861ADD3BD034233F44C3843500856056F17614AA",
+    "bytes": 527
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\toolchain-readiness\\2026-10-22-xpack-rv32i\\COMMANDS.md",
+    "sha256": "5200CF45195DF8EDE0B953D49E262206A85E310CE93431AD3C06D3026944318C",
+    "bytes": 3545
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\toolchain-readiness\\2026-10-22-xpack-rv32i\\runs-ordinary\\smoke.elf",
+    "sha256": "EF785D0F91657B2ECA67AD8DB5B5534A40AFC8F89DBB7968084609858772B08A",
+    "bytes": 11564
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\toolchain-readiness\\2026-10-22-xpack-rv32i\\runs-ordinary\\smoke.bin",
+    "sha256": "E6C0738F5E238AA5A4A679E279F0822E67CD74BAD14E2900B2473CC54B062DF6",
+    "bytes": 576
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\toolchain-readiness\\2026-10-22-xpack-rv32i\\runs-ordinary\\smoke.mem32.hex",
+    "sha256": "A4A0EA43494E429D416CC2DE18DE584883D9895FEC0746468C8573BB2B608894",
+    "bytes": 1440
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\toolchain-readiness\\2026-10-22-xpack-rv32i\\runs-ordinary\\smoke.bytes.hex",
+    "sha256": "ACAD83FD2418CF4A0A33CD332D12BFEF9411790499468193DDF094268C5BD385",
+    "bytes": 2304
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\work\\toolchain-readiness\\2026-10-22-xpack-rv32i\\runs-ordinary\\objdump\\stdout.log",
+    "sha256": "F5044F1442341D4EE3EE3AEA37AF8DB0CCB9A7C965A26E0052553846323FD6BA",
+    "bytes": 6894
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\deliveries\\mainline-rx-approval-2026-10-22-v1\\RX_CORE_CONTRACT.md",
+    "sha256": "E1DA0CC3BC1E9F64285B5846369D910338FF2289652E297629DDA9F5BAEEA706",
+    "bytes": 14048
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+    "sha256": "25E1BA02E72F58D9D484BC5457D69A6B179D22D86BDF5BA5D6F9F0D4FE620BBF",
+    "bytes": 97998
+  },
+  {
+    "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+    "sha256": "F0775603E1F1BCF1B2DEA16DFF963A4B7D71B7B33D5BBE23D2B01FF5B2304E09",
+    "bytes": 1004959
+  }
+]

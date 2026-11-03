@@ -1,0 +1,9 @@
+VCD info: dumpfile D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/w06v2-16.vcd opened for output.
+W06_REQ edge=6 ready=1 busy=0 accept=1 error=0 data=5a
+W06_REQ edge=166 ready=0 busy=1 accept=0 error=1 data=a6
+W06_REQ edge=199 ready=1 busy=0 accept=1 error=0 data=3c
+W06_REQ edge=362 ready=1 busy=0 accept=1 error=0 data=5a
+W06_REQ edge=522 ready=0 busy=1 accept=0 error=1 data=a6
+W06_REQ edge=523 ready=1 busy=0 accept=1 error=0 data=3c
+W06_BOUNDARY_PASS N=16 accepts=4 rejects=2
+D:\A_FPGA_Comp\work\peripheral-review\2026-10-25-increment-2335\tests\tb_w06_boundary_v2.sv:77: $finish called at 6846000 (1ps)

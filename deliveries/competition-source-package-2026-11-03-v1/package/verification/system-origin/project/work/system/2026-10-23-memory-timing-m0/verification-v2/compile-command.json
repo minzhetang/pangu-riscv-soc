@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+    "-B",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "-g2012",
+    "-Wall",
+    "-s",
+    "tb_cpu_timing",
+    "-o",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\verification-v2\\cpu-v2.vvp",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\verification-v2\\tb_cpu_timing.sv",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\cpu.v",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\control.v",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\alu.v",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\source\\regfile.v"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\verification-v2",
+  "timeout_seconds": 60,
+  "max_attempts": 1,
+  "scope": "third distinct M0 target; CPU unchanged; no simulation outside sandbox"
+}

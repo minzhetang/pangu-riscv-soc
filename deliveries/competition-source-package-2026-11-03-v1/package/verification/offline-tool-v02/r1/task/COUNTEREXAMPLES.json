@@ -1,0 +1,112 @@
+{
+  "date_client": "2026-10-27",
+  "scope": "Only four independent host controls; no full B acceptance",
+  "rows": [
+    {
+      "id": "C0-default",
+      "native_rc": 0,
+      "status": "MATCH",
+      "checked": 8,
+      "fully_consumed": true,
+      "worker_peak_bytes": 18952192,
+      "worker_self_peak_bytes": 20713472,
+      "result_sizes": {
+        "result.json": 2967,
+        "worker-result.json": 1370
+      },
+      "created_output": true,
+      "host_seconds": 0.219,
+      "expected": {
+        "id": "C0-default",
+        "limits": {},
+        "expected_status": "MATCH",
+        "expected_rc": 0,
+        "rule": "8 records fully consumed"
+      },
+      "stdout": "{\"status\": \"MATCH\", \"native_rc\": 0, \"case\": \"C0-default\", \"out\": \"D:\\\\A_FPGA_Comp\\\\work\\\\analysis\\\\2026-10-27-b-offline-r1-dispatch\\\\outputs\\\\C0-default\"}",
+      "source_sha": "01210C76F38F07EAD6F42332E7BA7C16573D46C2594CC75B755E61CBACE604AE",
+      "expected_met": true
+    },
+    {
+      "id": "C1-worker-memory",
+      "native_rc": 0,
+      "status": "MATCH",
+      "checked": 8,
+      "fully_consumed": true,
+      "worker_peak_bytes": 18755584,
+      "worker_self_peak_bytes": 21000192,
+      "result_sizes": {
+        "result.json": 2989,
+        "worker-result.json": 1368
+      },
+      "created_output": true,
+      "host_seconds": 0.203,
+      "expected": {
+        "id": "C1-worker-memory",
+        "limits": {
+          "worker_peak_working_set_bytes": 1
+        },
+        "expected_status": "LIMIT",
+        "expected_rc": 5,
+        "rule": "Must not MATCH while actual worker peak exceeds configured 1B; no large allocation is needed"
+      },
+      "stdout": "{\"status\": \"MATCH\", \"native_rc\": 0, \"case\": \"C1-worker-memory\", \"out\": \"D:\\\\A_FPGA_Comp\\\\work\\\\analysis\\\\2026-10-27-b-offline-r1-dispatch\\\\outputs\\\\C1-worker-memory\"}",
+      "source_sha": "01210C76F38F07EAD6F42332E7BA7C16573D46C2594CC75B755E61CBACE604AE",
+      "expected_met": false
+    },
+    {
+      "id": "C2-result-size",
+      "native_rc": 7,
+      "status": "TOOL_ERROR",
+      "checked": 0,
+      "fully_consumed": false,
+      "worker_peak_bytes": 18776064,
+      "worker_self_peak_bytes": null,
+      "result_sizes": {
+        "result.json": 2135,
+        "worker-result.json": 1372
+      },
+      "created_output": true,
+      "host_seconds": 0.203,
+      "expected": {
+        "id": "C2-result-size",
+        "limits": {
+          "max_result_bytes": 256
+        },
+        "expected_status": "REJECT_NOT_MATCH",
+        "rule": "No result or worker-result file may be written beyond configured 256B; an impossible result capacity must reject explicitly"
+      },
+      "stdout": "{\"status\": \"TOOL_ERROR\", \"native_rc\": 7, \"case\": \"C2-result-size\", \"out\": \"D:\\\\A_FPGA_Comp\\\\work\\\\analysis\\\\2026-10-27-b-offline-r1-dispatch\\\\outputs\\\\C2-result-size\"}",
+      "source_sha": "01210C76F38F07EAD6F42332E7BA7C16573D46C2594CC75B755E61CBACE604AE",
+      "expected_met": false
+    },
+    {
+      "id": "C3-optimized-protected-output",
+      "native_rc": 3,
+      "status": "INVALID_INPUT",
+      "checked": 0,
+      "fully_consumed": false,
+      "worker_peak_bytes": null,
+      "worker_self_peak_bytes": null,
+      "result_sizes": {
+        "result.json": 945
+      },
+      "created_output": true,
+      "host_seconds": 0.203,
+      "expected": {
+        "id": "C3-optimized-protected-output",
+        "limits": {},
+        "expected_status": "INVALID_INPUT",
+        "expected_rc": 3,
+        "rule": "-O must reject without creating output inside return tree"
+      },
+      "stdout": "{\"status\": \"INVALID_INPUT\", \"native_rc\": 3, \"case\": \"optimized-python\", \"out\": \"D:\\\\A_FPGA_Comp\\\\work\\\\analysis\\\\2026-10-27-b-offline-r1-dispatch\\\\tool-copy\\\\forbidden-output-probe\"}",
+      "source_sha": "01210C76F38F07EAD6F42332E7BA7C16573D46C2594CC75B755E61CBACE604AE",
+      "expected_met": false
+    }
+  ],
+  "new_DUT": 0,
+  "install": 0,
+  "hardware": "STOPPED",
+  "all_original_hashes_unchanged": true
+}

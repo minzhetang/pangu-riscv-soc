@@ -1,0 +1,149 @@
+--- work\application\2026-11-03-event-recorder-m0\firmware\app-r1.c
++++ work\application\2026-11-03-event-recorder-m1\firmware\app.c
+@@ -1,39 +1,53 @@
+-
+ typedef unsigned int u32;
+-#define MMIO(a) (*(volatile u32 *)(a))
+-struct event {u32 tick,state,reason;};
+-struct recorder {struct event e[8];u32 head,count,evicted,rejected,stable,candidate,n,age,fault,post,frozen;};
+-static struct recorder q;
+-static void reset(void){u32 *p=(u32 *)&q;for(u32 i=0;i<sizeof(q)/4;i++)p[i]=0;}
+-static void record(u32 t,u32 s,u32 why){
+- if(q.frozen){q.rejected++;return;}
+- q.e[q.head]=(struct event){t,s,why};q.head=(q.head+1)&7;
+- if(q.count<8)q.count++;else q.evicted++;
+- if(why&&!q.fault){q.fault=why;q.post=2;}
+- else if(q.fault&&q.post&&!--q.post)q.frozen=1;
++#define IO(a) (*(volatile u32 *)(a))
++#define TIMER IO(0x20000100)
++#ifndef DENSE
++#define DENSE 0
++#endif
++struct event {u32 tick,index,state,reason;};
++volatile struct event events[8];
++volatile u32 samples[32][2], head,count,evicted,rejected,fault,post,frozen;
++volatile u32 start_tick,end_tick,work_ticks,late,complete;
++static u32 stable,candidate,consecutive,age;
++static void put(char c){while(!(IO(0x20000008)&1)){} IO(0x20000000)=(u32)c;}
++static void text(const char*s){while(*s)put(*s++);}
++static void hex(u32 v){for(int i=28;i>=0;i-=4)put("0123456789abcdef"[(v>>i)&15]);}
++static void word(u32 v){hex(v);put(' ');}
++static void append(u32 t,u32 i,u32 s,u32 why){
++ if(frozen){rejected++;return;}
++ events[head]=(struct event){t,i,s,why};head=(head+1)&7;
++ if(count<8)count++;else evicted++;
++ if(why&&!fault){fault=why;post=2;}
++ else if(fault&&post&&!--post)frozen=1;
+ }
+-static void sample(u32 t,u32 s){
+- q.age++;
+- if(s!=q.candidate){q.candidate=s;q.n=1;}else if(q.n<2)q.n++;
+- if(q.n==2&&s!=q.stable){u32 old=q.stable;q.stable=s;q.age=0;
+- u32 legal=(old==0&&s==1)||(old==1&&s==3)||(old==3&&s==7)||(old==7&&s==0);
+- record(t,s,legal?0:1);}
+- if(!q.fault&&q.stable==1&&q.age>=6)record(t,q.stable,2);
++int main(void){
++ IO(0x2000000c)=0x40; /* scope marker, not an input handshake */
++ start_tick=TIMER;u32 deadline=start_tick+12000;
++ for(u32 i=0;i<32;i++,deadline+=12000){
++  while((int)(TIMER-deadline)<0){}
++  u32 begin=TIMER;
++  u32 s=IO(0x20000010)&7;
++  u32 t=TIMER;
++  /* Audit snapshots are common instrumentation, excluded from product storage claims. */
++  samples[i][0]=t;samples[i][1]=s;
++  if(begin-deadline>1000)late++;
++  age++;
++  if(s!=candidate){candidate=s;consecutive=1;}else if(consecutive<2)consecutive++;
++  if(consecutive==2&&s!=stable){u32 old=stable;stable=s;age=0;
++   u32 legal=(old==0&&s==1)||(old==1&&s==3)||(old==3&&s==7)||(old==7&&s==0);
++   append(t,i,s,legal?0:1);
++  }
++  if(!fault&&stable==1&&age>=6)append(t,i,stable,2);
++  /* Dense mode models an additional raw-record storage write on the same samples. */
++  if(DENSE){extern volatile u32 raw[32][2];raw[i][0]=t;raw[i][1]=s;}
++  work_ticks+=TIMER-begin;
++ }
++ end_tick=TIMER;
++ IO(0x2000000c)=fault?0x81:0xa5;
++ text("REC1 ");word(DENSE);word(start_tick);word(end_tick);word(work_ticks);word(late);
++ word(count);word(evicted);word(rejected);word(fault);word(frozen);put('\n');
++ if(DENSE)for(u32 i=0;i<32;i++){text("S ");word(i);word(samples[i][0]);word(samples[i][1]);put('\n');}
++ for(u32 k=0;k<count;k++){u32 slot=(head+8-count+k)&7;text("E ");word(events[slot].tick);word(events[slot].index);word(events[slot].state);word(events[slot].reason);put('\n');}
++ text("END\n");while(!(IO(0x20000008)&1)){}complete=1;return 0;
+ }
+-static void put(char c){while(!(MMIO(0x20000008)&1)){} MMIO(0x20000000)=(u32)c;}
+-static void text(const char*s){while(*s)put(*s++);}
+-volatile u32 snapshots[8][35];
+-static int fail;
+-static void check(u32 id,int good){for(u32 k=0;k<35;k++)snapshots[id-1][k]=((u32 *)&q)[k];text(good?"PASS ":"FAIL ");put('0'+id);put('\n');if(!good)fail++;}
+-int main(void){
+- reset();u32 a[]={0,0,1,1,3,3,7,7};for(u32 i=0;i<8;i++)sample(i,a[i]);
+- check(1,q.count==3&&!q.fault&&q.e[0].tick==3&&q.e[1].tick==5&&q.e[2].tick==7);
+- reset();sample(0,3);sample(1,3);check(2,q.fault==1&&q.e[0].tick==1);
+- reset();sample(0,1);sample(1,1);for(u32 i=2;i<8;i++)sample(i,1);check(3,q.fault==2&&q.e[1].tick==7);
+- reset();sample(0,1);sample(1,0);sample(2,1);sample(3,0);check(4,q.count==0&&!q.fault);
+- reset();sample(0,1);sample(1,1);check(5,q.count==1&&q.e[0].tick==1);
+- reset();for(u32 i=0;i<12;i++)record(i,i,0);check(6,q.count==8&&q.evicted==4&&q.e[q.head].tick==4);
+- reset();record(0,3,1);record(1,7,0);record(2,0,0);record(3,1,0);check(7,q.count==3&&q.frozen&&q.rejected==1);
+- reset();check(8,q.count==0&&q.fault==0&&q.rejected==0&&q.stable==0);
+- MMIO(0x2000000c)=fail?0xff:0xa5;text(fail?"APP_FAIL\n":"APP_OK\n");return fail;
+-}
++volatile u32 raw[32][2];
+--- work\application\2026-11-03-event-recorder-m0\tb-r2.sv
++++ work\application\2026-11-03-event-recorder-m1\tb.sv
+@@ -1,15 +1,44 @@
+-
+ `timescale 1ns/1ps
+ module tb;
+-reg clk=0,rst=0;wire tx,stop,err;wire[7:0]gpio;wire[1:0]kind;wire[31:0]pc;
+-soc_top #(.CLKS_PER_BIT(8)) dut(.clk(clk),.rst_n(rst),.gpio_in_async(8'd0),.uart_tx(tx),.gpio_out(gpio),.stopped(stop),.stop_kind(kind),.stop_pc(pc),.write_error(err));
++reg clk=0,rst=0;reg[7:0] pins=0;
++wire tx,stopped,err;wire[7:0] leds;wire[1:0] kind;wire[31:0] stop_pc;
++soc_top #(.CLKS_PER_BIT(8)) dut(.clk(clk),.rst_n(rst),.gpio_in_async(pins),.uart_tx(tx),.gpio_out(leds),.stopped(stopped),.stop_kind(kind),.stop_pc(stop_pc),.write_error(err));
+ always #5 clk=~clk;
+-integer cycles=0,f;
+-initial begin f=$fopen("uart.txt","w");$dumpfile("app.vcd");$dumpvars(1,tb);repeat(6)@(negedge clk);rst=1;end
+-always @(posedge clk) if(rst)begin
+- cycles=cycles+1;if(err)$fatal(1,"write_error");
+- if(dut.peripherals.tx_accept)begin $fwrite(f,"%c",dut.io_wdata[7:0]);$write("%c",dut.io_wdata[7:0]);end
+- if(stop)begin $writememh("ram-r2.hex",dut.storage.ram);$fclose(f);if(gpio!==8'ha5)$fatal(1,"bad completion gpio %h",gpio);$display("CPU_STOP cycles=%0d kind=%d pc=%h",cycles,kind,pc);$finish;end
+- if(cycles>2000000)$fatal(1,"TIMEOUT");
++reg[7:0] stimulus[0:31];integer n,cycle=0,origin=-1,run=0,idx,accepted,serial,obs,log;
++reg[7:0] byte_value;integer bitno;reg decoding=0; reg[31:0] last_a0=32'hxxxxxxxx;
++initial begin
++ $readmemh("input.hex",stimulus);accepted=$fopen("accepted.txt","w");serial=$fopen("serial.txt","w");obs=$fopen("reads.txt","w");log=$fopen("stop.txt","w");
++ $dumpfile("run.vcd");$dumpvars(1,tb);
++ for(run=0;run<2;run=run+1)begin
++  rst=0;pins=0;origin=-1;last_a0=32'hxxxxxxxx;repeat(8)@(negedge clk);rst=1;
++  wait(stopped);@(negedge clk);
++  if(kind!==2 || last_a0!==0)$fatal(1,"main return/stop mismatch");
++  if(decoding)$fatal(1,"stopped during serial frame");
++  if(run==0)$writememh("ram0.hex",dut.storage.ram);else $writememh("ram1.hex",dut.storage.ram);
++  $fdisplay(log,"%0d %0d %h",run,cycle,leds);$fwrite(accepted,"~");$fwrite(serial,"~");
++ end
++ $fclose(accepted);$fclose(serial);$fclose(obs);$fclose(log);$display("TWO_RESETS_FINISHED");$finish;
++end
++always @(negedge clk)if(rst&&origin>=0)begin
++ idx=(cycle-origin-6000)/12000;
++ if(cycle-origin<6000)pins=0;else if(idx>=0&&idx<32)pins=stimulus[idx];
++end
++always @(posedge clk)begin
++ cycle=cycle+1;if(cycle>2500000)$fatal(1,"cycle timeout");
++ if(rst)begin
++  if(dut.cpu_core.pipeline_advance&&dut.cpu_core.mem_reg_write&&dut.cpu_core.mem_rd==10)last_a0=dut.cpu_core.wb_write_data;
++  if(err!==0)$fatal(1,"write error/X");
++  if(dut.peripherals.gpio_accept&&dut.io_wdata==32'h40)origin=cycle;
++  if(dut.peripherals.tx_accept)begin
++   if(^dut.io_wdata===1'bx)$fatal(1,"TX X");$fwrite(accepted,"%c",dut.io_wdata[7:0]);
++  end
++  if(dut.cpu_core.pipeline_advance&&dut.cpu_core.ex_mem_to_reg&&dut.cpu_core.ex_valid)
++   $fdisplay(obs,"%0d %h %h %h",run,dut.address,dut.route.cpu_read_data,dut.timer.ticks[31:0]);
++ end
++end
++always @(negedge tx)if(rst&&!decoding)begin
++ decoding=1;repeat(4)@(posedge clk);#0.001;if(tx!==0)$fatal(1,"UART start");
++ for(bitno=0;bitno<8;bitno=bitno+1)begin repeat(8)@(posedge clk);#0.001;if(tx!==0&&tx!==1)$fatal(1,"UART X");byte_value[bitno]=tx;end
++ repeat(8)@(posedge clk);#0.001;if(tx!==1)$fatal(1,"UART stop");$fwrite(serial,"%c",byte_value);decoding=0;
+ end
+ endmodule

@@ -1,0 +1,64 @@
+{
+  "targets": [
+    {
+      "id": "selftest",
+      "stderr": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\n",
+      "warning_lines": 1,
+      "elapsed_seconds": 44.468
+    },
+    {
+      "id": "P01",
+      "stderr": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\n",
+      "warning_lines": 5,
+      "elapsed_seconds": 44.454
+    },
+    {
+      "id": "P02",
+      "stderr": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\n",
+      "warning_lines": 5,
+      "elapsed_seconds": 44.0
+    },
+    {
+      "id": "P03T",
+      "stderr": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\n",
+      "warning_lines": 5,
+      "elapsed_seconds": 44.063
+    },
+    {
+      "id": "P03N",
+      "stderr": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\n",
+      "warning_lines": 5,
+      "elapsed_seconds": 44.407
+    },
+    {
+      "id": "P04",
+      "stderr": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\n",
+      "warning_lines": 5,
+      "elapsed_seconds": 44.421
+    },
+    {
+      "id": "P05",
+      "stderr": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\n",
+      "warning_lines": 5,
+      "elapsed_seconds": 44.282
+    },
+    {
+      "id": "cboot",
+      "stderr": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\n",
+      "warning_lines": 5,
+      "elapsed_seconds": 44.235
+    },
+    {
+      "id": "performance",
+      "stderr": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\n",
+      "warning_lines": 5,
+      "elapsed_seconds": 44.813
+    },
+    {
+      "id": "validation",
+      "stderr": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v:933: warning: implicit definition of wire 'grsn'.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\cpu.v:6: warning: timescale for cpu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\alu.v:1: warning: timescale for alu inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\control.v:1: warning: timescale for control inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\nD:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\source\\regfile.v:1: warning: timescale for regfile inherited from another file.\nD:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v:27: ...: The inherited timescale is here.\n",
+      "warning_lines": 5,
+      "elapsed_seconds": 44.407
+    }
+  ]
+}

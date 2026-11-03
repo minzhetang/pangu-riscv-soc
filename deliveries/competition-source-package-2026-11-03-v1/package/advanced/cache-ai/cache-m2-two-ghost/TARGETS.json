@@ -1,0 +1,98 @@
+[
+  {
+    "channel": 0,
+    "delay": 0,
+    "test": "stream",
+    "passed": true
+  },
+  {
+    "channel": 0,
+    "delay": 0,
+    "test": "adverse",
+    "passed": true
+  },
+  {
+    "channel": 0,
+    "delay": 0,
+    "test": "locality",
+    "passed": true
+  },
+  {
+    "channel": 0,
+    "delay": 0,
+    "test": "pollution",
+    "passed": true
+  },
+  {
+    "channel": 0,
+    "delay": 3,
+    "test": "stream",
+    "passed": true
+  },
+  {
+    "channel": 0,
+    "delay": 3,
+    "test": "adverse",
+    "passed": true
+  },
+  {
+    "channel": 0,
+    "delay": 3,
+    "test": "locality",
+    "passed": true
+  },
+  {
+    "channel": 0,
+    "delay": 3,
+    "test": "pollution",
+    "passed": true
+  },
+  {
+    "channel": 1,
+    "delay": 0,
+    "test": "stream",
+    "passed": true
+  },
+  {
+    "channel": 1,
+    "delay": 0,
+    "test": "adverse",
+    "passed": true
+  },
+  {
+    "channel": 1,
+    "delay": 0,
+    "test": "locality",
+    "passed": true
+  },
+  {
+    "channel": 1,
+    "delay": 0,
+    "test": "pollution",
+    "passed": true
+  },
+  {
+    "channel": 1,
+    "delay": 3,
+    "test": "stream",
+    "passed": true
+  },
+  {
+    "channel": 1,
+    "delay": 3,
+    "test": "adverse",
+    "passed": true
+  },
+  {
+    "channel": 1,
+    "delay": 3,
+    "test": "locality",
+    "passed": true
+  },
+  {
+    "channel": 1,
+    "delay": 3,
+    "test": "pollution",
+    "passed": true
+  }
+]

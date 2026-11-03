@@ -1,0 +1,45 @@
+{
+  "kind": "B_VERIFY_OFFLINE_WORKER",
+  "case_id": "P01-S06-bus-format",
+  "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0",
+  "CPU_function_proven": false,
+  "new_DUT": 0,
+  "limits": {
+    "max_input_bytes_each": 536870912,
+    "max_records_each": 6000000,
+    "max_differences": 16,
+    "max_diagnostic_neighbors_each_side": 2,
+    "max_result_bytes": 1048576,
+    "max_log_bytes_each": 4194304,
+    "worker_peak_working_set_bytes": 268435456,
+    "case_timeout_seconds": 180.0,
+    "cleanup_seconds": 8.0
+  },
+  "expected_input": {
+    "storage": "raw",
+    "path": "inputs/seeds/S06-bus-format/expected.log",
+    "bytes": 182,
+    "sha256": "32EA0E44C6466B8BEF34ABE5B58B238747BC8E001733811D15C07B5E32CBA192"
+  },
+  "actual_input": {
+    "storage": "raw",
+    "path": "inputs/seeds/S06-bus-format/actual.log",
+    "bytes": 182,
+    "sha256": "32EA0E44C6466B8BEF34ABE5B58B238747BC8E001733811D15C07B5E32CBA192"
+  },
+  "status": "MATCH",
+  "native_rc": 0,
+  "fully_consumed": true,
+  "checked": 2,
+  "expected_records": 2,
+  "actual_records": 2,
+  "mismatch_count": 0,
+  "differences": [],
+  "neighbors": [],
+  "first_difference": null,
+  "termination": "normal",
+  "diagnostic_error": null,
+  "elapsed_s": 0.016,
+  "worker_reported_peak_bytes": 20795392,
+  "measurement_method": "Windows GetProcessMemoryInfo PeakWorkingSetSize (worker self-report); parent also measures child"
+}

@@ -1,0 +1,21 @@
+{
+  "cases": {
+    "performance-N234": {
+      "old_run": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234",
+      "phase_address": 67584,
+      "INIT_sha256": "E7F622FFFD0D091698DC1AA2E6B28E01EFC965582DA2DED575E38CD86EAE8A19",
+      "bin_sha256": "2B131F050C0007EC4A06B08167A4198C6C3843CF2929C2FB75015771E7041449",
+      "n": 234
+    },
+    "validation-N234": {
+      "old_run": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234",
+      "phase_address": 67592,
+      "INIT_sha256": "0B31B3DCA0655374CAE15E7369012E9596BF1FD72F85B3AA67C49BAB388A2B11",
+      "bin_sha256": "A33A0066B7AF0F555DF8B4F10627A394BFD93C5CACA97BBCCF2AF9E982766B60",
+      "n": 234
+    }
+  },
+  "max_physical_cycles": 6000000,
+  "run_seconds": 360,
+  "compile_seconds": 120
+}

@@ -1,0 +1,8 @@
+{
+  "status": "NOT_ACCEPTED",
+  "capture_state": "TIME_LIMIT",
+  "bytes": 0,
+  "error": "UART transport incomplete/error",
+  "no_manual_completion_receipt": true,
+  "interpretation": "No complete new timeout report; host wait limit/incomplete evidence is not proof of CPU timeout implementation failure"
+}

@@ -1,0 +1,1 @@
+create_clock -name {clk_27mhz} -period {37.037037} -waveform {0.000000 18.518519} [get_ports {clk}]

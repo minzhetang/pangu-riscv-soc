@@ -1,0 +1,6 @@
+0000: 00100093  addi x1,x0,1
+0004: 0010d263  bge x1,x1,+4 ; equality taken target next instruction
+0008: 00700513  addi x10,x0,7 ; refetched target exactly once
+000c: 00a02423  sw x10,8(x0)
+0010: 00900593  addi x11,x0,9
+0014: 05a00f93  addi x31,x0,90 ; completion

@@ -1,0 +1,31 @@
+{
+  "profiles": [
+    {
+      "profile": "production0-r1",
+      "bin_bytes": 1836,
+      "bss_bytes": 196,
+      "stack_reserved_bytes": 8192,
+      "runtime": "NOT_RUN",
+      "period": 2700000,
+      "count": 128,
+      "wait": 20,
+      "audit": 0,
+      "bin_sha256": "CBB37E60674713CCFBB0E603BA774ECB82E2460FA7D2DD2707AF34D4175E3D30"
+    },
+    {
+      "profile": "production1-r1",
+      "bin_bytes": 2164,
+      "bss_bytes": 1220,
+      "stack_reserved_bytes": 8192,
+      "runtime": "NOT_RUN",
+      "period": 2700000,
+      "count": 128,
+      "wait": 20,
+      "audit": 0,
+      "bin_sha256": "CE394C50FF735F55422DFD3BADC6843C130DE7004521F5AE3049EB9BE2DC591C"
+    }
+  ],
+  "bss_difference_bytes": 1024,
+  "not_FPGA_RAM_resource_reduction": true,
+  "stack_watermark_measured": false
+}

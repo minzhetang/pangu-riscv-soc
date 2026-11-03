@@ -1,0 +1,9 @@
+{
+  "all_unrelated_sources_and_constraints_identical": true,
+  "ROM_bytes": 32768,
+  "program_bytes": 1836,
+  "all_ROM_bytes_match_program_plus_zeros": true,
+  "RAM_init_unchanged": true,
+  "protected_files": 89,
+  "pds_exe_sha256": "631FFD8F14D6246872873C72025CBC2734C9F8C388075B7AFB0B042F3A684E6F"
+}

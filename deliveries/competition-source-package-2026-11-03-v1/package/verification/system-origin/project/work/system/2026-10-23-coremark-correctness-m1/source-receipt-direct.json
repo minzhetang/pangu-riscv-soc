@@ -1,0 +1,10 @@
+{
+  "commit": "1f483d5b8316753a742cbf5590caf5bd0a4e4777",
+  "reason": "Original Git tree API returned HTTP403 rate limit; preserve first receipt",
+  "status": "FAILED_STOP_NO_EXECUTION",
+  "archive_url": "https://codeload.github.com/eembc/coremark/zip/1f483d5b8316753a742cbf5590caf5bd0a4e4777",
+  "downloaded_code_executed": false,
+  "published_archive_SHA256": null,
+  "archive_SHA256": "ACC21470160D85E078C015F9BB1878166BFE9BF2971D8DE37455556B098F4676",
+  "error": "AssertionError(('coremark.h', 'upstream MD5 mismatch'))"
+}

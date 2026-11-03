@@ -1,0 +1,1596 @@
+{
+  "kind": "B_VERIFY_OFFLINE_TEST_PLAN",
+  "version": "1.0.0",
+  "created_at": "2026-10-27T13:10:00+08:00",
+  "frozen_at": "2026-10-27T13:10:00+08:00",
+  "frozen_before_execution": true,
+  "task": "B-VERIFY-OFFLINE-M0-R1",
+  "contract": "1.0.0",
+  "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0",
+  "source_package": {
+    "id": "mainline-b-verify-offline-m0-2026-10-26-v1",
+    "manifest_SHA256": "61E828470ED4EE9353D429E2A974BA0B19898134E545CCC0B2737A63EDBE1630",
+    "contract_SHA256": "1704CD7974A3C654E006201CC639F0AF2A5888FC4E3F2FFF780A88F61405113C",
+    "interface_SHA256": "BEDB4492AB288103773E850BD135ABFD21F9B55E138BC6DDA43B30504204C8C5",
+    "acceptance_plan_SHA256": "80A9B2A26A741A8165DA4EDC577AA5D454F1D18875AB82E5DB857B0D61D1B431"
+  },
+  "manual_expectations": "Frozen before any RUN/test execution. Faults generated from unchanged S00/archives by tests/generate.py; expectations are derived from the format and A's frozen seeds/plan, not from RUN output.",
+  "generation": [
+    "python -B tests/generate.py --input-root <PACKAGE> --out <WORK> --mode all --sizes 1,16,128",
+    "R01 copies the full input package and return tool to a fresh Chinese/space path; no history directories"
+  ],
+  "cases": [
+    {
+      "id": "P01-S00-duplicates-kept",
+      "acceptance_id": "P01",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "P01-S00-duplicates-kept",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8
+      },
+      "note": "A manual frozen seed; not CPU execution"
+    },
+    {
+      "id": "P01-S01-wrong-field",
+      "acceptance_id": "P01",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "P01-S01-wrong-field",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S01-wrong-field/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S01-wrong-field/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2,
+        "first": {
+          "ordinal": 5,
+          "field": "data"
+        },
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8
+      },
+      "note": "A manual frozen seed; not CPU execution"
+    },
+    {
+      "id": "P01-S02-missing-tail",
+      "acceptance_id": "P01",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "P01-S02-missing-tail",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S02-missing-tail/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S02-missing-tail/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2,
+        "first": {
+          "ordinal": 8,
+          "field": null
+        },
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 7
+      },
+      "note": "A manual frozen seed; not CPU execution"
+    },
+    {
+      "id": "P01-S03-unknown-data",
+      "acceptance_id": "P01",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "P01-S03-unknown-data",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S03-unknown-data/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S03-unknown-data/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3
+      },
+      "note": "A manual frozen seed; not CPU execution"
+    },
+    {
+      "id": "P01-S04-empty-explicit",
+      "acceptance_id": "P01",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "P01-S04-empty-explicit",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S04-empty-explicit/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S04-empty-explicit/actual.log",
+          "complete": true
+        },
+        "allow_empty": true,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 0,
+        "expected_records": 0,
+        "actual_records": 0
+      },
+      "note": "A manual frozen seed; not CPU execution"
+    },
+    {
+      "id": "P01-S05-empty-forbidden",
+      "acceptance_id": "P01",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "P01-S05-empty-forbidden",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S05-empty-forbidden/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S05-empty-forbidden/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "INCOMPLETE",
+        "native_rc": 4
+      },
+      "note": "A manual frozen seed; not CPU execution"
+    },
+    {
+      "id": "P01-S06-bus-format",
+      "acceptance_id": "P01",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "P01-S06-bus-format",
+        "expected": {
+          "storage": "raw",
+          "stream": "bus",
+          "path": "inputs/seeds/S06-bus-format/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "bus",
+          "path": "inputs/seeds/S06-bus-format/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 2,
+        "expected_records": 2,
+        "actual_records": 2
+      },
+      "note": "A manual frozen seed; not CPU execution"
+    },
+    {
+      "id": "P02-R-performance-trace",
+      "acceptance_id": "P02",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "P02-R-performance-trace",
+        "expected": {
+          "storage": "archive",
+          "stream": "trace",
+          "path": "inputs/archives/performance-trace",
+          "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA",
+          "complete": true
+        },
+        "actual": {
+          "storage": "archive",
+          "stream": "trace",
+          "path": "inputs/archives/performance-trace",
+          "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 3477732,
+        "expected_records": 3477732,
+        "actual_records": 3477732
+      },
+      "note": "Accepted DUT observation replay; not independent ISA reference; same archive read twice"
+    },
+    {
+      "id": "P02-R-performance-bus",
+      "acceptance_id": "P02",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "P02-R-performance-bus",
+        "expected": {
+          "storage": "archive",
+          "stream": "bus",
+          "path": "inputs/archives/performance-bus",
+          "index_SHA256": "2740C88449E42DF11033C9B4CA32D751C8830975F9E015E27327AF0FFFDF4011",
+          "complete": true
+        },
+        "actual": {
+          "storage": "archive",
+          "stream": "bus",
+          "path": "inputs/archives/performance-bus",
+          "index_SHA256": "2740C88449E42DF11033C9B4CA32D751C8830975F9E015E27327AF0FFFDF4011",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 1124937,
+        "expected_records": 1124937,
+        "actual_records": 1124937
+      },
+      "note": "Accepted DUT observation replay; not independent ISA reference; same archive read twice"
+    },
+    {
+      "id": "P02-R-validation-trace",
+      "acceptance_id": "P02",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "P02-R-validation-trace",
+        "expected": {
+          "storage": "archive",
+          "stream": "trace",
+          "path": "inputs/archives/validation-trace",
+          "index_SHA256": "AF2CA50BA2580EBE0969F68CECBFAFFD775FC5864FA0309E7B8FA0A27333950B",
+          "complete": true
+        },
+        "actual": {
+          "storage": "archive",
+          "stream": "trace",
+          "path": "inputs/archives/validation-trace",
+          "index_SHA256": "AF2CA50BA2580EBE0969F68CECBFAFFD775FC5864FA0309E7B8FA0A27333950B",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 3651558,
+        "expected_records": 3651558,
+        "actual_records": 3651558
+      },
+      "note": "Accepted DUT observation replay; not independent ISA reference; same archive read twice"
+    },
+    {
+      "id": "P02-R-validation-bus",
+      "acceptance_id": "P02",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "P02-R-validation-bus",
+        "expected": {
+          "storage": "archive",
+          "stream": "bus",
+          "path": "inputs/archives/validation-bus",
+          "index_SHA256": "CCF5CAD927E28BB9B630E25DA20EBF394D849D6365BF99C27A3990FEEA5BDB1A",
+          "complete": true
+        },
+        "actual": {
+          "storage": "archive",
+          "stream": "bus",
+          "path": "inputs/archives/validation-bus",
+          "index_SHA256": "CCF5CAD927E28BB9B630E25DA20EBF394D849D6365BF99C27A3990FEEA5BDB1A",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 1124271,
+        "expected_records": 1124271,
+        "actual_records": 1124271
+      },
+      "note": "Accepted DUT observation replay; not independent ISA reference; same archive read twice"
+    },
+    {
+      "id": "F01",
+      "acceptance_id": "F01",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "F01",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/s00_expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/f01_remove.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2,
+        "first": {
+          "ordinal": 4,
+          "field": "kind"
+        },
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 7
+      },
+      "note": "Generated fault; expected in frozen plan"
+    },
+    {
+      "id": "F02",
+      "acceptance_id": "F02",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "F02",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/s00_expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/f02_add.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2,
+        "first": {
+          "ordinal": 5,
+          "field": "kind"
+        },
+        "checked": 9,
+        "expected_records": 8,
+        "actual_records": 9
+      },
+      "note": "Generated fault; expected in frozen plan"
+    },
+    {
+      "id": "F03",
+      "acceptance_id": "F03",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "F03",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/s00_expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/f03_duplicate.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2,
+        "first": {
+          "ordinal": 5,
+          "field": "kind"
+        },
+        "checked": 9,
+        "expected_records": 8,
+        "actual_records": 9
+      },
+      "note": "Generated fault; expected in frozen plan"
+    },
+    {
+      "id": "F04",
+      "acceptance_id": "F04",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "F04",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8
+      },
+      "note": "Legal duplicate/value repeats preserved; same frozen S00 stream"
+    },
+    {
+      "id": "F05",
+      "acceptance_id": "F05",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "F05",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/s00_expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/f05_swap.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2,
+        "first": {
+          "ordinal": 4,
+          "field": "kind"
+        },
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8
+      },
+      "note": "Generated fault; expected in frozen plan"
+    },
+    {
+      "id": "F06",
+      "acceptance_id": "F06",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "F06",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/s00_expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/f06_mutate.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2,
+        "first": {
+          "ordinal": 5,
+          "field": "data"
+        },
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8
+      },
+      "note": "Generated fault; expected in frozen plan"
+    },
+    {
+      "id": "F07",
+      "acceptance_id": "F07",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "F07",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/s00_expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/f07_invalid.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3
+      },
+      "note": "Generated fault; expected in frozen plan"
+    },
+    {
+      "id": "F08",
+      "acceptance_id": "F08",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "F08",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/s00_expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/f08_partial.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3
+      },
+      "note": "Generated fault; expected in frozen plan"
+    },
+    {
+      "id": "F13",
+      "acceptance_id": "F13",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "F13",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/s00_expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/f13_overlong.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3
+      },
+      "note": "Generated fault; expected in frozen plan"
+    },
+    {
+      "id": "F09",
+      "acceptance_id": "F09",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "F09",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": false
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": false
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "INCOMPLETE",
+        "native_rc": 4
+      },
+      "note": "Source spec complete=false must be INCOMPLETE"
+    },
+    {
+      "id": "F10",
+      "acceptance_id": "F10",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "F10",
+        "expected": {
+          "storage": "archive",
+          "stream": "trace",
+          "path": "generated/archives/f10-corrupt",
+          "complete": true,
+          "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA"
+        },
+        "actual": {
+          "storage": "archive",
+          "stream": "trace",
+          "path": "generated/archives/f10-corrupt",
+          "complete": true,
+          "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA"
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3
+      },
+      "note": "Generated archive corruption; original input untouched"
+    },
+    {
+      "id": "F11",
+      "acceptance_id": "F11",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "F11",
+        "expected": {
+          "storage": "archive",
+          "stream": "trace",
+          "path": "generated/archives/f11-index",
+          "complete": true,
+          "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA"
+        },
+        "actual": {
+          "storage": "archive",
+          "stream": "trace",
+          "path": "generated/archives/f11-index",
+          "complete": true,
+          "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA"
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3
+      },
+      "note": "Generated archive corruption; original input untouched"
+    },
+    {
+      "id": "F12",
+      "acceptance_id": "F12",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "F12",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "../outside.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/f06_mutate.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3
+      },
+      "note": "Traversal path must be rejected before any output"
+    },
+    {
+      "id": "F14",
+      "acceptance_id": "F14",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "F14",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "max_input_bytes_each": 32
+        }
+      },
+      "expected": {
+        "run_status": "LIMIT",
+        "native_rc": 5
+      },
+      "note": "Byte budget lower than raw input"
+    },
+    {
+      "id": "F15",
+      "acceptance_id": "F15",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "F15",
+        "expected": {
+          "storage": "raw",
+          "stream": "bus",
+          "path": "generated/stress/1MiB-expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "bus",
+          "path": "generated/stress/1MiB-actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "case_timeout_seconds": 0.001,
+          "cleanup_seconds": 1.0
+        }
+      },
+      "expected": {
+        "run_status": "TIMEOUT",
+        "native_rc": 6
+      },
+      "note": "Per-case deadline/worker timeout on a real 1MiB EDGE stream, no MATCH"
+    },
+    {
+      "id": "F16",
+      "acceptance_id": "F16",
+      "kind": "existing_out",
+      "input_root": "package",
+      "case": null,
+      "expected": {
+        "run_status": "TOOL_ERROR",
+        "native_rc": 7
+      },
+      "note": "Existing output must not be overwritten"
+    },
+    {
+      "id": "F17",
+      "acceptance_id": "F17",
+      "kind": "guard_nonzero_rc",
+      "input_root": "package",
+      "case": null,
+      "expected": {
+        "run_status": "REJECT_NOT_MATCH",
+        "native_rc": null
+      },
+      "note": "Fake MATCH with worker rc=1 must be rejected"
+    },
+    {
+      "id": "F18",
+      "acceptance_id": "F18",
+      "kind": "guard_printed_pass",
+      "input_root": "package",
+      "case": null,
+      "expected": {
+        "run_status": "REJECT_NOT_MATCH",
+        "native_rc": null
+      },
+      "note": "Printed PASS/missing full evidence must be rejected"
+    },
+    {
+      "id": "F19",
+      "acceptance_id": "F19",
+      "kind": "optimized_python",
+      "input_root": "package",
+      "case": null,
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3
+      },
+      "note": "Python -O/-OO is rejected"
+    },
+    {
+      "id": "D01",
+      "acceptance_id": "D01",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "D01",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/s00_expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/f06_mutate.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2,
+        "first": {
+          "ordinal": 5,
+          "kind": "FIELD",
+          "field": "data",
+          "expected": [
+            "WB",
+            6,
+            1,
+            1
+          ],
+          "actual": [
+            "WB",
+            6,
+            1,
+            2
+          ],
+          "field_expected": 1,
+          "field_actual": 2
+        },
+        "neighbor_ordinals": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8
+      },
+      "note": "Exact manual first difference; 2 neighbors each side"
+    },
+    {
+      "id": "D02",
+      "acceptance_id": "D02",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "D02",
+        "expected": {
+          "storage": "archive",
+          "stream": "bus",
+          "path": "generated/block-boundary/expected_archive",
+          "complete": true,
+          "index_SHA256": "FROM_MANIFEST"
+        },
+        "actual": {
+          "storage": "archive",
+          "stream": "bus",
+          "path": "generated/block-boundary/actual_archive",
+          "complete": true,
+          "index_SHA256": "FROM_MANIFEST"
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MISMATCH",
+        "native_rc": 2
+      },
+      "note": "Generated archive difference at the >4MiB block boundary; no new input identity",
+      "archive_manifest": "generated/block-boundary/manifest.json"
+    },
+    {
+      "id": "R01",
+      "acceptance_id": "R01",
+      "kind": "moved",
+      "input_root": "package",
+      "case": null,
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8
+      },
+      "note": "Copy input package and return tool to Chinese/space fresh tree; same S00 command"
+    },
+    {
+      "id": "S01-1",
+      "acceptance_id": "S01",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "S01-1",
+        "expected": {
+          "storage": "raw",
+          "stream": "bus",
+          "path": "generated/stress/1MiB-expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "bus",
+          "path": "generated/stress/1MiB-actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "case_timeout_seconds": 180.0
+        }
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "min_bytes_each": 1048576
+      },
+      "note": "Deterministic EDGE stress stream, >=1MiB per stream"
+    },
+    {
+      "id": "S01-16",
+      "acceptance_id": "S01",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "S01-16",
+        "expected": {
+          "storage": "raw",
+          "stream": "bus",
+          "path": "generated/stress/16MiB-expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "bus",
+          "path": "generated/stress/16MiB-actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "case_timeout_seconds": 180.0
+        }
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "min_bytes_each": 16777216
+      },
+      "note": "Deterministic EDGE stress stream, >=16MiB per stream"
+    },
+    {
+      "id": "S01-128",
+      "acceptance_id": "S01",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "S01-128",
+        "expected": {
+          "storage": "raw",
+          "stream": "bus",
+          "path": "generated/stress/128MiB-expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "bus",
+          "path": "generated/stress/128MiB-actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "case_timeout_seconds": 180.0
+        }
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "min_bytes_each": 134217728
+      },
+      "note": "Deterministic EDGE stress stream, >=128MiB per stream"
+    },
+    {
+      "id": "S02",
+      "acceptance_id": "S02",
+      "kind": "run",
+      "input_root": "work",
+      "case": {
+        "id": "S02",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/s02_large_cycles_expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "generated/faults/s02_large_cycles_actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "min_cycle": 4294967296
+      },
+      "note": "Legal cycle >2^31 and >2^32; not >4GB disk I/O"
+    },
+    {
+      "id": "C0-default",
+      "acceptance_id": "R1",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "C0-default",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "checked": 8,
+        "expected_records": 8,
+        "actual_records": 8,
+        "expect_result_file": true,
+        "expect_worker_started": true
+      },
+      "note": "A C0 control; default budget"
+    },
+    {
+      "id": "C1-worker-memory",
+      "acceptance_id": "R1",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "C1-worker-memory",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "worker_peak_working_set_bytes": 1
+        }
+      },
+      "expected": {
+        "run_status": "LIMIT",
+        "native_rc": 5,
+        "expect_result_file": true,
+        "expect_worker_started": false,
+        "memory_threshold": 1
+      },
+      "note": "A C1; preflight LIMIT, no large worker allocation"
+    },
+    {
+      "id": "C2-result-size",
+      "acceptance_id": "R1",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "C2-result-size",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "max_result_bytes": 256
+        }
+      },
+      "expected": {
+        "run_status": "LIMIT",
+        "native_rc": 5,
+        "expect_result_file": false,
+        "expect_worker_started": true
+      },
+      "note": "A C2; no over-limit result/worker-result file may be published"
+    },
+    {
+      "id": "C3-optimized-protected",
+      "acceptance_id": "R1",
+      "kind": "optimized_protected",
+      "input_root": "package",
+      "case": null,
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3,
+        "expect_result_file": false,
+        "output_created": false,
+        "protected_tree_unchanged": true
+      },
+      "note": "A C3; -O rejects before creating output inside copied tool tree"
+    },
+    {
+      "id": "R1-MEM-OVER",
+      "acceptance_id": "R1",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "R1-MEM-OVER",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "worker_peak_working_set_bytes": 16777216
+        }
+      },
+      "expected": {
+        "run_status": "LIMIT",
+        "native_rc": 5,
+        "expect_result_file": true,
+        "expect_worker_started": true,
+        "memory_threshold": 16777216,
+        "memory_observed_gt": 16777216
+      },
+      "note": "Configured 16MiB below observed worker peak; must not MATCH"
+    },
+    {
+      "id": "R1-RESULT-ENOUGH",
+      "acceptance_id": "R1",
+      "kind": "run",
+      "input_root": "package",
+      "case": {
+        "id": "R1-RESULT-ENOUGH",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "max_result_bytes": 4096
+        }
+      },
+      "expected": {
+        "run_status": "MATCH",
+        "native_rc": 0,
+        "expect_result_file": true,
+        "max_result_bytes": 4096,
+        "max_worker_result_bytes": 4096
+      },
+      "note": "Sufficient 4KiB result budget; both result files bounded"
+    },
+    {
+      "id": "R1-LOG-FLOOD",
+      "acceptance_id": "R1",
+      "kind": "fixture",
+      "input_root": "package",
+      "case": {
+        "id": "R1-LOG-FLOOD",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "max_log_bytes_each": 4096
+        }
+      },
+      "expected": {
+        "run_status": "LIMIT",
+        "native_rc": 5,
+        "expect_result_file": true,
+        "max_log_bytes": 4096,
+        "expect_worker_started": true
+      },
+      "fixture_worker": "log_flood",
+      "note": "Fixture floods stdout; streamed log cap must stop worker"
+    },
+    {
+      "id": "R1-TIMEOUT-TOTAL",
+      "acceptance_id": "R1",
+      "kind": "fixture",
+      "input_root": "package",
+      "case": {
+        "id": "R1-TIMEOUT-TOTAL",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {
+          "case_timeout_seconds": 1.0,
+          "cleanup_seconds": 1.0
+        }
+      },
+      "expected": {
+        "run_status": "TIMEOUT",
+        "native_rc": 6,
+        "expect_result_file": true,
+        "max_elapsed": 2.6,
+        "expect_worker_started": true
+      },
+      "fixture_worker": "sleep_forever",
+      "note": "Controlled suspended worker; total deadline 1+1s"
+    },
+    {
+      "id": "R1-WORKER-RC",
+      "acceptance_id": "R1",
+      "kind": "fixture",
+      "input_root": "package",
+      "case": {
+        "id": "R1-WORKER-RC",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "TOOL_ERROR",
+        "native_rc": 7,
+        "expect_result_file": true,
+        "worker_rc": 17
+      },
+      "fixture_worker": "nonzero_rc",
+      "note": "Actual runner nonzero worker rc cannot become MATCH"
+    },
+    {
+      "id": "R1-MISSING-RESULT",
+      "acceptance_id": "R1",
+      "kind": "fixture",
+      "input_root": "package",
+      "case": {
+        "id": "R1-MISSING-RESULT",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "TOOL_ERROR",
+        "native_rc": 7,
+        "expect_result_file": true,
+        "worker_rc": 0
+      },
+      "fixture_worker": "missing_result",
+      "note": "Missing worker-result cannot become MATCH"
+    },
+    {
+      "id": "R1-PASS-TEXT",
+      "acceptance_id": "R1",
+      "kind": "fixture",
+      "input_root": "package",
+      "case": {
+        "id": "R1-PASS-TEXT",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "TOOL_ERROR",
+        "native_rc": 7,
+        "expect_result_file": true,
+        "worker_rc": 0
+      },
+      "fixture_worker": "pass_text",
+      "note": "Only-printed PASS cannot become MATCH"
+    },
+    {
+      "id": "R1-INVALID-JSON",
+      "acceptance_id": "R1",
+      "kind": "invalid_case",
+      "input_root": "package",
+      "case": null,
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3,
+        "expect_result_file": false,
+        "output_created": false
+      },
+      "note": "Malformed CASE must be rejected before output creation"
+    },
+    {
+      "id": "R1-INVALID-ROOT",
+      "acceptance_id": "R1",
+      "kind": "invalid_root",
+      "input_root": "package",
+      "case": null,
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3,
+        "expect_result_file": false,
+        "output_created": false
+      },
+      "note": "Missing input root must be rejected before output creation"
+    },
+    {
+      "id": "R1-OVERSIZE-CASE",
+      "acceptance_id": "R1",
+      "kind": "oversize_case",
+      "input_root": "package",
+      "case": null,
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3,
+        "expect_result_file": false,
+        "output_created": false
+      },
+      "note": "CASE >1MiB rejected by stat before parse"
+    },
+    {
+      "id": "R1-OVERSIZE-INDEX",
+      "acceptance_id": "R1",
+      "kind": "oversize_index",
+      "input_root": "work",
+      "case": null,
+      "expected": {
+        "run_status": "INVALID_INPUT",
+        "native_rc": 3,
+        "expect_result_file": true,
+        "output_created": true
+      },
+      "note": "Archive index >2MiB rejected before codec parse"
+    },
+    {
+      "id": "R1-EXISTING-OUT",
+      "acceptance_id": "R1",
+      "kind": "existing_out",
+      "input_root": "package",
+      "case": {
+        "id": "R1-EXISTING-OUT",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "TOOL_ERROR",
+        "native_rc": 7,
+        "expect_result_file": false,
+        "output_created": true,
+        "marker_unchanged": true
+      },
+      "note": "Existing output must not be overwritten"
+    },
+    {
+      "id": "R1-MEM-MEASURE",
+      "acceptance_id": "R1",
+      "kind": "unit_memory",
+      "input_root": "package",
+      "case": {
+        "id": "R1-MEM-MEASURE",
+        "expected": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+          "complete": true
+        },
+        "actual": {
+          "storage": "raw",
+          "stream": "trace",
+          "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+          "complete": true
+        },
+        "allow_empty": false,
+        "limits": {}
+      },
+      "expected": {
+        "run_status": "TOOL_ERROR",
+        "native_rc": 7,
+        "expect_result_file": true,
+        "expect_worker_started": true,
+        "worker_rc": 0
+      },
+      "note": "Measurement-unavailable branch via fixed fixture and internal runner; must not MATCH"
+    }
+  ],
+  "not_claimed": [
+    "CPU ISA correctness",
+    "new DUT validation",
+    "official CoreMark",
+    "hardware"
+  ],
+  "total_case_seconds_limit": 188,
+  "total_suite_seconds_limit": 1800,
+  "return_directory_bytes_limit": 134217728,
+  "plan_id": "B-VERIFY-OFFLINE-M0-R1-PLAN-1.0.1",
+  "plan_version": "1.0.1",
+  "supersedes": "B-VERIFY-OFFLINE-M0-PLAN-1.0.0",
+  "original_plan_sha256": "9F74BDEFADC8981A55F0443855A0549F79A4FE1118E8D3EDBC330618355352BD",
+  "original_plan_path": "tests/history/PLAN-v01.json",
+  "abI_note": "ABI 1.0.0 and frozen API unchanged; only B wrapper/support/tests changed.",
+  "r1": "Resource/error guard amendment 1.0.1; original 37 cases unchanged.",
+  "cases_count": 54,
+  "original_37_count": 37,
+  "new_r1_count": 17,
+  "expectations_frozen": true,
+  "manual_note": "R1 expectations frozen before execution; C0/C1/C2 use A fixed JSON; C3 protected output hash checked before/after."
+}

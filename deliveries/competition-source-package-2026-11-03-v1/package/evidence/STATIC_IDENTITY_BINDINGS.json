@@ -1,0 +1,149 @@
+{
+  "ROM_bindings": [
+    {
+      "design": "baseline\\sm2\\performance\\pds\\source\\init_tables.svh",
+      "binary": "baseline\\sm2\\performance\\software\\build\\performance256\\program.bin",
+      "binary_sha256": "7BE534D0F4798A182BED549AB3E36244C79D86A45F6040BBD0E1AFB701619D9D",
+      "bytes": 19744,
+      "prefix_equal": true,
+      "rom_sha256": "C22A04D27FC3A2344387533690BD48DDFBA900CFA97EA820D3D10D091EA5FADB"
+    },
+    {
+      "design": "baseline\\sm2\\performance\\pds\\source\\memory_model.sv",
+      "binary": "baseline\\sm2\\performance\\software\\build\\performance256\\program.bin",
+      "binary_sha256": "7BE534D0F4798A182BED549AB3E36244C79D86A45F6040BBD0E1AFB701619D9D",
+      "bytes": 19744,
+      "prefix_equal": true,
+      "rom_sha256": "C22A04D27FC3A2344387533690BD48DDFBA900CFA97EA820D3D10D091EA5FADB"
+    },
+    {
+      "design": "baseline\\sm2\\validation\\pds\\source\\init_tables.svh",
+      "binary": "baseline\\sm2\\validation\\software\\build\\validation256\\program.bin",
+      "binary_sha256": "C2410635BBC83AA2C561D8EB545A21DD1C303F8DF5AFE94C2DD41B81EFD7061A",
+      "bytes": 19752,
+      "prefix_equal": true,
+      "rom_sha256": "91266295CE6FF84F12A3F8ED51B7D4D6AEB6EE3988C6FEAD0724E28C2012C71E"
+    },
+    {
+      "design": "baseline\\sm2\\validation\\pds\\source\\memory_model.sv",
+      "binary": "baseline\\sm2\\validation\\software\\build\\validation256\\program.bin",
+      "binary_sha256": "C2410635BBC83AA2C561D8EB545A21DD1C303F8DF5AFE94C2DD41B81EFD7061A",
+      "bytes": 19752,
+      "prefix_equal": true,
+      "rom_sha256": "91266295CE6FF84F12A3F8ED51B7D4D6AEB6EE3988C6FEAD0724E28C2012C71E"
+    },
+    {
+      "design": "application/event-recorder/fpga/source/memory_model.sv",
+      "binary": "application\\event-recorder\\software\\production0-r1\\program.bin",
+      "binary_sha256": "CBB37E60674713CCFBB0E603BA774ECB82E2460FA7D2DD2707AF34D4175E3D30",
+      "bytes": 1836,
+      "prefix_equal": true,
+      "rom_sha256": "BCB5F9159415C6617704B8359CCB2E875E70F9CE968B62626900C37C00E6CDA9"
+    },
+    {
+      "design": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\init_tables.svh",
+      "binary": "advanced\\btb-mmode\\project\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\performance\\program.bin",
+      "bytes": 15932,
+      "binary_sha256": "993BDA029D22EA1A12AB2B59814A43D8BE78733D5656AE34B78ED45A7F89F362",
+      "prefix_equal": true,
+      "rom_sha256": "AAD66CFE564BE2F82577FEAE8A2703248767130B3EEE86E47DB2183DC58A904B"
+    },
+    {
+      "design": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\init_tables.svh",
+      "binary": "advanced\\btb-mmode\\project\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\performance\\program.bin",
+      "bytes": 15932,
+      "binary_sha256": "993BDA029D22EA1A12AB2B59814A43D8BE78733D5656AE34B78ED45A7F89F362",
+      "prefix_equal": true,
+      "rom_sha256": "AAD66CFE564BE2F82577FEAE8A2703248767130B3EEE86E47DB2183DC58A904B"
+    },
+    {
+      "design": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\init_tables.svh",
+      "binary": "advanced\\btb-mmode\\project\\work\\advanced\\2026-11-03-coremark-strict-m5\\build\\performance\\program.bin",
+      "bytes": 15932,
+      "binary_sha256": "993BDA029D22EA1A12AB2B59814A43D8BE78733D5656AE34B78ED45A7F89F362",
+      "prefix_equal": true,
+      "rom_sha256": "AAD66CFE564BE2F82577FEAE8A2703248767130B3EEE86E47DB2183DC58A904B"
+    }
+  ],
+  "core_group_identities": [
+    {
+      "module": "alu.v",
+      "paths": [
+        "baseline\\sm2\\performance\\pds\\source\\alu.v",
+        "baseline\\sm2\\validation\\pds\\source\\alu.v",
+        "application\\event-recorder\\fpga\\source\\alu.v"
+      ],
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "module": "control.v",
+      "paths": [
+        "baseline\\sm2\\performance\\pds\\source\\control.v",
+        "baseline\\sm2\\validation\\pds\\source\\control.v",
+        "application\\event-recorder\\fpga\\source\\control.v"
+      ],
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "module": "regfile.v",
+      "paths": [
+        "baseline\\sm2\\performance\\pds\\source\\regfile.v",
+        "baseline\\sm2\\validation\\pds\\source\\regfile.v",
+        "application\\event-recorder\\fpga\\source\\regfile.v"
+      ],
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "module": "cpu.v",
+      "paths": [
+        "baseline\\sm2\\performance\\pds\\source\\cpu.v",
+        "baseline\\sm2\\validation\\pds\\source\\cpu.v",
+        "application\\event-recorder\\fpga\\source\\cpu.v"
+      ],
+      "sha256": "60F02899294C5BEF04E522622E32764A13B910008ADD85A73FE607550F9AF272"
+    },
+    {
+      "module": "alu.v",
+      "scope": "M5 vs pred0/pred1/pred32",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "module": "btb.v",
+      "scope": "M5 vs pred0/pred1/pred32",
+      "sha256": "A7F184154B471469149B99330938406A49377669F08A14F4C9836DB470FAA7C0"
+    },
+    {
+      "module": "control.v",
+      "scope": "M5 vs pred0/pred1/pred32",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "module": "cpu_hl4.v",
+      "scope": "M5 vs pred0/pred1/pred32",
+      "sha256": "AA5A84C0028F37D0D3719A8F0829D593D9DCFAE456E5C08F6229B1942F8442EF"
+    },
+    {
+      "module": "csr_file_hl3.v",
+      "scope": "M5 vs pred0/pred1/pred32",
+      "sha256": "DDEF6F8E193A0E697C405D72ACA0566A4D9347BD2799585DEAF1BE29A6AB39C1"
+    },
+    {
+      "module": "mmu_sv32.v",
+      "scope": "M5 vs pred0/pred1/pred32",
+      "sha256": "F14E89A695413D7CCE1F4D4465FF7D481D0BA8DAC0D3742185F34A0E30C4F3E4"
+    },
+    {
+      "module": "pmp.v",
+      "scope": "M5 vs pred0/pred1/pred32",
+      "sha256": "F80DA6EC85FDD006191DA6160ACCB4B0BC6112DF2F658B04FF73B76A47F3275A"
+    },
+    {
+      "module": "regfile.v",
+      "scope": "M5 vs pred0/pred1/pred32",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    }
+  ],
+  "CoreMark_commit": "1f483d5b8316753a742cbf5590caf5bd0a4e4777",
+  "CoreMark_six_files_match_accepted": true,
+  "scope": "static identities only; no compile/DUT/PDS/hardware"
+}

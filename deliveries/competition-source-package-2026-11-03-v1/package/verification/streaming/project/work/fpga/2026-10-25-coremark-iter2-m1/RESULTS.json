@@ -1,0 +1,1560 @@
+{
+  "date_beijing": "2026-10-25",
+  "fact": "F151",
+  "approval": "D149",
+  "acceptance": "D150",
+  "stage": "A-COREMARK-ITER2-M1",
+  "outcome": "PASS_LIMITED_DOUBLE_ITERATION_CALIBRATION",
+  "source": [
+    {
+      "file": "alu.v",
+      "SHA256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "unchanged": true
+    },
+    {
+      "file": "board_reset_sync.sv",
+      "SHA256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152",
+      "unchanged": true
+    },
+    {
+      "file": "board_top.sv",
+      "SHA256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478",
+      "unchanged": true
+    },
+    {
+      "file": "control.v",
+      "SHA256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "unchanged": true
+    },
+    {
+      "file": "cpu.v",
+      "SHA256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D",
+      "unchanged": true
+    },
+    {
+      "file": "cycle_counter64.sv",
+      "SHA256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A",
+      "unchanged": true
+    },
+    {
+      "file": "gpio_core.v",
+      "SHA256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+      "unchanged": true
+    },
+    {
+      "file": "local_regif_txgpio_m1.v",
+      "SHA256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "unchanged": true
+    },
+    {
+      "file": "memory_model.sv",
+      "SHA256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27",
+      "unchanged": true
+    },
+    {
+      "file": "regfile.v",
+      "SHA256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "unchanged": true
+    },
+    {
+      "file": "soc_data_adapter.sv",
+      "SHA256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229",
+      "unchanged": true
+    },
+    {
+      "file": "soc_top.sv",
+      "SHA256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A",
+      "unchanged": true
+    },
+    {
+      "file": "uart_tx.v",
+      "SHA256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "unchanged": true
+    }
+  ],
+  "build": {
+    "status": "PASS_BUILD_ONLY_NOT_DUT",
+    "artifacts": [
+      {
+        "id": "performance",
+        "bytes": 15912,
+        "symbols": {
+          "cc8Gd7Wm.o": 0,
+          "$xrv32i2p1": 13636,
+          "core_list_join.c": 0,
+          "core_main.c": 0,
+          "list_known_crc": 15252,
+          "matrix_known_crc": 15264,
+          "state_known_crc": 15276,
+          "core_matrix.c": 0,
+          "core_state.c": 0,
+          "intpat": 15288,
+          "floatpat": 15304,
+          "scipat": 15320,
+          "errpat": 15336,
+          "core_util.c": 0,
+          "core_portme.c": 0,
+          "print_uint": 11656,
+          "muldi3.o": 0,
+          "div.o": 0,
+          "seed1_volatile": 71744,
+          "timing_phase": 67584,
+          "__global_pointer$": 67584,
+          "core_list_init": 2116,
+          "crcu32": 10036,
+          "check_data_types": 11648,
+          "stop_time": 12976,
+          "mem_name": 65536,
+          "__data_load": 15888,
+          "core_list_reverse": 860,
+          "crcu16": 9484,
+          "start_ticks": 67576,
+          "matrix_sum": 5276,
+          "portable_fini": 13316,
+          "matrix_test": 6424,
+          "get_time": 13148,
+          "core_bench_state": 8648,
+          "port_error": 67568,
+          "core_bench_list": 1328,
+          "matrix_mul_const": 5404,
+          "__hidden___udivsi3": 13644,
+          "__udivsi3": 13644,
+          "ee_printf": 12008,
+          "seed3_volatile": 65556,
+          "seed4_volatile": 65552,
+          "iterate": 2520,
+          "matrix_mul_matrix": 5856,
+          "__bss_end": 71748,
+          "cmp_complex": 516,
+          "core_state_transition": 7904,
+          "end_ticks": 67592,
+          "timing_unavailable": 67636,
+          "__stack_top": 98304,
+          "core_bench_matrix": 7508,
+          "__umodsi3": 13716,
+          "core_list_mergesort": 896,
+          "port_finished": 67632,
+          "start_time": 12904,
+          "seed5_volatile": 71736,
+          "elapsed_ticks": 67600,
+          "_start": 0,
+          "ram_log_count": 67560,
+          "__data_end": 65560,
+          "core_list_remove": 712,
+          "crc16": 11092,
+          "timer_start_calls": 67572,
+          "__mulsi3": 13600,
+          "copy_info": 596,
+          "core_list_undo_remove": 752,
+          "ram_log": 67640,
+          "static_memblk": 65560,
+          "__bss_start": 65560,
+          "main": 2672,
+          "get_seed_32": 9080,
+          "timer_stop_calls": 67608,
+          "__divsi3": 13636,
+          "crcu8": 9180,
+          "__stack_bottom": 90112,
+          "matrix_mul_matrix_bitextract": 6128,
+          "ram_log_overflow": 67564,
+          "core_list_insert_new": 616,
+          "portable_init": 13216,
+          "core_init_matrix": 4796,
+          "matrix_mul_vect": 5648,
+          "timer_error": 67612,
+          "matrix_add_const": 5592,
+          "core_init_state": 7576,
+          "__modsi3": 13768,
+          "empty_start": 67616,
+          "time_in_secs": 13180,
+          "empty_end": 67624,
+          "__data_start": 65536,
+          "seed2_volatile": 71740,
+          "core_list_find": 784,
+          "cmp_idx": 112,
+          "calc_func": 196,
+          "default_num_contexts": 65548
+        },
+        "bin_sha": "1F48F9FF031ECA75F27EA5A9FF9F2CD9BC14A461982927604346DACDDA683A6C",
+        "ELF_sha": "FD2BA73B524CD7C269C034C319D07C4A5660BB71A57B06C08B1BAA8E9D9C4CA2",
+        "ELF_seed4": 2,
+        "commands": [
+          {
+            "argv": [
+              "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+              "-march=rv32i",
+              "-mabi=ilp32",
+              "-O2",
+              "-ffreestanding",
+              "-fno-builtin",
+              "-fno-common",
+              "-fno-pie",
+              "-fno-stack-protector",
+              "-fno-unwind-tables",
+              "-fno-asynchronous-unwind-tables",
+              "-mno-relax",
+              "-msmall-data-limit=0",
+              "-Wall",
+              "-Wextra",
+              "-Werror",
+              "-nostdlib",
+              "-nostartfiles",
+              "-Wl,--no-relax",
+              "-Wl,--build-id=none",
+              "-Wl,-T,D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\firmware\\link.ld",
+              "-Wl,-Map,D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\performance\\program.map",
+              "-ID:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\firmware",
+              "-ID:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\port",
+              "-ID:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\upstream",
+              "-DTOTAL_DATA_SIZE=2000",
+              "-DITERATIONS=2",
+              "-DPERFORMANCE_RUN=1",
+              "-o",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\performance\\program.elf",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\firmware\\start.S",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\upstream\\core_list_join.c",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\upstream\\core_main.c",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\upstream\\core_matrix.c",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\upstream\\core_state.c",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\upstream\\core_util.c",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\port\\core_portme.c",
+              "-lgcc"
+            ],
+            "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\performance",
+            "returncode": 0,
+            "returncode_hex": "0x00000000",
+            "timed_out": false,
+            "cap": false,
+            "cleanup": null,
+            "elapsed_seconds": 0.938,
+            "timeout_seconds": 60,
+            "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-performance-compile\\stdout.log",
+            "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-performance-compile\\stderr.log"
+          },
+          {
+            "argv": [
+              "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+              "-O",
+              "binary",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\performance\\program.elf",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\performance\\program.bin"
+            ],
+            "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\performance",
+            "returncode": 0,
+            "returncode_hex": "0x00000000",
+            "timed_out": false,
+            "cap": false,
+            "cleanup": null,
+            "elapsed_seconds": 0.14,
+            "timeout_seconds": 20,
+            "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-performance-objcopy\\stdout.log",
+            "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-performance-objcopy\\stderr.log"
+          },
+          {
+            "argv": [
+              "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+              "-d",
+              "-M",
+              "no-aliases",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\performance\\program.elf"
+            ],
+            "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\performance",
+            "returncode": 0,
+            "returncode_hex": "0x00000000",
+            "timed_out": false,
+            "cap": false,
+            "cleanup": null,
+            "elapsed_seconds": 0.141,
+            "timeout_seconds": 20,
+            "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-performance-objdump\\stdout.log",
+            "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-performance-objdump\\stderr.log"
+          },
+          {
+            "argv": [
+              "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+              "-h",
+              "-A",
+              "-l",
+              "-sW",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\performance\\program.elf"
+            ],
+            "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\performance",
+            "returncode": 0,
+            "returncode_hex": "0x00000000",
+            "timed_out": false,
+            "cap": false,
+            "cleanup": null,
+            "elapsed_seconds": 0.125,
+            "timeout_seconds": 20,
+            "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-performance-readelf\\stdout.log",
+            "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-performance-readelf\\stderr.log"
+          },
+          {
+            "argv": [
+              "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+              "-u",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\performance\\program.elf"
+            ],
+            "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\performance",
+            "returncode": 0,
+            "returncode_hex": "0x00000000",
+            "timed_out": false,
+            "cap": false,
+            "cleanup": null,
+            "elapsed_seconds": 0.141,
+            "timeout_seconds": 20,
+            "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-performance-undefined\\stdout.log",
+            "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-performance-undefined\\stderr.log"
+          }
+        ]
+      },
+      {
+        "id": "validation",
+        "bytes": 15920,
+        "symbols": {
+          "ccKFLVXk.o": 0,
+          "$xrv32i2p1": 13636,
+          "core_list_join.c": 0,
+          "core_main.c": 0,
+          "list_known_crc": 15252,
+          "matrix_known_crc": 15264,
+          "state_known_crc": 15276,
+          "core_matrix.c": 0,
+          "core_state.c": 0,
+          "intpat": 15288,
+          "floatpat": 15304,
+          "scipat": 15320,
+          "errpat": 15336,
+          "core_util.c": 0,
+          "core_portme.c": 0,
+          "print_uint": 11656,
+          "muldi3.o": 0,
+          "div.o": 0,
+          "seed1_volatile": 65564,
+          "timing_phase": 67592,
+          "__global_pointer$": 67584,
+          "core_list_init": 2116,
+          "crcu32": 10036,
+          "check_data_types": 11648,
+          "stop_time": 12976,
+          "mem_name": 65536,
+          "__data_load": 15888,
+          "core_list_reverse": 860,
+          "crcu16": 9484,
+          "start_ticks": 67584,
+          "matrix_sum": 5276,
+          "portable_fini": 13316,
+          "matrix_test": 6424,
+          "get_time": 13148,
+          "core_bench_state": 8648,
+          "port_error": 67576,
+          "core_bench_list": 1328,
+          "matrix_mul_const": 5404,
+          "__hidden___udivsi3": 13644,
+          "__udivsi3": 13644,
+          "ee_printf": 12008,
+          "seed3_volatile": 65556,
+          "seed4_volatile": 65552,
+          "iterate": 2520,
+          "matrix_mul_matrix": 5856,
+          "__bss_end": 71748,
+          "cmp_complex": 516,
+          "core_state_transition": 7904,
+          "end_ticks": 67600,
+          "timing_unavailable": 67644,
+          "__stack_top": 98304,
+          "core_bench_matrix": 7508,
+          "__umodsi3": 13716,
+          "core_list_mergesort": 896,
+          "port_finished": 67640,
+          "start_time": 12904,
+          "seed5_volatile": 71744,
+          "elapsed_ticks": 67608,
+          "_start": 0,
+          "ram_log_count": 67568,
+          "__data_end": 65568,
+          "core_list_remove": 712,
+          "crc16": 11092,
+          "timer_start_calls": 67580,
+          "__mulsi3": 13600,
+          "copy_info": 596,
+          "core_list_undo_remove": 752,
+          "ram_log": 67648,
+          "static_memblk": 65568,
+          "__bss_start": 65568,
+          "main": 2672,
+          "get_seed_32": 9080,
+          "timer_stop_calls": 67616,
+          "__divsi3": 13636,
+          "crcu8": 9180,
+          "__stack_bottom": 90112,
+          "matrix_mul_matrix_bitextract": 6128,
+          "ram_log_overflow": 67572,
+          "core_list_insert_new": 616,
+          "portable_init": 13216,
+          "core_init_matrix": 4796,
+          "matrix_mul_vect": 5648,
+          "timer_error": 67620,
+          "matrix_add_const": 5592,
+          "core_init_state": 7576,
+          "__modsi3": 13768,
+          "empty_start": 67624,
+          "time_in_secs": 13180,
+          "empty_end": 67632,
+          "__data_start": 65536,
+          "seed2_volatile": 65560,
+          "core_list_find": 784,
+          "cmp_idx": 112,
+          "calc_func": 196,
+          "default_num_contexts": 65548
+        },
+        "bin_sha": "FF7C781C143A115EB112E94A260AA25F6A276130BBD95F61180AE2EFBF0C5811",
+        "ELF_sha": "DC86CF947B414B4B2DD0A9E5914E6FD1062C3EA835376D131B900D92C1DD52C0",
+        "ELF_seed4": 2,
+        "commands": [
+          {
+            "argv": [
+              "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+              "-march=rv32i",
+              "-mabi=ilp32",
+              "-O2",
+              "-ffreestanding",
+              "-fno-builtin",
+              "-fno-common",
+              "-fno-pie",
+              "-fno-stack-protector",
+              "-fno-unwind-tables",
+              "-fno-asynchronous-unwind-tables",
+              "-mno-relax",
+              "-msmall-data-limit=0",
+              "-Wall",
+              "-Wextra",
+              "-Werror",
+              "-nostdlib",
+              "-nostartfiles",
+              "-Wl,--no-relax",
+              "-Wl,--build-id=none",
+              "-Wl,-T,D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\firmware\\link.ld",
+              "-Wl,-Map,D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\validation\\program.map",
+              "-ID:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\firmware",
+              "-ID:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\port",
+              "-ID:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\upstream",
+              "-DTOTAL_DATA_SIZE=2000",
+              "-DITERATIONS=2",
+              "-DVALIDATION_RUN=1",
+              "-o",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\validation\\program.elf",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\firmware\\start.S",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\upstream\\core_list_join.c",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\upstream\\core_main.c",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\upstream\\core_matrix.c",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\upstream\\core_state.c",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\upstream\\core_util.c",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\port\\core_portme.c",
+              "-lgcc"
+            ],
+            "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\validation",
+            "returncode": 0,
+            "returncode_hex": "0x00000000",
+            "timed_out": false,
+            "cap": false,
+            "cleanup": null,
+            "elapsed_seconds": 0.718,
+            "timeout_seconds": 60,
+            "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-validation-compile\\stdout.log",
+            "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-validation-compile\\stderr.log"
+          },
+          {
+            "argv": [
+              "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+              "-O",
+              "binary",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\validation\\program.elf",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\validation\\program.bin"
+            ],
+            "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\validation",
+            "returncode": 0,
+            "returncode_hex": "0x00000000",
+            "timed_out": false,
+            "cap": false,
+            "cleanup": null,
+            "elapsed_seconds": 0.094,
+            "timeout_seconds": 20,
+            "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-validation-objcopy\\stdout.log",
+            "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-validation-objcopy\\stderr.log"
+          },
+          {
+            "argv": [
+              "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+              "-d",
+              "-M",
+              "no-aliases",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\validation\\program.elf"
+            ],
+            "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\validation",
+            "returncode": 0,
+            "returncode_hex": "0x00000000",
+            "timed_out": false,
+            "cap": false,
+            "cleanup": null,
+            "elapsed_seconds": 0.094,
+            "timeout_seconds": 20,
+            "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-validation-objdump\\stdout.log",
+            "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-validation-objdump\\stderr.log"
+          },
+          {
+            "argv": [
+              "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+              "-h",
+              "-A",
+              "-l",
+              "-sW",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\validation\\program.elf"
+            ],
+            "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\validation",
+            "returncode": 0,
+            "returncode_hex": "0x00000000",
+            "timed_out": false,
+            "cap": false,
+            "cleanup": null,
+            "elapsed_seconds": 0.109,
+            "timeout_seconds": 20,
+            "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-validation-readelf\\stdout.log",
+            "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-validation-readelf\\stderr.log"
+          },
+          {
+            "argv": [
+              "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+              "-u",
+              "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\validation\\program.elf"
+            ],
+            "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\build\\validation",
+            "returncode": 0,
+            "returncode_hex": "0x00000000",
+            "timed_out": false,
+            "cap": false,
+            "cleanup": null,
+            "elapsed_seconds": 0.109,
+            "timeout_seconds": 20,
+            "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-validation-undefined\\stdout.log",
+            "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\build-validation-undefined\\stderr.log"
+          }
+        ]
+      }
+    ]
+  },
+  "compile": {
+    "status": "PASS",
+    "rows": [
+      {
+        "id": "performance-N234",
+        "status": "PASS",
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+            "-B",
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "-g2012",
+            "-Wall",
+            "-DM0_VERIFY",
+            "-I",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source",
+            "-I",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification",
+            "-s",
+            "tb_board_coremark",
+            "-Ptb_board_coremark.PHASE_ADDR=67584",
+            "-o",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\compile\\performance-N234.vvp",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\alu.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\control.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\cpu.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\gpio_core.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\local_regif_txgpio_m1.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\regfile.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\uart_tx.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\board_reset_sync.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\board_top.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\cycle_counter64.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\memory_model.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\soc_data_adapter.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\performance-N234\\source\\soc_top.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\tests\\tb_board_coremark.sv",
+            "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+            "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1",
+          "returncode": 0,
+          "returncode_hex": "0x00000000",
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 44.406,
+          "timeout_seconds": 120,
+          "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\compile-performance-N234\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\compile-performance-N234\\stderr.log"
+        },
+        "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\compile\\performance-N234.vvp",
+        "sha256": "DA4AC4B07BA0B88B53AB650AEE6B42A77F41DEF0A60D910C085E8EF6B0E95231"
+      },
+      {
+        "id": "validation-N234",
+        "status": "PASS",
+        "process": {
+          "argv": [
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+            "-B",
+            "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+            "-g2012",
+            "-Wall",
+            "-DM0_VERIFY",
+            "-I",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source",
+            "-I",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification",
+            "-s",
+            "tb_board_coremark",
+            "-Ptb_board_coremark.PHASE_ADDR=67592",
+            "-o",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\compile\\validation-N234.vvp",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\alu.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\control.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\cpu.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\gpio_core.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\local_regif_txgpio_m1.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\regfile.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\uart_tx.v",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\board_reset_sync.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\board_top.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\cycle_counter64.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\memory_model.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\soc_data_adapter.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\cases\\validation-N234\\source\\soc_top.sv",
+            "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\tests\\tb_board_coremark.sv",
+            "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+            "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v"
+          ],
+          "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1",
+          "returncode": 0,
+          "returncode_hex": "0x00000000",
+          "timed_out": false,
+          "cap": false,
+          "cleanup": null,
+          "elapsed_seconds": 44.532,
+          "timeout_seconds": 120,
+          "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\compile-validation-N234\\stdout.log",
+          "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\compile-validation-N234\\stderr.log"
+        },
+        "output": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\compile\\validation-N234.vvp",
+        "sha256": "CDA244A7929AD729C1B803C46EFF648E842AB021190FC8053C3F067B5F27E4DF"
+      }
+    ],
+    "protected": 130
+  },
+  "new_DUT_runs": 2,
+  "rows": [
+    {
+      "id": "performance-N234",
+      "status": "PASS_LIMITED_ITER2",
+      "iterations": 2,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\compile\\performance-N234.vvp",
+          "+MAX_CYCLES=8000000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\runs\\performance-N234",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 320.39,
+        "timeout_seconds": 600,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\run-performance-N234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\run-performance-N234\\stderr.log"
+      },
+      "metrics": {
+        "physical": 5888943,
+        "advances": 2944471,
+        "stall": 173406,
+        "flush": 435221,
+        "tail": 32
+      },
+      "trace_counts": {
+        "EX": 1900604,
+        "WB": 1296943,
+        "READ": 245317,
+        "STORE": 34868
+      },
+      "streams": {
+        "EX": {
+          "count": 1900604,
+          "sha256": "F68D7CA5B2574B8386C525A838EBAFA8674BB9F235C3B5F9FD2E7156F6A4C9BF"
+        },
+        "WB": {
+          "count": 1296943,
+          "sha256": "71BA6A32BAC8D0D06D74FFC4E05F9B2080F7B2EC5BF2198E452EC98218981018"
+        },
+        "MEM": {
+          "count": 280185,
+          "sha256": "75E334D7D2E88E5C60642A66A3FD69C0368B35BB85B8966307B26DAAF27E46EB"
+        }
+      },
+      "timer_reads": [
+        {
+          "pc": 13232,
+          "address": 536871172,
+          "cycle": 18772,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 13236,
+          "address": 536871168,
+          "cycle": 18774,
+          "expected": 18773,
+          "actual": 18773
+        },
+        {
+          "pc": 13240,
+          "address": 536871172,
+          "cycle": 18776,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 13280,
+          "address": 536871172,
+          "cycle": 18798,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 13284,
+          "address": 536871168,
+          "cycle": 18800,
+          "expected": 18799,
+          "actual": 18799
+        },
+        {
+          "pc": 13288,
+          "address": 536871172,
+          "cycle": 18802,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 12940,
+          "address": 536871172,
+          "cycle": 61966,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 12944,
+          "address": 536871168,
+          "cycle": 61968,
+          "expected": 61967,
+          "actual": 61967
+        },
+        {
+          "pc": 12948,
+          "address": 536871172,
+          "cycle": 61970,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 12992,
+          "address": 536871172,
+          "cycle": 4269344,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 12996,
+          "address": 536871168,
+          "cycle": 4269346,
+          "expected": 4269345,
+          "actual": 4269345
+        },
+        {
+          "pc": 13000,
+          "address": 536871172,
+          "cycle": 4269348,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "detail": {
+        "stamps": [
+          18773,
+          18799,
+          61967,
+          4269345
+        ],
+        "empty_window": 26,
+        "raw_ticks": 4207378,
+        "frequency_setting_hz": 27000000,
+        "simulated_seconds_at_setting": 0.1558288148148148,
+        "formal_score_valid": false,
+        "phases": [
+          [
+            6223,
+            0
+          ],
+          [
+            61981,
+            1
+          ],
+          [
+            4269363,
+            2
+          ],
+          [
+            4329159,
+            3
+          ],
+          [
+            5888861,
+            4
+          ]
+        ],
+        "report_bytes": 662
+      },
+      "UART_frames": 662,
+      "frozen_comparison": {
+        "status": "PASS",
+        "errors": [],
+        "oracle_SHA256": "8CE8574ACBB5CD185C6283913DE50EA4885CE2131B4A7975251804F15D4794AB",
+        "actual_iterations": 2,
+        "crcfinal": "72be"
+      },
+      "files": {
+        "bus.log": {
+          "bytes": 110243503,
+          "SHA256": "67A237D16314B8F9CFED3903E68DB6D5817C32B14DA15B744899BFFB0753024C"
+        },
+        "check-result.json": {
+          "bytes": 3306,
+          "SHA256": "C3A8A59A1443E55AF4C58F35D308EC17F70BE01E2AF6AB5A2D30237F39D2272D"
+        },
+        "process.json": {
+          "bytes": 826,
+          "SHA256": "1B20DE3E688A597E6B0279AE5456DFE0C579420BBBA66E41FF22DD5D56CE59C4"
+        },
+        "ram-output.txt": {
+          "bytes": 662,
+          "SHA256": "EB7E336A412232990A29B2B3AAA89B1A9272CD40A44A392421DD178FF38DFA27"
+        },
+        "ram.hex": {
+          "bytes": 327680,
+          "SHA256": "0DF363A9EB08BCAD2100087CD5F368439FD6AED2C0D848057A3B9BAA588A8609"
+        },
+        "registers.hex": {
+          "bytes": 320,
+          "SHA256": "1FAB413A954E1CA318E3EF9642FDAD9BBDA49D67B88D89582EB36C7574D08C3E"
+        },
+        "stdout.log": {
+          "bytes": 299,
+          "SHA256": "9C44045E012F7B3CB915894FDE02149E882E47CE4E62841923570758A6BC1349"
+        },
+        "trace.log": {
+          "bytes": 84091326,
+          "SHA256": "35CA119FAD5DBF326AF495389BF811BD02489395E273FC1A2D29CA7FB1AEE774"
+        },
+        "uart-pins.log": {
+          "bytes": 122855,
+          "SHA256": "7C45B8A83B45DEE349686A08A029B8738EBAA6A62A51455B01AB7555F3325CE8"
+        },
+        "wave.vcd": {
+          "bytes": 348994,
+          "SHA256": "9CEF0AF0C89DFBCE4658E7CE571901116E5379B76DAA75DF1F19E9397AB37750"
+        }
+      }
+    },
+    {
+      "id": "validation-N234",
+      "status": "PASS_LIMITED_ITER2",
+      "iterations": 2,
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\compile\\validation-N234.vvp",
+          "+MAX_CYCLES=8000000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\runs\\validation-N234",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "cap": false,
+        "cleanup": null,
+        "elapsed_seconds": 357.453,
+        "timeout_seconds": 600,
+        "stdout": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\run-validation-N234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-coremark-iter2-m1\\logs\\run-validation-N234\\stderr.log"
+      },
+      "metrics": {
+        "physical": 6205395,
+        "advances": 3102697,
+        "stall": 174246,
+        "flush": 461228,
+        "tail": 32
+      },
+      "trace_counts": {
+        "EX": 2005976,
+        "WB": 1364865,
+        "READ": 246042,
+        "STORE": 34675
+      },
+      "streams": {
+        "EX": {
+          "count": 2005976,
+          "sha256": "5F05AB0D9E52ACFA8CBCD31ADAF36A7B08A53D5E16EE4AB89C41251350184D18"
+        },
+        "WB": {
+          "count": 1364865,
+          "sha256": "E08A0F702F96721514F609B15FB80FB8BCFC8E0BCAE74F87752680B6802BD5F6"
+        },
+        "MEM": {
+          "count": 280717,
+          "sha256": "F3D14A0882661D3012751D4FD0213D2B96C2761B11361661BF7FFF862B60F997"
+        }
+      },
+      "timer_reads": [
+        {
+          "pc": 13232,
+          "address": 536871172,
+          "cycle": 18784,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 13236,
+          "address": 536871168,
+          "cycle": 18786,
+          "expected": 18785,
+          "actual": 18785
+        },
+        {
+          "pc": 13240,
+          "address": 536871172,
+          "cycle": 18788,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 13280,
+          "address": 536871172,
+          "cycle": 18810,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 13284,
+          "address": 536871168,
+          "cycle": 18812,
+          "expected": 18811,
+          "actual": 18811
+        },
+        {
+          "pc": 13288,
+          "address": 536871172,
+          "cycle": 18814,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 12940,
+          "address": 536871172,
+          "cycle": 62368,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 12944,
+          "address": 536871168,
+          "cycle": 62370,
+          "expected": 62369,
+          "actual": 62369
+        },
+        {
+          "pc": 12948,
+          "address": 536871172,
+          "cycle": 62372,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 12992,
+          "address": 536871172,
+          "cycle": 4588858,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "pc": 12996,
+          "address": 536871168,
+          "cycle": 4588860,
+          "expected": 4588859,
+          "actual": 4588859
+        },
+        {
+          "pc": 13000,
+          "address": 536871172,
+          "cycle": 4588862,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "detail": {
+        "stamps": [
+          18785,
+          18811,
+          62369,
+          4588859
+        ],
+        "empty_window": 26,
+        "raw_ticks": 4526490,
+        "frequency_setting_hz": 27000000,
+        "simulated_seconds_at_setting": 0.16764777777777778,
+        "formal_score_valid": false,
+        "phases": [
+          [
+            6259,
+            0
+          ],
+          [
+            62383,
+            1
+          ],
+          [
+            4588877,
+            2
+          ],
+          [
+            4647967,
+            3
+          ],
+          [
+            6205313,
+            4
+          ]
+        ],
+        "report_bytes": 661
+      },
+      "UART_frames": 661,
+      "frozen_comparison": {
+        "status": "PASS",
+        "errors": [],
+        "oracle_SHA256": "F7485A648DCF56778674384EE5795B73C6D8E5F261A7CBAFEC71C9EC3224B13F",
+        "actual_iterations": 2,
+        "crcfinal": "fe8c"
+      },
+      "files": {
+        "bus.log": {
+          "bytes": 110178225,
+          "SHA256": "94C099769297EE6EEAF8EDF21DD81BCD8C7BF91EDAB07DBE4C010EE65EFBAB71"
+        },
+        "check-result.json": {
+          "bytes": 3307,
+          "SHA256": "74A7E5222EA9172396241926CE8E3B9FCCE154724221FA403388F2D272B8302F"
+        },
+        "process.json": {
+          "bytes": 823,
+          "SHA256": "B6DD4A3F11315D3C2CF7861E04D60594124ACBE60A931D4E411EC051D8489738"
+        },
+        "ram-output.txt": {
+          "bytes": 661,
+          "SHA256": "F9E0C38FE18B7C12959E9CC0558FE1FC9B92D0DABCAB553DBD3D5E91759CF018"
+        },
+        "ram.hex": {
+          "bytes": 327680,
+          "SHA256": "742B1885FA802C7A7732AC4C657A70FA4CC1FAAFA6591657E5764883EE99454C"
+        },
+        "registers.hex": {
+          "bytes": 320,
+          "SHA256": "75F3CA6AF81675CC3633D94AC8CE89E67005A8A5A252E74F7A02BB15C9A12D7A"
+        },
+        "stdout.log": {
+          "bytes": 299,
+          "SHA256": "2DD89FF8D9577F8EF4F9BAA5DCE5BF192D48C9FC5CCC38B5DB42FDEC8C1F2F3E"
+        },
+        "trace.log": {
+          "bytes": 87958340,
+          "SHA256": "57D68E7E0CFB1CB01AC8D2F1D6D497A99025E97AD006CDC9C928231AB21F080A"
+        },
+        "uart-pins.log": {
+          "bytes": 122471,
+          "SHA256": "23B56EC3AFDDF1BC7203DC93F54231E529B0CC9631F4A6CC03C64792027BE252"
+        },
+        "wave.vcd": {
+          "bytes": 352454,
+          "SHA256": "CB3D577779A49C7236D2242E1A9E6FD5914F74E1A9D44D4805038BC3CACC881F"
+        }
+      }
+    }
+  ],
+  "oracles_pre_DUT": true,
+  "oracle_calibration_old_programs": 2,
+  "oracle_new_programs": 2,
+  "checker_controls": {
+    "status": "PASS",
+    "control_and_negatives": [
+      {
+        "id": "control",
+        "status": "PASS"
+      },
+      {
+        "id": "iterations1",
+        "status": "EXPECTED_REJECT",
+        "errors": [
+          {
+            "kind": "iterations",
+            "actual": 1,
+            "expected": 2
+          }
+        ]
+      },
+      {
+        "id": "crcfinal",
+        "status": "EXPECTED_REJECT",
+        "errors": [
+          {
+            "kind": "crcfinal",
+            "actual": "0000",
+            "expected": "72be"
+          }
+        ]
+      },
+      {
+        "id": "missing_WB",
+        "status": "EXPECTED_REJECT",
+        "errors": [
+          {
+            "kind": "streams",
+            "actual": {
+              "EX": {
+                "count": 1900604,
+                "sha256": "F68D7CA5B2574B8386C525A838EBAFA8674BB9F235C3B5F9FD2E7156F6A4C9BF"
+              },
+              "WB": {
+                "count": 1296942,
+                "sha256": "71BA6A32BAC8D0D06D74FFC4E05F9B2080F7B2EC5BF2198E452EC98218981018"
+              },
+              "MEM": {
+                "count": 280185,
+                "sha256": "75E334D7D2E88E5C60642A66A3FD69C0368B35BB85B8966307B26DAAF27E46EB"
+              }
+            },
+            "expected": {
+              "EX": {
+                "count": 1900604,
+                "sha256": "F68D7CA5B2574B8386C525A838EBAFA8674BB9F235C3B5F9FD2E7156F6A4C9BF"
+              },
+              "WB": {
+                "count": 1296943,
+                "sha256": "71BA6A32BAC8D0D06D74FFC4E05F9B2080F7B2EC5BF2198E452EC98218981018"
+              },
+              "MEM": {
+                "count": 280185,
+                "sha256": "75E334D7D2E88E5C60642A66A3FD69C0368B35BB85B8966307B26DAAF27E46EB"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "extra_MEM",
+        "status": "EXPECTED_REJECT",
+        "errors": [
+          {
+            "kind": "streams",
+            "actual": {
+              "EX": {
+                "count": 1900604,
+                "sha256": "F68D7CA5B2574B8386C525A838EBAFA8674BB9F235C3B5F9FD2E7156F6A4C9BF"
+              },
+              "WB": {
+                "count": 1296943,
+                "sha256": "71BA6A32BAC8D0D06D74FFC4E05F9B2080F7B2EC5BF2198E452EC98218981018"
+              },
+              "MEM": {
+                "count": 280186,
+                "sha256": "75E334D7D2E88E5C60642A66A3FD69C0368B35BB85B8966307B26DAAF27E46EB"
+              }
+            },
+            "expected": {
+              "EX": {
+                "count": 1900604,
+                "sha256": "F68D7CA5B2574B8386C525A838EBAFA8674BB9F235C3B5F9FD2E7156F6A4C9BF"
+              },
+              "WB": {
+                "count": 1296943,
+                "sha256": "71BA6A32BAC8D0D06D74FFC4E05F9B2080F7B2EC5BF2198E452EC98218981018"
+              },
+              "MEM": {
+                "count": 280185,
+                "sha256": "75E334D7D2E88E5C60642A66A3FD69C0368B35BB85B8966307B26DAAF27E46EB"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "raw_timing",
+        "status": "EXPECTED_REJECT",
+        "errors": [
+          {
+            "kind": "raw_ticks",
+            "actual": 4207379,
+            "expected": 4207378
+          }
+        ]
+      },
+      {
+        "id": "phase_missing_BSS",
+        "status": "EXPECTED_REJECT",
+        "errors": [
+          {
+            "kind": "phase order",
+            "actual": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "expected": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "id": "budget_over",
+        "status": "EXPECTED_REJECT",
+        "errors": [
+          {
+            "kind": "physical",
+            "actual": 8000001,
+            "expected": 5888943
+          },
+          {
+            "kind": "budget",
+            "actual": false,
+            "expected": true
+          }
+        ]
+      }
+    ],
+    "new_DUT": 0,
+    "shared_actual_checker_path": true
+  },
+  "UART": {
+    "status": "PASS",
+    "rows": [
+      {
+        "id": "performance-N234",
+        "status": "PASS",
+        "pin_log_sha256": "7C45B8A83B45DEE349686A08A029B8738EBAA6A62A51455B01AB7555F3325CE8",
+        "records": 3840,
+        "actual_transitions": 3838,
+        "frames": 662,
+        "first_frame_cycle": 4329195,
+        "last_frame_cycle": 5886511,
+        "last_frame_end_cycle": 5888851,
+        "data_sha256": "EB7E336A412232990A29B2B3AAA89B1A9272CD40A44A392421DD178FF38DFA27",
+        "CLKS_PER_BIT": 234,
+        "clock_period_ps": 37037,
+        "first_active_posedge_ps": 277777,
+        "actual_transition_timestamps_match_cycles": true,
+        "separate_centre_decode": true,
+        "ordinary_native_VCD_is_windowed": true
+      },
+      {
+        "id": "validation-N234",
+        "status": "PASS",
+        "pin_log_sha256": "23B56EC3AFDDF1BC7203DC93F54231E529B0CC9631F4A6CC03C64792027BE252",
+        "records": 3828,
+        "actual_transitions": 3826,
+        "frames": 661,
+        "first_frame_cycle": 4648003,
+        "last_frame_cycle": 6202963,
+        "last_frame_end_cycle": 6205303,
+        "data_sha256": "F9E0C38FE18B7C12959E9CC0558FE1FC9B92D0DABCAB553DBD3D5E91759CF018",
+        "CLKS_PER_BIT": 234,
+        "clock_period_ps": 37037,
+        "first_active_posedge_ps": 277777,
+        "actual_transition_timestamps_match_cycles": true,
+        "separate_centre_decode": true,
+        "ordinary_native_VCD_is_windowed": true
+      }
+    ],
+    "actual_log_negative": [
+      {
+        "id": "missing_change",
+        "status": "EXPECTED_REJECTION",
+        "detail": ""
+      },
+      {
+        "id": "wrong_bit",
+        "status": "EXPECTED_REJECTION",
+        "detail": ""
+      },
+      {
+        "id": "wrong_timestamp",
+        "status": "EXPECTED_REJECTION",
+        "detail": "actual timestamps must agree with physical-cycle log"
+      },
+      {
+        "id": "duplicate_change",
+        "status": "EXPECTED_REJECTION",
+        "detail": ""
+      }
+    ],
+    "decoder_selftest": {
+      "status": "PASS",
+      "synthetic_only": true,
+      "new_DUT_runs": 0,
+      "control": 1,
+      "negative": [
+        "missing_frame",
+        "extra_repeated_frame",
+        "wrong_byte",
+        "order_bytes"
+      ]
+    },
+    "new_DUT_runs": 0,
+    "scope": "entire actual output pin transition timeline + frozen bytes; not hardware/ILA",
+    "protected": 130
+  },
+  "wave": {
+    "status": "PASS",
+    "rows": [
+      {
+        "id": "performance-N234",
+        "status": "PASS",
+        "VCD_sha256": "9CEF0AF0C89DFBCE4658E7CE571901116E5379B76DAA75DF1F19E9397AB37750",
+        "bytes": 348994,
+        "stable_post_checks": 2720,
+        "distinct_visible_cycles": 2183,
+        "intervals": [
+          [
+            1,
+            1024
+          ],
+          [
+            6223,
+            6479
+          ],
+          [
+            18767,
+            18778
+          ],
+          [
+            18793,
+            18804
+          ],
+          [
+            61961,
+            61972
+          ],
+          [
+            61981,
+            62237
+          ],
+          [
+            4269339,
+            4269350
+          ],
+          [
+            4269363,
+            4269619
+          ],
+          [
+            4329159,
+            4329415
+          ],
+          [
+            5888861,
+            5888943
+          ]
+        ],
+        "explicit_off_timestamp_groups": 9,
+        "timer_LOAD_pre_capture_cycles": [
+          18772,
+          18774,
+          18776,
+          18798,
+          18800,
+          18802,
+          61966,
+          61968,
+          61970,
+          4269344,
+          4269346,
+          4269348
+        ],
+        "settled_timer_address_samples": 44,
+        "first_active_posedge_ps": 277777,
+        "last_timestamp_ps": 218109041150,
+        "scope": "native VCD windows; captured pre-edge variables + independent physical-time/post-edge checks",
+        "full_algorithm_wave": false,
+        "hardware_ILA": false,
+        "retirement_PC": false
+      },
+      {
+        "id": "validation-N234",
+        "status": "PASS",
+        "VCD_sha256": "CB3D577779A49C7236D2242E1A9E6FD5914F74E1A9D44D4805038BC3CACC881F",
+        "bytes": 352454,
+        "stable_post_checks": 2750,
+        "distinct_visible_cycles": 2183,
+        "intervals": [
+          [
+            1,
+            1024
+          ],
+          [
+            6259,
+            6515
+          ],
+          [
+            18779,
+            18790
+          ],
+          [
+            18805,
+            18816
+          ],
+          [
+            62363,
+            62374
+          ],
+          [
+            62383,
+            62639
+          ],
+          [
+            4588853,
+            4588864
+          ],
+          [
+            4588877,
+            4589133
+          ],
+          [
+            4647967,
+            4648223
+          ],
+          [
+            6205313,
+            6205395
+          ]
+        ],
+        "explicit_off_timestamp_groups": 9,
+        "timer_LOAD_pre_capture_cycles": [
+          18784,
+          18786,
+          18788,
+          18810,
+          18812,
+          18814,
+          62368,
+          62370,
+          62372,
+          4588858,
+          4588860,
+          4588862
+        ],
+        "settled_timer_address_samples": 44,
+        "first_active_posedge_ps": 277777,
+        "last_timestamp_ps": 229829473874,
+        "scope": "native VCD windows; captured pre-edge variables + independent physical-time/post-edge checks",
+        "full_algorithm_wave": false,
+        "hardware_ILA": false,
+        "retirement_PC": false
+      }
+    ],
+    "new_DUT_runs": 0,
+    "protected": 130
+  },
+  "quality": [
+    {
+      "id": "performance-N234",
+      "C1": 2103648,
+      "C2": 4207378,
+      "second_iteration_increment": 2103730,
+      "delta_from_two_times_C1": 82,
+      "old_full_physical": 3784487,
+      "new_full_physical": 5888943,
+      "old_UART_bytes": 662,
+      "new_UART_bytes": 662,
+      "new_nominal_compute_seconds": 0.1558288148148148,
+      "new_DUT_host_seconds": 320.39,
+      "old_files": {
+        "trace.log": 53254975,
+        "bus.log": 110281625,
+        "wave.vcd": 345615
+      },
+      "new_files": {
+        "trace.log": 84091326,
+        "bus.log": 110243503,
+        "wave.vcd": 348994
+      },
+      "fit_is_only_two_points": true,
+      "not_a_speedup_claim": true
+    },
+    {
+      "id": "validation-N234",
+      "C1": 2263000,
+      "C2": 4526490,
+      "second_iteration_increment": 2263490,
+      "delta_from_two_times_C1": 490,
+      "old_full_physical": 3941007,
+      "new_full_physical": 6205395,
+      "old_UART_bytes": 661,
+      "new_UART_bytes": 661,
+      "new_nominal_compute_seconds": 0.16764777777777778,
+      "new_DUT_host_seconds": 357.453,
+      "old_files": {
+        "trace.log": 55167878,
+        "bus.log": 110131283,
+        "wave.vcd": 349015
+      },
+      "new_files": {
+        "trace.log": 87958340,
+        "bus.log": 110178225,
+        "wave.vcd": 352454
+      },
+      "fit_is_only_two_points": true,
+      "not_a_speedup_claim": true
+    }
+  ],
+  "ports_changed": [
+    "core_portme.c ITERATIONS initializer and positive guard"
+  ],
+  "CPU_RTL_changed": false,
+  "official_algorithm_changed": false,
+  "reference_change": "budget2M->5M only; new pre-DUT independent schedule in precompute.py",
+  "old_inputs_unchanged": 130,
+  "frozen_inputs_unchanged": 80,
+  "PDS_runs": 0,
+  "new_install_environment_license_changes": false,
+  "stable": "F143/O2",
+  "candidate": "F146_HELD",
+  "formal_score": false,
+  "hardware": "STOPPED",
+  "B": "R1-R3 original tasks; user reported relay sent; no new reply inferred"
+}

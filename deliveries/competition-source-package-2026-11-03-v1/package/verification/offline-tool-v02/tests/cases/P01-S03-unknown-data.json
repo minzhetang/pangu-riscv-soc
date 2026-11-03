@@ -1,0 +1,17 @@
+{
+  "id": "P01-S03-unknown-data",
+  "expected": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S03-unknown-data/expected.log",
+    "complete": true
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S03-unknown-data/actual.log",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {}
+}

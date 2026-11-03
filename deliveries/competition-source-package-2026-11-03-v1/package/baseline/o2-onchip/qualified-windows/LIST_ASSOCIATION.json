@@ -1,0 +1,9 @@
+{
+  "case": "list",
+  "source": "D:\\A_FPGA_Comp\\work\\pds-jtag\\2026-11-01-coremark256-ila-list-h54-r3\\list_final.wdf",
+  "expected_PC": "0x530",
+  "project_exact140bit_predicate": true,
+  "only1_run": true,
+  "wdf_sha256": "B2540C779588038E2BE627BA09D3DC3A926E6A8E178E206C5E737CDA8BB9273E",
+  "dprj_sha256": "3B89A3AF6582F3680C3B0540CBA244727D338F3C348B3E246912A26EF5A3C345"
+}

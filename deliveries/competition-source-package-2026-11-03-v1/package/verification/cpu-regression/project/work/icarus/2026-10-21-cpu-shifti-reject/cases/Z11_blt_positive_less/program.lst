@@ -1,0 +1,7 @@
+0000: 00100093  addi x1,x0,1
+0004: 00200113  addi x2,x0,2
+0008: 0020c663  blt x1,x2,+12 ; manual taken=1
+000c: 00002423  sw x0,8(x0) ; fallthrough only
+0010: 00700513  addi x10,x0,7 ; fallthrough only
+0014: 00900593  addi x11,x0,9 ; target once
+0018: 05a00f93  addi x31,x0,90 ; completion

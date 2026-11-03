@@ -1,0 +1,14 @@
+{
+  "date_beijing": "2026-10-23T23:55:21.362693+08:00",
+  "frozen_inputs": {
+    "checked": 63,
+    "changed": []
+  },
+  "artifact_checks": 117,
+  "status": "E1_LIMITED_CHARACTERIZATION_COMPLETE_E2_NOT_APPROVED",
+  "no_CPU_source_edits": true,
+  "original_inputs_and_expectations_unchanged": true,
+  "report_sha256": "2F974C61782C8346CEE5D09F0976914BD6CB5254E303F986A344A15BD5A847E4",
+  "hardware": "STOP",
+  "next_scope": "A-MEM-ADAPT-M1_PROPOSED_ONLY"
+}

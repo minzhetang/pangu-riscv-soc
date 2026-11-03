@@ -1,0 +1,34 @@
+--- M1/cpu_hl4.v
++++ M2/cpu_hl4.v
+@@ -676,8 +676,8 @@
+     assign btb_update_target  = ex_actual_target;
+ 
+     // MRET/SRET are control transfers and must not commit a register write.
+-    assign ex_mret_valid = id_valid && ex_is_mret && !ex_exception;
+-    assign ex_sret_valid = id_valid && ex_is_sret && !ex_exception;
++    assign ex_mret_valid = id_valid && ex_is_mret && !ex_exception && !stall_all;
++    assign ex_sret_valid = id_valid && ex_is_sret && !ex_exception && !stall_all;
+ 
+     // -------------------------------------------------------------
+     // Interrupt selection with M/S delegation.
+@@ -718,7 +718,7 @@
+     // Exception delegation is valid only when the trap came from S/U.
+     wire exception_to_s = (priv != 2'b11) && medeleg[exc_code];
+ 
+-    assign trap_valid = ex_exception || interrupt_taken;
++    assign trap_valid = (ex_exception && !stall_all) || interrupt_taken;
+     assign trap_is_interrupt = !ex_exception && interrupt_taken;
+     assign trap_target = trap_is_interrupt ? int_target :
+                          (exception_to_s ? 2'b01 : 2'b11);
+@@ -734,8 +734,10 @@
+         ? ({trap_base[31:2], 2'b00} + {26'd0, int_code, 2'b00})
+         : {trap_base[31:2], 2'b00};
+ 
++    // Resolve the held EX instruction exactly when EX/MEM can accept it.
++    // Otherwise an IF miss would flush its link result before it advances.
+     assign redirect = trap_valid || ex_mret_valid || ex_sret_valid ||
+-                      ex_btb_mispredict;
++                      (ex_btb_mispredict && !stall_all);
+     assign redirect_pc = trap_valid ? trap_vector :
+                          (ex_mret_valid ? mepc :
+                           (ex_sret_valid ? sepc :

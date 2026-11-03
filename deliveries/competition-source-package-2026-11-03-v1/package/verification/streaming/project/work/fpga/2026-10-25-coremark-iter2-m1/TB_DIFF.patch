@@ -1,0 +1,23 @@
+--- 
++++ 
+@@ -6,7 +6,7 @@
+     reg clk=0;wire rst_n=board_dut.sys_rst_n;
+     wire [7:0] gpio_in_async={4'b0,~key_n[4:1]};
+     wire uart_tx,stopped,write_error;wire [7:0] gpio_out;wire [1:0] stop_kind;wire [31:0] stop_pc;
+-    integer cycle=0,tail=0,limit=6000000,events_fd,bus_fd,rf_fd,ram_fd,i;
++    integer cycle=0,tail=0,limit=8000000,events_fd,bus_fd,rf_fd,ram_fd,i;
+     integer advances=0,stall=0,flush=0,wave_until=1024;reg dumping=1;
+     reg [31:0] pre_addr,pre_wdata,pre_io_data,pre_phase=0;
+     reg [3:0] pre_strobe;reg pre_write,pre_io_error,pre_tx,pre_gpio_accept;
+@@ -23,9 +23,9 @@
+     // 37.037 ns period at 1 ps precision, nominal 27 MHz.
+     always begin #18.518;clk=1;#18.519;clk=0;end
+     initial begin
+-        if(!$value$plusargs("MAX_CYCLES=%d",limit))limit=6000000;
++        if(!$value$plusargs("MAX_CYCLES=%d",limit))limit=8000000;
+         if(N!=16&&N!=234)$fatal(1,"UNAPPROVED_N");
+-        if(limit<1||limit>6000000)$fatal(1,"BUDGET_BOUNDS");
++        if(limit<1||limit>8000000)$fatal(1,"BUDGET_BOUNDS");
+         events_fd=$fopen("trace.log","w");bus_fd=$fopen("bus.log","w");
+         serial_fd=$fopen("uart-pins.log","w");if(!serial_fd)$fatal(1,"PIN_LOG_OPEN");
+         if(!events_fd||!bus_fd)$fatal(1,"TRACE_OPEN");

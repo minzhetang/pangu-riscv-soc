@@ -1,0 +1,29 @@
+COMMAND=["D:\\iverilog\\bin\\iverilog.exe", "-B", "D:\\iverilog\\lib\\ivl", "-g2012", "-Wall", "-s", "tb_uart_rx", "-DCLKS_PER_BIT=234", "-DTB_MAX_CYCLES=110967", "-I", "tb", "-o", "waves/rx-20261025-211013/uart_rx_N234.vvp", "src/uart_rx.v", "tb/rx_public_capture.sv", "tb/tb_uart_rx.sv"]
+CWD=C:\Users\ANON_USER\Desktop\FPGA\发给队员_盘古100Pro项目交接包_2026-10-18_v01\work\peripherals\rx
+TIMEOUT_S=60
+RC=0
+TIMED_OUT=False
+CLEANUP_S=0.0
+CLEANUP_METHOD=not_needed
+CLEANUP_STATUS=NOT_NEEDED
+TASKKILL_RC=None
+CLEANUP_ERROR=
+DESCENDANT_CHECK=NOT_NEEDED
+DESCENDANTS_BEFORE=
+DESCENDANTS_ALIVE=
+DESCENDANTS_EXITED=
+DESCENDANT_CHECK_ERROR=
+START_ERROR=
+DURATION_S=0.062
+LOG_LIMIT_BYTES=4000000
+LOG_TRUNCATED=False
+STDOUT_BYTES=0
+STDOUT_READ_BYTES=0
+STDOUT_TRUNCATED=False
+STDERR_BYTES=0
+STDERR_READ_BYTES=0
+STDERR_TRUNCATED=False
+--- STDOUT ---
+
+--- STDERR ---
+

@@ -1,0 +1,19 @@
+{
+  "name": "irq-r32-r2-s1-p1-interrupt_before_store",
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+    "-M",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\irq-r32-r2-s1-p1.vvp",
+    "+IRQ=128",
+    "+IRQ_AT=1"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\irq-r32-r2-s1-p1\\interrupt_before_store",
+  "rc": 0,
+  "seconds": 0.125,
+  "remaining_before_close": [],
+  "input_sha256": {
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\irq-r32-r2-s1-p1.vvp": "b429b678d656b9075d4e6463f4b3b477998a7a59b53078eaae4cea5db58b46c9",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\irq-r32-r2-s1-p1\\interrupt_before_store\\program.hex": "b95ea21976fa8e8f69e83ccdee813114a7036931a8a9003a52cc036af4dc7e5b"
+  }
+}

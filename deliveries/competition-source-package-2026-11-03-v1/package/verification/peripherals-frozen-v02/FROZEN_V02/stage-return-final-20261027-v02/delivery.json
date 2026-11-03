@@ -1,0 +1,95 @@
+{
+  "kind": "ACTUAL",
+  "delivery_id": "stage-return-final-20261027-v02",
+  "version": "2.0.0-final-stage-candidate",
+  "created_at": "2026-10-25T21:20:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "final_stage": true,
+  "not_final_acceptance": true,
+  "base_stage": "stage-return-final-20261027-v01",
+  "base_increment": "increment-20261024-2335",
+  "original_package_id": "teammate-handoff-2026-10-18-v01",
+  "contracts": {
+    "rx": {
+      "id": "PERIPH-CORE-RX-1.0",
+      "version": "1.0.0",
+      "sha256": "E1DA0CC3BC1E9F64285B5846369D910338FF2289652E297629DDA9F5BAEEA706",
+      "status": "APPROVED"
+    },
+    "regif": {
+      "id": "LOCAL-REGIF-TXGPIO-M1",
+      "version": "1.0.0",
+      "sha256": "F0E31602D008459B3E95901C0F533BC7FF4153F6B5A93859780EA8D2AD64E988",
+      "status": "D115_APPROVED_SCOPE"
+    }
+  },
+  "results": {
+    "packaging": {
+      "run_id": "regif-m1-20261025-210743",
+      "status": "PASS",
+      "N16": "26 requests; 9 TX/6 GPIO/11 reject; 6 complete/3 cancel/0 bad_stop; event 37→197",
+      "N234": "10 requests; 9/0/1; 6 complete/3 cancel; event 6→2346",
+      "plan": "1.0.5",
+      "schema": "PASS"
+    },
+    "rx": {
+      "run_id": "rx-20261025-211013",
+      "status": "PASS",
+      "counts": "30 PASS + 1 expected TIMEOUT",
+      "ledger": "92/110/68",
+      "functional": "41/41, 50/50, 29/29, OV/FE 4/7",
+      "plan": "1.3.5",
+      "schema": "PASS"
+    },
+    "gpio": {
+      "status": "ACCEPTED_LIMITED_1.0.2",
+      "rerun": false
+    },
+    "W06": {
+      "status": "A-W06-SUPPLEMENT",
+      "B_rerun": false
+    }
+  },
+  "verification_deltas": {
+    "R1": {
+      "status": "PASS_LOCAL",
+      "plan": "rx-plan-1.3.5",
+      "run": "rx-20261025-211013",
+      "evidence": "true-edge pre/post; seq0 0/1; seq30 0/1; 5e post_clear=1; snapshot invariants"
+    },
+    "R2": {
+      "status": "PASS_LOCAL",
+      "plan": "w01-w10-plan-1.0.5",
+      "run": "regif-m1-20261025-210743",
+      "evidence": "event vs observed edge; N16 37/197; N234 6/2346; 6 complete/3 cancel"
+    },
+    "R3": {
+      "status": "PASS_LOCAL",
+      "evidence": "metadata regenerated from frozen current files; SOURCE_INDEX/CHANGED hashes exact; five metadata diff blocks present; no DUT rerun"
+    }
+  },
+  "coverage_map": "coverage_map.json",
+  "dependencies": "DEPENDENCIES.json",
+  "history_aliases": "HISTORY_ALIASES.json",
+  "source_index": "SOURCE_INDEX.json",
+  "changed_files": "CHANGED_FILES.json",
+  "diff": "DIFF.patch",
+  "sha256sums": "SHA256SUMS.txt",
+  "open_items": "OPEN_ITEMS.md",
+  "manifest_files": 69,
+  "acceptance": {
+    "material_complete": "PASS",
+    "B_difference": "PASS_LOCAL",
+    "mainline_reproduction": "NOT_RUN",
+    "A_system_integration": "A_OWNED",
+    "final_acceptance": "PENDING",
+    "hardware": "STOPPED"
+  },
+  "limitations": [
+    "Final-stage candidate, not final acceptance or mainline reproduction.",
+    "No CPU/SoC/CoreMark/PDS/board/hardware; hardware STOPPED.",
+    "W06 is A supplement, not a B new run.",
+    "Root handoff manifest/source-link remains open.",
+    "RX packaging/register wrapper and FIFO/interrupt are excluded."
+  ]
+}

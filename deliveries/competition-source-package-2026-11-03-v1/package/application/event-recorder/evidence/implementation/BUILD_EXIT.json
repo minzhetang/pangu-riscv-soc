@@ -1,0 +1,35 @@
+{
+  "error": null,
+  "elapsed_seconds": 86.31199999991804,
+  "cleanup": {
+    "job_empty": true,
+    "forced_cleanup": false,
+    "forced_non_console_cleanup": false,
+    "remaining_names_before_cleanup": [],
+    "root_exit_code": 0
+  },
+  "inputs_unchanged": true,
+  "artifacts": [
+    {
+      "path": "build/generate_bitstream/board_top.sbit",
+      "bytes": 3791112,
+      "sha256": "D43E4E419CC2F3656F92BCA2AF7BB23EFBE48B3EEC74A019A1D04FAABD60CEDE",
+      "fresh": true
+    }
+  ],
+  "license_issue": false,
+  "license_remaining_days_actual_prompts": [],
+  "sanitized_native_log_files": [
+    "build/flow.log",
+    "build/run.log",
+    "build/compile/run.log",
+    "build/device_map/run.log",
+    "build/generate_bitstream/run.log",
+    "build/place_route/run.log",
+    "build/report_timing/run.log",
+    "build/synthesize/run.log",
+    "build/compile/parse_design/run.log"
+  ],
+  "audit_pending": true,
+  "hardware_calls": 0
+}

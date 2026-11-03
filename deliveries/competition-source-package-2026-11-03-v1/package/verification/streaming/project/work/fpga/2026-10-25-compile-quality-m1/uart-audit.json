@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "id": "performance-N234",
+      "status": "PASS",
+      "pin_log_sha256": "31D362078AD77EFA3FA8F6233C022314143CF49A00C690F62E0515D380716A32",
+      "records": 3836,
+      "actual_transitions": 3834,
+      "frames": 662,
+      "first_frame_cycle": 2220877,
+      "last_frame_cycle": 3778193,
+      "last_frame_end_cycle": 3780533,
+      "data_sha256": "E6D44A99436FA3A2DACFFE251D3BE1A1930152D1BA9F6E3581D1F8C250C740CB",
+      "CLKS_PER_BIT": 234,
+      "clock_period_ps": 37037,
+      "first_active_posedge_ps": 277777,
+      "actual_transition_timestamps_match_cycles": true,
+      "separate_centre_decode": true,
+      "ordinary_native_VCD_is_windowed": true
+    },
+    {
+      "id": "validation-N234",
+      "status": "PASS",
+      "pin_log_sha256": "43DABC23A86CEB9403233AD37B30E7939508B56C9D64A9F113367D523CF5D0EE",
+      "records": 3826,
+      "actual_transitions": 3824,
+      "frames": 661,
+      "first_frame_cycle": 2381415,
+      "last_frame_cycle": 3936375,
+      "last_frame_end_cycle": 3938715,
+      "data_sha256": "EACC5742CF8F1B30255EA237EBEC6A17D02774FD7F85187069DE77CEC88D5E22",
+      "CLKS_PER_BIT": 234,
+      "clock_period_ps": 37037,
+      "first_active_posedge_ps": 277777,
+      "actual_transition_timestamps_match_cycles": true,
+      "separate_centre_decode": true,
+      "ordinary_native_VCD_is_windowed": true
+    }
+  ],
+  "actual_log_negative": [
+    {
+      "id": "missing_change",
+      "status": "EXPECTED_REJECTION",
+      "detail": ""
+    },
+    {
+      "id": "wrong_bit",
+      "status": "EXPECTED_REJECTION",
+      "detail": ""
+    },
+    {
+      "id": "wrong_timestamp",
+      "status": "EXPECTED_REJECTION",
+      "detail": "actual timestamps must agree with physical-cycle log"
+    },
+    {
+      "id": "duplicate_change",
+      "status": "EXPECTED_REJECTION",
+      "detail": ""
+    }
+  ],
+  "decoder_selftest": {
+    "status": "PASS",
+    "synthetic_only": true,
+    "new_DUT_runs": 0,
+    "control": 1,
+    "negative": [
+      "missing_frame",
+      "extra_repeated_frame",
+      "wrong_byte",
+      "order_bytes"
+    ]
+  },
+  "new_DUT_runs": 0,
+  "scope": "entire actual output pin transition timeline + frozen bytes; not hardware/ILA",
+  "protected": 726
+}

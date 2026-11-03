@@ -1,0 +1,17 @@
+{
+  "name": "after-r32-if-r2-trap-s1-p1-misaligned_jump_ifmiss",
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+    "-M",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\after-r32-if-r2-trap-s1-p1.vvp"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\after-r32-if-r2-trap-s1-p1\\misaligned_jump_ifmiss",
+  "rc": 0,
+  "seconds": 0.1410000000614673,
+  "remaining_before_close": [],
+  "input_sha256": {
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\after-r32-if-r2-trap-s1-p1.vvp": "4e66e24f1b87d4485f0255ee2bede13f2e1e9aea130173c90ad9bcb8710a6a11",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\after-r32-if-r2-trap-s1-p1\\misaligned_jump_ifmiss\\program.hex": "3b4327a004cad0aa92355d9c561d9a66737659d77f0deb9c99bf8da81878ca47"
+  }
+}

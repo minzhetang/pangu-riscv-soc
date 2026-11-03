@@ -1,0 +1,8 @@
+{
+  "commit": "1f483d5b8316753a742cbf5590caf5bd0a4e4777",
+  "status": "FETCH_OR_VERIFICATION_ERROR",
+  "exec_downloaded_code": false,
+  "tree_url": "https://api.github.com/repos/eembc/coremark/git/trees/1f483d5b8316753a742cbf5590caf5bd0a4e4777?recursive=1",
+  "archive_url": "https://codeload.github.com/eembc/coremark/zip/1f483d5b8316753a742cbf5590caf5bd0a4e4777",
+  "error": "<HTTPError 403: 'rate limit exceeded'>"
+}

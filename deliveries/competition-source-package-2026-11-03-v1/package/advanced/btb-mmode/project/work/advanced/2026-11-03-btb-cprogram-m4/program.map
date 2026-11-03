@@ -1,0 +1,64 @@
+
+Discarded input sections
+
+ .riscv.attributes
+                0x00000000       0x1a C:\Users\ANON_USER\AppData\Local\Temp\ccWOLtQb.o
+ .comment       0x00000000       0x34 C:\Users\ANON_USER\AppData\Local\Temp\ccEEoEmh.o
+ .riscv.attributes
+                0x00000000       0x1c C:\Users\ANON_USER\AppData\Local\Temp\ccEEoEmh.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\ANON_USER\AppData\Local\Temp\ccWOLtQb.o
+LOAD C:\Users\ANON_USER\AppData\Local\Temp\ccEEoEmh.o
+                0x00000000                        . = 0x0
+
+.text           0x00000000      0x7a8
+ *(.text.start)
+ .text.start    0x00000000       0x44 C:\Users\ANON_USER\AppData\Local\Temp\ccWOLtQb.o
+                0x00000000                _start
+ *(.text*)
+ .text          0x00000044        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccWOLtQb.o
+ .text          0x00000044       0x38 C:\Users\ANON_USER\AppData\Local\Temp\ccEEoEmh.o
+                0x00000044                mix0
+                0x00000060                mix1
+ .text.startup  0x0000007c      0x32c C:\Users\ANON_USER\AppData\Local\Temp\ccEEoEmh.o
+                0x0000007c                main
+ *(.rodata*)
+ .rodata        0x000003a8      0x400 C:\Users\ANON_USER\AppData\Local\Temp\ccEEoEmh.o
+                0x00000001                        ASSERT ((. < 0x2000), ROM overflow)
+
+.rela.dyn       0x000007a8        0x0
+ .rela.text.start
+                0x000007a8        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccWOLtQb.o
+
+.data           0x000007a8        0x0
+ .data          0x000007a8        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccWOLtQb.o
+ .data          0x000007a8        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccEEoEmh.o
+                0x00004000                        . = 0x4000
+                0x00004000                        __bss_start = .
+
+.bss            0x00004000       0x84
+ *(.bss*)
+ .bss           0x00004000        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccWOLtQb.o
+ .bss           0x00004000       0x84 C:\Users\ANON_USER\AppData\Local\Temp\ccEEoEmh.o
+                0x00004000                data
+                0x00004080                operation
+ *(COMMON)
+                0x00004084                        __bss_end = .
+                0x00000001                        ASSERT ((. < 0x7000), RAM overflow)
+
+/DISCARD/
+ *(.comment)
+ *(.riscv.attributes)
+OUTPUT(D:\A_FPGA_Comp\work\advanced\2026-11-03-btb-cprogram-m4\program.elf elf32-littleriscv)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\ANON_USER\AppData\Local\Temp\ccEEoEmh.o

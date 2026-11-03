@@ -1,0 +1,20 @@
+{
+  "status": "FINITE_TASK_B_SOFTWARE_CLOSURE_NOT_FULL_ADVANCED_TASK2",
+  "current_rtl": "M3 unchanged in M4",
+  "c_program_runs": 8,
+  "c_package_new_repro_runs": 8,
+  "irq_boundary_runs": 8,
+  "prior_same_source_limited_runs": 152,
+  "compute_cycle_reduction_percent": [
+    8.019337409355893,
+    8.019337409355893,
+    8.058919339990085,
+    8.058919339990085
+  ],
+  "protected_count": 89,
+  "old_m3_manifest_count": 1291,
+  "pds": "NOT_RUN",
+  "hardware": "NOT_RUN",
+  "coremark": "NOT_RUN",
+  "production_replaced": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "R1-LOG-FLOOD",
+  "expected": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+    "complete": true
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {
+    "max_log_bytes_each": 4096
+  }
+}

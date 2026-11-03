@@ -1,0 +1,5 @@
+{
+  "status": "FAIL",
+  "case": "normal",
+  "error": "ValueError: Exact observed state sequence"
+}

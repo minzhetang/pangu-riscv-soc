@@ -1,0 +1,19 @@
+{
+  "id": "P02-R-performance-trace",
+  "expected": {
+    "storage": "archive",
+    "stream": "trace",
+    "path": "inputs/archives/performance-trace",
+    "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA",
+    "complete": true
+  },
+  "actual": {
+    "storage": "archive",
+    "stream": "trace",
+    "path": "inputs/archives/performance-trace",
+    "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {}
+}

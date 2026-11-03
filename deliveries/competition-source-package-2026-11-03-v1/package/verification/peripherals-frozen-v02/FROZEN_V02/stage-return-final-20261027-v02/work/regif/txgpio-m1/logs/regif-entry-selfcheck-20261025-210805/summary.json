@@ -1,0 +1,209 @@
+{
+  "kind": "REGIF_ENTRY_SELFCHECK",
+  "generated_at": "2026-10-25T21:08:05+08:00",
+  "source_run_id": "regif-m1-20261025-210743",
+  "source_logs": [
+    "logs\\regif-m1-20261025-210743\\run_N16.log",
+    "logs\\regif-m1-20261025-210743\\run_N234.log"
+  ],
+  "all_pass": true,
+  "cases": [
+    {
+      "case": "N16_control",
+      "expected": "PASS",
+      "actual": "PASS",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "N234_control",
+      "expected": "PASS",
+      "actual": "PASS",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "missing_TEST_PASS_W01",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "TEST_PASS W01 count=0 expected=1",
+        "TEST_PASS total=9 expected=10"
+      ]
+    },
+    {
+      "case": "duplicate_TEST_PASS_W01",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "TEST_PASS W01 count=2 expected=1",
+        "TEST_PASS total=11 expected=10"
+      ]
+    },
+    {
+      "case": "wrong_TEST_PASS_W99",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "TEST_PASS W10 count=0 expected=1",
+        "unexpected TEST marker W99"
+      ]
+    },
+    {
+      "case": "TEST_FAIL_present",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "TEST_FAIL present"
+      ]
+    },
+    {
+      "case": "wrong_first_request_address",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "request seq=1 fields=('01', '5a', '1111', '1', '0', 'reject') expected=('00', '5a', '1111', '1', '0', 'reject')"
+      ]
+    },
+    {
+      "case": "wrong_first_request_edge",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "first request edge=8 expected=9",
+        "request edge timeline=[8, 26, 29, 30, 37, 202, 203, 365, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 546, 554, 724, 794, 964, 1116] expected=[9, 26, 29, 30, 37, 202, 203, 365, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 546, 554, 724, 794, 964, 1116]"
+      ]
+    },
+    {
+      "case": "bad_stop_monitor_event",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "serial monitor detected BAD_STOP"
+      ]
+    },
+    {
+      "case": "nonfirst_request_edge",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "request edge timeline=[9, 999, 29, 30, 37, 202, 203, 365, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 546, 554, 724, 794, 964, 1116] expected=[9, 26, 29, 30, 37, 202, 203, 365, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 546, 554, 724, 794, 964, 1116]",
+        "request edges not strictly increasing/unique",
+        "GPIO log seq/edge/data=[(1, 26, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')] expected request-aligned=[(1, 999, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')]"
+      ]
+    },
+    {
+      "case": "busy_field",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "request seq=2 busy=1 expected=0"
+      ]
+    },
+    {
+      "case": "complete_frame_edge",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "TX COMPLETE event_edge=99999 observed_edge=198 expected observed=edge+1",
+        "TX COMPLETE event_edge=99999 has no START at event_edge-10N"
+      ]
+    },
+    {
+      "case": "gpio_seq_edge",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "GPIO log seq/edge/data=[(99, 999999, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')] expected request-aligned=[(1, 26, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')]"
+      ]
+    },
+    {
+      "case": "wrong_tx_complete_byte",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "TX COMPLETE data=5b,a5,a5,6a,6a,6a expected=5a,a5,a5,6a,6a,6a"
+      ]
+    },
+    {
+      "case": "extra_tx_frame",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "TX COMPLETE ledger=7 expected=6",
+        "TX COMPLETE data=5a,a5,a5,6a,6a,6a,6a expected=5a,a5,a5,6a,6a,6a",
+        "TX COMPLETE edge=9999 missing observed_edge",
+        "TX COMPLETE event_edge=9999 has no START at event_edge-10N"
+      ]
+    },
+    {
+      "case": "missing_tx_frame",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "TX COMPLETE ledger=5 expected=6",
+        "TX COMPLETE data=a5,a5,6a,6a,6a expected=5a,a5,a5,6a,6a,6a"
+      ]
+    },
+    {
+      "case": "extra_gpio_accept",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "GPIO log seq/edge/data=[(1, 26, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22'), (99, 9999, 'a5')] expected request-aligned=[(1, 26, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')]"
+      ]
+    },
+    {
+      "case": "missing_gpio_accept",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "GPIO log seq/edge/data=[(2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')] expected request-aligned=[(1, 26, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')]"
+      ]
+    },
+    {
+      "case": "duplicate_gpio_accept",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "GPIO log seq/edge/data=[(1, 26, 'a5'), (1, 26, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')] expected request-aligned=[(1, 26, 'a5'), (2, 29, 'a5'), (3, 30, '5a'), (4, 537, '11'), (5, 538, '11'), (6, 539, '22')]"
+      ]
+    },
+    {
+      "case": "nonzero_native_rc",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "native returncode=1 expected=0"
+      ]
+    },
+    {
+      "case": "truncated_log",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "status": "PASS",
+      "errors": [
+        "log truncated"
+      ]
+    }
+  ],
+  "note": "Control and negative controls use the same analyze_markers/analyze_events/analyze_run path as the official runner; actual inputs are the formal N16/N234 logs."
+}

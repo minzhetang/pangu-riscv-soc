@@ -1,0 +1,4 @@
+VCD info: dumpfile cache_reset.vcd opened for output.
+RESET_CONCURRENT_PASS
+PASS cache
+cache_tb.sv:105: $finish called at 1180000 (1ps)

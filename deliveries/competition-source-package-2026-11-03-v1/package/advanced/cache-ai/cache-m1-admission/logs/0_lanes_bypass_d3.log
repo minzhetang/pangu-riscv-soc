@@ -1,0 +1,3 @@
+METRIC requests=65 cycles=706 hits=0 transactions=63 bytes=196 mmio=0
+PASS cache
+execution_tb.sv:124: $finish called at 7100000 (1ps)

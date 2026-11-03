@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_wall_seconds": 1.86,
+  "IsUserAnAdmin": false,
+  "single_compile_permission_consumed": true,
+  "completed_at_beijing": "2026-10-23T10:51:04.662974+08:00",
+  "simulation_calls": 0,
+  "verified_records_after": 59,
+  "output": {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\external-compile-01\\c_boot.vvp",
+    "bytes": 2186799,
+    "sha256": "31C7D24EB3F7D43012C983661BAB4C5AC02D77EF32DB8881351AF06409544997"
+  },
+  "status": "COMPILE_PASS_NOT_PROGRAM_PASS"
+}

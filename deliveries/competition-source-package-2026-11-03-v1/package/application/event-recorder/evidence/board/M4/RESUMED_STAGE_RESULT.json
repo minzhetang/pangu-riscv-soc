@@ -1,0 +1,309 @@
+{
+  "status": "PARTIAL_BOARD_ACCEPTANCE_BLOCKED_BY_CURRENT_CONFIGURATION_STATE",
+  "date": "2026-11-03T10:14:10.275090+08:00",
+  "checks": {
+    "capture-normal": {
+      "status": "FAIL",
+      "case": "normal",
+      "error": "ValueError: Exact observed state sequence"
+    },
+    "capture-normal-r2": {
+      "status": "PASS_LIMITED_BOARD_LEDGER",
+      "case": "normal",
+      "header": [
+        2700000,
+        128,
+        20,
+        128,
+        0,
+        679,
+        345600781,
+        8866,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "events": [
+        [
+          172800705,
+          63,
+          1,
+          0
+        ],
+        [
+          207900699,
+          76,
+          3,
+          0
+        ],
+        [
+          256500705,
+          94,
+          7,
+          0
+        ],
+        [
+          283500699,
+          104,
+          0,
+          0
+        ]
+      ],
+      "elapsed_target_ticks": 345600102,
+      "nominal_seconds": 12.800003777777778,
+      "source_SHA256": "39301E14AE51A73A9AD99B7173B1E3E367AD0CF346E0F1683F9DF71B791B7EE9",
+      "limits": [
+        "Human input timing not independently edge-captured",
+        "No physical pulse completeness or internal WB/STORE/stop-status claim",
+        "Nominal 27MHz, no oscillator calibration"
+      ]
+    },
+    "capture-order": {
+      "status": "FAIL",
+      "case": "order",
+      "error": "ValueError: Exact observed state sequence"
+    },
+    "capture-order-r2": {
+      "status": "PASS_LIMITED_BOARD_LEDGER",
+      "case": "order",
+      "header": [
+        2700000,
+        128,
+        20,
+        128,
+        0,
+        679,
+        345600779,
+        8480,
+        0,
+        3,
+        0,
+        1,
+        1,
+        1
+      ],
+      "events": [
+        [
+          67500699,
+          24,
+          2,
+          1
+        ],
+        [
+          99900703,
+          36,
+          0,
+          1
+        ],
+        [
+          175500709,
+          64,
+          1,
+          0
+        ]
+      ],
+      "elapsed_target_ticks": 345600100,
+      "nominal_seconds": 12.800003703703704,
+      "source_SHA256": "D0887C39087364D05253B434AC192B7ADEAF9F17B80130D6015E48F406209010",
+      "limits": [
+        "Human input timing not independently edge-captured",
+        "No physical pulse completeness or internal WB/STORE/stop-status claim",
+        "Nominal 27MHz, no oscillator calibration"
+      ]
+    },
+    "capture-timeout": {
+      "status": "FAIL",
+      "case": "timeout",
+      "error": "ValueError: UART transport incomplete/error"
+    }
+  },
+  "accepted": [
+    "normal-r2 exact1/3/7/0, four reason0, no fault/late, expected final LEDs",
+    "order-r2 exact2/0/1, reason1/1/0, fault1/frozen1/rejected1, expected final LEDs"
+  ],
+  "failures_preserved": [
+    "normal first1/3/1/0/3 does not match frozen input sequence",
+    "order first only2/0, context incomplete",
+    "timeout0 bytes/LED off, controller stopped; no timeout semantic verdict",
+    "idle-reset diagnostic0 bytes/LED off"
+  ],
+  "diagnostic": {
+    "error": null,
+    "samples": [
+      {
+        "raw": "0x00180c80",
+        "flags": {
+          "over_temp": 0,
+          "done": 0,
+          "done_i": 0,
+          "timeout": 0,
+          "rbcrc_err": 0,
+          "aut_err": 0,
+          "crc_err": 0,
+          "id_err": 0
+        },
+        "gouten": 0
+      },
+      {
+        "raw": "0x00180c80",
+        "flags": {
+          "over_temp": 0,
+          "done": 0,
+          "done_i": 0,
+          "timeout": 0,
+          "rbcrc_err": 0,
+          "aut_err": 0,
+          "crc_err": 0,
+          "id_err": 0
+        },
+        "gouten": 0
+      }
+    ],
+    "commands": [
+      "cfg_set_tcl_break -flag true",
+      "cfg_connect -ip 127.0.0.1 -port 65420",
+      "cfg_set_cable_property -index 0 -freq 100Khz",
+      "cfg_scan_chain",
+      "cfg_read_device_property -mode 0 -device_index 0",
+      "cfg_read_device_property -mode 3 -device_index 0",
+      "cfg_read_device_property -mode 3 -device_index 0",
+      "cfg_disconnect"
+    ],
+    "sanitized_log": [
+      "cfg_shell>Executing : cfg_set_tcl_break -flag true",
+      "Executing : cfg_set_tcl_break -flag true successfully.",
+      "finish",
+      "cfg_shell>Executing : cfg_connect -ip 127.0.0.1 -port 65420",
+      "Connecting to server[127.0.0.1 : 65420].",
+      "Connect to server[127.0.0.1 : 65420] successfully.",
+      "COMMAND[check version information] execute successfully, takes 0.0 secs.",
+      "[cable details withheld]",
+      "[cable details withheld]",
+      "",
+      "[cable details withheld]",
+      "Executing : cfg_connect -ip 127.0.0.1 -port 65420 successfully.",
+      "finish",
+      "cfg_shell>Executing : cfg_set_cable_property -index 0 -freq 100Khz",
+      "[cable details withheld]",
+      "Executing : cfg_set_cable_property -index 0 -freq 100Khz successfully.",
+      "finish",
+      "cfg_shell>Executing : cfg_scan_chain",
+      "[cable details withheld]",
+      "PG2L100H",
+      "This device configure situation (done bit): 0",
+      "[cable details withheld]",
+      "Executing : cfg_scan_chain successfully.",
+      "finish",
+      "cfg_shell>Executing : cfg_read_device_property -mode 0 -device_index 0",
+      "The ID value is: 0x00602899",
+      "COMMAND[Get device id] execute successfully, takes 0.7 secs.",
+      "Executing : cfg_read_device_property -mode 0 -device_index 0 successfully.",
+      "finish",
+      "cfg_shell>Executing : cfg_read_device_property -mode 3 -device_index 0",
+      "The Status Register Code is :00000000000110000000110010000000",
+      "Bits[27 ..0]",
+      "Bit[n]:\t      VALUE\t      NAME",
+      "--------------------------------------------------------------------",
+      "Bit 27:\t      0\t      over_temp",
+      "Bit 26:\t      0\t      flg_x32",
+      "Bit 25:\t      0\t      flg_x16",
+      "Bit 24:\t      0\t      flg_x8",
+      "Bit [23-22]:\t    00\t      ipal_m[1:0]",
+      "Bit 21:\t      0\t      fallback",
+      "Bit 19:\t      1\t      pll_lock",
+      "Bit 18:\t      0\t      gwen",
+      "Bit 17:\t      0\t      grsn",
+      "Bit 16:\t      0\t      gouten",
+      "Bit 15:\t      0\t      glogen_fb",
+      "Bit 14:\t      0\t      glogen",
+      "Bit 13:\t      0\t      done_i",
+      "Bit 12:\t      0\t      done",
+      "Bit 11:\t      1\t      init_n",
+      "Bit 10:\t      1\t      init_complete",
+      "Bit [9-7]:\t   001\t      m[2:0]",
+      "Bit  6:\t      0\t      wakedown_over",
+      "Bit  5:\t      0\t      wakeup_over",
+      "Bit  4:\t      0\t      timeout",
+      "Bit  3:\t      0\t      rbcrc_err",
+      "Bit  2:\t      0\t      aut_err",
+      "Bit  1:\t      0\t      crc_err",
+      "Bit  0:\t      0\t      id_err",
+      "",
+      "Status Register: 0x00180c80.",
+      "COMMAND[Read status] execute successfully, takes 0.7 secs.",
+      "Executing : cfg_read_device_property -mode 3 -device_index 0 successfully.",
+      "finish",
+      "cfg_shell>Executing : cfg_read_device_property -mode 3 -device_index 0",
+      "The Status Register Code is :00000000000110000000110010000000",
+      "Bits[27 ..0]",
+      "Bit[n]:\t      VALUE\t      NAME",
+      "--------------------------------------------------------------------",
+      "Bit 27:\t      0\t      over_temp",
+      "Bit 26:\t      0\t      flg_x32",
+      "Bit 25:\t      0\t      flg_x16",
+      "Bit 24:\t      0\t      flg_x8",
+      "Bit [23-22]:\t    00\t      ipal_m[1:0]",
+      "Bit 21:\t      0\t      fallback",
+      "Bit 19:\t      1\t      pll_lock",
+      "Bit 18:\t      0\t      gwen",
+      "Bit 17:\t      0\t      grsn",
+      "Bit 16:\t      0\t      gouten",
+      "Bit 15:\t      0\t      glogen_fb",
+      "Bit 14:\t      0\t      glogen",
+      "Bit 13:\t      0\t      done_i",
+      "Bit 12:\t      0\t      done",
+      "Bit 11:\t      1\t      init_n",
+      "Bit 10:\t      1\t      init_complete",
+      "Bit [9-7]:\t   001\t      m[2:0]",
+      "Bit  6:\t      0\t      wakedown_over",
+      "Bit  5:\t      0\t      wakeup_over",
+      "Bit  4:\t      0\t      timeout",
+      "Bit  3:\t      0\t      rbcrc_err",
+      "Bit  2:\t      0\t      aut_err",
+      "Bit  1:\t      0\t      crc_err",
+      "Bit  0:\t      0\t      id_err",
+      "",
+      "Status Register: 0x00180c80.",
+      "COMMAND[Read status] execute successfully, takes 0.7 secs.",
+      "Executing : cfg_read_device_property -mode 3 -device_index 0 successfully.",
+      "finish",
+      "cfg_shell>Executing : cfg_disconnect",
+      "Server is disconnect",
+      "Executing : cfg_disconnect successfully."
+    ],
+    "cleanup": [
+      {
+        "name": "client",
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      },
+      {
+        "name": "server",
+        "job_empty": true,
+        "forced_cleanup": false,
+        "forced_non_console_cleanup": false,
+        "remaining_names_before_cleanup": [],
+        "root_exit_code": 0
+      }
+    ],
+    "elapsed": 13.280999999959022,
+    "program_calls": 0,
+    "Flash": false,
+    "protection_changes": false
+  },
+  "additional_programs": 0,
+  "RTL_changes": 0,
+  "program_changes": 0,
+  "remaining": [
+    "Timeout board ledger and LED acceptance",
+    "Failure root cause for changed configuration status",
+    "Application demo/report final freeze"
+  ],
+  "no_background_jobs": true
+}

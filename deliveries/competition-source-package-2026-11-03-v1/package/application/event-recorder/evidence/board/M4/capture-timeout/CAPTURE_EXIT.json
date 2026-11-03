@@ -1,0 +1,11 @@
+{
+  "error": null,
+  "cleanup": {
+    "job_empty": true,
+    "forced_cleanup": false,
+    "forced_non_console_cleanup": false,
+    "remaining_names_before_cleanup": [],
+    "root_exit_code": 2
+  },
+  "elapsed": 258.125
+}

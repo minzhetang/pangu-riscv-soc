@@ -1,0 +1,30 @@
+{
+  "stage": "A-COREMARK-CORRECTNESS-M1",
+  "status": "FINITE_CRC_AND_TRACE_PASS",
+  "two_original_parameter_runs": "result.json",
+  "original_wave_window_gap": "wave-window-review.json",
+  "capture_only_corrected_performance_run": "wave-v2-result.json",
+  "quality": "quality-metrics.json",
+  "CPU_RTL_changes": 0,
+  "frozen_input_checks": 25,
+  "protected_upstream_and_prior_M1_records": 33,
+  "source_and_old_evidence_changes": [],
+  "new_firmware_images": 2,
+  "ordinary_vvp_runs": 3,
+  "external_compile_permissions_consumed": 2,
+  "normal_Icarus_compile_fault_root_cause": "UNRESOLVED",
+  "formal_CoreMark_score": "NOT_MEASURED_TIMER_UNAVAILABLE",
+  "system_integration": "NOT_RUN",
+  "FPGA": "NOT_RUN",
+  "over_temp_hardware_stop": "UNCHANGED",
+  "hardware_operations": 0,
+  "limits": [
+    "fixed initial RF zeros",
+    "zero-wait behavioral ROM/RAM, not FPGA BRAM",
+    "no true retirement PC",
+    "separate WB vs memory streams, no unified commit order",
+    "VCD startup + performance stop windows; not full kernel waveform or ILA",
+    "validation stop wave not re-run; functional stop guards and full streams matched",
+    "timer unavailable, upstream minimum-duration error intentionally retained"
+  ]
+}

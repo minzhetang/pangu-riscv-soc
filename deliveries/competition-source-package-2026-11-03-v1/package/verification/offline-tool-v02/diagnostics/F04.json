@@ -1,0 +1,12 @@
+{
+  "id": "F04",
+  "status": "MATCH",
+  "no_difference": true,
+  "first_difference": null,
+  "neighbors": [],
+  "differences": [],
+  "error": null,
+  "checked": 8,
+  "expected_records": 8,
+  "actual_records": 8
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "controls": {
+    "missing": "REJECT",
+    "duplicate": "REJECT",
+    "wrong_order": "REJECT",
+    "wrong_time": "REJECT",
+    "wrong_state": "REJECT"
+  },
+  "new_DUT_runs": 0
+}

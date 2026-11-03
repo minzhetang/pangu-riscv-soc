@@ -1,0 +1,17 @@
+--- port-before/core_portme.c
++++ port/core_portme.c
+@@ -6,7 +6,13 @@
+ #else
+ volatile ee_s32 seed1_volatile=0, seed2_volatile=0;
+ #endif
+-volatile ee_s32 seed3_volatile=0x66, seed4_volatile=1, seed5_volatile=0;
++#ifndef ITERATIONS
++#define ITERATIONS 1
++#endif
++#if ITERATIONS < 1 || ITERATIONS > 2147483647
++#error "ITERATIONS must be a positive signed 32-bit integer; automatic zero is disabled"
++#endif
++volatile ee_s32 seed3_volatile=0x66, seed4_volatile=ITERATIONS, seed5_volatile=0;
+ ee_u32 default_num_contexts=1;
+ volatile char ram_log[4096];
+ volatile ee_u32 ram_log_count,ram_log_overflow,port_error;

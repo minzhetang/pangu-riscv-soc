@@ -1,0 +1,17 @@
+{
+  "id": "F09",
+  "expected": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S00-duplicates-kept/expected.log",
+    "complete": false
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S00-duplicates-kept/actual.log",
+    "complete": false
+  },
+  "allow_empty": false,
+  "limits": {}
+}

@@ -1,0 +1,231 @@
+{
+  "M5": {
+    "timing": [
+      {
+        "mode": "performance",
+        "entries": 0,
+        "phase_cycles": 2103652,
+        "mtime_delta": 2103648,
+        "simulated_seconds_at_27MHz": 0.07791288888888889,
+        "full_cycles": 2243329
+      },
+      {
+        "mode": "validation",
+        "entries": 0,
+        "phase_cycles": 2263004,
+        "mtime_delta": 2263000,
+        "simulated_seconds_at_27MHz": 0.08381481481481481,
+        "full_cycles": 2402177
+      },
+      {
+        "mode": "performance",
+        "entries": 64,
+        "phase_cycles": 1719152,
+        "mtime_delta": 1719148,
+        "simulated_seconds_at_27MHz": 0.06367214814814814,
+        "full_cycles": 1834621
+      },
+      {
+        "mode": "validation",
+        "entries": 64,
+        "phase_cycles": 1837836,
+        "mtime_delta": 1837832,
+        "simulated_seconds_at_27MHz": 0.06806785185185185,
+        "full_cycles": 1952857
+      },
+      {
+        "mode": "performance",
+        "entries": 32,
+        "phase_cycles": 1730128,
+        "mtime_delta": 1730124,
+        "simulated_seconds_at_27MHz": 0.06407866666666667,
+        "full_cycles": 1846885
+      },
+      {
+        "mode": "validation",
+        "entries": 32,
+        "phase_cycles": 1849336,
+        "mtime_delta": 1849332,
+        "simulated_seconds_at_27MHz": 0.06849377777777778,
+        "full_cycles": 1965447
+      }
+    ],
+    "comparisons": [
+      {
+        "mode": "performance",
+        "entries": 64,
+        "off_cycles": 2103652,
+        "on_cycles": 1719152,
+        "cycle_reduction_percent": 18.277737952855322,
+        "speedup": 1.223656779621581
+      },
+      {
+        "mode": "performance",
+        "entries": 32,
+        "off_cycles": 2103652,
+        "on_cycles": 1730128,
+        "cycle_reduction_percent": 17.7559786504612,
+        "speedup": 1.2158938529403605
+      },
+      {
+        "mode": "validation",
+        "entries": 64,
+        "off_cycles": 2263004,
+        "on_cycles": 1837836,
+        "cycle_reduction_percent": 18.787770591656045,
+        "speedup": 1.231341643106349
+      },
+      {
+        "mode": "validation",
+        "entries": 32,
+        "off_cycles": 2263004,
+        "on_cycles": 1849336,
+        "cycle_reduction_percent": 18.279596500934158,
+        "speedup": 1.2236846089623519
+      }
+    ],
+    "r32_regression_count": 46,
+    "r32_all_pass": true,
+    "fault_cases_count": 24,
+    "fault_all_pass": true,
+    "source_identity": [
+      {
+        "file": "alu.v",
+        "same_as_M4": true,
+        "PDS_sources_match": true,
+        "sha256": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e"
+      },
+      {
+        "file": "btb.v",
+        "same_as_M4": true,
+        "PDS_sources_match": true,
+        "sha256": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0"
+      },
+      {
+        "file": "control.v",
+        "same_as_M4": true,
+        "PDS_sources_match": true,
+        "sha256": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067"
+      },
+      {
+        "file": "cpu_hl4.v",
+        "same_as_M4": true,
+        "PDS_sources_match": true,
+        "sha256": "aa5a84c0028f37d0d3719a8f0829d593d9dcfae456e5c08f6229b1942f8442ef"
+      },
+      {
+        "file": "csr_file_hl3.v",
+        "same_as_M4": true,
+        "PDS_sources_match": true,
+        "sha256": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1"
+      },
+      {
+        "file": "mmu_sv32.v",
+        "same_as_M4": true,
+        "PDS_sources_match": true,
+        "sha256": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4"
+      },
+      {
+        "file": "pmp.v",
+        "same_as_M4": true,
+        "PDS_sources_match": true,
+        "sha256": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a"
+      },
+      {
+        "file": "regfile.v",
+        "same_as_M4": true,
+        "PDS_sources_match": true,
+        "sha256": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468"
+      }
+    ]
+  },
+  "M6": {
+    "status": "BOTH_ARCHIVED_PREFIXES_MATCH_NOT_FULL_RUN_PASS",
+    "M6_original_files_unchanged": 588,
+    "new_DUT_runs": 0,
+    "new_PDS_builds": 0,
+    "hardware_calls": 0,
+    "results": [
+      {
+        "mode": "performance",
+        "model": {
+          "status": "PREFIX_MATCH_NOT_COMPLETE",
+          "records": 16252928,
+          "WB": 15801501,
+          "STORE": 451418,
+          "last_event_edge": 54208412,
+          "reference_instructions_advanced": 22942220,
+          "pending_expected_WB": 0,
+          "pending_expected_STORE": 0,
+          "timer_reads": 9,
+          "program_done": false
+        },
+        "rc": 0,
+        "seconds": 3.234999999869615,
+        "limitations": "Accepted observed prefix only. Pending expected events may follow; no final CRC/return/state or >=10s completion claim. Validation index reconstructed now, not claimed frozen during DUT."
+      },
+      {
+        "mode": "validation",
+        "model": {
+          "status": "PREFIX_MATCH_NOT_COMPLETE",
+          "records": 16252928,
+          "WB": 15831870,
+          "STORE": 421049,
+          "last_event_edge": 54373882,
+          "reference_instructions_advanced": 23087117,
+          "pending_expected_WB": 0,
+          "pending_expected_STORE": 0,
+          "timer_reads": 9,
+          "program_done": false
+        },
+        "rc": 0,
+        "seconds": 2.952999999979511,
+        "limitations": "Accepted observed prefix only. Pending expected events may follow; no final CRC/return/state or >=10s completion claim. Validation index reconstructed now, not claimed frozen during DUT."
+      }
+    ]
+  },
+  "SM2_native_resource_rows": [
+    "IO Port Info:",
+    "| PORT         | DIRECTION     | LOC     | BANK       | VCCIO     | IOSTANDARD     | DRIVE     | BUS_KEEPER     | SLEW     | OFF_CHIP_TERMINATION     | VREF_MODE     | VREF_IN_MODE     | VREF_OUT_MODE     | DDR_TERM_MODE     | DIFF_IN_TERM_MODE     | OPEN_DRAIN     | DDR_RES     | IN_MAG     | HYS     | DYN_TERM     | CONSTRAINT     | IO_REGISTER     ",
+    "| clk          | input         | D18     | BANKL3     | 3.3       | LVCMOS33       | NA        | NONE           | NA       | NA                       | NA            | NA               | NA                | NA                | NA                    | NA             | NA          | NA         | OFF     | NA           | YES            | NA              ",
+    "| key_n[0]     | input         | C22     | BANKL3     | 3.3       | LVCMOS33       | NA        | NONE           | NA       | NA                       | NA            | NA               | NA                | NA                | NA                    | NA             | NA          | NA         | OFF     | NA           | YES            | NA              ",
+    "| key_n[1]     | input         | C23     | BANKL3     | 3.3       | LVCMOS33       | NA        | NONE           | NA       | NA                       | NA            | NA               | NA                | NA                | NA                    | NA             | NA          | NA         | OFF     | NA           | YES            | NA              ",
+    "| key_n[2]     | input         | B22     | BANKL3     | 3.3       | LVCMOS33       | NA        | NONE           | NA       | NA                       | NA            | NA               | NA                | NA                | NA                    | NA             | NA          | NA         | OFF     | NA           | YES            | NA              ",
+    "| key_n[3]     | input         | A22     | BANKL3     | 3.3       | LVCMOS33       | NA        | NONE           | NA       | NA                       | NA            | NA               | NA                | NA                | NA                    | NA             | NA          | NA         | OFF     | NA           | YES            | NA              ",
+    "| key_n[4]     | input         | B20     | BANKL3     | 3.3       | LVCMOS33       | NA        | NONE           | NA       | NA                       | NA            | NA               | NA                | NA                | NA                    | NA             | NA          | NA         | OFF     | NA           | YES            | NA              ",
+    "| led[0]       | output        | A20     | BANKL3     | 3.3       | LVCMOS33       | 8         | NONE           | SLOW     | N                        | NA            | NA               | NA                | NA                | NA                    | OFF            | NA          | NA         | NA      | NA           | YES            | NA              ",
+    "| led[1]       | output        | C18     | BANKL3     | 3.3       | LVCMOS33       | 8         | NONE           | SLOW     | N                        | NA            | NA               | NA                | NA                | NA                    | OFF            | NA          | NA         | NA      | NA           | YES            | NA              ",
+    "| led[2]       | output        | C19     | BANKL3     | 3.3       | LVCMOS33       | 8         | NONE           | SLOW     | N                        | NA            | NA               | NA                | NA                | NA                    | OFF            | NA          | NA         | NA      | NA           | YES            | NA              ",
+    "| led[3]       | output        | E18     | BANKL3     | 3.3       | LVCMOS33       | 8         | NONE           | SLOW     | N                        | NA            | NA               | NA                | NA                | NA                    | OFF            | NA          | NA         | NA      | NA           | YES            | NA              ",
+    "| led[4]       | output        | A17     | BANKL3     | 3.3       | LVCMOS33       | 8         | NONE           | SLOW     | N                        | NA            | NA               | NA                | NA                | NA                    | OFF            | NA          | NA         | NA      | NA           | YES            | NA              ",
+    "| led[5]       | output        | A18     | BANKL3     | 3.3       | LVCMOS33       | 8         | NONE           | SLOW     | N                        | NA            | NA               | NA                | NA                | NA                    | OFF            | NA          | NA         | NA      | NA           | YES            | NA              ",
+    "| led[6]       | output        | C17     | BANKL3     | 3.3       | LVCMOS33       | 8         | NONE           | SLOW     | N                        | NA            | NA               | NA                | NA                | NA                    | OFF            | NA          | NA         | NA      | NA           | YES            | NA              ",
+    "| led[7]       | output        | B17     | BANKL3     | 3.3       | LVCMOS33       | 8         | NONE           | SLOW     | N                        | NA            | NA               | NA                | NA                | NA                    | OFF            | NA          | NA         | NA      | NA           | YES            | NA              ",
+    "| uart_tx      | output        | C24     | BANKL3     | 3.3       | LVCMOS33       | 8         | NONE           | SLOW     | N                        | NA            | NA               | NA                | NA                | NA                    | OFF            | NA          | NA         | NA      | NA           | YES            | NA              ",
+    "| Use of CLMA                 | 576      | 11675         | 5                  ",
+    "|   FF                        | 1138     | 93400         | 2                  ",
+    "|   LUT                       | 1351     | 46700         | 3                  ",
+    "|   LUT-FF pairs              | 312      | 46700         | 1                  ",
+    "| Use of CLMS                 | 211      | 4975          | 5                  ",
+    "|   FF                        | 389      | 39800         | 1                  ",
+    "|   LUT                       | 459      | 19900         | 3                  ",
+    "|   LUT-FF pairs              | 47       | 19900         | 1                  ",
+    "| Use of DDRPHY_IOCLK_DIV     | 0        | 6             | 0                  ",
+    "| Use of DRM                  | 14.5     | 155           | 10                 ",
+    "| Use of IO                   | 15       | 300           | 5                  ",
+    "|   IOBD                      | 7        | 144           | 5                  ",
+    "|   IOBS                      | 8        | 156           | 6                  ",
+    "| Use of IOCKB                | 0        | 24            | 0                  ",
+    "| Use of IOCKMUX_TEST         | 0        | 6             | 0                  ",
+    "| Use of IOLHR                | 15       | 300           | 5                  ",
+    "| clkbufg_0/gopclkbufg     | USCM_215_624          | ntclkbufg_0         | 1481            | 0                   | clk_ibuf/opit_1     | DI_TO_CLK      | IOLHR_16_1080           ",
+    "| Module Inst Name     | LUT      | FF       | Distributed RAM     | APM     | DRM      | ADC     | ANALOG     | CCS     | DDRPHY_CPD     | DDRPHY_IOCLK_DIV     | DDR_PHY     | GPLL     | HCKB     | HSSTLP     | IO     | IOCKB     | KEYRAM     | MRCKB     | PCIE     | PPLL     | RCKB     | SCANCHAIN     | TSERDES     | USCM     "
+  ],
+  "derived_SM2": {
+    "nominal_seconds": 18.378963555555554,
+    "iterations_per_second": 13.928968259073393,
+    "iterations_per_second_per_MHz": 0.5158877132990145,
+    "iterations_per_second_per_LUT": 0.007695562574073698,
+    "cycle_reduction_percent": 7.855983849655623
+  }
+}

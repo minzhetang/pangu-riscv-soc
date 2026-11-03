@@ -1,0 +1,2887 @@
+diff --git a/DEPENDENCIES.json b/DEPENDENCIES.json
+--- a/DEPENDENCIES.json
++++ b/DEPENDENCIES.json
+@@ -1,19 +1,109 @@
+ {
+   "kind": "DEPENDENCIES",
+-  "core": {
+-    "tx": {"path": "work/peripherals/src/uart_tx.v", "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"},
+-    "gpio": {"path": "work/peripherals/gpio/src/gpio_core.v", "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"},
+-    "rx": {"path": "work/peripherals/rx/src/uart_rx.v", "sha256": "BDCD02CA8CBA1CAE9D8A774D336B30B43E9457834856234BD7C2BA8AE1719F34"},
+-    "wrapper": {"path": "work/regif/txgpio-m1/src/local_regif_txgpio_m1.v", "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"}
++  "as_of": "2026-10-25T21:20:00+08:00",
++  "rule": "Dependencies are referenced by prior increment/package ID, handoff-relative path, version and exact SHA; not re-sent.",
++  "entries": [
++    {
++      "id": "stage-return-20261023-1345/tx-core",
++      "increment_id": "stage-return-20261023-1345",
++      "path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/src/uart_tx.v",
++      "version": "uart_tx 1.0.0",
++      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
++      "use": "frozen TX core"
++    },
++    {
++      "id": "stage-return-20261023-1345/gpio-core",
++      "increment_id": "stage-return-20261023-1345",
++      "path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/gpio/src/gpio_core.v",
++      "version": "gpio_core 1.0.0",
++      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
++      "use": "frozen GPIO core"
++    },
++    {
++      "id": "stage-return-20261023-1345/rx-core",
++      "increment_id": "stage-return-20261023-1345",
++      "path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/src/uart_rx.v",
++      "version": "uart_rx 1.0.0",
++      "sha256": "BDCD02CA8CBA1CAE9D8A774D336B30B43E9457834856234BD7C2BA8AE1719F34",
++      "use": "frozen RX core"
++    },
++    {
++      "id": "increment-20261024-0030/wrapper",
++      "increment_id": "increment-20261024-0030",
++      "path": "work/B-RETURN/increment-20261024-0030/work/regif/txgpio-m1/src/local_regif_txgpio_m1.v",
++      "version": "LOCAL-REGIF-TXGPIO-M1/1.0.0",
++      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
++      "use": "approved wrapper RTL, unchanged"
++    },
++    {
++      "id": "increment-20261024-1735/shared-runner",
++      "increment_id": "increment-20261024-1735",
++      "path": "work/B-RETURN/increment-20261024-1735/work/peripherals/scripts/runner_common.py",
++      "version": "shared runner P0",
++      "sha256": "3141C6A78CAD4B1FF03FA53FF949AA9FF422D573E2D7F96CC73729298D1F144A",
++      "use": "bounded process/log/cleanup runner"
++    },
++    {
++      "id": "increment-20261023-1930/gpio-runner",
++      "increment_id": "increment-20261023-1930",
++      "path": "work/B-RETURN/increment-20261023-1930/work/peripherals/gpio/scripts/run_gpio.py",
++      "version": "GPIO 1.0.2 runner",
++      "sha256": "6CDDE2E5DA70673988E287A201095DEE2136FBE89F24BB972701C78D621034CC",
++      "use": "accepted GPIO 1.0.2 entry; no rerun"
++    },
++    {
++      "id": "stage-return-20261023-1345/rx-watchdog",
++      "increment_id": "stage-return-20261023-1345",
++      "path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/tb/tb_uart_rx_watchdog.sv",
++      "version": "RX watchdog TB 1.0.0",
++      "sha256": "0F9C2159F2FFD76F0D84A34C39721648AAFF7528B7B1604E48C6D16D299E2BD9",
++      "use": "RX intentional watchdog/TIMEOUT control; not rerun here"
++    },
++    {
++      "id": "stage-return-20261023-1345/rx-illegal",
++      "increment_id": "stage-return-20261023-1345",
++      "path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/tb/tb_uart_rx_illegal.sv",
++      "version": "RX illegal-config TB 1.0.0",
++      "sha256": "5FF8F379FB5DAED06A07B51B2E902182CA806AB7D7CADCDDE3C3C5BCE10DC191",
++      "use": "RX illegal N=4 control"
++    },
++    {
++      "id": "increment-20261023-1930/rx-ledger-check",
++      "increment_id": "increment-20261023-1930",
++      "path": "work/B-RETURN/increment-20261023-1930/work/peripherals/rx/tb/rx_ledger_check.svh",
++      "version": "RX ledger comparator 1.0.0",
++      "sha256": "C8FFFF1A2554236C7935F1863CB0BF870CD8739CC69A3EAF3287C26E1A967868",
++      "use": "shared ordered comparator macro"
++    },
++    {
++      "id": "A-W06-SUPPLEMENT",
++      "increment_id": "mainline-increment-2335-response-2026-10-25-v1",
++      "path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/RESULTS.json",
++      "version": "A-W06-SUPPLEMENT v2",
++      "sha256": "EA54D33B031971F2431A2979638A481A12AC4C1393319C0918430EACA227CBA6",
++      "use": "W06 N16/N234 ready-return-edge coverage; B did not rerun"
++    }
++  ],
++  "plan_artifact_resolution": {
++    "rule": "Frozen plans name canonical handoff paths. Unchanged core/TB dependencies are not copied; resolve them through the dependency IDs below. The same-SHA final-stage copies are used where the artifact was changed.",
++    "packaging_plan_1.0.5": {
++      "work/peripherals/src/uart_tx.v": "stage-return-20261023-1345/tx-core",
++      "work/peripherals/gpio/src/gpio_core.v": "stage-return-20261023-1345/gpio-core",
++      "work/regif/txgpio-m1/src/local_regif_txgpio_m1.v": "increment-20261024-0030/wrapper",
++      "work/regif/txgpio-m1/tb/tb_local_regif_txgpio_m1.sv": "in_stage",
++      "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv": "in_stage",
++      "work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv": "in_stage"
++    },
++    "rx_plan_1.3.5": {
++      "work/peripherals/rx/src/uart_rx.v": "stage-return-20261023-1345/rx-core",
++      "work/peripherals/rx/tb/tb_uart_rx.sv": "in_stage",
++      "work/peripherals/rx/tb/tb_uart_rx_neg.sv": "in_stage",
++      "work/peripherals/rx/tb/tb_uart_rx_watchdog.sv": "stage-return-20261023-1345/rx-watchdog",
++      "work/peripherals/rx/tb/tb_uart_rx_illegal.sv": "stage-return-20261023-1345/rx-illegal",
++      "work/peripherals/rx/tb/rx_ledger_check.svh": "increment-20261023-1930/rx-ledger-check",
++      "work/peripherals/rx/tb/rx_public_capture.sv": "in_stage"
++    }
+   },
+-  "captures": {
+-    "tx_public_monitor": {"path": "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv", "sha256": "C8CFFA9F6949D0B9BD33555B87EBD3AADD733AE389EB8FB549CA02BDF261E471"},
+-    "rx_public_capture": {"path": "work/peripherals/rx/tb/rx_public_capture.sv", "sha256": "A1AA98D69293D4B106233BC669FD6D0F40F65EEDC89698B30C9E65547BA9BC15"}
+-  },
+-  "plans": {
+-    "regif": {"path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.json", "sha256": "A94948CE5D4818CE801B74698D242C70745E504C0FF2479A4BFCD2CC1875F4B4"},
+-    "rx": {"path": "work/peripherals/rx/tests/rx-plan-1.3.3.json", "sha256": "0769CC08B87DEC92CDE2B7169667FF66DE310B0F8C7F876A550A5F5FA6FA928A"}
+-  },
+-  "tools": ["Icarus Verilog 12.0 (existing local, explicit path)", "Python 3.12.10 (existing local)"],
+-  "note": "No CPU/SoC/storage/PDS/hardware dependency is exercised by this increment."
++  "final_stage": "work/B-RETURN/stage-return-final-20261027-v02",
++  "prior_stage": "work/B-RETURN/stage-return-final-20261027-v01"
+ }
+diff --git a/HISTORY_ALIASES.json b/HISTORY_ALIASES.json
+--- a/HISTORY_ALIASES.json
++++ b/HISTORY_ALIASES.json
+@@ -1,41 +1,51 @@
+ {
+   "kind": "HISTORY_ALIASES",
+-  "note": "Old frozen packages are not rewritten. Same-SHA 0030 originals are already located; this increment provides local history copies only for superseded 1735/231958 aliases.",
++  "rule": "Old frozen packages are not rewritten. Same-SHA mirrors are labeled as mirrors, not new DUT runs.",
++  "active": {
++    "packaging": "regif-m1-20261025-210743 / w01-w10-plan-1.0.5",
++    "rx": "rx-20261025-211013 / rx-plan-1.3.5",
++    "stage": "stage-return-final-20261027-v02"
++  },
+   "aliases": [
+     {
+-      "old": "regif-m1-20261024-002716 results",
+-      "current": "work/regif/txgpio-m1/results-regif-m1-20261024-002716.json",
+-      "status": "HISTORICAL"
++      "old": "stage-return-final-20261027-v01",
++      "current": "work/B-RETURN/stage-return-final-20261027-v01/",
++      "status": "HISTORICAL_PRIOR_STAGE_NOT_REWRITTEN"
++    },
++    {
++      "old": "regif-m1-20261025-190737",
++      "current": "work/B-RETURN/stage-return-final-20261027-v01/work/regif/txgpio-m1/logs/regif-m1-20261025-190737/",
++      "status": "SUPERSEDED_BY_210743"
++    },
++    {
++      "old": "rx-20261025-191037",
++      "current": "work/B-RETURN/stage-return-final-20261027-v01/work/peripherals/rx/logs/rx-20261025-191037/",
++      "status": "SUPERSEDED_BY_211013"
++    },
++    {
++      "old": "regif-m1-20261024-231958 results",
++      "current": "work/B-RETURN/increment-20261024-2335/work/regif/txgpio-m1/results.json",
++      "status": "SUPERSEDED_BY_210743"
++    },
++    {
++      "old": "rx-20261024-232514 results",
++      "current": "work/B-RETURN/increment-20261024-2335/work/peripherals/rx/results.json",
++      "status": "SUPERSEDED_BY_211013"
+     },
+     {
+       "old": "regif-m1-20261024-172242 results",
+       "current": "work/B-RETURN/increment-20261024-1735/work/regif/txgpio-m1/results.json",
+-      "status": "SUPERSEDED"
+-    },
+-    {
+-      "old": "regif-m1-20261024-231958 results",
+-      "current": "work/B-RETURN/increment-20261024-2335/history/regif-results-231958.json",
+-      "status": "SUPERSEDED_BY_2335"
++      "status": "HISTORICAL"
+     },
+     {
+       "old": "rx-20261024-173355 results",
+       "current": "work/B-RETURN/increment-20261024-1735/work/peripherals/rx/results.json",
+-      "status": "SUPERSEDED"
+-    },
+-    {
+-      "old": "rx-20261024-232514 results",
+-      "current": "work/B-RETURN/increment-20261024-2335/history/rx-results-232514.json",
+-      "status": "CURRENT_HISTORY_ALIAS"
+-    },
+-    {
+-      "old": "w01-w10-plan-1.0.2",
+-      "current": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.json",
+       "status": "HISTORICAL"
+     },
+     {
+-      "old": "rx-plan-1.3.2",
+-      "current": "work/peripherals/rx/tests/rx-plan-1.3.3.json",
+-      "status": "HISTORICAL"
++      "old": "0030 same-SHA result mirror",
++      "current": "work/B-RETURN/increment-20261024-0030/work/regif/txgpio-m1/results.json",
++      "status": "SAME_SHA_MIRROR_NOT_NEW_RUN"
+     }
+   ]
+ }
+diff --git a/MODULE_STATUS.json b/MODULE_STATUS.json
+--- a/MODULE_STATUS.json
++++ b/MODULE_STATUS.json
+@@ -1,45 +1,53 @@
+ {
+-  "kind": "MODULE_STATUS_INCREMENT",
+-  "as_of": "2026-10-24T23:35:00+08:00",
+-  "increment_id": "increment-20261024-2335",
+-  "base_increment": "increment-20261024-1735",
++  "kind": "FINAL_STAGE_MODULE_STATUS",
++  "as_of": "2026-10-25T21:20:00+08:00",
++  "stage_id": "stage-return-final-20261027-v02",
++  "base_stage": "stage-return-final-20261027-v01",
++  "base_increment": "increment-20261024-2335",
+   "B-REGIF": {
+-    "status": "PASS_LOCAL_SCOPE_1.0.3",
+-    "wrapper_sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+-    "wrapper_changed": false,
+-    "tb_sha256": "7F0C1060ED9524B18965575CC3BE8DA1AE76D899521916F2D701976AEFAD793B",
+-    "monitor_sha256": "C8CFFA9F6949D0B9BD33555B87EBD3AADD733AE389EB8FB549CA02BDF261E471",
+-    "plan_version": "1.0.3",
+-    "plan_sha256": "A94948CE5D4818CE801B74698D242C70745E504C0FF2479A4BFCD2CC1875F4B4",
+-    "run_id": "regif-m1-20261024-231958",
+-    "N16": {"status": "PASS", "requests": 26, "tx_accept": 9, "gpio_accept": 6, "reject": 11, "complete": 6, "cancel": 3, "bad_stop": 0, "first_edge": 9},
+-    "N234": {"status": "PASS", "requests": 10, "tx_accept": 9, "gpio_accept": 0, "reject": 1, "complete": 6, "cancel": 3, "bad_stop": 0, "first_edge": 6},
+-    "capture": "independent public uart_tx serial monitor; same module used by formal and synthetic negative",
+-    "capture_selfcheck": "regif-capture-20261024-231843 PASS",
+-    "entry_selfcheck": "regif-entry-selfcheck-20261024-232004 PASS (17 cases)",
+-    "coverage_gap": "W06 ready-return-edge request not separately exercised; marked in plan",
+-    "schema": "PASS",
++    "status": "PASS_LOCAL_SCOPE_1.0.5",
++    "plan": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.json",
++    "plan_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
++    "run_id": "regif-m1-20261025-210743",
++    "N16": "26 requests; 9/6/11; 6 complete/3 cancel/0 badstop; event edges 37..1276",
++    "N234": "10 requests; 9/0/1; 6 complete/3 cancel; event 6..17144 complete",
++    "capture": "event_edge true accept/E+10N; observed_edge=event_edge+1",
++    "capture_selfcheck": "regif-capture-20261025-210624 PASS",
++    "entry_selfcheck": "regif-entry-selfcheck-20261025-210805 PASS",
++    "W06": "A-W06-SUPPLEMENT; B did not rerun",
+     "mainline_reproduction": "NOT_RUN",
+-    "final_acceptance": "PENDING",
+-    "hardware": "STOPPED"
++    "final_acceptance": "PENDING"
+   },
+   "B-UART-RX": {
+-    "status": "PASS_LOCAL_1.3.3",
+-    "rx_core_sha256": "BDCD02CA8CBA1CAE9D8A774D336B30B43E9457834856234BD7C2BA8AE1719F34",
+-    "rx_core_changed": false,
+-    "plan_version": "1.3.3",
+-    "plan_sha256": "0769CC08B87DEC92CDE2B7169667FF66DE310B0F8C7F876A550A5F5FA6FA928A",
+-    "run_id": "rx-20261024-232514",
+-    "ledger": {"N8": 92, "N16": 110, "N234": 68},
+-    "functional": {"N8": "41/41/4/7", "N16": "50/50/4/7", "N234": "29/29/4/7"},
+-    "rx05_5e": {"edge": 8081, "data": "0x44", "pre_clear": 1, "pre_fe": 1, "post_clear": 0, "post_fe": 0},
+-    "shared_capture": "formal and negative instantiate rx_public_capture; formal content crosscheck PASS",
+-    "status_propagation": "rx-status-selfcheck-20261024-232527 PASS",
+-    "schema": "PASS",
+-    "mainline_reproduction": "NOT_RUN",
+-    "hardware": "STOPPED"
++    "status": "PASS_LOCAL_1.3.5",
++    "plan": "work/peripherals/rx/tests/rx-plan-1.3.5.json",
++    "plan_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
++    "run_id": "rx-20261025-211013",
++    "ledger": {
++      "N8": 92,
++      "N16": 110,
++      "N234": 68
++    },
++    "functional": {
++      "N8": "41/41/4/7",
++      "N16": "50/50/4/7",
++      "N234": "29/29/4/7"
++    },
++    "snapshots": "RX_SNAPSHOT_CHECK_PASS; seq0 0/1; seq30 0/1; 5e post_clear=1/post_fe=0",
++    "shared_capture": "ordered exact type/data/edge PASS",
++    "status_selfcheck": "rx-status-selfcheck-20261025-211027 PASS",
++    "mainline_reproduction": "NOT_RUN"
+   },
+-  "A_system": {"status": "A_OWNED", "note": "A CPU/storage/system validation; B not responsible"},
++  "GPIO": {
++    "status": "ACCEPTED_LIMITED_1.0.2",
++    "core_sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
++    "plan_sha256": "BACF07BE0FD179B532B1BF51AD17EE1910DC6B10E0174C6ED887C6C5D4EB47BE",
++    "runner_sha256": "6CDDE2E5DA70673988E287A201095DEE2136FBE89F24BB972701C78D621034CC",
++    "not_rerun": true
++  },
++  "A_system": "A_OWNED; CPU/storage/SoC/Timer/CoreMark/PDS/final integration",
+   "root_package_integrity": "OPEN_PREEXISTING_MANIFEST_SOURCE_LINK",
++  "hardware": "STOPPED",
++  "manifest_files": 69,
+   "not_final_acceptance": true
+ }
+diff --git a/OPEN_ITEMS.md b/OPEN_ITEMS.md
+--- /dev/null
++++ b/OPEN_ITEMS.md
+@@ -0,0 +1,11 @@
++# 未完成项 / Open Items（v02）
++
++- R1/R2/R3 local closure only; mainline reproduction/final acceptance remain external.
++- W06 closed by A-W06-SUPPLEMENT, not a new B run; B's old gap remains historical.
++- GPIO 1.0.2 finite review accepted; no rerun or full matrix.
++- Root handoff manifest/source-link failure remains `OPEN_PREEXISTING`; no root edit, no PASS claim.
++- A owns CPU, synchronous storage, SoC, Timer/CoreMark, PDS, final integration/report.
++- RX register packaging, FIFO/interrupt, full bus, formal timing, PDS/JTAG/power/Flash/board/thermal and hardware remain out of scope.
++- Hardware state: `STOPPED`.
++- Old F123 60.078/59.063 s cleanup failures retained; not rewritten.
++- v01 and all old increments remain read-only and are referenced, not re-sent.
+diff --git a/SOURCE_INDEX.json b/SOURCE_INDEX.json
+--- a/SOURCE_INDEX.json
++++ b/SOURCE_INDEX.json
+@@ -1,146 +1,175 @@
+ {
+   "kind": "SOURCE_INDEX",
+-  "base": "increment-20261024-1735",
+-  "generated_at": "2026-10-24T23:35:00+08:00",
++  "base": "increment-20261024-2335",
++  "note": "Paths relative to this v02 stage; all entries exist here. External dependencies are in DEPENDENCIES.json.",
+   "entries": [
+     {
+-      "path": "work/peripherals/docs/RUNNER-P0-20261024.md",
+-      "old_sha256": "2C36D8A30E583B4BF34972098D01DC018D779824599A946BDBCA38E839BB1FBE",
+-      "new_sha256": "6C835A9D1ED590F9B7DBCA9EC1354EF036F65467EA8BF22256663DEE0976BFAF",
++      "path": "coverage_map.json",
++      "old_sha256": null,
++      "new_sha256": "5D64015499A3B510847236603991A550782FEBDA0401F8CE8DBB2304F09AC5E5",
++      "status": "NEW"
++    },
++    {
++      "path": "delivery.json",
++      "old_sha256": "A42690538063C2AAF62A41B76BC265C959C62CA28AFFB603106D0D698753A58A",
++      "new_sha256": "566301E1C01D773CF04534193CA6572D6F094485416A1F0560B395F7B35E47C8",
++      "status": "MODIFIED"
++    },
++    {
++      "path": "DEPENDENCIES.json",
++      "old_sha256": "4CAD51B33E8877C1AA825615C101B99D9CA8FF4F9789727BB4934F278057D52F",
++      "new_sha256": "07A96A68E8BA90E9C79A2E6D50DCF6958B230D5AEB0F8187560B06D45328D316",
++      "status": "MODIFIED"
++    },
++    {
++      "path": "HISTORY_ALIASES.json",
++      "old_sha256": "B1E19228AF49E4D6BC6159EDAC74130087F3D19A93A5E4CE77F5973478FA75B5",
++      "new_sha256": "19F1F11FED4B9B07426E36787B5CED6F804497C2261A5706B2D56BAB38565B3C",
++      "status": "MODIFIED"
++    },
++    {
++      "path": "MODULE_STATUS.json",
++      "old_sha256": "09EAE631EC2BB6F1F046F70491673F19A063333AC965AB219190E851A47DDC4A",
++      "new_sha256": "F43A76B8EAAC49955FB84F7B5C4BD8EF04381015556CA9280A62720F4235E8F6",
++      "status": "MODIFIED"
++    },
++    {
++      "path": "OPEN_ITEMS.md",
++      "old_sha256": null,
++      "new_sha256": "2649DB39AC48BA2078A170407381C2156E9A6D41A9EBC2A00614E0B767D93466",
++      "status": "NEW"
++    },
++    {
++      "path": "START_HERE.md",
++      "old_sha256": null,
++      "new_sha256": "793C66A81E3983E4785AC70F5E5CDDB0AF1B6B0278E144858EFAE99582F664C0",
++      "status": "NEW"
++    },
++    {
++      "path": "work/peripherals/rx/CHANGELOG.md",
++      "old_sha256": "16A136153E14D3F35CCBF73F3BF74B8AE9CBE846AC1E2684B0D417690BBC9E93",
++      "new_sha256": "A3991D9EC0B353A360DED1F350B766E16642A568026C50F1F6A6475C50224978",
++      "status": "MODIFIED"
++    },
++    {
++      "path": "work/peripherals/rx/docs/RX-LEDGER-1.3.5.md",
++      "old_sha256": null,
++      "new_sha256": "5F117EE3CA74E7B44D1CBCBD573103FAB539CCA6B0D9B333D81B2F28BE591EC9",
++      "status": "NEW"
++    },
++    {
++      "path": "work/peripherals/rx/scripts/run_rx.py",
++      "old_sha256": "767C9D7D9E76357C76F3C441D0EEB93CC801F58000EDEE82E2E3E2F7451AC534",
++      "new_sha256": "8DFA2127672579C34F0EDC73F523E1061A3E666F089AEECFEF93AC0B84509CB8",
++      "status": "MODIFIED"
++    },
++    {
++      "path": "work/peripherals/rx/scripts/rx_status_selfcheck.py",
++      "old_sha256": "6038732EC5C7CF4947606F20445B00ACE9F91152E5538FE68150F91F565056C8",
++      "new_sha256": "6038732EC5C7CF4947606F20445B00ACE9F91152E5538FE68150F91F565056C8",
++      "status": "UNCHANGED"
++    },
++    {
++      "path": "work/peripherals/rx/STATUS.md",
++      "old_sha256": "2DFBB14070A432DA33B21E983DE1FEF62CFA6E97F7A1293A2EF9ACDDFBB16261",
++      "new_sha256": "25938CE32122BFEBA587FF03496FF5D8B3B9FA4D86DAE21434B18955C6C35779",
++      "status": "MODIFIED"
++    },
++    {
++      "path": "work/peripherals/rx/tb/rx_public_capture.sv",
++      "old_sha256": "A1AA98D69293D4B106233BC669FD6D0F40F65EEDC89698B30C9E65547BA9BC15",
++      "new_sha256": "ADBD4EBC7A549DB48B704C11F740E9FD66DBBA185E1D795596C95BE2DF84EA5D",
+       "status": "MODIFIED"
+     },
+     {
+       "path": "work/peripherals/rx/tb/tb_uart_rx.sv",
+-      "old_sha256": "C526863F4AF15D37DADB06DC0D49A019E352F1C298614F5FDF319901E28E6870",
+-      "new_sha256": "A0A7F9DCECDFCB92F5798F2BA481AF7569CC328C51F55E25D8730AEA12E41FC5",
++      "old_sha256": "A0A7F9DCECDFCB92F5798F2BA481AF7569CC328C51F55E25D8730AEA12E41FC5",
++      "new_sha256": "FDE6B17592970A27A759827FAC5D6AF24B6666CDBF7BF049D9925A98BB739BB6",
+       "status": "MODIFIED"
+     },
+     {
+       "path": "work/peripherals/rx/tb/tb_uart_rx_neg.sv",
+-      "old_sha256": "2675DF306C0C7092E1390EBF82678116713F6468A88A9E213231320168C131E4",
+-      "new_sha256": "282B2F1B495F141F620E255E58D2E70EB01B3884A9B7C1EAB5F58A01958ADE80",
++      "old_sha256": "282B2F1B495F141F620E255E58D2E70EB01B3884A9B7C1EAB5F58A01958ADE80",
++      "new_sha256": "0CA0D6A519354AF1F1AE610677DFC7D9CCA01286408DC9AB882ED78AEF9407B6",
+       "status": "MODIFIED"
+     },
+     {
+-      "path": "work/peripherals/rx/tb/rx_public_capture.sv",
++      "path": "work/peripherals/rx/tests/rx-plan-1.3.5.json",
+       "old_sha256": null,
+-      "new_sha256": "A1AA98D69293D4B106233BC669FD6D0F40F65EEDC89698B30C9E65547BA9BC15",
++      "new_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+       "status": "NEW"
+     },
+     {
+-      "path": "work/peripherals/rx/scripts/run_rx.py",
+-      "old_sha256": "5B27006323DE753D165FCEA4D3E5741276854F7FCC4F3D23E38ADB52BAE955B2",
+-      "new_sha256": "767C9D7D9E76357C76F3C441D0EEB93CC801F58000EDEE82E2E3E2F7451AC534",
++      "path": "work/peripherals/rx/tests/rx-plan-1.3.5.sha256",
++      "old_sha256": null,
++      "new_sha256": "1989413C6CB52D47FF267A91C6AEF390FD3CDB24A3FB653E25D1E95A049A65E8",
++      "status": "NEW"
++    },
++    {
++      "path": "work/regif/txgpio-m1/docs/RUNBOOK.md",
++      "old_sha256": "E270F886DC720407C83C95A6944A87F95EC81C36E794E74A448329D964B39133",
++      "new_sha256": "003732B5F408DD8569BF8EC17A4FD403BD68CE32C0EF1EB31532A4F1047805F6",
+       "status": "MODIFIED"
+     },
+     {
+-      "path": "work/peripherals/rx/scripts/rx_status_selfcheck.py",
+-      "old_sha256": null,
+-      "new_sha256": "6038732EC5C7CF4947606F20445B00ACE9F91152E5538FE68150F91F565056C8",
+-      "status": "NEW"
+-    },
+-    {
+-      "path": "work/peripherals/rx/tests/rx-plan-1.3.3.json",
+-      "old_sha256": null,
+-      "new_sha256": "0769CC08B87DEC92CDE2B7169667FF66DE310B0F8C7F876A550A5F5FA6FA928A",
+-      "status": "NEW"
+-    },
+-    {
+-      "path": "work/peripherals/rx/tests/rx-plan-1.3.3.sha256",
+-      "old_sha256": null,
+-      "new_sha256": "FCBBE13748AC8850A41AA5A732243B864A11BA2F9D1E5EB24F8173048D7CDDC9",
+-      "status": "NEW"
+-    },
+-    {
+-      "path": "work/peripherals/rx/STATUS.md",
+-      "old_sha256": "26550DC9C78FE2551D81E0002A1CC9BCA385EDCFD9A6A7C7E38B8B99D727016B",
+-      "new_sha256": "2DFBB14070A432DA33B21E983DE1FEF62CFA6E97F7A1293A2EF9ACDDFBB16261",
++      "path": "work/regif/txgpio-m1/docs/W01-W10.md",
++      "old_sha256": "DD085D3F6F847ED7FEA8E10D6E447A066C806AF492B73BD88B66342D770E171C",
++      "new_sha256": "7836BF9600DA496C8C2B5D937747CCC130CFFF7FC5B8524BCC85C964D937D474",
+       "status": "MODIFIED"
+     },
+     {
+-      "path": "work/peripherals/rx/CHANGELOG.md",
+-      "old_sha256": "4D2668016F5218AF794FFF380F6B3D6001F9454D3883D52CC3F064F8436509E9",
+-      "new_sha256": "16A136153E14D3F35CCBF73F3BF74B8AE9CBE846AC1E2684B0D417690BBC9E93",
++      "path": "work/regif/txgpio-m1/README.md",
++      "old_sha256": "B9047902CAC752FB411377F4E4829E1723D20121CD8370D1A0F518973A896229",
++      "new_sha256": "E7A7C549F64E9CAAA565E831A57CB36FA2F9BF964C67C7AED8456E97C851759F",
+       "status": "MODIFIED"
+     },
+     {
+-      "path": "work/peripherals/rx/docs/RX-LEDGER-1.3.3.md",
+-      "old_sha256": null,
+-      "new_sha256": "79B01FCBA9F852E608794B309CF28790BDA3C95333BF7AAF781B9F9917EA101E",
+-      "status": "NEW"
++      "path": "work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py",
++      "old_sha256": "049E81979DEDEFD2BAEAAE44D44C7581874C0EEFB8EC19ADB0609C8BED8D93C5",
++      "new_sha256": "23223D580AC2C37F05D6A9521B0E0506BE850B3AFEB106659477CE44D608B9EB",
++      "status": "MODIFIED"
+     },
+     {
+-      "path": "work/regif/txgpio-m1/tb/tb_local_regif_txgpio_m1.sv",
+-      "old_sha256": "48DCEA4E97C0F1572F43B8249FF1241E9189DA48742E7486404C8CCFB50EDDBB",
+-      "new_sha256": "7F0C1060ED9524B18965575CC3BE8DA1AE76D899521916F2D701976AEFAD793B",
++      "path": "work/regif/txgpio-m1/scripts/regif_entry_selfcheck.py",
++      "old_sha256": "4F5D93875382EA5616EA38DE5980DB4085076D7A2608E06996952625E32251D5",
++      "new_sha256": "9E7E140EC54B9BAABF4434B4948C2714680AC983BDB0D399FD22FDF85F6DC8EA",
++      "status": "MODIFIED"
++    },
++    {
++      "path": "work/regif/txgpio-m1/scripts/run_regif_m1.py",
++      "old_sha256": "FDC63EDAF79147B0539CA85B133166CCD5A138F6B516DE0A95F54C891427336D",
++      "new_sha256": "8C9AC119750A15BD09BD6A572631C475A8E4D2C7BA99A7E526F90DAC726E20BD",
+       "status": "MODIFIED"
+     },
+     {
+       "path": "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv",
++      "old_sha256": "C8CFFA9F6949D0B9BD33555B87EBD3AADD733AE389EB8FB549CA02BDF261E471",
++      "new_sha256": "A7C857C1451B5C3960F6DA4A1CF90451E72D4D572815D806FA14B51ADE106CFB",
++      "status": "MODIFIED"
++    },
++    {
++      "path": "work/regif/txgpio-m1/tb/tb_local_regif_txgpio_m1.sv",
++      "old_sha256": "7F0C1060ED9524B18965575CC3BE8DA1AE76D899521916F2D701976AEFAD793B",
++      "new_sha256": "7F0C1060ED9524B18965575CC3BE8DA1AE76D899521916F2D701976AEFAD793B",
++      "status": "UNCHANGED"
++    },
++    {
++      "path": "work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv",
++      "old_sha256": "B31DC2F28657DACDC53443717201161B55A19FFBECC5E99B850A03AA4BAF458E",
++      "new_sha256": "8D3E47D1185483CC864406BE91484EBC44ADD191D42D997282A84430A51888ED",
++      "status": "MODIFIED"
++    },
++    {
++      "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.json",
+       "old_sha256": null,
+-      "new_sha256": "C8CFFA9F6949D0B9BD33555B87EBD3AADD733AE389EB8FB549CA02BDF261E471",
++      "new_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+       "status": "NEW"
+     },
+     {
+-      "path": "work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv",
++      "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.sha256",
+       "old_sha256": null,
+-      "new_sha256": "B31DC2F28657DACDC53443717201161B55A19FFBECC5E99B850A03AA4BAF458E",
++      "new_sha256": "7C03EE9F11D1535A4886A08279E39B217404D609D2685CDE6A2F202633471A44",
+       "status": "NEW"
+-    },
+-    {
+-      "path": "work/regif/txgpio-m1/scripts/run_regif_m1.py",
+-      "old_sha256": "9C04823D96499684E814B61E2BE27711ED4FC70770ECD48DEEBD2817CCD26D59",
+-      "new_sha256": "FDC63EDAF79147B0539CA85B133166CCD5A138F6B516DE0A95F54C891427336D",
+-      "status": "MODIFIED"
+-    },
+-    {
+-      "path": "work/regif/txgpio-m1/scripts/regif_entry_selfcheck.py",
+-      "old_sha256": "73349F51A4FA2F0C2AD5E059B8FA311D399048D82339D204535F8E02638C6827",
+-      "new_sha256": "4F5D93875382EA5616EA38DE5980DB4085076D7A2608E06996952625E32251D5",
+-      "status": "MODIFIED"
+-    },
+-    {
+-      "path": "work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py",
+-      "old_sha256": null,
+-      "new_sha256": "049E81979DEDEFD2BAEAAE44D44C7581874C0EEFB8EC19ADB0609C8BED8D93C5",
+-      "status": "NEW"
+-    },
+-    {
+-      "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.json",
+-      "old_sha256": null,
+-      "new_sha256": "A94948CE5D4818CE801B74698D242C70745E504C0FF2479A4BFCD2CC1875F4B4",
+-      "status": "NEW"
+-    },
+-    {
+-      "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.sha256",
+-      "old_sha256": null,
+-      "new_sha256": "8772CA4ECB16414E6D2EA007E4597E5E5D5C2840981F54A29B378D3C3EC7015D",
+-      "status": "NEW"
+-    },
+-    {
+-      "path": "work/regif/txgpio-m1/README.md",
+-      "old_sha256": "164FB8D4D85BF2866963A98586D06D3CAADBAFF19A116CBA8F7818847743D4CC",
+-      "new_sha256": "B9047902CAC752FB411377F4E4829E1723D20121CD8370D1A0F518973A896229",
+-      "status": "MODIFIED"
+-    },
+-    {
+-      "path": "work/regif/txgpio-m1/docs/W01-W10.md",
+-      "old_sha256": "194E2F0F4D03EB0451EF108BBA4D3641D98B250E00B4748B578C5CB7692F0BE4",
+-      "new_sha256": "DD085D3F6F847ED7FEA8E10D6E447A066C806AF492B73BD88B66342D770E171C",
+-      "status": "MODIFIED"
+-    },
+-    {
+-      "path": "work/regif/txgpio-m1/docs/RUNBOOK.md",
+-      "old_sha256": "863F371665EAD37BB4862237DE2FD628C1BD7EC73BCD767107796EC9E63E8B21",
+-      "new_sha256": "E270F886DC720407C83C95A6944A87F95EC81C36E794E74A448329D964B39133",
+-      "status": "MODIFIED"
+-    },
+-    {
+-      "path": "work/regif/txgpio-m1/docs/SHA256SUMS.txt",
+-      "old_sha256": "66648B2457146CA82A54031641DF493D8A19C5EB9298359FC2F3E8D20741D1DA",
+-      "new_sha256": "DD94CFB3EE6AD5C6741F76D940FD3E439F7B1619158F0A479544A9FCC25FC3B3",
+-      "status": "MODIFIED"
+     }
+-  ],
+-  "note": "All paths exist in this increment; old hashes are from 1735 when present."
++  ]
+ }
+diff --git a/START_HERE.md b/START_HERE.md
+--- /dev/null
++++ b/START_HERE.md
+@@ -0,0 +1,31 @@
++# 最终阶段 v02：START HERE
++
++- stage：`stage-return-final-20261027-v02`
++- 基线：`stage-return-final-20261027-v01` / `increment-20261024-2335`
++- 本轮只做 R1/R2/R3；旧 v01、核心、包装 RTL、W06/GPIO 历史包均保留。
++- 性质：最终阶段候选，`PASS_LOCAL`；不是主线复现或最终验收。
++- 硬件：`STOPPED`。
++
++## R1/R2 结果
++
++- **R1 RX**：计划 `rx-plan-1.3.5`，SHA `979D6451...17E4`；run `rx-20261025-211013`。真实 S/consume 沿 pre + 同沿 NBA 后 +1 ps post；N8/N16/N234 账本 92/110/68，功能 41/41、50/50、29/29；seq0 edge170 和 seq30 edge2618 的 pre/post 已修正；5e post_clear=1/post_fe=0；`RX_SNAPSHOT_CHECK_PASS`。
++- **R2 TX**：计划 `w01-w10-plan-1.0.5`，SHA `5A955CD3...97A9`；run `regif-m1-20261025-210743`。START event_edge=真实接受沿，COMPLETE event_edge=START+10N；observed_edge=event_edge+1。N16 首帧 37→197，N234 6→2346；6 完整/3 取消/0 bad stop。
++
++## R3 索引
++
++- `SOURCE_INDEX.json`、`CHANGED_FILES.json`、`DIFF.patch`、`SHA256SUMS.txt` 从冻结后的当前文件重新生成；不再对 `SOURCE_INDEX` 用旧哈希。
++- 五个元数据块（DEPENDENCIES/HISTORY_ALIASES/MODULE_STATUS/SOURCE_INDEX/delivery）在 diff 前稳定生成，主 SHA 最后生成。
++- 活动计划/说明已统一到 1.3.5 / 1.0.5；旧 1.3.4/1.0.4 仅历史别名。
++
++## 阅读顺序
++
++1. `delivery.json`
++2. `MODULE_STATUS.json`
++3. `OPEN_ITEMS.md`
++4. `coverage_map.json`
++5. `CHANGED_FILES.json` / `DIFF.patch`
++6. `SOURCE_INDEX.json` / `DEPENDENCIES.json` / `HISTORY_ALIASES.json`
++7. `SHA256SUMS.txt`
++8. `work/` 下 R1/R2 最终源/计划/日志/VCD/results
++
++W06 引用 `A-W06-SUPPLEMENT`；GPIO 1.0.2 沿用已有接收结论；旧根 `OPEN_PREEXISTING` 未改写。ZIP 可选，本目录未生成 ZIP。
+diff --git a/coverage_map.json b/coverage_map.json
+--- /dev/null
++++ b/coverage_map.json
+@@ -0,0 +1,77 @@
++{
++  "kind": "COVERAGE_MAP",
++  "as_of": "2026-10-25T21:20:00+08:00",
++  "final_stage": "work/B-RETURN/stage-return-final-20261027-v02",
++  "prior_stage": "work/B-RETURN/stage-return-final-20261027-v01",
++  "packaging": {
++    "plan": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.json",
++    "plan_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
++    "run_id": "regif-m1-20261025-210743",
++    "W01": "PASS final B run",
++    "W02": "PASS final B run",
++    "W03": "PASS final B run",
++    "W04": "PASS final B run",
++    "W05": "PASS final B run",
++    "W06": {
++      "status": "A-W06-SUPPLEMENT",
++      "note": "A supplemented N16/N234 ready-return-edge boundary; B did not rerun W06.",
++      "path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/RESULTS.json",
++      "sha256": "EA54D33B031971F2431A2979638A481A12AC4C1393319C0918430EACA227CBA6",
++      "tb_path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/tb_w06_boundary_v2.sv",
++      "tb_sha256": "C4B9A86E5D9F7AEE23F33D448B79D059B23EBBDA007282344EB59B9E30F5040D"
++    },
++    "W07": "PASS final B run",
++    "W08": "PASS final B run",
++    "W09": "PASS final B run",
++    "W10": "PASS final B run",
++    "N16": "PASS; 26 requests; 9 TX / 6 GPIO / 11 reject; 6 complete / 3 cancel / 0 bad_stop; first accept event_edge=37, complete event_edge=197",
++    "N234": "PASS; 10 requests; 9 TX / 0 GPIO / 1 reject; 6 complete / 3 cancel; first accept event_edge=6, complete event_edge=2346",
++    "event_observed_rule": "START event_edge equals accepted request edge; COMPLETE event_edge = START+10N; observed_edge = event_edge+1.",
++    "evidence": [
++      "work/regif/txgpio-m1/logs/regif-m1-20261025-210743/",
++      "work/regif/txgpio-m1/logs/regif-entry-selfcheck-20261025-210805/summary.json",
++      "work/regif/txgpio-m1/logs/regif-capture-20261025-210624/summary.json"
++    ]
++  },
++  "rx": {
++    "plan": "work/peripherals/rx/tests/rx-plan-1.3.5.json",
++    "plan_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
++    "run_id": "rx-20261025-211013",
++    "cases": [
++      "RX-01",
++      "RX-02",
++      "RX-03",
++      "RX-04",
++      "RX-05",
++      "RX-06",
++      "RX-07",
++      "RX-08",
++      "RX-09"
++    ],
++    "N8": "PASS; ledger 92; functional 41/41/4/7",
++    "N16": "PASS; ledger 110; functional 50/50/4/7; seq0 edge170 pre_valid=0/post_valid=1; seq30 edge2618 pre_valid=0/post_valid=1; 5e post_clear=1/post_fe=0",
++    "N234": "PASS; ledger 68; functional 29/29/4/7",
++    "shared_capture": "rx_public_capture; formal ordered exact type/data/edge; negative uses same module",
++    "snapshot": "pre at true S/consume edge before NBA; post +1 ps after same NBA; snapshot invariants PASS; no X/Z/missing/duplicate",
++    "status_selfcheck": "work/peripherals/rx/logs/rx-status-selfcheck-20261025-211027/summary.json"
++  },
++  "gpio": {
++    "status": "ACCEPTED_LIMITED_1.0.2",
++    "core_sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
++    "plan": "work/peripherals/gpio/tests/gpio-plan.json",
++    "plan_sha256": "BACF07BE0FD179B532B1BF51AD17EE1910DC6B10E0174C6ED887C6C5D4EB47BE",
++    "runner": "work/B-RETURN/increment-20261023-1930/work/peripherals/gpio/scripts/run_gpio.py",
++    "runner_sha256": "6CDDE2E5DA70673988E287A201095DEE2136FBE89F24BB972701C78D621034CC",
++    "evidence": "F123 W1/W8/W16 + negatives; F139; final packaging N16 six independent writes/two-stage sync",
++    "not_rerun": true
++  },
++  "external": {
++    "tx_core": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/src/uart_tx.v",
++    "gpio_core": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/gpio/src/gpio_core.v",
++    "rx_core": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/src/uart_rx.v",
++    "wrapper": "work/B-RETURN/increment-20261024-0030/work/regif/txgpio-m1/src/local_regif_txgpio_m1.v",
++    "shared_runner": "work/B-RETURN/increment-20261024-1735/work/peripherals/scripts/runner_common.py"
++  },
++  "hardware": "STOPPED",
++  "claim": "Finite local/public-interface verification only; not mainline reproduction/final acceptance/A integration."
++}
+diff --git a/delivery.json b/delivery.json
+--- a/delivery.json
++++ b/delivery.json
+@@ -1,75 +1,95 @@
+ {
+   "kind": "ACTUAL",
+-  "delivery_id": "increment-20261024-2335",
+-  "version": "0.9.6-increment",
+-  "created_at": "2026-10-24T23:35:00+08:00",
++  "delivery_id": "stage-return-final-20261027-v02",
++  "version": "2.0.0-final-stage-candidate",
++  "created_at": "2026-10-25T21:20:00+08:00",
+   "timezone": "Asia/Shanghai",
+-  "base_increment": "increment-20261024-1735",
+-  "base_package": "stage-return-20261023-1345",
+-  "old_packages_read_only": true,
+-  "review_scope": "Packaging independent uart_tx capture/one-based edge/request fields; RX shared capture/pre-post/status propagation; plan/docs/index",
++  "final_stage": true,
++  "not_final_acceptance": true,
++  "base_stage": "stage-return-final-20261027-v01",
++  "base_increment": "increment-20261024-2335",
++  "original_package_id": "teammate-handoff-2026-10-18-v01",
++  "contracts": {
++    "rx": {
++      "id": "PERIPH-CORE-RX-1.0",
++      "version": "1.0.0",
++      "sha256": "E1DA0CC3BC1E9F64285B5846369D910338FF2289652E297629DDA9F5BAEEA706",
++      "status": "APPROVED"
++    },
++    "regif": {
++      "id": "LOCAL-REGIF-TXGPIO-M1",
++      "version": "1.0.0",
++      "sha256": "F0E31602D008459B3E95901C0F533BC7FF4153F6B5A93859780EA8D2AD64E988",
++      "status": "D115_APPROVED_SCOPE"
++    }
++  },
+   "results": {
+-    "shared_runner": {"run_id": "runner-selfcheck-20261024-171402", "status": "PASS_MECHANISM", "note": "retained from 1735; no new runner code change"},
+-    "B-REGIF": {
+-      "run_id": "regif-m1-20261024-231958",
+-      "plan_version": "1.0.3",
+-      "plan_sha256": "A94948CE5D4818CE801B74698D242C70745E504C0FF2479A4BFCD2CC1875F4B4",
+-      "N16": {"status": "PASS", "tx_accept": 9, "gpio_accept": 6, "reject": 11, "requests": 26, "complete": 6, "cancel": 3, "bad_stop": 0, "first_edge": 9},
+-      "N234": {"status": "PASS", "tx_accept": 9, "gpio_accept": 0, "reject": 1, "requests": 10, "complete": 6, "cancel": 3, "bad_stop": 0, "first_edge": 6},
+-      "entry_selfcheck": "regif-entry-selfcheck-20261024-232004 all_pass=true",
+-      "capture_selfcheck": "regif-capture-20261024-231843 status=PASS",
++    "packaging": {
++      "run_id": "regif-m1-20261025-210743",
++      "status": "PASS",
++      "N16": "26 requests; 9 TX/6 GPIO/11 reject; 6 complete/3 cancel/0 bad_stop; event 37→197",
++      "N234": "10 requests; 9/0/1; 6 complete/3 cancel; event 6→2346",
++      "plan": "1.0.5",
+       "schema": "PASS"
+     },
+-    "B-UART-RX": {
+-      "run_id": "rx-20261024-232514",
+-      "plan_version": "1.3.3",
+-      "plan_sha256": "0769CC08B87DEC92CDE2B7169667FF66DE310B0F8C7F876A550A5F5FA6FA928A",
+-      "counts": {"PASS": 30, "TIMEOUT": 1, "FAIL": 0, "TOOL_ERROR": 0, "NOT_RUN": 0},
+-      "ledger": {"N8": 92, "N16": 110, "N234": 68},
+-      "functional": {"N8": "41/41/4/7", "N16": "50/50/4/7", "N234": "29/29/4/7"},
+-      "rx05_5e": {"edge": 8081, "data": "0x44", "pre_clear": 1, "pre_fe": 1, "post_clear": 0, "post_fe": 0},
+-      "shared_capture_crosscheck": "PASS 92/110/68 content_equivalent=1",
+-      "status_selfcheck": "rx-status-selfcheck-20261024-232527 all_pass=true",
++    "rx": {
++      "run_id": "rx-20261025-211013",
++      "status": "PASS",
++      "counts": "30 PASS + 1 expected TIMEOUT",
++      "ledger": "92/110/68",
++      "functional": "41/41, 50/50, 29/29, OV/FE 4/7",
++      "plan": "1.3.5",
+       "schema": "PASS"
++    },
++    "gpio": {
++      "status": "ACCEPTED_LIMITED_1.0.2",
++      "rerun": false
++    },
++    "W06": {
++      "status": "A-W06-SUPPLEMENT",
++      "B_rerun": false
+     }
+   },
+-  "A_system_status": {
+-    "authorized_use": "A used existing wrapper/core for limited N16/N234 re-verification and GPIO+C-program system simulation",
+-    "owner": "A owns CPU adaptation, storage, system validation/integration",
+-    "not_b_acceptance": true
++  "verification_deltas": {
++    "R1": {
++      "status": "PASS_LOCAL",
++      "plan": "rx-plan-1.3.5",
++      "run": "rx-20261025-211013",
++      "evidence": "true-edge pre/post; seq0 0/1; seq30 0/1; 5e post_clear=1; snapshot invariants"
++    },
++    "R2": {
++      "status": "PASS_LOCAL",
++      "plan": "w01-w10-plan-1.0.5",
++      "run": "regif-m1-20261025-210743",
++      "evidence": "event vs observed edge; N16 37/197; N234 6/2346; 6 complete/3 cancel"
++    },
++    "R3": {
++      "status": "PASS_LOCAL",
++      "evidence": "metadata regenerated from frozen current files; SOURCE_INDEX/CHANGED hashes exact; five metadata diff blocks present; no DUT rerun"
++    }
+   },
+-  "metadata": {
+-    "old_1735_read_only": true,
+-    "root_package_integrity": "OPEN_PREEXISTING_MANIFEST_SOURCE_LINK",
+-    "source_index": "SOURCE_INDEX.json",
+-    "history_aliases": "HISTORY_ALIASES.json",
+-    "dependencies": "DEPENDENCIES.json"
+-  },
++  "coverage_map": "coverage_map.json",
++  "dependencies": "DEPENDENCIES.json",
++  "history_aliases": "HISTORY_ALIASES.json",
++  "source_index": "SOURCE_INDEX.json",
++  "changed_files": "CHANGED_FILES.json",
++  "diff": "DIFF.patch",
++  "sha256sums": "SHA256SUMS.txt",
++  "open_items": "OPEN_ITEMS.md",
++  "manifest_files": 69,
+   "acceptance": {
+     "material_complete": "PASS",
+-    "teammate_self_test": "PASS_LOCAL_SCOPED",
+-    "mechanism_selfcheck": "PASS_MECHANISM",
+-    "main_reproduced": "NOT_RUN",
++    "B_difference": "PASS_LOCAL",
++    "mainline_reproduction": "NOT_RUN",
+     "A_system_integration": "A_OWNED",
+     "final_acceptance": "PENDING",
+     "hardware": "STOPPED"
+   },
+-  "window": {
+-    "target": "2026-10-27T18:00:00+08:00",
+-    "unchanged": true,
+-    "additional_correction_net_hours": {"point": 2.1, "low": 1.6, "high": 2.6},
+-    "previous_registered": {"correction": 2.5, "packaging": 1.5, "review_0030": 2.7},
+-    "remaining_before_window": {"point": 0.75, "low": 0.5, "high": 1.0},
+-    "conflict": "NO_NEW_CONFLICT_IDENTIFIED",
+-    "note": "Additional work completed 2026-10-24; no self-extension. W06 ready-return-edge request is explicitly not covered."
+-  },
+-  "hardware_operated": false,
+-  "not_final_acceptance": true,
+   "limitations": [
+-    "Review-response increment, not final acceptance or final delivery.",
+-    "No PDS/timing/board/CPU/SoC/hardware; hardware STOPPED.",
+-    "W06 ready-return-edge request is not separately exercised; only marked in plan.",
+-    "A CPU/storage/system integration is A-owned; B does not claim it.",
+-    "Root handoff manifest/source-link remains open and was not modified."
++    "Final-stage candidate, not final acceptance or mainline reproduction.",
++    "No CPU/SoC/CoreMark/PDS/board/hardware; hardware STOPPED.",
++    "W06 is A supplement, not a B new run.",
++    "Root handoff manifest/source-link remains open.",
++    "RX packaging/register wrapper and FIFO/interrupt are excluded."
+   ]
+ }
+diff --git a/work/peripherals/rx/CHANGELOG.md b/work/peripherals/rx/CHANGELOG.md
+--- a/work/peripherals/rx/CHANGELOG.md
++++ b/work/peripherals/rx/CHANGELOG.md
+@@ -125,3 +125,11 @@
+ - `run_rx.py`: classify_config/case_status propagate global FAIL; negative markers require shared capture controls.
+ - `tb_uart_rx.sv`: CONSUME edge +1, pre fields from last settled state, crosscheck shared capture.
+ - RX core unchanged.
++
++## v1.3.4 — 2026-10-25 — strict ordered shared capture and snapshots
++
++- Added 1.3.4 plan; shared capture order/edge exact; post +1ps; 5e post_clear=1; formal run rx-20261025-191037.
++
++## v1.3.5 — 2026-10-25 — true-edge pre/post snapshots
++
++- Added 1.3.5 plan; inline ledger records pre at the true S/consume edge and post at +1 ps after the same NBA; ACCEPT, ACCEPT-REPLACE, DROP and CONSUME shapes checked; no DROP pre-copy special case; counts 92/110/68 and 41/41, 50/50, 29/29; formal run rx-20261025-211013.
+diff --git a/work/peripherals/rx/STATUS.md b/work/peripherals/rx/STATUS.md
+--- a/work/peripherals/rx/STATUS.md
++++ b/work/peripherals/rx/STATUS.md
+@@ -1,6 +1,6 @@
+ # B-UART-RX 状态与证据
+ 
+-> **2026-10-24 1.3.3 更新（共享捕获与时基收敛）**：新计划 `tests/rx-plan-1.3.3.json`（SHA256 `0769CC08...928A`）。正式运行 `rx-20261024-232514`：N8/N16/N234 全 PASS，账本 **92/110/68**（1.3.0 的 88/106/64 保留为历史；+4/配置来自新增同字节 A1/A1 同沿消费替换）。N16 5e 仍为 `edge=8081 type=DROP data=0x44`，`pre_clear=1、pre_fe=1、`post_clear=0`、`pre/post_ov=1`；CANCEL 后态改为公开端口实测采样，不再填固定 0。正式 TB 与负向 TB 共用 `rx_public_capture`；正式内联账本与共享捕获做内容等价 crosscheck；负向 same-edge/DROP/CANCEL 控制及缺/错/多检出。功能计数 N8 41/41/4/7、N16 50/50/4/7、N234 29/29/4/7。VCD 在 `waves/rx-20261024-232514/`；不是主线复现或最终验收。
++> **2026-10-25 1.3.5 更新（真实事件沿 pre/post 快照修正）**：新计划 `tests/rx-plan-1.3.5.json`（SHA256 `979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4`）。正式运行 `rx-20261025-211013`：N8/N16/N234 全 PASS，账本 **92/110/68**，功能计数 N8 41/41/4/7、N16 50/50/4/7、N234 29/29/4/7。内联账本在独立串行解码确定的真实 S/consume 沿保存 pre，NBA 后同一沿 +1 ps 保存 post；N16 seq0/edge170 pre_valid=0/post_valid=1，seq30/edge2618 pre_valid=0/post_valid=1；5e `edge=8081` 为 `pre_clear=1/pre_fe=1/post_clear=1/post_fe=0/OV=1`。新增 `RX_SNAPSHOT_CHECK_PASS` 逐条校验无 X/Z、无缺/重复；正式/负向仍共用 `rx_public_capture`，共享捕获逐笔有序 type/data/edge 全等。状态传播自检 `rx-status-selfcheck-20261025-211027 all_pass=true`。1.3.4/1.3.3 及更早内容保留为历史，不再是活动引用；不是主线复现或最终验收。
+ 
+ > **2026-10-24 1.3.0 更新（协议事件账本补正）**：新冻结计划 `tests/rx-plan-1.3.0.json`（SHA256 `8409561AA24E2DD21F0A24E68FC8EEDB660D69C170AC15DAF558598DA6326EE6`）。正式本地运行 `rx-20261024-002409`：N8/N16/N234 全 PASS，账本 **88/106/64**（旧 87/105/63 保留为历史），功能计数仍 40/39/4/7、49/48/4/7、28/27/4/7。RX-05 5e 在 OV 已 1、clear 与新帧同沿时补记一笔协议 DROP：N16 实记为 `edge=8081 type=3 data=0x44 pre_ov=1 post_ov=1`，数据来自独立串行解码而非 `stim_bytes[0]`。账本每条带 edge、pre/post 公开端口状态；CANCEL 由“复位时独立串行解码器仍在帧中”推导，已移除刺激后 `actual_cancel()` 调用。负向公开流捕获源已覆盖漏/多/错序/错字节与控制。日志/普通 VCD 在 `logs/rx-20261024-002409/`、`waves/rx-20261024-002409/`；不是主线复现或最终验收，旧 1.2.0 计划/日志保留。
+ 
+diff --git a/work/peripherals/rx/docs/RX-LEDGER-1.3.5.md b/work/peripherals/rx/docs/RX-LEDGER-1.3.5.md
+--- /dev/null
++++ b/work/peripherals/rx/docs/RX-LEDGER-1.3.5.md
+@@ -0,0 +1,12 @@
++# RX 1.3.5 最终快照说明
++
++- 计划 `rx-plan-1.3.5.json`，SHA256 `979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4`。
++- 正式运行 `rx-20261025-211013`：N8/N16/N234 全 PASS，账本 92/110/68，功能 41/41、50/50、29/29，OV/FE 4/7。
++- 内联账本在独立串行解码确定的真实 S/consume 沿保存 pre；同一沿 NBA 后 +1 ps 保存 post。
++- N16 seq0/edge170 ACCEPT：`pre_valid=0 post_valid=1`。
++- N16 seq30/edge2618 ACCEPT：`pre_valid=0 pre_ready=1 post_valid=1`。
++- N16 5e DROP edge8081：`pre_clear=1 pre_fe=1 post_clear=1 post_fe=0 pre/post_ov=1`。
++- `RX_SNAPSHOT_CHECK_PASS` 覆盖所有事件的 pre/post 0/1 合法性、ACCEPT/REPLACE/CONSUME/DROP 形状及重复事件。
++- 正式/负向共用 `rx_public_capture`；正式逐笔有序比较 type/data/edge，`ordered=1 edge_match=1`。
++- 状态传播自检 `rx-status-selfcheck-20261025-211027 all_pass=true`。
++- 1.3.4 及更早内容仅历史；RX RTL 未改。
+diff --git a/work/peripherals/rx/scripts/run_rx.py b/work/peripherals/rx/scripts/run_rx.py
+--- a/work/peripherals/rx/scripts/run_rx.py
++++ b/work/peripherals/rx/scripts/run_rx.py
+@@ -33,8 +33,8 @@
+ from runner_common import run_process
+ HARD_CAP_DEFAULT = 1_000_000
+ 
+-PLAN = ROOT / "tests" / "rx-plan-1.3.3.json"
+-PLAN_HASH = ROOT / "tests" / "rx-plan-1.3.3.sha256"
++PLAN = ROOT / "tests" / "rx-plan-1.3.5.json"
++PLAN_HASH = ROOT / "tests" / "rx-plan-1.3.5.sha256"
+ RESULTS = ROOT / "results.json"
+ 
+ BASE_LIMITS = [
+@@ -533,7 +533,7 @@
+     # Meta rows: plan check, limits, fresh evidence.
+     rows.insert(0, make_row(
+         "COM-01", "COM-01", "frozen plan and artifact hash gate",
+-        "Plan SHA matches tests/rx-plan-1.3.3.sha256; RTL/TB/negative/watchdog/illegal/ledger-check hashes match the plan.",
++        "Plan SHA matches tests/rx-plan-1.3.5.sha256; RTL/TB/negative/watchdog/illegal/ledger-check hashes match the plan.",
+         "PASS" if plan_ok else "FAIL",
+         "PLAN_CHECK=PASS; %d artifact hashes match" % 7 if plan_ok else "PLAN_CHECK=FAIL; DUT not run",
+         plan_duration, command_dict([PYTHON, "-c", "internal plan/artifact hash check"], 30),
+diff --git a/work/peripherals/rx/scripts/rx_status_selfcheck.py b/work/peripherals/rx/scripts/rx_status_selfcheck.py
+diff --git a/work/peripherals/rx/tb/rx_public_capture.sv b/work/peripherals/rx/tb/rx_public_capture.sv
+--- a/work/peripherals/rx/tb/rx_public_capture.sv
++++ b/work/peripherals/rx/tb/rx_public_capture.sv
+@@ -7,68 +7,67 @@
+     input  wire       rst_n,
+     input  wire       valid,
+     input  wire       ready,
+-    input  wire       line_good,
++    input  wire       line_good_accept,
++    input  wire       line_good_drop,
+     input  wire [7:0] data,
+     input  wire [7:0] line_data,
+-    input  wire       cancel
++    input  wire       cancel,
++    input  wire [31:0] cancel_edge
+ );
+     localparam integer MAX = 512;
+     integer count;
+     integer etype [0:MAX-1];
+     integer edata [0:MAX-1];
++    integer eedge [0:MAX-1];
+     reg valid_q;
+-    reg same_edge_pending;
+-    reg [7:0] same_edge_data;
++    reg [31:0] cycle_count;
+ 
+     initial begin
+         count = 0;
+         valid_q = 1'b0;
+-        same_edge_pending = 1'b0;
+-        same_edge_data = 8'h00;
++        cycle_count = 0;
+     end
+ 
+     always @(posedge clk) begin
++        cycle_count <= cycle_count + 1;
+         if (!rst_n) begin
+             count = 0;
+             valid_q = 1'b0;
+-            same_edge_pending = 1'b0;
+         end else begin
+             if (valid && !valid_q) begin
+                 etype[count] = 1;
+                 edata[count] = data;
++                eedge[count] = cycle_count;
+                 count = count + 1;
+             end
+             if (valid && ready) begin
+                 etype[count] = 2;
+                 edata[count] = data;
++                eedge[count] = cycle_count + 1;
+                 count = count + 1;
+-                if (valid_q && line_good) begin
+-                    same_edge_pending <= 1'b1;
+-                    same_edge_data <= data;
++                if (valid_q && line_good_accept) begin
++                    // The new byte is published after NBA; its pre-edge serial
++                    // value is line_data.  Record it at the same event edge,
++                    // after CONSUME, with the actual one-based edge.
++                    etype[count] = 1;
++                    edata[count] = line_data;
++                    eedge[count] = cycle_count + 1;
++                    count = count + 1;
+                 end
+             end
+-            if (line_good && valid_q && !ready) begin
++            if (line_good_drop && valid_q && !ready) begin
+                 etype[count] = 3;
+                 edata[count] = line_data;
++                eedge[count] = cycle_count;
+                 count = count + 1;
+             end
+             if (cancel) begin
+                 etype[count] = 4;
+                 edata[count] = 8'h00;
++                eedge[count] = cancel_edge;
+                 count = count + 1;
+             end
+             valid_q <= valid;
+         end
+     end
+-
+-    // Match the formal TB: same-edge replacement is CONSUME at the edge and
+-    // ACCEPT-REPLACE after NBA settles at the following negedge.
+-    always @(negedge clk) begin
+-        if (same_edge_pending) begin
+-            etype[count] = 1;
+-            edata[count] = same_edge_data;
+-            count = count + 1;
+-            same_edge_pending <= 1'b0;
+-        end
+-    end
+ endmodule
+diff --git a/work/peripherals/rx/tb/tb_uart_rx.sv b/work/peripherals/rx/tb/tb_uart_rx.sv
+--- a/work/peripherals/rx/tb/tb_uart_rx.sv
++++ b/work/peripherals/rx/tb/tb_uart_rx.sv
+@@ -87,9 +87,12 @@
+     reg [7:0] last_data;
+     integer ledger_i;
+     integer ledger_errors;
++    integer check_i;
++    integer check_j;
+ 
+     reg       rx_valid_q;
+     reg       capture_cancel;
++    reg [31:0] capture_cancel_edge;
+     reg [7:0] rx_data_q;
+     reg       frame_error_q;
+     reg       overrun_q;
+@@ -114,15 +117,20 @@
+         .rst_n     (1'b1),
+         .valid     (rx_valid),
+         .ready     (rx_ready),
+-        .line_good (line_good_pipe[1]),
++        .line_good_accept (line_good_pipe[0]),
++        .line_good_drop (line_good_pipe[1]),
+         .data      (rx_data),
+         .line_data (line_data),
+-        .cancel    (capture_cancel)
++        .cancel    (capture_cancel),
++        .cancel_edge(capture_cancel_edge)
+     );
+ 
+-    always @(negedge rst_n)
+-        if (line_active)
++    always @(negedge rst_n) begin
++        if (line_active) begin
+             capture_cancel <= 1'b1;
++            capture_cancel_edge <= cycle_count;
++        end
++    end
+ 
+     always @(posedge clk)
+         if (capture_cancel)
+@@ -215,13 +223,18 @@
+     reg       same_edge_new_frame;
+     reg [7:0] same_edge_old_data;
+     integer   cancel_idx;
+-
+-    task automatic ledger_push_cur(input integer typ, input [7:0] d, input [255:0] lab,
+-                                   input integer edge_value);
+-        begin
+-            ledger_push(typ, d, lab, edge_value,
+-                        last_valid, last_ready, last_clear, last_ov, last_fe,
++    integer   pending_idx [0:63];
++    integer   pending_count;
++
++    task automatic ledger_push_s(
++        input integer typ, input [7:0] d, input [255:0] lab, input integer edge_value,
++        input integer pv, input integer pr, input integer pc, input integer po, input integer pf
++    );
++        begin
++            ledger_push(typ, d, lab, edge_value, pv, pr, pc, po, pf,
+                         rx_valid, rx_ready, clear_errors, overrun, frame_error);
++            pending_idx[pending_count] = act_ledger_count - 1;
++            pending_count = pending_count + 1;
+         end
+     endtask
+ 
+@@ -268,11 +281,11 @@
+         line_good_pipe <= {line_good_pipe[1:0], line_good};
+     end
+ 
+-    // Public-port event capture.  A good frame completion is identified by
+-    // line_good_pipe; full/not-ready is a DROP even when OV was already 1.
++    // True-edge public event capture.  line_good_pipe[0] is the independent
++    // serial decoder marker at the DUT's real S edge.  The pre snapshot is
++    // taken before this edge's NBA; the post snapshot is filled at +1 ps after
++    // the same edge.  Same-edge consume + replace is CONSUME then ACCEPT.
+     always @(posedge clk) begin
+-        same_edge_consume  <= 1'b0;
+-        same_edge_new_frame <= 1'b0;
+         if (rst_n) begin
+             last_valid <= rx_valid;
+             last_ready <= rx_ready;
+@@ -280,28 +293,48 @@
+             last_ov    <= overrun;
+             last_fe    <= frame_error;
+             last_data  <= rx_data;
+-            if (rx_valid && !rx_valid_q)
+-                ledger_push_cur(EV_ACCEPT, rx_data, "ACCEPT", cycle_count);
+-            if (rx_valid && rx_ready) begin
+-                // CONSUME is the next edge after the publish edge; the
+-                // public edge counter is one-based. Record that actual edge.
+-                ledger_push_cur(EV_CONSUME, rx_data, "CONSUME", cycle_count + 1);
+-                if (rx_valid_q) begin
+-                    same_edge_consume  <= 1'b1;
+-                    if (!same_edge_consume && line_good_pipe[0])
+-                        same_edge_new_frame <= 1'b1;
+-                    same_edge_old_data <= rx_data;
+-                end
+-            end
+-            if (line_good_pipe[1] && rx_valid_q && !rx_ready)
+-                ledger_push_cur(EV_DROP, line_data, "DROP", cycle_count);
++
++            if (line_good_pipe[0]) begin
++                if (!rx_valid) begin
++                    ledger_push_s(EV_ACCEPT, line_data, "ACCEPT",
++                                  cycle_count + 1,
++                                  rx_valid, rx_ready, clear_errors, overrun, frame_error);
++                end else if (rx_ready) begin
++                    ledger_push_s(EV_CONSUME, rx_data, "CONSUME",
++                                  cycle_count + 1,
++                                  rx_valid, rx_ready, clear_errors, overrun, frame_error);
++                    ledger_push_s(EV_ACCEPT, line_data, "ACCEPT-REPLACE",
++                                  cycle_count + 1,
++                                  rx_valid, rx_ready, clear_errors, overrun, frame_error);
++                end else begin
++                    ledger_push_s(EV_DROP, line_data, "DROP",
++                                  cycle_count + 1,
++                                  rx_valid, rx_ready, clear_errors, overrun, frame_error);
++                end
++            end else if (rx_valid && rx_ready) begin
++                ledger_push_s(EV_CONSUME, rx_data, "CONSUME",
++                              cycle_count + 1,
++                              rx_valid, rx_ready, clear_errors, overrun, frame_error);
++            end
+         end
+     end
+ 
+-    always @(negedge clk) begin
+-        if (rst_n && same_edge_consume &&
+-            ((rx_data !== same_edge_old_data) || same_edge_new_frame))
+-            ledger_push_cur(EV_ACCEPT, rx_data, "ACCEPT-REPLACE", cycle_count);
++    // Post snapshot at +1 ps after the same posedge, before the testbench's
++    // 1 ns stimulus changes.  Every event keeps this edge's real public post
++    // values; no DROP/pre-copy special case and no negedge late-state capture.
++    always @(posedge clk) begin : post_snapshot
++        integer pi;
++        #0.001;
++        if (pending_count > 0) begin
++            for (pi = 0; pi < pending_count; pi = pi + 1) begin
++                act_ledger_post_valid[pending_idx[pi]] = rx_valid;
++                act_ledger_post_ready[pending_idx[pi]] = rx_ready;
++                act_ledger_post_clear[pending_idx[pi]] = clear_errors;
++                act_ledger_post_ov[pending_idx[pi]] = overrun;
++                act_ledger_post_fe[pending_idx[pi]] = frame_error;
++            end
++            pending_count = 0;
++        end
+     end
+ 
+     // Asynchronous reset cancels a frame that the independent serial decoder
+@@ -1226,10 +1259,9 @@
+         last_ov = 1'b0;
+         last_fe = 1'b0;
+         last_data = 8'h00;
+-        same_edge_consume = 1'b0;
+-        same_edge_new_frame = 1'b0;
+-        same_edge_old_data = 8'h00;
+         capture_cancel = 1'b0;
++        pending_count = 0;
++        capture_cancel_edge = 0;
+         rx_valid_q = 1'b0;
+         rx_data_q = 8'h00;
+         frame_error_q = 1'b0;
+@@ -1277,32 +1309,85 @@
+             for (ledger_i = 0; ledger_i < act_ledger_count; ledger_i = ledger_i + 1)
+                 $display("LEDGER_ACT seq=%0d type=%0d data=%02x label=%0s", ledger_i, act_ledger_type[ledger_i], act_ledger_data[ledger_i], act_ledger_label[ledger_i]);
+         end
++        // R1 snapshot invariants: every captured pre/post field must be a
++        // known 0/1 public value, and ACCEPT/DROP/CONSUME must match the true
++        // event's public pre/post shape.  Exact duplicate events are rejected.
++        for (check_i = 0; check_i < act_ledger_count; check_i = check_i + 1) begin
++            if ((act_ledger_pre_valid[check_i] !== 0 && act_ledger_pre_valid[check_i] !== 1) ||
++                (act_ledger_pre_ready[check_i] !== 0 && act_ledger_pre_ready[check_i] !== 1) ||
++                (act_ledger_pre_clear[check_i] !== 0 && act_ledger_pre_clear[check_i] !== 1) ||
++                (act_ledger_pre_ov[check_i] !== 0 && act_ledger_pre_ov[check_i] !== 1) ||
++                (act_ledger_pre_fe[check_i] !== 0 && act_ledger_pre_fe[check_i] !== 1) ||
++                (act_ledger_post_valid[check_i] !== 0 && act_ledger_post_valid[check_i] !== 1) ||
++                (act_ledger_post_ready[check_i] !== 0 && act_ledger_post_ready[check_i] !== 1) ||
++                (act_ledger_post_clear[check_i] !== 0 && act_ledger_post_clear[check_i] !== 1) ||
++                (act_ledger_post_ov[check_i] !== 0 && act_ledger_post_ov[check_i] !== 1) ||
++                (act_ledger_post_fe[check_i] !== 0 && act_ledger_post_fe[check_i] !== 1)) begin
++                errors = errors + 1;
++                $display("CHK_FAIL RX snapshot X/Z seq=%0d", check_i);
++            end
++            if (act_ledger_type[check_i] == EV_ACCEPT) begin
++                if (act_ledger_label[check_i] == "ACCEPT-REPLACE") begin
++                    if (act_ledger_pre_valid[check_i] !== 1 || act_ledger_pre_ready[check_i] !== 1 ||
++                        act_ledger_post_valid[check_i] !== 1) begin
++                        errors = errors + 1;
++                        $display("CHK_FAIL RX replace snapshot seq=%0d pre=%b/%b post=%b",
++                                 check_i, act_ledger_pre_valid[check_i], act_ledger_pre_ready[check_i],
++                                 act_ledger_post_valid[check_i]);
++                    end
++                end else if (act_ledger_pre_valid[check_i] !== 0 || act_ledger_post_valid[check_i] !== 1) begin
++                    errors = errors + 1;
++                    $display("CHK_FAIL RX accept snapshot seq=%0d pre=%b post=%b",
++                             check_i, act_ledger_pre_valid[check_i], act_ledger_post_valid[check_i]);
++                end
++            end else if (act_ledger_type[check_i] == EV_CONSUME) begin
++                if (act_ledger_pre_valid[check_i] !== 1 || act_ledger_pre_ready[check_i] !== 1) begin
++                    errors = errors + 1;
++                    $display("CHK_FAIL RX consume snapshot seq=%0d pre=%b/%b",
++                             check_i, act_ledger_pre_valid[check_i], act_ledger_pre_ready[check_i]);
++                end
++            end else if (act_ledger_type[check_i] == EV_DROP) begin
++                if (act_ledger_pre_valid[check_i] !== 1 || act_ledger_pre_ready[check_i] !== 0 ||
++                    act_ledger_post_valid[check_i] !== 1) begin
++                    errors = errors + 1;
++                    $display("CHK_FAIL RX drop snapshot seq=%0d pre=%b/%b post=%b",
++                             check_i, act_ledger_pre_valid[check_i], act_ledger_pre_ready[check_i],
++                             act_ledger_post_valid[check_i]);
++                end
++            end
++            for (check_j = check_i + 1; check_j < act_ledger_count; check_j = check_j + 1) begin
++                if (act_ledger_edge[check_i] == act_ledger_edge[check_j] &&
++                    act_ledger_type[check_i] == act_ledger_type[check_j] &&
++                    act_ledger_data[check_i] == act_ledger_data[check_j] &&
++                    act_ledger_label[check_i] == act_ledger_label[check_j]) begin
++                    errors = errors + 1;
++                    $display("CHK_FAIL RX duplicate event seq=%0d/%0d edge=%0d", check_i, check_j,
++                             act_ledger_edge[check_i]);
++                end
++            end
++        end
++        if (errors == 0)
++            $display("RX_SNAPSHOT_CHECK_PASS events=%0d", act_ledger_count);
+         if (errors == 0)
+             $display("RX_LEDGER_PASS");
+         if (rx_cap.count !== act_ledger_count) begin
+             errors = errors + 1;
+             $display("CHK_FAIL RX shared capture count=%0d inline=%0d", rx_cap.count, act_ledger_count);
+         end else begin
+-            // Content equivalence: same type/data multiset.  The formal TB's
+-            // ordered expected ledger separately checks order; same-edge
+-            // ACCEPT placement can differ by one NBA/settle observation point.
+             for (ledger_i = 0; ledger_i < act_ledger_count; ledger_i = ledger_i + 1) begin
+-                integer match_i;
+-                integer matching;
+-                matching = 0;
+-                for (match_i = 0; match_i < rx_cap.count; match_i = match_i + 1)
+-                    if (rx_cap.etype[match_i] === act_ledger_type[ledger_i] &&
+-                        rx_cap.edata[match_i] === act_ledger_data[ledger_i])
+-                        matching = matching + 1;
+-                if (matching == 0) begin
++                if (rx_cap.etype[ledger_i] !== act_ledger_type[ledger_i] ||
++                    rx_cap.edata[ledger_i] !== act_ledger_data[ledger_i] ||
++                    rx_cap.eedge[ledger_i] !== act_ledger_edge[ledger_i]) begin
+                     errors = errors + 1;
+-                    $display("CHK_FAIL RX shared capture missing type=%0d data=%02x",
+-                             act_ledger_type[ledger_i], act_ledger_data[ledger_i]);
++                    $display("CHK_FAIL RX shared capture seq=%0d type=%0d/%0d data=%02x/%02x edge=%0d/%0d",
++                             ledger_i, rx_cap.etype[ledger_i], act_ledger_type[ledger_i],
++                             rx_cap.edata[ledger_i], act_ledger_data[ledger_i],
++                             rx_cap.eedge[ledger_i], act_ledger_edge[ledger_i]);
+                 end
+             end
+         end
+         if (errors == 0) begin
+-            $display("RX_CAPTURE_CROSSCHECK_PASS count=%0d content_equivalent=1", rx_cap.count);
++            $display("RX_CAPTURE_CROSSCHECK_PASS count=%0d ordered=1 edge_match=1", rx_cap.count);
+             $display("RX_SELFCHECK_PASS");
+         end else
+             $display("RX_SELFCHECK_FAIL errors=%0d", errors);
+diff --git a/work/peripherals/rx/tb/tb_uart_rx_neg.sv b/work/peripherals/rx/tb/tb_uart_rx_neg.sv
+--- a/work/peripherals/rx/tb/tb_uart_rx_neg.sv
++++ b/work/peripherals/rx/tb/tb_uart_rx_neg.sv
+@@ -101,10 +101,12 @@
+         .rst_n     (cap_rst_n),
+         .valid     (cap_valid),
+         .ready     (cap_ready),
+-        .line_good (cap_line_good),
++        .line_good_accept (cap_line_good),
++        .line_good_drop (cap_line_good),
+         .data      (cap_data),
+         .line_data (cap_line_data),
+-        .cancel    (cap_cancel)
++        .cancel    (cap_cancel),
++        .cancel_edge(32'd0)
+     );
+ 
+     initial clk = 1'b0;
+@@ -203,7 +205,7 @@
+             cap_valid = 1'b1; cap_ready = 1'b0; cap_line_good = 1'b0; cap_data = old_data;
+             @(posedge clk); #1;
+             @(negedge clk);
+-            cap_valid = 1'b1; cap_ready = 1'b1; cap_line_good = 1'b1; cap_data = new_data;
++            cap_valid = 1'b1; cap_ready = 1'b1; cap_line_good = 1'b1; cap_data = new_data; cap_line_data = new_data;
+             @(posedge clk); #1;
+             @(negedge clk);
+             cap_ready = 1'b1; cap_line_good = 1'b0;
+diff --git a/work/peripherals/rx/tests/rx-plan-1.3.5.json b/work/peripherals/rx/tests/rx-plan-1.3.5.json
+--- /dev/null
++++ b/work/peripherals/rx/tests/rx-plan-1.3.5.json
+@@ -0,0 +1,546 @@
++{
++  "plan_id": "B-UART-RX-PLAN-1.3.5",
++  "plan_version": "1.3.5",
++  "created_at": "2026-10-25T21:09:55+08:00",
++  "frozen_at": "2026-10-25T21:09:55+08:00",
++  "frozen_before_final_dut_runs": true,
++  "task_id": "B-UART-RX",
++  "module": "uart_rx",
++  "module_version": "1.0.0",
++  "interface_version": "PERIPH-CORE-RX-1.0 / 1.0.0",
++  "contract": {
++    "contract_id": "PERIPH-CORE-RX-1.0",
++    "version": "1.0.0",
++    "status": "APPROVED_RELEASED",
++    "sha256": "E1DA0CC3BC1E9F64285B5846369D910338FF2289652E297629DDA9F5BAEEA706",
++    "release_sha256": "4B60CB9E29DFCA130AB0568FD617B6AE639AF745DB2323DF13E865F016E59D8C",
++    "received_at": "2026-10-23T11:27:47+08:00",
++    "receipt_path": "work/peripherals/rx/docs/MAINLINE-RX-RECEIPT-20261023.md",
++    "contract_path": "work/peripherals/rx/contracts/RX_CORE_CONTRACT.md"
++  },
++  "scope": "UART 8N1 RX core only: independent RTL/TB/scripts, existing lawful Icarus 12/vvp, bounded N=8/16/234 simulations. No FIFO, parity, flow control, address map, bus wrapper, CPU/SoC, REGIF, board clock/PLL or hardware test.",
++  "tools": {
++    "simulator": "Icarus Verilog",
++    "version": "12.0 (devel) (s20150603-1539-g2693dd32b)",
++    "iverilog_path": "D:\\iverilog\\bin\\iverilog.exe",
++    "vvp_path": "D:\\iverilog\\bin\\vvp.exe",
++    "library_path": "D:\\iverilog\\lib\\ivl",
++    "legal_source": "Existing lawful local Icarus installation recorded in B-ENV; explicit path passed, PATH unchanged."
++  },
++  "artifacts": {
++    "rtl": {
++      "path": "work/peripherals/rx/src/uart_rx.v",
++      "sha256": "BDCD02CA8CBA1CAE9D8A774D336B30B43E9457834856234BD7C2BA8AE1719F34"
++    },
++    "tb": {
++      "path": "work/peripherals/rx/tb/tb_uart_rx.sv",
++      "sha256": "FDE6B17592970A27A759827FAC5D6AF24B6666CDBF7BF049D9925A98BB739BB6"
++    },
++    "negative_tb": {
++      "path": "work/peripherals/rx/tb/tb_uart_rx_neg.sv",
++      "sha256": "0CA0D6A519354AF1F1AE610677DFC7D9CCA01286408DC9AB882ED78AEF9407B6"
++    },
++    "watchdog_tb": {
++      "path": "work/peripherals/rx/tb/tb_uart_rx_watchdog.sv",
++      "sha256": "0F9C2159F2FFD76F0D84A34C39721648AAFF7528B7B1604E48C6D16D299E2BD9"
++    },
++    "illegal_tb": {
++      "path": "work/peripherals/rx/tb/tb_uart_rx_illegal.sv",
++      "sha256": "5FF8F379FB5DAED06A07B51B2E902182CA806AB7D7CADCDDE3C3C5BCE10DC191"
++    },
++    "ledger_check": {
++      "path": "work/peripherals/rx/tb/rx_ledger_check.svh",
++      "sha256": "C8FFFF1A2554236C7935F1863CB0BF870CD8739CC69A3EAF3287C26E1A967868"
++    },
++    "capture": {
++      "path": "work/peripherals/rx/tb/rx_public_capture.sv",
++      "sha256": "ADBD4EBC7A549DB48B704C11F740E9FD66DBBA185E1D795596C95BE2DF84EA5D"
++    }
++  },
++  "design": {
++    "frame": "8N1: 1 start low, 8 data LSB-first, 1 stop high, idle high, no parity/FIFO/flow control/BREAK detection.",
++    "clks_per_bit": "integer N >= 8, default 16; N<8 explicitly rejected at simulation start.",
++    "synchronizer": "exactly two async-reset-to-1 FFs; main logic reads only pre-edge second stage; d=E2.",
++    "sampling": "start d+floor(N/2); data d+N+floor(N/2)+k*N; stop S=d+9N+floor(N/2).",
++    "publish": "good stop publishes rx_data/rx_valid in S NBA; no extra S+1 pipeline delay.",
++    "back_to_back": "raw bit period N*T; raw frame period 10*N*T; same-phase d_next=d+10N, no +1 and no inserted idle.",
++    "mailbox": "one-byte level valid; full+not-ready keeps old and sets overrun; full+ready consumes old and replaces new with valid held; bad stop never writes data.",
++    "errors": "frame_error and overrun are independent sticky flags; clear_errors clears a bit only when no new event of that bit occurs on the same edge.",
++    "reset": "async low assertion clears mailbox/errors/state; two warmup edges then arm only after pre-edge second stage is high; low after reset is ignored until a real high then falling edge."
++  },
++  "configurations": [
++    {
++      "id": "N8",
++      "clks_per_bit": 8,
++      "tb_max_cycles": 5045,
++      "purpose": "short-frame and four-phase boundary coverage plus same-byte replacement",
++      "last_check_cycle": 5013
++    },
++    {
++      "id": "N16",
++      "clks_per_bit": 16,
++      "tb_max_cycles": 11319,
++      "purpose": "default configuration; four phases, back-to-back frames, false start, same-byte replacement",
++      "last_check_cycle": 11287
++    },
++    {
++      "id": "N234",
++      "clks_per_bit": 234,
++      "tb_max_cycles": 110967,
++      "purpose": "27 MHz / 115200 candidate divider plus same-byte replacement",
++      "last_check_cycle": 110935
++    }
++  ],
++  "expected_per_configuration": {
++    "compile_timeout_s": 60,
++    "run_timeout_s": 30,
++    "tb_hard_cap": 1000000,
++    "success_marker": "RX_SELFCHECK_PASS",
++    "failure_marker": "RX_SELFCHECK_FAIL",
++    "watchdog_marker": "TB_WATCHDOG_TIMEOUT",
++    "tb_hard_cap_enforced": "Runner rejects plan cycle budgets >1000000; TB emits TB_HARD_CAP_REJECT if TB_MAX_CYCLES >1000000.",
++    "forbidden_markers": [
++      "RX_SELFCHECK_FAIL",
++      "CHK_FAIL",
++      "TB_HARD_CAP_REJECT",
++      "TB_WATCHDOG_TIMEOUT"
++    ],
++    "job_budget_rule": "Each configuration freezes last_check_cycle and uses tb_max_cycles = last_check_cycle + 32; runner/TB reject >1000000.",
++    "process_timeout_classification": "FAIL for the deliberate watchdog; only TB_WATCHDOG_TIMEOUT with native rc=0 is TIMEOUT mechanism success.",
++    "tb_max_cycles_by_config": {
++      "N8": 5045,
++      "N16": 11319,
++      "N234": 110967
++    },
++    "budget_authority": "Per configs[].tb_max_cycles; no 106285 or 200000 legacy budget is active."
++  },
++  "cases": [
++    {
++      "id": "RX-01",
++      "acceptance_id": "RX-01",
++      "purpose": "valid frames and LSB-first byte order",
++      "configs": [
++        "N8",
++        "N16",
++        "N234"
++      ],
++      "expected": "For each of 0x00,0xFF,0x55,0xAA,0x01,0x80,0x7E: valid/data appear at S_postNBA; no frame_error/overrun; after consume valid=0 and data holds.",
++      "tb_markers": [
++        "TEST_BEGIN RX-01",
++        "TEST_PASS RX-01"
++      ]
++    },
++    {
++      "id": "RX-02",
++      "acceptance_id": "RX-02",
++      "purpose": "four sampling phases and representative frames",
++      "configs": [
++        "N8",
++        "N16",
++        "N234"
++      ],
++      "expected": "N8/N16: 0.1/0.3/0.6/0.9T phases for 0x55 and 0xAA; N234: 0x55 and 0xAA representative frames; all valid/data at S_postNBA, no errors.",
++      "tb_markers": [
++        "TEST_BEGIN RX-02",
++        "TEST_PASS RX-02"
++      ]
++    },
++    {
++      "id": "RX-03",
++      "acceptance_id": "RX-03",
++      "purpose": "true back-to-back frames with no extra idle",
++      "configs": [
++        "N8",
++        "N16",
++        "N234"
++      ],
++      "expected": "N16 16 frames, N8 8 frames, N234 2 frames; raw frame period exactly 10*N*T; same-phase d_next=d+10N; each S_postNBA shows the expected byte, S+1 consumes it, no overrun/frame_error.",
++      "tb_markers": [
++        "TEST_BEGIN RX-03",
++        "TEST_PASS RX-03"
++      ]
++    },
++    {
++      "id": "RX-04",
++      "acceptance_id": "RX-04",
++      "purpose": "short false start at N16",
++      "configs": [
++        "N16"
++      ],
++      "expected": "Low durations L=7 and L=8 (pre-second-stage samples) with return high before start center are ignored; no valid/error; a following good 0x5A is accepted.",
++      "tb_markers": [
++        "TEST_BEGIN RX-04",
++        "TEST_PASS RX-04"
++      ]
++    },
++    {
++      "id": "RX-05",
++      "acceptance_id": "RX-05",
++      "purpose": "bad stop, mailbox hold/consume, sustained low, clear/new-error priority",
++      "configs": [
++        "N8",
++        "N16",
++        "N234"
++      ],
++      "expected": "Bad stop sets frame_error, writes no data; ready=0 keeps old, ready=1 consumes old; sustained low does not create a second visible frame; full mailbox recovery sets overrun; clear with new frame_error keeps new FE and clears old OV. 5e: clear_errors with a new overrun keeps the new OV=1, clears the old FE, and leaves the full mailbox byte 0x11 held. The new good frame 0x44 is still a protocol DROP (OV already 1, no OV rise; independent serial-decoded data). 5f: bad stop with a sustained low tail clears FE while low, confirms no re-raise during the low tail, and recovers after high.",
++      "tb_markers": [
++        "TEST_BEGIN RX-05",
++        "TEST_PASS RX-05"
++      ]
++    },
++    {
++      "id": "RX-06",
++      "acceptance_id": "RX-06",
++      "purpose": "valid timing and hold/consume behavior",
++      "configs": [
++        "N8",
++        "N16",
++        "N234"
++      ],
++      "expected": "Good byte appears at S_postNBA; valid&&!ready holds 24+ cycles; one ready handshake consumes exactly once; data holds after consume.",
++      "tb_markers": [
++        "TEST_BEGIN RX-06",
++        "TEST_PASS RX-06"
++      ]
++    },
++    {
++      "id": "RX-07",
++      "acceptance_id": "RX-07",
++      "purpose": "full mailbox, overrun, clear, same-byte non-dedup",
++      "configs": [
++        "N8",
++        "N16",
++        "N234"
++      ],
++      "expected": "Second good byte with full mailbox keeps old, drops new, sets overrun; clear_errors clears overrun without consuming; after consume, the same byte value is accepted again.",
++      "tb_markers": [
++        "TEST_BEGIN RX-07",
++        "TEST_PASS RX-07"
++      ]
++    },
++    {
++      "id": "RX-08",
++      "acceptance_id": "RX-08",
++      "purpose": "same-edge consume old plus replace new",
++      "configs": [
++        "N8",
++        "N16",
++        "N234"
++      ],
++      "expected": "With valid=1 and ready asserted only for S: old consumed, new data published at S, valid remains 1, no overrun; new byte is consumed at S+1 when ready stays high. The ledger records CONSUME old plus ACCEPT-REPLACE at the same edge with edge/time and pre/post public states; same-byte replacement is not rejected merely because rx_data does not change.",
++      "tb_markers": [
++        "TEST_BEGIN RX-08",
++        "TEST_PASS RX-08"
++      ]
++    },
++    {
++      "id": "RX-09",
++      "acceptance_id": "RX-09",
++      "purpose": "mid-frame reset, reset-release-low recovery, clear/new-error",
++      "configs": [
++        "N8",
++        "N16",
++        "N234"
++      ],
++      "expected": "Mid-frame reset cancels in-flight frame and clears outputs; release-low stays ignored until high then falling; clear with a new frame_error keeps FE=1 and clears the other error where applicable. Mid-frame reset is exercised during DATA, START and STOP; CANCEL is derived from reset while the independent serial decoder reports an active frame, not by a post-stimulus actual_cancel() call. Each cancels the in-flight frame and a following good frame is accepted.",
++      "tb_markers": [
++        "TEST_BEGIN RX-09",
++        "TEST_PASS RX-09"
++      ]
++    }
++  ],
++  "negative": {
++    "tb": "work/peripherals/rx/tb/tb_uart_rx_neg.sv",
++    "tb_max_cycles": 20000,
++    "expected_markers": [
++      "NEG_CONTROL_PASS",
++      "NEG_CHECKER_PASS",
++      "NEG_EXTRA_VALID_DETECTED",
++      "NEG_EXTRA_VALID_CONTROL_PASS",
++      "NEG_MISSING_DETECTED",
++      "NEG_ORDER_DETECTED",
++      "NEG_WRONG_BYTE_DETECTED",
++      "NEG_TWO_EVENT_CONTROL_PASS",
++      "NEG_CAPTURE_SAME_EDGE_CONTROL_PASS",
++      "NEG_CAPTURE_DROP_CONTROL_PASS",
++      "NEG_CAPTURE_DROP_MISSING_DETECTED",
++      "NEG_CAPTURE_DROP_WRONG_BYTE_DETECTED",
++      "NEG_CAPTURE_CANCEL_CONTROL_PASS",
++      "NEG_CAPTURE_CANCEL_MISSING_DETECTED",
++      "NEG_CAPTURE_CANCEL_EXTRA_DETECTED"
++    ],
++    "forbidden_markers": [
++      "NEG_CONTROL_FAIL",
++      "NEG_CHECKER_MISSED",
++      "NEG_EXTRA_VALID_MISSED",
++      "NEG_EXTRA_VALID_CONTROL_FAIL",
++      "NEG_MISSING_MISSED",
++      "NEG_ORDER_MISSED",
++      "NEG_WRONG_BYTE_MISSED",
++      "NEG_TWO_EVENT_CONTROL_FAIL",
++      "NEG_CAPTURE_SAME_EDGE_CONTROL_FAIL",
++      "NEG_CAPTURE_DROP_CONTROL_FAIL",
++      "NEG_CAPTURE_DROP_MISSING_MISSED",
++      "NEG_CAPTURE_DROP_WRONG_BYTE_MISSED",
++      "NEG_CAPTURE_CANCEL_CONTROL_FAIL",
++      "NEG_CAPTURE_CANCEL_MISSING_MISSED",
++      "NEG_CAPTURE_CANCEL_EXTRA_MISSED",
++      "TB_WATCHDOG_TIMEOUT",
++      "TB_HARD_CAP_REJECT"
++    ],
++    "note": "Formal capture-path controls: same-edge, DROP, CANCEL; missing/extra/order/wrong-byte and missing/extra DROP/CANCEL; shared comparator macro on captured events. Status-propagation selfcheck is separate.",
++    "capture_source": "rx_public_capture is driven by public valid/ready/data/line_good/line_data/cancel inputs; it captures same-byte replacement, DROP and CANCEL streams and feeds the shared ordered comparator. The negatives are generated from captured event streams, not hand-filled actual arrays."
++  },
++  "watchdog": {
++    "tb": "work/peripherals/rx/tb/tb_uart_rx_watchdog.sv",
++    "tb_max_cycles": 200,
++    "expected_marker": "TB_WATCHDOG_TIMEOUT",
++    "expected_classification": "TIMEOUT",
++    "note": "A process timeout without TB_WATCHDOG_TIMEOUT is FAIL, not mechanism success.",
++    "process_timeout_classification": "FAIL",
++    "require_tb_marker": true,
++    "require_native_rc_zero": true
++  },
++  "illegal_config": {
++    "tb": "work/peripherals/rx/tb/tb_uart_rx_illegal.sv",
++    "clks_per_bit": 4,
++    "expected_marker": "RX_ILLEGAL_CLKS_PER_BIT=4 minimum=8",
++    "expected_classification": "PASS",
++    "note": "N<8 must be rejected at simulation start; no silent clamp."
++  },
++  "limitations": [
++    "Simulation-only: no PDS synthesis, place-and-route, timing analysis, JTAG, download, Flash, board loopback or temperature test was performed; hardware remains STOPPED.",
++    "Only public RX ports are observed; no claim is made about internal nodes or physical metastability/MTBF.",
++    "Icarus Verilog 12 logical-cycle simulation does not prove physical baud tolerance, noise immunity, CDC layout or board-level reliability.",
++    "N=234 is a representative divider calculation, not a board measurement or a claim that the CPU is running at 27 MHz.",
++    "The two-stage synchronizer proves logical latency only, not analog metastability or MTBF.",
++    "PASS_REHEARSAL, local PASS and this plan's PASS are not mainline reproduction, interface compatibility, system integration or hardware acceptance.",
++    "The 1.1.0 plan adds RX contract-boundary cases and runner mechanism evidence; it is not a TX/GPIO full-matrix rerun and not a hardware/system acceptance.",
++    "The 1.2.0 plan adds a frozen ordered transaction ledger, +32-cycle per-config budgets, shared comparator negative proof, and process-timeout/log-truncation rejection; it is not a new full-matrix claim.",
++    "The 1.3.0 ledger adds protocol-derived events, edge/time and public pre/post states. It does not claim observation of hidden physical write pulses or replace the aggregate public-state counters.",
++    "Only RX-05 5e adds one DROP per configuration; old 1.2.0 logs/counts are retained as history and are not rewritten.",
++    "1.3.1 changes only RX verification: same-byte replacement coverage, true pre/post clear state and capture-path DROP/CANCEL negatives. RX RTL is unchanged; 5e DROP data remains independently decoded.",
++    "1.3.2 changes only event timing/state capture and status propagation; RX RTL is unchanged.",
++    "1.3.3 only shares the RX public capture module and fixes one-based CONSUME/pre/post observation; RX RTL unchanged.",
++    "1.3.4 changes only RX capture/order/snapshot and status controls; RX RTL unchanged.",
++    "1.3.5 fixes only RX snapshot edge/time and plan/index consistency; RX RTL and functional expectations are unchanged. Counts remain 92/110/68 and 41/41, 50/50, 29/29."
++  ],
++  "supersedes": "1.3.4",
++  "old_plan_preserved": [
++    "work/peripherals/rx/tests/rx-plan-1.3.3.json",
++    "work/peripherals/rx/tests/rx-plan-1.3.3.sha256",
++    "work/peripherals/rx/tests/rx-plan-1.3.2.json",
++    "work/peripherals/rx/tests/rx-plan-1.3.2.sha256",
++    "work/peripherals/rx/tests/rx-plan-1.3.4.json",
++    "work/peripherals/rx/tests/rx-plan-1.3.4.sha256"
++  ],
++  "event_ledger": {
++    "purpose": "Pre-freeze ordered accept/consume/drop/cancel expectations; TB increments expected counters as directed cases execute and asserts aggregate counts.",
++    "counters": [
++      "valid_assertions",
++      "consumed_count",
++      "overrun_events",
++      "frame_error_events"
++    ],
++    "cancellation": "Mid-frame DATA/START/STOP resets are checked by no stale valid/error and a following good frame; cancellation has no public count port.",
++    "expected_by_config": {
++      "N8": {
++        "valid_assertions": 41,
++        "consumed_count": 41,
++        "overrun_events": 4,
++        "frame_error_events": 7,
++        "ledger": 92
++      },
++      "N16": {
++        "valid_assertions": 50,
++        "consumed_count": 50,
++        "overrun_events": 4,
++        "frame_error_events": 7,
++        "ledger": 110
++      },
++      "N234": {
++        "valid_assertions": 29,
++        "consumed_count": 29,
++        "overrun_events": 4,
++        "frame_error_events": 7,
++        "ledger": 68
++      }
++    },
++    "authority": "These counters are the single active values; functional_expected repeats them. Old 1.3.4 40/39,49/48,28/27 values are historical and not active."
++  },
++  "runner_mechanism": {
++    "selfcheck": "work/peripherals/logs/runner-selfcheck-20261023-173021/runner-selfcheck.json",
++    "properties": [
++      "file-backed stdout/stderr instead of pipes",
++      "bounded taskkill/kill tree cleanup",
++      "cleanup result and duration recorded",
++      "simulated cleanup failure fallback bounded"
++    ],
++    "not_a_dut_result": true
++  },
++  "ledger": {
++    "expected_events": {
++      "N8": 92,
++      "N16": 110,
++      "N234": 68
++    },
++    "previous_package_events": {
++      "N8": 88,
++      "N16": 106,
++      "N234": 64
++    },
++    "delta_reason": "RX-08 adds same-byte A1/A1 same-edge consume/replace: per configuration +1 ACCEPT (fill), +1 CONSUME +1 ACCEPT-REPLACE +1 CONSUME (same-edge sequence), for +4 events. The 5e DROP and its independent serial-decoded data remain unchanged.",
++    "event_fields": [
++      "seq",
++      "edge",
++      "type",
++      "data",
++      "pre/post rx_valid",
++      "pre/post rx_ready",
++      "pre/post clear_errors",
++      "pre/post overrun",
++      "pre/post frame_error",
++      "label"
++    ],
++    "drop_data_source": "Independent raw-serial decoder on the external rx pin; not stim_bytes[0] and not a hidden physical write pulse.",
++    "drop_rule": "A good serial frame completion (decoded start/data/stop) with pre-edge rx_valid=1 and rx_ready=0 is DROP. It is still DROP when OV was already 1 and clear_errors is asserted at the same S edge.",
++    "same_edge_rule": "With valid=1 and ready=1 at the publish edge, the old byte is CONSUME and the new byte is ACCEPT-REPLACE even when the byte value is unchanged; ACCEPT is not inferred only from a valid rise.",
++    "accept_consume_rule": "ACCEPT/CONSUME are ordered protocol events tied to the good-frame completion and public valid/ready; aggregate valid/consume/FE/OV counters remain separate observable-state checks.",
++    "cancel_rule": "CANCEL is derived at reset assertion while the independent serial decoder reports an active frame. The old post-stimulus actual_cancel() call is removed; expected cancels remain in the frozen test sequence.",
++    "observable_state_limit": "The TB does not claim to observe any hidden internal write pulse; pre/post states are public ports only.",
++    "expected_cancel_labels": [
++      "RESET-DATA",
++      "RESET-START",
++      "RESET-STOP"
++    ],
++    "pre_clear_5e": {
++      "N16": {
++        "edge": 8081,
++        "data": "0x44",
++        "pre_clear": 1,
++        "post_clear": 1,
++        "pre_ov": 1,
++        "post_ov": 1
++      },
++      "note": "5e pre and post clear_errors are both real public samples at edge 8081 (+1 ps after NBA); no pre-copy special case."
++    },
++    "cancel_post_state": "CANCEL pre/post fields are sampled from public ports after asynchronous reset settles; they are not a fixed zero literal. The current three reset cases legitimately settle to 0.",
++    "same_edge_configs": [
++      "N8",
++      "N16",
++      "N234"
++    ],
++    "formal_negative_capture": [
++      "NEG_CAPTURE_SAME_EDGE_CONTROL_PASS",
++      "NEG_CAPTURE_DROP_CONTROL_PASS",
++      "NEG_CAPTURE_DROP_MISSING_DETECTED",
++      "NEG_CAPTURE_DROP_WRONG_BYTE_DETECTED",
++      "NEG_CAPTURE_CANCEL_CONTROL_PASS",
++      "NEG_CAPTURE_CANCEL_MISSING_DETECTED",
++      "NEG_CAPTURE_CANCEL_EXTRA_DETECTED"
++    ],
++    "event_timebase": {
++      "definition": "Contract d/S edges; public edge is one-based. Pre state is the last settled pre-edge public state; post state is sampled after NBA. The drop event edge 8081 keeps its actual edge; CONSUME is recorded on its actual following one-based edge.",
++      "pre_post": "pre at the true event edge before NBA; post at +1 ps after the same NBA, before 1 ns stimulus changes.",
++      "rx05_5e": {
++        "N16": {
++          "edge": 8081,
++          "data": "0x44",
++          "pre_fe": 1,
++          "post_fe": 0,
++          "pre_clear": 1,
++          "post_clear": 1,
++          "pre_ov": 1,
++          "post_ov": 1
++        }
++      },
++      "cancel": "CANCEL post fields sampled from public ports after asynchronous reset; not fixed literals."
++    },
++    "shared_capture": "Formal TB instantiates rx_public_capture and compares each event type/data/edge one-to-one in order; negative TB instantiates the same module. No content-only equivalence.",
++    "shared_capture_rule": "Formal and negative instantiate the same rx_public_capture; formal compares each event type/data/edge ordered one-to-one, not a multiset.",
++    "snapshot_rule": "pre at the true event edge before NBA; post at +1 ps after the same NBA; DROP post_clear is the real sampled value, not copied from pre_clear.",
++    "rx05_5e": {
++      "N16": {
++        "edge": 8081,
++        "data": "0x44",
++        "pre_clear": 1,
++        "pre_fe": 1,
++        "pre_ov": 1,
++        "post_clear": 1,
++        "post_fe": 0,
++        "post_ov": 1
++      }
++    }
++  },
++  "functional_expected": {
++    "N8": {
++      "valid": 41,
++      "consumed": 41,
++      "overrun": 4,
++      "frame_error": 7,
++      "ledger": 92
++    },
++    "N16": {
++      "valid": 50,
++      "consumed": 50,
++      "overrun": 4,
++      "frame_error": 7,
++      "ledger": 110
++    },
++    "N234": {
++      "valid": 29,
++      "consumed": 29,
++      "overrun": 4,
++      "frame_error": 7,
++      "ledger": 68
++    },
++    "note": "Single authoritative values; matches event_ledger.expected_by_config and new run."
++  },
++  "status_propagation": {
++    "script": "work/peripherals/rx/scripts/rx_status_selfcheck.py",
++    "rule": "nonzero native rc, truncated log, or global RX_SELFCHECK_FAIL forces FAIL in every case and in the runner exit; a per-case TEST_PASS cannot override.",
++    "verification": "Run rx_status_selfcheck.py after the final RX run; require all_pass=true. Old 20261024-232527 run is historical, not an active reference."
++  },
++  "R1_acceptance": {
++    "rule": "Every accepted ledger event has immutable pre values at the true S/consume edge and real post values at +1 ps after the same NBA; no X/Z, no missing/duplicate events, counts 92/110/68, functional 41/41, 50/50, 29/29.",
++    "first": {
++      "N8": {
++        "seq": 0,
++        "edge": 94,
++        "pre_valid": 0,
++        "post_valid": 1
++      },
++      "N16": {
++        "seq": 0,
++        "edge": 170,
++        "pre_valid": 0,
++        "post_valid": 1
++      },
++      "N234": {
++        "seq": 0,
++        "edge": 2241,
++        "pre_valid": 0,
++        "post_valid": 1
++      }
++    },
++    "first_wrong_post": {
++      "N16": {
++        "seq": 30,
++        "edge": 2618,
++        "pre_valid": 0,
++        "post_valid": 1
++      }
++    },
++    "5e": {
++      "N16": {
++        "edge": 8081,
++        "pre_clear": 1,
++        "pre_fe": 1,
++        "post_clear": 1,
++        "post_fe": 0,
++        "post_ov": 1
++      }
++    },
++    "mutation": "Any stale/next-edge pre or post snapshot, X/Z, missing/duplicate event, or pre-copied DROP post_clear is rejected."
++  }
++}
+diff --git a/work/peripherals/rx/tests/rx-plan-1.3.5.sha256 b/work/peripherals/rx/tests/rx-plan-1.3.5.sha256
+--- /dev/null
++++ b/work/peripherals/rx/tests/rx-plan-1.3.5.sha256
+@@ -0,0 +1 @@
++979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4  work/peripherals/rx/tests/rx-plan-1.3.5.json
+diff --git a/work/regif/txgpio-m1/README.md b/work/regif/txgpio-m1/README.md
+--- a/work/regif/txgpio-m1/README.md
++++ b/work/regif/txgpio-m1/README.md
+@@ -5,13 +5,13 @@
+ - 质量补充 SHA256：`80DEBA901A0917E730CD14D98A08933274337588A1E2A31AFBAB6D91D700F476`
+ - 批准：D115 `APPROVED_TO_START_ON_RECEIPT`；实际接收 `2026-10-23T23:52:38+08:00`
+ - 包装 RTL：`src/local_regif_txgpio_m1.v`，SHA256 `5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA`
+-- 冻结计划：`tests/w01-w10-plan-1.0.3.json`，SHA256 `A94948CE5D4818CE801B74698D242C70745E504C0FF2479A4BFCD2CC1875F4B4`
++- 冻结计划：`tests/w01-w10-plan-1.0.5.json`，SHA256 `5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9`
+ - TB：`tb/tb_local_regif_txgpio_m1.sv`，SHA256 `7F0C1060ED9524B18965575CC3BE8DA1AE76D899521916F2D701976AEFAD793B`
+-- 公共 uart_tx 捕获：`tb/regif_tx_public_monitor.sv`，SHA256 `C8CFFA9F6949D0B9BD33555B87EBD3AADD733AE389EB8FB549CA02BDF261E471`
+-- 官方运行：`regif-m1-20261024-231958`
++- 公共 uart_tx 捕获：`tb/regif_tx_public_monitor.sv`，SHA256 `A7C857C1451B5C3960F6DA4A1CF90451E72D4D572815D806FA14B51ADE106CFB`
++- 官方运行：`regif-m1-20261025-210743`
+ - 结果：N16 W01–W10 PASS（9 TX 接受、6 GPIO 接受、11 拒绝、6 完整帧、3 复位取消）；N234 W05/W06/W09 PASS；`results.json` schema PASS
+-- VCD：`waves/regif-m1-20261024-231958/regif_m1_N16.vcd`、`regif_m1_N234.vcd`
+-- 日志：`logs/regif-m1-20261024-231958/`
++- VCD：`waves/regif-m1-20261025-210743/regif_m1_N16.vcd`、`regif_m1_N234.vcd`
++- 日志：`logs/regif-m1-20261025-210743/`
+ 
+ ## 边界
+ 
+diff --git a/work/regif/txgpio-m1/docs/RUNBOOK.md b/work/regif/txgpio-m1/docs/RUNBOOK.md
+--- a/work/regif/txgpio-m1/docs/RUNBOOK.md
++++ b/work/regif/txgpio-m1/docs/RUNBOOK.md
+@@ -10,10 +10,10 @@
+ 
+ runner 先核对：
+ 
+-- `tests/w01-w10-plan-1.0.3.json` 与 `.sha256`
++- `tests/w01-w10-plan-1.0.5.json` 与 `.sha256`
+ - `src/local_regif_txgpio_m1.v` SHA `5C81EE8F...64FA`
+ - `../../peripherals/src/uart_tx.v` SHA `21044928...988C`
+-- `tb/regif_tx_public_monitor.sv` SHA `C8CFFA9F...E471`
++- `tb/regif_tx_public_monitor.sv` SHA `A7C857C1...6CFB`
+ - `../../peripherals/gpio/src/gpio_core.v` SHA `03380919...F95E`
+ - `tb/tb_local_regif_txgpio_m1.sv` SHA `7F0C1060...793B`
+ 
+@@ -60,9 +60,9 @@
+ 
+ ## 6. 官方证据
+ 
+-- 1.0.1 正式运行：`regif-m1-20261024-231958`；N16/N234 PASS，VCD 非空，schema PASS；`results.json` 13 行。
++- 1.0.5 正式运行：`regif-m1-20261025-210743`；N16/N234 PASS，VCD 非空，schema PASS；`results.json` 13 行。
+ - 1.0.2/1.0.1/1.0.0 运行保留为历史；1.0.0 无 VCD，不作为最终证据。
+-- 原始日志：`logs/regif-m1-20261024-231958/`；普通 VCD：`waves/regif-m1-20261024-231958/`（N16 130401 B、N234 1918491 B）。
++- 原始日志：`logs/regif-m1-20261025-210743/`；普通 VCD：`waves/regif-m1-20261025-210743/`（N16 131109 B、N234 1930509 B）。
+ - runner 日志包含原生 rc、超时、日志截断、cleanup 状态/耗时。共享 runner 只用自身测试进程，cleanup ≤8 s、总 ≤15 s。
+ 
+ ## 7. 未运行/未声称
+diff --git a/work/regif/txgpio-m1/docs/W01-W10.md b/work/regif/txgpio-m1/docs/W01-W10.md
+--- a/work/regif/txgpio-m1/docs/W01-W10.md
++++ b/work/regif/txgpio-m1/docs/W01-W10.md
+@@ -1,15 +1,16 @@
+ # W01–W10 包装验证说明
+ 
+-计划：`work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.json`，SHA256 `A94948CE5D4818CE801B74698D242C70745E504C0FF2479A4BFCD2CC1875F4B4`。旧 1.0.0/1.0.1/1.0.2 计划/运行保留为历史；1.0.3 改独立串行帧捕获、one-based edge、逐请求字段和合成捕获负例，wrapper/TX/GPIO 核心未改。
++计划：`work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.json`，SHA256 `5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9`。旧 1.0.0/1.0.1/1.0.2 计划/运行保留为历史；1.0.3 改独立串行帧捕获、one-based edge、逐请求字段和合成捕获负例。
++1.0.5 将 COMPLETE 精确到 E+10N，补末半 stop 取消控制及非首 edge/busy/TX/GPIO 关联。
+ 
+ ## 官方运行
+ 
+-- run_id：`regif-m1-20261024-231958`
++- run_id：`regif-m1-20261025-210743`
+ - N16：W01–W10 全 PASS
+ - N234：W05/W06/W09 最小 smoke PASS
+-- 计数：N16 `accepted_tx=9 accepted_gpio=6 rejected=11 frames=6 requests=26 complete=6 cancel=3 bad_stop=0`（首请求 edge=9）；N234 `9/0/1、10 请求、6 完整/3 取消、首 edge=6`。
++- 计数：N16 `accepted_tx=9 accepted_gpio=6 rejected=11 frames=6 requests=26 complete=6 cancel=3 bad_stop=0`（首请求 edge=9）；N234 `9/0/1、10 请求、6 完整/3 取消、首 edge=6；COMPLETE=START+10N`。
+ - `results.json` schema PASS，13 行
+-- 普通 VCD：`waves/regif-m1-20261024-231958/regif_m1_N16.vcd`（130401 B）、`regif_m1_N234.vcd`（1918491 B）
++- 普通 VCD：`waves/regif-m1-20261025-210743/regif_m1_N16.vcd`（131109 B）、`regif_m1_N234.vcd`（1930509 B）
+ 
+ ## 逐项预期与结果
+ 
+@@ -24,7 +25,7 @@
+ | W07 | 04/14、08、10、非对齐、非全 strobe、未选中均报错且无副作用 | PASS | `TEST_PASS W07` |
+ | W08 | 每个有效沿一次请求，无隐藏去重；计数/顺序/错误匹配 | PASS | `TEST_PASS W08` |
+ | W09 | TX start/data/stop 中复位取消；GPIO/同步清 0；恢复后新写一次，不重放 | PASS | `TEST_PASS W09` |
+-| W10 | 正确控制通过；错字节、坏 stop、漏/多帧、额外/漏/重复 GPIO 接受、missing/duplicate/wrong marker、非零 rc/截断均由正式判定拒绝 | PASS | `W10_COUNT_PASS ... complete=6 cancel=3 bad_stop=0`；`regif-entry-selfcheck-20261024-232004`、`regif-capture-20261024-231843` |
++| W10 | 正确控制通过；错字节、坏 stop、漏/多帧、额外/漏/重复 GPIO 接受、missing/duplicate/wrong marker、非零 rc/截断均由正式判定拒绝 | PASS | `W10_COUNT_PASS ... complete=6 cancel=3 bad_stop=0`；`regif-entry-selfcheck-20261025-210805`、`regif-capture-20261025-210624` |
+ | W05-N234 | N234 正常帧 | PASS | `TEST_PASS W05-N234` |
+ | W06-N234 | N234 忙拒绝/重复 | PASS | `TEST_PASS W06-N234` |
+ | W09-N234 | N234 三种复位恢复 smoke | PASS | `TEST_PASS W09-N234` |
+diff --git a/work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py b/work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py
+--- a/work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py
++++ b/work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py
+@@ -35,10 +35,12 @@
+         required = [
+             "REGIF_CAP_GOOD_PASS", "REGIF_CAP_BAD_STOP_DETECTED",
+             "REGIF_CAP_EXTRA_DETECTED", "REGIF_CAP_MISSING_DETECTED",
++            "REGIF_CAP_LAST_HALF_STOP_CANCEL",
+             "REGIF_CAP_CONTROL_PASS", "REGIF_CAP_SELFCHECK_PASS",
+         ]
+         forbidden = ["REGIF_CAP_GOOD_FAIL", "REGIF_CAP_BAD_STOP_MISSED",
+                      "REGIF_CAP_EXTRA_MISSED", "REGIF_CAP_MISSING_MISSED",
++                     "REGIF_CAP_LAST_HALF_STOP_FAIL",
+                      "REGIF_CAP_CONTROL_FAIL", "REGIF_CAP_SELFCHECK_FAIL", "CHK_FAIL"]
+         status = "PASS" if (run["returncode"] == 0 and not run["timed_out"] and not run["log_truncated"]
+                             and all(x in text for x in required)
+@@ -51,6 +53,7 @@
+         "status": status,
+         "required_markers": ["REGIF_CAP_GOOD_PASS", "REGIF_CAP_BAD_STOP_DETECTED",
+                              "REGIF_CAP_EXTRA_DETECTED", "REGIF_CAP_MISSING_DETECTED",
++                             "REGIF_CAP_LAST_HALF_STOP_CANCEL",
+                              "REGIF_CAP_CONTROL_PASS", "REGIF_CAP_SELFCHECK_PASS"],
+         "note": "Same shared regif_tx_public_monitor as the formal wrapper TB; synthetic public uart_tx only.",
+     }
+diff --git a/work/regif/txgpio-m1/scripts/regif_entry_selfcheck.py b/work/regif/txgpio-m1/scripts/regif_entry_selfcheck.py
+--- a/work/regif/txgpio-m1/scripts/regif_entry_selfcheck.py
++++ b/work/regif/txgpio-m1/scripts/regif_entry_selfcheck.py
+@@ -70,9 +70,36 @@
+                             n16.replace(first_req_line, first_req_line.replace("edge=9 ", "edge=8 "), 1), 16, False))
+     rows.append(result_case("bad_stop_monitor_event",
+                             n16 + "REGIF_TX_FRAME event=BAD_STOP idx=1 edge=9999 data=33\n", 16, False))
++    req_lines = re.findall(r"^REGIF_REQ .*$", n16, re.MULTILINE)
++    if len(req_lines) < 2:
++        print("INSUFFICIENT_REQUEST_LINES")
++        return 1
++    second = req_lines[1]
++    second_bad_edge = re.sub(r"edge=\d+", "edge=999", second, count=1)
++    rows.append(result_case("nonfirst_request_edge",
++                            n16.replace(second, second_bad_edge, 1), 16, False))
++    second_bad_busy = second.replace("busy=0", "busy=1", 1) if "busy=0" in second else second.replace("busy=1", "busy=0", 1)
++    rows.append(result_case("busy_field",
++                            n16.replace(second, second_bad_busy, 1), 16, False))
++    comp = re.search(r"^REGIF_TX_FRAME event=COMPLETE .*$", n16, re.MULTILINE)
++    if not comp:
++        print("MISSING_COMPLETE")
++        return 1
++    comp_line = comp.group(0)
++    comp_bad = re.sub(r"edge=\d+", "edge=99999", comp_line, count=1)
++    rows.append(result_case("complete_frame_edge",
++                            n16.replace(comp_line, comp_bad, 1), 16, False))
++    gp = re.search(r"^REGIF_GPIO_ACCEPT .*$", n16, re.MULTILINE)
++    if not gp:
++        print("MISSING_GPIO_ACCEPT")
++        return 1
++    gp_line = gp.group(0)
++    gp_bad = re.sub(r"seq=\d+ edge=\d+", "seq=99 edge=999999", gp_line, count=1)
++    rows.append(result_case("gpio_seq_edge",
++                            n16.replace(gp_line, gp_bad, 1), 16, False))
+ 
+     # Actual-event negatives on the actual N16 result log.
+-    first_complete = re.search(r"^REGIF_TX_FRAME event=COMPLETE idx=1 edge=\d+ data=5a\s*$", n16, re.MULTILINE)
++    first_complete = re.search(r"^REGIF_TX_FRAME event=COMPLETE idx=1 edge=\d+ data=5a observed_edge=\d+\s*$", n16, re.MULTILINE)
+     if not first_complete:
+         print("MISSING_ACTUAL_TX_COMPLETE_LINE")
+         return 1
+diff --git a/work/regif/txgpio-m1/scripts/run_regif_m1.py b/work/regif/txgpio-m1/scripts/run_regif_m1.py
+--- a/work/regif/txgpio-m1/scripts/run_regif_m1.py
++++ b/work/regif/txgpio-m1/scripts/run_regif_m1.py
+@@ -20,8 +20,8 @@
+ IVL_LIB = Path(r"D:\iverilog\lib\ivl")
+ PYTHON = Path(sys.executable)
+ 
+-PLAN = ROOT / "tests" / "w01-w10-plan-1.0.3.json"
+-PLAN_HASH = ROOT / "tests" / "w01-w10-plan-1.0.3.sha256"
++PLAN = ROOT / "tests" / "w01-w10-plan-1.0.5.json"
++PLAN_HASH = ROOT / "tests" / "w01-w10-plan-1.0.5.sha256"
+ RESULTS = ROOT / "results.json"
+ WRAPPER = ROOT / "src" / "local_regif_txgpio_m1.v"
+ TB = ROOT / "tb" / "tb_local_regif_txgpio_m1.sv"
+@@ -92,6 +92,11 @@
+ # Manually frozen request-field sequence (not derived from a DUT run).  Edge is
+ # checked for the first request anchor and strict monotonic uniqueness; the
+ # field sequence is checked for every request.
++EXPECTED_EDGES = {
++    16: [9, 26, 29, 30, 37, 202, 203, 365, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 546, 554, 724, 794, 964, 1116],
++    234: [6, 2349, 2350, 4692, 7040, 7048, 9398, 10340, 12690, 14804],
++}
++
+ EXPECTED_REQUESTS = {
+     16: [
+         ("00", "5a", "1111", "1", "0", "reject"),
+@@ -134,7 +139,7 @@
+         ("00", "6a", "1111", "0", "1", "tx"),
+     ],
+ }
+-TX_RE = re.compile(r"^REGIF_TX_FRAME event=(START|COMPLETE|CANCEL)(?: idx=\d+)? edge=(\d+)(?: data=([0-9a-fA-F]+))?\s*$", re.MULTILINE)
++TX_RE = re.compile(r"^REGIF_TX_FRAME event=(START|COMPLETE|CANCEL)(?: idx=\d+)? edge=(\d+)(?: data=([0-9a-fA-F]+))?(?: observed_edge=(\d+))?\s*$", re.MULTILINE)
+ GPIO_RE = re.compile(r"^REGIF_GPIO_ACCEPT seq=(\d+) edge=(\d+) data=([0-9a-fA-F]+)\s*$", re.MULTILINE)
+ 
+ 
+@@ -174,6 +179,7 @@
+     if req_total != len(expected_rows):
+         errors.append("request rows=%d expected frozen=%d" % (req_total, len(expected_rows)))
+     seen_edges = []
++    expected_busy = {"N16": {7}, "N234": {3}}["N%d" % n]
+     for idx, row in enumerate(reqs[:len(expected_rows)]):
+         seq, edge, addr, data, strb, err, ready, busy, tx_accept, gpio_accept = row
+         kind = "tx" if tx_accept == "1" else ("gpio" if gpio_accept == "1" else "reject")
+@@ -181,12 +187,17 @@
+         got = (addr.lower(), data.lower(), strb, err, ready, kind)
+         if got != exp:
+             errors.append("request seq=%s fields=%s expected=%s" % (seq, got, exp))
++        expected_busy_bit = "1" if (idx + 1) in expected_busy else "0"
++        if busy != expected_busy_bit:
++            errors.append("request seq=%s busy=%s expected=%s" % (seq, busy, expected_busy_bit))
+         if int(seq) != idx + 1:
+             errors.append("request seq=%s expected=%d" % (seq, idx + 1))
+         seen_edges.append(int(edge))
+     first_edge_expected = 9 if n == 16 else 6
+     if not seen_edges or seen_edges[0] != first_edge_expected:
+         errors.append("first request edge=%s expected=%d" % (seen_edges[0] if seen_edges else "?", first_edge_expected))
++    if seen_edges != EXPECTED_EDGES[n]:
++        errors.append("request edge timeline=%s expected=%s" % (seen_edges, EXPECTED_EDGES[n]))
+     if seen_edges != sorted(set(seen_edges)):
+         errors.append("request edges not strictly increasing/unique")
+     if "REGIF_TX_FRAME event=BAD_STOP" in text:
+@@ -209,8 +220,34 @@
+         errors.append("TX CANCEL ledger=%d expected=%d" % (len(cancels), expected["cancel"]))
+     if [e[2].lower() for e in completes] != expected["complete_data"]:
+         errors.append("TX COMPLETE data=%s expected=%s" % (",".join(e[2].lower() for e in completes), ",".join(expected["complete_data"])))
+-    if [g[2].lower() for g in gpio_logs] != expected["gpio_data"]:
+-        errors.append("GPIO accept log data=%s expected=%s" % (",".join(g[2].lower() for g in gpio_logs), ",".join(expected["gpio_data"])))
++    # Event edge and observe edge are distinct: event is the real accept/end
++    # edge; observed is the next posedge where the public pin was sampled.
++    for e in tx_events:
++        if not e[3]:
++            errors.append("TX %s edge=%s missing observed_edge" % (e[0], e[1]))
++        elif int(e[3]) != int(e[1]) + 1:
++            errors.append("TX %s event_edge=%s observed_edge=%s expected observed=edge+1" %
++                          (e[0], e[1], e[3]))
++    # START event edges must equal the accepted request edges, in order.
++    tx_accept_rows = [(int(r[1]), r[3].lower()) for r in reqs if r[8] == "1"]
++    start_rows = [(int(e[1]), e[3]) for e in starts]
++    if len(start_rows) != len(tx_accept_rows):
++        errors.append("TX START rows=%d accepted requests=%d" % (len(start_rows), len(tx_accept_rows)))
++    else:
++        for (sedge, _), (redge, rdata) in zip(start_rows, tx_accept_rows):
++            if sedge != redge:
++                errors.append("TX START edge=%d expected accept edge=%d data=%s" % (sedge, redge, rdata))
++    # COMPLETE event edge must be exactly 10N after the START event edge.
++    start_edges = {int(e[1]) for e in starts}
++    for e in completes:
++        if int(e[1]) - 10 * n not in start_edges:
++            errors.append("TX COMPLETE event_edge=%s has no START at event_edge-10N" % e[1])
++    # GPIO log seq/edge/data must match the accepted request ledger, one-to-one.
++    accepted_gpio_rows = [(i + 1, int(r[1]), r[3].lower())
++                          for i, r in enumerate([x for x in reqs if x[9] == "1"])]
++    gpio_log_rows = [(int(g[0]), int(g[1]), g[2].lower()) for g in gpio_logs]
++    if accepted_gpio_rows != gpio_log_rows:
++        errors.append("GPIO log seq/edge/data=%s expected request-aligned=%s" % (gpio_log_rows, accepted_gpio_rows))
+     m = re.search(r"REGIF_M1_SELFCHECK_PASS accepted_tx=(\d+) accepted_gpio=(\d+) rejected=(\d+) frames=(\d+) requests=(\d+) complete=(\d+) cancel=(\d+) bad_stop=(\d+)", text)
+     if not m:
+         errors.append("missing detailed REGIF_M1_SELFCHECK_PASS counters")
+diff --git a/work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv b/work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv
+--- a/work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv
++++ b/work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv
+@@ -23,6 +23,7 @@
+     integer bit_idx;
+     integer prev;
+     reg [7:0] shift;
++    reg stop_sample_good;
+     reg [7:0] complete_data [0:31];
+ 
+     initial begin
+@@ -37,6 +38,7 @@
+         bit_idx = 0;
+         prev = 1;
+         shift = 8'h00;
++        stop_sample_good = 1'b0;
+     end
+ 
+     always @(posedge clk) begin
+@@ -45,35 +47,38 @@
+         if (!rst_n) begin
+             if (active == 1) begin
+                 tx_cancel_count = tx_cancel_count + 1;
+-                $display("REGIF_TX_FRAME event=CANCEL idx=%0d edge=%0d", tx_cancel_count, cycle_count + 1);
++                $display("REGIF_TX_FRAME event=CANCEL idx=%0d edge=%0d observed_edge=%0d", tx_cancel_count, cycle_count, cycle_count + 1);
+             end
+             active <= 0;
+             cnt <= 0;
+             bit_idx <= 0;
+             shift <= 8'h00;
++            stop_sample_good <= 1'b0;
+         end else if (active == 1) begin
+             cnt <= cnt + 1;
+             if (cnt == HALF - 1) begin
+                 if (uart_tx !== 1'b0) begin
+                     tx_bad_start_count = tx_bad_start_count + 1;
+-                    $display("REGIF_TX_FRAME event=BAD_START edge=%0d", cycle_count + 1);
++                    $display("REGIF_TX_FRAME event=BAD_START edge=%0d observed_edge=%0d", cycle_count, cycle_count + 1);
+                 end
+             end
+             if (cnt == N + HALF - 1 + bit_idx * N) begin
+                 shift[bit_idx] <= uart_tx;
+                 bit_idx <= bit_idx + 1;
+             end
+-            if (cnt == 9*N + HALF - 1) begin
++            if (cnt == 9*N + HALF - 1)
++                stop_sample_good <= (uart_tx === 1'b1);
++            if (cnt == 10*N - 1) begin
+                 active <= 0;
+-                if (uart_tx === 1'b1) begin
++                if (stop_sample_good === 1'b1) begin
+                     complete_data[tx_complete_count] = shift;
+                     tx_complete_count = tx_complete_count + 1;
+-                    $display("REGIF_TX_FRAME event=COMPLETE idx=%0d edge=%0d data=%02x",
+-                             tx_complete_count, cycle_count + 1, shift);
++                    $display("REGIF_TX_FRAME event=COMPLETE idx=%0d edge=%0d data=%02x observed_edge=%0d",
++                             tx_complete_count, cycle_count, shift, cycle_count + 1);
+                 end else begin
+                     tx_bad_stop_count = tx_bad_stop_count + 1;
+-                    $display("REGIF_TX_FRAME event=BAD_STOP idx=%0d edge=%0d data=%02x",
+-                             tx_bad_stop_count, cycle_count + 1, shift);
++                    $display("REGIF_TX_FRAME event=BAD_STOP idx=%0d edge=%0d data=%02x observed_edge=%0d",
++                             tx_bad_stop_count, cycle_count, shift, cycle_count + 1);
+                 end
+             end
+         end else if (prev === 1'b1 && uart_tx === 1'b0) begin
+@@ -81,8 +86,9 @@
+             cnt <= 0;
+             bit_idx <= 0;
+             shift <= 8'h00;
++            stop_sample_good <= 1'b0;
+             tx_start_count = tx_start_count + 1;
+-            $display("REGIF_TX_FRAME event=START edge=%0d", cycle_count + 1);
++            $display("REGIF_TX_FRAME event=START edge=%0d observed_edge=%0d", cycle_count, cycle_count + 1);
+         end
+     end
+ endmodule
+diff --git a/work/regif/txgpio-m1/tb/tb_local_regif_txgpio_m1.sv b/work/regif/txgpio-m1/tb/tb_local_regif_txgpio_m1.sv
+diff --git a/work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv b/work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv
+--- a/work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv
++++ b/work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv
+@@ -46,6 +46,27 @@
+         end
+     endtask
+ 
++    task automatic send_frame_reset_last_half(input [7:0] data);
++        integer k;
++        begin
++            @(negedge clk);
++            uart_tx = 1'b0;
++            for (k = 0; k < 8; k = k + 1) begin
++                repeat (N) @(negedge clk);
++                uart_tx = data[k];
++            end
++            repeat (N) @(negedge clk);
++            uart_tx = 1'b1;                 // stop starts
++            repeat (N/2 + 2) @(negedge clk); // after stop center, before E+10N
++            rst_n = 1'b0;
++            #1;
++            repeat (2) @(negedge clk);
++            rst_n = 1'b1;
++            repeat (3) @(posedge clk);
++            #1;
++        end
++    endtask
++
+     initial begin
+         errors = 0;
+         rst_n = 1'b0;
+@@ -84,6 +105,15 @@
+         else
+             $display("REGIF_CAP_MISSING_MISSED");
+ 
++        // Reset in the last half of the stop bit: the 10N frame is not complete,
++        // so it must be CANCEL, not COMPLETE.
++        send_frame_reset_last_half(8'hA5);
++        if (mon.tx_cancel_count === 1 && mon.tx_complete_count === 2)
++            $display("REGIF_CAP_LAST_HALF_STOP_CANCEL cancel=1 complete=2");
++        else
++            $display("REGIF_CAP_LAST_HALF_STOP_FAIL cancel=%0d complete=%0d",
++                     mon.tx_cancel_count, mon.tx_complete_count);
++
+         if (mon.tx_complete_count === 2 && mon.tx_bad_stop_count === 1 &&
+             mon.complete_data[0] === 8'h5A && mon.complete_data[1] === 8'h66)
+             $display("REGIF_CAP_CONTROL_PASS complete=2 bad_stop=1");
+diff --git a/work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.json b/work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.json
+--- /dev/null
++++ b/work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.json
+@@ -0,0 +1,635 @@
++{
++  "plan_id": "B-REGIF-TXGPIO-M1-PLAN-1.0.5",
++  "plan_version": "1.0.5",
++  "created_at": "2026-10-25T21:07:14+08:00",
++  "frozen_at": "2026-10-25T21:07:14+08:00",
++  "frozen_before_dut_runs": true,
++  "task_id": "B-REGIF-TXGPIO-M1",
++  "contract": {
++    "contract_id": "LOCAL-REGIF-TXGPIO-M1",
++    "version": "1.0.0",
++    "sha256": "F0E31602D008459B3E95901C0F533BC7FF4153F6B5A93859780EA8D2AD64E988",
++    "quality_id": "TXGPIO-QUALITY-EVOLUTION",
++    "quality_version": "1.0.0",
++    "quality_sha256": "80DEBA901A0917E730CD14D98A08933274337588A1E2A31AFBAB6D91D700F476",
++    "approval": "D115 / APPROVED_TO_START_ON_RECEIPT",
++    "received_at": "2026-10-23T23:52:38+08:00"
++  },
++  "baseline": {
++    "tx_rtl": {
++      "path": "work/peripherals/src/uart_tx.v",
++      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
++    },
++    "gpio_rtl": {
++      "path": "work/peripherals/gpio/src/gpio_core.v",
++      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
++    },
++    "wrapper": {
++      "path": "work/regif/txgpio-m1/src/local_regif_txgpio_m1.v",
++      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
++    },
++    "tb": {
++      "path": "work/regif/txgpio-m1/tb/tb_local_regif_txgpio_m1.sv",
++      "sha256": "7F0C1060ED9524B18965575CC3BE8DA1AE76D899521916F2D701976AEFAD793B"
++    },
++    "tx_public_monitor": {
++      "path": "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv",
++      "sha256": "A7C857C1451B5C3960F6DA4A1CF90451E72D4D572815D806FA14B51ADE106CFB"
++    },
++    "capture_negative_tb": {
++      "path": "work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv",
++      "sha256": "8D3E47D1185483CC864406BE91484EBC44ADD191D42D997282A84430A51888ED"
++    }
++  },
++  "scope": "Only the approved zero-wait TX/GPIO wrapper. No RX, FIFO, interrupt, bus fabric, CPU, SoC, formal timing or hardware.",
++  "configurations": {
++    "primary": {
++      "id": "N16",
++      "clks_per_bit": 16,
++      "gpio_width": 8,
++      "cases": [
++        "W01",
++        "W02",
++        "W03",
++        "W04",
++        "W05",
++        "W06",
++        "W07",
++        "W08",
++        "W09",
++        "W10"
++      ]
++    },
++    "secondary": {
++      "id": "N234",
++      "clks_per_bit": 234,
++      "gpio_width": 8,
++      "cases": [
++        "W05",
++        "W06",
++        "W09"
++      ],
++      "note": "Minimal normal send, repeat and reset recovery only."
++    },
++    "not_run": [
++      {
++        "id": "N8",
++        "reason": "No new full matrix; N16 primary and N234 minimal cover approved scope. N8 retained as prior core evidence."
++      }
++    ]
++  },
++  "manual_expectations": {
++    "W01": "rst_n=0: io_rdata=0, gpio_out=0, uart_tx=1, io_wr_error=0. Release edge with a write request must not accept (pre-edge ready=0); that edge is one real request and must be counted as rejected by the public request monitor. A following legal edge accepts exactly once.",
++    "W02": "io_sel=0 or io_wr_en=0: all writes rejected/no effect. Reads 0x00/0x08/0x0c/0x10 return 0/tx_ready/gpio_out/gpio_in_sync; unselected or nonaligned reads return 0; reads never change counters/state.",
++    "W03": "Three consecutive GPIO writes A,A,B on E edges produce three independent write events, no dedup; the actual GPIO accept ledger must show A,A,B, including two separate A writes. High 24 wdata bits ignored.",
++    "W04": "GPIO input is not fed to output. A stable change before E0 reaches sync_meta at E0 and gpio_in_sync at E1; wrapper adds no extra synchronizer. Check x/z on relevant outputs.",
++    "W05": "Aligned full-strobe write 0x00 with tx_ready=1 starts one 8N1 frame at E; independent serial decoder sees start low, 8 LSB-first data bits and stop high; high wdata bits ignored. No extra frame.",
++    "W06": "Write 0x00 while tx_busy=1: io_wr_error=1, tx_valid not asserted, no queued frame. At the ready-return edge pre-edge ready=0: reject. Following eligible edge accepts exactly one. Same byte repeated still creates independent frames.",
++    "W07": "Writes to 04/14, 08, 10, unselected, nonaligned, io_wstrb!=1111 all set io_wr_error and cause no TX/GPIO side effect. Read-only/reserved reads return 0.",
++    "W08": "Every valid E edge is one request; no edge detection/dedup. Request count/order, success/reject flags and side effects match the frozen table; no hidden extra writes.",
++    "W09": "Reset during TX start/data/stop cancels the frame (no completion); gpio_out and gpio_in_sync clear; after release a new TX write/GPIO write succeeds once, old request is not replayed.",
++    "W10": "Control checker passes correct expected TX byte/GPIO sequence. Deliberately wrong byte, missing frame, extra frame, extra/missing/duplicate GPIO acceptance, missing/duplicate/wrong TEST marker, TEST_FAIL, nonzero native rc and truncated log must be detected; ordinary process timeout is not success."
++  },
++  "write_gate": "request = rst_n && io_sel && io_wr_en; success = aligned && strobe=1111 && ((addr=00 && tx_ready) || addr=0c); otherwise io_wr_error=1 and no core side effect.",
++  "read_mux": {
++    "00": "0",
++    "08": "tx_ready",
++    "0c": "gpio_out",
++    "10": "gpio_in_sync",
++    "other_or_nonaligned": "0",
++    "side_effect": "none"
++  },
++  "limits": {
++    "compile_timeout_s": 60,
++    "run_timeout_s": 30,
++    "tb_max_cycles": 300000,
++    "hard_max_cycles": 1000000,
++    "runner": "shared bounded runner after P0-1/P0-2 corrections"
++  },
++  "expected_counts": {
++    "N16": {
++      "accepted_tx": 9,
++      "accepted_gpio": 6,
++      "rejected": 11,
++      "frames": 6,
++      "requests": 26,
++      "complete": 6,
++      "cancel": 3,
++      "first_edge": 9
++    },
++    "N234": {
++      "accepted_tx": 9,
++      "accepted_gpio": 0,
++      "rejected": 1,
++      "frames": 6,
++      "requests": 10,
++      "complete": 6,
++      "cancel": 3,
++      "first_edge": 6
++    },
++    "note": "W01 first-release request is a real rejected request (pre-edge ready=0) and must be counted by the public request monitor. W06/W07 rejects and W09 cancellations are separate from completed frames. A,A and 11,11 are independent GPIO accepts."
++  },
++  "result_rules": {
++    "PASS": "native rc=0, no timeout, no truncated log, all expected markers/counts and checker control",
++    "TIMEOUT": "only deliberate watchdog case; a normal case timeout is FAIL",
++    "FAIL": "any functional/checker mismatch",
++    "TOOL_ERROR": "compile/start failure before DUT execution"
++  },
++  "limitations": [
++    "Simulation-only; no PDS/timing/board/hardware evidence.",
++    "No RX, FIFO, interrupt, bus fabric, CPU or SoC integration.",
++    "N8 is not rerun in this package; prior core evidence remains separate.",
++    "N234 is a reduced normal/repeat/reset smoke, not a full W01-W10 matrix.",
++    "The 1.0.1 plan is functionally identical to 1.0.0; it only records ordinary VCD generation. The earlier 1.0.0 run remains available as history, not as a final VCD-bearing acceptance run.",
++    "The 1.0.2 plan corrects the W01 request accounting from 10 to 11 rejects and freezes the actual event ledger; it does not change the wrapper RTL or frozen TX/GPIO cores.",
++    "W06 ready-return-edge request coverage is explicitly marked as a gap; no claim is made for it.",
++    "W06 is covered by A-W06-SUPPLEMENT in the mainline reply; B's 1.0.4 retains the old gap as history and does not rerun W06.",
++    "1.0.5 changes only TX monitor event/observed edge labels; TX/wrapper RTL and timing unchanged. W06 remains A-W06-SUPPLEMENT."
++  ],
++  "frozen_before_final_dut_runs": true,
++  "supersedes": "1.0.4",
++  "old_plan_preserved": [
++    "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.json",
++    "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.3.sha256",
++    "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.4.json",
++    "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.4.sha256"
++  ],
++  "evidence": {
++    "ordinary_vcd_required": true,
++    "vcd_plusarg": "+WAVE_FILE=<path>",
++    "vcd_scope": "$dumpvars(0, tb_local_regif_txgpio_m1)",
++    "note": "1.0.3 freezes independent uart_tx capture, one-based seq/edge, request fields, and capture selfcheck. It preserves 1.0.2 functional counts and all old plans."
++  },
++  "entry_markers": {
++    "N16": [
++      "W01",
++      "W02",
++      "W03",
++      "W04",
++      "W05",
++      "W06",
++      "W07",
++      "W08",
++      "W09",
++      "W10"
++    ],
++    "N234": [
++      "W05-N234",
++      "W06-N234",
++      "W09-N234"
++    ],
++    "rule": "Each expected TEST_BEGIN/TEST_PASS appears exactly once, in order, with no extra marker; one global REGIF_M1_SELFCHECK_PASS; missing/duplicate/wrong marker, TEST_FAIL/CHK_FAIL, nonzero native rc or truncated log => FAIL."
++  },
++  "event_ledger": {
++    "source": "Public REGIF_REQ/TX_FRAME/GPIO_ACCEPT logs; TX COMPLETE/CANCEL comes from the shared public uart_tx serial monitor, not tx_ready or last_tx_byte. Request fields are frozen in request_fields.",
++    "N16": {
++      "request_count": 26,
++      "tx_accept_data": [
++        "5a",
++        "a5",
++        "a5",
++        "96",
++        "6a",
++        "96",
++        "6a",
++        "96",
++        "6a"
++      ],
++      "tx_complete_data": [
++        "5a",
++        "a5",
++        "a5",
++        "6a",
++        "6a",
++        "6a"
++      ],
++      "gpio_accept_data": [
++        "a5",
++        "a5",
++        "5a",
++        "11",
++        "11",
++        "22"
++      ],
++      "tx_cancel": 3,
++      "reject": 11
++    },
++    "N234": {
++      "request_count": 10,
++      "tx_accept_data": [
++        "5a",
++        "a5",
++        "a5",
++        "96",
++        "6a",
++        "96",
++        "6a",
++        "96",
++        "6a"
++      ],
++      "tx_complete_data": [
++        "5a",
++        "a5",
++        "a5",
++        "6a",
++        "6a",
++        "6a"
++      ],
++      "gpio_accept_data": [],
++      "tx_cancel": 3,
++      "reject": 1
++    },
++    "negative_controls": [
++      "wrong TX byte/wrong completed data",
++      "extra completed frame",
++      "missing completed frame",
++      "extra GPIO accept",
++      "missing GPIO accept",
++      "duplicate GPIO accept",
++      "missing/duplicate/wrong TEST marker",
++      "TEST_FAIL",
++      "nonzero native rc",
++      "truncated log"
++    ]
++  },
++  "request_fields": {
++    "rule": "seq consecutive 1..N; edge first anchor 9/6 and strictly increasing/unique; address/strobe/error/ready/accept kind match the manually frozen sequence; no DUT-derived edge table.",
++    "N16": [
++      [
++        "00",
++        "5a",
++        "1111",
++        "1",
++        "0",
++        "reject"
++      ],
++      [
++        "0c",
++        "a5",
++        "1111",
++        "0",
++        "1",
++        "gpio"
++      ],
++      [
++        "0c",
++        "a5",
++        "1111",
++        "0",
++        "1",
++        "gpio"
++      ],
++      [
++        "0c",
++        "5a",
++        "1111",
++        "0",
++        "1",
++        "gpio"
++      ],
++      [
++        "00",
++        "5a",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "a5",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "3c",
++        "1111",
++        "1",
++        "0",
++        "reject"
++      ],
++      [
++        "00",
++        "a5",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "04",
++        "01",
++        "1111",
++        "1",
++        "1",
++        "reject"
++      ],
++      [
++        "14",
++        "02",
++        "1111",
++        "1",
++        "1",
++        "reject"
++      ],
++      [
++        "08",
++        "03",
++        "1111",
++        "1",
++        "1",
++        "reject"
++      ],
++      [
++        "10",
++        "04",
++        "1111",
++        "1",
++        "1",
++        "reject"
++      ],
++      [
++        "02",
++        "05",
++        "1111",
++        "1",
++        "1",
++        "reject"
++      ],
++      [
++        "0c",
++        "06",
++        "0000",
++        "1",
++        "1",
++        "reject"
++      ],
++      [
++        "0c",
++        "07",
++        "0001",
++        "1",
++        "1",
++        "reject"
++      ],
++      [
++        "0c",
++        "08",
++        "0011",
++        "1",
++        "1",
++        "reject"
++      ],
++      [
++        "00",
++        "09",
++        "1100",
++        "1",
++        "1",
++        "reject"
++      ],
++      [
++        "0c",
++        "11",
++        "1111",
++        "0",
++        "1",
++        "gpio"
++      ],
++      [
++        "0c",
++        "11",
++        "1111",
++        "0",
++        "1",
++        "gpio"
++      ],
++      [
++        "0c",
++        "22",
++        "1111",
++        "0",
++        "1",
++        "gpio"
++      ],
++      [
++        "00",
++        "96",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "6a",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "96",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "6a",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "96",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "6a",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ]
++    ],
++    "N234": [
++      [
++        "00",
++        "5a",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "a5",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "3c",
++        "1111",
++        "1",
++        "0",
++        "reject"
++      ],
++      [
++        "00",
++        "a5",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "96",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "6a",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "96",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "6a",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "96",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ],
++      [
++        "00",
++        "6a",
++        "1111",
++        "0",
++        "1",
++        "tx"
++      ]
++    ]
++  },
++  "capture_selfcheck": {
++    "script": "work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py",
++    "shared_source": "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv",
++    "required_markers": [
++      "REGIF_CAP_GOOD_PASS",
++      "REGIF_CAP_BAD_STOP_DETECTED",
++      "REGIF_CAP_EXTRA_DETECTED",
++      "REGIF_CAP_MISSING_DETECTED",
++      "REGIF_CAP_CONTROL_PASS",
++      "REGIF_CAP_SELFCHECK_PASS"
++    ],
++    "note": "Synthetic public uart_tx only; same monitor module as formal N16/N234."
++  },
++  "coverage_gaps": [
++    "W06: a write request exactly on the ready-return edge is not separately exercised; the busy write covers pre-edge ready=0 rejection. This is explicitly marked, not claimed as ready-return-edge coverage."
++  ],
++  "expected_request_edges": {
++    "N16": [
++      9,
++      26,
++      29,
++      30,
++      37,
++      202,
++      203,
++      365,
++      528,
++      529,
++      530,
++      531,
++      532,
++      533,
++      534,
++      535,
++      536,
++      537,
++      538,
++      539,
++      546,
++      554,
++      724,
++      794,
++      964,
++      1116
++    ],
++    "N234": [
++      6,
++      2349,
++      2350,
++      4692,
++      7040,
++      7048,
++      9398,
++      10340,
++      12690,
++      14804
++    ],
++    "note": "Frozen request timeline from the fixed test schedule; analyzer rejects nonfirst edge mutations, not just first edge."
++  },
++  "tx_event_rules": {
++    "event_edge": "true accept/start edge E or true E+10N end edge.",
++    "observed_edge": "next posedge where the independent public-pin monitor sampled the transition; observed_edge = event_edge + 1.",
++    "start": "START event_edge equals the accepted request edge.",
++    "complete": "COMPLETE event_edge = START event_edge + 10N; observed_edge = event_edge + 1.",
++    "cancel": "reset before E+10N is CANCEL; event_edge and observed_edge are logged separately.",
++    "last_half_stop": "synthetic shared-monitor reset in the last half of the stop bit must CANCEL."
++  },
++  "v3_checks": [
++    "nonfirst edge exact",
++    "busy field exact",
++    "TX COMPLETE edge=START+10N",
++    "GPIO log seq/edge/data aligned"
++  ],
++  "R2_acceptance": {
++    "N16_first": {
++      "accept_event_edge": 37,
++      "complete_event_edge": 197
++    },
++    "N234_first": {
++      "accept_event_edge": 6,
++      "complete_event_edge": 2346
++    },
++    "counts": "6 complete / 3 cancel / 0 bad_stop",
++    "mutation": "COMPLETE observed edge 999999 or event edge not E+10N rejected."
++  }
++}
+diff --git a/work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.sha256 b/work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.sha256
+--- /dev/null
++++ b/work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.sha256
+@@ -0,0 +1 @@
++5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9  work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.json

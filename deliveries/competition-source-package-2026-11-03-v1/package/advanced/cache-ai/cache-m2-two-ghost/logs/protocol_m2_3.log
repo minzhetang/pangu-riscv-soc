@@ -1,0 +1,4 @@
+VCD info: dumpfile protocol_3.vcd opened for output.
+ADMISSION_RESET_PASS
+PASS cache
+cache_tb.sv:139: $finish called at 1070000 (1ps)

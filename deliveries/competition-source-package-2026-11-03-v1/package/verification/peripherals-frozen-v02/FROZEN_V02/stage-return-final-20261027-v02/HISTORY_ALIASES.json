@@ -1,0 +1,51 @@
+{
+  "kind": "HISTORY_ALIASES",
+  "rule": "Old frozen packages are not rewritten. Same-SHA mirrors are labeled as mirrors, not new DUT runs.",
+  "active": {
+    "packaging": "regif-m1-20261025-210743 / w01-w10-plan-1.0.5",
+    "rx": "rx-20261025-211013 / rx-plan-1.3.5",
+    "stage": "stage-return-final-20261027-v02"
+  },
+  "aliases": [
+    {
+      "old": "stage-return-final-20261027-v01",
+      "current": "work/B-RETURN/stage-return-final-20261027-v01/",
+      "status": "HISTORICAL_PRIOR_STAGE_NOT_REWRITTEN"
+    },
+    {
+      "old": "regif-m1-20261025-190737",
+      "current": "work/B-RETURN/stage-return-final-20261027-v01/work/regif/txgpio-m1/logs/regif-m1-20261025-190737/",
+      "status": "SUPERSEDED_BY_210743"
+    },
+    {
+      "old": "rx-20261025-191037",
+      "current": "work/B-RETURN/stage-return-final-20261027-v01/work/peripherals/rx/logs/rx-20261025-191037/",
+      "status": "SUPERSEDED_BY_211013"
+    },
+    {
+      "old": "regif-m1-20261024-231958 results",
+      "current": "work/B-RETURN/increment-20261024-2335/work/regif/txgpio-m1/results.json",
+      "status": "SUPERSEDED_BY_210743"
+    },
+    {
+      "old": "rx-20261024-232514 results",
+      "current": "work/B-RETURN/increment-20261024-2335/work/peripherals/rx/results.json",
+      "status": "SUPERSEDED_BY_211013"
+    },
+    {
+      "old": "regif-m1-20261024-172242 results",
+      "current": "work/B-RETURN/increment-20261024-1735/work/regif/txgpio-m1/results.json",
+      "status": "HISTORICAL"
+    },
+    {
+      "old": "rx-20261024-173355 results",
+      "current": "work/B-RETURN/increment-20261024-1735/work/peripherals/rx/results.json",
+      "status": "HISTORICAL"
+    },
+    {
+      "old": "0030 same-SHA result mirror",
+      "current": "work/B-RETURN/increment-20261024-0030/work/regif/txgpio-m1/results.json",
+      "status": "SAME_SHA_MIRROR_NOT_NEW_RUN"
+    }
+  ]
+}

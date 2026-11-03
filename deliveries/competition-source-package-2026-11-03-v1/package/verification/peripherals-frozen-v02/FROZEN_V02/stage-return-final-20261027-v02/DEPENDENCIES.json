@@ -1,0 +1,109 @@
+{
+  "kind": "DEPENDENCIES",
+  "as_of": "2026-10-25T21:20:00+08:00",
+  "rule": "Dependencies are referenced by prior increment/package ID, handoff-relative path, version and exact SHA; not re-sent.",
+  "entries": [
+    {
+      "id": "stage-return-20261023-1345/tx-core",
+      "increment_id": "stage-return-20261023-1345",
+      "path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/src/uart_tx.v",
+      "version": "uart_tx 1.0.0",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C",
+      "use": "frozen TX core"
+    },
+    {
+      "id": "stage-return-20261023-1345/gpio-core",
+      "increment_id": "stage-return-20261023-1345",
+      "path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/gpio/src/gpio_core.v",
+      "version": "gpio_core 1.0.0",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E",
+      "use": "frozen GPIO core"
+    },
+    {
+      "id": "stage-return-20261023-1345/rx-core",
+      "increment_id": "stage-return-20261023-1345",
+      "path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/src/uart_rx.v",
+      "version": "uart_rx 1.0.0",
+      "sha256": "BDCD02CA8CBA1CAE9D8A774D336B30B43E9457834856234BD7C2BA8AE1719F34",
+      "use": "frozen RX core"
+    },
+    {
+      "id": "increment-20261024-0030/wrapper",
+      "increment_id": "increment-20261024-0030",
+      "path": "work/B-RETURN/increment-20261024-0030/work/regif/txgpio-m1/src/local_regif_txgpio_m1.v",
+      "version": "LOCAL-REGIF-TXGPIO-M1/1.0.0",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA",
+      "use": "approved wrapper RTL, unchanged"
+    },
+    {
+      "id": "increment-20261024-1735/shared-runner",
+      "increment_id": "increment-20261024-1735",
+      "path": "work/B-RETURN/increment-20261024-1735/work/peripherals/scripts/runner_common.py",
+      "version": "shared runner P0",
+      "sha256": "3141C6A78CAD4B1FF03FA53FF949AA9FF422D573E2D7F96CC73729298D1F144A",
+      "use": "bounded process/log/cleanup runner"
+    },
+    {
+      "id": "increment-20261023-1930/gpio-runner",
+      "increment_id": "increment-20261023-1930",
+      "path": "work/B-RETURN/increment-20261023-1930/work/peripherals/gpio/scripts/run_gpio.py",
+      "version": "GPIO 1.0.2 runner",
+      "sha256": "6CDDE2E5DA70673988E287A201095DEE2136FBE89F24BB972701C78D621034CC",
+      "use": "accepted GPIO 1.0.2 entry; no rerun"
+    },
+    {
+      "id": "stage-return-20261023-1345/rx-watchdog",
+      "increment_id": "stage-return-20261023-1345",
+      "path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/tb/tb_uart_rx_watchdog.sv",
+      "version": "RX watchdog TB 1.0.0",
+      "sha256": "0F9C2159F2FFD76F0D84A34C39721648AAFF7528B7B1604E48C6D16D299E2BD9",
+      "use": "RX intentional watchdog/TIMEOUT control; not rerun here"
+    },
+    {
+      "id": "stage-return-20261023-1345/rx-illegal",
+      "increment_id": "stage-return-20261023-1345",
+      "path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/tb/tb_uart_rx_illegal.sv",
+      "version": "RX illegal-config TB 1.0.0",
+      "sha256": "5FF8F379FB5DAED06A07B51B2E902182CA806AB7D7CADCDDE3C3C5BCE10DC191",
+      "use": "RX illegal N=4 control"
+    },
+    {
+      "id": "increment-20261023-1930/rx-ledger-check",
+      "increment_id": "increment-20261023-1930",
+      "path": "work/B-RETURN/increment-20261023-1930/work/peripherals/rx/tb/rx_ledger_check.svh",
+      "version": "RX ledger comparator 1.0.0",
+      "sha256": "C8FFFF1A2554236C7935F1863CB0BF870CD8739CC69A3EAF3287C26E1A967868",
+      "use": "shared ordered comparator macro"
+    },
+    {
+      "id": "A-W06-SUPPLEMENT",
+      "increment_id": "mainline-increment-2335-response-2026-10-25-v1",
+      "path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/RESULTS.json",
+      "version": "A-W06-SUPPLEMENT v2",
+      "sha256": "EA54D33B031971F2431A2979638A481A12AC4C1393319C0918430EACA227CBA6",
+      "use": "W06 N16/N234 ready-return-edge coverage; B did not rerun"
+    }
+  ],
+  "plan_artifact_resolution": {
+    "rule": "Frozen plans name canonical handoff paths. Unchanged core/TB dependencies are not copied; resolve them through the dependency IDs below. The same-SHA final-stage copies are used where the artifact was changed.",
+    "packaging_plan_1.0.5": {
+      "work/peripherals/src/uart_tx.v": "stage-return-20261023-1345/tx-core",
+      "work/peripherals/gpio/src/gpio_core.v": "stage-return-20261023-1345/gpio-core",
+      "work/regif/txgpio-m1/src/local_regif_txgpio_m1.v": "increment-20261024-0030/wrapper",
+      "work/regif/txgpio-m1/tb/tb_local_regif_txgpio_m1.sv": "in_stage",
+      "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv": "in_stage",
+      "work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv": "in_stage"
+    },
+    "rx_plan_1.3.5": {
+      "work/peripherals/rx/src/uart_rx.v": "stage-return-20261023-1345/rx-core",
+      "work/peripherals/rx/tb/tb_uart_rx.sv": "in_stage",
+      "work/peripherals/rx/tb/tb_uart_rx_neg.sv": "in_stage",
+      "work/peripherals/rx/tb/tb_uart_rx_watchdog.sv": "stage-return-20261023-1345/rx-watchdog",
+      "work/peripherals/rx/tb/tb_uart_rx_illegal.sv": "stage-return-20261023-1345/rx-illegal",
+      "work/peripherals/rx/tb/rx_ledger_check.svh": "increment-20261023-1930/rx-ledger-check",
+      "work/peripherals/rx/tb/rx_public_capture.sv": "in_stage"
+    }
+  },
+  "final_stage": "work/B-RETURN/stage-return-final-20261027-v02",
+  "prior_stage": "work/B-RETURN/stage-return-final-20261027-v01"
+}

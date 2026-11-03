@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+    "-N",
+    "-M-",
+    "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\external-compile-01\\c_boot.vvp"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\ordinary-run-01",
+  "timeout_seconds": 30,
+  "ordinary_user": true,
+  "requested_at_beijing": "2026-10-23T10:52:10.054988+08:00",
+  "verified_records": 59,
+  "VVP": {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\external-compile-01\\c_boot.vvp",
+    "sha256": "31C7D24EB3F7D43012C983661BAB4C5AC02D77EF32DB8881351AF06409544997",
+    "bytes": 2186799
+  },
+  "frozen_expectations": {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\expected.json",
+    "sha256": "F5C19C175E2CC3FE7FCA9801E96D038328E83B89F5AC5DC55EE6E231EF9B7905",
+    "bytes": 188262
+  },
+  "runner": {
+    "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\run_verified_image.py",
+    "sha256": "CDC08FB4FE8F37C4D8926DB1A500B9C8C8276F7EF845606434DFC357D775ECF0",
+    "bytes": 3753
+  }
+}

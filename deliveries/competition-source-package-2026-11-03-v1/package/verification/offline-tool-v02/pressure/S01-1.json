@@ -1,0 +1,22 @@
+{
+  "id": "S01-1",
+  "status": "MATCH",
+  "expected_input": {
+    "storage": "raw",
+    "path": "generated/stress/1MiB-expected.log",
+    "bytes": 1048619,
+    "sha256": "CDF7250D2FBDBBC62AFE19CD99AFA80B89A7BECB6EC313B76B2844F37FBB83C5"
+  },
+  "actual_input": {
+    "storage": "raw",
+    "path": "generated/stress/1MiB-actual.log",
+    "bytes": 1048619,
+    "sha256": "CDF7250D2FBDBBC62AFE19CD99AFA80B89A7BECB6EC313B76B2844F37FBB83C5"
+  },
+  "checked": 11155,
+  "elapsed_s": 0.391,
+  "worker_peak_bytes": 21737472,
+  "parent_peak_bytes": null,
+  "worker_peak_limit_bytes": 268435456,
+  "within_worker_limit": true
+}

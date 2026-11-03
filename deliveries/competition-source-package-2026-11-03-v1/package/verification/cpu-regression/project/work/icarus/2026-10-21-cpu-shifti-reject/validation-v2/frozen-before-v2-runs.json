@@ -1,0 +1,18 @@
+{
+  "plan_sha256": "C892B72FEE950E9384A1687569A906F96FA490E983F9AC6888FAD514C6D94AAD",
+  "correction_sha256": "5FB34965AC597EC7CE681DA915885348162236B755E32057F5DAF78527D82DE0",
+  "scripts": [
+    {
+      "path": "D:\\A_FPGA_Comp\\scripts\\verification\\shifti_reject_runs_v2.py",
+      "sha256": "304B92C7249B4818E91C28E04EE229295B72DD3A8E32A6982F67DC91490766E0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\scripts\\verification\\shifti_reject_evidence_v2.py",
+      "sha256": "B16A89F027734B5D210E6553D9C6233BD822AFC67F2FDF69FE51BCE76C0D7D92"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\scripts\\verification\\shifti_reject_stall_plan_v2.py",
+      "sha256": "C7F2903C255BD7AD39069113FFD2E80AA16DFAA0679E7647739D20812504F5C5"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\git\\Git\\cmd\\git.exe",
+    "diff",
+    "--no-index",
+    "--no-ext-diff",
+    "--no-textconv",
+    "--",
+    "models-before",
+    "models"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject",
+  "exit_code": 1,
+  "stderr": "warning: in the working copy of 'models-before/cpu_selfcheck_v1.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'models/cpu_selfcheck_v1.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'models-before/cpu_trace_oracle.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'models/cpu_trace_oracle.py', LF will be replaced by CRLF the next time Git touches it\n"
+}

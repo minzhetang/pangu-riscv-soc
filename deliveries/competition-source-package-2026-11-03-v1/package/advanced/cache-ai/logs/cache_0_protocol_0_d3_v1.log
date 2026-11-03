@@ -1,0 +1,4 @@
+VCD info: dumpfile cache_protocol.vcd opened for output.
+METRIC requests=8 cycles=91 hits=2 transactions=5 bytes=32 mmio=2
+PASS cache
+cache_tb.sv:89: $finish called at 950000 (1ps)

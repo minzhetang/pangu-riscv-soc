@@ -1,0 +1,17 @@
+{
+  "id": "P01-S02-missing-tail",
+  "expected": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S02-missing-tail/expected.log",
+    "complete": true
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "inputs/seeds/S02-missing-tail/actual.log",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {}
+}

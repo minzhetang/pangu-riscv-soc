@@ -1,0 +1,12 @@
+0000: fff00093  addi x1,x0,-1
+0004: 01f00113  addi x2,x0,31
+0008: 002091b3  sll x3,x1,x2
+000c: 0021d233  srl x4,x3,x2
+0010: 4021d2b3  sra x5,x3,x2
+0014: 02000313  addi x6,x0,32
+0018: 006193b3  sll x7,x3,x6 ; shift0 after mask
+001c: 02100413  addi x8,x0,33
+0020: 0081d4b3  srl x9,x3,x8 ; shift1
+0024: 4081d533  sra x10,x3,x8 ; shift1
+0028: 008115b3  sll x11,x2,x8
+002c: 05a00f93  addi x31,x0,90 ; completion

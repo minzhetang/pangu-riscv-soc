@@ -1,0 +1,2384 @@
+{
+  "files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+      "sha256": "25E1BA02E72F58D9D484BC5457D69A6B179D22D86BDF5BA5D6F9F0D4FE620BBF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+      "sha256": "F0775603E1F1BCF1B2DEA16DFF963A4B7D71B7B33D5BBE23D2B01FF5B2304E09"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\APPROVAL.json",
+      "sha256": "4035365A2C4B137CC34B6DD9E4B513775A0DBC2C84B0CBB1CD40AABEF14748F6"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\build\\smoke\\program.elf",
+      "sha256": "EB8369AD8464A3812B44EF3F99880CB3CB1B2D42F2B2A6EE655ACA16CE1527C5"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\build\\smoke\\program.map",
+      "sha256": "C4A7F8F4A3C64B9E94F067EB0C31EEE3144C5A5DDDE69138DECDF5E8998295D6"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\init_tables.svh",
+      "sha256": "B9BE4F5A86B9E18DCE7B65937DBAA1FD60BFF285B103CBAA5C17839638EBBA08"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\memory_model.sv",
+      "sha256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\tb_timed_system.sv",
+      "sha256": "FBC5577A8C80BC87974D381E1068B0C60395CDCE7C5ABBD95D6FB656CB5E052F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N16\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\init_tables.svh",
+      "sha256": "B9BE4F5A86B9E18DCE7B65937DBAA1FD60BFF285B103CBAA5C17839638EBBA08"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\memory_model.sv",
+      "sha256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\tb_timed_system.sv",
+      "sha256": "FBC5577A8C80BC87974D381E1068B0C60395CDCE7C5ABBD95D6FB656CB5E052F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\baseline-N234\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\init_tables.svh",
+      "sha256": "56B9F2F76389C93465117BD1BAD9F483FD36D6247B493A955E08564DD97E6687"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\memory_model.sv",
+      "sha256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\tb_full_memory.sv",
+      "sha256": "D7BAD6CC2722B6483C4D37259D0B4204182DCA112185EB2AB8EC2792624896E8"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\selftest\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\init_tables.svh",
+      "sha256": "9A61C5FFA992EE6CF78E166E5ED27E82CEF254F8B87E897B289B6B7D009EE841"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\memory_model.sv",
+      "sha256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\tb_timed_system.sv",
+      "sha256": "FBC5577A8C80BC87974D381E1068B0C60395CDCE7C5ABBD95D6FB656CB5E052F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\cases\\smoke-N16\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\compile-plan.json",
+      "sha256": "883F0515A2482FE9837C9074DD49FEC39A773F7119FC37810E9C61ECDA5F9DB0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\equivalence.json",
+      "sha256": "7AF0A7308E25F00D969CC105A1EEA15A6AD74E6CFBFB584B484A01F6EE6FA1A9"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\models\\check_timed_v2.py",
+      "sha256": "33940ECAC918B21126B4D681BC335B522BAD691FD7758CA0DE4C2CCC6135ACF1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\models\\cpu_program_reference.py",
+      "sha256": "DCCA487CEE7D8FB941665658B946747EB4933E407C7EA492259D53847B666BBA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\models\\peripheral_checker.py",
+      "sha256": "E5BB96110DDF7B6BBD761D6A1922E83758DC71746B1813C3D851BD1DEC57677D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\build.tcl",
+      "sha256": "C9DE04F7F3DA5007E9ADE12A0B437B54C3C31995E86D0B86591A0E34523D1382"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\clock_27mhz.fdc",
+      "sha256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\source\\init_tables.svh",
+      "sha256": "E81FD2B446C2446C2D32DB0D45C9BEDA54D0A6A5B670064F021125E8C7E22E1A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\source\\memory_model.sv",
+      "sha256": "7DB1F8A1049D447D7C8A459FFEDC60680E25AD30B7A2368229B171EB69F07BAE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\pds\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source\\memory_model.sv",
+      "sha256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source-before\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source-before\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source-before\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source-before\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source-before\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source-before\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source-before\\memory_model.sv",
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source-before\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source-before\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source-before\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\source-before\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\SOURCE_DIFF.patch",
+      "sha256": "18E341319B32665F70054777FBD88236C2AB9C79AC7BE4B2DB6CE3B28A5A732F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\stage.py",
+      "sha256": "8F48FC9855B3C377892614442C3F4CB6E9CEFCE7EEF11AEE9BD39C7D92188CB6"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification\\memory_observe_bank.svh",
+      "sha256": "0D8D6A781F264052DBF399542247D23D13DB6B14D3464CAA2202A2D824660539"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification\\memory_observe_decl.svh",
+      "sha256": "CF5999285CF74F21F5F38E069C3E55D06C25BD81887DF867A790F925FC5D9B2F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-implementability-m0\\verification\\memory_protocol_checks.svh",
+      "sha256": "7435B9EA41198C02BA25CDB2F44427952F7B5EA8CD80800424091F157E644E49"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\tb_full_memory.sv",
+      "sha256": "D7BAD6CC2722B6483C4D37259D0B4204182DCA112185EB2AB8EC2792624896E8"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\analyze_windows.py",
+      "sha256": "FA46C4C565DF550EA9B087BDB3E72671A8939F4AA72C7B3B43F955F99C40006C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance\\program.bin",
+      "sha256": "B4CEEC1B250A5151C1D02F018FC45B3D22CDC049E12E26EFC2A0562D23740E60"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\performance\\program.elf",
+      "sha256": "BD38A6A4CD131A099954215504464A8AFDF130F89D1F9815C91EBEEEAD9BDB95"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\smoke\\program.elf",
+      "sha256": "EB8369AD8464A3812B44EF3F99880CB3CB1B2D42F2B2A6EE655ACA16CE1527C5"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation\\program.bin",
+      "sha256": "26B4F9C2900141EC2EF3A19F4C75C831ED62A1F6E02B34C441501B0FF4E84429"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build\\validation\\program.elf",
+      "sha256": "E2BEC75900D330237FC80F1BF798DF87EF0372B1D527BAAFED806317E75626FE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\init_tables.svh",
+      "sha256": "B9BE4F5A86B9E18DCE7B65937DBAA1FD60BFF285B103CBAA5C17839638EBBA08"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\memory_model.sv",
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\tb_timed_system.sv",
+      "sha256": "FBC5577A8C80BC87974D381E1068B0C60395CDCE7C5ABBD95D6FB656CB5E052F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N16\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\init_tables.svh",
+      "sha256": "B9BE4F5A86B9E18DCE7B65937DBAA1FD60BFF285B103CBAA5C17839638EBBA08"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\memory_model.sv",
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\tb_timed_system.sv",
+      "sha256": "FBC5577A8C80BC87974D381E1068B0C60395CDCE7C5ABBD95D6FB656CB5E052F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\baseline-N234\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\init_tables.svh",
+      "sha256": "E81FD2B446C2446C2D32DB0D45C9BEDA54D0A6A5B670064F021125E8C7E22E1A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\memory_model.sv",
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\tb_timed_system.sv",
+      "sha256": "FBC5577A8C80BC87974D381E1068B0C60395CDCE7C5ABBD95D6FB656CB5E052F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\performance-N16\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\init_tables.svh",
+      "sha256": "9A61C5FFA992EE6CF78E166E5ED27E82CEF254F8B87E897B289B6B7D009EE841"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\memory_model.sv",
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\tb_timed_system.sv",
+      "sha256": "FBC5577A8C80BC87974D381E1068B0C60395CDCE7C5ABBD95D6FB656CB5E052F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\smoke-N16\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\init_tables.svh",
+      "sha256": "8713B82EFB4C0D7A26F7D2F532863E6365B119F1B84E2AA870A254CE1E673054"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\memory_model.sv",
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\tb_timed_system.sv",
+      "sha256": "FBC5577A8C80BC87974D381E1068B0C60395CDCE7C5ABBD95D6FB656CB5E052F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cases\\validation-N16\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\check_timed.py",
+      "sha256": "490D6FC76EFEC3225C869E40F27271B480190EB94053865BD7517C86C2551439"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\check_timed_v2.py",
+      "sha256": "33940ECAC918B21126B4D681BC335B522BAD691FD7758CA0DE4C2CCC6135ACF1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negative-result-v2.json",
+      "sha256": "521765FACD7419FF9A018708453C53B825AAFB7B6958F3184134DE1195D81B96"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negative-result.json",
+      "sha256": "521765FACD7419FF9A018708453C53B825AAFB7B6958F3184134DE1195D81B96"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\control\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\control\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\control\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\duplicate_WB\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\duplicate_WB\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\duplicate_WB\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\extra_GPIO_accept\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\extra_GPIO_accept\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\extra_GPIO_accept\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\frozen_counter\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\frozen_counter\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\frozen_counter\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\missing_STORE\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\missing_STORE\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\missing_STORE\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\post_edge_tick_alias\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\post_edge_tick_alias\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\post_edge_tick_alias\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\unknown_pin\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\unknown_pin\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\unknown_pin\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\wrong_high_word\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\wrong_high_word\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\wrong_high_word\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\wrong_LOAD_result\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\wrong_LOAD_result\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives\\wrong_LOAD_result\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\control\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\control\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\control\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\duplicate_WB\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\duplicate_WB\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\duplicate_WB\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\extra_GPIO_accept\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\extra_GPIO_accept\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\extra_GPIO_accept\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\frozen_counter\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\frozen_counter\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\frozen_counter\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\missing_STORE\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\missing_STORE\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\missing_STORE\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\post_edge_tick_alias\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\post_edge_tick_alias\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\post_edge_tick_alias\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\unknown_pin\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\unknown_pin\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\unknown_pin\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\wrong_high_word\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\wrong_high_word\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\wrong_high_word\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\wrong_LOAD_result\\build\\smoke\\program.bin",
+      "sha256": "3B9BD54C01F72F6EEE8B0375A78EDF93FB081AC7B41250163C39F3EE347BB0B2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\wrong_LOAD_result\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-negatives-v2\\wrong_LOAD_result\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker-v2-correction.json",
+      "sha256": "EBE96D17C401FB37093EE7BBAB92013CB75B3823F6EEB2EF23CBFF3C9DE2F2C0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker_negative_tests.py",
+      "sha256": "C9BD9436D271A07853BB926AB494459313381552A007315416CC6BF7571A2101"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\checker_negative_tests_v2.py",
+      "sha256": "0CDD3ACE4E746D62C7D13F5511EE3FABB109295A65C45F0472BA5F8E4FF9C0DF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile-diagnostics.json",
+      "sha256": "6B665736B3F12FF771AF5745C2A9ECA5A796F154E9483CA0466FA0A6DBE1892B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile-plan.json",
+      "sha256": "0FC188F9C3FB0512D0AF27EC2056581BE18C536938DFE6A218F143C9283A8705"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\compile-result.json",
+      "sha256": "3330FECFF0F03B453114EB9D4961442770F861DA88D0859F221AE56A86B084E1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\cpu_program_reference.py",
+      "sha256": "DCCA487CEE7D8FB941665658B946747EB4933E407C7EA492259D53847B666BBA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\finalize.py",
+      "sha256": "F736387088DAD76EAB942AC74432B1E86DA8340D759235581DF29CBE71C781F5"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\link.ld",
+      "sha256": "2616CB1A27B60FCBA98C0D5E73267A8E5CAA39FB05AA46A2D6E34B6C99914A6E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\start.S",
+      "sha256": "50D3AD9F9D591DE5007665FF074B21E94812548A9B0972416954E569F6FC9DDC"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\timer.h",
+      "sha256": "61F1F30134CBD034ACD2887344F44293AE5B82251B1FD6CC5B79A2DC4B8BEADC"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\firmware\\timer_smoke.c",
+      "sha256": "0E2555ABBCBDF602D0E52D92E0FDBAD35E8AED3E1080F3F11332B18E46E8F83E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\frozen.json",
+      "sha256": "19F90BE5ABF264483E14C0EC88EF194BDB79EAB42ADC41E06D34EF97988A4FFB"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-compile\\process.json",
+      "sha256": "2B7F642A15F24E9DD7C486996AA796C9486761519C2787DC7A4108B392D1062B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-objcopy\\process.json",
+      "sha256": "DD737FA105CCBD9BB5162F7792391D5FAACCEB7229905CA9F557762A28E11480"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-objdump\\process.json",
+      "sha256": "E73EAE8D7DBE372E12C796842C6B22CDBB583D5DA784FEB18F52A79972673EA4"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-readelf\\process.json",
+      "sha256": "2DB45FCA61F4DEA96A2140DD7C835E447C85E8799A855480A2841C181064F79F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-performance-undefined\\process.json",
+      "sha256": "ADDFC16838F709BB6CE8B8E0BD8444B768B5BA0FDF4EC6B5BA9632D596C9645E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-compile\\process.json",
+      "sha256": "F3774E84220CFCC3320D8185727125FEC0AEB9A14B9334F53420C2D42D5AC461"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-objcopy\\process.json",
+      "sha256": "48B7A5A841E554C20DB4B1E86D1B92A3A9BC2E3A913EA07D34908CD876B10879"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-objdump\\process.json",
+      "sha256": "E414EE691153F773ABB14A7A33BAF172DBE75F2DB55E0931A534D967137D92E0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-readelf\\process.json",
+      "sha256": "27166BBD26E2CDAA19458359FADD76F301D72AF8843B6C89704967649B9A3E2B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-smoke-undefined\\process.json",
+      "sha256": "4CA455FFA1FEF0BE580E5102E52D9779F788CA8CC38EF4D491D5FFD04931F9D3"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-compile\\process.json",
+      "sha256": "673D327F84BF819E55F95550DFB3962D4F922E17883AE0C803E89EBFA9CB3837"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-objcopy\\process.json",
+      "sha256": "BE4B5B7695BBCF3ED21324867BCA70446AA981191083C9952465178F9F3E13B0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-objdump\\process.json",
+      "sha256": "1607F90A2DDF1181D3F0D9EB76E71FA2213A313FB2368B2C98750C677B40B7E5"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-readelf\\process.json",
+      "sha256": "417A4DB10556961E9E0979CF5471A4F4B837068AEC6FBC6F6871CC6D3B81BEC3"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\build-validation-undefined\\process.json",
+      "sha256": "CC87DA6460E1E354870016BB91C72A1FAC357EB2668073CDC9C34CC3ED354EC4"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\compile-baseline-N16\\process.json",
+      "sha256": "008625526C34933EC64D3DEFAFBE3269026F8BF51088CBB9E625636544A13EF7"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\compile-baseline-N234\\process.json",
+      "sha256": "5A4722566A8EC5E626C3B4C53BE8C0CE56BBE581F09EFF3176DD4C1D8CA0ECEE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\compile-performance-N16\\process.json",
+      "sha256": "F14ABBEC5E392E3EA745BA809A208AA2D243C0D91A7204718F5CD2608B1183A4"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\compile-smoke-N16\\process.json",
+      "sha256": "07CDE0118CC86A4D67DCD24123D98949CFE094CCB7F4FA885957E9138186CF12"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\compile-unit\\process.json",
+      "sha256": "003D9E8C70B40C5E0F563CC9504C85DCAAE3BCB2530101362F5010CD9B0BE472"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\compile-unit-v2\\process.json",
+      "sha256": "2C24AA07F2C44429A03E3F13180C84F7ECE42C25F1017F5806D2FAB427DA9804"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\compile-validation-N16\\process.json",
+      "sha256": "412DEEF031494BEBEC4C18C444DB04E001D28403611BF174FE664F4AEFD1CC5B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-baseline-N16\\process.json",
+      "sha256": "14E0144122B201D3279CC46D968A36801013241D594C6440AF573A90D4807CA2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-baseline-N234\\process.json",
+      "sha256": "12595959F364338D134078321B52E478400B4A5E767340327C45F195132AA68E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-performance-N16\\process.json",
+      "sha256": "1FE7FC4826EAF0456F25865E840F3D373EB29486A6280D9A05D3F840C31885B4"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-unit\\process.json",
+      "sha256": "A1E11C68D100992CF116F11ECBBFB6F2FB902CFEF468D43CBAC05E11FA0455FC"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-unit-v2\\process.json",
+      "sha256": "6B906ADC9330B50038EB1A43553D5A2450484C6D599A7A64125BF56BE0161736"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\logs\\run-validation-N16\\process.json",
+      "sha256": "D7862343F5359DE312B8663CCAC6B47448542488E8259AEE2EB9133DB8DFBA54"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\manual-plan.json",
+      "sha256": "A2F3AB40532B513A75F00D52E5635E5FF27F4443A211266DFFD054F7BC18BE03"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\models-before\\cpu_program_reference.py",
+      "sha256": "D25AD2F09E1D0E9E4BC91777E9E897A6FF217A90904F301562C13629FB8A3D08"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\models-before\\peripheral_checker.py",
+      "sha256": "E5BB96110DDF7B6BBD761D6A1922E83758DC71746B1813C3D851BD1DEC57677D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\peripheral_checker.py",
+      "sha256": "E5BB96110DDF7B6BBD761D6A1922E83758DC71746B1813C3D851BD1DEC57677D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port\\core_portme.c",
+      "sha256": "B7E095F4EF41CCA50D3EDC1E6FB6D0B773C504CF2796496C790E89E403F6F621"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port\\core_portme.h",
+      "sha256": "24119A04D7C23C0BDA6F31FCE68869D75A00B1B0611D9C46C155F64891542586"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port-before\\core_portme.c",
+      "sha256": "16F8F09C7B8FDE168D9597573153EE2FD78F1CA112A320CBFF5C47A9E39EF6A8"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\port-before\\core_portme.h",
+      "sha256": "27AC2CC81ECB7A920F88DFDCCF6B01FF29E2964A326FE4055DD433A160540D89"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\postflight.json",
+      "sha256": "B86515EF31F0094D2AB43BF62960FE7EABF90775F52CED6251C590174259FC36"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\prepare.py",
+      "sha256": "8595682E1C727F01F85F472F2C3EC37300FD294636316B82E00FC243224FFD35"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\protected-originals.json",
+      "sha256": "2508EF5F17C22A184E81834DC7195186765BE80CE0A90A093098BBF9335D28AF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\quality-window-analysis.json",
+      "sha256": "D3EEC6D4E442C9954D1789AD5ABD88CB6C259287FEAB2A53B79F17B7812E713C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\run_stage.py",
+      "sha256": "A08083086A7532ADD99EE4B9BF9F5F684A965CC6A9F902A1ADF0C74AA6003BEE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\baseline-N16\\check-result.json",
+      "sha256": "BA0372988CDB202E50CF646A0B3E0A6E9ED0366863039F1085E00DB195D263BD"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\baseline-N16\\process.json",
+      "sha256": "14E0144122B201D3279CC46D968A36801013241D594C6440AF573A90D4807CA2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\baseline-N234\\check-result.json",
+      "sha256": "146F554F9D7E72F50C68FA643A16A307544BD2021AAD31758C6F2C4E9B7371F4"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\baseline-N234\\process.json",
+      "sha256": "12595959F364338D134078321B52E478400B4A5E767340327C45F195132AA68E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\check-result-v2.json",
+      "sha256": "1142A5E144140D78E26AA7B4F66D598970FDA5F950B28087236EAEA47B45DEDE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\check-result.json",
+      "sha256": "CF0BA9134F4ACBED00B95852CAA768E59B9CEFAD43AF6417CE16701AA19F0718"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\process.json",
+      "sha256": "1FE7FC4826EAF0456F25865E840F3D373EB29486A6280D9A05D3F840C31885B4"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\wave-review.json",
+      "sha256": "07F0C9777C564B97634AD465EA78C240028CD6C1D59163D188C586DD83B0037F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\smoke-N16\\check-result.json",
+      "sha256": "5288F0259F2AD221218DE7CEBE07C3A0312478743652DEC68E424F71066BDD9E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\smoke-N16\\process.json",
+      "sha256": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\smoke-N16\\wave-review.json",
+      "sha256": "7379E99E943E1D481DBF77B1896BA215BF663856C7B3E36B96E03F47C7884D80"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\unit\\process.json",
+      "sha256": "A1E11C68D100992CF116F11ECBBFB6F2FB902CFEF468D43CBAC05E11FA0455FC"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\validation-N16\\check-result-v2.json",
+      "sha256": "E765BB6B50C6C692706252F28386D94170D537B342AEBB2B9D138BF1374C9756"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\validation-N16\\process.json",
+      "sha256": "D7862343F5359DE312B8663CCAC6B47448542488E8259AEE2EB9133DB8DFBA54"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\validation-N16\\wave-review.json",
+      "sha256": "A8F4C8E1BB2DFE908AEF04FBCBD08197A655AA0D27B30875A3DAA18009D158F0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\memory_model.sv",
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\init_tables.svh",
+      "sha256": "B9BE4F5A86B9E18DCE7B65937DBAA1FD60BFF285B103CBAA5C17839638EBBA08"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\memory_model.sv",
+      "sha256": "D477C7D6E8BF6052240EB009FA993910485EAC0C0A5094DA288EB9634A3C1493"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\soc_data_adapter.sv",
+      "sha256": "5631D65BEEC48409BD959C260392671CC315BCB7A83F9A4D480D0267CF5FC739"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\soc_top.sv",
+      "sha256": "E502EFA2F0260C95CA5615C3FB5D6FF3519A5BAA8DC78A6B5D9359D6C5733ABB"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\tb_soc_txgpio_m1.sv",
+      "sha256": "0BA91F4AC163E52A7EE2EAAE5300C829F18228EFE7D85985F6D2E89493269F92"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\tb_wrapper.sv",
+      "sha256": "ACF2B27DBE487D524F535FC8B2C5AEE25444D2C41ED5D22F0EC65F6E9ACCA5C1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\source-before\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\summary.json",
+      "sha256": "63720336CC957C6E5424FA48A7AF0A0EEC3EB17395BC271B0C010A85296E7ECE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\tests\\tb_timed_system.sv",
+      "sha256": "FBC5577A8C80BC87974D381E1068B0C60395CDCE7C5ABBD95D6FB656CB5E052F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\tests\\tb_timer_unit.sv",
+      "sha256": "54FE4285034BF7A414928914F3EA58A6E0FEE6958D81388C07BDAB1C82637ADE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\tests\\tb_timer_unit_v2.sv",
+      "sha256": "DC5210CE673722A1A361B9B4476755583E99979BB33CF2C7A00751B1A4E4443F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\unit-v2-compile-result.json",
+      "sha256": "45D4CD21D1CE558AE9F80883280D2FA16CA756B9EC723EC89C28C752DA722C51"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\unit-v2-plan.json",
+      "sha256": "7521AF2F4E9151D86053F0892448CDD020772FD0EF055C45DEED88A24974A51E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\unit-v2-result.json",
+      "sha256": "617680B28B6791A63C223328E283761904F9AC41AD87047085DEC55970551ACA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\unit_boundary.py",
+      "sha256": "40F45989B6C28F39E4D16B3BBC83CFB46512D7B5CB0763AE960FF0C2A29C5BD2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_list_join.c",
+      "sha256": "CA00E4E010ECE47D7F040CB92AA50A95345A00D3171B59D088F6B243BE06CE7B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_main.c",
+      "sha256": "17884C93C5B94378EB0FF02B4DF3725756CF2ADDB9B8CBCAA6200A4649FF5CA7"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_matrix.c",
+      "sha256": "ECDFF717B5A5C4907D221A606760E25499899CBF617582C05D40DB71C91351E4"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_state.c",
+      "sha256": "F4B84BB0A3452C45A4DAA664AB502BFDCCBD31CB57D93E9AC490C60937717A4E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\core_util.c",
+      "sha256": "A3FBFCB9BB943B638624B8ECE01C5836DD56A96D7BCDE2697B248D077447327F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\upstream\\coremark.h",
+      "sha256": "42642B9A06C7ED2B3BD9EDA971B7C3868C4F5D27BF7EF6C4BBA11291A0C2598A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\wave_review.py",
+      "sha256": "3920802CC2D7D6879960E6CA76103DFC58EB90B79ECCB2CCB08098F6CB158ED6"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+      "sha256": "73A4DC428A369FE4FF6F6995BB9D79B58C0963E5812E6E9BFBAAF85DC237AB60"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_GRS.v",
+      "sha256": "DAE720BCC467DDB4FF99F2753368934E2649B87F6AC63B8A0D7219699BAC1DEC"
+    },
+    {
+      "path": "D:\\PDS\\PDS_2022.2-SP6.4\\bin\\pds_shell.exe",
+      "sha256": "631FFD8F14D6246872873C72025CBC2734C9F8C388075B7AFB0B042F3A684E6F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-24-board-top-m1\\evidence\\archive-receipt.json",
+      "sha256": "6643DAED9CB15E5F8E6047449C96306CDC60B52C5D0B9F6D3533CBFFEFBD2A9B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\firmware\\board_smoke-before-compiler-fix.c",
+      "sha256": "04CF6F746AE0A61DFC92B355334E64E9C68C49023679B14991E2774BACE68D97"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-objdump\\process.json",
+      "sha256": "A5030919F5C1D16EFA4AD58966DFB07C4852C7A2FBF4664DE7FCCC74ECBF9975"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\compile-plan.json",
+      "sha256": "C16907486F65090642B760192630D28B0231CB3C0EC024A6464F2D59DB4F36EE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-objdump\\stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-readelf\\process.json",
+      "sha256": "305765C7FE58CEF9091340F12E70F3E90241FF27166DDDD5F6D47B8A00806E99"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-gcc\\process.json",
+      "sha256": "4B2F0BC66E026F1B4D341137A4CC6963ACA887E22ED5D0425FAD7EDE884551CD"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-nm\\process.json",
+      "sha256": "5C5FE44E9328FE150E8E5B01DC2AE888A564CCF2DC8D3FF4E25FDFE3BE632A65"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+      "sha256": "F795429A74B30249A0FC337DC31614F6FEE265701A972844D830D1EB70CEE4AD"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\firmware\\start.S",
+      "sha256": "50D3AD9F9D591DE5007665FF074B21E94812548A9B0972416954E569F6FC9DDC"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\models\\cpu_program_reference.py",
+      "sha256": "DCCA487CEE7D8FB941665658B946747EB4933E407C7EA492259D53847B666BBA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-gcc\\stderr.log",
+      "sha256": "91922CC11B2E44B384A17A6FB9597674002C6EF8751F882A581A4C69DE9C118A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source-before\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source-before\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-readelf\\stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source-before\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\init_tables.svh",
+      "sha256": "E81FD2B446C2446C2D32DB0D45C9BEDA54D0A6A5B670064F021125E8C7E22E1A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\stage_board.py",
+      "sha256": "A7C0047547CBB15EED0D26E4A98C189AAB76495E76872F88C01475BB7E59046A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-gcc\\process.json",
+      "sha256": "098FE513A39C4A363EE7E594B6D8B4308EB825075D26E74E0F6FA006EDA3CD13"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+      "sha256": "9AB395ADA4E901A56A16DC7753275488885F6960BF31CDF5089A8A9E59372643"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\board_top.sv",
+      "sha256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-nm\\stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source-before\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2\\program.map",
+      "sha256": "F7B53BB663E85F238E1388DCED72166947F17C87905E52154BC30E43EC25376E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source-before\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\cases\\board\\source\\init_tables.svh",
+      "sha256": "E96634B0EE3680627686A5EC6EAC21FFB31B39C47298EC14619101B9D73512DD"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2\\program.elf",
+      "sha256": "D5E45294DA76D06CFB604312E41297332918531039DB27631062575DEBB8034D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source-before\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\APPROVAL.json",
+      "sha256": "F29B736FB282FCBB721A4845A1D5C0935FA740FDB60D01CB142057D6F84627EC"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+      "sha256": "9FD3AECDD6AE127A5545709F44F8F154B4A39898B021FE87D2991947B0A235C5"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source-before\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\models\\peripheral_checker.py",
+      "sha256": "E5BB96110DDF7B6BBD761D6A1922E83758DC71746B1813C3D851BD1DEC57677D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\clock_27mhz.fdc",
+      "sha256": "5E5AD8102827936D9816EDB370B779006E8801FE9C0853A8257FC2F6DB3BED4F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source-before\\memory_model.sv",
+      "sha256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\firmware\\board_smoke.c",
+      "sha256": "D81343FDEA016B65E848FB2AD9FFBBDBF23AB728D41F0F7299E1E8BB9109734D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+      "sha256": "307D930A497551A94C7459AC49A947C842C320D28EDA485C844A79FCE1CE7641"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+      "sha256": "CA108A4AF50D50770A39D0462704C881102CEEEC8AB3037DD02AC9D6829097B5"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\models-before\\check_timed_v2.py",
+      "sha256": "33940ECAC918B21126B4D681BC335B522BAD691FD7758CA0DE4C2CCC6135ACF1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\manual-plan.json",
+      "sha256": "5C22BD9C041EDF10BCDA44A918BB7AFF136486ECA3F6A4F8F58CF1C43FF995D0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\memory_model.sv",
+      "sha256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\build.tcl",
+      "sha256": "BD20DDD858C625294ADA6FAF51E6E1032E7ADB3E5A7EE94E40076307F9B17E51"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-gcc\\stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-gcc\\stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\tests\\tb_reset.sv",
+      "sha256": "E5B35C0FA57DA3DCFB4F8393960284C8531C79E1DEA13C765747EF8E213B9200"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\board_reset_sync.sv",
+      "sha256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\models-before\\cpu_program_reference.py",
+      "sha256": "DCCA487CEE7D8FB941665658B946747EB4933E407C7EA492259D53847B666BBA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\tests\\tb_board_system.sv",
+      "sha256": "064CAC3BC2A613A7D41C521791E976985F9C89CA9B60D09DE480369E0F9C0933"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\memory_model.sv",
+      "sha256": "7DB1F8A1049D447D7C8A459FFEDC60680E25AD30B7A2368229B171EB69F07BAE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pin-plan.json",
+      "sha256": "98C8C7BAC6B034EC534F30774FD797C026E9B1E510A725FEA53D19BBC8A6EC3B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-objcopy\\stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\check_board.py",
+      "sha256": "FC279E81BF3971AB6771B40E6E5B11990B2641C1B95E278B424F320B46C5AC46"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-readelf\\stdout.log",
+      "sha256": "CD82D327C88B9F58AA55EB74C2E23D972C9C813B36EA1EFA25782BD9B61EC645"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source-before\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-gcc\\stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-objcopy\\process.json",
+      "sha256": "603911BD5FED282AA1783E87C4633AFC066B0737975A57F3C72D3C6BFD140702"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\firmware\\link.ld",
+      "sha256": "2616CB1A27B60FCBA98C0D5E73267A8E5CAA39FB05AA46A2D6E34B6C99914A6E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\models-before\\peripheral_checker.py",
+      "sha256": "E5BB96110DDF7B6BBD761D6A1922E83758DC71746B1813C3D851BD1DEC57677D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-objdump\\stdout.log",
+      "sha256": "BC2945CCF0829367580D518462A55E2C2C1FAFA53F4F675934EB4EDCAC4EFC1E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\IMPLEMENTATION_SCOPE.md",
+      "sha256": "52BF82E365D3735BF930D95176C085A1164DC4152F62F13F1E9EA49606D92F42"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\source\\board_top.sv",
+      "sha256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source-before\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-objcopy\\stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\board_reset_sync.sv",
+      "sha256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source-before\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\build\\board-v2\\program.bin",
+      "sha256": "FA008E4E3E83E6973AE54BB845AB9E534EB53F62519E27E0ECC2A0C560B4F0D0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\model-preflight.json",
+      "sha256": "36A106791EE4A948945171E05CF2D46450144E34517A6533BCC33D4B25F0C3E7"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\pds\\board_pins.fdc",
+      "sha256": "A743F06FC1DEA2F9BA1CE299F2D222F713AAB68E71EC996E4BC828DFA9804DB1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\firmware-result.json",
+      "sha256": "E4078F05CC44D77CB9EC687CE7FF85C9FDCA3D0DE3CDBF181AB297D9E61407BF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-top-m1\\logs\\firmware-v2-nm\\stdout.log",
+      "sha256": "03E3B849966CD9D4F40B67466C5FD7B88C98C08DC7C48D2CA9CA1F4087EC8E54"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\APPROVAL.json",
+      "sha256": "41BA3502E0AC7AA646848F232158C6D02486DDE4CE397F6AEC33B4ADF1769FD6"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\build-result.json",
+      "sha256": "228E3949654576DEA9B71AD51F2CE11E241552DD99CC42B77741584A92BC0F11"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\check_coremark.py",
+      "sha256": "07EFF8FEDE6294088692517D7365FE55B886B12F92F2225BD527F2621311E9FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\compile-plan.json",
+      "sha256": "8C49ADDD124B704071739769BCEF4DD70334E30255E981E724E172ED134A0CAF"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\frozen-case-plan.json",
+      "sha256": "DDF8E0896D059F30AFB8E2D5C99097CC60BBFE2D1D1FEA9B687F711DF7EF09C5"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\IMPLEMENTATION_SCOPE.md",
+      "sha256": "31ECEBCFA8C4F6D069935F53EC92D3FEEAD07CDB4959709930AC12D292879908"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\manual-plan.json",
+      "sha256": "A2F3AB40532B513A75F00D52E5635E5FF27F4443A211266DFFD054F7BC18BE03"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\stage_coremark.py",
+      "sha256": "86231B8548D26BB16D0865103C77EA1CA7A3BDBBC598BC6A3E8F5E3A65C863B9"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\models\\cpu_program_reference.py",
+      "sha256": "DCCA487CEE7D8FB941665658B946747EB4933E407C7EA492259D53847B666BBA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\models\\peripheral_checker.py",
+      "sha256": "E5BB96110DDF7B6BBD761D6A1922E83758DC71746B1813C3D851BD1DEC57677D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\models-before\\check_timed_v2.py",
+      "sha256": "33940ECAC918B21126B4D681BC335B522BAD691FD7758CA0DE4C2CCC6135ACF1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\models-before\\cpu_program_reference.py",
+      "sha256": "DCCA487CEE7D8FB941665658B946747EB4933E407C7EA492259D53847B666BBA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\models-before\\peripheral_checker.py",
+      "sha256": "E5BB96110DDF7B6BBD761D6A1922E83758DC71746B1813C3D851BD1DEC57677D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\board_reset_sync.sv",
+      "sha256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\board_top.sv",
+      "sha256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\memory_model.sv",
+      "sha256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\board_reset_sync.sv",
+      "sha256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\board_top.sv",
+      "sha256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\memory_model.sv",
+      "sha256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\source-before\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\tests\\tb_board_coremark.sv",
+      "sha256": "44B3DDB1C6B0213B34FB4025E1D2E3226B380F1F4F169C76C281A557107E0F0F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\build\\performance\\program.bin",
+      "sha256": "B4CEEC1B250A5151C1D02F018FC45B3D22CDC049E12E26EFC2A0562D23740E60"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\build\\performance\\program.elf",
+      "sha256": "BD38A6A4CD131A099954215504464A8AFDF130F89D1F9815C91EBEEEAD9BDB95"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\build\\validation\\program.bin",
+      "sha256": "26B4F9C2900141EC2EF3A19F4C75C831ED62A1F6E02B34C441501B0FF4E84429"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\build\\validation\\program.elf",
+      "sha256": "E2BEC75900D330237FC80F1BF798DF87EF0372B1D527BAAFED806317E75626FE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\board_reset_sync.sv",
+      "sha256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\board_top.sv",
+      "sha256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\init_tables.svh",
+      "sha256": "E81FD2B446C2446C2D32DB0D45C9BEDA54D0A6A5B670064F021125E8C7E22E1A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\memory_model.sv",
+      "sha256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\performance-N234\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\board_reset_sync.sv",
+      "sha256": "BE24D161CFB60F7C4D2C2EF0CF53A7D98049915189DBF150A6CEED6129070152"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\board_top.sv",
+      "sha256": "AFC24C2EA643FD75AA4FD2C3E88B70B985A2BEE481A99A2ACD92224F16946478"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\cpu.v",
+      "sha256": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\cycle_counter64.sv",
+      "sha256": "1351AC5674A5DF18F937205FE34CF8F6C27EA966215EDBA23B445F8FC646FA2A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\init_tables.svh",
+      "sha256": "8713B82EFB4C0D7A26F7D2F532863E6365B119F1B84E2AA870A254CE1E673054"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\memory_model.sv",
+      "sha256": "F673773641F1D4BA573EFB0EA4F5BF81CDB8D570CECA2E598C116AD2EB133D27"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\soc_data_adapter.sv",
+      "sha256": "28D9DEACBBEEB35FA18E8767B01B0ACD835EA0009759CF370DBDBE77392C5229"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\soc_top.sv",
+      "sha256": "EB6FCF028CFB40F3036A7B0CA2750043A277C7515C2877D5299C7D355C0CEC6A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\cases\\validation-N234\\source\\uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\performance-N16\\ram-output.txt",
+      "sha256": "7CFAD89D76DE3D8E0459487A1352DAFB7E7BD5A90D60909940F54A54A825D3D2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-timed-coremark-m1\\runs\\validation-N16\\ram-output.txt",
+      "sha256": "D30594959A0504DB76566A7BF5F2D8C7A69EA67154C6D53987145E8A116F9A1C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\audit_uart.py",
+      "sha256": "FF74912B5CDAA4B9B971D1887F545997363D19FFAAE24A643F55AA28AE6C54A9"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\audit_wave.py",
+      "sha256": "7AEC9A1E3A2D7450904FA1C594D2A2900A273C8FE105F4C77439CD7A07EBFA9C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\CHECKER_DIFF.patch",
+      "sha256": "0D6106DA9CFB84A57E2EA4332B8F398A7C77B4C3966BEB03B6D46DFFFE499A9D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\COMMANDS.md",
+      "sha256": "BA3922EE16D03D93FA03909983299A066BA7B9EE7348375FD1490895BC44B013"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\compile\\performance-N234.vvp",
+      "sha256": "7F307FF5BB2250662707E110176D3540B11DE3E545F361B28088F6F03C03D0FD"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\compile\\validation-N234.vvp",
+      "sha256": "D375602E41B4C10EABE3E385B0415B7A0355181EAF9D993CCB4EED5C96486762"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\compile-result.json",
+      "sha256": "B34AEB915F50559F5AE1E283ADB60ACBE4DE2EA9219027C5A022387797694CC3"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\consistency-receipt.json",
+      "sha256": "E3FEFD19E79FD23982998386FD177F66E5D8BAFD82B1766D4F1A2BC16A936290"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\frozen.json",
+      "sha256": "5130A6BD2B123F574BA25451EB70F4D5DE1D4E51C3F6E62E8466ACAF9E8B3197"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\logs\\compile-performance-N234\\process.json",
+      "sha256": "717EF8A17B6E203FC1DA265A4EC363233F3240D88F288DC1A87677EEF332DA31"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\logs\\compile-performance-N234\\stderr.log",
+      "sha256": "C65B491B2DC0504B037E3E5E4BBCE99B9BEB7689F11A3B802DDA4C50C3BE780F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\logs\\compile-performance-N234\\stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\logs\\compile-validation-N234\\process.json",
+      "sha256": "B81FF52DF155341A0B7C5B50411B18DE260D03BC27DFE2047FBAC2BE074B8413"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\logs\\compile-validation-N234\\stderr.log",
+      "sha256": "5751F3816E2A491A23F2C1840DC8CBDE4B9AFA0C117483B400201C295A5176DB"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\logs\\compile-validation-N234\\stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\logs\\run-performance-N234\\process.json",
+      "sha256": "C988DB6FB837F241A2FF584DAAE7B59C15C93B84EA369825D3D5248E44DEA6CC"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\logs\\run-performance-N234\\stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\logs\\run-performance-N234\\stdout.log",
+      "sha256": "064E5C1330C8742C2D43BC1020773EC76B9A72B8A3D5C77CF0CEAF7F60B9C47B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\logs\\run-validation-N234\\process.json",
+      "sha256": "F7D4B5965D53AF75F36B41FD05D3037615129AD35C38AF1B8430D81D2CDFA5A2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\logs\\run-validation-N234\\stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\logs\\run-validation-N234\\stdout.log",
+      "sha256": "CE547E21995D99E5C6E413E46DA7903D694167D78F9759D7967070913A218BC6"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\NEXT_QUALITY_SCOPE.md",
+      "sha256": "D2C1EBC0FD364F98C29471387900E9EE0F48D93A8CEFDDC651F5A4471DC69BFE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\performance-observation-audit.json",
+      "sha256": "AD69D504A5DF2C762FA0C47C29703BC87BCAD76A66AF71D6BF2D07DB3754237F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\postflight.json",
+      "sha256": "F364DAB279A50A06A29655937FA6F6B1905C50F85A5BD0B2E7B6D1BA46D3D41B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\quality-compare.json",
+      "sha256": "EA413959E22BDACC9A12CBAD1862C281245E4878A69ACEDE4C58E1942090FDD0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\quality_compare.py",
+      "sha256": "2BA3BC6696988E204279E226BA6952C5F450D4834D4BF7263C4B23B2B7E5C3BB"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\RESULTS.json",
+      "sha256": "7A385CDE2D8079BE217B79778C383623DF6025C0C516C6AECF5B79FCB7B52C5F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\bus.log",
+      "sha256": "4A1FD1559E15966AC068BEE55A76BAB4A7BC2C31D2183353F9326BC1916EFA98"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\check-result.json",
+      "sha256": "41069A454D56B0F0655D5E0A29491A6D633F05CB9C5F903B5F53E776AC5F232D"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\process.json",
+      "sha256": "C988DB6FB837F241A2FF584DAAE7B59C15C93B84EA369825D3D5248E44DEA6CC"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\ram-output.txt",
+      "sha256": "7CFAD89D76DE3D8E0459487A1352DAFB7E7BD5A90D60909940F54A54A825D3D2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\ram.hex",
+      "sha256": "F21B089CEF81B43B87D693338B57773E5637E32047F2873E09514341DC342CA6"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\registers.hex",
+      "sha256": "1FAB413A954E1CA318E3EF9642FDAD9BBDA49D67B88D89582EB36C7574D08C3E"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\stdout.log",
+      "sha256": "064E5C1330C8742C2D43BC1020773EC76B9A72B8A3D5C77CF0CEAF7F60B9C47B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\trace.log",
+      "sha256": "F29BDA82EFF96A09DDD93ABD2C2B4970AD6C369B506712C2F7A899781ED5007B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\uart-pins.log",
+      "sha256": "764769BCC34F19F4D09DBF024DD33523DA5E47123639A145ED7D09A841FD32E3"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\performance-N234\\wave.vcd",
+      "sha256": "E585625B0528DE8095D21A85EE6DB8CBF9517FAD944834D1438494DF3EE0E1E4"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\bus.log",
+      "sha256": "06D53F3F0A77FADC604A25E4C5B88D53B52467E3403989F3002FC35795A9C0CE"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\check-result.json",
+      "sha256": "3E044018F2ADB7D1F17270D9DA3957AD3E2624481B17CC41F3C953C96354A4D1"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\process.json",
+      "sha256": "F7D4B5965D53AF75F36B41FD05D3037615129AD35C38AF1B8430D81D2CDFA5A2"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\ram-output.txt",
+      "sha256": "D30594959A0504DB76566A7BF5F2D8C7A69EA67154C6D53987145E8A116F9A1C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\ram.hex",
+      "sha256": "15C36D5144ABCFD0DA362F5C01DA4CCB38C93513451ED6571A3C57267A2A319F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\registers.hex",
+      "sha256": "75F3CA6AF81675CC3633D94AC8CE89E67005A8A5A252E74F7A02BB15C9A12D7A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\stdout.log",
+      "sha256": "CE547E21995D99E5C6E413E46DA7903D694167D78F9759D7967070913A218BC6"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\trace.log",
+      "sha256": "A01D7E4FEFE607AD443F554334440B862BAA026BD0AEDEC6D6887EDE8301C3AB"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\uart-pins.log",
+      "sha256": "A658E82B9DE532518127D6EA9214FC751D7142381F4B98A3D001024573708A83"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\runs\\validation-N234\\wave.vcd",
+      "sha256": "601A7ACDBF0BCC2E396D969CF247DA355E1A161EFAB5E957D18C702536C36727"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\simulation-result.json",
+      "sha256": "B1D808B60108FD87BBA2A8836BF650290C2A372CD9846366D245BDBBD59EB7B3"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\TB_DIFF.patch",
+      "sha256": "AF6B193D463D977D43B3BD890EF076D5ACB382E22FF4042175D8D14C5FF46781"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\uart-audit.json",
+      "sha256": "5FFD13A55AC85859D586F9CFE37CB15962BDB9C525C4A03425E98615E67A28E0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\uart-negative\\duplicate_change.log",
+      "sha256": "3906882784ADD73F8F9BDF9293CFCCC9DEAFEA4D247AE5E1F4CE0DAB8DEDC651"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\uart-negative\\missing_change.log",
+      "sha256": "BF113FC71E23980E6042AFBCBDA3B099880D9D92A8903BE318516AF02B968C58"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\uart-negative\\wrong_bit.log",
+      "sha256": "2FC5FDD3C977197BF9E593BF68F1BCC7C3686F180F4771E55B0824D1600388A7"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\uart-negative\\wrong_timestamp.log",
+      "sha256": "ECD1614FEBE41C926DEA715F54E178A1CAA1CC7A0DF5CB8CCE0232A356C16FA0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\wave-audit.json",
+      "sha256": "775788489A973A7C303C6967FFDD93B20C2F06EB0C188193EB91BA47E4D74F2B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\SHA256SUMS-final.txt",
+      "sha256": "E38B0130707C11B71427D237AC8377105796B2DB017A1AD38C4E8511840B70A0"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\fpga\\2026-10-25-board-coremark-m1\\postflight-final.json",
+      "sha256": "7BA3F52563104106DA137E5AF8D67F9670358958E897565E866D1DB42712A3FC"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-addr2line.exe",
+      "sha256": "2AFD7E6A608E8863F91660D1FF8DEC761BF8C46010A2E4798FEB2303435AD5C7"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-ar.exe",
+      "sha256": "CD0E393A1AC6C2520AC9CA73D8420AC54C12FCFCD2590E2A54738D541232346C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-as.exe",
+      "sha256": "D6D156D52FBF69F31A60F689570FAC975A8B800651E6D6D28EA471F0BEF91D5A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-c++.exe",
+      "sha256": "2913DD0FA89ED616FCB03E79608265359F048032B52B52D4021DF812FAE44D68"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-c++filt.exe",
+      "sha256": "32971C804BAD11C2BE7CBBF5EB89AE8A186C4C191C5ED52FA7F6E863E96E1B85"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-cpp.exe",
+      "sha256": "8C3A0EFE61C50FE27B125BB13BFF9C361711AA7D333D41D8383EC684E4722A61"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-elfedit.exe",
+      "sha256": "138B2EF4EA7BC6F1A7D8F9C9709A58F71EF23AB69C85C8E127FC9A1C0109C5F7"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-g++.exe",
+      "sha256": "2913DD0FA89ED616FCB03E79608265359F048032B52B52D4021DF812FAE44D68"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc-15.2.0.exe",
+      "sha256": "9FD3AECDD6AE127A5545709F44F8F154B4A39898B021FE87D2991947B0A235C5"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc-ar.exe",
+      "sha256": "EAA53B734E273E8AFA7D85A635454F40475718EB1E1B70DF41BF05733156F8D7"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc-nm.exe",
+      "sha256": "892149351AD36A557A02A53A9845E5C6929D340F76D5207C16A2CB6011D26473"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc-ranlib.exe",
+      "sha256": "C8E0AF4BB493E610D66F7C6A8A9030D04ADCD7E01F0B9F020B3DC600869E7B9B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcov-dump.exe",
+      "sha256": "93167FFE1FD8497105479FCA45C6EBD501DD0DFB3654B767A2AEBDC1C63D239F"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcov-tool.exe",
+      "sha256": "1754835A1B7450B42BA3DA041D7D8A6EABEABA7979E3319257A23AA6EE6F8601"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcov.exe",
+      "sha256": "A72BB274788EF85836F583C0B1A651F0C2D8639A6EF81F6D23BC35732BD24D43"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gdb-py3.exe",
+      "sha256": "BAAFE97B16DBF2ED1A32542554B02A2256CD13ABD85D6BD60BF099CE02AC099A"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gdb.exe",
+      "sha256": "2A7082B0401E55B21D175E1239C64044A8956513414B141AE928C5933FBFFEB4"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gfortran.exe",
+      "sha256": "2EFA87C19A75DB4F09A1095ED05FFF39AC0BAC75C96A28BD0913BC26ED68A23B"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gprof.exe",
+      "sha256": "6A86983956BE3B0BFEEC2D9E79EC1A524177596B7E335983D5C705D85A090D63"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-ld.bfd.exe",
+      "sha256": "A807FD93CB04F577AF9B5B7D591990EA740771D778F20311FBC353DB2858FE58"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-ld.exe",
+      "sha256": "A807FD93CB04F577AF9B5B7D591990EA740771D778F20311FBC353DB2858FE58"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-lto-dump.exe",
+      "sha256": "19CE773273A5D003D098EA53251CD63AAA2C8BB8E6EE3C68D184800D44D3F19C"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-ranlib.exe",
+      "sha256": "CC1A591E1D56457B64EE262C01F7DF99AB2A1D37505FBEEAD3357913C3D2ECEB"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-size.exe",
+      "sha256": "CE371C825B03182484B209095043D9193D67C5EC9502320699C93933BB3D7FD3"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-strings.exe",
+      "sha256": "71088A00C4171116CB65690EB55F8ECABA01A008F5745948936BF13DC6A2E374"
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-strip.exe",
+      "sha256": "02F8F4B28777D9C7DCC0F1A0CAA1AD53FF39ACE34338DD30987176306E7532DD"
+    }
+  ]
+}

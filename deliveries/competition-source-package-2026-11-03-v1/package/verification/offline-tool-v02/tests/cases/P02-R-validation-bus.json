@@ -1,0 +1,19 @@
+{
+  "id": "P02-R-validation-bus",
+  "expected": {
+    "storage": "archive",
+    "stream": "bus",
+    "path": "inputs/archives/validation-bus",
+    "index_SHA256": "CCF5CAD927E28BB9B630E25DA20EBF394D849D6365BF99C27A3990FEEA5BDB1A",
+    "complete": true
+  },
+  "actual": {
+    "storage": "archive",
+    "stream": "bus",
+    "path": "inputs/archives/validation-bus",
+    "index_SHA256": "CCF5CAD927E28BB9B630E25DA20EBF394D849D6365BF99C27A3990FEEA5BDB1A",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {}
+}

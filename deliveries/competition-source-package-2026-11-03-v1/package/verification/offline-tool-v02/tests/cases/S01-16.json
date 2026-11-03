@@ -1,0 +1,19 @@
+{
+  "id": "S01-16",
+  "expected": {
+    "storage": "raw",
+    "stream": "bus",
+    "path": "generated/stress/16MiB-expected.log",
+    "complete": true
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "bus",
+    "path": "generated/stress/16MiB-actual.log",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {
+    "case_timeout_seconds": 180.0
+  }
+}

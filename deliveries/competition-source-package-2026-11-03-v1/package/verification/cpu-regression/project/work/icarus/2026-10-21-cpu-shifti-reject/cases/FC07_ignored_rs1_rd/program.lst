@@ -1,0 +1,4 @@
+0000: 00002283 load f3=2 x5,0(x0)
+0004: 0332830f FENCE ordinary RAM 0x0332830f
+0008: 00130393 addi x7,x6,1
+000c: 05a00f93 addi x31,x0,90

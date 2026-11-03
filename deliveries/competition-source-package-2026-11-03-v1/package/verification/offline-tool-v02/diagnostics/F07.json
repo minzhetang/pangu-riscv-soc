@@ -1,0 +1,12 @@
+{
+  "id": "F07",
+  "status": "INVALID_INPUT",
+  "no_difference": true,
+  "first_difference": null,
+  "neighbors": [],
+  "differences": [],
+  "error": "hex width/XZ/character",
+  "checked": 2,
+  "expected_records": 2,
+  "actual_records": 1
+}

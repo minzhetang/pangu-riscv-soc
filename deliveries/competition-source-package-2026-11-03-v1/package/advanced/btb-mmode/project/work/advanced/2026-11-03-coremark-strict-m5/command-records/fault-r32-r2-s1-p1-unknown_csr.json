@@ -1,0 +1,20 @@
+{
+  "name": "fault-r32-r2-s1-p1-unknown_csr",
+  "argv": [
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+    "-M",
+    "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-r32-r2-s1-p1.vvp",
+    "+IRQ=0",
+    "+IRQ_AT=1",
+    "+FAULT=0"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-r32-r2-s1-p1\\unknown_csr",
+  "rc": 0,
+  "seconds": 0.2029999999795109,
+  "remaining_before_close": [],
+  "input_sha256": {
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\fault-r32-r2-s1-p1.vvp": "d21261fc4e035640fdbbe1fa63b62f72bb2a2a9af20305cab60636138929da37",
+    "D:\\A_FPGA_Comp\\work\\advanced\\2026-11-03-coremark-strict-m5\\runs\\fault-r32-r2-s1-p1\\unknown_csr\\program.hex": "02110980f51097fb7323a133ed984bec8f80b8977a30054997cc3d347c236590"
+  }
+}

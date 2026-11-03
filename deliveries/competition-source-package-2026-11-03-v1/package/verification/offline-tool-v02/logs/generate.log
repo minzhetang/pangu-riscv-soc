@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "C:\\Users\\ANON_USER\\AppData\\Local\\Programs\\Python\\Python312-embed\\python.exe",
+    "-B",
+    "C:\\Users\\ANON_USER\\Desktop\\FPGA\\发给队员_盘古100Pro项目交接包_2026-10-18_v01\\work\\B-RETURN\\B-VERIFY-OFFLINE-M0-return-v02\\tests\\generate.py",
+    "--input-root",
+    "C:\\Users\\ANON_USER\\Desktop\\FPGA\\mainline-b-verify-offline-m0-2026-10-26-v1",
+    "--out",
+    "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\input",
+    "--mode",
+    "all",
+    "--sizes",
+    "1,16,128"
+  ],
+  "cwd": "C:\\Users\\ANON_USER\\Desktop\\FPGA\\发给队员_盘古100Pro项目交接包_2026-10-18_v01\\work\\B-RETURN\\B-VERIFY-OFFLINE-M0-return-v02",
+  "rc": 0,
+  "stdout": "{\"faults\": \"C:\\\\Users\\\\ANON_USER\\\\AppData\\\\Local\\\\Temp\\\\opencode\\\\bverify-r1-suite-20261027-v6\\\\input\\\\generated\\\\faults\", \"status\": \"GENERATED\"}\n{\"stress\": \"C:\\\\Users\\\\ANON_USER\\\\AppData\\\\Local\\\\Temp\\\\opencode\\\\bverify-r1-suite-20261027-v6\\\\input\\\\generated\\\\stress\", \"rows\": [{\"size_mib\": 1, \"name\": \"expected.log\", \"path\": \"C:\\\\Users\\\\ANON_USER\\\\AppData\\\\Local\\\\Temp\\\\opencode\\\\bverify-r1-suite-20261027-v6\\\\input\\\\generated\\\\stress\\\\1MiB-expected.log\", \"bytes\": 1048619, \"records\": 11155}, {\"size_mib\": 1, \"name\": \"actual.log\", \"path\": \"C:\\\\Users\\\\ANON_USER\\\\AppData\\\\Local\\\\Temp\\\\opencode\\\\bverify-r1-suite-20261027-v6\\\\input\\\\generated\\\\stress\\\\1MiB-actual.log\", \"bytes\": 1048619, \"records\": 11155}, {\"size_mib\": 16, \"name\": \"expected.log\", \"path\": \"C:\\\\Users\\\\ANON_USER\\\\AppData\\\\Local\\\\Temp\\\\opencode\\\\bverify-r1-suite-20261027-v6\\\\input\\\\generated\\\\stress\\\\16MiB-expected.log\", \"bytes\": 16777311, \"records\": 175921}, {\"size_mib\": 16, \"name\": \"actual.log\", \"path\": \"C:\\\\Users\\\\ANON_USER\\\\AppData\\\\Local\\\\Temp\\\\opencode\\\\bverify-r1-suite-20261027-v6\\\\input\\\\generated\\\\stress\\\\16MiB-actual.log\", \"bytes\": 16777311, \"records\": 175921}, {\"size_mib\": 128, \"name\": \"expected.log\", \"path\": \"C:\\\\Users\\\\ANON_USER\\\\AppData\\\\Local\\\\Temp\\\\opencode\\\\bverify-r1-suite-20261027-v6\\\\input\\\\generated\\\\stress\\\\128MiB-expected.log\", \"bytes\": 134217767, \"records\": 1395143}, {\"size_mib\": 128, \"name\": \"actual.log\", \"path\": \"C:\\\\Users\\\\ANON_USER\\\\AppData\\\\Local\\\\Temp\\\\opencode\\\\bverify-r1-suite-20261027-v6\\\\input\\\\generated\\\\stress\\\\128MiB-actual.log\", \"bytes\": 134217767, \"records\": 1395143}], \"status\": \"GENERATED\"}\n{\"archives\": \"C:\\\\Users\\\\ANON_USER\\\\AppData\\\\Local\\\\Temp\\\\opencode\\\\bverify-r1-suite-20261027-v6\\\\input\\\\generated\\\\archives\", \"status\": \"GENERATED\"}\n{\"block_boundary\": \"C:\\\\Users\\\\ANON_USER\\\\AppData\\\\Local\\\\Temp\\\\opencode\\\\bverify-r1-suite-20261027-v6\\\\input\\\\generated\\\\block-boundary\", \"manifest\": {\"expected\": {\"path\": \"generated/block-boundary/expected_archive\", \"index_SHA256\": \"AB170543CE61E9F28112BF5B84143D41B93A2C8D7B67B6A0074D9ED14B1AABD7\"}, \"actual\": {\"path\": \"generated/block-boundary/actual_archive\", \"index_SHA256\": \"B7C986B5CBA461D4DA301701C0FF06F76EFA8D4D5A735D4C9BE7651B372394AC\"}, \"boundary_index_zero_based\": 44268, \"raw_bytes\": 4198439}, \"status\": \"GENERATED\"}\n",
+  "stderr": "",
+  "elapsed_s": 56.328,
+  "timed_out": false
+}

@@ -1,0 +1,12 @@
+0000: 15500093  addi x1,x0,341
+0004: 00400a13  addi x20,x0,4 ; independent
+0008: 0ff0c113  xori x2,x1,255 ; WB->EX
+000c: 12300193  addi x3,x0,291
+0010: 00800a93  addi x21,x0,8 ; independent
+0014: 00c00b13  addi x22,x0,12 ; independent
+0018: 0ff1f213  andi x4,x3,255 ; WB->ID same edge
+001c: 05500293  addi x5,x0,85
+0020: 00f2c313  xori x6,x5,15 ; EX->EX
+0024: 07f37393  andi x7,x6,127
+0028: 00702023  sw x7,0(x0)
+002c: 05a00f93  addi x31,x0,90 ; completion

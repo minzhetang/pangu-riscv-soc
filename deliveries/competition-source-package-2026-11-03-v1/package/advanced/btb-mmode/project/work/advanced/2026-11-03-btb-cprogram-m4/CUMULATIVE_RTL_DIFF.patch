@@ -1,0 +1,139 @@
+--- B-original/cpu_hl4.v
++++ M3-M4/cpu_hl4.v
+@@ -192,7 +192,7 @@
+         .lookup_hit     (btb_hit),
+         .lookup_taken   (btb_taken),
+         .lookup_target  (btb_target),
+-        .update_valid   (btb_update_valid && pipeline_advance),
++        .update_valid   (btb_update_valid && pipeline_advance && !stall_all && !interrupt_taken),
+         .update_is_jump (btb_update_is_jump),
+         .update_taken   (btb_update_taken),
+         .update_pc      (btb_update_pc),
+@@ -520,7 +520,7 @@
+ 
+     assign csr_access = id_valid && ex_is_csr;
+     assign csr_commit = id_valid && ex_is_csr && !ex_exception;
+-    wire csr_commit_eff = csr_commit && !stall_all;
++    wire csr_commit_eff = csr_commit && !stall_all && !interrupt_taken;
+     assign csr_we = ex_csr_we;
+ 
+     // Address and access checks for the current EX instruction.
+@@ -606,6 +606,8 @@
+     assign ex_store_fault = id_valid && ex_is_store && d_hit && !d_fault &&
+                             (mem_fault || ex_pmp_fault);
+ 
++    wire ex_target_misaligned = id_valid && (id_jump || branch_taken) &&
++        ((id_jump ? jump_target[1:0] : branch_target[1:0]) != 2'b00);
+     wire ex_pc_misaligned = id_valid && (id_pc[1:0] != 2'b00);
+     assign ex_inst_page_fault = id_valid && id_page_fault;
+     wire ex_inst_fault_ok = id_valid && id_inst_fault;
+@@ -626,6 +628,8 @@
+         exc_tval  = 32'd0;
+         if (ex_pc_misaligned) begin
+             exc_code = 4'd0;  exc_tval = id_pc;
++        end else if (ex_target_misaligned) begin
++            exc_code = 4'd0; exc_tval = id_jump ? jump_target : branch_target;
+         end else if (ex_inst_page_fault) begin
+             exc_code = 4'd12; exc_tval = id_pc;
+         end else if (ex_inst_fault_ok) begin
+@@ -661,7 +665,7 @@
+     assign ex_actual_target = id_jump ? jump_target : branch_target;
+ 
+     assign ex_btb_mispredict =
+-        id_valid && (id_branch || id_jump) && !ex_exception &&
++        id_valid && !ex_exception &&
+         ((ex_actual_taken != id_pred_taken) ||
+          (ex_actual_taken && (!id_pred_valid || (ex_actual_target != id_pred_target))));
+ 
+@@ -672,8 +676,8 @@
+     assign btb_update_target  = ex_actual_target;
+ 
+     // MRET/SRET are control transfers and must not commit a register write.
+-    assign ex_mret_valid = id_valid && ex_is_mret && !ex_exception;
+-    assign ex_sret_valid = id_valid && ex_is_sret && !ex_exception;
++    assign ex_mret_valid = id_valid && ex_is_mret && !ex_exception && !stall_all;
++    assign ex_sret_valid = id_valid && ex_is_sret && !ex_exception && !stall_all;
+ 
+     // -------------------------------------------------------------
+     // Interrupt selection with M/S delegation.
+@@ -706,15 +710,15 @@
+     assign if_is_mret = (if_inst == 32'h30200073);
+     assign if_is_sret = (if_inst == 32'h10200073);
+     assign ex_suppress_int = id_valid &&
+-        (id_branch || id_jump || ex_is_csr || ex_is_mret || ex_is_sret ||
++        (ex_is_mret || ex_is_sret ||
+          ex_is_sfence);
+-    assign interrupt_taken = int_request && if_valid && !stall_all &&
++    assign interrupt_taken = int_request && id_valid && !stall_all &&
+         !ex_exception && !ex_suppress_int && !if_is_mret && !if_is_sret;
+ 
+     // Exception delegation is valid only when the trap came from S/U.
+     wire exception_to_s = (priv != 2'b11) && medeleg[exc_code];
+ 
+-    assign trap_valid = ex_exception || interrupt_taken;
++    assign trap_valid = (ex_exception && !stall_all) || interrupt_taken;
+     assign trap_is_interrupt = !ex_exception && interrupt_taken;
+     assign trap_target = trap_is_interrupt ? int_target :
+                          (exception_to_s ? 2'b01 : 2'b11);
+@@ -722,7 +726,7 @@
+                         {1'b1, 27'd0, int_code};
+     assign trap_tval = ex_exception ? ex_tval : 32'd0;
+     assign trap_epc = ex_exception ? id_pc :
+-                      (if_valid ? if_pc : pc_reg);
++                      id_pc;
+ 
+     // Direct mode: base.  Vectored mode: base + 4*cause (interrupts only).
+     wire [31:0] trap_base = (trap_target == 2'b01) ? stvec : mtvec;
+@@ -730,8 +734,10 @@
+         ? ({trap_base[31:2], 2'b00} + {26'd0, int_code, 2'b00})
+         : {trap_base[31:2], 2'b00};
+ 
++    // Resolve the held EX instruction exactly when EX/MEM can accept it.
++    // Otherwise an IF miss would flush its link result before it advances.
+     assign redirect = trap_valid || ex_mret_valid || ex_sret_valid ||
+-                      ex_btb_mispredict;
++                      (ex_btb_mispredict && !stall_all);
+     assign redirect_pc = trap_valid ? trap_vector :
+                          (ex_mret_valid ? mepc :
+                           (ex_sret_valid ? sepc :
+@@ -777,8 +783,8 @@
+             ex_alu_result  <= ex_alu_result_final;
+             ex_rs2_data    <= forward_rs2;
+             ex_rd          <= id_rd;
+-            ex_reg_write   <= id_valid && !ex_exception && ex_reg_write_final;
+-            ex_mem_write   <= id_valid && !ex_exception && id_mem_write;
++            ex_reg_write   <= id_valid && !ex_exception && !interrupt_taken && ex_reg_write_final;
++            ex_mem_write   <= id_valid && !ex_exception && !interrupt_taken && id_mem_write;
+             ex_mem_to_reg  <= id_valid && !ex_exception && ex_mem_to_reg_final;
+             ex_mem_funct3  <= id_funct3;
+         end
+@@ -797,7 +803,14 @@
+         : (ex_mem_funct3 == 3'b000) ? (4'b0001 << ex_alu_result[1:0])
+         : (ex_mem_funct3 == 3'b001) ? (4'b0011 << {ex_alu_result[1], 1'b0})
+         : (ex_mem_funct3 == 3'b010) ? 4'b1111 : 4'b0000;
+-    assign mem_wren = ex_mem_write && memory_write_edge;
++    // A held EX/MEM slot is a single transaction, even across a walker stall.
++    reg store_consumed;
++    always @(posedge clk or negedge rst_n) begin
++        if (!rst_n) store_consumed <= 1'b0;
++        else if (pipeline_advance && !stall_all) store_consumed <= 1'b0;
++        else if (mem_wren) store_consumed <= 1'b1;
++    end
++    assign mem_wren = rst_n && ex_valid && ex_mem_write && !store_consumed && memory_write_edge;
+ 
+     wire [7:0] mem_load_byte = mem_rdata >> {ex_alu_result[1:0], 3'b000};
+     wire [15:0] mem_load_half = ex_alu_result[1] ? mem_rdata[31:16] : mem_rdata[15:0];
+@@ -847,11 +860,11 @@
+                 id_valid <= 1'b0;
+                 if (!stall_all) begin
+                     mem_valid <= ex_valid;
+-                    ex_valid  <= id_valid && !ex_exception;
++                    ex_valid  <= id_valid && !ex_exception && !interrupt_taken;
+                 end
+             end else if (!stall_all) begin
+                 mem_valid <= ex_valid;
+-                ex_valid  <= id_valid && !ex_exception;
++                ex_valid  <= id_valid && !ex_exception && !interrupt_taken;
+                 if (!stall_if) if_valid <= 1'b1;
+                 if (stall_if) id_valid <= 1'b0;
+                 else id_valid <= if_valid;

@@ -1,0 +1,60 @@
+{
+  "authorization": "D123",
+  "date": "2026-10-24",
+  "before_DUT": true,
+  "baseline": {
+    "N": [
+      16,
+      234
+    ],
+    "expected": "identical F134 full RF/RAM/ordered events/stall/flush"
+  },
+  "smoke": {
+    "N": 16,
+    "checksum": 528,
+    "signature": 1414090033,
+    "UART": [
+      84,
+      73,
+      77,
+      49,
+      13,
+      10
+    ],
+    "main_return": 0,
+    "timestamps": "four strictly increasing actual LOAD low-word sample times",
+    "delta": "exact independent physical-edge differences",
+    "stall_flush": "independent instruction oracle, not historical counter"
+  },
+  "coremark": {
+    "N": 16,
+    "iterations": 1,
+    "total_data_size": 2000,
+    "frequency_setting_hz": 27000000,
+    "formal_score": false,
+    "performance": {
+      "seedcrc": 59893,
+      "crclist": 59156,
+      "crcmatrix": 8151,
+      "crcstate": 36410
+    },
+    "validation": {
+      "seedcrc": 6386,
+      "crclist": 58305,
+      "crcmatrix": 1863,
+      "crcstate": 36228
+    },
+    "output": "all RAM report bytes after computation, including <10s validity failure"
+  },
+  "budgets": {
+    "compile_seconds": 90,
+    "small_run_seconds": 45,
+    "coremark_run_seconds": 240,
+    "physical_cycles": 10000000,
+    "trace_bytes": 268435456,
+    "bus_bytes": 134217728,
+    "wave_bytes": 134217728,
+    "stdout_read_bytes": 8388608
+  },
+  "hardware": "STOP"
+}

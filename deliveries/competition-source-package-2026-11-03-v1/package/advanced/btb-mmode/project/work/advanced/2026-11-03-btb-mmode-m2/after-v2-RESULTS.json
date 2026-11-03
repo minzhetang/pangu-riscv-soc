@@ -1,0 +1,2454 @@
+{
+  "stage": "after-v2",
+  "plan_sha256": "02fb2b835ab1ec88332435ea2f9225a3697694a1387bcb46540e82c64db111ea",
+  "results": [
+    {
+      "case": "jal_ifmiss",
+      "sync": 0,
+      "pred": 0,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ],
+          [
+            5,
+            4092
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            4092,
+            15
+          ],
+          [
+            516,
+            99,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "26",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "27",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "28",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "29",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "30",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "30",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.1559999999590218
+    },
+    {
+      "case": "jalr_ifmiss",
+      "sync": 0,
+      "pred": 0,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ],
+          [
+            5,
+            4092
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            4092,
+            15
+          ],
+          [
+            516,
+            99,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "26",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "27",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "28",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "29",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "30",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "30",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.1410000000614673
+    },
+    {
+      "case": "beq_ifmiss_v2",
+      "sync": 0,
+      "pred": 0,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            0,
+            15
+          ],
+          [
+            516,
+            99,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "26",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "27",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "28",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "29",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "30",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "30",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "bne_hold_training",
+      "sync": 0,
+      "pred": 0,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ],
+          [
+            7,
+            100
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            100,
+            15
+          ],
+          [
+            516,
+            100,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "26",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "27",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "28",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "29",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "30",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "30",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "jal_ifmiss",
+      "sync": 0,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ],
+          [
+            5,
+            4092
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            4092,
+            15
+          ],
+          [
+            516,
+            99,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "26",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "27",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "28",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "29",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "30",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "30",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.11000000010244548
+    },
+    {
+      "case": "jalr_ifmiss",
+      "sync": 0,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ],
+          [
+            5,
+            4092
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            4092,
+            15
+          ],
+          [
+            516,
+            99,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "26",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "27",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "28",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "29",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "30",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "30",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "beq_ifmiss_v2",
+      "sync": 0,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            0,
+            15
+          ],
+          [
+            516,
+            99,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "26",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "27",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "28",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "29",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "30",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "30",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "bne_hold_training",
+      "sync": 0,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ],
+          [
+            7,
+            100
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            100,
+            15
+          ],
+          [
+            516,
+            100,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "26",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "27",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "28",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "29",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "30",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "30",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "jal_ifmiss",
+      "sync": 1,
+      "pred": 0,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ],
+          [
+            5,
+            4092
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            4092,
+            15
+          ],
+          [
+            516,
+            99,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "51",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "52",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "53",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "54",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "56",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "57",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "58",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "60",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "60",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "jalr_ifmiss",
+      "sync": 1,
+      "pred": 0,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ],
+          [
+            5,
+            4092
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            4092,
+            15
+          ],
+          [
+            516,
+            99,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "51",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "52",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "53",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "54",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "56",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "57",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "58",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "60",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "60",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.0940000000409782
+    },
+    {
+      "case": "beq_ifmiss_v2",
+      "sync": 1,
+      "pred": 0,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            0,
+            15
+          ],
+          [
+            516,
+            99,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "51",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "52",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "53",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "54",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "56",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "57",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "58",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "60",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "60",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "bne_hold_training",
+      "sync": 1,
+      "pred": 0,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ],
+          [
+            7,
+            100
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            100,
+            15
+          ],
+          [
+            516,
+            100,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "51",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "52",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "53",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "54",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "56",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "57",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "58",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "60",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "60",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "jal_ifmiss",
+      "sync": 1,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ],
+          [
+            5,
+            4092
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            4092,
+            15
+          ],
+          [
+            516,
+            99,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "51",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "52",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "53",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "54",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "56",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "57",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "58",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "60",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "60",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "jalr_ifmiss",
+      "sync": 1,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ],
+          [
+            5,
+            4092
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            4092,
+            15
+          ],
+          [
+            516,
+            99,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "51",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "52",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "53",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "54",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "56",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "57",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "58",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "60",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "60",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.14099999982863665
+    },
+    {
+      "case": "beq_ifmiss_v2",
+      "sync": 1,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            0,
+            15
+          ],
+          [
+            516,
+            99,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "51",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "52",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "53",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "54",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "56",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "57",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "58",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "60",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "60",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.10900000017136335
+    },
+    {
+      "case": "bne_hold_training",
+      "sync": 1,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "native_exit": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "registers": true,
+        "memory": true,
+        "focus_ifmiss": true,
+        "training_count": true,
+        "resolve_count": true,
+        "no_training_during_stall": true,
+        "no_redirect_during_stall": true,
+        "unknown": true,
+        "privilege": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            256
+          ],
+          [
+            2,
+            4294967295
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            2,
+            2147483648
+          ],
+          [
+            2,
+            4096
+          ],
+          [
+            2,
+            4084
+          ],
+          [
+            2,
+            1024
+          ],
+          [
+            2,
+            2048
+          ],
+          [
+            6,
+            8192
+          ],
+          [
+            7,
+            99
+          ],
+          [
+            7,
+            100
+          ]
+        ],
+        "stores": [
+          [
+            512,
+            100,
+            15
+          ],
+          [
+            516,
+            100,
+            15
+          ]
+        ],
+        "traps": [],
+        "focus_hold": [
+          [
+            "51",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "52",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "53",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "54",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "56",
+            "00000ff8",
+            "00001000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "57",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "58",
+            "00000ff8",
+            "00001000",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "focus_train": [
+          [
+            "60",
+            "00000ff8",
+            "0"
+          ]
+        ],
+        "focus_resolve": [
+          [
+            "60",
+            "00000ff8"
+          ]
+        ],
+        "redirect_held": [],
+        "status": [
+          [
+            "00000080",
+            "1"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    }
+  ]
+}

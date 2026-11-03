@@ -1,0 +1,127 @@
+{
+  "stage": "A-CBOOT-M1",
+  "approved_scope": "unchanged CPU, zero-wait verification memory only; no MMIO/BRAM/ISA/hardware",
+  "frozen_before_DUT": "2026-10-23T10:43:30.712255+08:00",
+  "input_files": [
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\alu.v",
+      "sha256": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "bytes": 1021
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\control.v",
+      "sha256": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "bytes": 2988
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\cpu.v",
+      "sha256": "555CB51AC20FFC439B61BB29D4F4D9F4DC02C38B54A37291A79519CD413B8114",
+      "bytes": 16582
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\source\\regfile.v",
+      "sha256": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "bytes": 666
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\models-before\\cpu_selfcheck_v1.py",
+      "sha256": "F5C550660F4120B5D863D3A3EA6D9261B2F7D540B98DE7C7958D216457818994",
+      "bytes": 25777
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\models-before\\cpu_trace_oracle.py",
+      "sha256": "69BD1EC52C359D998CA64C5E53E6E3EC923D2C37D42DA2D8803E7D968EBAF1E0",
+      "bytes": 9491
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\COMMANDS.md",
+      "sha256": "5200CF45195DF8EDE0B953D49E262206A85E310CE93431AD3C06D3026944318C",
+      "bytes": 3545
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\manual-expectations.json",
+      "sha256": "10C1466887B045D2DCF955CA861ADD3BD034233F44C3843500856056F17614AA",
+      "bytes": 527
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\objdump.log",
+      "sha256": "F5044F1442341D4EE3EE3AEA37AF8DB0CCB9A7C965A26E0052553846323FD6BA",
+      "bytes": 6894
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.bin",
+      "sha256": "E6C0738F5E238AA5A4A679E279F0822E67CD74BAD14E2900B2473CC54B062DF6",
+      "bytes": 576
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.bytes.hex",
+      "sha256": "ACAD83FD2418CF4A0A33CD332D12BFEF9411790499468193DDF094268C5BD385",
+      "bytes": 2304
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.c",
+      "sha256": "0E0685C7967204B753A352D4C7C317D68011E3F4CBB53E0C7F3D096B4945EACB",
+      "bytes": 783
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.elf",
+      "sha256": "EF785D0F91657B2ECA67AD8DB5B5534A40AFC8F89DBB7968084609858772B08A",
+      "bytes": 11564
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.ld",
+      "sha256": "0973CB6739117D65FB40D7B7E28D647A5C7170BBEBBB5BB25E8C8A7C9A52AC37",
+      "bytes": 851
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.mem32.hex",
+      "sha256": "A4A0EA43494E429D416CC2DE18DE584883D9895FEC0746468C8573BB2B608894",
+      "bytes": 1440
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\start.S",
+      "sha256": "50D3AD9F9D591DE5007665FF074B21E94812548A9B0972416954E569F6FC9DDC",
+      "bytes": 675
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\tb_c_boot.sv",
+      "sha256": "891CA3B224D01D5AA6587E7B9342ABF240A9C25007BAF8AA21161EAF11CD77E3",
+      "bytes": 3833
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\memory_model.sv",
+      "sha256": "ECAC647F8D6CD1CE2B55D60023E57E11C8B0B04E88926F35522170ED8857DF0C",
+      "bytes": 1457
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\check_c_boot.py",
+      "sha256": "F0C6B2651039176D2E7856CF3C31E747DF3C90AE17F3920D36ED0C863C26792F",
+      "bytes": 10715
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\run_c_boot.py",
+      "sha256": "DF9939FB6580D6F91E9891FE67293ACE1ADAD2A4110AEFAD8F9936E11C75981F",
+      "bytes": 8988
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\manual-plan.json",
+      "sha256": "FCA1AE50B2D653C39C88D60F97CF71E33855556B1EA60BED283CE3598B794601",
+      "bytes": 792
+    },
+    {
+      "path": "D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\expected.json",
+      "sha256": "F5C19C175E2CC3FE7FCA9801E96D038328E83B89F5AC5DC55EE6E231EF9B7905",
+      "bytes": 188262
+    }
+  ],
+  "cycle_limit": 100000,
+  "compile_timeout_seconds": 60,
+  "run_timeout_seconds": 30,
+  "time_unit": "new TB 1ns/1ps, 10ns clock; not FPGA Fmax",
+  "expected_arch_instructions": 440,
+  "expected_WB": 263,
+  "expected_memory_events": 29,
+  "expected_stall": 2,
+  "expected_flush": 97,
+  "runner_guard_revision": "After failed compile, before any DUT execution: remove direct run CLI and assert native compile success. Original runner/plan retained; RTL, inputs and expectations unchanged."
+}

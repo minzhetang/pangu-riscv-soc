@@ -1,0 +1,110 @@
+{
+  "kind": "FROZEN_DEPENDENCIES",
+  "frozen_at": "2026-10-26T14:30:00+08:00",
+  "active_delivery": "stage-return-final-20261027-v02",
+  "note": "Exact inherited dependency files copied for offline recovery; not a new delivery or new DUT run.",
+  "entries": [
+    {
+      "id": "increment-20261023-1930/gpio-runner",
+      "original_path": "work/B-RETURN/increment-20261023-1930/work/peripherals/gpio/scripts/run_gpio.py",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/increment-20261023-1930/work/peripherals/gpio/scripts/run_gpio.py",
+      "sha256": "6CDDE2E5DA70673988E287A201095DEE2136FBE89F24BB972701C78D621034CC"
+    },
+    {
+      "id": "increment-20261023-1930/rx-ledger-check",
+      "original_path": "work/B-RETURN/increment-20261023-1930/work/peripherals/rx/tb/rx_ledger_check.svh",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/increment-20261023-1930/work/peripherals/rx/tb/rx_ledger_check.svh",
+      "sha256": "C8FFFF1A2554236C7935F1863CB0BF870CD8739CC69A3EAF3287C26E1A967868"
+    },
+    {
+      "id": "increment-20261024-0030/wrapper",
+      "original_path": "work/B-RETURN/increment-20261024-0030/work/regif/txgpio-m1/src/local_regif_txgpio_m1.v",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/increment-20261024-0030/work/regif/txgpio-m1/src/local_regif_txgpio_m1.v",
+      "sha256": "5C81EE8F01372D33D4173A34BB095B3D6E649541E4716C933AF11A2390D264FA"
+    },
+    {
+      "id": "increment-20261024-1735/shared-runner",
+      "original_path": "work/B-RETURN/increment-20261024-1735/work/peripherals/scripts/runner_common.py",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/increment-20261024-1735/work/peripherals/scripts/runner_common.py",
+      "sha256": "3141C6A78CAD4B1FF03FA53FF949AA9FF422D573E2D7F96CC73729298D1F144A"
+    },
+    {
+      "id": "A-W06-SUPPLEMENT/COMMANDS.md",
+      "original_path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/COMMANDS.md",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/COMMANDS.md",
+      "sha256": "F4FEA8D62DACD6C34C72CF747E67CD17A3481B87DF3300D6DAE70ECF45DFE7D9"
+    },
+    {
+      "id": "A-W06-SUPPLEMENT/RESULTS.json",
+      "original_path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/RESULTS.json",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/RESULTS.json",
+      "sha256": "EA54D33B031971F2431A2979638A481A12AC4C1393319C0918430EACA227CBA6"
+    },
+    {
+      "id": "A-W06-SUPPLEMENT/tb_w06_boundary_v2.sv",
+      "original_path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/tb_w06_boundary_v2.sv",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/tb_w06_boundary_v2.sv",
+      "sha256": "C4B9A86E5D9F7AEE23F33D448B79D059B23EBBDA007282344EB59B9E30F5040D"
+    },
+    {
+      "id": "A-W06-SUPPLEMENT/w06v2-16-stdout.log",
+      "original_path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/w06v2-16-stdout.log",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/w06v2-16-stdout.log",
+      "sha256": "AB69924D7FA25E94381A41A74D35B543A4E22AAD8592DED74C3527AE43DAD31A"
+    },
+    {
+      "id": "A-W06-SUPPLEMENT/w06v2-16.vcd",
+      "original_path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/w06v2-16.vcd",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/w06v2-16.vcd",
+      "sha256": "7F9B3B896B5EA7C2088882F6D2E838FFFCB071494F60B3130ACAAECE4A18CEBF"
+    },
+    {
+      "id": "A-W06-SUPPLEMENT/w06v2-234-stdout.log",
+      "original_path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/w06v2-234-stdout.log",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/w06v2-234-stdout.log",
+      "sha256": "E9C3B53542CA08D68BD6705ACDF42C45319CBCAACD90985AF1FD0A94346A3E8A"
+    },
+    {
+      "id": "A-W06-SUPPLEMENT/w06v2-234.vcd",
+      "original_path": "work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/w06v2-234.vcd",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/mainline-increment-2335-response-2026-10-25-v1/W06_SUPPLEMENT/w06v2-234.vcd",
+      "sha256": "F28073B7895FAA8A6481F162C5F8325503DEDA4B8B4C169FF3E269BFCF2A647E"
+    },
+    {
+      "id": "stage-return-20261023-1345/gpio-core",
+      "original_path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/gpio/src/gpio_core.v",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/stage-return-20261023-1345/work/peripherals/gpio/src/gpio_core.v",
+      "sha256": "03380919FBF76490C67DE8B730A60F62DCB90DAD63BB12E417754A35DDABF95E"
+    },
+    {
+      "id": "stage-return-20261023-1345/rx-core",
+      "original_path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/src/uart_rx.v",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/src/uart_rx.v",
+      "sha256": "BDCD02CA8CBA1CAE9D8A774D336B30B43E9457834856234BD7C2BA8AE1719F34"
+    },
+    {
+      "id": "stage-return-20261023-1345/rx-illegal",
+      "original_path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/tb/tb_uart_rx_illegal.sv",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/tb/tb_uart_rx_illegal.sv",
+      "sha256": "5FF8F379FB5DAED06A07B51B2E902182CA806AB7D7CADCDDE3C3C5BCE10DC191"
+    },
+    {
+      "id": "stage-return-20261023-1345/rx-watchdog",
+      "original_path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/tb/tb_uart_rx_watchdog.sv",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/stage-return-20261023-1345/work/peripherals/rx/tb/tb_uart_rx_watchdog.sv",
+      "sha256": "0F9C2159F2FFD76F0D84A34C39721648AAFF7528B7B1604E48C6D16D299E2BD9"
+    },
+    {
+      "id": "stage-return-20261023-1345/tx-core",
+      "original_path": "work/B-RETURN/stage-return-20261023-1345/work/peripherals/src/uart_tx.v",
+      "frozen_path": "DEPENDENCIES/work/B-RETURN/stage-return-20261023-1345/work/peripherals/src/uart_tx.v",
+      "sha256": "21044928B621403C275B79F4794866EA5C2047D87505E763885E6E50179B988C"
+    },
+    {
+      "id": "gpio-1.0.2/plan",
+      "original_path": "work/peripherals/gpio/tests/gpio-plan.json",
+      "frozen_path": "DEPENDENCIES/work/peripherals/gpio/tests/gpio-plan.json",
+      "sha256": "BACF07BE0FD179B532B1BF51AD17EE1910DC6B10E0174C6ED887C6C5D4EB47BE"
+    }
+  ]
+}

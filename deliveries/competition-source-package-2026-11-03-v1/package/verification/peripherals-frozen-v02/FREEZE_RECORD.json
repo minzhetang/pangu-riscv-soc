@@ -1,0 +1,42 @@
+{
+  "kind": "FROZEN_V02_RECORD",
+  "freeze_id": "frozen-v02-20261026",
+  "frozen_at": "2026-10-26T14:30:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "active_delivery": "stage-return-final-20261027-v02",
+  "canonical_path": "work/B-RETURN/stage-return-final-20261027-v02/",
+  "frozen_mirror": "work/B-RETURN/frozen-v02-20261026/FROZEN_V02/stage-return-final-20261027-v02/",
+  "mainline_decision": {
+    "fact": "F152",
+    "decision": "D151",
+    "conclusion": "ACCEPTABLE_LIMITED_SOFTWARE_DELIVERY",
+    "R1": "CLOSED_LIMITED_MAINLINE_REPRO",
+    "R2": "CLOSED_LIMITED_MAINLINE_REPRO",
+    "R3": "CLOSED_IDENTITY_AND_RECONSTRUCTION_WITH_NONBLOCKING_PROSE_NOTE"
+  },
+  "identity": {
+    "stage_files": 70,
+    "stage_manifest_entries": 69,
+    "stage_manifest_sha256": "55995427F25973C8030D0ABB1F071471E2B8596CD5DF7B84C081606783D25D70",
+    "stage_delivery_sha256": "566301E1C01D773CF04534193CA6572D6F094485416A1F0560B395F7B35E47C8",
+    "handoff_outer_manifest_sha256": "DBBFEE59A580D627120B8E254738C39C8CD80D79871F72530E255BFA96DE80DA",
+    "source_index_entries": 28,
+    "changed_files": 67,
+    "dependency_entries": 17,
+    "log_files": 31,
+    "vcd_files": 5,
+    "plan_files": 4,
+    "plan_artifact_count_from_v02": 13
+  },
+  "preserved_notes": [
+    "COM-01 expected prose in RX results.json still names rx-plan-1.3.4.sha256; A annotates it separately. Original run record is not modified and no DUT rerun was performed.",
+    "v01 and all prior packages remain read-only history.",
+    "W06 uses A-W06-SUPPLEMENT; GPIO 1.0.2 remains limited acceptance. Neither is rerun.",
+    "Old root manifest/source-link remains OPEN_PREEXISTING and is A-owned."
+  ],
+  "no_new_version": true,
+  "no_zip": true,
+  "no_dut_run": true,
+  "hardware": "STOPPED",
+  "deadline": "2026-10-27T18:00:00+08:00"
+}

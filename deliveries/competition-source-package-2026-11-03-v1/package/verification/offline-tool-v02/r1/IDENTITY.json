@@ -1,0 +1,32 @@
+{
+  "kind": "R1_IDENTITY_AND_HISTORY",
+  "task": "B-VERIFY-OFFLINE-M0-R1",
+  "input_package": {
+    "id": "mainline-b-offline-r1-2026-10-27-v1",
+    "manifest_SHA256": "D47564C58F043AF8E3599D23F157799C01A6BACF4B23C7F78CF53EA3E79A81F0"
+  },
+  "frozen_API": {
+    "offline_api.py": "71658AC3A787FD66844D69F1E261BDF4112DBCB20DA514DFFD108959318EF407",
+    "block_codec.py": "EE2C41B6C2CF39CCFDD99FA64D8B333A2D1532FFD24AEDF8B3210C94108FDB80",
+    "unchanged_vs_v01": true
+  },
+  "original_37": {
+    "plan_path": "tests/history/PLAN-v01.json",
+    "plan_SHA256": "9F74BDEFADC8981A55F0443855A0549F79A4FE1118E8D3EDBC330618355352BD",
+    "result_path": "tests/history/results-v01.json",
+    "count": 37,
+    "inputs_or_expectations_changed": false,
+    "regression_pass_in_v02": 37
+  },
+  "v02": {
+    "plan_path": "tests/PLAN.json",
+    "plan_SHA256": "82C42434FDE78495B6A3F9F945756F1ADE464EEEB6A5E9DC3D63E5C5F442AA4F",
+    "cases": 54,
+    "original_37": 37,
+    "new_r1": 17
+  },
+  "v01_retained": "work/B-RETURN/B-VERIFY-OFFLINE-M0-return-v01/ (read-only historical)",
+  "no_new_DUT": true,
+  "no_install": true,
+  "hardware": "STOPPED"
+}

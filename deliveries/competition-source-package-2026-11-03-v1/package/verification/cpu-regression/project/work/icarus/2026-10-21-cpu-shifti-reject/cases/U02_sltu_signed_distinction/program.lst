@@ -1,0 +1,8 @@
+0000: fff00093  addi x1,x0,-1
+0004: 0000b133  sltu x2,x1,x0 ;0
+0008: 0000a1b3  slt x3,x1,x0 ;1 signed
+000c: 00103233  sltu x4,x0,x1 ;1
+0010: 001022b3  slt x5,x0,x1 ;0 signed
+0014: 0010b333  sltu x6,x1,x1 ;0 equal
+0018: 0010a3b3  slt x7,x1,x1 ;0 equal
+001c: 05a00f93  addi x31,x0,90 ; completion

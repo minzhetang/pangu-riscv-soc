@@ -1,0 +1,81 @@
+{
+  "status": "SOFTWARE_RELIABILITY_CANDIDATE_READY_FOR_BOUNDED_TARGET_CHECK",
+  "stages": {
+    "synthesis": true,
+    "map": true,
+    "pnr": true,
+    "timing": true,
+    "bitstream": true
+  },
+  "bitstream": {
+    "path": "build\\generate_bitstream\\board_top.sbit",
+    "bytes": 3791112,
+    "sha256": "65567CF5D50D53925DADEAE3B5FF5E2FBF6DD04CD4F9E91EDE5F0621C382D68D",
+    "fresh": true
+  },
+  "all_INIT_matches_new_frozen_program": true,
+  "INIT_pieces": 1856,
+  "CPU_matches_frozen_EEI_candidate": true,
+  "only_ROM_INIT_changed_from_frozen_EEI_candidate": true,
+  "scope_of_exceptions": "Raw4 keys -> first GPIO bank; rawKEY0 -> reset release bank; downstream timing retained",
+  "resources": {
+    "LUT": 1810,
+    "FF": 1527,
+    "DRM36": 14,
+    "IO": 15
+  },
+  "timing": {
+    "Setup_Slow": {
+      "slack_ns": 23.161,
+      "failing": 0,
+      "endpoints": 4753
+    },
+    "Hold_Slow": {
+      "slack_ns": 0.173,
+      "failing": 0,
+      "endpoints": 4753
+    },
+    "Recovery_Slow": {
+      "slack_ns": 33.565,
+      "failing": 0,
+      "endpoints": 358
+    },
+    "Removal_Slow": {
+      "slack_ns": 0.631,
+      "failing": 0,
+      "endpoints": 358
+    },
+    "Setup_Fast": {
+      "slack_ns": 28.702,
+      "failing": 0,
+      "endpoints": 4753
+    },
+    "Hold_Fast": {
+      "slack_ns": 0.102,
+      "failing": 0,
+      "endpoints": 4753
+    },
+    "Recovery_Fast": {
+      "slack_ns": 34.782,
+      "failing": 0,
+      "endpoints": 358
+    },
+    "Removal_Fast": {
+      "slack_ns": 0.444,
+      "failing": 0,
+      "endpoints": 358
+    }
+  },
+  "critical_count": 0,
+  "remaining_warnings": {
+    "W: Verilog-2008": 2,
+    "W: Sdm-2000": 32,
+    "W: Loop was found during constant probe.": 7,
+    "W: Public-4008": 6,
+    "W: Removed bmsWIDEDFFCPE inst soc/cpu_core/id_alu_ctrl[4": 1,
+    "W: Timing-4087": 18,
+    "W: Timing-4086": 10
+  },
+  "physical_CDC_MTBF_proven": false,
+  "hardware_valid": false
+}

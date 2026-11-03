@@ -1,0 +1,21 @@
+{
+  "new_pass": 24,
+  "new_total": 24,
+  "m1_before_pass": 4,
+  "m1_before_fail": 20,
+  "original_pass": 0,
+  "original_fail": 16,
+  "regression_pass": 84,
+  "regression_total": 84,
+  "hardware": "NOT_RUN",
+  "pds": "NOT_RUN",
+  "full_task2": false,
+  "status": "LIMITED_IF_STALL_REDIRECT_FIX_PASS_NOT_FULL_TASK2",
+  "final_pass": 108,
+  "producer_baseline_replaced": false,
+  "protected_count": 89,
+  "m1_manifest_verified": 1410,
+  "checker_controls": 9,
+  "wave_snapshots": 8,
+  "remaining_jobs": []
+}

@@ -1,0 +1,88 @@
+{
+  "frozen_at": "2026-11-01T16:37:07.147192+08:00",
+  "decision": "D288/D289",
+  "software_binary_sha256": "0160BF311C70A8CCDDDF1B4F19B96C4F5B7357CB2E4BD04E69DB9A87DBC8C21E",
+  "FIC_sha256": "F03A9F4D10A8356A617DEA50E2115F693280D265E67390416B670231F8518163",
+  "cases": [
+    {
+      "id": "list",
+      "function": "core_bench_list",
+      "pc": 1328,
+      "pc_hex": "0x530",
+      "trigger_position": 512,
+      "samples": 1024,
+      "trigger_pattern_binary": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXX01100000000000000000000010100110000",
+      "expected_result": "Valid first entry of frozen function; reset1/advance1/id_valid1/hold0",
+      "numeric_efficiency_counts": "Not chosen from DUT; measured after frozen plan",
+      "expected_side_effects": "Full same performance256 UART/CRC/ticks; write_error0",
+      "artifact_basename": "list_revised"
+    },
+    {
+      "id": "matrix",
+      "function": "matrix_mul_matrix_bitextract",
+      "pc": 6128,
+      "pc_hex": "0x17f0",
+      "trigger_position": 512,
+      "samples": 1024,
+      "trigger_pattern_binary": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXX01100000000000000000001011111110000",
+      "expected_result": "Valid first entry of frozen function; reset1/advance1/id_valid1/hold0",
+      "numeric_efficiency_counts": "Not chosen from DUT; measured after frozen plan",
+      "expected_side_effects": "Full same performance256 UART/CRC/ticks; write_error0",
+      "artifact_basename": "matrix_revised"
+    },
+    {
+      "id": "state",
+      "function": "core_state_transition",
+      "pc": 7904,
+      "pc_hex": "0x1ee0",
+      "trigger_position": 512,
+      "samples": 1024,
+      "trigger_pattern_binary": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXX01100000000000000000001111011100000",
+      "expected_result": "Valid first entry of frozen function; reset1/advance1/id_valid1/hold0",
+      "numeric_efficiency_counts": "Not chosen from DUT; measured after frozen plan",
+      "expected_side_effects": "Full same performance256 UART/CRC/ticks; write_error0",
+      "artifact_basename": "state_revised"
+    },
+    {
+      "id": "matrix_repeat",
+      "function": "matrix_mul_matrix_bitextract",
+      "pc": 6128,
+      "pc_hex": "0x17f0",
+      "trigger_position": 512,
+      "samples": 1024,
+      "trigger_pattern_binary": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXX01100000000000000000001011111110000",
+      "expected_result": "Valid first entry of frozen function; reset1/advance1/id_valid1/hold0",
+      "numeric_efficiency_counts": "Not chosen from DUT; measured after frozen plan",
+      "expected_side_effects": "Full same performance256 UART/CRC/ticks; write_error0",
+      "artifact_basename": "matrix_repeat_revised"
+    }
+  ],
+  "timer_ROI_preedge": [
+    61967,
+    538601567
+  ],
+  "invariants": [
+    "All signal planes binary",
+    "Timer adjacent increment1mod32",
+    "Pipeline advance alternates per physical sample",
+    "At trigger sample512 valid/advance/reset1,eei_hold0 and frozen PC",
+    "One following invalid EX slot for fully observed load-use, true static register dependency",
+    "Two following invalid EX slots for fully observed control redirect; direct B/JAL target checked",
+    "No stall+flush overlap or write_error; full matched UART separate evidence"
+  ],
+  "limitations": [
+    "Local1024-point windows only, not whole-run statistical sampling",
+    "EX event density is not retired IPC or CPU utilization",
+    "Function EX counts are not execution-time fractions",
+    "id_pc is ID/EX register PC concurrent with MEM writes, not store-origin/retired PC",
+    "No full forwarding operand or JALR target reconstruction",
+    "27MHz display scaling is nominal, not independently measured",
+    "Existing4Critical/CDC/externalIO limitations not waived"
+  ],
+  "original_reader_sha256": "B4809F3420FC5201EFBFE5DDE98A5A2D6BB872D8055D4A19FB6529886E2A51D1",
+  "reader_reuse": "Only new FIC hash binding adapted; exact ordered140 names verified; old native143360-bit crosscheck retained as format evidence, not new hardware",
+  "revision": 2,
+  "revision_reason": "Original list symbol has no static call references; compiled core_bench_list has two explicit calls. No numeric expected result relaxed.",
+  "capture_grouping": "Automatically sequence four windows after one fresh KEY0 if they fit the20s run; if program ends before pending window, preserve completed captures and request one new reset only after fresh receiver.",
+  "matrix_repeat_scope": "Different invocation of same function; compare rules/density, not assumed identical operands or whole waveforms"
+}

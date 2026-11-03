@@ -1,0 +1,48 @@
+{
+  "status": "PASS_LIMITED_BOARD_LEDGER",
+  "case": "order",
+  "header": [
+    2700000,
+    128,
+    20,
+    128,
+    0,
+    679,
+    345600779,
+    8480,
+    0,
+    3,
+    0,
+    1,
+    1,
+    1
+  ],
+  "events": [
+    [
+      67500699,
+      24,
+      2,
+      1
+    ],
+    [
+      99900703,
+      36,
+      0,
+      1
+    ],
+    [
+      175500709,
+      64,
+      1,
+      0
+    ]
+  ],
+  "elapsed_target_ticks": 345600100,
+  "nominal_seconds": 12.800003703703704,
+  "source_SHA256": "D0887C39087364D05253B434AC192B7ADEAF9F17B80130D6015E48F406209010",
+  "limits": [
+    "Human input timing not independently edge-captured",
+    "No physical pulse completeness or internal WB/STORE/stop-status claim",
+    "Nominal 27MHz, no oscillator calibration"
+  ]
+}

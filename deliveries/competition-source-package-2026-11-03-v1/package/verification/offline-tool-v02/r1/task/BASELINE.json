@@ -1,0 +1,40 @@
+{
+  "date_client": "2026-10-27",
+  "B_v01_manifest_SHA256": "360B3386BAC0B064156EADBE9757CB2DFFC2D9A4B127116E06614CA88FFC964A",
+  "B_files": 374,
+  "B_manifest_entries": 373,
+  "B_bytes": 836432,
+  "all_manifest_hashes_match": true,
+  "frozen_API_same": true,
+  "B_selftest": {
+    "rows": 37,
+    "PASS": 37,
+    "P02_records": 9378498,
+    "classification": "Parsed B selftest records, not A full reproduction"
+  },
+  "A_scope": "4 independent targeted CLI runs only; 37-case full A reproduction NOT_COMPLETED",
+  "source_code": [
+    {
+      "path": "RUN.py",
+      "SHA256": "01210C76F38F07EAD6F42332E7BA7C16573D46C2594CC75B755E61CBACE604AE"
+    },
+    {
+      "path": "src/worker.py",
+      "SHA256": "4F342911FB53FA8334946F2C43CEAC86EB32FEE9B8F9DD4F3E39C9F38126DADE"
+    },
+    {
+      "path": "src/support.py",
+      "SHA256": "A4C77416762A0DF28C261A40F2B45C3EC963FE7A061154E14BE95CB12CBCC723"
+    },
+    {
+      "path": "frozen/offline_api.py",
+      "SHA256": "71658AC3A787FD66844D69F1E261BDF4112DBCB20DA514DFFD108959318EF407"
+    },
+    {
+      "path": "frozen/block_codec.py",
+      "SHA256": "EE2C41B6C2CF39CCFDD99FA64D8B333A2D1532FFD24AEDF8B3210C94108FDB80"
+    }
+  ],
+  "A_mainline": "F157/D156-D157 finite capture accepted; CPU unchanged; B offline kernel not integrated into live checker",
+  "hardware": "STOPPED"
+}

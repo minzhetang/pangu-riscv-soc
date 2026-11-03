@@ -1,0 +1,64 @@
+{
+  "binary_sha256": "08c124405f6cbab2a1bbeb3355c435cf25f31c9a0dca55a7520eeccb23a6ff79",
+  "cases": [
+    {
+      "seed": 1,
+      "algorithm_results": [
+        854308,
+        219552364,
+        2005621706
+      ],
+      "instructions": 12628,
+      "wb_count": 11228,
+      "store_count": 391,
+      "opcodes": {
+        "55": 83,
+        "23": 3,
+        "19": 5419,
+        "99": 876,
+        "35": 391,
+        "111": 68,
+        "103": 130,
+        "3": 884,
+        "51": 4774
+      },
+      "files": {
+        "memory.txt": "71c91e633fc07933c1e9b7eecd9e3ed825cb2481cd35b2353c5994664e2ca500",
+        "regs.txt": "d270bcedc8d33b29b46c837f619087396ecc0388d54efea0f31d185f30ad040b",
+        "store.txt": "773ab6d8b16fe2e809afad6f004f5ec01aeac39d0d44e0f9fa05ccff9fd902d5",
+        "wb.txt": "da94650a854e58907844b8bc1b028fdbd63f4397a6d29406fd4e083e8d45218f"
+      }
+    },
+    {
+      "seed": 3735928559,
+      "algorithm_results": [
+        1036434,
+        481511221,
+        30691028
+      ],
+      "instructions": 12670,
+      "wb_count": 11260,
+      "store_count": 394,
+      "opcodes": {
+        "55": 83,
+        "23": 3,
+        "19": 5436,
+        "99": 883,
+        "35": 394,
+        "111": 68,
+        "103": 130,
+        "3": 891,
+        "51": 4782
+      },
+      "files": {
+        "memory.txt": "e0076e4f9705f059b29b32781214bc62b10b339901902287db7a1d6d7393e763",
+        "regs.txt": "af804bc1715c5efa807eeb701bda797cdbd7e93229fa186f0bbb65516524551c",
+        "store.txt": "a7aca00d77198aff34227ba17c72547f900baaf0ecace2ad07abe0ac3e5df0bd",
+        "wb.txt": "1f102e709db650bbf8378549b9b850689f3e123cb5b6eb5d47ec6c2855f3aceb"
+      }
+    }
+  ],
+  "scope": "Sequential RV32I model + independent high-level algorithm; frozen before DUT, not CPU simulation",
+  "cycle_limit": 300000,
+  "process_seconds": 60
+}

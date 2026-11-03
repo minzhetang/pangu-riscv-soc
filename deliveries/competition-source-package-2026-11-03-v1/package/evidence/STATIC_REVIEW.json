@@ -1,0 +1,1053 @@
+{
+  "status": "PASS_STATIC_MATERIALS_WITH_DECLARED_EXTERNAL_AND_HISTORICAL_DEPENDENCIES",
+  "copied_inputs": 8725,
+  "original_byte_equal": 8532,
+  "anonymous_metadata_files": 193,
+  "functional_sources_changed": [],
+  "syntax_or_json_errors": [],
+  "intentional_invalid_json": [
+    {
+      "path": "verification/offline-tool-v02/logs/R1-INVALID-JSON/case.json",
+      "kind": "JSON"
+    },
+    {
+      "path": "verification/offline-tool-v02/tests/cases/R1-INVALID-JSON.json",
+      "kind": "JSON"
+    }
+  ],
+  "secrets": [],
+  "team_identity_leaks": [],
+  "vendor_primitive_definitions": [],
+  "prohibited_files": [],
+  "required_missing": [],
+  "Verilog_include_review": [
+    {
+      "path": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/source/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/source/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/source/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/source/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/source/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/source/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/source/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/source/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/source/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/peripherals-frozen-v02/FROZEN_V02/stage-return-final-20261027-v02/work/peripherals/rx/tb/tb_uart_rx.sv",
+      "include": "rx_ledger_check.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/peripherals-frozen-v02/FROZEN_V02/stage-return-final-20261027-v02/work/peripherals/rx/tb/tb_uart_rx_neg.sv",
+      "include": "rx_ledger_check.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/cases/performance-N234/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/cases/performance-N234/source/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/cases/performance-N234/source/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/cases/performance-N234/source/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/cases/validation-N234/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/cases/validation-N234/source/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/cases/validation-N234/source/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/cases/validation-N234/source/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "HISTORICAL_TEMPLATE_CASE_SPECIFIC_INIT_PROVIDED"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/source/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/source/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/source/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/source-before/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "HISTORICAL_TEMPLATE_CASE_SPECIFIC_INIT_PROVIDED"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/source-before/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/source-before/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/source-before/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/cases/performance-N234/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/cases/performance-N234/source/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/cases/performance-N234/source/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/cases/performance-N234/source/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/cases/validation-N234/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/cases/validation-N234/source/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/cases/validation-N234/source/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/cases/validation-N234/source/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "HISTORICAL_TEMPLATE_CASE_SPECIFIC_INIT_PROVIDED"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/source/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/source/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/source/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/source-before/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "HISTORICAL_TEMPLATE_CASE_SPECIFIC_INIT_PROVIDED"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/source-before/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/source-before/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-coremark-iter2-m1/source-before/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-26-coremark-stream-evidence-m1/cases/performance-N234/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-26-coremark-stream-evidence-m1/cases/performance-N234/source/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-26-coremark-stream-evidence-m1/cases/performance-N234/source/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-26-coremark-stream-evidence-m1/cases/performance-N234/source/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-26-coremark-stream-evidence-m1/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "HISTORICAL_TEMPLATE_CASE_SPECIFIC_INIT_PROVIDED"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-26-coremark-stream-evidence-m1/source/memory_model.sv",
+      "include": "memory_observe_decl.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-26-coremark-stream-evidence-m1/source/memory_model.sv",
+      "include": "memory_observe_bank.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-26-coremark-stream-evidence-m1/source/memory_model.sv",
+      "include": "memory_protocol_checks.svh",
+      "status": "OPTIONAL_M0_VERIFY_HEADERS_PROVIDED_IN_DEPENDENCIES"
+    },
+    {
+      "path": "verification/system-origin/project/work/system/2026-10-24-memory-map-m2-v2/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "HISTORICAL_TEMPLATE_CASE_SPECIFIC_INIT_PROVIDED"
+    },
+    {
+      "path": "verification/system-origin/project/work/system/2026-10-24-soc-txgpio-m1/integration-0030-v1/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/system-origin/project/work/system/2026-10-24-soc-txgpio-m1/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/system-origin/project/work/system/2026-10-24-timed-coremark-m1/cases/baseline-N16/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/system-origin/project/work/system/2026-10-24-timed-coremark-m1/cases/baseline-N234/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/system-origin/project/work/system/2026-10-24-timed-coremark-m1/cases/performance-N16/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/system-origin/project/work/system/2026-10-24-timed-coremark-m1/cases/smoke-N16/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/system-origin/project/work/system/2026-10-24-timed-coremark-m1/cases/validation-N16/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    },
+    {
+      "path": "verification/system-origin/project/work/system/2026-10-24-timed-coremark-m1/source/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "HISTORICAL_TEMPLATE_CASE_SPECIFIC_INIT_PROVIDED"
+    },
+    {
+      "path": "verification/system-origin/project/work/system/2026-10-24-timed-coremark-m1/source-before/memory_model.sv",
+      "include": "init_tables.svh",
+      "status": "SAME_DIRECTORY"
+    }
+  ],
+  "Tcl_active_input_review": [
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\alu.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\board_reset_sync.sv",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\board_top.sv",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\control.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\cpu.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\cycle_counter64.sv",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\gpio_core.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\local_regif_txgpio_m1.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\memory_model.sv",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\regfile.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\soc_data_adapter.sv",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\soc_top.sv",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\performance\\pds\\source\\uart_tx.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "constraint",
+      "input": "baseline\\sm2\\performance\\pds\\board_pins.fdc",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "constraint",
+      "input": "baseline\\sm2\\performance\\pds\\clock_27mhz.fdc",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/performance/pds/flow.tcl",
+      "kind": "constraint",
+      "input": "baseline\\sm2\\performance\\pds\\closure_io.fdc",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\alu.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\board_reset_sync.sv",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\board_top.sv",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\control.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\cpu.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\cycle_counter64.sv",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\gpio_core.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\local_regif_txgpio_m1.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\memory_model.sv",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\regfile.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\soc_data_adapter.sv",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\soc_top.sv",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "design",
+      "input": "baseline\\sm2\\validation\\pds\\source\\uart_tx.v",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "constraint",
+      "input": "baseline\\sm2\\validation\\pds\\board_pins.fdc",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "constraint",
+      "input": "baseline\\sm2\\validation\\pds\\clock_27mhz.fdc",
+      "exists": true
+    },
+    {
+      "flow": "baseline/sm2/validation/pds/flow.tcl",
+      "kind": "constraint",
+      "input": "baseline\\sm2\\validation\\pds\\closure_io.fdc",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\alu.v",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\board_reset_sync.sv",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\board_top.sv",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\control.v",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\cpu.v",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\cycle_counter64.sv",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\gpio_core.v",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\local_regif_txgpio_m1.v",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\memory_model.sv",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\regfile.v",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\soc_data_adapter.sv",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\soc_top.sv",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "design",
+      "input": "application\\event-recorder\\fpga\\source\\uart_tx.v",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "constraint",
+      "input": "application\\event-recorder\\fpga\\board_pins.fdc",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "constraint",
+      "input": "application\\event-recorder\\fpga\\clock_27mhz.fdc",
+      "exists": true
+    },
+    {
+      "flow": "application/event-recorder/fpga/flow.tcl",
+      "kind": "constraint",
+      "input": "application\\event-recorder\\fpga\\closure_io.fdc",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\alu.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\board_reset_sync.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\board_top_hl4.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\btb.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\control.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\cpu_hl4.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\csr_file_hl3.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\cycle_counter64.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\gpio_core.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\local_regif_hl2.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\memory_model.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\mmu_sv32.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\pmp.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\regfile.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\soc_data_adapter.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\soc_top_hl4.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\source\\uart_tx.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "constraint",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\board_pins.fdc",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "constraint",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\clock_27mhz.fdc",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/flow.tcl",
+      "kind": "constraint",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred0\\closure_io.fdc",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\alu.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\board_reset_sync.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\board_top_hl4.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\btb.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\control.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\cpu_hl4.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\csr_file_hl3.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\cycle_counter64.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\gpio_core.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\local_regif_hl2.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\memory_model.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\mmu_sv32.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\pmp.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\regfile.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\soc_data_adapter.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\soc_top_hl4.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\source\\uart_tx.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "constraint",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\board_pins.fdc",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "constraint",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\clock_27mhz.fdc",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/flow.tcl",
+      "kind": "constraint",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred1\\closure_io.fdc",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\alu.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\board_reset_sync.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\board_top_hl4.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\btb.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\control.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\cpu_hl4.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\csr_file_hl3.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\cycle_counter64.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\gpio_core.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\local_regif_hl2.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\memory_model.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\mmu_sv32.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\pmp.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\regfile.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\soc_data_adapter.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\soc_top_hl4.sv",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "design",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\source\\uart_tx.v",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "constraint",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\board_pins.fdc",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "constraint",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\clock_27mhz.fdc",
+      "exists": true
+    },
+    {
+      "flow": "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/flow.tcl",
+      "kind": "constraint",
+      "input": "advanced\\btb-mmode\\project\\work\\fpga\\2026-11-03-advanced-btb-offline-m1\\pred32\\closure_io.fdc",
+      "exists": true
+    }
+  ],
+  "external_Python_modules": [
+    {
+      "path": "baseline/o2-onchip/render_waveforms.py",
+      "external_module": "PIL"
+    }
+  ],
+  "historical_absolute_path_files": [
+    "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/compile/parse_design/screen.tcl",
+    "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred0/impl.tcl",
+    "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/compile/parse_design/screen.tcl",
+    "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred1/impl.tcl",
+    "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/compile/parse_design/screen.tcl",
+    "advanced/btb-mmode/project/work/fpga/2026-11-03-advanced-btb-offline-m1/pred32/impl.tcl",
+    "advanced/cache-ai/MAINLINE_HANDOFF.md",
+    "application/event-recorder/historical-reports/2026-11-03-event-recorder-pds-build.md",
+    "baseline/o2-onchip/build/impl.tcl",
+    "baseline/o2-onchip/debug.fic",
+    "baseline/o2-onchip/pre/impl.tcl",
+    "baseline/o2-onchip/runtime-debug.fic",
+    "baseline/sm2/REPORT.md",
+    "baseline/sm2/START_HERE.md",
+    "evidence/reports/2026-10-24-memory-adapt-m1.md",
+    "evidence/reports/2026-10-27-b-offline-r1-v02-review.md",
+    "evidence/reports/2026-11-02-sm2-dualseed-and-uart-closure.md",
+    "evidence/reports/2026-11-03-event-recorder-pds-build.md",
+    "verification/cpu-regression/project/scripts/verification/cpu_bgeu_evidence.py",
+    "verification/cpu-regression/project/work/icarus/2026-10-21-cpu-shifti-reject/EX-review-before-padding-fix.py",
+    "verification/cpu-regression/project/work/icarus/2026-10-21-cpu-shifti-reject/models/cpu_selfcheck_v1.py",
+    "verification/cpu-regression/project/work/quality/2026-11-01-basic-completion-m2/eei-alignment/run.py",
+    "verification/cpu-regression/project/work/quality/2026-11-01-basic-completion-m2/eei-alignment/run_r1.py",
+    "verification/cpu-regression/project/work/quality/2026-11-01-basic-completion-m2/run_regression763.py",
+    "verification/streaming/project/work/fpga/2026-10-26-coremark-stream-evidence-m1/adapt_checker.py",
+    "verification/streaming/project/work/fpga/2026-10-26-coremark-stream-evidence-m1/adapt_tb.py",
+    "verification/streaming/project/work/fpga/2026-10-26-coremark-stream-evidence-m1/continue_host_replays.py",
+    "verification/streaming/project/work/fpga/2026-10-26-coremark-stream-evidence-m1/finalize.py",
+    "verification/streaming/project/work/system/2026-10-23-c-boot-m1/inputs/COMMANDS.md",
+    "verification/streaming/project/work/system/2026-10-23-c-boot-m1/models-before/cpu_selfcheck_v1.py",
+    "verification/system-origin/project/work/icarus/2026-10-21-cpu-shifti-reject/EX-review-before-padding-fix.py",
+    "verification/system-origin/project/work/icarus/2026-10-21-cpu-shifti-reject/models/cpu_selfcheck_v1.py",
+    "verification/system-origin/project/work/system/2026-10-23-c-boot-m1/inputs/COMMANDS.md",
+    "verification/system-origin/project/work/system/2026-10-23-c-boot-m1/models-before/cpu_selfcheck_v1.py",
+    "verification/system-origin/project/work/system/2026-10-23-coremark-correctness-m1/COMMANDS.md",
+    "verification/system-origin/project/work/system/2026-10-23-memory-adapt-m1/COMMANDS.md",
+    "verification/system-origin/project/work/system/2026-10-24-memory-map-m2-v2/RESULT_MATRIX.md",
+    "verification/system-origin/project/work/system/2026-10-24-timed-coremark-m1/COMMANDS.md"
+  ],
+  "cpu_frozen_case_count": 763,
+  "cpu_cases_missing": [],
+  "scope": "static sources/paths/identity only, no imported project modules or processes",
+  "new_compile_DUT_PDS_hardware": 0,
+  "unresolved_includes": [],
+  "historical_script_documentation_redactions": [
+    {
+      "path": "verification/streaming/project/work/fpga/2026-10-25-compile-quality-m1/finalize_evidence.py",
+      "scope": "one historical generated-document Python executable path string; no executable code or runtime path configuration changed",
+      "occurrences": 1
+    }
+  ]
+}

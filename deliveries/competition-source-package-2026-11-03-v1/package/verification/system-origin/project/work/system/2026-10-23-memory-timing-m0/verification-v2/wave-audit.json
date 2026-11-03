@@ -1,0 +1,2107 @@
+{
+  "scope": "new VCD read-only audit, no new DUT runs",
+  "audits": [
+    {
+      "id": "P01-i0-d0",
+      "status": "PASS",
+      "checks": 95,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "E8197D3D6EF540EA86CB89210F010B1CA14E2F244E0143EFF9B1ECC88A6558CF",
+      "active_cycles": 17,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 134217875
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 134217875
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [
+        {
+          "time_ps": 75000,
+          "cycle": 5,
+          "load_pc": 4,
+          "addr": 128,
+          "ideal_word": 305419896,
+          "response_before": 305419896,
+          "response_after": 305419896,
+          "CPU_captured_after": 305419896,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          128
+        ],
+        [
+          2,
+          305419896
+        ],
+        [
+          3,
+          305419897
+        ]
+      ],
+      "ordered_STORE": []
+    },
+    {
+      "id": "P02-i0-d0",
+      "status": "PASS",
+      "checks": 138,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "8BCDFFEB42D545ABCA7DDB182EE0D3E8161170B63A74FDDE3101A6BEFF1349CA",
+      "active_cycles": 24,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [
+        {
+          "time_ps": 105000,
+          "cycle": 8,
+          "load_pc": 16,
+          "addr": 256,
+          "ideal_word": 85,
+          "response_before": 85,
+          "response_after": 85,
+          "CPU_captured_after": 85,
+          "rd": 3
+        },
+        {
+          "time_ps": 165000,
+          "cycle": 14,
+          "load_pc": 36,
+          "addr": 256,
+          "ideal_word": 5701461,
+          "response_before": 5701461,
+          "response_after": 5701461,
+          "CPU_captured_after": 5701461,
+          "rd": 6
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          85
+        ],
+        [
+          3,
+          85
+        ],
+        [
+          4,
+          86
+        ],
+        [
+          5,
+          4294967295
+        ],
+        [
+          6,
+          5701461
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          256,
+          85,
+          15
+        ],
+        [
+          256,
+          85,
+          15
+        ],
+        [
+          257,
+          65280,
+          2
+        ],
+        [
+          258,
+          5636096,
+          12
+        ]
+      ]
+    },
+    {
+      "id": "P03T-i0-d0",
+      "status": "PASS",
+      "checks": 105,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "0B90BF0AE2A592AAADDDBED357A43CAA715175A3DADEBF6113730A32E18F6AE4",
+      "active_cycles": 19,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [
+        {
+          "time_ps": 75000,
+          "cycle": 5,
+          "load_pc": 4,
+          "addr": 256,
+          "ideal_word": 0,
+          "response_before": 0,
+          "response_after": 0,
+          "CPU_captured_after": 0,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "ordered_STORE": []
+    },
+    {
+      "id": "P03N-i0-d0",
+      "status": "PASS",
+      "checks": 107,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "DEC6A64B4BA1151287F6889A87096E2221E2E8025556834B7761E6AFE679ECC1",
+      "active_cycles": 19,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [
+        {
+          "time_ps": 75000,
+          "cycle": 5,
+          "load_pc": 4,
+          "addr": 256,
+          "ideal_word": 5,
+          "response_before": 5,
+          "response_after": 5,
+          "CPU_captured_after": 5,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          260,
+          7,
+          15
+        ]
+      ]
+    },
+    {
+      "id": "P04-i0-d0",
+      "status": "PASS",
+      "checks": 106,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "49AA854CB162748624B1CC308EE40E804EA16F0EB7FA5FEDB238C6A033E18311",
+      "active_cycles": 19,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 1048723
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 1048723
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [],
+      "ordered_WB": [
+        [
+          1,
+          1
+        ],
+        [
+          8,
+          42
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          264,
+          42,
+          15
+        ]
+      ]
+    },
+    {
+      "id": "P05-i0-d0",
+      "status": "PASS",
+      "checks": 85,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "2FBCD332C82DDB817A4FF9BDBF9EA27573C591F35D5F1012997982EDB9FCF5F5",
+      "active_cycles": 15,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [
+        {
+          "time_ps": 75000,
+          "cycle": 5,
+          "load_pc": 4,
+          "addr": 260,
+          "ideal_word": 3735928559,
+          "response_before": 3735928559,
+          "response_after": 2779096485,
+          "CPU_captured_after": 3735928559,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          3735928559
+        ]
+      ],
+      "ordered_STORE": []
+    },
+    {
+      "id": "P01-i1-d0",
+      "status": "PASS",
+      "checks": 101,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "6B8547F76D5CF857EAC20D6B3AA08D8E0B641B4B1C15AE98B149A1BE0BB50CAF",
+      "active_cycles": 18,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 134217875
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 134217875
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 3,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 134217875,
+          "pc_after": 8,
+          "inst_after": 41219,
+          "IFID_pc": 4,
+          "IFID_inst": 134217875,
+          "architectural_word": 41219
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 41219,
+          "pc_after": 12,
+          "inst_after": 1114515,
+          "IFID_pc": 8,
+          "IFID_inst": 41219,
+          "architectural_word": 1114515
+        },
+        {
+          "time_ps": 65000,
+          "pc_before": 12,
+          "inst_before": 1114515,
+          "pc_after": 16,
+          "inst_after": 1048691,
+          "IFID_pc": 12,
+          "IFID_inst": 1114515,
+          "architectural_word": 1048691
+        }
+      ],
+      "load_edges": [
+        {
+          "time_ps": 85000,
+          "cycle": 6,
+          "load_pc": 8,
+          "addr": 128,
+          "ideal_word": 305419896,
+          "response_before": 305419896,
+          "response_after": 305419896,
+          "CPU_captured_after": 305419896,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          128
+        ],
+        [
+          1,
+          128
+        ],
+        [
+          2,
+          305419896
+        ],
+        [
+          3,
+          305419897
+        ]
+      ],
+      "ordered_STORE": []
+    },
+    {
+      "id": "P02-i1-d0",
+      "status": "PASS",
+      "checks": 144,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "2C49219CE478E3CA0CF2A7E54E44AC4EF146EA3E3BB9B721963EA241664BE2F3",
+      "active_cycles": 25,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 8,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 268435603,
+          "pc_after": 8,
+          "inst_after": 89129235,
+          "IFID_pc": 4,
+          "IFID_inst": 268435603,
+          "architectural_word": 89129235
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 89129235,
+          "pc_after": 12,
+          "inst_after": 2138147,
+          "IFID_pc": 8,
+          "IFID_inst": 89129235,
+          "architectural_word": 2138147
+        },
+        {
+          "time_ps": 75000,
+          "pc_before": 16,
+          "inst_before": 2138147,
+          "pc_after": 20,
+          "inst_after": 41347,
+          "IFID_pc": 16,
+          "IFID_inst": 2138147,
+          "architectural_word": 41347
+        },
+        {
+          "time_ps": 85000,
+          "pc_before": 20,
+          "inst_before": 41347,
+          "pc_after": 24,
+          "inst_after": 1147411,
+          "IFID_pc": 20,
+          "IFID_inst": 41347,
+          "architectural_word": 1147411
+        },
+        {
+          "time_ps": 95000,
+          "pc_before": 24,
+          "inst_before": 1147411,
+          "pc_after": 28,
+          "inst_after": 4293919379,
+          "IFID_pc": 24,
+          "IFID_inst": 1147411,
+          "architectural_word": 4293919379
+        },
+        {
+          "time_ps": 125000,
+          "pc_before": 32,
+          "inst_before": 5275811,
+          "pc_after": 36,
+          "inst_after": 4231459,
+          "IFID_pc": 32,
+          "IFID_inst": 5275811,
+          "architectural_word": 4231459
+        },
+        {
+          "time_ps": 135000,
+          "pc_before": 36,
+          "inst_before": 4231459,
+          "pc_after": 40,
+          "inst_after": 41731,
+          "IFID_pc": 36,
+          "IFID_inst": 4231459,
+          "architectural_word": 41731
+        },
+        {
+          "time_ps": 145000,
+          "pc_before": 40,
+          "inst_before": 41731,
+          "pc_after": 44,
+          "inst_after": 1048691,
+          "IFID_pc": 40,
+          "IFID_inst": 41731,
+          "architectural_word": 1048691
+        }
+      ],
+      "load_edges": [
+        {
+          "time_ps": 115000,
+          "cycle": 9,
+          "load_pc": 20,
+          "addr": 256,
+          "ideal_word": 85,
+          "response_before": 85,
+          "response_after": 85,
+          "CPU_captured_after": 85,
+          "rd": 3
+        },
+        {
+          "time_ps": 175000,
+          "cycle": 15,
+          "load_pc": 40,
+          "addr": 256,
+          "ideal_word": 5636181,
+          "response_before": 5636181,
+          "response_after": 5636181,
+          "CPU_captured_after": 5636181,
+          "rd": 6
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          85
+        ],
+        [
+          3,
+          85
+        ],
+        [
+          4,
+          86
+        ],
+        [
+          6,
+          5636181
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          256,
+          85,
+          15
+        ],
+        [
+          256,
+          85,
+          15
+        ],
+        [
+          257,
+          0,
+          2
+        ],
+        [
+          257,
+          0,
+          2
+        ],
+        [
+          258,
+          5636096,
+          12
+        ]
+      ]
+    },
+    {
+      "id": "P03T-i1-d0",
+      "status": "PASS",
+      "checks": 111,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "CCEA8951F0883552E0335C441E6AD23C4114D7F18C6A4FAE269466408AEBAF39",
+      "active_cycles": 20,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 3,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 268435603,
+          "pc_after": 8,
+          "inst_after": 41219,
+          "IFID_pc": 4,
+          "IFID_inst": 268435603,
+          "architectural_word": 41219
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 41219,
+          "pc_after": 12,
+          "inst_after": 67171,
+          "IFID_pc": 8,
+          "IFID_inst": 41219,
+          "architectural_word": 67171
+        },
+        {
+          "time_ps": 65000,
+          "pc_before": 12,
+          "inst_before": 67171,
+          "pc_after": 16,
+          "inst_after": 7340435,
+          "IFID_pc": 12,
+          "IFID_inst": 67171,
+          "architectural_word": 7340435
+        }
+      ],
+      "load_edges": [
+        {
+          "time_ps": 85000,
+          "cycle": 6,
+          "load_pc": 8,
+          "addr": 256,
+          "ideal_word": 0,
+          "response_before": 0,
+          "response_after": 0,
+          "CPU_captured_after": 0,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "ordered_STORE": []
+    },
+    {
+      "id": "P03N-i1-d0",
+      "status": "PASS",
+      "checks": 113,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "BDEB5F5E609252D8B09DD2DDDEF5D95429E0FC358A7F5FD6BBF4F7D89236C700",
+      "active_cycles": 20,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 4,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 268435603,
+          "pc_after": 8,
+          "inst_after": 41219,
+          "IFID_pc": 4,
+          "IFID_inst": 268435603,
+          "architectural_word": 41219
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 41219,
+          "pc_after": 12,
+          "inst_after": 67171,
+          "IFID_pc": 8,
+          "IFID_inst": 41219,
+          "architectural_word": 67171
+        },
+        {
+          "time_ps": 65000,
+          "pc_before": 12,
+          "inst_before": 67171,
+          "pc_after": 16,
+          "inst_after": 7340435,
+          "IFID_pc": 12,
+          "IFID_inst": 67171,
+          "architectural_word": 7340435
+        },
+        {
+          "time_ps": 95000,
+          "pc_before": 20,
+          "inst_before": 3187235,
+          "pc_after": 24,
+          "inst_after": 1048691,
+          "IFID_pc": 20,
+          "IFID_inst": 3187235,
+          "architectural_word": 1048691
+        }
+      ],
+      "load_edges": [
+        {
+          "time_ps": 85000,
+          "cycle": 6,
+          "load_pc": 8,
+          "addr": 256,
+          "ideal_word": 5,
+          "response_before": 5,
+          "response_after": 5,
+          "CPU_captured_after": 5,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          260,
+          0,
+          15
+        ],
+        [
+          260,
+          0,
+          15
+        ]
+      ]
+    },
+    {
+      "id": "P04-i1-d0",
+      "status": "PASS",
+      "checks": 112,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "A0D06B6825D806D140ADDB730FFBA9651AA5CEFBCB8EEFF9EA14A5232B9FD821",
+      "active_cycles": 20,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 1048723
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 1048723
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 5,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 1048723,
+          "pc_after": 8,
+          "inst_after": 1082979,
+          "IFID_pc": 4,
+          "IFID_inst": 1048723,
+          "architectural_word": 1082979
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 1082979,
+          "pc_after": 12,
+          "inst_after": 269492771,
+          "IFID_pc": 8,
+          "IFID_inst": 1082979,
+          "architectural_word": 269492771
+        },
+        {
+          "time_ps": 65000,
+          "pc_before": 12,
+          "inst_before": 269492771,
+          "pc_after": 16,
+          "inst_after": 103809939,
+          "IFID_pc": 12,
+          "IFID_inst": 269492771,
+          "architectural_word": 103809939
+        },
+        {
+          "time_ps": 85000,
+          "pc_before": 20,
+          "inst_before": 44041235,
+          "pc_after": 24,
+          "inst_after": 276833315,
+          "IFID_pc": 20,
+          "IFID_inst": 44041235,
+          "architectural_word": 276833315
+        },
+        {
+          "time_ps": 95000,
+          "pc_before": 24,
+          "inst_before": 276833315,
+          "pc_after": 28,
+          "inst_after": 1048691,
+          "IFID_pc": 24,
+          "IFID_inst": 276833315,
+          "architectural_word": 1048691
+        }
+      ],
+      "load_edges": [],
+      "ordered_WB": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          8,
+          42
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          264,
+          42,
+          15
+        ]
+      ]
+    },
+    {
+      "id": "P05-i1-d0",
+      "status": "PASS",
+      "checks": 91,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "CB40F16E3BEA52F1C36D507C27FB1E7DFD80105300B54592F7456B3CB4F8FFD3",
+      "active_cycles": 16,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 4,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 268435603,
+          "pc_after": 8,
+          "inst_after": 4235523,
+          "IFID_pc": 4,
+          "IFID_inst": 268435603,
+          "architectural_word": 4235523
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 4235523,
+          "pc_after": 12,
+          "inst_after": 1048691,
+          "IFID_pc": 8,
+          "IFID_inst": 4235523,
+          "architectural_word": 1048691
+        },
+        {
+          "time_ps": 65000,
+          "pc_before": 12,
+          "inst_before": 1048691,
+          "pc_after": 16,
+          "inst_after": 2139171,
+          "IFID_pc": 12,
+          "IFID_inst": 1048691,
+          "architectural_word": 2139171
+        },
+        {
+          "time_ps": 75000,
+          "pc_before": 16,
+          "inst_before": 2139171,
+          "pc_after": 20,
+          "inst_after": 1048691,
+          "IFID_pc": 16,
+          "IFID_inst": 2139171,
+          "architectural_word": 1048691
+        }
+      ],
+      "load_edges": [
+        {
+          "time_ps": 85000,
+          "cycle": 6,
+          "load_pc": 8,
+          "addr": 260,
+          "ideal_word": 3735928559,
+          "response_before": 3735928559,
+          "response_after": 2779096485,
+          "CPU_captured_after": 3735928559,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          3735928559
+        ]
+      ],
+      "ordered_STORE": []
+    },
+    {
+      "id": "P01-i0-d1",
+      "status": "PASS",
+      "checks": 95,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "371C50745C8C450500FEA37A9557102C43618EFAF4BA5A085A4E4E49DA5804B9",
+      "active_cycles": 17,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 134217875
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 134217875
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [
+        {
+          "time_ps": 75000,
+          "cycle": 5,
+          "load_pc": 4,
+          "addr": 128,
+          "ideal_word": 305419896,
+          "response_before": 305419896,
+          "response_after": 305419896,
+          "CPU_captured_after": 305419896,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          128
+        ],
+        [
+          2,
+          305419896
+        ],
+        [
+          3,
+          305419897
+        ]
+      ],
+      "ordered_STORE": []
+    },
+    {
+      "id": "P02-i0-d1",
+      "status": "PASS",
+      "checks": 138,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "2B5DBDD43E1D25C2C164AC75EB9CDE722A8807E54B24505718EA768E1886CBBF",
+      "active_cycles": 24,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [
+        {
+          "time_ps": 105000,
+          "cycle": 8,
+          "load_pc": 16,
+          "addr": 256,
+          "ideal_word": 85,
+          "response_before": 85,
+          "response_after": 85,
+          "CPU_captured_after": 85,
+          "rd": 3
+        },
+        {
+          "time_ps": 165000,
+          "cycle": 14,
+          "load_pc": 36,
+          "addr": 256,
+          "ideal_word": 5701461,
+          "response_before": 65365,
+          "response_after": 5701461,
+          "CPU_captured_after": 65365,
+          "rd": 6
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          85
+        ],
+        [
+          3,
+          85
+        ],
+        [
+          4,
+          86
+        ],
+        [
+          5,
+          4294967295
+        ],
+        [
+          6,
+          65365
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          256,
+          85,
+          15
+        ],
+        [
+          256,
+          85,
+          15
+        ],
+        [
+          257,
+          65280,
+          2
+        ],
+        [
+          258,
+          5636096,
+          12
+        ]
+      ]
+    },
+    {
+      "id": "P03T-i0-d1",
+      "status": "PASS",
+      "checks": 105,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "05D9D9C5A27EFDADE083E7801A29062D8B9D39D5EACFE61EB7D091D25C45260D",
+      "active_cycles": 19,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [
+        {
+          "time_ps": 75000,
+          "cycle": 5,
+          "load_pc": 4,
+          "addr": 256,
+          "ideal_word": 0,
+          "response_before": 0,
+          "response_after": 0,
+          "CPU_captured_after": 0,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "ordered_STORE": []
+    },
+    {
+      "id": "P03N-i0-d1",
+      "status": "PASS",
+      "checks": 107,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "0E159ADE3BA9B65A9DDCACAC5ED608DB35BFF779EAEEF75025B8DC484A145CF1",
+      "active_cycles": 19,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [
+        {
+          "time_ps": 75000,
+          "cycle": 5,
+          "load_pc": 4,
+          "addr": 256,
+          "ideal_word": 5,
+          "response_before": 5,
+          "response_after": 5,
+          "CPU_captured_after": 5,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          260,
+          7,
+          15
+        ]
+      ]
+    },
+    {
+      "id": "P04-i0-d1",
+      "status": "PASS",
+      "checks": 106,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "90ADCF7A0DA098E4A37F32EEFF0DA56BBED803E32F5E3AF094320B4A327079B6",
+      "active_cycles": 19,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 1048723
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 1048723
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [],
+      "ordered_WB": [
+        [
+          1,
+          1
+        ],
+        [
+          8,
+          42
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          264,
+          42,
+          15
+        ]
+      ]
+    },
+    {
+      "id": "P05-i0-d1",
+      "status": "PASS",
+      "checks": 85,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "1DB8E63BD4C8308E6541952DD497F67B563C8794065AD167A8006558A5F57676",
+      "active_cycles": 15,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 0,
+      "first_IF_mismatches": [],
+      "load_edges": [
+        {
+          "time_ps": 75000,
+          "cycle": 5,
+          "load_pc": 4,
+          "addr": 260,
+          "ideal_word": 3735928559,
+          "response_before": 2779096485,
+          "response_after": 3735928559,
+          "CPU_captured_after": 2779096485,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          2779096485
+        ]
+      ],
+      "ordered_STORE": []
+    },
+    {
+      "id": "P01-i1-d1",
+      "status": "PASS",
+      "checks": 101,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "0A39AE9D32CE8467EA9625788186EBFD95430014E7A13459846A82563EC73DD8",
+      "active_cycles": 18,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 134217875
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 134217875
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 3,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 134217875,
+          "pc_after": 8,
+          "inst_after": 41219,
+          "IFID_pc": 4,
+          "IFID_inst": 134217875,
+          "architectural_word": 41219
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 41219,
+          "pc_after": 12,
+          "inst_after": 1114515,
+          "IFID_pc": 8,
+          "IFID_inst": 41219,
+          "architectural_word": 1114515
+        },
+        {
+          "time_ps": 65000,
+          "pc_before": 12,
+          "inst_before": 1114515,
+          "pc_after": 16,
+          "inst_after": 1048691,
+          "IFID_pc": 12,
+          "IFID_inst": 1114515,
+          "architectural_word": 1048691
+        }
+      ],
+      "load_edges": [
+        {
+          "time_ps": 85000,
+          "cycle": 6,
+          "load_pc": 8,
+          "addr": 128,
+          "ideal_word": 305419896,
+          "response_before": 305419896,
+          "response_after": 305419896,
+          "CPU_captured_after": 305419896,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          128
+        ],
+        [
+          1,
+          128
+        ],
+        [
+          2,
+          305419896
+        ],
+        [
+          3,
+          305419897
+        ]
+      ],
+      "ordered_STORE": []
+    },
+    {
+      "id": "P02-i1-d1",
+      "status": "PASS",
+      "checks": 144,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "9B84B32C9B824FC32A48D51F335A6BF73A16C0494A6259402A91167645A3E298",
+      "active_cycles": 25,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 8,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 268435603,
+          "pc_after": 8,
+          "inst_after": 89129235,
+          "IFID_pc": 4,
+          "IFID_inst": 268435603,
+          "architectural_word": 89129235
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 89129235,
+          "pc_after": 12,
+          "inst_after": 2138147,
+          "IFID_pc": 8,
+          "IFID_inst": 89129235,
+          "architectural_word": 2138147
+        },
+        {
+          "time_ps": 75000,
+          "pc_before": 16,
+          "inst_before": 2138147,
+          "pc_after": 20,
+          "inst_after": 41347,
+          "IFID_pc": 16,
+          "IFID_inst": 2138147,
+          "architectural_word": 41347
+        },
+        {
+          "time_ps": 85000,
+          "pc_before": 20,
+          "inst_before": 41347,
+          "pc_after": 24,
+          "inst_after": 1147411,
+          "IFID_pc": 20,
+          "IFID_inst": 41347,
+          "architectural_word": 1147411
+        },
+        {
+          "time_ps": 95000,
+          "pc_before": 24,
+          "inst_before": 1147411,
+          "pc_after": 28,
+          "inst_after": 4293919379,
+          "IFID_pc": 24,
+          "IFID_inst": 1147411,
+          "architectural_word": 4293919379
+        },
+        {
+          "time_ps": 125000,
+          "pc_before": 32,
+          "inst_before": 5275811,
+          "pc_after": 36,
+          "inst_after": 4231459,
+          "IFID_pc": 32,
+          "IFID_inst": 5275811,
+          "architectural_word": 4231459
+        },
+        {
+          "time_ps": 135000,
+          "pc_before": 36,
+          "inst_before": 4231459,
+          "pc_after": 40,
+          "inst_after": 41731,
+          "IFID_pc": 36,
+          "IFID_inst": 4231459,
+          "architectural_word": 41731
+        },
+        {
+          "time_ps": 145000,
+          "pc_before": 40,
+          "inst_before": 41731,
+          "pc_after": 44,
+          "inst_after": 1048691,
+          "IFID_pc": 40,
+          "IFID_inst": 41731,
+          "architectural_word": 1048691
+        }
+      ],
+      "load_edges": [
+        {
+          "time_ps": 115000,
+          "cycle": 9,
+          "load_pc": 20,
+          "addr": 256,
+          "ideal_word": 85,
+          "response_before": 85,
+          "response_after": 85,
+          "CPU_captured_after": 85,
+          "rd": 3
+        },
+        {
+          "time_ps": 175000,
+          "cycle": 15,
+          "load_pc": 40,
+          "addr": 256,
+          "ideal_word": 5636181,
+          "response_before": 85,
+          "response_after": 5636181,
+          "CPU_captured_after": 85,
+          "rd": 6
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          85
+        ],
+        [
+          3,
+          85
+        ],
+        [
+          4,
+          86
+        ],
+        [
+          6,
+          85
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          256,
+          85,
+          15
+        ],
+        [
+          256,
+          85,
+          15
+        ],
+        [
+          257,
+          0,
+          2
+        ],
+        [
+          257,
+          0,
+          2
+        ],
+        [
+          258,
+          5636096,
+          12
+        ]
+      ]
+    },
+    {
+      "id": "P03T-i1-d1",
+      "status": "PASS",
+      "checks": 111,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "FC3460DB7F274813AC5FABC4CEB1EEF76A9DAF3AED849572699C3FED4ABF88AF",
+      "active_cycles": 20,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 3,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 268435603,
+          "pc_after": 8,
+          "inst_after": 41219,
+          "IFID_pc": 4,
+          "IFID_inst": 268435603,
+          "architectural_word": 41219
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 41219,
+          "pc_after": 12,
+          "inst_after": 67171,
+          "IFID_pc": 8,
+          "IFID_inst": 41219,
+          "architectural_word": 67171
+        },
+        {
+          "time_ps": 65000,
+          "pc_before": 12,
+          "inst_before": 67171,
+          "pc_after": 16,
+          "inst_after": 7340435,
+          "IFID_pc": 12,
+          "IFID_inst": 67171,
+          "architectural_word": 7340435
+        }
+      ],
+      "load_edges": [
+        {
+          "time_ps": 85000,
+          "cycle": 6,
+          "load_pc": 8,
+          "addr": 256,
+          "ideal_word": 0,
+          "response_before": 0,
+          "response_after": 0,
+          "CPU_captured_after": 0,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "ordered_STORE": []
+    },
+    {
+      "id": "P03N-i1-d1",
+      "status": "PASS",
+      "checks": 113,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "599D90D92D0C6E0A007D620BC75BE940A430FB4E57BF42E3816FF0B509194A3D",
+      "active_cycles": 20,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 4,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 268435603,
+          "pc_after": 8,
+          "inst_after": 41219,
+          "IFID_pc": 4,
+          "IFID_inst": 268435603,
+          "architectural_word": 41219
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 41219,
+          "pc_after": 12,
+          "inst_after": 67171,
+          "IFID_pc": 8,
+          "IFID_inst": 41219,
+          "architectural_word": 67171
+        },
+        {
+          "time_ps": 65000,
+          "pc_before": 12,
+          "inst_before": 67171,
+          "pc_after": 16,
+          "inst_after": 7340435,
+          "IFID_pc": 12,
+          "IFID_inst": 67171,
+          "architectural_word": 7340435
+        },
+        {
+          "time_ps": 95000,
+          "pc_before": 20,
+          "inst_before": 3187235,
+          "pc_after": 24,
+          "inst_after": 1048691,
+          "IFID_pc": 20,
+          "IFID_inst": 3187235,
+          "architectural_word": 1048691
+        }
+      ],
+      "load_edges": [
+        {
+          "time_ps": 85000,
+          "cycle": 6,
+          "load_pc": 8,
+          "addr": 256,
+          "ideal_word": 5,
+          "response_before": 5,
+          "response_after": 5,
+          "CPU_captured_after": 5,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          260,
+          0,
+          15
+        ],
+        [
+          260,
+          0,
+          15
+        ]
+      ]
+    },
+    {
+      "id": "P04-i1-d1",
+      "status": "PASS",
+      "checks": 112,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "655E7118A0AFBA666F70BA779582AC58B5221C6E995642CC5334D0E1D4E1ACD0",
+      "active_cycles": 20,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 1048723
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 1048723
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 5,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 1048723,
+          "pc_after": 8,
+          "inst_after": 1082979,
+          "IFID_pc": 4,
+          "IFID_inst": 1048723,
+          "architectural_word": 1082979
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 1082979,
+          "pc_after": 12,
+          "inst_after": 269492771,
+          "IFID_pc": 8,
+          "IFID_inst": 1082979,
+          "architectural_word": 269492771
+        },
+        {
+          "time_ps": 65000,
+          "pc_before": 12,
+          "inst_before": 269492771,
+          "pc_after": 16,
+          "inst_after": 103809939,
+          "IFID_pc": 12,
+          "IFID_inst": 269492771,
+          "architectural_word": 103809939
+        },
+        {
+          "time_ps": 85000,
+          "pc_before": 20,
+          "inst_before": 44041235,
+          "pc_after": 24,
+          "inst_after": 276833315,
+          "IFID_pc": 20,
+          "IFID_inst": 44041235,
+          "architectural_word": 276833315
+        },
+        {
+          "time_ps": 95000,
+          "pc_before": 24,
+          "inst_before": 276833315,
+          "pc_after": 28,
+          "inst_after": 1048691,
+          "IFID_pc": 24,
+          "IFID_inst": 276833315,
+          "architectural_word": 1048691
+        }
+      ],
+      "load_edges": [],
+      "ordered_WB": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          8,
+          42
+        ]
+      ],
+      "ordered_STORE": [
+        [
+          264,
+          42,
+          15
+        ]
+      ]
+    },
+    {
+      "id": "P05-i1-d1",
+      "status": "PASS",
+      "checks": 91,
+      "errors": [],
+      "scope": "memory model and trace consistency, not architectural compatibility PASS",
+      "wave_sha256": "775B18AD63BAA270C4C72FAAFBEE92256801163FCE86D339DCB2276AAB1FCE60",
+      "active_cycles": 16,
+      "prewarm": [
+        {
+          "time_ps": 5000,
+          "pc": null,
+          "response_after": null
+        },
+        {
+          "time_ps": 15000,
+          "pc": 0,
+          "response_after": 268435603
+        },
+        {
+          "time_ps": 25000,
+          "pc": 0,
+          "response_after": 268435603
+        }
+      ],
+      "poststop_edges": 9,
+      "architecture_IF_mismatch_count": 4,
+      "first_IF_mismatches": [
+        {
+          "time_ps": 45000,
+          "pc_before": 4,
+          "inst_before": 268435603,
+          "pc_after": 8,
+          "inst_after": 4235523,
+          "IFID_pc": 4,
+          "IFID_inst": 268435603,
+          "architectural_word": 4235523
+        },
+        {
+          "time_ps": 55000,
+          "pc_before": 8,
+          "inst_before": 4235523,
+          "pc_after": 12,
+          "inst_after": 1048691,
+          "IFID_pc": 8,
+          "IFID_inst": 4235523,
+          "architectural_word": 1048691
+        },
+        {
+          "time_ps": 65000,
+          "pc_before": 12,
+          "inst_before": 1048691,
+          "pc_after": 16,
+          "inst_after": 2139171,
+          "IFID_pc": 12,
+          "IFID_inst": 1048691,
+          "architectural_word": 2139171
+        },
+        {
+          "time_ps": 75000,
+          "pc_before": 16,
+          "inst_before": 2139171,
+          "pc_after": 20,
+          "inst_after": 1048691,
+          "IFID_pc": 16,
+          "IFID_inst": 2139171,
+          "architectural_word": 1048691
+        }
+      ],
+      "load_edges": [
+        {
+          "time_ps": 85000,
+          "cycle": 6,
+          "load_pc": 8,
+          "addr": 260,
+          "ideal_word": 3735928559,
+          "response_before": 2779096485,
+          "response_after": 3735928559,
+          "CPU_captured_after": 2779096485,
+          "rd": 2
+        }
+      ],
+      "ordered_WB": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          2779096485
+        ]
+      ],
+      "ordered_STORE": []
+    }
+  ],
+  "status": "PASS",
+  "total_checks": 2616
+}

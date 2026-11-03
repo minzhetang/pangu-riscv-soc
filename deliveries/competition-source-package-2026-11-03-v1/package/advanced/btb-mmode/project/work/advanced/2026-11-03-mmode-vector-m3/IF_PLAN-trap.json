@@ -1,0 +1,134 @@
+{
+  "version": "1.0.0",
+  "scope": "Exception commit held across a real IF translation miss, older WB must be retained; existing S fixture only",
+  "tests": [
+    {
+      "name": "misaligned_jump_ifmiss",
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          4294967295
+        ],
+        [
+          2,
+          31
+        ],
+        [
+          2,
+          2147483648
+        ],
+        [
+          2,
+          4096
+        ],
+        [
+          2,
+          4084
+        ],
+        [
+          2,
+          1024
+        ],
+        [
+          2,
+          2048
+        ],
+        [
+          6,
+          8192
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "stores": [],
+      "traps": [
+        [
+          4088,
+          0,
+          4090
+        ]
+      ],
+      "focus_pc": 4088,
+      "focus_train": 0,
+      "require_focus_ifmiss": true,
+      "program_sha256": "3b4327a004cad0aa92355d9c561d9a66737659d77f0deb9c99bf8da81878ca47",
+      "focus_resolve": 1,
+      "expected_status": [
+        [
+          "00000800",
+          "3"
+        ]
+      ]
+    },
+    {
+      "name": "ebreak_ifmiss",
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          4294967295
+        ],
+        [
+          2,
+          31
+        ],
+        [
+          2,
+          2147483648
+        ],
+        [
+          2,
+          4096
+        ],
+        [
+          2,
+          4084
+        ],
+        [
+          2,
+          1024
+        ],
+        [
+          2,
+          2048
+        ],
+        [
+          6,
+          8192
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "stores": [],
+      "traps": [
+        [
+          4088,
+          3,
+          4088
+        ]
+      ],
+      "focus_pc": 4088,
+      "focus_train": 0,
+      "require_focus_ifmiss": true,
+      "program_sha256": "e1c5a3109daeb02092ffbee040e46a9b85d5909e76c69189a70ab63bf88678f8",
+      "focus_resolve": 0,
+      "expected_status": [
+        [
+          "00000800",
+          "3"
+        ]
+      ]
+    }
+  ]
+}

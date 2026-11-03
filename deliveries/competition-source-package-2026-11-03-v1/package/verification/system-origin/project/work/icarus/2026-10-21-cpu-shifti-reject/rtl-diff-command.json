@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\git\\Git\\cmd\\git.exe",
+    "diff",
+    "--no-index",
+    "--no-ext-diff",
+    "--no-textconv",
+    "--",
+    "source-before",
+    "source"
+  ],
+  "cwd": "D:\\A_FPGA_Comp\\work\\icarus\\2026-10-21-cpu-shifti-reject",
+  "exit_code": 1,
+  "stderr": ""
+}

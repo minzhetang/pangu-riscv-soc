@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "id": "version",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+        "--version"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "trace_cap": false,
+      "elapsed_seconds": 0.078,
+      "timeout_seconds": 20,
+      "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\firmware-version\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\firmware-version\\stderr.log"
+    },
+    {
+      "id": "compile",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+        "-march=rv32i",
+        "-mabi=ilp32",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-common",
+        "-fno-pie",
+        "-fno-stack-protector",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-mno-relax",
+        "-msmall-data-limit=0",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-nostdlib",
+        "-nostartfiles",
+        "-Wl,--no-relax",
+        "-Wl,--build-id=none",
+        "-Wl,-T,D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\firmware\\link.ld",
+        "-Wl,-Map,D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\soc.map",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\soc.elf",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\firmware\\start.S",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\firmware\\main.c",
+        "-lgcc"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "trace_cap": false,
+      "elapsed_seconds": 0.484,
+      "timeout_seconds": 60,
+      "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\firmware-compile\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\firmware-compile\\stderr.log"
+    },
+    {
+      "id": "readelf",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-readelf.exe",
+        "-h",
+        "-A",
+        "-l",
+        "-sW",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\soc.elf"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "trace_cap": false,
+      "elapsed_seconds": 0.094,
+      "timeout_seconds": 20,
+      "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\firmware-readelf\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\firmware-readelf\\stderr.log"
+    },
+    {
+      "id": "disassemble",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objdump.exe",
+        "-d",
+        "-M",
+        "no-aliases",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\soc.elf"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "trace_cap": false,
+      "elapsed_seconds": 0.156,
+      "timeout_seconds": 20,
+      "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\firmware-disassemble\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\firmware-disassemble\\stderr.log"
+    },
+    {
+      "id": "objcopy",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\soc.elf",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\soc.bin"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "trace_cap": false,
+      "elapsed_seconds": 0.078,
+      "timeout_seconds": 20,
+      "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\firmware-objcopy\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\firmware-objcopy\\stderr.log"
+    },
+    {
+      "id": "undefined",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+        "-u",
+        "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build\\soc.elf"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\build",
+      "returncode": 0,
+      "returncode_hex": "0x00000000",
+      "timed_out": false,
+      "trace_cap": false,
+      "elapsed_seconds": 0.094,
+      "timeout_seconds": 20,
+      "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\firmware-undefined\\stdout.log",
+      "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-soc-txgpio-m1\\logs\\firmware-undefined\\stderr.log"
+    }
+  ],
+  "DUT_runs": 0,
+  "complete_system": "NOT_RUN_B_PACKAGE_PENDING"
+}

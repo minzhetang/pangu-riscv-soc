@@ -1,0 +1,6 @@
+0000: 00000093  addi x1,x0,0
+0004: 00200113  addi x2,x0,2 ; inclusive bound
+0008: 00108093  addi x1,x1,1 ; loop
+000c: fe117ee3  bgeu x2,x1,-4 ; 2>=1/2 true, 2>=3 false
+0010: 00102023  sw x1,0(x0) ; final3
+0014: 05a00f93  addi x31,x0,90 ; completion

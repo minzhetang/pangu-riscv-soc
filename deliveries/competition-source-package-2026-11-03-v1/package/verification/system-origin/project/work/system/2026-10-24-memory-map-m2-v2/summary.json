@@ -1,0 +1,891 @@
+{
+  "stage": "A-MEM-MAP-M2",
+  "date_beijing": "2026-10-24",
+  "status": "LIMITED_PRIMITIVE_MODEL_ACCEPTED",
+  "CPU_changed": false,
+  "sources": [
+    {
+      "file": "cpu.v",
+      "source_sha": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D",
+      "before_sha": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D",
+      "M1_sha": "7179EF273E62389280A23F962B696E3B8E09F3985CC72D76E5E80C7A0C59518D"
+    },
+    {
+      "file": "alu.v",
+      "source_sha": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "before_sha": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E",
+      "M1_sha": "6393472BC3635DA83213E0E9883766D5076C37EA60319F32F1DE5C420F68065E"
+    },
+    {
+      "file": "control.v",
+      "source_sha": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "before_sha": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067",
+      "M1_sha": "23CDBDFDD45DD60D6C7D95A13CC51927999A640FE5E30CAF8D324FA91AA87067"
+    },
+    {
+      "file": "regfile.v",
+      "source_sha": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "before_sha": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468",
+      "M1_sha": "AE36F070B994EEF41AF1636516D737EDA240C2A18AF83048ADC3E3E2391C8468"
+    }
+  ],
+  "frozen_files_rechecked": 3177,
+  "primitive_model": "D:\\PDS\\PDS_2022.2-SP6.4\\arch\\vendor\\pango\\verilog\\simulation\\GTP_DRM18K_E1.v",
+  "primitive_sha": "73A4DC428A369FE4FF6F6995BB9D79B58C0963E5812E6E9BFBAAF85DC237AB60",
+  "primitive_instances": 32,
+  "ROM_instances": 16,
+  "RAM_instances": 16,
+  "ROM_bytes": 32768,
+  "RAM_bytes": 32768,
+  "ROM": "two16-bit true-dual-port halves x eight1024-word banks",
+  "RAM": "two16-bit single-port halves x eight1024-word banks, NORMAL_WRITE",
+  "revision1_compile": {
+    "status": "FAIL_BEFORE_DUT",
+    "returncode": 2,
+    "reason": "Icarus lexer input buffer overflow on65536-hex-digit token",
+    "DUT_runs": 0,
+    "preserved_directory": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2"
+  },
+  "revision2_literal_equivalence": {
+    "status": "PASS",
+    "constant_values_equal": 20,
+    "old_max_hex_token": 65536,
+    "new_max_hex_token": 1024,
+    "DUT_runs": 0
+  },
+  "host_pack_roundtrip_checks": 327680,
+  "new_compiles": 10,
+  "compile_errors": 0,
+  "compile_seconds": 443.55,
+  "compile_permission": "v1 failed first/ended; v2 separately approved10 fixed targets, consumed; non-admin external compilation only",
+  "ordinary_DUT_runs": 13,
+  "positive_runs": 10,
+  "expected_protocol_rejections": 3,
+  "functional_FAIL": 0,
+  "TIMEOUT": 0,
+  "full_capacity_selftest_checks": 49416,
+  "selftest_real_write_edges": 122,
+  "complete_NEW_CPU_VCDs": 7,
+  "independent_wave_checks": 29827,
+  "programs": [
+    {
+      "id": "P01",
+      "compiled_output_sha256": "687AC692C0127F57B8371F10F479EBA99D501E89D7972747A81EEB84DEB0FEC2",
+      "status": "PASS",
+      "errors": [],
+      "metrics": {
+        "physical": 23,
+        "advances": 11,
+        "memory_holds": 12,
+        "stall": 1,
+        "flush": 0,
+        "raw_stall": 2,
+        "raw_flush": 0,
+        "tail": 8,
+        "time_ps": 270000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 3,
+          "READ": 1,
+          "WB": 3
+        },
+        "SHA256": {
+          "EX": "1516BD4859355FE2CD1EA78393E0D8D048696BBEC24595C511E286DC7D8A103D",
+          "WB": "EB8E9E8657B05EF014928241586FE76BBFF49D9BF588C552F7E0E57B50237547",
+          "MEM": "7722C152D5F1681A92A01B607D4875B98AEE2A8D51F9C23328A23DBC7A114B8A"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\P01.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P01.program.hex",
+          "+WORDS=256",
+          "+ROM_BYTES=1024",
+          "+RAM_BYTES=256",
+          "+RAM_BASE=256",
+          "+RAM_IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P01.data.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\P01-sync1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.657,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-P01-sync1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-P01-sync1\\stderr.log"
+      },
+      "registers_checked": 32,
+      "RAM_bytes_checked": 256,
+      "wave": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\P01-sync1\\wave.vcd",
+      "unknown_events": 0,
+      "scope": "fixed behavioral memory; no physical mapping or CoreMark score",
+      "default_mode": false
+    },
+    {
+      "id": "P02",
+      "compiled_output_sha256": "04C1295380612E913BB2F83993E194830A09BD9C21C47737FF1F5305E69EDBC4",
+      "status": "PASS",
+      "errors": [],
+      "metrics": {
+        "physical": 37,
+        "advances": 18,
+        "memory_holds": 19,
+        "stall": 1,
+        "flush": 0,
+        "raw_stall": 2,
+        "raw_flush": 0,
+        "tail": 8,
+        "time_ps": 410000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 10,
+          "WB": 6,
+          "STORE": 4,
+          "READ": 2
+        },
+        "SHA256": {
+          "EX": "7106CD57F7D5641FDF7055B74135C39569CFE4B1984DA877AA80B429C8D6AF3F",
+          "WB": "1A0E9D20E5A5FB3B2AFBC8A2244AF97E813796141B58A518F25DC7DD1D98430A",
+          "MEM": "6B10D5E3B326876F35B01AD4255DDBA48BE212C7C97D729B5EFCF903B76A59F4"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\P02.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P02.program.hex",
+          "+WORDS=256",
+          "+ROM_BYTES=1024",
+          "+RAM_BYTES=256",
+          "+RAM_BASE=256",
+          "+RAM_IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P02.data.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\P02-sync1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.657,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-P02-sync1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-P02-sync1\\stderr.log"
+      },
+      "registers_checked": 32,
+      "RAM_bytes_checked": 256,
+      "wave": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\P02-sync1\\wave.vcd",
+      "unknown_events": 0,
+      "scope": "fixed behavioral memory; no physical mapping or CoreMark score",
+      "default_mode": false
+    },
+    {
+      "id": "P03T",
+      "compiled_output_sha256": "73BD3A920BA035D71B8C2BA76B6FEC030C65F0DDA44DA859EF9526513346A0E8",
+      "status": "PASS",
+      "errors": [],
+      "metrics": {
+        "physical": 27,
+        "advances": 13,
+        "memory_holds": 14,
+        "stall": 1,
+        "flush": 1,
+        "raw_stall": 2,
+        "raw_flush": 2,
+        "tail": 8,
+        "time_ps": 310000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 3,
+          "READ": 1,
+          "WB": 2
+        },
+        "SHA256": {
+          "EX": "1516BD4859355FE2CD1EA78393E0D8D048696BBEC24595C511E286DC7D8A103D",
+          "WB": "5065B46166D5C3E070AB30CE5D7B6AB4C7E933FF83ABCCE4E87858D99CA37356",
+          "MEM": "48A1B84B6186C44F5A36E563FF06347D94A30A0C69E16040594E2659989C7AD4"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\P03T.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P03T.program.hex",
+          "+WORDS=256",
+          "+ROM_BYTES=1024",
+          "+RAM_BYTES=256",
+          "+RAM_BASE=256",
+          "+RAM_IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P03T.data.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\P03T-sync1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.657,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-P03T-sync1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-P03T-sync1\\stderr.log"
+      },
+      "registers_checked": 32,
+      "RAM_bytes_checked": 256,
+      "wave": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\P03T-sync1\\wave.vcd",
+      "unknown_events": 0,
+      "scope": "fixed behavioral memory; no physical mapping or CoreMark score",
+      "default_mode": false
+    },
+    {
+      "id": "P03N",
+      "compiled_output_sha256": "41B73CEEB3D38E568D218C27A07BAE2FFBBB187240D19F2CE19E9B9113D2465D",
+      "status": "PASS",
+      "errors": [],
+      "metrics": {
+        "physical": 27,
+        "advances": 13,
+        "memory_holds": 14,
+        "stall": 1,
+        "flush": 0,
+        "raw_stall": 2,
+        "raw_flush": 0,
+        "tail": 8,
+        "time_ps": 310000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 5,
+          "READ": 1,
+          "WB": 3,
+          "STORE": 1
+        },
+        "SHA256": {
+          "EX": "5C62FD2E432A047297754760986D6D52A0CD091A4BAB883A7E886B35FF7DBA0A",
+          "WB": "2C49227539858D33D555CE37A750A32F26344C2DE1D678BEFEC4079FA34C8FEE",
+          "MEM": "2E169453FBD6FB333346B4A5AC6D90D09F1CF5C805D68BDCEB0CA543E8F3AE61"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\P03N.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P03N.program.hex",
+          "+WORDS=256",
+          "+ROM_BYTES=1024",
+          "+RAM_BYTES=256",
+          "+RAM_BASE=256",
+          "+RAM_IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P03N.data.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\P03N-sync1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.687,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-P03N-sync1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-P03N-sync1\\stderr.log"
+      },
+      "registers_checked": 32,
+      "RAM_bytes_checked": 256,
+      "wave": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\P03N-sync1\\wave.vcd",
+      "unknown_events": 0,
+      "scope": "fixed behavioral memory; no physical mapping or CoreMark score",
+      "default_mode": false
+    },
+    {
+      "id": "P04",
+      "compiled_output_sha256": "A8E5269B8706CCDCB8D616C879B2A7CBABD7781FB25A57389A6B8CA33DA36539",
+      "status": "PASS",
+      "errors": [],
+      "metrics": {
+        "physical": 27,
+        "advances": 13,
+        "memory_holds": 14,
+        "stall": 0,
+        "flush": 1,
+        "raw_stall": 0,
+        "raw_flush": 2,
+        "tail": 8,
+        "time_ps": 310000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 4,
+          "WB": 2,
+          "STORE": 1
+        },
+        "SHA256": {
+          "EX": "F06C4F4CEA50B740841BD4C25983247B860DCAF949AFB899EEDEDAF6089EBABE",
+          "WB": "E1463E4507DB9E6B4AE64D364BC1F7468EBB9754246926AE231D6AACCDA7BCBE",
+          "MEM": "DF3B72F639F74E10B7F73BE21EA58EAE16C6B5BD44B0F30D228406038FAFE492"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\P04.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P04.program.hex",
+          "+WORDS=256",
+          "+ROM_BYTES=1024",
+          "+RAM_BYTES=256",
+          "+RAM_BASE=256",
+          "+RAM_IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P04.data.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\P04-sync1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.672,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-P04-sync1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-P04-sync1\\stderr.log"
+      },
+      "registers_checked": 32,
+      "RAM_bytes_checked": 256,
+      "wave": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\P04-sync1\\wave.vcd",
+      "unknown_events": 0,
+      "scope": "fixed behavioral memory; no physical mapping or CoreMark score",
+      "default_mode": false
+    },
+    {
+      "id": "P05",
+      "compiled_output_sha256": "9FAB56D38BFF2A912D6F5C3645B927FDD974850C811417183F4675DF477FD1E0",
+      "status": "PASS",
+      "errors": [],
+      "metrics": {
+        "physical": 19,
+        "advances": 9,
+        "memory_holds": 10,
+        "stall": 0,
+        "flush": 0,
+        "raw_stall": 0,
+        "raw_flush": 0,
+        "tail": 8,
+        "time_ps": 230000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 2,
+          "READ": 1,
+          "WB": 2
+        },
+        "SHA256": {
+          "EX": "86BD03ACFD87B6291D8089DE2F74898F8E9259CA329648996121672C032BE93F",
+          "WB": "7B69916B2315E0C9A07A65C760931A1B3483976A5D7B760A69C53959BCA5BA64",
+          "MEM": "BD37DD0706847377AAF20252126ED3612E40CB2A1388F5BB2216DCD113DA826A"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\P05.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P05.program.hex",
+          "+WORDS=256",
+          "+ROM_BYTES=1024",
+          "+RAM_BYTES=256",
+          "+RAM_BASE=256",
+          "+RAM_IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-memory-timing-m0\\inputs\\P05.data.hex",
+          "+MAX_CYCLES=4000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\P05-sync1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.672,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-P05-sync1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-P05-sync1\\stderr.log"
+      },
+      "registers_checked": 32,
+      "RAM_bytes_checked": 256,
+      "wave": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\P05-sync1\\wave.vcd",
+      "unknown_events": 0,
+      "scope": "fixed behavioral memory; no physical mapping or CoreMark score",
+      "default_mode": false
+    },
+    {
+      "id": "cboot",
+      "compiled_output_sha256": "EBEDADE4150331467AE826D760E4F655421FD707FD87838C1C99ED14C5361266",
+      "status": "PASS",
+      "errors": [],
+      "metrics": {
+        "physical": 1285,
+        "advances": 642,
+        "memory_holds": 643,
+        "stall": 2,
+        "flush": 97,
+        "raw_stall": 4,
+        "raw_flush": 194,
+        "tail": 8,
+        "time_ps": 12890000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 439,
+          "WB": 263,
+          "READ": 13,
+          "STORE": 16
+        },
+        "SHA256": {
+          "EX": "0AA86E449B2F5F136526B7B3D52743012AE9DD53522FC240681742835E2F6587",
+          "WB": "98F1558F740A0126A41F7D23C644EE209EAF12D0967D1765AA1E20A255DA447E",
+          "MEM": "99F0BE6C44E64609DDFFA18E7FA02C6BC8F0F33F91D86CAE7ED608E275900540"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\cboot.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-c-boot-m1\\inputs\\smoke.mem32.hex",
+          "+WORDS=144",
+          "+ROM_BYTES=16384",
+          "+RAM_BYTES=16384",
+          "+RAM_BASE=65536",
+          "+MAX_CYCLES=100000"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\cboot-sync1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 0.781,
+        "timeout_seconds": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-cboot-sync1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-cboot-sync1\\stderr.log"
+      },
+      "registers_checked": 32,
+      "RAM_bytes_checked": 16384,
+      "wave": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\cboot-sync1\\wave.vcd",
+      "unknown_events": 0,
+      "scope": "fixed behavioral memory; no physical mapping or CoreMark score",
+      "default_mode": false
+    },
+    {
+      "id": "performance",
+      "compiled_output_sha256": "7817E7B1646CA619E38898F872840194E2E73D246C31C4EDACFA59ECA7A9562E",
+      "status": "PASS",
+      "errors": [],
+      "metrics": {
+        "physical": 2202631,
+        "advances": 1101315,
+        "memory_holds": 1101316,
+        "stall": 22483,
+        "flush": 155217,
+        "raw_stall": 44966,
+        "raw_flush": 310434,
+        "tail": 8,
+        "time_ps": 22026350000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 768391,
+          "WB": 526027,
+          "READ": 59090,
+          "STORE": 19201
+        },
+        "SHA256": {
+          "EX": "8DBBE81808F9FAAAB861FB654AEACC8B7129D718CE2AC8E6467C44FBB64B0DE3",
+          "WB": "1EE4BFAC97C3013FE5ECC01C6EB9007BB76E656B3C0921C5046B9F3AF14E1F6D",
+          "MEM": "E56042C82DFA9A3550BA80623A2F63C6B20473291935A0A4F1ED894CCEB3A9EF"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\performance.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\performance\\image.hex",
+          "+WORDS=3792",
+          "+ROM_BYTES=32768",
+          "+RAM_BYTES=32768",
+          "+RAM_BASE=65536",
+          "+MAX_CYCLES=2202758"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\performance-sync1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 119.797,
+        "timeout_seconds": 180,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-performance-sync1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-performance-sync1\\stderr.log"
+      },
+      "registers_checked": 32,
+      "RAM_bytes_checked": 32768,
+      "wave": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\performance-sync1\\wave.vcd",
+      "unknown_events": 0,
+      "scope": "fixed behavioral memory; no physical mapping or CoreMark score",
+      "default_mode": false
+    },
+    {
+      "id": "validation",
+      "compiled_output_sha256": "ADE85D6EDF9198C20AA905CA800B882E6DBF65C4C9344F69E2FA7D3A98B4D4C3",
+      "status": "PASS",
+      "errors": [],
+      "metrics": {
+        "physical": 2361451,
+        "advances": 1180725,
+        "memory_holds": 1180726,
+        "stall": 23001,
+        "flush": 168293,
+        "raw_stall": 46002,
+        "raw_flush": 336586,
+        "tail": 8,
+        "time_ps": 23614550000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 821131,
+          "WB": 560029,
+          "READ": 59554,
+          "STORE": 19106
+        },
+        "SHA256": {
+          "EX": "6B799EAA0EB7C3C5E6D2060AE5E31703F7505843475A7BB7121D54626F617147",
+          "WB": "13EDBD67D567831C25A0919691C5D5059ABFFEC6D37A136E712D234DA4CBD83D",
+          "MEM": "9911E18D160BC361AF60F398309D7E142ADA7EB266EDB2941D91D2583346CF96"
+        }
+      },
+      "process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\compile\\validation.vvp",
+          "+IMAGE=D:\\A_FPGA_Comp\\work\\system\\2026-10-23-coremark-correctness-m1\\validation\\image.hex",
+          "+WORDS=3794",
+          "+ROM_BYTES=32768",
+          "+RAM_BYTES=32768",
+          "+RAM_BASE=65536",
+          "+MAX_CYCLES=2361578"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\validation-sync1",
+        "returncode": 0,
+        "returncode_hex": "0x00000000",
+        "timed_out": false,
+        "trace_cap": false,
+        "elapsed_seconds": 126.609,
+        "timeout_seconds": 180,
+        "stdout": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-validation-sync1\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\logs\\run-validation-sync1\\stderr.log"
+      },
+      "registers_checked": 32,
+      "RAM_bytes_checked": 32768,
+      "wave": "D:\\A_FPGA_Comp\\work\\system\\2026-10-24-memory-map-m2-v2\\runs\\validation-sync1\\wave.vcd",
+      "unknown_events": 0,
+      "scope": "fixed behavioral memory; no physical mapping or CoreMark score",
+      "default_mode": false
+    }
+  ],
+  "comparison_to_behavioral_M1": [
+    {
+      "id": "P01",
+      "metrics_equal_to_M1": true,
+      "streams_equal_to_M1": true,
+      "actual_metrics": {
+        "physical": 23,
+        "advances": 11,
+        "memory_holds": 12,
+        "stall": 1,
+        "flush": 0,
+        "raw_stall": 2,
+        "raw_flush": 0,
+        "tail": 8,
+        "time_ps": 270000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 3,
+          "READ": 1,
+          "WB": 3
+        },
+        "SHA256": {
+          "EX": "1516BD4859355FE2CD1EA78393E0D8D048696BBEC24595C511E286DC7D8A103D",
+          "WB": "EB8E9E8657B05EF014928241586FE76BBFF49D9BF588C552F7E0E57B50237547",
+          "MEM": "7722C152D5F1681A92A01B607D4875B98AEE2A8D51F9C23328A23DBC7A114B8A"
+        }
+      },
+      "wall_seconds": 0.657
+    },
+    {
+      "id": "P02",
+      "metrics_equal_to_M1": true,
+      "streams_equal_to_M1": true,
+      "actual_metrics": {
+        "physical": 37,
+        "advances": 18,
+        "memory_holds": 19,
+        "stall": 1,
+        "flush": 0,
+        "raw_stall": 2,
+        "raw_flush": 0,
+        "tail": 8,
+        "time_ps": 410000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 10,
+          "WB": 6,
+          "STORE": 4,
+          "READ": 2
+        },
+        "SHA256": {
+          "EX": "7106CD57F7D5641FDF7055B74135C39569CFE4B1984DA877AA80B429C8D6AF3F",
+          "WB": "1A0E9D20E5A5FB3B2AFBC8A2244AF97E813796141B58A518F25DC7DD1D98430A",
+          "MEM": "6B10D5E3B326876F35B01AD4255DDBA48BE212C7C97D729B5EFCF903B76A59F4"
+        }
+      },
+      "wall_seconds": 0.657
+    },
+    {
+      "id": "P03T",
+      "metrics_equal_to_M1": true,
+      "streams_equal_to_M1": true,
+      "actual_metrics": {
+        "physical": 27,
+        "advances": 13,
+        "memory_holds": 14,
+        "stall": 1,
+        "flush": 1,
+        "raw_stall": 2,
+        "raw_flush": 2,
+        "tail": 8,
+        "time_ps": 310000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 3,
+          "READ": 1,
+          "WB": 2
+        },
+        "SHA256": {
+          "EX": "1516BD4859355FE2CD1EA78393E0D8D048696BBEC24595C511E286DC7D8A103D",
+          "WB": "5065B46166D5C3E070AB30CE5D7B6AB4C7E933FF83ABCCE4E87858D99CA37356",
+          "MEM": "48A1B84B6186C44F5A36E563FF06347D94A30A0C69E16040594E2659989C7AD4"
+        }
+      },
+      "wall_seconds": 0.657
+    },
+    {
+      "id": "P03N",
+      "metrics_equal_to_M1": true,
+      "streams_equal_to_M1": true,
+      "actual_metrics": {
+        "physical": 27,
+        "advances": 13,
+        "memory_holds": 14,
+        "stall": 1,
+        "flush": 0,
+        "raw_stall": 2,
+        "raw_flush": 0,
+        "tail": 8,
+        "time_ps": 310000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 5,
+          "READ": 1,
+          "WB": 3,
+          "STORE": 1
+        },
+        "SHA256": {
+          "EX": "5C62FD2E432A047297754760986D6D52A0CD091A4BAB883A7E886B35FF7DBA0A",
+          "WB": "2C49227539858D33D555CE37A750A32F26344C2DE1D678BEFEC4079FA34C8FEE",
+          "MEM": "2E169453FBD6FB333346B4A5AC6D90D09F1CF5C805D68BDCEB0CA543E8F3AE61"
+        }
+      },
+      "wall_seconds": 0.687
+    },
+    {
+      "id": "P04",
+      "metrics_equal_to_M1": true,
+      "streams_equal_to_M1": true,
+      "actual_metrics": {
+        "physical": 27,
+        "advances": 13,
+        "memory_holds": 14,
+        "stall": 0,
+        "flush": 1,
+        "raw_stall": 0,
+        "raw_flush": 2,
+        "tail": 8,
+        "time_ps": 310000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 4,
+          "WB": 2,
+          "STORE": 1
+        },
+        "SHA256": {
+          "EX": "F06C4F4CEA50B740841BD4C25983247B860DCAF949AFB899EEDEDAF6089EBABE",
+          "WB": "E1463E4507DB9E6B4AE64D364BC1F7468EBB9754246926AE231D6AACCDA7BCBE",
+          "MEM": "DF3B72F639F74E10B7F73BE21EA58EAE16C6B5BD44B0F30D228406038FAFE492"
+        }
+      },
+      "wall_seconds": 0.672
+    },
+    {
+      "id": "P05",
+      "metrics_equal_to_M1": true,
+      "streams_equal_to_M1": true,
+      "actual_metrics": {
+        "physical": 19,
+        "advances": 9,
+        "memory_holds": 10,
+        "stall": 0,
+        "flush": 0,
+        "raw_stall": 0,
+        "raw_flush": 0,
+        "tail": 8,
+        "time_ps": 230000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 2,
+          "READ": 1,
+          "WB": 2
+        },
+        "SHA256": {
+          "EX": "86BD03ACFD87B6291D8089DE2F74898F8E9259CA329648996121672C032BE93F",
+          "WB": "7B69916B2315E0C9A07A65C760931A1B3483976A5D7B760A69C53959BCA5BA64",
+          "MEM": "BD37DD0706847377AAF20252126ED3612E40CB2A1388F5BB2216DCD113DA826A"
+        }
+      },
+      "wall_seconds": 0.672
+    },
+    {
+      "id": "cboot",
+      "metrics_equal_to_M1": true,
+      "streams_equal_to_M1": true,
+      "actual_metrics": {
+        "physical": 1285,
+        "advances": 642,
+        "memory_holds": 643,
+        "stall": 2,
+        "flush": 97,
+        "raw_stall": 4,
+        "raw_flush": 194,
+        "tail": 8,
+        "time_ps": 12890000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 439,
+          "WB": 263,
+          "READ": 13,
+          "STORE": 16
+        },
+        "SHA256": {
+          "EX": "0AA86E449B2F5F136526B7B3D52743012AE9DD53522FC240681742835E2F6587",
+          "WB": "98F1558F740A0126A41F7D23C644EE209EAF12D0967D1765AA1E20A255DA447E",
+          "MEM": "99F0BE6C44E64609DDFFA18E7FA02C6BC8F0F33F91D86CAE7ED608E275900540"
+        }
+      },
+      "wall_seconds": 0.781
+    },
+    {
+      "id": "performance",
+      "metrics_equal_to_M1": true,
+      "streams_equal_to_M1": true,
+      "actual_metrics": {
+        "physical": 2202631,
+        "advances": 1101315,
+        "memory_holds": 1101316,
+        "stall": 22483,
+        "flush": 155217,
+        "raw_stall": 44966,
+        "raw_flush": 310434,
+        "tail": 8,
+        "time_ps": 22026350000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 768391,
+          "WB": 526027,
+          "READ": 59090,
+          "STORE": 19201
+        },
+        "SHA256": {
+          "EX": "8DBBE81808F9FAAAB861FB654AEACC8B7129D718CE2AC8E6467C44FBB64B0DE3",
+          "WB": "1EE4BFAC97C3013FE5ECC01C6EB9007BB76E656B3C0921C5046B9F3AF14E1F6D",
+          "MEM": "E56042C82DFA9A3550BA80623A2F63C6B20473291935A0A4F1ED894CCEB3A9EF"
+        }
+      },
+      "wall_seconds": 119.797
+    },
+    {
+      "id": "validation",
+      "metrics_equal_to_M1": true,
+      "streams_equal_to_M1": true,
+      "actual_metrics": {
+        "physical": 2361451,
+        "advances": 1180725,
+        "memory_holds": 1180726,
+        "stall": 23001,
+        "flush": 168293,
+        "raw_stall": 46002,
+        "raw_flush": 336586,
+        "tail": 8,
+        "time_ps": 23614550000
+      },
+      "actual_streams": {
+        "counts": {
+          "EX": 821131,
+          "WB": 560029,
+          "READ": 59554,
+          "STORE": 19106
+        },
+        "SHA256": {
+          "EX": "6B799EAA0EB7C3C5E6D2060AE5E31703F7505843475A7BB7121D54626F617147",
+          "WB": "13EDBD67D567831C25A0919691C5D5059ABFFEC6D37A136E712D234DA4CBD83D",
+          "MEM": "9911E18D160BC361AF60F398309D7E142ADA7EB266EDB2941D91D2583346CF96"
+        }
+      },
+      "wall_seconds": 126.609
+    }
+  ],
+  "limitations": [
+    "functional official-primitive MODEL binding, not PDS mapping/synthesis/resource/Fmax or board verification",
+    "fullcapacity selftest pattern; old six probes use their frozen visible apertures inside fullallocated primitives",
+    "RAM same-port NORMAL_WRITE outputs not consumed as read data during STORE; no cross-port RAM collision promise",
+    "no complete CoreMark VCD: first4096physical clocks plus stopped tail, full streams/state and invariants separate",
+    "same~two-clock pipeline advance cost, no efficiency gain or valid CoreMark timing/score",
+    "no real retirement PC/unifiedWB-STORE commit stream; fixed memory/reset-state limits",
+    "no UART/GPIO integration, no hardware; over_tempSTOP unchanged"
+  ]
+}

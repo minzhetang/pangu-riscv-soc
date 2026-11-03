@@ -1,0 +1,48 @@
+{
+  "date_beijing": "2026-10-24",
+  "created_before_DUT": true,
+  "expected_results": [
+    324508639,
+    0,
+    126,
+    90,
+    90,
+    165,
+    60,
+    195,
+    12,
+    165,
+    0,
+    0
+  ],
+  "signature": 1397703473,
+  "main_return": 0,
+  "gpio_writes": [
+    90,
+    90,
+    165
+  ],
+  "tx_bytes": [
+    80,
+    71,
+    49,
+    48,
+    48,
+    32,
+    77,
+    49,
+    13,
+    10,
+    65,
+    65
+  ],
+  "stop_kind": 2,
+  "stack_top": 98304,
+  "stack_reserved_bytes": 8192,
+  "UART_N": [
+    16,
+    234
+  ],
+  "DUT_runs": 0,
+  "complete_system_status": "NOT_RUN_B_PACKAGE_PENDING"
+}

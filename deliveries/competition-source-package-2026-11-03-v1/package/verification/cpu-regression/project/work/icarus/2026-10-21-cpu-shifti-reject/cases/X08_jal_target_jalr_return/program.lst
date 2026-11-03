@@ -1,0 +1,9 @@
+0000: 010000ef  jal x1,+16 ; link4
+0004: 00108113  addi x2,x1,1 ; after return
+0008: 0140006f  jal x0,+20 ; target28
+000c: 00002023  sw x0,0(x0) ; wrong path
+0010: 000082e7  jalr x5,0(x1) ; target4, link20
+0014: 00002223  sw x0,4(x0) ; wrong path
+0018: 06300213  addi x4,x0,99 ; wrong path
+001c: 00128193  addi x3,x5,1 ; 21
+0020: 05a00f93  addi x31,x0,90 ; completion

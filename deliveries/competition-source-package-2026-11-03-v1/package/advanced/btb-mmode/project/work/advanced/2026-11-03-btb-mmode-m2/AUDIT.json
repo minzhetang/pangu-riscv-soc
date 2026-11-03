@@ -1,0 +1,1356 @@
+{
+  "wave_review": [
+    {
+      "run": "before-v2-s0-p1",
+      "case": "jal_ifmiss",
+      "cycle": 26,
+      "phase": "before_rising_edge",
+      "time_ps": 304999,
+      "expected": {
+        "id_pc": 4088,
+        "id_valid": 1,
+        "stall_all": 1,
+        "i_hit": 0,
+        "redirect": 1
+      },
+      "actual": {
+        "id_pc": 4088,
+        "id_valid": 1,
+        "stall_all": 1,
+        "i_hit": 0,
+        "redirect": 1
+      },
+      "pass_": true
+    },
+    {
+      "run": "before-v2-s0-p1",
+      "case": "jal_ifmiss",
+      "cycle": 26,
+      "phase": "after_rising_edge_1ps",
+      "time_ps": 305001,
+      "expected": {
+        "id_valid": 0
+      },
+      "actual": {
+        "id_valid": 0
+      },
+      "pass_": true
+    },
+    {
+      "run": "after-v2-s0-p1",
+      "case": "jal_ifmiss",
+      "cycle": 26,
+      "phase": "before_rising_edge",
+      "time_ps": 304999,
+      "expected": {
+        "id_pc": 4088,
+        "id_valid": 1,
+        "stall_all": 1,
+        "i_hit": 0,
+        "redirect": 0
+      },
+      "actual": {
+        "id_pc": 4088,
+        "id_valid": 1,
+        "stall_all": 1,
+        "i_hit": 0,
+        "redirect": 0
+      },
+      "pass_": true
+    },
+    {
+      "run": "after-v2-s0-p1",
+      "case": "jal_ifmiss",
+      "cycle": 26,
+      "phase": "after_rising_edge_1ps",
+      "time_ps": 305001,
+      "expected": {
+        "id_pc": 4088,
+        "id_valid": 1
+      },
+      "actual": {
+        "id_pc": 4088,
+        "id_valid": 1
+      },
+      "pass_": true
+    },
+    {
+      "run": "after-v2-s0-p1",
+      "case": "jal_ifmiss",
+      "cycle": 30,
+      "phase": "before_rising_edge",
+      "time_ps": 344999,
+      "expected": {
+        "id_pc": 4088,
+        "stall_all": 0,
+        "redirect": 1,
+        "ex_alu_result_final": 4092
+      },
+      "actual": {
+        "id_pc": 4088,
+        "stall_all": 0,
+        "redirect": 1,
+        "ex_alu_result_final": 4092
+      },
+      "pass_": true
+    },
+    {
+      "run": "after-v2-s0-p1",
+      "case": "jal_ifmiss",
+      "cycle": 30,
+      "phase": "after_rising_edge_1ps",
+      "time_ps": 345001,
+      "expected": {
+        "ex_rd": 5,
+        "ex_reg_write": 1,
+        "ex_alu_result": 4092
+      },
+      "actual": {
+        "ex_rd": 5,
+        "ex_reg_write": 1,
+        "ex_alu_result": 4092
+      },
+      "pass_": true
+    },
+    {
+      "run": "after-trap-s0-p1",
+      "case": "misaligned_jump_ifmiss",
+      "cycle": 26,
+      "phase": "before_rising_edge",
+      "time_ps": 304999,
+      "expected": {
+        "stall_all": 1,
+        "ex_exception": 1,
+        "trap_valid": 0,
+        "redirect": 0,
+        "id_valid": 1
+      },
+      "actual": {
+        "stall_all": 1,
+        "ex_exception": 1,
+        "trap_valid": 0,
+        "redirect": 0,
+        "id_valid": 1
+      },
+      "pass_": true
+    },
+    {
+      "run": "after-trap-s0-p1",
+      "case": "misaligned_jump_ifmiss",
+      "cycle": 30,
+      "phase": "before_rising_edge",
+      "time_ps": 344999,
+      "expected": {
+        "stall_all": 0,
+        "ex_exception": 1,
+        "trap_valid": 1,
+        "trap_epc": 4088,
+        "trap_tval": 4090
+      },
+      "actual": {
+        "stall_all": 0,
+        "ex_exception": 1,
+        "trap_valid": 1,
+        "trap_epc": 4088,
+        "trap_tval": 4090
+      },
+      "pass_": true
+    }
+  ],
+  "protected": [
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/COPY_SHA256.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/FINAL_MANIFEST.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/REPORT.md",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/START_HERE.md",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/UPSTREAM_DEPENDENCIES.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/CONTROLLER_SETTLE_CHANGE.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/LEGACY_H69_RECHECK.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/NATIVE_CAPTURE_DIAGNOSTIC.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/RESULTS.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-performance-native-repeat-m3/CAPTURE_CHECK.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-performance-native-repeat-m3/RESULT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-performance-native-repeat-m3/SERIAL_RESULT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-performance-native-repeat-m3/uart-raw.bin",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-m3/CAPTURE_CHECK.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-m3/RESULT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-m3/SERIAL_RESULT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-m3/uart-raw.bin",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-native-repeat-m3/CAPTURE_CHECK.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-native-repeat-m3/RESULT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-native-repeat-m3/SERIAL_RESULT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/evidence/2026-11-02-sm2-validation-native-repeat-m3/uart-raw.bin",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/configuration/board_top.sbit",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/configuration/configuration.svf",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/evidence/IMPLEMENTATION_AUDIT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/evidence/ORIGINAL_COMPILE_COMMANDS.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/board_pins.fdc",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/clock_27mhz.fdc",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/closure_io.fdc",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/flow.tcl",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/alu.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/board_reset_sync.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/board_top.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/control.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/cpu.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/cycle_counter64.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/gpio_core.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/init_tables.svh",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/local_regif_txgpio_m1.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/memory_model.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/regfile.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/soc_data_adapter.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/soc_top.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/pds/source/uart_tx.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/board_qa.c",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/link.ld",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/mul_sm2.S",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/start.S",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/firmware/timer.h",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/port/core_portme.c",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/port/core_portme.h",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/build/performance256/build_identity.h",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/build/performance256/program.bin",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/performance/software/build/performance256/program.elf",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/configuration/board_top.sbit",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/configuration/configuration.svf",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/evidence/IMPLEMENTATION_AUDIT.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/evidence/ORIGINAL_COMPILE_COMMANDS.json",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/board_pins.fdc",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/clock_27mhz.fdc",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/closure_io.fdc",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/flow.tcl",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/alu.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/board_reset_sync.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/board_top.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/control.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/cpu.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/cycle_counter64.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/gpio_core.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/init_tables.svh",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/local_regif_txgpio_m1.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/memory_model.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/regfile.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/soc_data_adapter.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/soc_top.sv",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/pds/source/uart_tx.v",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/firmware/board_qa.c",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/firmware/link.ld",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/firmware/mul_sm2.S",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/firmware/start.S",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/firmware/timer.h",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/port/core_portme.c",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/port/core_portme.h",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/build/validation256/build_identity.h",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/build/validation256/program.bin",
+      "unchanged": true
+    },
+    {
+      "path": "deliveries/accepted-basic-sm2-2026-11-02-v1/validation/software/build/validation256/program.elf",
+      "unchanged": true
+    },
+    {
+      "path": "work/application/2026-11-03-event-recorder-m2/firmware/app-before-dense-declaration-fix.c",
+      "unchanged": true
+    },
+    {
+      "path": "work/application/2026-11-03-event-recorder-m2/firmware/app.c",
+      "unchanged": true
+    },
+    {
+      "path": "work/application/2026-11-03-event-recorder-m2/firmware/link.ld",
+      "unchanged": true
+    },
+    {
+      "path": "work/application/2026-11-03-event-recorder-m2/firmware/start.S",
+      "unchanged": true
+    }
+  ],
+  "m1_manifest_count": 1410,
+  "m1_manifest_mismatch": [],
+  "source_identity": [
+    {
+      "file": "alu.v",
+      "m1_copy_matches": true,
+      "original_copy_matches": true,
+      "candidate_changed": false,
+      "before_sha256": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e",
+      "after_sha256": "6393472bc3635da83213e0e9883766d5076c37ea60319f32f1de5c420f68065e"
+    },
+    {
+      "file": "btb.v",
+      "m1_copy_matches": true,
+      "original_copy_matches": true,
+      "candidate_changed": false,
+      "before_sha256": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0",
+      "after_sha256": "a7f184154b471469149b99330938406a49377669f08a14f4c9836db470faa7c0"
+    },
+    {
+      "file": "control.v",
+      "m1_copy_matches": true,
+      "original_copy_matches": true,
+      "candidate_changed": false,
+      "before_sha256": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067",
+      "after_sha256": "23cdbdfdd45dd60d6c7d95a13cc51927999a640fe5e30caf8d324fa91aa87067"
+    },
+    {
+      "file": "cpu_hl4.v",
+      "m1_copy_matches": true,
+      "original_copy_matches": true,
+      "candidate_changed": true,
+      "before_sha256": "448a32c4196e71cec40b7a4344aa3384439443c2cf86449fd44b4bab0ce8a7c9",
+      "after_sha256": "ba6dfcd5b0e9efe9426ca5f555bdbcc2af80a1ba68baa673a0d2e8d86255e151"
+    },
+    {
+      "file": "csr_file_hl3.v",
+      "m1_copy_matches": true,
+      "original_copy_matches": true,
+      "candidate_changed": false,
+      "before_sha256": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1",
+      "after_sha256": "ddef6f8e193a0e697c405d72aca0566a4d9347bd2799585deaf1be29a6ab39c1"
+    },
+    {
+      "file": "mmu_sv32.v",
+      "m1_copy_matches": true,
+      "original_copy_matches": true,
+      "candidate_changed": false,
+      "before_sha256": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4",
+      "after_sha256": "f14e89a695413d7cce1f4d4465ff7d481d0ba8dac0d3742185f34a0e30c4f3e4"
+    },
+    {
+      "file": "pmp.v",
+      "m1_copy_matches": true,
+      "original_copy_matches": true,
+      "candidate_changed": false,
+      "before_sha256": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a",
+      "after_sha256": "f80da6ec85fdd006191da6160accb4b0bc6112df2f658b04ff73b76a47f3275a"
+    },
+    {
+      "file": "regfile.v",
+      "m1_copy_matches": true,
+      "original_copy_matches": true,
+      "candidate_changed": false,
+      "before_sha256": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468",
+      "after_sha256": "ae36f070b994eef41af1636516d737eda240c2a18af83048adc3e3e2391c8468"
+    }
+  ],
+  "independent_new_cases": [
+    {
+      "case": "jal_ifmiss",
+      "sync": 0,
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "case": "jalr_ifmiss",
+      "sync": 0,
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "case": "beq_ifmiss_v2",
+      "sync": 0,
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "case": "bne_hold_training",
+      "sync": 0,
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "case": "jal_ifmiss",
+      "sync": 0,
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "case": "jalr_ifmiss",
+      "sync": 0,
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "case": "beq_ifmiss_v2",
+      "sync": 0,
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "case": "bne_hold_training",
+      "sync": 0,
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "case": "jal_ifmiss",
+      "sync": 1,
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "case": "jalr_ifmiss",
+      "sync": 1,
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "case": "beq_ifmiss_v2",
+      "sync": 1,
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "case": "bne_hold_training",
+      "sync": 1,
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "case": "jal_ifmiss",
+      "sync": 1,
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "case": "jalr_ifmiss",
+      "sync": 1,
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "case": "beq_ifmiss_v2",
+      "sync": 1,
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "case": "bne_hold_training",
+      "sync": 1,
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "case": "misaligned_jump_ifmiss",
+      "sync": 0,
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "case": "ebreak_ifmiss",
+      "sync": 0,
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "case": "misaligned_jump_ifmiss",
+      "sync": 0,
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "case": "ebreak_ifmiss",
+      "sync": 0,
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "case": "misaligned_jump_ifmiss",
+      "sync": 1,
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "case": "ebreak_ifmiss",
+      "sync": 1,
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "case": "misaligned_jump_ifmiss",
+      "sync": 1,
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "case": "ebreak_ifmiss",
+      "sync": 1,
+      "pred": 1,
+      "pass_": true
+    }
+  ],
+  "independent_regression": [
+    {
+      "stage": "final-regression",
+      "case": "jal",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "jalr",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "taken_branch",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "not_taken_misaligned",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "jal_link_flush",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "jalr_link_flush",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "branch_loop",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "illegal",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "ecall",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "ebreak",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "load_misaligned",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "store_misaligned",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "irq_timer",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "irq_software",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "irq_external",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "irq_priority",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "irq_masked",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "stale_nonbranch",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "mprv_store_hold",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "jal",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "jalr",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "taken_branch",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "not_taken_misaligned",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "jal_link_flush",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "jalr_link_flush",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "branch_loop",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "illegal",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "ecall",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "ebreak",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "load_misaligned",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "store_misaligned",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "irq_timer",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "irq_software",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "irq_external",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "irq_priority",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "irq_masked",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "stale_nonbranch",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression",
+      "case": "mprv_store_hold",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "jal",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "jalr",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "taken_branch",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "not_taken_misaligned",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "jal_link_flush",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "jalr_link_flush",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "branch_loop",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "illegal",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "ecall",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "ebreak",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "load_misaligned",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "store_misaligned",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "irq_timer",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "irq_software",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "irq_external",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "irq_priority",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "irq_masked",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "stale_nonbranch",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "mprv_store_hold",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "jal",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "jalr",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "taken_branch",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "not_taken_misaligned",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "jal_link_flush",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "jalr_link_flush",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "branch_loop",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "illegal",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "ecall",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "ebreak",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "load_misaligned",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "store_misaligned",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "irq_timer",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "irq_software",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "irq_external",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "irq_priority",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "irq_masked",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "stale_nonbranch",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-regression-sync",
+      "case": "mprv_store_hold",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-extra-regression",
+      "case": "jalr_target_change",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-extra-regression",
+      "case": "irq_during_walk",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-extra-regression",
+      "case": "jalr_target_change",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-extra-regression",
+      "case": "irq_during_walk",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-extra-regression-sync",
+      "case": "jalr_target_change",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-extra-regression-sync",
+      "case": "irq_during_walk",
+      "pred": 0,
+      "pass_": true
+    },
+    {
+      "stage": "final-extra-regression-sync",
+      "case": "jalr_target_change",
+      "pred": 1,
+      "pass_": true
+    },
+    {
+      "stage": "final-extra-regression-sync",
+      "case": "irq_during_walk",
+      "pred": 1,
+      "pass_": true
+    }
+  ],
+  "checker_controls": [
+    {
+      "name": "drop_link",
+      "rejected": true
+    },
+    {
+      "name": "duplicate_link",
+      "rejected": true
+    },
+    {
+      "name": "duplicate_training",
+      "rejected": true
+    },
+    {
+      "name": "stall_training",
+      "rejected": true
+    },
+    {
+      "name": "drop_resolve",
+      "rejected": true
+    },
+    {
+      "name": "lost_ifmiss_evidence",
+      "rejected": true
+    },
+    {
+      "name": "wrong_path_store",
+      "rejected": true
+    },
+    {
+      "name": "truncated",
+      "rejected": true
+    },
+    {
+      "name": "unknown",
+      "rejected": true
+    }
+  ],
+  "compile_binding": [
+    {
+      "job": "compile-after-v2-s0-p0",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-after-v2-s0-p1",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-after-v2-s1-p0",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-after-v2-s1-p1",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-final-regression-p0",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-final-regression-p1",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-final-regression-sync-p0",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-final-regression-sync-p1",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-final-extra-regression-p0",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-final-extra-regression-p1",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-final-extra-regression-sync-p0",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-final-extra-regression-sync-p1",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-after-trap-s0-p0",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-after-trap-s0-p1",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-after-trap-s1-p0",
+      "current_source_tb_matches": true
+    },
+    {
+      "job": "compile-after-trap-s1-p1",
+      "current_source_tb_matches": true
+    }
+  ],
+  "summary": {
+    "new_pass": 24,
+    "new_total": 24,
+    "m1_before_pass": 4,
+    "m1_before_fail": 20,
+    "original_pass": 0,
+    "original_fail": 16,
+    "regression_pass": 84,
+    "regression_total": 84,
+    "hardware": "NOT_RUN",
+    "pds": "NOT_RUN",
+    "full_task2": false
+  },
+  "pass_": true
+}

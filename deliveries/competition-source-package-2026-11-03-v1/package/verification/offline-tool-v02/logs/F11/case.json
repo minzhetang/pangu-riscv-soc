@@ -1,0 +1,19 @@
+{
+  "id": "F11",
+  "expected": {
+    "storage": "archive",
+    "stream": "trace",
+    "path": "generated/archives/f11-index",
+    "complete": true,
+    "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA"
+  },
+  "actual": {
+    "storage": "archive",
+    "stream": "trace",
+    "path": "generated/archives/f11-index",
+    "complete": true,
+    "index_SHA256": "8DCA894A2178C907FD9F9F410BC2473FD46F9155C352ABF66012DA312AB3A6FA"
+  },
+  "allow_empty": false,
+  "limits": {}
+}

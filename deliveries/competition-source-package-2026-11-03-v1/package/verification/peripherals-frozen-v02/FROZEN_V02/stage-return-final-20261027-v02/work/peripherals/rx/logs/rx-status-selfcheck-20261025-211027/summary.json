@@ -1,0 +1,44 @@
+{
+  "kind": "RX_STATUS_SELFCHECK",
+  "source_log": "logs\\rx-20261025-211013\\run_N16.log",
+  "all_pass": true,
+  "controls": [
+    {
+      "case": "control_rc0_full_pass",
+      "actual": "PASS",
+      "expected": "PASS",
+      "status": "PASS"
+    },
+    {
+      "case": "nonzero_rc",
+      "actual": "FAIL",
+      "expected": "FAIL",
+      "status": "PASS"
+    },
+    {
+      "case": "truncated_log",
+      "actual": "FAIL",
+      "expected": "FAIL",
+      "status": "PASS"
+    },
+    {
+      "case": "global_fail_with_case_pass",
+      "actual": "FAIL",
+      "expected": "FAIL",
+      "status": "PASS"
+    },
+    {
+      "case": "case_status_global_fail",
+      "actual": "FAIL",
+      "expected": "FAIL",
+      "status": "PASS"
+    },
+    {
+      "case": "case_status_control",
+      "actual": "PASS",
+      "expected": "PASS",
+      "status": "PASS"
+    }
+  ],
+  "note": "A per-case TEST_PASS cannot override nonzero rc, truncated log, or global RX_SELFCHECK_FAIL."
+}

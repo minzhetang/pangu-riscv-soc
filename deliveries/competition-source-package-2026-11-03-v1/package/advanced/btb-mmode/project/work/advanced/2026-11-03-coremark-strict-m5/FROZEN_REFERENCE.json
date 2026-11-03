@@ -1,0 +1,67 @@
+{
+  "cases": [
+    {
+      "mode": "performance",
+      "crcs": [
+        "0xe714",
+        "0x1fd7",
+        "0x8e3a"
+      ],
+      "instructions": 778599,
+      "wb_count": 532973,
+      "store_count": 20488,
+      "opcodes": {
+        "23": 11140,
+        "19": 364888,
+        "99": 207723,
+        "3": 61824,
+        "35": 20488,
+        "111": 5853,
+        "103": 23150,
+        "55": 2292,
+        "51": 81241
+      },
+      "files": {
+        "memory.txt": "84faa0ac246520cbc13a3395d3688fa272dfbbb04577a202d14b23e20e680656",
+        "regs.txt": "dc933a750b6bae79532e7396f19617226e1ddf7fe452cf294c37d5c97a0644ed",
+        "store.txt": "935d62e0d0fc396529f210e70c0749f321efac2a789e04f3f8b27296d240efce",
+        "uart.txt": "d79e45d65a3e7e506f4dc84340024f8ef4823e736539ef7293dfdfb9bfbc2a31",
+        "wb.txt": "29ce8b7e5ee1171156ee76cf36aae50744138435375f4cf32c61a8deb9b5d1e9"
+      },
+      "timer": "Constant zero mock, ONLY deterministic functional/cycle comparison; no target elapsed time or score"
+    },
+    {
+      "mode": "validation",
+      "crcs": [
+        "0xe3c1",
+        "0x0747",
+        "0x8d84"
+      ],
+      "instructions": 831329,
+      "wb_count": 566968,
+      "store_count": 20392,
+      "opcodes": {
+        "23": 11124,
+        "19": 393278,
+        "99": 226638,
+        "3": 62285,
+        "35": 20392,
+        "111": 5778,
+        "103": 23131,
+        "55": 2292,
+        "51": 86411
+      },
+      "files": {
+        "memory.txt": "9165d100ac1993b4ad09da899ad0443b6b1fa5798ac246204f538ae9a19f437f",
+        "regs.txt": "d2b8643e850515473f03d1f4c894066aafcfc47b6f88ceb0f1538a3b039c2e48",
+        "store.txt": "a1465d864181637b126a18e4cd229524999a42ffd65d70ab9dddbc2e924ccc2a",
+        "uart.txt": "2e63d0306d3817f6ba014cc549c39d260d3663ef07ee0a0ace3af442f232658b",
+        "wb.txt": "bc33ba5f24373769c83b7aa207e3820ab2805b7f7d34fe5eb00214dae25b2aa6"
+      },
+      "timer": "Constant zero mock, ONLY deterministic functional/cycle comparison; no target elapsed time or score"
+    }
+  ],
+  "scope": "Sequential RV32I model and upstream known CRC, frozen before DUT. Constant timer mock means no formal CoreMark score.",
+  "cycle_limit": 4000000,
+  "process_seconds": 600
+}

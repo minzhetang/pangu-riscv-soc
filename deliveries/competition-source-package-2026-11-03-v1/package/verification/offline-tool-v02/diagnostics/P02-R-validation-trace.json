@@ -1,0 +1,12 @@
+{
+  "id": "P02-R-validation-trace",
+  "status": "MATCH",
+  "no_difference": true,
+  "first_difference": null,
+  "neighbors": [],
+  "differences": [],
+  "error": null,
+  "checked": 3651558,
+  "expected_records": 3651558,
+  "actual_records": 3651558
+}

@@ -1,0 +1,7 @@
+0000: 00002283  lw x5,0(x0)
+0004: 00505113  srli x2,x0,5 ; not a load dependency
+0008: 00500213  addi x4,x0,5
+000c: 01026313  ori x6,x4,16
+0010: 00134413  xori x8,x6,1
+0014: 00f47493  andi x9,x8,15
+0018: 05a00f93  addi x31,x0,90 ; completion

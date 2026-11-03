@@ -1,0 +1,45 @@
+COMMAND=["D:\\iverilog\\bin\\vvp.exe", "-N", "-M-", "-MD:\\iverilog\\lib\\ivl", "waves/regif-capture-20261025-210624/regif_tx_capture_neg.vvp"]
+CWD=C:\Users\ANON_USER\Desktop\FPGA\发给队员_盘古100Pro项目交接包_2026-10-18_v01\work\regif\txgpio-m1
+TIMEOUT_S=30
+RC=0
+TIMED_OUT=False
+CLEANUP_S=0.0
+CLEANUP_METHOD=not_needed
+CLEANUP_STATUS=NOT_NEEDED
+TASKKILL_RC=None
+CLEANUP_ERROR=
+DESCENDANT_CHECK=NOT_NEEDED
+DESCENDANTS_BEFORE=
+DESCENDANTS_ALIVE=
+DESCENDANTS_EXITED=
+DESCENDANT_CHECK_ERROR=
+START_ERROR=
+DURATION_S=0.032
+LOG_LIMIT_BYTES=4000000
+LOG_TRUNCATED=False
+STDOUT_BYTES=832
+STDOUT_READ_BYTES=832
+STDOUT_TRUNCATED=False
+STDERR_BYTES=0
+STDERR_READ_BYTES=0
+STDERR_TRUNCATED=False
+--- STDOUT ---
+REGIF_TX_FRAME event=START edge=5 observed_edge=6
+REGIF_TX_FRAME event=COMPLETE idx=1 edge=165 data=5a observed_edge=166
+REGIF_CAP_GOOD_PASS data=5a
+REGIF_TX_FRAME event=START edge=169 observed_edge=170
+REGIF_TX_FRAME event=BAD_STOP idx=1 edge=329 data=33 observed_edge=330
+REGIF_CAP_BAD_STOP_DETECTED
+REGIF_TX_FRAME event=START edge=333 observed_edge=334
+REGIF_TX_FRAME event=COMPLETE idx=2 edge=493 data=66 observed_edge=494
+REGIF_CAP_EXTRA_DETECTED complete=2
+REGIF_CAP_MISSING_DETECTED complete=2 expected=3
+REGIF_TX_FRAME event=START edge=497 observed_edge=498
+REGIF_TX_FRAME event=CANCEL idx=1 edge=651 observed_edge=652
+REGIF_CAP_LAST_HALF_STOP_CANCEL cancel=1 complete=2
+REGIF_CAP_CONTROL_PASS complete=2 bad_stop=1
+REGIF_CAP_SELFCHECK_PASS
+tb/tb_regif_tx_capture_neg.sv:128: $finish called at 6556000 (1ps)
+
+--- STDERR ---
+

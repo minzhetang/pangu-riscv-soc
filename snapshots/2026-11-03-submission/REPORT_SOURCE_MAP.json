@@ -1,0 +1,296 @@
+[
+  {
+    "path": "snapshots/2026-11-03-submission/report/技术报告.docx",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/技术报告.docx",
+    "bytes": 4474495,
+    "sha256": "F90E4615D99211FE2F26DBC43466A10B492BDC37717AB805E8747FE6EB91AF0C"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/技术报告.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/技术报告.pdf",
+    "bytes": 2803041,
+    "sha256": "032579BDFDD5608DCDB0BF5818667036955557F106350B8092340C68A8F9F31E"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/成果—证据对应表.md",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/成果—证据对应表.md",
+    "bytes": 8642,
+    "sha256": "43FEB25A64D3FDC91B2669DF6BB48D9DEF37D48E8DBE2E1DE60D61865F76D7EB"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/提交前需用户核实.md",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/提交前需用户核实.md",
+    "bytes": 1657,
+    "sha256": "62B6DE179D704E43A845BAF590F9DA57F7E578504C1E415898DC27DD6810ECE8"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/图表说明.md",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/图表说明.md",
+    "bytes": 4124,
+    "sha256": "CF9811133607FC0570D3AC0AED72A459A0E46E17CDCE92952919D6E4F3418860"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/evidence/EVIDENCE_MATRIX.json",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/evidence/EVIDENCE_MATRIX.json",
+    "bytes": 10423,
+    "sha256": "0BCB6A9EEF04027109D3C33114A95EC931426CAF747D7EB2867B9B7CCC895CFF"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/evidence/NUMERIC_RECHECK.json",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/evidence/NUMERIC_RECHECK.json",
+    "bytes": 13873,
+    "sha256": "C27F0DEC84821B41CD8B459EB6D0BEFB49E209535198DA19B311A952A334CCEE"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/evidence/WAVE_FIGURE_DATA.json",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/evidence/WAVE_FIGURE_DATA.json",
+    "bytes": 23579,
+    "sha256": "D66143246FA135C8A4480E960B4B607B1B5E564D630A6E331805B2584EA003D7"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/source/正文内容.json",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/source/正文内容.json",
+    "bytes": 78383,
+    "sha256": "860E261AE9C7071CB91ED77CA95CEC9F26962D327841C6A4C716B1A7EA1E0B8F"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/source/正文校对稿.txt",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/source/正文校对稿.txt",
+    "bytes": 49632,
+    "sha256": "A1CC114AEACEB403B63E411CDE283F74B6AF991C7BB0F00A4FE9119B62308AC1"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/qa/QUALITY_REVIEW.json",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/qa/QUALITY_REVIEW.json",
+    "bytes": 4802,
+    "sha256": "DFDF0A48F65EC68A00368514B89BC576D5F6FA54DA455C0CEA0E2C2B00EB04D1"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/qa/METADATA_PRIVACY.json",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/qa/METADATA_PRIVACY.json",
+    "bytes": 230,
+    "sha256": "F12BBF1B91CECF12C22020E780E8822D0CA28142FC765A186CEFD7DD02236762"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/01-system.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/01-system.pdf",
+    "bytes": 24219,
+    "sha256": "6CDA200F29D86FB3DCC1507AA2584836E0D57D29FC8AE33A05DE038B70368BDD"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/01-system.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/01-system.png",
+    "bytes": 199196,
+    "sha256": "78164B8A76FB2FB32926DABC8C95C6EA34BBD1D673AB51848118CF4A4A3BCBD8"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/02-pipeline.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/02-pipeline.pdf",
+    "bytes": 18031,
+    "sha256": "B56AD0EC7857B12FB2F1880F177F6A22F4450BAB56C8298A22AAECC4B04B7C96"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/02-pipeline.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/02-pipeline.png",
+    "bytes": 114365,
+    "sha256": "50196CF2A25F76F80BA05E0C1C787835AAEBF4BAE15B50B33FFA6E06926283AA"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/03-memory-phases.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/03-memory-phases.pdf",
+    "bytes": 17621,
+    "sha256": "F7A5A75A8D71E92258E97A50E6A6EEB71CCAF5731411DE2D747469DB9AD3780E"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/03-memory-phases.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/03-memory-phases.png",
+    "bytes": 155469,
+    "sha256": "19EA9D70F78E8A22AB3DFC2E9085BA728987F4827E18BDDF581286BD99C1170F"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/04-event-flow.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/04-event-flow.pdf",
+    "bytes": 22111,
+    "sha256": "7552584FEC7A49DBC0BF1ABB652285588CDF04D1B7F015984F86BA6186A32DE4"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/04-event-flow.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/04-event-flow.png",
+    "bytes": 178902,
+    "sha256": "4A1B4691077D4B0C81AFFAAE2679CD694B119B3E74C77568DB3B6D6C452DF217"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/05-cache-architecture.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/05-cache-architecture.pdf",
+    "bytes": 17980,
+    "sha256": "5870DA43CFA3760FE1959898CF3AE38F19496EAC1FA21FCF4FC50EF0E914B16D"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/05-cache-architecture.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/05-cache-architecture.png",
+    "bytes": 146380,
+    "sha256": "24A2DFB120AE0D806BBA7BF2B864CB5BD242B12102477D7803D2329B472CA097"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/06-btb-control.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/06-btb-control.pdf",
+    "bytes": 22565,
+    "sha256": "B793462C77270C25CD3CBCBBB4ECA9A2AE7AC2A7F453755EE21D8917E2BDBAF5"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/06-btb-control.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/06-btb-control.png",
+    "bytes": 181106,
+    "sha256": "35409B09FF4869EA2CD37614844A9D584F73B0A3FAE5825E26DCDA502B610EFD"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/07-ai-datapath.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/07-ai-datapath.pdf",
+    "bytes": 20213,
+    "sha256": "E61587A6DF96717010D953DACE7F4AD30CA968451836175D6538A6E6A55085AB"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/07-ai-datapath.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/07-ai-datapath.png",
+    "bytes": 182986,
+    "sha256": "5437036BB96DCDE15F43128ABBAAF20E27065D68AEF69FD3B77D4C6E6B71BD2E"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/08-sm2-cycles.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/08-sm2-cycles.pdf",
+    "bytes": 13092,
+    "sha256": "83917A6AB1070D30ABC8499EB51B53DE2BB2E8EF2773589C22D83DA5E4661DEC"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/08-sm2-cycles.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/08-sm2-cycles.png",
+    "bytes": 61776,
+    "sha256": "CCB58C6CBBC40E7A6F3230EFEA481E539337443FD2E803FE4E8FAC9F0A3459FD"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/09-cache-tradeoff.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/09-cache-tradeoff.pdf",
+    "bytes": 15313,
+    "sha256": "05932DC9EB8685391B681F7D467642D7CDF86CEB88CA37CCED39E47F620A7197"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/09-cache-tradeoff.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/09-cache-tradeoff.png",
+    "bytes": 120639,
+    "sha256": "8FD444734F4B1426B1C69E88B949AF98F7D2EDDDEDA5E457D80960EE146EDCF5"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/10-btb-cycles.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/10-btb-cycles.pdf",
+    "bytes": 16293,
+    "sha256": "50DA92E3578F7D61516DA63BE4515BB313A5A6C60B645884423EFAFB2468E393"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/10-btb-cycles.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/10-btb-cycles.png",
+    "bytes": 114863,
+    "sha256": "E461D8C13F17A194A9F521E7BFF4864031CCD2D976CE7D93071968DF5E6BC97F"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/11-platform.jpg",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/11-platform.jpg",
+    "bytes": 1673655,
+    "sha256": "29DBA09C5251161F874CC90E46C661E36560983912A1B19A180E72BFAAFA133E"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/12-pds-debugger.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/12-pds-debugger.png",
+    "bytes": 499886,
+    "sha256": "BE84E4FF27806D7B86B368E62E07C3D90BF258F9B98651C06C494B7387C33ACC"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/13-list-waveform.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/13-list-waveform.png",
+    "bytes": 92574,
+    "sha256": "0DE5DFB928F93700569228E2BF94B02524C6DFAE5900DEDC823DA83044E618D4"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/13b-list-detail.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/13b-list-detail.png",
+    "bytes": 23476,
+    "sha256": "84D2DDB6BEA1846E8EE7473A2E270AA981B36E55923BAEF4A973657B20BC12FE"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/14-matrix-waveform.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/14-matrix-waveform.png",
+    "bytes": 67185,
+    "sha256": "9DBB8EC9B1298670D5EFBBD614AE97F8767F2671FE9664C493F36FC408212F11"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/15-state-waveform.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/15-state-waveform.png",
+    "bytes": 91855,
+    "sha256": "68ED824F4F3E95EF3C691F5B70AA1E6C5876510D78179A57A4B4A53C3374263C"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/16-matrix_repeat-waveform.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/16-matrix_repeat-waveform.png",
+    "bytes": 67194,
+    "sha256": "7BB26E96115BE3B06C314E7E8ABA53F04E7E75F00E080D05518E6E0DA879CE1F"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/17-normal-ui.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/17-normal-ui.png",
+    "bytes": 141702,
+    "sha256": "81E8B72B8213F3BB14FE5FEC07B5556A2F915A938BBA78D865C8972D006826FF"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/18-order-raw-text.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/18-order-raw-text.pdf",
+    "bytes": 23741,
+    "sha256": "F816665E923F771EB63C2131BDA942413511F8A8A7104481B312B0DF2CD61A17"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/18-order-ui.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/18-order-ui.png",
+    "bytes": 49081,
+    "sha256": "0B1FCA57A3B2BE426797506E5A9F755EF9F69B54E2BEA22EF66310876DB36852"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/19-timeout-ui.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/19-timeout-ui.png",
+    "bytes": 145380,
+    "sha256": "2D311BA022B260C565C3A71209A665F4B07B21BB80A2AF9C6867E8EA1C18F870"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/20-list-readable.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/20-list-readable.pdf",
+    "bytes": 19120,
+    "sha256": "DD15364EF3767C7FCA322D586289C2C464022AF9EAFA0B8E6F97EEDD30FAD5C8"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/20-list-readable.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/20-list-readable.png",
+    "bytes": 121543,
+    "sha256": "2BFACDBFB8680BC9F3179F17F4D0C7778D9AE935E0A36DA4FB8F255033B41144"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/21-matrix-readable.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/21-matrix-readable.pdf",
+    "bytes": 19269,
+    "sha256": "33547E87CF623D5533BFFDFE4F61B92301B84894955A5D63732E4F259B71D54F"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/21-matrix-readable.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/21-matrix-readable.png",
+    "bytes": 120975,
+    "sha256": "718F095C20283FB42622DB08F41AEEE014F2BBC08CB9053651BBC59001CB365E"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/22-state-readable.pdf",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/22-state-readable.pdf",
+    "bytes": 19247,
+    "sha256": "9A2FE9EAC619BABB4F595C68E742806C6ABA7D16FB116DEBC40B86496C968A0B"
+  },
+  {
+    "path": "snapshots/2026-11-03-submission/report/figures/22-state-readable.png",
+    "source": "deliveries/competition-technical-report-2026-11-03-v1/figures/22-state-readable.png",
+    "bytes": 120424,
+    "sha256": "9DF7B3EA1FBD0BFF6DC40A1DA4BC6BCAA661335A225B3F344A7A40720CDA6787"
+  }
+]

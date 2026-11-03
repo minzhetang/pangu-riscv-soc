@@ -1,0 +1,34 @@
+{
+  "kind": "FROZEN_V02_CHECK",
+  "freeze_id": "frozen-v02-20261026",
+  "v02_mirror_exact": {
+    "pass": true,
+    "files": 70,
+    "mirror_files": 70
+  },
+  "v02_manifest": {
+    "lines": 69,
+    "bad": [],
+    "pass": true
+  },
+  "v01_manifest": {
+    "lines": 69,
+    "bad": [],
+    "pass": true
+  },
+  "dependency_copies": {
+    "entries": 17,
+    "bad": [],
+    "pass": true
+  },
+  "mainline_acceptance_copies": {
+    "bad": [],
+    "pass": true
+  },
+  "no_vvp_pyc": true,
+  "new_version_created": false,
+  "zip_created": false,
+  "dut_rerun": false,
+  "hardware": "STOPPED",
+  "all_pass": true
+}

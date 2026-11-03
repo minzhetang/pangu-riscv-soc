@@ -1,0 +1,47 @@
+{
+  "kind": "B_VERIFY_OFFLINE_WORKER",
+  "case_id": "P02-R-validation-trace",
+  "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0",
+  "CPU_function_proven": false,
+  "new_DUT": 0,
+  "limits": {
+    "max_input_bytes_each": 536870912,
+    "max_records_each": 6000000,
+    "max_differences": 16,
+    "max_diagnostic_neighbors_each_side": 2,
+    "max_result_bytes": 1048576,
+    "max_log_bytes_each": 4194304,
+    "worker_peak_working_set_bytes": 268435456,
+    "case_timeout_seconds": 180.0,
+    "cleanup_seconds": 8.0
+  },
+  "expected_input": {
+    "storage": "archive",
+    "path": "inputs/archives/validation-trace",
+    "bytes": 87958340,
+    "lines": 3651558,
+    "index_SHA256": "AF2CA50BA2580EBE0969F68CECBFAFFD775FC5864FA0309E7B8FA0A27333950B"
+  },
+  "actual_input": {
+    "storage": "archive",
+    "path": "inputs/archives/validation-trace",
+    "bytes": 87958340,
+    "lines": 3651558,
+    "index_SHA256": "AF2CA50BA2580EBE0969F68CECBFAFFD775FC5864FA0309E7B8FA0A27333950B"
+  },
+  "status": "MATCH",
+  "native_rc": 0,
+  "fully_consumed": true,
+  "checked": 3651558,
+  "expected_records": 3651558,
+  "actual_records": 3651558,
+  "mismatch_count": 0,
+  "differences": [],
+  "neighbors": [],
+  "first_difference": null,
+  "termination": "normal",
+  "diagnostic_error": null,
+  "elapsed_s": 21.859,
+  "worker_reported_peak_bytes": 93769728,
+  "measurement_method": "Windows GetProcessMemoryInfo PeakWorkingSetSize (worker self-report); parent also measures child"
+}

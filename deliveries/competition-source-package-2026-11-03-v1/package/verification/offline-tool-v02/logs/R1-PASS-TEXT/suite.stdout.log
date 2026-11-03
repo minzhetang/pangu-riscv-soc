@@ -1,0 +1,1 @@
+{"status": "TOOL_ERROR", "native_rc": 7, "case": "R1-PASS-TEXT", "out": "C:\\Users\\ANON_USER\\AppData\\Local\\Temp\\opencode\\bverify-r1-suite-20261027-v6\\out\\R1-PASS-TEXT", "error": "ValueError: JSON file missing, linked, or too large", "worker_rc": 0}

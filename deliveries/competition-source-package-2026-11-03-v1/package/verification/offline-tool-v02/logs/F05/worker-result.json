@@ -1,0 +1,180 @@
+{
+  "kind": "B_VERIFY_OFFLINE_WORKER",
+  "case_id": "F05",
+  "ABI": "B-VERIFY-OFFLINE-ABI/1.0.0",
+  "CPU_function_proven": false,
+  "new_DUT": 0,
+  "limits": {
+    "max_input_bytes_each": 536870912,
+    "max_records_each": 6000000,
+    "max_differences": 16,
+    "max_diagnostic_neighbors_each_side": 2,
+    "max_result_bytes": 1048576,
+    "max_log_bytes_each": 4194304,
+    "worker_peak_working_set_bytes": 268435456,
+    "case_timeout_seconds": 180.0,
+    "cleanup_seconds": 8.0
+  },
+  "expected_input": {
+    "storage": "raw",
+    "path": "generated/faults/s00_expected.log",
+    "bytes": 194,
+    "sha256": "019947B4F018F3822053E2151E763AD4D4A53CBAB1A710E46EB396B00931AA51"
+  },
+  "actual_input": {
+    "storage": "raw",
+    "path": "generated/faults/f05_swap.log",
+    "bytes": 194,
+    "sha256": "6D74ABACD9D849C346B160662924763902C03684EA8AA9D880DC7F5E9C73E213"
+  },
+  "status": "MISMATCH",
+  "native_rc": 2,
+  "fully_consumed": true,
+  "checked": 8,
+  "expected_records": 8,
+  "actual_records": 8,
+  "mismatch_count": 2,
+  "differences": [
+    {
+      "ordinal": 4,
+      "kind": "FIELD",
+      "expected": [
+        "EX",
+        6,
+        4
+      ],
+      "actual": [
+        "WB",
+        6,
+        1,
+        1
+      ]
+    },
+    {
+      "ordinal": 5,
+      "kind": "FIELD",
+      "expected": [
+        "WB",
+        6,
+        1,
+        1
+      ],
+      "actual": [
+        "EX",
+        6,
+        4
+      ]
+    }
+  ],
+  "neighbors": [
+    {
+      "ordinal": 2,
+      "expected": [
+        "WB",
+        4,
+        1,
+        1
+      ],
+      "actual": [
+        "WB",
+        4,
+        1,
+        1
+      ],
+      "relation": "EQUAL"
+    },
+    {
+      "ordinal": 3,
+      "expected": [
+        "STORE",
+        5,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "actual": [
+        "STORE",
+        5,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "relation": "EQUAL"
+    },
+    {
+      "ordinal": 4,
+      "expected": [
+        "EX",
+        6,
+        4
+      ],
+      "actual": [
+        "WB",
+        6,
+        1,
+        1
+      ],
+      "relation": "DIFFER"
+    },
+    {
+      "ordinal": 5,
+      "expected": [
+        "WB",
+        6,
+        1,
+        1
+      ],
+      "actual": [
+        "EX",
+        6,
+        4
+      ],
+      "relation": "DIFFER"
+    },
+    {
+      "ordinal": 6,
+      "expected": [
+        "STORE",
+        7,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "actual": [
+        "STORE",
+        7,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "relation": "EQUAL"
+    }
+  ],
+  "first_difference": {
+    "ordinal": 4,
+    "kind": "FIELD",
+    "field": "kind",
+    "expected": [
+      "EX",
+      6,
+      4
+    ],
+    "actual": [
+      "WB",
+      6,
+      1,
+      1
+    ],
+    "field_expected": "EX",
+    "field_actual": "WB"
+  },
+  "termination": "normal",
+  "diagnostic_error": null,
+  "elapsed_s": 0.0,
+  "worker_reported_peak_bytes": 20660224,
+  "measurement_method": "Windows GetProcessMemoryInfo PeakWorkingSetSize (worker self-report); parent also measures child"
+}

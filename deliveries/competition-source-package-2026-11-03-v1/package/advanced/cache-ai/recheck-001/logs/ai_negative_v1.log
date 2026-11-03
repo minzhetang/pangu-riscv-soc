@@ -1,0 +1,9 @@
+OUTPUT row=0 raw=-6476 y=-101
+OUTPUT row=1 raw=148 y=2
+OUTPUT row=2 raw=-2830 y=-44
+OUTPUT row=3 raw=-241 y=-4
+OUTPUT row=4 raw=-236 y=-4
+OUTPUT row=5 raw=106 y=2
+OUTPUT row=6 raw=2466 y=39
+FATAL: ai_tb.sv:49: mismatch row7 raw985 expected985 y15 expected16
+       Time: 4450000  Scope: ai_tb.collect

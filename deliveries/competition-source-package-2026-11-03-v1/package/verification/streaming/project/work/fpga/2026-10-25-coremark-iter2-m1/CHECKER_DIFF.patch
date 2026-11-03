@@ -1,0 +1,39 @@
+--- F143/check_coremark.py
++++ iter2/check_coremark.py
+@@ -1,5 +1,5 @@
+ from pathlib import Path
+-import json,re,sys,hashlib
++import json,re,sys,hashlib,time
+ sys.dont_write_bytecode=True
+ H=Path(__file__).resolve().parent
+ sys.path.insert(0,str(H/'models'))
+@@ -98,7 +98,10 @@
+             self.f.close()
+         def __len__(self):return self.count
+     ref.EX=Stream('EX');ref.WB=Stream('WB');ref.MEM=Stream('MEM')
+-    while not ref.stopped:ref.step()
++    ref_started=time.monotonic()
++    while not ref.stopped:
++        assert ref.steps<5000000 and time.monotonic()-ref_started<600
++        ref.step()
+     for x in [ref.EX,ref.WB,ref.MEM]:x.finish()
+     eq('all MMIO samples consumed',cursor,len(io_reads))
+     actual_regs=[int(v,16) for v in (d/'registers.hex').read_text().split()]
+@@ -156,7 +159,16 @@
+         else:(d/'ram-output.txt').write_bytes(report)
+     eq('public UART all bytes no dedup',[b for c,b in frames],expected_bytes)
+     if frames:eq('last serial complete before end',frames[-1][0]+10*n<metrics['physical']-32,True)
+-    return dict(status='PASS' if not errors else 'FAIL',errors=errors,metrics=metrics,trace_counts=counts,
++    answer=dict(status='PASS' if not errors else 'FAIL',errors=errors,metrics=metrics,trace_counts=counts,
+         streams={k:dict(count=len(x),sha256=x.digest.hexdigest().upper()) for k,x in [('EX',ref.EX),('WB',ref.WB),('MEM',ref.MEM)]},
+         timer_reads=timer_reads,GPIO_actual= gpio,UART_frames=len(frames),detail=detail,
+         limitations=['finite inputs; no true retirement PC or unified WB-STORE commit','short simulation not valid CoreMark score','no hardware evidence'])
++
++    import frozen_checks
++    frozen=frozen_checks.freeze_for(name)
++    actual=frozen_checks.from_actual(name,answer)
++    more=frozen_checks.validate(actual,frozen)
++    answer['frozen_comparison']=dict(status='PASS' if not more else 'FAIL',errors=more,oracle_SHA256=s.sha(H/'oracles'/name/'expected.json'),actual_iterations=actual['iterations'],crcfinal=actual['crcfinal'])
++    answer['errors'].extend(more)
++    answer['status']='PASS' if not answer['errors'] else 'FAIL'
++    return answer

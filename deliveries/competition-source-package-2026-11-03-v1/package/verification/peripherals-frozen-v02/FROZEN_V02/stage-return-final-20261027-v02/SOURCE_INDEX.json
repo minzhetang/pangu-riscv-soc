@@ -1,0 +1,175 @@
+{
+  "kind": "SOURCE_INDEX",
+  "base": "increment-20261024-2335",
+  "note": "Paths relative to this v02 stage; all entries exist here. External dependencies are in DEPENDENCIES.json.",
+  "entries": [
+    {
+      "path": "coverage_map.json",
+      "old_sha256": null,
+      "new_sha256": "5D64015499A3B510847236603991A550782FEBDA0401F8CE8DBB2304F09AC5E5",
+      "status": "NEW"
+    },
+    {
+      "path": "delivery.json",
+      "old_sha256": "A42690538063C2AAF62A41B76BC265C959C62CA28AFFB603106D0D698753A58A",
+      "new_sha256": "566301E1C01D773CF04534193CA6572D6F094485416A1F0560B395F7B35E47C8",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "old_sha256": "4CAD51B33E8877C1AA825615C101B99D9CA8FF4F9789727BB4934F278057D52F",
+      "new_sha256": "07A96A68E8BA90E9C79A2E6D50DCF6958B230D5AEB0F8187560B06D45328D316",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "HISTORY_ALIASES.json",
+      "old_sha256": "B1E19228AF49E4D6BC6159EDAC74130087F3D19A93A5E4CE77F5973478FA75B5",
+      "new_sha256": "19F1F11FED4B9B07426E36787B5CED6F804497C2261A5706B2D56BAB38565B3C",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "MODULE_STATUS.json",
+      "old_sha256": "09EAE631EC2BB6F1F046F70491673F19A063333AC965AB219190E851A47DDC4A",
+      "new_sha256": "F43A76B8EAAC49955FB84F7B5C4BD8EF04381015556CA9280A62720F4235E8F6",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "OPEN_ITEMS.md",
+      "old_sha256": null,
+      "new_sha256": "2649DB39AC48BA2078A170407381C2156E9A6D41A9EBC2A00614E0B767D93466",
+      "status": "NEW"
+    },
+    {
+      "path": "START_HERE.md",
+      "old_sha256": null,
+      "new_sha256": "793C66A81E3983E4785AC70F5E5CDDB0AF1B6B0278E144858EFAE99582F664C0",
+      "status": "NEW"
+    },
+    {
+      "path": "work/peripherals/rx/CHANGELOG.md",
+      "old_sha256": "16A136153E14D3F35CCBF73F3BF74B8AE9CBE846AC1E2684B0D417690BBC9E93",
+      "new_sha256": "A3991D9EC0B353A360DED1F350B766E16642A568026C50F1F6A6475C50224978",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/peripherals/rx/docs/RX-LEDGER-1.3.5.md",
+      "old_sha256": null,
+      "new_sha256": "5F117EE3CA74E7B44D1CBCBD573103FAB539CCA6B0D9B333D81B2F28BE591EC9",
+      "status": "NEW"
+    },
+    {
+      "path": "work/peripherals/rx/scripts/run_rx.py",
+      "old_sha256": "767C9D7D9E76357C76F3C441D0EEB93CC801F58000EDEE82E2E3E2F7451AC534",
+      "new_sha256": "8DFA2127672579C34F0EDC73F523E1061A3E666F089AEECFEF93AC0B84509CB8",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/peripherals/rx/scripts/rx_status_selfcheck.py",
+      "old_sha256": "6038732EC5C7CF4947606F20445B00ACE9F91152E5538FE68150F91F565056C8",
+      "new_sha256": "6038732EC5C7CF4947606F20445B00ACE9F91152E5538FE68150F91F565056C8",
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "work/peripherals/rx/STATUS.md",
+      "old_sha256": "2DFBB14070A432DA33B21E983DE1FEF62CFA6E97F7A1293A2EF9ACDDFBB16261",
+      "new_sha256": "25938CE32122BFEBA587FF03496FF5D8B3B9FA4D86DAE21434B18955C6C35779",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/peripherals/rx/tb/rx_public_capture.sv",
+      "old_sha256": "A1AA98D69293D4B106233BC669FD6D0F40F65EEDC89698B30C9E65547BA9BC15",
+      "new_sha256": "ADBD4EBC7A549DB48B704C11F740E9FD66DBBA185E1D795596C95BE2DF84EA5D",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/peripherals/rx/tb/tb_uart_rx.sv",
+      "old_sha256": "A0A7F9DCECDFCB92F5798F2BA481AF7569CC328C51F55E25D8730AEA12E41FC5",
+      "new_sha256": "FDE6B17592970A27A759827FAC5D6AF24B6666CDBF7BF049D9925A98BB739BB6",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/peripherals/rx/tb/tb_uart_rx_neg.sv",
+      "old_sha256": "282B2F1B495F141F620E255E58D2E70EB01B3884A9B7C1EAB5F58A01958ADE80",
+      "new_sha256": "0CA0D6A519354AF1F1AE610677DFC7D9CCA01286408DC9AB882ED78AEF9407B6",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/peripherals/rx/tests/rx-plan-1.3.5.json",
+      "old_sha256": null,
+      "new_sha256": "979D6451D69A22B889FE564EF2E33CA4ECD0BCF65B0D3CE2E0356E6D94CE17E4",
+      "status": "NEW"
+    },
+    {
+      "path": "work/peripherals/rx/tests/rx-plan-1.3.5.sha256",
+      "old_sha256": null,
+      "new_sha256": "1989413C6CB52D47FF267A91C6AEF390FD3CDB24A3FB653E25D1E95A049A65E8",
+      "status": "NEW"
+    },
+    {
+      "path": "work/regif/txgpio-m1/docs/RUNBOOK.md",
+      "old_sha256": "E270F886DC720407C83C95A6944A87F95EC81C36E794E74A448329D964B39133",
+      "new_sha256": "003732B5F408DD8569BF8EC17A4FD403BD68CE32C0EF1EB31532A4F1047805F6",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/regif/txgpio-m1/docs/W01-W10.md",
+      "old_sha256": "DD085D3F6F847ED7FEA8E10D6E447A066C806AF492B73BD88B66342D770E171C",
+      "new_sha256": "7836BF9600DA496C8C2B5D937747CCC130CFFF7FC5B8524BCC85C964D937D474",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/regif/txgpio-m1/README.md",
+      "old_sha256": "B9047902CAC752FB411377F4E4829E1723D20121CD8370D1A0F518973A896229",
+      "new_sha256": "E7A7C549F64E9CAAA565E831A57CB36FA2F9BF964C67C7AED8456E97C851759F",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/regif/txgpio-m1/scripts/regif_capture_selfcheck.py",
+      "old_sha256": "049E81979DEDEFD2BAEAAE44D44C7581874C0EEFB8EC19ADB0609C8BED8D93C5",
+      "new_sha256": "23223D580AC2C37F05D6A9521B0E0506BE850B3AFEB106659477CE44D608B9EB",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/regif/txgpio-m1/scripts/regif_entry_selfcheck.py",
+      "old_sha256": "4F5D93875382EA5616EA38DE5980DB4085076D7A2608E06996952625E32251D5",
+      "new_sha256": "9E7E140EC54B9BAABF4434B4948C2714680AC983BDB0D399FD22FDF85F6DC8EA",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/regif/txgpio-m1/scripts/run_regif_m1.py",
+      "old_sha256": "FDC63EDAF79147B0539CA85B133166CCD5A138F6B516DE0A95F54C891427336D",
+      "new_sha256": "8C9AC119750A15BD09BD6A572631C475A8E4D2C7BA99A7E526F90DAC726E20BD",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/regif/txgpio-m1/tb/regif_tx_public_monitor.sv",
+      "old_sha256": "C8CFFA9F6949D0B9BD33555B87EBD3AADD733AE389EB8FB549CA02BDF261E471",
+      "new_sha256": "A7C857C1451B5C3960F6DA4A1CF90451E72D4D572815D806FA14B51ADE106CFB",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/regif/txgpio-m1/tb/tb_local_regif_txgpio_m1.sv",
+      "old_sha256": "7F0C1060ED9524B18965575CC3BE8DA1AE76D899521916F2D701976AEFAD793B",
+      "new_sha256": "7F0C1060ED9524B18965575CC3BE8DA1AE76D899521916F2D701976AEFAD793B",
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "work/regif/txgpio-m1/tb/tb_regif_tx_capture_neg.sv",
+      "old_sha256": "B31DC2F28657DACDC53443717201161B55A19FFBECC5E99B850A03AA4BAF458E",
+      "new_sha256": "8D3E47D1185483CC864406BE91484EBC44ADD191D42D997282A84430A51888ED",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.json",
+      "old_sha256": null,
+      "new_sha256": "5A955CD36618C736A4060C4EF4804B77A3E802FFBA6145FA7C71F6B05BDD97A9",
+      "status": "NEW"
+    },
+    {
+      "path": "work/regif/txgpio-m1/tests/w01-w10-plan-1.0.5.sha256",
+      "old_sha256": null,
+      "new_sha256": "7C03EE9F11D1535A4886A08279E39B217404D609D2685CDE6A2F202633471A44",
+      "status": "NEW"
+    }
+  ]
+}

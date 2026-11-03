@@ -1,0 +1,12 @@
+{
+  "id": "P01-S06-bus-format",
+  "status": "MATCH",
+  "no_difference": true,
+  "first_difference": null,
+  "neighbors": [],
+  "differences": [],
+  "error": null,
+  "checked": 2,
+  "expected_records": 2,
+  "actual_records": 2
+}

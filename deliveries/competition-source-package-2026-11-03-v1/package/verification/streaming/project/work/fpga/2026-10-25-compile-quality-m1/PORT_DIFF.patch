@@ -1,0 +1,11 @@
+--- port-before/core_portme.h
++++ port/core_portme.h
+@@ -8,7 +8,7 @@
+ #define HAS_STDIO 0
+ #define HAS_PRINTF 0
+ #define COMPILER_VERSION "GCC " __VERSION__
+-#define COMPILER_FLAGS "RV32I/ILP32 -O2; full flags in build request"
++#define COMPILER_FLAGS "RV32I/ILP32 -O3; full flags in build request"
+ #define MEM_LOCATION "STATIC RAM; timed simulation, NO VALID SCORE"
+ typedef signed short ee_s16;
+ typedef unsigned short ee_u16;

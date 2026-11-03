@@ -1,0 +1,1 @@
+{"status": "LIMIT", "native_rc": 5, "case": "C2-result-size", "reason": "worker-result exceeds max_result_bytes; no file published"}

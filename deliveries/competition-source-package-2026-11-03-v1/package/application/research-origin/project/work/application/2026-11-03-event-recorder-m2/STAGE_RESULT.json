@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-03",
+  "status": "LIMITED_SOFTWARE_M2_ACCEPTED",
+  "fast_cases": 8,
+  "fast_reset_runs": 16,
+  "overload_reset_runs": 2,
+  "slow_period_witness_samples": 2,
+  "slow_period_ticks": 2700000,
+  "count128_wait20_shortened_period_cases": 3,
+  "full_12_8s_profile": "COMPILE_ONLY_NOT_RUN",
+  "production_event_bin_bytes": 1836,
+  "production_event_bss_bytes": 196,
+  "production_dense_bin_bytes": 2164,
+  "production_dense_bss_bytes": 1220,
+  "external_compile_once_rc": 0,
+  "PDS": "NOT_RUN",
+  "hardware": "NOT_RUN",
+  "mainline_RTL_unchanged": true,
+  "advanced_line": "unchanged D311 status"
+}

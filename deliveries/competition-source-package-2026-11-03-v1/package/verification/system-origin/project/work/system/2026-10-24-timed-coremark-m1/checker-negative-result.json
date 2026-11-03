@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "control",
+      "status": "PASS",
+      "actual_checker_status": "PASS",
+      "detail": [],
+      "DUT_runs": 0
+    },
+    {
+      "id": "post_edge_tick_alias",
+      "status": "PASS",
+      "actual_checker_status": "FAIL",
+      "detail": [
+        {
+          "kind": "independent MMIO read pre-edge",
+          "actual": "259",
+          "expected": "258"
+        }
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "frozen_counter",
+      "status": "PASS",
+      "actual_checker_status": "FAIL",
+      "detail": [
+        {
+          "kind": "pre tick physical clock",
+          "actual": "0",
+          "expected": "1"
+        }
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "wrong_high_word",
+      "status": "PASS",
+      "actual_checker_status": "FAIL",
+      "detail": [
+        {
+          "kind": "independent MMIO read pre-edge",
+          "actual": "256",
+          "expected": "0"
+        }
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "wrong_LOAD_result",
+      "status": "PASS",
+      "actual_checker_status": "FAIL",
+      "detail": [
+        {
+          "kind": "ordered MEM",
+          "index": 18,
+          "actual": [
+            "READ",
+            "00000084",
+            "20000100",
+            "00000108",
+            "00000108"
+          ],
+          "expected": [
+            "READ",
+            "00000084",
+            "20000100",
+            "00000107",
+            "00000107"
+          ]
+        }
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "duplicate_WB",
+      "status": "PASS",
+      "actual_checker_status": "REJECTED_INPUT_VALIDATION",
+      "detail": [
+        "extra WB event"
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "missing_STORE",
+      "status": "PASS",
+      "actual_checker_status": "REJECTED_INPUT_VALIDATION",
+      "detail": [
+        "missing MEM event"
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "extra_GPIO_accept",
+      "status": "PASS",
+      "actual_checker_status": "FAIL",
+      "detail": [
+        {
+          "kind": "actual GPIO core accept",
+          "actual": "1",
+          "expected": "0"
+        }
+      ],
+      "DUT_runs": 0
+    },
+    {
+      "id": "unknown_pin",
+      "status": "PASS",
+      "actual_checker_status": "REJECTED_INPUT_VALIDATION",
+      "detail": [
+        "unknown public/timer data"
+      ],
+      "DUT_runs": 0
+    }
+  ],
+  "original_SHA_unchanged": {
+    "trace.log": "3AADF88892B8A0C4A1D9D9275796B27DFD0692D866CF251B35A87675D584374F",
+    "bus.log": "FFF2B11F4CA98A357EFEB79B0EE2D5D449F2820C1753E5B46A7340234A76E9BD",
+    "ram.hex": "E9603E55606BA88138F475024B746368E1B949031061B736BCC6B1F2B1B2273B",
+    "registers.hex": "DA9C917F6A47948925D75FB83CAB4E2818BF4D9BF9198CF38606ED3B85628755",
+    "stdout.log": "CF0DB8B8425EF6434988184C8B40CB07C4609A57087A4BECD14C797FB4A0B142",
+    "process.json": "FCB5272D32855FCC5F9EAD4782B23DBF16EDEEEC148045218C3F5D10BE371090"
+  },
+  "new_DUT_runs": 0
+}

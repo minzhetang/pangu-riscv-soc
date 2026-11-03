@@ -1,0 +1,15 @@
+{
+  "input_files": 22,
+  "protected_existing_files": 37,
+  "changed": [],
+  "reference_instructions": 440,
+  "reference_WB": 263,
+  "reference_memory_counts": {
+    "READ": 13,
+    "STORE": 16
+  },
+  "reference_stall": 2,
+  "reference_flush": 97,
+  "DUT_execution": "NOT_RUN",
+  "next_permission": "one fixed compiler call outside sandbox, non-admin"
+}

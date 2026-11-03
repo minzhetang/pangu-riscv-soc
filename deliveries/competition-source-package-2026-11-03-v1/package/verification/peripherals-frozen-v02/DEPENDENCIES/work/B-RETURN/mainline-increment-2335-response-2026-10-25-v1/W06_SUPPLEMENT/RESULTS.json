@@ -1,0 +1,167 @@
+{
+  "task": "A-W06-SUPPLEMENT",
+  "date_beijing": "2026-10-25",
+  "contract": "LOCAL-REGIF-TXGPIO-M1/1.0.0",
+  "core_or_wrapper_changed": false,
+  "rows": [
+    {
+      "id": "w06v2-16",
+      "N": 16,
+      "result": "PASS_LIMITED_ORIGINAL_W06",
+      "checks": 9613,
+      "actual_TX_accepts": [
+        [
+          3,
+          90
+        ],
+        [
+          196,
+          60
+        ],
+        [
+          359,
+          90
+        ],
+        [
+          520,
+          60
+        ]
+      ],
+      "rejects": 2,
+      "GPIO_accepts": [],
+      "errors": [],
+      "compile_process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+          "-B",
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_w06_boundary",
+          "-DCLKS_PER_BIT=16",
+          "-DTB_MAX_CYCLES=12000",
+          "-I",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\source",
+          "-o",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\w06v2-16.vvp",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\source\\local_regif_txgpio_m1.v",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\source\\uart_tx.v",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\source\\gpio_core.v",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\tests\\tb_w06_boundary_v2.sv"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.062,
+        "timeout_s": 60,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\compile-w06v2-16\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\compile-w06v2-16\\stderr.log"
+      },
+      "run_process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\w06v2-16.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/w06v2-16.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.046,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-w06v2-16\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-w06v2-16\\stderr.log"
+      }
+    },
+    {
+      "id": "w06v2-234",
+      "N": 234,
+      "result": "PASS_LIMITED_ORIGINAL_W06",
+      "checks": 137797,
+      "actual_TX_accepts": [
+        [
+          3,
+          90
+        ],
+        [
+          2812,
+          60
+        ],
+        [
+          5155,
+          90
+        ],
+        [
+          7496,
+          60
+        ]
+      ],
+      "rejects": 2,
+      "GPIO_accepts": [],
+      "errors": [],
+      "compile_process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+          "-B",
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_w06_boundary",
+          "-DCLKS_PER_BIT=234",
+          "-DTB_MAX_CYCLES=12000",
+          "-I",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\source",
+          "-o",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\w06v2-234.vvp",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\source\\local_regif_txgpio_m1.v",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\source\\uart_tx.v",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\source\\gpio_core.v",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\tests\\tb_w06_boundary_v2.sv"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.047,
+        "timeout_s": 60,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\compile-w06v2-234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\compile-w06v2-234\\stderr.log"
+      },
+      "run_process": {
+        "argv": [
+          "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+          "-N",
+          "-M-",
+          "-MD:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+          "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\build\\w06v2-234.vvp",
+          "+WAVE_FILE=D:/A_FPGA_Comp/work/peripheral-review/2026-10-25-increment-2335/build/w06v2-234.vcd"
+        ],
+        "cwd": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335",
+        "returncode": 0,
+        "hex": "0x00000000",
+        "timed_out": false,
+        "log_truncated": false,
+        "cleanup": null,
+        "duration_s": 0.063,
+        "timeout_s": 30,
+        "stdout": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-w06v2-234\\stdout.log",
+        "stderr": "D:\\A_FPGA_Comp\\work\\peripheral-review\\2026-10-25-increment-2335\\logs\\run-w06v2-234\\stderr.log"
+      }
+    }
+  ],
+  "conditions": "rst_n explicit X->0 assertion; N16/N234 only; 4 accepted frames/2 rejected writes per configuration; original first A TB time0-X FAIL retained in mainline evidence, not a B core defect",
+  "B_DUT_rerun_required": false,
+  "hardware": "STOPPED"
+}

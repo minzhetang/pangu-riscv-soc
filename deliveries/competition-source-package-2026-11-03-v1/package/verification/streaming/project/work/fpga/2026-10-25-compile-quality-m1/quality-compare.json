@@ -1,0 +1,215 @@
+{
+  "status": "PASS_ANALYSIS_NOT_HARDWARE",
+  "rows": [
+    {
+      "id": "performance-N234",
+      "status": "PASS_SHORT_COMPARABLE_EXPERIMENT",
+      "O2_ticks": 2103648,
+      "O3_ticks": 2106278,
+      "tick_reduction": -0.001250209160467911,
+      "speedup": 0.9987513519108114,
+      "compute_benefit": false,
+      "O2_bytes": 15912,
+      "O3_bytes": 18992,
+      "bytes_delta": 3080,
+      "O2_empty_window": 26,
+      "O3_empty_window": 26,
+      "empty_cost_subtracted": false,
+      "formatting_ticks_O2": 59088,
+      "formatting_ticks_O3": 59014,
+      "UART_phase_ticks_O2": 1559702,
+      "UART_phase_ticks_O3": 1559702,
+      "UART_bytes_O2": 662,
+      "UART_bytes_O3": 662,
+      "stack_min_SP": 97904,
+      "observed_stack_depth": 400,
+      "reserved_stack": 8192,
+      "remaining_to_stack_bottom": 7792,
+      "SP_WB_checked": 344,
+      "total_metrics": {
+        "physical": 3780627,
+        "advances": 1890313,
+        "stall": 152642,
+        "flush": 283667,
+        "tail": 32
+      },
+      "window_EX_groups": {
+        "BRANCH": 197853,
+        "STORE": 14168,
+        "ALU_I": 354443,
+        "JALR": 21544,
+        "AUIPC": 10774,
+        "LOAD": 55264,
+        "JAL": 3556,
+        "ALU_R": 77169,
+        "LUI": 1703
+      },
+      "top_function_EX_observations": [
+        [
+          "__mulsi3",
+          432424
+        ],
+        [
+          "matrix_test",
+          104048
+        ],
+        [
+          "core_bench_list",
+          76163
+        ],
+        [
+          "core_state_transition",
+          67192
+        ],
+        [
+          "crc16",
+          18626
+        ],
+        [
+          "crcu32",
+          16896
+        ],
+        [
+          "core_bench_state",
+          13532
+        ],
+        [
+          "crcu16",
+          4140
+        ],
+        [
+          "cmp_complex",
+          3329
+        ],
+        [
+          "core_bench_matrix",
+          68
+        ],
+        [
+          "iterate",
+          38
+        ],
+        [
+          "stop_time",
+          7
+        ]
+      ],
+      "window_architectural_nops": 0,
+      "caveats": [
+        "finite seeds/one iteration, not official score or hardware",
+        "SP minimum is observed finite execution, not static worst-case proof",
+        "EX is not true retirement; WB/MEM separately ordered",
+        "changed image addresses/layout mean old full RF/RAM/PC equality is not a valid expectation",
+        "no UART speed change; report metadata/timestamps may differ",
+        "compiler optimization is not architecture innovation"
+      ]
+    },
+    {
+      "id": "validation-N234",
+      "status": "PASS_SHORT_COMPARABLE_EXPERIMENT",
+      "O2_ticks": 2263000,
+      "O3_ticks": 2267352,
+      "tick_reduction": -0.0019231109147149802,
+      "speedup": 0.998080580342179,
+      "compute_benefit": false,
+      "O2_bytes": 15920,
+      "O3_bytes": 19000,
+      "bytes_delta": 3080,
+      "O2_empty_window": 26,
+      "O3_empty_window": 26,
+      "empty_cost_subtracted": false,
+      "formatting_ticks_O2": 58210,
+      "formatting_ticks_O3": 58184,
+      "UART_phase_ticks_O2": 1557346,
+      "UART_phase_ticks_O3": 1557346,
+      "UART_bytes_O2": 661,
+      "UART_bytes_O3": 661,
+      "stack_min_SP": 97904,
+      "observed_stack_depth": 400,
+      "reserved_stack": 8192,
+      "remaining_to_stack_bottom": 7792,
+      "SP_WB_checked": 350,
+      "total_metrics": {
+        "physical": 3938809,
+        "advances": 1969404,
+        "stall": 152957,
+        "flush": 296606,
+        "tail": 32
+      },
+      "window_EX_groups": {
+        "BRANCH": 216884,
+        "STORE": 14060,
+        "ALU_I": 382930,
+        "JALR": 21510,
+        "AUIPC": 10757,
+        "LOAD": 55687,
+        "JAL": 3803,
+        "ALU_R": 82761,
+        "LUI": 1703
+      },
+      "top_function_EX_observations": [
+        [
+          "__mulsi3",
+          485282
+        ],
+        [
+          "matrix_test",
+          104716
+        ],
+        [
+          "core_bench_list",
+          77068
+        ],
+        [
+          "core_state_transition",
+          66876
+        ],
+        [
+          "crc16",
+          18626
+        ],
+        [
+          "crcu32",
+          16896
+        ],
+        [
+          "core_bench_state",
+          12976
+        ],
+        [
+          "crcu16",
+          4140
+        ],
+        [
+          "cmp_complex",
+          3391
+        ],
+        [
+          "core_bench_matrix",
+          68
+        ],
+        [
+          "iterate",
+          38
+        ],
+        [
+          "stop_time",
+          7
+        ]
+      ],
+      "window_architectural_nops": 0,
+      "caveats": [
+        "finite seeds/one iteration, not official score or hardware",
+        "SP minimum is observed finite execution, not static worst-case proof",
+        "EX is not true retirement; WB/MEM separately ordered",
+        "changed image addresses/layout mean old full RF/RAM/PC equality is not a valid expectation",
+        "no UART speed change; report metadata/timestamps may differ",
+        "compiler optimization is not architecture innovation"
+      ]
+    }
+  ],
+  "all_seeds_benefit": false,
+  "decision": "STOP_O3_KEEP_O2_NO_PDS",
+  "new_DUT_runs": 0,
+  "protected": 726
+}

@@ -1,0 +1,4 @@
+0000: 00004063  blt x0,x0,0 ; false not a self-loop
+0004: 00700513  addi x10,x0,7
+0008: 00a02423  sw x10,8(x0)
+000c: 05a00f93  addi x31,x0,90 ; completion

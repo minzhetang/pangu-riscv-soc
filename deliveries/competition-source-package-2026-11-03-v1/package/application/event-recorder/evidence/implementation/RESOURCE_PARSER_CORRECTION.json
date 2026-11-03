@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-03",
+  "finding": "prior reused parser int regex silently captured leading digits of decimal DRM count",
+  "current_native_DRM36": 12.5,
+  "original_SM2_native_DRM36": 14.5,
+  "historical_reported_SM2_DRM36": 14,
+  "classification": "resource reporting correction, not new hardware or CPU failure",
+  "old_audit_preserved": "AUDIT_RESULT.json",
+  "corrected_audit": "AUDIT_RESULT_v2.json",
+  "frozen_old_packages_not_modified": true
+}

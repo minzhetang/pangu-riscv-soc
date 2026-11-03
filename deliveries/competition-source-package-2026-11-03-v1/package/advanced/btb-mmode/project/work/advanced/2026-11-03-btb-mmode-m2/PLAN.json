@@ -1,0 +1,267 @@
+{
+  "version": "1.0.0",
+  "scope": "Existing supervisor translation exercised only as a natural IF-stall fixture, no new S/U/MMU implementation or conformance claim",
+  "cycles": 400,
+  "tests": [
+    {
+      "name": "jal_ifmiss",
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          4294967295
+        ],
+        [
+          2,
+          31
+        ],
+        [
+          2,
+          2147483648
+        ],
+        [
+          2,
+          4096
+        ],
+        [
+          2,
+          4084
+        ],
+        [
+          2,
+          1024
+        ],
+        [
+          2,
+          2048
+        ],
+        [
+          6,
+          8192
+        ],
+        [
+          7,
+          99
+        ],
+        [
+          5,
+          4092
+        ]
+      ],
+      "stores": [
+        [
+          512,
+          4092,
+          15
+        ],
+        [
+          516,
+          99,
+          15
+        ]
+      ],
+      "traps": [],
+      "focus_pc": 4088,
+      "focus_train": 1,
+      "require_focus_ifmiss": true,
+      "program_sha256": "3917708cb0d21ad65f24234c3d181c6cfdd9f72225d13b8d9dd7375ccf364139"
+    },
+    {
+      "name": "jalr_ifmiss",
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          4294967295
+        ],
+        [
+          2,
+          31
+        ],
+        [
+          2,
+          2147483648
+        ],
+        [
+          2,
+          4096
+        ],
+        [
+          2,
+          4084
+        ],
+        [
+          2,
+          1024
+        ],
+        [
+          2,
+          2048
+        ],
+        [
+          6,
+          8192
+        ],
+        [
+          7,
+          99
+        ],
+        [
+          5,
+          4092
+        ]
+      ],
+      "stores": [
+        [
+          512,
+          4092,
+          15
+        ],
+        [
+          516,
+          99,
+          15
+        ]
+      ],
+      "traps": [],
+      "focus_pc": 4088,
+      "focus_train": 1,
+      "require_focus_ifmiss": true,
+      "program_sha256": "841ce4ec2233a281fd2d28100bd41878b3523d75ad75c2bddc21276c8392a1ac"
+    },
+    {
+      "name": "beq_ifmiss",
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          4294967295
+        ],
+        [
+          2,
+          31
+        ],
+        [
+          2,
+          2147483648
+        ],
+        [
+          2,
+          4096
+        ],
+        [
+          2,
+          4084
+        ],
+        [
+          2,
+          1024
+        ],
+        [
+          2,
+          2048
+        ],
+        [
+          6,
+          8192
+        ],
+        [
+          7,
+          99
+        ]
+      ],
+      "stores": [
+        [
+          512,
+          0,
+          15
+        ],
+        [
+          516,
+          99,
+          15
+        ]
+      ],
+      "traps": [],
+      "focus_pc": 4088,
+      "focus_train": 1,
+      "require_focus_ifmiss": true,
+      "program_sha256": "a4b92ae71233b346f5a1cb0c7549f8d91b1d0a40c5431bc9bfb9c6b5528ba735"
+    },
+    {
+      "name": "bne_hold_training",
+      "wb": [
+        [
+          1,
+          256
+        ],
+        [
+          2,
+          4294967295
+        ],
+        [
+          2,
+          31
+        ],
+        [
+          2,
+          2147483648
+        ],
+        [
+          2,
+          4096
+        ],
+        [
+          2,
+          4084
+        ],
+        [
+          2,
+          1024
+        ],
+        [
+          2,
+          2048
+        ],
+        [
+          6,
+          8192
+        ],
+        [
+          7,
+          99
+        ],
+        [
+          7,
+          100
+        ]
+      ],
+      "stores": [
+        [
+          512,
+          100,
+          15
+        ],
+        [
+          516,
+          100,
+          15
+        ]
+      ],
+      "traps": [],
+      "focus_pc": 4088,
+      "focus_train": 1,
+      "require_focus_ifmiss": true,
+      "program_sha256": "f7c35c6d2d164fd4576d2f18ecd18598a26909cd6a6332ac4abfc0164d0e5a8e"
+    }
+  ]
+}

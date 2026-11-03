@@ -1,0 +1,222 @@
+[
+  {
+    "mode": "performance",
+    "pred": 1,
+    "status": "PASS",
+    "checks": {
+      "native": true,
+      "timer_rule": true,
+      "timer_read_count": true,
+      "unknown": true,
+      "wb.txt": true,
+      "store.txt": true,
+      "regs.txt": true,
+      "memory.txt": true,
+      "uart.txt": true,
+      "completed": true
+    },
+    "timer_reads": [
+      [
+        536871172,
+        0
+      ],
+      [
+        536871168,
+        12568
+      ],
+      [
+        536871172,
+        0
+      ],
+      [
+        536871172,
+        0
+      ],
+      [
+        536871168,
+        12594
+      ],
+      [
+        536871172,
+        0
+      ],
+      [
+        536871172,
+        0
+      ],
+      [
+        536871168,
+        48954
+      ],
+      [
+        536871172,
+        0
+      ],
+      [
+        536871172,
+        0
+      ],
+      [
+        536871168,
+        1779078
+      ],
+      [
+        536871172,
+        0
+      ]
+    ],
+    "model": {
+      "mode": "performance",
+      "crcs": [
+        "0xe714",
+        "0x1fd7",
+        "0x8e3a"
+      ],
+      "instructions": 782739,
+      "wb_count": 535423,
+      "store_count": 20531,
+      "opcodes": {
+        "23": 11178,
+        "19": 366763,
+        "99": 209313,
+        "3": 61879,
+        "35": 20531,
+        "111": 5872,
+        "103": 23245,
+        "55": 2292,
+        "51": 81666
+      },
+      "files": {
+        "memory.txt": "ed0216cf85f1d39e3bfc0170880257b0d8c38975633802e9e5ed5e30b7f6a051",
+        "regs.txt": "b8b4fcc170f9f1c3d5b0462b90fee9db43ae6bc61109f55c4dc6b85af7922fc8",
+        "store.txt": "feb91320adcbfc4dae08879735d5a64ef98fe0cd150ccbd3b4a41ca5c3320eae",
+        "uart.txt": "d856b1262df9f47e99ab0be2a102f9c34b3778c760dd8b90b6eed55084f5eb87",
+        "wb.txt": "8f40fcce7c47db6d99d6dc493497ccfbf349702b8aaf5cea6adb8fbfdd2848c7"
+      },
+      "timer": "Constant zero mock, ONLY deterministic functional/cycle comparison; no target elapsed time or score"
+    },
+    "end": [
+      [
+        1846891,
+        48969,
+        1779097,
+        1846885,
+        238431,
+        58220,
+        238431,
+        24263
+      ]
+    ],
+    "seconds": 88.81299999984913
+  },
+  {
+    "mode": "validation",
+    "pred": 1,
+    "status": "PASS",
+    "checks": {
+      "native": true,
+      "timer_rule": true,
+      "timer_read_count": true,
+      "unknown": true,
+      "wb.txt": true,
+      "store.txt": true,
+      "regs.txt": true,
+      "memory.txt": true,
+      "uart.txt": true,
+      "completed": true
+    },
+    "timer_reads": [
+      [
+        536871172,
+        0
+      ],
+      [
+        536871168,
+        12580
+      ],
+      [
+        536871172,
+        0
+      ],
+      [
+        536871172,
+        0
+      ],
+      [
+        536871168,
+        12606
+      ],
+      [
+        536871172,
+        0
+      ],
+      [
+        536871172,
+        0
+      ],
+      [
+        536871168,
+        49252
+      ],
+      [
+        536871172,
+        0
+      ],
+      [
+        536871172,
+        0
+      ],
+      [
+        536871168,
+        1898584
+      ],
+      [
+        536871172,
+        0
+      ]
+    ],
+    "model": {
+      "mode": "validation",
+      "crcs": [
+        "0xe3c1",
+        "0x0747",
+        "0x8d84"
+      ],
+      "instructions": 835466,
+      "wb_count": 569415,
+      "store_count": 20435,
+      "opcodes": {
+        "23": 11162,
+        "19": 395154,
+        "99": 228228,
+        "3": 62340,
+        "35": 20435,
+        "111": 5797,
+        "103": 23226,
+        "55": 2292,
+        "51": 86832
+      },
+      "files": {
+        "memory.txt": "b6e5a72e3f9291e11082a86f1cdcede62f54c52005f466a3998158872feb2ec1",
+        "regs.txt": "936cdd1752eaf16edf896cded26ae403c23bc3ababd1390c979ac16e486ce7c6",
+        "store.txt": "5b099b34a33481c2e068f37a06a9b4de8293bf88c6915955b8771f21bca9aec2",
+        "uart.txt": "e4ff68a0906150f6d1aa118baf72df98d75eec6ddef38a0b5e14ce11b8871dd1",
+        "wb.txt": "7b9c14667127dc5c056a63b5eb3d00777de6f949723a39c405875e9b533d6861"
+      },
+      "timer": "Constant zero mock, ONLY deterministic functional/cycle comparison; no target elapsed time or score"
+    },
+    "end": [
+      [
+        1965453,
+        49267,
+        1898603,
+        1965447,
+        257252,
+        61239,
+        257252,
+        24779
+      ]
+    ],
+    "seconds": 94.60900000017136
+  }
+]

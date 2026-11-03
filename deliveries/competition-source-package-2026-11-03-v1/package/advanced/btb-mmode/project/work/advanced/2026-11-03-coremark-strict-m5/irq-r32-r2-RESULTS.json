@@ -1,0 +1,215 @@
+{
+  "plan_sha256": "ac5d8a7b5e8996c32676f85c091a93858fb98127c1e0210635a3a7b7f68e221f",
+  "results": [
+    {
+      "case": "interrupt_before_store",
+      "sync": 1,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "rc": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "precise_input": true,
+        "vector": true,
+        "redirect_post": true,
+        "trap_status": true,
+        "registers": true,
+        "memory": true,
+        "status": true,
+        "unknown": true,
+        "response_bound": true,
+        "no_stalled_training": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            257
+          ],
+          [
+            2,
+            128
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            10,
+            28
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            4,
+            91
+          ]
+        ],
+        "stores": [
+          [
+            516,
+            7,
+            15
+          ],
+          [
+            512,
+            257,
+            15
+          ]
+        ],
+        "traps": [
+          [
+            28,
+            2147483655,
+            0
+          ]
+        ],
+        "status": [
+          [
+            "00000088",
+            "3"
+          ]
+        ],
+        "vector": [
+          [
+            "20",
+            "0000011c",
+            "00000008"
+          ]
+        ],
+        "csr_enable": [
+          [
+            "18",
+            "00000018",
+            "300",
+            "00000008"
+          ]
+        ],
+        "trap_pre": [
+          [
+            "20",
+            "0000001c",
+            "80000007",
+            "00000000"
+          ]
+        ]
+      },
+      "seconds": 0.125
+    },
+    {
+      "case": "mret_pending_response",
+      "sync": 1,
+      "pred": 1,
+      "status": "PASS",
+      "checks": {
+        "rc": true,
+        "end": true,
+        "wb": true,
+        "stores": true,
+        "traps": true,
+        "precise_input": true,
+        "vector": true,
+        "redirect_post": true,
+        "trap_status": true,
+        "registers": true,
+        "memory": true,
+        "status": true,
+        "unknown": true,
+        "response_bound": true,
+        "no_stalled_training": true
+      },
+      "actual": {
+        "wb": [
+          [
+            1,
+            257
+          ],
+          [
+            2,
+            128
+          ],
+          [
+            3,
+            8192
+          ],
+          [
+            3,
+            6272
+          ],
+          [
+            4,
+            128
+          ],
+          [
+            10,
+            128
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            5,
+            91
+          ]
+        ],
+        "stores": [
+          [
+            516,
+            7,
+            15
+          ],
+          [
+            512,
+            91,
+            15
+          ]
+        ],
+        "traps": [
+          [
+            128,
+            2147483655,
+            0
+          ]
+        ],
+        "status": [
+          [
+            "00000088",
+            "3"
+          ]
+        ],
+        "vector": [
+          [
+            "30",
+            "0000011c",
+            "00000088"
+          ]
+        ],
+        "csr_enable": [
+          [
+            "24",
+            "00000024"
+          ]
+        ],
+        "trap_pre": [
+          [
+            "30",
+            "00000080",
+            "80000007",
+            "00000000"
+          ]
+        ]
+      },
+      "seconds": 0.10899999993853271
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "mode": "performance",
+    "pred": 0,
+    "status": "PASS",
+    "checks": {
+      "native": true,
+      "unknown": true,
+      "wb.txt": true,
+      "store.txt": true,
+      "regs.txt": true,
+      "memory.txt": true,
+      "uart.txt": true,
+      "bounded_completion": true
+    },
+    "differences": {},
+    "end": [
+      [
+        2230439,
+        61981,
+        2165633,
+        2230433,
+        236727,
+        156189,
+        236727,
+        24239
+      ]
+    ],
+    "seconds": 108.75
+  },
+  {
+    "mode": "validation",
+    "pred": 0,
+    "status": "PASS",
+    "checks": {
+      "native": true,
+      "unknown": true,
+      "wb.txt": true,
+      "store.txt": true,
+      "regs.txt": true,
+      "memory.txt": true,
+      "uart.txt": true,
+      "bounded_completion": true
+    },
+    "differences": {},
+    "end": [
+      [
+        2389231,
+        62383,
+        2325387,
+        2389225,
+        255548,
+        169264,
+        255548,
+        24755
+      ]
+    ],
+    "seconds": 115.18800000008196
+  },
+  {
+    "mode": "performance",
+    "pred": 1,
+    "status": "PASS",
+    "checks": {
+      "native": true,
+      "unknown": true,
+      "wb.txt": true,
+      "store.txt": true,
+      "regs.txt": true,
+      "memory.txt": true,
+      "uart.txt": true,
+      "bounded_completion": true
+    },
+    "differences": {},
+    "end": [
+      [
+        1824763,
+        48077,
+        1767229,
+        1824757,
+        236727,
+        54770,
+        236727,
+        24239
+      ]
+    ],
+    "seconds": 91.61000000010245
+  },
+  {
+    "mode": "validation",
+    "pred": 1,
+    "status": "PASS",
+    "checks": {
+      "native": true,
+      "unknown": true,
+      "wb.txt": true,
+      "store.txt": true,
+      "regs.txt": true,
+      "memory.txt": true,
+      "uart.txt": true,
+      "bounded_completion": true
+    },
+    "differences": {},
+    "end": [
+      [
+        1943083,
+        48463,
+        1886299,
+        1943077,
+        255548,
+        57727,
+        255548,
+        24755
+      ]
+    ],
+    "seconds": 96.54699999978766
+  }
+]

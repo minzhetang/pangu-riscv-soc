@@ -1,0 +1,11 @@
+0000: 00300093  addi x1,x0,3
+0004: 00100113  addi x2,x0,1
+0008: 402080b3  sub x1,x1,x2
+000c: fe009ee3  bne x1,x0,-4 ; bounded loop to8
+0010: 00002183  lw x3,0(x0)
+0014: 00019663  bne x3,x0,+12 ; not taken
+0018: 00900213  addi x4,x0,9
+001c: 00018663  beq x3,x0,+12 ; target40
+0020: 00002223  sw x0,4(x0) ; wrong path
+0024: 06300293  addi x5,x0,99 ; wrong path
+0028: 05a00f93  addi x31,x0,90 ; completion

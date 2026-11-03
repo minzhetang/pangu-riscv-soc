@@ -1,0 +1,17 @@
+{
+  "id": "F03",
+  "expected": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "generated/faults/s00_expected.log",
+    "complete": true
+  },
+  "actual": {
+    "storage": "raw",
+    "stream": "trace",
+    "path": "generated/faults/f03_duplicate.log",
+    "complete": true
+  },
+  "allow_empty": false,
+  "limits": {}
+}

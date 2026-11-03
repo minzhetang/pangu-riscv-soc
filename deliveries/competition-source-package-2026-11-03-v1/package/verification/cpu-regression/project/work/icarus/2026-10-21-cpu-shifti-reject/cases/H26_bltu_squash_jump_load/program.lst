@@ -1,0 +1,7 @@
+0000: 00100093  addi x1,x0,1
+0004: 00106663  bltu x0,x1,+12 ; taken
+0008: 018002ef  jal x5,+24 ; wrong path no link/redirect
+000c: 00002303  lw x6,0(x0) ; wrong path no WB
+0010: 00900593  addi x11,x0,9 ; target
+0014: 00b02423  sw x11,8(x0)
+0018: 05a00f93  addi x31,x0,90 ; completion

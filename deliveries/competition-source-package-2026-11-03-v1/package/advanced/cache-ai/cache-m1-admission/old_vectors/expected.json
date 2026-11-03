@@ -1,0 +1,162 @@
+{
+  "0_locality_0": {
+    "hits": 60,
+    "eligible_reads": 64,
+    "transactions": 4,
+    "bytes": 64,
+    "mmio": 0,
+    "requests": 64
+  },
+  "0_locality_1": {
+    "hits": 0,
+    "eligible_reads": 0,
+    "transactions": 64,
+    "bytes": 256,
+    "mmio": 0,
+    "requests": 64
+  },
+  "0_stream_0": {
+    "hits": 0,
+    "eligible_reads": 32,
+    "transactions": 32,
+    "bytes": 512,
+    "mmio": 0,
+    "requests": 32
+  },
+  "0_stream_1": {
+    "hits": 0,
+    "eligible_reads": 0,
+    "transactions": 32,
+    "bytes": 128,
+    "mmio": 0,
+    "requests": 32
+  },
+  "0_conflict_0": {
+    "hits": 2,
+    "eligible_reads": 7,
+    "transactions": 5,
+    "bytes": 80,
+    "mmio": 0,
+    "requests": 7
+  },
+  "0_conflict_1": {
+    "hits": 0,
+    "eligible_reads": 0,
+    "transactions": 7,
+    "bytes": 28,
+    "mmio": 0,
+    "requests": 7
+  },
+  "0_protocol_0": {
+    "hits": 2,
+    "eligible_reads": 3,
+    "transactions": 5,
+    "bytes": 32,
+    "mmio": 2,
+    "requests": 8
+  },
+  "0_protocol_1": {
+    "hits": 0,
+    "eligible_reads": 0,
+    "transactions": 7,
+    "bytes": 28,
+    "mmio": 2,
+    "requests": 8
+  },
+  "0_bytes_0": {
+    "hits": 1,
+    "eligible_reads": 3,
+    "transactions": 20,
+    "bytes": 74,
+    "mmio": 0,
+    "requests": 22
+  },
+  "0_bytes_1": {
+    "hits": 0,
+    "eligible_reads": 0,
+    "transactions": 21,
+    "bytes": 54,
+    "mmio": 0,
+    "requests": 22
+  },
+  "0_mixed_0": {
+    "hits": 0,
+    "eligible_reads": 64,
+    "transactions": 96,
+    "bytes": 1086,
+    "mmio": 0,
+    "requests": 96
+  },
+  "0_mixed_1": {
+    "hits": 0,
+    "eligible_reads": 0,
+    "transactions": 96,
+    "bytes": 318,
+    "mmio": 0,
+    "requests": 96
+  },
+  "1_locality_0": {
+    "hits": 60,
+    "eligible_reads": 64,
+    "transactions": 4,
+    "bytes": 64,
+    "mmio": 0,
+    "requests": 64
+  },
+  "1_locality_1": {
+    "hits": 0,
+    "eligible_reads": 0,
+    "transactions": 64,
+    "bytes": 256,
+    "mmio": 0,
+    "requests": 64
+  },
+  "1_stream_0": {
+    "hits": 0,
+    "eligible_reads": 32,
+    "transactions": 32,
+    "bytes": 512,
+    "mmio": 0,
+    "requests": 32
+  },
+  "1_stream_1": {
+    "hits": 0,
+    "eligible_reads": 0,
+    "transactions": 32,
+    "bytes": 128,
+    "mmio": 0,
+    "requests": 32
+  },
+  "1_conflict_0": {
+    "hits": 2,
+    "eligible_reads": 7,
+    "transactions": 5,
+    "bytes": 80,
+    "mmio": 0,
+    "requests": 7
+  },
+  "1_conflict_1": {
+    "hits": 0,
+    "eligible_reads": 0,
+    "transactions": 7,
+    "bytes": 28,
+    "mmio": 0,
+    "requests": 7
+  },
+  "1_protocol_0": {
+    "hits": 2,
+    "eligible_reads": 3,
+    "transactions": 4,
+    "bytes": 28,
+    "mmio": 2,
+    "requests": 8
+  },
+  "1_protocol_1": {
+    "hits": 0,
+    "eligible_reads": 0,
+    "transactions": 6,
+    "bytes": 24,
+    "mmio": 2,
+    "requests": 8
+  }
+}

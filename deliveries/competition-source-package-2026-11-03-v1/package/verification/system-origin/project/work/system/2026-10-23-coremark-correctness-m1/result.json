@@ -1,0 +1,80 @@
+{
+  "stage": "A-COREMARK-CORRECTNESS-M1",
+  "cases": {
+    "performance": {
+      "status": "PASS",
+      "differences": [],
+      "actual_streams": {
+        "counts": {
+          "EX": 768391,
+          "WB": 526027,
+          "READ": 59090,
+          "STORE": 19201
+        },
+        "SHA256": {
+          "EX": "8DBBE81808F9FAAAB861FB654AEACC8B7129D718CE2AC8E6467C44FBB64B0DE3",
+          "WB": "1EE4BFAC97C3013FE5ECC01C6EB9007BB76E656B3C0921C5046B9F3AF14E1F6D",
+          "MEM": "E56042C82DFA9A3550BA80623A2F63C6B20473291935A0A4F1ED894CCEB3A9EF"
+        }
+      },
+      "metrics": {
+        "cycles": "1101315",
+        "stall": "22483",
+        "flush": "155217",
+        "holds": "4",
+        "time_ps": "11013190000"
+      },
+      "RAM_bytes_compared": 32768,
+      "registers_compared": 32,
+      "unknown_trace_events": 0,
+      "retirement_PC": false,
+      "unified_WB_STORE_commit": false,
+      "score": "NOT_MEASURED_TIMER_UNAVAILABLE_SHORT_CRC_RUN",
+      "process": {
+        "exit_code": 0,
+        "timed_out": false,
+        "elapsed_seconds": 24.359
+      }
+    },
+    "validation": {
+      "status": "PASS",
+      "differences": [],
+      "actual_streams": {
+        "counts": {
+          "EX": 821131,
+          "WB": 560029,
+          "READ": 59554,
+          "STORE": 19106
+        },
+        "SHA256": {
+          "EX": "6B799EAA0EB7C3C5E6D2060AE5E31703F7505843475A7BB7121D54626F617147",
+          "WB": "13EDBD67D567831C25A0919691C5D5059ABFFEC6D37A136E712D234DA4CBD83D",
+          "MEM": "9911E18D160BC361AF60F398309D7E142ADA7EB266EDB2941D91D2583346CF96"
+        }
+      },
+      "metrics": {
+        "cycles": "1180725",
+        "stall": "23001",
+        "flush": "168293",
+        "holds": "4",
+        "time_ps": "11807290000"
+      },
+      "RAM_bytes_compared": 32768,
+      "registers_compared": 32,
+      "unknown_trace_events": 0,
+      "retirement_PC": false,
+      "unified_WB_STORE_commit": false,
+      "score": "NOT_MEASURED_TIMER_UNAVAILABLE_SHORT_CRC_RUN",
+      "process": {
+        "exit_code": 0,
+        "timed_out": false,
+        "elapsed_seconds": 25.625
+      }
+    }
+  },
+  "CPU_modified": false,
+  "hardware_operations": 0,
+  "status": "PASS",
+  "score": "NOT_MEASURED",
+  "frozen_files_verified": 25
+}

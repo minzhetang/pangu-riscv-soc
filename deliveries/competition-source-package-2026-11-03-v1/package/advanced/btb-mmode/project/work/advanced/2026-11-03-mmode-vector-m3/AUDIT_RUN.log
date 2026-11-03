@@ -1,0 +1,137 @@
+{
+  "pass_": true,
+  "runs": 44,
+  "wave_review": [
+    {
+      "sync": 0,
+      "cycle": 10,
+      "time_ps": 144999,
+      "phase": "pre_edge",
+      "expected": {
+        "id_pc": 28,
+        "interrupt_taken": 1,
+        "trap_vector": 284,
+        "trap_epc": 28,
+        "trap_cause": 2147483655,
+        "pipeline_advance": 1
+      },
+      "actual": {
+        "id_pc": 28,
+        "interrupt_taken": 1,
+        "trap_vector": 284,
+        "trap_epc": 28,
+        "trap_cause": 2147483655,
+        "pipeline_advance": 1
+      },
+      "pass_": true
+    },
+    {
+      "sync": 0,
+      "cycle": 10,
+      "time_ps": 145001,
+      "phase": "post_1ps",
+      "expected": {
+        "pc_reg": 284,
+        "mepc": 28,
+        "mcause": 2147483655,
+        "mstatus": 6272,
+        "priv": 3
+      },
+      "actual": {
+        "pc_reg": 284,
+        "mepc": 28,
+        "mcause": 2147483655,
+        "mstatus": 6272,
+        "priv": 3
+      },
+      "pass_": true
+    },
+    {
+      "sync": 1,
+      "cycle": 20,
+      "time_ps": 244999,
+      "phase": "pre_edge",
+      "expected": {
+        "id_pc": 28,
+        "interrupt_taken": 1,
+        "trap_vector": 284,
+        "trap_epc": 28,
+        "trap_cause": 2147483655,
+        "pipeline_advance": 1
+      },
+      "actual": {
+        "id_pc": 28,
+        "interrupt_taken": 1,
+        "trap_vector": 284,
+        "trap_epc": 28,
+        "trap_cause": 2147483655,
+        "pipeline_advance": 1
+      },
+      "pass_": true
+    },
+    {
+      "sync": 1,
+      "cycle": 20,
+      "time_ps": 245001,
+      "phase": "post_1ps",
+      "expected": {
+        "pc_reg": 284,
+        "mepc": 28,
+        "mcause": 2147483655,
+        "mstatus": 6272,
+        "priv": 3
+      },
+      "actual": {
+        "pc_reg": 284,
+        "mepc": 28,
+        "mcause": 2147483655,
+        "mstatus": 6272,
+        "priv": 3
+      },
+      "pass_": true
+    },
+    {
+      "case": "adjacent_disable_precise",
+      "cycle": 10,
+      "phase": "pre_edge",
+      "expected": {
+        "id_pc": 28,
+        "ex_is_csr": 1,
+        "interrupt_taken": 1,
+        "csr_commit_eff": 0,
+        "trap_epc": 28
+      },
+      "actual": {
+        "id_pc": 28,
+        "ex_is_csr": 1,
+        "interrupt_taken": 1,
+        "csr_commit_eff": 0,
+        "trap_epc": 28
+      },
+      "pass_": true
+    },
+    {
+      "case": "adjacent_disable_precise",
+      "cycle": 19,
+      "phase": "pre_edge",
+      "expected": {
+        "id_pc": 28,
+        "ex_is_csr": 1,
+        "interrupt_taken": 0,
+        "csr_commit_eff": 1
+      },
+      "actual": {
+        "id_pc": 28,
+        "ex_is_csr": 1,
+        "interrupt_taken": 0,
+        "csr_commit_eff": 1
+      },
+      "pass_": true
+    }
+  ],
+  "response_cycles": [
+    1,
+    2
+  ],
+  "negative_controls": 10
+}

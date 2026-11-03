@@ -1,0 +1,1 @@
+{"status": "TOOL_ERROR", "native_rc": 7, "case": "existing-out", "out": null, "error": "output directory already exists; no overwrite"}

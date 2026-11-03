@@ -1,0 +1,89 @@
+{
+  "id": "P01-S02-missing-tail",
+  "status": "MISMATCH",
+  "no_difference": false,
+  "first_difference": {
+    "ordinal": 8,
+    "kind": "MISSING",
+    "field": null,
+    "expected": [
+      "WB",
+      10,
+      2,
+      1
+    ],
+    "actual": null,
+    "field_expected": null,
+    "field_actual": null
+  },
+  "neighbors": [
+    {
+      "ordinal": 6,
+      "expected": [
+        "STORE",
+        7,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "actual": [
+        "STORE",
+        7,
+        4,
+        65536,
+        1,
+        15
+      ],
+      "relation": "EQUAL"
+    },
+    {
+      "ordinal": 7,
+      "expected": [
+        "READ",
+        8,
+        8,
+        65536,
+        1,
+        1
+      ],
+      "actual": [
+        "READ",
+        8,
+        8,
+        65536,
+        1,
+        1
+      ],
+      "relation": "EQUAL"
+    },
+    {
+      "ordinal": 8,
+      "expected": [
+        "WB",
+        10,
+        2,
+        1
+      ],
+      "actual": null,
+      "relation": "MISSING_ACTUAL"
+    }
+  ],
+  "differences": [
+    {
+      "ordinal": 8,
+      "kind": "MISSING",
+      "expected": [
+        "WB",
+        10,
+        2,
+        1
+      ],
+      "actual": null
+    }
+  ],
+  "error": null,
+  "checked": 8,
+  "expected_records": 8,
+  "actual_records": 7
+}

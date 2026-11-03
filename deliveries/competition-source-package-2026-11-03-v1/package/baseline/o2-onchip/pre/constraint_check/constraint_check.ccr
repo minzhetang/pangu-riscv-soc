@@ -1,0 +1,40 @@
+##### Written on 2026/11/01 15:40:41 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PG2L100H-6FBG676
+
+Top Module : 
+	board_top
+
+Constraint File(s) : 
+	D:/A_FPGA_Comp/work/fpga/2026-11-01-coremark256-ila-efficiency-m1/pre/board_pins.fdc
+	D:/A_FPGA_Comp/work/fpga/2026-11-01-coremark256-ila-efficiency-m1/pre/clock_27mhz.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 0 critical warning(s), 0 warning(s), out of 94 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

@@ -1,0 +1,95 @@
+{
+  "status": "FAILED_OR_TOOL_BLOCKED",
+  "error": "AssertionError('UART ledger bytes/order mismatch')",
+  "results": [],
+  "jobs": [
+    {
+      "name": "gcc0",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-gcc.exe",
+        "-march=rv32i",
+        "-mabi=ilp32",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-msmall-data-limit=0",
+        "-mno-relax",
+        "-nostdlib",
+        "-nostartfiles",
+        "-Wl,--no-relax",
+        "-Wl,-T,firmware/link.ld",
+        "-DDENSE=0",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\program0.elf",
+        "firmware/start.S",
+        "firmware/app.c"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1",
+      "rc": 0,
+      "seconds": 0.26500000013038516
+    },
+    {
+      "name": "objcopy0",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
+        "-O",
+        "binary",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\program0.elf",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\program0.bin"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1",
+      "rc": 0,
+      "seconds": 0.015999999828636646
+    },
+    {
+      "name": "nm0",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-nm.exe",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\program0.elf"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1",
+      "rc": 0,
+      "seconds": 0.01600000006146729
+    },
+    {
+      "name": "compile0",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\iverilog.exe",
+        "-B",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "-g2012",
+        "-s",
+        "tb",
+        "-o",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\alu.v",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\control.v",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\cpu.v",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\cycle_counter64.sv",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\gpio_core.v",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\local_regif_txgpio_m1.v",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\regfile.v",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\soc_data_adapter.sv",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\soc_top.sv",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\source\\uart_tx.v",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\memory_sim.sv",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\tb.sv"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1",
+      "rc": 0,
+      "seconds": 0.0779999999795109
+    },
+    {
+      "name": "run-normal-0",
+      "argv": [
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\bin\\vvp.exe",
+        "-M",
+        "D:\\A_FPGA_Comp\\tools\\iverilog-13.0-msys2-ucrt64\\ucrt64\\lib\\ivl",
+        "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\app0.vvp"
+      ],
+      "cwd": "D:\\A_FPGA_Comp\\work\\application\\2026-11-03-event-recorder-m1\\runs\\normal-dense0",
+      "rc": 0,
+      "seconds": 10.702999999979511
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "synthetic_environment": true,
+  "CPU_DUT_runs": 0,
+  "SoC_runs": 0,
+  "architectural_steps": 331,
+  "stop_pc": 104,
+  "GPIO_writes": 3,
+  "TX_writes": 12,
+  "signature": 1397703473,
+  "stack_restored": true,
+  "note": "alternating abstract ready reads, synthetic GPIO values; NOT physical timing or frozen live-system expected trace"
+}

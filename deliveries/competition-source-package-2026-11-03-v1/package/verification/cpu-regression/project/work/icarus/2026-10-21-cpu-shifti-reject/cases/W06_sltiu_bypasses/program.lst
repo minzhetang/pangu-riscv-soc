@@ -1,0 +1,12 @@
+0000: ffb00093  addi x1,x0,-5
+0004: ffa0b113  sltiu x2,x1,-6 ;EX0
+0008: ffc00193  addi x3,x0,-4
+000c: 00400a13  addi x20,x0,4 ;useful gap
+0010: ffa1b213  sltiu x4,x3,-6 ;WB->EX0
+0014: ffd00293  addi x5,x0,-3
+0018: 00800a93  addi x21,x0,8 ;useful gap
+001c: 00c00b13  addi x22,x0,12 ;useful gap
+0020: ffa2b313  sltiu x6,x5,-6 ;WB->ID0
+0024: 00930393  addi x7,x6,9 ;9
+0028: 00602023  sw x6,0(x0) ;overwrite sentinel0
+002c: 05a00f93  addi x31,x0,90 ; completion
